@@ -1,0 +1,545 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['around', 'ground', 'bounds', 'abound']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>around</th>
+      <td>ound</td>
+      <td>5.79</td>
+      <td>adv</td>
+      <td>ə'raʊnd</td>
+      <td>['about']</td>
+      <td></td>
+      <td>used of movement to or among many different places or in no particular direction用于移动到许多不同的地方或在许多不同的地方或没有特定的方向</td>
+      <td>news gets around (or about)新闻传播（或左右）traveled around in Asia在亚洲旅行he needs advice from someone who's been around他需要来自身边的人的建议she sleeps around她睡了一觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>around</th>
+      <td>ound</td>
+      <td>5.79</td>
+      <td>adv</td>
+      <td>ə'raʊnd</td>
+      <td>['about']</td>
+      <td></td>
+      <td>in or to a reversed position or direction在或反向位置或方向</td>
+      <td>suddenly she turned around突然她转过身来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>around</th>
+      <td>ound</td>
+      <td>5.79</td>
+      <td>adv</td>
+      <td>ə'raʊnd</td>
+      <td>['about']</td>
+      <td></td>
+      <td>in the area or vicinity在该地区或附近</td>
+      <td>hanging around闲逛waited around for the next flight等下一班航班</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>around</th>
+      <td>ound</td>
+      <td>5.79</td>
+      <td>adv</td>
+      <td>ə'raʊnd</td>
+      <td>['about']</td>
+      <td></td>
+      <td>all around or on all sides四周或四面八方</td>
+      <td>dirty clothes lying around (or about)脏衣服躺在（或左右）There were trees growing all around四周都有树木在生长she looked around her她环顾四周</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>around</th>
+      <td>ound</td>
+      <td>5.79</td>
+      <td>adv</td>
+      <td>ə'raʊnd</td>
+      <td>['round']</td>
+      <td></td>
+      <td>from beginning to end; throughout从开始到结束;始终</td>
+      <td>frigid weather the year around一年四季天气寒冷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>around</th>
+      <td>ound</td>
+      <td>5.79</td>
+      <td>adv</td>
+      <td>ə'raʊnd</td>
+      <td>['about', 'approximately', 'close to', 'just about', 'more or less', 'or so', 'roughly', 'some']</td>
+      <td></td>
+      <td>(of quantities) imprecise but fairly close to correct（数量）不精确但非常接近正确</td>
+      <td>weighs around a hundred pounds重约一百磅</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td>['run aground']</td>
+      <td></td>
+      <td>hit or reach the ground击中或到达地面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reach, gain, attain, hit, arrive at, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td>['prime', 'undercoat']</td>
+      <td></td>
+      <td>cover with a primer; apply a primer to盖上底漆;申请入门</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[paint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td>['anchor']</td>
+      <td></td>
+      <td>fix firmly and stably坚定而稳定地固定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[secure, fix, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td>['base', 'establish', 'found']</td>
+      <td></td>
+      <td>use as a basis for; found on用作基础;找到了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td>['run aground', 'strand']</td>
+      <td></td>
+      <td>bring to the ground带到地上</td>
+      <td>the storm grounded the ship风暴使船停了下来</td>
+      <td></td>
+      <td></td>
+      <td>[land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>confine or restrict to the ground限制或限制在地面上</td>
+      <td>After the accident, they grounded the plane and the pilot事故发生后，他们将飞机和飞行员停飞</td>
+      <td></td>
+      <td></td>
+      <td>[restrain, constrain, hold, confine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>connect to a ground连接到地面</td>
+      <td>ground the electrical connections for safety reasons出于安全原因将电气连接接地</td>
+      <td>[grounding]</td>
+      <td></td>
+      <td>[connect, link, link up, tie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>hit a groundball打了一个地面球</td>
+      <td>he grounded to the second baseman他接二垒给了二垒手</td>
+      <td>[grounder]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>hit onto the ground撞到地上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>instruct someone in the fundamentals of a subject在某个主题的基础知识中指导某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[learn, instruct, teach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>place or put on the ground放置或放在地上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[put, place, pose, position, lay, set]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>throw to the ground in order to stop play and avoid being tackled behind the line of scrimmage投掷到地面以停止比赛并避免在争球线后面被解决</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['land', 'soil']</td>
+      <td></td>
+      <td>material in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use)植物可以生长的地球表层顶层的材料（特别是参考其质量或用途）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[object, physical object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['background']</td>
+      <td></td>
+      <td>the part of a scene (or picture) that lies behind objects in the foreground位于前景中对象后面的场景（或图片）的一部分</td>
+      <td>he posed her against a background of rolling hills他把她摆在连绵起伏的丘陵背景下</td>
+      <td></td>
+      <td></td>
+      <td>[vista, panorama, view, aspect, scene, prospect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['reason']</td>
+      <td></td>
+      <td>a rational motive for a belief or action信仰或行动的理性动机</td>
+      <td>the grounds for their declaration他们申报的理由</td>
+      <td></td>
+      <td></td>
+      <td>[rational motive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['basis', 'footing']</td>
+      <td></td>
+      <td>a relation that provides the foundation for something为某事提供基础的关系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foundation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['earth']</td>
+      <td></td>
+      <td>a connection between an electrical device and a large conducting body, such as the earth (which is taken to be at zero voltage)电气设备和大型导电体之间的连接，例如接地（采用零电压）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[connexion, connector, connective, connection, connecter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['dry land', 'earth', 'land', 'solid ground', 'terra firma']</td>
+      <td></td>
+      <td>the solid part of the earth's surface地球表面的坚固部分</td>
+      <td>he dropped the logs on the ground他把原木放在地上</td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['earth']</td>
+      <td></td>
+      <td>the loose soft material that makes up a large part of the land surface松软的材料构成了陆地表面的一大部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[material, stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td>['flat coat', 'primer', 'primer coat', 'priming', 'priming coat', 'undercoat']</td>
+      <td></td>
+      <td>the first or preliminary coat of paint or size applied to a surface涂在表面上的第一层或初涂层或涂层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coat of paint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>a position to be won or defended in battle (or as if in battle)在战斗中获胜或捍卫的位置（或者好像在战斗中）</td>
+      <td>they gained ground step by step他们一步步取得了进展they fought to regain the lost ground他们争取重新夺回失地</td>
+      <td></td>
+      <td></td>
+      <td>[military position, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td>[figure]</td>
+      <td>a relatively homogeneous percept extending back of the figure on which attention is focused一个相对均匀的感知延伸到图中的注意力集中在后面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[perceptual experience, perception, percept]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ground</th>
+      <td>ound</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>graʊnd</td>
+      <td></td>
+      <td></td>
+      <td>(art) the surface (as a wall or canvas) prepared to take the paint for a painting（艺术）准备用于绘画的油漆表面（作为墙壁或帆布）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bounds</th>
+      <td>ound</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>baʊndz</td>
+      <td>['bound', 'boundary']</td>
+      <td></td>
+      <td>the line or plane indicating the limit or extent of something表示某物的极限或范围的线或平面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[extremity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>abound</th>
+      <td>ound</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>ə'baʊnd</td>
+      <td>['bristle', 'burst']</td>
+      <td></td>
+      <td>be in a state of movement or action处于行动或行动的状态</td>
+      <td>The room abounded with screaming children房间里满是尖叫的孩子们</td>
+      <td></td>
+      <td></td>
+      <td>[feature, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>abound</th>
+      <td>ound</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>ə'baʊnd</td>
+      <td>, alos:['abound in']</td>
+      <td></td>
+      <td>be abundant or plentiful; exist in large quantities丰富或丰富;存在大量</td>
+      <td></td>
+      <td>[abundance, abundant]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

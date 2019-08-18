@@ -1,0 +1,230 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['cards', 'award', 'hardy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>cards</th>
+      <td>ard</td>
+      <td>4.61</td>
+      <td>nou</td>
+      <td>kɑrdz</td>
+      <td>['card game']</td>
+      <td></td>
+      <td>a game played with playing cards用扑克牌玩的游戏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>award</th>
+      <td>ard</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>ə'wɔrd</td>
+      <td>['present']</td>
+      <td></td>
+      <td>give, especially as an honor or reward给予，特别是作为荣誉或奖励</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[allocate, apportion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>award</th>
+      <td>ard</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>ə'wɔrd</td>
+      <td>['grant']</td>
+      <td></td>
+      <td>give as judged due or on the basis of merit给予判断到期或基于功绩</td>
+      <td>the referee awarded a free kick to the team裁判给球队一个任意球the jury awarded a million dollars to the plaintiff陪审团向原告赔偿了一百万美元</td>
+      <td></td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>award</th>
+      <td>ard</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>ə'wɔrd</td>
+      <td>['prize']</td>
+      <td></td>
+      <td>something given for victory or superiority in a contest or competition or for winning a lottery在比赛或比赛中获胜或获得优势的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>award</th>
+      <td>ard</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>ə'wɔrd</td>
+      <td>['awarding']</td>
+      <td></td>
+      <td>a grant made by a law court法院提供的补助金</td>
+      <td>he criticized the awarding of compensation by the court他批评法院判给赔偿金</td>
+      <td></td>
+      <td></td>
+      <td>[subsidisation, grant, subsidization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>award</th>
+      <td>ard</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>ə'wɔrd</td>
+      <td>['accolade', 'honor', 'honour', 'laurels']</td>
+      <td></td>
+      <td>a tangible symbol signifying approval or distinction表示认可或区别的有形符号</td>
+      <td>an award for bravery勇敢的奖励</td>
+      <td></td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hardy</th>
+      <td>ard</td>
+      <td>3.50</td>
+      <td>nou</td>
+      <td>'hɑrdi</td>
+      <td>['oliver hardy']</td>
+      <td></td>
+      <td>United States slapstick comedian who played the pompous and overbearing member of the Laurel and Hardy duo who made many films (1892-1957)美国闹鬼喜剧演员扮演劳雷尔和哈代二人组合的华丽和霸道成员，制作了许多电影（1892-1957）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hardy</th>
+      <td>ard</td>
+      <td>3.50</td>
+      <td>nou</td>
+      <td>'hɑrdi</td>
+      <td>['thomas hardy']</td>
+      <td></td>
+      <td>English novelist and poet (1840-1928)英国小说家和诗人（1840-1928）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hardy</th>
+      <td>ard</td>
+      <td>3.50</td>
+      <td>adj</td>
+      <td>'hɑrdi</td>
+      <td>['stalwart', 'stout', 'sturdy'], similarTo:['robust']</td>
+      <td></td>
+      <td>having rugged physical strength; inured to fatigue or hardships体力强劲;习惯于疲惫或艰辛</td>
+      <td>hardy explorers of northern Canada加拿大北部的耐寒探险家</td>
+      <td>[hardiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hardy</th>
+      <td>ard</td>
+      <td>3.50</td>
+      <td>adj</td>
+      <td>'hɑrdi</td>
+      <td>['audacious', 'brave', 'dauntless', 'fearless', 'intrepid', 'unfearing'], similarTo:['bold']</td>
+      <td></td>
+      <td>invulnerable to fear or intimidation不受恐惧或恐吓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hardy</th>
+      <td>ard</td>
+      <td>3.50</td>
+      <td>adj</td>
+      <td>'hɑrdi</td>
+      <td>, similarTo:['robust']</td>
+      <td></td>
+      <td>able to survive under unfavorable weather conditions能够在不利的天气条件下生存</td>
+      <td>strawberries are hardy and easy to grow草莓很耐寒，容易生长camels are tough and hardy creatures骆驼是坚韧而强壮的生物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

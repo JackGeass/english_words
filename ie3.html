@@ -1,0 +1,755 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['die', 'lie', 'tie', 'pie', 'vie', 'hie']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td>['die out']</td>
+      <td></td>
+      <td>cut or shape with a die用模具切割或成形</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td>['buy the farm', "cash in one's chips", 'choke', 'conk', 'croak', 'decease', 'drop dead', 'exit', 'expire', 'give-up the ghost', 'go', 'kick the bucket', 'pass', 'pass away', 'perish', 'pop off', 'snuff it'], alos:['die out', 'die off', 'die down']</td>
+      <td>[be born]</td>
+      <td>pass from physical life and lose all bodily attributes and functions necessary to sustain life从物质生活中消失，失去维持生命所必需的所有身体属性和功能</td>
+      <td>She died from cancer她死于癌症</td>
+      <td>[death]</td>
+      <td>[fail, break, break down, conk out, give out, give way, go, go bad]</td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td>['become flat', 'pall']</td>
+      <td></td>
+      <td>lose sparkle or bouquet失去光彩或花束</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td>['break', 'break down', 'conk out', 'fail', 'give out', 'give way', 'go', 'go bad']</td>
+      <td></td>
+      <td>stop operating or functioning停止运作或运作</td>
+      <td>The car died on the road汽车在路上死了</td>
+      <td></td>
+      <td>[give-up the ghost, conk, pop off, go, pass, drop dead, choke, exit, cash in one's chips, buy the farm, expire, break, snuff it, kick the bucket, pass away, perish, decease, croak]</td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>be brought to or as if to the point of death by an intense emotion such as embarrassment, amusement, or shame被尴尬，娱乐或羞耻等激烈情绪带入或仿佛到了死亡的地步</td>
+      <td>We almost died laughing during the show在节目中我们几乎笑死了</td>
+      <td></td>
+      <td></td>
+      <td>[break down, snap, lose it]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>disappear or come to an end消失或结束</td>
+      <td>Their anger died他们的愤怒死了My secret will die with me!我的秘密会和我一起死！</td>
+      <td>[dying, death]</td>
+      <td></td>
+      <td>[disappear, go away, vanish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>feel indifferent towards对此感到无动于衷</td>
+      <td>She died to worldly things and eventually entered a monastery她死于世俗事物并最终进入了修道院</td>
+      <td></td>
+      <td></td>
+      <td>[feel, experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>languish as with love or desire像爱或欲望一样憔悴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ache, yen, pine, languish, yearn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>suffer or face the pain of death遭受或面对死亡的痛苦</td>
+      <td>Martyrs may die every day for their faith烈士们每天都可能为了他们的信仰而死</td>
+      <td>[death]</td>
+      <td>[give-up the ghost, buy the farm, cash in one's chips, choke, conk, croak, decease, drop dead, exit, expire, go, kick the bucket, pass, pass away, perish, pop off, snuff it]</td>
+      <td>[suffer, endure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>suffer spiritual death; be damned (in the religious sense)遭受属灵的死亡;被诅咒（在宗教意义上）</td>
+      <td>Whosoever..believes in me shall never die凡相信我的人永远不会死</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>ver</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>to be on base at the end of an inning, of a player在球员结束时在球员的基础上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>di</td>
+      <td>['dice']</td>
+      <td></td>
+      <td>a small cube with 1 to 6 spots on the six faces; used in gambling to generate random numbers一个小立方体，六个面上有1到6个斑点;用于赌博生成随机数</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cube, square block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>a cutting tool that is fitted into a diestock and used for cutting male (external) screw threads on screws or bolts or pipes or rods切削工具，安装在模具中，用于切割螺钉或螺栓或管或杆上的公（外）螺纹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cutting tool, cutter, cutlery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>die</th>
+      <td>ie</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>di</td>
+      <td></td>
+      <td></td>
+      <td>a device used for shaping metal用于成型金属的装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shaping tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>li</td>
+      <td>['lie down']</td>
+      <td></td>
+      <td>assume a reclining position假设一个斜倚的位置</td>
+      <td>lie down on the bed until you feel better躺在床上，直到你感觉好些</td>
+      <td></td>
+      <td></td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>li</td>
+      <td>['consist', 'dwell', 'lie in']</td>
+      <td></td>
+      <td>originate (in)起源（in）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be, exist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>li</td>
+      <td>['rest']</td>
+      <td></td>
+      <td>have a place in relation to something else有一个与其他事物有关的地方</td>
+      <td>The fate of Bosnia lies in the hands of the West波斯尼亚的命运掌握在西方手中The responsibility rests with the Allies责任在盟军身上</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>li</td>
+      <td></td>
+      <td></td>
+      <td>be and remain in a particular state or condition成为并保持特定的状态或状态</td>
+      <td>lie dormant蛰伏</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>li</td>
+      <td></td>
+      <td></td>
+      <td>be located or situated somewhere; occupy a certain position位于或位于某处;占据一定的位置</td>
+      <td></td>
+      <td></td>
+      <td>[rest]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>li</td>
+      <td></td>
+      <td>[stand, sit]</td>
+      <td>be lying, be prostrate; be in a horizontal position撒谎，匍匐;处于水平位置</td>
+      <td></td>
+      <td></td>
+      <td>[lie down]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>li</td>
+      <td></td>
+      <td></td>
+      <td>tell an untruth; pretend with intent to deceive说实话;假装意图欺骗</td>
+      <td>Don't lie to your parents不要欺骗你的父母She lied when she told me she was only 29当她告诉我她只有29岁时，她撒了谎</td>
+      <td>[lying, liar]</td>
+      <td></td>
+      <td>[mislead, misinform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>li</td>
+      <td>['prevarication']</td>
+      <td></td>
+      <td>a statement that deviates from or perverts the truth一种偏离或歪曲事实的陈述</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[untruth, falsehood, falsity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>li</td>
+      <td>['trygve halvden lie', 'trygve lie']</td>
+      <td></td>
+      <td>Norwegian diplomat who was the first Secretary General of the United Nations (1896-1968)挪威外交官，他是联合国第一任秘书长（1896-1968）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lie</th>
+      <td>ie</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>li</td>
+      <td></td>
+      <td></td>
+      <td>position or manner in which something is situated某事物的位置或方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[position, place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td>['draw']</td>
+      <td></td>
+      <td>finish a game with an equal number of points, goals, etc.用相同数量的积分，目标等完成一场比赛。</td>
+      <td>The teams drew a tie球队取得平局</td>
+      <td>[tier]</td>
+      <td></td>
+      <td>[match, equalise, equal, equalize, equate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td>['attach', 'bind', 'bond']</td>
+      <td></td>
+      <td>create social or emotional ties建立社交或情感联系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[relate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td>['bind'], alos:['tie up', 'tie down']</td>
+      <td>[untie]</td>
+      <td>fasten or secure with a rope, string, or cord用绳子，绳子或绳子固定或固定</td>
+      <td>They tied their victim to the chair他们将受害者绑在椅子上</td>
+      <td>[tier, tying]</td>
+      <td></td>
+      <td>[secure, fix, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td>['connect', 'link', 'link up']</td>
+      <td></td>
+      <td>connect, fasten, or put together two or more pieces连接，紧固或组合两件或更多件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td>['marry', 'splice', 'wed']</td>
+      <td></td>
+      <td>perform a marriage ceremony举行婚礼</td>
+      <td></td>
+      <td></td>
+      <td>[wed, marry, hook up with, get married, get hitched with, espouse, conjoin]</td>
+      <td>[officiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td></td>
+      <td></td>
+      <td>form a knot or bow in形成一个结或弓</td>
+      <td>tie a necktie系领带</td>
+      <td></td>
+      <td></td>
+      <td>[shape, form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td></td>
+      <td></td>
+      <td>limit or restrict to限制或限制</td>
+      <td>I am tied to UNIX我与UNIX联系在一起These big jets are tied to large airports这些大型喷气式飞机与大型机场相连</td>
+      <td></td>
+      <td></td>
+      <td>[restrict, trammel, confine, limit, bound, throttle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td></td>
+      <td></td>
+      <td>make by tying pieces together把碎片捆在一起做</td>
+      <td>The fishermen tied their flies渔民绑了他们的苍蝇</td>
+      <td>[tying]</td>
+      <td></td>
+      <td>[fashion, forge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>ver</td>
+      <td>taɪ</td>
+      <td></td>
+      <td></td>
+      <td>unite musical notes by a tie用领带统一音符</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[link up, link, connect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td>['affiliation', 'association', 'tie-up']</td>
+      <td></td>
+      <td>a social or business relationship社交或商业关系</td>
+      <td>he was sorry he had to sever his ties with other members of the team他很遗憾他不得不切断与团队其他成员的关系</td>
+      <td></td>
+      <td></td>
+      <td>[relationship]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td>['link', 'linkup', 'tie-in']</td>
+      <td></td>
+      <td>a fastener that serves to join or connect用于连接或连接的紧固件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fixing, holdfast, fastener, fastening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td>['crosstie', 'railroad tie', 'sleeper']</td>
+      <td></td>
+      <td>one of the cross braces that support the rails on a railway track其中一个支撑铁路轨道上的铁轨的十字架</td>
+      <td>the British call a railroad tie a sleeper英国称铁路领带为卧铺</td>
+      <td></td>
+      <td></td>
+      <td>[brace, bracing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td>['tie beam']</td>
+      <td></td>
+      <td>a horizontal beam used to prevent two other structural members from spreading apart or separating用于防止两个其他结构构件分开或分离的水平梁</td>
+      <td>he nailed the rafters together with a tie beam他用绑梁将椽子钉在一起</td>
+      <td></td>
+      <td></td>
+      <td>[beam]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td>['draw', 'standoff']</td>
+      <td></td>
+      <td>the finish of a contest in which the score is tied and the winner is undecided比赛结束并且获胜者未定的比赛结束</td>
+      <td>their record was 3 wins, 6 losses and a tie他们的战绩是3胜6负和平局</td>
+      <td></td>
+      <td></td>
+      <td>[finish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td>['necktie']</td>
+      <td></td>
+      <td>neckwear consisting of a long narrow piece of material worn (mostly by men) under a collar and tied in knot at the front领口由一条长而窄的材料组成（主要由男性穿着）在衣领下面并在前面打结</td>
+      <td>he stood in front of the mirror tightening his necktie他站在镜子前收紧领带he wore a vest and tie他穿了一件背心和领带</td>
+      <td></td>
+      <td></td>
+      <td>[neckwear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td></td>
+      <td></td>
+      <td>a cord (or string or ribbon or wire etc.) with which something is tied绳索（或绳子或带子或金属丝等），用来捆绑东西</td>
+      <td>he needed a tie for the packages他需要打包</td>
+      <td></td>
+      <td></td>
+      <td>[cord]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td></td>
+      <td></td>
+      <td>equality of score in a contest比赛中的得分平等</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equation, equivalence, par, equality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tie</th>
+      <td>ie</td>
+      <td>4.58</td>
+      <td>nou</td>
+      <td>taɪ</td>
+      <td></td>
+      <td></td>
+      <td>(music) a slur over two notes of the same pitch; indicates that the note is to be sustained for their combined time value（音乐）同一音高的两个音符的诽谤;表示该音符将按其组合时间值维持</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slur]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pie</th>
+      <td>ie</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>paɪ</td>
+      <td>['proto-indo european']</td>
+      <td></td>
+      <td>a prehistoric unrecorded language that was the ancestor of all Indo-European languages史前未记录的语言，是所有印欧语系的祖先</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indo-european, indo-european language, indo-hittite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pie</th>
+      <td>ie</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>paɪ</td>
+      <td></td>
+      <td></td>
+      <td>dish baked in pastry-lined pan often with a pastry top在糕点衬里的平底锅中烤制的菜肴，通常带有糕点顶部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pastry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vie</th>
+      <td>ie</td>
+      <td>3.20</td>
+      <td>ver</td>
+      <td>vaɪ</td>
+      <td>['compete', 'contend']</td>
+      <td></td>
+      <td>compete for something; engage in a contest; measure oneself against others竞争某事;参加比赛;衡量自己与他人的关系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hie</th>
+      <td>ie</td>
+      <td>1.90</td>
+      <td>ver</td>
+      <td>haɪ</td>
+      <td>['belt along', 'bucket along', 'cannonball along', 'hasten', 'hotfoot', 'pelt along', 'race', 'rush', 'rush along', 'speed', 'step on it']</td>
+      <td></td>
+      <td>move hurridly赶紧行动吧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, go, locomote, travel]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,290 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['irish', 'fishy', 'amish', 'swish', 'dishy', 'whish', 'knish', 'apish']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>irish</th>
+      <td>ish</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>'aɪrɪʃ</td>
+      <td>['irish whiskey', 'irish whisky']</td>
+      <td></td>
+      <td>whiskey made in Ireland chiefly from barley爱尔兰制造的威士忌主要来自大麦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[whisky, whiskey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>irish</th>
+      <td>ish</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>'aɪrɪʃ</td>
+      <td>['irish people']</td>
+      <td></td>
+      <td>people of Ireland or of Irish extraction爱尔兰人或爱尔兰人提取物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[land, country, nation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>irish</th>
+      <td>ish</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>'aɪrɪʃ</td>
+      <td>['irish gaelic']</td>
+      <td></td>
+      <td>the Celtic language of Ireland爱尔兰的凯尔特语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[erse, goidelic, gaelic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>irish</th>
+      <td>ish</td>
+      <td>3.90</td>
+      <td>Non</td>
+      <td>'aɪrɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>of or relating to or characteristic of Ireland or its people属于或关于爱尔兰或其人民的或与之有关的</td>
+      <td></td>
+      <td>[ireland]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fishy</th>
+      <td>ish</td>
+      <td>3.71</td>
+      <td>adj</td>
+      <td>'fɪʃi</td>
+      <td>['funny', 'shady', 'suspect', 'suspicious'], similarTo:['questionable']</td>
+      <td></td>
+      <td>not as expected不像预期的那样</td>
+      <td>there was something fishy about the accident事故有些可疑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>fishy</th>
+      <td>ish</td>
+      <td>3.71</td>
+      <td>Non</td>
+      <td>'fɪʃi</td>
+      <td></td>
+      <td></td>
+      <td>of or relating to or resembling fish属于或关于或类似于鱼类的</td>
+      <td>the soup had a fishy smell这汤有腥味</td>
+      <td>[fish]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amish</th>
+      <td>ish</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>'ɑmɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>an American follower of the Mennonite religion美国门诺派宗教的追随者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mennonite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swish</th>
+      <td>ish</td>
+      <td>2.86</td>
+      <td>ver</td>
+      <td>swɪʃ</td>
+      <td>['lap', 'swoosh', 'swosh']</td>
+      <td></td>
+      <td>move with or cause to move with a whistling or hissing sound与啸声或嘶嘶声一起移动或导致移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swish</th>
+      <td>ish</td>
+      <td>2.86</td>
+      <td>nou</td>
+      <td>swɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>a brushing or rustling sound刷牙或沙沙声</td>
+      <td></td>
+      <td>[swishy]</td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swish</th>
+      <td>ish</td>
+      <td>2.86</td>
+      <td>adj</td>
+      <td>swɪʃ</td>
+      <td>['classy', 'posh'], similarTo:['fashionable', 'stylish']</td>
+      <td></td>
+      <td>elegant and fashionable优雅时尚</td>
+      <td>a swish pastry shop on the Rue du BacRue du Bac上的一家瑞士糕点店</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>dishy</th>
+      <td>ish</td>
+      <td>2.70</td>
+      <td>adj</td>
+      <td>'dɪʃi</td>
+      <td>, similarTo:['beautiful']</td>
+      <td></td>
+      <td>(informal British) sexually attractive（非正式的英国人）性吸引力</td>
+      <td>a dishy blonde一个小小的金发女郎</td>
+      <td>[dish]</td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>whish</th>
+      <td>ish</td>
+      <td>2.56</td>
+      <td>ver</td>
+      <td>hwɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>make a sibilant sound发出s sound的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whish</th>
+      <td>ish</td>
+      <td>2.56</td>
+      <td>ver</td>
+      <td>hwɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>move with a whishing sound随着嘶嘶声的声音移动</td>
+      <td>The car whished past her汽车从她身边走过</td>
+      <td></td>
+      <td></td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knish</th>
+      <td>ish</td>
+      <td>2.03</td>
+      <td>nou</td>
+      <td>knɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>(Yiddish) a baked or fried turnover filled with potato or meat or cheese; often eaten as a snack（意第绪语）用土豆或肉或奶酪烤制或油炸的营业额;经常作为零食吃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turnover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apish</th>
+      <td>ish</td>
+      <td>1.60</td>
+      <td>adj</td>
+      <td>'eɪpɪʃ</td>
+      <td>['apelike'], similarTo:['imitative']</td>
+      <td></td>
+      <td>being or given to servile imitation正在或被赋予奴性模仿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

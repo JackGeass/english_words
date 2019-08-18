@@ -1,0 +1,470 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['teach', 'reach', 'beach', 'peach', 'leach']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>teach</th>
+      <td>each</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>tiʧ</td>
+      <td>['instruct', 'learn']</td>
+      <td></td>
+      <td>impart skills or knowledge to传授技能或知识</td>
+      <td></td>
+      <td>[teachable, teacher, teaching]</td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>teach</th>
+      <td>each</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>tiʧ</td>
+      <td></td>
+      <td></td>
+      <td>accustom gradually to some action or attitude一些行动或态度逐渐适应</td>
+      <td></td>
+      <td>[teacher, teachable]</td>
+      <td></td>
+      <td>[accustom, habituate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>teach</th>
+      <td>each</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>tiʧ</td>
+      <td>['blackbeard', 'edward teach', 'edward thatch', 'thatch']</td>
+      <td></td>
+      <td>an English pirate who operated in the Caribbean and off the Atlantic coast of North America (died in 1718)在加勒比地区和北美洲大西洋沿岸经营的英国海盗（1718年去世）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['reach out'], alos:['reach out']</td>
+      <td></td>
+      <td>move forward or upward in order to touch; also in a metaphorical sense向前或向上移动以触摸;也是一种隐喻意义上的</td>
+      <td>Government reaches out to the people政府向人民伸出援助之手</td>
+      <td>[reaching]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['contact', 'get hold of', 'get through']</td>
+      <td></td>
+      <td>be in or establish communication with进入或建立沟通</td>
+      <td>Our advertisements reach millions我们的广告达数百万</td>
+      <td></td>
+      <td></td>
+      <td>[communicate, intercommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['get to', 'make', 'progress to']</td>
+      <td></td>
+      <td>reach a goal达成目标</td>
+      <td></td>
+      <td>[reaching]</td>
+      <td></td>
+      <td>[achieve, accomplish, attain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['attain', 'hit']</td>
+      <td></td>
+      <td>reach a point in time, or a certain state or level到达某个时间点，或某个州或某个级别</td>
+      <td>This car can reach a speed of 140 miles per hour这辆车可以达到每小时140英里的速度</td>
+      <td></td>
+      <td></td>
+      <td>[arrive, come, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['give', 'hand', 'pass', 'pass on', 'turn over']</td>
+      <td></td>
+      <td>place into the hands or custody of放在手中或保管</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['extend to', 'touch'], alos:['reach out', 'reach into']</td>
+      <td></td>
+      <td>to extend as far as延伸至</td>
+      <td>The sunlight reached the wall阳光照射到墙上Can he reach?他可以到达吗？</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['strain', 'strive']</td>
+      <td></td>
+      <td>to exert much effort or energy付出很多努力或精力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[push, labor, labour, tug, drive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['accomplish', 'achieve', 'attain']</td>
+      <td></td>
+      <td>to gain with effort努力获得</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[succeed, win, bring home the bacon, deliver the goods, come through]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>riʧ</td>
+      <td>['arrive at', 'attain', 'gain', 'hit', 'make']</td>
+      <td></td>
+      <td>reach a destination, either real or abstract到达目的地，无论是真实的还是抽象的</td>
+      <td>The water reached the doorstep水到达门口</td>
+      <td></td>
+      <td>[make]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>riʧ</td>
+      <td>['reaching', 'stretch']</td>
+      <td></td>
+      <td>the act of physically reaching or thrusting out实际到达或推出的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motion, movement, move, motility]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>riʧ</td>
+      <td>['compass', 'grasp', 'range']</td>
+      <td></td>
+      <td>the limit of capability能力的极限</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[capability, potentiality, capableness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>riʧ</td>
+      <td>['range']</td>
+      <td></td>
+      <td>the limits within which something can be effective事物有效的限度</td>
+      <td>he was beyond the reach of their fire他超出了他们的火力范围</td>
+      <td></td>
+      <td></td>
+      <td>[limit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>reach</th>
+      <td>each</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>riʧ</td>
+      <td>['ambit', 'compass', 'orbit', 'range', 'scope']</td>
+      <td></td>
+      <td>an area in which something acts or operates or has power or control:某物作用或操作或具有动力或控制力的区域：</td>
+      <td>outside the reach of the law超出法律范围</td>
+      <td></td>
+      <td></td>
+      <td>[extent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>beach</th>
+      <td>each</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>biʧ</td>
+      <td></td>
+      <td></td>
+      <td>land on a beach降落在海滩上</td>
+      <td>the ship beached near the port船靠近港口搁浅</td>
+      <td></td>
+      <td></td>
+      <td>[land, set down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>beach</th>
+      <td>each</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>biʧ</td>
+      <td></td>
+      <td></td>
+      <td>an area of sand sloping down to the water of a sea or lake一片沙地，一直延伸到大海或湖泊的水面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[geological formation, formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>peach</th>
+      <td>each</td>
+      <td>3.71</td>
+      <td>ver</td>
+      <td>piʧ</td>
+      <td>['babble', 'babble out', 'blab', 'blab out', 'let the cat out of the bag', 'sing', 'spill the beans', 'talk', 'tattle']</td>
+      <td></td>
+      <td>divulge confidential information or secrets泄露机密信息或秘密</td>
+      <td></td>
+      <td></td>
+      <td>[spill, talk]</td>
+      <td>[unwrap, discover, divulge, expose, give away, let on, let out, reveal, uncover, break, bring out, disclose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>peach</th>
+      <td>each</td>
+      <td>3.71</td>
+      <td>nou</td>
+      <td>piʧ</td>
+      <td>['beauty', 'dish', 'knockout', 'looker', 'lulu', 'mantrap', 'ravisher', 'smasher', 'stunner', 'sweetheart']</td>
+      <td></td>
+      <td>a very attractive or seductive looking woman一个非常有魅力或诱人的女人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult female, woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>peach</th>
+      <td>each</td>
+      <td>3.71</td>
+      <td>nou</td>
+      <td>piʧ</td>
+      <td>['apricot', 'salmon pink', 'yellowish pink']</td>
+      <td></td>
+      <td>a shade of pink tinged with yellow浅黄色的粉红色</td>
+      <td></td>
+      <td>[peachy]</td>
+      <td></td>
+      <td>[pink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>peach</th>
+      <td>each</td>
+      <td>3.71</td>
+      <td>nou</td>
+      <td>piʧ</td>
+      <td>['peach tree', 'prunus persica']</td>
+      <td></td>
+      <td>cultivated in temperate regions在温带地区种植</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fruit tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>peach</th>
+      <td>each</td>
+      <td>3.71</td>
+      <td>nou</td>
+      <td>piʧ</td>
+      <td></td>
+      <td></td>
+      <td>downy juicy fruit with sweet yellowish or whitish flesh柔软多汁的水果，带有淡黄色或带白色的果肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edible fruit, stone fruit, drupe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>leach</th>
+      <td>each</td>
+      <td>2.38</td>
+      <td>ver</td>
+      <td>liʧ</td>
+      <td>['percolate']</td>
+      <td></td>
+      <td>permeate or penetrate gradually渗透或逐渐渗透</td>
+      <td>the fertilizer leached into the ground肥料浸入地下</td>
+      <td></td>
+      <td></td>
+      <td>[dribble, trickle, filter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>leach</th>
+      <td>each</td>
+      <td>2.38</td>
+      <td>ver</td>
+      <td>liʧ</td>
+      <td>['strip']</td>
+      <td></td>
+      <td>remove substances from by a percolating liquid通过渗滤液去除物质</td>
+      <td>leach the soil浸出土壤</td>
+      <td></td>
+      <td></td>
+      <td>[withdraw, remove, take, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>leach</th>
+      <td>each</td>
+      <td>2.38</td>
+      <td>ver</td>
+      <td>liʧ</td>
+      <td></td>
+      <td></td>
+      <td>cause (a liquid) to leach or percolate导致（液体）浸出或渗出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[take away, withdraw, take, remove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>leach</th>
+      <td>each</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>liʧ</td>
+      <td>['leaching']</td>
+      <td></td>
+      <td>the process of leaching浸出的过程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[action, natural action, activity, natural process]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

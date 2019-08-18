@@ -1,0 +1,2000 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['trip', 'ship', 'slip', 'skip', 'chip', 'flip', 'grip', 'whip', 'clip', 'drip', 'snip', 'blip', 'yips', 'tipi']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>trɪp</td>
+      <td>['get off', 'trip out', 'turn on']</td>
+      <td></td>
+      <td>get high, stoned, or drugged得高，扔石头或吸毒</td>
+      <td>He trips every weekend他每周末都会去旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>trɪp</td>
+      <td>['activate', 'actuate', 'set off', 'spark', 'spark off', 'touch off', 'trigger', 'trigger off']</td>
+      <td></td>
+      <td>put in motion or move to act采取行动或采取行动</td>
+      <td></td>
+      <td>[tripper]</td>
+      <td></td>
+      <td>[pioneer, initiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>trɪp</td>
+      <td>['stumble']</td>
+      <td></td>
+      <td>miss a step and fall or nearly fall错过了一步，跌倒或接近跌倒</td>
+      <td></td>
+      <td>[tripper]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>trɪp</td>
+      <td>['trip up']</td>
+      <td></td>
+      <td>cause to stumble导致绊倒</td>
+      <td>The questions on the test tripped him up关于测试的问题使他绊倒了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>trɪp</td>
+      <td>['jaunt', 'travel']</td>
+      <td></td>
+      <td>make a trip for pleasure为了愉快的旅行</td>
+      <td></td>
+      <td>[tripper]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>trɪp</td>
+      <td>['tripper']</td>
+      <td></td>
+      <td>a catch mechanism that acts as a switch一个充当开关的捕获机制</td>
+      <td>the pressure activates the tripper and releases the water压力激活脱扣器并释放水</td>
+      <td></td>
+      <td></td>
+      <td>[stop, catch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>trɪp</td>
+      <td>['slip']</td>
+      <td></td>
+      <td>an accidental misstep threatening (or causing) a fall一次意外的失误威胁（或造成）跌倒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mishap, misadventure, mischance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>trɪp</td>
+      <td>['head trip']</td>
+      <td></td>
+      <td>an exciting or stimulating experience令人兴奋或刺激的体验</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>trɪp</td>
+      <td>['misstep', 'stumble', 'trip-up']</td>
+      <td></td>
+      <td>an unintentional but embarrassing blunder一个无意但令人尴尬的错误</td>
+      <td>he recited the whole poem without a single trip他没有一次旅行就背诵了整首诗he arranged his robes to avoid a trip-up later他安排了长袍以避免以后绊倒</td>
+      <td></td>
+      <td></td>
+      <td>[fuckup, blooper, blunder, boner, boo-boo, botch, bungle, flub, foul-up, bloomer, pratfall]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>trɪp</td>
+      <td></td>
+      <td></td>
+      <td>a hallucinatory experience induced by drugs由药物引起的幻觉体验</td>
+      <td>an acid trip酸旅行</td>
+      <td></td>
+      <td></td>
+      <td>[hallucination]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>trɪp</td>
+      <td></td>
+      <td></td>
+      <td>a journey for some purpose (usually including the return)出于某种目的的旅程（通常包括返回）</td>
+      <td>he took a trip to the shopping center他去了购物中心</td>
+      <td></td>
+      <td></td>
+      <td>[journeying, journey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trip</th>
+      <td>ip</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>trɪp</td>
+      <td></td>
+      <td></td>
+      <td>a light or nimble tread轻盈或灵活的胎面</td>
+      <td>he heard the trip of women's feet overhead他听到女人的脚在头顶上行走</td>
+      <td></td>
+      <td></td>
+      <td>[step]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ship</th>
+      <td>ip</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>ʃɪp</td>
+      <td>['embark']</td>
+      <td></td>
+      <td>go on board去吧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[board, get on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ship</th>
+      <td>ip</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>ʃɪp</td>
+      <td>['send', 'transport']</td>
+      <td></td>
+      <td>transport commercially商业运输</td>
+      <td></td>
+      <td>[shipment, shipper, shipping]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ship</th>
+      <td>ip</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>ʃɪp</td>
+      <td></td>
+      <td></td>
+      <td>hire for work on a ship雇用在船上工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[engage, employ, hire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ship</th>
+      <td>ip</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>ʃɪp</td>
+      <td></td>
+      <td></td>
+      <td>place on board a ship放在船上</td>
+      <td>ship the cargo in the hold of the vessel将货物运到船舱</td>
+      <td></td>
+      <td></td>
+      <td>[position, pose, set, lay, place, put]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ship</th>
+      <td>ip</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>ʃɪp</td>
+      <td></td>
+      <td></td>
+      <td>travel by ship乘船旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[journey, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ship</th>
+      <td>ip</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>ʃɪp</td>
+      <td></td>
+      <td></td>
+      <td>a vessel that carries passengers or freight载运乘客或货物的船只</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[watercraft, vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>['skid', 'slew', 'slide', 'slue'], alos:['slip up']</td>
+      <td></td>
+      <td>move obliquely or sideways, usually in an uncontrolled manner通常以不受控制的方式倾斜或侧向移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[glide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>['steal'], alos:['slip away']</td>
+      <td></td>
+      <td>move stealthily悄悄地移动</td>
+      <td>The ship slipped away in the darkness船在黑暗中滑倒了</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>['dislocate', 'luxate', 'splay']</td>
+      <td></td>
+      <td>move out of position离开了位置</td>
+      <td></td>
+      <td>[slippage]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>["slip one's mind"]</td>
+      <td></td>
+      <td>pass out of one's memory传递出一个人的记忆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[draw a blank, forget, block, blank out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>['sneak']</td>
+      <td></td>
+      <td>pass on stealthily偷偷地传递</td>
+      <td>He slipped me the key when nobody was looking当没人看的时候，他把钥匙弄错了</td>
+      <td></td>
+      <td></td>
+      <td>[pass on, reach, pass, give, hand, turn over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>['err', 'mistake'], alos:['slip up']</td>
+      <td></td>
+      <td>to make a mistake or be incorrect犯错误或错误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>['drop away', 'drop off', 'fall away']</td>
+      <td></td>
+      <td>get worse恶化</td>
+      <td>My grades are slipping我的成绩正在下降</td>
+      <td>[slippage]</td>
+      <td></td>
+      <td>[decline, worsen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td></td>
+      <td></td>
+      <td>cause to move with a smooth or sliding motion导致以平滑或滑动的方式移动</td>
+      <td>he slipped the bolt into place他把螺栓滑到了位置</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td></td>
+      <td></td>
+      <td>insert inconspicuously or quickly or quietly插入不明显或快速或安静地插入</td>
+      <td>He slipped some money into the waiter's hand他把一些钱塞进了服务员的手里</td>
+      <td></td>
+      <td></td>
+      <td>[insert, stick in, put in, inclose, enclose, introduce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td></td>
+      <td></td>
+      <td>move easily轻松移动</td>
+      <td>slip into something comfortable滑入舒适的东西</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>slɪp</td>
+      <td>, alos:['slip by', 'slip away']</td>
+      <td></td>
+      <td>move smoothly and easily顺利，轻松地移动</td>
+      <td>the bolt slipped into place螺栓滑到位water slipped from the polished marble水从抛光的大理石上滑落</td>
+      <td></td>
+      <td></td>
+      <td>[get away, escape, break loose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['eluding', 'elusion']</td>
+      <td></td>
+      <td>the act of avoiding capture (especially by cunning)避免捕获的行为（特别是通过狡猾）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[evasion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['case', 'pillow slip', 'pillowcase']</td>
+      <td></td>
+      <td>bed linen consisting of a cover for a pillow床单，包括枕头套</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed linen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['sideslip', 'skid']</td>
+      <td></td>
+      <td>an unexpected slide意外的幻灯片</td>
+      <td></td>
+      <td>[slippy]</td>
+      <td></td>
+      <td>[slide, coast, glide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['sideslip']</td>
+      <td></td>
+      <td>a flight maneuver; aircraft slides sideways in the air飞行机动;飞机在空中侧身滑行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flight maneuver, airplane maneuver]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['slick', 'slickness', 'slipperiness']</td>
+      <td></td>
+      <td>a slippery smoothness光滑的滑爽</td>
+      <td></td>
+      <td>[slippy]</td>
+      <td></td>
+      <td>[smoothness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['faux pas', 'gaffe', 'gaucherie', 'solecism']</td>
+      <td></td>
+      <td>a socially awkward or tactless act一种社交尴尬或不熟练的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blunder, flub, foul-up, boner, pratfall, boo-boo, bungle, blooper, botch, bloomer, fuckup]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['cutting']</td>
+      <td></td>
+      <td>a part (sometimes a root or leaf or bud) removed from a plant to propagate a new plant through rooting or grafting从植物中移出的一部分（有时是根或叶或芽）通过生根或嫁接繁殖新植物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stem, stalk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['slip of paper']</td>
+      <td></td>
+      <td>a small sheet of paper一小张纸</td>
+      <td>a receipt slip收据单a withdrawal slip提款单</td>
+      <td></td>
+      <td></td>
+      <td>[sheet of paper, piece of paper, sheet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['trip']</td>
+      <td></td>
+      <td>an accidental misstep threatening (or causing) a fall一次意外的失误威胁（或造成）跌倒</td>
+      <td>he blamed his slip on the ice他把他的滑倒在冰上the jolt caused many slips and a few spills这种颠簸引起了许多滑倒和一些泄漏</td>
+      <td></td>
+      <td></td>
+      <td>[mischance, mishap, misadventure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['miscue', 'parapraxis', 'slip-up']</td>
+      <td></td>
+      <td>a minor inadvertent mistake usually observed in speech or writing or in small accidents or memory lapses etc.通常在言语或写作或小型事故或记忆失误等情况下观察到的轻微无意识错误。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mistake, fault, error]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['berth', 'moorage', 'mooring']</td>
+      <td></td>
+      <td>a place where a craft can be made fast一个可以快速制作工艺的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[anchorage, anchorage ground]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['strip']</td>
+      <td></td>
+      <td>artifact consisting of a narrow flat piece of material由一块狭窄的扁平材料组成的人工制品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artefact, artifact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td>['chemise', 'shift', 'shimmy', 'teddy']</td>
+      <td></td>
+      <td>a woman's sleeveless undergarment一个女人的无袖内衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[undergarment, unmentionable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td></td>
+      <td></td>
+      <td>a young and slender person一个年轻苗条的人</td>
+      <td>he's a mere slip of a lad他只是一个小伙子</td>
+      <td></td>
+      <td></td>
+      <td>[young person, youth, spring chicken, younker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slip</th>
+      <td>ip</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>slɪp</td>
+      <td></td>
+      <td></td>
+      <td>potter's clay that is thinned and used for coating or decorating ceramics陶器的粘土被稀释并用于涂层或装饰陶瓷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[potter's clay, potter's earth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>skɪp</td>
+      <td>['hop', 'hop-skip'], alos:['skip over']</td>
+      <td></td>
+      <td>jump lightly轻轻一跳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spring, bound, leap, jump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>skɪp</td>
+      <td>['jump', 'pass over', 'skip over']</td>
+      <td></td>
+      <td>bypass旁路</td>
+      <td>He skipped a row in the text and so the sentence was incomprehensible他在文中跳过了一行，所以这句话难以理解</td>
+      <td></td>
+      <td></td>
+      <td>[overlook, drop, leave out, miss, neglect, omit, overleap, pretermit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>skɪp</td>
+      <td>['bound off']</td>
+      <td></td>
+      <td>bound off one point after another一点接一个地结束</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spring, ricochet, reverberate, recoil, resile, rebound, bounce, bound, take a hop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>skɪp</td>
+      <td>['decamp', 'vamoose']</td>
+      <td></td>
+      <td>leave suddenly突然离开</td>
+      <td>skip town跳过城镇</td>
+      <td></td>
+      <td></td>
+      <td>[go away, go forth, leave]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>skɪp</td>
+      <td>['skim', 'skitter']</td>
+      <td></td>
+      <td>cause to skip over a surface导致跳过表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>skɪp</td>
+      <td>['cut']</td>
+      <td></td>
+      <td>intentionally fail to attend故意不参加</td>
+      <td></td>
+      <td>[skipper]</td>
+      <td></td>
+      <td>[miss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>skɪp</td>
+      <td>['omission']</td>
+      <td></td>
+      <td>a mistake resulting from neglect疏忽导致的错误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fault, error, mistake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skip</th>
+      <td>ip</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>skɪp</td>
+      <td></td>
+      <td></td>
+      <td>a gait in which steps and hops alternate步数和跳跃交替的步态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>tʃɪp</td>
+      <td>['break away', 'break off', 'chip off', 'come off']</td>
+      <td></td>
+      <td>break off (a piece from a whole)中断（一个整体）</td>
+      <td>Her tooth chipped她的牙齿碎了</td>
+      <td>[chipping]</td>
+      <td></td>
+      <td>[separate, divide, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>tʃɪp</td>
+      <td>['nick']</td>
+      <td></td>
+      <td>cut a nick into切入了一个缺口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>tʃɪp</td>
+      <td>['break off', 'cut off', 'knap'], alos:['chip at']</td>
+      <td></td>
+      <td>break a small piece off from打破一小块</td>
+      <td>chip the glass切碎玻璃chip a tooth切齿</td>
+      <td>[chipping]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>tʃɪp</td>
+      <td></td>
+      <td></td>
+      <td>form by chipping通过切削形式</td>
+      <td>They chipped their names in the stone他们在石头上打了个名字</td>
+      <td></td>
+      <td></td>
+      <td>[work, forge, form, mold, mould, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>tʃɪp</td>
+      <td></td>
+      <td></td>
+      <td>play a chip shot打一筹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shoot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['chipping', 'splintering']</td>
+      <td></td>
+      <td>the act of chipping something切碎的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[breakage, breaking, break]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['poker chip']</td>
+      <td></td>
+      <td>a small disk-shaped counter used to represent money when gambling赌博时用来代表金钱的小型圆盘形计数器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[counter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['micro chip', 'microchip', 'microprocessor chip', 'silicon chip']</td>
+      <td></td>
+      <td>electronic equipment consisting of a small crystal of a silicon semiconductor fabricated to carry out a number of electronic functions in an integrated circuit电子设备由硅半导体晶体组成，用于在集成电路中实现许多电子功能</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[semiconductor device, semiconductor unit, semiconductor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['check']</td>
+      <td></td>
+      <td>a mark left after a small piece has been chopped or broken off of something在一小块碎片被切碎或折断之后留下的痕迹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mar, blemish, defect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['chip shot']</td>
+      <td></td>
+      <td>(golf) a low running approach shot（高尔夫球）低射程射门</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[approach shot, approach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['buffalo chip', 'cow chip', 'cow dung']</td>
+      <td></td>
+      <td>a piece of dried bovine dung一块干牛粪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[muck, dung, droppings]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['crisp', 'potato chip', 'saratoga chip']</td>
+      <td></td>
+      <td>a thin crisp slice of potato fried in deep fat一块薄薄的土豆片，炸成深厚的脂肪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[snack food]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td>['bit', 'flake', 'fleck', 'scrap']</td>
+      <td></td>
+      <td>a small fragment of something broken off from the whole从整体中分离出来的一小段碎片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fragment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chip</th>
+      <td>ip</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>tʃɪp</td>
+      <td></td>
+      <td></td>
+      <td>a triangular wooden float attached to the end of a log line一个三角形木制浮子，连接在原木线的末端</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[float]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['flick', 'leaf', 'riff', 'riffle', 'thumb']</td>
+      <td></td>
+      <td>look through a book or other written material翻阅书籍或其他书面材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[peruse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['alternate', 'flip-flop', 'interchange', 'switch', 'tack']</td>
+      <td></td>
+      <td>reverse (a direction, attitude, or course of action)逆转（方向，态度或行动方针）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, reverse, change by reversal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['switch', 'throw']</td>
+      <td></td>
+      <td>cause to go on or to be engaged or set in operation导致继续或正在接受或开始运作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mesh, engage, operate, lock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['toss']</td>
+      <td></td>
+      <td>lightly throw to see which side comes up轻轻地看看哪一方出现</td>
+      <td>I don't know what to do--I may as well flip a coin!我不知道该怎么办 - 我也可以翻硬币！</td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['flip over', 'turn over']</td>
+      <td></td>
+      <td>turn upside down, or throw so as to reverse颠倒过来，或者反转</td>
+      <td>flip over the pork chop翻过猪排</td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['flip out']</td>
+      <td></td>
+      <td>react in an excited, delighted, or surprised way以兴奋，高兴或惊讶的方式做出反应</td>
+      <td>he flipped when he heard that he was accepted into Princeton University当他听说他被普林斯顿大学录取时，他翻了个身</td>
+      <td></td>
+      <td></td>
+      <td>[react, respond]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['flip out']</td>
+      <td></td>
+      <td>go mad, go crazy生气，发疯</td>
+      <td>He flipped when he heard that he was being laid off当他听说他被解雇时，他翻了个身</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['pitch', 'sky', 'toss']</td>
+      <td></td>
+      <td>throw or toss with a light motion投掷或折腾轻微运动</td>
+      <td>flip me the beachball把沙滩球翻转过来</td>
+      <td></td>
+      <td></td>
+      <td>[fling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['twitch']</td>
+      <td></td>
+      <td>toss with a sharp movement so as to cause to turn over in the air以急剧的动作折腾，以便在空中翻转</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td>['flick']</td>
+      <td></td>
+      <td>cause to move with a flick导致用电影移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>flɪp</td>
+      <td></td>
+      <td></td>
+      <td>move with a flick or light motion用轻弹或轻微动作移动</td>
+      <td></td>
+      <td>[flipper]</td>
+      <td></td>
+      <td>[impel, propel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>flɪp</td>
+      <td>['toss']</td>
+      <td></td>
+      <td>the act of flipping a coin翻转硬币的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>flɪp</td>
+      <td>['somersault', 'somersaulting', 'somerset', 'summersault', 'summerset']</td>
+      <td></td>
+      <td>an acrobatic feat in which the feet roll over the head (either forward or backward) and return一种杂技的壮举，双脚在头上滚动（向前或向后）并返回</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tumble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>flɪp</td>
+      <td>['pass', 'toss']</td>
+      <td></td>
+      <td>(sports) the act of throwing the ball to another member of your team（体育）向球队的另一名成员扔球的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>flɪp</td>
+      <td></td>
+      <td></td>
+      <td>a dive in which the diver somersaults before entering the water潜水员在进入水中之前翻筋斗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dive, diving]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>flɪp</td>
+      <td></td>
+      <td></td>
+      <td>a sudden, quick movement一个突然的，快速的运动</td>
+      <td>with a flip of the wrist翻转手腕the fish flipped over鱼翻过来</td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>flɪp</td>
+      <td></td>
+      <td></td>
+      <td>hot or cold alcoholic mixed drink containing a beaten egg含有打蛋的热或冷酒精混合饮料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mixed drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flip</th>
+      <td>ip</td>
+      <td>4.07</td>
+      <td>adj</td>
+      <td>flɪp</td>
+      <td>['impudent', 'insolent', 'snotty-nosed'], similarTo:['disrespectful']</td>
+      <td></td>
+      <td>marked by casual disrespect随意不尊重</td>
+      <td>a flip answer to serious question回答严肃的问题</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>grɪp</td>
+      <td>['grapple']</td>
+      <td></td>
+      <td>to grip or seize, as in a wrestling match抓住或抓住，如在摔跤比赛中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clutch, prehend, seize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>grɪp</td>
+      <td>['fascinate', 'spellbind', 'transfix']</td>
+      <td></td>
+      <td>to render motionless, as with a fixed stare or by arousing terror or awe一动不动，如固定的凝视或激起恐惧或敬畏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>grɪp</td>
+      <td></td>
+      <td></td>
+      <td>hold fast or firmly保持快速或坚定</td>
+      <td>He gripped the steering wheel他抓住方向盘</td>
+      <td></td>
+      <td></td>
+      <td>[clutch, prehend, seize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>grɪp</td>
+      <td>['bag', 'suitcase', 'traveling bag', 'travelling bag']</td>
+      <td></td>
+      <td>a portable rectangular container for carrying clothes便携式长方形容器，用于携带衣服</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[luggage, baggage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>grɪp</td>
+      <td>['adhesive friction', 'traction']</td>
+      <td></td>
+      <td>the friction between a body and the surface on which it moves (as between an automobile tire and the road)车身与其移动的表面之间的摩擦（在汽车轮胎和道路之间）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[friction, rubbing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>grɪp</td>
+      <td>['handgrip', 'handle', 'hold']</td>
+      <td></td>
+      <td>the appendage to an object that is designed to be held in order to use or move it设计用于使用或移动物体的物体的附属物</td>
+      <td>it was an old briefcase but it still had a good grip这是一个旧的公文包，但它仍然有很好的抓地力</td>
+      <td></td>
+      <td></td>
+      <td>[appendage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>grɪp</td>
+      <td>['bobby pin', 'hairgrip']</td>
+      <td></td>
+      <td>a flat wire hairpin whose prongs press tightly together; used to hold bobbed hair in place扁平的发夹，其尖头紧紧地压在一起;过去常常把蓬松的头发固定住</td>
+      <td>in Britain they call a bobby pin a grip在英国，他们称一个发夹是一个抓地力</td>
+      <td></td>
+      <td></td>
+      <td>[hairpin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>grɪp</td>
+      <td>['grasp']</td>
+      <td></td>
+      <td>an intellectual hold or understanding知识分子的持有或理解</td>
+      <td>a good grip on French history很好地掌握法国历史they kept a firm grip on the two top priorities他们牢牢抓住两个重中之重he was in the grip of a powerful emotion他处于一种强烈的情感中</td>
+      <td></td>
+      <td></td>
+      <td>[influence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>grɪp</td>
+      <td>['clasp', 'clench', 'clutch', 'clutches', 'grasp', 'hold']</td>
+      <td></td>
+      <td>the act of grasping抓住的行为</td>
+      <td>he has a strong grip for an old man他对一个老人有很强的把握</td>
+      <td></td>
+      <td></td>
+      <td>[prehension, seizing, taking hold, grasping]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grip</th>
+      <td>ip</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>grɪp</td>
+      <td></td>
+      <td></td>
+      <td>worker who moves the camera around while a film or television show is being made在制作电影或电视节目时移动相机的工作人员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[skilled worker, skilled workman, trained worker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>hwɪp</td>
+      <td>['flog', 'lash', 'lather', 'slash', 'strap', 'trounce', 'welt']</td>
+      <td></td>
+      <td>beat severely with a whip or rod用鞭子或杖严重击打</td>
+      <td></td>
+      <td>[whipper, whipping]</td>
+      <td></td>
+      <td>[beat, beat up, work over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>hwɪp</td>
+      <td>['blister', 'scald']</td>
+      <td></td>
+      <td>subject to harsh criticism受到严厉的批评</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lash out, assault, attack, snipe, round, assail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>hwɪp</td>
+      <td>['whisk'], alos:['whip up']</td>
+      <td></td>
+      <td>whip with or as if with a wire whisk用或用拂尘鞭打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beat, scramble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>hwɪp</td>
+      <td>['lash']</td>
+      <td></td>
+      <td>strike as if by whipping好像是通过鞭打打击</td>
+      <td>The curtain whipped her face窗帘鞭打了她的脸</td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>hwɪp</td>
+      <td>['mop up', 'pip', 'rack up', 'worst']</td>
+      <td></td>
+      <td>defeat thoroughly彻底失败</td>
+      <td></td>
+      <td>[whipping]</td>
+      <td></td>
+      <td>[beat, beat out, crush, trounce, vanquish, shell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>hwɪp</td>
+      <td></td>
+      <td></td>
+      <td>thrash about flexibly in the manner of a whiplash以鞭打的方式灵活地捶打</td>
+      <td>The tall grass whipped in the wind高高的草在风中鞭打</td>
+      <td></td>
+      <td></td>
+      <td>[thresh about, toss, jactitate, slash, thrash, thrash about, thresh, convulse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>hwɪp</td>
+      <td>['party whip']</td>
+      <td></td>
+      <td>a legislator appointed by the party to enforce discipline由党指定执行纪律的立法者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[legislator]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>hwɪp</td>
+      <td>['lash', 'whiplash']</td>
+      <td></td>
+      <td>a quick blow delivered with a whip or whiplike object用鞭子或鞭子般的物体快速打击</td>
+      <td>the whip raised a red welt鞭子举起一个红色的贴边</td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>hwɪp</td>
+      <td></td>
+      <td></td>
+      <td>a dessert made of sugar and stiffly beaten egg whites or cream and usually flavored with fruit一种由糖制成的甜点和经过搅打的蛋白或奶油，通常用水果调味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[afters, sweet, dessert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>hwɪp</td>
+      <td></td>
+      <td></td>
+      <td>an instrument with a handle and a flexible lash that is used for whipping带有手柄和柔性睫毛的仪器，用于搅打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whip</th>
+      <td>ip</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>hwɪp</td>
+      <td></td>
+      <td></td>
+      <td>(golf) the flexibility of the shaft of a golf club（高尔夫）高尔夫球杆杆身的柔韧性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flexibility, flexibleness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>klɪp</td>
+      <td>['crop', 'cut back', 'dress', 'lop', 'prune', 'snip', 'trim']</td>
+      <td></td>
+      <td>cultivate, tend, and cut back the growth of培养，倾向和削减生长</td>
+      <td></td>
+      <td>[clipping, clipper]</td>
+      <td></td>
+      <td>[thin out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>klɪp</td>
+      <td>['nip', 'nip off', 'snip', 'snip off']</td>
+      <td></td>
+      <td>sever or remove by pinching or snipping通过挤压或剪断切断或移除</td>
+      <td></td>
+      <td>[clipping, clipper]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>klɪp</td>
+      <td>['curtail', 'cut short']</td>
+      <td></td>
+      <td>terminate or abbreviate before its intended or proper end or its full extent在其预定或适当的结束或其全部范围之前终止或缩写</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shorten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>klɪp</td>
+      <td>['jog', 'trot']</td>
+      <td></td>
+      <td>run at a moderately swift pace以适度的速度跑步</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>klɪp</td>
+      <td></td>
+      <td>[unclip]</td>
+      <td>attach with a clip用夹子附上</td>
+      <td>clip the papers together将文件夹在一起</td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>klɪp</td>
+      <td>['cartridge clip', 'cartridge holder', 'magazine']</td>
+      <td></td>
+      <td>a metal frame or container holding cartridges; can be inserted into an automatic gun金属框架或容器保持盒;可插入自动喷枪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supply chamber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>klɪp</td>
+      <td>['time']</td>
+      <td></td>
+      <td>an instance or single occasion for some event某个事件的实例或单个场合</td>
+      <td>he could do ten at a clip他可以在一个片段做十个</td>
+      <td></td>
+      <td></td>
+      <td>[example, case, instance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>klɪp</td>
+      <td>['clipping', 'snip']</td>
+      <td></td>
+      <td>the act of clipping or snipping削减或剪断的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut, cutting off, cutting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>klɪp</td>
+      <td></td>
+      <td></td>
+      <td>an article of jewelry that can be clipped onto a hat or dress可以夹在帽子或衣服上的珠宝物品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jewelry, jewellery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>klɪp</td>
+      <td></td>
+      <td></td>
+      <td>any of various small fasteners used to hold loose articles together用于将松散物品固定在一起的各种小紧固件中的任何一种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[holdfast, fastener, fastening, fixing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clip</th>
+      <td>ip</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>klɪp</td>
+      <td></td>
+      <td></td>
+      <td>a sharp slanting blow尖锐的打击</td>
+      <td>he gave me a clip on the ear他给了我一个耳朵夹子</td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drip</th>
+      <td>ip</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>drɪp</td>
+      <td>['dribble', 'drop']</td>
+      <td></td>
+      <td>let or cause to fall in drops让或导致跌倒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drip</th>
+      <td>ip</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>drɪp</td>
+      <td></td>
+      <td></td>
+      <td>fall in drops落在滴</td>
+      <td>Water is dripping from the faucet水从龙头滴下</td>
+      <td>[drippings]</td>
+      <td>[drop, dribble]</td>
+      <td>[come down, descend, fall, go down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drip</th>
+      <td>ip</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>drɪp</td>
+      <td>['dripping']</td>
+      <td></td>
+      <td>the sound of a liquid falling drop by drop液体声一滴一滴地落下</td>
+      <td>the constant sound of dripping irritated him不断的滴水声刺激了他</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drip</th>
+      <td>ip</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>drɪp</td>
+      <td>['dribble', 'trickle']</td>
+      <td></td>
+      <td>flowing in drops; the formation and falling of drops of liquid流下来;液滴的形成和下落</td>
+      <td>there's a drip through the roof屋顶上有一滴水</td>
+      <td>[drippy]</td>
+      <td></td>
+      <td>[flow, flowing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drip</th>
+      <td>ip</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>drɪp</td>
+      <td>['drip mold', 'drip mould']</td>
+      <td></td>
+      <td>(architecture) a projection from a cornice or sill designed to protect the area below from rainwater (as over a window or doorway)（建筑）檐口或窗台的投影设计用于保护下方区域免受雨水影响（如窗户或门口）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snip</th>
+      <td>ip</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>snɪp</td>
+      <td>['clip', 'crop', 'cut back', 'dress', 'lop', 'prune', 'trim']</td>
+      <td></td>
+      <td>cultivate, tend, and cut back the growth of培养，倾向和削减生长</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thin out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snip</th>
+      <td>ip</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>snɪp</td>
+      <td>['clip', 'nip', 'nip off', 'snip off']</td>
+      <td></td>
+      <td>sever or remove by pinching or snipping通过挤压或剪断切断或移除</td>
+      <td></td>
+      <td>[snipping]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snip</th>
+      <td>ip</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>snɪp</td>
+      <td>['snippet', 'snipping']</td>
+      <td></td>
+      <td>a small piece of anything (especially a piece that has been snipped off)一小块东西（特别是一块被剪掉的东西）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snip</th>
+      <td>ip</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>snɪp</td>
+      <td>['clip', 'clipping']</td>
+      <td></td>
+      <td>the act of clipping or snipping削减或剪断的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cutting, cutting off, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blip</th>
+      <td>ip</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>blɪp</td>
+      <td>['pip', 'radar target']</td>
+      <td></td>
+      <td>a radar echo displayed so as to show the position of a reflecting surface显示雷达回波以显示反射表面的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radar echo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blip</th>
+      <td>ip</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>blɪp</td>
+      <td></td>
+      <td></td>
+      <td>a sudden minor shock or meaningless interruption突然的轻微震动或无意义的中断</td>
+      <td>the market had one bad blip today市场今天有一个坏消息you can't react to the day-to-day blips你不能对日常的昙花一现做出反应renewed jitters in the wake of a blip in retail sales零售销售一塌糊涂，再度引发紧张情绪</td>
+      <td></td>
+      <td></td>
+      <td>[blow, shock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yips</th>
+      <td>ip</td>
+      <td>2.24</td>
+      <td>nou</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>nervous tension that causes an athlete to fail (especially causes golfers to miss short putts)导致运动员失灵的神经紧张（特别是导致高尔夫球手错过短推）</td>
+      <td>to avoid the yips he changed his style of putting为了避免他的改变，他改变了他的推杆风格</td>
+      <td></td>
+      <td></td>
+      <td>[stress, tenseness, tension]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tipi</th>
+      <td>ip</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>'tipi</td>
+      <td>['teepee', 'tepee']</td>
+      <td></td>
+      <td>a Native American tent; usually of conical shape美洲原住民帐篷;通常是圆锥形的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[collapsible shelter, indian lodge, lodge, tent]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,725 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['news', 'crew', 'drew', 'chew', 'stew', 'brew', 'anew', 'sewn', 'newt', 'slew', 'lewd', 'dewy', 'spew', 'hewn', 'skew', 'mews', 'clew', 'mewl', 'smew', 'shew']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>news</th>
+      <td>ew</td>
+      <td>5.20</td>
+      <td>nou</td>
+      <td>nuz</td>
+      <td>['intelligence', 'tidings', 'word']</td>
+      <td></td>
+      <td>information about recent and important events有关最近和重要事件的信息</td>
+      <td>they awaited news of the outcome他们等待结果的消息</td>
+      <td></td>
+      <td></td>
+      <td>[information, info]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>news</th>
+      <td>ew</td>
+      <td>5.20</td>
+      <td>nou</td>
+      <td>nuz</td>
+      <td>['newsworthiness']</td>
+      <td></td>
+      <td>the quality of being sufficiently interesting to be reported in news bulletins在新闻简报中报道的足够有趣的质量</td>
+      <td>the judge conceded the newsworthiness of the trial法官承认了审判的新闻价值he is no longer news in the fashion world他不再是时尚界的新闻</td>
+      <td></td>
+      <td></td>
+      <td>[interestingness, interest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>news</th>
+      <td>ew</td>
+      <td>5.20</td>
+      <td>nou</td>
+      <td>nuz</td>
+      <td>['news program', 'news show']</td>
+      <td></td>
+      <td>a program devoted to current events, often using interviews and commentary一个致力于时事的计划，通常使用访谈和评论</td>
+      <td>we watch the 7 o'clock news every night我们每晚都会看7点钟的新闻</td>
+      <td></td>
+      <td></td>
+      <td>[programme, broadcast, program]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>news</th>
+      <td>ew</td>
+      <td>5.20</td>
+      <td>nou</td>
+      <td>nuz</td>
+      <td></td>
+      <td></td>
+      <td>informal information of any kind that is not previously known to someone以前不为某人所知的任何形式的非正式信息</td>
+      <td>it was news to me这对我来说是新闻</td>
+      <td>[newsy]</td>
+      <td></td>
+      <td>[info, information]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>news</th>
+      <td>ew</td>
+      <td>5.20</td>
+      <td>nou</td>
+      <td>nuz</td>
+      <td></td>
+      <td></td>
+      <td>information reported in a newspaper or news magazine在报纸或新闻杂志上报道的信息</td>
+      <td>the news of my death was greatly exaggerated我死的消息被夸大了</td>
+      <td></td>
+      <td></td>
+      <td>[information, info]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crew</th>
+      <td>ew</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>kru</td>
+      <td></td>
+      <td></td>
+      <td>serve as a crew member on担任船员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[man]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crew</th>
+      <td>ew</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>kru</td>
+      <td>['bunch', 'crowd', 'gang']</td>
+      <td></td>
+      <td>an informal body of friends一个非正式的朋友团体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assemblage, gathering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crew</th>
+      <td>ew</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>kru</td>
+      <td>['gang', 'work party']</td>
+      <td></td>
+      <td>an organized group of workmen一群有组织的工人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[social unit, unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crew</th>
+      <td>ew</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>kru</td>
+      <td></td>
+      <td></td>
+      <td>the men and women who man a vehicle (ship, aircraft, etc.)男人和女人（车辆，飞机等）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[social unit, unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crew</th>
+      <td>ew</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>kru</td>
+      <td></td>
+      <td></td>
+      <td>the team of men manning a racing shell配备赛车外壳的男子团队</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[squad, team]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drew</th>
+      <td>ew</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>dru</td>
+      <td>['john drew']</td>
+      <td></td>
+      <td>United States actor (born in Ireland); father of Georgiana Emma Barrymore (1827-1862)美国演员（出生于爱尔兰）; Georgiana Emma Barrymore的父亲（1827-1862）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chew</th>
+      <td>ew</td>
+      <td>3.95</td>
+      <td>ver</td>
+      <td>tʃu</td>
+      <td>['jaw', 'manducate', 'masticate']</td>
+      <td></td>
+      <td>chew (food); to bite and grind with the teeth咀嚼（食物）;咬牙咬牙</td>
+      <td></td>
+      <td>[chewing, chewer]</td>
+      <td></td>
+      <td>[grind, grate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chew</th>
+      <td>ew</td>
+      <td>3.95</td>
+      <td>nou</td>
+      <td>tʃu</td>
+      <td>['chaw', 'cud', 'plug', 'quid', 'wad']</td>
+      <td></td>
+      <td>a wad of something chewable as tobacco一团像烟草一样可以咀嚼的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[morsel, bite, bit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chew</th>
+      <td>ew</td>
+      <td>3.95</td>
+      <td>nou</td>
+      <td>tʃu</td>
+      <td>['chewing', 'manduction', 'mastication']</td>
+      <td></td>
+      <td>biting and grinding food in your mouth so it becomes soft enough to swallow在你的嘴里咬和磨食物，使它变得柔软，可以吞咽</td>
+      <td></td>
+      <td>[chewy]</td>
+      <td></td>
+      <td>[change of state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stew</th>
+      <td>ew</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>stu</td>
+      <td>['brood', 'grizzle']</td>
+      <td></td>
+      <td>be in a huff; be silent or sullen生气;沉默或闷闷不乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sulk, brood, pout]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stew</th>
+      <td>ew</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>stu</td>
+      <td>['grudge']</td>
+      <td></td>
+      <td>bear a grudge; harbor ill feelings耿耿于怀;怀有恶心的感情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[resent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stew</th>
+      <td>ew</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>stu</td>
+      <td></td>
+      <td></td>
+      <td>cook slowly and for a long time in liquid慢慢煮，长时间在液体中</td>
+      <td></td>
+      <td>[stewing]</td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stew</th>
+      <td>ew</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>stu</td>
+      <td>['fret', 'lather', 'sweat', 'swither']</td>
+      <td></td>
+      <td>agitation resulting from active worry因积极担心而引起的激动</td>
+      <td>don't get in a stew不要炖</td>
+      <td></td>
+      <td></td>
+      <td>[agitation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stew</th>
+      <td>ew</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>stu</td>
+      <td></td>
+      <td></td>
+      <td>food prepared by stewing especially meat or fish with vegetables通过炖煮而成的食物，特别是肉类或鱼类和蔬菜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brew</th>
+      <td>ew</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>bru</td>
+      <td></td>
+      <td></td>
+      <td>prepare by brewing通过酿造准备</td>
+      <td>people have been brewing beer for thousands of years几千年来人们一直在酿造啤酒</td>
+      <td>[brewery, brewage, brewer]</td>
+      <td></td>
+      <td>[create from raw material, create from raw stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brew</th>
+      <td>ew</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>bru</td>
+      <td></td>
+      <td></td>
+      <td>sit or let sit in boiling water so as to extract the flavor坐下或坐在沸水中，以提取味道</td>
+      <td>the tea is brewing茶正在酿造</td>
+      <td></td>
+      <td></td>
+      <td>[soak, imbue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brew</th>
+      <td>ew</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>bru</td>
+      <td>['brewage']</td>
+      <td></td>
+      <td>drink made by steeping and boiling and fermenting rather than distilling通过浸泡，煮沸和发酵而不是蒸馏制成的饮料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inebriant, intoxicant, alcoholic beverage, alcoholic drink, alcohol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>anew</th>
+      <td>ew</td>
+      <td>3.21</td>
+      <td>adv</td>
+      <td>ə'nu</td>
+      <td>['afresh']</td>
+      <td></td>
+      <td>again but in a new or different way再次，但以一种新的或不同的方式</td>
+      <td>wanted to write the story anew我想重新写下这个故事starting life anew in a fresh place在一个清新的地方重新开始生活</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sewn</th>
+      <td>ew</td>
+      <td>3.17</td>
+      <td>adj</td>
+      <td>soʊn</td>
+      <td>['sewed', 'stitched'], similarTo:['seamed']</td>
+      <td></td>
+      <td>fastened with stitches用缝线固定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>newt</th>
+      <td>ew</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>nut</td>
+      <td>['triton']</td>
+      <td></td>
+      <td>small usually bright-colored semiaquatic salamanders of North America and Europe and northern Asia北美洲，欧洲和亚洲北部的小型通常鲜艳的半水生蝾螈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[salamander]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slew</th>
+      <td>ew</td>
+      <td>2.89</td>
+      <td>ver</td>
+      <td>slu</td>
+      <td>['skid', 'slide', 'slip', 'slue']</td>
+      <td></td>
+      <td>move obliquely or sideways, usually in an uncontrolled manner通常以不受控制的方式倾斜或侧向移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[glide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slew</th>
+      <td>ew</td>
+      <td>2.89</td>
+      <td>ver</td>
+      <td>slu</td>
+      <td>['curve', 'cut', 'sheer', 'slue', 'swerve', 'trend', 'veer']</td>
+      <td></td>
+      <td>turn sharply; change direction abruptly转得厉害;突然改变方向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slew</th>
+      <td>ew</td>
+      <td>2.89</td>
+      <td>nou</td>
+      <td>slu</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td>a slew of journalists一大批记者</td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lewd</th>
+      <td>ew</td>
+      <td>2.88</td>
+      <td>adj</td>
+      <td>lud</td>
+      <td>['obscene', 'raunchy', 'salacious'], similarTo:['dirty']</td>
+      <td></td>
+      <td>suggestive of or tending to moral looseness提示或倾向于道德松散</td>
+      <td>lewd pictures猥亵的照片</td>
+      <td>[lewdness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lewd</th>
+      <td>ew</td>
+      <td>2.88</td>
+      <td>adj</td>
+      <td>lud</td>
+      <td>['lascivious', 'libidinous', 'lustful'], similarTo:['sexy']</td>
+      <td></td>
+      <td>driven by lust; preoccupied with or exhibiting lustful desires欲望驱使;专注或表现出欲望的欲望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dewy</th>
+      <td>ew</td>
+      <td>2.86</td>
+      <td>adj</td>
+      <td>'dui</td>
+      <td>['bedewed'], similarTo:['wet']</td>
+      <td></td>
+      <td>wet with dew用露水弄湿</td>
+      <td></td>
+      <td>[dew]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spew</th>
+      <td>ew</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>spju</td>
+      <td>['ptyalise', 'ptyalize', 'spit', 'spue']</td>
+      <td></td>
+      <td>expel or eject (saliva or phlegm or sputum) from the mouth从口中排出或排出（唾液或痰或痰）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spit up, cough up, expectorate, spit out, cough out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spew</th>
+      <td>ew</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>spju</td>
+      <td>['eruct', 'spew out']</td>
+      <td></td>
+      <td>eject or send out in large quantities, also metaphorical大量弹出或发出，也是隐喻的</td>
+      <td>the volcano spews out molten rocks every day火山每天喷出熔岩The editors of the paper spew out hostile articles about the Presidential candidate该报的编辑发表了关于总统候选人的敌对文章</td>
+      <td></td>
+      <td></td>
+      <td>[discharge, release, eject, exhaust, expel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spew</th>
+      <td>ew</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>spju</td>
+      <td>['barf', 'be sick', 'cast', 'cat', 'chuck', 'disgorge', 'honk', 'puke', 'purge', 'regorge', 'regurgitate', 'retch', 'sick', 'spue', 'throw up', 'upchuck', 'vomit', 'vomit up']</td>
+      <td></td>
+      <td>eject the contents of the stomach through the mouth通过口腔排出胃内容物</td>
+      <td></td>
+      <td>[spewer]</td>
+      <td></td>
+      <td>[pass, eliminate, egest, excrete]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hewn</th>
+      <td>ew</td>
+      <td>2.30</td>
+      <td>adj</td>
+      <td>hjun</td>
+      <td>['hand-hewn'], similarTo:['cut']</td>
+      <td></td>
+      <td>cut or shaped with hard blows of a heavy cutting instrument like an ax or chisel用斧头或凿子等重型切割工具进行硬切割或成型</td>
+      <td>a house built of hewn logs用凿成的原木建造的房子rough-hewn stone粗糙的石头a path hewn through the underbrush一条通过灌木丛凿成的小路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skew</th>
+      <td>ew</td>
+      <td>2.30</td>
+      <td>ver</td>
+      <td>skju</td>
+      <td></td>
+      <td>[align]</td>
+      <td>turn or place at an angle转弯或放置一个角度</td>
+      <td>the lines on the sheet of paper are skewed纸张上的线条是倾斜的</td>
+      <td></td>
+      <td></td>
+      <td>[reorient]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skew</th>
+      <td>ew</td>
+      <td>2.30</td>
+      <td>adj</td>
+      <td>skju</td>
+      <td>['skewed'], similarTo:['inclined']</td>
+      <td></td>
+      <td>having an oblique or slanting direction or position具有倾斜或倾斜的方向或位置</td>
+      <td>the picture was skew这张照片很歪斜</td>
+      <td>[skewness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mews</th>
+      <td>ew</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>mjuz</td>
+      <td></td>
+      <td></td>
+      <td>street lined with buildings that were originally private stables but have been remodeled as dwellings街道两旁是建筑物，这些建筑物最初是私人马厩，但已被改建为住宅</td>
+      <td>she lives in a Chelsea mews她住在切尔西的喵喵叫</td>
+      <td></td>
+      <td></td>
+      <td>[street]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clew</th>
+      <td>ew</td>
+      <td>1.82</td>
+      <td>ver</td>
+      <td>klu</td>
+      <td>['clue']</td>
+      <td></td>
+      <td>roll into a ball滚成一团</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wind, roll, wrap, twine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clew</th>
+      <td>ew</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>klu</td>
+      <td>['clue', 'cue']</td>
+      <td></td>
+      <td>evidence that helps to solve a problem有助于解决问题的证据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[evidence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clew</th>
+      <td>ew</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>klu</td>
+      <td></td>
+      <td></td>
+      <td>a ball of yarn or cord or thread纱线或绳子或线的球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ball, chunk, clod, clump, glob, lump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mewl</th>
+      <td>ew</td>
+      <td>1.74</td>
+      <td>ver</td>
+      <td>mjul</td>
+      <td>['pule', 'wail', 'whimper']</td>
+      <td></td>
+      <td>cry weakly or softly微弱地或轻柔地哭泣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry, weep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smew</th>
+      <td>ew</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td>smju</td>
+      <td>['mergus albellus']</td>
+      <td></td>
+      <td>smallest merganser and most expert diver; found in northern Eurasia最小的秋沙鸭和最专业的潜水员;发现于欧亚大陆北部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fish duck, merganser, sawbill, sheldrake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shew</th>
+      <td>ew</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>shoʊ</td>
+      <td>['demonstrate', 'establish', 'prove', 'show']</td>
+      <td></td>
+      <td>establish the validity of something, as by an example, explanation or experiment通过一个例子，解释或实验来确定某事物的有效性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affirm, confirm, corroborate, substantiate, support, sustain]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,440 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['boss', 'loss', 'toss', 'moss']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>boss</th>
+      <td>oss</td>
+      <td>5.27</td>
+      <td>ver</td>
+      <td>bɑs</td>
+      <td>['emboss', 'stamp']</td>
+      <td></td>
+      <td>raise in a relief提起救济</td>
+      <td>embossed stationery浮雕文具</td>
+      <td></td>
+      <td></td>
+      <td>[impress, imprint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boss</th>
+      <td>oss</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɑs</td>
+      <td>['knob']</td>
+      <td></td>
+      <td>a circular rounded projection or protuberance圆形的圆形凸起或凸起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boss</th>
+      <td>oss</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɑs</td>
+      <td>['party boss', 'political boss']</td>
+      <td></td>
+      <td>a leader in a political party who controls votes and dictates appointments控制选票和决定任命的政党领袖</td>
+      <td>party bosses have a reputation for corruption党的老板因腐败而闻名</td>
+      <td></td>
+      <td></td>
+      <td>[politician, politico, pol, political leader]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boss</th>
+      <td>oss</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɑs</td>
+      <td>['hirer']</td>
+      <td></td>
+      <td>a person responsible for hiring workers负责雇用工人的人</td>
+      <td>the boss hired three more men for the new job老板为新工作雇了三个男人</td>
+      <td></td>
+      <td></td>
+      <td>[employer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boss</th>
+      <td>oss</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɑs</td>
+      <td>['chief', 'foreman', 'gaffer', 'honcho']</td>
+      <td></td>
+      <td>a person who exercises control over workers控制工人的人</td>
+      <td></td>
+      <td>[bossy]</td>
+      <td></td>
+      <td>[supervisor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boss</th>
+      <td>oss</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɑs</td>
+      <td></td>
+      <td></td>
+      <td>a person who exercises control and makes decisions控制并做出决定的人</td>
+      <td>he is his own boss now他现在是他自己的老板</td>
+      <td></td>
+      <td></td>
+      <td>[leader]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boss</th>
+      <td>oss</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>bɑs</td>
+      <td>['brag'], similarTo:['superior']</td>
+      <td></td>
+      <td>exceptionally good特别好</td>
+      <td>a boss hand at carpentry老板在木工手</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td>['red', 'red ink']</td>
+      <td>[gain]</td>
+      <td>the amount by which the cost of a business exceeds its revenue企业成本超过其收入的金额</td>
+      <td>the company operated at a loss last year该公司去年亏本经营</td>
+      <td></td>
+      <td></td>
+      <td>[sum of money, amount of money, sum, amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td>['personnel casualty']</td>
+      <td></td>
+      <td>military personnel lost by death or capture军人失去了死亡或被捕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[casualty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td>['deprivation']</td>
+      <td></td>
+      <td>the disadvantage that results from losing something失去一些东西导致的缺点</td>
+      <td>his loss of credibility led to his resignation他失去信誉导致他辞职</td>
+      <td></td>
+      <td></td>
+      <td>[disadvantage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td>['departure', 'exit', 'expiration', 'going', 'passing', 'release']</td>
+      <td></td>
+      <td>euphemistic expressions for death委婉的死亡表达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expiry, death, decease]</td>
+      <td>[euphemism]</td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td></td>
+      <td></td>
+      <td>gradual decline in amount or activity数量或活动逐渐下降</td>
+      <td>weight loss减肥a serious loss of business严重的业务损失</td>
+      <td>[lossy]</td>
+      <td></td>
+      <td>[decline, diminution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td></td>
+      <td></td>
+      <td>something that is lost丢失的东西</td>
+      <td>the car was a total loss这辆车完全是亏损loss of livestock left the rancher bankrupt失去牲畜使牧场主破产</td>
+      <td></td>
+      <td></td>
+      <td>[transferred possession, transferred property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td></td>
+      <td></td>
+      <td>the act of losing someone or something失去某人或某事的行为</td>
+      <td>everyone expected him to win so his loss was a shock每个人都希望他赢，所以他的损失让人感到震惊</td>
+      <td></td>
+      <td></td>
+      <td>[failure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loss</th>
+      <td>oss</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>lɔs</td>
+      <td></td>
+      <td></td>
+      <td>the experience of losing a loved one失去亲人的经历</td>
+      <td>he sympathized on the loss of their grandfather他同情他们祖父的遗失</td>
+      <td></td>
+      <td></td>
+      <td>[experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>ver</td>
+      <td>tɑs</td>
+      <td>['chuck']</td>
+      <td></td>
+      <td>throw carelessly不小心扔了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>ver</td>
+      <td>tɑs</td>
+      <td>['flip']</td>
+      <td></td>
+      <td>lightly throw to see which side comes up轻轻地看看哪一方出现</td>
+      <td></td>
+      <td>[tosser]</td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>ver</td>
+      <td>tɑs</td>
+      <td>['convulse', 'jactitate', 'slash', 'thrash', 'thrash about', 'thresh', 'thresh about']</td>
+      <td></td>
+      <td>move or stir about violently猛烈地移动或搅动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shake, agitate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>ver</td>
+      <td>tɑs</td>
+      <td>['cast aside', 'cast away', 'cast out', 'chuck out', 'discard', 'dispose', 'fling', 'put away', 'throw away', 'throw out', 'toss away', 'toss out']</td>
+      <td></td>
+      <td>throw or cast away扔掉或扔掉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remove, get rid of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>ver</td>
+      <td>tɑs</td>
+      <td>['flip', 'pitch', 'sky']</td>
+      <td></td>
+      <td>throw or toss with a light motion投掷或折腾轻微运动</td>
+      <td>toss me newspaper把报纸扔给我</td>
+      <td>[tosser]</td>
+      <td></td>
+      <td>[fling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>ver</td>
+      <td>tɑs</td>
+      <td></td>
+      <td></td>
+      <td>agitate搅拌</td>
+      <td>toss the salad扔沙拉</td>
+      <td></td>
+      <td></td>
+      <td>[raise up, vex, agitate, stir up, commove, shake up, disturb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>nou</td>
+      <td>tɑs</td>
+      <td>['flip']</td>
+      <td></td>
+      <td>the act of flipping a coin翻转硬币的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>nou</td>
+      <td>tɑs</td>
+      <td>['flip', 'pass']</td>
+      <td></td>
+      <td>(sports) the act of throwing the ball to another member of your team（体育）向球队的另一名成员扔球的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toss</th>
+      <td>oss</td>
+      <td>3.95</td>
+      <td>nou</td>
+      <td>tɑs</td>
+      <td></td>
+      <td></td>
+      <td>an abrupt movement一个突然的运动</td>
+      <td>a toss of his head折腾了他的脑袋</td>
+      <td></td>
+      <td></td>
+      <td>[move, motility, motion, movement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moss</th>
+      <td>oss</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>mɔs</td>
+      <td></td>
+      <td></td>
+      <td>tiny leafy-stemmed flowerless plants微小的叶状无茎植物</td>
+      <td></td>
+      <td>[mossy]</td>
+      <td></td>
+      <td>[nonvascular plant, bryophyte]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

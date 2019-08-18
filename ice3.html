@@ -1,0 +1,230 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['ice']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>ver</td>
+      <td>aɪs</td>
+      <td>['frost']</td>
+      <td></td>
+      <td>decorate with frosting用糖霜装饰</td>
+      <td></td>
+      <td>[icing]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>ver</td>
+      <td>aɪs</td>
+      <td></td>
+      <td></td>
+      <td>cause to become ice or icy导致变成冰或结冰</td>
+      <td>an iced summer drink冰镇夏日饮料</td>
+      <td></td>
+      <td></td>
+      <td>[freeze]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>ver</td>
+      <td>aɪs</td>
+      <td></td>
+      <td></td>
+      <td>put ice on or put on ice把冰放或放冰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cool down, cool, chill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td>['sparkler']</td>
+      <td></td>
+      <td>diamonds钻石</td>
+      <td>look at the ice on that dame!看看那个贵妇人的冰！</td>
+      <td></td>
+      <td></td>
+      <td>[diamond]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td>['internal-combustion engine']</td>
+      <td></td>
+      <td>a heat engine in which combustion occurs inside the engine rather than in a separate furnace; heat expands a gas that either moves a piston or turns a gas turbine一种热机，其中燃烧发生在发动机内而不是单独的炉内;热量使气体膨胀，使活塞移动或转动燃气轮机</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[heat engine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td>['ice-skating rink', 'ice rink']</td>
+      <td></td>
+      <td>a rink with a floor of ice for ice hockey or ice skating冰球或冰上滑冰场的冰场</td>
+      <td>the crowd applauded when she skated out onto the ice当她滑到冰上时，人群鼓掌</td>
+      <td>[icy]</td>
+      <td></td>
+      <td>[rink, skating rink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td>['frappe']</td>
+      <td></td>
+      <td>a frozen dessert with fruit flavoring (especially one containing no milk)水果调味的冷冻甜点（特别是不含牛奶的甜点）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[frozen dessert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td>['water ice']</td>
+      <td></td>
+      <td>water frozen in the solid state水以固态冷冻</td>
+      <td>Americans like ice in their drinks美国人喜欢喝冰块</td>
+      <td></td>
+      <td></td>
+      <td>[crystal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td>['chalk', 'chicken feed', 'crank', 'deoxyephedrine', 'glass', 'meth', 'methamphetamine', 'methamphetamine hydrochloride', 'methedrine', 'shabu', 'trash']</td>
+      <td></td>
+      <td>an amphetamine derivative (trade name Methedrine) used in the form of a crystalline hydrochloride; used as a stimulant to the nervous system and as an appetite suppressant以结晶盐酸盐形式使用的苯丙胺衍生物（商品名Methedrine）;用作神经系统的兴奋剂和食欲抑制剂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amphetamine, speed, upper, pep pill, controlled substance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td>['frosting', 'icing']</td>
+      <td></td>
+      <td>a flavored sugar topping used to coat and decorate cakes用于涂抹和装饰蛋糕的调味糖馅料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[topping]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ice</th>
+      <td>ice</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>aɪs</td>
+      <td></td>
+      <td></td>
+      <td>the frozen part of a body of water水体的冰冻部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

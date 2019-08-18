@@ -1,0 +1,920 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['share', 'scare', 'spare', 'aware', 'stare', 'arena', 'flare', 'glare']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>ʃɜr</td>
+      <td>['apportion', 'deal', 'divvy up', 'portion out']</td>
+      <td></td>
+      <td>give out as one's portion or share给出一个部分或分享</td>
+      <td></td>
+      <td>[sharer, sharing]</td>
+      <td></td>
+      <td>[distribute, give out, pass out, hand out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>ʃɜr</td>
+      <td>['partake', 'partake in']</td>
+      <td></td>
+      <td>have, give, or receive a share of拥有，给予或接受分享</td>
+      <td>We shared the cake我们分享了蛋糕</td>
+      <td>[sharer]</td>
+      <td></td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>ʃɜr</td>
+      <td></td>
+      <td></td>
+      <td>communicate通信</td>
+      <td>I'd like to share this idea with you我想和你分享这个想法</td>
+      <td>[sharing]</td>
+      <td></td>
+      <td>[intercommunicate, communicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>ʃɜr</td>
+      <td></td>
+      <td></td>
+      <td>have in common有共同点</td>
+      <td>Our children share a love of music我们的孩子分享对音乐的热爱The two countries share a long border这两个国家的边界​​很长</td>
+      <td>[sharing]</td>
+      <td></td>
+      <td>[overlap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>ʃɜr</td>
+      <td></td>
+      <td></td>
+      <td>use jointly or in common共同使用或共同使用</td>
+      <td></td>
+      <td>[sharing]</td>
+      <td></td>
+      <td>[employ, utilize, apply, use, utilise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>ʃɜr</td>
+      <td>['contribution', 'part']</td>
+      <td></td>
+      <td>the effort contributed by a person in bringing about a result一个人为实现结果所做的努力</td>
+      <td>they all did their share of the work他们都分担了这份工作</td>
+      <td></td>
+      <td></td>
+      <td>[try, endeavour, endeavor, effort, attempt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>ʃɜr</td>
+      <td>['part', 'percentage', 'portion']</td>
+      <td></td>
+      <td>assets belonging to or due to or contributed by an individual person or group属于或由个人或团体或由个人或团体贡献的资产</td>
+      <td>he wanted his share in cash他想要他的现金份额</td>
+      <td></td>
+      <td></td>
+      <td>[assets]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>ʃɜr</td>
+      <td>['ploughshare', 'plowshare']</td>
+      <td></td>
+      <td>a sharp steel wedge that cuts loose the top layer of soil一个锋利的钢楔，切割松散的顶层土壤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wedge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>ʃɜr</td>
+      <td>['parcel', 'portion']</td>
+      <td></td>
+      <td>the allotment of some amount by dividing something划分一些东西来分配一些金额</td>
+      <td>death gets more than its share of attention from theologians死亡比神学家的注意力更多</td>
+      <td></td>
+      <td></td>
+      <td>[assignation, parceling, allocation, allotment, apportionment, apportioning, parcelling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>share</th>
+      <td>are</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>ʃɜr</td>
+      <td></td>
+      <td></td>
+      <td>any of the equal portions into which the capital stock of a corporation is divided and ownership of which is evidenced by a stock certificate公司资本存量分成的所有相等部分，其所有权由股票证明证明</td>
+      <td>he bought 100 shares of IBM at the market price他以市场价格购买了100股IBM股票</td>
+      <td></td>
+      <td></td>
+      <td>[stock certificate, stock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scare</th>
+      <td>are</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>skɜr</td>
+      <td>['affright', 'fright', 'frighten']</td>
+      <td></td>
+      <td>cause fear in引起恐惧</td>
+      <td></td>
+      <td>[scarer]</td>
+      <td></td>
+      <td>[shake, stir, excite, shake up, stimulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scare</th>
+      <td>are</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>skɜr</td>
+      <td>['dash', 'daunt', 'frighten away', 'frighten off', 'pall', 'scare away', 'scare off']</td>
+      <td></td>
+      <td>cause to lose courage导致失去勇气</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intimidate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scare</th>
+      <td>are</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>skɜr</td>
+      <td>['panic']</td>
+      <td></td>
+      <td>sudden mass fear and anxiety over anticipated events对预期事件的突然大规模恐惧和焦虑</td>
+      <td>a war scare战争恐慌a bomb scare led them to evacuate the building一次炸弹恐慌导致他们撤离了大楼</td>
+      <td>[scary]</td>
+      <td></td>
+      <td>[anxiousness, anxiety]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scare</th>
+      <td>are</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>skɜr</td>
+      <td>['panic attack']</td>
+      <td></td>
+      <td>a sudden attack of fear突然袭击恐惧</td>
+      <td></td>
+      <td>[scary]</td>
+      <td></td>
+      <td>[fearfulness, fright, fear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>spɜr</td>
+      <td>['save']</td>
+      <td></td>
+      <td>refrain from harming避免伤害</td>
+      <td></td>
+      <td>[sparer]</td>
+      <td></td>
+      <td>[refrain, forbear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>spɜr</td>
+      <td>['dispense with', 'give up', 'part with']</td>
+      <td></td>
+      <td>give up what is not strictly needed放弃不严格需要的东西</td>
+      <td>he asked if they could spare one of their horses to speed his journey他问他们是否可以腾出一匹马来加速他的旅程</td>
+      <td></td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>spɜr</td>
+      <td></td>
+      <td></td>
+      <td>save or relieve from an experience or action保存或减轻经验或行动</td>
+      <td>I'll spare you from having to apologize formally我会让你不必正式道歉</td>
+      <td></td>
+      <td></td>
+      <td>[exempt, relieve, free]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>spɜr</td>
+      <td></td>
+      <td></td>
+      <td>use frugally or carefully节俭或小心使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[use, expend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>nou</td>
+      <td>spɜr</td>
+      <td>['fifth wheel']</td>
+      <td></td>
+      <td>an extra car wheel and tire for a four-wheel vehicle一个额外的车轮和四轮车轮胎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[car wheel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>nou</td>
+      <td>spɜr</td>
+      <td>['spare part']</td>
+      <td></td>
+      <td>an extra component of a machine or other apparatus机器或其他设备的额外组件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[component, constituent, element]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>nou</td>
+      <td>spɜr</td>
+      <td></td>
+      <td></td>
+      <td>a score in tenpins; knocking down all ten after rolling two balls十分得分;滚动两个球后击倒所有十个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[score]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>spɜr</td>
+      <td>['free'], similarTo:['unoccupied']</td>
+      <td></td>
+      <td>not taken up by scheduled activities没有被预定的活动占用</td>
+      <td>spare time on my hands业余时间在我手上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>spɜr</td>
+      <td>['trim'], similarTo:['thin', 'lean']</td>
+      <td></td>
+      <td>thin and fit又瘦又合身</td>
+      <td>the spare figure of a marathon runner马拉松运动员的备用数字</td>
+      <td>[spareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>spɜr</td>
+      <td>['bare', 'plain', 'unembellished', 'unornamented'], similarTo:['unadorned', 'undecorated']</td>
+      <td></td>
+      <td>lacking embellishment or ornamentation缺乏装饰或装饰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>spɜr</td>
+      <td>['excess', 'extra', 'redundant', 'supererogatory', 'superfluous', 'supernumerary', 'surplus'], similarTo:['unnecessary', 'unneeded']</td>
+      <td></td>
+      <td>more than is needed, desired, or required超过需要，期望或要求</td>
+      <td>sleeping in the spare room睡在空余的房间里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>spɜr</td>
+      <td>['bare', 'scanty'], similarTo:['meagerly', 'meagre', 'meager', 'stingy', 'scrimpy']</td>
+      <td></td>
+      <td>lacking in magnitude or quantity缺乏数量或数量</td>
+      <td>a spare diet节食</td>
+      <td>[spareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spare</th>
+      <td>are</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>spɜr</td>
+      <td>, similarTo:['unnecessary', 'unneeded']</td>
+      <td></td>
+      <td>kept in reserve especially for emergency use保留，特别是紧急使用</td>
+      <td>a spare tire备胎spare parts备件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aware</th>
+      <td>are</td>
+      <td>4.53</td>
+      <td>adj</td>
+      <td>ə'wɜr</td>
+      <td>['mindful'], similarTo:['reminiscent', 'remindful', 'redolent', 'heedful', 'resonant', 'evocative', 'careful']</td>
+      <td></td>
+      <td>bearing in mind; attentive to记住;细心</td>
+      <td></td>
+      <td>[awareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aware</th>
+      <td>are</td>
+      <td>4.53</td>
+      <td>adj</td>
+      <td>ə'wɜr</td>
+      <td>['cognisant', 'cognizant'], similarTo:['conscious', 'alert', 'awake', 'sensible', 'alive'], alos:['witting', 'awake', 'conscious', 'sensible', 'sensitive']</td>
+      <td>[unaware]</td>
+      <td>(sometimes followed by `of') having or showing knowledge or understanding or realization or perception（有时接着是'of'）具有或表现出知识或理解或实现或感知</td>
+      <td>was aware of his opponent's hostility意识到他的对手的敌意became aware of her surroundings意识到她的周围环境aware that he had exceeded the speed limit意识到他超过了速度限制</td>
+      <td>[awareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stare</th>
+      <td>are</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>stɜr</td>
+      <td>['gaze']</td>
+      <td></td>
+      <td>look at with fixed eyes用固定的眼睛看</td>
+      <td>The students stared at the teacher with amazement学生们惊讶地盯着老师</td>
+      <td>[starer]</td>
+      <td></td>
+      <td>[look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stare</th>
+      <td>are</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>stɜr</td>
+      <td></td>
+      <td></td>
+      <td>fixate one's eyes固定一个人的眼睛</td>
+      <td></td>
+      <td>[starer]</td>
+      <td></td>
+      <td>[look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stare</th>
+      <td>are</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>stɜr</td>
+      <td></td>
+      <td></td>
+      <td>a fixed look with eyes open wide一个固定的外观，睁大眼睛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[looking, looking at, look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arena</th>
+      <td>are</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>ə'rinə</td>
+      <td>['area', 'domain', 'field', 'orbit', 'sphere']</td>
+      <td></td>
+      <td>a particular environment or walk of life特定的环境或生活</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[environment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arena</th>
+      <td>are</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>ə'rinə</td>
+      <td>['bowl', 'sports stadium', 'stadium']</td>
+      <td></td>
+      <td>a large structure for open-air sports or entertainments一个大型的露天运动或娱乐结构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[construction, structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arena</th>
+      <td>are</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>ə'rinə</td>
+      <td>['scene of action']</td>
+      <td></td>
+      <td>a playing field where sports events take place体育赛事的比赛场地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[athletic field, field, playing field, playing area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arena</th>
+      <td>are</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>ə'rinə</td>
+      <td></td>
+      <td></td>
+      <td>the central area of an ancient Roman amphitheater where contests and spectacles were held; especially an area that was strewn with sand古罗马圆形剧场的中心区域举行比赛和眼镜;特别是一个布满沙子的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area, country]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>flɜr</td>
+      <td>['break open', 'burst out', 'erupt', 'flare up', 'irrupt']</td>
+      <td></td>
+      <td>erupt or intensify suddenly突然爆发或加剧</td>
+      <td>Tempers flared at the meeting脾气暴躁在会议上爆发</td>
+      <td></td>
+      <td></td>
+      <td>[deepen, intensify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>flɜr</td>
+      <td>['blaze up', 'burn up', 'flame up']</td>
+      <td></td>
+      <td>burn brightly明亮地燃烧</td>
+      <td>Every star seemed to flare with new intensity每个明星似乎都有新的强度</td>
+      <td></td>
+      <td></td>
+      <td>[combust, burn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>flɜr</td>
+      <td>['flame']</td>
+      <td></td>
+      <td>shine with a sudden light突然发光</td>
+      <td>The night sky flared with the massive bombardment夜空因巨大的轰击而爆发</td>
+      <td></td>
+      <td></td>
+      <td>[beam, shine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>flɜr</td>
+      <td>['flare out']</td>
+      <td></td>
+      <td>become flared and widen, usually at one end通常在一端变得张开和扩大</td>
+      <td>The bellbottom pants flare out喇叭裤裤子突然出现</td>
+      <td></td>
+      <td></td>
+      <td>[widen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td>['flare pass']</td>
+      <td></td>
+      <td>a short forward pass to a back who is running toward the sidelines一个短暂的前锋传球给后卫跑向边线</td>
+      <td>he threw a flare to the fullback who was tackled for a loss他向那个因失败而被解决的后卫投掷了一个耀斑</td>
+      <td></td>
+      <td></td>
+      <td>[aerial, forward pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td>['flash']</td>
+      <td></td>
+      <td>a burst of light used to communicate or illuminate用于交流或照亮的一阵光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visual signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td>['flair']</td>
+      <td></td>
+      <td>a shape that spreads outward向外扩展的形状</td>
+      <td>the skirt had a wide flare裙子有一个宽阔的喇叭口</td>
+      <td></td>
+      <td></td>
+      <td>[shape, form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td>['solar flare']</td>
+      <td></td>
+      <td>a sudden eruption of intense high-energy radiation from the sun's surface; associated with sunspots and radio interference太阳表面突然爆发强烈的高能辐射;与太阳黑子和无线电干扰有关</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[solar radiation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td></td>
+      <td></td>
+      <td>a device that produces a bright light for warning or illumination or identification一种产生强光的装置，用于警告或照明或识别</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td></td>
+      <td></td>
+      <td>am unwanted reflection in an optical system (or the fogging of an image that is caused by such a reflection)是光学系统中不需要的反射（或由这种反射引起的图像模糊）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reflexion, reflection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td></td>
+      <td></td>
+      <td>a sudden burst of flame一阵突如其来的火焰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fire, flaming, flame]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td></td>
+      <td></td>
+      <td>a sudden outburst of emotion一阵突如其来的情绪</td>
+      <td>she felt a flare of delight她感到高兴she could not control her flare of rage她无法控制自己的怒火</td>
+      <td></td>
+      <td></td>
+      <td>[blowup, gush, outburst, effusion, ebullition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td></td>
+      <td></td>
+      <td>a sudden recurrence or worsening of symptoms突然复发或症状恶化</td>
+      <td>a colitis flare结肠炎发作infection can cause a lupus flare感染可引起狼疮发作</td>
+      <td></td>
+      <td></td>
+      <td>[attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td></td>
+      <td></td>
+      <td>(baseball) a fly ball hit a short distance into the outfield（棒球）一个飞球在外场打了一小段距离</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fly ball, fly]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flare</th>
+      <td>are</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>flɜr</td>
+      <td></td>
+      <td></td>
+      <td>reddening of the skin spreading outward from a focus of infection or irritation皮肤变红从感染或刺激的焦点向外扩散</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[erythroderma]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glare</th>
+      <td>are</td>
+      <td>3.06</td>
+      <td>ver</td>
+      <td>glɜr</td>
+      <td>['glower']</td>
+      <td></td>
+      <td>look at with a fixed gaze看着固定的目光</td>
+      <td>The girl glared at the man who tried to make a pass at her女孩瞪着那个试图向她传球的男人</td>
+      <td></td>
+      <td></td>
+      <td>[stare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glare</th>
+      <td>are</td>
+      <td>3.06</td>
+      <td>ver</td>
+      <td>glɜr</td>
+      <td></td>
+      <td></td>
+      <td>be sharply reflected被大幅反映</td>
+      <td>The moon glared back at itself from the lake's surface月亮从湖面上瞪着自己</td>
+      <td></td>
+      <td></td>
+      <td>[reflect, shine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glare</th>
+      <td>are</td>
+      <td>3.06</td>
+      <td>ver</td>
+      <td>glɜr</td>
+      <td></td>
+      <td></td>
+      <td>shine intensely强烈地闪耀</td>
+      <td>The sun glared down on us太阳瞪着我们</td>
+      <td></td>
+      <td></td>
+      <td>[shine, beam]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glare</th>
+      <td>are</td>
+      <td>3.06</td>
+      <td>nou</td>
+      <td>glɜr</td>
+      <td>['limelight', 'public eye', 'spotlight']</td>
+      <td></td>
+      <td>a focus of public attention公众关注的焦点</td>
+      <td>when Congress investigates it brings the full glare of publicity to the agency当国会进行调查时，它会给该机构带来全面的宣传效果</td>
+      <td></td>
+      <td></td>
+      <td>[prominence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glare</th>
+      <td>are</td>
+      <td>3.06</td>
+      <td>nou</td>
+      <td>glɜr</td>
+      <td>['blaze', 'brilliance']</td>
+      <td></td>
+      <td>a light within the field of vision that is brighter than the brightness to which the eyes are adapted视野内的光线比眼睛适应的亮度更亮</td>
+      <td>a glare of sunlight一缕阳光</td>
+      <td></td>
+      <td></td>
+      <td>[brightness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glare</th>
+      <td>are</td>
+      <td>3.06</td>
+      <td>nou</td>
+      <td>glɜr</td>
+      <td>['glower']</td>
+      <td></td>
+      <td>an angry stare愤怒的凝视</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stare]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

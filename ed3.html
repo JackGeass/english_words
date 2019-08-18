@@ -1,0 +1,560 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['bed', 'red', 'led', 'fed', 'ted', 'med', 'wed', 'zed', 'eds', 'qed', 'edp']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>ver</td>
+      <td>bɛd</td>
+      <td>['bang', 'be intimate', 'bonk', 'do it', 'eff', 'fuck', 'get it on', 'get laid', 'have a go at it', 'have intercourse', 'have it away', 'have it off', 'have sex', 'hump', 'jazz', 'know', 'lie with', 'love', 'make love', 'make out', 'roll in the hay', 'screw', 'sleep together', 'sleep with']</td>
+      <td></td>
+      <td>have sexual intercourse with与...发生性关系</td>
+      <td></td>
+      <td></td>
+      <td>[neck, make out]</td>
+      <td>[copulate, couple, mate, pair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>ver</td>
+      <td>bɛd</td>
+      <td>['crawl in', 'go to bed', 'go to sleep', 'hit the hay', 'hit the sack', 'kip down', 'retire', 'sack out', 'turn in']</td>
+      <td></td>
+      <td>prepare for sleep准备睡觉</td>
+      <td>He goes to bed at the crack of dawn他在黎明时分上床睡觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>ver</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>furnish with a bed配一张床</td>
+      <td>The inn keeper could bed all the new arrivals旅馆老板可以为所有新来的人提供住宿</td>
+      <td></td>
+      <td></td>
+      <td>[render, supply, provide, furnish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>ver</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>place (plants) in a prepared bed of soil将（植物）放在准备好的土壤床上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set, plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>ver</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>put to bed上床睡觉</td>
+      <td>The children were bedded at ten o'clock孩子们十点钟就睡觉了</td>
+      <td></td>
+      <td></td>
+      <td>[position, place, pose, lay, set, put]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td>['bottom']</td>
+      <td></td>
+      <td>a depression forming the ground under a body of water在水体下形成地面的凹陷</td>
+      <td>he searched for treasure on the ocean bed他在海床上寻找宝藏</td>
+      <td></td>
+      <td></td>
+      <td>[depression, natural depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td>['layer']</td>
+      <td></td>
+      <td>single thickness of usually some homogeneous substance单层厚度通常是一些均质物质</td>
+      <td>slices of hard-boiled egg on a bed of spinach切片煮熟的鸡蛋在菠菜床上</td>
+      <td></td>
+      <td></td>
+      <td>[artifact, artefact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td>['seam']</td>
+      <td></td>
+      <td>a stratum of ore or coal thick enough to be mined with profit一块矿石或煤层厚到足以开采利润</td>
+      <td>he worked in the coal beds他在煤层工作</td>
+      <td></td>
+      <td></td>
+      <td>[stratum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>a foundation of earth or rock supporting a road or railroad track支撑公路或铁路轨道的地基或岩石基础</td>
+      <td>the track bed had washed away轨道床已经冲走了</td>
+      <td></td>
+      <td></td>
+      <td>[fundament, base, substructure, foot, foundation, groundwork, understructure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>a piece of furniture that provides a place to sleep一件可以睡觉的家具</td>
+      <td>he sat on the edge of the bed他坐在床边the room had only a bed and chair房间里只有一张床和椅子</td>
+      <td></td>
+      <td></td>
+      <td>[bedroom furniture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>a plot of ground in which plants are growing植物生长的地面图</td>
+      <td>the gardener planted a bed of roses园丁种了一张玫瑰花</td>
+      <td></td>
+      <td></td>
+      <td>[plot, patch, plot of ground, plot of land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>(geology) a stratum of rock (especially sedimentary rock)（地质学）岩层（特别是沉积岩）</td>
+      <td>they found a bed of sandstone他们找到了一张砂岩床</td>
+      <td></td>
+      <td></td>
+      <td>[stratum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bed</th>
+      <td>ed</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>bɛd</td>
+      <td></td>
+      <td></td>
+      <td>the flat surface of a printing press on which the type form is laid in the last stage of producing a newspaper or magazine or book etc.印刷机的平面，在制作报纸，杂志或书籍等的最后阶段铺设了类型形式。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>red</th>
+      <td>ed</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>rɛd</td>
+      <td>['loss', 'red ink']</td>
+      <td></td>
+      <td>the amount by which the cost of a business exceeds its revenue企业成本超过其收入的金额</td>
+      <td>the company operated in the red last year该公司去年以红色运营</td>
+      <td></td>
+      <td></td>
+      <td>[amount, sum, amount of money, sum of money]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>red</th>
+      <td>ed</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>rɛd</td>
+      <td>['redness']</td>
+      <td></td>
+      <td>red color or pigment; the chromatic color resembling the hue of blood红色或颜料;颜色与血色相似</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spectral colour, spectral color, chromatic colour, chromatic color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>red</th>
+      <td>ed</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>rɛd</td>
+      <td>['red river']</td>
+      <td></td>
+      <td>a tributary of the Mississippi River that flows eastward from Texas along the southern boundary of Oklahoma and through Louisiana密西西比河的一条支流，从德克萨斯州东部沿着俄克拉荷马州的南部边界流经路易斯安那州</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>red</th>
+      <td>ed</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>rɛd</td>
+      <td>['bolshevik', 'bolshie', 'bolshy', 'marxist']</td>
+      <td></td>
+      <td>emotionally charged terms used to refer to extreme radicals or revolutionaries用来指极端激进分子或革命者的情绪化术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radical]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>red</th>
+      <td>ed</td>
+      <td>5.17</td>
+      <td>adj</td>
+      <td>rɛd</td>
+      <td>['crimson', 'violent'], similarTo:['bloody']</td>
+      <td></td>
+      <td>characterized by violence or bloodshed以暴力或流血为特征</td>
+      <td>convulsed with red rage愤怒的红色愤怒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>red</th>
+      <td>ed</td>
+      <td>5.17</td>
+      <td>adj</td>
+      <td>rɛd</td>
+      <td>['blood-red', 'carmine', 'cerise', 'cherry', 'cherry-red', 'crimson', 'reddish', 'ruby', 'ruby-red', 'ruddy', 'scarlet'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of a color at the end of the color spectrum (next to orange); resembling the color of blood or cherries or tomatoes or rubies色谱结束时的颜色（橙色旁边）;类似于血液或樱桃，西红柿或红宝石的颜色</td>
+      <td></td>
+      <td>[redness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>red</th>
+      <td>ed</td>
+      <td>5.17</td>
+      <td>adj</td>
+      <td>rɛd</td>
+      <td>['crimson', 'flushed', 'red-faced', 'reddened'], similarTo:['colored', 'coloured', 'colorful']</td>
+      <td></td>
+      <td>(especially of the face) reddened or suffused with or as if with blood from emotion or exertion（特别是脸部）红色或充满或充满情感或劳累的血液</td>
+      <td>turned red from exertion从劳累中变红了with puffy reddened eyes眼睛浮肿红肿red-faced and violent红脸和暴力</td>
+      <td>[redness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>led</th>
+      <td>ed</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>lɛd</td>
+      <td>['light-emitting diode']</td>
+      <td></td>
+      <td>diode such that light emitted at a p-n junction is proportional to the bias current; color depends on the material used二极管使得在p-n结处发射的光与偏置电流成比例;颜色取决于使用的材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[semiconductor diode, crystal rectifier, diode, junction rectifier]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fed</th>
+      <td>ed</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>fɛd</td>
+      <td>['federal', 'federal official']</td>
+      <td></td>
+      <td>any federal law-enforcement officer任何联邦执法人员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[federal agent, agent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fed</th>
+      <td>ed</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>fɛd</td>
+      <td>['federal reserve', 'federal reserve system', 'frs']</td>
+      <td></td>
+      <td>the central bank of the United States; incorporates 12 Federal Reserve branch banks and all national banks and state-chartered commercial banks and some trust companies美国中央银行;包括12家联邦储备银行和所有国家银行以及国有特许商业银行和一些信托公司</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[central bank]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ted</th>
+      <td>ed</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>tɛd</td>
+      <td>['teddy boy']</td>
+      <td></td>
+      <td>a tough youth of 1950's and 1960's wearing Edwardian style clothes1950年代和1960年代穿着爱德华风格服装的年轻人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plug-ugly, tough guy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>med</th>
+      <td>ed</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>mɛd</td>
+      <td>['master of education']</td>
+      <td></td>
+      <td>a master's degree in education教育硕士学位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[master's degree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wed</th>
+      <td>ed</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɛd</td>
+      <td>['conjoin', 'espouse', 'get hitched with', 'get married', 'hook up with', 'marry']</td>
+      <td></td>
+      <td>take in marriage结婚</td>
+      <td></td>
+      <td>[wedding]</td>
+      <td>[marry, tie, splice]</td>
+      <td>[unify, unite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wed</th>
+      <td>ed</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɛd</td>
+      <td>['marry', 'splice', 'tie']</td>
+      <td></td>
+      <td>perform a marriage ceremony举行婚礼</td>
+      <td>We were wed the following week我们在接下来的一周结婚了</td>
+      <td>[wedding]</td>
+      <td>[espouse, marry, get hitched with, get married, hook up with, conjoin]</td>
+      <td>[officiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wed</th>
+      <td>ed</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>wɛd</td>
+      <td>['midweek', 'wednesday']</td>
+      <td></td>
+      <td>the fourth day of the week; the third working day一周的第四天;第三个工作日</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weekday]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wed</th>
+      <td>ed</td>
+      <td>3.40</td>
+      <td>adj</td>
+      <td>wɛd</td>
+      <td>['wedded'], similarTo:['married']</td>
+      <td></td>
+      <td>having been taken in marriage结婚了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zed</th>
+      <td>ed</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>zɛd</td>
+      <td>['ezed', 'izzard', 'z', 'zee']</td>
+      <td></td>
+      <td>the 26th letter of the Roman alphabet罗马字母的第26个字母</td>
+      <td>the British call Z zed and the Scots call it ezed but Americans call it zee英国人称Z zed和苏格兰人称其为ezed，但美国人称之为zee</td>
+      <td></td>
+      <td></td>
+      <td>[alphabetic character, letter, letter of the alphabet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eds</th>
+      <td>ed</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td></td>
+      <td>['explosive detection system']</td>
+      <td></td>
+      <td>a rapid automatic system to detect plastic explosives in passengers' luggage using X-ray technology and computers; designed for use in airports一种利用X射线技术和计算机检测乘客行李中塑料炸药的快速自动系统;设计用于机场</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>qed</th>
+      <td>ed</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td></td>
+      <td>['quantum electrodynamics']</td>
+      <td></td>
+      <td>a relativistic quantum theory of the electromagnetic interactions of photons and electrons and muons光子与电子和μ子电磁相互作用的相对论量子理论</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[quantum field theory]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edp</th>
+      <td>ed</td>
+      <td>1.90</td>
+      <td>nou</td>
+      <td></td>
+      <td>['electronic data processing']</td>
+      <td></td>
+      <td>automatic data processing by electronic means without the use of tabulating cards or punched tapes通过电子方式自动数据处理，无需使用制表卡或穿孔带</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adp, automatic data processing]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

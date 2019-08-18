@@ -1,0 +1,875 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['fifty', 'shift', 'fifth', 'drift', 'swift', 'nifty']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>fifty</th>
+      <td>ift</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>'fɪfti</td>
+      <td>['50', 'l']</td>
+      <td></td>
+      <td>the cardinal number that is the product of ten and five基数是十和五的乘积</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large integer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fifty</th>
+      <td>ift</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>'fɪfti</td>
+      <td>['fifty dollar bill']</td>
+      <td></td>
+      <td>a United States bill worth 50 dollars一张价值50美元的美国法案</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bank bill, bank note, banker's bill, banknote, bill, federal reserve note, government note, greenback, note]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fifty</th>
+      <td>ift</td>
+      <td>4.40</td>
+      <td>adj</td>
+      <td>'fɪfti</td>
+      <td>['50', 'l'], similarTo:['cardinal']</td>
+      <td></td>
+      <td>being ten more than forty超过四十岁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td>['change', 'switch']</td>
+      <td></td>
+      <td>lay aside, abandon, or leave for another放下，放弃，或离开另一个</td>
+      <td></td>
+      <td></td>
+      <td>[commute, change, convert, exchange]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td>['careen', 'tilt', 'wobble']</td>
+      <td></td>
+      <td>move sideways or in an unsteady way侧身或以不稳定的方式移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td>['transfer']</td>
+      <td></td>
+      <td>move around四处走走</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td>['dislodge', 'reposition']</td>
+      <td></td>
+      <td>change place or direction改变地方或方向</td>
+      <td></td>
+      <td>[shifting]</td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td>['change over', 'switch']</td>
+      <td></td>
+      <td>make a shift in or exchange of转移或交换</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change, alter, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td>['lurch', 'pitch']</td>
+      <td></td>
+      <td>move abruptly突然行动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td>['agitate', 'budge', 'stir']</td>
+      <td></td>
+      <td>move very slightly移动得很轻微</td>
+      <td>He shifted in his seat他转过身来</td>
+      <td>[shifting]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td></td>
+      <td></td>
+      <td>change gears改变齿轮</td>
+      <td>you have to shift when you go down a steep hill当你走下陡峭的山坡时，你必须转移</td>
+      <td>[shifter]</td>
+      <td></td>
+      <td>[change, switch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td></td>
+      <td></td>
+      <td>change in quality质量的变化</td>
+      <td>His tone shifted他的语气转移了</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td></td>
+      <td></td>
+      <td>change phonetically as part of a systematic historical change作为系统的历史变化的一部分，在语音上发生变化</td>
+      <td>Grimm showed how the consonants shifted格林表明辅音是如何移动的</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td></td>
+      <td></td>
+      <td>move and exchange for another移动和交换另一个</td>
+      <td>shift the date for our class reunion转移我们班级重聚的日期</td>
+      <td></td>
+      <td></td>
+      <td>[replace, exchange, interchange, substitute]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td></td>
+      <td></td>
+      <td>move from one setting or context to another从一个设置或上下文移动到另一个</td>
+      <td>shift the emphasis转移重点shift one's attention转移一个人的注意力</td>
+      <td></td>
+      <td></td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>ʃɪft</td>
+      <td></td>
+      <td></td>
+      <td>use a shift key on a keyboard使用键盘上的shift键</td>
+      <td>She could not shift so all her letters are written in lower case她无法转移所以她的所有信件都是小写的</td>
+      <td></td>
+      <td></td>
+      <td>[type, typewrite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['switch', 'switching']</td>
+      <td></td>
+      <td>the act of changing one thing or position for another改变一件事或一件事的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['duty period', 'work shift']</td>
+      <td></td>
+      <td>the time period during which you are at work你工作的时间段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hours]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['break', 'fault', 'faulting', 'fracture', 'geological fault']</td>
+      <td></td>
+      <td>(geology) a crack in the earth's crust resulting from the displacement of one side with respect to the other（地质学）由于一侧相对于另一侧的位移而导致的地壳裂缝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crack, scissure, cleft, fissure, crevice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['chemise', 'sack']</td>
+      <td></td>
+      <td>a loose-fitting dress hanging straight from the shoulders without a waist这款宽松连衣裙直接从肩部垂下，没有腰部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[frock, dress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['displacement']</td>
+      <td></td>
+      <td>an event in which something is displaced without rotation某事物在没有旋转的情况下移位的事件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[translation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['shift key']</td>
+      <td></td>
+      <td>the key on the typewriter keyboard that shifts from lower-case letters to upper-case letters打字机键盘上的键，从小写字母转换为大写字母</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[key]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['shifting']</td>
+      <td></td>
+      <td>the act of moving from one place to another从一个地方搬到另一个地方的行为</td>
+      <td>his constant shifting disrupted the class他的不断变换扰乱了全班</td>
+      <td>[shifty]</td>
+      <td></td>
+      <td>[movement, motion, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['transformation', 'transmutation']</td>
+      <td></td>
+      <td>a qualitative change质的变化</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[modification, change, alteration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td>['chemise', 'shimmy', 'slip', 'teddy']</td>
+      <td></td>
+      <td>a woman's sleeveless undergarment一个女人的无袖内衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[undergarment, unmentionable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shift</th>
+      <td>ift</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>ʃɪft</td>
+      <td></td>
+      <td></td>
+      <td>a crew of workers who work for a specific period of time一群在特定时期工作的工人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work party, gang, crew]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fifth</th>
+      <td>ift</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>fɪfθ</td>
+      <td>['fifth part', 'one-fifth', 'twenty percent']</td>
+      <td></td>
+      <td>one part in five equal parts五分之一的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[simple fraction, common fraction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fifth</th>
+      <td>ift</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>fɪfθ</td>
+      <td></td>
+      <td></td>
+      <td>a quantity of liquor equal to one fifth of a United States gallon一定量的酒相当于美国加仑的五分之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[united states liquid unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fifth</th>
+      <td>ift</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>fɪfθ</td>
+      <td></td>
+      <td></td>
+      <td>position five in a countable series of things在可数系列的事物中排名第五</td>
+      <td>he was fifth out of several hundred runners他在数百名选手中排名第五</td>
+      <td></td>
+      <td></td>
+      <td>[rank]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fifth</th>
+      <td>ift</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>fɪfθ</td>
+      <td></td>
+      <td></td>
+      <td>the musical interval between one note and another five notes away from it一个音符和另外五个音符之间的音乐间隔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[musical interval, interval]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fifth</th>
+      <td>ift</td>
+      <td>4.21</td>
+      <td>adj</td>
+      <td>fɪfθ</td>
+      <td>['5th'], similarTo:['ordinal']</td>
+      <td></td>
+      <td>coming next after the fourth and just before the sixth in position在第四名之后接下来，就在第六名之前</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td>['freewheel']</td>
+      <td></td>
+      <td>live unhurriedly, irresponsibly, or freely不负责任地，不负责任地或自由地生活</td>
+      <td>My son drifted around for years in California before going to law school我的儿子在去法学院之前在加利福尼亚州漂流多年</td>
+      <td></td>
+      <td></td>
+      <td>[survive, exist, live, subsist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td>['be adrift', 'blow', 'float']</td>
+      <td></td>
+      <td>be in motion due to some air or water current由于某些空气或水流而运动</td>
+      <td>the boat drifted on the lake船漂在湖面上The sailboat was adrift on the open sea帆船漂浮在公海上the shipwrecked boat drifted away from the shore遇难的船漂浮在岸边</td>
+      <td></td>
+      <td>[float]</td>
+      <td>[locomote, go, travel, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td>['cast', 'ramble', 'range', 'roam', 'roll', 'rove', 'stray', 'swan', 'tramp', 'vagabond', 'wander']</td>
+      <td></td>
+      <td>move about aimlessly or without any destination, often in search of food or employment无目的地移动或没有任何目的地，经常寻找食物或就业</td>
+      <td>the laborers drift from one town to the next劳动者从一个城镇漂流到另一个城镇</td>
+      <td>[drifting, drifter]</td>
+      <td>[stray, err, wander]</td>
+      <td>[move, locomote, travel, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td>['err', 'stray']</td>
+      <td></td>
+      <td>wander from a direct course or at random从直接课程或随机漫步</td>
+      <td>don't drift from the set course不要偏离固定的路线</td>
+      <td>[drifting, driftage]</td>
+      <td>[vagabond, cast, ramble, range, roam, roll, rove, stray, wander, swan, tramp]</td>
+      <td>[locomote, go, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>be piled up in banks or heaps by the force of wind or a current被风力或电流强大地堆积在岸边或堆积中</td>
+      <td>snow drifting several feet high雪漂几英尺高sand drifting like snow像雪一样飘过的沙子</td>
+      <td></td>
+      <td></td>
+      <td>[gather, cumulate, accumulate, amass, pile up, conglomerate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>be subject to fluctuation受波动影响</td>
+      <td>The stock market drifted upward股市向上漂移</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>cause to be carried by a current导致由电流携带</td>
+      <td>drift the boats downstream漂流船下游</td>
+      <td></td>
+      <td>[blow, be adrift, float]</td>
+      <td>[float]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>drive slowly and far afield for grazing慢慢地开车到远处吃草</td>
+      <td>drift the cattle herds westwards将牛群向西漂移</td>
+      <td></td>
+      <td></td>
+      <td>[graze, crop, pasture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>move in an unhurried fashion以一种不紧不慢的方式行动</td>
+      <td>The unknown young man drifted among the invited guests这位不知名的年轻人在受邀嘉宾中漂流</td>
+      <td></td>
+      <td>[freewheel]</td>
+      <td>[circulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>vary or move from a fixed point or course改变或从固定点或路线移动</td>
+      <td>stock prices are drifting higher股价正在走高</td>
+      <td></td>
+      <td></td>
+      <td>[vary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>drɪft</td>
+      <td>['purport']</td>
+      <td></td>
+      <td>the pervading meaning or tenor普遍的意义或男高音</td>
+      <td>caught the general drift of the conversation抓住了对话的一般偏差</td>
+      <td>[drive]</td>
+      <td></td>
+      <td>[strain, tenor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>drɪft</td>
+      <td>['impetus', 'impulsion']</td>
+      <td></td>
+      <td>a force that moves something along一股移动的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>drɪft</td>
+      <td>['movement', 'trend']</td>
+      <td></td>
+      <td>a general tendency to change (as of opinion)一般的改变倾向（作为意见）</td>
+      <td></td>
+      <td>[drive]</td>
+      <td></td>
+      <td>[disposition, inclination, tendency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>drɪft</td>
+      <td>['gallery', 'heading']</td>
+      <td></td>
+      <td>a horizontal (or nearly horizontal) passageway in a mine矿井中的水平（或接近水平）通道</td>
+      <td>they dug a drift parallel with the vein他们挖了一条与静脉平行的漂移物</td>
+      <td>[drive]</td>
+      <td></td>
+      <td>[passageway]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>a large mass of material that is heaped up by the wind or by water currents由风或水流堆积的大量物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>a process of linguistic change over a period of time一段时间内语言变化的过程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linguistic process]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drift</th>
+      <td>ift</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>drɪft</td>
+      <td></td>
+      <td></td>
+      <td>the gradual departure from an intended course due to external influences (as a ship or plane)由于外部影响（如船舶或飞机）逐渐偏离预定航向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural process, activity, natural action, action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swift</th>
+      <td>ift</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>swɪft</td>
+      <td>['blue-belly', 'sceloporus occidentalis', 'western fence lizard']</td>
+      <td></td>
+      <td>common western lizard; seen on logs or rocks常见的西部蜥蜴;在日志或岩石上看到</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fence lizard]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swift</th>
+      <td>ift</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>swɪft</td>
+      <td>['gustavus franklin swift']</td>
+      <td></td>
+      <td>United States meat-packer who began the use of refrigerated railroad cars (1839-1903)美国肉类加工商开始使用冷藏铁路车（1839-1903）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swift</th>
+      <td>ift</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>swɪft</td>
+      <td>['dean swift', 'jonathan swift']</td>
+      <td></td>
+      <td>an English satirist born in Ireland (1667-1745)出生于爱尔兰的英国讽刺作家（1667-1745）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swift</th>
+      <td>ift</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>swɪft</td>
+      <td></td>
+      <td></td>
+      <td>a small bird that resembles a swallow and is noted for its rapid flight一只类似燕子的小鸟，以其快速飞行着称</td>
+      <td></td>
+      <td>[swiftlet]</td>
+      <td></td>
+      <td>[apodiform bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swift</th>
+      <td>ift</td>
+      <td>3.49</td>
+      <td>adj</td>
+      <td>swɪft</td>
+      <td>['fleet'], similarTo:['fast']</td>
+      <td></td>
+      <td>moving very fast移动得非常快</td>
+      <td>a swift current一股迅速的潮流swift flight of an arrow快速飞行的箭头a swift runner一个快速的跑步者</td>
+      <td>[swiftness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nifty</th>
+      <td>ift</td>
+      <td>2.87</td>
+      <td>adj</td>
+      <td>'nɪfti</td>
+      <td>['bang-up', 'bully', 'corking', 'cracking', 'dandy', 'great', 'groovy', 'keen', 'neat', 'not bad', 'old', 'peachy', 'slap-up', 'smashing', 'swell'], similarTo:['good']</td>
+      <td></td>
+      <td>very good很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

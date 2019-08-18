@@ -1,0 +1,260 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['taxi', 'maxi', 'ajax', 'axle', 'flax', 'waxy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>taxi</th>
+      <td>ax</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>'tæksi</td>
+      <td>['cab']</td>
+      <td></td>
+      <td>ride in a taxicab乘坐出租车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>taxi</th>
+      <td>ax</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>'tæksi</td>
+      <td></td>
+      <td></td>
+      <td>travel slowly慢慢来</td>
+      <td>The plane taxied down the runway飞机在跑道上滑行</td>
+      <td></td>
+      <td></td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>taxi</th>
+      <td>ax</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>'tæksi</td>
+      <td>['cab', 'hack', 'taxicab']</td>
+      <td></td>
+      <td>a car driven by a person whose job is to take passengers where they want to go in exchange for money由一个人驾驶的汽车，其工作是将乘客带到他们想去的地方以换钱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[machine, auto, car, motorcar, automobile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>maxi</th>
+      <td>ax</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>'mæksi</td>
+      <td></td>
+      <td></td>
+      <td>a long skirt ending below the calf一条长裙，在小腿下面结束</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[skirt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>maxi</th>
+      <td>ax</td>
+      <td>3.33</td>
+      <td>adj</td>
+      <td>'mæksi</td>
+      <td></td>
+      <td>[midi, mini]</td>
+      <td>used of women's clothing having a hemline at the ankle用于女性的服装，脚踝处有下摆</td>
+      <td>wanted a maxi-length coat想要一件超长外套a maxidress一个maxidress</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[combining form]</td>
+    </tr>
+    <tr>
+      <th>ajax</th>
+      <td>ax</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>'eɪdʒæks</td>
+      <td></td>
+      <td></td>
+      <td>a mythical Greek hero; a warrior who fought against Troy in the Iliad一个神话般的希腊英雄;在伊利亚特与特洛伊作战的战士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>axle</th>
+      <td>ax</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>'æksəl</td>
+      <td></td>
+      <td></td>
+      <td>a shaft on which a wheel rotates车轮旋转的轴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shaft]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flax</th>
+      <td>ax</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>flæks</td>
+      <td></td>
+      <td></td>
+      <td>fiber of the flax plant that is made into thread and woven into linen fabric亚麻植物的纤维，被制成线并编织成亚麻织物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant fiber, plant fibre]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flax</th>
+      <td>ax</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>flæks</td>
+      <td></td>
+      <td></td>
+      <td>plant of the genus Linum that is cultivated for its seeds and for the fibers of its stemLinum属植物，用于种子和茎的纤维</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herbaceous plant, herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waxy</th>
+      <td>ax</td>
+      <td>2.38</td>
+      <td>adj</td>
+      <td>'wæksi</td>
+      <td>['impressible', 'impressionable'], similarTo:['susceptible', 'easy', 'pliant', 'spinnable', 'plastic']</td>
+      <td></td>
+      <td>easily impressed or influenced容易留下深刻印象或影响</td>
+      <td>a waxy mind一个狡猾的头脑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waxy</th>
+      <td>ax</td>
+      <td>2.38</td>
+      <td>adj</td>
+      <td>'wæksi</td>
+      <td>['waxen']</td>
+      <td></td>
+      <td>made of or covered with wax用蜡制成或用蜡覆盖</td>
+      <td>careful, the floor is waxy小心，地板是蜡状的</td>
+      <td>[wax, waxiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waxy</th>
+      <td>ax</td>
+      <td>2.38</td>
+      <td>adj</td>
+      <td>'wæksi</td>
+      <td>['bendable', 'pliable', 'pliant'], similarTo:['flexile', 'flexible']</td>
+      <td></td>
+      <td>capable of being bent or flexed or twisted without breaking能够弯曲或弯曲或扭曲而不会断裂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waxy</th>
+      <td>ax</td>
+      <td>2.38</td>
+      <td>adj</td>
+      <td>'wæksi</td>
+      <td>['waxen', 'waxlike'], similarTo:['colourless', 'colorless']</td>
+      <td></td>
+      <td>having the paleness of wax有蜡的苍白</td>
+      <td>a thin face with a waxy paleness一张薄薄的脸，蜡质苍白</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

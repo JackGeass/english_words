@@ -1,0 +1,785 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['god', 'odd', 'rod', 'pod', 'nod', 'cod', 'sod', 'tod', 'dod', 'mod', 'bod', 'hod']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>god</th>
+      <td>od</td>
+      <td>5.97</td>
+      <td>nou</td>
+      <td>ɡɑd</td>
+      <td>['graven image', 'idol']</td>
+      <td></td>
+      <td>a material effigy that is worshipped一种被崇拜的物质肖像</td>
+      <td>money was his god钱是他的上帝</td>
+      <td></td>
+      <td></td>
+      <td>[simulacrum, image, effigy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>god</th>
+      <td>od</td>
+      <td>5.97</td>
+      <td>nou</td>
+      <td>ɡɑd</td>
+      <td>['deity', 'divinity', 'immortal']</td>
+      <td></td>
+      <td>any supernatural being worshipped as controlling some part of the world or some aspect of life or who is the personification of a force任何超自然被崇拜为控制世界的某些部分或生活的某些方面或者是一种力量的化身</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supernatural being, spiritual being]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>god</th>
+      <td>od</td>
+      <td>5.97</td>
+      <td>nou</td>
+      <td>ɡɑd</td>
+      <td>['supreme being']</td>
+      <td></td>
+      <td>the supernatural being conceived as the perfect and omnipotent and omniscient originator and ruler of the universe; the object of worship in monotheistic religions超自然被认为是完美的，无所不能的，无所不知的宇宙创造者和统治者;一神论宗教中的崇拜对象</td>
+      <td></td>
+      <td>[godly]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>god</th>
+      <td>od</td>
+      <td>5.97</td>
+      <td>nou</td>
+      <td>ɡɑd</td>
+      <td></td>
+      <td></td>
+      <td>a man of such superior qualities that he seems like a deity to other people一个具有如此优越品质的人，他似乎是对其他人的神性</td>
+      <td>he was a god among men他是男人中的神</td>
+      <td></td>
+      <td></td>
+      <td>[superordinate, higher-up, superior]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odd</th>
+      <td>od</td>
+      <td>4.47</td>
+      <td>adj</td>
+      <td>ɑd</td>
+      <td>['curious', 'funny', 'peculiar', 'queer', 'rum', 'rummy', 'singular'], similarTo:['strange', 'unusual']</td>
+      <td></td>
+      <td>beyond or deviating from the usual or expected超出或偏离通常或预期的</td>
+      <td>had an odd name有一个奇怪的名字</td>
+      <td>[oddity]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odd</th>
+      <td>od</td>
+      <td>4.47</td>
+      <td>adj</td>
+      <td>ɑd</td>
+      <td>['unmatched', 'unmated', 'unpaired'], similarTo:['mismatched']</td>
+      <td></td>
+      <td>of the remaining member of a pair其余成员中的一对</td>
+      <td>an odd glove一个奇怪的手套</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odd</th>
+      <td>od</td>
+      <td>4.47</td>
+      <td>adj</td>
+      <td>ɑd</td>
+      <td>['uneven']</td>
+      <td>[even]</td>
+      <td>not divisible by two不能被两个人整除</td>
+      <td></td>
+      <td>[oddness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odd</th>
+      <td>od</td>
+      <td>4.47</td>
+      <td>adj</td>
+      <td>ɑd</td>
+      <td>['left', 'left over', 'leftover', 'remaining', 'unexpended'], similarTo:['unexhausted']</td>
+      <td></td>
+      <td>not used up没用完</td>
+      <td>some odd dollars left还有一些奇怪的美元</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odd</th>
+      <td>od</td>
+      <td>4.47</td>
+      <td>adj</td>
+      <td>ɑd</td>
+      <td>, similarTo:['inexact']</td>
+      <td></td>
+      <td>an indefinite quantity more than that specified超过指定数量的无限数量</td>
+      <td>invited 30-odd guests邀请了30多位客人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[combining form]</td>
+    </tr>
+    <tr>
+      <th>odd</th>
+      <td>od</td>
+      <td>4.47</td>
+      <td>adj</td>
+      <td>ɑd</td>
+      <td>, similarTo:['unusual']</td>
+      <td></td>
+      <td>not easily explained不容易解释</td>
+      <td>it is odd that his name is never mentioned奇怪的是他的名字从未被提及过</td>
+      <td>[oddness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rod</th>
+      <td>od</td>
+      <td>3.99</td>
+      <td>nou</td>
+      <td>rɑd</td>
+      <td>['perch', 'pole']</td>
+      <td></td>
+      <td>a square rod of land一块方形的土地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area unit, square measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rod</th>
+      <td>od</td>
+      <td>3.99</td>
+      <td>nou</td>
+      <td>rɑd</td>
+      <td>['gat']</td>
+      <td></td>
+      <td>a gangster's pistol一个强盗的手枪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[side arm, shooting iron, pistol, handgun]</td>
+      <td>[lingo, argot, vernacular, cant, slang, jargon, patois]</td>
+    </tr>
+    <tr>
+      <th>rod</th>
+      <td>od</td>
+      <td>3.99</td>
+      <td>nou</td>
+      <td>rɑd</td>
+      <td>['retinal rod', 'rod cell']</td>
+      <td></td>
+      <td>a visual receptor cell that is sensitive to dim light视觉受体细胞，对昏暗的光线敏感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visual cell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rod</th>
+      <td>od</td>
+      <td>3.99</td>
+      <td>nou</td>
+      <td>rɑd</td>
+      <td>['perch', 'pole']</td>
+      <td></td>
+      <td>a linear measure of 16.5 feet线性度量为16.5英尺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linear unit, linear measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rod</th>
+      <td>od</td>
+      <td>3.99</td>
+      <td>nou</td>
+      <td>rɑd</td>
+      <td></td>
+      <td></td>
+      <td>a long thin implement made of metal or wood由金属或木材制成的长薄工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rod</th>
+      <td>od</td>
+      <td>3.99</td>
+      <td>nou</td>
+      <td>rɑd</td>
+      <td></td>
+      <td></td>
+      <td>any rod-shaped bacterium任何棒状细菌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bacteria, bacterium]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pod</th>
+      <td>od</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>pɑd</td>
+      <td></td>
+      <td></td>
+      <td>produce pods, of plants生产豆荚，植物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[develop, produce, grow, acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pod</th>
+      <td>od</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>pɑd</td>
+      <td></td>
+      <td></td>
+      <td>take something out of its shell or pod从它的壳或豆荚中取出一些东西</td>
+      <td>pod peas or beans豆荚豆或豆</td>
+      <td></td>
+      <td></td>
+      <td>[shell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pod</th>
+      <td>od</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>pɑd</td>
+      <td>['cod', 'seedcase']</td>
+      <td></td>
+      <td>the vessel that contains the seeds of a plant (not the seeds themselves)含有植物种子的容器（不是种子本身）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[husk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pod</th>
+      <td>od</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>pɑd</td>
+      <td>['fuel pod']</td>
+      <td></td>
+      <td>a detachable container of fuel on an airplane飞机上可拆卸的燃料容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pod</th>
+      <td>od</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>pɑd</td>
+      <td>['seedpod']</td>
+      <td></td>
+      <td>a several-seeded dehiscent fruit as e.g. of a leguminous plant一种几种种子的开裂果实，例如豆科植物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fruit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pod</th>
+      <td>od</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>pɑd</td>
+      <td></td>
+      <td></td>
+      <td>a group of aquatic mammals一群水生哺乳动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nod</th>
+      <td>od</td>
+      <td>3.57</td>
+      <td>ver</td>
+      <td>nɑd</td>
+      <td></td>
+      <td></td>
+      <td>be almost asleep几乎睡着了</td>
+      <td>The old man sat nodding by the fireplace老人坐在壁炉旁点头</td>
+      <td></td>
+      <td></td>
+      <td>[drowse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nod</th>
+      <td>od</td>
+      <td>3.57</td>
+      <td>ver</td>
+      <td>nɑd</td>
+      <td></td>
+      <td></td>
+      <td>express or signify by nodding通过点头表达或表示</td>
+      <td>He nodded his approval他点头表示赞同</td>
+      <td></td>
+      <td></td>
+      <td>[gesture, motion, gesticulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nod</th>
+      <td>od</td>
+      <td>3.57</td>
+      <td>ver</td>
+      <td>nɑd</td>
+      <td></td>
+      <td></td>
+      <td>lower and raise the head, as to indicate assent or agreement or confirmation降低并抬起头部，以表示同意或同意或确认</td>
+      <td>The teacher nodded when the student gave the right answer当学生给出正确的答案时，老师点点头</td>
+      <td></td>
+      <td></td>
+      <td>[communicate, intercommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nod</th>
+      <td>od</td>
+      <td>3.57</td>
+      <td>ver</td>
+      <td>nɑd</td>
+      <td></td>
+      <td></td>
+      <td>sway gently back and forth, as in a nodding motion轻轻地来回摇摆，就像点头一样</td>
+      <td>the flowers were nodding in the breeze鲜花在微风中点头</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nod</th>
+      <td>od</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>nɑd</td>
+      <td></td>
+      <td></td>
+      <td>a sign of assent or salutation or command同意或称呼或命令的标志</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motion, gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nod</th>
+      <td>od</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>nɑd</td>
+      <td></td>
+      <td></td>
+      <td>the act of nodding the head点头的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inclination, inclining]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nod</th>
+      <td>od</td>
+      <td>3.57</td>
+      <td>Non</td>
+      <td>nɑd</td>
+      <td></td>
+      <td></td>
+      <td>let the head fall forward through drowsiness让头部昏昏欲睡</td>
+      <td>The old man was nodding in his chair老人正在他的椅子上点头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cod</th>
+      <td>od</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>kɑd</td>
+      <td>['befool', 'dupe', 'fool', 'gull', 'put on', 'put one across', 'put one over', 'slang', 'take in']</td>
+      <td></td>
+      <td>fool or hoax傻瓜或恶作剧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lead astray, deceive, betray]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cod</th>
+      <td>od</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>kɑd</td>
+      <td>['bait', 'rag', 'rally', 'razz', 'ride', 'tantalise', 'tantalize', 'taunt', 'tease', 'twit']</td>
+      <td></td>
+      <td>harass with persistent criticism or carping骚扰持续的批评或讽刺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mock, bemock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cod</th>
+      <td>od</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>kɑd</td>
+      <td>['codfish']</td>
+      <td></td>
+      <td>lean white flesh of important North Atlantic food fish; usually baked or poached重要的北大西洋食用鱼的瘦肉白肉;通常是烤或煮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[saltwater fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cod</th>
+      <td>od</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>kɑd</td>
+      <td>['pod', 'seedcase']</td>
+      <td></td>
+      <td>the vessel that contains the seeds of a plant (not the seeds themselves)含有植物种子的容器（不是种子本身）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[husk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cod</th>
+      <td>od</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>kɑd</td>
+      <td>['codfish']</td>
+      <td></td>
+      <td>major food fish of Arctic and cold-temperate waters北极和寒温带主要食用鱼类</td>
+      <td></td>
+      <td>[codling]</td>
+      <td></td>
+      <td>[gadoid, gadoid fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cod</th>
+      <td>od</td>
+      <td>3.45</td>
+      <td>adv</td>
+      <td>kɑd</td>
+      <td>['c.o.d.', 'cash on delivery']</td>
+      <td></td>
+      <td>collecting the charges upon delivery在收货时收取费用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cod</th>
+      <td>od</td>
+      <td>3.45</td>
+      <td>adj</td>
+      <td>kɑd</td>
+      <td>['collect'], similarTo:['due']</td>
+      <td></td>
+      <td>payable by the recipient on delivery收货人在交货时支付</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sod</th>
+      <td>od</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>sɑd</td>
+      <td></td>
+      <td></td>
+      <td>cover with sod覆盖着草皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sod</th>
+      <td>od</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>sɑd</td>
+      <td>['superoxide dismutase']</td>
+      <td></td>
+      <td>an enzyme that catalyzes the conversion of superoxide into hydrogen peroxide and oxygen催化超氧化物转化为过氧化氢和氧气的酶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enzyme]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sod</th>
+      <td>od</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>sɑd</td>
+      <td>['greensward', 'sward', 'turf']</td>
+      <td></td>
+      <td>surface layer of ground containing a mat of grass and grass roots地面表层包含草和草根垫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soil, ground, land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sod</th>
+      <td>od</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>sɑd</td>
+      <td>['bugger', 'sodomist', 'sodomite']</td>
+      <td></td>
+      <td>someone who engages in anal copulation (especially a male who engages in anal copulation with another male)从事肛门交配的人（特别是与另一名男性进行肛门交配的男性）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[degenerate, deviate, deviant, pervert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sod</th>
+      <td>od</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>sɑd</td>
+      <td>['bozo', 'cat', 'guy', 'hombre']</td>
+      <td></td>
+      <td>an informal term for a youth or man青年或男子的非正式用语</td>
+      <td>the poor sod couldn't even buy a drink可怜的草皮甚至买不到酒</td>
+      <td></td>
+      <td></td>
+      <td>[adult male, man]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tod</th>
+      <td>od</td>
+      <td>3.34</td>
+      <td>nou</td>
+      <td>tɑd</td>
+      <td></td>
+      <td></td>
+      <td>a unit of weight for wool equal to about 28 pounds羊毛的重量单位等于约28磅</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weight unit, weight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tod</th>
+      <td>od</td>
+      <td>3.34</td>
+      <td>adj</td>
+      <td>tɑd</td>
+      <td>, similarTo:['unaccompanied']</td>
+      <td></td>
+      <td>alone and on your own独自一人</td>
+      <td>don't just sit there on your tod不要只是坐在你的身上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dod</th>
+      <td>od</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td></td>
+      <td>['defense', 'defense department', 'department of defense', 'united states department of defense']</td>
+      <td></td>
+      <td>the federal department responsible for safeguarding national security of the United States; created in 1947负责维护美国国家安全的联邦部门;创建于1947年</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[executive department]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mod</th>
+      <td>od</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>mɑd</td>
+      <td></td>
+      <td></td>
+      <td>a British teenager or young adult in the 1960s; noted for their clothes consciousness and opposition to the rockers20世纪60年代的英国青少年或年轻人;他们的衣服意识和对摇滚乐队的反对而闻名</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adolescent, stripling, teen, teenager]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mod</th>
+      <td>od</td>
+      <td>2.83</td>
+      <td>adj</td>
+      <td>mɑd</td>
+      <td>['modern', 'modernistic'], similarTo:['fashionable', 'stylish']</td>
+      <td></td>
+      <td>relating to a recently developed fashion or style与最近开发的时尚或风格有关</td>
+      <td>their offices are in a modern skyscraper他们的办公室在一个现代化的摩天大楼tables in modernistic designs现代设计中的表格</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bod</th>
+      <td>od</td>
+      <td>2.74</td>
+      <td>nou</td>
+      <td>bɑd</td>
+      <td>['anatomy', 'build', 'chassis', 'figure', 'flesh', 'form', 'frame', 'human body', 'material body', 'physical body', 'physique', 'shape', 'soma']</td>
+      <td></td>
+      <td>alternative names for the body of a human being人体的替代名称</td>
+      <td>Leonardo studied the human body莱昂纳多研究了人体</td>
+      <td></td>
+      <td></td>
+      <td>[body, organic structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hod</th>
+      <td>od</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>hɑd</td>
+      <td></td>
+      <td></td>
+      <td>an open box attached to a long pole handle; bricks or mortar are carried on the shoulder一个打开的盒子，连接在一个长杆手柄上;砖块或砂浆被放在肩上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[box]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

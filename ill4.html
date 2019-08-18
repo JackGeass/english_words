@@ -1,0 +1,1295 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['will', 'kill', 'till', 'bill', 'fill', 'hill', 'pill', 'mill', 'gill', 'dill', 'sill', 'rill']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>will</th>
+      <td>ill</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɪl</td>
+      <td>['bequeath', 'leave']</td>
+      <td></td>
+      <td>leave or give by will after one's death一个人去世后离开或遗嘱</td>
+      <td></td>
+      <td></td>
+      <td>[impart, leave, leave behind, pass on, give]</td>
+      <td>[gift, present, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>will</th>
+      <td>ill</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɪl</td>
+      <td></td>
+      <td></td>
+      <td>decree or ordain法令或命令</td>
+      <td>God wills our existence上帝意志着我们的存在</td>
+      <td></td>
+      <td></td>
+      <td>[ordain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>will</th>
+      <td>ill</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɪl</td>
+      <td></td>
+      <td></td>
+      <td>determine by choice通过选择确定</td>
+      <td>This action was willed and intended这个行动是意志和意图</td>
+      <td>[willing]</td>
+      <td></td>
+      <td>[determine, make up one's mind, decide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>will</th>
+      <td>ill</td>
+      <td>6.46</td>
+      <td>nou</td>
+      <td>wɪl</td>
+      <td>['testament']</td>
+      <td></td>
+      <td>a legal document declaring a person's wishes regarding the disposal of their property when they die一份法律文件，声明一个人在死亡时处置财产的意愿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[legal instrument, instrument, legal document, official document]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>will</th>
+      <td>ill</td>
+      <td>6.46</td>
+      <td>nou</td>
+      <td>wɪl</td>
+      <td>['volition']</td>
+      <td></td>
+      <td>the capability of conscious choice and decision and intention有意识的选择，决策和意图的能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mental faculty, faculty, module]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>will</th>
+      <td>ill</td>
+      <td>6.46</td>
+      <td>nou</td>
+      <td>wɪl</td>
+      <td></td>
+      <td></td>
+      <td>a fixed and persistent intent or purpose固定和持久的意图或目的</td>
+      <td>where there's a will there's a way只要有强大的意志，必有一条路为你开</td>
+      <td></td>
+      <td></td>
+      <td>[purpose, intent, design, intention, aim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td>['obliterate', 'wipe out']</td>
+      <td></td>
+      <td>mark for deletion, rub off, or erase标记删除，擦除或擦除</td>
+      <td>kill these lines in the President's speech在总统的讲话中杀了这些界限</td>
+      <td></td>
+      <td></td>
+      <td>[take out, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td>['stamp out']</td>
+      <td></td>
+      <td>end or extinguish by forceful means以有力的方式结束或熄灭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[end, terminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td>['defeat', 'shoot down', 'vote down', 'vote out']</td>
+      <td></td>
+      <td>thwart the passage of阻止了通过</td>
+      <td>kill a motion杀死一个动议</td>
+      <td></td>
+      <td></td>
+      <td>[negative, veto, blackball]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td>['belt down', 'bolt down', 'down', 'drink down', 'pop', 'pour down', 'toss off']</td>
+      <td></td>
+      <td>drink down entirely完全喝下去</td>
+      <td>She killed a bottle of brandy that night那天晚上她杀了一瓶白兰地</td>
+      <td></td>
+      <td></td>
+      <td>[imbibe, drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>be fatal是致命的</td>
+      <td>cigarettes kill香烟杀了drunken driving kills酒后驾车杀人</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>be the source of great pain for成为痛苦的源泉</td>
+      <td>These new shoes are killing me!这些新鞋正在杀我！</td>
+      <td>[killer]</td>
+      <td></td>
+      <td>[hurt, suffer, ache]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>cause the death of, without intention导致死亡，无意</td>
+      <td>She was killed in the collision of three cars她在三辆汽车的碰撞中丧生</td>
+      <td>[killing, killer]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>cause to cease operating导致停止运作</td>
+      <td>kill the engine杀死引擎</td>
+      <td></td>
+      <td></td>
+      <td>[turn off, turn out, switch off, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td>, alos:['kill off']</td>
+      <td></td>
+      <td>cause to die; put to death, usually intentionally or knowingly导致死亡;通常是有意或有意地处死</td>
+      <td>This man killed several people when he tried to rob a bank这名男子在试图抢劫银行时杀死了几个人The farmer killed a pig for the holidays这位农民为假期杀了一头猪</td>
+      <td>[killing, killable, killer]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>deprive of life剥夺生命</td>
+      <td>AIDS has killed thousands in Africa艾滋病在非洲造成数千人死亡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>destroy a vitally essential quality of or in摧毁一种至关重要的品质</td>
+      <td>Eating artichokes kills the taste of all other foods吃朝鲜蓟会杀死所有其他食物的味道</td>
+      <td></td>
+      <td></td>
+      <td>[destruct, destroy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>hit with great force以极大的力量击中</td>
+      <td>He killed the ball他杀了球</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>hit with so much force as to make a return impossible, in racket games在球拍比赛中，如此强大的力量使得回归变得不可能</td>
+      <td>She killed the ball她杀了球</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>overwhelm with hilarity, pleasure, or admiration充满了欢闹，愉悦或钦佩</td>
+      <td>The comedian was so funny, he was killing me!喜剧演员太可笑了，他杀了我！</td>
+      <td></td>
+      <td></td>
+      <td>[overwhelm, overcome, overpower, overtake, sweep over, whelm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>tire out completely完全厌倦了</td>
+      <td>The daily stress of her work is killing her她工作的每日压力都在扼杀她</td>
+      <td></td>
+      <td></td>
+      <td>[exhaust, tucker out, beat, wash up, tucker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɪl</td>
+      <td>['killing', 'putting to death']</td>
+      <td></td>
+      <td>the act of terminating a life终止生命的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ending, termination, conclusion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>the body of an animal, or bodies of animals, killed by a person or another animal被人或其他动物杀死的动物的身体或动物的身体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body, dead body]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kill</th>
+      <td>ill</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɪl</td>
+      <td></td>
+      <td></td>
+      <td>the destruction of an enemy plane or ship or tank or missile破坏敌机或船只或坦克或导弹</td>
+      <td>the pilot reported two kills during the mission飞行员在执行任务期间报告了两次致命事故</td>
+      <td></td>
+      <td></td>
+      <td>[destruction, devastation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>till</th>
+      <td>ill</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>tɪl</td>
+      <td></td>
+      <td></td>
+      <td>work land as by ploughing, harrowing, and manuring, in order to make it ready for cultivation通过耕作，耙耕和施肥来耕地，以便为耕种做好准备</td>
+      <td>till the soil直到土壤</td>
+      <td>[tillage, tiller, tilling]</td>
+      <td></td>
+      <td>[work on, process, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>till</th>
+      <td>ill</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>tɪl</td>
+      <td>['public treasury', 'trough']</td>
+      <td></td>
+      <td>a treasury for government funds政府资金的财政部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exchequer, treasury]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>till</th>
+      <td>ill</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>tɪl</td>
+      <td>['cashbox', 'money box']</td>
+      <td></td>
+      <td>a strongbox for holding cash持有现金的保险箱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deedbox, strongbox]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>till</th>
+      <td>ill</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>tɪl</td>
+      <td>['boulder clay']</td>
+      <td></td>
+      <td>unstratified soil deposited by a glacier; consists of sand and clay and gravel and boulders mixed together冰川沉积的未分层土壤;由沙子和粘土以及混合在一起的砾石和巨石组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soil, dirt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>bɪl</td>
+      <td>['placard']</td>
+      <td></td>
+      <td>publicize or announce by placards通过标语宣传或宣布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[post]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>bɪl</td>
+      <td>['charge']</td>
+      <td></td>
+      <td>demand payment要求付款</td>
+      <td>We were billed for 4 nights in the hotel, although we stayed only 3 nights我们在酒店住了4晚，虽然我们只住了3晚</td>
+      <td></td>
+      <td>[charge]</td>
+      <td>[calculate, account]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>bɪl</td>
+      <td></td>
+      <td></td>
+      <td>advertise especially by posters or placards特别是通过海报或标语牌做广告</td>
+      <td>He was billed as the greatest tenor since Caruso他被称为卡鲁索以来最伟大的男高音</td>
+      <td></td>
+      <td></td>
+      <td>[advertize, push, promote, advertise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['measure']</td>
+      <td></td>
+      <td>a statute in draft before it becomes law草案成为法律之前的法规</td>
+      <td>they held a public hearing on the bill他们就该法案举行了公开听证会</td>
+      <td></td>
+      <td></td>
+      <td>[legal instrument, legal document, official document, instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['bank bill', 'bank note', "banker's bill", 'banknote', 'federal reserve note', 'government note', 'greenback', 'note']</td>
+      <td></td>
+      <td>a piece of paper money (especially one issued by a central bank)一张纸币（特别是一张由中央银行发行的纸币）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[paper currency, folding money, paper money]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['account', 'invoice']</td>
+      <td></td>
+      <td>an itemized statement of money owed for goods shipped or services rendered货物运输或提供服务所欠款项的明细表</td>
+      <td>he paid his bill and left他付了账单然后离开了</td>
+      <td></td>
+      <td></td>
+      <td>[statement, financial statement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['card', 'notice', 'placard', 'poster', 'posting']</td>
+      <td></td>
+      <td>a sign posted in a public place as an advertisement作为广告张贴在公共场所的标志</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['beak', 'neb', 'nib', 'pecker']</td>
+      <td></td>
+      <td>horny projecting mouth of a bird角质投射的一只鸟的嘴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mouth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['broadsheet', 'broadside', 'circular', 'flier', 'flyer', 'handbill', 'throwaway']</td>
+      <td></td>
+      <td>an advertisement (usually printed on a page or in a leaflet) intended for wide distribution用于广泛分发的广告（通常印在页面或传单上）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[advertizing, ad, advertising, advertizement, advert, advertisement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['eyeshade', 'peak', 'visor', 'vizor']</td>
+      <td></td>
+      <td>a brim that projects to the front to shade the eyes一个向前突出以遮挡眼睛的边缘</td>
+      <td>he pulled down the bill of his cap and trudged ahead他拉下帽子，向前走去</td>
+      <td></td>
+      <td></td>
+      <td>[brim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td>['billhook']</td>
+      <td></td>
+      <td>a cutting tool with a sharp edge具有锋利边缘的切割工具</td>
+      <td>he used a bill to prune branches off of the tree他用一张钞票从树上修剪树枝</td>
+      <td></td>
+      <td></td>
+      <td>[hand tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td></td>
+      <td></td>
+      <td>a list of particulars (as a playbill or bill of fare)详情清单（作为节目单或票价）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[listing, list]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bill</th>
+      <td>ill</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>bɪl</td>
+      <td></td>
+      <td></td>
+      <td>the entertainment offered at a public presentation在公开场合提供的娱乐活动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[program, programme]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td>['fill up', 'make full'], alos:['fill out', 'fill in']</td>
+      <td>[empty]</td>
+      <td>make full, also in a metaphorical sense充实，也是一种隐喻意义上的</td>
+      <td>fill a container填一个容器fill the child with pride让孩子充满自豪</td>
+      <td>[filler, filling]</td>
+      <td></td>
+      <td>[alter, modify, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td>['occupy']</td>
+      <td></td>
+      <td>occupy the whole of占据了整个</td>
+      <td>The liquid fills the container液体充满容器</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td>['fill up']</td>
+      <td>[empty]</td>
+      <td>become full变满了</td>
+      <td>The pool slowly filled with water游泳池里充满了水The theater filled up slowly剧院慢慢充满</td>
+      <td>[filling]</td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td>['conform to', 'fit', 'fulfil', 'fulfill', 'meet', 'satisfy']</td>
+      <td></td>
+      <td>fill, satisfy or meet a want or need or condtion ro restriction填写，满足或满足需要或需要或条件或限制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supply, cater, provide, ply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td>['occupy', 'take']</td>
+      <td></td>
+      <td>assume, as of positions or roles假设，作为职位或角色</td>
+      <td></td>
+      <td></td>
+      <td>[assume, take up, take, strike]</td>
+      <td>[do work, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td>['fill up']</td>
+      <td></td>
+      <td>eat until one is sated吃，直到一个人吃饱</td>
+      <td>He filled up on turkey他吃火鸡</td>
+      <td></td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td>['replete', 'sate', 'satiate']</td>
+      <td></td>
+      <td>fill to satisfaction填写满意</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[consume, have, ingest, take, take in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td></td>
+      <td></td>
+      <td>appoint someone to (a position or a job)任命某人（职位或工作）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[engage, employ, hire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>fɪl</td>
+      <td></td>
+      <td></td>
+      <td>plug with a substance插上一种物质</td>
+      <td>fill a cavity填补空腔</td>
+      <td>[filling, filler]</td>
+      <td></td>
+      <td>[fix, restore, furbish up, doctor, touch on, mend, repair, bushel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>fɪl</td>
+      <td>['filling']</td>
+      <td></td>
+      <td>any material that fills a space or container任何填充空间或容器的材料</td>
+      <td>there was not enough fill for the trench沟槽没有足够的填充物</td>
+      <td></td>
+      <td></td>
+      <td>[stuff, material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td>ill</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>fɪl</td>
+      <td></td>
+      <td></td>
+      <td>a quantity sufficient to satisfy足以满足的数量</td>
+      <td>he ate his fill of potatoes他吃了一大堆土豆she had heard her fill of gossip她听到了她的八卦</td>
+      <td></td>
+      <td></td>
+      <td>[sufficiency, enough]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hill</th>
+      <td>ill</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>hɪl</td>
+      <td></td>
+      <td></td>
+      <td>form into a hill形成一座小山</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[forge, form, mould, mold, shape, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hill</th>
+      <td>ill</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>hɪl</td>
+      <td>['j. j. hill', 'james jerome hill']</td>
+      <td></td>
+      <td>United States railroad tycoon (1838-1916)美国铁路大亨（1838-1916）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hill</th>
+      <td>ill</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>hɪl</td>
+      <td>['mound', "pitcher's mound"]</td>
+      <td></td>
+      <td>(baseball) the slight elevation on which the pitcher stands（棒球）投手站立的轻微高度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[baseball equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hill</th>
+      <td>ill</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>hɪl</td>
+      <td>['alfred hawthorne', 'benny hill']</td>
+      <td></td>
+      <td>risque English comedian (1925-1992)risque英国喜剧演员（1925-1992）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hill</th>
+      <td>ill</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>hɪl</td>
+      <td>['mound']</td>
+      <td></td>
+      <td>structure consisting of an artificial heap or bank usually of earth or stones由人造堆或通常由土或石头构成的堤岸组成的结构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[structure, construction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hill</th>
+      <td>ill</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>hɪl</td>
+      <td></td>
+      <td></td>
+      <td>a local and well-defined elevation of the land当地和明确界定的土地高度</td>
+      <td>they loved to roam the hills of West Virginia他们喜欢在西弗吉尼亚州的山上漫步</td>
+      <td>[hilly]</td>
+      <td></td>
+      <td>[natural elevation, elevation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pill</th>
+      <td>ill</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>pɪl</td>
+      <td>['anovulant', 'anovulatory drug', 'birth control pill', 'contraceptive pill', 'oral contraceptive', 'oral contraceptive pill']</td>
+      <td></td>
+      <td>a contraceptive in the form of a pill containing estrogen and progestin to inhibit ovulation and so prevent conception含有雌激素和孕激素的避孕药，可抑制排卵，从而预防受孕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prophylactic device, birth control device, preventive, preventative, contraceptive, contraceptive device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pill</th>
+      <td>ill</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>pɪl</td>
+      <td>['lozenge', 'tab', 'tablet']</td>
+      <td></td>
+      <td>a dose of medicine in the form of a small pellet一剂小剂量的药丸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dose, dosage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pill</th>
+      <td>ill</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>pɪl</td>
+      <td></td>
+      <td></td>
+      <td>a unpleasant or tiresome person一个令人不快或令人厌倦的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pill</th>
+      <td>ill</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>pɪl</td>
+      <td></td>
+      <td></td>
+      <td>something that resembles a tablet of medicine in shape or size类似药片形状或大小的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pill</th>
+      <td>ill</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>pɪl</td>
+      <td></td>
+      <td></td>
+      <td>something unpleasant or offensive that must be tolerated or endured必须容忍或忍受的令人不快或令人反感的事情</td>
+      <td>his competitor's success was a bitter pill to take他的竞争对手的成功是一个苦果</td>
+      <td></td>
+      <td></td>
+      <td>[incumbrance, onus, burden, load, encumbrance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>mɪl</td>
+      <td>['mill about', 'mill around']</td>
+      <td></td>
+      <td>move about in a confused manner以困惑的方式走来走去</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>mɪl</td>
+      <td></td>
+      <td></td>
+      <td>grind with a mill用磨机研磨</td>
+      <td>mill grain磨粒</td>
+      <td></td>
+      <td></td>
+      <td>[comminute, grind, mash, bray, crunch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>mɪl</td>
+      <td></td>
+      <td></td>
+      <td>produce a ridge around the edge of在边缘周围产生一个山脊</td>
+      <td>mill a coin磨一枚硬币</td>
+      <td>[milling]</td>
+      <td></td>
+      <td>[groove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>mɪl</td>
+      <td></td>
+      <td></td>
+      <td>roll out (metal) with a rolling machine用滚压机推出（金属）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roll out, roll]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>mɪl</td>
+      <td>['grinder', 'milling machinery']</td>
+      <td></td>
+      <td>machinery that processes materials by grinding or crushing通过研磨或破碎处理材料的机器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[machinery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>mɪl</td>
+      <td>['john mill', 'john stuart mill']</td>
+      <td></td>
+      <td>English philosopher and economist remembered for his interpretations of empiricism and utilitarianism (1806-1873)英国哲学家和经济学家记得他对经验主义和功利主义的解释（1806-1873）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>mɪl</td>
+      <td>['factory', 'manufactory', 'manufacturing plant']</td>
+      <td></td>
+      <td>a plant consisting of one or more buildings with facilities for manufacturing由一栋或多栋建筑物组成的工厂，设有制造设施</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant, industrial plant, works]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>mɪl</td>
+      <td>['grind', 'pulverisation', 'pulverization']</td>
+      <td></td>
+      <td>the act of grinding to a powder or dust研磨粉末或粉尘的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[compaction, crush, crunch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mill</th>
+      <td>ill</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>mɪl</td>
+      <td>['james mill']</td>
+      <td></td>
+      <td>Scottish philosopher who expounded Bentham's utilitarianism; father of John Stuart Mill (1773-1836)苏格兰哲学家阐述了边沁的功利主义;约翰斯图亚特米尔的父亲（1773-1836）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gill</th>
+      <td>ill</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>ɡɪl</td>
+      <td>['lamella']</td>
+      <td></td>
+      <td>any of the radiating leaflike spore-producing structures on the underside of the cap of a mushroom or similar fungus在蘑菇或类似真菌的帽子下面的任何辐射叶状孢子产生结构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gill</th>
+      <td>ill</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>ɡɪl</td>
+      <td>['branchia']</td>
+      <td></td>
+      <td>respiratory organ of aquatic animals that breathe oxygen dissolved in water呼吸氧气溶解在水中的水生动物的呼吸器官</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[respiratory organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gill</th>
+      <td>ill</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>ɡɪl</td>
+      <td></td>
+      <td></td>
+      <td>a British imperial capacity unit (liquid or dry) equal to 5 fluid ounces or 142.066 cubic centimeters英国皇家容量单位（液体或干燥）等于5液量盎司或142.066立方厘米</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[british capacity unit, imperial capacity unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gill</th>
+      <td>ill</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>ɡɪl</td>
+      <td></td>
+      <td></td>
+      <td>a United States liquid unit equal to 4 fluid ounces美国液体单位等于4液量盎司</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[united states liquid unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dill</th>
+      <td>ill</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>dɪl</td>
+      <td>['dill weed']</td>
+      <td></td>
+      <td>aromatic threadlike foliage of the dill plant used as seasoning用作调味料的莳萝植物的芳香线状叶子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dill</th>
+      <td>ill</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>dɪl</td>
+      <td>['anethum graveolens']</td>
+      <td></td>
+      <td>aromatic Old World herb having aromatic threadlike foliage and seeds used as seasoning芳香的旧世界草本植物，有芳香的丝状叶子和种子作为调味料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herbaceous plant, herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sill</th>
+      <td>ill</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>sɪl</td>
+      <td></td>
+      <td></td>
+      <td>(geology) a flat (usually horizontal) mass of igneous rock between two layers of older sedimentary rock（地质学）两层较老的沉积岩之间的一块平坦（通常是水平的）火成岩块</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stone, rock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sill</th>
+      <td>ill</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>sɪl</td>
+      <td></td>
+      <td></td>
+      <td>structural member consisting of a continuous horizontal timber forming the lowest member of a framework or supporting structure结构构件由连续的水平木材组成，形成框架或支撑结构的最低构件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[structural member]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rill</th>
+      <td>ill</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>rɪl</td>
+      <td>['rivulet', 'run', 'runnel', 'streamlet']</td>
+      <td></td>
+      <td>a small stream一条小溪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stream, watercourse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rill</th>
+      <td>ill</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>rɪl</td>
+      <td></td>
+      <td></td>
+      <td>a small channel (as one formed by soil erosion)一个小通道（由土壤侵蚀形成的通道）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[channel]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

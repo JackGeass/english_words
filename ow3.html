@@ -1,0 +1,1010 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['now', 'own', 'wow', 'low', 'cow', 'row', 'bow', 'owl', 'vow', 'tow', 'sow', 'pow', 'mow']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>now</th>
+      <td>ow</td>
+      <td>6.47</td>
+      <td>nou</td>
+      <td>naʊ</td>
+      <td></td>
+      <td></td>
+      <td>the momentary present瞬间的存在</td>
+      <td>it worked up to right now它现在正在努力</td>
+      <td></td>
+      <td></td>
+      <td>[nowadays, present]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>now</th>
+      <td>ow</td>
+      <td>6.47</td>
+      <td>adv</td>
+      <td>naʊ</td>
+      <td>['nowadays', 'today']</td>
+      <td></td>
+      <td>in these times在这些时候</td>
+      <td>it is solely by their language that the upper classes nowadays are distinguished现在，上层阶级只能通过他们的语言来区分we now rarely see horse-drawn vehicles on city streets我们现在很少在城市街道上看到马车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>now</th>
+      <td>ow</td>
+      <td>6.47</td>
+      <td>adv</td>
+      <td>naʊ</td>
+      <td>['at present']</td>
+      <td></td>
+      <td>at the present moment目前</td>
+      <td>goods now on sale商品现已发售the now-aging dictator现在正在老化的独裁者they are now abroad他们现在在国外it could happen any time now它现在可能随时发生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>now</th>
+      <td>ow</td>
+      <td>6.47</td>
+      <td>adv</td>
+      <td>naʊ</td>
+      <td>['at once', 'directly', 'forthwith', 'immediately', 'instantly', 'like a shot', 'right away', 'straight off', 'straightaway']</td>
+      <td></td>
+      <td>without delay or hesitation; with no time intervening毫不拖延或犹豫;没有时间介入</td>
+      <td>Come here now!来这里吧！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>own</th>
+      <td>ow</td>
+      <td>5.65</td>
+      <td>ver</td>
+      <td>oʊn</td>
+      <td>['have', 'possess']</td>
+      <td></td>
+      <td>have ownership or possession of拥有或拥有</td>
+      <td>He owns three houses in Florida他在佛罗里达拥有三栋房子</td>
+      <td>[owner]</td>
+      <td>[feature, have]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>own</th>
+      <td>ow</td>
+      <td>5.65</td>
+      <td>adj</td>
+      <td>oʊn</td>
+      <td>['ain'], similarTo:['personal']</td>
+      <td></td>
+      <td>belonging to or on behalf of a specified person (especially yourself); preceded by a possessive属于或代表指定人士（尤其是您自己）;之前是占有欲</td>
+      <td>for your own use供您自己使用do your own thing做你自己的事she makes her own clothes她自己做衣服</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wow</th>
+      <td>ow</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>waʊ</td>
+      <td></td>
+      <td></td>
+      <td>impress greatly印象深刻</td>
+      <td>The speaker wowed the audience演讲者让观众惊叹不已</td>
+      <td></td>
+      <td></td>
+      <td>[impress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wow</th>
+      <td>ow</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>waʊ</td>
+      <td>['belly laugh', 'howler', 'riot', 'scream', 'sidesplitter', 'thigh-slapper']</td>
+      <td></td>
+      <td>a joke that seems extremely funny一个似乎非常有趣的笑话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gag, jape, jest, joke, laugh]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>ver</td>
+      <td>loʊ</td>
+      <td>['moo']</td>
+      <td></td>
+      <td>make a low noise, characteristic of bovines低噪音，牛的特点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[let loose, emit, utter, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>loʊ</td>
+      <td>['first', 'first gear', 'low gear']</td>
+      <td></td>
+      <td>the lowest forward gear ratio in the gear box of a motor vehicle; used to start a car moving机动车齿轮箱中的最低前进传动比;曾经开始开车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gear, gear mechanism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>loʊ</td>
+      <td>['depression']</td>
+      <td></td>
+      <td>an air mass of lower pressure; often brings precipitation气压较低的气团;经常带来降水</td>
+      <td>a low moved in over night bringing sleet and snow一个低矮的夜晚带着雨夹雪和雪</td>
+      <td></td>
+      <td></td>
+      <td>[air mass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>loʊ</td>
+      <td>['david low', 'sir david alexander cecil low', 'sir david low']</td>
+      <td></td>
+      <td>British political cartoonist (born in New Zealand) who created the character Colonel Blimp (1891-1963)英国政治漫画家（出生于新西兰）创造了角色Blimp上校（1891-1963）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>loʊ</td>
+      <td></td>
+      <td>[high]</td>
+      <td>a low level or position or degree低级别或职位或程度</td>
+      <td>the stock market fell to a new low股市跌至新低</td>
+      <td></td>
+      <td></td>
+      <td>[level, grade, degree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>['depleted'], similarTo:['deficient', 'insufficient']</td>
+      <td></td>
+      <td>no longer sufficient不再足够</td>
+      <td>supplies are low供应量很低</td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>['low-pitched'], similarTo:['throaty', 'contralto', 'deep', 'contrabass', 'bass', 'baritone', 'alto', 'double-bass']</td>
+      <td>[high]</td>
+      <td>used of sounds and voices; low in pitch or frequency用于声音和声音;音高或频率低</td>
+      <td></td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>['broken', 'crushed', 'humbled', 'humiliated'], similarTo:['humble']</td>
+      <td></td>
+      <td>subdued or brought low in condition or status状态或状态受到抑制或降低</td>
+      <td>brought low降低了</td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>['abject', 'low-down', 'miserable', 'scummy', 'scurvy'], similarTo:['contemptible']</td>
+      <td></td>
+      <td>of the most contemptible kind最可鄙的一种</td>
+      <td>a low stunt to pull拉扯低噱头a low-down sneak低调潜行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>['blue', 'depressed', 'dispirited', 'down', 'down in the mouth', 'downcast', 'downhearted', 'gloomy', 'grim', 'low-spirited'], similarTo:['dejected']</td>
+      <td></td>
+      <td>filled with melancholy and despondency充满了忧郁和沮丧</td>
+      <td></td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>['humble', 'lowly', 'modest', 'small'], similarTo:['inferior']</td>
+      <td></td>
+      <td>low or inferior in station or quality车站或质量低或低</td>
+      <td>a lowly parish priest一个卑微的教区牧师</td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>['low-toned'], similarTo:['soft']</td>
+      <td></td>
+      <td>very low in volume体积很小</td>
+      <td>a low murmur低沉的低语the low-toned murmur of the surf低沉的海浪杂音</td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>, similarTo:['degraded', 'reduced', 'depressed', 'devalued', 'debased', 'low-level', 'down', 'rock-bottom'], alos:['inferior']</td>
+      <td>[high]</td>
+      <td>less than normal in degree or intensity or amount程度或强度或数量低于正常值</td>
+      <td>low prices低价the reservoir is low水库很低</td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>, similarTo:['low-growing', 'underslung', 'nether', 'lowset', 'low-set', 'low-lying', 'low-level', 'low-altitude', 'deep', 'squat', 'under', 'flat-growing', 'ground-hugging'], alos:['short', 'little', 'down', 'inferior']</td>
+      <td>[high]</td>
+      <td>literal meanings; being at or having a relatively small elevation or upward extension字面含义;处于或具有相对较小的高度或向上延伸</td>
+      <td>low ceilings低天花板low clouds低云low hills低山丘陵the sun is low太阳很低low furniture低矮的家具a low bow低弓</td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>low</th>
+      <td>ow</td>
+      <td>4.79</td>
+      <td>adj</td>
+      <td>loʊ</td>
+      <td>, similarTo:['unrefined']</td>
+      <td></td>
+      <td>unrefined in character未定义的字符</td>
+      <td>low comedy低喜剧</td>
+      <td>[lowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cow</th>
+      <td>ow</td>
+      <td>4.52</td>
+      <td>ver</td>
+      <td>kaʊ</td>
+      <td>['overawe']</td>
+      <td></td>
+      <td>subdue, restrain, or overcome by affecting with a feeling of awe; frighten (as with threats)通过敬畏的感觉来制服，抑制或克服;吓唬（和威胁一样）</td>
+      <td></td>
+      <td>[coward]</td>
+      <td></td>
+      <td>[awe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cow</th>
+      <td>ow</td>
+      <td>4.52</td>
+      <td>nou</td>
+      <td>kaʊ</td>
+      <td>['moo-cow']</td>
+      <td></td>
+      <td>female of domestic cattle:家养牛的女性：</td>
+      <td>`moo-cow' is a child's term“moo-cow”是一个孩子的名词</td>
+      <td></td>
+      <td></td>
+      <td>[cattle, cows, oxen, bos taurus, kine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cow</th>
+      <td>ow</td>
+      <td>4.52</td>
+      <td>nou</td>
+      <td>kaʊ</td>
+      <td></td>
+      <td></td>
+      <td>a large unpleasant woman一个大的不愉快的女人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable woman, unpleasant woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cow</th>
+      <td>ow</td>
+      <td>4.52</td>
+      <td>nou</td>
+      <td>kaʊ</td>
+      <td></td>
+      <td></td>
+      <td>mature female of mammals of which the male is called `bull'哺乳动物的成熟雌性，其雄性被称为“公牛”</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[placental, eutherian mammal, eutherian, placental mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>raʊ</td>
+      <td></td>
+      <td></td>
+      <td>propel with oars用桨推进</td>
+      <td>row the boat across the lake把船划过湖面</td>
+      <td>[rower, rowing]</td>
+      <td></td>
+      <td>[boat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>raʊ</td>
+      <td>['course']</td>
+      <td></td>
+      <td>(construction) a layer of masonry（建筑）一层砖石</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[layer, bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>raʊ</td>
+      <td>['dustup', 'quarrel', 'run-in', 'words', 'wrangle']</td>
+      <td></td>
+      <td>an angry dispute愤怒的争执</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[difference of opinion, conflict, difference, dispute]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>raʊ</td>
+      <td>['rowing']</td>
+      <td></td>
+      <td>the act of rowing as a sport划船作为一项运动的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sport, athletics]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>raʊ</td>
+      <td></td>
+      <td></td>
+      <td>a continuous chronological succession without an interruption一个连续的时间序列连续而没有中断</td>
+      <td>they won the championship three years in a row他们连续三年赢得冠军</td>
+      <td></td>
+      <td></td>
+      <td>[sequence, chronological sequence, chronological succession, successiveness, succession]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>raʊ</td>
+      <td></td>
+      <td></td>
+      <td>a linear array of numbers, letters, or symbols side by side并排的数字，字母或符号的线性数组</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[array]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>raʊ</td>
+      <td></td>
+      <td></td>
+      <td>a long continuous strip (usually running horizontally)长连续条带（通常水平运行）</td>
+      <td>a mackerel sky filled with rows of clouds鲭鱼的天空充满了一排排云彩rows of barbed wire protected the trenches一排排铁丝网保护了战壕</td>
+      <td></td>
+      <td></td>
+      <td>[strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>row</th>
+      <td>ow</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>raʊ</td>
+      <td></td>
+      <td></td>
+      <td>an arrangement of objects or people side by side in a line物体或人并排排成一排</td>
+      <td>a row of chairs一排椅子</td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>ver</td>
+      <td>baʊ</td>
+      <td>['accede', 'defer', 'give in', 'submit']</td>
+      <td></td>
+      <td>yield to another's wish or opinion屈服于另一个人的愿望或意见</td>
+      <td>The government bowed to the military pressure政府屈服于军事压力</td>
+      <td></td>
+      <td></td>
+      <td>[buckle under, knuckle under, yield, give in, succumb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>ver</td>
+      <td>baʊ</td>
+      <td>['bend', 'crouch', 'stoop']</td>
+      <td></td>
+      <td>bend one's back forward from the waist on down从腰部向下弯曲一个向后弯曲</td>
+      <td>She bowed before the Queen她在女王面前鞠躬</td>
+      <td></td>
+      <td></td>
+      <td>[bend, flex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>ver</td>
+      <td>baʊ</td>
+      <td>['bow down']</td>
+      <td></td>
+      <td>bend one's knee or body, or lower one's head弯曲一个人的膝盖或身体，或降低一个人的头部</td>
+      <td>He bowed before the King他在国王面前鞠躬She bowed her head in shame她羞愧地低下头</td>
+      <td></td>
+      <td></td>
+      <td>[gesture, motion, gesticulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>ver</td>
+      <td>baʊ</td>
+      <td>, alos:['bow down']</td>
+      <td></td>
+      <td>bend the head or the upper part of the body in a gesture of respect or greeting以尊重或问候的姿态弯曲头部或身体的上半部分</td>
+      <td>He bowed before the King他在国王面前鞠躬</td>
+      <td></td>
+      <td></td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>ver</td>
+      <td>baʊ</td>
+      <td></td>
+      <td></td>
+      <td>play on a stringed instrument with a bow用弓弦乐器演奏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td>['bowknot']</td>
+      <td></td>
+      <td>a knot with two loops and loose ends; used to tie shoelaces一个有两个环和松散末端的结;用来绑鞋带</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[knot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td>['bowing', 'obeisance']</td>
+      <td></td>
+      <td>bending the head or body or knee as a sign of reverence or submission or shame or greeting弯曲头部或身体或膝盖作为敬畏或屈服或羞耻或问候的标志</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motion, gesture, reverence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td>['curtain call']</td>
+      <td></td>
+      <td>an appearance by actors or performers at the end of the concert or play in order to acknowledge the applause of the audience演唱会或演出结束时演员或表演者的出场，以表彰观众的掌声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thanks]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td>['arc']</td>
+      <td></td>
+      <td>something curved in shape形状弯曲的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[curve, curved shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td>['fore', 'prow', 'stem']</td>
+      <td></td>
+      <td>front part of a vessel or aircraft船只或飞机的前部</td>
+      <td>he pointed the bow of the boat toward the finish line他指着船头朝向终点线</td>
+      <td></td>
+      <td></td>
+      <td>[front]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td></td>
+      <td></td>
+      <td>a decorative interlacing of ribbons丝带装饰交织</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ornament, decoration, ornamentation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td></td>
+      <td></td>
+      <td>a slightly curved piece of resilient wood with taut horsehair strands; used in playing certain stringed instruments一块略微弯曲的弹性木材，带有绷紧的马毛线;用于演奏某些弦乐器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stick]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td></td>
+      <td></td>
+      <td>a stroke with a curved piece of wood with taut horsehair strands that is used in playing stringed instruments用弯曲的马鬃木制成的中风，用于演奏弦乐器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bow</th>
+      <td>ow</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>baʊ</td>
+      <td></td>
+      <td></td>
+      <td>a weapon for shooting arrows, composed of a curved piece of resilient wood with a taut cord to propel the arrow用于射箭的武器，由弯曲的弹性木材和拉紧的绳索组成，用于推动箭头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weapon, weapon system, arm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>owl</th>
+      <td>ow</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>aʊl</td>
+      <td>['bird of minerva', 'bird of night', 'hooter']</td>
+      <td></td>
+      <td>nocturnal bird of prey with hawk-like beak and claws and large head with front-facing eyes夜行性猛禽，有鹰状喙和爪子，大头部有正面眼睛</td>
+      <td></td>
+      <td>[owlet]</td>
+      <td></td>
+      <td>[bird of prey, raptorial bird, raptor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vow</th>
+      <td>ow</td>
+      <td>3.73</td>
+      <td>ver</td>
+      <td>vaʊ</td>
+      <td>['consecrate']</td>
+      <td></td>
+      <td>dedicate to a deity by a vow通过誓言奉献给神</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[devote, commit, consecrate, dedicate, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vow</th>
+      <td>ow</td>
+      <td>3.73</td>
+      <td>ver</td>
+      <td>vaʊ</td>
+      <td></td>
+      <td></td>
+      <td>make a vow; promise发誓;诺言</td>
+      <td>He vowed never to drink alcohol again他发誓再也不喝酒了</td>
+      <td>[vower]</td>
+      <td></td>
+      <td>[plight, pledge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vow</th>
+      <td>ow</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>vaʊ</td>
+      <td></td>
+      <td></td>
+      <td>a solemn pledge (to oneself or to another or to a deity) to do something or to behave in a certain manner庄严的誓言（对自己或对他人或对神）做某事或以某种方式行事</td>
+      <td>they took vows of poverty他们誓言贫穷</td>
+      <td></td>
+      <td></td>
+      <td>[assurance, pledge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tow</th>
+      <td>ow</td>
+      <td>3.70</td>
+      <td>ver</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>drag behind拖到后面</td>
+      <td>Horses used to tow barges along the canal马曾经沿着运河拖着驳船</td>
+      <td>[towage, tower]</td>
+      <td></td>
+      <td>[pull along, schlep, shlep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tow</th>
+      <td>ow</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>toʊ</td>
+      <td>['towage']</td>
+      <td></td>
+      <td>the act of hauling something (as a vehicle) by means of a hitch or rope通过挂钩或绳索牵引某物（作为车辆）的行为</td>
+      <td>the truck gave him a tow to the garage卡车给了他拖车到车库</td>
+      <td></td>
+      <td></td>
+      <td>[draw, haul, haulage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sow</th>
+      <td>ow</td>
+      <td>3.51</td>
+      <td>ver</td>
+      <td>soʊ</td>
+      <td>['inseminate', 'sow in']</td>
+      <td></td>
+      <td>place seeds in or on (the ground)将种子放在地上或地上</td>
+      <td>sow the ground with sunflower seeds用向日葵种子播种地面</td>
+      <td>[sower]</td>
+      <td>[seed]</td>
+      <td>[seed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sow</th>
+      <td>ow</td>
+      <td>3.51</td>
+      <td>ver</td>
+      <td>soʊ</td>
+      <td>['seed']</td>
+      <td></td>
+      <td>place (seeds) in or on the ground for future growth将（种子）放在地上或地上以备将来生长</td>
+      <td>She sowed sunflower seeds她播种了葵花籽</td>
+      <td>[sower]</td>
+      <td>[sow in, inseminate]</td>
+      <td>[pose, lay, place, set, position, put]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sow</th>
+      <td>ow</td>
+      <td>3.51</td>
+      <td>ver</td>
+      <td>soʊ</td>
+      <td></td>
+      <td></td>
+      <td>introduce into an environment介绍到一个环境</td>
+      <td>sow suspicion or beliefs播下怀疑或信仰</td>
+      <td>[sower]</td>
+      <td></td>
+      <td>[disperse, disseminate, propagate, spread, pass around, distribute, broadcast, circularise, circularize, diffuse, circulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sow</th>
+      <td>ow</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>soʊ</td>
+      <td></td>
+      <td></td>
+      <td>an adult female hog成年女性猪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pow</th>
+      <td>ow</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>poʊ</td>
+      <td>['prisoner of war']</td>
+      <td></td>
+      <td>a person who surrenders to (or is taken by) the enemy in time of war在战争期间向敌人投降（或被敌人占据）的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[captive, prisoner]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mow</th>
+      <td>ow</td>
+      <td>3.34</td>
+      <td>ver</td>
+      <td>moʊ</td>
+      <td>['cut down']</td>
+      <td></td>
+      <td>cut with a blade or mower用刀片或割草机切割</td>
+      <td>mow the grass修剪草坪</td>
+      <td>[mower]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mow</th>
+      <td>ow</td>
+      <td>3.34</td>
+      <td>ver</td>
+      <td>moʊ</td>
+      <td>['mop', 'pout']</td>
+      <td></td>
+      <td>make a sad face and thrust out one's lower lip做一个悲伤的脸，并推出一个人的下唇</td>
+      <td>mop and mow拖把和割草</td>
+      <td></td>
+      <td></td>
+      <td>[grimace, make a face, pull a face]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mow</th>
+      <td>ow</td>
+      <td>3.34</td>
+      <td>nou</td>
+      <td>moʊ</td>
+      <td>['hayloft', 'haymow']</td>
+      <td></td>
+      <td>a loft in a barn where hay is stored在仓库里放置干草的阁楼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attic, garret, loft]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

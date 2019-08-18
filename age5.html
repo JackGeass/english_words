@@ -1,0 +1,770 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['agent', 'stage', 'image', 'wages', 'wager', 'pager', 'bagel', 'lager', 'usage', 'cager', 'adage', 'cagey', 'phage', 'osage']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>agent</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>'eɪdʒənt</td>
+      <td>['agentive role']</td>
+      <td></td>
+      <td>the semantic role of the animate entity that instigates or causes the happening denoted by the verb in the clause动画实体的语义角色，它鼓动或引起条款中动词所表示的事件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[semantic role, participant role]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agent</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>'eɪdʒənt</td>
+      <td>['broker', 'factor']</td>
+      <td></td>
+      <td>a businessman who buys or sells for another in exchange for a commission为另一个人购买或出售以换取佣金的商人</td>
+      <td></td>
+      <td>[agential]</td>
+      <td></td>
+      <td>[businessperson, bourgeois]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agent</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>'eɪdʒənt</td>
+      <td>['federal agent']</td>
+      <td></td>
+      <td>any agent or representative of a federal agency or bureau联邦机构或局的任何代理人或代表</td>
+      <td></td>
+      <td>[agential]</td>
+      <td></td>
+      <td>[official, functionary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agent</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>'eɪdʒənt</td>
+      <td></td>
+      <td></td>
+      <td>an active and efficient cause; capable of producing a certain effect积极有效的事业;能够产生一定的效果</td>
+      <td>their research uncovered new disease agents他们的研究发现了新的疾病病原体</td>
+      <td>[agency]</td>
+      <td></td>
+      <td>[causal agency, cause, causal agent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agent</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>'eɪdʒənt</td>
+      <td></td>
+      <td></td>
+      <td>a representative who acts on behalf of other persons or organizations代表其他人或组织行事的代表</td>
+      <td></td>
+      <td>[agency, agential]</td>
+      <td></td>
+      <td>[representative]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agent</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>'eɪdʒənt</td>
+      <td></td>
+      <td></td>
+      <td>a substance that exerts some force or effect一种产生某种力量或效果的物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[causal agency, causal agent, substance, cause]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>ver</td>
+      <td>steɪdʒ</td>
+      <td>['arrange']</td>
+      <td></td>
+      <td>plan, organize, and carry out (an event)计划，组织和实施（活动）</td>
+      <td>the neighboring tribe staged an invasion邻近的部落发动入侵</td>
+      <td>[stager]</td>
+      <td></td>
+      <td>[pioneer, initiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>ver</td>
+      <td>steɪdʒ</td>
+      <td>['present', 'represent']</td>
+      <td></td>
+      <td>perform (a play), especially on a stage表演（戏剧），特别是在舞台上</td>
+      <td>we are going to stage `Othello'我们要上台“奥赛罗”</td>
+      <td>[staging, stager]</td>
+      <td></td>
+      <td>[re-create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td>['degree', 'level', 'point']</td>
+      <td></td>
+      <td>a specific identifiable position in a continuum or series or especially in a process连续统一体系列中的特定可识别位置，特别是在过程中</td>
+      <td>at what stage are the social sciences?在什么阶段是社会科学？</td>
+      <td></td>
+      <td></td>
+      <td>[state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td>['phase']</td>
+      <td></td>
+      <td>any distinct time period in a sequence of events事件序列中的任何不同时间段</td>
+      <td>we are in a transitional stage in which many former ideas must be revised or rejected我们处于一个过渡阶段，许多以前的想法必须被修改或拒绝</td>
+      <td></td>
+      <td></td>
+      <td>[time period, period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td>['microscope stage']</td>
+      <td></td>
+      <td>a small platform on a microscope where the specimen is mounted for examination显微镜上的小平台，样品安装在那里进行检查</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td>['leg']</td>
+      <td></td>
+      <td>a section or portion of a journey or course旅程或课程的一部分或一部分</td>
+      <td>then we embarked on the second stage of our Caribbean cruise然后我们开始了加勒比海游轮的第二阶段</td>
+      <td></td>
+      <td></td>
+      <td>[travelling, travel, traveling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td>['stagecoach']</td>
+      <td></td>
+      <td>a large coach-and-four formerly used to carry passengers and mail on regular routes between towns一个大型的四轮车，以前用于在城镇之间的常规路线上运送乘客和邮件</td>
+      <td>we went out of town together by stage about ten or twelve miles我们一起走出城市约10或12英里</td>
+      <td></td>
+      <td></td>
+      <td>[four-in-hand, coach-and-four, coach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>a large platform on which people can stand and can be seen by an audience一个人们可以站立并且可以被观众看到的大平台</td>
+      <td>he clambered up onto the stage and got the actors to help him into the box他爬上舞台，让演员帮助他进入禁区</td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>any scene regarded as a setting for exhibiting or doing something任何被视为参展或做某事的场景</td>
+      <td>All the world's a stage全世界都是舞台it set the stage for peaceful negotiations它为和平谈判奠定了基础</td>
+      <td></td>
+      <td></td>
+      <td>[scene]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stage</th>
+      <td>age</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>steɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>the theater as a profession (usually `the stage')戏剧作为一种职业（通常是“舞台”）</td>
+      <td>an early movie simply showed a long kiss by two actors of the contemporary stage早期的电影只是展示了当代舞台上两位演员的长吻</td>
+      <td>[stagy, stagey]</td>
+      <td></td>
+      <td>[dramaturgy, dramatics, theater, theatre, dramatic art]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>ver</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['envision', 'fancy', 'figure', 'picture', 'project', 'see', 'visualise', 'visualize']</td>
+      <td></td>
+      <td>imagine; conceive of; see in one's mind想像;想象;在一个人的心中看到</td>
+      <td></td>
+      <td>[imaging, imagery]</td>
+      <td>[realize, visualise, understand, see, visualize, realise]</td>
+      <td>[imagine, envisage, conceive of, ideate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>ver</td>
+      <td>'ɪmɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>render visible, as by means of MRI通过MRI渲染可见</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visualize, visualise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['mental image']</td>
+      <td></td>
+      <td>an iconic mental representation标志性的心理表征</td>
+      <td>her imagination forced images upon her too awful to contemplate她的想象力迫使她的形象太难以思考</td>
+      <td></td>
+      <td></td>
+      <td>[representation, internal representation, mental representation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['icon', 'ikon', 'picture']</td>
+      <td></td>
+      <td>a visual representation (of an object or scene or person or abstraction) produced on a surface表面上产生的（对象或场景或人或抽象）的视觉表示</td>
+      <td>a movie is a series of images projected so rapidly that the eye integrates them电影是一系列投射得如此迅速的图像，眼睛将它们整合在一起</td>
+      <td></td>
+      <td></td>
+      <td>[representation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['effigy', 'simulacrum']</td>
+      <td></td>
+      <td>a representation of a person (especially in the form of sculpture)一个人的代表（特别是以雕塑的形式）</td>
+      <td>the emperor's tomb had his image carved in stone皇帝的坟墓将他的形象刻在石头上</td>
+      <td></td>
+      <td></td>
+      <td>[representation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['persona']</td>
+      <td></td>
+      <td>(Jungian psychology) a personal facade that one presents to the world（荣格心理学）一个向世界呈现的个人立面</td>
+      <td>a public image is as fragile as Humpty Dumpty公共形象和Humpty Dumpty一样脆弱</td>
+      <td></td>
+      <td></td>
+      <td>[visual aspect, appearance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['epitome', 'paradigm', 'prototype']</td>
+      <td></td>
+      <td>a standard or typical example标准或典型的例子</td>
+      <td>he provided America with an image of the good father他为美国提供了一位好父亲的形象</td>
+      <td></td>
+      <td></td>
+      <td>[example, model]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['figure', 'figure of speech', 'trope']</td>
+      <td></td>
+      <td>language used in a figurative or nonliteral sense用于比喻或非文字意义的语言</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rhetorical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['range', 'range of a function']</td>
+      <td></td>
+      <td>(mathematics) the set of values of the dependent variable for which a function is defined（数学）为其定义函数的因变量的值集</td>
+      <td>the image of f(x) = x^2 is the set of all non-negative real numbers if the domain of the function is the set of all real numbers如果函数的域是所有实数的集合，则f（x）= x ^ 2的图像是所有非负实数的集合</td>
+      <td></td>
+      <td></td>
+      <td>[set]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td>['double', 'look-alike']</td>
+      <td></td>
+      <td>someone who closely resembles a famous person (especially an actor)与名人（特别是演员）非常相似的人</td>
+      <td>she's the very image of her mother她是她母亲的形象</td>
+      <td></td>
+      <td></td>
+      <td>[individual, mortal, soul, someone, person, somebody]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>image</th>
+      <td>age</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>'ɪmɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>the general impression that something (a person or organization or product) presents to the public某些事物（个人或组织或产品）向公众展示的总体印象</td>
+      <td>although her popular image was contrived it served to inspire music and pageantry虽然她的流行形象是人为的，但却有助于激发音乐和壮观the company tried to project an altruistic image该公司试图投射出利他主义的形象</td>
+      <td></td>
+      <td></td>
+      <td>[effect, impression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wages</th>
+      <td>age</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>'weɪdʒʌz</td>
+      <td>['payoff', 'reward']</td>
+      <td></td>
+      <td>a recompense for worthy acts or retribution for wrongdoing对有价值的行为或对不法行为的报复的补偿</td>
+      <td>the wages of sin is death罪的工资就是死亡</td>
+      <td></td>
+      <td></td>
+      <td>[aftermath, consequence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wager</th>
+      <td>age</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>'weɪdʒər</td>
+      <td>['bet']</td>
+      <td></td>
+      <td>maintain with or as if with a bet与赌注保持一致或犹如赌博</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[anticipate, promise, prognosticate, predict, call, foretell, forebode]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wager</th>
+      <td>age</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>'weɪdʒər</td>
+      <td>['bet', 'play']</td>
+      <td></td>
+      <td>stake on the outcome of an issue关注问题的结果</td>
+      <td></td>
+      <td>[wagerer]</td>
+      <td>[play]</td>
+      <td>[gamble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wager</th>
+      <td>age</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>'weɪdʒər</td>
+      <td>['bet', 'stake', 'stakes']</td>
+      <td></td>
+      <td>the money risked on a gamble这笔钱在赌博上冒险</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gamble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wager</th>
+      <td>age</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>'weɪdʒər</td>
+      <td>['bet']</td>
+      <td></td>
+      <td>the act of gambling赌博行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gaming, play, gambling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pager</th>
+      <td>age</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>'peɪdʒər</td>
+      <td>['beeper']</td>
+      <td></td>
+      <td>an electronic device that generates a series of beeps when the person carrying it is being paged电子设备，当携带它的人被寻呼时产生一系列哔哔声</td>
+      <td></td>
+      <td>[page]</td>
+      <td></td>
+      <td>[electronic device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bagel</th>
+      <td>age</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>'beɪɡəl</td>
+      <td>['beigel']</td>
+      <td></td>
+      <td>(Yiddish) glazed yeast-raised doughnut-shaped roll with hard crust（意第绪语）釉面酵母凸起的甜甜圈形状的硬壳外壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bun, roll]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lager</th>
+      <td>age</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>'lɑɡər</td>
+      <td>['lager beer']</td>
+      <td></td>
+      <td>a general term for beer made with bottom fermenting yeast (usually by decoction mashing); originally it was brewed in March or April and matured until September用底部发酵酵母制成的啤酒的一般术语（通常用煎煮糖化）;最初它是在三月或四月酿造，并成熟到九月</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lager</th>
+      <td>age</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>'lɑɡər</td>
+      <td>['laager']</td>
+      <td></td>
+      <td>a camp defended by a circular formation of wagons一个由圆形货车组成的营地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[encampment, bivouac, camp, cantonment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>usage</th>
+      <td>age</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>'jusɪdʒ</td>
+      <td>['custom', 'usance']</td>
+      <td></td>
+      <td>accepted or habitual practice接受或习惯性的做法</td>
+      <td></td>
+      <td>[use]</td>
+      <td></td>
+      <td>[pattern, practice, survival]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>usage</th>
+      <td>age</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>'jusɪdʒ</td>
+      <td>['employment', 'exercise', 'use', 'utilisation', 'utilization']</td>
+      <td></td>
+      <td>the act of using使用的行为</td>
+      <td></td>
+      <td>[use]</td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>usage</th>
+      <td>age</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>'jusɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>the customary manner in which a language (or a form of a language) is spoken or written语言（或语言形式）的口头或书面习惯方式</td>
+      <td>English usage英语用法a usage borrowed from French借用法语的用法</td>
+      <td></td>
+      <td></td>
+      <td>[linguistic communication, language]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cager</th>
+      <td>age</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>'keɪdʒər</td>
+      <td>['basketball player', 'basketeer']</td>
+      <td></td>
+      <td>an athlete who plays basketball打篮球的运动员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[athlete, jock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>adage</th>
+      <td>age</td>
+      <td>2.54</td>
+      <td>nou</td>
+      <td>'ædɪdʒ</td>
+      <td>['byword', 'proverb', 'saw']</td>
+      <td></td>
+      <td>a condensed but memorable saying embodying some important fact of experience that is taken as true by many people一个浓缩但令人难忘的说法，体现了一些重要的经验事实，被许多人视为真实</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expression, locution, saying]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cagey</th>
+      <td>age</td>
+      <td>2.12</td>
+      <td>adj</td>
+      <td>'keɪdʒi</td>
+      <td>['cagy', 'canny', 'clever'], similarTo:['smart']</td>
+      <td></td>
+      <td>showing self-interest and shrewdness in dealing with others在与他人打交道时表现出自我利益和精明</td>
+      <td>a cagey lawyer一个谨慎的律师</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cagey</th>
+      <td>age</td>
+      <td>2.12</td>
+      <td>adj</td>
+      <td>'keɪdʒi</td>
+      <td>['cagy', 'chary'], similarTo:['cautious']</td>
+      <td></td>
+      <td>characterized by great caution and wariness特别谨慎和谨慎</td>
+      <td>a cagey avoidance of a definite answer谨慎回避明确的答案</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>phage</th>
+      <td>age</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td></td>
+      <td>['bacteriophage']</td>
+      <td></td>
+      <td>a virus that is parasitic (reproduces itself) in bacteria一种在细菌中寄生（繁殖）的病毒</td>
+      <td>phage uses the bacterium's machinery and energy to produce more phage until the bacterium is destroyed and phage is released to invade surrounding bacteria噬菌体利用细菌的机械和能量产生更多的噬菌体，直到细菌被破坏并释放噬菌体以侵入周围的细菌</td>
+      <td></td>
+      <td></td>
+      <td>[virus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>osage</th>
+      <td>age</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'oʊseɪdʒ</td>
+      <td>['osage river']</td>
+      <td></td>
+      <td>a river in Missouri that is a tributary of the Missouri River密苏里州的一条河流，是密苏里河的一条支流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>osage</th>
+      <td>age</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'oʊseɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>a member of the Siouan people formerly living in Missouri in the valleys of the Missouri and Osage rivers; oil was found on Osage lands early in the 20th century以前生活在密苏里州密苏里河和欧塞奇河流域的苏族人;在20世纪早期的欧塞奇土地上发现了石油</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dhegiha]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>osage</th>
+      <td>age</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'oʊseɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>the Dhegiha dialect spoken by the Osage欧塞奇所说的Dhegiha方言</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dhegiha]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

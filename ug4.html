@@ -1,0 +1,695 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['ugly', 'drug', 'plug', 'thug', 'slug', 'smug', 'chug', 'snug', 'glug', 'sugi']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>ugly</th>
+      <td>ug</td>
+      <td>4.71</td>
+      <td>adj</td>
+      <td>'əgli</td>
+      <td>['surly'], similarTo:['ill-natured']</td>
+      <td></td>
+      <td>inclined to anger or bad feelings with overtones of menace倾向于愤怒或不良情绪与威胁的暗示</td>
+      <td>an ugly frame of mind一个丑陋的思想框架</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ugly</th>
+      <td>ug</td>
+      <td>4.71</td>
+      <td>adj</td>
+      <td>'əgli</td>
+      <td>['atrocious', 'frightful', 'horrible', 'horrifying'], similarTo:['alarming']</td>
+      <td></td>
+      <td>provoking horror挑起恐怖</td>
+      <td>an ugly wound一个丑陋的伤口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ugly</th>
+      <td>ug</td>
+      <td>4.71</td>
+      <td>adj</td>
+      <td>'əgli</td>
+      <td>['despicable', 'slimy', 'unworthy', 'vile', 'worthless', 'wretched'], similarTo:['evil']</td>
+      <td></td>
+      <td>morally reprehensible道德上应该受到谴责</td>
+      <td>ugly crimes丑陋的罪行</td>
+      <td>[ugliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ugly</th>
+      <td>ug</td>
+      <td>4.71</td>
+      <td>adj</td>
+      <td>'əgli</td>
+      <td>, similarTo:['grotesque', 'hideous', 'ill-favored', 'ill-favoured', 'unsightly', 'disfigured', 'evil-looking', 'fugly', 'scrofulous', 'unlovely', 'unpicturesque', 'monstrous', 'repulsive'], alos:['displeasing', 'unattractive', 'awkward']</td>
+      <td>[beautiful]</td>
+      <td>displeasing to the senses令人不悦的感官</td>
+      <td>an ugly face一张丑陋的脸ugly furniture丑陋的家具</td>
+      <td>[ugliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drug</th>
+      <td>ug</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>drʊɡ</td>
+      <td>['do drugs']</td>
+      <td></td>
+      <td>use recreational drugs使用娱乐性药物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[habituate, use]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drug</th>
+      <td>ug</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>drʊɡ</td>
+      <td>['dose']</td>
+      <td></td>
+      <td>administer a drug to给药服用</td>
+      <td>They drugged the kidnapped tourist他们吸毒被绑架的游客</td>
+      <td>[drugging]</td>
+      <td></td>
+      <td>[medicine, medicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drug</th>
+      <td>ug</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>drʊɡ</td>
+      <td></td>
+      <td></td>
+      <td>a substance that is used as a medicine or narcotic一种用作药物或麻醉剂的物质</td>
+      <td></td>
+      <td>[druggist]</td>
+      <td></td>
+      <td>[agent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>pləɡ</td>
+      <td>['punch']</td>
+      <td></td>
+      <td>deliver a quick blow to快速打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>pləɡ</td>
+      <td>['secure', 'stop up']</td>
+      <td></td>
+      <td>fill or close tightly with or as if with a plug用塞子或用塞子紧紧地填充或紧密</td>
+      <td>plug the hole插上洞</td>
+      <td></td>
+      <td></td>
+      <td>[close, fill up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>pləɡ</td>
+      <td>['plug away']</td>
+      <td></td>
+      <td>persist in working hard坚持努力</td>
+      <td>Students must plug away at this problem学生必须解决这个问题</td>
+      <td></td>
+      <td></td>
+      <td>[hold on, hang on, hang in, persist, persevere]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>pləɡ</td>
+      <td></td>
+      <td></td>
+      <td>insert a plug into插入插头</td>
+      <td>plug the wall插墙</td>
+      <td></td>
+      <td></td>
+      <td>[enclose, inclose, insert, introduce, put in, stick in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>pləɡ</td>
+      <td></td>
+      <td></td>
+      <td>insert as a plug作为插头插入</td>
+      <td>She plugged a cork in the wine bottle她在酒瓶里塞了一个软木塞</td>
+      <td></td>
+      <td></td>
+      <td>[stick in, insert, put in, enclose, introduce, inclose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>pləɡ</td>
+      <td></td>
+      <td></td>
+      <td>make a plug for; praise the qualities or in order to sell or promote插上插头;赞美品质或出售或推广</td>
+      <td></td>
+      <td>[plugger]</td>
+      <td></td>
+      <td>[advertize, advertise, promote, push]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>pləɡ</td>
+      <td></td>
+      <td></td>
+      <td>replace the center of a coin with a baser metal用底部金属替换硬币的中心</td>
+      <td>plug a nickle插镍</td>
+      <td></td>
+      <td></td>
+      <td>[enclose, stick in, put in, introduce, insert, inclose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>pləɡ</td>
+      <td>['hack', 'jade', 'nag']</td>
+      <td></td>
+      <td>an old or over-worked horse一匹陈旧或过度劳累的马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[horse, equus caballus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>pləɡ</td>
+      <td>['stopper', 'stopple']</td>
+      <td></td>
+      <td>blockage consisting of an object designed to fill a hole tightly阻塞由一个旨在紧紧填充孔的物体组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[closure, stoppage, blockage, stop, block, occlusion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>pləɡ</td>
+      <td>['ballyhoo', 'hoopla', 'hype']</td>
+      <td></td>
+      <td>blatant or sensational promotion公然或耸人听闻的促销</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[packaging, promo, promotion, promotional material, publicity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>pləɡ</td>
+      <td>['fire hydrant', 'fireplug']</td>
+      <td></td>
+      <td>an upright hydrant for drawing water to use in fighting a fire用于抽水的直立式消防栓，用于扑救火灾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hydrant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>pləɡ</td>
+      <td>['male plug']</td>
+      <td></td>
+      <td>an electrical device with two or three pins that is inserted in a socket to make an electrical connection带有两个或三个插针的电气设备，插入插座中以进行电气连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electrical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>pləɡ</td>
+      <td>['spark plug', 'sparking plug']</td>
+      <td></td>
+      <td>electrical device that fits into the cylinder head of an internal-combustion engine and ignites the gas by means of an electric spark电气装置，安装在内燃机的气缸盖中，并通过电火花点燃气体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electrical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>pləɡ</td>
+      <td>['chaw', 'chew', 'cud', 'quid', 'wad']</td>
+      <td></td>
+      <td>a wad of something chewable as tobacco一团像烟草一样可以咀嚼的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bite, morsel, bit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thug</th>
+      <td>ug</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>θəɡ</td>
+      <td>['goon', 'hood', 'hoodlum', 'punk', 'strong-armer', 'tough', 'toughie']</td>
+      <td></td>
+      <td>an aggressive and violent young criminal一个积极和暴力的年轻罪犯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[criminal, crook, felon, malefactor, outlaw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>sləɡ</td>
+      <td>['idle', 'laze', 'stagnate']</td>
+      <td></td>
+      <td>be idle; exist in a changeless situation闲着存在于不变的情况中</td>
+      <td>He slugged in bed all morning他整个早上都躺在床上</td>
+      <td>[sluggard]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>sləɡ</td>
+      <td>['slog', 'swig']</td>
+      <td></td>
+      <td>strike heavily, especially with the fist or a bat严重打击，特别是用拳头或蝙蝠</td>
+      <td>He slugged me so hard that I passed out他把我打得很厉害，我昏倒了</td>
+      <td>[slugger]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td>['type slug']</td>
+      <td></td>
+      <td>a strip of type metal used for spacing用于间隔的金属条</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[type metal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td>['biff', 'clout', 'lick', 'poke', 'punch']</td>
+      <td></td>
+      <td>(boxing) a blow with the fist（拳击）用拳头打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td>['bullet']</td>
+      <td></td>
+      <td>a projectile that is fired from a gun从枪中射出的射弹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projectile, missile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td>['sluggard']</td>
+      <td></td>
+      <td>an idle slothful person一个懒散的懒惰的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[loafer, bum, layabout, do-nothing, idler]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td></td>
+      <td></td>
+      <td>a counterfeit coin假币</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td></td>
+      <td></td>
+      <td>an amount of an alcoholic drink (usually liquor) that is poured or gulped一定量的酒精饮料（通常是酒）倾倒或吞咽</td>
+      <td>he took a slug of hard liquor他拿了一大杯烈酒</td>
+      <td></td>
+      <td></td>
+      <td>[alcoholic drink, intoxicant, inebriant, alcohol, alcoholic beverage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td></td>
+      <td></td>
+      <td>any of various terrestrial gastropods having an elongated slimy body and no external shell任何一种陆地腹足动物，具有细长的粘性体，没有外壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[univalve, gastropod]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slug</th>
+      <td>ug</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>sləɡ</td>
+      <td></td>
+      <td></td>
+      <td>a unit of mass equal to the mass that accelerates at 1 foot/sec/sec when acted upon by a force of 1 pound; approximately 14.5939 kilograms质量单位，等于1英尺/秒时加速1磅/秒的质量;大约14.5939公斤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mass unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smug</th>
+      <td>ug</td>
+      <td>3.34</td>
+      <td>adj</td>
+      <td>sməɡ</td>
+      <td>['self-satisfied'], similarTo:['content', 'contented']</td>
+      <td></td>
+      <td>marked by excessive complacency or self-satisfaction以过度的自满或自我满足为特征</td>
+      <td>a smug glow of self-congratulation一种自鸣得意的自我祝贺</td>
+      <td>[smugness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chug</th>
+      <td>ug</td>
+      <td>3.27</td>
+      <td>ver</td>
+      <td>tʃəɡ</td>
+      <td></td>
+      <td></td>
+      <td>make a dull, explosive sound发出沉闷，爆炸性的声音</td>
+      <td>the engine chugged down the street发动机在街上嘎嘎作响</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chug</th>
+      <td>ug</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>tʃəɡ</td>
+      <td></td>
+      <td></td>
+      <td>the dull explosive noise made by an engine发动机发出的沉闷的爆炸声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snug</th>
+      <td>ug</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>snəɡ</td>
+      <td>['cubby', 'cubbyhole', 'snuggery']</td>
+      <td></td>
+      <td>a small secluded room一个僻静的小房间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snug</th>
+      <td>ug</td>
+      <td>2.94</td>
+      <td>adj</td>
+      <td>snəɡ</td>
+      <td>['close', 'close-fitting'], similarTo:['tight']</td>
+      <td></td>
+      <td>fitting closely but comfortably紧密但舒适地贴合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snug</th>
+      <td>ug</td>
+      <td>2.94</td>
+      <td>adj</td>
+      <td>snəɡ</td>
+      <td>['cosy', 'cozy'], similarTo:['comfortable', 'comfy']</td>
+      <td></td>
+      <td>enjoying or affording comforting warmth and shelter especially in a small space享受或提供舒适的温暖和住所，特别是在狭小的空间</td>
+      <td>snug in bed舒服地躺在床上a snug little apartment一个舒适的小公寓</td>
+      <td>[snugness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snug</th>
+      <td>ug</td>
+      <td>2.94</td>
+      <td>adj</td>
+      <td>snəɡ</td>
+      <td>, similarTo:['protected']</td>
+      <td></td>
+      <td>offering safety; well protected or concealed提供安全;保护良好或隐蔽</td>
+      <td>a snug harbor一个舒适的港口a snug hideout一个舒适的藏身处</td>
+      <td>[snugness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snug</th>
+      <td>ug</td>
+      <td>2.94</td>
+      <td>adj</td>
+      <td>snəɡ</td>
+      <td>, similarTo:['tight']</td>
+      <td></td>
+      <td>well and tightly constructed良好而紧密的构造</td>
+      <td>a snug house一个舒适的房子a snug little sailboat一条舒适的小帆船</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glug</th>
+      <td>ug</td>
+      <td>2.54</td>
+      <td>ver</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>make a gurgling sound as of liquid issuing from a bottle从瓶子里发出的液体发出咕噜声</td>
+      <td>the wine bottles glugged葡萄酒瓶</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sugi</th>
+      <td>ug</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>'suɡi</td>
+      <td>['cryptomeria japonica', 'japan cedar', 'japanese cedar']</td>
+      <td></td>
+      <td>tall evergreen of Japan and China yielding valuable soft wood日本和中国的高大常绿植物，产出珍贵的软木</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cedar, cedar tree]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

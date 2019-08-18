@@ -1,0 +1,1055 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['big', 'pig', 'dig', 'gig', 'wig', 'rig', 'fig', 'jig', 'zig']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adv</td>
+      <td>bɪɡ</td>
+      <td>['boastfully', 'large', 'vauntingly']</td>
+      <td></td>
+      <td>in a boastful manner以自夸的方式</td>
+      <td>he talked big all evening他整晚都说得很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['bighearted', 'bounteous', 'bountiful', 'freehanded', 'giving', 'handsome', 'liberal', 'openhanded'], similarTo:['generous']</td>
+      <td></td>
+      <td>given or giving freely给予或给予自由</td>
+      <td>was a big tipper是一个很大的自卸车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['bad'], similarTo:['intense']</td>
+      <td></td>
+      <td>very intense非常激烈</td>
+      <td>in a big rage愤怒地说had a big (or bad) shock有一个大的（或坏的）震惊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['heavy'], similarTo:['intemperate']</td>
+      <td></td>
+      <td>prodigious惊人</td>
+      <td>big spender大花钱big eater饭桶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['adult', 'full-grown', 'fully grown', 'grown', 'grownup'], similarTo:['mature']</td>
+      <td></td>
+      <td>(of animals) fully developed（动物）完全发达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['enceinte', 'expectant', 'gravid', 'great', 'heavy', 'large', 'with child'], similarTo:['pregnant']</td>
+      <td></td>
+      <td>in an advanced stage of pregnancy在怀孕的晚期</td>
+      <td>was big with child对孩子很重要</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['large', 'prominent'], similarTo:['conspicuous']</td>
+      <td></td>
+      <td>conspicuous in position or importance显而易见的位置或重要性</td>
+      <td>a big figure in the movement运动中的一个大人物big man on campus校园里的大个子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['large', 'magnanimous'], similarTo:['generous']</td>
+      <td></td>
+      <td>generous and understanding and tolerant慷慨，理解和宽容</td>
+      <td>a heart big enough to hold no grudges一颗足以容忍怨恨的心that's very big of you to be so forgiving你这么宽容是非常重要的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['swelled', 'vainglorious'], similarTo:['proud']</td>
+      <td></td>
+      <td>feeling self-importance感到自我重要</td>
+      <td>too big for his britches他的婊子太大了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['boastful', 'braggart', 'bragging', 'braggy', 'cock-a-hoop', 'crowing', 'self-aggrandising', 'self-aggrandizing'], similarTo:['proud']</td>
+      <td></td>
+      <td>exhibiting self-importance表现出自我重要性</td>
+      <td>big talk大谈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>['large'], similarTo:['wide-ranging', 'puffy', 'queen-size', 'queen-sized', 'rangy', 'sizable', 'sizeable', 'spacious', 'stupendous', 'super', 'thumping', 'titanic', 'too large', 'tremendous', 'vast', 'volumed', 'voluminous', 'walloping', 'whacking', 'whopping', 'wide', 'ample', 'astronomic', 'astronomical', 'banging', 'bear-sized', 'bigger', 'biggish', 'blown-up', 'bouffant', 'broad', 'brobdingnagian', 'bulky', 'capacious', 'colossal', 'cosmic', 'deep', 'double', 'elephantine', 'enlarged', 'enormous', 'epic', 'extended', 'extensive', 'full-size', 'galactic', 'gargantuan', 'giant', 'gigantic', 'grand', 'great', 'heroic', 'huge', 'hulking', 'hulky', 'humongous', 'immense', 'jumbo', 'king-size', 'king-sized', 'large-mouthed', 'large-scale', 'larger', 'larger-than-life', 'largish', 'life-size', 'life-sized', 'lifesize', 'macro', 'macroscopic', 'macroscopical', 'mammoth', 'man-sized', 'massive', 'medium-large', 'monolithic', 'monstrous', 'monumental', 'mountainous', 'outsize', 'outsized', 'overlarge', 'oversize', 'oversized', 'plumping', 'prodigious']</td>
+      <td>[little]</td>
+      <td>above average in size or number or quantity or magnitude or extent大小或数量或数量或幅度或程度的平均值</td>
+      <td>set out for the big city出发前往大城市a big (or large) barn一个大的（或大的）谷仓big businesses大企业a big expenditure一大笔开支a big group of scientists一大群科学家</td>
+      <td>[bigness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>, similarTo:['loud']</td>
+      <td></td>
+      <td>loud and firm响亮而坚定</td>
+      <td>a big voice一个大声音big bold piano sounds大胆的钢琴音色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>, similarTo:['heavy']</td>
+      <td></td>
+      <td>marked by intense physical force以强烈的体力为标志</td>
+      <td>a big wind一阵大风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>bɪɡ</td>
+      <td>, similarTo:['important', 'of import']</td>
+      <td></td>
+      <td>significant重大</td>
+      <td>graduation was a big day in his life毕业是他生命中的重要日子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>big</th>
+      <td>ig</td>
+      <td>5.78</td>
+      <td>Non</td>
+      <td>bɪɡ</td>
+      <td></td>
+      <td>[small]</td>
+      <td>on a grand scale在大规模</td>
+      <td>think big想大</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>ver</td>
+      <td>pɪɡ</td>
+      <td>['devour', 'guttle', 'raven']</td>
+      <td></td>
+      <td>eat greedily贪吃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>ver</td>
+      <td>pɪɡ</td>
+      <td>['pig it']</td>
+      <td></td>
+      <td>live like a pig, in squalor像猪一样生活，肮脏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[live]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>ver</td>
+      <td>pɪɡ</td>
+      <td>['farrow']</td>
+      <td></td>
+      <td>give birth to (piglets)生下（仔猪）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deliver, bear, give birth, birth, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪɡ</td>
+      <td>['grunter', 'hog', 'squealer', 'sus scrofa']</td>
+      <td></td>
+      <td>domestic swine家养猪</td>
+      <td></td>
+      <td>[piglet]</td>
+      <td></td>
+      <td>[swine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪɡ</td>
+      <td>['pig bed']</td>
+      <td></td>
+      <td>mold consisting of a bed of sand in which pig iron is cast由铸造生铁的沙床组成的模具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mould, mold, cast]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪɡ</td>
+      <td>['bull', 'cop', 'copper', 'fuzz']</td>
+      <td></td>
+      <td>uncomplimentary terms for a policeman警察的非免费条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[policeman, police officer, officer]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪɡ</td>
+      <td>['hog']</td>
+      <td></td>
+      <td>a person regarded as greedy and pig-like被视为贪婪和猪般的人</td>
+      <td></td>
+      <td>[piggy]</td>
+      <td></td>
+      <td>[selfish person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪɡ</td>
+      <td>['slob', 'sloven', 'slovenly person']</td>
+      <td></td>
+      <td>a coarse obnoxious person一个粗俗的讨厌的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vulgarian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pig</th>
+      <td>ig</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a crude block of metal (lead or iron) poured from a smelting furnace从熔炼炉中倒出的粗块金属（铅或铁）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ingot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td>['cut into', 'delve', 'turn over'], alos:['dig out', 'dig up', 'dig in']</td>
+      <td></td>
+      <td>turn up, loosen, or remove earth转起，松开或移除地球</td>
+      <td></td>
+      <td>[digging, digger]</td>
+      <td></td>
+      <td>[take, remove, take away, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td>['dig out', 'dig up']</td>
+      <td></td>
+      <td>remove, harvest, or recover by digging通过挖掘去除，收获或恢复</td>
+      <td>dig salt挖盐dig coal挖煤</td>
+      <td></td>
+      <td></td>
+      <td>[excavate, unearth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td>['excavate', 'hollow']</td>
+      <td></td>
+      <td>remove the inner part or the core of去除内部或核心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[withdraw, take away, take, remove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td>['dig out']</td>
+      <td></td>
+      <td>create by digging通过挖掘创造</td>
+      <td>dig a hole挖一个洞dig out a channel挖出一个频道</td>
+      <td>[digger]</td>
+      <td></td>
+      <td>[hollow, core out, hollow out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td>['apprehend', 'compass', 'comprehend', 'get the picture', 'grasp', 'grok', 'savvy']</td>
+      <td></td>
+      <td>get the meaning of something得到某事的意义</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[understand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td>['jab', 'poke', 'prod', 'stab']</td>
+      <td></td>
+      <td>poke or thrust abruptly突然捅或推</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td>['drudge', 'fag', 'grind', 'labor', 'labour', 'moil', 'toil', 'travail']</td>
+      <td></td>
+      <td>work hard努力工作</td>
+      <td>She was digging away at her math homework她正在挖掘她的数学作业</td>
+      <td></td>
+      <td></td>
+      <td>[do work, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>dɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>thrust down or into向下或进入</td>
+      <td>dig the oars into the water把桨挖到水里dig your foot into the floor把脚踩到地板上</td>
+      <td></td>
+      <td></td>
+      <td>[thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>dɪɡ</td>
+      <td>['archeological site', 'excavation']</td>
+      <td></td>
+      <td>the site of an archeological exploration考古探索的遗址</td>
+      <td>they set up camp next to the dig他们在挖掘旁边设立了营地</td>
+      <td></td>
+      <td></td>
+      <td>[land site, site]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>dɪɡ</td>
+      <td>['barb', 'gibe', 'jibe', 'shaft', 'shot', 'slam']</td>
+      <td></td>
+      <td>an aggressive remark directed at a person like a missile and intended to have a telling effect针对像导弹这样的人的激进言论，旨在产生明显的效果</td>
+      <td>she takes a dig at me every chance she gets她一有机会就抓住我</td>
+      <td></td>
+      <td></td>
+      <td>[comment, remark, input]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>dɪɡ</td>
+      <td>['jab']</td>
+      <td></td>
+      <td>the act of touching someone suddenly with your finger or elbow用手指或肘部突然接触某人的行为</td>
+      <td>she gave me a sharp dig in the ribs她给了我一根尖锐的肋骨</td>
+      <td></td>
+      <td></td>
+      <td>[touch, touching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>dɪɡ</td>
+      <td>['digging', 'excavation']</td>
+      <td></td>
+      <td>the act of digging挖掘的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[creating by removal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dig</th>
+      <td>ig</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>dɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a small gouge (as in the cover of a book)小凿（如书的封面）</td>
+      <td>the book was in good condition except for a dig in the back cover这本书的状况很好，除了后盖上的挖掘</td>
+      <td></td>
+      <td></td>
+      <td>[nick, dent, ding, gouge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gig</th>
+      <td>ig</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>ɡɪɡ</td>
+      <td>['fishgig', 'fizgig', 'lance', 'spear']</td>
+      <td></td>
+      <td>an implement with a shaft and barbed point used for catching fish带有轴和带刺点的工具，用于捕鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gig</th>
+      <td>ig</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>ɡɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a booking for musicians预订音乐家</td>
+      <td>they played a gig in New Jersey他们在新泽西州演出</td>
+      <td></td>
+      <td></td>
+      <td>[engagement, booking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gig</th>
+      <td>ig</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>ɡɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a cluster of hooks (without barbs) that is drawn through a school of fish to hook their bodies; used when fish are not biting一群钩子（没有倒钩），通过一群鱼钩住他们的身体;当鱼不咬人时使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gig</th>
+      <td>ig</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>ɡɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>long and light rowing boat; especially for racing长而轻的划艇;特别是对于赛车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[small boat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gig</th>
+      <td>ig</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>ɡɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>small two-wheeled horse-drawn carriage; with two seats and no hood小型两轮马车;有两个座位，没有引擎盖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[carriage, rig, equipage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gig</th>
+      <td>ig</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>ɡɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>tender that is a light ship's boat; often for personal use of captain招标是轻型船的船;经常供船长个人使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tender, pinnace, ship's boat, cutter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wig</th>
+      <td>ig</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>wɪɡ</td>
+      <td>['wigging']</td>
+      <td></td>
+      <td>British slang for a scolding英国人骂骂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tongue-lashing, objurgation, scolding, chiding]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wig</th>
+      <td>ig</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>wɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>hairpiece covering the head and made of real or synthetic hair头发覆盖头发，由真发或合成头发制成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[false hair, postiche, hairpiece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>rɪɡ</td>
+      <td>['set up']</td>
+      <td></td>
+      <td>arrange the outcome of by means of deceit通过欺骗手段安排结果</td>
+      <td>rig an election选举</td>
+      <td></td>
+      <td></td>
+      <td>[chisel, cheat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>rɪɡ</td>
+      <td>['set', 'set up']</td>
+      <td></td>
+      <td>equip with sails or masts配备帆或桅杆</td>
+      <td>rig a ship装船</td>
+      <td>[rigger, rigging]</td>
+      <td></td>
+      <td>[outfit, fit, equip, fit out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>rɪɡ</td>
+      <td>['manipulate']</td>
+      <td></td>
+      <td>manipulate in a fraudulent manner以欺诈的方式操纵</td>
+      <td>rig prices钻机价格</td>
+      <td></td>
+      <td></td>
+      <td>[price]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>rɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>connect or secure to连接或安全</td>
+      <td>They rigged the bomb to the ignition他们把炸弹装到点火器上</td>
+      <td></td>
+      <td></td>
+      <td>[fix, fasten, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>rɪɡ</td>
+      <td>['getup', 'outfit', 'turnout']</td>
+      <td></td>
+      <td>a set of clothing (with accessories)一套衣服（附件）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attire, dress, garb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>rɪɡ</td>
+      <td>['fishing gear', 'fishing rig', 'fishing tackle', 'tackle']</td>
+      <td></td>
+      <td>gear used in fishing用于捕鱼的渔具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[paraphernalia, gear, appurtenance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>rɪɡ</td>
+      <td>['articulated lorry', 'semi', 'tractor trailer', 'trailer truck', 'trucking rig']</td>
+      <td></td>
+      <td>a truck consisting of a tractor and trailer together一辆由拖拉机和拖车组成的卡车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motortruck, truck]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>rɪɡ</td>
+      <td>['rigging']</td>
+      <td></td>
+      <td>formation of masts, spars, sails, etc., on a vessel在船上形成桅杆，桅杆，帆等</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>rɪɡ</td>
+      <td>['carriage', 'equipage']</td>
+      <td></td>
+      <td>a vehicle with wheels drawn by one or more horses带有由一匹或多匹马牵引的轮子的车辆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[horse-drawn vehicle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>rɪɡ</td>
+      <td>['cheat', 'swindle']</td>
+      <td></td>
+      <td>the act of swindling by some fraudulent scheme一些欺诈计划诈骗的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fraud]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rig</th>
+      <td>ig</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>rɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>gear (including necessary machinery) for a particular enterprise特定企业的齿轮（包括必要的机械）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[appurtenance, gear, paraphernalia]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fig</th>
+      <td>ig</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɪɡ</td>
+      <td>['figure']</td>
+      <td></td>
+      <td>a diagram or picture illustrating textual material用于说明文本材料的图表或图片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[illustration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fig</th>
+      <td>ig</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɪɡ</td>
+      <td>["al-jama'a al-islamiyyah al-muqatilah bi-libya", 'libyan fighting group', 'libyan islamic fighting group', 'libyan islamic group']</td>
+      <td></td>
+      <td>a Libyan terrorist group organized in 1995 and aligned with al-Qaeda; seeks to radicalize the Libyan government; attempted to assassinate Qaddafi1995年组建的一个利比亚恐怖主义团体，与基地组织保持一致;寻求激进利比亚政府;企图暗杀卡扎菲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fig</th>
+      <td>ig</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɪɡ</td>
+      <td>['common fig', 'common fig tree', 'ficus carica']</td>
+      <td></td>
+      <td>Mediterranean tree widely cultivated for its edible fruit地中海树因其可食用的果实而广泛种植</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fig tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fig</th>
+      <td>ig</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>fleshy sweet pear-shaped yellowish or purple multiple fruit eaten fresh or preserved or dried肉质甜梨形黄色或紫色多种水果新鲜或保存或干燥</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edible fruit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>ver</td>
+      <td>dʒɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>dance a quick dance with leaping and kicking motions跳跃和踢动作快速跳舞</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trip the light fantastic toe, dance, trip the light fantastic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>dʒɪɡ</td>
+      <td>['gigue']</td>
+      <td></td>
+      <td>music in three-four time for dancing a jig音乐在四到四次跳舞的时候</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dance music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>dʒɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a device that holds a piece of machine work and guides the tools operating on it一种装有机器工作装置并指导在其上操作的工具的装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>dʒɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a fisherman's lure with one or more hooks that is jerked up and down in the water一个渔夫用一个或多个钩子在水中上下猛拉的诱饵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fish lure, fisherman's lure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>dʒɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>any of various old rustic dances involving kicking and leaping任何涉及踢和跳跃的各种古老的乡村舞蹈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[folk dancing, folk dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>zɪɡ</td>
+      <td>['zag', 'zigzag']</td>
+      <td></td>
+      <td>an angular shape characterized by sharp turns in alternating directions角形，其特征在于交替方向上的急转弯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angular shape, angularity]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

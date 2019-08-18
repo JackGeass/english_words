@@ -1,0 +1,320 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['snatch', 'catchy', 'thatch', 'swatch', 'patchy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>snætʃ</td>
+      <td>['snap', 'snatch up']</td>
+      <td></td>
+      <td>to grasp hastily or eagerly抓紧或急切地抓住</td>
+      <td>Before I could stop him the dog snatched the ham bone在我阻止他之前，狗抓住了火腿骨</td>
+      <td>[snatcher]</td>
+      <td></td>
+      <td>[seize, prehend, clutch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>snætʃ</td>
+      <td>['abduct', 'kidnap', 'nobble']</td>
+      <td></td>
+      <td>take away to an undisclosed location against their will and usually in order to extract a ransom根据他们的意愿带走一个秘密地点，通常是为了提取赎金</td>
+      <td></td>
+      <td>[snatcher]</td>
+      <td></td>
+      <td>[seize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>snætʃ</td>
+      <td>['bit']</td>
+      <td></td>
+      <td>a small fragment一个小片段</td>
+      <td>overheard snatches of their conversation无意中听到了他们的谈话</td>
+      <td></td>
+      <td></td>
+      <td>[fragment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>snætʃ</td>
+      <td>['catch', 'grab', 'snap']</td>
+      <td></td>
+      <td>the act of catching an object with the hands用手抓住物体的行为</td>
+      <td>Martin's snatch at the bridle failed and the horse raced away马丁在缰绳上的抢夺失败了，马跑了出去</td>
+      <td></td>
+      <td></td>
+      <td>[touch, touching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>snætʃ</td>
+      <td>['kidnapping']</td>
+      <td></td>
+      <td>(law) the unlawful act of capturing and carrying away a person against their will and holding them in false imprisonment（法律）违反其意愿捕获和带走某人并将其判处非法监禁的非法行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[capture, seizure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>snætʃ</td>
+      <td>['cunt', 'puss', 'pussy', 'slit', 'twat']</td>
+      <td></td>
+      <td>obscene terms for female genitals女性生殖器的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[female genitalia, female genitals, fanny, female genital organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>snætʃ</td>
+      <td></td>
+      <td></td>
+      <td>a weightlift in which the barbell is lifted overhead in one rapid motion一种举重，杠铃在一个快速运动中被抬起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weightlifting, weightlift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snatch</th>
+      <td>atch</td>
+      <td>3.66</td>
+      <td>Non</td>
+      <td>snætʃ</td>
+      <td></td>
+      <td></td>
+      <td>to make grasping motions抓住动作</td>
+      <td>the cat snatched at the butterflies那只猫抓住了蝴蝶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catchy</th>
+      <td>atch</td>
+      <td>3.16</td>
+      <td>adj</td>
+      <td>'kæʧi</td>
+      <td>['tricky'], similarTo:['difficult', 'hard']</td>
+      <td></td>
+      <td>having concealed difficulty隐瞒了困难</td>
+      <td>a catchy question一个吸引人的问题</td>
+      <td>[catch]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catchy</th>
+      <td>atch</td>
+      <td>3.16</td>
+      <td>adj</td>
+      <td>'kæʧi</td>
+      <td>['attention-getting'], similarTo:['appealing']</td>
+      <td></td>
+      <td>likely to attract attention可能引起注意</td>
+      <td>a catchy title for a movie电影的吸引人的称号</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thatch</th>
+      <td>atch</td>
+      <td>2.77</td>
+      <td>ver</td>
+      <td>θæʧ</td>
+      <td></td>
+      <td></td>
+      <td>cover with thatch盖上茅草</td>
+      <td>thatch the roofs茅草屋顶</td>
+      <td>[thatcher]</td>
+      <td></td>
+      <td>[roof]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thatch</th>
+      <td>atch</td>
+      <td>2.77</td>
+      <td>nou</td>
+      <td>θæʧ</td>
+      <td>['blackbeard', 'edward teach', 'edward thatch', 'teach']</td>
+      <td></td>
+      <td>an English pirate who operated in the Caribbean and off the Atlantic coast of North America (died in 1718)在加勒比地区和北美洲大西洋沿岸经营的英国海盗（1718年去世）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thatch</th>
+      <td>atch</td>
+      <td>2.77</td>
+      <td>nou</td>
+      <td>θæʧ</td>
+      <td>['thatched roof']</td>
+      <td></td>
+      <td>a house roof made with a plant material (as straw)用植物材料制成的屋顶（如稻草）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roof]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thatch</th>
+      <td>atch</td>
+      <td>2.77</td>
+      <td>nou</td>
+      <td>θæʧ</td>
+      <td></td>
+      <td></td>
+      <td>hair resembling thatched roofing material头发类似于茅草屋顶材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hairdo, coif, hairstyle, coiffure, hair style]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thatch</th>
+      <td>atch</td>
+      <td>2.77</td>
+      <td>nou</td>
+      <td>θæʧ</td>
+      <td></td>
+      <td></td>
+      <td>plant stalks used as roofing material植物秸秆用作屋顶材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roofing material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swatch</th>
+      <td>atch</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>swɑʧ</td>
+      <td></td>
+      <td></td>
+      <td>a sample piece of cloth一块布样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of cloth, piece of material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patchy</th>
+      <td>atch</td>
+      <td>2.08</td>
+      <td>adj</td>
+      <td>'pæʧi</td>
+      <td>, similarTo:['uneven']</td>
+      <td></td>
+      <td>irregular or uneven in quality, texture, etc.质量，质地等不规则或不均匀</td>
+      <td>a patchy essay一篇不完整的文章patchy fog斑驳的雾</td>
+      <td>[patch, patchiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

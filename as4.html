@@ -1,0 +1,3560 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['last', 'fast', 'past', 'pass', 'cash', 'wash', 'mass', 'cast', 'mask', 'task', 'vast', 'bass', 'asia', 'dash', 'rash', 'alas', 'gasp', 'bash', 'hash', 'nash', 'lass', 'mast', 'wasp', 'mash', 'lash', 'xmas', 'sass', 'gash', 'sash', 'bask', 'rasp', 'bast', 'anas', 'hasp', 'ashy', 'cask', 'nast']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>ver</td>
+      <td>læst</td>
+      <td>['endure']</td>
+      <td></td>
+      <td>persist for a specified period of time坚持一段特定的时间</td>
+      <td>The bad weather lasted for three days恶劣的天气持续了三天</td>
+      <td></td>
+      <td></td>
+      <td>[measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>ver</td>
+      <td>læst</td>
+      <td>['endure', 'go', 'hold out', 'hold up', 'live', 'live on', 'survive']</td>
+      <td></td>
+      <td>continue to live and avoid dying继续生活，避免死亡</td>
+      <td>how long can a person last without food and water?一个人没有食物和水可以持续多久？</td>
+      <td></td>
+      <td>[live, be, survive, subsist, exist]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td>['death']</td>
+      <td></td>
+      <td>the time at which life ends; continuing until dead生命结束的时间;一直持续到死</td>
+      <td>a struggle to the last斗争到最后</td>
+      <td></td>
+      <td></td>
+      <td>[ending, end]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td>["cobbler's last", "shoemaker's last"]</td>
+      <td></td>
+      <td>holding device shaped like a human foot that is used to fashion or repair shoes保持装置形状像人脚，用于制作或修理鞋子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[holding device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td>['close', 'conclusion', 'finale', 'finis', 'finish', 'stopping point']</td>
+      <td></td>
+      <td>the temporal end; the concluding time时间结束;结束时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[end, ending]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td>['end']</td>
+      <td></td>
+      <td>the final stage or concluding parts of an event or occurrence事件或事件的最后阶段或结束部分</td>
+      <td>I had to miss the last of the movie我不得不错过电影的最后一部</td>
+      <td></td>
+      <td></td>
+      <td>[conclusion, ending, finish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td></td>
+      <td></td>
+      <td>a person's dying act; the final thing a person can do一个人的垂死行为;一个人可以做的最后一件事</td>
+      <td>he breathed his last他最后一口气</td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td></td>
+      <td></td>
+      <td>a unit of capacity for grain equal to 80 bushels谷物容量单位等于80蒲式耳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cubature unit, cubic measure, displacement unit, capacity measure, volume unit, capacity unit, cubage unit, cubic content unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td></td>
+      <td></td>
+      <td>a unit of weight equal to 4,000 pounds重量单位等于4,000磅</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weight unit, weight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>nou</td>
+      <td>læst</td>
+      <td></td>
+      <td></td>
+      <td>the last or lowest in an ordering or series订单或系列中的最后一个或最低</td>
+      <td>he was the last to leave他是最后一个离开的人he finished an inglorious last他最后完成了一次不光彩的事</td>
+      <td></td>
+      <td></td>
+      <td>[rank]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adv</td>
+      <td>læst</td>
+      <td>['finally', 'in conclusion', 'lastly']</td>
+      <td></td>
+      <td>the item at the end最后的项目</td>
+      <td>last, I'll discuss family values最后，我将讨论家庭价值观</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>['final'], similarTo:['unalterable', 'inalterable']</td>
+      <td></td>
+      <td>not to be altered or undone不得改变或撤消</td>
+      <td>the arbiter will have the last say仲裁者会有最后的发言权</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>['concluding', 'final', 'terminal'], similarTo:['closing']</td>
+      <td></td>
+      <td>occurring at or forming an end or termination发生在或形成一个终点或终止</td>
+      <td>the last days of the dinosaurs恐龙的最后几天</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>['final', 'net'], similarTo:['ultimate']</td>
+      <td></td>
+      <td>conclusive in a process or progression在过程或进程中具有决定性</td>
+      <td>a last resort万不得已</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>['utmost'], similarTo:['high']</td>
+      <td></td>
+      <td>highest in extent or degree程度或程度最高</td>
+      <td>to the last measure of human endurance到人类耐力的最后一个衡量标准whether they were accomplices in the last degree or a lesser one was...to be determined individually无论他们是最后一个学位的共犯还是一个较小的共犯......都是单独确定的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>['last-place', 'lowest'], similarTo:['worst']</td>
+      <td></td>
+      <td>lowest in rank or importance排名或重要性最低</td>
+      <td>last prize最后奖in last place在最后一个地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>, similarTo:['sunset', 'ultimate', 'senior', 'fourth-year']</td>
+      <td>[first]</td>
+      <td>coming after all others in time or space or degree or being the only one remaining在时间，空间或程度上追随所有其他人，或者是唯一剩下的人</td>
+      <td>the last time I saw Paris我最后一次见到巴黎the last day of the month这个月的最后一天had the last word说完了waited until the last minute等到最后一分钟he raised his voice in a last supreme call他在最后一个至高无上的电话中提高了声音the last game of the season本赛季的最后一场比赛down to his last nickel到他最后的镍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>, similarTo:['past']</td>
+      <td></td>
+      <td>immediately past马上过去</td>
+      <td>last Thursday上周四the last chapter we read我们读到的最后一章</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>, similarTo:['unlikely']</td>
+      <td></td>
+      <td>most unlikely or unsuitable最不可能或不合适的</td>
+      <td>the last person we would have suspected我们怀疑的最后一个人the last man they would have chosen for the job他们为工作选择的最后一个人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>last</th>
+      <td>as</td>
+      <td>5.82</td>
+      <td>adj</td>
+      <td>læst</td>
+      <td>, similarTo:['dying']</td>
+      <td></td>
+      <td>occurring at the time of death发生在死亡时</td>
+      <td>his last words他的遗言the last rites最后的仪式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>ver</td>
+      <td>fæst</td>
+      <td></td>
+      <td></td>
+      <td>abstain from certain foods, as for religious or medical reasons出于宗教或医学原因，禁止某些食物</td>
+      <td>Catholics sometimes fast during Lent在四旬期，天主教徒有时会很快</td>
+      <td>[fasting]</td>
+      <td></td>
+      <td>[desist, refrain, abstain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>ver</td>
+      <td>fæst</td>
+      <td></td>
+      <td></td>
+      <td>abstain from eating禁止进食</td>
+      <td>Before the medical exam, you must fast在体检前，你必须禁食</td>
+      <td>[fasting]</td>
+      <td></td>
+      <td>[desist, abstain, refrain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>nou</td>
+      <td>fæst</td>
+      <td>['fasting']</td>
+      <td></td>
+      <td>abstaining from food戒食</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[abstinence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adv</td>
+      <td>fæst</td>
+      <td>['tight']</td>
+      <td></td>
+      <td>firmly or closely坚定地或紧密地</td>
+      <td>held fast to the rope紧紧抓住绳子her foot was stuck fast她的脚快速卡住了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>['firm', 'loyal', 'truehearted'], similarTo:['faithful']</td>
+      <td></td>
+      <td>unwavering in devotion to friend or vow or cause坚定不移地忠于朋友或誓言或事业</td>
+      <td>fast friends快朋友</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>['firm', 'immobile'], similarTo:['fixed']</td>
+      <td></td>
+      <td>securely fixed in place牢牢固定到位</td>
+      <td></td>
+      <td>[fastness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>['flying', 'quick'], similarTo:['hurried']</td>
+      <td></td>
+      <td>hurried and brief匆匆而简短</td>
+      <td>a fast visit快速访问</td>
+      <td>[fastness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>['debauched', 'degenerate', 'degraded', 'dissipated', 'dissolute', 'libertine', 'profligate', 'riotous'], similarTo:['immoral']</td>
+      <td></td>
+      <td>unrestrained by convention or morality公约或道德无拘无束</td>
+      <td>fast women快女</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>, similarTo:['winged', 'accelerated', 'alacritous', 'instantaneous', 'meteoric', 'prompt', 'quick', 'rapid', 'red-hot', 'scurrying', 'smart', 'speedy', 'straightaway', 'swift', 'windy', 'blistering', 'double-quick', 'express', 'fast-breaking', 'fast-paced', 'fleet', 'high-speed', 'high-velocity', 'hot', 'hurrying', 'immediate', 'instant'], alos:['hurried', 'sudden']</td>
+      <td>[slow]</td>
+      <td>acting or moving or capable of acting or moving quickly行动或移动或能够快速行动或行动</td>
+      <td>fast film快速电影on the fast track in school在学校的快车道上set a fast pace快节奏a fast car一辆快车</td>
+      <td>[fastness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>, similarTo:['presto', 'andantino', 'allegretto', 'vivace', 'prestissimo', 'allegro']</td>
+      <td>[slow]</td>
+      <td>at a rapid tempo节奏快</td>
+      <td>the band played a fast fox trot乐队演奏了快速的狐狸小跑</td>
+      <td>[fastness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>, similarTo:['causative']</td>
+      <td></td>
+      <td>(of a photographic lens or emulsion) causing a shortening of exposure time（照相镜片或乳剂）导致曝光时间缩短</td>
+      <td>a fast lens一个快速的镜头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>, similarTo:['smooth']</td>
+      <td></td>
+      <td>(of surfaces) conducive to rapid speeds（表面）有利于快速</td>
+      <td>a fast road一条快速的道路grass courts are faster than clay草地比粘土更快</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>adj</td>
+      <td>fæst</td>
+      <td>, similarTo:['imperviable', 'impervious']</td>
+      <td></td>
+      <td>resistant to destruction or fading抗破坏或褪色</td>
+      <td>fast colors快速的颜色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fast</th>
+      <td>as</td>
+      <td>5.15</td>
+      <td>Non</td>
+      <td>fæst</td>
+      <td></td>
+      <td>[slow]</td>
+      <td>(used of timepieces) indicating a time ahead of or later than the correct time（用于计时）表示比正确时间提前或晚于时间的时间</td>
+      <td>my watch is fast我的手表很快</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>past</th>
+      <td>as</td>
+      <td>5.12</td>
+      <td>nou</td>
+      <td>pæst</td>
+      <td>['past tense']</td>
+      <td></td>
+      <td>a verb tense that expresses actions or states in the past表达过去行为或状态的动词时态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tense]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>past</th>
+      <td>as</td>
+      <td>5.12</td>
+      <td>nou</td>
+      <td>pæst</td>
+      <td>['past times', 'yesteryear']</td>
+      <td>[future]</td>
+      <td>the time that has elapsed过去的时间</td>
+      <td>forget the past忘记过去</td>
+      <td></td>
+      <td></td>
+      <td>[time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>past</th>
+      <td>as</td>
+      <td>5.12</td>
+      <td>nou</td>
+      <td>pæst</td>
+      <td></td>
+      <td></td>
+      <td>a earlier period in someone's life (especially one that they have reason to keep secret)在某人生命的早期阶段（特别是他们有理由保密）</td>
+      <td>reporters dug into the candidate's past记者挖了候选人的过去</td>
+      <td></td>
+      <td></td>
+      <td>[period of time, period, time period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>past</th>
+      <td>as</td>
+      <td>5.12</td>
+      <td>adv</td>
+      <td>pæst</td>
+      <td>['by']</td>
+      <td></td>
+      <td>so as to pass a given point以便通过一个给定的点</td>
+      <td>every hour a train goes past火车经过的每一个小时</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>past</th>
+      <td>as</td>
+      <td>5.12</td>
+      <td>adj</td>
+      <td>pæst</td>
+      <td>['preceding', 'retiring'], similarTo:['outgoing']</td>
+      <td></td>
+      <td>of a person who has held and relinquished a position or office持有和放弃职位或职位的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>past</th>
+      <td>as</td>
+      <td>5.12</td>
+      <td>adj</td>
+      <td>pæst</td>
+      <td>, similarTo:['ultimo', 'old', 'olden', 'one-time', 'onetime', 'other', 'prehistoric', 'prehistorical', 'previous', 'quondam', 'recent', 'sometime', 'then', 'ult', 'ago', 'agone', 'ancient', 'bygone', 'bypast', 'chivalric', 'departed', 'early', 'erstwhile', 'foregone', 'former', 'gone', 'historic', 'historical', 'knightly', 'last', 'late', 'medieval'], alos:['noncurrent', 'old', 'outgoing']</td>
+      <td>[future, present]</td>
+      <td>earlier than the present time; no longer current早于现在;不再是最新的</td>
+      <td>time past时间过去了his youth is past他的青春过去了this past Thursday这个星期四the past year过去的一年</td>
+      <td>[pastness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['go by', 'go past', 'pass by', 'surpass', 'travel by']</td>
+      <td></td>
+      <td>move past过去了</td>
+      <td>A black limousine passed by when she looked out the window当她看向窗外时，一辆黑色豪华轿车经过He passed his professor in the hall他在大厅里通过了他的教授One line of soldiers surpassed the other一队士兵超过了另一队</td>
+      <td>[passer]</td>
+      <td></td>
+      <td>[move, go, locomote, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['egest', 'eliminate', 'excrete']</td>
+      <td></td>
+      <td>eliminate from the body消除身体</td>
+      <td></td>
+      <td>[passing]</td>
+      <td></td>
+      <td>[eject, expel, exhaust, discharge, release]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['authorise', 'authorize', 'clear']</td>
+      <td></td>
+      <td>grant authorization or clearance for授予或许可</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[permit, allow, let, countenance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['come about', 'fall out', 'go on', 'hap', 'happen', 'occur', 'pass off', 'take place']</td>
+      <td></td>
+      <td>come to pass应验</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['buy the farm', "cash in one's chips", 'choke', 'conk', 'croak', 'decease', 'die', 'drop dead', 'exit', 'expire', 'give-up the ghost', 'go', 'kick the bucket', 'pass away', 'perish', 'pop off', 'snuff it']</td>
+      <td></td>
+      <td>pass from physical life and lose all bodily attributes and functions necessary to sustain life从物质生活中消失，失去维持生命所必需的所有身体属性和功能</td>
+      <td></td>
+      <td>[passing]</td>
+      <td>[break down, give way, die, conk out, break, go, fail, go bad, give out]</td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['make pass']</td>
+      <td></td>
+      <td>cause to pass导致通过</td>
+      <td>She passed around the plates她绕过盘子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['exceed', 'go past', 'overstep', 'top', 'transcend']</td>
+      <td></td>
+      <td>be superior or better than some standard优于或优于某些标准</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surpass, stand out, excel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['communicate', 'pass along', 'pass on', 'put across']</td>
+      <td></td>
+      <td>transmit information传输信息</td>
+      <td>pass along the good news传递好消息</td>
+      <td></td>
+      <td></td>
+      <td>[communicate, transmit, convey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['clear']</td>
+      <td></td>
+      <td>go unchallenged; be approved不受挑战;被批准</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bring home the bacon, succeed, win, deliver the goods, come through]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['draw', 'guide', 'run'], alos:['pass over', 'pass around']</td>
+      <td></td>
+      <td>pass over, across, or through通过，跨越或通过</td>
+      <td></td>
+      <td></td>
+      <td>[lead, draw, thread, run, string]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['give', 'hand', 'pass on', 'reach', 'turn over'], alos:['pass on']</td>
+      <td></td>
+      <td>place into the hands or custody of放在手中或保管</td>
+      <td></td>
+      <td>[passage]</td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['lapse', 'sink']</td>
+      <td></td>
+      <td>pass into a specified state or condition进入指定的状态或条件</td>
+      <td></td>
+      <td>[passage]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['legislate']</td>
+      <td></td>
+      <td>make laws, bills, etc. or bring into effect by legislation制定法律，法案等，或通过立法生效</td>
+      <td>They passed the amendment他们通过了修正案</td>
+      <td>[passage]</td>
+      <td></td>
+      <td>[enact, ordain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['extend', 'go', 'lead', 'run']</td>
+      <td></td>
+      <td>stretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point伸展距离，空间，时间或范围;在两点之间运行或延伸或超过某一点</td>
+      <td></td>
+      <td></td>
+      <td>[run, range]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['elapse', 'glide by', 'go along', 'go by', 'lapse', 'slide by', 'slip away', 'slip by']</td>
+      <td></td>
+      <td>pass by经过</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move on, go on, march on, progress, advance, pass on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['overhaul', 'overtake']</td>
+      <td></td>
+      <td>travel past过去</td>
+      <td>The sports car passed all the trucks跑车通过所有卡车</td>
+      <td>[passing, passage]</td>
+      <td></td>
+      <td>[move on, progress, march on, go on, pass on, advance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['blow over', 'evanesce', 'fade', 'fleet', 'pass off']</td>
+      <td></td>
+      <td>disappear gradually逐渐消失</td>
+      <td>The pain eventually passed off痛苦最终消失了</td>
+      <td>[passing]</td>
+      <td></td>
+      <td>[vanish, go away, disappear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['make it']</td>
+      <td>[fail]</td>
+      <td>go successfully through a test or a selection process成功通过测试或选择过程</td>
+      <td>She passed the new Jersey Bar Exam and can practice law now她通过了新的泽西律师考试，现在可以执业</td>
+      <td>[passing, passer]</td>
+      <td></td>
+      <td>[bring home the bacon, succeed, win, deliver the goods, come through]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['devolve', 'fall', 'return']</td>
+      <td></td>
+      <td>be inherited by被继承</td>
+      <td></td>
+      <td></td>
+      <td>[fall, accrue]</td>
+      <td>[change owners, change hands]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>['spend']</td>
+      <td></td>
+      <td>use up a period of time in a specific way以特定方式消耗一段时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td></td>
+      <td>[fail]</td>
+      <td>accept or judge as acceptable接受或判断为可接受</td>
+      <td>The teacher passed the student although he was weak尽管他很虚弱，老师还是通过了学生</td>
+      <td>[passing]</td>
+      <td></td>
+      <td>[pass judgment, judge, evaluate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td></td>
+      <td></td>
+      <td>allow to go without comment or censure允许不经评论或谴责</td>
+      <td>the insult passed as if unnoticed侮辱似乎被忽视了</td>
+      <td></td>
+      <td></td>
+      <td>[let, allow, permit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td>, alos:['pass over']</td>
+      <td></td>
+      <td>go across or through穿过或穿过</td>
+      <td>We passed the point where the police car had parked我们超过了警车停放的地方</td>
+      <td></td>
+      <td></td>
+      <td>[locomote, move, travel, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td></td>
+      <td></td>
+      <td>throw (a ball) to another player把球扔给另一名球员</td>
+      <td>Smith passed史密斯过去了</td>
+      <td>[passing, passer]</td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>pæs</td>
+      <td></td>
+      <td></td>
+      <td>transfer to another; of rights or property转移到另一个;权利或财产</td>
+      <td>Our house passed under his official control我们的房子在他的官方控制下通过</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['crack', 'fling', 'go', 'offer', 'whirl']</td>
+      <td></td>
+      <td>a usually brief attempt通常是短暂的尝试</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[try, endeavor, endeavour, attempt, effort]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['passing', 'qualifying']</td>
+      <td></td>
+      <td>success in satisfying a test or requirement成功满足测试或要求</td>
+      <td>his future depended on his passing that test他的未来取决于他通过考试he got a pass in introductory chemistry他获得了入门化学的通过</td>
+      <td></td>
+      <td></td>
+      <td>[success]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['laissez passer']</td>
+      <td></td>
+      <td>a document indicating permission to do something without restrictions表示允许无限制地做某事的文件</td>
+      <td>the media representatives had special passes媒体代表有特别通行证</td>
+      <td></td>
+      <td></td>
+      <td>[permission]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['flip', 'toss']</td>
+      <td></td>
+      <td>(sports) the act of throwing the ball to another member of your team（体育）向球队的另一名成员扔球的行为</td>
+      <td>the pass was fumbled通行证摸不着头脑</td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['head', 'straits']</td>
+      <td></td>
+      <td>a difficult juncture一个艰难的关头</td>
+      <td>a pretty pass一个漂亮的传球</td>
+      <td></td>
+      <td></td>
+      <td>[juncture, occasion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['liberty chit']</td>
+      <td></td>
+      <td>a permit to enter or leave a military installation进入或离开军事设施的许可证</td>
+      <td>he had to show his pass in order to get out他必须出示他的通行证才能离开</td>
+      <td></td>
+      <td></td>
+      <td>[permit, licence, license]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['strait', 'straits']</td>
+      <td></td>
+      <td>a bad or difficult situation or state of affairs困难或困难的情况或状况</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[situation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['passing', 'passing game', 'passing play']</td>
+      <td></td>
+      <td>(American football) a play that involves one player throwing the ball to a teammate（美式橄榄球）一场比赛涉及一名球员将球传给队友</td>
+      <td>the coach sent in a passing play on third and long教练在第三局和第三场比赛中传球</td>
+      <td></td>
+      <td></td>
+      <td>[football play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['base on balls', 'walk']</td>
+      <td></td>
+      <td>(baseball) an advance to first base by a batter who receives four balls（棒球）由接受四个球的击球手前进到一垒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[achievement, accomplishment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['mountain pass', 'notch']</td>
+      <td></td>
+      <td>the location in a range of mountains of a geological formation that is lower than the surrounding peaks在一系列山脉中的位置，低于周围的山峰</td>
+      <td>we got through the pass before it started to snow我们在开始下雪之前通过了通行证</td>
+      <td></td>
+      <td></td>
+      <td>[location]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['bye']</td>
+      <td></td>
+      <td>an automatic advance to the next round in a tournament without playing an opponent在没有对手的情况下自动前进到锦标赛中的下一轮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[concession, conceding, yielding]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td>['passport']</td>
+      <td></td>
+      <td>any authorization to pass or go somewhere任何通过或去某处的授权</td>
+      <td>the pass to visit had a strict time limit通行证有严格的时间限制</td>
+      <td></td>
+      <td></td>
+      <td>[permission]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td></td>
+      <td></td>
+      <td>a complimentary ticket免费门票</td>
+      <td>the star got passes for his family这位明星为他的家人获得了通行证</td>
+      <td></td>
+      <td></td>
+      <td>[ticket]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td></td>
+      <td></td>
+      <td>a flight or run by an aircraft over a target飞机或飞机在目标上飞行</td>
+      <td>the plane turned to make a second pass飞机转向第二次通过</td>
+      <td></td>
+      <td></td>
+      <td>[flying, flight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td></td>
+      <td></td>
+      <td>(military) a written leave of absence（军事）书面请假</td>
+      <td>he had a pass for three days他有三天通行证</td>
+      <td></td>
+      <td></td>
+      <td>[leave, leave of absence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>pæs</td>
+      <td></td>
+      <td></td>
+      <td>one complete cycle of operations (as by a computer)一个完整的操作周期（如计算机）</td>
+      <td>it was not possible to complete the computation in a single pass不可能一次完成计算</td>
+      <td></td>
+      <td></td>
+      <td>[oscillation, cycle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pass</th>
+      <td>as</td>
+      <td>5.07</td>
+      <td>adj</td>
+      <td>pæs</td>
+      <td>['passing']</td>
+      <td></td>
+      <td>of advancing the ball by throwing it通过扔它推进球</td>
+      <td>a team with a good passing attack一支传球攻击力很强的球队a pass play传球比赛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cash</th>
+      <td>as</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kæʃ</td>
+      <td>['cash in'], alos:['cash in on']</td>
+      <td></td>
+      <td>exchange for cash换现金</td>
+      <td>I cashed the check as soon as it arrived in the mail我收到邮件后立即兑现了支票</td>
+      <td>[cashable]</td>
+      <td></td>
+      <td>[interchange, exchange, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cash</th>
+      <td>as</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kæʃ</td>
+      <td>['hard cash', 'hard currency']</td>
+      <td></td>
+      <td>money in the form of bills or coins钞票或硬币形式的钱</td>
+      <td>there is a desperate shortage of hard cash现金急需短缺</td>
+      <td></td>
+      <td></td>
+      <td>[currency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cash</th>
+      <td>as</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kæʃ</td>
+      <td>['john cash', 'johnny cash']</td>
+      <td></td>
+      <td>United States country music singer and songwriter (1932-2003)美国乡村音乐歌手兼词曲作者（1932-2003）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cash</th>
+      <td>as</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kæʃ</td>
+      <td>['immediate payment']</td>
+      <td>[credit]</td>
+      <td>prompt payment for goods or services in currency or by check及时以货币或支票支付货物或服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[payment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['dampen', 'moisten']</td>
+      <td></td>
+      <td>make moist使潮湿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['launder']</td>
+      <td></td>
+      <td>cleanse with a cleaning agent, such as soap, and water用肥皂和水等清洁剂清洁</td>
+      <td></td>
+      <td>[washer, washable]</td>
+      <td>[rinse]</td>
+      <td>[clean, make clean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['wash away', 'wash off', 'wash out']</td>
+      <td></td>
+      <td>remove by the application of water or other liquid and soap or some other cleaning agent通过使用水或其他液体和肥皂或一些其他清洁剂去除</td>
+      <td>he washed the dirt from his coat他洗掉了外套上的污垢The nurse washed away the blood护士冲走了血Can you wash away the spots on the windows?你能洗掉窗户上的斑点吗？he managed to wash out the stains他设法洗掉了污渍</td>
+      <td></td>
+      <td>[wash out, rinse]</td>
+      <td>[take, remove, take away, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['lap', 'lave']</td>
+      <td></td>
+      <td>wash or flow against洗涤或流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['rinse']</td>
+      <td></td>
+      <td>clean with some chemical process用一些化学过程清洁</td>
+      <td></td>
+      <td>[washable, washer]</td>
+      <td>[wash away, wash off, launder, wash out]</td>
+      <td>[serve, swear out, process]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['lave'], alos:['wash up']</td>
+      <td></td>
+      <td>cleanse (one's body) with soap and water用肥皂和水清洗（一个人的身体）</td>
+      <td></td>
+      <td>[washing]</td>
+      <td></td>
+      <td>[cleanse, clean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>admit to testing or proof承认测试或证明</td>
+      <td>This silly excuse won't wash in traffic court这个愚蠢的借口不会在交通法庭上洗漱</td>
+      <td></td>
+      <td></td>
+      <td>[stand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>apply a thin coating of paint, metal, etc., to涂上一层薄薄的油漆，金属等涂料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>be capable of being washed能够被洗涤</td>
+      <td>Does this material wash?这种材料洗吗？</td>
+      <td>[washable]</td>
+      <td>[launder]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>form by erosion形成侵蚀</td>
+      <td>The river washed a ravine into the mountainside河水将山沟冲到山腰</td>
+      <td></td>
+      <td></td>
+      <td>[erode, fret, eat away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>move by or as if by water靠水或仿佛靠水</td>
+      <td>The swollen river washed away the footbridge肿胀的河水冲走了人行天桥</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>separate dirt or gravel from (precious minerals)从（珍贵矿物）中分离出污垢或砾石</td>
+      <td></td>
+      <td></td>
+      <td>[rinse]</td>
+      <td>[separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>to cleanse (itself or another animal) by licking通过舔清洗（本身或其他动物）</td>
+      <td>The cat washes several times a day猫每天洗几次</td>
+      <td></td>
+      <td>[lave]</td>
+      <td>[clean, cleanse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['washout']</td>
+      <td></td>
+      <td>the erosive process of washing away soil or gravel by water (as from a roadway)用水冲洗土壤或砾石的腐蚀过程（如从巷道）</td>
+      <td>from the house they watched the washout of their newly seeded lawn by the water他们从房子里看到了他们新近播下的草坪在水面上的冲刷</td>
+      <td></td>
+      <td></td>
+      <td>[soil erosion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['airstream', 'backwash', 'race', 'slipstream']</td>
+      <td></td>
+      <td>the flow of air that is driven backwards by an aircraft propeller被飞机螺旋桨向后驱动的空气流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['laundry', 'washables', 'washing']</td>
+      <td></td>
+      <td>garments or white goods that can be cleaned by laundering可以通过洗涤清洁的服装或白色家电</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garment, white goods, household linen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['lavation', 'washing']</td>
+      <td></td>
+      <td>the work of cleansing (usually with soap and water)清洁工作（通常用肥皂和水）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['dry wash']</td>
+      <td></td>
+      <td>the dry bed of an intermittent stream (as at the bottom of a canyon)间歇流的干燥床（如峡谷底部）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[streambed, creek bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['wash drawing']</td>
+      <td></td>
+      <td>a watercolor made by applying a series of monochrome washes one over the other通过将一系列单色洗涤应用于另一个而制成的水彩画</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water-colour, water-color, watercolour, watercolor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>any enterprise in which losses and gains cancel out任何损失和收益抵消的企业</td>
+      <td>at the end of the year the accounting department showed that it was a wash在年底，会计部门表明这是洗</td>
+      <td></td>
+      <td></td>
+      <td>[commercial activity, business activity]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>as</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>a thin coat of water-base paint一层薄薄的水性涂料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water-base paint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>mæs</td>
+      <td></td>
+      <td></td>
+      <td>join together into a mass or collect or form a mass联合成一团或收集或形成一团</td>
+      <td>Crowds were massing outside the palace人群在宫外聚集</td>
+      <td></td>
+      <td></td>
+      <td>[crowd together, crowd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td>['hoi polloi', 'masses', 'multitude', 'people', 'the great unwashed']</td>
+      <td></td>
+      <td>the common people generally普通人一般</td>
+      <td>separate the warriors from the mass将战士与群众分开</td>
+      <td></td>
+      <td></td>
+      <td>[group, grouping]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td>['bulk', 'volume']</td>
+      <td></td>
+      <td>the property of something that is great in magnitude物有所值的东西</td>
+      <td>he received a mass of correspondence他收到了大量的信件</td>
+      <td></td>
+      <td></td>
+      <td>[magnitude]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite quantity, large indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td></td>
+      <td></td>
+      <td>a body of matter without definite shape没有明确形状的物质</td>
+      <td>a huge ice mass巨大的冰块</td>
+      <td></td>
+      <td></td>
+      <td>[body]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td></td>
+      <td></td>
+      <td>a musical setting for a Mass弥撒的音乐场景</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[church music, religious music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td></td>
+      <td></td>
+      <td>an ill-structured collection of similar things (objects or people)一个结构不合理的类似东西（物品或人）的集合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accumulation, assemblage, aggregation, collection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td></td>
+      <td></td>
+      <td>a sequence of prayers constituting the Christian Eucharistic rite一系列祈祷构成了基督教的圣体圣事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prayer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td></td>
+      <td></td>
+      <td>(Roman Catholic Church and Protestant Churches) the celebration of the Eucharist（罗马天主教会和新教教会）庆祝圣体圣事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[religious ceremony, religious ritual]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>mæs</td>
+      <td></td>
+      <td></td>
+      <td>the property of a body that causes it to have weight in a gravitational field导致它在重力场中具有重量的物体的性质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physical property, fundamental measure, fundamental quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mass</th>
+      <td>as</td>
+      <td>4.44</td>
+      <td>adj</td>
+      <td>mæs</td>
+      <td>['aggregate', 'aggregated', 'aggregative'], similarTo:['collective']</td>
+      <td></td>
+      <td>formed of separate units gathered into a mass or whole由聚集成一个整体或整体的独立单元组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['couch', 'frame', 'put', 'redact']</td>
+      <td></td>
+      <td>formulate in a particular style or language以特定的风格或语言表达</td>
+      <td>She cast her request in very polite language她用礼貌的语言提出了她的请求</td>
+      <td></td>
+      <td></td>
+      <td>[word, phrase, give voice, articulate, formulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['mold', 'mould']</td>
+      <td></td>
+      <td>form by pouring (e.g., wax or hot metal) into a cast or mold通过将（例如蜡或铁水）浇注到铸件或模具中来形成</td>
+      <td>cast a bronze sculpture铸造青铜雕塑</td>
+      <td>[casting, caster]</td>
+      <td></td>
+      <td>[work, mould, forge, form, shape, mold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['drift', 'ramble', 'range', 'roam', 'roll', 'rove', 'stray', 'swan', 'tramp', 'vagabond', 'wander']</td>
+      <td></td>
+      <td>move about aimlessly or without any destination, often in search of food or employment无目的地移动或没有任何目的地，经常寻找食物或就业</td>
+      <td></td>
+      <td></td>
+      <td>[drift, wander, err, stray]</td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['contrive', 'project', 'throw']</td>
+      <td></td>
+      <td>put or send forth放或送</td>
+      <td>cast a spell施了一个咒语cast a warm light投下温暖的灯光</td>
+      <td></td>
+      <td></td>
+      <td>[send, direct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['cast off', 'drop', 'shake off', 'shed', 'throw', 'throw away', 'throw off']</td>
+      <td></td>
+      <td>get rid of摆脱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remove, take, withdraw, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['hurl', 'hurtle'], alos:['cast anchor']</td>
+      <td></td>
+      <td>throw forcefully强行投掷</td>
+      <td></td>
+      <td>[casting]</td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['barf', 'be sick', 'cat', 'chuck', 'disgorge', 'honk', 'puke', 'purge', 'regorge', 'regurgitate', 'retch', 'sick', 'spew', 'spue', 'throw up', 'upchuck', 'vomit', 'vomit up']</td>
+      <td></td>
+      <td>eject the contents of the stomach through the mouth通过口腔排出胃内容物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eliminate, pass, egest, excrete]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td>['draw']</td>
+      <td></td>
+      <td>choose at random随意选择</td>
+      <td>cast lots演员们</td>
+      <td></td>
+      <td></td>
+      <td>[go, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td></td>
+      <td></td>
+      <td>assign the roles of (a movie or a play) to actors将（电影或戏剧）的角色分配给演员</td>
+      <td>Who cast this beautiful movie?谁投了这部美丽的电影？</td>
+      <td>[casting]</td>
+      <td></td>
+      <td>[designate, depute, delegate, assign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td></td>
+      <td></td>
+      <td>deposit存款</td>
+      <td>cast a vote投票cast a ballot投了一张选票</td>
+      <td></td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>cɑst</td>
+      <td></td>
+      <td></td>
+      <td>select to play,sing, or dance a part in a play, movie, musical, opera, or ballet选择在戏剧，电影，音乐，歌剧或芭蕾舞中演奏，唱歌或跳舞</td>
+      <td>He cast a young woman in the role of Desdemona他扮演一个扮演苔丝狄蒙娜角色的年轻女子</td>
+      <td></td>
+      <td></td>
+      <td>[designate, assign, depute, delegate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['casting']</td>
+      <td></td>
+      <td>the act of throwing a fishing line out over the water by means of a rod and reel通过杆和卷轴将钓鱼线扔出水面的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fishing, sportfishing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['form', 'shape']</td>
+      <td></td>
+      <td>the visual appearance of something or someone某事物或某人的视觉外观</td>
+      <td>the delicate cast of his features他特色的精致演员</td>
+      <td></td>
+      <td></td>
+      <td>[appearance, visual aspect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['cast of characters', 'dramatis personae']</td>
+      <td></td>
+      <td>the actors in a play戏剧中的演员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gathering, assemblage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['hurl']</td>
+      <td></td>
+      <td>a violent throw猛烈的投掷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['mold', 'mould']</td>
+      <td></td>
+      <td>container into which liquid is poured to create a given shape when it hardens容器，液体倒入其中以在硬化时产生给定的形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['roll']</td>
+      <td></td>
+      <td>the act of throwing dice投掷骰子的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['casting']</td>
+      <td></td>
+      <td>object formed by a mold由模具形成的物体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[copy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['plaster bandage', 'plaster cast']</td>
+      <td></td>
+      <td>bandage consisting of a firm covering (often made of plaster of Paris) that immobilizes broken bones while they heal绷带由坚固的覆盖物（通常由巴黎石膏制成）组成，在它们愈合时固定骨折</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[patch, bandage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cast</th>
+      <td>as</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>cɑst</td>
+      <td>['mold', 'mould', 'stamp']</td>
+      <td></td>
+      <td>the distinctive form in which a thing is made制作东西的独特形式</td>
+      <td>pottery of this cast was found throughout the region整个地区都发现了这个演员的陶器</td>
+      <td></td>
+      <td></td>
+      <td>[solid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td>['block out']</td>
+      <td></td>
+      <td>shield from light避光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td>['cloak', 'dissemble']</td>
+      <td></td>
+      <td>hide under a false appearance躲在虚假的外表下</td>
+      <td>He masked his disappointment他掩饰了他的失望</td>
+      <td>[masking]</td>
+      <td></td>
+      <td>[disguise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td>['disguise']</td>
+      <td></td>
+      <td>make unrecognizable变得无法辨认</td>
+      <td>The herb masks the garlic taste这种草药掩盖了大蒜的味道</td>
+      <td></td>
+      <td></td>
+      <td>[hide, conceal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>cover with a sauce盖上酱汁</td>
+      <td>mask the meat掩盖肉</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td></td>
+      <td>[unmask]</td>
+      <td>put a mask on or cover with a mask戴上面具或用面具盖上面具</td>
+      <td></td>
+      <td>[masker]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td>['masque', 'masquerade', 'masquerade party']</td>
+      <td></td>
+      <td>a party of guests wearing costumes and masks一队穿着戏服和面具的客人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[party]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>a covering to disguise or conceal the face用于掩饰或隐藏脸部的遮盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering, disguise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>activity that tries to conceal something试图隐瞒某事的活动</td>
+      <td>no mask could conceal his ignorance没有面具可以掩饰他的无知they moved in under a mask of friendship他们在友谊的面具下搬进来</td>
+      <td></td>
+      <td></td>
+      <td>[hiding, concealment, concealing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>as</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>a protective covering worn over the face一个戴在脸上的防护罩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protection, protective cover, protective covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>as</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>tæsk</td>
+      <td>['tax']</td>
+      <td></td>
+      <td>use to the limit使用到极限</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[extend, strain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>as</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>tæsk</td>
+      <td></td>
+      <td></td>
+      <td>assign a task to将任务分配给</td>
+      <td>I tasked him with looking after the children我责成他照顾孩子们</td>
+      <td></td>
+      <td></td>
+      <td>[delegate, assign, designate, depute]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>as</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>tæsk</td>
+      <td>['chore', 'job']</td>
+      <td></td>
+      <td>a specific piece of work required to be done as a duty or for a specific fee作为职责或特定费用需要完成的特定工作</td>
+      <td>the endless task of classifying the samples分类样品的无穷无尽的任务</td>
+      <td></td>
+      <td></td>
+      <td>[duty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>as</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>tæsk</td>
+      <td>['labor', 'project', 'undertaking']</td>
+      <td></td>
+      <td>any piece of work that is undertaken or attempted任何进行或尝试的工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vast</th>
+      <td>as</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>væst</td>
+      <td>['brobdingnagian', 'huge', 'immense'], similarTo:['big', 'large']</td>
+      <td></td>
+      <td>unusually great in size or amount or degree or especially extent or scope异常大小或数量或程度或特别是范围或范围</td>
+      <td>at vast (or immense) expense在巨大（或巨大）的费用the vast reaches of outer space广阔的外层空间the vast accumulation of knowledge...which we call civilization知识的巨大积累......我们称之为文明</td>
+      <td>[vastness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td>['bass voice', 'basso']</td>
+      <td></td>
+      <td>the lowest adult male singing voice最低成年男性的歌声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[singing voice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td>['freshwater bass']</td>
+      <td></td>
+      <td>any of various North American freshwater fish with lean flesh (especially of the genus Micropterus)任何一种具有瘦肉的北美淡水鱼（特别是Micropterus属）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[freshwater fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td>['basso']</td>
+      <td></td>
+      <td>an adult male singer with the lowest voice一个声音最低的成年男歌手</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vocaliser, singer, vocalizer, vocalist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td>['sea bass']</td>
+      <td></td>
+      <td>the lean flesh of a saltwater fish of the family SerranidaeSer科（Serranidae）的咸水鱼的瘦肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[saltwater fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td>['bass part']</td>
+      <td></td>
+      <td>the lowest part in polyphonic music复调音乐的最低部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[voice, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td></td>
+      <td></td>
+      <td>nontechnical name for any of numerous edible marine and freshwater spiny-finned fishes许多食用海洋和淡水刺鳍鱼的非技术名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[percoidean, percoid, percoid fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td></td>
+      <td></td>
+      <td>the lowest part of the musical range音乐范围的最低部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pitch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>bæs</td>
+      <td></td>
+      <td></td>
+      <td>the member with the lowest range of a family of musical instruments乐器系列中具有最低范围的成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instrument, musical instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bass</th>
+      <td>as</td>
+      <td>4.00</td>
+      <td>adj</td>
+      <td>bæs</td>
+      <td>['deep'], similarTo:['low-pitched', 'low']</td>
+      <td></td>
+      <td>having or denoting a low vocal or instrumental range具有或表示低声乐或乐器范围</td>
+      <td>a bass voice is lower than a baritone voice低音提示低于男中音a bass clarinet低音单簧管</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>asia</th>
+      <td>as</td>
+      <td>3.95</td>
+      <td>nou</td>
+      <td>'eɪʒə</td>
+      <td></td>
+      <td></td>
+      <td>the largest continent with 60% of the earth's population; it is joined to Europe on the west to form Eurasia; it is the site of some of the world's earliest civilizations占地球人口60％的最大的大陆;它与西方的欧洲相连，形成欧亚大陆;它是世界上一些最早文明的遗址</td>
+      <td></td>
+      <td>[asian, asiatic]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>asia</th>
+      <td>as</td>
+      <td>3.95</td>
+      <td>nou</td>
+      <td>'eɪʒə</td>
+      <td></td>
+      <td></td>
+      <td>the nations of the Asian continent collectively亚洲大陆的国家集体</td>
+      <td></td>
+      <td>[asian, asiatic]</td>
+      <td></td>
+      <td>[accumulation, collection, assemblage, aggregation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['dart', 'flash', 'scoot', 'scud', 'shoot']</td>
+      <td></td>
+      <td>run or move very quickly or hastily快速奔跑或移动或仓促行动</td>
+      <td>She dashed into the yard她冲进院子里</td>
+      <td></td>
+      <td>[buck, charge, tear, shoot, shoot down]</td>
+      <td>[speed, hasten, hie, hotfoot, bucket along, belt along, step on it, rush along, pelt along, rush, race, cannonball along]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['smash']</td>
+      <td></td>
+      <td>break into pieces, as by striking or knocking over通过敲击或敲击而破碎</td>
+      <td></td>
+      <td></td>
+      <td>[smash]</td>
+      <td>[break]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['crash']</td>
+      <td></td>
+      <td>hurl or thrust violently猛烈地投掷或猛烈地推</td>
+      <td>He dashed the plate against the wall他把盘子靠在墙上Waves were dashing against the rock海浪冲向岩石</td>
+      <td></td>
+      <td></td>
+      <td>[cast, hurl, hurtle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['daunt', 'frighten away', 'frighten off', 'pall', 'scare', 'scare away', 'scare off']</td>
+      <td></td>
+      <td>cause to lose courage导致失去勇气</td>
+      <td>dashed by the refusal因拒绝而破灭</td>
+      <td></td>
+      <td></td>
+      <td>[intimidate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td></td>
+      <td></td>
+      <td>add an enlivening or altering element to添加一个活跃或改变元素</td>
+      <td>blue paint dashed with white蓝色油漆用白色破灭</td>
+      <td></td>
+      <td></td>
+      <td>[mix in, mix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td></td>
+      <td></td>
+      <td>destroy or break毁灭或破坏</td>
+      <td>dashed ambitions and hopes虚伪的野心和希望</td>
+      <td></td>
+      <td></td>
+      <td>[queer, baffle, bilk, cross, foil, frustrate, scotch, spoil, thwart]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['dah']</td>
+      <td></td>
+      <td>the longer of the two telegraphic signals used in Morse code摩尔斯电码中使用的两个电报信号中的较长时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiotelegraphic signal, telegraphic signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['bolt']</td>
+      <td></td>
+      <td>the act of moving with great haste匆忙行动的行为</td>
+      <td>he made a dash for the door他冲了一下门</td>
+      <td></td>
+      <td></td>
+      <td>[rush, haste, hurry, rushing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['elan', 'flair', 'panache', 'style']</td>
+      <td></td>
+      <td>distinctive and stylish elegance独特而时尚的优雅</td>
+      <td>he wooed her with the confident dash of a cavalry officer他带着自信的骑兵军队向她求爱</td>
+      <td></td>
+      <td></td>
+      <td>[elegance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['hyphen']</td>
+      <td></td>
+      <td>a punctuation mark (-) used between parts of a compound word or between the syllables of a word when the word is divided at the end of a line of text当在一行文本的末尾划分单词时，在复合词的各个部分之间或单词的音节之间使用的标点符号（ - ）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[punctuation mark, punctuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['sprint']</td>
+      <td></td>
+      <td>a quick run快速运行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[run, running]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>as</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td></td>
+      <td></td>
+      <td>a footrace run at top speed以最快的速度跑步</td>
+      <td>he is preparing for the 100-yard dash他正在为100码冲刺做准备</td>
+      <td></td>
+      <td></td>
+      <td>[track event]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>as</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>ræʃ</td>
+      <td>['blizzard']</td>
+      <td></td>
+      <td>a series of unexpected and unpleasant occurrences一系列意外和不愉快的事件</td>
+      <td>a rash of bank robberies一连串的银行抢劫案</td>
+      <td></td>
+      <td></td>
+      <td>[series]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>as</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>ræʃ</td>
+      <td>['efflorescence', 'roseola', 'skin rash']</td>
+      <td></td>
+      <td>any red eruption of the skin任何红色的皮肤喷发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eruption]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>as</td>
+      <td>3.76</td>
+      <td>adj</td>
+      <td>ræʃ</td>
+      <td>['foolhardy', 'heady', 'reckless'], similarTo:['bold']</td>
+      <td></td>
+      <td>marked by defiant disregard for danger or consequences以挑衅无视危险或后果为标志</td>
+      <td>a rash attempt to climb Mount Everest一次鲁莽的尝试攀登珠穆朗玛峰</td>
+      <td>[rashness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>as</td>
+      <td>3.76</td>
+      <td>adj</td>
+      <td>ræʃ</td>
+      <td>, similarTo:['imprudent']</td>
+      <td></td>
+      <td>imprudently incurring risk不可思议地招致风险</td>
+      <td>do something rash that he will forever repent做一些他会永远忏悔的事情</td>
+      <td>[rashness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alas</th>
+      <td>as</td>
+      <td>3.71</td>
+      <td>adv</td>
+      <td>ə'læs</td>
+      <td>['regrettably', 'unfortunately', 'unluckily']</td>
+      <td></td>
+      <td>by bad luck运气不好</td>
+      <td>alas, I cannot stay唉，我不能留下来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gasp</th>
+      <td>as</td>
+      <td>3.62</td>
+      <td>ver</td>
+      <td>ɡæsp</td>
+      <td>['heave', 'pant', 'puff']</td>
+      <td></td>
+      <td>breathe noisily, as when one is exhausted当一个人筋疲力尽时，大声呼吸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gasp</th>
+      <td>as</td>
+      <td>3.62</td>
+      <td>nou</td>
+      <td>ɡæsp</td>
+      <td>['pant']</td>
+      <td></td>
+      <td>a short labored intake of breath with the mouth open口腔开放，呼吸短促</td>
+      <td>she gave a gasp and fainted她喘息着晕了过去</td>
+      <td></td>
+      <td></td>
+      <td>[aspiration, breathing in, inhalation, inspiration, intake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bash</th>
+      <td>as</td>
+      <td>3.60</td>
+      <td>ver</td>
+      <td>bæʃ</td>
+      <td>['bonk', 'bop', 'sock', 'whap', 'whop']</td>
+      <td></td>
+      <td>hit hard用力打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bash</th>
+      <td>as</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>bæʃ</td>
+      <td>['bang', 'belt', 'knock', 'smash']</td>
+      <td></td>
+      <td>a vigorous blow一阵轰轰烈烈的打击</td>
+      <td>he took a bash right in his face他在脸上狠狠地砸了一下</td>
+      <td></td>
+      <td></td>
+      <td>[blow, bump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bash</th>
+      <td>as</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>bæʃ</td>
+      <td>['brawl', 'do']</td>
+      <td></td>
+      <td>an uproarious party一个吵闹的派对</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[party]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hash</th>
+      <td>as</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hæʃ</td>
+      <td></td>
+      <td></td>
+      <td>chop up砍了</td>
+      <td>hash the potatoes哈希土豆</td>
+      <td></td>
+      <td></td>
+      <td>[chop, chop up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hash</th>
+      <td>as</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hæʃ</td>
+      <td>['haschisch', 'hasheesh', 'hashish']</td>
+      <td></td>
+      <td>purified resinous extract of the hemp plant; used as a hallucinogen大麻植物的纯化树脂提取物;用作迷幻剂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soft drug]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hash</th>
+      <td>as</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hæʃ</td>
+      <td></td>
+      <td></td>
+      <td>chopped meat mixed with potatoes and browned切碎的肉混合土豆和褐色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nash</th>
+      <td>as</td>
+      <td>3.44</td>
+      <td>nou</td>
+      <td>næʃ</td>
+      <td>['ogden nash']</td>
+      <td></td>
+      <td>United States writer noted for his droll epigrams (1902-1971)美国作家以他的流言蜚语而闻名（1902-1971）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lass</th>
+      <td>as</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>læs</td>
+      <td>['jeune fille', 'lassie', 'young girl']</td>
+      <td></td>
+      <td>a girl or young woman who is unmarried一个未婚的女孩或年轻女子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[missy, young lady, young woman, girl, fille, miss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mast</th>
+      <td>as</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>mæst</td>
+      <td></td>
+      <td></td>
+      <td>any sturdy upright pole任何坚固的直立杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pole]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mast</th>
+      <td>as</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>mæst</td>
+      <td></td>
+      <td></td>
+      <td>a vertical spar for supporting sails用于支撑帆的垂直翼梁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mast</th>
+      <td>as</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>mæst</td>
+      <td></td>
+      <td></td>
+      <td>nuts of forest trees (as beechnuts and acorns) accumulated on the ground森林树木的坚果（如山毛榉和橡子）积聚在地上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mast</th>
+      <td>as</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>mæst</td>
+      <td></td>
+      <td></td>
+      <td>nuts of forest trees used as feed for swine森林树木的坚果用作猪的饲料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[provender, feed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wasp</th>
+      <td>as</td>
+      <td>3.25</td>
+      <td>nou</td>
+      <td>wɑsp</td>
+      <td>['white anglo-saxon protestant']</td>
+      <td></td>
+      <td>a white person of Anglo-Saxon ancestry who belongs to a Protestant denomination属于新教教派的盎格鲁撒克逊血统的白人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[caucasian, protestant, white, white person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wasp</th>
+      <td>as</td>
+      <td>3.25</td>
+      <td>nou</td>
+      <td>wɑsp</td>
+      <td></td>
+      <td></td>
+      <td>social or solitary hymenopterans typically having a slender body with the abdomen attached by a narrow stalk and having a formidable sting社会或孤立的膜翅目昆虫，通常身体纤细，腹部由狭窄的茎秆附着并具有强大的刺痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hymenopter, hymenopteran, hymenopteron, hymenopterous insect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>as</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mæʃ</td>
+      <td>['crush', 'squash', 'squeeze', 'squelch']</td>
+      <td></td>
+      <td>to compress with violence, out of natural shape or condition压迫暴力，自然形状或条件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[press]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>as</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mæʃ</td>
+      <td>['butterfly', 'chat up', 'coquet', 'coquette', 'dally', 'flirt', 'philander', 'romance']</td>
+      <td></td>
+      <td>talk or behave amorously, without serious intentions在没有严肃意图的情况下谈论或表现得很好</td>
+      <td></td>
+      <td>[masher]</td>
+      <td></td>
+      <td>[speak, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>as</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mæʃ</td>
+      <td>['bray', 'comminute', 'crunch', 'grind']</td>
+      <td></td>
+      <td>reduce to small pieces or particles by pounding or abrading通过敲击或研磨将其减少为小块或颗粒</td>
+      <td>mash the garlic捣碎大蒜</td>
+      <td>[masher]</td>
+      <td></td>
+      <td>[break up, fragment, fragmentise, fragmentize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>as</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>mæʃ</td>
+      <td></td>
+      <td></td>
+      <td>a mixture of mashed malt grains and hot water; used in brewing捣碎的麦芽谷物和热水的混合物;用于酿造</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[suspension]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>as</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>mæʃ</td>
+      <td></td>
+      <td></td>
+      <td>mixture of ground animal feeds地面动物饲料的混合物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feed, provender]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>as</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td>['flog', 'lather', 'slash', 'strap', 'trounce', 'welt', 'whip']</td>
+      <td></td>
+      <td>beat severely with a whip or rod用鞭子或杖严重击打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work over, beat, beat up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>as</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td>['whip']</td>
+      <td></td>
+      <td>strike as if by whipping好像是通过鞭打打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>as</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td></td>
+      <td>[unlash]</td>
+      <td>bind with a rope, chain, or cord用绳子，绳子或绳索捆绑</td>
+      <td>lash the horse鞭打马</td>
+      <td></td>
+      <td></td>
+      <td>[bind, tie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>as</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td></td>
+      <td></td>
+      <td>lash or flick about sharply猛烈地鞭打或轻弹</td>
+      <td>The lion lashed its tail狮子鞭打它的尾巴</td>
+      <td></td>
+      <td></td>
+      <td>[sway, swing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>as</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>læʃ</td>
+      <td>['thong']</td>
+      <td></td>
+      <td>leather strip that forms the flexible part of a whip皮革条带，形成鞭子的灵活部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leather strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>as</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>læʃ</td>
+      <td>['cilium', 'eyelash']</td>
+      <td></td>
+      <td>any of the short curved hairs that grow from the edges of the eyelids任何从眼睑边缘长出的短弯曲的毛发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>as</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>læʃ</td>
+      <td>['whip', 'whiplash']</td>
+      <td></td>
+      <td>a quick blow delivered with a whip or whiplike object用鞭子或鞭子般的物体快速打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>xmas</th>
+      <td>as</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>'krisməs</td>
+      <td>['christmas', 'christmas day', 'dec 25']</td>
+      <td></td>
+      <td>a Christian holiday celebrating the birth of Christ; a quarter day in England, Wales, and Ireland庆祝基督诞生的基督教节日;在英格兰，威尔士和爱尔兰度过了四分之一天</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[quarter day, national holiday, public holiday, feast day, fete day, holy day of obligation, legal holiday]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sass</th>
+      <td>as</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>sæs</td>
+      <td></td>
+      <td></td>
+      <td>answer back in an impudent or insolent manner以无礼或无礼的方式回答</td>
+      <td>don't sass me!不要欺骗我！The teacher punished the students who were sassing all morning老师惩罚了整个上午都在吵闹的学生</td>
+      <td>[sassing]</td>
+      <td></td>
+      <td>[answer, reply, respond]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sass</th>
+      <td>as</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>sæs</td>
+      <td>['back talk', 'backtalk', 'lip', 'mouth', 'sassing']</td>
+      <td></td>
+      <td>an impudent or insolent rejoinder无礼或无礼的反驳</td>
+      <td>don't give me any of your sass不要给我任何你的sass</td>
+      <td>[sassy]</td>
+      <td></td>
+      <td>[comeback, counter, rejoinder, replication, retort, return, riposte]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>as</td>
+      <td>2.85</td>
+      <td>ver</td>
+      <td>ɡæʃ</td>
+      <td>['slash']</td>
+      <td></td>
+      <td>cut open切开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>as</td>
+      <td>2.85</td>
+      <td>nou</td>
+      <td>ɡæʃ</td>
+      <td>['slash']</td>
+      <td></td>
+      <td>a strong sweeping cut made with a sharp instrument用锋利的乐器进行强力扫描</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut, cutting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>as</td>
+      <td>2.85</td>
+      <td>nou</td>
+      <td>ɡæʃ</td>
+      <td>['cut', 'slash', 'slice']</td>
+      <td></td>
+      <td>a wound made by cutting通过切割制成的伤口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lesion, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>as</td>
+      <td>2.85</td>
+      <td>nou</td>
+      <td>ɡæʃ</td>
+      <td>['cut']</td>
+      <td></td>
+      <td>a trench resembling a furrow that was made by erosion or excavation一种类似于沟槽的沟槽，由侵蚀或挖掘制成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[furrow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sash</th>
+      <td>as</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>sæʃ</td>
+      <td>['cincture', 'girdle', 'waistband', 'waistcloth']</td>
+      <td></td>
+      <td>a band of material around the waist that strengthens a skirt or trousers腰部有一条材料，可以加强裙子或裤子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[band]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sash</th>
+      <td>as</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>sæʃ</td>
+      <td>['window sash']</td>
+      <td></td>
+      <td>a framework that holds the panes of a window in the window frame一个框架，用于保存窗口框架中窗口的窗格</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[frame, framework]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bask</th>
+      <td>as</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>bæsk</td>
+      <td>['enjoy', 'relish', 'savor', 'savour']</td>
+      <td></td>
+      <td>derive or receive pleasure from; get enjoyment from; take pleasure in从中得到或得到快乐;得到享受;很高兴</td>
+      <td>She relished her fame and basked in her glory她很享受自己的名声并沉浸在她的荣耀之中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bask</th>
+      <td>as</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>bæsk</td>
+      <td></td>
+      <td></td>
+      <td>be exposed暴露</td>
+      <td>The seals were basking in the sun海豹在阳光下晒太阳</td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rasp</th>
+      <td>as</td>
+      <td>2.40</td>
+      <td>ver</td>
+      <td>ræsp</td>
+      <td></td>
+      <td></td>
+      <td>scrape with a rasp用锉刀刮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rub off, rub down, abrase, corrade, abrade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rasp</th>
+      <td>as</td>
+      <td>2.40</td>
+      <td>ver</td>
+      <td>ræsp</td>
+      <td></td>
+      <td></td>
+      <td>utter in a grating voice发出刺耳的声音</td>
+      <td></td>
+      <td>[rasping]</td>
+      <td></td>
+      <td>[verbalize, mouth, utter, verbalise, speak, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rasp</th>
+      <td>as</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>ræsp</td>
+      <td>['rasping']</td>
+      <td></td>
+      <td>uttering in an irritated tone发出激怒的语气</td>
+      <td></td>
+      <td>[raspy]</td>
+      <td></td>
+      <td>[utterance, vocalization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rasp</th>
+      <td>as</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>ræsp</td>
+      <td>['wood file']</td>
+      <td></td>
+      <td>a coarse file with sharp pointed projections带尖锐投影的粗文件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[file]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bast</th>
+      <td>as</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>bæst</td>
+      <td>['phloem']</td>
+      <td></td>
+      <td>(botany) tissue that conducts synthesized food substances (e.g., from leaves) to parts where needed; consists primarily of sieve tubes（植物学）组织，其将合成的食物物质（例如，从叶子）传导到需要的部分;主要由筛管组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vascular tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bast</th>
+      <td>as</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>bæst</td>
+      <td>['bast fiber']</td>
+      <td></td>
+      <td>strong woody fibers obtained especially from the phloem of from various plants特别是从各种植物的韧皮部中获得的强木质纤维</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural fibre, natural fiber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bast</th>
+      <td>as</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>bæst</td>
+      <td></td>
+      <td></td>
+      <td>cat- or lion-headed Egyptian goddess; represents life-giving power of the sun猫头鹰或狮子头的埃及女神;代表着赋予生命的太阳能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>anas</th>
+      <td>as</td>
+      <td>2.24</td>
+      <td>nou</td>
+      <td>'ænʌs</td>
+      <td>['genus anas']</td>
+      <td></td>
+      <td>type genus of the Anatidae: freshwater ducks雁鸭属的类型：淡水鸭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bird genus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hasp</th>
+      <td>as</td>
+      <td>2.19</td>
+      <td>ver</td>
+      <td>hæsp</td>
+      <td></td>
+      <td></td>
+      <td>secure or lock with a hasp用搭扣固定或锁定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fasten, fix, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hasp</th>
+      <td>as</td>
+      <td>2.19</td>
+      <td>nou</td>
+      <td>hæsp</td>
+      <td></td>
+      <td></td>
+      <td>a fastener for a door or lid; a hinged metal plate is fitted over a staple and is locked with a pin or padlock用于门或盖子的紧固件;铰接金属板安装在订书钉上，并用销钉或挂锁锁定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[catch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ashy</th>
+      <td>as</td>
+      <td>2.17</td>
+      <td>adj</td>
+      <td>'æʃi</td>
+      <td>['ash-gray', 'ash-grey'], similarTo:['achromatic', 'neutral']</td>
+      <td></td>
+      <td>of a light grey浅灰色</td>
+      <td></td>
+      <td>[ash]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cask</th>
+      <td>as</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>kæsk</td>
+      <td>['barrel']</td>
+      <td></td>
+      <td>a cylindrical container that holds liquids一个容纳液体的圆柱形容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cask</th>
+      <td>as</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>kæsk</td>
+      <td>['caskful']</td>
+      <td></td>
+      <td>the quantity a cask will hold一个木桶的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nast</th>
+      <td>as</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>næst</td>
+      <td>['thomas nast']</td>
+      <td></td>
+      <td>United States political cartoonist (1840-1902)美国政治漫画家（1840-1902）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

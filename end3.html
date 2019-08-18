@@ -1,0 +1,335 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['end']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>ver</td>
+      <td>ɛnd</td>
+      <td>['terminate']</td>
+      <td>[begin]</td>
+      <td>bring to an end or halt结束或停止</td>
+      <td>She ended their friendship when she found out that he had once been convicted of a crime当她发现自己曾经被判犯罪时，她结束了友谊</td>
+      <td>[ending]</td>
+      <td></td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>ver</td>
+      <td>ɛnd</td>
+      <td>['terminate']</td>
+      <td></td>
+      <td>be the end of; be the last or concluding part of是结束;是...的最后或结束部分</td>
+      <td>This sad scene ended the movie这个悲伤的场景结束了电影</td>
+      <td>[ending]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>ver</td>
+      <td>ɛnd</td>
+      <td>['cease', 'finish', 'stop', 'terminate']</td>
+      <td>[begin]</td>
+      <td>have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical以时间，空间或数量的方式结束;无论是空间的还是隐喻的</td>
+      <td>My property ends by the bushes我的财产以灌木丛结束The symphony ends in a pianissimo交响曲以弱音结束</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>ver</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>put an end to杜绝</td>
+      <td>The terrible news ended our hopes that he had survived可怕的消息结束了我们希望他幸存下来的希望</td>
+      <td>[ending]</td>
+      <td></td>
+      <td>[destroy, destruct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td>['oddment', 'remainder', 'remnant']</td>
+      <td></td>
+      <td>a piece of cloth that is left over after the rest has been used or sold在使用或出售其余部分后留下的一块布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of material, piece of cloth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td>['goal']</td>
+      <td></td>
+      <td>the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it计划旨在实现的事态以及（实现时）终止旨在实现该计划的行为</td>
+      <td>the ends justify the means最终证明了手段的合理性</td>
+      <td></td>
+      <td></td>
+      <td>[mental object, content, cognitive content]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td>['close', 'closing', 'conclusion', 'ending']</td>
+      <td></td>
+      <td>the last section of a communication沟通的最后一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[subdivision, section]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td>['ending']</td>
+      <td>[beginning, middle]</td>
+      <td>the point in time at which something ends某事结束的时间点</td>
+      <td>the end of the year今年年底the ending of warranty period保修期结束</td>
+      <td></td>
+      <td></td>
+      <td>[point, point in time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td>['last']</td>
+      <td></td>
+      <td>the final stage or concluding parts of an event or occurrence事件或事件的最后阶段或结束部分</td>
+      <td>the end was exciting结局令人兴奋</td>
+      <td></td>
+      <td></td>
+      <td>[ending, conclusion, finish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td>['death', 'destruction']</td>
+      <td></td>
+      <td>a final state最终状态</td>
+      <td>he came to a bad end他走到了尽头the so-called glorious experiment came to an inglorious end所谓光荣的实验来到了不光彩的结局</td>
+      <td></td>
+      <td></td>
+      <td>[state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td>['terminal']</td>
+      <td></td>
+      <td>either extremity of something that has length要么是有长度的东西的极端</td>
+      <td>the end of the pier码头的尽头she knotted the end of the thread她打结了线程的结尾they rode to the end of the line他们骑到了终点</td>
+      <td></td>
+      <td></td>
+      <td>[extremity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>a boundary marking the extremities of something标志着某事物极端的边界</td>
+      <td>the end of town小镇的尽头</td>
+      <td></td>
+      <td></td>
+      <td>[boundary, bounds, bound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td>[beginning, middle]</td>
+      <td>a final part or section最后的部分或部分</td>
+      <td>we have given it at the end of the section since it involves the calculus我们在本节结尾处给出了它，因为它涉及微积分Start at the beginning and go on until you come to the end从头开始，继续，直到你走到尽头</td>
+      <td></td>
+      <td></td>
+      <td>[division, part, section]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>(American football) a position on the line of scrimmage（美式足球）在争球线上的位置</td>
+      <td>no one wanted to play end没有人想玩结束</td>
+      <td></td>
+      <td></td>
+      <td>[lineman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>(football) the person who plays at one end of the line of scrimmage（足球）在争球线的一端打球的人</td>
+      <td>the end managed to hold onto the pass最终成功保住了传球</td>
+      <td></td>
+      <td></td>
+      <td>[lineman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>one of two places from which people are communicating to each other人们相互沟通的两个地方之一</td>
+      <td>the phone rang at the other end电话在另一端响了both ends wrote at the same time两端同时写道</td>
+      <td></td>
+      <td></td>
+      <td>[spot, place, topographic point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>the part you are expected to play你应该扮演的角色</td>
+      <td>he held up his end他坚持到底</td>
+      <td></td>
+      <td></td>
+      <td>[share, part, contribution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td>end</td>
+      <td>5.5</td>
+      <td>nou</td>
+      <td>ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>the surface at either extremity of a three-dimensional object三维物体任一末端的表面</td>
+      <td>one end of the box was marked `This side up'盒子的一端标有“这边朝上”</td>
+      <td></td>
+      <td></td>
+      <td>[surface]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

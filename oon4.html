@@ -1,0 +1,410 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['soon', 'moon', 'noon', 'boon', 'goon', 'poon', 'coon', 'loon', 'toon']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>soon</th>
+      <td>oon</td>
+      <td>5.48</td>
+      <td>adv</td>
+      <td>sun</td>
+      <td>['before long', 'presently', 'shortly']</td>
+      <td></td>
+      <td>in the near future在不远的将来</td>
+      <td>the doctor will soon be here医生很快就会来这里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>ver</td>
+      <td>mun</td>
+      <td>['moon around', 'moon on']</td>
+      <td></td>
+      <td>be idle in a listless or dreamy way以无精打采或梦幻般的方式闲着</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stagnate, slug, idle, laze]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>ver</td>
+      <td>mun</td>
+      <td>['daydream']</td>
+      <td></td>
+      <td>have dreamlike musings or fantasies while awake清醒时有梦幻般的沉思或幻想</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slug, idle, stagnate, laze]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>ver</td>
+      <td>mun</td>
+      <td></td>
+      <td></td>
+      <td>expose one's buttocks to露出一个人的臀部</td>
+      <td>moon the audience让观众满月</td>
+      <td></td>
+      <td></td>
+      <td>[display, expose, exhibit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>mun</td>
+      <td>['sun myung moon']</td>
+      <td></td>
+      <td>United States religious leader (born in Korea) who founded the Unification Church in 1954; was found guilty of conspiracy to evade taxes (born in 1920)美国宗教领袖（出生于韩国）于1954年创立统一教会;被判犯有串谋逃税罪（1920年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>mun</td>
+      <td>['moonlight', 'moonshine']</td>
+      <td></td>
+      <td>the light of the Moon月亮之光</td>
+      <td>moonlight is the smuggler's enemy月光是走私者的敌人</td>
+      <td>[moony]</td>
+      <td></td>
+      <td>[visible light, light, visible radiation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>mun</td>
+      <td>['lunar month', 'lunation', 'synodic month']</td>
+      <td></td>
+      <td>the period between successive new moons (29.531 days)连续新月之间的时间（29.531天）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[month]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>mun</td>
+      <td></td>
+      <td></td>
+      <td>any natural satellite of a planet任何行星的天然卫星</td>
+      <td>Jupiter has sixteen moons木星有十六颗卫星</td>
+      <td></td>
+      <td></td>
+      <td>[satellite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>mun</td>
+      <td></td>
+      <td></td>
+      <td>any object resembling a moon任何类似月亮的物体</td>
+      <td>he made a moon lamp that he used as a night light他制作了一盏月灯，用作夜灯the clock had a moon that showed various phases时钟有一个显示各种阶段的月亮</td>
+      <td></td>
+      <td></td>
+      <td>[object, physical object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moon</th>
+      <td>oon</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>mun</td>
+      <td></td>
+      <td></td>
+      <td>the natural satellite of the Earth地球的自然卫星</td>
+      <td>men first stepped on the moon in 1969男人们在1969年第一次登上月球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>noon</th>
+      <td>oon</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>nun</td>
+      <td>['high noon', 'midday', 'noonday', 'noontide', 'twelve noon']</td>
+      <td></td>
+      <td>the middle of the day中午</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hour, time of day]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boon</th>
+      <td>oon</td>
+      <td>3.56</td>
+      <td>nou</td>
+      <td>bun</td>
+      <td>['blessing']</td>
+      <td></td>
+      <td>a desirable state一个理想的状态</td>
+      <td>a spanking breeze is a boon to sailors打屁股的微风对水手来说是一种福音</td>
+      <td></td>
+      <td></td>
+      <td>[good fortune, good luck, luckiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boon</th>
+      <td>oon</td>
+      <td>3.56</td>
+      <td>adj</td>
+      <td>bun</td>
+      <td>, similarTo:['close']</td>
+      <td></td>
+      <td>very close and convivial非常亲密和欢乐</td>
+      <td>boon companions恩惠同伴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goon</th>
+      <td>oon</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>ɡun</td>
+      <td>['clod', 'gawk', 'lout', 'lubber', 'lummox', 'lump', 'oaf', 'stumblebum']</td>
+      <td></td>
+      <td>an awkward stupid person一个尴尬的愚蠢的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clumsy person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goon</th>
+      <td>oon</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>ɡun</td>
+      <td>['hood', 'hoodlum', 'punk', 'strong-armer', 'thug', 'tough', 'toughie']</td>
+      <td></td>
+      <td>an aggressive and violent young criminal一个积极和暴力的年轻罪犯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crook, malefactor, outlaw, criminal, felon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poon</th>
+      <td>oon</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>pun</td>
+      <td></td>
+      <td></td>
+      <td>any of several East Indian trees of the genus Calophyllum having shiny leathery leaves and lightweight hard woodCalophyllum属的几种东印度树木中的任何一种，具有闪亮的革质叶子和轻质硬木</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poon</th>
+      <td>oon</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>pun</td>
+      <td></td>
+      <td></td>
+      <td>wood of any poon tree; used for masts and spars任何一棵树的木头;用于桅杆和桅杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coon</th>
+      <td>oon</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>kun</td>
+      <td>['common raccoon', 'common racoon', 'procyon lotor', 'ringtail']</td>
+      <td></td>
+      <td>North American raccoon北美浣熊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[raccoon, racoon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coon</th>
+      <td>oon</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>kun</td>
+      <td></td>
+      <td></td>
+      <td>an eccentric or undignified rustic一种古怪或不体面的乡村气息</td>
+      <td>I'll be a gone coon when the battle starts战斗开始时，我将成为一个寂寞的浣熊</td>
+      <td></td>
+      <td></td>
+      <td>[rustic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loon</th>
+      <td>oon</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>lun</td>
+      <td>['addle-head', 'addlehead', 'birdbrain']</td>
+      <td></td>
+      <td>a person with confused ideas; incapable of serious thought一个思想混乱的人;无法认真思考</td>
+      <td></td>
+      <td>[loony]</td>
+      <td></td>
+      <td>[misfit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loon</th>
+      <td>oon</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>lun</td>
+      <td>['diver']</td>
+      <td></td>
+      <td>large somewhat primitive fish-eating diving bird of the northern hemisphere having webbed feet placed far back; related to the grebes北半球大型有点原始的食鱼潜水鸟，背部有蹼足;与格里布有关</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gaviiform seabird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loon</th>
+      <td>oon</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>lun</td>
+      <td></td>
+      <td></td>
+      <td>a worthless lazy fellow一个毫无价值的懒惰家伙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[do-nothing, bum, idler, layabout, loafer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toon</th>
+      <td>oon</td>
+      <td>2.67</td>
+      <td>nou</td>
+      <td>tun</td>
+      <td>['animated cartoon', 'cartoon']</td>
+      <td></td>
+      <td>a film made by photographing a series of cartoon drawings to give the illusion of movement when projected in rapid sequence通过拍摄一系列卡通图画制作的电影，以快速顺序投影时产生运动的幻觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[short subject]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

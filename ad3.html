@@ -1,0 +1,965 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['dad', 'bad', 'mad', 'sad', 'add', 'lad', 'pad', 'tad', 'wad', 'fad', 'rad', 'cad', 'gad', 'nad']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>dad</th>
+      <td>ad</td>
+      <td>5.77</td>
+      <td>nou</td>
+      <td>dæd</td>
+      <td>['dada', 'daddy', 'pa', 'papa', 'pappa', 'pop']</td>
+      <td></td>
+      <td>an informal term for a father; probably derived from baby talk父亲的非正式用语;可能源于婴儿的谈话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[begetter, father, male parent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>bæd</td>
+      <td>['badness']</td>
+      <td>[good]</td>
+      <td>that which is below standard or expectations as of ethics or decency低于道德或体面的标准或期望</td>
+      <td>take the bad with the good善良的坏事</td>
+      <td></td>
+      <td></td>
+      <td>[quality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adv</td>
+      <td>bæd</td>
+      <td>['badly']</td>
+      <td></td>
+      <td>with great intensity (`bad' is a nonstandard variant for `badly')强烈的（'坏'是'非常'的非标准变体）</td>
+      <td>the injury hurt badly伤势严重受伤the buildings were badly shaken建筑物严重震动it hurts bad它伤得很厉害we need water bad我们需要水坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adv</td>
+      <td>bæd</td>
+      <td>['badly']</td>
+      <td></td>
+      <td>very much; strongly非常;非常</td>
+      <td>I wanted it badly enough to work hard for it我非常想要它努力工作the cables had sagged badly电缆严重下垂they were badly in need of help他们非常需要帮助he wants a bicycle so bad he can taste it他想要一辆自行车如此糟糕，他可以尝到它</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['big'], similarTo:['intense']</td>
+      <td></td>
+      <td>very intense非常激烈</td>
+      <td>a bad headache头疼得厉害had a big (or bad) shock有一个大的（或坏的）震惊a bad earthquake一场糟糕的地震a bad storm一场糟糕的风暴</td>
+      <td>[badness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['uncollectible'], similarTo:['invalid']</td>
+      <td></td>
+      <td>not capable of being collected不能被收集</td>
+      <td>a bad (or uncollectible) debt坏的（或无法收回的）债务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['forged'], similarTo:['imitative', 'counterfeit']</td>
+      <td></td>
+      <td>reproduced fraudulently以欺诈手段复制</td>
+      <td>like a bad penny...就像一个糟糕的便士......</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['unfit', 'unsound'], similarTo:['unhealthy']</td>
+      <td></td>
+      <td>physically unsound or diseased身体不健全或患病</td>
+      <td>has a bad back有一个坏回来a bad heart一颗坏心bad teeth坏牙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['defective'], similarTo:['nonfunctional', 'malfunctioning']</td>
+      <td></td>
+      <td>not working properly不正常</td>
+      <td>a bad telephone connection电话连接不好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['regretful', 'sorry'], alos:['repentant', 'penitent']</td>
+      <td></td>
+      <td>feeling or expressing regret or sorrow or a sense of loss over something done or undone感觉或表达遗憾或悲伤或对完成或未完成的事情的失落感</td>
+      <td>he felt bad about breaking the vase他打破花瓶感觉很糟糕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['high-risk', 'risky', 'speculative'], similarTo:['unsound']</td>
+      <td></td>
+      <td>not financially safe or secure在经济上不安全或不安全</td>
+      <td>a bad investment不好的投资</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['tough'], similarTo:['uncomfortable']</td>
+      <td></td>
+      <td>feeling physical discomfort or pain (`tough' is occasionally used colloquially for `bad')感觉身体不适或疼痛（'强硬'偶尔用于口语'坏'）</td>
+      <td>my throat feels bad我的喉咙感觉很糟糕she felt bad all over她到处都感觉很糟糕</td>
+      <td>[badness]</td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>['spoiled', 'spoilt'], similarTo:['stale']</td>
+      <td></td>
+      <td>(of foodstuffs) not in an edible or usable condition（食品）未处于食用或可用状态</td>
+      <td>bad meat坏肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>, similarTo:['inferior']</td>
+      <td></td>
+      <td>below average in quality or performance质量或性能低于平均水平</td>
+      <td>a bad chess player一个糟糕的棋手a bad recital一个糟糕的独奏会</td>
+      <td>[badness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>, similarTo:['harmful']</td>
+      <td></td>
+      <td>capable of harming能够伤害</td>
+      <td>bad air空气不好smoking is bad for you吸烟对你不好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>, similarTo:['evil']</td>
+      <td></td>
+      <td>characterized by wickedness or immorality以邪恶或不道德为特征</td>
+      <td>led a very bad life过着非常糟糕的生活</td>
+      <td>[badness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>, similarTo:['fearful', 'frightful', 'hard', 'hopeless', 'horrid', 'icky', 'ill', 'tough', 'incompetent', 'terrible', 'swingeing', 'lamentable', 'lousy', 'stinky', 'mediocre', 'naughty', 'negative', 'no-good', 'stinking', 'sorry', 'painful', 'pitiful', 'pretty', 'severe', 'unsuitable', 'unspeakable', 'unskilled', 'uncool', 'abominable', 'atrocious', 'awful', 'corked', 'corky', 'crappy', 'deplorable', 'distressing', 'dreadful', 'shitty', 'rotten', 'rubber', 'sad'], alos:['evil', 'disobedient', 'unfavorable', 'worst', 'unfavourable', 'worse']</td>
+      <td>[good]</td>
+      <td>having undesirable or negative qualities具有不良或负面的品质</td>
+      <td>a bad report card一张糟糕的成绩单his sloppy appearance made a bad impression他邋appearance的外表给人留下了不好的印象a bad little boy一个坏小男孩clothes in bad shape衣服状况不佳a bad cut坏事bad luck厄运the news was very bad这个消息非常糟糕the reviews were bad评论很糟糕the pay is bad薪水很糟糕it was a bad light for reading这对阅读来说是一个糟糕的光明the movie was a bad choice电影是一个糟糕的选择</td>
+      <td>[badness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bad</th>
+      <td>ad</td>
+      <td>5.73</td>
+      <td>adj</td>
+      <td>bæd</td>
+      <td>, similarTo:['nonstandard']</td>
+      <td></td>
+      <td>nonstandard非标准</td>
+      <td>so-called bad grammar所谓的坏语法</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>mad</th>
+      <td>ad</td>
+      <td>5.10</td>
+      <td>adj</td>
+      <td>mæd</td>
+      <td>['huffy', 'sore'], similarTo:['angry']</td>
+      <td></td>
+      <td>roused to anger激怒了</td>
+      <td>she gets mad when you wake her up so early你这么早叫醒她就生气了mad at his friend对他的朋友生气</td>
+      <td>[madness]</td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>mad</th>
+      <td>ad</td>
+      <td>5.10</td>
+      <td>adj</td>
+      <td>mæd</td>
+      <td>['brainsick', 'crazy', 'demented', 'disturbed', 'sick', 'unbalanced', 'unhinged'], similarTo:['insane']</td>
+      <td></td>
+      <td>affected with madness or insanity疯狂或精神错乱</td>
+      <td>a man who had gone mad一个疯了的男人</td>
+      <td>[madness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mad</th>
+      <td>ad</td>
+      <td>5.10</td>
+      <td>adj</td>
+      <td>mæd</td>
+      <td>['delirious', 'excited', 'frantic', 'unrestrained'], similarTo:['wild']</td>
+      <td></td>
+      <td>marked by uncontrolled excitement or emotion以不受控制的兴奋或情绪为标志</td>
+      <td>a mad whirl of pleasure疯狂的快乐旋转</td>
+      <td>[madness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mad</th>
+      <td>ad</td>
+      <td>5.10</td>
+      <td>adj</td>
+      <td>mæd</td>
+      <td>['harebrained', 'insane'], similarTo:['foolish']</td>
+      <td></td>
+      <td>very foolish非常愚蠢</td>
+      <td>a completely mad scheme to build a bridge between two mountains一个完全疯狂的计划，在两座山之间建立一座桥梁</td>
+      <td>[madness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sad</th>
+      <td>ad</td>
+      <td>4.93</td>
+      <td>adj</td>
+      <td>sæd</td>
+      <td>['deplorable', 'distressing', 'lamentable', 'pitiful', 'sorry'], similarTo:['bad']</td>
+      <td></td>
+      <td>bad; unfortunate坏;不幸的</td>
+      <td>her clothes were in sad shape她的衣服很伤心</td>
+      <td>[sadness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sad</th>
+      <td>ad</td>
+      <td>4.93</td>
+      <td>adj</td>
+      <td>sæd</td>
+      <td>, similarTo:['bittersweet', 'doleful', 'heavyhearted', 'melancholic', 'melancholy', 'mournful', 'pensive', 'tragic', 'tragical', 'tragicomic', 'tragicomical', 'wistful']</td>
+      <td>[glad]</td>
+      <td>experiencing or showing sorrow or unhappiness经历或表现出悲伤或不快乐</td>
+      <td>feeling sad because his dog had died感到难过，因为他的狗已经死了Better by far that you should forget and smile / Than that you should remember and be sad到目前为止，你应该忘记和微笑/比你应该记住和悲伤更好</td>
+      <td>[sadness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sad</th>
+      <td>ad</td>
+      <td>4.93</td>
+      <td>adj</td>
+      <td>sæd</td>
+      <td>, similarTo:['sorrowful']</td>
+      <td></td>
+      <td>of things that make you feel sad让你感到难过的事情</td>
+      <td>sad news悲伤的消息she doesn't like sad movies她不喜欢悲伤的电影it was a very sad story这是一个非常悲伤的故事When I am dead, my dearest, / Sing no sad songs for me当我死了，我最亲爱的，/为我唱歌没有悲伤的歌</td>
+      <td>[sadness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>add</th>
+      <td>ad</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>æd</td>
+      <td>['add together', 'add up', 'sum', 'sum up', 'summate', 'tally', 'tot', 'tot up', 'total', 'tote up']</td>
+      <td></td>
+      <td>determine the sum of确定总和</td>
+      <td></td>
+      <td>[additive, addible, addable, adder, addition]</td>
+      <td>[add together]</td>
+      <td>[enumerate, count, numerate, number]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>add</th>
+      <td>ad</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>æd</td>
+      <td>['bestow', 'bring', 'contribute', 'impart', 'lend']</td>
+      <td></td>
+      <td>bestow a quality on赋予品质</td>
+      <td>The music added a lot to the play音乐为这部剧增添了不少This adds a light note to the program这为程序添加了一个亮点</td>
+      <td>[addition]</td>
+      <td></td>
+      <td>[change, alter, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>add</th>
+      <td>ad</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>æd</td>
+      <td>['append', 'supply']</td>
+      <td></td>
+      <td>state or say further陈述或进一步说</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[state, say, tell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>add</th>
+      <td>ad</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>æd</td>
+      <td>['add together'], alos:['add up']</td>
+      <td>[subtract]</td>
+      <td>make an addition by combining numbers通过组合数字来增加</td>
+      <td></td>
+      <td>[adder, addable, addition, additive]</td>
+      <td>[tote up, total, tot up, tot, tally, sum, sum up, summate, add up, add together]</td>
+      <td>[compute, calculate, cipher, cypher, figure, reckon, work out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>add</th>
+      <td>ad</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>æd</td>
+      <td></td>
+      <td></td>
+      <td>constitute an addition构成一个补充</td>
+      <td>This paper will add to her reputation这篇论文将增加她的声誉</td>
+      <td>[additive]</td>
+      <td></td>
+      <td>[form, constitute, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>add</th>
+      <td>ad</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>æd</td>
+      <td></td>
+      <td>[take away]</td>
+      <td>make an addition (to); join or combine or unite with others; increase the quality, quantity, size or scope of做一个补充（到）;加入或结合或与他人联合;提高质量，数量，规模或范围</td>
+      <td>We added two students to that dorm room我们在宿舍里加了两个学生She added a personal note to her letter她在信中加了个人便条</td>
+      <td>[addition, additive]</td>
+      <td></td>
+      <td>[increase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>add</th>
+      <td>ad</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>æd</td>
+      <td>['adhd', 'attention deficit disorder', 'attention deficit hyperactivity disorder', 'hyperkinetic syndrome', 'mbd', 'minimal brain damage', 'minimal brain dysfunction']</td>
+      <td></td>
+      <td>a condition (mostly in boys) characterized by behavioral and learning disorders一种以行为和学习障碍为特征的病症（主要是男孩）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[syndrome]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lad</th>
+      <td>ad</td>
+      <td>4.18</td>
+      <td>nou</td>
+      <td>læd</td>
+      <td>['cub', 'laddie', 'sonny', 'sonny boy']</td>
+      <td></td>
+      <td>a male child (a familiar term of address to a boy)一个男孩（一个男孩熟悉的术语）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[boy, male child]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lad</th>
+      <td>ad</td>
+      <td>4.18</td>
+      <td>nou</td>
+      <td>læd</td>
+      <td>['blighter', 'bloke', 'chap', 'cuss', 'fella', 'feller', 'fellow', 'gent']</td>
+      <td></td>
+      <td>a boy or man一个男人或一个男人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[male, male person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>pæd</td>
+      <td>['aggrandise', 'aggrandize', 'blow up', 'dramatise', 'dramatize', 'embellish', 'embroider', 'lard']</td>
+      <td></td>
+      <td>add details to添加细节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amplify, overdraw, hyperbolise, exaggerate, overstate, magnify, hyperbolize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>pæd</td>
+      <td>['bolster']</td>
+      <td></td>
+      <td>add padding to添加填充到</td>
+      <td>pad the seat of the chair垫在椅子上</td>
+      <td>[padding]</td>
+      <td></td>
+      <td>[make full, fill, fill up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>pæd</td>
+      <td>['fill out']</td>
+      <td></td>
+      <td>line or stuff with soft material用柔软材料制成的线条或东西</td>
+      <td>pad a bra垫胸罩</td>
+      <td>[padding]</td>
+      <td></td>
+      <td>[stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>pæd</td>
+      <td>['footslog', 'plod', 'slog', 'tramp', 'trudge']</td>
+      <td></td>
+      <td>walk heavily and firmly, as when weary, or through mud当疲倦或通过泥泞时，我们会坚定地走路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>pæd</td>
+      <td>['pad of paper', 'tablet']</td>
+      <td></td>
+      <td>a number of sheets of paper fastened together along one edge沿着一个边缘固定在一起的许多纸张</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[paper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>pæd</td>
+      <td>['launch area', 'launch pad', 'launching pad', 'launchpad']</td>
+      <td></td>
+      <td>a platform from which rockets or space craft are launched发射火箭或航天器的平台</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>pæd</td>
+      <td>['inking pad', 'inkpad', 'stamp pad']</td>
+      <td></td>
+      <td>a block of absorbent material saturated with ink; used to transfer ink evenly to a rubber stamp一块用墨水浸透的吸收材料;用于将墨水均匀地转移到橡皮图章上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>pæd</td>
+      <td>['diggings', 'digs', 'domiciliation', 'lodgings']</td>
+      <td></td>
+      <td>temporary living quarters临时居住区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[living quarters, quarters]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>pæd</td>
+      <td></td>
+      <td></td>
+      <td>a flat mass of soft material used for protection, stuffing, or comfort用于保护，填充或舒适的扁平软质材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cushioning, padding]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>pæd</td>
+      <td></td>
+      <td></td>
+      <td>the fleshy cushion-like underside of an animal's foot or of a human's finger动物的脚或人的手指的肉质垫状底面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[structure, complex body part, body structure, bodily structure, anatomical structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pad</th>
+      <td>ad</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>pæd</td>
+      <td></td>
+      <td></td>
+      <td>the large floating leaf of an aquatic plant (as the water lily)水生植物的大浮叶（如睡莲）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leaf, foliage, leafage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tad</th>
+      <td>ad</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>tæd</td>
+      <td>['shade']</td>
+      <td></td>
+      <td>a slight amount or degree of difference少量或程度的差异</td>
+      <td>a tad too expensive太贵了not a tad of difference没有一点差别</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wad</th>
+      <td>ad</td>
+      <td>3.15</td>
+      <td>ver</td>
+      <td>wɑd</td>
+      <td>['bundle', 'compact', 'pack']</td>
+      <td></td>
+      <td>compress into a wad压缩成一团</td>
+      <td>wad paper into the box把纸放进盒子里</td>
+      <td></td>
+      <td>[pack, compact]</td>
+      <td>[arrange, set up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wad</th>
+      <td>ad</td>
+      <td>3.15</td>
+      <td>ver</td>
+      <td>wɑd</td>
+      <td>['chock up', 'cram', 'jam', 'jampack', 'ram']</td>
+      <td></td>
+      <td>crowd or pack to capacity挤满人群</td>
+      <td></td>
+      <td></td>
+      <td>[cram]</td>
+      <td>[stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wad</th>
+      <td>ad</td>
+      <td>3.15</td>
+      <td>nou</td>
+      <td>wɑd</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'stack', 'tidy sum']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td>a wad of money一沓钱</td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wad</th>
+      <td>ad</td>
+      <td>3.15</td>
+      <td>nou</td>
+      <td>wɑd</td>
+      <td>['chaw', 'chew', 'cud', 'plug', 'quid']</td>
+      <td></td>
+      <td>a wad of something chewable as tobacco一团像烟草一样可以咀嚼的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bit, bite, morsel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wad</th>
+      <td>ad</td>
+      <td>3.15</td>
+      <td>nou</td>
+      <td>wɑd</td>
+      <td></td>
+      <td></td>
+      <td>a small mass of soft material一小块柔软的材料</td>
+      <td>he used a wad of cotton to wipe the counter他用一沓棉花擦拭柜台</td>
+      <td></td>
+      <td></td>
+      <td>[stuff, material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fad</th>
+      <td>ad</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>fæd</td>
+      <td>['craze', 'cult', 'furor', 'furore', 'rage']</td>
+      <td></td>
+      <td>an interest followed with exaggerated zeal一种兴趣伴随着夸张的热情</td>
+      <td>he always follows the latest fads他总是追随最新潮流</td>
+      <td>[faddist, faddy]</td>
+      <td></td>
+      <td>[fashion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rad</th>
+      <td>ad</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>ræd</td>
+      <td>['radian']</td>
+      <td></td>
+      <td>the unit of plane angle adopted under the Systeme International d'Unites; equal to the angle at the center of a circle subtended by an arc equal in length to the radius (approximately 57.295 degrees)Systeme International d'Unites采用的平面角度单位;等于圆弧中心的角度，该圆弧的长度等于半径（约57.295度）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angular unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rad</th>
+      <td>ad</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>ræd</td>
+      <td></td>
+      <td></td>
+      <td>a unit of absorbed ionizing radiation equal to 100 ergs per gram of irradiated material吸收的电离辐射单位，相当于每克辐射材料100尔格</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radioactivity unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cad</th>
+      <td>ad</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>kæd</td>
+      <td>['blackguard', 'bounder', 'dog', 'heel', 'hound']</td>
+      <td></td>
+      <td>someone who is morally reprehensible一个在道德上应受谴责的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scoundrel, villain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cad</th>
+      <td>ad</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>kæd</td>
+      <td>['computer-aided design']</td>
+      <td></td>
+      <td>software used in art and architecture and engineering and manufacturing to assist in precision drawing用于艺术和建筑以及工程和制造的软件，以帮助精确绘图</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[computer software, package, software package, software program, software system, software]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gad</th>
+      <td>ad</td>
+      <td>2.43</td>
+      <td>ver</td>
+      <td>ɡæd</td>
+      <td>['gallivant', 'jazz around']</td>
+      <td></td>
+      <td>wander aimlessly in search of pleasure漫无目的地漫步寻找快乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roam, roll, rove, stray, swan, tramp, vagabond, wander, cast, drift, ramble, range]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gad</th>
+      <td>ad</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>ɡæd</td>
+      <td>['spur']</td>
+      <td></td>
+      <td>a sharp prod fixed to a rider's heel and used to urge a horse onward一个锋利的刺穿固定在骑手的脚跟上，用来向前推马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[goad, prod]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gad</th>
+      <td>ad</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>ɡæd</td>
+      <td>['anxiety reaction', 'generalized anxiety disorder']</td>
+      <td></td>
+      <td>an anxiety disorder characterized by chronic free-floating anxiety and such symptoms as tension or sweating or trembling or lightheadedness or irritability etc that has lasted for more than six months一种以慢性自由浮动焦虑为特征的焦虑症，以及持续超过六个月的紧张或出汗或颤抖或头晕或烦躁等症状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[anxiety disorder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nad</th>
+      <td>ad</td>
+      <td>2.33</td>
+      <td>nou</td>
+      <td>næd</td>
+      <td>['nicotinamide adenine dinucleotide']</td>
+      <td></td>
+      <td>a coenzyme present in most living cells and derived from the B vitamin nicotinic acid; serves as a reductant in various metabolic processes大多数活细胞中存在的辅酶，来自B族维生素烟酸;在各种代谢过程中起还原剂的作用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coenzyme]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

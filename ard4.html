@@ -1,0 +1,785 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hard', 'card', 'yard', 'ward']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adv</td>
+      <td>hɑrd</td>
+      <td>['firmly']</td>
+      <td></td>
+      <td>with firmness坚定</td>
+      <td>held hard to the railing坚持栏杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adv</td>
+      <td>hɑrd</td>
+      <td>['hardly']</td>
+      <td></td>
+      <td>slowly and with difficulty缓慢而困难</td>
+      <td>prejudices die hard偏见很难he was so dizzy he could hardly stand up straight他太头晕了，几乎无法站直</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adv</td>
+      <td>hɑrd</td>
+      <td>['heavily', 'intemperately']</td>
+      <td></td>
+      <td>indulging excessively沉迷于过度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adv</td>
+      <td>hɑrd</td>
+      <td>['severely']</td>
+      <td></td>
+      <td>causing great damage or hardship造成巨大的伤害或困难</td>
+      <td>industries hit hard by the depression受萧条困扰的行业</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['concentrated']</td>
+      <td>[soft]</td>
+      <td>(of light) transmitted directly from a pointed light source（光）直接从尖光源发射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['tough'], similarTo:['bad']</td>
+      <td></td>
+      <td>unfortunate or hard to bear不幸或难以忍受</td>
+      <td>had hard luck运气不好</td>
+      <td>[hardness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['surd', 'unvoiced', 'voiceless'], similarTo:['whispered']</td>
+      <td></td>
+      <td>produced without vibration of the vocal cords在没有声带振动的情况下产生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['knockout', 'severe'], similarTo:['strong']</td>
+      <td></td>
+      <td>very strong or vigorous非常强大或充满活力</td>
+      <td>a hard left to the chin一个坚硬的下巴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['heavy', 'intemperate'], similarTo:['indulgent']</td>
+      <td></td>
+      <td>given to excessive indulgence of bodily appetites especially for intoxicating liquors过度放纵身体的食欲，特别是醉酒</td>
+      <td>a hard drinker一个喝酒的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['difficult'], similarTo:['embarrassing', 'catchy', 'baffling', 'knotty', 'nasty', 'problematic', 'problematical', 'rocky', 'rough', 'rugged', 'awkward', 'serious', 'arduous', 'ambitious', 'sticky', 'tall', 'thorny', 'ticklish', 'tight', 'touchy', 'tough', 'tricky', 'troublesome', 'trying', 'unenviable', 'vexed', 'fractious', 'elusive', 'delicate', 'hard-fought', 'challenging', 'herculean'], alos:['demanding', 'effortful']</td>
+      <td></td>
+      <td>not easy; requiring great physical or mental effort to accomplish or comprehend or endure不容易;需要很大的身体或精神上的努力来完成或理解或忍受</td>
+      <td>why is it so hard for you to keep a secret?你为什么要保守秘密？</td>
+      <td>[hardness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['strong'], similarTo:['alcoholic']</td>
+      <td></td>
+      <td>being distilled rather than fermented; having a high alcoholic content蒸馏而不是发酵;酒精含量高</td>
+      <td>hard liquor烈性酒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>['arduous', 'backbreaking', 'grueling', 'gruelling', 'heavy', 'laborious', 'operose', 'punishing', 'toilsome'], similarTo:['effortful']</td>
+      <td></td>
+      <td>characterized by effort to the point of exhaustion; especially physical effort努力达到疲惫的程度;特别是体力劳动</td>
+      <td>hard labor苦工</td>
+      <td>[hardness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>, similarTo:['calculating', 'steely', 'shrewd', 'scheming', 'calculative', 'case-hardened', 'hardened', 'conniving', 'hard-boiled'], alos:['insensitive', 'difficult', 'tough', 'unmerciful', 'merciless']</td>
+      <td>[soft]</td>
+      <td>dispassionate冷静</td>
+      <td>took a hard look看了一眼a hard bargainer一个坚强的讨价还价者</td>
+      <td>[hardness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>, similarTo:['stale']</td>
+      <td></td>
+      <td>dried out干透了</td>
+      <td>hard dry rolls left over from the day before从前一天留下的硬干辊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>, similarTo:['velar']</td>
+      <td>[soft]</td>
+      <td>(of speech sounds); produced with the back of the tongue raised toward or touching the velum（语音）;舌头后部朝向或接触到绒毛</td>
+      <td>Russian distinguished between hard consonants and palatalized or soft consonants俄语区分硬辅音和腭辅音或软辅音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>adj</td>
+      <td>hɑrd</td>
+      <td>, similarTo:['granitic', 'semihard', 'woody', 'corneous', 'set', 'tumid', 'hardened', 'solid', 'hornlike', 'horny', 'adamantine', 'al dente', 'steely', 'petrous', 'stonelike', 'stony', 'rocklike', 'unyielding', 'firm', 'granitelike', 'erect']</td>
+      <td>[soft]</td>
+      <td>resisting weight or pressure抵抗重量或压力</td>
+      <td></td>
+      <td>[hardness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>Non</td>
+      <td>hɑrd</td>
+      <td></td>
+      <td></td>
+      <td>with effort or force or vigor努力，力量或活力</td>
+      <td>the team played hard球队打得很努力worked hard all day一整天努力pressed hard on the lever用力按压杠杆hit the ball hard击球很难slammed the door hard猛烈地砰地一声关上了门</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hard</th>
+      <td>ard</td>
+      <td>5.53</td>
+      <td>Non</td>
+      <td>hɑrd</td>
+      <td></td>
+      <td></td>
+      <td>into a solid condition进入稳固的状态</td>
+      <td>concrete that sets hard within a few hours在几个小时内硬化的混凝土</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>kɑrd</td>
+      <td>['tease']</td>
+      <td></td>
+      <td>separate the fibers of将纤维分开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>kɑrd</td>
+      <td></td>
+      <td></td>
+      <td>ask someone for identification to determine whether he or she is old enough to consume liquor要求某人进行身份鉴定，以确定他或她的年龄是否足以饮用酒</td>
+      <td>I was carded when I tried to buy a beer!我试图买啤酒时被梳理了！</td>
+      <td></td>
+      <td></td>
+      <td>[ascertain, assure, check, control, ensure, insure, see, see to it]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['bill of fare', 'carte', 'carte du jour', 'menu']</td>
+      <td></td>
+      <td>a list of dishes available at a restaurant餐厅提供的菜肴清单</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['calling card', 'visiting card']</td>
+      <td></td>
+      <td>a printed or written greeting that is left to indicate that you have visited打印或书写的问候语，表示您已访问过</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[greeting, salutation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['bill', 'notice', 'placard', 'poster', 'posting']</td>
+      <td></td>
+      <td>a sign posted in a public place as an advertisement作为广告张贴在公共场所的标志</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['scorecard']</td>
+      <td></td>
+      <td>(golf) a record of scores (as in golf)（高尔夫）得分记录（如在高尔夫球场）</td>
+      <td>you have to turn in your card to get a handicap你必须交上你的卡才能获得一个让步</td>
+      <td></td>
+      <td></td>
+      <td>[record, record book, book]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['wag', 'wit']</td>
+      <td></td>
+      <td>a witty amusing person who makes jokes一个诙谐有趣的人开玩笑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[humourist, humorist]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['batting order', 'lineup']</td>
+      <td></td>
+      <td>(baseball) a list of batters in the order in which they will bat（棒球）按击球顺序击球的名单</td>
+      <td>the managers presented their cards to the umpire at home plate经理们将他们的牌出示给本垒打的裁判</td>
+      <td></td>
+      <td></td>
+      <td>[roll, roster]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['add-in', 'board', 'circuit board', 'circuit card', 'plug-in']</td>
+      <td></td>
+      <td>a printed circuit that can be inserted into expansion slots in a computer to increase the computer's capabilities印刷电路，可以插入计算机的扩展槽中，以提高计算机的功能</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[printed circuit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td>['identity card']</td>
+      <td></td>
+      <td>a card certifying the identity of the bearer证明持票人身份的卡</td>
+      <td>he had to show his card to get in他必须出示他的卡才能进入</td>
+      <td></td>
+      <td></td>
+      <td>[positive identification]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td></td>
+      <td></td>
+      <td>a rectangular piece of stiff paper used to send messages (may have printed greetings or pictures)用于发送信息的矩形硬纸（可能有印刷的问候或图片）</td>
+      <td>they sent us a card from Miami他们给迈阿密寄了一张卡片</td>
+      <td></td>
+      <td></td>
+      <td>[correspondence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td></td>
+      <td></td>
+      <td>one of a set of small pieces of stiff paper marked in various ways and used for playing games or for telling fortunes一套用各种方式标记的小块硬纸，用于玩游戏或讲财富</td>
+      <td>he collected cards and traded them with the other boys他收集卡片并与其他男孩交易</td>
+      <td></td>
+      <td></td>
+      <td>[paper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>card</th>
+      <td>ard</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>kɑrd</td>
+      <td></td>
+      <td></td>
+      <td>thin cardboard, usually rectangular薄纸板，通常是矩形</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cardboard, composition board]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td>['cubic yard']</td>
+      <td></td>
+      <td>a unit of volume (as for sand or gravel)体积单位（如沙子或砾石）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cubic measure, capacity measure, displacement unit, capacity unit, volume unit, cubic content unit, cubature unit, cubage unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td>['pace']</td>
+      <td></td>
+      <td>a unit of length equal to 3 feet; defined as 91.44 centimeters; originally taken to be the average length of a stride一个长度等于3英尺的单位;定义为91.44厘米;最初被视为步幅的平均长度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linear unit, linear measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td>['1000', 'chiliad', 'g', 'grand', 'k', 'm', 'one thousand', 'thou', 'thousand']</td>
+      <td></td>
+      <td>the cardinal number that is the product of 10 and 100基数是10和100的乘积</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large integer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td>['railway yard', 'railyard']</td>
+      <td></td>
+      <td>an area having a network of railway tracks and sidings for storage and maintenance of cars and engines一个有铁路轨道和侧线网络的区域，用于存放和维护汽车和发动机</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of ground, parcel, tract, piece of land, parcel of land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td>['curtilage', 'grounds']</td>
+      <td></td>
+      <td>the enclosed land around a house or other building房屋或其他建筑物周围的封闭土地</td>
+      <td>it was a small house with almost no yard这是一个几乎没有院子的小房子</td>
+      <td></td>
+      <td></td>
+      <td>[field]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td></td>
+      <td></td>
+      <td>a long horizontal spar tapered at the end and used to support and spread a square sail or lateen一个长的水平翼梁在末端逐渐变细，用于支撑和展开方形帆或延迟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td></td>
+      <td></td>
+      <td>an enclosure for animals (as chicken or livestock)动物围栏（如鸡或牲畜）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enclosure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td></td>
+      <td></td>
+      <td>a tract of land enclosed for particular activities (sometimes paved and usually associated with buildings)为特定活动封闭的一片土地（有时是铺砌的，通常与建筑物有关）</td>
+      <td>they opened a repair yard on the edge of town他们在镇边开了一个修理院</td>
+      <td></td>
+      <td></td>
+      <td>[parcel of land, parcel, piece of ground, piece of land, tract]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yard</th>
+      <td>ard</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>jɑrd</td>
+      <td></td>
+      <td></td>
+      <td>a tract of land where logs are accumulated一块积累了原木的土地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of land, tract, parcel, parcel of land, piece of ground]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>wɔrd</td>
+      <td>['guard']</td>
+      <td></td>
+      <td>watch over or shield from danger or harm; protect监视或屏蔽危险或伤害;保护</td>
+      <td></td>
+      <td>[warder]</td>
+      <td></td>
+      <td>[protect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>wɔrd</td>
+      <td>['barbara ward', 'baroness jackson of lodsworth']</td>
+      <td></td>
+      <td>English economist and conservationist (1914-1981)英国经济学家和环保主义者（1914-1981）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>wɔrd</td>
+      <td>['cellblock']</td>
+      <td></td>
+      <td>a division of a prison (usually consisting of several cells)监狱的一个部门（通常由几个牢房组成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>wɔrd</td>
+      <td>['mary augusta arnold ward', 'mrs. humphrey ward']</td>
+      <td></td>
+      <td>English writer of novels who was an active opponent of the women's suffrage movement (1851-1920)英国小说作家，是妇女选举运动的积极反对者（1851-1920）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>wɔrd</td>
+      <td>['aaron montgomery ward', 'montgomery ward']</td>
+      <td></td>
+      <td>United States businessman who in 1872 established a successful mail-order business (1843-1913)1872年成立邮购业务的美国商人（1843-1913）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>wɔrd</td>
+      <td>['hospital ward']</td>
+      <td></td>
+      <td>block forming a division of a hospital (or a suite of rooms) shared by patients who need a similar kind of care阻碍由需要类似护理的患者共享的医院（或一套房间）的分区</td>
+      <td>they put her in a 4-bed ward他们把她放在一个4床病房里</td>
+      <td></td>
+      <td></td>
+      <td>[block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>wɔrd</td>
+      <td></td>
+      <td></td>
+      <td>a district into which a city or town is divided for the purpose of administration and elections为行政和选举而划分城市或城镇的地区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[territorial division, administrative district, administrative division]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ward</th>
+      <td>ard</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>wɔrd</td>
+      <td></td>
+      <td></td>
+      <td>a person who is under the protection or in the custody of another受到保护或受他人保管的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mortal, person, soul, someone, somebody, individual]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

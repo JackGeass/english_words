@@ -1,0 +1,965 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['true', 'blue', 'clue', 'fuel', 'glue', 'duel', 'duet', 'suet', 'suez', 'flue', 'suer', 'ague']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>ver</td>
+      <td>tru</td>
+      <td>['true up']</td>
+      <td></td>
+      <td>make level, square, balanced, or concentric使水平，方形，平衡或同心</td>
+      <td>true up the cylinder of an engine确认发动机的气缸</td>
+      <td></td>
+      <td></td>
+      <td>[line up, align, adjust, aline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>tru</td>
+      <td></td>
+      <td></td>
+      <td>proper alignment; the property possessed by something that is in correct or proper alignment正确对齐;属于正确或正确对齐的东西所拥有的财产</td>
+      <td>out of true出于真实</td>
+      <td></td>
+      <td></td>
+      <td>[alignment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adv</td>
+      <td>tru</td>
+      <td>['admittedly', 'avowedly', 'confessedly']</td>
+      <td></td>
+      <td>as acknowledged公认的</td>
+      <td>true, she is the smartest in her class的确，她是班上最聪明的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>['straight'], similarTo:['even']</td>
+      <td></td>
+      <td>accurately fitted; level准确安装;水平</td>
+      <td>the window frame isn't quite true窗框不太真实</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>['genuine', 'unfeigned'], similarTo:['sincere']</td>
+      <td></td>
+      <td>not pretended; sincerely felt or expressed不假装;真诚地感受或表达</td>
+      <td>true grief真正的悲伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>['on-key'], similarTo:['harmonious']</td>
+      <td></td>
+      <td>in tune; accurate in pitch调整音高准确</td>
+      <td>a true note一个真实的笔记</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>['lawful', 'rightful'], similarTo:['legitimate']</td>
+      <td></td>
+      <td>having a legally established claim有法律规定的索赔</td>
+      <td>the true and lawful king真正合法的国王</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>['dependable', 'honest', 'reliable'], similarTo:['trusty', 'trustworthy']</td>
+      <td></td>
+      <td>worthy of being depended on值得依赖</td>
+      <td>he was true to his word他忠实于他的话I would be true for there are those who trust me我会认为有些人相信我</td>
+      <td>[trueness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>['dead on target'], similarTo:['accurate']</td>
+      <td></td>
+      <td>accurately placed or thrown准确放置或抛出</td>
+      <td>his aim was true他的目标是真的</td>
+      <td>[trueness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>['truthful'], similarTo:['veracious', 'honest'], alos:['honest', 'honorable']</td>
+      <td></td>
+      <td>expressing or given to expressing the truth表达或表达真相</td>
+      <td>a true statement真实的陈述</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>, similarTo:['typical']</td>
+      <td></td>
+      <td>conforming to definitive criteria符合最终标准</td>
+      <td>the horseshoe crab is not a true crab马蹄蟹不是真正的螃蟹Pythagoras was the first true mathematician毕达哥拉斯是第一位真正的数学家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>, similarTo:['real', 'literal', 'truthful', 'sure', 'actual', 'apodeictic', 'apodictic', 'genuine'], alos:['genuine', 'honest', 'right', 'sincere', 'echt', 'faithful', 'honorable', 'correct']</td>
+      <td>[false]</td>
+      <td>consistent with fact or reality; not false与事实或现实保持一致;不是假的</td>
+      <td>the story is true这个故事是真的it is undesirable to believe a proposition when there is no ground whatever for supposing it true当没有任何理由认为它是真的时，相信一个命题是不可取的the true meaning of the statement声明的真正含义</td>
+      <td>[trueness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>, similarTo:['geographical', 'geographic']</td>
+      <td></td>
+      <td>determined with reference to the earth's axis rather than the magnetic poles参考地球轴而不是磁极确定</td>
+      <td>true north is geographic north真北是地理北部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>, similarTo:['faithful']</td>
+      <td></td>
+      <td>devoted (sometimes fanatically) to a cause or concept or truth投入（有时狂热地）一个事业或概念或事实</td>
+      <td>true believers bonded together against all who disagreed with them真正的信徒与所有不同意他们的人结合在一起</td>
+      <td>[trueness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>true</th>
+      <td>ue</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>tru</td>
+      <td>, similarTo:['real']</td>
+      <td></td>
+      <td>rightly so called正确的所谓</td>
+      <td>true courage真正的勇气a spirit which true men have always admired真正的男人一直钦佩的精神a true friend一个真正的朋友</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>ver</td>
+      <td>blu</td>
+      <td></td>
+      <td></td>
+      <td>turn blue变成蓝色</td>
+      <td></td>
+      <td>[bluing]</td>
+      <td></td>
+      <td>[discolor, discolour, colour, color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>blu</td>
+      <td>['blueness']</td>
+      <td></td>
+      <td>blue color or pigment; resembling the color of the clear sky in the daytime蓝色或颜料;类似于白天晴朗天空的颜色</td>
+      <td>he had eyes of bright blue他的眼睛是亮蓝色的</td>
+      <td></td>
+      <td></td>
+      <td>[spectral colour, spectral color, chromatic colour, chromatic color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>blu</td>
+      <td>['amobarbital sodium', 'amytal', 'blue angel', 'blue devil']</td>
+      <td></td>
+      <td>the sodium salt of amobarbital that is used as a barbiturate; used as a sedative and a hypnotic阿巴比妥钠盐，用作巴比妥酸盐;用作镇静剂和催眠药</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amobarbital]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>blu</td>
+      <td>['blue air', 'blue sky', 'wild blue yonder']</td>
+      <td></td>
+      <td>the sky as viewed during daylight在白天观看的天空</td>
+      <td>he shot an arrow into the blue他向蓝色射箭</td>
+      <td></td>
+      <td></td>
+      <td>[sky]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>blu</td>
+      <td>['blueing', 'bluing']</td>
+      <td></td>
+      <td>used to whiten laundry or hair or give it a bluish tinge用于美白衣物或头发或给它带蓝色调</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dye, dyestuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>blu</td>
+      <td></td>
+      <td></td>
+      <td>any of numerous small butterflies of the family Lycaenidae灰蝶科（Lycaenidae）的众多小蝴蝶中的任何一种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lycaenid butterfly, lycaenid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>blu</td>
+      <td></td>
+      <td></td>
+      <td>any organization or party whose uniforms or badges are blue任何制服或徽章为蓝色的组织或团体</td>
+      <td>the Union army was a vast blue联盟军队是一个巨大的蓝色</td>
+      <td></td>
+      <td></td>
+      <td>[organization, organisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>blu</td>
+      <td></td>
+      <td></td>
+      <td>blue clothing蓝色的衣服</td>
+      <td>she was wearing blue她穿着蓝色</td>
+      <td></td>
+      <td></td>
+      <td>[habiliment, article of clothing, wearable, wear, clothing, vesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>['blueish', 'bluish'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of the color intermediate between green and violet; having a color similar to that of a clear unclouded sky绿色和紫色之间的颜色;颜色与清晰的无遮挡天空相似</td>
+      <td>October's bright blue weather十月的天气晴朗a blue flame蓝色的火焰blue haze of tobacco smoke烟草烟雾的蓝色阴霾</td>
+      <td>[blueness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>['puritanic', 'puritanical'], similarTo:['strict', 'nonindulgent']</td>
+      <td></td>
+      <td>morally rigorous and strict道德严谨和严格</td>
+      <td>blue laws蓝色法律</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>['dark', 'dingy', 'disconsolate', 'dismal', 'drab', 'drear', 'dreary', 'gloomy', 'grim', 'sorry'], similarTo:['cheerless', 'uncheerful', 'depressing']</td>
+      <td></td>
+      <td>causing dejection导致沮丧</td>
+      <td>a blue day一个蓝色的日子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>['aristocratic', 'aristocratical', 'blue-blooded', 'gentle', 'patrician'], similarTo:['noble']</td>
+      <td></td>
+      <td>belonging to or characteristic of the nobility or aristocracy属于贵族或贵族的或具有贵族或贵族的特征</td>
+      <td>a blue family一个蓝色的家庭blue blood贵族血统the blue-blooded aristocracy蓝血的贵族</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>['gamey', 'gamy', 'juicy', 'naughty', 'racy', 'risque', 'spicy'], similarTo:['sexy']</td>
+      <td></td>
+      <td>suggestive of sexual impropriety提示性不当</td>
+      <td>a blue movie一部蓝色电影blue jokes蓝色笑话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>['depressed', 'dispirited', 'down', 'down in the mouth', 'downcast', 'downhearted', 'gloomy', 'grim', 'low', 'low-spirited'], similarTo:['dejected']</td>
+      <td></td>
+      <td>filled with melancholy and despondency充满了忧郁和沮丧</td>
+      <td>lonely and blue in a strange city孤独和蓝色在一个陌生的城市</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>['blasphemous', 'profane'], similarTo:['dirty']</td>
+      <td></td>
+      <td>characterized by profanity or cursing以亵渎或诅咒为特征</td>
+      <td>blue language蓝色语言</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blue</th>
+      <td>ue</td>
+      <td>4.97</td>
+      <td>adj</td>
+      <td>blu</td>
+      <td>, similarTo:['northern']</td>
+      <td></td>
+      <td>used to signify the Union forces in the American Civil War (who wore blue uniforms)用于表示美国内战中的联盟部队（穿着蓝色制服）</td>
+      <td>a ragged blue line一条衣衫褴褛的蓝线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clue</th>
+      <td>ue</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>klu</td>
+      <td>['clew']</td>
+      <td></td>
+      <td>roll into a ball滚成一团</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roll, twine, wind, wrap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clue</th>
+      <td>ue</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>klu</td>
+      <td>['hint']</td>
+      <td></td>
+      <td>a slight indication一个轻微的迹象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indicant, indication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clue</th>
+      <td>ue</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>klu</td>
+      <td>['clew', 'cue']</td>
+      <td></td>
+      <td>evidence that helps to solve a problem有助于解决问题的证据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[evidence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fuel</th>
+      <td>ue</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>'fjuəl</td>
+      <td>['fire']</td>
+      <td></td>
+      <td>provide with fuel提供燃料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[render, furnish, provide, supply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fuel</th>
+      <td>ue</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>'fjuəl</td>
+      <td></td>
+      <td></td>
+      <td>provide with a combustible substance that provides energy提供提供能量的可燃物质</td>
+      <td>fuel aircraft, ships, and cars燃料飞机，船舶和汽车</td>
+      <td>[fueling]</td>
+      <td></td>
+      <td>[furnish, render, supply, provide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fuel</th>
+      <td>ue</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>'fjuəl</td>
+      <td></td>
+      <td></td>
+      <td>stimulate刺激</td>
+      <td>fuel the debate on creationism推动关于神创论的辩论</td>
+      <td></td>
+      <td></td>
+      <td>[excite, shake up, stimulate, stir, shake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fuel</th>
+      <td>ue</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>'fjuəl</td>
+      <td></td>
+      <td></td>
+      <td>take in fuel, as of a ship像船一样吸收燃料</td>
+      <td>The tanker fueled in Bahrain油轮在巴林燃烧</td>
+      <td>[fueling]</td>
+      <td></td>
+      <td>[take up, take in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fuel</th>
+      <td>ue</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>'fjuəl</td>
+      <td></td>
+      <td></td>
+      <td>a substance that can be consumed to produce energy一种可以消耗产生能量的物质</td>
+      <td>more fuel is needed during the winter months冬季需要更多的燃料they developed alternative fuels for aircraft他们为飞机开发替代燃料</td>
+      <td></td>
+      <td></td>
+      <td>[substance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glue</th>
+      <td>ue</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>glu</td>
+      <td>['paste']</td>
+      <td></td>
+      <td>join or attach with or as if with glue用胶水或用胶水连接或附着</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glue</th>
+      <td>ue</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>glu</td>
+      <td></td>
+      <td></td>
+      <td>be fixed as if by glue像胶水一样固定</td>
+      <td>His eyes were glued on her他的眼睛盯着她</td>
+      <td></td>
+      <td></td>
+      <td>[fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glue</th>
+      <td>ue</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>glu</td>
+      <td>['gum', 'mucilage']</td>
+      <td></td>
+      <td>cement consisting of a sticky substance that is used as an adhesive水泥由粘性物质组成，用作粘合剂</td>
+      <td></td>
+      <td>[gluey]</td>
+      <td></td>
+      <td>[cement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duel</th>
+      <td>ue</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>'duəl</td>
+      <td></td>
+      <td></td>
+      <td>fight a duel, as over one's honor or a woman打一场决斗，作为一个人的荣誉或一个女人</td>
+      <td>In the 19th century, men often dueled over small matters在19世纪，男人经常在小事上发生争执</td>
+      <td>[dueller, dueler, duelist]</td>
+      <td></td>
+      <td>[contend, fight, struggle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duel</th>
+      <td>ue</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>'duəl</td>
+      <td>["affaire d'honneur"]</td>
+      <td></td>
+      <td>a prearranged fight with deadly weapons by two people (accompanied by seconds) in order to settle a quarrel over a point of honor两个人（伴随着几秒钟）与致命武器进行预先安排的战斗，以便在荣誉点上解决争吵</td>
+      <td></td>
+      <td>[duelist, duellist]</td>
+      <td></td>
+      <td>[fight, fighting, scrap, combat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duel</th>
+      <td>ue</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>'duəl</td>
+      <td></td>
+      <td></td>
+      <td>any struggle between two skillful opponents (individuals or groups)两个熟练的对手（个人或团体）之间的任何斗争</td>
+      <td></td>
+      <td>[duellist, duelist]</td>
+      <td></td>
+      <td>[battle, struggle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duet</th>
+      <td>ue</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>du'ɛt</td>
+      <td>['duette', 'duo']</td>
+      <td></td>
+      <td>two performers or singers who perform together两个表演者或歌手一起表演</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[musical organization, musical group, musical organisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duet</th>
+      <td>ue</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>du'ɛt</td>
+      <td>['brace', 'couple', 'couplet', 'distich', 'duad', 'duo', 'dyad', 'pair', 'span', 'twain', 'twosome', 'yoke']</td>
+      <td></td>
+      <td>two items of the same kind两件相同的物品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[two, deuce, ii, 2]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duet</th>
+      <td>ue</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>du'ɛt</td>
+      <td>['couple', 'duo', 'twosome']</td>
+      <td></td>
+      <td>a pair who associate with one another一对彼此联系的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duet</th>
+      <td>ue</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>du'ɛt</td>
+      <td>['pas de deux']</td>
+      <td></td>
+      <td>(ballet) a dance for two people (usually a ballerina and a danseur noble)（芭蕾舞）两个人的舞蹈（通常是芭蕾舞女演员和danseur贵族）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dancing, terpsichore, dance, saltation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duet</th>
+      <td>ue</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>du'ɛt</td>
+      <td>['duette', 'duo']</td>
+      <td></td>
+      <td>a musical composition for two performers两位表演者的音乐作品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece, opus, composition, musical composition, piece of music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>suet</th>
+      <td>ue</td>
+      <td>2.54</td>
+      <td>nou</td>
+      <td>'suɪt</td>
+      <td></td>
+      <td></td>
+      <td>hard fat around the kidneys and loins in beef and sheep牛肉和绵羊的肾脏和腰部周围的硬脂肪</td>
+      <td></td>
+      <td>[suety]</td>
+      <td></td>
+      <td>[edible fat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>suez</th>
+      <td>ue</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>su'ɛz</td>
+      <td></td>
+      <td></td>
+      <td>a city in northeastern Egypt at the head of the Gulf of Suez and at the southern end of the Suez Canal埃及东北部的一个城市，位于苏伊士湾的头部和苏伊士运河的南端</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flue</th>
+      <td>ue</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>flu</td>
+      <td>['fluke']</td>
+      <td></td>
+      <td>flat bladelike projection on the arm of an anchor锚固臂上的扁平叶片状突起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flue</th>
+      <td>ue</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>flu</td>
+      <td>['flue pipe', 'labial pipe']</td>
+      <td></td>
+      <td>organ pipe whose tone is produced by air passing across the sharp edge of a fissure or lip器官管的音调是由穿过裂缝或唇缘的尖锐边缘的空气产生的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pipe, pipework, organ pipe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flue</th>
+      <td>ue</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>flu</td>
+      <td></td>
+      <td></td>
+      <td>a conduit to carry off smoke一个吸烟的管道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[conduit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>suer</th>
+      <td>ue</td>
+      <td>2.19</td>
+      <td>nou</td>
+      <td></td>
+      <td>['petitioner']</td>
+      <td></td>
+      <td>someone who petitions a court for redress of a grievance or recovery of a right向法院请求纠正申诉或追回权利的人</td>
+      <td></td>
+      <td>[sue]</td>
+      <td></td>
+      <td>[complainant, plaintiff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>suer</th>
+      <td>ue</td>
+      <td>2.19</td>
+      <td>nou</td>
+      <td></td>
+      <td>['suitor', 'wooer']</td>
+      <td></td>
+      <td>a man who courts a woman一个对女人进行审判的人</td>
+      <td>a suer for the hand of the princess公主之手的使用者</td>
+      <td></td>
+      <td></td>
+      <td>[admirer, adorer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ague</th>
+      <td>ue</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'eɪɡju</td>
+      <td>['chills and fever']</td>
+      <td></td>
+      <td>successive stages of chills and fever that is a symptom of malaria连续发作的畏寒和发烧，是疟疾的症状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[symptom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ague</th>
+      <td>ue</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'eɪɡju</td>
+      <td>['acute', 'acute accent']</td>
+      <td></td>
+      <td>a mark placed above a vowel to indicate pronunciation位于元音上方的标记，用于表示发音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accent, accent mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ague</th>
+      <td>ue</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'eɪɡju</td>
+      <td></td>
+      <td></td>
+      <td>a fit of shivering or shaking一阵颤抖或颤抖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unwellness, sickness, illness, malady]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

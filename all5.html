@@ -1,0 +1,755 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['small', 'falls', 'rally', 'stall', 'tally']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>smɔl</td>
+      <td></td>
+      <td></td>
+      <td>a garment size for a small person适合小人的服装尺码</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[size]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>smɔl</td>
+      <td></td>
+      <td></td>
+      <td>the slender part of the back背部细长的部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['modest'], similarTo:['moderate']</td>
+      <td></td>
+      <td>not large but sufficient in size or amount不大但足够大小或数量</td>
+      <td>helped in my own small way以我自己的方式帮助</td>
+      <td>[smallness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['little', 'minuscule'], similarTo:['lowercase']</td>
+      <td></td>
+      <td>lowercase小写</td>
+      <td>small a小的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['minor', 'modest', 'pocket-size', 'pocket-sized', 'small-scale'], similarTo:['limited']</td>
+      <td></td>
+      <td>relatively moderate, limited, or small相对温和，有限或小</td>
+      <td>a small business小企业small-scale plans小规模的计划</td>
+      <td>[smallness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['humble', 'low', 'lowly', 'modest'], similarTo:['inferior']</td>
+      <td></td>
+      <td>low or inferior in station or quality车站或质量低或低</td>
+      <td>small beginnings小小的开始</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['little'], similarTo:['immature', 'young']</td>
+      <td></td>
+      <td>(of children and animals) young, immature（儿童和动物）年轻，不成熟</td>
+      <td>small children小孩子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['little'], similarTo:['soft']</td>
+      <td></td>
+      <td>(of a voice) faint（声音）微弱</td>
+      <td>a still small voice一个小小的声音</td>
+      <td>[smallness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['belittled', 'diminished'], similarTo:['reduced', 'decreased']</td>
+      <td></td>
+      <td>made to seem smaller or less (especially in worth)看起来更小或更小（尤其是价值）</td>
+      <td>her comments made me feel small她的评论让我感觉很小</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>['little'], similarTo:['small-scale', 'slender', 'slim', 'smaller', 'smallish', 'subatomic', 'teensy', 'teensy-weensy', 'teentsy', 'teeny', 'teeny-weeny', 'tiny', 'undersize', 'undersized', 'wee', 'weensy', 'weeny', 'atomic', 'bantam', 'bittie', 'bitty', 'diminutive', 'dinky', 'dwarfish', 'elfin', 'elflike', 'flyspeck', 'gnomish', 'half-size', 'infinitesimal', 'insignificant', 'itsy-bitsy', 'itty-bitty', 'lesser', 'lilliputian', 'littler', 'micro', 'microscopic', 'microscopical', 'midget', 'miniature', 'miniscule', 'minuscule', 'minute', 'olive-sized', 'petite', 'pocket-size', 'pocket-sized', 'pocketable', 'puny', 'runty', 'shrimpy']</td>
+      <td>[large]</td>
+      <td>limited or below average in number or quantity or magnitude or extent数量或数量或数量或程度有限或低于平均值</td>
+      <td>a small car一辆小车a little (or small) group一个小（或小）组</td>
+      <td>[smallness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>, similarTo:['fine']</td>
+      <td></td>
+      <td>have fine or very small constituent particles具有细小或非常小的成分颗粒</td>
+      <td>a small misty rain一场小雨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>smɔl</td>
+      <td>, similarTo:['little', 'slight']</td>
+      <td></td>
+      <td>slight or limited; especially in degree or intensity or scope轻微的或有限的;特别是在程度，强度或范围上</td>
+      <td>a series of death struggles with small time in between一系列的死亡斗争，其间的时间很短</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[archaism, archaicism]</td>
+    </tr>
+    <tr>
+      <th>small</th>
+      <td>all</td>
+      <td>5.25</td>
+      <td>Non</td>
+      <td>smɔl</td>
+      <td></td>
+      <td>[big]</td>
+      <td>on a small scale在小规模</td>
+      <td>think small想小</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>falls</th>
+      <td>all</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>fɔlz</td>
+      <td>['waterfall']</td>
+      <td></td>
+      <td>a steep descent of the water of a river陡峭的河水下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water, body of water]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>falls</th>
+      <td>all</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>fɔlz</td>
+      <td></td>
+      <td></td>
+      <td>the petals or sepals of a flower that bend downward (especially the outer perianth of an iris)向下弯曲的花瓣或萼片（特别是虹膜的外花被）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[floral envelope, perigonium, chlamys, perianth, perigone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>'ræli</td>
+      <td>['bait', 'cod', 'rag', 'razz', 'ride', 'tantalise', 'tantalize', 'taunt', 'tease', 'twit']</td>
+      <td></td>
+      <td>harass with persistent criticism or carping骚扰持续的批评或讽刺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bemock, mock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>'ræli</td>
+      <td>['call up', 'mobilise', 'mobilize']</td>
+      <td></td>
+      <td>call to arms; of military personnel武装召唤;军事人员</td>
+      <td></td>
+      <td>[rallying]</td>
+      <td></td>
+      <td>[send for, call]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>'ræli</td>
+      <td>['rebound']</td>
+      <td></td>
+      <td>return to a former condition回到以前的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[recuperate, recover, go back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>'ræli</td>
+      <td>['come up', 'muster', 'muster up', 'summon']</td>
+      <td></td>
+      <td>gather or bring together聚集或聚集在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gather, pull together, collect, garner]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>'ræli</td>
+      <td>['beat up', 'drum up']</td>
+      <td></td>
+      <td>gather收集</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull in, collect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>'ræli</td>
+      <td>['rallying']</td>
+      <td></td>
+      <td>the feat of mustering strength for a renewed effort为了重新努力，集合力量的壮举</td>
+      <td>he singled to start a rally in the 9th inning他单挑在第9局开始一场集会he feared the rallying of their troops for a counterattack他担心他们的军队集结起来进行反击</td>
+      <td></td>
+      <td></td>
+      <td>[exploit, feat, effort]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>'ræli</td>
+      <td>['mass meeting']</td>
+      <td></td>
+      <td>a large gathering of people intended to arouse enthusiasm一大堆旨在激发热情的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assemblage, gathering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>'ræli</td>
+      <td>['exchange']</td>
+      <td></td>
+      <td>(sports) an unbroken sequence of several successive strokes（运动）连续几次击球的连续序列</td>
+      <td>after a short rally Connors won the point经过短暂的集会，康纳斯赢得了这一点</td>
+      <td></td>
+      <td></td>
+      <td>[group action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>'ræli</td>
+      <td></td>
+      <td></td>
+      <td>a marked recovery of strength or spirits during an illness在疾病期间，力量或精神明显恢复</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[recuperation, convalescence, recovery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rally</th>
+      <td>all</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>'ræli</td>
+      <td></td>
+      <td></td>
+      <td>an automobile race run over public roads汽车比赛在公路上行驶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[car race, automobile race, auto race]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>stɔl</td>
+      <td>['dilly-dally', 'dillydally', "drag one's feet", "drag one's heels", 'procrastinate', 'shillyshally']</td>
+      <td></td>
+      <td>postpone doing what one should be doing推迟做一个应该做的事情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[delay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>stɔl</td>
+      <td>['conk']</td>
+      <td></td>
+      <td>come to a stop停下来</td>
+      <td>The car stalled in the driveway汽车在车道上停了下来</td>
+      <td></td>
+      <td></td>
+      <td>[stop, halt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>cause an airplane to go into a stall导致飞机进入失速</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>cause an engine to stop导致发动机停止</td>
+      <td>The inexperienced driver kept stalling the car缺乏经验的司机一直在停车</td>
+      <td></td>
+      <td></td>
+      <td>[stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>deliberately delay an event or action故意拖延事件或行动</td>
+      <td>she doesn't want to write the report, so she is stalling她不想写报告，所以她拖延了</td>
+      <td>[stalling]</td>
+      <td></td>
+      <td>[detain, hold up, delay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>experience a stall in flight, of airplanes在飞机上经历飞机失速</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[halt, stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>put into, or keep in, a stall放入或保留在一个摊位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>stɔl</td>
+      <td>['carrel', 'carrell', 'cubicle']</td>
+      <td></td>
+      <td>small individual study area in a library图书馆里的小型个人学习区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alcove, bay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>stɔl</td>
+      <td>['sales booth', 'stand']</td>
+      <td></td>
+      <td>a booth where articles are displayed for sale展示待售物品的展位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[booth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>stɔl</td>
+      <td>['booth', 'cubicle', 'kiosk']</td>
+      <td></td>
+      <td>small area set off by walls for special use小墙区由墙壁引出，供特殊用途</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[closet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>stɔl</td>
+      <td>['stalling']</td>
+      <td></td>
+      <td>a tactic used to mislead or delay用来误导或拖延的策略</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obstruction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>a compartment in a stable where a single animal is confined and fed在一个稳定的隔间，一只动物被限制和喂养</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>a malfunction in the flight of an aircraft in which there is a sudden loss of lift that results in a downward plunge飞机突然失控导致向下倾斜的飞机故障</td>
+      <td>the plane went into a stall and I couldn't control it飞机进了一个摊位，我无法控制它</td>
+      <td></td>
+      <td></td>
+      <td>[malfunction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stall</th>
+      <td>all</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>stɔl</td>
+      <td></td>
+      <td></td>
+      <td>seating in the forward part of the main level of a theater座位在剧院主楼的前部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seating room, seating, seating area, seats]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tally</th>
+      <td>all</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>'tæli</td>
+      <td>['hit', 'rack up', 'score']</td>
+      <td></td>
+      <td>gain points in a game在游戏中获得积分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[make headway, win, get ahead, gain, gain ground, pull ahead, advance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tally</th>
+      <td>all</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>'tæli</td>
+      <td>['chalk up']</td>
+      <td></td>
+      <td>keep score, as in games保持得分，如在比赛中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enter, put down, record]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tally</th>
+      <td>all</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>'tæli</td>
+      <td>['add', 'add together', 'add up', 'sum', 'sum up', 'summate', 'tot', 'tot up', 'total', 'tote up']</td>
+      <td></td>
+      <td>determine the sum of确定总和</td>
+      <td></td>
+      <td></td>
+      <td>[add, add together]</td>
+      <td>[count, enumerate, number, numerate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tally</th>
+      <td>all</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>'tæli</td>
+      <td>['agree', 'check', 'correspond', 'fit', 'gibe', 'jibe', 'match']</td>
+      <td></td>
+      <td>be compatible, similar or consistent; coincide in their characteristics兼容，相似或一致;与他们的特点相吻合</td>
+      <td></td>
+      <td></td>
+      <td>[agree, check out, consort, fit in, harmonize, concord, harmonise, accord, check]</td>
+      <td>[equal, be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tally</th>
+      <td>all</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>'tæli</td>
+      <td>['reckoning']</td>
+      <td></td>
+      <td>a bill for an amount due应付金额的账单</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[invoice, bill, account]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tally</th>
+      <td>all</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>'tæli</td>
+      <td>['run']</td>
+      <td></td>
+      <td>a score in baseball made by a runner touching all four bases safely由跑步者安全触摸所有四个基地制作的棒球比分</td>
+      <td>their first tally came in the 3rd inning他们的第一个计数来到了第3局</td>
+      <td></td>
+      <td></td>
+      <td>[score]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tally</th>
+      <td>all</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>'tæli</td>
+      <td>['count', 'counting', 'enumeration', 'numeration', 'reckoning']</td>
+      <td></td>
+      <td>the act of counting; reciting numbers in ascending order计算的行为;按升序排列数字</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[investigation, investigating]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,275 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['dowry', 'downy', 'dowdy', 'endow', 'dowse']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>dowry</th>
+      <td>dow</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>'daʊri</td>
+      <td>['dower', 'dowery', 'portion']</td>
+      <td></td>
+      <td>money or property brought by a woman to her husband at marriage妇女在结婚时向丈夫提供的金钱或财产</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>downy</th>
+      <td>dow</td>
+      <td>2.54</td>
+      <td>adj</td>
+      <td>'daʊni</td>
+      <td>['puberulent', 'pubescent', 'sericeous'], similarTo:['haired', 'hairy', 'hirsute']</td>
+      <td></td>
+      <td>covered with fine soft hairs or down覆盖着细软的毛或向下</td>
+      <td>downy milkweed seeds柔软的乳草种子</td>
+      <td>[down, downiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>downy</th>
+      <td>dow</td>
+      <td>2.54</td>
+      <td>adj</td>
+      <td>'daʊni</td>
+      <td>['downlike', 'flossy', 'fluffy'], similarTo:['soft']</td>
+      <td></td>
+      <td>like down or as soft as down喜欢向下或像向下一样柔软</td>
+      <td></td>
+      <td>[down, downiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowdy</th>
+      <td>dow</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>'daʊdi</td>
+      <td>['baron hugh caswall tremenheere dowding', 'dowding', 'hugh dowding']</td>
+      <td></td>
+      <td>British marshal of the RAF who commanded the British air defense forces that defeated the Luftwaffe during the Battle of Britain (1882-1970)英国皇家空军的英国元帅指挥英国防空部队在英国战役期间击败了德国空军（1882-1970）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowdy</th>
+      <td>dow</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>'daʊdi</td>
+      <td>['pandowdy']</td>
+      <td></td>
+      <td>deep-dish apple dessert covered with a rich crust深厚的苹果甜点覆盖着浓郁的外壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pastry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowdy</th>
+      <td>dow</td>
+      <td>2.49</td>
+      <td>adj</td>
+      <td>'daʊdi</td>
+      <td>['frumpish', 'frumpy'], similarTo:['unfashionable', 'unstylish']</td>
+      <td></td>
+      <td>primly out of date完全过时了</td>
+      <td></td>
+      <td>[dowdiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowdy</th>
+      <td>dow</td>
+      <td>2.49</td>
+      <td>adj</td>
+      <td>'daʊdi</td>
+      <td>, similarTo:['styleless', 'unstylish']</td>
+      <td></td>
+      <td>lacking in smartness or taste缺乏聪明才智</td>
+      <td>a dowdy grey outfit一件灰色的衣服a clean and sunny but completely dowdy room一个干净，阳光充足但完全昏昏欲睡的房间</td>
+      <td>[dowdiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>endow</th>
+      <td>dow</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>ɛn'daʊ</td>
+      <td>['dower']</td>
+      <td></td>
+      <td>furnish with an endowment提供捐赠</td>
+      <td></td>
+      <td>[endowment]</td>
+      <td></td>
+      <td>[gift, give, present]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>endow</th>
+      <td>dow</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>ɛn'daʊ</td>
+      <td>['empower', 'endue', 'gift', 'indue', 'invest']</td>
+      <td></td>
+      <td>give qualities or abilities to赋予品质或能力</td>
+      <td></td>
+      <td>[endowment]</td>
+      <td></td>
+      <td>[enable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowse</th>
+      <td>dow</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['douse']</td>
+      <td></td>
+      <td>slacken放松</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remit, slacken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowse</th>
+      <td>dow</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['douse', 'drench', 'soak', 'sop', 'souse']</td>
+      <td></td>
+      <td>cover with liquid; pour liquid onto盖上液体;倒入液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowse</th>
+      <td>dow</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['douse']</td>
+      <td></td>
+      <td>wet thoroughly彻底弄湿了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowse</th>
+      <td>dow</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td></td>
+      <td></td>
+      <td>use a divining rod in search of underground water or metal使用占卜棒寻找地下水或金属</td>
+      <td></td>
+      <td>[dowser, dowsing]</td>
+      <td></td>
+      <td>[divine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dowse</th>
+      <td>dow</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>daʊs</td>
+      <td>['dowsing', 'rhabdomancy']</td>
+      <td></td>
+      <td>searching for underground water or minerals by using a dowsing rod使用探测棒搜寻地下水或矿物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[divination, foretelling, fortune telling, soothsaying]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,515 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['switch', 'stitch', 'snitch', 'twitch', 'bitchy', 'glitch', 'pitchy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>swɪʧ</td>
+      <td>['change', 'shift']</td>
+      <td></td>
+      <td>lay aside, abandon, or leave for another放下，放弃，或离开另一个</td>
+      <td>switch to a different brand of beer换成不同品牌的啤酒She switched psychiatrists她改变了精神科医生</td>
+      <td></td>
+      <td>[convert, commute, exchange, change]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>swɪʧ</td>
+      <td>['alternate', 'flip', 'flip-flop', 'interchange', 'tack']</td>
+      <td></td>
+      <td>reverse (a direction, attitude, or course of action)逆转（方向，态度或行动方针）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change by reversal, turn, reverse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>swɪʧ</td>
+      <td>['flip', 'throw']</td>
+      <td></td>
+      <td>cause to go on or to be engaged or set in operation导致继续或正在接受或开始运作</td>
+      <td>switch on the light把灯打开</td>
+      <td></td>
+      <td></td>
+      <td>[operate, mesh, lock, engage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>swɪʧ</td>
+      <td>['change over', 'shift']</td>
+      <td></td>
+      <td>make a shift in or exchange of转移或交换</td>
+      <td>First Joe led; then we switched第一个乔领导;然后我们换了</td>
+      <td>[switching]</td>
+      <td></td>
+      <td>[change, alter, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>swɪʧ</td>
+      <td>['swap', 'swop', 'trade']</td>
+      <td></td>
+      <td>exchange or give (something) in exchange for交换或交换（某物）以换取</td>
+      <td></td>
+      <td>[switching]</td>
+      <td></td>
+      <td>[exchange, change, interchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>swɪʧ</td>
+      <td>['exchange', 'switch over']</td>
+      <td></td>
+      <td>change over, change around, as to a new order or sequence转换，改变，新订单或顺序</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change by reversal, reverse, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>swɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>flog with or as if with a flexible rod用或似乎用柔性杆鞭打</td>
+      <td></td>
+      <td>[switcher]</td>
+      <td></td>
+      <td>[lather, strap, slash, flog, lash, welt, trounce, whip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>swɪʧ</td>
+      <td>['electric switch', 'electrical switch']</td>
+      <td></td>
+      <td>control consisting of a mechanical or electrical or electronic device for making or breaking or changing the connections in a circuit控制器由机械或电气或电子设备组成，用于制造或断开或改变电路中的连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[controller, control]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>swɪʧ</td>
+      <td>['shift', 'switching']</td>
+      <td></td>
+      <td>the act of changing one thing or position for another改变一件事或一件事的行为</td>
+      <td>his switch on abortion cost him the election他的堕胎开关使他失去了选举权</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>swɪʧ</td>
+      <td>['permutation', 'replacement', 'substitution', 'transposition']</td>
+      <td></td>
+      <td>an event in which one thing is substituted for another一件事取代另一件事的事件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fluctuation, variation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>swɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a basketball maneuver; two defensive players shift assignments so that each guards the player usually guarded by the other篮球机动;两个防守球员转移任务，以便每个守卫球员通常由另一个守卫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[basketball play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>swɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a flexible implement used as an instrument of punishment一种灵活的工具，用作惩罚工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instrument of punishment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>swɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>hairpiece consisting of a tress of false hair; used by women to give shape to a coiffure头发由假发发束组成;妇女用来塑造发型</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[postiche, false hair, hairpiece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>switch</th>
+      <td>itch</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>swɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>railroad track having two movable rails and necessary connections; used to turn a train from one track to another or to store rolling stock铁路轨道有两个可移动的轨道和必要的连接;用于将火车从一个轨道转到另一个轨道或存储机车车辆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[railway, railroad track, railroad]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stitch</th>
+      <td>itch</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>stɪʧ</td>
+      <td>['run up', 'sew', 'sew together']</td>
+      <td></td>
+      <td>fasten by sewing; do needlework缝制紧固;做针线活</td>
+      <td></td>
+      <td>[stitcher, stitchery, stitching]</td>
+      <td></td>
+      <td>[secure, fasten, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stitch</th>
+      <td>itch</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>stɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a link or loop or knot made by an implement in knitting, crocheting, embroidery, or sewing由工具在针织，钩编，刺绣或缝纫中制成的链环或环或结</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sewing, stitchery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stitch</th>
+      <td>itch</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>stɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a sharp spasm of pain in the side resulting from running跑步造成的一侧疼痛剧烈痉挛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hurting, pain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>snɪʧ</td>
+      <td>['cop', 'glom', 'hook', 'knock off', 'thieve']</td>
+      <td></td>
+      <td>take by theft偷窃</td>
+      <td>Someone snitched my wallet!有人偷了我的钱包！</td>
+      <td>[snitcher]</td>
+      <td></td>
+      <td>[rip off, rip, steal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>snɪʧ</td>
+      <td>['betray', 'denounce', 'give away', 'grass', 'rat', 'shit', 'shop', 'stag', 'tell on']</td>
+      <td></td>
+      <td>give away information about somebody泄露有关某人的信息</td>
+      <td></td>
+      <td>[snitcher]</td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>snɪʧ</td>
+      <td>['canary', 'fink', 'sneak', 'sneaker', 'snitcher', 'stool pigeon', 'stoolie', 'stoolpigeon']</td>
+      <td></td>
+      <td>someone acting as an informer or decoy for the police某人扮演警察的告密者或诱饵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[informer, rat, squealer, betrayer, blabber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twitch</th>
+      <td>itch</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>twɪʧ</td>
+      <td>['jerk']</td>
+      <td></td>
+      <td>make an uncontrolled, short, jerky motion做一个不受控制的，短暂的，不稳定的动作</td>
+      <td>his face is twitching他的脸在抽搐</td>
+      <td>[twitching]</td>
+      <td>[jerk]</td>
+      <td>[move reflexively, move involuntarily]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twitch</th>
+      <td>itch</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>twɪʧ</td>
+      <td>['jerk']</td>
+      <td></td>
+      <td>move with abrupt, seemingly uncontrolled motions以突然的，看似无法控制的动作行动</td>
+      <td></td>
+      <td>[twitching]</td>
+      <td>[jerk]</td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twitch</th>
+      <td>itch</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>twɪʧ</td>
+      <td>['flip']</td>
+      <td></td>
+      <td>toss with a sharp movement so as to cause to turn over in the air以急剧的动作折腾，以便在空中翻转</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twitch</th>
+      <td>itch</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>twɪʧ</td>
+      <td>['nip', 'pinch', 'squeeze', 'tweet', 'twinge']</td>
+      <td></td>
+      <td>squeeze tightly between the fingers紧紧地夹在手指之间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twitch</th>
+      <td>itch</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>twɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>move or pull with a sudden motion突然移动或拉动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[draw, pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twitch</th>
+      <td>itch</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>twɪʧ</td>
+      <td>['twitching', 'vellication']</td>
+      <td></td>
+      <td>a sudden muscle spasm; especially one caused by a nervous condition突然肌肉痉挛;特别是由紧张情况引起的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[muscle spasm, spasm, cramp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bitchy</th>
+      <td>itch</td>
+      <td>3.21</td>
+      <td>adj</td>
+      <td>'bɪʧi</td>
+      <td>['cattish', 'catty'], similarTo:['malicious']</td>
+      <td></td>
+      <td>marked by or arising from malice由恶意标记或由恶意引起的</td>
+      <td></td>
+      <td>[bitch, bitchiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glitch</th>
+      <td>itch</td>
+      <td>3.20</td>
+      <td>nou</td>
+      <td>glɪtʃ</td>
+      <td>['bug']</td>
+      <td></td>
+      <td>a fault or defect in a computer program, system, or machine计算机程序，系统或机器中的故障或缺陷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[defect, fault, flaw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitchy</th>
+      <td>itch</td>
+      <td>1.73</td>
+      <td>adj</td>
+      <td>'pɪʧi</td>
+      <td>['coal-black', 'jet', 'jet-black', 'sooty'], similarTo:['achromatic', 'neutral']</td>
+      <td></td>
+      <td>of the blackest black; similar to the color of jet or coal最黑的;类似于喷气式飞机或煤炭的颜色</td>
+      <td></td>
+      <td>[pitch]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitchy</th>
+      <td>itch</td>
+      <td>1.73</td>
+      <td>adj</td>
+      <td>'pɪʧi</td>
+      <td>['resinous', 'resiny', 'tarry'], similarTo:['adhesive']</td>
+      <td></td>
+      <td>having the characteristics of pitch or tar具有沥青或焦油的特性</td>
+      <td></td>
+      <td>[pitch]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

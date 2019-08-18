@@ -1,0 +1,350 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['max', 'tax', 'fax', 'wax', 'sax', 'lax', 'pax']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>max</th>
+      <td>ax</td>
+      <td>4.72</td>
+      <td>nou</td>
+      <td>mæks</td>
+      <td>['easy lay', 'georgia home boy', 'goop', 'grievous bodily harm', 'liquid ecstasy', 'scoop', 'soap']</td>
+      <td></td>
+      <td>street names for gamma hydroxybutyrateγ羟基丁酸酯的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gamma hydroxybutyrate, ghb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tax</th>
+      <td>ax</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>tæks</td>
+      <td>['assess']</td>
+      <td></td>
+      <td>set or determine the amount of (a payment such as a fine)设定或确定（罚款等款项）的金额</td>
+      <td></td>
+      <td></td>
+      <td>[assess]</td>
+      <td>[determine, set]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tax</th>
+      <td>ax</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>tæks</td>
+      <td>['task']</td>
+      <td></td>
+      <td>use to the limit使用到极限</td>
+      <td>you are taxing my patience你在忍耐我的耐心</td>
+      <td></td>
+      <td></td>
+      <td>[strain, extend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tax</th>
+      <td>ax</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>tæks</td>
+      <td></td>
+      <td></td>
+      <td>levy a tax on征税</td>
+      <td>The State taxes alcohol heavily国家对酒精征税很大Clothing is not taxed in our state在我们的州，服装不征税</td>
+      <td>[taxable, taxation, taxer]</td>
+      <td></td>
+      <td>[levy, impose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tax</th>
+      <td>ax</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>tæks</td>
+      <td></td>
+      <td></td>
+      <td>make a charge against or accuse指控或控告</td>
+      <td>They taxed him failure to appear in court他们责怪他没有出庭</td>
+      <td></td>
+      <td></td>
+      <td>[charge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tax</th>
+      <td>ax</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>tæks</td>
+      <td>['revenue enhancement', 'taxation']</td>
+      <td></td>
+      <td>charge against a citizen's person or property or activity for the support of government向公民的人或财产或活动收取费用以支持政府</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[levy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fax</th>
+      <td>ax</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>fæks</td>
+      <td>['facsimile', 'telefax']</td>
+      <td></td>
+      <td>send something via a facsimile machine通过传真机发送东西</td>
+      <td>Can you fax me the report right away?你能马上把报告传真给我吗？</td>
+      <td></td>
+      <td></td>
+      <td>[telecommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fax</th>
+      <td>ax</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>fæks</td>
+      <td>['facsimile', 'facsimile machine']</td>
+      <td></td>
+      <td>duplicator that transmits the copy by wire or radio通过有线或无线电传输副本的复制器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[copier, duplicator]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wax</th>
+      <td>ax</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>wæks</td>
+      <td>['full']</td>
+      <td>[wane]</td>
+      <td>increase in phase增加阶段</td>
+      <td>the moon is waxing月亮在打蜡</td>
+      <td>[waxing]</td>
+      <td></td>
+      <td>[increase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wax</th>
+      <td>ax</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>wæks</td>
+      <td>['climb', 'mount', 'rise']</td>
+      <td>[wane]</td>
+      <td>go up or advance上升或前进</td>
+      <td></td>
+      <td>[waxing]</td>
+      <td></td>
+      <td>[increase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wax</th>
+      <td>ax</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>wæks</td>
+      <td></td>
+      <td></td>
+      <td>cover with wax盖上蜡</td>
+      <td>wax the car打蜡车</td>
+      <td>[waxing]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wax</th>
+      <td>ax</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>wæks</td>
+      <td></td>
+      <td></td>
+      <td>any of various substances of either mineral origin or plant or animal origin; they are solid at normal temperatures and insoluble in water矿物来源或植物或动物来源的各种物质;它们在常温下是固体，不溶于水</td>
+      <td></td>
+      <td>[waxy]</td>
+      <td></td>
+      <td>[lipide, lipoid, lipid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sax</th>
+      <td>ax</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>sæks</td>
+      <td>['saxophone']</td>
+      <td></td>
+      <td>a single-reed woodwind with a conical bore带有锥形孔的单簧管木管乐器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[single-reed instrument, single-reed woodwind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sax</th>
+      <td>ax</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>sæks</td>
+      <td>['adolphe sax']</td>
+      <td></td>
+      <td>a Belgian maker of musical instruments who invented the saxophone (1814-1894)发明萨克斯管的比利时乐器制造商（1814-1894）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lax</th>
+      <td>ax</td>
+      <td>3.04</td>
+      <td>adj</td>
+      <td>læks</td>
+      <td>['loose'], similarTo:['unconstipated', 'regular']</td>
+      <td></td>
+      <td>emptying easily or excessively容易或过度排空</td>
+      <td></td>
+      <td>[laxness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lax</th>
+      <td>ax</td>
+      <td>3.04</td>
+      <td>adj</td>
+      <td>læks</td>
+      <td>['slack'], similarTo:['negligent']</td>
+      <td></td>
+      <td>lacking in rigor or strictness缺乏严谨或严格</td>
+      <td>such lax and slipshod ways are no longer acceptable这种松懈和滑稽的方式已不再可接受lax in attending classes参加课程不严格</td>
+      <td>[laxity, laxness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lax</th>
+      <td>ax</td>
+      <td>3.04</td>
+      <td>adj</td>
+      <td>læks</td>
+      <td>, similarTo:['floppy', 'limp', 'loose', 'loose-jointed', 'sagging', 'slack', 'tensionless', 'wilted', 'drooping', 'droopy'], alos:['loose']</td>
+      <td>[tense]</td>
+      <td>lacking in firmness or tension; not taut缺乏坚定或紧张;不拉紧</td>
+      <td>a lax rope松懈的绳子</td>
+      <td>[laxness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lax</th>
+      <td>ax</td>
+      <td>3.04</td>
+      <td>adj</td>
+      <td>læks</td>
+      <td></td>
+      <td>[tense]</td>
+      <td>pronounced with muscles of the tongue and jaw relatively relaxed (e.g., the vowel sound in `bet')发音与舌头的肌肉和下巴相对放松（例如，'bet'中的元音声音）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pax</th>
+      <td>ax</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>pæks</td>
+      <td>['kiss of peace']</td>
+      <td></td>
+      <td>(Roman Catholic Church) a greeting signifying Christian love for those assisting at the Eucharist（罗马天主教会）一个问候，表示基督徒对那些协助圣体圣事的人的爱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[greeting, salutation]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,425 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['strain', 'sprain', 'brainy', 'grainy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['tense', 'tense up']</td>
+      <td>[unstrain]</td>
+      <td>cause to be tense and uneasy or nervous or anxious导致紧张和不安或紧张或焦虑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['stress', 'try']</td>
+      <td></td>
+      <td>test the limits of测试的极限</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[afflict]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['tense']</td>
+      <td></td>
+      <td>become stretched or tense or taut变得紧张或紧张或拉紧</td>
+      <td>the rope strained when the weight was attached当重物附着时，绳子会拉紧</td>
+      <td></td>
+      <td></td>
+      <td>[tighten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['filter', 'filter out', 'filtrate', 'separate out']</td>
+      <td></td>
+      <td>remove by passing through a filter通过过滤器删除</td>
+      <td></td>
+      <td>[strainer]</td>
+      <td></td>
+      <td>[separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['sieve', 'sift']</td>
+      <td></td>
+      <td>separate by passing through a sieve or other straining device to separate out coarser elements通过筛子或其他应变装置分开以分离出较粗糙的元件</td>
+      <td></td>
+      <td>[strainer]</td>
+      <td></td>
+      <td>[separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['extend']</td>
+      <td></td>
+      <td>use to the utmost; exert vigorously or to full capacity最大限度地利用;大力发挥或全力以赴</td>
+      <td>Don't strain your mind too much不要太过紧张</td>
+      <td>[straining]</td>
+      <td></td>
+      <td>[use, utilise, employ, apply, utilize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['reach', 'strive']</td>
+      <td></td>
+      <td>to exert much effort or energy付出很多努力或精力</td>
+      <td>straining our ears to hear我们的耳朵听不见</td>
+      <td></td>
+      <td></td>
+      <td>[drive, tug, labour, push, labor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['puree']</td>
+      <td></td>
+      <td>rub through a strainer or process in an electric blender通过电动搅拌器中的过滤器或过程进行摩擦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rub]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>streɪn</td>
+      <td>['deform', 'distort']</td>
+      <td></td>
+      <td>alter the shape of (something) by stress通过压力改变（某事物）的形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['straining']</td>
+      <td></td>
+      <td>an intense or violent exertion激烈或剧烈的努力</td>
+      <td></td>
+      <td>[strenuous]</td>
+      <td></td>
+      <td>[elbow grease, travail, sweat, exertion, effort]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['stress']</td>
+      <td></td>
+      <td>difficulty that causes worry or emotional tension导致忧虑或情绪紧张的困难</td>
+      <td>she endured the stresses and strains of life她忍受着生活的压力和紧张</td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['air', 'line', 'melodic line', 'melodic phrase', 'melody', 'tune']</td>
+      <td></td>
+      <td>a succession of notes forming a distinctive sequence一连串的笔记形成一个独特的序列</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['song']</td>
+      <td></td>
+      <td>the act of singing歌唱的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vocal music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['form', 'var.', 'variant']</td>
+      <td></td>
+      <td>(biology) a group of organisms within a species that differ in trivial ways from similar groups（生物学）一个物种内的一组生物，它们与类似的群体有着千丝万缕的不同</td>
+      <td>a new strain of microorganisms一种新的微生物菌株</td>
+      <td></td>
+      <td></td>
+      <td>[taxonomic group, taxon, taxonomic category]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['breed', 'stock']</td>
+      <td></td>
+      <td>a special variety of domesticated animals within a species一种特殊的驯养动物</td>
+      <td>he created a new strain of sheep他创造了一种新的绵羊品种</td>
+      <td></td>
+      <td></td>
+      <td>[variety, animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['tenor']</td>
+      <td></td>
+      <td>the general meaning or substance of an utterance话语的一般意义或实质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[meaning, substance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['nisus', 'pains', 'striving']</td>
+      <td></td>
+      <td>an effortful attempt to attain a goal努力实现目标</td>
+      <td></td>
+      <td>[strenuous]</td>
+      <td></td>
+      <td>[try, endeavour, attempt, effort, endeavor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td>['mental strain', 'nervous strain']</td>
+      <td></td>
+      <td>(psychology) nervousness resulting from mental stress（心理学）由精神压力引起的紧张</td>
+      <td>his responsibilities were a constant strain他的责任是一个持续的压力the mental strain of staying alert hour after hour was too much for him一小时又一小时保持警觉的精神紧张对他来说太过分了</td>
+      <td></td>
+      <td></td>
+      <td>[nerves, nervousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td></td>
+      <td></td>
+      <td>injury to a muscle (often caused by overuse); results in swelling and pain肌肉受伤（通常由过度使用引起）;导致肿胀和疼痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hurt, harm, injury, trauma]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>strain</th>
+      <td>rain</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>streɪn</td>
+      <td></td>
+      <td></td>
+      <td>(physics) deformation of a physical body under the action of applied forces（物理学）在施加力的作用下物体的变形</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deformation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sprain</th>
+      <td>rain</td>
+      <td>2.98</td>
+      <td>ver</td>
+      <td>spreɪn</td>
+      <td>['rick', 'turn', 'twist', 'wrench', 'wrick']</td>
+      <td></td>
+      <td>twist suddenly so as to sprain扭曲突然扭伤</td>
+      <td>the hikers sprained their ankles when they fell当他们摔倒时，徒步者扭伤了他们的脚踝</td>
+      <td></td>
+      <td></td>
+      <td>[injure, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sprain</th>
+      <td>rain</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>spreɪn</td>
+      <td></td>
+      <td></td>
+      <td>a painful injury to a joint caused by a sudden wrenching of its ligaments突然扭伤韧带导致关节疼痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull, twist, wrench]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brainy</th>
+      <td>rain</td>
+      <td>2.93</td>
+      <td>adj</td>
+      <td>'breɪni</td>
+      <td>['brilliant', 'smart as a whip'], similarTo:['intelligent']</td>
+      <td></td>
+      <td>having or marked by unusual and impressive intelligence拥有或标志着不同寻常和令人印象深刻</td>
+      <td>our project needs brainy women我们的项目需要聪明的女性</td>
+      <td>[brain]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grainy</th>
+      <td>rain</td>
+      <td>2.43</td>
+      <td>adj</td>
+      <td>'greɪni</td>
+      <td>['coarse-grained', 'farinaceous', 'granular', 'granulose', 'gritty', 'mealy'], similarTo:['coarse', 'harsh']</td>
+      <td></td>
+      <td>composed of or covered with particles resembling meal in texture or consistency由质地或稠度的膳食组成或覆盖的颗粒</td>
+      <td>the photographs were grainy and indistinct这些照片是颗粒状的，模糊不清</td>
+      <td>[grain, graininess]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

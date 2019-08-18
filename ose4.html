@@ -1,0 +1,770 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['lose', 'nose', 'rose', 'pose', 'dose', 'hose', 'bose']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td>['miss']</td>
+      <td></td>
+      <td>fail to perceive or to catch with the senses or the mind没有察觉或接触感官或思想</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td>['suffer']</td>
+      <td></td>
+      <td>be set at a disadvantage处于劣势</td>
+      <td>The painting loses something in this light这幅画在这种光线下失去了一些东西</td>
+      <td></td>
+      <td>[suffer]</td>
+      <td>[worsen, decline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td>['turn a loss']</td>
+      <td>[profit, break even]</td>
+      <td>fail to make money in a business; make a loss or fail to profit没有在企业赚钱;赚钱或亏本</td>
+      <td></td>
+      <td>[loser, losings]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td></td>
+      <td>[win]</td>
+      <td>fail to get or obtain没有得到或获得</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td></td>
+      <td>[keep]</td>
+      <td>fail to keep or to maintain; cease to have, either physically or in an abstract sense未能保持或维持;无论是身体上还是抽象意义上都不再具有</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td></td>
+      <td>[win]</td>
+      <td>fail to win没赢</td>
+      <td></td>
+      <td>[loser]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td></td>
+      <td>[find]</td>
+      <td>miss from one's possessions; lose sight of从一个人的财产中错过;看不见</td>
+      <td></td>
+      <td>[losings]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td></td>
+      <td></td>
+      <td>suffer the loss of a person through death or removal通过死亡或移除而遭受失去的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[suffer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lose</th>
+      <td>ose</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>luz</td>
+      <td></td>
+      <td></td>
+      <td>withdraw, as from reality从现实中退出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sequestrate, sequester, seclude, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>noʊz</td>
+      <td>['scent', 'wind']</td>
+      <td></td>
+      <td>catch the scent of; get wind of抓住气味;得到风</td>
+      <td>The dog nosed out the drugs狗咬了药</td>
+      <td></td>
+      <td></td>
+      <td>[smell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>noʊz</td>
+      <td>['nuzzle']</td>
+      <td></td>
+      <td>rub noses擦鼻子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[caress, fondle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>noʊz</td>
+      <td>['horn in', 'intrude', 'poke', 'pry'], alos:['nose out']</td>
+      <td></td>
+      <td>search or inquire in a meddlesome way以一种有益的方式搜索或查询</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[look, search]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>advance the forward part of with caution谨慎地推进前进部分</td>
+      <td>She nosed the car into the left lane她把汽车撞到左边的车道上</td>
+      <td></td>
+      <td></td>
+      <td>[bring forward, advance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>defeat by a narrow margin以微弱优势击败</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[overcome, get the better of, defeat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>push or move with the nose推动或移动鼻子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[force, push]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td>['nozzle']</td>
+      <td></td>
+      <td>a projecting spout from which a fluid is discharged一个突出的喷口，流体从该喷口排出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spout]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td>['olfactory organ']</td>
+      <td></td>
+      <td>the organ of smell and entrance to the respiratory tract; the prominent part of the face of man or other mammals嗅觉器官和呼吸道入口;人或其他哺乳动物面部的突出部分</td>
+      <td>he has a cold in the nose他鼻子感冒了</td>
+      <td></td>
+      <td></td>
+      <td>[chemoreceptor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>a front that resembles a human nose (especially the front of an aircraft)一个类似于人类鼻子的前部（特别是飞机的前部）</td>
+      <td>the nose of the rocket heated up on reentry火箭的鼻子在再入时升温</td>
+      <td></td>
+      <td></td>
+      <td>[front]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>a natural skill一种天生的技巧</td>
+      <td>he has a nose for good deals他有很好的交易</td>
+      <td></td>
+      <td></td>
+      <td>[science, skill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>a small distance一小段距离</td>
+      <td>my horse lost the race by a nose我的马用鼻子输掉了比赛</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite quantity, small indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>a symbol of inquisitiveness好奇的象征</td>
+      <td>keep your nose out of it保持你的鼻子</td>
+      <td>[nosy, nosey]</td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>the front or forward projection of a tool or weapon工具或武器的前投或前投</td>
+      <td>he ducked under the nose of the gun他躲在枪口下面</td>
+      <td></td>
+      <td></td>
+      <td>[front]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nose</th>
+      <td>ose</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>noʊz</td>
+      <td></td>
+      <td></td>
+      <td>the sense of smell (especially in animals)嗅觉（特别是在动物身上）</td>
+      <td>the hound has a good nose猎犬有一个好鼻子</td>
+      <td></td>
+      <td></td>
+      <td>[smell, olfaction, sense of smell, olfactory modality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rose</th>
+      <td>ose</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>roʊz</td>
+      <td>['rosebush']</td>
+      <td></td>
+      <td>any of many shrubs of the genus Rosa that bear roses罗莎属的许多灌木中的任何一种，带有玫瑰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shrub, bush]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rose</th>
+      <td>ose</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>roʊz</td>
+      <td>['blush wine', 'pink wine', 'rose wine']</td>
+      <td></td>
+      <td>pinkish table wine from red grapes whose skins were removed after fermentation began粉红色的葡萄酒来自红葡萄，其发酵开始后去除皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vino, wine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rose</th>
+      <td>ose</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>roʊz</td>
+      <td>['rosiness']</td>
+      <td></td>
+      <td>a dusty pink color粉红色的粉红色</td>
+      <td></td>
+      <td>[rosy]</td>
+      <td></td>
+      <td>[pink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rose</th>
+      <td>ose</td>
+      <td>4.62</td>
+      <td>adj</td>
+      <td>roʊz</td>
+      <td>['rosaceous', 'roseate'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of something having a dusty purplish pink color有粉红色的紫色粉红色的东西</td>
+      <td>the roseate glow of dawn黎明的玫瑰色的光芒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>ver</td>
+      <td>poʊz</td>
+      <td>['present']</td>
+      <td></td>
+      <td>introduce介绍</td>
+      <td>This poses an interesting question这提出了一个有趣的问题</td>
+      <td></td>
+      <td></td>
+      <td>[constitute, represent, make up, be, comprise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>ver</td>
+      <td>poʊz</td>
+      <td>['amaze', 'baffle', 'beat', 'bewilder', 'dumbfound', 'flummox', 'get', 'gravel', 'mystify', 'nonplus', 'perplex', 'puzzle', 'stick', 'stupefy', 'vex']</td>
+      <td></td>
+      <td>be a mystery or bewildering to是一个谜或令人困惑的</td>
+      <td></td>
+      <td>[poser]</td>
+      <td></td>
+      <td>[confuse, befuddle, throw, bedevil, confound, fuddle, discombobulate, fox]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>ver</td>
+      <td>poʊz</td>
+      <td>['lay', 'place', 'position', 'put', 'set']</td>
+      <td></td>
+      <td>put into a certain place or abstract location放到某个地方或抽象的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>ver</td>
+      <td>poʊz</td>
+      <td>['model', 'posture', 'sit']</td>
+      <td></td>
+      <td>assume a posture as for artistic purposes假设一种姿势，如艺术目的</td>
+      <td>We don't know the woman who posed for Leonardo so often我们不知道经常为莱昂纳多摆姿势的女人</td>
+      <td>[poser, posing]</td>
+      <td></td>
+      <td>[display, exhibit, expose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>ver</td>
+      <td>poʊz</td>
+      <td>['posture']</td>
+      <td></td>
+      <td>behave affectedly or unnaturally in order to impress others为了给别人留下深刻印象，表现得有影响或不自然</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[conduct, comport, deport, carry, acquit, behave, bear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>ver</td>
+      <td>poʊz</td>
+      <td>['impersonate', 'personate']</td>
+      <td></td>
+      <td>pretend to be someone you are not; sometimes with fraudulent intentions假装是你不是的人;有时候会有欺诈性的意图</td>
+      <td>She posed as the Czar's daughter她扮演沙皇的女儿</td>
+      <td>[poser]</td>
+      <td></td>
+      <td>[lead astray, deceive, betray]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>nou</td>
+      <td>poʊz</td>
+      <td>['affectation', 'affectedness', 'mannerism']</td>
+      <td></td>
+      <td>a deliberate pretense or exaggerated display刻意的假装或夸张的展示</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pretending, simulation, feigning, pretence, pretense]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>nou</td>
+      <td>poʊz</td>
+      <td>['airs']</td>
+      <td></td>
+      <td>affected manners intended to impress others旨在打动他人的受影响的举止</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affectedness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pose</th>
+      <td>ose</td>
+      <td>3.85</td>
+      <td>nou</td>
+      <td>poʊz</td>
+      <td></td>
+      <td></td>
+      <td>a posture assumed by models for photographic or artistic purposes模特为摄影或艺术目的所采取的姿势</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attitude, posture, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dose</th>
+      <td>ose</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>doʊs</td>
+      <td>['drug']</td>
+      <td></td>
+      <td>administer a drug to给药服用</td>
+      <td></td>
+      <td>[dosage]</td>
+      <td></td>
+      <td>[medicate, medicine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dose</th>
+      <td>ose</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>doʊs</td>
+      <td></td>
+      <td></td>
+      <td>treat with an agent; add (an agent) to与代理人一起对待;添加（代理）到</td>
+      <td>The ray dosed the paint光线给油漆加了药</td>
+      <td>[dosage]</td>
+      <td></td>
+      <td>[treat, process]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dose</th>
+      <td>ose</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>doʊs</td>
+      <td>['acid', 'back breaker', 'battery-acid', 'dot', 'elvis', 'loony toons', 'lucy in the sky with diamonds', 'pane', 'superman', 'window pane', 'zen']</td>
+      <td></td>
+      <td>street name for lysergic acid diethylamide麦角酰二乙胺的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lysergic acid diethylamide, lsd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dose</th>
+      <td>ose</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>doʊs</td>
+      <td>['dosage']</td>
+      <td></td>
+      <td>the quantity of an active agent (substance or radiation) taken in or absorbed at any one time任何时候摄入或吸收的活性剂（物质或辐射）的量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dose</th>
+      <td>ose</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>doʊs</td>
+      <td>["cupid's disease", "cupid's itch", 'sexually transmitted disease', 'social disease', 'std', 'vd', 'venereal disease', 'venereal infection', "venus's curse"]</td>
+      <td></td>
+      <td>a communicable infection transmitted by sexual intercourse or genital contact通过性交或生殖器接触传播的传染性感染</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contagious disease, contagion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dose</th>
+      <td>ose</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>doʊs</td>
+      <td>['dosage']</td>
+      <td></td>
+      <td>a measured portion of medicine taken at any one time在任何时候服用的一部分药物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[medicinal drug, medication, medicine, medicament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hose</th>
+      <td>ose</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>hoʊz</td>
+      <td>['hose down']</td>
+      <td></td>
+      <td>water with a hose水用软管</td>
+      <td>hose the lawn软管草坪</td>
+      <td></td>
+      <td></td>
+      <td>[irrigate, water]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hose</th>
+      <td>ose</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>hoʊz</td>
+      <td>['hosepipe']</td>
+      <td></td>
+      <td>a flexible pipe for conveying a liquid or gas用于输送液体或气体的柔性管</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tubing, tube]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hose</th>
+      <td>ose</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>hoʊz</td>
+      <td>['hosiery']</td>
+      <td></td>
+      <td>socks and stockings and tights collectively (the British include underwear)袜子和袜子和紧身衣（英国包括内衣）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[footwear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hose</th>
+      <td>ose</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>hoʊz</td>
+      <td></td>
+      <td></td>
+      <td>man's close-fitting garment of the 16th and 17th centuries covering the legs and reaching up to the waist; worn with a doublet16世纪和17世纪的男士紧身衣，遮住双腿，伸展腰部;双合穿着</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bose</th>
+      <td>ose</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>boʊs</td>
+      <td>['satyendra n. bose', 'satyendra nath bose']</td>
+      <td></td>
+      <td>Indian physicist who with Albert Einstein proposed statistical laws based on the indistinguishability of particles; led to the description of fundamental particles that later came to be known as bosons与阿尔伯特爱因斯坦合作的印度物理学家提出了基于粒子不可分辨性的统计规律;导致后来被称为玻色子的基本粒子的描述</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

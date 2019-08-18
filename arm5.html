@@ -1,0 +1,275 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['alarm', 'charm']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>alarm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>ə'lɑrm</td>
+      <td>['alert']</td>
+      <td></td>
+      <td>warn or arouse to a sense of danger or call to a state of preparedness警告或唤起危险感或呼唤准备状态</td>
+      <td>The empty house alarmed him空荡荡的房子震惊了他</td>
+      <td></td>
+      <td></td>
+      <td>[warn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alarm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>ə'lɑrm</td>
+      <td>['appal', 'appall', 'dismay', 'horrify']</td>
+      <td></td>
+      <td>fill with apprehension or alarm; cause to be unpleasantly surprised充满忧虑或警觉;导致令人不快的惊讶</td>
+      <td></td>
+      <td>[alarmist]</td>
+      <td></td>
+      <td>[fright, scare, frighten, affright]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alarm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>ə'lɑrm</td>
+      <td>['consternation', 'dismay']</td>
+      <td></td>
+      <td>fear resulting from the awareness of danger因危险意识而产生的恐惧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fear, fright, fearfulness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alarm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>ə'lɑrm</td>
+      <td>['alarm clock']</td>
+      <td></td>
+      <td>a clock that wakes a sleeper at some preset time一个在某个预设时间唤醒睡眠者的时钟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alarm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>ə'lɑrm</td>
+      <td>['alarm system', 'warning device']</td>
+      <td></td>
+      <td>a device that signals the occurrence of some undesirable event表示发生某些不良事件的设备</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alarm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>ə'lɑrm</td>
+      <td>['alarum', 'alert', 'warning signal']</td>
+      <td></td>
+      <td>an automatic signal (usually a sound) warning of danger自动信号（通常是声音）危险警告</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[signaling, sign, signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>tʃɑrm</td>
+      <td>['influence', 'tempt']</td>
+      <td></td>
+      <td>induce into action by using one's charm用一个人的魅力诱导行动</td>
+      <td>She charmed him into giving her all his money她迷住了他给她所有的钱</td>
+      <td></td>
+      <td></td>
+      <td>[persuade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>tʃɑrm</td>
+      <td>['becharm']</td>
+      <td></td>
+      <td>control by magic spells, as by practicing witchcraft通过魔法来控制，就像练习巫术一样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[command, control]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>tʃɑrm</td>
+      <td>['becharm', 'beguile', 'bewitch', 'captivate', 'capture', 'catch', 'enamor', 'enamour', 'enchant', 'entrance', 'fascinate', 'trance']</td>
+      <td></td>
+      <td>attract; cause to be enamored吸引;因为迷恋</td>
+      <td></td>
+      <td>[charmer]</td>
+      <td></td>
+      <td>[attract, appeal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>tʃɑrm</td>
+      <td></td>
+      <td></td>
+      <td>protect through supernatural powers or charms通过超自然力量或魅力保护</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>tʃɑrm</td>
+      <td>['appeal', 'appealingness']</td>
+      <td></td>
+      <td>attractiveness that interests or pleases or stimulates兴趣或喜悦或刺激的吸引力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attractiveness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>tʃɑrm</td>
+      <td>['magic spell', 'magical spell', 'spell']</td>
+      <td></td>
+      <td>a verbal formula believed to have magical force一个被认为具有魔力的口头公式</td>
+      <td>inscribed around its base is a charm in Balinese在其基地周围刻有巴厘岛的魅力</td>
+      <td></td>
+      <td></td>
+      <td>[speech, language, voice communication, oral communication, spoken language, spoken communication, speech communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>tʃɑrm</td>
+      <td>['good luck charm']</td>
+      <td></td>
+      <td>something believed to bring good luck相信带来好运的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>charm</th>
+      <td>arm</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>tʃɑrm</td>
+      <td></td>
+      <td></td>
+      <td>(physics) one of the six flavors of quark（物理学）六种夸克之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flavour, flavor]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

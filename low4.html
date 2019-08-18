@@ -1,0 +1,1130 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['blow', 'slow', 'flow', 'glow', 'plow']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['ball up', 'bobble', 'bodge', 'bollix', 'bollix up', 'bollocks', 'bollocks up', 'botch', 'botch up', 'bumble', 'bungle', 'flub', 'fluff', 'foul up', 'fuck up', 'fumble', 'louse up', 'mess up', 'mishandle', 'muck up', 'muff', 'screw up', 'spoil']</td>
+      <td></td>
+      <td>make a mess of, destroy or ruin搞乱，破坏或破坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go wrong, fail, miscarry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['be adrift', 'drift', 'float']</td>
+      <td></td>
+      <td>be in motion due to some air or water current由于某些空气或水流而运动</td>
+      <td>The leaves were blowing in the wind树叶在风中吹来</td>
+      <td></td>
+      <td>[drift, float]</td>
+      <td>[locomote, move, travel, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['squander', 'waste']</td>
+      <td></td>
+      <td>spend thoughtlessly; throw away不假思索地度过;丢弃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[use, expend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['fellate', 'go down on', 'suck']</td>
+      <td></td>
+      <td>provide sexual gratification through oral stimulation通过口腔刺激提供性满足</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stimulate, stir, excite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['blow out', 'burn out']</td>
+      <td></td>
+      <td>melt, break, or become otherwise unusable熔化，破裂或变得无法使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go bad, die, break down, fail, go, conk out, break, give way, give out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['bluster', 'boast', 'brag', 'gas', 'gasconade', 'shoot a line', 'swash', 'tout', 'vaunt']</td>
+      <td></td>
+      <td>show off炫耀</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hyperbolise, exaggerate, hyperbolize, magnify, overdraw, overstate, amplify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['shove along', 'shove off']</td>
+      <td></td>
+      <td>leave; informal or rude离开;非正式或粗鲁</td>
+      <td>let's blow this place让我们吹这个地方</td>
+      <td></td>
+      <td></td>
+      <td>[go, go away, depart]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td>['suck']</td>
+      <td></td>
+      <td>be inadequate or objectionable不足或令人反感</td>
+      <td>this blows!这吹！</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>allow to regain its breath让我重新呼吸</td>
+      <td>blow a horse吹马</td>
+      <td></td>
+      <td></td>
+      <td>[rest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>be blowing or storming吹或猛冲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>burst suddenly突然爆发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[burst, split, break open]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>cause air to go in, on, or through使空气进入，进入或通过</td>
+      <td></td>
+      <td>[blower]</td>
+      <td></td>
+      <td>[direct, send]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>cause to be revealed and jeopardized导致被揭露和危害</td>
+      <td>The double agent was blown by the other side双重剂被另一方吹了</td>
+      <td></td>
+      <td></td>
+      <td>[give away, disclose, uncover, unwrap, let out, break, reveal, expose, bring out, divulge, let on, discover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>cause to move by means of an air current导致通过气流移动</td>
+      <td></td>
+      <td>[blower]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>exhale hard呼气困难</td>
+      <td>blow on the soup to cool it down吹上汤来冷却它</td>
+      <td></td>
+      <td></td>
+      <td>[expire, breathe out, exhale]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>free of obstruction by blowing air through通过吹空气没有阻碍</td>
+      <td>blow one's nose吹一个人的鼻子</td>
+      <td></td>
+      <td></td>
+      <td>[release, discharge, eject, exhaust, expel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>lay eggs下蛋</td>
+      <td>certain insects are said to blow据说某些昆虫会吹</td>
+      <td></td>
+      <td></td>
+      <td>[lay, repose, put down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>make a sound as if blown发出声音好像被炸了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>play or sound a wind instrument播放或发声管乐器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>shape by blowing吹的形状</td>
+      <td></td>
+      <td>[blowing]</td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>sound by having air expelled through a tube空气通过管道排出声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>spend lavishly or wastefully on花大钱或浪费</td>
+      <td></td>
+      <td></td>
+      <td>[waste, squander]</td>
+      <td>[drop, spend, expend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>spout moist air from the blowhole从气孔喷出潮湿的空气</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spirt, spout, gush, spurt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bloʊ</td>
+      <td>['bump']</td>
+      <td></td>
+      <td>an impact (as from a collision)影响（来自碰撞）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[impact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bloʊ</td>
+      <td>['blast', 'gust']</td>
+      <td></td>
+      <td>a strong current of air强劲的空气流动</td>
+      <td></td>
+      <td>[blowy]</td>
+      <td></td>
+      <td>[wind, air current, current of air]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bloʊ</td>
+      <td>['black eye', 'reversal', 'reverse', 'setback']</td>
+      <td></td>
+      <td>an unfortunate happening that hinders or impedes; something that is thwarting or frustrating一种阻碍或阻碍的不幸事件;一些令人挫败或令人沮丧的事情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[occurrent, natural event, happening, occurrence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bloʊ</td>
+      <td>['shock']</td>
+      <td></td>
+      <td>an unpleasant or disappointing surprise令人不快或令人失望的惊喜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surprise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bloʊ</td>
+      <td>['c', 'coke', 'nose candy', 'snow']</td>
+      <td></td>
+      <td>street names for cocaine可卡因的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cocaine, cocain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bloʊ</td>
+      <td>['puff']</td>
+      <td></td>
+      <td>forceful exhalation through the nose or mouth通过鼻子或嘴巴强力呼气</td>
+      <td>he gave his nose a loud blow他大声地嗤之以鼻</td>
+      <td></td>
+      <td></td>
+      <td>[breathing out, exhalation, expiration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blow</th>
+      <td>low</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bloʊ</td>
+      <td></td>
+      <td></td>
+      <td>a powerful stroke with the fist or a weapon用拳头或武器强力击打</td>
+      <td>a blow on the head打击头部</td>
+      <td></td>
+      <td></td>
+      <td>[stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>sloʊ</td>
+      <td>['slow down', 'slow up']</td>
+      <td></td>
+      <td>cause to proceed more slowly导致进展缓慢</td>
+      <td>The illness slowed him down这种疾病减缓了他的速度</td>
+      <td></td>
+      <td></td>
+      <td>[slow down, retard, decelerate, slow up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>sloʊ</td>
+      <td>['slack', 'slacken', 'slow down', 'slow up']</td>
+      <td></td>
+      <td>become slow or slower变慢或变慢</td>
+      <td>Production slowed生产放缓</td>
+      <td>[slowing]</td>
+      <td></td>
+      <td>[weaken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>sloʊ</td>
+      <td>['decelerate', 'retard', 'slow down', 'slow up']</td>
+      <td></td>
+      <td>lose velocity; move more slowly失去速度;移动得更慢</td>
+      <td></td>
+      <td>[slowing]</td>
+      <td></td>
+      <td>[diminish, lessen, decrease, fall]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>adv</td>
+      <td>sloʊ</td>
+      <td>['behind']</td>
+      <td></td>
+      <td>of timepieces钟表</td>
+      <td>the clock is almost an hour slow时钟差不多一个小时</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>adv</td>
+      <td>sloʊ</td>
+      <td>['easy', 'slowly', 'tardily']</td>
+      <td></td>
+      <td>without speed (`slow' is sometimes used informally for `slowly')没有速度（'慢'有时非常用于'慢''）</td>
+      <td>he spoke slowly他说得很慢please go slow so I can see the sights请慢点，这样我就能看到景点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>sloʊ</td>
+      <td>['boring', 'deadening', 'dull', 'ho-hum', 'irksome', 'tedious', 'tiresome', 'wearisome'], similarTo:['uninteresting']</td>
+      <td></td>
+      <td>so lacking in interest as to cause mental weariness所以缺乏引起精神疲倦的兴趣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>sloʊ</td>
+      <td>['dense', 'dim', 'dull', 'dumb', 'obtuse'], similarTo:['stupid']</td>
+      <td></td>
+      <td>slow to learn or understand; lacking intellectual acuity学习或理解迟钝;缺乏智力敏锐度</td>
+      <td>worked with the slow students和慢学生一起工作</td>
+      <td>[slowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>sloʊ</td>
+      <td>['dull', 'sluggish'], similarTo:['inactive']</td>
+      <td></td>
+      <td>(of business) not active or brisk（业务）不活跃或活跃</td>
+      <td>business is dull (or slow)生意沉闷（或缓慢）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>sloʊ</td>
+      <td>, similarTo:['larghetto', 'lento', 'larghissimo', 'lentissimo', 'moderato', 'adagio', 'andante', 'largo']</td>
+      <td>[fast]</td>
+      <td>at a slow tempo节奏缓慢</td>
+      <td>the band played a slow waltz乐队演奏了一首慢华尔兹</td>
+      <td>[slowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>sloʊ</td>
+      <td>, similarTo:['sulky', 'laggard', 'drawn-out', 'dilatory', 'bumper-to-bumper', 'lazy', 'poky', 'slow-moving', 'sluggish', 'long-play', 'long-playing', 'pokey'], alos:['gradual', 'unhurried']</td>
+      <td>[fast]</td>
+      <td>not moving quickly; taking a comparatively long time不快速行动;花了相当长的时间</td>
+      <td>a slow walker一个缓慢的步行者the slow lane of traffic交通的慢车道her steps were slow她的脚步很慢he was slow in reacting to the news他对新闻的反应很慢slow but steady growth缓慢但稳定的增长</td>
+      <td>[slowness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slow</th>
+      <td>low</td>
+      <td>4.86</td>
+      <td>Non</td>
+      <td>sloʊ</td>
+      <td></td>
+      <td>[fast]</td>
+      <td>(used of timepieces) indicating a time earlier than the correct time（用于计时）表示比正确时间早的时间</td>
+      <td>the clock is slow时钟很慢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>floʊ</td>
+      <td>['fall', 'hang']</td>
+      <td></td>
+      <td>fall or flow in a certain way以某种方式跌倒或流动</td>
+      <td>Her long black hair flowed down her back她长长的黑发飘落在她的背上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>floʊ</td>
+      <td>['flux']</td>
+      <td></td>
+      <td>move or progress freely as if in a stream像在流中一样自由地移动或进展</td>
+      <td>The crowd flowed out of the stadium人群涌出体育场</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>floʊ</td>
+      <td>['menstruate']</td>
+      <td></td>
+      <td>undergo menstruation经历月经</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shed blood, hemorrhage, bleed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>floʊ</td>
+      <td>['course', 'feed', 'run'], alos:['flow from']</td>
+      <td></td>
+      <td>move along, of liquids液体移动</td>
+      <td>Water flowed into the cave水流入洞穴</td>
+      <td>[flowing]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>floʊ</td>
+      <td></td>
+      <td></td>
+      <td>be abundantly present大量存在</td>
+      <td>The champagne flowed at the wedding香槟在婚礼上流淌</td>
+      <td></td>
+      <td></td>
+      <td>[be, exist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>floʊ</td>
+      <td></td>
+      <td></td>
+      <td>cause to flow导致流动</td>
+      <td>The artist flowed the washes on the paper艺术家在纸上流了洗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>floʊ</td>
+      <td></td>
+      <td></td>
+      <td>cover or swamp with water用水覆盖或沼泽</td>
+      <td></td>
+      <td>[flowage]</td>
+      <td></td>
+      <td>[flood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td>['stream']</td>
+      <td></td>
+      <td>something that resembles a flowing stream in moving continuously在连续移动中类似于流动的流的东西</td>
+      <td>the museum had planned carefully for the flow of visitors博物馆已经仔细规划了游客的流动</td>
+      <td></td>
+      <td></td>
+      <td>[motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td>['catamenia', 'menses', 'menstruation', 'menstruum', 'period']</td>
+      <td></td>
+      <td>the monthly discharge of blood from the uterus of nonpregnant women from puberty to menopause从非白人到更年期的非妊娠妇女的子宫每月排出的血液</td>
+      <td>the semen begins to appear in males and to be emitted at the same time of life that the catamenia begin to flow in females女性开始出现在男性身上，并在生命的同一时间被发出，以至于女性开始在女性身上流动</td>
+      <td></td>
+      <td></td>
+      <td>[emission, expelling, discharge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td>['flow rate', 'rate of flow']</td>
+      <td></td>
+      <td>the amount of fluid that flows in a given time在给定时间内流动的流体量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td>['current', 'stream']</td>
+      <td></td>
+      <td>dominant course (suggestive of running water) of successive events or ideas连续事件或想法的主导过程（提示自来水）</td>
+      <td>the flow of thought思想的流动</td>
+      <td></td>
+      <td></td>
+      <td>[line, course]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td>['flowing']</td>
+      <td></td>
+      <td>the motion characteristic of fluids (liquids or gases)流体（液体或气体）的运动特性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[travel, change of location]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td>['stream']</td>
+      <td></td>
+      <td>the act of flowing or streaming; continuous progression流动或流动的行为;持续进步</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, movement, motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flow</th>
+      <td>low</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td></td>
+      <td></td>
+      <td>any uninterrupted stream or discharge任何不间断的流或排放</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural process, natural action, activity, action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>gloʊ</td>
+      <td>['burn']</td>
+      <td></td>
+      <td>shine intensely, as if with heat强烈地闪耀，仿佛有热量</td>
+      <td>The coals were glowing in the dark煤炭在黑暗中发光</td>
+      <td></td>
+      <td></td>
+      <td>[shine, beam]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>gloʊ</td>
+      <td>['beam', 'radiate', 'shine']</td>
+      <td></td>
+      <td>experience a feeling of well-being or happiness, as from good health or an intense emotion从健康或强烈的情感中体验幸福感或幸福感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[experience, feel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>gloʊ</td>
+      <td>['beam', 'radiate', 'shine']</td>
+      <td></td>
+      <td>have a complexion with a strong bright color, such as red or pink有明亮肤色的肤色，如红色或粉红色</td>
+      <td>Her face glowed when she came out of the sauna她从桑拿房出来时脸上闪闪发光</td>
+      <td></td>
+      <td></td>
+      <td>[look, appear, seem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>gloʊ</td>
+      <td></td>
+      <td></td>
+      <td>be exuberant or high-spirited生气勃勃或精神抖..</td>
+      <td>Make the people's hearts glow让人们的心灵焕发</td>
+      <td></td>
+      <td></td>
+      <td>[experience, feel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>gloʊ</td>
+      <td></td>
+      <td></td>
+      <td>emit a steady even light without flames在没有火焰的情况下发出均匀的光线</td>
+      <td>The fireflies were glowing and flying about in the garden萤火虫在花园里熠熠生辉</td>
+      <td></td>
+      <td></td>
+      <td>[radiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>gloʊ</td>
+      <td>['luminescence']</td>
+      <td></td>
+      <td>light from nonthermal sources来自非热源的光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[brightness, brightness level, light, luminance, luminosity, luminousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>gloʊ</td>
+      <td>['freshness']</td>
+      <td></td>
+      <td>an alert and refreshed state一个警报和刷新状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[good health, healthiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>gloʊ</td>
+      <td>['incandescence']</td>
+      <td></td>
+      <td>the phenomenon of light emission by a body as its temperature is raised当温度升高时身体发光的现象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visible radiation, light, visible light]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>gloʊ</td>
+      <td>['gleam', 'gleaming', 'lambency']</td>
+      <td></td>
+      <td>an appearance of reflected light反射光的外观</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiancy, shine, refulgency, refulgence, effulgence, radiance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>gloʊ</td>
+      <td>['glowing', 'radiance']</td>
+      <td></td>
+      <td>the amount of electromagnetic radiation leaving or arriving at a point on a surface离开或到达表面上某点的电磁辐射量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visible light, visible radiation, light]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>gloʊ</td>
+      <td></td>
+      <td></td>
+      <td>a feeling of considerable warmth一种相当温暖的感觉</td>
+      <td>the glow of new love新爱的光芒a glow of regret一丝悔恨</td>
+      <td></td>
+      <td></td>
+      <td>[feeling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glow</th>
+      <td>low</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>gloʊ</td>
+      <td></td>
+      <td></td>
+      <td>a steady even light without flames没有火焰的稳定均匀的光线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visible light, visible radiation, light]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plow</th>
+      <td>low</td>
+      <td>3.11</td>
+      <td>ver</td>
+      <td>plaʊ</td>
+      <td>['plough', 'turn']</td>
+      <td></td>
+      <td>to break and turn over earth especially with a plow特别是用犁打破和翻转地球</td>
+      <td>Farmer Jones plowed his east field last week农民琼斯上周在他的东区耕种</td>
+      <td>[plower, plowing]</td>
+      <td></td>
+      <td>[till]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plow</th>
+      <td>low</td>
+      <td>3.11</td>
+      <td>ver</td>
+      <td>plaʊ</td>
+      <td>['address', 'cover', 'deal', 'handle', 'treat']</td>
+      <td></td>
+      <td>act on verbally or in some form of artistic expression以口头或某种形式的艺术表达行事</td>
+      <td></td>
+      <td></td>
+      <td>[handle, comprehend, cover, treat, embrace, encompass, do by]</td>
+      <td>[broach, initiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plow</th>
+      <td>low</td>
+      <td>3.11</td>
+      <td>ver</td>
+      <td>plaʊ</td>
+      <td>['plough']</td>
+      <td></td>
+      <td>move in a way resembling that of a plow cutting into or going through the soil以类似于犁切入或穿过土壤的方式移动</td>
+      <td>The ship plowed through the water船在水中翻滚</td>
+      <td></td>
+      <td></td>
+      <td>[locomote, move, go, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plow</th>
+      <td>low</td>
+      <td>3.11</td>
+      <td>nou</td>
+      <td>plaʊ</td>
+      <td>['plough']</td>
+      <td></td>
+      <td>a farm tool having one or more heavy blades to break the soil and cut a furrow prior to sowing一种农具，其具有一个或多个重叶片，以在播种前破碎土壤并切割沟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

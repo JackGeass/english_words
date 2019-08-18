@@ -1,0 +1,260 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['milk', 'silk', 'bilk']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>milk</th>
+      <td>ilk</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>mɪlk</td>
+      <td></td>
+      <td></td>
+      <td>add milk to加牛奶</td>
+      <td>milk the tea喝茶</td>
+      <td></td>
+      <td></td>
+      <td>[add]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>milk</th>
+      <td>ilk</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>mɪlk</td>
+      <td></td>
+      <td></td>
+      <td>exploit as much as possible尽可能地利用</td>
+      <td>I am milking this for all it's worth我正在为这一切而努力</td>
+      <td></td>
+      <td></td>
+      <td>[tap, exploit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>milk</th>
+      <td>ilk</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>mɪlk</td>
+      <td></td>
+      <td></td>
+      <td>take milk from female mammals从雌性哺乳动物身上取奶</td>
+      <td>Cows need to be milked every morning奶牛每天早上需要挤奶</td>
+      <td></td>
+      <td></td>
+      <td>[take out, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>milk</th>
+      <td>ilk</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>mɪlk</td>
+      <td>['milk river']</td>
+      <td></td>
+      <td>a river that rises in the Rockies in northwestern Montana and flows eastward to become a tributary of the Missouri River一条在蒙大拿州西北部的落基山脉上升的河流，向东流动，成为密苏里河的一条支流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>milk</th>
+      <td>ilk</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>mɪlk</td>
+      <td></td>
+      <td></td>
+      <td>any of several nutritive milklike liquids任何一种营养乳状液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foodstuff, food product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>milk</th>
+      <td>ilk</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>mɪlk</td>
+      <td></td>
+      <td></td>
+      <td>a white nutritious liquid secreted by mammals and used as food by human beings哺乳动物分泌的白色营养液，被人类用作食物</td>
+      <td></td>
+      <td>[milky]</td>
+      <td></td>
+      <td>[dairy product, drink, drinkable, potable, beverage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>milk</th>
+      <td>ilk</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>mɪlk</td>
+      <td></td>
+      <td></td>
+      <td>produced by mammary glands of female mammals for feeding their young由雌性哺乳动物的乳腺产生，用于喂养幼仔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alimentation, aliment, victuals, liquid body substance, nourishment, nutriment, nutrition, humour, humor, body fluid, sustenance, bodily fluid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>silk</th>
+      <td>ilk</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>sɪlk</td>
+      <td></td>
+      <td></td>
+      <td>a fabric made from the fine threads produced by certain insect larvae由某些昆虫幼虫产生的细线制成的织物</td>
+      <td></td>
+      <td>[silky]</td>
+      <td></td>
+      <td>[textile, cloth, fabric, material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>silk</th>
+      <td>ilk</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>sɪlk</td>
+      <td></td>
+      <td></td>
+      <td>animal fibers produced by silkworms and other larvae that spin cocoons and by most spiders由蚕和其他幼虫产生的动物纤维，它们可以旋转茧和大多数蜘蛛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal fiber, animal fibre]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bilk</th>
+      <td>ilk</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>bɪlk</td>
+      <td>['elude', 'evade']</td>
+      <td></td>
+      <td>escape, either physically or mentally无论是身体还是精神上的逃避</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[escape, break loose, get away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bilk</th>
+      <td>ilk</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>bɪlk</td>
+      <td>['baffle', 'cross', 'foil', 'frustrate', 'queer', 'scotch', 'spoil', 'thwart']</td>
+      <td></td>
+      <td>hinder or prevent (the efforts, plans, or desires) of妨碍或阻止（努力，计划或愿望）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foreclose, forbid, forestall, preclude, prevent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bilk</th>
+      <td>ilk</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>bɪlk</td>
+      <td></td>
+      <td></td>
+      <td>cheat somebody out of what is due, especially money欺骗某人的东西，特别是金钱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip off, chisel, cheat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bilk</th>
+      <td>ilk</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>bɪlk</td>
+      <td></td>
+      <td></td>
+      <td>evade payment to逃避付款</td>
+      <td>He bilked his creditors他欺骗了他的债权人</td>
+      <td></td>
+      <td></td>
+      <td>[deprive]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,1460 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['crap', 'trap', 'slap', 'wrap', 'snap', 'chap', 'clap', 'swap', 'flap', 'taps', 'lapp', 'whap', 'kaph', 'rapt', 'apse', 'frap', 'apis', 'knap']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>crap</th>
+      <td>ap</td>
+      <td>4.87</td>
+      <td>ver</td>
+      <td>kræp</td>
+      <td>['ca-ca', 'defecate', 'make', 'shit', 'stool', 'take a crap', 'take a shit']</td>
+      <td></td>
+      <td>have a bowel movement有排便</td>
+      <td></td>
+      <td>[crapper]</td>
+      <td>[piss, piddle, wee, pee-pee, pee, pass water, urinate, micturate, make water, make, take a leak, wee-wee, spend a penny, relieve oneself, puddle]</td>
+      <td>[egest, pass, excrete, eliminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crap</th>
+      <td>ap</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>kræp</td>
+      <td>['dirt', 'poop', 'shit', 'shite', 'turd']</td>
+      <td></td>
+      <td>obscene terms for feces粪便的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[faeces, bm, feces, fecal matter, dejection, ordure, stool, faecal matter]</td>
+      <td>[vulgarism, dirty word, filth, obscenity, smut]</td>
+    </tr>
+    <tr>
+      <th>crap</th>
+      <td>ap</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>kræp</td>
+      <td>['bull', 'bullshit', 'dogshit', 'horseshit', 'irish bull', 'shit']</td>
+      <td></td>
+      <td>obscene words for unacceptable behavior淫秽的言辞是不可接受的行为</td>
+      <td></td>
+      <td>[crappy]</td>
+      <td></td>
+      <td>[hogwash, buncombe, rot, bunkum, bunk, guff]</td>
+      <td>[vulgarism, smut, obscenity, filth, dirty word]</td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>træp</td>
+      <td>['immobilise', 'immobilize', 'pin']</td>
+      <td></td>
+      <td>to hold fast or prevent from moving保持快速或防止移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>træp</td>
+      <td>['ensnare', 'entrap', 'snare', 'trammel']</td>
+      <td></td>
+      <td>catch in or as if in a trap陷入困境或仿佛置入陷阱</td>
+      <td>The men trap foxes男人陷阱狐狸</td>
+      <td>[trapper]</td>
+      <td></td>
+      <td>[capture, catch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>træp</td>
+      <td>['pin down']</td>
+      <td></td>
+      <td>place in a confining or embarrassing position处于限制或尴尬的位置</td>
+      <td>He was trapped in a difficult situation他陷入困境</td>
+      <td></td>
+      <td></td>
+      <td>[confine, detain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>træp</td>
+      <td></td>
+      <td></td>
+      <td>hold or catch as if in a trap像陷阱一样抓住或抓住</td>
+      <td>The gaps between the teeth trap food particles牙齿之间的间隙捕获食物颗粒</td>
+      <td></td>
+      <td></td>
+      <td>[take hold, hold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td>['snare']</td>
+      <td></td>
+      <td>something (often something deceptively attractive) that catches you unawares吸引你不知不觉的东西（通常是看似有吸引力的东西）</td>
+      <td>the exam was full of trap questions考试里充满了陷阱问题</td>
+      <td></td>
+      <td></td>
+      <td>[design, plan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td>['bunker', 'sand trap']</td>
+      <td></td>
+      <td>a hazard on a golf course对高尔夫球场的危害</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hazard]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td>['cakehole', 'gob', 'hole', 'maw', 'yap']</td>
+      <td></td>
+      <td>informal terms for the mouth口头的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[oral cavity, mouth, rima oris, oral fissure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td>['ambuscade', 'ambush', 'lying in wait']</td>
+      <td></td>
+      <td>the act of concealing yourself and lying in wait to attack by surprise掩饰自己，等待突然袭击的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surprise attack, coup de main]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td></td>
+      <td></td>
+      <td>a device in which something (usually an animal) can be caught and penned一种可以抓住并写下某物（通常是动物）的装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td></td>
+      <td></td>
+      <td>a device to hurl clay pigeons into the air for trapshooters一种将粘土鸽投掷到空中的装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td></td>
+      <td></td>
+      <td>a light two-wheeled carriage轻型两轮马车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[carriage, rig, equipage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trap</th>
+      <td>ap</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>træp</td>
+      <td></td>
+      <td></td>
+      <td>drain consisting of a U-shaped section of drainpipe that holds liquid and so prevents a return flow of sewer gas排水管由排水管的U形部分组成，可容纳液体，从而防止下水道气体回流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drainpipe, waste pipe, drain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>slæp</td>
+      <td></td>
+      <td></td>
+      <td>hit with something flat, like a paddle or the open hand用平坦的东西击打，如桨或张开的手</td>
+      <td>The impatient teacher slapped the student那个不耐烦的老师给学生打了个电话a gunshot slapped him on the forehead枪声打了他的额头</td>
+      <td>[slapper]</td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>slæp</td>
+      <td>['smack', 'smacking']</td>
+      <td></td>
+      <td>the act of smacking something; a blow delivered with an open hand砸东西的行为;用张开的手吹出一击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>slæp</td>
+      <td>['smack']</td>
+      <td></td>
+      <td>a blow from a flat object (as an open hand)来自扁平物体的打击（作为张开的手）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow, bump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>adv</td>
+      <td>slæp</td>
+      <td>['bang', 'bolt', 'slapdash', 'smack']</td>
+      <td></td>
+      <td>directly直</td>
+      <td>ran slap into her一巴掌打进她</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wrap</th>
+      <td>ap</td>
+      <td>4.18</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td>['wrap up']</td>
+      <td>[unwrap]</td>
+      <td>arrange or fold as a cover or protection安排或折叠作为封面或保护</td>
+      <td>wrap the baby before taking her out在把她带出去之前包好宝宝</td>
+      <td>[wrapper, wrapping]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrap</th>
+      <td>ap</td>
+      <td>4.18</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td>['roll', 'twine', 'wind'], alos:['wrap up']</td>
+      <td></td>
+      <td>arrange or or coil around安排或绕圈</td>
+      <td>She wrapped her arms around the child她用手搂着孩子</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrap</th>
+      <td>ap</td>
+      <td>4.18</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td>['enclose', 'enfold', 'envelop', 'enwrap']</td>
+      <td></td>
+      <td>enclose or enfold completely with or as if with a covering用或似乎用覆盖物完全包围或包裹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrap</th>
+      <td>ap</td>
+      <td>4.18</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td></td>
+      <td></td>
+      <td>crash into so as to coil around撞到了四周</td>
+      <td>The teenager wrapped his car around the fire hydrant这名少年将他的汽车包裹在消防栓周围</td>
+      <td></td>
+      <td></td>
+      <td>[crash]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrap</th>
+      <td>ap</td>
+      <td>4.18</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td>['wrapper', 'wrapping']</td>
+      <td></td>
+      <td>the covering (usually paper or cellophane) in which something is wrapped包裹东西的覆盖物（通常是纸或玻璃纸）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrap</th>
+      <td>ap</td>
+      <td>4.18</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td>['wrapper']</td>
+      <td></td>
+      <td>cloak that is folded or wrapped around a person折叠或缠绕在人身上的斗篷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cloak]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrap</th>
+      <td>ap</td>
+      <td>4.18</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td></td>
+      <td></td>
+      <td>a sandwich in which the filling is rolled up in a soft tortilla一种三明治，馅料在柔软的玉米饼中卷起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sandwich]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['click']</td>
+      <td></td>
+      <td>move or strike with a noise有噪音的移动或罢工</td>
+      <td>his arm was snapped forward他的手臂向前猛击</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['bust', 'rupture', 'tear']</td>
+      <td></td>
+      <td>separate or cause to separate abruptly分开或导致突然分开</td>
+      <td>The rope snapped绳子折断了</td>
+      <td></td>
+      <td></td>
+      <td>[separate, part, disunite, divide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['click', 'flick']</td>
+      <td></td>
+      <td>cause to make a snapping sound导致发出噼啪声</td>
+      <td>snap your fingers打响指</td>
+      <td>[snapper]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['break down', 'lose it']</td>
+      <td></td>
+      <td>lose control of one's emotions失去对一个人情绪的控制</td>
+      <td>When her baby died, she snapped当她的孩子去世时，她啪的一声</td>
+      <td></td>
+      <td></td>
+      <td>[act, behave, do]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['photograph', 'shoot']</td>
+      <td></td>
+      <td>record on photographic film摄影胶片上的记录</td>
+      <td>She snapped a picture of the President她拍了一张总统的照片</td>
+      <td></td>
+      <td>[shoot, film, take]</td>
+      <td>[record, put down, enter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['crack']</td>
+      <td></td>
+      <td>break suddenly and abruptly, as under tension在紧张的情况下突然突然突然</td>
+      <td>The pipe snapped管道折断了</td>
+      <td></td>
+      <td></td>
+      <td>[separate, split up, fall apart, break, come apart]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['snatch', 'snatch up'], alos:['snap up']</td>
+      <td></td>
+      <td>to grasp hastily or eagerly抓紧或急切地抓住</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prehend, seize, clutch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['crack']</td>
+      <td></td>
+      <td>make a sharp sound发出尖锐的声音</td>
+      <td>his fingers snapped他的手指拍了拍</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td>['snarl']</td>
+      <td></td>
+      <td>utter in an angry, sharp, or abrupt tone愤怒，尖锐或突然的语气</td>
+      <td>The sales clerk snapped a reply at the angry customer售货员对愤怒的顾客发了一个回复</td>
+      <td></td>
+      <td></td>
+      <td>[speak, mouth, verbalize, talk, verbalise, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>bring the jaws together把下巴拉到一起</td>
+      <td>he snapped indignantly他愤怒地说</td>
+      <td></td>
+      <td></td>
+      <td>[bite, seize with teeth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>close with a snapping motion紧贴着一个贴紧的动作</td>
+      <td>The lock snapped shut锁扣关闭</td>
+      <td></td>
+      <td></td>
+      <td>[close, shut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>move with a snapping sound用一种啪啪的声音移动</td>
+      <td>bullets snapped past us子弹从我们身边掠过</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>put in play with a snap快速发挥</td>
+      <td>snap a football踢足球</td>
+      <td>[snapper]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['shot', 'snapshot']</td>
+      <td></td>
+      <td>an informal photograph; usually made with a small hand-held camera非正式照片;通常用小型手持相机制作</td>
+      <td>my snapshots haven't been developed yet我的快照尚未开发</td>
+      <td></td>
+      <td></td>
+      <td>[pic, photo, photograph, picture, exposure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['snap bean']</td>
+      <td></td>
+      <td>tender green beans without strings that easily snap into sections嫩绿豆没有字符串，容易卡入部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[green bean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['catch', 'grab', 'snatch']</td>
+      <td></td>
+      <td>the act of catching an object with the hands用手抓住物体的行为</td>
+      <td>the infielder's snap and throw was a single motion内野手的投掷和投掷只是一个动作</td>
+      <td></td>
+      <td></td>
+      <td>[touch, touching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['elasticity']</td>
+      <td></td>
+      <td>the tendency of a body to return to its original shape after it has been stretched or compressed在拉伸或压缩后，身体恢复其原始形状的趋势</td>
+      <td>the waistband had lost its snap腰带已经失去了它的弹力</td>
+      <td></td>
+      <td></td>
+      <td>[physical property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['press stud', 'snap fastener']</td>
+      <td></td>
+      <td>a fastener used on clothing; fastens with a snapping sound用于衣服的紧固件;用一种紧贴的声音固定</td>
+      <td>children can manage snaps better than buttons孩子们可以比按钮更好地管理快照</td>
+      <td></td>
+      <td></td>
+      <td>[holdfast, fastener, fastening, fixing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['ginger nut', 'ginger snap', 'gingersnap']</td>
+      <td></td>
+      <td>a crisp round cookie flavored with ginger用姜调味的脆圆饼干</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[biscuit, cooky, cookie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['breeze', "child's play", 'cinch', 'duck soup', 'picnic', 'piece of cake', 'pushover', 'walkover']</td>
+      <td></td>
+      <td>any undertaking that is easy to do任何容易做的事业</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[project, task, labor, undertaking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['crack', 'cracking']</td>
+      <td></td>
+      <td>a sudden sharp noise突如其来的尖锐噪音</td>
+      <td>he can hear the snap of a twig他能听到树枝的声音</td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td>['centering']</td>
+      <td></td>
+      <td>(American football) putting the ball in play by passing it (between the legs) to a back（美式足球）将球传到后面（在两腿之间）到后面</td>
+      <td>the quarterback fumbled the snap四分卫失误了</td>
+      <td></td>
+      <td></td>
+      <td>[pass, toss, flip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>a spell of cold weather一阵寒冷的天气</td>
+      <td>a cold snap in the middle of May五月中旬的寒流</td>
+      <td>[snappy]</td>
+      <td></td>
+      <td>[spell, piece, while, patch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>a sudden breaking一阵突然的破灭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[break]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>the act of snapping the fingers; movement of a finger from the tip to the base of the thumb on the same hand攫取手指的行为;同一只手上的手指从尖端移动到拇指根部</td>
+      <td>he gave his fingers a snap他伸出手指</td>
+      <td>[snappy]</td>
+      <td></td>
+      <td>[motility, motion, movement, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>snæp</td>
+      <td></td>
+      <td></td>
+      <td>the noise produced by the rapid movement of a finger from the tip to the base of the thumb on the same hand手指从同一只手上的尖端快速移动到拇指根部所产生的噪音</td>
+      <td>servants appeared at the snap of his fingers仆人突然出现在他的手指上</td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chap</th>
+      <td>ap</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>crack due to dehydration因脱水而裂缝</td>
+      <td>My lips chap in this dry weather在这干燥的天气里，我的嘴唇干裂</td>
+      <td></td>
+      <td></td>
+      <td>[crack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chap</th>
+      <td>ap</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td>['crack', 'cranny', 'crevice', 'fissure']</td>
+      <td></td>
+      <td>a long narrow depression in a surface表面长而狭窄的凹陷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[depression, imprint, impression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chap</th>
+      <td>ap</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td>['blighter', 'bloke', 'cuss', 'fella', 'feller', 'fellow', 'gent', 'lad']</td>
+      <td></td>
+      <td>a boy or man一个男人或一个男人</td>
+      <td>that chap is your host那个家伙是你的主人</td>
+      <td></td>
+      <td></td>
+      <td>[male, male person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chap</th>
+      <td>ap</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>a crack in a lip caused usually by cold通常由寒冷引起的唇裂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crevice, cleft, scissure, crack, fissure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chap</th>
+      <td>ap</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>(usually in the plural) leather leggings without a seat; joined by a belt; often have flared outer flaps; worn over trousers by cowboys to protect their legs（通常为复数形式）没有座位的皮革紧身裤;用皮带连接;通常有喇叭形外襟;穿牛仔裤以保护他们的腿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leging, legging, leg covering]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>klæp</td>
+      <td>['acclaim', 'applaud', 'spat']</td>
+      <td></td>
+      <td>clap one's hands or shout after performances to indicate approval在表演结束后拍手或表示赞同</td>
+      <td></td>
+      <td>[clapper, clapping]</td>
+      <td></td>
+      <td>[motion, gesture, gesticulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>klæp</td>
+      <td>['spat']</td>
+      <td></td>
+      <td>clap one's hands together拍手一起</td>
+      <td>The children were clapping to the music孩子们正在为音乐鼓掌</td>
+      <td>[clapper, clapping]</td>
+      <td></td>
+      <td>[gesture, gesticulate, motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>klæp</td>
+      <td></td>
+      <td></td>
+      <td>cause to strike the air in flight导致飞行中的空气</td>
+      <td>The big bird clapped its wings那只大鸟拍了拍翅膀</td>
+      <td></td>
+      <td></td>
+      <td>[beat, flap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>klæp</td>
+      <td></td>
+      <td></td>
+      <td>put quickly or forcibly快速或强行</td>
+      <td>The judge clapped him in jail法官在监狱里拍了拍他</td>
+      <td></td>
+      <td></td>
+      <td>[set, lay, place, pose, position, put]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>klæp</td>
+      <td></td>
+      <td></td>
+      <td>strike the air in flight在飞行中击中空气</td>
+      <td>the wings of the birds clapped loudly鸟的翅膀大声拍手</td>
+      <td></td>
+      <td></td>
+      <td>[flap, beat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>klæp</td>
+      <td></td>
+      <td></td>
+      <td>strike together so as to produce a sharp percussive noise一起撞击以产生尖锐的撞击声</td>
+      <td>clap two boards together拍两块板在一起</td>
+      <td>[clapper]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>klæp</td>
+      <td></td>
+      <td></td>
+      <td>strike with the flat of the hand; usually in a friendly way, as in encouragement or greeting用手的扁平打击;通常以友好的方式，如鼓励或问候</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>klæp</td>
+      <td>['gonorrhea', 'gonorrhoea']</td>
+      <td></td>
+      <td>a common venereal disease caused by the bacterium Neisseria gonorrhoeae; symptoms are painful urination and pain around the urethra由淋病奈瑟氏球菌引起的常见性病;症状是尿道疼痛和尿道周围疼痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cupid's disease, cupid's itch, dose, std, vd, venereal disease, venereal infection, venus's curse, sexually transmitted disease, social disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>klæp</td>
+      <td>['clack']</td>
+      <td></td>
+      <td>a sharp abrupt noise as if two objects hit together; may be repeated一个尖锐的突然噪音，仿佛两个物体碰在一起;可能会重复</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clap</th>
+      <td>ap</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>klæp</td>
+      <td>['bam', 'bang', 'blast', 'eruption']</td>
+      <td></td>
+      <td>a sudden very loud noise一阵突如其来的巨响</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swap</th>
+      <td>ap</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>swɑp</td>
+      <td>['switch', 'swop', 'trade']</td>
+      <td></td>
+      <td>exchange or give (something) in exchange for交换或交换（某物）以换取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interchange, change, exchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swap</th>
+      <td>ap</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>swɑp</td>
+      <td></td>
+      <td></td>
+      <td>move (a piece of a program) into memory, in computer science在计算机科学中将（程序的一部分）移动到记忆中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[travel, go, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swap</th>
+      <td>ap</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>swɑp</td>
+      <td>['barter', 'swop', 'trade']</td>
+      <td></td>
+      <td>an equal exchange平等的交换</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exchange, interchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>ver</td>
+      <td>flæp</td>
+      <td>['beat']</td>
+      <td></td>
+      <td>move with a flapping motion以拍打动作移动</td>
+      <td>The bird's wings were flapping鸟儿的翅膀拍打着</td>
+      <td>[flapping]</td>
+      <td>[beat]</td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>ver</td>
+      <td>flæp</td>
+      <td>['dither', 'pother']</td>
+      <td></td>
+      <td>make a fuss; be agitated大惊小怪;激动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fuss, niggle, fret]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>ver</td>
+      <td>flæp</td>
+      <td>['roll', 'undulate', 'wave']</td>
+      <td></td>
+      <td>move in a wavy pattern or with a rising and falling motion以波浪形图案或上升和下降动作移动</td>
+      <td></td>
+      <td>[flapping]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>ver</td>
+      <td>flæp</td>
+      <td>['beat']</td>
+      <td></td>
+      <td>move with a thrashing motion以捶打动作移动</td>
+      <td>The bird flapped its wings那只鸟拍了拍翅膀</td>
+      <td>[flapping]</td>
+      <td>[beat]</td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>ver</td>
+      <td>flæp</td>
+      <td></td>
+      <td></td>
+      <td>move noisily吵闹</td>
+      <td>flags flapped in the strong wind旗帜在强风中拍打着</td>
+      <td>[flapping]</td>
+      <td></td>
+      <td>[beat, pound, thump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>ver</td>
+      <td>flæp</td>
+      <td></td>
+      <td></td>
+      <td>pronounce with a flap, of alveolar sounds发音有皮瓣，有肺泡音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enounce, say, enunciate, sound out, articulate, pronounce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>nou</td>
+      <td>flæp</td>
+      <td>['flapping', 'flutter', 'fluttering']</td>
+      <td></td>
+      <td>the motion made by flapping up and down通过上下拍打而产生的动作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wave, undulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>nou</td>
+      <td>flæp</td>
+      <td>['flaps']</td>
+      <td></td>
+      <td>a movable airfoil that is part of an aircraft wing; used to increase lift or drag可移动的翼型，是飞机机翼的一部分;用于增加升力或阻力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[airfoil, control surface, surface, aerofoil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>nou</td>
+      <td>flæp</td>
+      <td>['dither', 'fuss', 'pother', 'tizzy']</td>
+      <td></td>
+      <td>an excited state of agitation激动的兴奋状态</td>
+      <td>there was a terrible flap about the theft有关盗窃的可怕襟翼</td>
+      <td></td>
+      <td></td>
+      <td>[agitation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>nou</td>
+      <td>flæp</td>
+      <td></td>
+      <td></td>
+      <td>a movable piece of tissue partly connected to the body一块可移动的组织，部分连接到身体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flap</th>
+      <td>ap</td>
+      <td>3.37</td>
+      <td>nou</td>
+      <td>flæp</td>
+      <td></td>
+      <td></td>
+      <td>any broad thin and limber covering attached at one edge; hangs loose or projects freely在一个边缘附着的任何宽薄和柔软的覆盖物;松散或自由投射</td>
+      <td>he wrote on the flap of the envelope他在信封的封口上写道</td>
+      <td></td>
+      <td></td>
+      <td>[covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>taps</th>
+      <td>ap</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>tæps</td>
+      <td>['lights-out']</td>
+      <td></td>
+      <td>(military) signal to turn the lights out（军方）发出熄灯信号</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bugle call]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lapp</th>
+      <td>ap</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td>['lapplander', 'saame', 'saami', 'same', 'sami']</td>
+      <td></td>
+      <td>a member of an indigenous nomadic people living in northern Scandinavia and herding reindeer生活在斯堪的纳维亚北部和放牧驯鹿的土着游牧民族的成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[european]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lapp</th>
+      <td>ap</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td>['saame', 'saami', 'same', 'sami']</td>
+      <td></td>
+      <td>the language of nomadic Lapps in northern Scandinavia and the Kola Peninsula斯堪的纳维亚北部和科拉半岛的游牧拉普人的语言</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lappic, lappish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whap</th>
+      <td>ap</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>whɑp</td>
+      <td>['bash', 'bonk', 'bop', 'sock', 'whop']</td>
+      <td></td>
+      <td>hit hard用力打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kaph</th>
+      <td>ap</td>
+      <td>2.02</td>
+      <td>nou</td>
+      <td>kɑf</td>
+      <td></td>
+      <td></td>
+      <td>the 11th letter of the Hebrew alphabet希伯来字母的第11个字母</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alphabetic character, letter, letter of the alphabet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rapt</th>
+      <td>ap</td>
+      <td>1.97</td>
+      <td>adj</td>
+      <td>ræpt</td>
+      <td>['ecstatic', 'enraptured', 'rapturous', 'rhapsodic'], similarTo:['joyous']</td>
+      <td></td>
+      <td>feeling great rapture or delight感到很高兴或喜悦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apse</th>
+      <td>ap</td>
+      <td>1.90</td>
+      <td>nou</td>
+      <td>æps</td>
+      <td>['apsis']</td>
+      <td></td>
+      <td>a domed or vaulted recess or projection on a building especially the east end of a church; usually contains the altar建筑物上的圆顶或拱形凹陷或投影，特别是教堂的东端;通常包含祭坛</td>
+      <td></td>
+      <td>[apsidal]</td>
+      <td></td>
+      <td>[niche, recess]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frap</th>
+      <td>ap</td>
+      <td>1.74</td>
+      <td>ver</td>
+      <td>fræp</td>
+      <td></td>
+      <td></td>
+      <td>make secure by lashing通过绑扎来确保安全</td>
+      <td>frap a sail甩帆</td>
+      <td></td>
+      <td></td>
+      <td>[lash]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frap</th>
+      <td>ap</td>
+      <td>1.74</td>
+      <td>ver</td>
+      <td>fræp</td>
+      <td></td>
+      <td></td>
+      <td>take up the slack of承担起懈怠</td>
+      <td>frap a rope一根绳子</td>
+      <td></td>
+      <td></td>
+      <td>[fasten, tighten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apis</th>
+      <td>ap</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>'eɪpɪs</td>
+      <td>['genus apis']</td>
+      <td></td>
+      <td>type genus of the Apidae: honeybeesapidae的类型：蜜蜂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[arthropod genus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knap</th>
+      <td>ap</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>næp</td>
+      <td>['rap']</td>
+      <td></td>
+      <td>strike sharply罢工</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knap</th>
+      <td>ap</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>næp</td>
+      <td>['break off', 'chip', 'cut off']</td>
+      <td></td>
+      <td>break a small piece off from打破一小块</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

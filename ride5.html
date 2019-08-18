@@ -1,0 +1,260 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['bride', 'pride', 'rider']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bride</th>
+      <td>ride</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>braɪd</td>
+      <td>['bridget', 'brigid', 'saint bride', 'saint bridget', 'saint brigid', 'st. bride', 'st. bridget', 'st. brigid']</td>
+      <td></td>
+      <td>Irish abbess; a patron saint of Ireland (453-523)爱尔兰人;爱尔兰守护神（453-523）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bride</th>
+      <td>ride</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>braɪd</td>
+      <td></td>
+      <td></td>
+      <td>a woman participant in her own marriage ceremony她自己的婚礼中的女性参与者</td>
+      <td></td>
+      <td>[bridal]</td>
+      <td></td>
+      <td>[participant, player]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bride</th>
+      <td>ride</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>braɪd</td>
+      <td></td>
+      <td></td>
+      <td>a woman who has recently been married最近结婚的女人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[honeymooner, newlywed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pride</th>
+      <td>ride</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>praɪd</td>
+      <td>['congratulate', 'plume']</td>
+      <td></td>
+      <td>be proud of引以为傲</td>
+      <td>He prides himself on making it into law school他为自己进入法学院感到自豪</td>
+      <td></td>
+      <td></td>
+      <td>[experience, feel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pride</th>
+      <td>ride</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>praɪd</td>
+      <td>['pridefulness']</td>
+      <td>[humility]</td>
+      <td>a feeling of self-respect and personal worth一种自尊和个人价值的感觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feeling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pride</th>
+      <td>ride</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>praɪd</td>
+      <td>['superbia']</td>
+      <td></td>
+      <td>unreasonable and inordinate self-esteem (personified as one of the deadly sins)不合理和过分的自尊（被人格化为致命的罪恶之一）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deadly sin, mortal sin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pride</th>
+      <td>ride</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>praɪd</td>
+      <td></td>
+      <td></td>
+      <td>a group of lions一群狮子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pride</th>
+      <td>ride</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>praɪd</td>
+      <td></td>
+      <td></td>
+      <td>satisfaction with your (or another's) achievements对您（或其他人）成就的满意度</td>
+      <td>he takes pride in his son's success他为儿子的成功感到自豪</td>
+      <td></td>
+      <td></td>
+      <td>[satisfaction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pride</th>
+      <td>ride</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>praɪd</td>
+      <td></td>
+      <td></td>
+      <td>the trait of being spurred on by a dislike of falling below your standards由于不喜欢低于你的标准而受到激励的特质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rider</th>
+      <td>ride</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>'raɪdər</td>
+      <td>['passenger']</td>
+      <td></td>
+      <td>a traveler riding in a vehicle (a boat or bus or car or plane or train etc) who is not operating it旅行者乘坐未经营的车辆（船或公共汽车或汽车，飞机或火车等）</td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+      <td>[traveler, traveller]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rider</th>
+      <td>ride</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>'raɪdər</td>
+      <td></td>
+      <td></td>
+      <td>a clause that is appended to a legislative bill附加在立法法案中的条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clause, article]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rider</th>
+      <td>ride</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>'raɪdər</td>
+      <td></td>
+      <td></td>
+      <td>a traveler who actively rides an animal (as a horse or camel)积极骑动物（如马或骆驼）的旅行者</td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+      <td>[traveler, traveller]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rider</th>
+      <td>ride</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>'raɪdər</td>
+      <td></td>
+      <td></td>
+      <td>a traveler who actively rides a vehicle (as a bicycle or motorcycle)积极骑车的旅行者（如自行车或摩托车）</td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+      <td>[traveller, traveler]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

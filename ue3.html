@@ -1,0 +1,380 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['due', 'sue', 'cue', 'rue', 'hue']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>due</th>
+      <td>ue</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>du</td>
+      <td></td>
+      <td></td>
+      <td>a payment that is due (e.g., as the price of membership)到期付款（例如，会员价格）</td>
+      <td>the society dropped him for non-payment of dues由于没有支付会费，社会放弃了他</td>
+      <td></td>
+      <td></td>
+      <td>[fixed charge, fixed cost, fixed costs]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>due</th>
+      <td>ue</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>du</td>
+      <td></td>
+      <td></td>
+      <td>that which is deserved or owed应得或欠的</td>
+      <td>give the devil his due给魔鬼他应得的</td>
+      <td></td>
+      <td></td>
+      <td>[right]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>due</th>
+      <td>ue</td>
+      <td>4.64</td>
+      <td>adj</td>
+      <td>du</td>
+      <td>['ascribable', 'imputable', 'referable'], similarTo:['attributable']</td>
+      <td></td>
+      <td>capable of being assigned or credited to能够被分配或记入</td>
+      <td>the cancellation of the concert was due to the rain音乐会的取消是由于下雨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>due</th>
+      <td>ue</td>
+      <td>4.64</td>
+      <td>adj</td>
+      <td>du</td>
+      <td>, similarTo:['collectable', 'collectible', 'delinquent', 'repayable', 'callable', 'cod', 'collect', 'payable', 'receivable', 'on time', 'out-of-pocket', 'overdue']</td>
+      <td>[undue]</td>
+      <td>owed and payable immediately or on demand应立即或按需支付和应付</td>
+      <td>payment is due付款到期</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>due</th>
+      <td>ue</td>
+      <td>4.64</td>
+      <td>adj</td>
+      <td>du</td>
+      <td>, similarTo:['expected']</td>
+      <td></td>
+      <td>scheduled to arrive预定到达</td>
+      <td>the train is due in 15 minutes火车将在15分钟内到达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>due</th>
+      <td>ue</td>
+      <td>4.64</td>
+      <td>Non</td>
+      <td>du</td>
+      <td></td>
+      <td>[undue]</td>
+      <td>suitable to or expected in the circumstances在这种情况下适合或预期的</td>
+      <td>all due respect所有应有的尊重due cause to honor them应该尊重他们a long due promotion一个长期的促销活动in due course在适当的时候due esteem应有的尊重exercising due care小心翼翼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sue</th>
+      <td>ue</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>su</td>
+      <td>['action', 'litigate', 'process']</td>
+      <td></td>
+      <td>institute legal proceedings against; file a suit against提起法律诉讼;提起诉讼</td>
+      <td></td>
+      <td>[suer, suit]</td>
+      <td>[litigate]</td>
+      <td>[challenge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sue</th>
+      <td>ue</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>su</td>
+      <td>['eugene sue']</td>
+      <td></td>
+      <td>French writer whose novels described the sordid side of city life (1804-1857)法国作家的小说描写了城市生活的肮脏面（1804-1857）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cue</th>
+      <td>ue</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>kju</td>
+      <td>['prompt', 'remind']</td>
+      <td></td>
+      <td>assist (somebody acting or reciting) by suggesting the next words of something forgotten or imperfectly learned通过暗示被遗忘或不完全学习的事物的下一个词来协助（某人表演或背诵）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cue</th>
+      <td>ue</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>kju</td>
+      <td>['discriminative stimulus']</td>
+      <td></td>
+      <td>a stimulus that provides information about what to do刺激，提供有关做什么的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[input, stimulant, stimulation, stimulus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cue</th>
+      <td>ue</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>kju</td>
+      <td>['clew', 'clue']</td>
+      <td></td>
+      <td>evidence that helps to solve a problem有助于解决问题的证据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[evidence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cue</th>
+      <td>ue</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>kju</td>
+      <td>['cue stick', 'pool cue', 'pool stick']</td>
+      <td></td>
+      <td>sports implement consisting of a tapering rod used to strike a cue ball in pool or billiards用于在水池或台球中击打母球的锥形杆组成的运动器具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sports implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cue</th>
+      <td>ue</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>kju</td>
+      <td></td>
+      <td></td>
+      <td>an actor's line that immediately precedes and serves as a reminder for some action or speech一个演员的行，紧接在某个动作或演讲之前，并作为提醒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[actor's line, speech, words]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rue</th>
+      <td>ue</td>
+      <td>3.51</td>
+      <td>ver</td>
+      <td>ru</td>
+      <td>['regret', 'repent']</td>
+      <td></td>
+      <td>feel remorse for; feel sorry for; be contrite about感到懊悔;觉得对不起;懊悔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feel, experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rue</th>
+      <td>ue</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>ru</td>
+      <td>['herb of grace', 'ruta graveolens']</td>
+      <td></td>
+      <td>European strong-scented perennial herb with grey-green bitter-tasting leaves; an irritant similar to poison ivy欧洲浓郁的多年生草本植物，带有灰绿色的苦味叶子;与毒藤相似的刺激物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herb, herbaceous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rue</th>
+      <td>ue</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>ru</td>
+      <td>['regret', 'ruefulness', 'sorrow']</td>
+      <td></td>
+      <td>sadness associated with some wrong done or some disappointment悲伤与一些错误的做法或一些失望有关</td>
+      <td>to his rue, the error cost him the game对他来说，错误让他失去了比赛</td>
+      <td></td>
+      <td></td>
+      <td>[unhappiness, sadness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rue</th>
+      <td>ue</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>ru</td>
+      <td></td>
+      <td></td>
+      <td>(French) a street or road in France（法语）法国的一条街道或公路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[street]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rue</th>
+      <td>ue</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>ru</td>
+      <td></td>
+      <td></td>
+      <td>leaves sometimes used for flavoring fruit or claret cup but should be used with great caution: can cause irritation like poison ivy叶子有时用于调味水果或红葡萄酒杯，但应谨慎使用：会引起像常春藤一样的刺激</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hue</th>
+      <td>ue</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>hju</td>
+      <td>['imbue']</td>
+      <td></td>
+      <td>suffuse with color充满色彩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colour in, colourise, colourize, color, color in, colorise, colorize, colour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hue</th>
+      <td>ue</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>hju</td>
+      <td></td>
+      <td></td>
+      <td>take on color or become colored呈现颜色或变色</td>
+      <td>In highlights it hued to a dull silver-grey它突显出一种沉闷的银灰色</td>
+      <td></td>
+      <td></td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hue</th>
+      <td>ue</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>hju</td>
+      <td>['chromaticity']</td>
+      <td></td>
+      <td>the quality of a color as determined by its dominant wavelength由主波长决定的颜色质量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[color property]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

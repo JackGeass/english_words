@@ -1,0 +1,485 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['float', 'gloat', 'bloat', 'croat', 'groat', 'loath', 'stoat', 'shoat']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td>['be adrift', 'blow', 'drift']</td>
+      <td></td>
+      <td>be in motion due to some air or water current由于某些空气或水流而运动</td>
+      <td></td>
+      <td></td>
+      <td>[drift]</td>
+      <td>[locomote, go, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td>['swim']</td>
+      <td>[sink]</td>
+      <td>be afloat either on or below a liquid surface and not sink to the bottom漂浮在液体表面上或下方，不会沉到水底</td>
+      <td></td>
+      <td>[flotation, floating, floater, floatation]</td>
+      <td></td>
+      <td>[go, move, locomote, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>allow (currencies) to fluctuate允许（货币）波动</td>
+      <td>The government floated the ruble for a few months政府将卢布浮动了几个月</td>
+      <td></td>
+      <td></td>
+      <td>[value]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>circulate or discuss tentatively; test the waters with暂时传播或讨论;用水测试水域</td>
+      <td>The Republicans are floating the idea of a tax reform共和党人正在浮动税制改革的想法</td>
+      <td></td>
+      <td></td>
+      <td>[essay, prove, test, try, try out, examine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>convert from a fixed point notation to a floating point notation从固定点表示法转换为浮点表示法</td>
+      <td>float data浮动数据</td>
+      <td></td>
+      <td></td>
+      <td>[change over, convert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>make the surface of level or smooth使表面平整或光滑</td>
+      <td>float the plaster漂浮石膏</td>
+      <td></td>
+      <td></td>
+      <td>[smooth, smoothen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>move lightly, as if suspended轻轻地移动，好像被暂停了</td>
+      <td>The dancer floated across the stage舞者漂浮在舞台上</td>
+      <td></td>
+      <td>[swim, drift, blow, be adrift]</td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>put into the water放入水中</td>
+      <td>float a ship漂浮一艘船</td>
+      <td>[flotation, floatation]</td>
+      <td></td>
+      <td>[launch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>set afloat漂浮在水面上</td>
+      <td>He floated the logs down the river他把原木漂浮在河里The boy floated his toy boat on the pond那个男孩把他的玩具船漂浮在池塘上</td>
+      <td>[floatation, flotation]</td>
+      <td>[swim]</td>
+      <td>[transport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>floʊt</td>
+      <td>['air bladder', 'swim bladder']</td>
+      <td></td>
+      <td>an air-filled sac near the spinal column in many fishes that helps maintain buoyancy在许多鱼类的脊柱附近充满气囊，有助于保持浮力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sac]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>floʊt</td>
+      <td>["plasterer's float"]</td>
+      <td></td>
+      <td>a hand tool with a flat face used for smoothing and finishing the surface of plaster or cement or stucco一种带平面的手动工具，用于平滑和整理石膏或水泥或灰泥的表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hand tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>floʊt</td>
+      <td>['ice-cream float', 'ice-cream soda']</td>
+      <td></td>
+      <td>a drink with ice cream floating in it一杯冰淇淋漂浮在里面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>an elaborate display mounted on a platform carried by a truck (or pulled by a truck) in a procession or parade精心设计的显示器安装在由卡车（或卡车拉动）携带的平台上，游行或游行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[presentation, display]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>something that floats on the surface of water浮在水面上的东西</td>
+      <td></td>
+      <td>[floaty]</td>
+      <td></td>
+      <td>[artefact, artifact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>the number of shares outstanding and available for trading by the public公众交易的已发行股票数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>float</th>
+      <td>oat</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>floʊt</td>
+      <td></td>
+      <td></td>
+      <td>the time interval between the deposit of a check in a bank and its payment银行支票存款与支付之间的时间间隔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interval, time interval]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloat</th>
+      <td>oat</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>gloʊt</td>
+      <td>['crow', 'triumph']</td>
+      <td></td>
+      <td>dwell on with satisfaction满心地说</td>
+      <td></td>
+      <td>[gloating]</td>
+      <td></td>
+      <td>[vaunt, blow, bluster, boast, brag, gasconade, shoot a line, swash, tout, gas]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloat</th>
+      <td>oat</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>gloʊt</td>
+      <td></td>
+      <td></td>
+      <td>gaze at or think about something with great self-satisfaction, gratification, or joy凝视或思考具有极大自我满足，满足感或快乐感的事物</td>
+      <td></td>
+      <td>[gloating]</td>
+      <td></td>
+      <td>[look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloat</th>
+      <td>oat</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>gloʊt</td>
+      <td>['glee', 'gloating']</td>
+      <td></td>
+      <td>malicious satisfaction恶意满足</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[satisfaction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bloat</th>
+      <td>oat</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>bloʊt</td>
+      <td></td>
+      <td></td>
+      <td>become bloated or swollen or puff up变得臃肿或肿胀或膨胀</td>
+      <td>The dead man's stomach was bloated那个死人的胃臃肿了</td>
+      <td></td>
+      <td></td>
+      <td>[tumesce, intumesce, swell, swell up, tumefy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bloat</th>
+      <td>oat</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>bloʊt</td>
+      <td></td>
+      <td></td>
+      <td>make bloated or swollen使肿胀或肿胀</td>
+      <td>Hunger bloated the child's belly饥饿使孩子的腹部膨胀</td>
+      <td></td>
+      <td></td>
+      <td>[swell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bloat</th>
+      <td>oat</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>bloʊt</td>
+      <td></td>
+      <td></td>
+      <td>swelling of the rumen or intestinal tract of domestic animals caused by excessive gas由过量气体引起的家畜瘤胃或肠道肿胀</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lump, puffiness, swelling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>croat</th>
+      <td>oat</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>'kroʊæt</td>
+      <td>['croatian']</td>
+      <td></td>
+      <td>a member of the Slavic people living in Croatia生活在克罗地亚的斯拉夫人的一员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slav]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>groat</th>
+      <td>oat</td>
+      <td>2.19</td>
+      <td>nou</td>
+      <td>groʊt</td>
+      <td>['fourpence']</td>
+      <td></td>
+      <td>a former English silver coin worth four pennies一枚前英国银币，价值四便士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loath</th>
+      <td>oat</td>
+      <td>2.08</td>
+      <td>adj</td>
+      <td>loʊθ</td>
+      <td>['loth', 'reluctant'], similarTo:['unwilling']</td>
+      <td></td>
+      <td>unwillingness to do something contrary to your custom不愿做违背你习俗的事情</td>
+      <td>loath to admit a mistake不愿承认错误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loath</th>
+      <td>oat</td>
+      <td>2.08</td>
+      <td>adj</td>
+      <td>loʊθ</td>
+      <td>['antipathetic', 'antipathetical', 'averse', 'indisposed', 'loth'], similarTo:['disinclined']</td>
+      <td></td>
+      <td>(usually followed by `to') strongly opposed（通常后跟'to'）强烈反对</td>
+      <td>loath to go on such short notice不愿意这么短暂的通知</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stoat</th>
+      <td>oat</td>
+      <td>1.90</td>
+      <td>nou</td>
+      <td>stoʊt</td>
+      <td></td>
+      <td></td>
+      <td>the ermine in its brown summer coat with black-tipped tail棕色夏季大衣中的貂皮，黑色尾巴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ermine, mustela erminea, shorttail weasel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shoat</th>
+      <td>oat</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td>ʃoʊt</td>
+      <td>['piggy', 'piglet', 'shote']</td>
+      <td></td>
+      <td>a young pig一头小猪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[young mammal]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

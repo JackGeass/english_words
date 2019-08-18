@@ -1,0 +1,860 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['broke', 'smoke', 'spoke', 'bloke', 'poker', 'choke', 'joker', 'token', 'stoke', 'pokey', 'evoke', 'hokey', 'yokel']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>broke</th>
+      <td>oke</td>
+      <td>4.98</td>
+      <td>adj</td>
+      <td>broʊk</td>
+      <td>['bust', 'skint', 'stone-broke', 'stony-broke'], similarTo:['poor']</td>
+      <td></td>
+      <td>lacking funds缺乏资金</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>smoʊk</td>
+      <td>['fume']</td>
+      <td></td>
+      <td>emit a cloud of fine particles发出一团微粒</td>
+      <td></td>
+      <td>[smoking]</td>
+      <td></td>
+      <td>[give off, give out, emit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>smoʊk</td>
+      <td></td>
+      <td></td>
+      <td>inhale and exhale smoke from cigarettes, cigars, pipes从香烟，雪茄，烟斗吸入和呼出烟雾</td>
+      <td>We never smoked marijuana我们从不抽大麻Do you smoke?你抽烟吗？</td>
+      <td>[smoking, smoker]</td>
+      <td></td>
+      <td>[habituate, use]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td>['smoking']</td>
+      <td></td>
+      <td>a hot vapor containing fine particles of carbon being produced by combustion通过燃烧产生含有细小碳颗粒的热蒸汽</td>
+      <td>the fire produced a tower of black smoke that could be seen for miles火灾产生了一缕黑烟，可以看到数英里</td>
+      <td>[smoky]</td>
+      <td></td>
+      <td>[evaporation, vapour, vaporization, vaporisation, vapor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td>['fume']</td>
+      <td></td>
+      <td>a cloud of fine particles suspended in a gas悬浮在气体中的一团细颗粒</td>
+      <td></td>
+      <td>[smoky]</td>
+      <td></td>
+      <td>[aerosol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td>['dope', 'gage', 'grass', 'green goddess', 'locoweed', 'mary jane', 'pot', 'sens', 'sess', 'skunk', 'weed']</td>
+      <td></td>
+      <td>street names for marijuana大麻的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cannabis, marijuana, marihuana, ganja]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td>['roll of tobacco']</td>
+      <td></td>
+      <td>tobacco leaves that have been made into a cylinder已经制成圆筒的烟叶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tobacco, baccy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td>['smoking']</td>
+      <td></td>
+      <td>the act of smoking tobacco or other substances吸烟或其他物质的行为</td>
+      <td>he went outside for a smoke他到外面抽烟</td>
+      <td></td>
+      <td></td>
+      <td>[external respiration, ventilation, respiration, breathing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td>['bullet', 'fastball', 'heater', 'hummer']</td>
+      <td></td>
+      <td>(baseball) a pitch thrown with maximum velocity（棒球）以最大速度投掷的球场</td>
+      <td>he showed batters nothing but smoke他向击球手展示了烟雾</td>
+      <td></td>
+      <td></td>
+      <td>[pitch, delivery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td></td>
+      <td></td>
+      <td>an indication of some hidden activity一些隐藏活动的迹象</td>
+      <td>with all that smoke there must be a fire somewhere所有的烟雾都必须在某处发生火灾</td>
+      <td></td>
+      <td></td>
+      <td>[indicant, indication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smoke</th>
+      <td>oke</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>smoʊk</td>
+      <td></td>
+      <td></td>
+      <td>something with no concrete substance没有具体内容的东西</td>
+      <td>his dreams all turned to smoke他的梦想都变成了烟雾it was just smoke and mirrors它只是烟雾和镜子</td>
+      <td></td>
+      <td></td>
+      <td>[insubstantiality]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>spoke</th>
+      <td>oke</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>spoʊk</td>
+      <td>['rundle', 'rung']</td>
+      <td></td>
+      <td>one of the crosspieces that form the steps of a ladder其中一个形成梯子台阶的横梁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crosspiece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoke</th>
+      <td>oke</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>spoʊk</td>
+      <td>['radius', 'wheel spoke']</td>
+      <td></td>
+      <td>support consisting of a radial member of a wheel joining the hub to the rim支撑件包括将轮毂连接到轮辋的轮子的径向构件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bloke</th>
+      <td>oke</td>
+      <td>3.98</td>
+      <td>nou</td>
+      <td>bloʊk</td>
+      <td>['blighter', 'chap', 'cuss', 'fella', 'feller', 'fellow', 'gent', 'lad']</td>
+      <td></td>
+      <td>a boy or man一个男人或一个男人</td>
+      <td>he's a good bloke他是一个好人</td>
+      <td></td>
+      <td></td>
+      <td>[male, male person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poker</th>
+      <td>oke</td>
+      <td>3.94</td>
+      <td>nou</td>
+      <td>'poʊkər</td>
+      <td>['fire hook', 'salamander', 'stove poker']</td>
+      <td></td>
+      <td>fire iron consisting of a metal rod with a handle; used to stir a fire防火铁由带手柄的金属杆组成;过去常火</td>
+      <td></td>
+      <td>[poke]</td>
+      <td></td>
+      <td>[fire iron]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poker</th>
+      <td>oke</td>
+      <td>3.94</td>
+      <td>nou</td>
+      <td>'poʊkər</td>
+      <td>['poker game']</td>
+      <td></td>
+      <td>any of various card games in which players bet that they hold the highest-ranking hand任何各种纸牌游戏，其中玩家下注他们持有排名最高的牌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cards, card game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['suffocate']</td>
+      <td></td>
+      <td>become stultified, suppressed, or stifled变得愚蠢，压抑或窒息</td>
+      <td></td>
+      <td></td>
+      <td>[suffocate]</td>
+      <td>[become, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['back up', 'choke off', 'clog', 'clog up', 'congest', 'foul']</td>
+      <td></td>
+      <td>become or cause to become obstructed变得或导致受阻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obturate, jam, occlude, obstruct, block, impede, close up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['scrag']</td>
+      <td></td>
+      <td>wring the neck of绞尽脑汁</td>
+      <td>The man choked his opponent那个男人窒息了他的对手</td>
+      <td>[choker, choking]</td>
+      <td></td>
+      <td>[squeeze, contract, press, compact, compress, constrict]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['buy the farm', "cash in one's chips", 'conk', 'croak', 'decease', 'die', 'drop dead', 'exit', 'expire', 'give-up the ghost', 'go', 'kick the bucket', 'pass', 'pass away', 'perish', 'pop off', 'snuff it']</td>
+      <td></td>
+      <td>pass from physical life and lose all bodily attributes and functions necessary to sustain life从物质生活中消失，失去维持生命所必需的所有身体属性和功能</td>
+      <td></td>
+      <td></td>
+      <td>[conk out, go bad, go, break down, give out, break, die, fail, give way]</td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['asphyxiate', 'stifle', 'suffocate']</td>
+      <td></td>
+      <td>impair the respiration of or obstruct the air passage of损害呼吸道或阻碍空气流通</td>
+      <td></td>
+      <td>[choking]</td>
+      <td></td>
+      <td>[close up, occlude, obturate, jam, block, impede, obstruct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['gag', 'strangle', 'suffocate']</td>
+      <td></td>
+      <td>struggle for breath; have insufficient oxygen intake为呼吸而奋斗;氧气摄入不足</td>
+      <td></td>
+      <td>[choking]</td>
+      <td></td>
+      <td>[suffer, hurt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['suffocate']</td>
+      <td></td>
+      <td>suppress the development, creativity, or imagination of压制的发展，创造力或想象力</td>
+      <td></td>
+      <td></td>
+      <td>[suffocate]</td>
+      <td>[stifle, dampen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['throttle']</td>
+      <td></td>
+      <td>reduce the air supply减少空气供应</td>
+      <td>choke a carburetor扼住一个化油器</td>
+      <td></td>
+      <td></td>
+      <td>[enrich]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['fret', 'gag']</td>
+      <td></td>
+      <td>be too tight; rub or press太紧了;擦或按</td>
+      <td></td>
+      <td>[choker]</td>
+      <td></td>
+      <td>[contract, compact, compress, press, constrict, squeeze]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['gag']</td>
+      <td></td>
+      <td>cause to retch or choke导致呕吐或窒息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sicken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td>['strangle']</td>
+      <td></td>
+      <td>constrict (someone's) throat and keep from breathing收缩（某人）的喉咙，避免呼吸</td>
+      <td></td>
+      <td>[choking]</td>
+      <td></td>
+      <td>[press, compact, compress, constrict, contract, squeeze]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td></td>
+      <td></td>
+      <td>breathe with great difficulty, as when experiencing a strong emotion在经历强烈的情感时，很难呼吸</td>
+      <td>She choked with emotion when she spoke about her deceased husband当她谈到她已故的丈夫时，她情绪激动</td>
+      <td>[choking]</td>
+      <td></td>
+      <td>[suspire, respire, take a breath, breathe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td></td>
+      <td></td>
+      <td>check or slow down the action or effect of检查或减慢动作或效果</td>
+      <td>She choked her anger她窒息了她的愤怒</td>
+      <td></td>
+      <td></td>
+      <td>[bottle up, suppress, inhibit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>tʃoʊk</td>
+      <td></td>
+      <td></td>
+      <td>fail to perform adequately due to tension or agitation由于紧张或激动而无法充分发挥作用</td>
+      <td>The team should have won hands down but choked, disappointing the coach and the audience球队本应该赢得比赛，但是让教练和观众感到沮丧</td>
+      <td>[choker]</td>
+      <td></td>
+      <td>[fail, neglect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>tʃoʊk</td>
+      <td>['choke coil', 'choking coil']</td>
+      <td></td>
+      <td>a coil of low resistance and high inductance used in electrical circuits to pass direct current and attenuate alternating current用于电路的低电阻和高电感线圈，用于传递直流电流并衰减交流电流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>choke</th>
+      <td>oke</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>tʃoʊk</td>
+      <td></td>
+      <td></td>
+      <td>a valve that controls the flow of air into the carburetor of a gasoline engine一个阀门，控制进入汽油发动机化油器的空气流量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[valve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joker</th>
+      <td>oke</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>'dʒoʊkər</td>
+      <td>['turkey']</td>
+      <td></td>
+      <td>a person who does something thoughtless or annoying做一些没有思想或烦人的人</td>
+      <td>some joker is blocking the driveway一些小丑挡住了车道</td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joker</th>
+      <td>oke</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>'dʒoʊkər</td>
+      <td>['jokester']</td>
+      <td></td>
+      <td>a person who enjoys telling or playing jokes喜欢讲笑或玩笑话的人</td>
+      <td></td>
+      <td>[joke]</td>
+      <td></td>
+      <td>[comic, comedian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joker</th>
+      <td>oke</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>'dʒoʊkər</td>
+      <td></td>
+      <td></td>
+      <td>an inconspicuous clause in a document or bill that affects its meaning in a way that is not immediately apparent文件或法案中不显眼的条款，以一种不明显的方式影响其含义</td>
+      <td>when I demanded my money he showed me the joker in the contract当我要求我的钱时，他在合同中向我展示了小丑</td>
+      <td></td>
+      <td></td>
+      <td>[clause, article]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joker</th>
+      <td>oke</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>'dʒoʊkər</td>
+      <td></td>
+      <td></td>
+      <td>a playing card that is usually printed with a picture of a jester一张通常印有小丑图片的扑克牌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[playing card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>token</th>
+      <td>oke</td>
+      <td>3.62</td>
+      <td>nou</td>
+      <td>'toʊkən</td>
+      <td>['item']</td>
+      <td></td>
+      <td>an individual instance of a type of symbol一种符号类型的单个实例</td>
+      <td>the word `error' contains three tokens of `r'“错误”这个词包含三个“r”标记</td>
+      <td></td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>token</th>
+      <td>oke</td>
+      <td>3.62</td>
+      <td>nou</td>
+      <td>'toʊkən</td>
+      <td>['keepsake', 'relic', 'souvenir']</td>
+      <td></td>
+      <td>something of sentimental value一些感伤的价值</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>token</th>
+      <td>oke</td>
+      <td>3.62</td>
+      <td>nou</td>
+      <td>'toʊkən</td>
+      <td></td>
+      <td></td>
+      <td>a metal or plastic disk that can be redeemed or used in designated slot machines金属或塑料盘，可在指定的老虎机中兑换或使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disc, disk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>token</th>
+      <td>oke</td>
+      <td>3.62</td>
+      <td>nou</td>
+      <td>'toʊkən</td>
+      <td></td>
+      <td></td>
+      <td>something serving as a sign of something else作为别的东西的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mark, sign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>token</th>
+      <td>oke</td>
+      <td>3.62</td>
+      <td>adj</td>
+      <td>'toʊkən</td>
+      <td>['nominal', 'tokenish'], similarTo:['minimum', 'minimal']</td>
+      <td></td>
+      <td>insignificantly small; a matter of form only (`tokenish' is informal)微不足道的;只是形式的问题（'tokenish'是非正式的）</td>
+      <td>a token gesture of resistance一种象征性的抵抗姿态a tokenish gesture一种象征性的姿态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stoke</th>
+      <td>oke</td>
+      <td>3.00</td>
+      <td>ver</td>
+      <td>stoʊk</td>
+      <td></td>
+      <td></td>
+      <td>stir up or tend; of a fire煽动或倾向;一场大火</td>
+      <td></td>
+      <td>[stoker]</td>
+      <td></td>
+      <td>[tend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pokey</th>
+      <td>oke</td>
+      <td>2.77</td>
+      <td>nou</td>
+      <td>'poʊki</td>
+      <td>['clink', 'gaol', 'jail', 'jailhouse', 'poky', 'slammer']</td>
+      <td></td>
+      <td>a correctional institution used to detain persons who are in the lawful custody of the government (either accused persons awaiting trial or convicted persons serving a sentence)一个惩教机构，用于拘留在政府合法监管下的人（等待审判的被告人或服刑的被定罪人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[correctional institution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pokey</th>
+      <td>oke</td>
+      <td>2.77</td>
+      <td>adj</td>
+      <td>'poʊki</td>
+      <td>['jerkwater', 'one-horse', 'poky'], similarTo:['provincial']</td>
+      <td></td>
+      <td>small and remote and insignificant小而遥远而微不足道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pokey</th>
+      <td>oke</td>
+      <td>2.77</td>
+      <td>adj</td>
+      <td>'poʊki</td>
+      <td>['dilatory', 'laggard', 'poky'], similarTo:['slow']</td>
+      <td></td>
+      <td>wasting time浪费时间</td>
+      <td></td>
+      <td>[poke]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>evoke</th>
+      <td>oke</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>ɪ'voʊk</td>
+      <td>['arouse', 'elicit', 'enkindle', 'fire', 'kindle', 'provoke', 'raise']</td>
+      <td></td>
+      <td>call forth (emotions, feelings, and responses)呼唤（情绪，感受和反应）</td>
+      <td>evoke sympathy唤起同情</td>
+      <td>[evocation, evocative]</td>
+      <td></td>
+      <td>[make, create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>evoke</th>
+      <td>oke</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>ɪ'voʊk</td>
+      <td>['arouse', 'bring up', 'call down', 'call forth', 'conjure', 'conjure up', 'invoke', 'put forward', 'raise', 'stir']</td>
+      <td></td>
+      <td>summon into action or bring into existence, often as if by magic召唤行动或生存，通常好像是通过魔法</td>
+      <td></td>
+      <td>[evocation]</td>
+      <td>[call forth, provoke, kick up]</td>
+      <td>[summon, call up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>evoke</th>
+      <td>oke</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>ɪ'voʊk</td>
+      <td>['call forth', 'kick up', 'provoke']</td>
+      <td></td>
+      <td>evoke or provoke to appear or occur唤起或挑衅出现或发生</td>
+      <td></td>
+      <td>[evocation]</td>
+      <td>[put forward, raise, invoke, conjure up, stir, bring up, call forth, call down, conjure, arouse]</td>
+      <td>[cause, make, do]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>evoke</th>
+      <td>oke</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>ɪ'voʊk</td>
+      <td>['paint a picture', 'suggest']</td>
+      <td></td>
+      <td>call to mind想到了</td>
+      <td>this remark evoked sadness这句话引起了悲伤</td>
+      <td>[evocation, evocative]</td>
+      <td></td>
+      <td>[show, evince, express]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>evoke</th>
+      <td>oke</td>
+      <td>2.70</td>
+      <td>ver</td>
+      <td>ɪ'voʊk</td>
+      <td>['draw out', 'educe', 'elicit', 'extract']</td>
+      <td></td>
+      <td>deduce (a principle) or construe (a meaning)推论（原则）或解释（含义）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[see, construe, interpret]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hokey</th>
+      <td>oke</td>
+      <td>2.64</td>
+      <td>adj</td>
+      <td>'hoʊki</td>
+      <td>['artificial', 'contrived', 'stilted'], similarTo:['affected', 'unnatural']</td>
+      <td></td>
+      <td>artificially formal人为正式的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hokey</th>
+      <td>oke</td>
+      <td>2.64</td>
+      <td>adj</td>
+      <td>'hoʊki</td>
+      <td>['bathetic', 'drippy', 'kitschy', 'maudlin', 'mawkish', 'mushy', 'sappy', 'schmaltzy', 'schmalzy', 'sentimental', 'slushy', 'soppy', 'soupy'], similarTo:['emotional']</td>
+      <td></td>
+      <td>effusively or insincerely emotional热情或不诚实的情感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yokel</th>
+      <td>oke</td>
+      <td>2.54</td>
+      <td>nou</td>
+      <td>'joʊkəl</td>
+      <td>['bumpkin', 'chawbacon', 'hayseed', 'hick', 'rube', 'yahoo']</td>
+      <td></td>
+      <td>a person who is not very intelligent or interested in culture一个不太聪明或对文化感兴趣的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rustic]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

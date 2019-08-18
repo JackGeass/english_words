@@ -1,0 +1,890 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['think', 'drink', 'stink', 'blink', 'pinky', 'links', 'kinky', 'brink', 'clink', 'dinky', 'chink', 'jinks', 'slink', 'skink']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td>['believe', 'conceive', 'consider']</td>
+      <td></td>
+      <td>judge or regard; look upon; judge判断或尊重;看待;法官</td>
+      <td>I think he is very smart我觉得他很聪明I think that he is her boyfriend我认为他是她的男朋友</td>
+      <td>[thought]</td>
+      <td></td>
+      <td>[evaluate, pass judgment, judge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td>['call back', 'call up', 'recall', 'recollect', 'remember', 'retrieve'], alos:['think back']</td>
+      <td></td>
+      <td>recall knowledge from memory; have a recollection从记忆中回忆起知识;有一个回忆</td>
+      <td>I can't think what her last name was我想不出她的姓氏是什么</td>
+      <td>[thought]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td>['intend', 'mean']</td>
+      <td></td>
+      <td>have in mind as a purpose牢记为目的</td>
+      <td>She didn't think to harm me她不想伤害我</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td>['guess', 'imagine', 'opine', 'reckon', 'suppose']</td>
+      <td></td>
+      <td>expect, believe, or suppose期待，相信或假设</td>
+      <td>he didn't think to find her in the kitchen他没想到要在厨房找到她</td>
+      <td>[thought]</td>
+      <td></td>
+      <td>[expect, anticipate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td>['cerebrate', 'cogitate'], alos:['think over', 'think up', 'think out']</td>
+      <td></td>
+      <td>use or exercise the mind or one's power of reason in order to make inferences, decisions, or arrive at a solution or judgments使用或锻炼心灵或理智的力量，以便做出推论，决定或达成解决方案或判断</td>
+      <td>I've been thinking all day and getting nowhere我一整天都在想，无处可去</td>
+      <td>[thinker, thinking, thought]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>bring into a given condition by mental preoccupation通过精神上的专注来达到一个特定的条件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change, alter, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>decide by pondering, reasoning, or reflecting通过思考，推理或反思来决定</td>
+      <td>Can you think what to do next?你能想到下一步该做什么吗？</td>
+      <td>[thinking]</td>
+      <td></td>
+      <td>[cogitate, cerebrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>dispose the mind in a certain way以某种方式处理思想</td>
+      <td>Do you really think so?你真的这样想吗？</td>
+      <td>[thought]</td>
+      <td></td>
+      <td>[conceive, believe, consider]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>focus one's attention on a certain state把注意力集中在某种状态上</td>
+      <td>think thin想一想</td>
+      <td>[thought]</td>
+      <td></td>
+      <td>[concentrate, center, centre, focus, pore, rivet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>have or formulate in the mind在心中拥有或表达</td>
+      <td>think good thoughts想好的想法</td>
+      <td>[thought]</td>
+      <td></td>
+      <td>[cogitate, cerebrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>imagine or visualize想象或想象</td>
+      <td>Just think--you could be rich one day!试想 - 有一天你可能会变得富有！</td>
+      <td>[thought]</td>
+      <td></td>
+      <td>[conceive of, ideate, envisage, imagine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>ver</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>ponder; reflect on, or reason about思考;反思或推理</td>
+      <td></td>
+      <td>[thought]</td>
+      <td></td>
+      <td>[cogitate, cerebrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>nou</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>an instance of deliberate thinking刻意思考的一个例子</td>
+      <td>I need to give it a good think我需要好好思考一下</td>
+      <td></td>
+      <td></td>
+      <td>[advisement, deliberation, weighing]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>think</th>
+      <td>ink</td>
+      <td>6.38</td>
+      <td>Non</td>
+      <td>θɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>be capable of conscious thought能够有意识地思考</td>
+      <td>Man is the only creature that thinks人是唯一思考的生物</td>
+      <td>[thought]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>ver</td>
+      <td>drɪŋk</td>
+      <td>['pledge', 'salute', 'toast', 'wassail']</td>
+      <td></td>
+      <td>propose a toast to提议敬酒</td>
+      <td>Let's drink to the New Year让我们喝新年</td>
+      <td></td>
+      <td></td>
+      <td>[reward, honour, honor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>ver</td>
+      <td>drɪŋk</td>
+      <td>['drink in']</td>
+      <td></td>
+      <td>be fascinated or spell-bound by; pay close attention to被迷住或拼写;密切关注</td>
+      <td>The mother drinks in every word of her son on the stage母亲在舞台上喝着她儿子的每一句话</td>
+      <td></td>
+      <td></td>
+      <td>[engross, plunge, steep, soak up, absorb, immerse, engulf]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>ver</td>
+      <td>drɪŋk</td>
+      <td>['booze', 'fuddle', 'hit the bottle']</td>
+      <td></td>
+      <td>consume alcohol消耗酒精</td>
+      <td>We were up drinking all night我们整夜都在喝酒</td>
+      <td>[drinker, drinking]</td>
+      <td>[tope]</td>
+      <td>[take in, have, take, consume, ingest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>ver</td>
+      <td>drɪŋk</td>
+      <td>['tope']</td>
+      <td></td>
+      <td>drink excessive amounts of alcohol; be an alcoholic喝过量的酒精;是个酗酒者</td>
+      <td>The husband drinks and beats his wife丈夫喝酒，打败他的妻子</td>
+      <td>[drinking, drunkard, drinker]</td>
+      <td>[fuddle, booze, hit the bottle]</td>
+      <td>[waste, squander, ware, consume]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>ver</td>
+      <td>drɪŋk</td>
+      <td>['imbibe'], alos:['drink down', 'drink up']</td>
+      <td></td>
+      <td>take in liquids接受液体</td>
+      <td>The patient must drink several liters each day患者每天必须喝几升The children like to drink soda孩子们喜欢喝苏打水</td>
+      <td>[drinking, drinker]</td>
+      <td></td>
+      <td>[ingest, consume, have, take, take in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>nou</td>
+      <td>drɪŋk</td>
+      <td>['beverage', 'drinkable', 'potable']</td>
+      <td></td>
+      <td>any liquid suitable for drinking任何适合饮用的液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[food, nutrient, liquid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>nou</td>
+      <td>drɪŋk</td>
+      <td>['deglutition', 'swallow']</td>
+      <td></td>
+      <td>the act of swallowing吞咽的行为</td>
+      <td>he took a drink of his beer and smacked his lips他喝了一口啤酒，咂了咂嘴唇</td>
+      <td></td>
+      <td></td>
+      <td>[uptake, ingestion, consumption, intake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>nou</td>
+      <td>drɪŋk</td>
+      <td>['boozing', 'crapulence', 'drinking', 'drunkenness']</td>
+      <td></td>
+      <td>the act of drinking alcoholic beverages to excess饮酒过量的行为</td>
+      <td>drink was his downfall喝酒是他的垮台</td>
+      <td></td>
+      <td></td>
+      <td>[intemperance, intemperateness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>nou</td>
+      <td>drɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>any large deep body of water任何大的深水体</td>
+      <td>he jumped into the drink and had to be rescued他跳进饮料，不得不被救出来</td>
+      <td></td>
+      <td></td>
+      <td>[water, body of water]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>drink</th>
+      <td>ink</td>
+      <td>5.45</td>
+      <td>nou</td>
+      <td>drɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a single serving of a beverage一份饮料</td>
+      <td>I asked for a hot drink我要了一杯热饮likes a drink before dinner晚餐前喜欢喝一杯</td>
+      <td></td>
+      <td></td>
+      <td>[portion, serving, helping]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stink</th>
+      <td>ink</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>stɪŋk</td>
+      <td>['reek'], alos:['stink out', 'stink up']</td>
+      <td></td>
+      <td>smell badly and offensively闻起来非常恶劣</td>
+      <td></td>
+      <td>[stinker]</td>
+      <td></td>
+      <td>[smell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stink</th>
+      <td>ink</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>stɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>be extremely bad in quality or in one's performance质量极差或性能极差</td>
+      <td>This term paper stinks!这个学期论文很​​臭！</td>
+      <td>[stinker]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stink</th>
+      <td>ink</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>stɪŋk</td>
+      <td>['fetor', 'foetor', 'malodor', 'malodour', 'mephitis', 'reek', 'stench']</td>
+      <td></td>
+      <td>a distinctive odor that is offensively unpleasant一种令人不快的令人不快的独特气味</td>
+      <td></td>
+      <td>[stinky]</td>
+      <td></td>
+      <td>[odor, smell, odour, olfactory perception, olfactory sensation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blink</th>
+      <td>ink</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>blɪŋk</td>
+      <td>['blink away', 'wink']</td>
+      <td></td>
+      <td>keep back by blinking通过眨眼来保持</td>
+      <td>blink away tears眨眼泪</td>
+      <td></td>
+      <td></td>
+      <td>[restrain, hold back, keep, keep back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blink</th>
+      <td>ink</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>blɪŋk</td>
+      <td>['flash', 'twinkle', 'wink', 'winkle']</td>
+      <td></td>
+      <td>gleam or glow intermittently间歇地闪烁或发光</td>
+      <td></td>
+      <td>[blinker]</td>
+      <td></td>
+      <td>[radiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blink</th>
+      <td>ink</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>blɪŋk</td>
+      <td>['nictate', 'nictitate', 'wink']</td>
+      <td></td>
+      <td>briefly shut the eyes短暂闭上眼睛</td>
+      <td>The TV announcer never seems to blink电视播音员似乎永远不会眨眼</td>
+      <td>[blinking]</td>
+      <td></td>
+      <td>[act reflexively, act involuntarily]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blink</th>
+      <td>ink</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>blɪŋk</td>
+      <td>['blinking', 'eye blink', 'nictation', 'nictitation', 'wink', 'winking']</td>
+      <td></td>
+      <td>a reflex that closes and opens the eyes rapidly一种快速关闭并睁开眼睛的反射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unconditioned reflex, inborn reflex, instinctive reflex, innate reflex, physiological reaction, reflex, reflex action, reflex response]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pinky</th>
+      <td>ink</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>'pɪŋki</td>
+      <td>['little finger', 'pinkie']</td>
+      <td></td>
+      <td>the finger farthest from the thumb手指离拇指最远</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[finger, minimus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>links</th>
+      <td>ink</td>
+      <td>3.56</td>
+      <td>nou</td>
+      <td>lɪŋks</td>
+      <td>['golf links']</td>
+      <td></td>
+      <td>a golf course that is built on sandy ground near a shore一个建在沙滩附近的高尔夫球场</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[golf course, links course]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>kinky</th>
+      <td>ink</td>
+      <td>3.45</td>
+      <td>adj</td>
+      <td>'kɪŋki</td>
+      <td>['far-out', 'offbeat', 'quirky', 'way-out'], similarTo:['unconventional']</td>
+      <td></td>
+      <td>(informal) strikingly unconventional（非正式的）非常传统</td>
+      <td></td>
+      <td>[kink]</td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>kinky</th>
+      <td>ink</td>
+      <td>3.45</td>
+      <td>adj</td>
+      <td>'kɪŋki</td>
+      <td>['perverted'], similarTo:['abnormal', 'unnatural']</td>
+      <td></td>
+      <td>(used of sexual behavior) showing or appealing to bizarre or deviant tastes（用于性行为）表现或吸引奇异或不正常的口味</td>
+      <td>kinky sex淫性</td>
+      <td>[kink]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kinky</th>
+      <td>ink</td>
+      <td>3.45</td>
+      <td>adj</td>
+      <td>'kɪŋki</td>
+      <td>['crisp', 'frizzly', 'frizzy', 'nappy'], similarTo:['curly']</td>
+      <td></td>
+      <td>(of hair) in small tight curls（头发）小卷发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>brɪŋk</td>
+      <td>['threshold', 'verge']</td>
+      <td></td>
+      <td>a region marking a boundary标记边界的区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edge, boundary, bound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>brɪŋk</td>
+      <td>['verge']</td>
+      <td></td>
+      <td>the limit beyond which something happens or changes事情发生或变化的极限</td>
+      <td>on the brink of bankruptcy处于破产的边缘</td>
+      <td></td>
+      <td></td>
+      <td>[limit, bound, boundary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>brɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>the edge of a steep place陡峭的地方的边缘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edge, border]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clink</th>
+      <td>ink</td>
+      <td>3.11</td>
+      <td>ver</td>
+      <td>klɪŋk</td>
+      <td>['chink', 'tink', 'tinkle']</td>
+      <td></td>
+      <td>make or emit a high sound发出或发出高声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clink</th>
+      <td>ink</td>
+      <td>3.11</td>
+      <td>ver</td>
+      <td>klɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>make a high sound typical of glass发出典型的玻璃声</td>
+      <td>champagne glasses clinked to make a toast香槟杯叮当作响</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clink</th>
+      <td>ink</td>
+      <td>3.11</td>
+      <td>nou</td>
+      <td>klɪŋk</td>
+      <td>['gaol', 'jail', 'jailhouse', 'pokey', 'poky', 'slammer']</td>
+      <td></td>
+      <td>a correctional institution used to detain persons who are in the lawful custody of the government (either accused persons awaiting trial or convicted persons serving a sentence)一个惩教机构，用于拘留在政府合法监管下的人（等待审判的被告人或服刑的被定罪人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[correctional institution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clink</th>
+      <td>ink</td>
+      <td>3.11</td>
+      <td>nou</td>
+      <td>klɪŋk</td>
+      <td>['chink', 'click']</td>
+      <td></td>
+      <td>a short light metallic sound短暂的轻金属声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dinky</th>
+      <td>ink</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>'dɪŋki</td>
+      <td>['dinkey']</td>
+      <td></td>
+      <td>a small locomotive一个小机车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[railway locomotive, locomotive, locomotive engine, engine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dinky</th>
+      <td>ink</td>
+      <td>3.03</td>
+      <td>adj</td>
+      <td>'dɪŋki</td>
+      <td>['insignificant'], similarTo:['little', 'small']</td>
+      <td></td>
+      <td>small and unimpressive小而不起眼</td>
+      <td>we stayed in a dinky old hotel我们住在一个很小的老酒店</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>dinky</th>
+      <td>ink</td>
+      <td>3.03</td>
+      <td>adj</td>
+      <td>'dɪŋki</td>
+      <td>, similarTo:['attractive']</td>
+      <td></td>
+      <td>(British informal) pretty and neat（英国非正式）漂亮而整洁</td>
+      <td>what a dinky little hat多么小的小帽子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>chink</th>
+      <td>ink</td>
+      <td>3.00</td>
+      <td>ver</td>
+      <td>tʃɪŋk</td>
+      <td>['check']</td>
+      <td></td>
+      <td>make cracks or chinks in制作裂缝或裂缝</td>
+      <td></td>
+      <td></td>
+      <td>[break, check, crack]</td>
+      <td>[crack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chink</th>
+      <td>ink</td>
+      <td>3.00</td>
+      <td>ver</td>
+      <td>tʃɪŋk</td>
+      <td>['clink', 'tink', 'tinkle']</td>
+      <td></td>
+      <td>make or emit a high sound发出或发出高声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chink</th>
+      <td>ink</td>
+      <td>3.00</td>
+      <td>ver</td>
+      <td>tʃɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>fill the chinks of, as with caulking填补了缝隙，就像填缝一样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stop up, plug, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chink</th>
+      <td>ink</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>tʃɪŋk</td>
+      <td>['click', 'clink']</td>
+      <td></td>
+      <td>a short light metallic sound短暂的轻金属声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chink</th>
+      <td>ink</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>tʃɪŋk</td>
+      <td>['chinaman']</td>
+      <td></td>
+      <td>(ethnic slur) offensive term for a person of Chinese descent（民族诽谤）一个华裔人士的冒犯性词语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chinese]</td>
+      <td>[jargon, lingo, patois, slang, argot, cant, depreciation, derogation, disparagement, ethnic slur, vernacular]</td>
+    </tr>
+    <tr>
+      <th>chink</th>
+      <td>ink</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>tʃɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a narrow opening as e.g. between planks in a wall一个狭窄的开口，例如在墙上的木板之间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fissure, cleft, crack, scissure, crevice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jinks</th>
+      <td>ink</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>dʒɪŋks</td>
+      <td>['high jinks', 'high jinx', 'hijinks']</td>
+      <td></td>
+      <td>noisy and mischievous merrymaking吵闹和恶作剧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[conviviality, jollification, merrymaking]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>slink</th>
+      <td>ink</td>
+      <td>2.36</td>
+      <td>ver</td>
+      <td>slɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>walk stealthily悄悄走路</td>
+      <td>I saw a cougar slinking toward its prey我看到一只美洲狮向它的猎物走去</td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skink</th>
+      <td>ink</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>skɪŋk</td>
+      <td>['scincid', 'scincid lizard']</td>
+      <td></td>
+      <td>alert agile lizard with reduced limbs and an elongated body covered with shiny scales; more dependent on moisture than most lizards; found in tropical regions worldwide警报灵活的蜥蜴，肢体减少，身体长而有光泽;比大多数蜥蜴更依赖水分;在全球热带地区发现</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lizard]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

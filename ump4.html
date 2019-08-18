@@ -1,0 +1,1040 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['jump', 'dump', 'pump', 'bump', 'lump', 'hump', 'rump', 'sump']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['pass over', 'skip', 'skip over']</td>
+      <td></td>
+      <td>bypass旁路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[miss, pretermit, leave out, drop, omit, neglect, overleap, overlook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['leap']</td>
+      <td></td>
+      <td>cause to jump or leap导致跳跃或跳跃</td>
+      <td>the trainer jumped the tiger through the hoop教练通过篮筐跳老虎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['leap']</td>
+      <td></td>
+      <td>pass abruptly from one state or topic to another从一个州或一个主题突然传递到另一个州</td>
+      <td>jump to a conclusion跳到结论jump from one thing to another从一件事跳到另一件事</td>
+      <td></td>
+      <td></td>
+      <td>[shift, change, switch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['climb up', 'rise']</td>
+      <td></td>
+      <td>rise in rank or status等级或地位上升</td>
+      <td>Her new novel jumped high on the bestseller list她的新小说在畅销书排行榜上名列前茅</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['derail']</td>
+      <td></td>
+      <td>run off or leave the rails跑掉或离开铁轨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['alternate']</td>
+      <td></td>
+      <td>go back and forth; swing back and forth between two states or conditions往返;在两个州或条件之间来回摆动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vary, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['start', 'startle']</td>
+      <td></td>
+      <td>move or jump suddenly, as if in surprise or alarm突然移动或跳跃，好像惊讶或惊恐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['jump-start', 'jumpstart']</td>
+      <td></td>
+      <td>start (a car engine whose battery is dead) by connecting it to another car's battery通过将其连接到另一辆车的电池来启动（电池耗尽的汽车引擎）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[start, start up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['bound', 'leap', 'spring'], alos:['jump on']</td>
+      <td></td>
+      <td>move forward by leaps and bounds突飞猛进</td>
+      <td>Can you jump over the fence?你能跳过篱笆吗？</td>
+      <td>[jumping]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['chute', 'parachute']</td>
+      <td></td>
+      <td>jump from an airplane and descend with a parachute从飞机上跳下来，用降落伞下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dive, plunge, plunk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['jump out', 'leap out', 'stand out', 'stick out']</td>
+      <td></td>
+      <td>be highly noticeable非常引人注目</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[look, seem, appear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td>['jump off', 'leap']</td>
+      <td></td>
+      <td>jump down from an elevated point从高处跳下来</td>
+      <td>the parachutist didn't want to jump跳伞运动员不想跳every year, hundreds of people jump off the Golden Gate bridge每年都有数百人从金门大桥上跳下来</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td></td>
+      <td></td>
+      <td>enter eagerly into热切地进入</td>
+      <td>He jumped into the game他跳进了比赛</td>
+      <td></td>
+      <td></td>
+      <td>[enter, participate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td></td>
+      <td></td>
+      <td>increase suddenly and significantly突然和显着增加</td>
+      <td>Prices jumped overnight价格隔夜暴涨</td>
+      <td></td>
+      <td></td>
+      <td>[wax, climb, mount, rise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>dʒəmp</td>
+      <td></td>
+      <td></td>
+      <td>make a sudden physical attack on突然进行物理攻击</td>
+      <td>The muggers jumped the woman in the fur coat劫匪穿着皮大衣跳过那个女人</td>
+      <td></td>
+      <td></td>
+      <td>[assault, set on, assail, attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>dʒəmp</td>
+      <td>['parachuting']</td>
+      <td></td>
+      <td>descent with a parachute用降落伞下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[descent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>dʒəmp</td>
+      <td>['start', 'startle']</td>
+      <td></td>
+      <td>a sudden involuntary movement一种突然的不自主运动</td>
+      <td></td>
+      <td>[jumpy]</td>
+      <td></td>
+      <td>[inborn reflex, innate reflex, physiological reaction, instinctive reflex, unconditioned reflex, reflex response, reflex action, reflex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>dʒəmp</td>
+      <td>['leap']</td>
+      <td></td>
+      <td>a sudden and decisive increase突然而果断的增加</td>
+      <td>a jump in attendance出席人数增加</td>
+      <td></td>
+      <td></td>
+      <td>[increase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>dʒəmp</td>
+      <td>['leap', 'saltation']</td>
+      <td></td>
+      <td>an abrupt transition一个突然的过渡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>dʒəmp</td>
+      <td>['jumping']</td>
+      <td></td>
+      <td>the act of jumping; propelling yourself off the ground跳跃的行为;推动自己离开地面</td>
+      <td>he advanced in a series of jumps他在一系列跳跃中前进the jumping was unexpected跳跃是意料之外的</td>
+      <td></td>
+      <td></td>
+      <td>[propulsion, actuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jump</th>
+      <td>ump</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>dʒəmp</td>
+      <td></td>
+      <td></td>
+      <td>(film) an abrupt transition from one scene to another（电影）从一个场景到另一个场景的突然过渡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>dəmp</td>
+      <td>['underprice']</td>
+      <td></td>
+      <td>sell at artificially low prices以人为压低的价格出售</td>
+      <td></td>
+      <td>[dumping]</td>
+      <td></td>
+      <td>[sell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>dəmp</td>
+      <td>['ditch']</td>
+      <td></td>
+      <td>sever all ties with, usually unceremoniously or irresponsibly通常毫不客气地或不负责任地切断所有联系</td>
+      <td>The company dumped him after many years of service经过多年的服务，公司抛弃了他She dumped her boyfriend when she fell in love with a rich man当她爱上一个富翁时，她抛弃了她的男朋友</td>
+      <td></td>
+      <td></td>
+      <td>[remove, get rid of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>dəmp</td>
+      <td>['coldcock', 'deck', 'floor', 'knock down']</td>
+      <td></td>
+      <td>knock down with force用力击倒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>dəmp</td>
+      <td>['plunge']</td>
+      <td></td>
+      <td>fall abruptly突然跌倒</td>
+      <td></td>
+      <td></td>
+      <td>[dive, plunge, plunk]</td>
+      <td>[drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>dəmp</td>
+      <td></td>
+      <td></td>
+      <td>drop (stuff) in a heap or mass丢弃（东西）堆或质量</td>
+      <td>The truck dumped the garbage in the street卡车把垃圾倒在街上</td>
+      <td>[dumper]</td>
+      <td></td>
+      <td>[drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>dəmp</td>
+      <td></td>
+      <td></td>
+      <td>throw away as refuse扔掉作为垃圾</td>
+      <td>No dumping in these woods!在这些树林里没有倾倒！</td>
+      <td></td>
+      <td></td>
+      <td>[throw out, put away, throw away, toss out, cast aside, cast away, cast out, chuck out, discard, dispose, toss away, toss, fling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>dəmp</td>
+      <td>['shit']</td>
+      <td></td>
+      <td>a coarse term for defecation排便的粗略术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shitting, laxation, defecation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>dəmp</td>
+      <td>['dumpsite', 'garbage dump', 'rubbish dump', 'trash dump', 'waste-yard', 'wasteyard']</td>
+      <td></td>
+      <td>a piece of land where waste materials are dumped一块废弃物倾倒的土地</td>
+      <td></td>
+      <td>[dumpy]</td>
+      <td></td>
+      <td>[land site, site]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>dəmp</td>
+      <td></td>
+      <td></td>
+      <td>a place where supplies can be stored可以存放物资的地方</td>
+      <td>an ammunition dump弹药堆</td>
+      <td></td>
+      <td></td>
+      <td>[storehouse, storage, store, depot, entrepot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dump</th>
+      <td>ump</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>dəmp</td>
+      <td></td>
+      <td></td>
+      <td>(computer science) a copy of the contents of a computer storage device; sometimes used in debugging programs（计算机科学）计算机存储设备的内容的副本;有时用于调试程序</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[copy, written matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>deliver forth交付</td>
+      <td>pump bullets into the dummy将子弹泵入假人</td>
+      <td></td>
+      <td></td>
+      <td>[blast, shoot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>draw or pour with a pump用泵抽水或倒水</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[take out, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>flow intermittently间歇性地流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spirt, spurt, gush, spout]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>move up and down上下移动</td>
+      <td>The athlete pumps weights in the gym运动员在健身房抽重量</td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>operate like a pump; move up and down, like a handle or a pedal像泵一样操作;像手柄或踏板一样上下移动</td>
+      <td>pump the gas pedal抽油门踏板</td>
+      <td></td>
+      <td></td>
+      <td>[wield, manage, handle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>question persistently问题持续存在</td>
+      <td>She pumped the witnesses for information她向证人提供了信息</td>
+      <td></td>
+      <td></td>
+      <td>[question, query]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>raise (gases or fluids) with a pump用泵提升（气体或流体）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lift, bring up, elevate, get up, raise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>supply in great quantities供应量大</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supply, render, provide, furnish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>pəmp</td>
+      <td>['heart', 'ticker']</td>
+      <td></td>
+      <td>the hollow muscular organ located behind the sternum and between the lungs; its rhythmic contractions move the blood through the body位于胸骨后面和肺部之间的中空肌肉器官;它有节奏的收缩使血液通过身体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[viscus, internal organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>a low-cut shoe without fastenings低帮鞋，没有紧固件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shoe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pump</th>
+      <td>ump</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>pəmp</td>
+      <td></td>
+      <td></td>
+      <td>a mechanical device that moves fluid or gas by pressure or suction通过压力或吸力移动流体或气体的机械装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>bəmp</td>
+      <td>['chance', 'encounter', 'find', 'happen']</td>
+      <td></td>
+      <td>come upon, as if by accident; meet with来吧，好像是偶然的;会见</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>bəmp</td>
+      <td>['knock'], alos:['bump into']</td>
+      <td></td>
+      <td>knock against with force or violence用武力或暴力冲击</td>
+      <td>My car bumped into the tree我的车撞到了树上</td>
+      <td>[bumper]</td>
+      <td></td>
+      <td>[impinge on, run into, strike, collide with, hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>bəmp</td>
+      <td>['break', 'demote', 'kick downstairs', 'relegate'], alos:['bump off']</td>
+      <td></td>
+      <td>assign to a lower position; reduce in rank分配到较低的位置;排名降低</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[delegate, assign, designate, depute]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>bəmp</td>
+      <td>['dislodge']</td>
+      <td></td>
+      <td>remove or force from a position of dwelling previously occupied从先前占用的住所移除或强制移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>bəmp</td>
+      <td></td>
+      <td></td>
+      <td>dance erotically or dance with the pelvis thrust forward性爱舞蹈或与骨盆向前推进舞蹈</td>
+      <td>bump and grind碰撞和研磨</td>
+      <td></td>
+      <td></td>
+      <td>[trip the light fantastic toe, trip the light fantastic, dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>bəmp</td>
+      <td>['blow']</td>
+      <td></td>
+      <td>an impact (as from a collision)影响（来自碰撞）</td>
+      <td>the bump threw him off the bicycle碰撞把他从自行车上扔了下来</td>
+      <td>[bumpy]</td>
+      <td></td>
+      <td>[impact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>bəmp</td>
+      <td>['bulge', 'excrescence', 'extrusion', 'gibbosity', 'gibbousness', 'hump', 'jut', 'prominence', 'protrusion', 'protuberance', 'swelling']</td>
+      <td></td>
+      <td>something that bulges out or is protuberant or projects from its surroundings突起或突出或从周围环境中投射出来的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bump</th>
+      <td>ump</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>bəmp</td>
+      <td></td>
+      <td></td>
+      <td>a lump on the body caused by a blow打击造成身体上的肿块</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[injury, trauma, harm, hurt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lump</th>
+      <td>ump</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>ləmp</td>
+      <td>['chunk', 'collocate']</td>
+      <td></td>
+      <td>group or chunk together in a certain order or place side by side按特定顺序或并排排列或组合在一起</td>
+      <td></td>
+      <td>[lumper]</td>
+      <td></td>
+      <td>[group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lump</th>
+      <td>ump</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>ləmp</td>
+      <td>['chunk']</td>
+      <td></td>
+      <td>put together indiscriminately不分青红皂白地拼凑起来</td>
+      <td>lump together all the applicants将所有申请人混为一谈</td>
+      <td></td>
+      <td></td>
+      <td>[amass, collect, compile, hoard, roll up, pile up, accumulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lump</th>
+      <td>ump</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>ləmp</td>
+      <td>['clod', 'gawk', 'goon', 'lout', 'lubber', 'lummox', 'oaf', 'stumblebum']</td>
+      <td></td>
+      <td>an awkward stupid person一个尴尬的愚蠢的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clumsy person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lump</th>
+      <td>ump</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>ləmp</td>
+      <td>['puffiness', 'swelling']</td>
+      <td></td>
+      <td>an abnormal protuberance or localized enlargement异常突起或局部扩大</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[symptom, enlargement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lump</th>
+      <td>ump</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>ləmp</td>
+      <td>['hunk']</td>
+      <td></td>
+      <td>a large piece of something without definite shape一大块没有明确形状的东西</td>
+      <td>a lump of coal一块煤</td>
+      <td>[lumpy]</td>
+      <td></td>
+      <td>[piece, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lump</th>
+      <td>ump</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>ləmp</td>
+      <td>['ball', 'chunk', 'clod', 'clump', 'glob']</td>
+      <td></td>
+      <td>a compact mass紧凑的质量</td>
+      <td></td>
+      <td>[lumpy]</td>
+      <td></td>
+      <td>[agglomeration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hump</th>
+      <td>ump</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>həmp</td>
+      <td>['bang', 'be intimate', 'bed', 'bonk', 'do it', 'eff', 'fuck', 'get it on', 'get laid', 'have a go at it', 'have intercourse', 'have it away', 'have it off', 'have sex', 'jazz', 'know', 'lie with', 'love', 'make love', 'make out', 'roll in the hay', 'screw', 'sleep together', 'sleep with']</td>
+      <td></td>
+      <td>have sexual intercourse with与...发生性关系</td>
+      <td></td>
+      <td></td>
+      <td>[make out, neck]</td>
+      <td>[mate, copulate, pair, couple]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hump</th>
+      <td>ump</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>həmp</td>
+      <td>['hunch', 'hunch forward', 'hunch over']</td>
+      <td></td>
+      <td>round one's back by bending forward and drawing the shoulders forward通过向前弯曲并向前拉动肩膀来向后弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hump</th>
+      <td>ump</td>
+      <td>3.58</td>
+      <td>nou</td>
+      <td>həmp</td>
+      <td>['bulge', 'bump', 'excrescence', 'extrusion', 'gibbosity', 'gibbousness', 'jut', 'prominence', 'protrusion', 'protuberance', 'swelling']</td>
+      <td></td>
+      <td>something that bulges out or is protuberant or projects from its surroundings突起或突出或从周围环境中投射出来的东西</td>
+      <td>the hump of a camel骆驼的驼峰</td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rump</th>
+      <td>ump</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>rəmp</td>
+      <td>['croup', 'croupe', 'hindquarters']</td>
+      <td></td>
+      <td>the part of an animal that corresponds to the human buttocks动物的一部分，与人体臀部相对应</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rump</th>
+      <td>ump</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>rəmp</td>
+      <td>['arse', 'ass', 'backside', 'behind', 'bottom', 'bum', 'buns', 'butt', 'buttocks', 'can', 'derriere', 'fanny', 'fundament', 'hind end', 'hindquarters', 'keister', 'nates', 'posterior', 'prat', 'rear', 'rear end', 'seat', 'stern', 'tail', 'tail end', 'tooshie', 'tush']</td>
+      <td></td>
+      <td>the fleshy part of the human body that you sit on你坐在人体的肉质部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rump</th>
+      <td>ump</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>rəmp</td>
+      <td></td>
+      <td></td>
+      <td>fleshy hindquarters; behind the loin and above the round肉质的后躯;在腰部后面和圆形上方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut of beef]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sump</th>
+      <td>ump</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>səmp</td>
+      <td>['cesspit', 'cesspool', 'sink']</td>
+      <td></td>
+      <td>a covered cistern; waste water and sewage flow into it一个有盖的蓄水池;废水和污水流入其中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cistern]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sump</th>
+      <td>ump</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>səmp</td>
+      <td></td>
+      <td></td>
+      <td>an oil reservoir in an internal combustion engine内燃机中的油箱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reservoir]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sump</th>
+      <td>ump</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>səmp</td>
+      <td></td>
+      <td></td>
+      <td>a well or other hole in which water has collected水井收集的井或其他洞</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[well]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

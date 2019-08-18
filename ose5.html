@@ -1,0 +1,860 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['close', 'whose', 'loser', 'moses', 'posed', 'nosed', 'nosey', 'prose', 'poser', 'dosed', 'mosey']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['close down', 'close up', 'fold', 'shut down']</td>
+      <td>[open]</td>
+      <td>cease to operate or cause to cease operating停止运作或导致停止运营</td>
+      <td>The owners decided to move and to close the factory业主决定搬家并关闭工厂My business closes every night at 8 P.M.我的生意每天晚上8点关门。close up the shop关闭商店</td>
+      <td>[closure, closing, closer]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['conclude']</td>
+      <td></td>
+      <td>come to a close结束了</td>
+      <td>The concert closed with a nocturne by Chopin音乐会以肖邦的夜曲结束</td>
+      <td>[closing]</td>
+      <td></td>
+      <td>[terminate, end, stop, finish, cease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['fill up']</td>
+      <td></td>
+      <td>fill or stop up填写或停止</td>
+      <td>Can you close the cracks with caulking?你能用填缝来封闭裂缝吗？</td>
+      <td>[closing, closure]</td>
+      <td></td>
+      <td>[fill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['shut']</td>
+      <td>[open]</td>
+      <td>move so that an opening or passage is obstructed; make shut移动以使开口或通道受阻;闭嘴</td>
+      <td></td>
+      <td>[closing, closure]</td>
+      <td>[shut]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['come together']</td>
+      <td></td>
+      <td>come together, as if in an embrace走到一起，好像在拥抱</td>
+      <td>Her arms closed around her long lost relative她的手臂围绕着失散多年的亲戚</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['shut']</td>
+      <td>[open]</td>
+      <td>become closed变得封闭</td>
+      <td>The windows closed with a loud bang窗户关上了一声巨响</td>
+      <td>[closing]</td>
+      <td>[shut]</td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['close up']</td>
+      <td></td>
+      <td>unite or bring into contact or bring together the edges of团结或接触或汇集边缘</td>
+      <td>close the circuit关闭电路close a wound闭上伤口close a book关闭一本书close up an umbrella关闭一把伞</td>
+      <td>[closing]</td>
+      <td></td>
+      <td>[join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>bar access to酒吧访问</td>
+      <td>Due to the accident, the road had to be closed for several hours由于这次事故，道路必须关闭几个小时</td>
+      <td>[closure, closing]</td>
+      <td></td>
+      <td>[barricade, bar, blockade, stop, block up, block off, block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>be priced or listed when trading stops交易停止时定价或上市</td>
+      <td>The stock market closed high this Friday本周五股市收高My new stocks closed at $59 last night我的新股昨晚收于59美元</td>
+      <td></td>
+      <td></td>
+      <td>[trade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>bring together all the elements or parts of将所有元素或部分汇集在一起</td>
+      <td>Management closed ranks管理层排名靠前</td>
+      <td></td>
+      <td></td>
+      <td>[join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td>[open]</td>
+      <td>cause a window or an application to disappear on a computer desktop导致窗口或应用程序在计算机桌面上消失</td>
+      <td></td>
+      <td>[closing, closure]</td>
+      <td></td>
+      <td>[end, terminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>change one's body stance so that the forward shoulder and foot are closer to the intended point of impact改变一个人的身体姿势，使前肩和脚更接近预定的撞击点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>complete a business deal, negotiation, or an agreement完成商业交易，谈判或协议</td>
+      <td>We closed on the house on Friday我们周五关闭了房子They closed the deal on the building他们完成了对建筑物的交易</td>
+      <td></td>
+      <td></td>
+      <td>[end, terminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>draw near拉近</td>
+      <td>The probe closed with the space station探测器与空间站关闭</td>
+      <td>[closure, closing]</td>
+      <td></td>
+      <td>[approach, come on, come near, go up, near, draw near, draw close]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>engage at close quarters近距离接触</td>
+      <td>close with the enemy与敌人关系密切</td>
+      <td>[closing]</td>
+      <td></td>
+      <td>[engage, prosecute, pursue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td></td>
+      <td>finish a game in baseball by protecting a lead通过保护领先完成棒球比赛</td>
+      <td>The relief pitcher closed with two runs in the second inning在第二局中，救援投手以两次运行结束</td>
+      <td></td>
+      <td></td>
+      <td>[complete, finish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td></td>
+      <td>[open]</td>
+      <td>finish or terminate (meetings, speeches, etc.)完成或终止（会议，演讲等）</td>
+      <td>The meeting was closed with a charge by the chairman of the board会议由董事会主席负责关闭</td>
+      <td>[closing, closure]</td>
+      <td></td>
+      <td>[terminate, end]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['closing', 'conclusion', 'end', 'ending']</td>
+      <td></td>
+      <td>the last section of a communication沟通的最后一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[subdivision, section]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['conclusion', 'finale', 'finis', 'finish', 'last', 'stopping point']</td>
+      <td></td>
+      <td>the temporal end; the concluding time时间结束;结束时间</td>
+      <td>they were playing better at the close of the season他们在赛季结束时表现更好</td>
+      <td></td>
+      <td></td>
+      <td>[ending, end]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['closing curtain', 'finale', 'finis']</td>
+      <td></td>
+      <td>the concluding part of any performance任何表演的结论部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[finish, finishing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adv</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['near', 'nigh']</td>
+      <td></td>
+      <td>near in time or place or relationship在时间，地点或关系附近</td>
+      <td>the bullet didn't come close子弹没有接近don't get too close to the fire不要太靠近火</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adv</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['closely', 'tight']</td>
+      <td></td>
+      <td>in an attentive manner以细心的方式</td>
+      <td>he remained close on his guard他保持警惕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['near', 'nigh'], similarTo:['warm', 'adjacent', 'hot', 'nearby']</td>
+      <td></td>
+      <td>not far distant in time or space or degree or circumstances在时间，空间或程度或情况下不远处</td>
+      <td>she was close to tears她快要哭了had a close call接到电话</td>
+      <td>[closeness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['tight'], similarTo:['fine']</td>
+      <td></td>
+      <td>of textiles纺织品</td>
+      <td>a close weave紧密编织</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['faithful'], similarTo:['accurate']</td>
+      <td></td>
+      <td>marked by fidelity to an original忠实于原件</td>
+      <td>a close translation一个密切的翻译</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['closelipped', 'closemouthed', 'secretive', 'tightlipped'], similarTo:['incommunicative', 'uncommunicative']</td>
+      <td></td>
+      <td>inclined to secrecy or reticence about divulging information倾向于保密或沉默泄露信息</td>
+      <td>although they knew her whereabouts her friends kept close about it虽然他们知道她的下落，但她的朋友一直在关注它</td>
+      <td>[closeness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['airless', 'stuffy', 'unaired'], similarTo:['unventilated']</td>
+      <td></td>
+      <td>lacking fresh air缺乏新鲜空气</td>
+      <td>the dreadfully close atmosphere可怕的亲密气氛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['confining'], similarTo:['confined']</td>
+      <td></td>
+      <td>crowded挤</td>
+      <td>close quarters近距离</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['cheeseparing', 'near', 'penny-pinching', 'skinny'], similarTo:['stingy', 'ungenerous']</td>
+      <td></td>
+      <td>giving or spending with reluctance不情愿地给予或消费</td>
+      <td>very close (or near) with his money与他的钱非常接近（或接近）</td>
+      <td>[closeness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['tight'], similarTo:['equal']</td>
+      <td></td>
+      <td>(of a contest or contestants) evenly matched（比赛或参赛者）均匀匹配</td>
+      <td>a close contest一场激烈的比赛a close election近距离选举</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>['close-fitting', 'snug'], similarTo:['tight']</td>
+      <td></td>
+      <td>fitting closely but comfortably紧密但舒适地贴合</td>
+      <td>a close fit紧密贴合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>, similarTo:['imminent', 'impendent', 'walk-to', 'immediate', 'surrounding', 'snuggled', 'side by side', 'scalelike', 'proximate', 'next', 'nestled', 'juxtaposed', 'adjacent', 'walking', 'adpressed', 'ambient', 'appressed', 'approximate', 'at hand', 'circumferent', 'close-hauled', 'close-set', 'close at hand', 'close set', 'close together', 'contiguous', 'encompassing', 'enveloping', 'impending', 'hand-to-hand']</td>
+      <td>[distant]</td>
+      <td>at or within a short distance in space or time or having elements near each other在空间或时间内或在短距离内或彼此靠近的元素</td>
+      <td>close to noon接近中午how close are we to town?我们离城镇有多近？a close formation of ships密切组建船只</td>
+      <td>[closeness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>, similarTo:['near', 'intimate', 'close-knit', 'cozy', 'dear', 'good', 'approximate', 'thick', 'closely knit', 'confidential', 'boon', 'buddy-buddy', 'chummy', 'familiar']</td>
+      <td>[distant]</td>
+      <td>close in relevance or relationship关系相关或关系</td>
+      <td>a close family一个亲密的家庭we are all...in close sympathy with...我们都......与...密切同情close kin亲近的a close resemblance一种近似的相似之处</td>
+      <td>[closeness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>, similarTo:['private']</td>
+      <td></td>
+      <td>confined to specific persons仅限于特定人员</td>
+      <td>a close secret一个秘密</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>, similarTo:['careful']</td>
+      <td></td>
+      <td>rigorously attentive; strict and thorough严谨细心;严谨彻底</td>
+      <td>close supervision密切监督paid close attention密切关注a close study仔细研究kept a close watch on expenditures密切关注支出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>, similarTo:['restrained']</td>
+      <td></td>
+      <td>strictly confined or guarded严格限制或保护</td>
+      <td>kept under close custody被严密监禁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>close</th>
+      <td>ose</td>
+      <td>5.36</td>
+      <td>adj</td>
+      <td>kloʊs, adjective:kloʊs, noun:kloʊz, verb:kloʊz</td>
+      <td>, similarTo:['short']</td>
+      <td></td>
+      <td>used of hair or haircuts用于头发或理发</td>
+      <td>a close military haircut一个接近的军事理发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whose</th>
+      <td>ose</td>
+      <td>4.80</td>
+      <td>pro</td>
+      <td>huz</td>
+      <td></td>
+      <td></td>
+      <td>The possessive case of who or which.占有情况是谁或谁。</td>
+      <td></td>
+      <td>[who, which]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loser</th>
+      <td>ose</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>'luzər</td>
+      <td>['failure', 'nonstarter', 'unsuccessful person']</td>
+      <td>[achiever]</td>
+      <td>a person with a record of failing; someone who loses consistently有失败记录的人;一直失败的人</td>
+      <td></td>
+      <td>[lose]</td>
+      <td></td>
+      <td>[unfortunate, unfortunate person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loser</th>
+      <td>ose</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>'luzər</td>
+      <td>['also-ran']</td>
+      <td>[winner]</td>
+      <td>a contestant who loses the contest失败的选手</td>
+      <td></td>
+      <td>[lose]</td>
+      <td></td>
+      <td>[contestant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loser</th>
+      <td>ose</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>'luzər</td>
+      <td></td>
+      <td>[winner]</td>
+      <td>a gambler who loses a bet一个输掉赌注的赌徒</td>
+      <td></td>
+      <td>[lose]</td>
+      <td></td>
+      <td>[gambler]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moses</th>
+      <td>ose</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>'moʊzɪz</td>
+      <td>['anna mary robertson moses', 'grandma moses']</td>
+      <td></td>
+      <td>United States painter of colorful and primitive rural scenes (1860-1961)美国多彩和原始农村场景画家（1860-1961）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moses</th>
+      <td>ose</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>'moʊzɪz</td>
+      <td></td>
+      <td></td>
+      <td>(Old Testament) the Hebrew prophet who led the Israelites from Egypt across the Red sea on a journey known as the Exodus; Moses received the Ten Commandments from God on Mount Sinai（旧约）希伯来先知，他带领以色列人从埃及穿越红海，进行了一次被称为出埃及记的旅程;摩西在西奈山接受了上帝的十诫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>posed</th>
+      <td>ose</td>
+      <td>3.29</td>
+      <td>Non</td>
+      <td>poʊzd</td>
+      <td></td>
+      <td>[unposed]</td>
+      <td>arranged for pictorial purposes为图片目的安排</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nosed</th>
+      <td>ose</td>
+      <td>3.13</td>
+      <td>adj</td>
+      <td>noʊzd</td>
+      <td>, similarTo:['hook-nosed', 'pug-nose', 'pug-nosed', 'sharp-nosed', 'short-nosed', 'snub-nosed', 'tube-nosed']</td>
+      <td>[noseless]</td>
+      <td>having a nose (either literal or metaphoric) especially of a specified kind有一个鼻子（字面或隐喻），特别是特定类型的鼻子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nosey</th>
+      <td>ose</td>
+      <td>2.92</td>
+      <td>adj</td>
+      <td>'noʊzi</td>
+      <td>['nosy', 'prying', 'snoopy'], similarTo:['curious']</td>
+      <td></td>
+      <td>offensively curious or inquisitive进攻性好奇或好奇</td>
+      <td></td>
+      <td>[nose]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prose</th>
+      <td>ose</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>proʊz</td>
+      <td></td>
+      <td></td>
+      <td>matter of fact, commonplace, or dull expression事实上，平凡或沉闷的表达</td>
+      <td></td>
+      <td>[prosaic]</td>
+      <td></td>
+      <td>[expressive style, style]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prose</th>
+      <td>ose</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>proʊz</td>
+      <td></td>
+      <td></td>
+      <td>ordinary writing as distinguished from verse普通的写作与诗歌不同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[literary genre, genre, writing style]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poser</th>
+      <td>ose</td>
+      <td>2.67</td>
+      <td>nou</td>
+      <td>'poʊzər</td>
+      <td>['model']</td>
+      <td></td>
+      <td>a person who poses for a photographer or painter or sculptor为摄影师或画家或雕塑家摆姿势的人</td>
+      <td></td>
+      <td>[pose]</td>
+      <td></td>
+      <td>[help, helper, assistant, supporter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poser</th>
+      <td>ose</td>
+      <td>2.67</td>
+      <td>nou</td>
+      <td>'poʊzər</td>
+      <td>['poseur']</td>
+      <td></td>
+      <td>a person who habitually pretends to be something he is not一个习惯性地假装自己不是的人</td>
+      <td></td>
+      <td>[pose]</td>
+      <td></td>
+      <td>[show-off, exhibitionist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poser</th>
+      <td>ose</td>
+      <td>2.67</td>
+      <td>nou</td>
+      <td>'poʊzər</td>
+      <td>['sticker', 'stumper', 'toughie']</td>
+      <td></td>
+      <td>a particularly difficult or baffling question or problem一个特别困难或令人困惑的问题或问题</td>
+      <td></td>
+      <td>[pose]</td>
+      <td></td>
+      <td>[problem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dosed</th>
+      <td>ose</td>
+      <td>2.57</td>
+      <td>adj</td>
+      <td></td>
+      <td>, similarTo:['treated']</td>
+      <td></td>
+      <td>treated with some kind of application用某种方式处理</td>
+      <td>a mustache dosed with bear grease小胡子上贴着熊油</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mosey</th>
+      <td>ose</td>
+      <td>2.49</td>
+      <td>ver</td>
+      <td>'moʊzi</td>
+      <td>['amble']</td>
+      <td></td>
+      <td>walk leisurely悠闲地散步</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

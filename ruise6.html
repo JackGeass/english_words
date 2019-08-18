@@ -1,0 +1,215 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['cruise', 'bruise']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>cruise</th>
+      <td>ruise</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>kruz</td>
+      <td></td>
+      <td></td>
+      <td>drive around aimlessly but ostentatiously and at leisure漫无目的地驾驶，但炫耀而且闲暇</td>
+      <td>She cruised the neighborhood in her new convertible她用新的敞篷车在附近巡航</td>
+      <td></td>
+      <td></td>
+      <td>[journey, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cruise</th>
+      <td>ruise</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>kruz</td>
+      <td></td>
+      <td></td>
+      <td>look for a sexual partner in a public place在公共场所寻找性伴侣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[search, look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cruise</th>
+      <td>ruise</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>kruz</td>
+      <td></td>
+      <td></td>
+      <td>sail or travel about for pleasure, relaxation, or sightseeing为了愉快，放松或观光而航行或旅行</td>
+      <td></td>
+      <td>[cruiser]</td>
+      <td></td>
+      <td>[voyage, navigate, sail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cruise</th>
+      <td>ruise</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>kruz</td>
+      <td></td>
+      <td></td>
+      <td>travel at a moderate speed以适中的速度旅行</td>
+      <td></td>
+      <td>[cruiser]</td>
+      <td></td>
+      <td>[move, go, travel, locomote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cruise</th>
+      <td>ruise</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>kruz</td>
+      <td>['sail']</td>
+      <td></td>
+      <td>an ocean trip taken for pleasure为享受而进行的海上旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ocean trip, voyage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bruise</th>
+      <td>ruise</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>bruz</td>
+      <td>['contuse']</td>
+      <td></td>
+      <td>injure the underlying soft tissue or bone of损伤下面的软组织或骨骼</td>
+      <td>I bruised my knee我擦伤了膝盖</td>
+      <td>[bruiser]</td>
+      <td></td>
+      <td>[injure, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bruise</th>
+      <td>ruise</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>bruz</td>
+      <td>['hurt', 'injure', 'offend', 'spite', 'wound']</td>
+      <td></td>
+      <td>hurt the feelings of伤害了感情</td>
+      <td>This remark really bruised my ego这句话真的伤害了我的自我</td>
+      <td></td>
+      <td></td>
+      <td>[fire, arouse, elicit, enkindle, evoke, kindle, provoke, raise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bruise</th>
+      <td>ruise</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>bruz</td>
+      <td></td>
+      <td></td>
+      <td>break up into small pieces for food preparation分成小块准备食物</td>
+      <td>bruise the berries with a wooden spoon and strain them用木勺擦伤浆果并拉紧它们</td>
+      <td></td>
+      <td></td>
+      <td>[crush]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bruise</th>
+      <td>ruise</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>bruz</td>
+      <td></td>
+      <td></td>
+      <td>damage (plant tissue) by abrasion or pressure磨损或压力造成的损害（植物组织）</td>
+      <td>The customer bruised the strawberries by squeezing them客户挤压它们会伤害草莓</td>
+      <td></td>
+      <td></td>
+      <td>[damage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bruise</th>
+      <td>ruise</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>bruz</td>
+      <td>['contusion']</td>
+      <td></td>
+      <td>an injury that doesn't break the skin but results in some discoloration伤口不会破坏皮肤但会导致一些变色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[injury, harm, hurt, trauma]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

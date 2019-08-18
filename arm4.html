@@ -1,0 +1,440 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['army', 'arms', 'warm', 'farm', 'harm']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>army</th>
+      <td>arm</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>'ɑrmi</td>
+      <td>['u. s. army', 'united states army', 'us army', 'usa']</td>
+      <td></td>
+      <td>the army of the United States of America; the agency that organizes and trains soldiers for land warfare美利坚合众国的军队;组织和训练士兵进行陆战的机构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[government agency, agency, bureau, office, authority, federal agency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>army</th>
+      <td>arm</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>'ɑrmi</td>
+      <td>['ground forces', 'regular army']</td>
+      <td></td>
+      <td>a permanent organization of the military land forces of a nation or state一个国家或国家的军事陆地部队的永久组织</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[military service, service, armed service]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>army</th>
+      <td>arm</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>'ɑrmi</td>
+      <td></td>
+      <td></td>
+      <td>a large number of people united for some specific purpose为了某种特定目的，许多人团结起来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crowd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arms</th>
+      <td>arm</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>ɑrmz</td>
+      <td>['blazon', 'blazonry', 'coat of arms']</td>
+      <td></td>
+      <td>the official symbols of a family, state, etc.家庭，国家等的官方标志</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[heraldry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arms</th>
+      <td>arm</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>ɑrmz</td>
+      <td>['implements of war', 'munition', 'weaponry', 'weapons system']</td>
+      <td></td>
+      <td>weapons considered collectively武器集体考虑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instrumentality, instrumentation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>ver</td>
+      <td>wɔrm</td>
+      <td>['warm up']</td>
+      <td></td>
+      <td>get warm or warmer变暖或暖和</td>
+      <td>The soup warmed slowly on the stove汤在炉子上慢慢变暖</td>
+      <td>[warming]</td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>ver</td>
+      <td>wɔrm</td>
+      <td></td>
+      <td></td>
+      <td>make warm or warmer温暖或温暖</td>
+      <td>The blanket will warm you毯子会温暖你</td>
+      <td>[warmer]</td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adv</td>
+      <td>wɔrm</td>
+      <td>['warmly']</td>
+      <td></td>
+      <td>in a warm manner以温暖的方式</td>
+      <td>warmly dressed穿着得体warm-clad skiers温暖的滑雪者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>['quick'], similarTo:['excitable']</td>
+      <td></td>
+      <td>easily aroused or excited容易引起或兴奋</td>
+      <td>a warm temper脾气暴躁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>['ardent'], similarTo:['enthusiastic']</td>
+      <td></td>
+      <td>characterized by strong enthusiasm以强烈的热情为特征</td>
+      <td>warm support热情的支持</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>['strong'], similarTo:['fresh']</td>
+      <td></td>
+      <td>freshly made or left刚制作或离开</td>
+      <td>a warm trail一条温暖的小道the scent is warm香味温暖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>, similarTo:['lively']</td>
+      <td></td>
+      <td>characterized by liveliness or excitement or disagreement以活泼或兴奋或分歧为特征</td>
+      <td>a warm debate热烈的辩论</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>, similarTo:['warming', 'lukewarm', 'tepid', 'warmed'], alos:['hot']</td>
+      <td>[cool]</td>
+      <td>having or producing a comfortable and agreeable degree of heat or imparting or maintaining heat具有或产生舒适和舒适的热量或赋予或保持热量</td>
+      <td>a warm body一个温暖的身体a warm room温暖的房间a warm climate气候温暖a warm coat一件温暖的外套</td>
+      <td>[warmness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>, similarTo:['hot']</td>
+      <td>[cool]</td>
+      <td>inducing the impression of warmth; used especially of reds and oranges and yellows when referring to color引起温暖的印象;在提到颜色时特别使用红色，橙色和黄色</td>
+      <td>warm reds and yellows and orange温暖的红色和黄色和橙色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>, similarTo:['close', 'near', 'nigh']</td>
+      <td></td>
+      <td>of a seeker; near to the object sought寻求者;靠近寻求的对象</td>
+      <td>you're getting warm你变暖了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>, similarTo:['cordial', 'hearty'], alos:['emotional', 'friendly']</td>
+      <td>[cool]</td>
+      <td>psychologically warm; friendly and responsive心理上温暖;友好和敏感</td>
+      <td>a warm greeting一个温暖的问候a warm personality性格温暖warm support热情的支持</td>
+      <td>[warmness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>warm</th>
+      <td>arm</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>wɔrm</td>
+      <td>, similarTo:['uncomfortable']</td>
+      <td></td>
+      <td>uncomfortable because of possible danger or trouble因为可能的危险或麻烦而感到不舒服</td>
+      <td>made things warm for the bookies为博彩公司做了一些温暖的事情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>farm</th>
+      <td>arm</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>fɑrm</td>
+      <td>['grow', 'produce', 'raise']</td>
+      <td></td>
+      <td>cultivate by growing, often involving improvements by means of agricultural techniques通过种植来培育，通常通过农业技术进行改良</td>
+      <td></td>
+      <td>[farmer, farming]</td>
+      <td></td>
+      <td>[cultivate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>farm</th>
+      <td>arm</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>fɑrm</td>
+      <td></td>
+      <td></td>
+      <td>be a farmer; work as a farmer做农民;作为农民工作</td>
+      <td>My son is farming in California我的儿子在加利福尼亚州耕种</td>
+      <td>[farmer, farming]</td>
+      <td></td>
+      <td>[work, do work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>farm</th>
+      <td>arm</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>fɑrm</td>
+      <td>, alos:['farm out']</td>
+      <td></td>
+      <td>collect fees or profits收取费用或利润</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[collect, take in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>farm</th>
+      <td>arm</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>fɑrm</td>
+      <td></td>
+      <td></td>
+      <td>workplace consisting of farm buildings and cultivated land as a unit工作场所包括农场建筑和耕地作为一个单元</td>
+      <td>it takes several people to work the farm这个农场需要几个人</td>
+      <td></td>
+      <td></td>
+      <td>[workplace, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>harm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>hɑrm</td>
+      <td></td>
+      <td></td>
+      <td>cause or do harm to导致或伤害</td>
+      <td>These pills won't harm your system这些药丸不会对您的系统造成伤害</td>
+      <td></td>
+      <td></td>
+      <td>[injure, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>harm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>hɑrm</td>
+      <td>['damage', 'hurt', 'scathe']</td>
+      <td></td>
+      <td>the act of damaging something or someone破坏某事或某人的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change of integrity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>harm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>hɑrm</td>
+      <td>['hurt', 'injury', 'trauma']</td>
+      <td></td>
+      <td>any physical damage to the body caused by violence or accident or fracture etc.暴力，事故或骨折等对身体造成的任何物理伤害</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[health problem, unhealthiness, ill health]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>harm</th>
+      <td>arm</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>hɑrm</td>
+      <td>['damage', 'impairment']</td>
+      <td></td>
+      <td>the occurrence of a change for the worse发生变化的情况更糟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alteration, modification, change]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

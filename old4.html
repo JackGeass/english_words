@@ -1,0 +1,1565 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hold', 'cold', 'gold', 'sold', 'fold', 'bold', 'mold', 'wold']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['contain', 'take']</td>
+      <td></td>
+      <td>be capable of holding or containing能够持有或包含</td>
+      <td>The flask holds one gallon烧瓶装一加仑</td>
+      <td></td>
+      <td>[admit, accommodate, bear, contain, carry]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['apply', 'go for']</td>
+      <td></td>
+      <td>be pertinent or relevant or applicable是相关的，相关的或适用的</td>
+      <td>This theory holds for all irrational numbers这个理论适用于所有无理数</td>
+      <td></td>
+      <td>[lend oneself, apply]</td>
+      <td>[touch on, touch, have to do with, relate, refer, concern, come to, pertain, bear on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['have', 'have got']</td>
+      <td></td>
+      <td>have or possess, either in a concrete or an abstract sense拥有或拥有，无论是具体的还是抽象的</td>
+      <td>She holds a Master's degree from Harvard她拥有哈佛大学的硕士学位</td>
+      <td>[holding]</td>
+      <td>[have, feature]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['hold up', 'support', 'sustain']</td>
+      <td></td>
+      <td>be the physical support of; carry the weight of是物质上的支持;承载的重量</td>
+      <td>The beam holds up the roof梁支撑着屋顶What's holding that mirror?那把镜子拿着什么？</td>
+      <td>[holder]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['defy', 'hold up', 'withstand']</td>
+      <td></td>
+      <td>resist or confront with resistance抵抗或抵抗抵抗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stand firm, resist, hold out, withstand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['check', 'contain', 'control', 'curb', 'hold in', 'moderate']</td>
+      <td></td>
+      <td>lessen the intensity of; temper; hold in restraint; hold or keep within limits减轻强度;脾气;保持克制;持有或保持在限度内</td>
+      <td>hold your tongue抓住你的舌头hold your temper发脾气</td>
+      <td></td>
+      <td></td>
+      <td>[restrain, keep, hold back, keep back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['carry']</td>
+      <td></td>
+      <td>drink alcohol without showing ill effects喝酒而不会产生不良影响</td>
+      <td>He can hold his liquor他可以拿着他的酒</td>
+      <td></td>
+      <td></td>
+      <td>[drink, booze, fuddle, hit the bottle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['arrest', 'halt']</td>
+      <td></td>
+      <td>cause to stop导致停止</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['accommodate', 'admit']</td>
+      <td></td>
+      <td>have room for; hold without crowding有空间;保持不拥挤</td>
+      <td>The auditorium can't hold more than 500 people礼堂不能容纳超过500人</td>
+      <td></td>
+      <td>[contain, take]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['take hold']</td>
+      <td>[let go of]</td>
+      <td>have or hold in one's hands or grip拥有或握住一只手或握住</td>
+      <td>A crazy idea took hold of him一个疯狂的想法抓住了他</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['give', 'have', 'make', 'throw']</td>
+      <td></td>
+      <td>organize or be responsible for组织或负责</td>
+      <td>hold a reception举行招待会</td>
+      <td></td>
+      <td></td>
+      <td>[direct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['obtain', 'prevail']</td>
+      <td></td>
+      <td>be valid, applicable, or true有效，适用或真实</td>
+      <td>This theory still holds这个理论仍然存在</td>
+      <td></td>
+      <td></td>
+      <td>[exist, be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['defend', 'guard']</td>
+      <td></td>
+      <td>protect against a challenge or attack防止挑战或攻击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['entertain', 'harbor', 'harbour', 'nurse']</td>
+      <td></td>
+      <td>maintain (a theory, thoughts, or feelings)保持（理论，思想或感受）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[experience, feel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['confine', 'constrain', 'restrain']</td>
+      <td></td>
+      <td>to close within bounds, or otherwise limit or deprive of free movement在界限范围内关闭，或以其他方式限制或剥夺自由流动</td>
+      <td>This holds the local until the express passengers change trains这使得当地直到快车乘客换乘火车</td>
+      <td></td>
+      <td></td>
+      <td>[disable, incapacitate, disenable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['deem', 'take for', 'view as']</td>
+      <td></td>
+      <td>keep in mind or convey as a conviction or view记住或作为定罪或观点传达</td>
+      <td>hold these truths to be self-evident坚持这些真理是不言而喻的I hold him personally responsible我让他个人负责</td>
+      <td></td>
+      <td></td>
+      <td>[regard, see, view, reckon, consider]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['bear']</td>
+      <td></td>
+      <td>have rightfully; of rights, titles, and offices合理地;权利，职称和办公室</td>
+      <td></td>
+      <td>[holder]</td>
+      <td></td>
+      <td>[have got, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['bear', 'carry', 'contain']</td>
+      <td></td>
+      <td>contain or hold; have within包含或保持;在...内</td>
+      <td>The canteen holds fresh water食堂盛放淡水</td>
+      <td></td>
+      <td>[contain, take]</td>
+      <td>[include]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['bind', 'obligate', 'oblige']</td>
+      <td></td>
+      <td>bind by an obligation; cause to be indebted责任约束;导致负债累累</td>
+      <td>I'll hold you by your promise我会按照你的诺言抱着你</td>
+      <td></td>
+      <td></td>
+      <td>[relate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['agree', 'concord', 'concur']</td>
+      <td></td>
+      <td>be in accord; be in agreement一致同意</td>
+      <td>I hold with those who say life is sacred我坚持认为生命是神圣的</td>
+      <td></td>
+      <td>[agree]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['hold back', 'keep back', 'retain']</td>
+      <td></td>
+      <td>secure and keep for possible future use or application保护并保留以备将来使用或应用</td>
+      <td></td>
+      <td>[holding]</td>
+      <td></td>
+      <td>[keep, hold on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['keep', 'maintain'], alos:['hold out', 'hold back', 'hold over', 'hold up']</td>
+      <td></td>
+      <td>cause to continue in a certain state, position, or activity; e.g., `keep clean'导致继续处于某种状态，位置或活动;例如，“保持干净”</td>
+      <td>hold in place保持到位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['bear', 'carry']</td>
+      <td></td>
+      <td>support or hold in a certain manner支持或以某种方式持有</td>
+      <td>She holds her head high她抬起头来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['adjudge', 'declare']</td>
+      <td></td>
+      <td>declare to be宣称是</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[judge, pass judgment, evaluate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td>['book', 'reserve']</td>
+      <td></td>
+      <td>arrange for and reserve (something for someone else) in advance提前安排和保留（为他人提供的东西）</td>
+      <td>please hold a table at Maxim's请在Maxim的桌子旁边</td>
+      <td></td>
+      <td>[reserve]</td>
+      <td>[ask for, request, quest, call for, bespeak]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>aim, point, or direct目标，指向或直接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[train, aim, take, take aim, direct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>assert or affirm断言或肯定</td>
+      <td>Rousseau's philosophy holds that people are inherently good卢梭的哲学认为人们天生就是好人</td>
+      <td></td>
+      <td>[view as, take for, deem]</td>
+      <td>[avow, assert, verify, swear, aver, swan, affirm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>cover as for protection against noise or smell覆盖以防止噪音或异味</td>
+      <td>hold one's nose抓住一个人的鼻子</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>have as a major characteristic有一个主要特点</td>
+      <td>The novel holds many surprises这部小说有许多惊喜The book holds in store much valuable advise这本书提供了许多有价值的建议</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>hold the attention of引起注意</td>
+      <td>She can hold an audience spellbound她可以让观众痴迷</td>
+      <td></td>
+      <td></td>
+      <td>[enamour, enchant, entrance, becharm, captivate, capture, catch, bewitch, beguile, trance, enamor, charm, fascinate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>keep from departing不要离开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prevent, keep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>keep from exhaling or expelling避免呼气或开除</td>
+      <td>hold your breath屏住呼吸</td>
+      <td></td>
+      <td></td>
+      <td>[hold back, keep, restrain, keep back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>remain committed to仍然致力于</td>
+      <td>I hold to these ideas我坚持这些想法</td>
+      <td></td>
+      <td></td>
+      <td>[consider, believe, think, conceive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>remain in a certain state, position, or condition保持某种状态，位置或状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go on, go along, continue, proceed, keep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>stop dealing with停止处理</td>
+      <td>hold all calls to the President's office while he is in a meeting在会议期间接到总统办公室的所有电话</td>
+      <td></td>
+      <td></td>
+      <td>[put off, prorogue, put over, table, hold over, postpone, remit, shelve, set back, defer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>ver</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>take and maintain control over, often by violent means通常采用暴力手段控制并保持控制权</td>
+      <td></td>
+      <td></td>
+      <td>[defend, guard]</td>
+      <td>[control, command]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td>['custody', 'detainment', 'detention']</td>
+      <td></td>
+      <td>a state of being confined (usually for a short time)被限制的状态（通常是短时间）</td>
+      <td>the prisoner is on hold囚犯被搁置</td>
+      <td></td>
+      <td></td>
+      <td>[confinement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td>['delay', 'postponement', 'time lag', 'wait']</td>
+      <td></td>
+      <td>time during which some action is awaited等待某些行动的时间</td>
+      <td>he ordered a hold in the action他下令暂停行动</td>
+      <td></td>
+      <td></td>
+      <td>[suspension, interruption, break, intermission, pause]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td>['grip', 'handgrip', 'handle']</td>
+      <td></td>
+      <td>the appendage to an object that is designed to be held in order to use or move it设计用于使用或移动物体的物体的附属物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[appendage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td>['cargo area', 'cargo deck', 'cargo hold', 'storage area']</td>
+      <td></td>
+      <td>the space in a ship or aircraft for storing cargo用于存放货物的船舶或飞机的空间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enclosure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td>['keep']</td>
+      <td></td>
+      <td>a cell in a jail or prison监狱里的一个牢房</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jail cell, prison cell, cell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td>['clasp', 'clench', 'clutch', 'clutches', 'grasp', 'grip']</td>
+      <td></td>
+      <td>the act of grasping抓住的行为</td>
+      <td>she kept a firm hold on the railing她紧紧抓住栏杆</td>
+      <td></td>
+      <td></td>
+      <td>[grasping, taking hold, seizing, prehension]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td>['appreciation', 'grasp']</td>
+      <td></td>
+      <td>understanding of the nature or meaning or quality or magnitude of something理解某事物的性质或意义或质量或程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[understanding, apprehension, discernment, savvy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>a stronghold一个据点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stronghold, fastness]</td>
+      <td>[archaicism, archaism]</td>
+    </tr>
+    <tr>
+      <th>hold</th>
+      <td>old</td>
+      <td>5.57</td>
+      <td>nou</td>
+      <td>hoʊld</td>
+      <td></td>
+      <td></td>
+      <td>power by which something or someone is affected or dominated某事或某人受到影响或支配的权力</td>
+      <td>he has a hold over them他控制住了他们</td>
+      <td></td>
+      <td></td>
+      <td>[control]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>nou</td>
+      <td>koʊld</td>
+      <td>['coldness', 'frigidity', 'frigidness', 'low temperature']</td>
+      <td></td>
+      <td>the absence of heat没有热量</td>
+      <td>the coldness made our breath visible寒冷使我们的呼吸可见come in out of the cold从寒冷中走出来cold is a vasoconstrictor感冒是一种血管收缩剂</td>
+      <td></td>
+      <td></td>
+      <td>[vasoconstrictor, vasoconstrictive, temperature, pressor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>nou</td>
+      <td>koʊld</td>
+      <td>['coldness']</td>
+      <td></td>
+      <td>the sensation produced by low temperatures低温产生的感觉</td>
+      <td>he shivered from the cold他从寒冷中颤抖the cold helped clear his head寒冷帮助他清醒了</td>
+      <td></td>
+      <td></td>
+      <td>[temperature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>nou</td>
+      <td>koʊld</td>
+      <td>['common cold']</td>
+      <td></td>
+      <td>a mild viral infection involving the nose and respiratory passages (but not the lungs)轻微的病毒感染，涉及鼻子和呼吸道（但不是肺部）</td>
+      <td>will they never find a cure for the common cold?他们永远找不到治疗感冒的方法吗？</td>
+      <td></td>
+      <td></td>
+      <td>[respiratory disorder, communicable disease, respiratory disease, respiratory illness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>['frigid'], similarTo:['unloving']</td>
+      <td></td>
+      <td>sexually unresponsive性反应迟钝</td>
+      <td>was cold to his advances他的进步很冷淡</td>
+      <td>[coldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>['cold-blooded', 'inhuman', 'insensate'], similarTo:['inhumane']</td>
+      <td></td>
+      <td>without compunction or human feeling没有悔改或人情</td>
+      <td>in cold blood冷血地cold-blooded killing冷血杀人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>['dusty', 'moth-eaten', 'stale'], similarTo:['unoriginal']</td>
+      <td></td>
+      <td>lacking originality or spontaneity; no longer new缺乏原创性或自发性;不再是新的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['cool']</td>
+      <td></td>
+      <td>(color) giving no sensation of warmth（颜色）没有温暖的感觉</td>
+      <td>a cold bluish grey冷蓝灰色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['wintry', 'passionless', 'icy', 'glacial', 'frozen', 'frosty', 'frigid', 'emotionless'], alos:['cool', 'passionless']</td>
+      <td>[hot]</td>
+      <td>extended meanings; especially of psychological coldness; without human warmth or emotion扩展意义;特别是心理寒冷;没有人的温暖或情感</td>
+      <td>a cold unfriendly nod冷漠的不友好的点头a cold and unaffectionate person一个冷酷无情的人a cold impersonal manner冷酷的客观态度cold logic冷逻辑the concert left me cold音乐会让我感到很冷淡</td>
+      <td>[coldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['unenthusiastic']</td>
+      <td></td>
+      <td>feeling or showing no enthusiasm感觉或表现出没有热情</td>
+      <td>a cold audience冷酷的观众a cold response to the new play对新剧的反应冷淡</td>
+      <td>[coldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['snappy', 'acold', 'algid', 'arctic', 'bleak', 'chilly', 'frore', 'frosty', 'gelid', 'glacial', 'heatless', 'ice-cold', 'icy', 'nipping', 'nippy', 'parky', 'polar', 'raw', 'refrigerant', 'refrigerated', 'refrigerating', 'rimed', 'rimy', 'shivery', 'stone-cold', 'unheated', 'unwarmed', 'crisp', 'cutting', 'frigid', 'frigorific'], alos:['cool', 'frozen']</td>
+      <td>[hot]</td>
+      <td>having a low or inadequate temperature or feeling a sensation of coldness or having been made cold by e.g. ice or refrigeration具有低温或不足的温度或感觉到寒冷的感觉或已经被冷却冰或冷藏</td>
+      <td>a cold climate寒冷的气候a cold room一个冷的房间dinner has gotten cold晚餐已经冷了cold fingers冷的手指if you are cold, turn up the heat如果你很冷，请加热a cold beer一杯冰镇啤酒</td>
+      <td>[coldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['stale']</td>
+      <td></td>
+      <td>having lost freshness through passage of time随着时间的推移失去了新鲜感</td>
+      <td>a cold trail冷酷的踪迹dogs attempting to catch a cold scent狗试图闻到冷的气味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['dead']</td>
+      <td></td>
+      <td>lacking the warmth of life缺乏生命的温暖</td>
+      <td>cold in his grave他的坟墓很冷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['perfect']</td>
+      <td></td>
+      <td>marked by errorless familiarity以无误的熟悉为标志</td>
+      <td>had her lines cold before rehearsals started在排练开始之前她的线路冷了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['far']</td>
+      <td></td>
+      <td>of a seeker; far from the object sought寻求者;远离寻求的对象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['intense']</td>
+      <td></td>
+      <td>so intense as to be almost uncontrollable如此激烈，几乎无法控制</td>
+      <td>cold fury gripped him冷酷的愤怒抓住了他</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cold</th>
+      <td>old</td>
+      <td>5.18</td>
+      <td>adj</td>
+      <td>koʊld</td>
+      <td>, similarTo:['unconscious']</td>
+      <td></td>
+      <td>unconscious from a blow or shock or intoxication因打击，休克或醉酒而无意识</td>
+      <td>the boxer was out cold拳击手冷了pass out cold感冒了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gold</th>
+      <td>old</td>
+      <td>4.84</td>
+      <td>nou</td>
+      <td>ɡoʊld</td>
+      <td>['atomic number 79', 'au']</td>
+      <td></td>
+      <td>a soft yellow malleable ductile (trivalent and univalent) metallic element; occurs mainly as nuggets in rocks and alluvial deposits; does not react with most chemicals but is attacked by chlorine and aqua regia柔软的黄色可延展韧性（三价和单价）金属元素;主要发生在岩石和冲积矿床中的金块;不会与大多数化学物质发生反应，但会受到氯和王水的侵袭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noble metal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gold</th>
+      <td>old</td>
+      <td>4.84</td>
+      <td>nou</td>
+      <td>ɡoʊld</td>
+      <td>['amber']</td>
+      <td></td>
+      <td>a deep yellow color深黄色</td>
+      <td>he admired the gold of her hair他钦佩她的头发金</td>
+      <td></td>
+      <td></td>
+      <td>[yellowness, yellow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gold</th>
+      <td>old</td>
+      <td>4.84</td>
+      <td>nou</td>
+      <td>ɡoʊld</td>
+      <td></td>
+      <td></td>
+      <td>coins made of gold由金制成的硬币</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[precious metal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gold</th>
+      <td>old</td>
+      <td>4.84</td>
+      <td>nou</td>
+      <td>ɡoʊld</td>
+      <td></td>
+      <td></td>
+      <td>great wealth巨大的财富</td>
+      <td>Whilst that for which all virtue now is sold, and almost every vice--almighty gold虽然现在所有的美德都被卖掉了，而且几乎每一个副手都是全能的黄金</td>
+      <td></td>
+      <td></td>
+      <td>[wealth, riches]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gold</th>
+      <td>old</td>
+      <td>4.84</td>
+      <td>nou</td>
+      <td>ɡoʊld</td>
+      <td></td>
+      <td></td>
+      <td>something likened to the metal in brightness or preciousness or superiority etc.在亮度，珍贵或优越等方面与金属相似的东西等。</td>
+      <td>the child was as good as gold孩子和金子一样好she has a heart of gold她有一颗金子般的心</td>
+      <td></td>
+      <td></td>
+      <td>[valuableness, invaluableness, pricelessness, preciousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gold</th>
+      <td>old</td>
+      <td>4.84</td>
+      <td>adj</td>
+      <td>ɡoʊld</td>
+      <td>['aureate', 'gilded', 'gilt', 'golden'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>having the deep slightly brownish color of gold有深褐色的金色</td>
+      <td>long aureate (or golden) hair长金色（或金色）头发a gold carpet一块金地毯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gold</th>
+      <td>old</td>
+      <td>4.84</td>
+      <td>adj</td>
+      <td>ɡoʊld</td>
+      <td>['gilded', 'golden'], similarTo:['metallic', 'metal']</td>
+      <td></td>
+      <td>made from or covered with gold由金制成或覆盖金</td>
+      <td>gold coins金币the gold dome of the Capitol国会大厦的金色圆顶the golden calf金牛犊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sold</th>
+      <td>old</td>
+      <td>4.74</td>
+      <td>adj</td>
+      <td>soʊld</td>
+      <td>, similarTo:['oversubscribed', 'sold-out']</td>
+      <td>[unsold]</td>
+      <td>disposed of to a purchaser处置给购买者</td>
+      <td>this merchandise is sold这件商品已售出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>foʊld</td>
+      <td>['close', 'close down', 'close up', 'shut down']</td>
+      <td></td>
+      <td>cease to operate or cause to cease operating停止运作或导致停止运营</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>foʊld</td>
+      <td>['pen up']</td>
+      <td></td>
+      <td>confine in a fold, like sheep像羊一样褶皱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hold, confine, constrain, restrain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>foʊld</td>
+      <td>['fold up', 'turn up']</td>
+      <td>[unfold]</td>
+      <td>bend or lay so that one part covers the other弯曲或铺设使一部分覆盖另一部分</td>
+      <td>fold up the newspaper折叠报纸</td>
+      <td>[folding, folder]</td>
+      <td></td>
+      <td>[change surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>foʊld</td>
+      <td>['fold up']</td>
+      <td></td>
+      <td>become folded or folded up折叠或折叠起来</td>
+      <td>The bed folds in a jiffy床折叠整齐</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>foʊld</td>
+      <td></td>
+      <td></td>
+      <td>incorporate a food ingredient into a mixture by repeatedly turning it over without stirring or beating通过反复翻转将食物成分掺入混合物中而不搅拌或敲打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[integrate, incorporate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>foʊld</td>
+      <td>['plica']</td>
+      <td></td>
+      <td>a folded part (as in skin or muscle)折叠部分（如皮肤或肌肉）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body structure, structure, anatomical structure, complex body part, bodily structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>foʊld</td>
+      <td>['bend', 'crease', 'crimp', 'flexure', 'plication']</td>
+      <td></td>
+      <td>an angular or rounded shape made by folding通过折叠制成的角形或圆形</td>
+      <td>a fold in the napkin在餐巾纸上折叠</td>
+      <td></td>
+      <td></td>
+      <td>[angularity, angular shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>foʊld</td>
+      <td>['flock']</td>
+      <td></td>
+      <td>a group of sheep or goats一群绵羊或山羊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>foʊld</td>
+      <td>['folding']</td>
+      <td></td>
+      <td>the act of folding折叠的行为</td>
+      <td>he gave the napkins a double fold他给了餐巾一个双倍的折叠</td>
+      <td></td>
+      <td></td>
+      <td>[change of shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>foʊld</td>
+      <td>['congregation', 'faithful']</td>
+      <td></td>
+      <td>a group of people who adhere to a common faith and habitually attend a given church一群坚持共同信仰并习惯性地参加某个教会的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[social group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>foʊld</td>
+      <td>['folding']</td>
+      <td></td>
+      <td>a geological process that causes a bend in a stratum of rock导致岩层弯曲的地质过程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[geological process, geologic process]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fold</th>
+      <td>old</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>foʊld</td>
+      <td>['sheep pen', 'sheepcote', 'sheepfold']</td>
+      <td></td>
+      <td>a pen for sheep一支羊的笔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bold</th>
+      <td>old</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>boʊld</td>
+      <td>['bold face', 'boldface']</td>
+      <td></td>
+      <td>a typeface with thick heavy lines带粗粗线条的字体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[face, typeface, font, fount, case]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bold</th>
+      <td>old</td>
+      <td>3.86</td>
+      <td>adj</td>
+      <td>boʊld</td>
+      <td>['bluff', 'sheer'], similarTo:['steep']</td>
+      <td></td>
+      <td>very steep; having a prominent and almost vertical front非常陡峭;具有突出且几乎垂直的前部</td>
+      <td>where the bold chalk cliffs of England rise英格兰大胆的白垩悬崖升起的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bold</th>
+      <td>old</td>
+      <td>3.86</td>
+      <td>adj</td>
+      <td>boʊld</td>
+      <td>, similarTo:['conspicuous']</td>
+      <td></td>
+      <td>clear and distinct清晰明确</td>
+      <td>bold handwriting大胆的笔迹a figure carved in bold relief一个刻有大胆浮雕的人物a bold design大胆的设计</td>
+      <td>[boldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bold</th>
+      <td>old</td>
+      <td>3.86</td>
+      <td>adj</td>
+      <td>boʊld</td>
+      <td>, similarTo:['vaulting', 'emboldened', 'daredevil', 'fearless', 'foolhardy', 'brave', 'hardy', 'heady', 'heroic', 'heroical', 'intrepid', 'nervy', 'overreaching', 'overvaliant', 'rash', 'reckless', 'dauntless', 'temerarious', 'audacious', 'unfearing'], alos:['forward', 'brave', 'courageous', 'fearless', 'adventuresome', 'adventurous', 'unafraid']</td>
+      <td>[timid]</td>
+      <td>fearless and daring无所畏惧，大胆</td>
+      <td>bold settlers on some foreign shore一些外国海岸的大胆定居者a bold speech大胆的演讲a bold adventure一次大胆的冒险</td>
+      <td>[boldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>ver</td>
+      <td>moʊld</td>
+      <td>['forge', 'form', 'mould', 'shape', 'work']</td>
+      <td></td>
+      <td>make something, usually for a specific function做某事，通常用于特定的功能</td>
+      <td>She molded the rice balls carefully她仔细地塑造了饭团</td>
+      <td></td>
+      <td>[process, work, work on]</td>
+      <td>[create from raw material, create from raw stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>ver</td>
+      <td>moʊld</td>
+      <td>['cast', 'mould']</td>
+      <td></td>
+      <td>form by pouring (e.g., wax or hot metal) into a cast or mold通过将（例如蜡或铁水）浇注到铸件或模具中来形成</td>
+      <td></td>
+      <td>[moldable, molding]</td>
+      <td></td>
+      <td>[form, forge, mould, shape, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>ver</td>
+      <td>moʊld</td>
+      <td>['model', 'mould']</td>
+      <td></td>
+      <td>form in clay, wax, etc粘土，蜡等形式</td>
+      <td></td>
+      <td>[molding, moldable]</td>
+      <td></td>
+      <td>[mould, forge, work, shape, form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>ver</td>
+      <td>moʊld</td>
+      <td>['determine', 'influence', 'regulate', 'shape']</td>
+      <td></td>
+      <td>shape or influence; give direction to形状或影响;指示</td>
+      <td>mold public opinion塑造舆论</td>
+      <td></td>
+      <td></td>
+      <td>[do, cause, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>ver</td>
+      <td>moʊld</td>
+      <td>['mildew']</td>
+      <td></td>
+      <td>become moldy; spoil due to humidity变得发霉;由于湿度而变质</td>
+      <td>The furniture molded in the old house在老房子里塑造的家具</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>ver</td>
+      <td>moʊld</td>
+      <td></td>
+      <td></td>
+      <td>fit tightly, follow the contours of紧紧贴合，按照轮廓</td>
+      <td>The dress molds her beautiful figure这件衣服塑造了她美丽的身材</td>
+      <td></td>
+      <td></td>
+      <td>[stick, adhere, cling, cohere, cleave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['mould']</td>
+      <td></td>
+      <td>a distinctive nature, character, or type独特的性质，特征或类型</td>
+      <td>a leader in the mold of her predecessors她的前辈模具的领导者</td>
+      <td></td>
+      <td></td>
+      <td>[stylemark, earmark, hallmark, trademark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['mould']</td>
+      <td></td>
+      <td>a dish or dessert that is formed in or on a mold在模具中或模具上形成的盘子或甜点</td>
+      <td>a lobster mold龙虾模具a gelatin dessert made in a mold在模具中制作的明胶甜点</td>
+      <td></td>
+      <td></td>
+      <td>[dessert, sweet, dish, afters]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['mould']</td>
+      <td></td>
+      <td>a fungus that produces a superficial growth on various kinds of damp or decaying organic matter一种真菌，可在各种潮湿或腐烂的有机物质上产生表面生长</td>
+      <td></td>
+      <td>[moldy]</td>
+      <td></td>
+      <td>[fungus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['cast', 'mould']</td>
+      <td></td>
+      <td>container into which liquid is poured to create a given shape when it hardens容器，液体倒入其中以在硬化时产生给定的形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['clay sculpture', 'modeling', 'molding', 'mould', 'moulding']</td>
+      <td></td>
+      <td>sculpture produced by molding成型雕塑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sculpture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['mildew', 'mould']</td>
+      <td></td>
+      <td>the process of becoming mildewed变得霉变的过程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spoiling, spoilage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['cast', 'mould', 'stamp']</td>
+      <td></td>
+      <td>the distinctive form in which a thing is made制作东西的独特形式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[solid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mold</th>
+      <td>old</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>moʊld</td>
+      <td>['mould']</td>
+      <td></td>
+      <td>loose soil rich in organic matter松散的土壤富含有机物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soil, dirt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wold</th>
+      <td>old</td>
+      <td>2.24</td>
+      <td>nou</td>
+      <td>wɔld</td>
+      <td></td>
+      <td></td>
+      <td>a tract of open rolling country (especially upland)一片开阔的国家（特别是高地）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[country, rural area]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

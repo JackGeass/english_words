@@ -1,0 +1,380 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['spend', 'blend', 'trend', 'bends', 'amend', 'emend', 'upend']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>spend</th>
+      <td>end</td>
+      <td>4.95</td>
+      <td>ver</td>
+      <td>spɛnd</td>
+      <td>['drop', 'expend']</td>
+      <td></td>
+      <td>pay out付出</td>
+      <td>spend money破费</td>
+      <td>[spender, spending]</td>
+      <td></td>
+      <td>[pay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spend</th>
+      <td>end</td>
+      <td>4.95</td>
+      <td>ver</td>
+      <td>spɛnd</td>
+      <td>['pass']</td>
+      <td></td>
+      <td>use up a period of time in a specific way以特定方式消耗一段时间</td>
+      <td>how are you spending your summer vacation?你过得怎么过暑假？</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spend</th>
+      <td>end</td>
+      <td>4.95</td>
+      <td>ver</td>
+      <td>spɛnd</td>
+      <td></td>
+      <td></td>
+      <td>spend completely完全度过</td>
+      <td>I spend my pocket money in two days我花了我的零用钱两天</td>
+      <td>[spender, spending]</td>
+      <td></td>
+      <td>[wipe out, run through, use up, exhaust, eat, eat up, deplete, consume]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blend</th>
+      <td>end</td>
+      <td>3.59</td>
+      <td>ver</td>
+      <td>blɛnd</td>
+      <td>['immingle', 'intermingle', 'intermix']</td>
+      <td></td>
+      <td>combine into one合二为一</td>
+      <td>blend the nuts and raisins together将坚果和葡萄干混合在一起he blends in with the crowd他与人群融为一体</td>
+      <td>[blender]</td>
+      <td></td>
+      <td>[unify, mix, amalgamate, commix, mingle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blend</th>
+      <td>end</td>
+      <td>3.59</td>
+      <td>ver</td>
+      <td>blɛnd</td>
+      <td>['blend in', 'go']</td>
+      <td></td>
+      <td>blend or harmonize融合或协调</td>
+      <td>This flavor will blend with those in your dish这种味道将与你的菜肴混合</td>
+      <td></td>
+      <td>[fit, go]</td>
+      <td>[concord, accord, agree, consort, fit in, harmonise, harmonize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blend</th>
+      <td>end</td>
+      <td>3.59</td>
+      <td>ver</td>
+      <td>blɛnd</td>
+      <td>['coalesce', 'combine', 'commingle', 'conflate', 'flux', 'fuse', 'immix', 'meld', 'merge', 'mix']</td>
+      <td></td>
+      <td>mix together different elements混合不同的元素</td>
+      <td>The colors blend well颜色很好融合</td>
+      <td></td>
+      <td></td>
+      <td>[change integrity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blend</th>
+      <td>end</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>blɛnd</td>
+      <td>['blending']</td>
+      <td></td>
+      <td>the act of blending components together thoroughly将组件彻底混合在一起的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[compounding, combining, combination]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blend</th>
+      <td>end</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>blɛnd</td>
+      <td>['portmanteau', 'portmanteau word']</td>
+      <td></td>
+      <td>a new word formed by joining two others and combining their meanings通过加入另外两个并结合其含义而形成的新词</td>
+      <td>`smog' is a blend of `smoke' and `fog'`smog'是'smoke'和`fog'的混合体</td>
+      <td></td>
+      <td></td>
+      <td>[coinage, neology, neologism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blend</th>
+      <td>end</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>blɛnd</td>
+      <td></td>
+      <td></td>
+      <td>an occurrence of thorough mixing发生彻底混合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mix, mixture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>ver</td>
+      <td>trɛnd</td>
+      <td>['curve', 'cut', 'sheer', 'slew', 'slue', 'swerve', 'veer']</td>
+      <td></td>
+      <td>turn sharply; change direction abruptly转得厉害;突然改变方向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>trɛnd</td>
+      <td>['course']</td>
+      <td></td>
+      <td>general line of orientation一般的定向线</td>
+      <td>the northeastern trend of the coast东北沿海的趋势</td>
+      <td></td>
+      <td></td>
+      <td>[way, direction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>trɛnd</td>
+      <td>['style', 'vogue']</td>
+      <td></td>
+      <td>the popular taste at a given time在特定时间流行的味道</td>
+      <td>he followed current trends他遵循当前的趋势</td>
+      <td>[trendy]</td>
+      <td></td>
+      <td>[appreciation, discernment, perceptiveness, taste]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>trɛnd</td>
+      <td>['tendency']</td>
+      <td></td>
+      <td>a general direction in which something tends to move事物倾向于移动的一般方向</td>
+      <td>the trend of the stock market股市的走势</td>
+      <td></td>
+      <td></td>
+      <td>[direction, way]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>trɛnd</td>
+      <td>['drift', 'movement']</td>
+      <td></td>
+      <td>a general tendency to change (as of opinion)一般的改变倾向（作为意见）</td>
+      <td>not openly liberal but that is the trend of the book不公开自由，但这是本书的趋势</td>
+      <td></td>
+      <td></td>
+      <td>[disposition, tendency, inclination]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bends</th>
+      <td>end</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>bɛndz</td>
+      <td>['aeroembolism', 'air embolism', 'caisson disease', 'decompression sickness', 'gas embolism']</td>
+      <td></td>
+      <td>pain resulting from rapid change in pressure压力迅速变化引起的疼痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[illness, malady, sickness, unwellness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amend</th>
+      <td>end</td>
+      <td>2.76</td>
+      <td>ver</td>
+      <td>ə'mɛnd</td>
+      <td>['rectify', 'remediate', 'remedy', 'repair']</td>
+      <td></td>
+      <td>set straight or right直线或右边</td>
+      <td></td>
+      <td>[amendable]</td>
+      <td></td>
+      <td>[correct, rectify, right]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amend</th>
+      <td>end</td>
+      <td>2.76</td>
+      <td>ver</td>
+      <td>ə'mɛnd</td>
+      <td>['ameliorate', 'better', 'improve', 'meliorate']</td>
+      <td></td>
+      <td>to make better做得更好</td>
+      <td></td>
+      <td>[amendable]</td>
+      <td>[meliorate, better, improve, ameliorate]</td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amend</th>
+      <td>end</td>
+      <td>2.76</td>
+      <td>ver</td>
+      <td>ə'mɛnd</td>
+      <td></td>
+      <td></td>
+      <td>make amendments to修改</td>
+      <td>amend the document修改文件</td>
+      <td>[amendatory, amendment]</td>
+      <td></td>
+      <td>[revise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>emend</th>
+      <td>end</td>
+      <td>2.02</td>
+      <td>ver</td>
+      <td>ɪ'mɛnd</td>
+      <td></td>
+      <td></td>
+      <td>make improvements or corrections to改进或纠正</td>
+      <td>the text was emended in the second edition该案文在第二版中得到了修订</td>
+      <td></td>
+      <td></td>
+      <td>[ameliorate, amend, better, improve, meliorate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>upend</th>
+      <td>end</td>
+      <td>1.74</td>
+      <td>ver</td>
+      <td>,əp'ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>become turned or set on end转身或结束</td>
+      <td>the airplanes upended飞机颠覆了</td>
+      <td>[upending]</td>
+      <td></td>
+      <td>[overturn, tip over, tump over, turn over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>upend</th>
+      <td>end</td>
+      <td>1.74</td>
+      <td>ver</td>
+      <td>,əp'ɛnd</td>
+      <td></td>
+      <td></td>
+      <td>set, turn, or stand on end设置，转动或站立</td>
+      <td>upend the box and empty the contents翻转框并清空内容</td>
+      <td>[upending]</td>
+      <td></td>
+      <td>[lay, set, put, place, pose, position]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

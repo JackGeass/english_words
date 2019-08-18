@@ -1,0 +1,1070 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['find', 'kind', 'mind', 'wind', 'bind', 'hind', 'lind', 'rind', 'sind']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['bump', 'chance', 'encounter', 'happen']</td>
+      <td></td>
+      <td>come upon, as if by accident; meet with来吧，好像是偶然的;会见</td>
+      <td>We find this idea in Plato我们在柏拉图找到了这个想法</td>
+      <td>[finder]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['detect', 'discover', 'notice', 'observe']</td>
+      <td></td>
+      <td>discover or determine the existence, presence, or fact of发现或确定其存在，存在或事实</td>
+      <td></td>
+      <td>[finder, finding]</td>
+      <td>[discover]</td>
+      <td>[sight, spy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['feel']</td>
+      <td></td>
+      <td>come to believe on the basis of emotion, intuitions, or indefinite grounds开始相信情感，直觉或无限的理由</td>
+      <td>I find him to be obnoxious我发现他是令人讨厌的</td>
+      <td></td>
+      <td>[rule]</td>
+      <td>[conclude, reason out, reason]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['see', 'witness']</td>
+      <td></td>
+      <td>perceive or be contemporaneous with感知或与之同时发生</td>
+      <td></td>
+      <td>[finder]</td>
+      <td>[learn, get wind, get word, see, discover, find out, hear, get a line, pick up]</td>
+      <td>[experience, go through, see]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['recover', 'regain', 'retrieve']</td>
+      <td></td>
+      <td>get or find back; recover the use of得到或找​​回;恢复使用</td>
+      <td></td>
+      <td></td>
+      <td>[regain]</td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['find oneself']</td>
+      <td></td>
+      <td>accept and make use of one's personality, abilities, and situation接受并利用一个人的个性，能力和情境</td>
+      <td>My son went to Berkeley to find himself我的儿子去伯克利寻找自己</td>
+      <td></td>
+      <td></td>
+      <td>[grow, maturate, mature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['discover'], alos:['find out']</td>
+      <td></td>
+      <td>make a discovery发现</td>
+      <td></td>
+      <td></td>
+      <td>[discover]</td>
+      <td>[discover, hear, get a line, learn, get wind, see, get word, find out, pick up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['get', 'incur', 'obtain', 'receive']</td>
+      <td></td>
+      <td>receive a specified treatment (abstract)接受指定的治疗（摘要）</td>
+      <td>These aspects of civilization do not find expression or receive an interpretation文明的这些方面没有找到表达或接受解释</td>
+      <td></td>
+      <td>[get, acquire]</td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['ascertain', 'determine', 'find out']</td>
+      <td></td>
+      <td>establish after a calculation, investigation, experiment, survey, or study通过计算，调查，实验，调查或研究后建立</td>
+      <td>find the product of two numbers找到两个数字的乘积</td>
+      <td>[finding]</td>
+      <td>[find out, learn, ascertain, watch, determine, see, discover, check]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['discover']</td>
+      <td></td>
+      <td>make a discovery, make a new finding发现一个新的发现</td>
+      <td></td>
+      <td>[finding]</td>
+      <td>[notice, determine, find out, detect, discover, ascertain, observe]</td>
+      <td>[conceptualise, conceptualize, conceive, gestate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['come up', 'get hold', 'line up']</td>
+      <td></td>
+      <td>get something or somebody for a specific purpose为特定目的得到某事或某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['rule']</td>
+      <td></td>
+      <td>decide on and make a declaration about决定并作出声明</td>
+      <td>find someone guilty找人有罪</td>
+      <td>[finding]</td>
+      <td>[feel]</td>
+      <td>[judge, pronounce, label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['regain']</td>
+      <td>[lose]</td>
+      <td>come upon after searching; find the location of something that was missed or lost寻找后来吧;找到错过或丢失的东西的位置</td>
+      <td>Did you find your glasses?你找到了眼镜吗？I cannot find my gloves!我找不到手套！</td>
+      <td>[finder]</td>
+      <td>[recover, retrieve, regain]</td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td></td>
+      <td></td>
+      <td>obtain through effort or management通过努力或管理获得</td>
+      <td></td>
+      <td></td>
+      <td>[regain]</td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td></td>
+      <td></td>
+      <td>perceive oneself to be in a certain condition or place感知自己处于某种状态或地点</td>
+      <td></td>
+      <td></td>
+      <td>[see, witness]</td>
+      <td>[comprehend, perceive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td></td>
+      <td></td>
+      <td>succeed in reaching; arrive at成功达到;到达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attain, gain, make, reach, arrive at, hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>nou</td>
+      <td>faɪnd</td>
+      <td>['discovery', 'uncovering']</td>
+      <td></td>
+      <td>the act of discovering something发现某事的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[human activity, act, deed, human action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>ind</td>
+      <td>5.90</td>
+      <td>nou</td>
+      <td>faɪnd</td>
+      <td>['breakthrough', 'discovery']</td>
+      <td></td>
+      <td>a productive insight富有成效的见解</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[brainwave, brainstorm, insight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>ind</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kaɪnd</td>
+      <td>['form', 'sort', 'variety']</td>
+      <td></td>
+      <td>a category of things distinguished by some common characteristic or quality一类通过某些共同特征或品质区分的事物</td>
+      <td>what kinds of desserts are there?那里有什么样的甜点？</td>
+      <td></td>
+      <td></td>
+      <td>[category]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>ind</td>
+      <td>5.68</td>
+      <td>adj</td>
+      <td>kaɪnd</td>
+      <td>['genial'], similarTo:['hospitable']</td>
+      <td></td>
+      <td>agreeable, conducive to comfort和蔼可亲，有利于安慰</td>
+      <td>a dry climate kind to asthmatics干燥的气候对哮喘患者有益hot summer pavements are anything but kind to the feet炎热的夏季路面对脚来说不是什么好事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>ind</td>
+      <td>5.68</td>
+      <td>adj</td>
+      <td>kaɪnd</td>
+      <td>['tolerant'], similarTo:['forgiving']</td>
+      <td></td>
+      <td>tolerant and forgiving under provocation在挑衅下宽容和宽容</td>
+      <td>our neighbor was very kind about the window our son broke我们的邻居对我们儿子破窗的窗户很好</td>
+      <td>[kindness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>ind</td>
+      <td>5.68</td>
+      <td>adj</td>
+      <td>kaɪnd</td>
+      <td>, similarTo:['benevolent', 'gentle', 'good-hearted', 'sympathetic', 'charitable', 'gracious', 'benignant', 'kind-hearted', 'kindhearted', 'kindly', 'large-hearted', 'benign', 'openhearted'], alos:['soft', 'benign', 'considerate', 'benignant', 'good-natured', 'merciful']</td>
+      <td>[unkind]</td>
+      <td>having or showing a tender and considerate and helpful nature; used especially of persons and their behavior拥有或表现出温柔，体贴和乐于助人的性质;特别是人和他们的行为</td>
+      <td>kind to sick patients善待病人a kind master善良的主人kind words showing understanding and sympathy善意的话语表达了理解和同情thanked her for her kind letter感谢她的来信</td>
+      <td>[kindness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['heed', 'listen']</td>
+      <td></td>
+      <td>pay close attention to; give heed to密切关注;注意</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['bear in mind']</td>
+      <td>[forget]</td>
+      <td>keep in mind记住</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remember, think of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['take care']</td>
+      <td></td>
+      <td>be in charge of or deal with负责或处理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[care, deal, manage, handle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['beware']</td>
+      <td></td>
+      <td>be on one's guard; be cautious or wary about; be alert to保持警惕;保持谨慎或谨慎;警惕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[look out, watch, watch out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>be concerned with or about something or somebody关心或关注某事或某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[think about]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>be offended or bothered by; take offense with, be bothered by被冒犯或困扰;冒犯，被打扰</td>
+      <td>I don't mind your behavior我不介意你的行为</td>
+      <td></td>
+      <td></td>
+      <td>[object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['brain', 'head', 'nous', 'psyche']</td>
+      <td></td>
+      <td>that which is responsible for one's thoughts, feelings, and conscious brain functions; the seat of the faculty of reason对一个人的思想，情感和有意识的大脑功能负责的;理性能力的所在地</td>
+      <td>his mind wandered他的思绪徘徊</td>
+      <td></td>
+      <td></td>
+      <td>[cognition, noesis, knowledge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['intellect']</td>
+      <td></td>
+      <td>knowledge and intellectual ability知识和智力</td>
+      <td>he reads to improve his mind他读着改善主意</td>
+      <td></td>
+      <td></td>
+      <td>[intelligence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['creative thinker', 'thinker']</td>
+      <td></td>
+      <td>an important intellectual重要的知识分子</td>
+      <td>the great minds of the 17th century17世纪的伟大思想</td>
+      <td></td>
+      <td></td>
+      <td>[intellect, intellectual]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['idea']</td>
+      <td></td>
+      <td>your intention; what you intend to do你的意图;你打算做什么</td>
+      <td>he had in mind to see his old teacher他想到要看他的老师</td>
+      <td></td>
+      <td></td>
+      <td>[aim, purpose, design, intention, intent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['judgement', 'judgment']</td>
+      <td></td>
+      <td>an opinion formed by judging something判断事物形成的意见</td>
+      <td>she changed her mind她改变了主意</td>
+      <td></td>
+      <td></td>
+      <td>[view, sentiment, opinion, persuasion, thought]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>attention注意</td>
+      <td>don't pay him any mind不要理他的钱</td>
+      <td></td>
+      <td></td>
+      <td>[notice, observation, observance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>ind</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>recall or remembrance回忆或记忆</td>
+      <td>it came to mind它浮现在脑海中</td>
+      <td></td>
+      <td></td>
+      <td>[recall, recollection, reminiscence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['hoist', 'lift']</td>
+      <td></td>
+      <td>raise or haul up with or as if with mechanical help用或似乎机械帮助提升或牵引</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[raise, lift, get up, elevate, bring up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['nose', 'scent']</td>
+      <td></td>
+      <td>catch the scent of; get wind of抓住气味;得到风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['wreathe']</td>
+      <td></td>
+      <td>form into a wreath形成一个花圈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[twine, intertwine, lace, entwine, enlace, interlace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['roll', 'twine', 'wrap']</td>
+      <td>[unwind]</td>
+      <td>arrange or or coil around安排或绕圈</td>
+      <td></td>
+      <td>[winder]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['meander', 'thread', 'wander', 'weave']</td>
+      <td></td>
+      <td>to move or cause to move in a sinuous, spiral, or circular course移动或导致在弯曲，螺旋或圆形路线中移动</td>
+      <td>the river winds through the hills河流蜿蜒穿过山丘</td>
+      <td></td>
+      <td>[wander]</td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['curve', 'twist']</td>
+      <td></td>
+      <td>extend in curves and turns曲线和转弯延伸</td>
+      <td>The road winds around the lake这条路蜿蜒在湖边</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['wind up']</td>
+      <td></td>
+      <td>coil the spring of (some mechanical device) by turning a stem通过转动阀杆来卷绕（一些机械装置）的弹簧</td>
+      <td>wind your watch刮你的手表</td>
+      <td>[winder]</td>
+      <td></td>
+      <td>[fasten, tighten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['breaking wind', 'fart', 'farting', 'flatus']</td>
+      <td></td>
+      <td>a reflex that expels intestinal gas through the anus通过肛门排出肠道气体的反射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reflex, instinctive reflex, innate reflex, reflex action, physiological reaction, unconditioned reflex, inborn reflex, reflex response]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['idle words', 'jazz', 'malarkey', 'malarky', 'nothingness']</td>
+      <td></td>
+      <td>empty rhetoric or insincere or exaggerated talk空洞的言辞或虚伪或夸张的谈话</td>
+      <td>that's a lot of wind这是很多风</td>
+      <td>[windy]</td>
+      <td></td>
+      <td>[talking, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['twist', 'winding']</td>
+      <td></td>
+      <td>the act of winding or twisting缠绕或扭曲的行为</td>
+      <td>he put the key in the old clock and gave it a good wind他把钥匙放在旧钟上，给了它一阵风</td>
+      <td></td>
+      <td></td>
+      <td>[rotation, rotary motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['wind instrument']</td>
+      <td></td>
+      <td>a musical instrument in which the sound is produced by an enclosed column of air that is moved by bellows or the human breath一种乐器，其中声音是由被风箱或人类呼吸移动的封闭空气柱产生的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instrument, musical instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['air current', 'current of air']</td>
+      <td></td>
+      <td>air moving (sometimes with considerable force) from an area of high pressure to an area of low pressure空气移动（有时用相当大的力）从高压区域到低压区域</td>
+      <td>trees bent under the fierce winds树木在狂风下弯曲when there is no wind, row当没有风，排</td>
+      <td>[windy]</td>
+      <td></td>
+      <td>[weather, weather condition, atmospheric condition, conditions]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['confidential information', 'hint', 'lead', 'steer', 'tip']</td>
+      <td></td>
+      <td>an indication of potential opportunity潜在机会的迹象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[direction, counsel, counseling, guidance, counselling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td></td>
+      <td></td>
+      <td>a tendency or force that influences events影响事件的倾向或力量</td>
+      <td>the winds of change变化之风</td>
+      <td></td>
+      <td></td>
+      <td>[influence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>ind</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td></td>
+      <td></td>
+      <td>breath呼吸</td>
+      <td>the collision knocked the wind out of him碰撞将风从他身上撞了出来</td>
+      <td></td>
+      <td></td>
+      <td>[expiration, breathing out, exhalation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['adhere', 'bond', 'hold fast', 'stick', 'stick to']</td>
+      <td></td>
+      <td>stick to firmly坚持下去</td>
+      <td></td>
+      <td>[binder, binding]</td>
+      <td>[cleave, cohere, adhere, stick, cling]</td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['attach', 'bond', 'tie']</td>
+      <td></td>
+      <td>create social or emotional ties建立社交或情感联系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[relate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['tie']</td>
+      <td></td>
+      <td>fasten or secure with a rope, string, or cord用绳子，绳子或绳子固定或固定</td>
+      <td></td>
+      <td>[bindable, binder]</td>
+      <td></td>
+      <td>[secure, fix, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['constipate']</td>
+      <td></td>
+      <td>cause to be constipated导致便秘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indispose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['hold', 'obligate', 'oblige']</td>
+      <td></td>
+      <td>bind by an obligation; cause to be indebted责任约束;导致负债累累</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[relate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['bandage']</td>
+      <td></td>
+      <td>wrap around with something so as to cover or enclose用东西包裹以便覆盖或包围</td>
+      <td></td>
+      <td>[bindable, binding]</td>
+      <td></td>
+      <td>[fasten, fix, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['tie down', 'tie up', 'truss']</td>
+      <td></td>
+      <td>secure with or as if with ropes使用或似乎用绳索固定</td>
+      <td></td>
+      <td>[bindable]</td>
+      <td></td>
+      <td>[constrain, hold, confine, restrain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td></td>
+      <td>form a chemical bond with与...形成化学键</td>
+      <td>The hydrogen binds the oxygen氢结合氧</td>
+      <td>[binding, binder]</td>
+      <td></td>
+      <td>[hold fast, stick, bond, adhere, stick to]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td>[unbind]</td>
+      <td>make fast; tie or secure, with or as if with a rope快速;系绳或用绳索固定或固定</td>
+      <td>The Chinese would bind the feet of their women中国人会束缚女人的脚</td>
+      <td>[bindable, binder]</td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td></td>
+      <td>provide with a binding提供绑定</td>
+      <td>bind the books in leather用皮革装订书籍</td>
+      <td>[binding, binder, bindery]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>ind</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td></td>
+      <td>something that hinders as if with bonds像债券一样阻碍的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deterrent, hinderance, handicap, check, impediment, hindrance, baulk, balk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hind</th>
+      <td>ind</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>haɪnd</td>
+      <td></td>
+      <td></td>
+      <td>a female deer, especially an adult female red deer雌鹿，尤其是成年雌性红鹿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[red deer, elk, cervus elaphus, wapiti, american elk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hind</th>
+      <td>ind</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>haɪnd</td>
+      <td></td>
+      <td></td>
+      <td>any of several mostly spotted fishes that resemble groupers几种大多数斑点鱼类，类似于石斑鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grouper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hind</th>
+      <td>ind</td>
+      <td>3.27</td>
+      <td>adj</td>
+      <td>haɪnd</td>
+      <td>['back', 'hinder'], similarTo:['posterior']</td>
+      <td></td>
+      <td>located at or near the back of an animal位于动物背部或附近</td>
+      <td>back (or hind) legs后腿（或后腿）the hinder part of a carcass胴体的阻碍部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lind</th>
+      <td>ind</td>
+      <td>2.66</td>
+      <td>nou</td>
+      <td>lɪnd</td>
+      <td>['jenny lind', 'swedish nightingale']</td>
+      <td></td>
+      <td>Swedish soprano who toured the United States under the management of P. T. Barnum (1820-1887)在P. T. Barnum（1820-1887）的管理下巡回美国的瑞典女高音歌唱家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rind</th>
+      <td>ind</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>raɪnd</td>
+      <td></td>
+      <td></td>
+      <td>the natural outer covering of food (usually removed before eating)食物的天然外壳（通常在食用前去除）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[material, stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sind</th>
+      <td>ind</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>sɪnd</td>
+      <td></td>
+      <td></td>
+      <td>a region of southeastern Pakistan巴基斯坦东南部的一个地区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, region]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

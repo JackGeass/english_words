@@ -1,0 +1,560 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['joke', 'coke', 'poke', 'okey', 'toke', 'yoke', 'moke']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>joke</th>
+      <td>oke</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>dʒoʊk</td>
+      <td>['jest']</td>
+      <td></td>
+      <td>act in a funny or teasing way以有趣或戏弄的方式行事</td>
+      <td></td>
+      <td>[joker]</td>
+      <td></td>
+      <td>[act, do, behave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joke</th>
+      <td>oke</td>
+      <td>4.88</td>
+      <td>ver</td>
+      <td>dʒoʊk</td>
+      <td>['jest']</td>
+      <td></td>
+      <td>tell a joke; speak humorously说一个笑话;幽默地说</td>
+      <td>He often jokes even when he appears serious即使他显得很认真，他也经常开玩笑</td>
+      <td>[joker]</td>
+      <td></td>
+      <td>[intercommunicate, communicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joke</th>
+      <td>oke</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>dʒoʊk</td>
+      <td>['antic', 'caper', 'prank', 'put-on', 'trick']</td>
+      <td></td>
+      <td>a ludicrous or grotesque act done for fun and amusement为娱乐和娱乐而做的荒谬或怪诞的行为</td>
+      <td></td>
+      <td>[jokester]</td>
+      <td></td>
+      <td>[recreation, diversion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joke</th>
+      <td>oke</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>dʒoʊk</td>
+      <td>['jest', 'jocularity']</td>
+      <td></td>
+      <td>activity characterized by good humor以幽默为特色的活动</td>
+      <td></td>
+      <td>[jocular, jokester]</td>
+      <td></td>
+      <td>[recreation, diversion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joke</th>
+      <td>oke</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>dʒoʊk</td>
+      <td>['gag', 'jape', 'jest', 'laugh']</td>
+      <td></td>
+      <td>a humorous anecdote or remark intended to provoke laughter旨在引发笑声的幽默轶事或评论</td>
+      <td>he told a very funny joke他讲了一个非常有趣的笑话</td>
+      <td>[jocular, jokester]</td>
+      <td></td>
+      <td>[wittiness, wit, humor, humour, witticism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joke</th>
+      <td>oke</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>dʒoʊk</td>
+      <td></td>
+      <td></td>
+      <td>a triviality not to be taken seriously一种不被重视的琐事</td>
+      <td>I regarded his campaign for mayor as a joke我认为他的市长竞选是一个笑话</td>
+      <td></td>
+      <td></td>
+      <td>[triviality, slightness, puniness, pettiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coke</th>
+      <td>oke</td>
+      <td>4.28</td>
+      <td>ver</td>
+      <td>kʊk</td>
+      <td></td>
+      <td></td>
+      <td>become coke成为可乐</td>
+      <td>petroleum oils coke after distillation蒸馏后的石油焦炭</td>
+      <td></td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coke</th>
+      <td>oke</td>
+      <td>4.28</td>
+      <td>nou</td>
+      <td>kʊk</td>
+      <td>['blow', 'c', 'nose candy', 'snow']</td>
+      <td></td>
+      <td>street names for cocaine可卡因的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cocain, cocaine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coke</th>
+      <td>oke</td>
+      <td>4.28</td>
+      <td>nou</td>
+      <td>kʊk</td>
+      <td>['coca cola']</td>
+      <td></td>
+      <td>Coca Cola is a trademarked cola可口可乐是一种商标可乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cola, dope]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coke</th>
+      <td>oke</td>
+      <td>4.28</td>
+      <td>nou</td>
+      <td>kʊk</td>
+      <td></td>
+      <td></td>
+      <td>carbon fuel produced by distillation of coal通过蒸馏煤产生的碳燃料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fuel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>poʊk</td>
+      <td>['pound', 'thump']</td>
+      <td></td>
+      <td>hit hard with the hand, fist, or some heavy instrument用手，拳头或一些重型乐器用力击打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>poʊk</td>
+      <td>['dig', 'jab', 'prod', 'stab']</td>
+      <td></td>
+      <td>poke or thrust abruptly突然捅或推</td>
+      <td></td>
+      <td>[poking]</td>
+      <td></td>
+      <td>[thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>poʊk</td>
+      <td>['horn in', 'intrude', 'nose', 'pry']</td>
+      <td></td>
+      <td>search or inquire in a meddlesome way以一种有益的方式搜索或查询</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[look, search]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>poʊk</td>
+      <td></td>
+      <td></td>
+      <td>make a hole by poking戳戳一个洞</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pierce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>ver</td>
+      <td>poʊk</td>
+      <td></td>
+      <td></td>
+      <td>stir by poking戳了戳</td>
+      <td>poke the embers in the fireplace戳在壁炉里的余烬</td>
+      <td>[poker]</td>
+      <td></td>
+      <td>[vex, commove, raise up, agitate, shake up, stir up, disturb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>poʊk</td>
+      <td>['dawdler', 'drone', 'laggard', 'lagger', 'trailer']</td>
+      <td></td>
+      <td>someone who takes more time than necessary; someone who lags behind需要更多时间的人;一个落后的人</td>
+      <td></td>
+      <td>[poky, pokey]</td>
+      <td></td>
+      <td>[bum, loafer, do-nothing, layabout, idler]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>poʊk</td>
+      <td>['garget', 'phytolacca americana', 'pigeon berry', 'scoke']</td>
+      <td></td>
+      <td>tall coarse perennial American herb having small white flowers followed by blackish-red berries on long drooping racemes; young fleshy stems are edible; berries and root are poisonous高大的多年生美国草本植物，在长下垂的总状花序上有小的白色花朵，后面是黑红色的浆果;年轻的肉质茎可食用;浆果和根是有毒的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pokeweed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>poʊk</td>
+      <td>['carrier bag', 'paper bag', 'sack']</td>
+      <td></td>
+      <td>a bag made of paper or plastic for holding customer's purchases用纸或塑料制成的袋子，用于存放顾客的购买物品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>poʊk</td>
+      <td>['biff', 'clout', 'lick', 'punch', 'slug']</td>
+      <td></td>
+      <td>(boxing) a blow with the fist（拳击）用拳头打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poke</th>
+      <td>oke</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>poʊk</td>
+      <td>['jab', 'jabbing', 'poking', 'thrust', 'thrusting']</td>
+      <td></td>
+      <td>a sharp hand gesture (resembling a blow)一个尖锐的手势（类似于打击）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>okey</th>
+      <td>oke</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>'oʊki</td>
+      <td>['o.k.', 'ok', 'okay', 'okeh']</td>
+      <td></td>
+      <td>an endorsement认可</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[countenance, endorsement, imprimatur, indorsement, sanction, warrant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toke</th>
+      <td>oke</td>
+      <td>3.13</td>
+      <td>nou</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>a puff of a marijuana or hashish cigarette一口大麻或大麻烟</td>
+      <td>the boys took a few tokes on a joint男孩们在一个关节上取了几个脚趾</td>
+      <td></td>
+      <td></td>
+      <td>[drag, puff, pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>ver</td>
+      <td>joʊk</td>
+      <td>['link']</td>
+      <td></td>
+      <td>link with or as with a yoke与轭连接或与轭连接</td>
+      <td>yoke the oxen together把牛拉到一起</td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>ver</td>
+      <td>joʊk</td>
+      <td></td>
+      <td></td>
+      <td>become joined or linked together加入或联系在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[join, conjoin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>ver</td>
+      <td>joʊk</td>
+      <td></td>
+      <td>[unyoke]</td>
+      <td>put a yoke on or join with a yoke把轭放在轭上或用轭连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>nou</td>
+      <td>joʊk</td>
+      <td>['brace', 'couple', 'couplet', 'distich', 'duad', 'duet', 'duo', 'dyad', 'pair', 'span', 'twain', 'twosome']</td>
+      <td></td>
+      <td>two items of the same kind两件相同的物品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[2, deuce, ii, two]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>nou</td>
+      <td>joʊk</td>
+      <td>['coupling']</td>
+      <td></td>
+      <td>a connection (like a clamp or vise) between two things so they move together两件事之间的连接（如夹子或虎钳），以便它们一起移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[connexion, connecter, connection, connective, connector]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>nou</td>
+      <td>joʊk</td>
+      <td></td>
+      <td></td>
+      <td>an oppressive power一种压迫的力量</td>
+      <td>under the yoke of a tyrant在暴君的枷锁下they threw off the yoke of domination他们抛弃了统治的枷锁</td>
+      <td></td>
+      <td></td>
+      <td>[oppression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>nou</td>
+      <td>joʊk</td>
+      <td></td>
+      <td></td>
+      <td>a pair of draft animals joined by a yoke一对由枷锁连接的吃水动物</td>
+      <td>pulled by a yoke of oxen被牛枷拉着</td>
+      <td></td>
+      <td></td>
+      <td>[pair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>nou</td>
+      <td>joʊk</td>
+      <td></td>
+      <td></td>
+      <td>fabric comprising a fitted part at the top of a garment织物，包括衣服顶部的合身部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[textile, cloth, fabric, material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>nou</td>
+      <td>joʊk</td>
+      <td></td>
+      <td></td>
+      <td>stable gear that joins two draft animals at the neck so they can work together as a team稳定的齿轮，将两个吃水的动物连接在一起，这样他们就可以团结一致地工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[saddlery, stable gear, tack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yoke</th>
+      <td>oke</td>
+      <td>2.79</td>
+      <td>nou</td>
+      <td>joʊk</td>
+      <td></td>
+      <td></td>
+      <td>support consisting of a wooden frame across the shoulders that enables a person to carry buckets hanging from each end支撑由一个横跨肩部的木制框架组成，使人能够携带从两端悬挂的水桶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moke</th>
+      <td>oke</td>
+      <td>2.24</td>
+      <td>nou</td>
+      <td>moʊk</td>
+      <td></td>
+      <td></td>
+      <td>British informal for donkey英国非正式的驴子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[domestic ass, donkey, equus asinus]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

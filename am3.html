@@ -1,0 +1,770 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['sam', 'ram', 'jam', 'ham', 'dam', 'bam', 'mam', 'cam', 'lam', 'tam', 'yam', 'amp', 'gam']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>sam</th>
+      <td>am</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>sæm</td>
+      <td>['surface-to-air missile']</td>
+      <td></td>
+      <td>a guided missile fired from land or shipboard against an airborne target从陆地或船上向空中目标发射的导弹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[guided missile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>ræm</td>
+      <td>['drive', 'force'], alos:['ram down']</td>
+      <td></td>
+      <td>force into or from an action or state, either physically or metaphorically强制进入或来自行动或国家，无论是身体还是隐喻</td>
+      <td>She rammed her mind into focus她把自己的思想重点放在了焦点上</td>
+      <td></td>
+      <td>[drive]</td>
+      <td>[thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>ræm</td>
+      <td>['chock up', 'cram', 'jam', 'jampack', 'wad']</td>
+      <td></td>
+      <td>crowd or pack to capacity挤满人群</td>
+      <td></td>
+      <td></td>
+      <td>[cram]</td>
+      <td>[stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>ræm</td>
+      <td>['crash']</td>
+      <td></td>
+      <td>undergo damage or destruction on impact在撞击时受到损坏或破坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clash, collide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>ræm</td>
+      <td>['pound', 'ram down']</td>
+      <td></td>
+      <td>strike or drive against with a heavy impact罢工或驾驶带来重大影响</td>
+      <td>ram the gate with a sledgehammer用大锤敲门</td>
+      <td>[rammer]</td>
+      <td></td>
+      <td>[thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>ræm</td>
+      <td>['aries', 'aries the ram']</td>
+      <td></td>
+      <td>the first sign of the zodiac which the sun enters at the vernal equinox; the sun is in this sign from about March 21 to April 19太阳在春分点进入黄道带的第一个标志;从3月21日到4月19日，太阳就在这个星座</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>ræm</td>
+      <td>['random-access memory', 'random access memory', 'random memory', 'read/write memory']</td>
+      <td></td>
+      <td>the most common computer memory which can be used by programs to perform necessary tasks while the computer is on; an integrated circuit memory chip allows information to be stored or accessed in any order and all storage locations are equally accessible程序在计算机打开时可以执行必要任务的最常用计算机内存;集成电路存储器芯片允许以任何顺序存储或访问信息，并且所有存储位置均可访问</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[volatile storage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>ræm</td>
+      <td>['tup']</td>
+      <td></td>
+      <td>uncastrated adult male sheep未阉割的成年雄性绵羊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sheep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>ræm</td>
+      <td>['aries']</td>
+      <td></td>
+      <td>(astrology) a person who is born while the sun is in Aries（占星术）一个在太阳落山时出生的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[person, soul, individual, someone, somebody, mortal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ram</th>
+      <td>am</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>ræm</td>
+      <td></td>
+      <td></td>
+      <td>a tool for driving or forcing something by impact用于通过撞击驱动或强迫某物的工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>dʒæm</td>
+      <td>['block', 'close up', 'impede', 'obstruct', 'obturate', 'occlude']</td>
+      <td></td>
+      <td>block passage through阻止通过</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hinder, impede]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>dʒæm</td>
+      <td>['mob', 'pack', 'pile', 'throng']</td>
+      <td></td>
+      <td>press tightly together or cram紧紧地挤在一起或塞满</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crowd together, crowd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>dʒæm</td>
+      <td>['block']</td>
+      <td></td>
+      <td>interfere with or prevent the reception of signals干扰或阻止信号的接收</td>
+      <td></td>
+      <td>[jamming]</td>
+      <td></td>
+      <td>[break up, cut off, disrupt, interrupt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>dʒæm</td>
+      <td>['crush']</td>
+      <td></td>
+      <td>crush or bruise粉碎或瘀伤</td>
+      <td>jam a toe堵了一个脚趾</td>
+      <td></td>
+      <td></td>
+      <td>[bruise, contuse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>dʒæm</td>
+      <td>['chock up', 'cram', 'jampack', 'ram', 'wad']</td>
+      <td></td>
+      <td>crowd or pack to capacity挤满人群</td>
+      <td>the theater was jampacked剧院被劫持了</td>
+      <td></td>
+      <td>[cram]</td>
+      <td>[stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>dʒæm</td>
+      <td></td>
+      <td></td>
+      <td>get stuck and immobilized卡住和固定不动</td>
+      <td>the mechanism jammed机制卡住了</td>
+      <td></td>
+      <td></td>
+      <td>[malfunction, misfunction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>dʒæm</td>
+      <td></td>
+      <td></td>
+      <td>push down forcibly强行推下去</td>
+      <td>The driver jammed the brake pedal to the floor司机将制动踏板卡在地板上</td>
+      <td></td>
+      <td></td>
+      <td>[push, force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>dʒæm</td>
+      <td>['fix', 'hole', 'kettle of fish', 'mess', 'muddle', 'pickle']</td>
+      <td></td>
+      <td>informal terms for a difficult situation困难局面的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>dʒæm</td>
+      <td>['crush', 'press']</td>
+      <td></td>
+      <td>a dense crowd of people密集的人群</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crowd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>dʒæm</td>
+      <td>['electronic jamming', 'jamming']</td>
+      <td></td>
+      <td>deliberate radiation or reflection of electromagnetic energy for the purpose of disrupting enemy use of electronic devices or systems故意辐射或反射电磁能量，以扰乱敌人使用电子设备或系统</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ecm, electronic countermeasures]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jam</th>
+      <td>am</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>dʒæm</td>
+      <td></td>
+      <td></td>
+      <td>preserve of crushed fruit保存被压碎的水果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[preserves, preserve, conserve, conserves]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ham</th>
+      <td>am</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>hæm</td>
+      <td>['ham it up', 'overact', 'overplay']</td>
+      <td></td>
+      <td>exaggerate one's acting夸大一个人的表演</td>
+      <td></td>
+      <td>[hamming]</td>
+      <td></td>
+      <td>[roleplay, act, play, playact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ham</th>
+      <td>am</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>hæm</td>
+      <td>['gammon', 'jambon']</td>
+      <td></td>
+      <td>meat cut from the thigh of a hog (usually smoked)从猪的大腿上切下的肉（通常是熏的）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut of pork]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ham</th>
+      <td>am</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>hæm</td>
+      <td>['ham actor']</td>
+      <td></td>
+      <td>an unskilled actor who overacts一个过度训练的不熟练的演员</td>
+      <td></td>
+      <td>[hammy]</td>
+      <td></td>
+      <td>[actor, thespian, role player, histrion, player]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ham</th>
+      <td>am</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>hæm</td>
+      <td></td>
+      <td></td>
+      <td>a licensed amateur radio operator持牌业余无线电操作员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radio operator]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ham</th>
+      <td>am</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>hæm</td>
+      <td></td>
+      <td></td>
+      <td>(Old Testament) son of Noah（旧约）诺亚的儿子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dam</th>
+      <td>am</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>dæm</td>
+      <td>['dam up']</td>
+      <td></td>
+      <td>obstruct with, or as if with, a dam与水坝一起阻碍或似乎与水坝相连</td>
+      <td>dam the gorges of the Yangtse River大坝长江</td>
+      <td></td>
+      <td></td>
+      <td>[block, close up, impede, jam, obstruct, obturate, occlude]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dam</th>
+      <td>am</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>dæm</td>
+      <td>['decameter', 'decametre', 'dekameter', 'dekametre', 'dkm']</td>
+      <td></td>
+      <td>a metric unit of length equal to ten meters公制单位，长度等于十米</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metric linear unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dam</th>
+      <td>am</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>dæm</td>
+      <td>['dike', 'dyke']</td>
+      <td></td>
+      <td>a barrier constructed to contain the flow of water or to keep out the sea建造用于容纳水流或挡住海水的屏障</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[barrier]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dam</th>
+      <td>am</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>dæm</td>
+      <td></td>
+      <td></td>
+      <td>female parent of an animal especially domestic livestock动物的母亲，特别是家畜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bam</th>
+      <td>am</td>
+      <td>3.91</td>
+      <td>nou</td>
+      <td>bæm</td>
+      <td>['bang', 'blast', 'clap', 'eruption']</td>
+      <td></td>
+      <td>a sudden very loud noise一阵突如其来的巨响</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bam</th>
+      <td>am</td>
+      <td>3.91</td>
+      <td>nou</td>
+      <td>bæm</td>
+      <td></td>
+      <td></td>
+      <td>an ancient city in southeastern Iran; destroyed by an earthquake in 2003伊朗东南部的一座古城; 2003年被地震摧毁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mam</th>
+      <td>am</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>mɑm</td>
+      <td></td>
+      <td></td>
+      <td>a Mayan language spoken by the Mam妈妈说的玛雅语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[maya, mayan, mayan language]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mam</th>
+      <td>am</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>mɑm</td>
+      <td></td>
+      <td></td>
+      <td>a member of a Mayan people of southwestern Guatemala危地马拉西南部玛雅人的一名成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[maya, mayan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cam</th>
+      <td>am</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>kæm</td>
+      <td>['cam river', 'river cam']</td>
+      <td></td>
+      <td>a river in east central England that flows past Cambridge to join the Ouse River英格兰中东部的一条河流经剑桥，进入乌斯河</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cam</th>
+      <td>am</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>kæm</td>
+      <td></td>
+      <td></td>
+      <td>a rotating disk shaped to convert circular into linear motion旋转圆盘，用于将圆形转换为直线运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rotating mechanism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lam</th>
+      <td>am</td>
+      <td>3.60</td>
+      <td>ver</td>
+      <td>læm</td>
+      <td>['flail', 'thrash', 'thresh']</td>
+      <td></td>
+      <td>give a thrashing to; beat hard捶打;打得很厉害</td>
+      <td></td>
+      <td></td>
+      <td>[thrash, cream, drub, lick, bat, clobber]</td>
+      <td>[beat, beat up, work over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lam</th>
+      <td>am</td>
+      <td>3.60</td>
+      <td>ver</td>
+      <td>læm</td>
+      <td>['break away', 'bunk', 'escape', 'fly the coop', 'head for the hills', 'hightail it', 'run', 'run away', 'scarper', 'scat', 'take to the woods', 'turn tail']</td>
+      <td></td>
+      <td>flee; take to one's heels; cut and run逃跑;紧紧抓住;剪切并运行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leave, go forth, go away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lam</th>
+      <td>am</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>læm</td>
+      <td>['getaway']</td>
+      <td></td>
+      <td>a rapid escape (as by criminals)快速逃脱（如犯罪分子）</td>
+      <td>after the expose he had to take it on the lam暴露后，他不得不把它拿在林边</td>
+      <td></td>
+      <td></td>
+      <td>[escape, flight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tam</th>
+      <td>am</td>
+      <td>3.44</td>
+      <td>nou</td>
+      <td>tæm</td>
+      <td>["tam-o'-shanter", 'tammy']</td>
+      <td></td>
+      <td>a woolen cap of Scottish origin苏格兰血统的羊毛帽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yam</th>
+      <td>am</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>jæm</td>
+      <td>['yam plant']</td>
+      <td></td>
+      <td>any of a number of tropical vines of the genus Dioscorea many having edible tuberous roots任何一种Dioscorea属的热带藤本植物都有可食用的块茎根</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yam</th>
+      <td>am</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>jæm</td>
+      <td></td>
+      <td></td>
+      <td>edible tuber of any of several yams几种山药中的任何一种的可食用块茎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tuber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yam</th>
+      <td>am</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>jæm</td>
+      <td></td>
+      <td></td>
+      <td>edible tuberous root of various yam plants of the genus Dioscorea grown in the tropics world-wide for food在世界各地的热带地区种植薯Di属的各种山药植物的可食用块根</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[root vegetable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yam</th>
+      <td>am</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>jæm</td>
+      <td></td>
+      <td></td>
+      <td>sweet potato with deep orange flesh that remains moist when baked带有深橙色果肉的红薯，烤制时保持湿润</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sweet potato]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amp</th>
+      <td>am</td>
+      <td>3.06</td>
+      <td>nou</td>
+      <td>æmp</td>
+      <td>['adenosine monophosphate', 'adenylic acid']</td>
+      <td></td>
+      <td>a nucleotide found in muscle cells and important in metabolism; reversibly convertible to ADP and ATP肌肉细胞中发现的核苷酸，在代谢中很重要;可逆转换为ADP和ATP</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[base, nucleotide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amp</th>
+      <td>am</td>
+      <td>3.06</td>
+      <td>nou</td>
+      <td>æmp</td>
+      <td>['a', 'ampere']</td>
+      <td></td>
+      <td>the basic unit of electric current adopted under the Systeme International d'UnitesSysteme International d'Unites采用的基本电流单位</td>
+      <td>a typical household circuit carries 15 to 50 amps典型的家用电路可承载15至50安培</td>
+      <td></td>
+      <td></td>
+      <td>[current unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gam</th>
+      <td>am</td>
+      <td>2.75</td>
+      <td>nou</td>
+      <td>ɡæm</td>
+      <td></td>
+      <td></td>
+      <td>a herd of whales一群鲸鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herd]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

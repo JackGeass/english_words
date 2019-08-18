@@ -1,0 +1,800 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['start', 'party', 'smart', 'apart', 'parts', 'chart']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['commence', 'embark on', 'start up']</td>
+      <td></td>
+      <td>get off the ground从地上起来</td>
+      <td>Who started this company?谁创办了这家公司？I start my day with a good breakfast我用美味的早餐开始新的一天The blood shed started when the partisans launched a surprise attack当游击队发动突然袭击时，流血开始了</td>
+      <td></td>
+      <td></td>
+      <td>[begin, lead off, commence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['bug out', 'bulge', 'bulge out', 'come out', 'pop', 'pop out', 'protrude']</td>
+      <td></td>
+      <td>bulge outward向外凸出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deform, change form, change shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['take up']</td>
+      <td></td>
+      <td>begin work or acting in a certain capacity, office or job开始工作或以某种身份，办公室或工作行事</td>
+      <td>start a new job开始一份新工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['start up']</td>
+      <td>[stop]</td>
+      <td>get going or set in motion开始或开始</td>
+      <td>We simply could not start the engine我们根本无法启动引擎start up the computer启动电脑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['begin']</td>
+      <td></td>
+      <td>have a beginning, in a temporal, spatial, or evaluative sense在时间，空间或评价意义上有一个开端</td>
+      <td>Prices for these homes start at $250,000这些房屋的起价为250,000美元</td>
+      <td></td>
+      <td>[begin]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['initiate', 'originate']</td>
+      <td></td>
+      <td>bring into being生成</td>
+      <td></td>
+      <td>[starter]</td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['begin', 'commence', 'lead off']</td>
+      <td></td>
+      <td>set in motion, cause to start启动，启动</td>
+      <td>The U.S. started a war in the Middle East美国在中东开始了一场战争</td>
+      <td></td>
+      <td>[begin]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['begin', 'commence', 'get', 'get down', 'set about', 'set out', 'start out']</td>
+      <td></td>
+      <td>take the first step or steps in carrying out an action采取行动的第一步或第一步</td>
+      <td>Who will start?谁会开始？</td>
+      <td>[starter]</td>
+      <td>[begin]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['begin']</td>
+      <td></td>
+      <td>begin an event that is implied and limited by the nature or inherent function of the direct object开始由直接对象的性质或固有功能暗示和限制的事件</td>
+      <td>She started the soup while it was still hot她还在热的时候开始喝汤We started physics in 10th grade我们在十年级开始了物理</td>
+      <td></td>
+      <td>[begin]</td>
+      <td>[move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['get going', 'go']</td>
+      <td>[stop]</td>
+      <td>begin or set in motion开始或开始运动</td>
+      <td>I start at eight in the morning我从早上八点开始</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['begin']</td>
+      <td></td>
+      <td>have a beginning characterized in some specified way有一个以某种特定方式表征的开始</td>
+      <td></td>
+      <td></td>
+      <td>[begin]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['depart', 'part', 'set forth', 'set off', 'set out', 'start out', 'take off']</td>
+      <td></td>
+      <td>leave离开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go forth, leave, go away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td>['jump', 'startle']</td>
+      <td></td>
+      <td>move or jump suddenly, as if in surprise or alarm突然移动或跳跃，好像惊讶或惊恐</td>
+      <td>She startled when I walked into the room我走进房间时吓了一跳</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>stɑt</td>
+      <td></td>
+      <td></td>
+      <td>play in the starting lineup在首发阵容中发挥</td>
+      <td></td>
+      <td>[starting]</td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td>['beginning', 'commencement', 'first', 'get-go', 'kickoff', 'offset', 'outset', 'showtime', 'starting time']</td>
+      <td></td>
+      <td>the time at which something is supposed to begin应该开始某事的时间</td>
+      <td>they got an early start他们早早开始了</td>
+      <td></td>
+      <td></td>
+      <td>[point, point in time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td>['scratch', 'scratch line', 'starting line']</td>
+      <td></td>
+      <td>a line indicating the location of the start of a race or a game表示比赛或比赛开始位置的线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td>['starting signal']</td>
+      <td></td>
+      <td>a signal to begin (as in a race)一个开始的信号（如在比赛中）</td>
+      <td>the starting signal was a green light起始信号是绿灯the runners awaited the start跑步者等待着开始</td>
+      <td></td>
+      <td></td>
+      <td>[signaling, sign, signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td>['starting']</td>
+      <td></td>
+      <td>a turn to be a starter (in a game at the beginning)转身成为首发（在比赛开始时）</td>
+      <td>he got his start because one of the regular pitchers was in the hospital他开始了，因为其中一名普通投手在医院his starting meant that the coach thought he was one of their best linemen他的出发意味着教练认为他是他们最好的线卫之一</td>
+      <td></td>
+      <td></td>
+      <td>[play, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td>['jump', 'startle']</td>
+      <td></td>
+      <td>a sudden involuntary movement一种突然的不自主运动</td>
+      <td>he awoke with a start他一开始就醒了</td>
+      <td></td>
+      <td></td>
+      <td>[physiological reaction, instinctive reflex, unconditioned reflex, innate reflex, reflex response, reflex action, inborn reflex, reflex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td>['head start']</td>
+      <td></td>
+      <td>the advantage gained by beginning early (as in a race)早期开始获得的优势（如在比赛中）</td>
+      <td>with an hour's start he will be hard to catch一个小时的开始，他很难抓住</td>
+      <td></td>
+      <td></td>
+      <td>[vantage, advantage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td>['beginning', 'commencement']</td>
+      <td>[finish]</td>
+      <td>the act of starting something开始某事的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change of state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td>art</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>stɑt</td>
+      <td></td>
+      <td></td>
+      <td>the beginning of anything任何事情的开始</td>
+      <td>it was off to a good start这是一个良好的开端</td>
+      <td></td>
+      <td></td>
+      <td>[beginning]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>party</th>
+      <td>art</td>
+      <td>5.33</td>
+      <td>ver</td>
+      <td>'pɑrti</td>
+      <td></td>
+      <td></td>
+      <td>have or participate in a party拥有或参加聚会</td>
+      <td>The students were partying all night before the exam学生们在考试前一整夜都参加了派对</td>
+      <td></td>
+      <td></td>
+      <td>[celebrate, fete]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>party</th>
+      <td>art</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>'pɑrti</td>
+      <td>['political party']</td>
+      <td></td>
+      <td>an organization to gain political power获得政治权力的组织</td>
+      <td>in 1992 Perot tried to organize a third party at the national level1992年，佩罗试图在国家层面组织第三方</td>
+      <td></td>
+      <td></td>
+      <td>[organization, organisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>party</th>
+      <td>art</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>'pɑrti</td>
+      <td>['company']</td>
+      <td></td>
+      <td>a band of people associated temporarily in some activity在一些活动中临时关联的一群人</td>
+      <td>they organized a party to search for food他们组织了一个寻找食物的聚会</td>
+      <td></td>
+      <td></td>
+      <td>[band, set, circle, lot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>party</th>
+      <td>art</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>'pɑrti</td>
+      <td></td>
+      <td></td>
+      <td>a group of people gathered together for pleasure一群人聚在一起欢乐</td>
+      <td>she joined the party after dinner她晚饭后参加了聚会</td>
+      <td></td>
+      <td></td>
+      <td>[social affair, social gathering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>party</th>
+      <td>art</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>'pɑrti</td>
+      <td></td>
+      <td></td>
+      <td>an occasion on which people can assemble for social interaction and entertainment人们可以聚集在一起进行社交互动和娱乐的场合</td>
+      <td>he planned a party to celebrate Bastille Day他策划了一个庆祝巴士底日的聚会</td>
+      <td></td>
+      <td></td>
+      <td>[affair, function, occasion, social function, social occasion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>party</th>
+      <td>art</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>'pɑrti</td>
+      <td></td>
+      <td></td>
+      <td>a person involved in legal proceedings参与法律诉讼的人</td>
+      <td>the party of the first part第一部分的党</td>
+      <td></td>
+      <td></td>
+      <td>[somebody, mortal, soul, person, someone, individual]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>smɑrt</td>
+      <td>['ache', 'hurt']</td>
+      <td></td>
+      <td>be the source of pain成为痛苦的根源</td>
+      <td></td>
+      <td>[smarting]</td>
+      <td></td>
+      <td>[cause to be perceived]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>smɑrt</td>
+      <td>['smarting', 'smartness']</td>
+      <td></td>
+      <td>a kind of pain such as that caused by a wound or a burn or a sore一种疼痛，例如由伤口或烧伤或疼痛引起的疼痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hurting, pain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>smɑrt</td>
+      <td>['fresh', 'impertinent', 'impudent', 'overbold', 'sassy', 'saucy', 'wise'], similarTo:['forward']</td>
+      <td></td>
+      <td>improperly forward or bold不正确地前进或大胆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>smɑrt</td>
+      <td>['bright'], similarTo:['intelligent']</td>
+      <td></td>
+      <td>characterized by quickness and ease in learning学习速度快，容易学习</td>
+      <td>smart children talk earlier than the average聪明的孩子早于平均水平说话</td>
+      <td>[smartness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>smɑrt</td>
+      <td>['chic', 'voguish'], similarTo:['stylish', 'fashionable']</td>
+      <td></td>
+      <td>elegant and stylish优雅时尚</td>
+      <td>a smart new dress一件漂亮的新衣服</td>
+      <td>[smartness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>smɑrt</td>
+      <td>, similarTo:['automatic']</td>
+      <td></td>
+      <td>capable of independent and apparently intelligent action能够独立且明显地采取智能行动</td>
+      <td>smart weapons智能武器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>smɑrt</td>
+      <td>, similarTo:['intense']</td>
+      <td></td>
+      <td>painfully severe痛苦严重</td>
+      <td>he gave the dog a smart blow他给了狗一个聪明的打击</td>
+      <td>[smartness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>smɑrt</td>
+      <td>, similarTo:['fast']</td>
+      <td></td>
+      <td>quick and brisk快速而敏捷</td>
+      <td>I gave him a smart salute我给了他一个聪明的致敬we walked at a smart pace我们走得很聪明</td>
+      <td>[smartness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smart</th>
+      <td>art</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>smɑrt</td>
+      <td>, similarTo:['with-it', 'astute', 'cagey', 'cagy', 'canny', 'clever', 'sharp', 'shrewd', 'street smart', 'streetwise'], alos:['intelligent']</td>
+      <td>[stupid]</td>
+      <td>showing mental alertness and calculation and resourcefulness表现出精神警觉，计算和机智</td>
+      <td></td>
+      <td>[smartness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apart</th>
+      <td>art</td>
+      <td>4.72</td>
+      <td>adv</td>
+      <td>ə'pɑrt</td>
+      <td>['aside']</td>
+      <td></td>
+      <td>placed or kept separate and distinct as for a purpose为了某个目的而放置或保持独立和不同</td>
+      <td>had a feeling of being set apart有一种被分开的感觉quality sets it apart质量与众不同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apart</th>
+      <td>art</td>
+      <td>4.72</td>
+      <td>adv</td>
+      <td>ə'pɑrt</td>
+      <td>['asunder']</td>
+      <td></td>
+      <td>into parts or pieces分成几部分</td>
+      <td>he took his father's watch apart他把他父亲的手表拆开了split apart分开了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apart</th>
+      <td>art</td>
+      <td>4.72</td>
+      <td>adv</td>
+      <td>ə'pɑrt</td>
+      <td>['aside']</td>
+      <td></td>
+      <td>not taken into account or excluded from consideration未考虑或排除在考虑之外</td>
+      <td>these problems apart, the country is doing well除了这些问题之外，这个国家也做得很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apart</th>
+      <td>art</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>ə'pɑrt</td>
+      <td>['isolated', 'obscure'], similarTo:['unconnected']</td>
+      <td></td>
+      <td>remote and separate physically or socially远程和身体或社交分开</td>
+      <td>existed over the centuries as a world apart作为一个世界分开存在几个世纪preserved because they inhabited a place apart保存，因为他们居住在一个分开的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apart</th>
+      <td>art</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>ə'pɑrt</td>
+      <td>, similarTo:['separate']</td>
+      <td></td>
+      <td>having characteristics not shared by others具有其他人不共享的特征</td>
+      <td>scientists felt they were a group apart科学家认为他们是一群人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>parts</th>
+      <td>art</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>pɑrts</td>
+      <td></td>
+      <td></td>
+      <td>the local environment当地的环境</td>
+      <td>he hasn't been seen around these parts in years多年来他一直没有见过这些部分</td>
+      <td></td>
+      <td></td>
+      <td>[environment, environs, surround, surroundings]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chart</th>
+      <td>art</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>tʃɑrt</td>
+      <td>['graph']</td>
+      <td></td>
+      <td>represent by means of a graph用图表表示</td>
+      <td>chart the data绘制数据图表</td>
+      <td>[chartist]</td>
+      <td></td>
+      <td>[interpret, represent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chart</th>
+      <td>art</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>tʃɑrt</td>
+      <td></td>
+      <td></td>
+      <td>make a chart of制作图表</td>
+      <td>chart the territory绘制领土</td>
+      <td></td>
+      <td></td>
+      <td>[map]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chart</th>
+      <td>art</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>tʃɑrt</td>
+      <td></td>
+      <td></td>
+      <td>plan in detail详细计划</td>
+      <td>Bush is charting a course to destroy Saddam Hussein布什正在制定一条摧毁萨达姆侯赛因的道路</td>
+      <td></td>
+      <td></td>
+      <td>[plan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chart</th>
+      <td>art</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>tʃɑrt</td>
+      <td>['graph']</td>
+      <td></td>
+      <td>a visual display of information信息的直观显示</td>
+      <td></td>
+      <td>[chartist]</td>
+      <td></td>
+      <td>[visual communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chart</th>
+      <td>art</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>tʃɑrt</td>
+      <td></td>
+      <td></td>
+      <td>a map designed to assist navigation by air or sea旨在协助空中或海上航行的地图</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[map]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chart</th>
+      <td>art</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>tʃɑrt</td>
+      <td></td>
+      <td></td>
+      <td>(usually plural) a listing of best-selling recorded music（通常是复数）畅销录制音乐的列表</td>
+      <td>number 2 on the charts排行榜上排名第二</td>
+      <td></td>
+      <td></td>
+      <td>[list, listing]</td>
+      <td>[plural form, plural]</td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

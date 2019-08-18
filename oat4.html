@@ -1,0 +1,320 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['boat', 'coat', 'goat', 'oath', 'moat']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>boat</th>
+      <td>oat</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>boʊt</td>
+      <td></td>
+      <td></td>
+      <td>ride in a boat on water骑在船上的水</td>
+      <td></td>
+      <td>[boater, boating]</td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boat</th>
+      <td>oat</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>boʊt</td>
+      <td>['gravy boat', 'gravy holder', 'sauceboat']</td>
+      <td></td>
+      <td>a dish (often boat-shaped) for serving gravy or sauce用于盛肉汁或酱汁的菜肴（通常为船形）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boat</th>
+      <td>oat</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>boʊt</td>
+      <td></td>
+      <td></td>
+      <td>a small vessel for travel on water用于在水上旅行的小型船只</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel, watercraft]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coat</th>
+      <td>oat</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>koʊt</td>
+      <td>['surface']</td>
+      <td></td>
+      <td>put a coat on; cover the surface of; furnish with a surface穿上外套;覆盖表面;装饰表面</td>
+      <td>coat the cake with chocolate用巧克力涂上蛋糕</td>
+      <td>[coating]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coat</th>
+      <td>oat</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>koʊt</td>
+      <td>['cake']</td>
+      <td></td>
+      <td>form a coat over形成一件大衣</td>
+      <td>Dirt had coated her face污垢涂了她的脸</td>
+      <td>[coating]</td>
+      <td></td>
+      <td>[spread over, cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coat</th>
+      <td>oat</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>koʊt</td>
+      <td></td>
+      <td></td>
+      <td>cover or provide with a coat盖上或提供外套</td>
+      <td></td>
+      <td>[coating]</td>
+      <td></td>
+      <td>[enclothe, apparel, clothe, dress, fit out, garb, garment, habilitate, raiment, tog]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coat</th>
+      <td>oat</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>koʊt</td>
+      <td>['coating']</td>
+      <td></td>
+      <td>a thin layer covering something覆盖一些东西的薄层</td>
+      <td>a second coat of paint第二层油漆</td>
+      <td></td>
+      <td></td>
+      <td>[covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coat</th>
+      <td>oat</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>koʊt</td>
+      <td>['pelage']</td>
+      <td></td>
+      <td>growth of hair or wool or fur covering the body of an animal覆盖动物体内的毛发或羊毛或毛皮的生长</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coat</th>
+      <td>oat</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>koʊt</td>
+      <td></td>
+      <td></td>
+      <td>an outer garment that has sleeves and covers the body from shoulder down; worn outdoors一件外衣，有袖子，从肩膀向下覆盖身体;在户外穿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[overgarment, outer garment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goat</th>
+      <td>oat</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>ɡoʊt</td>
+      <td>['butt', 'laughingstock', 'stooge']</td>
+      <td></td>
+      <td>a victim of ridicule or pranks嘲笑或恶作剧的受害者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[victim, dupe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goat</th>
+      <td>oat</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>ɡoʊt</td>
+      <td>['capricorn']</td>
+      <td></td>
+      <td>(astrology) a person who is born while the sun is in Capricorn（占星术）一个在太阳落入摩羯座时出生的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[someone, individual, mortal, person, soul, somebody]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goat</th>
+      <td>oat</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>ɡoʊt</td>
+      <td>['capricorn', 'capricorn the goat']</td>
+      <td></td>
+      <td>the tenth sign of the zodiac; the sun is in this sign from about December 22 to January 19十二生肖的第十个标志;从12月22日到1月19日，太阳就在这个星座</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goat</th>
+      <td>oat</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>ɡoʊt</td>
+      <td>['caprine animal']</td>
+      <td></td>
+      <td>any of numerous agile ruminants related to sheep but having a beard and straight horns任何与绵羊相关但有胡须和直角的敏捷反刍动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bovid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oath</th>
+      <td>oat</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>oʊθ</td>
+      <td>['curse', 'curse word', 'cuss', 'expletive', 'swearing', 'swearword']</td>
+      <td></td>
+      <td>profane or obscene expression usually of surprise or anger亵渎或淫秽的表达通常是惊讶或愤怒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[profanity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oath</th>
+      <td>oat</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>oʊθ</td>
+      <td>['swearing']</td>
+      <td></td>
+      <td>a commitment to tell the truth (especially in a court of law); to lie under oath is to become subject to prosecution for perjury说实话的承诺（特别是在法庭上）;宣誓作弊可能会受到起诉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[commitment, dedication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oath</th>
+      <td>oat</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>oʊθ</td>
+      <td></td>
+      <td></td>
+      <td>a solemn promise, usually invoking a divine witness, regarding your future acts or behavior关于你未来的行为或行为的庄严承诺，通常援引神圣的证人</td>
+      <td>they took an oath of allegiance他们宣誓效忠</td>
+      <td></td>
+      <td></td>
+      <td>[promise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moat</th>
+      <td>oat</td>
+      <td>2.97</td>
+      <td>nou</td>
+      <td>moʊt</td>
+      <td>['fosse']</td>
+      <td></td>
+      <td>ditch dug as a fortification and usually filled with water挖沟作为设防，通常充满水</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trench]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

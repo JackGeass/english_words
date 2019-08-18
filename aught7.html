@@ -1,0 +1,230 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['naughty', 'draught', 'fraught']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>naughty</th>
+      <td>aught</td>
+      <td>4.17</td>
+      <td>adj</td>
+      <td>'nɔti</td>
+      <td>['blue', 'gamey', 'gamy', 'juicy', 'racy', 'risque', 'spicy'], similarTo:['sexy']</td>
+      <td></td>
+      <td>suggestive of sexual impropriety提示性不当</td>
+      <td>a naughty wink一个淘气的眨眼naughty words顽皮的话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>naughty</th>
+      <td>aught</td>
+      <td>4.17</td>
+      <td>adj</td>
+      <td>'nɔti</td>
+      <td>, similarTo:['bad']</td>
+      <td></td>
+      <td>badly behaved表现糟糕</td>
+      <td>a naughty boy一个顽皮的男孩</td>
+      <td>[naughtiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draught</th>
+      <td>aught</td>
+      <td>2.86</td>
+      <td>ver</td>
+      <td>dræft</td>
+      <td>['blueprint', 'draft']</td>
+      <td></td>
+      <td>make a blueprint of制作蓝图</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[design, plan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draught</th>
+      <td>aught</td>
+      <td>2.86</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draft', 'gulp', 'swig']</td>
+      <td></td>
+      <td>a large and hurried swallow一只大而匆匆的燕子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drink, deglutition, swallow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draught</th>
+      <td>aught</td>
+      <td>2.86</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draft', 'drawing']</td>
+      <td></td>
+      <td>the act of moving a load by drawing or pulling通过拉伸或拉动移动负载的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull, pulling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draught</th>
+      <td>aught</td>
+      <td>2.86</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draft', 'potation', 'tipple']</td>
+      <td></td>
+      <td>a serving of drink (usually alcoholic) drawn from a keg从桶里取出的一份饮料（通常是酒精）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draught</th>
+      <td>aught</td>
+      <td>2.86</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draft']</td>
+      <td></td>
+      <td>a dose of liquid medicine一剂液体药</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dosage, dose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draught</th>
+      <td>aught</td>
+      <td>2.86</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draft']</td>
+      <td></td>
+      <td>the depth of a vessel's keel below the surface (especially when loaded)船体龙骨在地面以下的深度（特别是在装载时）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deepness, depth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draught</th>
+      <td>aught</td>
+      <td>2.86</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draft']</td>
+      <td></td>
+      <td>a current of air (usually coming into a chimney or room or vehicle)空气流（通常进入烟囱或房间或车辆）</td>
+      <td></td>
+      <td>[draughty]</td>
+      <td></td>
+      <td>[current of air, air current, wind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fraught</th>
+      <td>aught</td>
+      <td>2.73</td>
+      <td>adj</td>
+      <td>frɔt</td>
+      <td>['pregnant'], similarTo:['full']</td>
+      <td></td>
+      <td>filled with or attended with充满或参加</td>
+      <td>words fraught with meaning言语充满意义an incident fraught with danger一个充满危险的事件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fraught</th>
+      <td>aught</td>
+      <td>2.73</td>
+      <td>adj</td>
+      <td>frɔt</td>
+      <td>, similarTo:['troubled']</td>
+      <td></td>
+      <td>marked by distress以窘迫为标志</td>
+      <td>a fraught mother-daughter relationship一个充满激情的母女关系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

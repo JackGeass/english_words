@@ -1,0 +1,695 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['draft', 'shaft', 'craft', 'graft', 'kraft', 'rafts', 'abaft']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>dræft</td>
+      <td>['outline']</td>
+      <td></td>
+      <td>draw up an outline or sketch for something为某事画出轮廓或草图</td>
+      <td>draft a speech起草演讲</td>
+      <td>[drafting, drafter]</td>
+      <td></td>
+      <td>[pen, compose, indite, write]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>dræft</td>
+      <td>['enlist', 'muster in']</td>
+      <td></td>
+      <td>engage somebody to enter the army让某人参军</td>
+      <td></td>
+      <td>[draftee]</td>
+      <td></td>
+      <td>[inscribe, enroll, enrol, recruit, enter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>dræft</td>
+      <td>['blueprint', 'draught']</td>
+      <td></td>
+      <td>make a blueprint of制作蓝图</td>
+      <td></td>
+      <td>[drafting]</td>
+      <td></td>
+      <td>[plan, design]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draught', 'gulp', 'swig']</td>
+      <td></td>
+      <td>a large and hurried swallow一只大而匆匆的燕子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swallow, drink, deglutition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draught', 'drawing']</td>
+      <td></td>
+      <td>the act of moving a load by drawing or pulling通过拉伸或拉动移动负载的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull, pulling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['rough drawing']</td>
+      <td></td>
+      <td>a preliminary sketch of a design or picture设计或图片的初步草图</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sketch, study]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['conscription', 'muster', 'selective service']</td>
+      <td></td>
+      <td>compulsory military service义务兵役制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[militarization, mobilization, mobilisation, militarisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draught', 'potation', 'tipple']</td>
+      <td></td>
+      <td>a serving of drink (usually alcoholic) drawn from a keg从桶里取出的一份饮料（通常是酒精）</td>
+      <td>they served beer on draft他们在选秀中提供啤酒</td>
+      <td></td>
+      <td></td>
+      <td>[drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draught']</td>
+      <td></td>
+      <td>a dose of liquid medicine一剂液体药</td>
+      <td>he took a sleeping draft他吃了一个熟睡的草稿</td>
+      <td></td>
+      <td></td>
+      <td>[dose, dosage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['bill of exchange', 'order of payment']</td>
+      <td></td>
+      <td>a document ordering the payment of money; drawn by one person or bank on another订购货款的文件;由一个人或银行在另一个人身上绘制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[negotiable instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draft copy']</td>
+      <td></td>
+      <td>any of the various versions in the development of a written work书面作品开发中的任何一个版本</td>
+      <td>a preliminary draft初稿the final draft of the constitution宪法的最终草案</td>
+      <td></td>
+      <td></td>
+      <td>[text, textual matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draught']</td>
+      <td></td>
+      <td>the depth of a vessel's keel below the surface (especially when loaded)船体龙骨在地面以下的深度（特别是在装载时）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[depth, deepness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td>['draught']</td>
+      <td></td>
+      <td>a current of air (usually coming into a chimney or room or vehicle)空气流（通常进入烟囱或房间或车辆）</td>
+      <td></td>
+      <td>[drafty]</td>
+      <td></td>
+      <td>[air current, wind, current of air]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draft</th>
+      <td>aft</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>dræft</td>
+      <td></td>
+      <td></td>
+      <td>a regulator for controlling the flow of air in a fireplace用于控制壁炉中空气流动的调节器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[regulator]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>'ʃæft</td>
+      <td>['cheat', 'chicane', 'chouse', 'jockey', 'screw']</td>
+      <td></td>
+      <td>defeat someone through trickery or deceit通过欺骗或欺骗来打败某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beat out, trounce, vanquish, crush, shell, beat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>'ʃæft</td>
+      <td></td>
+      <td></td>
+      <td>equip with a shaft配备轴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fit out, equip, fit, outfit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['barb', 'dig', 'gibe', 'jibe', 'shot', 'slam']</td>
+      <td></td>
+      <td>an aggressive remark directed at a person like a missile and intended to have a telling effect针对像导弹这样的人的激进言论，旨在产生明显的效果</td>
+      <td>she threw shafts of sarcasm她扔了讽刺的斧头</td>
+      <td></td>
+      <td></td>
+      <td>[comment, input, remark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['calamus', 'quill']</td>
+      <td></td>
+      <td>the hollow spine of a feather羽毛的空心脊柱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rib]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['rotating shaft']</td>
+      <td></td>
+      <td>a revolving rod that transmits power or motion传递动力或运动的旋转杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rod]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['beam', 'beam of light', 'irradiation', 'light beam', 'ray', 'ray of light', 'shaft of light']</td>
+      <td></td>
+      <td>a column of light (as from a beacon)一列光（来自灯塔）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visible light, light, visible radiation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['diaphysis']</td>
+      <td></td>
+      <td>the main (mid) section of a long bone长骨的主要（中间）部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[os longum, long bone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['scape']</td>
+      <td></td>
+      <td>(architecture) upright consisting of the vertical part of a column（建筑）直立由立柱的垂直部分组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vertical, upright]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['cock', 'dick', 'pecker', 'prick', 'putz', 'tool']</td>
+      <td></td>
+      <td>obscene terms for penis阴茎的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[penis, phallus, member]</td>
+      <td>[smut, obscenity, filth, vulgarism, dirty word]</td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td>['lance', 'spear']</td>
+      <td></td>
+      <td>a long pointed rod used as a tool or weapon用作工具或武器的长尖杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weapon system, arm, weapon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td></td>
+      <td></td>
+      <td>a line that forms the length of an arrow pointer形成箭头指针长度的线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td></td>
+      <td></td>
+      <td>a long rod or pole (especially the handle of an implement or the body of a weapon like a spear or arrow)长杆或杆（特别是工具的手柄或像矛或箭头的武器的身体）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rod]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td></td>
+      <td></td>
+      <td>a long vertical passage sunk into the earth, as for a mine or tunnel一条长长的垂直通道沉入地下，如矿井或隧道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[passage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shaft</th>
+      <td>aft</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'ʃæft</td>
+      <td></td>
+      <td></td>
+      <td>a vertical passageway through a building (as for an elevator)穿过建筑物的垂直通道（如电梯）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[passageway]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>craft</th>
+      <td>aft</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>kræft</td>
+      <td></td>
+      <td></td>
+      <td>make by hand and with much skill用手和很多技巧制作</td>
+      <td>The artisan crafted a complicated tool工匠制作了一个复杂的工具</td>
+      <td>[crafter]</td>
+      <td></td>
+      <td>[fashion, forge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>craft</th>
+      <td>aft</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>kræft</td>
+      <td>['craftiness', 'cunning', 'foxiness', 'guile', 'slyness', 'wiliness']</td>
+      <td></td>
+      <td>shrewdness as demonstrated by being skilled in deception精明的欺骗行为证明了精明</td>
+      <td></td>
+      <td>[crafty]</td>
+      <td></td>
+      <td>[astuteness, perspicaciousness, perspicacity, shrewdness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>craft</th>
+      <td>aft</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>kræft</td>
+      <td>['trade']</td>
+      <td></td>
+      <td>people who perform a particular kind of skilled work从事特定技能工作的人</td>
+      <td>he represented the craft of brewers他代表了酿酒师的工艺</td>
+      <td></td>
+      <td></td>
+      <td>[class, social class, socio-economic class, stratum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>craft</th>
+      <td>aft</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>kræft</td>
+      <td>['craftsmanship', 'workmanship']</td>
+      <td></td>
+      <td>skill in an occupation or trade职业或贸易技能</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[skill, attainment, accomplishment, acquirement, acquisition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>craft</th>
+      <td>aft</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>kræft</td>
+      <td>['trade']</td>
+      <td></td>
+      <td>the skilled practice of a practical occupation实用职业的熟练实践</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[occupation, line of work, line, job, business]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>craft</th>
+      <td>aft</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>kræft</td>
+      <td></td>
+      <td></td>
+      <td>a vehicle designed for navigation in or on water or air or through outer space设计用于在水上或空中或通过外层空间航行的车辆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vehicle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>graft</th>
+      <td>aft</td>
+      <td>3.00</td>
+      <td>ver</td>
+      <td>græft</td>
+      <td>['transplant']</td>
+      <td></td>
+      <td>place the organ of a donor into the body of a recipient将捐赠者的器官放入受体的体内</td>
+      <td></td>
+      <td>[grafting]</td>
+      <td></td>
+      <td>[insert, infix, enter, introduce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>graft</th>
+      <td>aft</td>
+      <td>3.00</td>
+      <td>ver</td>
+      <td>græft</td>
+      <td>['engraft', 'ingraft']</td>
+      <td></td>
+      <td>cause to grow together parts from different plants使不同植物的部分一起生长</td>
+      <td>graft the cherry tree branch onto the plum tree将樱桃树枝移植到梅树上</td>
+      <td>[grafting]</td>
+      <td></td>
+      <td>[conjoin, join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>graft</th>
+      <td>aft</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>græft</td>
+      <td>['grafting']</td>
+      <td></td>
+      <td>the act of grafting something onto something else把东西嫁接到其他东西上的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affixation, attachment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>graft</th>
+      <td>aft</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>græft</td>
+      <td>['bribery']</td>
+      <td></td>
+      <td>the practice of offering something (usually money) in order to gain an illicit advantage提供某种东西（通常是金钱）以获得非法利益的做法</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[felony]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>graft</th>
+      <td>aft</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>græft</td>
+      <td>['transplant']</td>
+      <td></td>
+      <td>(surgery) tissue or organ transplanted from a donor to a recipient; in some cases the patient can be both donor and recipient（手术）从供体移植到受体的组织或器官;在某些情况下，患者可以是供体和受体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kraft</th>
+      <td>aft</td>
+      <td>2.63</td>
+      <td>nou</td>
+      <td>kræft</td>
+      <td>['kraft paper']</td>
+      <td></td>
+      <td>strong wrapping paper made from pulp processed with a sulfur solution由硫磺溶液处理的纸浆制成的强力包装纸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wrapping paper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rafts</th>
+      <td>aft</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>ræfts</td>
+      <td>['dozens', 'gobs', 'heaps', 'lashings', 'loads', 'lots', 'oodles', 'piles', 'scads', 'scores', 'slews', 'stacks', 'tons', 'wads']</td>
+      <td></td>
+      <td>a large number or amount大量或数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>abaft</th>
+      <td>aft</td>
+      <td>2.02</td>
+      <td>adv</td>
+      <td>ə'bæft</td>
+      <td>['aft', 'astern']</td>
+      <td></td>
+      <td>at or near or toward the stern of a ship or tail of an airplane在船尾或飞机尾部或附近或朝向船尾或船尾</td>
+      <td>ships with square sails sail fairly efficiently with the wind abaft方形帆的船舶在风向后相当有效地航行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

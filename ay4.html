@@ -1,0 +1,1970 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['okay', 'away', 'stay', 'play', 'days', 'ways', 'pray', 'gray', 'clay', 'tray', 'sway', 'slay', 'mays', 'shay', 'fray', 'hays', 'flay', 'bray', 'spay', 'dray']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>okay</th>
+      <td>ay</td>
+      <td>6.26</td>
+      <td>ver</td>
+      <td>oʊ'kə</td>
+      <td>['approve', 'o.k.', 'sanction']</td>
+      <td></td>
+      <td>give sanction to给予制裁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clear, authorise, authorize, pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>okay</th>
+      <td>ay</td>
+      <td>6.26</td>
+      <td>nou</td>
+      <td>oʊ'kə</td>
+      <td>['o.k.', 'ok', 'okeh', 'okey']</td>
+      <td></td>
+      <td>an endorsement认可</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[warrant, countenance, indorsement, sanction, endorsement, imprimatur]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>okay</th>
+      <td>ay</td>
+      <td>6.26</td>
+      <td>adv</td>
+      <td>oʊ'kə</td>
+      <td>['all right', 'alright', 'o.k.']</td>
+      <td></td>
+      <td>in a satisfactory or adequate manner以令人满意或充分的方式</td>
+      <td>she'll do okay on her own她会自己做的好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>okay</th>
+      <td>ay</td>
+      <td>6.26</td>
+      <td>adj</td>
+      <td>oʊ'kə</td>
+      <td>['all right', 'cool', 'fine', 'hunky-dory', 'o.k.', 'ok'], similarTo:['satisfactory']</td>
+      <td></td>
+      <td>being satisfactory or in satisfactory condition满意或状况良好</td>
+      <td>things are okay事情还可以</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adv</td>
+      <td>ə'weɪ</td>
+      <td>['aside']</td>
+      <td></td>
+      <td>out of the way (especially away from one's thoughts)走开（特别是远离一个人的想法）</td>
+      <td>pushed all doubts away把所有疑惑都推开了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adv</td>
+      <td>ə'weɪ</td>
+      <td>['out']</td>
+      <td></td>
+      <td>from one's possession从一个人的财产</td>
+      <td>gave away the tickets送走了门票</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adv</td>
+      <td>ə'weɪ</td>
+      <td>['aside']</td>
+      <td></td>
+      <td>in a different direction在另一个方向</td>
+      <td>turn away one's face转过脸去glanced away瞥了一眼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adv</td>
+      <td>ə'weɪ</td>
+      <td>['forth', 'off']</td>
+      <td></td>
+      <td>from a particular thing or place or position (`forth' is obsolete)从某个特定的东西或地方或位置（“四分之一”已过时）</td>
+      <td>ran away from the lion逃离了狮子wanted to get away from there我想离开那里sent the children away to boarding school把孩子送到寄宿学校the teacher waved the children away from the dead animal老师让孩子们远离死去的动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[archaism, archaicism]</td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adv</td>
+      <td>ə'weɪ</td>
+      <td>['aside', 'by']</td>
+      <td></td>
+      <td>in reserve; not for immediate use保留;不能立即使用</td>
+      <td>has a nest egg tucked away for a rainy day有一个窝蛋隐藏了一个下雨天</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adv</td>
+      <td>ə'weɪ</td>
+      <td>['off']</td>
+      <td></td>
+      <td>at a distance in space or time在空间或时间的距离</td>
+      <td>the boat was 5 miles off (or away)这艘船距离（或远离）5英里the party is still 2 weeks off (or away)派对还有2个星期的休息时间（或者离开）away back in the 18th century可以追溯到18世纪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adj</td>
+      <td>ə'weɪ</td>
+      <td>['outside'], similarTo:['inaccurate']</td>
+      <td></td>
+      <td>(of a baseball pitch) on the far side of home plate from the batter（棒球场上）从击球手的本垒板的远侧</td>
+      <td>the pitch was away (or wide)音高远离（或宽）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adj</td>
+      <td>ə'weɪ</td>
+      <td>, similarTo:['absent']</td>
+      <td></td>
+      <td>not present; having left不存在;离开了</td>
+      <td>he's away right now他现在就走了you must not allow a stranger into the house when your mother is away当你的母亲离开时，你不能允许陌生人进入房子</td>
+      <td>[awayness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>away</th>
+      <td>ay</td>
+      <td>5.89</td>
+      <td>adj</td>
+      <td>ə'weɪ</td>
+      <td></td>
+      <td>[home]</td>
+      <td>used of an opponent's ground用于对手的地面</td>
+      <td>an away game客场比赛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['last out', 'outride', 'ride out']</td>
+      <td></td>
+      <td>hang on during a trial of endurance在耐力试验期间坚持下去</td>
+      <td></td>
+      <td>[stayer]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['remain', 'rest']</td>
+      <td>[change]</td>
+      <td>stay the same; remain in a certain state保持原样;保持某种状态</td>
+      <td>stay alone独自一人</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['stay put', 'stick', 'stick around']</td>
+      <td>[move]</td>
+      <td>stay put (in a certain place)留（在某个地方）</td>
+      <td>We are staying in Detroit; we are not moving to Cincinnati我们住在底特律;我们不会搬到辛辛那提</td>
+      <td></td>
+      <td></td>
+      <td>[stay in place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['abide', 'bide']</td>
+      <td></td>
+      <td>dwell住</td>
+      <td>You can stay with me while you are in town你在城里的时候可以和我在一起stay a bit longer--the day is still young保持更长时间 - 这一天还很年轻</td>
+      <td></td>
+      <td></td>
+      <td>[stay on, remain, continue]</td>
+      <td>[archaicism, archaism]</td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['appease', 'quell']</td>
+      <td></td>
+      <td>overcome or allay克服或消除</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fulfil, conform to, fill, fit, fulfill, meet, satisfy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['delay', 'detain']</td>
+      <td></td>
+      <td>stop or halt停止或停止</td>
+      <td>Please stay the bloodshed!请留下流血事件！</td>
+      <td></td>
+      <td></td>
+      <td>[retard, check, delay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['continue', 'remain', 'stay on']</td>
+      <td></td>
+      <td>continue in a place, position, or situation继续在一个地方，位置或情况</td>
+      <td>After graduation, she stayed on in Cambridge as a student adviser毕业后，她留在剑桥担任学生顾问</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td>['persist', 'remain']</td>
+      <td></td>
+      <td>stay behind站在后面</td>
+      <td>The smell stayed in the room气味停留在房间里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td></td>
+      <td></td>
+      <td>fasten with stays坚持住宿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[secure, fix, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>ver</td>
+      <td>steɪ</td>
+      <td></td>
+      <td></td>
+      <td>stop a judicial process停止司法程序</td>
+      <td>The judge stayed the execution order法官保留了执行令</td>
+      <td></td>
+      <td></td>
+      <td>[block, halt, kibosh, stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>nou</td>
+      <td>steɪ</td>
+      <td>['arrest', 'check', 'halt', 'hitch', 'stop', 'stoppage']</td>
+      <td></td>
+      <td>the state of inactivity following an interruption中断后的不活动状态</td>
+      <td>the momentary stay enabled him to escape the blow短暂的停留让他逃脱了打击</td>
+      <td></td>
+      <td></td>
+      <td>[inactiveness, inactivity, inaction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>nou</td>
+      <td>steɪ</td>
+      <td></td>
+      <td></td>
+      <td>a judicial order forbidding some action until an event occurs or the order is lifted一项司法命令，禁止在事件发生或取消命令之前采取某些行动</td>
+      <td>the Supreme Court has the power to stay an injunction pending an appeal to the whole Court在向整个法院提出上诉之前，最高法院有权发布禁令</td>
+      <td></td>
+      <td></td>
+      <td>[fiat, rescript, order, decree, edict]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>nou</td>
+      <td>steɪ</td>
+      <td></td>
+      <td></td>
+      <td>a thin strip of metal or bone that is used to stiffen a garment (e.g. a corset)用于硬化衣服的薄金属或骨头条（例如紧身胸衣）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slip, strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>nou</td>
+      <td>steɪ</td>
+      <td></td>
+      <td></td>
+      <td>continuing or remaining in a place or state继续或留在某个地方或州</td>
+      <td>they had a nice stay in Paris他们在巴黎过得愉快a lengthy hospital stay一个漫长的住院时间a four-month stay in bankruptcy court在破产法庭逗留四个月</td>
+      <td></td>
+      <td></td>
+      <td>[deed, human action, human activity, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>nou</td>
+      <td>steɪ</td>
+      <td></td>
+      <td></td>
+      <td>(nautical) brace consisting of a heavy rope or wire cable used as a support for a mast or spar（航海）支架，由重型绳索或钢丝绳组成，用作桅杆或翼梁的支撑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[brace, bracing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stay</th>
+      <td>ay</td>
+      <td>5.74</td>
+      <td>Non</td>
+      <td>steɪ</td>
+      <td></td>
+      <td>[depart]</td>
+      <td>remain behind留在后面</td>
+      <td>I had to stay at home and watch the children我不得不待在家里看孩子们</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['encounter', 'meet', 'take on']</td>
+      <td></td>
+      <td>contend against an opponent in a sport, game, or battle在体育，游戏或战斗中与对手抗衡</td>
+      <td>Princeton plays Yale this weekend普林斯顿本周末将扮演耶鲁大学Charlie likes to play Mary查理喜欢扮演玛丽</td>
+      <td>[playing]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['act', 'act as']</td>
+      <td></td>
+      <td>pretend to have certain qualities or state of mind假装有一定的品质或心态</td>
+      <td>She plays deaf when the news are bad当新闻不好时，她会聋哑</td>
+      <td></td>
+      <td>[behave, represent, act, do]</td>
+      <td>[act, behave, do]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['diddle', 'fiddle', 'toy']</td>
+      <td></td>
+      <td>manipulate manually or in one's mind or imagination手动或在一个人的思想或想象中操纵</td>
+      <td>She played nervously with her wedding ring她紧紧地打着她的结婚戒指He played with the idea of running for the Senate他参加竞选参议院的想法</td>
+      <td></td>
+      <td></td>
+      <td>[manipulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['dally', 'trifle']</td>
+      <td></td>
+      <td>consider not very seriously考虑不是很认真</td>
+      <td>She plays with the thought of moving to Tasmania她想到搬到塔斯马尼亚岛的想法</td>
+      <td></td>
+      <td>[dally, flirt, toy]</td>
+      <td>[consider, deal, take, look at]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['bring', 'make for', 'work', 'wreak']</td>
+      <td></td>
+      <td>cause to happen or to occur as a consequence因此发生或发生的原因</td>
+      <td>play a joke开玩笑</td>
+      <td></td>
+      <td>[work, act]</td>
+      <td>[make, create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['spiel']</td>
+      <td></td>
+      <td>replay (as a melody)重播（作为旋律）</td>
+      <td>She played the third movement very beautifully她非常漂亮地演奏了第三乐章</td>
+      <td>[playing]</td>
+      <td></td>
+      <td>[re-create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['act', 'playact', 'roleplay']</td>
+      <td></td>
+      <td>perform on a stage or theater在舞台或剧院表演</td>
+      <td>She acts in this play她扮演这个角色I played in `A Christmas Carol'我参加了'圣诞颂歌'</td>
+      <td>[playing, player]</td>
+      <td>[act, represent]</td>
+      <td>[perform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['bet', 'wager']</td>
+      <td></td>
+      <td>stake on the outcome of an issue关注问题的结果</td>
+      <td>She played all her money on the dark horse她在黑马上玩了所有的钱</td>
+      <td></td>
+      <td></td>
+      <td>[gamble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['recreate']</td>
+      <td></td>
+      <td>engage in recreational activities rather than work; occupy oneself in a diversion从事娱乐活动而不是工作;在转移中占据自己</td>
+      <td>On weekends I play在周末我玩</td>
+      <td>[playing]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['run']</td>
+      <td></td>
+      <td>cause to emit recorded audio or video导致发出录制的音频或视频</td>
+      <td>I'll play you my favorite record我会把你最喜欢的唱片给你He never tires of playing that video他从不厌倦播放那段视频</td>
+      <td></td>
+      <td>[execute, run]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['dally', 'flirt', 'toy']</td>
+      <td></td>
+      <td>behave carelessly or indifferently粗心大意或漠不关心</td>
+      <td></td>
+      <td></td>
+      <td>[trifle, dally]</td>
+      <td>[act, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['toy']</td>
+      <td></td>
+      <td>engage in an activity as if it were a game rather than take it seriously参与一项活动就好像它是一场游戏而不是认真对待它</td>
+      <td>They played games on their opponents他们在对手上玩游戏play the stock market玩股票市场play with her feelings玩她的感情</td>
+      <td>[playing]</td>
+      <td></td>
+      <td>[do, act, behave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>['act', 'represent']</td>
+      <td></td>
+      <td>play a role or part发挥作用或作用</td>
+      <td>Gielgud played Hamlet吉尔古德饰演哈姆雷特She played the servant to her husband's master她把仆人扮演了她丈夫的主人</td>
+      <td>[playing, player]</td>
+      <td>[act as, act, roleplay, playact]</td>
+      <td>[re-create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>act or have an effect in a specified way or with a specific effect or outcome以特定方式或具有特定效果或结果行事或产生影响</td>
+      <td>This factor played only a minor part in his decision这个因素在他的决定中起了很小的作用This development played into her hands这种发展起到了她的作用I played no role in your dismissal我在你的解雇中没有扮演任何角色</td>
+      <td></td>
+      <td></td>
+      <td>[move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>be at play; be engaged in playful activity; amuse oneself in a way characteristic of children发挥作用;从事俏皮活动;以儿童特有的方式娱乐自己</td>
+      <td>The kids were playing outside all day孩子们整天在外面玩耍I used to play with trucks as a little girl我曾经和卡车一起玩小女孩</td>
+      <td>[playing]</td>
+      <td>[recreate]</td>
+      <td>[act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>behave in a certain way表现得某种程度</td>
+      <td>play safe玩得安全play it safe玩得安全play fair平等游戏</td>
+      <td></td>
+      <td></td>
+      <td>[move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>be performed or presented for public viewing进行或呈现供公众观看</td>
+      <td>What's playing in the local movie theater?什么在当地电影院播放？`Cats' has been playing on Broadway for many years多年来，“猫”一直在百老汇演出</td>
+      <td></td>
+      <td>[playact, roleplay, act]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>bet or wager (money)下注或下注（钱）</td>
+      <td>He played $20 on the new horse他在新赛马上打了20美元She plays the races她参加比赛</td>
+      <td></td>
+      <td></td>
+      <td>[gamble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>cause to move or operate freely within a bounded space导致在有界空间内自由移动或操作</td>
+      <td>The engine has a wheel that is playing in a rack发动机有一个在机架中播放的轮子</td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>discharge or direct or be discharged or directed as if in a continuous stream以连续流的形式排出或引导或被排出或引导</td>
+      <td>play water from a hose从软管中取水The fountains played all day喷泉一整天都在玩</td>
+      <td></td>
+      <td></td>
+      <td>[discharge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>emit recorded sound发出录制的声音</td>
+      <td>The tape was playing for hours录像带播放了好几个小时the stereo was playing Beethoven when I entered我进入时，立体声播放贝多芬</td>
+      <td></td>
+      <td>[run]</td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>employ in a game or in a specific position在游戏中或在特定位置使用</td>
+      <td>They played him on first base他们在一垒打他</td>
+      <td></td>
+      <td>[take on, meet, encounter]</td>
+      <td>[apply, utilize, utilise, use, employ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>exhaust by allowing to pull on the line通过允许拉线来排气</td>
+      <td>play a hooked fish玩一条钩鱼</td>
+      <td></td>
+      <td></td>
+      <td>[tucker, exhaust, beat, tucker out, wash up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>make bets下注</td>
+      <td>play the casinos in Trouville在特鲁维尔玩赌场</td>
+      <td></td>
+      <td>[wager, bet]</td>
+      <td>[wager, bet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>move or seem to move quickly, lightly, or irregularly移动或似乎快速，轻微或不规则地移动</td>
+      <td>The spotlights played on the politicians聚光灯在政界人士身上播放</td>
+      <td></td>
+      <td></td>
+      <td>[go, travel, move, locomote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td>, alos:['play out']</td>
+      <td></td>
+      <td>participate in games or sport参加比赛或运动</td>
+      <td>We played hockey all afternoon我们整个下午都打曲棍球play cards打牌Pele played for the Brazilian teams in many important matches贝利在许多重要比赛中为巴西队效力</td>
+      <td>[playing, player]</td>
+      <td>[meet, encounter, take on]</td>
+      <td>[vie, compete, contend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>perform music on (a musical instrument)（乐器）演奏音乐</td>
+      <td>He plays the flute他演奏长笛Can you play on this old recorder?你能玩这台旧录音机吗？</td>
+      <td>[playing]</td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>perform on a certain location在某个地方表演</td>
+      <td>The prodigy played Carnegie Hall at the age of 16神童在16岁时饰演卡内基音乐厅She has been playing on Broadway for years她多年来一直在百老汇演出</td>
+      <td></td>
+      <td>[roleplay, act, playact]</td>
+      <td>[perform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>play on an instrument在乐器上演奏</td>
+      <td>The band played all night long乐队整晚都在演奏</td>
+      <td>[player, playing]</td>
+      <td>[spiel]</td>
+      <td>[perform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>pretend to be somebody in the framework of a game or playful activity假装在游戏框架或有趣的活动中成为某人</td>
+      <td>Let's play like I am mommy让我们像我妈妈一样玩</td>
+      <td></td>
+      <td>[act, represent]</td>
+      <td>[sham, simulate, feign, assume]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>put (a card or piece) into play during a game, or act strategically as if in a card game在比赛期间将（牌或棋子）放入游戏中，或者像在纸牌游戏中一样战略性地行动</td>
+      <td>He is playing his cards close to his chest他正在靠近胸口打牌The Democrats still have some cards to play before they will concede the electoral victory在他们承认选举胜利之前，民主党仍然有一些牌可以玩</td>
+      <td></td>
+      <td></td>
+      <td>[deploy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>shoot or hit in a particular manner以特定方式射击或击打</td>
+      <td>She played a good backhand last night昨晚她打得很好</td>
+      <td></td>
+      <td>[meet, take on, encounter]</td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>use or move使用或移动</td>
+      <td>I had to play my queen我不得不扮演我的女王</td>
+      <td></td>
+      <td>[meet, take on, encounter]</td>
+      <td>[utilize, employ, apply, use, utilise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>ver</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>use to one's advantage利用一个人的优势</td>
+      <td>She plays on her clients' emotions她扮演客户的情绪</td>
+      <td></td>
+      <td></td>
+      <td>[exploit, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['drama', 'dramatic play']</td>
+      <td></td>
+      <td>a dramatic work intended for performance by actors on a stage一部戏剧作品，旨在让演员在舞台上表演</td>
+      <td>he wrote several plays but only one was produced on Broadway他写过几部戏剧，但只有一部在百老汇制作</td>
+      <td>[playlet]</td>
+      <td></td>
+      <td>[dramatic work, dramatic composition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['swordplay']</td>
+      <td></td>
+      <td>the act using a sword (or other weapon) vigorously and skillfully使用剑（或其他武器）的行为，大力而巧妙地使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['shimmer']</td>
+      <td></td>
+      <td>a weak and tremulous light一种微弱而颤抖的光芒</td>
+      <td>the play of light on the water在水面上玩光</td>
+      <td></td>
+      <td></td>
+      <td>[alteration, modification, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['caper', 'frolic', 'gambol', 'romp']</td>
+      <td></td>
+      <td>gay or light-hearted recreational activity for diversion or amusement转移或娱乐的同性恋或轻松的娱乐活动</td>
+      <td>it was all done in play这一切都是在游戏中完成的</td>
+      <td></td>
+      <td></td>
+      <td>[recreation, diversion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>["child's play"]</td>
+      <td></td>
+      <td>activity by children that is guided more by imagination than by fixed rules儿童的活动更多地是由想象力而非固定规则引导的</td>
+      <td>Freud believed in the utility of play to a small child弗洛伊德相信玩耍给小孩子的效用</td>
+      <td></td>
+      <td></td>
+      <td>[diversion, recreation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['turn']</td>
+      <td></td>
+      <td>(game) the activity of doing something in an agreed succession（游戏）以商定的继承做某事的活动</td>
+      <td>it is still my play它仍然是我的游戏</td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['bid']</td>
+      <td></td>
+      <td>an attempt to get something试图得到一些东西</td>
+      <td>they made a futile play for power他们为权力做了徒劳</td>
+      <td></td>
+      <td></td>
+      <td>[endeavour, attempt, effort, endeavor, try]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['maneuver', 'manoeuvre']</td>
+      <td></td>
+      <td>a deliberate coordinated movement requiring dexterity and skill需要灵活性和技巧的刻意协调运动</td>
+      <td>the runner was out on a play by the shortstop赛跑者在游击手的比赛中出场了</td>
+      <td></td>
+      <td></td>
+      <td>[motion, movement, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['looseness']</td>
+      <td></td>
+      <td>movement or space for movement运动或运动空间</td>
+      <td>there was too much play in the steering wheel方向盘上的游戏太多了</td>
+      <td></td>
+      <td></td>
+      <td>[movableness, movability]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['free rein']</td>
+      <td></td>
+      <td>the removal of constraints删除约束</td>
+      <td>they gave full play to the artist's talent他们充分发挥了艺术家的才华</td>
+      <td></td>
+      <td></td>
+      <td>[freedom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['gambling', 'gaming']</td>
+      <td></td>
+      <td>the act of playing for stakes in the hope of winning (including the payment of a price for a chance to win a prize)为获胜而进行赌注的行为（包括支付赢得奖金的机会的价格）</td>
+      <td>there was heavy play at the blackjack table在二十一点桌上玩得很重</td>
+      <td></td>
+      <td></td>
+      <td>[recreation, vice, diversion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['fun', 'sport']</td>
+      <td></td>
+      <td>verbal wit or mockery (often at another's expense but not to be taken seriously)口头的机智或嘲弄（通常由另一个人承担费用但不被认真对待）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[humor, humour, wittiness, witticism, wit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td>['period of play', 'playing period']</td>
+      <td></td>
+      <td>(in games or plays or other performances) the time during which play proceeds（在游戏或戏剧或其他表演中）游戏进行的时间</td>
+      <td>rain stopped play in the 4th inning雨在第4局停止了比赛</td>
+      <td></td>
+      <td></td>
+      <td>[amount, measure, quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>a preset plan of action in team sports团队运动中的预设行动计划</td>
+      <td>the coach drew up the plays for her team教练为她的球队制作了比赛</td>
+      <td></td>
+      <td></td>
+      <td>[plan of action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>a state in which action is feasible行动可行的国家</td>
+      <td>the ball was still in play球还在比赛中insiders said the company's stock was in play业内人士表示，该公司的股票正在发挥作用</td>
+      <td></td>
+      <td></td>
+      <td>[activeness, action, activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>a theatrical performance of a drama戏剧的戏剧表演</td>
+      <td>the play lasted two hours这场比赛持续了两个小时</td>
+      <td>[playlet]</td>
+      <td></td>
+      <td>[show]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>play</th>
+      <td>ay</td>
+      <td>5.58</td>
+      <td>nou</td>
+      <td>pleɪ</td>
+      <td></td>
+      <td></td>
+      <td>utilization or exercise利用或锻炼</td>
+      <td>the play of the imagination想象力的发挥</td>
+      <td></td>
+      <td></td>
+      <td>[use, employment, utilization, exercise, utilisation, usage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>days</th>
+      <td>ay</td>
+      <td>5.56</td>
+      <td>nou</td>
+      <td>deɪz</td>
+      <td>['years']</td>
+      <td></td>
+      <td>the time during which someone's life continues某人生命持续的时间</td>
+      <td>the monarch's last days君主的最后几天</td>
+      <td></td>
+      <td></td>
+      <td>[life]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ways</th>
+      <td>ay</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>weɪz</td>
+      <td>['shipway', 'slipway']</td>
+      <td></td>
+      <td>structure consisting of a sloping way down to the water from the place where ships are built or repaired结构由倾斜的方式组成，从船舶建造或修理的地方向下延伸到水面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[construction, structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pray</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>preɪ</td>
+      <td>['beg', 'implore']</td>
+      <td></td>
+      <td>call upon in supplication; entreat请求恳求;恳求</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plead]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pray</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>preɪ</td>
+      <td></td>
+      <td></td>
+      <td>address a deity, a prophet, a saint or an object of worship; say a prayer解释神，先知，圣徒或崇拜的对象;说一个祷告</td>
+      <td>pray to the Lord向主祷告</td>
+      <td>[prayer]</td>
+      <td></td>
+      <td>[commune]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>greɪ</td>
+      <td>['grey']</td>
+      <td></td>
+      <td>make grey做灰色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colour, colour in, colourize, color, colourise, color in, colorise, colorize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>greɪ</td>
+      <td>['grey']</td>
+      <td></td>
+      <td>turn grey变灰了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colour, color, discolor, discolour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['louis harold gray']</td>
+      <td></td>
+      <td>English radiobiologist in whose honor the gray (the SI unit of energy for the absorbed dose of radiation) was named (1905-1965)英国放射生物学家以其灰色（吸收辐射剂量的能量单位）命名（1905-1965）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiobiologist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['grey']</td>
+      <td></td>
+      <td>clothing that is a grey color衣服是灰色的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wear, vesture, article of clothing, wearable, habiliment, clothing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['asa gray']</td>
+      <td></td>
+      <td>United States botanist who specialized in North American flora and who was an early supporter of Darwin's theories of evolution (1810-1888)美国植物学家，专门研究北美植物，是达尔文进化论的早期支持者（1810-1888）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['gy']</td>
+      <td></td>
+      <td>the SI unit of energy absorbed from ionizing radiation; equal to the absorption of one joule of radiation energy by one kilogram of matter; one gray equals 100 rad从电离辐射吸收的能量的SI单位;相当于一公斤物质吸收一焦耳的辐射能量;一个灰色等于100拉德</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radioactivity unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['thomas gray']</td>
+      <td></td>
+      <td>English poet best known for his elegy written in a country churchyard (1716-1771)以在国家墓地写的挽歌而闻名的英国诗人（1716-1771）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['robert gray']</td>
+      <td></td>
+      <td>American navigator who twice circumnavigated the globe and who discovered the Columbia River (1755-1806)两次环游全球并发现哥伦比亚河的美国航海家（1755-1806）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['grayness', 'grey', 'greyness']</td>
+      <td></td>
+      <td>a neutral achromatic color midway between white and black白色和黑色之间的中性无彩色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[achromatic color, achromatic colour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['grey']</td>
+      <td></td>
+      <td>horse of a light gray or whitish color浅灰色或白色的马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[riding horse, saddle horse, mount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['grey']</td>
+      <td></td>
+      <td>any organization or party whose uniforms or badges are grey任何制服或徽章是灰色的组织或政党</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[organisation, organization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['gray-haired', 'gray-headed', 'grey', 'grey-haired', 'grey-headed', 'grizzly', 'hoar', 'hoary', 'white-haired'], similarTo:['old']</td>
+      <td></td>
+      <td>showing characteristics of age, especially having grey or white hair显示年龄特征，特别是灰白头发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['grey'], similarTo:['southern']</td>
+      <td></td>
+      <td>used to signify the Confederate forces in the American Civil War (who wore grey uniforms)用于表示美国内战中的南方军队（穿着灰色制服）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['grayish', 'grey', 'greyish'], similarTo:['achromatic', 'neutral']</td>
+      <td></td>
+      <td>of an achromatic color of any lightness intermediate between the extremes of white and black在白色和黑色的极端之间的任何亮度的无彩色颜色</td>
+      <td>gray flannel suit灰色法兰绒套装</td>
+      <td>[grayness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gray</th>
+      <td>ay</td>
+      <td>4.13</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['grey'], similarTo:['intermediate']</td>
+      <td></td>
+      <td>intermediate in character or position中间人物或位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clay</th>
+      <td>ay</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>kleɪ</td>
+      <td>['cadaver', 'corpse', 'remains', 'stiff']</td>
+      <td></td>
+      <td>the dead body of a human being一个人的尸体</td>
+      <td>honor comes to bless the turf that wraps their clay荣誉来祝福包裹他们的粘土的草皮</td>
+      <td></td>
+      <td></td>
+      <td>[dead body, body]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clay</th>
+      <td>ay</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>kleɪ</td>
+      <td>['henry clay', 'the great compromiser']</td>
+      <td></td>
+      <td>United States politician responsible for the Missouri Compromise between free and slave states (1777-1852)负责密苏里自由与奴隶州妥协的美国政客（1777-1852）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clay</th>
+      <td>ay</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>kleɪ</td>
+      <td>['lucius clay', 'lucius dubignon clay']</td>
+      <td></td>
+      <td>United States general who commanded United States forces in Europe from 1945 to 1949 and who oversaw the Berlin airlift (1897-1978)1945年至1949年在欧洲指挥美国部队并监督柏林空运的美国将军（1897-1978）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clay</th>
+      <td>ay</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>kleɪ</td>
+      <td>['mud']</td>
+      <td></td>
+      <td>water soaked soil; soft wet earth水浸土;柔软的湿土</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soil, dirt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clay</th>
+      <td>ay</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>kleɪ</td>
+      <td></td>
+      <td></td>
+      <td>a very fine-grained soil that is plastic when moist but hard when fired一种非常细粒的土壤，在潮湿时是塑性的，但在发射时是坚硬的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soil, dirt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tray</th>
+      <td>ay</td>
+      <td>3.56</td>
+      <td>nou</td>
+      <td>treɪ</td>
+      <td></td>
+      <td></td>
+      <td>an open receptacle for holding or displaying or serving articles or food用于容纳或展示或供应物品或食物的开口容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[receptacle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sway</th>
+      <td>ay</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>sweɪ</td>
+      <td>['rock', 'shake']</td>
+      <td></td>
+      <td>move back and forth or sideways来回移动或侧身移动</td>
+      <td>the tall building swayed高大的建筑摇晃着</td>
+      <td></td>
+      <td>[rock]</td>
+      <td>[move back and forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sway</th>
+      <td>ay</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>sweɪ</td>
+      <td>['rock']</td>
+      <td></td>
+      <td>cause to move back and forth导致来回移动</td>
+      <td>the wind swayed the trees gently风轻轻地摇晃着树木</td>
+      <td></td>
+      <td>[shake, rock]</td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sway</th>
+      <td>ay</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>sweɪ</td>
+      <td>['carry', 'persuade']</td>
+      <td></td>
+      <td>win approval or support for赢得批准或支持</td>
+      <td>His speech did not sway the voters他的讲话没有动摇选民</td>
+      <td></td>
+      <td>[carry]</td>
+      <td>[influence, act upon, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sway</th>
+      <td>ay</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>sweɪ</td>
+      <td>['swing']</td>
+      <td></td>
+      <td>move or walk in a swinging or swaying manner以摆动或摇摆的方式移动或行走</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move back and forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sway</th>
+      <td>ay</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>sweɪ</td>
+      <td>['careen', 'rock', 'tilt']</td>
+      <td></td>
+      <td>pitching dangerously to one side危险地投球到一边</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lurch, pitch, pitching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sway</th>
+      <td>ay</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>sweɪ</td>
+      <td></td>
+      <td></td>
+      <td>controlling influence控制影响力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[powerfulness, power]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slay</th>
+      <td>ay</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>sleɪ</td>
+      <td>['bump off', 'dispatch', 'hit', 'murder', 'off', 'polish off', 'remove']</td>
+      <td></td>
+      <td>kill intentionally and with premeditation故意杀人和预谋</td>
+      <td></td>
+      <td>[slayer, slaying]</td>
+      <td></td>
+      <td>[kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mays</th>
+      <td>ay</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>meɪz</td>
+      <td>['say hey kid', 'willie howard mays jr.', 'willie mays']</td>
+      <td></td>
+      <td>United States baseball player (born in 1931)美国棒球运动员（1931年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shay</th>
+      <td>ay</td>
+      <td>2.95</td>
+      <td>nou</td>
+      <td>ʃeɪ</td>
+      <td>['chaise']</td>
+      <td></td>
+      <td>a carriage consisting of two wheels and a calash top; drawn by a single horse一个由两个轮子和一个卡拉什顶部组成的车厢;由一匹马画</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[carriage, equipage, rig]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fray</th>
+      <td>ay</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>freɪ</td>
+      <td>['chafe', 'fret', 'rub', 'scratch']</td>
+      <td></td>
+      <td>cause friction导致摩擦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contact, meet, touch, adjoin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fray</th>
+      <td>ay</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>freɪ</td>
+      <td>['frazzle']</td>
+      <td></td>
+      <td>wear away by rubbing通过摩擦磨损</td>
+      <td>The friction frayed the sleeve摩擦磨损了套筒</td>
+      <td></td>
+      <td></td>
+      <td>[wear out, break, bust, fall apart, wear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fray</th>
+      <td>ay</td>
+      <td>2.74</td>
+      <td>nou</td>
+      <td>freɪ</td>
+      <td>['affray', 'disturbance', 'ruffle']</td>
+      <td></td>
+      <td>a noisy fight一场吵闹的战斗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scrap, combat, fight, fighting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hays</th>
+      <td>ay</td>
+      <td>2.66</td>
+      <td>nou</td>
+      <td>heɪz</td>
+      <td>['will hays', 'william harrison hays']</td>
+      <td></td>
+      <td>United States lawyer and politician who formulated a production code that prescribed the moral content of United States films from 1930 to 1966 (1879-1954)1930年至1966年（1879-1954）制定了一部规定美国电影道德内容的制作代码的美国律师和政治家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hays</th>
+      <td>ay</td>
+      <td>2.66</td>
+      <td>nou</td>
+      <td>heɪz</td>
+      <td>['arthur garfield hays']</td>
+      <td></td>
+      <td>United States lawyer involved in several famous court trials (1881-1954)参与几项着名法庭审判的美国律师（1881-1954）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hays</th>
+      <td>ay</td>
+      <td>2.66</td>
+      <td>nou</td>
+      <td>heɪz</td>
+      <td></td>
+      <td></td>
+      <td>a town in central Kansas堪萨斯州中部的一个小镇</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flay</th>
+      <td>ay</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>fleɪ</td>
+      <td></td>
+      <td></td>
+      <td>strip the skin off脱掉皮肤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pare, peel, skin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bray</th>
+      <td>ay</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>breɪ</td>
+      <td>['comminute', 'crunch', 'grind', 'mash']</td>
+      <td></td>
+      <td>reduce to small pieces or particles by pounding or abrading通过敲击或研磨将其减少为小块或颗粒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fragmentize, break up, fragment, fragmentise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bray</th>
+      <td>ay</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>breɪ</td>
+      <td>['hee-haw']</td>
+      <td></td>
+      <td>braying characteristic of donkeys驴的特征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[let out, let loose, utter, emit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bray</th>
+      <td>ay</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>breɪ</td>
+      <td></td>
+      <td></td>
+      <td>laugh loudly and harshly大声而严厉地笑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[laugh, express mirth, express joy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bray</th>
+      <td>ay</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>breɪ</td>
+      <td></td>
+      <td></td>
+      <td>the cry of an ass屁股的叫声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spay</th>
+      <td>ay</td>
+      <td>1.90</td>
+      <td>ver</td>
+      <td>speɪ</td>
+      <td>['alter', 'castrate', 'neuter']</td>
+      <td></td>
+      <td>remove the ovaries of去除卵巢</td>
+      <td>Is your cat spayed?你的猫被喷了吗？</td>
+      <td>[spaying]</td>
+      <td></td>
+      <td>[unsex, sterilise, sterilize, desex, desexualise, desexualize, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dray</th>
+      <td>ay</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>dreɪ</td>
+      <td>['camion']</td>
+      <td></td>
+      <td>a low heavy horse cart without sides; used for haulage一辆没有侧面的低重马车;用于运输</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[horse-cart, horse cart]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

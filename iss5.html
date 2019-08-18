@@ -1,0 +1,230 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['missy', 'swiss', 'sissy', 'bliss', 'cissy', 'amiss', 'briss']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>missy</th>
+      <td>iss</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>'mɪsi</td>
+      <td>['fille', 'girl', 'miss', 'young lady', 'young woman']</td>
+      <td></td>
+      <td>a young female一个年轻的女性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[woman, adult female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swiss</th>
+      <td>iss</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>swɪs</td>
+      <td>['swiss people']</td>
+      <td></td>
+      <td>the natives or inhabitants of Switzerland瑞士的当地人或居民</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[country, land, nation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swiss</th>
+      <td>iss</td>
+      <td>3.77</td>
+      <td>Non</td>
+      <td>swɪs</td>
+      <td></td>
+      <td></td>
+      <td>of or relating to Switzerland or its people or culture属于或关于瑞士或其人民或文化的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sissy</th>
+      <td>iss</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>'sɪsi</td>
+      <td>['milksop', 'milquetoast', 'pansy', 'pantywaist']</td>
+      <td></td>
+      <td>a timid man or boy considered childish or unassertive胆小的男人或男孩被认为幼稚或不自信</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coward]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sissy</th>
+      <td>iss</td>
+      <td>3.76</td>
+      <td>adj</td>
+      <td>'sɪsi</td>
+      <td>['cissy', 'effeminate', 'emasculate', 'epicene', 'sissified', 'sissyish'], similarTo:['unmanful', 'unmanlike', 'unmanly']</td>
+      <td></td>
+      <td>having unsuitable feminine qualities具有不合适的女性气质</td>
+      <td></td>
+      <td>[sissiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bliss</th>
+      <td>iss</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>blɪs</td>
+      <td>['blissfulness', 'cloud nine', 'seventh heaven', 'walking on air']</td>
+      <td></td>
+      <td>a state of extreme happiness一种极度幸福的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[elation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cissy</th>
+      <td>iss</td>
+      <td>2.95</td>
+      <td>adj</td>
+      <td>'sɪsi</td>
+      <td>['effeminate', 'emasculate', 'epicene', 'sissified', 'sissy', 'sissyish'], similarTo:['unmanful', 'unmanlike', 'unmanly']</td>
+      <td></td>
+      <td>having unsuitable feminine qualities具有不合适的女性气质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amiss</th>
+      <td>iss</td>
+      <td>2.82</td>
+      <td>adv</td>
+      <td>ə'mɪs</td>
+      <td>['awry']</td>
+      <td></td>
+      <td>away from the correct or expected course远离正确或预期的过程</td>
+      <td>something went badly amiss in the preparations准备工作中出现了一些问题</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amiss</th>
+      <td>iss</td>
+      <td>2.82</td>
+      <td>adv</td>
+      <td>ə'mɪs</td>
+      <td>['imperfectly']</td>
+      <td></td>
+      <td>in an imperfect or faulty way以不完美或错误的方式</td>
+      <td>Miss Bennet would not play at all amiss if she practiced more如果她练习更多的话，班纳特小姐根本不会玩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amiss</th>
+      <td>iss</td>
+      <td>2.82</td>
+      <td>adj</td>
+      <td>ə'mɪs</td>
+      <td>['awry', 'haywire', 'wrong'], similarTo:['malfunctioning', 'nonfunctional']</td>
+      <td></td>
+      <td>not functioning properly运作不正常</td>
+      <td>something is amiss有些不对劲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>briss</th>
+      <td>iss</td>
+      <td>2.31</td>
+      <td>nou</td>
+      <td></td>
+      <td>['berit', 'berith', 'bris', 'brith']</td>
+      <td></td>
+      <td>the Jewish rite of circumcision performed on a male child on the eighth day of his life犹太人的割礼仪式在他生命的第八天对一个男孩进行了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[circumcision]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,860 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['champ', 'swamp', 'stamp', 'tramp', 'cramp', 'clamp', 'ample', 'scamp', 'amply', 'campy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>champ</th>
+      <td>amp</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>tʃæmp</td>
+      <td>['chomp']</td>
+      <td></td>
+      <td>chew noisily吵闹地咀嚼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[masticate, chew, jaw, manducate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>champ</th>
+      <td>amp</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>tʃæmp</td>
+      <td></td>
+      <td></td>
+      <td>chafe at the bit, like horses像马一样坐在那里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chew, masticate, manducate, jaw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>champ</th>
+      <td>amp</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>tʃæmp</td>
+      <td>['champion', 'title-holder']</td>
+      <td></td>
+      <td>someone who has won first place in a competition在比赛中获得第一名的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[competitor, contender, competition, challenger, rival]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swamp</th>
+      <td>amp</td>
+      <td>3.89</td>
+      <td>ver</td>
+      <td>swɑmp</td>
+      <td>['deluge', 'flood', 'inundate']</td>
+      <td></td>
+      <td>fill quickly beyond capacity; as with a liquid快速填补能力;和液体一样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fill, make full, fill up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swamp</th>
+      <td>amp</td>
+      <td>3.89</td>
+      <td>ver</td>
+      <td>swɑmp</td>
+      <td>['drench']</td>
+      <td></td>
+      <td>drench or submerge or be drenched or submerged浸透或淹没或被淋湿或淹没</td>
+      <td>The tsunami swamped every boat in the harbor海啸淹没了港口的每一条船</td>
+      <td></td>
+      <td></td>
+      <td>[flood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swamp</th>
+      <td>amp</td>
+      <td>3.89</td>
+      <td>nou</td>
+      <td>swɑmp</td>
+      <td>['swampland']</td>
+      <td></td>
+      <td>low land that is seasonally flooded; has more woody plants than a marsh and better drainage than a bog季节性洪水淹没的低地;拥有比沼泽更多的木本植物和比沼泽更好的排水</td>
+      <td></td>
+      <td>[swampy]</td>
+      <td></td>
+      <td>[wetland]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swamp</th>
+      <td>amp</td>
+      <td>3.89</td>
+      <td>nou</td>
+      <td>swɑmp</td>
+      <td></td>
+      <td></td>
+      <td>a situation fraught with difficulties and imponderables充满困难和不可估量的情况</td>
+      <td>he was trapped in a medical swamp他被困在医疗沼泽地里</td>
+      <td></td>
+      <td></td>
+      <td>[situation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td>['stomp', 'stump']</td>
+      <td></td>
+      <td>walk heavily走得很重</td>
+      <td></td>
+      <td>[stamper]</td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td>['boss', 'emboss']</td>
+      <td></td>
+      <td>raise in a relief提起救济</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[impress, imprint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td>['pigeonhole', 'stereotype']</td>
+      <td></td>
+      <td>treat or classify according to a mental stereotype根据心理刻板印象进行治疗或分类</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sort, classify, separate, class, sort out, assort]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>affix a stamp to贴上邮票</td>
+      <td>Are the letters properly stamped?这些字母是否有正确的印章？</td>
+      <td></td>
+      <td></td>
+      <td>[affix, stick on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>crush or grind with a heavy instrument用重型仪器压碎或研磨</td>
+      <td>stamp fruit extract the juice邮票水果提取汁</td>
+      <td></td>
+      <td></td>
+      <td>[mash, squash, squelch, squeeze, crush]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>destroy or extinguish as if by stamping with the foot像踩脚一样摧毁或熄灭</td>
+      <td>stamp out tyranny摒弃暴政</td>
+      <td></td>
+      <td></td>
+      <td>[extinguish, snuff out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>form or cut out with a mold, form, or die用模具，模具或模具切割或切割</td>
+      <td>stamp needles邮票针</td>
+      <td>[stamper]</td>
+      <td></td>
+      <td>[form, mould, mold, shape, work, forge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>reveal clearly as having a certain character清楚地表明具有某种特征</td>
+      <td>His playing stamps him as a Romantic他的演奏使他成为浪漫主义者</td>
+      <td></td>
+      <td></td>
+      <td>[qualify, characterise, characterize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>to mark, or produce an imprint in or on something标记，或在某事物上或之上产生印记</td>
+      <td>a man whose name is permanently stamped on our maps一名男子的名字永久盖在我们的地图上</td>
+      <td></td>
+      <td></td>
+      <td>[imprint, impress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td>['legal tender', 'tender']</td>
+      <td></td>
+      <td>something that can be used as an official medium of payment可以用作官方付款媒介的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[monetary system, medium of exchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td>['pestle']</td>
+      <td></td>
+      <td>machine consisting of a heavy bar that moves vertically for pounding or crushing ores机器由一个重型杆组成，可垂直移动，用于冲击或破碎矿石</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[machine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td>['postage', 'postage stamp']</td>
+      <td></td>
+      <td>a small adhesive token stuck on a letter or package to indicate that that postal fees have been paid在信件或包装上粘贴一个小的粘性标记，表示已经支付了邮费</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[token, item]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td>['impression']</td>
+      <td></td>
+      <td>a symbol that is the result of printing or engraving印刷或雕刻的符号</td>
+      <td>he put his stamp on the envelope他把邮票放在信封上</td>
+      <td></td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td>['revenue stamp']</td>
+      <td></td>
+      <td>a small piece of adhesive paper that is put on an object to show that a government tax has been paid一小块粘贴纸放在一个物体上，表明已缴纳政府税</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of paper, sheet of paper, sheet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td>['seal']</td>
+      <td></td>
+      <td>a device incised to make an impression; used to secure a closing or to authenticate documents一种能够给人留下深刻印象的装置;用于保证关闭或验证文档</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td>['cast', 'mold', 'mould']</td>
+      <td></td>
+      <td>the distinctive form in which a thing is made制作东西的独特形式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[solid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>a block or die used to imprint a mark or design用于印记标记或设计的块或模具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[die]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stamp</th>
+      <td>amp</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>stæmp</td>
+      <td></td>
+      <td></td>
+      <td>a type or class类型或类</td>
+      <td>more men of his stamp are needed需要更多男人的印章</td>
+      <td></td>
+      <td></td>
+      <td>[family, category, class]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>træmp</td>
+      <td>['cast', 'drift', 'ramble', 'range', 'roam', 'roll', 'rove', 'stray', 'swan', 'vagabond', 'wander']</td>
+      <td></td>
+      <td>move about aimlessly or without any destination, often in search of food or employment无目的地移动或没有任何目的地，经常寻找食物或就业</td>
+      <td></td>
+      <td></td>
+      <td>[stray, wander, err, drift]</td>
+      <td>[locomote, move, travel, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>træmp</td>
+      <td>['footslog', 'pad', 'plod', 'slog', 'trudge']</td>
+      <td></td>
+      <td>walk heavily and firmly, as when weary, or through mud当疲倦或通过泥泞时，我们会坚定地走路</td>
+      <td></td>
+      <td>[tramper]</td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>træmp</td>
+      <td></td>
+      <td></td>
+      <td>cross on foot徒步穿过</td>
+      <td>We had to tramp the creeks我们不得不践踏小溪</td>
+      <td></td>
+      <td></td>
+      <td>[get across, cover, cross, cut across, cut through, get over, pass over, track, traverse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>træmp</td>
+      <td></td>
+      <td></td>
+      <td>travel on foot, especially on a walking expedition徒步旅行，特别是徒步旅行</td>
+      <td>We went tramping about the state of Colorado我们去了科罗拉多州</td>
+      <td>[tramper]</td>
+      <td></td>
+      <td>[hike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>træmp</td>
+      <td>['tramp steamer']</td>
+      <td></td>
+      <td>a commercial steamer for hire; one having no regular schedule租用的商用蒸笼;一个没有定期安排</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[steamship, steamer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>træmp</td>
+      <td>['swinger']</td>
+      <td></td>
+      <td>a person who engages freely in promiscuous sex一个自由参与混杂性行为的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rounder, libertine, debauchee]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>træmp</td>
+      <td>['bum', 'hobo']</td>
+      <td></td>
+      <td>a vagrant一个流浪汉</td>
+      <td>a homeless tramp一个无家可归的流浪汉</td>
+      <td></td>
+      <td></td>
+      <td>[vagabond, drifter, clochard, vagrant, floater]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>træmp</td>
+      <td>['hike', 'hiking']</td>
+      <td></td>
+      <td>a long walk usually for exercise or pleasure长时间散步通常是为了运动或娱乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>træmp</td>
+      <td>['hiker', 'tramper']</td>
+      <td></td>
+      <td>a foot traveler; someone who goes on an extended walk (for pleasure)一个脚旅行者;有人长途跋涉（为了享乐）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walker, pedestrian, footer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tramp</th>
+      <td>amp</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>træmp</td>
+      <td></td>
+      <td></td>
+      <td>a heavy footfall沉重的脚步声</td>
+      <td>the tramp of military boots军靴的流浪汉</td>
+      <td></td>
+      <td></td>
+      <td>[step, footfall, footstep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cramp</th>
+      <td>amp</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>kræmp</td>
+      <td>['halter', 'hamper', 'strangle']</td>
+      <td></td>
+      <td>prevent the progress or free movement of防止进步或自由运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[confine, trammel, bound, limit, restrict, throttle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cramp</th>
+      <td>amp</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>kræmp</td>
+      <td></td>
+      <td></td>
+      <td>affect with or as if with a cramp影响或似乎有抽筋</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cramp</th>
+      <td>amp</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>kræmp</td>
+      <td></td>
+      <td></td>
+      <td>secure with a cramp用抽筋固定</td>
+      <td>cramp the wood抽筋木头</td>
+      <td></td>
+      <td></td>
+      <td>[secure, fasten, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cramp</th>
+      <td>amp</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>kræmp</td>
+      <td></td>
+      <td></td>
+      <td>suffer from sudden painful contraction of a muscle遭受肌肉突然疼痛的收缩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[get, have, suffer, sustain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cramp</th>
+      <td>amp</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>kræmp</td>
+      <td>['muscle spasm', 'spasm']</td>
+      <td></td>
+      <td>a painful and involuntary muscular contraction痛苦和不自主的肌肉收缩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[symptom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cramp</th>
+      <td>amp</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>kræmp</td>
+      <td>['cramp iron']</td>
+      <td></td>
+      <td>a strip of metal with ends bent at right angles; used to hold masonry together一条金属条，两端弯成直角;过去常常把砖石砌成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slip, strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cramp</th>
+      <td>amp</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>kræmp</td>
+      <td></td>
+      <td></td>
+      <td>a clamp for holding pieces of wood together while they are glued一个夹子，用于在粘合时将木块固定在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clamp, clinch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clamp</th>
+      <td>amp</td>
+      <td>3.26</td>
+      <td>ver</td>
+      <td>klæmp</td>
+      <td></td>
+      <td></td>
+      <td>fasten or fix with a clamp用夹子固定或固定</td>
+      <td>clamp the chair together until the glue has hardened将椅子夹在一起，直到胶水硬化</td>
+      <td></td>
+      <td></td>
+      <td>[secure, fix, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clamp</th>
+      <td>amp</td>
+      <td>3.26</td>
+      <td>ver</td>
+      <td>klæmp</td>
+      <td></td>
+      <td></td>
+      <td>impose or inflict forcefully施加或强行施加</td>
+      <td>The military government clamped a curfew onto the capital军政府将宵禁限制在首都</td>
+      <td></td>
+      <td></td>
+      <td>[visit, bring down, impose, inflict]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clamp</th>
+      <td>amp</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>klæmp</td>
+      <td>['clinch']</td>
+      <td></td>
+      <td>a device (generally used by carpenters) that holds things firmly together一种将东西紧紧地固定在一起的装置（通常由木匠使用）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[holding device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ample</th>
+      <td>amp</td>
+      <td>3.00</td>
+      <td>adj</td>
+      <td>'æmpəl</td>
+      <td>['sizable', 'sizeable'], similarTo:['big', 'large']</td>
+      <td></td>
+      <td>fairly large in size相当大的</td>
+      <td>an ample waistline宽松的腰身of ample proportions比例很大</td>
+      <td>[ampleness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ample</th>
+      <td>amp</td>
+      <td>3.00</td>
+      <td>adj</td>
+      <td>'æmpəl</td>
+      <td>['copious', 'plenteous', 'plentiful', 'rich'], similarTo:['abundant']</td>
+      <td></td>
+      <td>affording an abundant supply提供充足的供应</td>
+      <td>had ample food for the party为聚会提供了充足的食物</td>
+      <td>[ampleness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ample</th>
+      <td>amp</td>
+      <td>3.00</td>
+      <td>adj</td>
+      <td>'æmpəl</td>
+      <td>, similarTo:['wide-cut', 'full', 'generous', 'good', 'wide'], alos:['sufficient', 'abundant']</td>
+      <td>[meager]</td>
+      <td>more than enough in size or scope or capacity绰绰有余的范围或范围或能力</td>
+      <td>had ample food for the party为聚会提供了充足的食物an ample supply充足的供应</td>
+      <td>[ampleness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scamp</th>
+      <td>amp</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>skæmp</td>
+      <td></td>
+      <td></td>
+      <td>perform hastily and carelessly匆匆忙忙地表演</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[do, execute, perform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scamp</th>
+      <td>amp</td>
+      <td>2.73</td>
+      <td>nou</td>
+      <td>skæmp</td>
+      <td>['imp', 'monkey', 'rapscallion', 'rascal', 'scalawag', 'scallywag']</td>
+      <td></td>
+      <td>one who is playfully mischievous一个顽皮恶作剧的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[child, tiddler, tike, tyke, kid, fry, minor, youngster, nestling, nipper, shaver, small fry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amply</th>
+      <td>amp</td>
+      <td>2.20</td>
+      <td>adv</td>
+      <td>æmpli</td>
+      <td>['richly']</td>
+      <td>[meagerly]</td>
+      <td>to an ample degree or in an ample manner足够的程度或充分的方式</td>
+      <td>these voices were amply represented这些声音得到了充分的体现</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amply</th>
+      <td>amp</td>
+      <td>2.20</td>
+      <td>adv</td>
+      <td>æmpli</td>
+      <td>['fully']</td>
+      <td>[meagerly]</td>
+      <td>sufficiently; more than adequately充分地;绰绰有余</td>
+      <td>the evidence amply (or fully) confirms our suspicions证据充分（或完全）证实了我们的怀疑they were fully (or amply) fed他们完全（或充足）喂养</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>campy</th>
+      <td>amp</td>
+      <td>1.82</td>
+      <td>adj</td>
+      <td>'kæmpi</td>
+      <td>['camp'], similarTo:['tasteless']</td>
+      <td></td>
+      <td>providing sophisticated amusement by virtue of having artificially (and vulgarly) mannered or banal or sentimental qualities通过人为（和粗俗）的礼貌或平庸或感伤的品质提供复杂的娱乐</td>
+      <td>campy Hollywood musicals of the 1940's1940年代的好莱坞音乐剧</td>
+      <td>[camp]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

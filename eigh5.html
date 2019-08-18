@@ -1,0 +1,245 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['eight', 'weigh', 'leigh', 'neigh']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>eight</th>
+      <td>eigh</td>
+      <td>4.95</td>
+      <td>nou</td>
+      <td>eɪt</td>
+      <td>['eight-spot']</td>
+      <td></td>
+      <td>one of four playing cards in a deck with eight pips on the face甲板上的四张扑克牌中的一张，脸上有八个点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eight</th>
+      <td>eigh</td>
+      <td>4.95</td>
+      <td>nou</td>
+      <td>eɪt</td>
+      <td>['ashcan school']</td>
+      <td></td>
+      <td>a group of United States painters founded in 1907 and noted for their realistic depictions of sordid aspects of city life一群美国画家，成立于1907年，以其对城市生活肮脏方面的现实描绘而闻名</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artistic movement, art movement, school]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eight</th>
+      <td>eigh</td>
+      <td>4.95</td>
+      <td>nou</td>
+      <td>eɪt</td>
+      <td>['8', 'eighter', 'eighter from decatur', 'octad', 'octet', 'octonary', 'ogdoad', 'viii']</td>
+      <td></td>
+      <td>the cardinal number that is the sum of seven and one基数是七和一的总和</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[figure, digit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eight</th>
+      <td>eigh</td>
+      <td>4.95</td>
+      <td>adj</td>
+      <td>eɪt</td>
+      <td>['8', 'viii'], similarTo:['cardinal']</td>
+      <td></td>
+      <td>being one more than seven超过七岁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weigh</th>
+      <td>eigh</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>weɪ</td>
+      <td>['consider', 'count']</td>
+      <td></td>
+      <td>show consideration for; take into account体贴;考虑到</td>
+      <td></td>
+      <td>[weighing]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weigh</th>
+      <td>eigh</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>weɪ</td>
+      <td>['press']</td>
+      <td></td>
+      <td>to be oppressive or burdensome压抑或负担</td>
+      <td>weigh heavily on the mind重心在于头脑</td>
+      <td></td>
+      <td></td>
+      <td>[matter, count]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weigh</th>
+      <td>eigh</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>weɪ</td>
+      <td>['librate']</td>
+      <td></td>
+      <td>determine the weight of确定重量</td>
+      <td>The butcher weighed the chicken屠夫称重了鸡肉</td>
+      <td>[weigher]</td>
+      <td></td>
+      <td>[measure, quantify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weigh</th>
+      <td>eigh</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>weɪ</td>
+      <td>['count', 'matter']</td>
+      <td></td>
+      <td>have weight; have import, carry weight有重量;有进口，携带重量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weigh</th>
+      <td>eigh</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>have a certain weight有一定的重量</td>
+      <td></td>
+      <td></td>
+      <td>[librate]</td>
+      <td>[measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>leigh</th>
+      <td>eigh</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>li</td>
+      <td>['vivien leigh']</td>
+      <td></td>
+      <td>English film actress (1913-1967)英国电影女演员（1913-1967）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>neigh</th>
+      <td>eigh</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>neɪ</td>
+      <td>['nicker', 'whicker', 'whinny']</td>
+      <td></td>
+      <td>make a characteristic sound, of a horse发出一种特色的声音，一匹马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emit, let loose, let out, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>neigh</th>
+      <td>eigh</td>
+      <td>2.59</td>
+      <td>nou</td>
+      <td>neɪ</td>
+      <td>['nicker', 'whicker', 'whinny']</td>
+      <td></td>
+      <td>the characteristic sounds made by a horse马的特征声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

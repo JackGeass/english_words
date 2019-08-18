@@ -1,0 +1,275 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['list', 'fist', 'mist', 'gist']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>list</th>
+      <td>ist</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>lɪst</td>
+      <td>['name']</td>
+      <td></td>
+      <td>give or make a list of; name individually; give the names of给出或列出;单独命名;给出名字</td>
+      <td></td>
+      <td>[listing, lister]</td>
+      <td></td>
+      <td>[itemize, itemise, enumerate, recite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>list</th>
+      <td>ist</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>lɪst</td>
+      <td>['lean']</td>
+      <td></td>
+      <td>cause to lean to the side导致偏向一边</td>
+      <td>Erosion listed the old tree侵蚀列出了老树</td>
+      <td></td>
+      <td>[heel]</td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>list</th>
+      <td>ist</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>lɪst</td>
+      <td>['number']</td>
+      <td></td>
+      <td>enumerate枚举</td>
+      <td></td>
+      <td>[listing]</td>
+      <td></td>
+      <td>[identify, name]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>list</th>
+      <td>ist</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>lɪst</td>
+      <td>['heel']</td>
+      <td></td>
+      <td>tilt to one side向一侧倾斜</td>
+      <td>The ship listed to starboard该船被列入右舷</td>
+      <td></td>
+      <td>[lean]</td>
+      <td>[lean, tilt, tip, angle, slant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>list</th>
+      <td>ist</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>lɪst</td>
+      <td></td>
+      <td></td>
+      <td>include in a list列入清单</td>
+      <td>Am I listed in your register?我在您的注册表中列出了吗？</td>
+      <td>[listing, lister]</td>
+      <td></td>
+      <td>[register]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>list</th>
+      <td>ist</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>lɪst</td>
+      <td>['listing']</td>
+      <td></td>
+      <td>a database containing an ordered array of items (names or topics)包含有序数组项（名称或主题）的数据库</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[database]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>list</th>
+      <td>ist</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>lɪst</td>
+      <td>['inclination', 'lean', 'leaning', 'tilt']</td>
+      <td></td>
+      <td>the property possessed by a line or surface that departs from the vertical由垂直离开的线或表面所拥有的财产</td>
+      <td>the ship developed a list to starboard该船开发了一个右舷列表</td>
+      <td></td>
+      <td></td>
+      <td>[spatial relation, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fist</th>
+      <td>ist</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>fɪst</td>
+      <td>['clenched fist']</td>
+      <td></td>
+      <td>a hand with the fingers clenched in the palm (as for hitting)用手掌握紧的手掌（至于击球）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hand, manus, mitt, paw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mist</th>
+      <td>ist</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>mɪst</td>
+      <td>['mist over']</td>
+      <td></td>
+      <td>become covered with mist变得满身雾气</td>
+      <td>The windshield misted over挡风玻璃上空了</td>
+      <td></td>
+      <td></td>
+      <td>[spread over, cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mist</th>
+      <td>ist</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>mɪst</td>
+      <td>['becloud', 'befog', 'cloud', 'fog', 'haze over', 'obnubilate', 'obscure']</td>
+      <td></td>
+      <td>make less visible or unclear使不太明显或不清楚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hide, conceal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mist</th>
+      <td>ist</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>mɪst</td>
+      <td></td>
+      <td></td>
+      <td>spray finely or cover with mist喷雾或用薄雾覆盖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spray]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mist</th>
+      <td>ist</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>mɪst</td>
+      <td></td>
+      <td></td>
+      <td>a thin fog with condensation near the ground在地面附近凝结的薄雾</td>
+      <td></td>
+      <td>[misty]</td>
+      <td></td>
+      <td>[fog]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gist</th>
+      <td>ist</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>dʒɪst</td>
+      <td>['burden', 'core', 'effect', 'essence']</td>
+      <td></td>
+      <td>the central meaning or theme of a speech or literary work演讲或文学作品的中心意义或主题</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[significance, signification, import, meaning]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gist</th>
+      <td>ist</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>dʒɪst</td>
+      <td>['center', 'centre', 'core', 'essence', 'heart', 'heart and soul', 'inwardness', 'kernel', 'marrow', 'meat', 'nitty-gritty', 'nub', 'pith', 'substance', 'sum']</td>
+      <td></td>
+      <td>the choicest or most essential or most vital part of some idea or experience某些想法或经验中最挑选或最重要或最重要的部分</td>
+      <td>the gist of the prosecutor's argument检察官的论点的要点</td>
+      <td></td>
+      <td></td>
+      <td>[cognitive content, content, mental object]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

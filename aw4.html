@@ -1,0 +1,920 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['draw', 'dawn', 'laws', 'lawn', 'flaw']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['string', 'thread']</td>
+      <td></td>
+      <td>thread on or as if on a string线程打开或好像在字符串上</td>
+      <td></td>
+      <td></td>
+      <td>[guide, run, pass]</td>
+      <td>[set up, arrange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['disembowel', 'eviscerate']</td>
+      <td></td>
+      <td>remove the entrails of去除内脏</td>
+      <td>draw a chicken画一只鸡</td>
+      <td></td>
+      <td></td>
+      <td>[remove, take, take away, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['drag', 'puff']</td>
+      <td></td>
+      <td>suck in or take (air)吸入或吸入（空气）</td>
+      <td>draw a deep breath深吸一口气draw on a cigarette画上一支烟</td>
+      <td></td>
+      <td></td>
+      <td>[breathe in, inspire, inhale]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['draw and quarter', 'quarter']</td>
+      <td></td>
+      <td>pull (a person) apart with four horses tied to his extremities, so as to execute him拉着（一个人）四匹马绑在他的四肢上，以便执行他</td>
+      <td>in the old days, people were drawn and quartered for certain crimes在过去，人们因某些罪行被逮捕和驻扎</td>
+      <td></td>
+      <td></td>
+      <td>[kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['depict', 'describe']</td>
+      <td></td>
+      <td>give a description of给出一个描述</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expound, exposit, set forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['tie']</td>
+      <td></td>
+      <td>finish a game with an equal number of points, goals, etc.用相同数量的积分，目标等完成一场比赛。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equalise, equalize, equate, match, equal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['delineate', 'describe', 'line', 'trace']</td>
+      <td></td>
+      <td>make a mark or lines on a surface在表面上做一个或多个线条</td>
+      <td>draw a line画一条线</td>
+      <td>[drawing]</td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['reap']</td>
+      <td></td>
+      <td>get or derive得到或得到</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gain, derive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['guide', 'pass', 'run']</td>
+      <td></td>
+      <td>pass over, across, or through通过，跨越或通过</td>
+      <td></td>
+      <td></td>
+      <td>[lead, string, run, thread]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['attract', 'draw in', 'pull', 'pull in']</td>
+      <td></td>
+      <td>direct toward itself or oneself by means of some psychological power or physical attributes通过一些心理力量或身体属性指向自己或自己</td>
+      <td></td>
+      <td></td>
+      <td>[retract, curl, curl up, draw in]</td>
+      <td>[pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['get out', 'pull', 'pull out', 'take out']</td>
+      <td></td>
+      <td>bring, take, or pull out of a container or from under a cover从容器中取出，取出或拉出容器</td>
+      <td>draw a weapon画一个武器</td>
+      <td>[drawer]</td>
+      <td>[pull, tear out, take out, extract, draw out, rip out, pull out, pull up]</td>
+      <td>[withdraw, remove, take, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['get']</td>
+      <td></td>
+      <td>earn or achieve a base by being walked by the pitcher通过投手走路赚取或达到基础</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set up, effect, effectuate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['make']</td>
+      <td></td>
+      <td>make, formulate, or derive in the mind制造，制定或衍生在头脑中</td>
+      <td>I draw a line here我在这里划一条线draw a conclusion得出结论draw parallels画出平行线</td>
+      <td></td>
+      <td>[make]</td>
+      <td>[create mentally, create by mental act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['absorb', 'imbibe', 'soak up', 'sop up', 'suck', 'suck up', 'take in', 'take up'], alos:['draw in']</td>
+      <td></td>
+      <td>take in, also metaphorically接受，也比喻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['pull back']</td>
+      <td></td>
+      <td>stretch back a bowstring (on an archer's bow)伸展弓弦（在弓箭手的弓上）</td>
+      <td>The archers were drawing their bows弓箭手正在鞠躬</td>
+      <td></td>
+      <td>[pull back]</td>
+      <td>[stretch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['cast']</td>
+      <td></td>
+      <td>choose at random随意选择</td>
+      <td>draw a card画一张牌</td>
+      <td>[drawing]</td>
+      <td></td>
+      <td>[go, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['draw off', 'take out', 'withdraw']</td>
+      <td></td>
+      <td>remove (a commodity) from (a supply source)从（供应来源）中移除（商品）</td>
+      <td></td>
+      <td>[drawee, drawer]</td>
+      <td>[take out]</td>
+      <td>[take away, remove, take, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['pull']</td>
+      <td></td>
+      <td>cause to move in a certain direction by exerting a force upon, either physically or in an abstract sense通过在物理上或抽象意义上施加力来使某个方向移动</td>
+      <td></td>
+      <td></td>
+      <td>[pull]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['pull']</td>
+      <td></td>
+      <td>cause to move by pulling导致拉动</td>
+      <td>draw a wagon画一辆马车</td>
+      <td>[drawing]</td>
+      <td>[pull]</td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>['take out'], alos:['draw out']</td>
+      <td></td>
+      <td>take liquid out of a container or well从容器或井中取出液体</td>
+      <td></td>
+      <td>[drawing]</td>
+      <td>[pull out, draw off, take out, get out, pull, withdraw]</td>
+      <td>[withdraw, take, remove, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>allow a draft允许草案</td>
+      <td>This chimney draws very well这个烟囱非常好</td>
+      <td></td>
+      <td>[take out]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>bring or lead someone to a certain action or condition带某人或带领某人采取某种行动或条件</td>
+      <td>She was drawn to despair她被绝望所吸引The President refused to be drawn into delivering an ultimatum总统拒绝接受发出最后通..The session was drawn to a close会议结束了</td>
+      <td></td>
+      <td></td>
+      <td>[change, modify, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>cause to flow导致流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[withdraw, remove, take, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>cause to localize at one point导致一度本地化</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[localize, localise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>contract合同</td>
+      <td></td>
+      <td></td>
+      <td>[knit, pucker, rumple, crumple, cockle]</td>
+      <td>[change form, deform, change shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>elicit responses, such as objections, criticism, applause, etc.引起反对，如异议，批评，掌声等。</td>
+      <td></td>
+      <td></td>
+      <td>[reap]</td>
+      <td>[evoke, enkindle, elicit, raise, arouse, kindle, provoke, fire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>engage in drawing从事绘画</td>
+      <td>He spent the day drawing in the garden他花了一天时间在花园里画画</td>
+      <td>[drawer, drawing]</td>
+      <td>[line, delineate, describe, trace]</td>
+      <td>[create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>flatten, stretch, or mold metal or glass, by rolling or by pulling it through a die or by stretching通过轧制或拉动模具或拉伸来压平，拉伸或模制金属或玻璃</td>
+      <td>draw steel画钢</td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>move or go steadily or gradually移动或稳步或逐渐移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[travel, go, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>move or pull so as to cover or uncover something移动或拉动以覆盖或揭开某物</td>
+      <td>draw the shades绘制阴影draw the curtains拉开窗帘</td>
+      <td></td>
+      <td></td>
+      <td>[close, shut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>reduce the diameter of (a wire or metal rod) by pulling it through a die通过将模具拉过模具来减小（金属丝或金属棒）的直径</td>
+      <td>draw wire画线</td>
+      <td></td>
+      <td></td>
+      <td>[thin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>represent by making a drawing of, as with a pencil, chalk, etc. on a surface通过在表面上绘制铅笔，粉笔等绘图来表示</td>
+      <td></td>
+      <td>[drawing, drawer]</td>
+      <td>[trace, delineate, line, describe]</td>
+      <td>[represent, interpret]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>require a specified depth for floating需要指定的浮动深度</td>
+      <td>This boat draws 70 inches这艘船吸70英寸</td>
+      <td></td>
+      <td></td>
+      <td>[take, necessitate, postulate, involve, require, demand, call for, ask, need]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>select or take in from a given group or region从给定的组或区域中选择或接收</td>
+      <td>The participants in the experiment were drawn from a representative population实验的参与者来自代表性人群</td>
+      <td></td>
+      <td></td>
+      <td>[select, choose, pick out, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>steep; pass through a strainer陡;穿过过滤器</td>
+      <td>draw pulp from the fruit从水果中提取纸浆</td>
+      <td></td>
+      <td></td>
+      <td>[infuse, steep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>drɔ</td>
+      <td>, alos:['draw up']</td>
+      <td></td>
+      <td>write a legal document or paper写一份法律文件或文件</td>
+      <td>The deed was drawn in the lawyer's office契约是在律师办公室里提取的</td>
+      <td></td>
+      <td></td>
+      <td>[compose, write, indite, pen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td>['draw poker']</td>
+      <td></td>
+      <td>poker in which a player can discard cards and receive substitutes from the dealer扑克玩家可以弃牌并从庄家那里获得替补牌</td>
+      <td>he played only draw and stud他只参加平局和比赛</td>
+      <td></td>
+      <td></td>
+      <td>[poker, poker game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td>['lot']</td>
+      <td></td>
+      <td>anything (straws or pebbles etc.) taken or chosen at random随意拍摄或选择的任何东西（吸管或鹅卵石等）</td>
+      <td>the luck of the draw抽奖运气</td>
+      <td></td>
+      <td></td>
+      <td>[object, physical object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td>['attracter', 'attraction', 'attractor', 'drawing card']</td>
+      <td></td>
+      <td>an entertainer who attracts large audiences吸引大量观众的艺人</td>
+      <td>he was the biggest drawing card they had他是他们拥有的最大的抽奖卡</td>
+      <td></td>
+      <td></td>
+      <td>[entertainer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td>['hook', 'hooking']</td>
+      <td></td>
+      <td>a golf shot that curves to the left for a right-handed golfer高尔夫球拍向右侧高尔夫球手左侧弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[golf stroke, swing, golf shot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td>['standoff', 'tie']</td>
+      <td></td>
+      <td>the finish of a contest in which the score is tied and the winner is undecided比赛结束并且获胜者未定的比赛结束</td>
+      <td>the game ended in a draw比赛以平局结束</td>
+      <td></td>
+      <td></td>
+      <td>[finish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td>['haul', 'haulage']</td>
+      <td></td>
+      <td>the act of drawing or hauling something绘制或牵引某物的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull, pulling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td>['draw play']</td>
+      <td></td>
+      <td>(American football) the quarterback moves back as if to pass and then hands the ball to the fullback who is running toward the line of scrimmage（美式足球）四分卫后卫移动，好像要传球，然后将球传给正朝着争球线跑的边后卫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[running play, run, running, running game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>a gully that is shallower than a ravine一条比山沟浅的沟壑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gully]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>draw</th>
+      <td>aw</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>drɔ</td>
+      <td></td>
+      <td></td>
+      <td>a playing card or cards dealt or taken from the pack一张扑克牌或从包装中取出的牌</td>
+      <td>he got a pair of kings in the draw他在平局中得到了一对国王</td>
+      <td></td>
+      <td></td>
+      <td>[playing card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dawn</th>
+      <td>aw</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>dɔn</td>
+      <td>['click', 'come home', 'fall into place', 'get across', 'get through', 'penetrate', 'sink in']</td>
+      <td></td>
+      <td>become clear or enter one's consciousness or emotions变得清醒或进入一个人的意识或情绪</td>
+      <td>It dawned on him that she had betrayed him他突然意识到她背叛了他</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dawn</th>
+      <td>aw</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>dɔn</td>
+      <td></td>
+      <td></td>
+      <td>appear or develop出现或发展</td>
+      <td>The age of computers had dawned电脑时代已经来临</td>
+      <td></td>
+      <td></td>
+      <td>[begin, start]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dawn</th>
+      <td>aw</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>dɔn</td>
+      <td></td>
+      <td></td>
+      <td>become light变得轻松</td>
+      <td>It started to dawn, and we had to get up它开始曙光，我们不得不站起来</td>
+      <td>[dawning]</td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dawn</th>
+      <td>aw</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>dɔn</td>
+      <td>['aurora', 'break of day', 'break of the day', 'cockcrow', 'dawning', 'daybreak', 'dayspring', 'first light', 'morning', 'sunrise', 'sunup']</td>
+      <td></td>
+      <td>the first light of day第一缕阳光</td>
+      <td>we got up before dawn我们在黎明前起床</td>
+      <td></td>
+      <td></td>
+      <td>[time of day, hour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dawn</th>
+      <td>aw</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>dɔn</td>
+      <td>['morning']</td>
+      <td></td>
+      <td>the earliest period最早的时期</td>
+      <td>the dawn of civilization文明的曙光</td>
+      <td></td>
+      <td></td>
+      <td>[start]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dawn</th>
+      <td>aw</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>dɔn</td>
+      <td></td>
+      <td></td>
+      <td>an opening time period开放时间段</td>
+      <td>it was the dawn of the Roman Empire这是罗马帝国的曙光</td>
+      <td></td>
+      <td></td>
+      <td>[time period, period, period of time]</td>
+      <td>[figure of speech, figure, trope, image]</td>
+    </tr>
+    <tr>
+      <th>laws</th>
+      <td>aw</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>lɔz</td>
+      <td>['pentateuch', 'torah']</td>
+      <td></td>
+      <td>the first of three divisions of the Hebrew Scriptures comprising the first five books of the Hebrew Bible considered as a unit希伯来圣经的三个部分中的第一部分，包括希伯来圣经的前五本书，被视为一个单元</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lawn</th>
+      <td>aw</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>lɔn</td>
+      <td></td>
+      <td></td>
+      <td>a field of cultivated and mowed grass耕地和割草的领域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[field]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flaw</th>
+      <td>aw</td>
+      <td>3.44</td>
+      <td>ver</td>
+      <td>flɔ</td>
+      <td>['blemish']</td>
+      <td></td>
+      <td>add a flaw or blemish to; make imperfect or defective添加瑕疵或瑕疵;使不完美或有缺陷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[damage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flaw</th>
+      <td>aw</td>
+      <td>3.44</td>
+      <td>nou</td>
+      <td>flɔ</td>
+      <td>['defect', 'fault']</td>
+      <td></td>
+      <td>an imperfection in an object or machine物体或机器的不完美</td>
+      <td>a flaw caused the crystal to shatter一个缺陷导致水晶破碎</td>
+      <td></td>
+      <td></td>
+      <td>[imperfection, imperfectness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flaw</th>
+      <td>aw</td>
+      <td>3.44</td>
+      <td>nou</td>
+      <td>flɔ</td>
+      <td></td>
+      <td></td>
+      <td>an imperfection in a plan or theory or legal document that causes it to fail or that reduces its effectiveness计划或理论或法律文件中的不完善导致其失败或降低其有效性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imperfection, imperfectness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flaw</th>
+      <td>aw</td>
+      <td>3.44</td>
+      <td>nou</td>
+      <td>flɔ</td>
+      <td></td>
+      <td></td>
+      <td>defect or weakness in a person's character一个人性格的缺陷或弱点</td>
+      <td>he had his flaws, but he was great nonetheless他有自己的缺点，但他仍然很棒</td>
+      <td></td>
+      <td></td>
+      <td>[failing, weakness]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

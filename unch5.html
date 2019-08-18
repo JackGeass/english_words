@@ -1,0 +1,365 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['lunch', 'bunch', 'punch', 'hunch', 'munch']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>lunch</th>
+      <td>unch</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>lənʧ</td>
+      <td></td>
+      <td></td>
+      <td>provide a midday meal for提供午餐</td>
+      <td>She lunched us well她把我们打得很好</td>
+      <td></td>
+      <td></td>
+      <td>[feed, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lunch</th>
+      <td>unch</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>lənʧ</td>
+      <td></td>
+      <td></td>
+      <td>take the midday meal吃午饭</td>
+      <td>At what time are you lunching?你什么时候吃午饭？</td>
+      <td>[luncher, lunching]</td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lunch</th>
+      <td>unch</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>lənʧ</td>
+      <td>['dejeuner', 'luncheon', 'tiffin']</td>
+      <td></td>
+      <td>a midday meal正午餐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[meal, repast]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunch</th>
+      <td>unch</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>bənʧ</td>
+      <td>['bunch together', 'bunch up']</td>
+      <td></td>
+      <td>form into a bunch形成一堆</td>
+      <td>The frightened children bunched together in the corner of the classroom受惊的孩子们聚集在教室的角落里</td>
+      <td></td>
+      <td></td>
+      <td>[clump, cluster, constellate, flock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunch</th>
+      <td>unch</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>bənʧ</td>
+      <td>['bundle', 'clump', 'cluster']</td>
+      <td></td>
+      <td>gather or cause to gather into a cluster聚集或聚集成一个集群</td>
+      <td>She bunched her fingers into a fist她把手指握成拳头</td>
+      <td></td>
+      <td></td>
+      <td>[form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunch</th>
+      <td>unch</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>bənʧ</td>
+      <td>['crew', 'crowd', 'gang']</td>
+      <td></td>
+      <td>an informal body of friends一个非正式的朋友团体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gathering, assemblage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunch</th>
+      <td>unch</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>bənʧ</td>
+      <td>['clump', 'cluster', 'clustering']</td>
+      <td></td>
+      <td>a grouping of a number of similar things一组相似的东西</td>
+      <td>a bunch of trees一堆树</td>
+      <td>[bunchy]</td>
+      <td></td>
+      <td>[agglomeration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunch</th>
+      <td>unch</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>bənʧ</td>
+      <td>['caboodle', 'lot']</td>
+      <td></td>
+      <td>any collection in its entirety任何完整的集合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accumulation, aggregation, assemblage, collection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punch</th>
+      <td>unch</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>pənʧ</td>
+      <td>['plug']</td>
+      <td></td>
+      <td>deliver a quick blow to快速打击</td>
+      <td>he punched me in the stomach他在肚子里打了我一拳</td>
+      <td>[puncher]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punch</th>
+      <td>unch</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>pənʧ</td>
+      <td>['perforate']</td>
+      <td></td>
+      <td>make a hole into or between, as for ease of separation为了便于分离，在其中或之间打一个洞</td>
+      <td></td>
+      <td>[puncher]</td>
+      <td></td>
+      <td>[pierce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punch</th>
+      <td>unch</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>pənʧ</td>
+      <td></td>
+      <td></td>
+      <td>drive forcibly as if by a punch像一拳一样强行开车</td>
+      <td>the nail punched through the wall钉子穿过墙壁</td>
+      <td></td>
+      <td></td>
+      <td>[thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punch</th>
+      <td>unch</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>pənʧ</td>
+      <td>['puncher']</td>
+      <td></td>
+      <td>a tool for making holes or indentations用于制作孔或凹痕的工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punch</th>
+      <td>unch</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>pənʧ</td>
+      <td>['biff', 'clout', 'lick', 'poke', 'slug']</td>
+      <td></td>
+      <td>(boxing) a blow with the fist（拳击）用拳头打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punch</th>
+      <td>unch</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>pənʧ</td>
+      <td></td>
+      <td></td>
+      <td>an iced mixed drink usually containing alcohol and prepared for multiple servings; normally served in a punch bowl一种冰镇的混合饮料，通常含有酒精，可以多份食用;通常在一个打孔碗里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mixed drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunch</th>
+      <td>unch</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>hənʧ</td>
+      <td>['hump', 'hunch forward', 'hunch over']</td>
+      <td></td>
+      <td>round one's back by bending forward and drawing the shoulders forward通过向前弯曲并向前拉动肩膀来向后弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunch</th>
+      <td>unch</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>hənʧ</td>
+      <td>['intuition', 'suspicion']</td>
+      <td></td>
+      <td>an impression that something might be the case可能是这种情况的印象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[belief, feeling, impression, notion, opinion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunch</th>
+      <td>unch</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>hənʧ</td>
+      <td></td>
+      <td></td>
+      <td>the act of bending yourself into a humped position将自己弯曲成驼背的姿势</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bending]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>munch</th>
+      <td>unch</td>
+      <td>3.10</td>
+      <td>ver</td>
+      <td>mʊŋk</td>
+      <td>['crunch']</td>
+      <td></td>
+      <td>chew noisily吵闹地咀嚼</td>
+      <td></td>
+      <td>[muncher]</td>
+      <td></td>
+      <td>[chew, masticate, jaw, manducate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>munch</th>
+      <td>unch</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>mʊŋk</td>
+      <td>['edvard munch']</td>
+      <td></td>
+      <td>Norwegian painter (1863-1944)挪威画家（1863-1944）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>munch</th>
+      <td>unch</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>mʊŋk</td>
+      <td></td>
+      <td></td>
+      <td>a large bite一口大口</td>
+      <td>he tried to talk between munches on the sandwich他试图在三明治之间谈论</td>
+      <td></td>
+      <td></td>
+      <td>[bite, chomp]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

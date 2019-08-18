@@ -1,0 +1,440 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['wish', 'fish', 'dish', 'gish']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>wɪʃ</td>
+      <td>['care', 'like']</td>
+      <td></td>
+      <td>prefer or wish to do something喜欢或希望做某事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[want, desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>wɪʃ</td>
+      <td>['wish well']</td>
+      <td>[begrudge]</td>
+      <td>feel or express a desire or hope concerning the future or fortune of感受或表达对未来或财富的渴望或希望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[want, desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>wɪʃ</td>
+      <td>['bid']</td>
+      <td></td>
+      <td>invoke upon援引</td>
+      <td>wish you a nice evening祝你晚安愉快</td>
+      <td></td>
+      <td></td>
+      <td>[recognise, recognize, greet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>wɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>hope for; have a wish希望;有一个愿望</td>
+      <td>I wish I could go home now我希望我现在能回家</td>
+      <td>[wishing]</td>
+      <td></td>
+      <td>[desire, want]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>wɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>make or express a wish表达或表达愿望</td>
+      <td>I wish that Christmas were over我希望圣诞节结束</td>
+      <td></td>
+      <td></td>
+      <td>[utter, give tongue to, express, verbalize, verbalise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>wɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>order politely; express a wish for礼貌地订购;表达希望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[order]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>wɪʃ</td>
+      <td>['compliments', 'regard']</td>
+      <td></td>
+      <td>(usually plural) a polite expression of desire for someone's welfare（通常是复数的）礼貌表达对某人福利的渴望</td>
+      <td>my best wishes我最好的祝福</td>
+      <td></td>
+      <td></td>
+      <td>[greeting, salutation]</td>
+      <td>[plural form, plural]</td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>wɪʃ</td>
+      <td>['indirect request']</td>
+      <td></td>
+      <td>an expression of some desire or inclination一种欲望或倾向的表达</td>
+      <td>I could tell that it was his wish that the guests leave我可以说他们希望客人离开</td>
+      <td></td>
+      <td></td>
+      <td>[request, asking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>wɪʃ</td>
+      <td>['want', 'wishing']</td>
+      <td></td>
+      <td>a specific feeling of desire一种特定的欲望感</td>
+      <td>he got his wish他实现了自己的愿望he was above all wishing and desire他最重要的是希望和渴望</td>
+      <td></td>
+      <td></td>
+      <td>[desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wish</th>
+      <td>ish</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>wɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>the particular preference that you have你有特别的偏好</td>
+      <td>it was his last wish这是他最后的愿望they should respect the wishes of the people他们应该尊重人民的意愿</td>
+      <td></td>
+      <td></td>
+      <td>[preference, druthers]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fish</th>
+      <td>ish</td>
+      <td>4.97</td>
+      <td>ver</td>
+      <td>fɪʃ</td>
+      <td>['angle']</td>
+      <td></td>
+      <td>seek indirectly间接寻求</td>
+      <td>fish for compliments鱼恭维</td>
+      <td></td>
+      <td></td>
+      <td>[seek, search, look for]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fish</th>
+      <td>ish</td>
+      <td>4.97</td>
+      <td>ver</td>
+      <td>fɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>catch or try to catch fish or shellfish捕获或尝试捕获鱼类或贝类</td>
+      <td>I like to go fishing on weekends我喜欢周末去钓鱼</td>
+      <td>[fisher, fishery, fishing]</td>
+      <td></td>
+      <td>[grab, catch, take hold of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fish</th>
+      <td>ish</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>fɪʃ</td>
+      <td>['pisces']</td>
+      <td></td>
+      <td>(astrology) a person who is born while the sun is in Pisces（占星术）一个在太阳在双鱼座时出生的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[someone, person, soul, individual, mortal, somebody]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fish</th>
+      <td>ish</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>fɪʃ</td>
+      <td>['pisces', 'pisces the fishes']</td>
+      <td></td>
+      <td>the twelfth sign of the zodiac; the sun is in this sign from about February 19 to March 20十二生肖的第十二个标志;从2月19日到3月20日，太阳就在这个星座</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fish</th>
+      <td>ish</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>fɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>any of various mostly cold-blooded aquatic vertebrates usually having scales and breathing through gills任何一种大多数冷血的水生脊椎动物，通常具有鳞片和通过鳃呼吸</td>
+      <td>the shark is a large fish鲨鱼是一条大鱼in the living room there was a tank of colorful fish在客厅里有一罐五颜六色的鱼</td>
+      <td>[fishy]</td>
+      <td></td>
+      <td>[aquatic vertebrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fish</th>
+      <td>ish</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>fɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>the flesh of fish used as food用作食物的鱼肉</td>
+      <td>in Japan most fish is eaten raw在日本，大多数鱼都是生吃的after the scare about foot-and-mouth disease a lot of people started eating fish instead of meat在对口蹄疫的恐慌之后，很多人开始吃鱼而不是吃肉they have a chef who specializes in fish他们有一位专门研究鱼类的厨师</td>
+      <td></td>
+      <td></td>
+      <td>[solid food, food]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>dɪʃ</td>
+      <td>['dish out', 'dish up', 'serve', 'serve up']</td>
+      <td></td>
+      <td>provide (usually but not necessarily food)提供（通常但不一定是食物）</td>
+      <td>She dished out the soup at 8 P.M.她在晚上8点抛出汤。</td>
+      <td></td>
+      <td>[serve, help]</td>
+      <td>[ply, provide, supply, cater]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>dɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>make concave; shape like a dish凹陷;形状像一道菜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dɪʃ</td>
+      <td>['bag', 'cup of tea']</td>
+      <td></td>
+      <td>an activity that you like or at which you are superior您喜欢或优越的活动</td>
+      <td>marriage was scarcely his dish婚姻几乎不是他的菜</td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dɪʃ</td>
+      <td>['beauty', 'knockout', 'looker', 'lulu', 'mantrap', 'peach', 'ravisher', 'smasher', 'stunner', 'sweetheart']</td>
+      <td></td>
+      <td>a very attractive or seductive looking woman一个非常有魅力或诱人的女人</td>
+      <td></td>
+      <td>[dishy]</td>
+      <td></td>
+      <td>[woman, adult female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dɪʃ</td>
+      <td>['dishful']</td>
+      <td></td>
+      <td>the quantity that a dish will hold菜肴的数量</td>
+      <td>they served me a dish of rice他们给了我一盘米饭</td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dɪʃ</td>
+      <td>['dish aerial', 'dish antenna', 'saucer']</td>
+      <td></td>
+      <td>directional antenna consisting of a parabolic reflector for microwave or radio frequency radiation定向天线由抛物面反射器组成，用于微波或射频辐射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[directional antenna]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>a particular item of prepared food准备食物的特定项目</td>
+      <td>she prepared a special dish for dinner她为晚餐准备了一道特别的菜</td>
+      <td></td>
+      <td></td>
+      <td>[nutriment, sustenance, nutrition, alimentation, aliment, nourishment, victuals]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dish</th>
+      <td>ish</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dɪʃ</td>
+      <td></td>
+      <td></td>
+      <td>a piece of dishware normally used as a container for holding or serving food通常用作容纳或供应食物的容器的餐具</td>
+      <td>we gave them a set of dishes for a wedding present我们给了他们一套婚礼礼物</td>
+      <td></td>
+      <td></td>
+      <td>[dishware, container, crockery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gish</th>
+      <td>ish</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>ɡɪʃ</td>
+      <td>['lillian gish']</td>
+      <td></td>
+      <td>United States film actress who appeared in films by D. W. Griffith (1896-1993)D. W.格里菲斯（1896-1993）出演电影的美国电影女演员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

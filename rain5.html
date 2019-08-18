@@ -1,0 +1,785 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['train', 'brain', 'drain', 'grain', 'rainy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['coach']</td>
+      <td></td>
+      <td>teach and supervise (someone); act as a trainer or coach (to), as in sports教导和监督（某人）;充当教练或教练（to），如在体育中</td>
+      <td>He is training our Olympic team他正在训练我们的奥运代表队</td>
+      <td>[trainer, training]</td>
+      <td></td>
+      <td>[teach, instruct, learn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['develop', 'educate', 'prepare']</td>
+      <td></td>
+      <td>create by training and teaching通过培训和教学创造</td>
+      <td>The old master is training world-class violinists老师傅正在培养世界级的小提琴手</td>
+      <td>[trainer, training, trainee]</td>
+      <td>[prepare, develop, build up, groom]</td>
+      <td>[learn, instruct, teach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['civilise', 'civilize', 'cultivate', 'educate', 'school']</td>
+      <td></td>
+      <td>teach or refine to be discriminative in taste or judgment教导或改进在品味或判断上的歧视</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[refine, down, polish, fine-tune]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['check', 'condition', 'discipline']</td>
+      <td></td>
+      <td>develop (a child's or animal's) behavior by instruction and practice; especially to teach self-control通过指导和实践发展（儿童或动物）的行为;特别要教自我控制</td>
+      <td>Is this dog trained?这条狗训练了吗？</td>
+      <td>[trainee]</td>
+      <td>[prepare, groom]</td>
+      <td>[develop, make grow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['trail']</td>
+      <td></td>
+      <td>drag loosely along a surface; allow to sweep the ground沿着表面松散地拖动;允许扫地</td>
+      <td>She trained her long scarf behind her她在她身后训练了她的长围巾</td>
+      <td></td>
+      <td>[trail]</td>
+      <td>[drag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['prepare']</td>
+      <td></td>
+      <td>undergo training or instruction in preparation for a particular role, function, or profession接受培训或指导，为特定的角色，职能或专业做准备</td>
+      <td>She is training to be a teacher她正在接受培训，成为一名教师He trained as a legal aid他接受过法律援助培训</td>
+      <td>[trainee]</td>
+      <td>[develop, educate, prepare, groom]</td>
+      <td>[take, study, read, learn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['rail']</td>
+      <td></td>
+      <td>travel by rail or train乘火车或火车旅行</td>
+      <td>She trained to Hamburg她训练到汉堡</td>
+      <td></td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['groom', 'prepare']</td>
+      <td></td>
+      <td>educate for a future role or function教育未来的角色或功能</td>
+      <td>They trained him to be a warrior他们训练他成为一名战士</td>
+      <td>[trainer, training, trainee]</td>
+      <td>[prepare, check, condition, develop, discipline, educate]</td>
+      <td>[educate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td>['aim', 'direct', 'take', 'take aim']</td>
+      <td></td>
+      <td>point or cause to go (blows, weapons, or objects such as photographic equipment) towards指向或导致（打击，武器或摄影器材等物体）朝向</td>
+      <td>He trained his gun on the burglar他把枪对准了窃贼Don't train your camera on the women不要在女人身上训练你的相机</td>
+      <td></td>
+      <td></td>
+      <td>[position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td></td>
+      <td></td>
+      <td>cause to grow in a certain way by tying and pruning it通过捆绑和修剪它以某种方式成长</td>
+      <td>train the vine训练葡萄藤</td>
+      <td></td>
+      <td></td>
+      <td>[moderate, control, curb, contain, hold, hold in, check]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>treɪn</td>
+      <td></td>
+      <td></td>
+      <td>exercise in order to prepare for an event or competition锻炼以准备活动或比赛</td>
+      <td>She is training for the Olympics她正在为奥运会进行培训</td>
+      <td>[training]</td>
+      <td>[coach]</td>
+      <td>[exercise, work out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>treɪn</td>
+      <td>['string']</td>
+      <td></td>
+      <td>a sequentially ordered set of things or events or ideas in which each successive member is related to the preceding按顺序排列的一组事物或事件或想法，其中每个连续成员与前面的成员相关</td>
+      <td>train of mourners送葬者列车a train of thought一丝思路</td>
+      <td></td>
+      <td></td>
+      <td>[series]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>treɪn</td>
+      <td>['gear', 'gearing', 'geartrain', 'power train']</td>
+      <td></td>
+      <td>wheelwork consisting of a connected set of rotating gears by which force is transmitted or motion or torque is changed轮子由一组连接的旋转齿轮组成，通过这些齿轮传递力或改变运动或扭矩</td>
+      <td>the fool got his tie caught in the geartrain傻瓜把他的领带夹在了geartrain里</td>
+      <td></td>
+      <td></td>
+      <td>[wheelwork]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>treɪn</td>
+      <td>['railroad train']</td>
+      <td></td>
+      <td>public transport provided by a line of railway cars coupled together and drawn by a locomotive由一系列铁路车辆连接在一起并由机车牵引的公共交通工具</td>
+      <td>express trains don't stop at Princeton Junction特快列车不停在普林斯顿枢纽</td>
+      <td></td>
+      <td></td>
+      <td>[public transport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>treɪn</td>
+      <td>['caravan', 'wagon train']</td>
+      <td></td>
+      <td>a procession (of wagons or mules or camels) traveling together in single file游行队伍（马车或骡子或骆驼）一起旅行的单一文件</td>
+      <td>they joined the wagon train for safety为了安全起见，他们加入了货车列车</td>
+      <td></td>
+      <td></td>
+      <td>[procession]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>treɪn</td>
+      <td></td>
+      <td></td>
+      <td>a series of consequences wrought by an event事件造成的一系列后果</td>
+      <td>it led to a train of disasters它导致了一系列灾难</td>
+      <td></td>
+      <td></td>
+      <td>[aftermath, consequence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>train</th>
+      <td>rain</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>treɪn</td>
+      <td></td>
+      <td></td>
+      <td>piece of cloth forming the long back section of a gown that is drawn along the floor一块布料，形成沿着地板绘制的长袍的长背部分</td>
+      <td>the bride's train was carried by her two young nephews新娘的火车是由她的两个年轻的侄子带来的</td>
+      <td></td>
+      <td></td>
+      <td>[piece of cloth, piece of material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brain</th>
+      <td>rain</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>breɪn</td>
+      <td></td>
+      <td></td>
+      <td>hit on the head击中头部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brain</th>
+      <td>rain</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>breɪn</td>
+      <td></td>
+      <td></td>
+      <td>kill by smashing someone's skull通过粉碎某人的头骨来杀人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brain</th>
+      <td>rain</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>breɪn</td>
+      <td>['head', 'mind', 'nous', 'psyche']</td>
+      <td></td>
+      <td>that which is responsible for one's thoughts, feelings, and conscious brain functions; the seat of the faculty of reason对一个人的思想，情感和有意识的大脑功能负责的;理性能力的所在地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noesis, knowledge, cognition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brain</th>
+      <td>rain</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>breɪn</td>
+      <td>['brainpower', 'learning ability', 'mental capacity', 'mentality', 'wit']</td>
+      <td></td>
+      <td>mental ability心智能力</td>
+      <td>he's got plenty of brains but no common sense他有很多大脑，但没有常识</td>
+      <td>[brainy]</td>
+      <td></td>
+      <td>[intelligence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brain</th>
+      <td>rain</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>breɪn</td>
+      <td>['brainiac', 'einstein', 'genius', 'mastermind']</td>
+      <td></td>
+      <td>someone who has exceptional intellectual ability and originality具有卓越智力和创意的人</td>
+      <td></td>
+      <td>[brainy]</td>
+      <td></td>
+      <td>[intellectual, intellect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brain</th>
+      <td>rain</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>breɪn</td>
+      <td>['encephalon']</td>
+      <td></td>
+      <td>that part of the central nervous system that includes all the higher nervous centers; enclosed within the skull; continuous with the spinal cord中枢神经系统的那部分包括所有高级神经中枢;封闭在头骨内;与脊髓连续</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[neural structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brain</th>
+      <td>rain</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>breɪn</td>
+      <td></td>
+      <td></td>
+      <td>the brain of certain animals used as meat用作肉类的某些动物的大脑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[variety meat, organs]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>dreɪn</td>
+      <td>['run out']</td>
+      <td></td>
+      <td>flow off gradually逐渐流淌</td>
+      <td>The rain water drains into this big vat雨水流入这个大桶</td>
+      <td>[drainage]</td>
+      <td></td>
+      <td>[course, feed, flow, run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>dreɪn</td>
+      <td>['debilitate', 'enfeeble']</td>
+      <td></td>
+      <td>make weak变弱</td>
+      <td>Life in the camp drained him阵营中的生活使他筋疲力尽</td>
+      <td></td>
+      <td></td>
+      <td>[weaken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>dreɪn</td>
+      <td></td>
+      <td></td>
+      <td>deplete of resources耗尽资源</td>
+      <td>The exercise class drains me of energy运动课让我精力充沛</td>
+      <td></td>
+      <td></td>
+      <td>[wipe out, consume, deplete, eat, eat up, exhaust, run through, use up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>dreɪn</td>
+      <td></td>
+      <td></td>
+      <td>empty of liquid; drain the liquid from没有液体;从中排出液体</td>
+      <td>We drained the oil tank我们把油箱排干了</td>
+      <td>[drainage]</td>
+      <td></td>
+      <td>[empty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>dreɪn</td>
+      <td>['drainpipe', 'waste pipe']</td>
+      <td></td>
+      <td>a pipe through which liquid is carried away一根管子，液体被带走</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piping, pipage, pipe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>dreɪn</td>
+      <td>['drainage']</td>
+      <td></td>
+      <td>emptying something accomplished by allowing liquid to run out of it通过让液体耗尽它来完成一些事情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[voidance, emptying, evacuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>dreɪn</td>
+      <td></td>
+      <td></td>
+      <td>a gradual depletion of energy or resources逐渐耗尽能源或资源</td>
+      <td>a drain on resources资源枯竭a drain of young talent by emigration通过移民流失的年轻人才</td>
+      <td></td>
+      <td></td>
+      <td>[depletion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drain</th>
+      <td>rain</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>dreɪn</td>
+      <td></td>
+      <td></td>
+      <td>tube inserted into a body cavity (as during surgery) to remove unwanted material将管插入体腔（如手术期间）以去除不需要的物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tubing, tube]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>greɪn</td>
+      <td>['ingrain']</td>
+      <td></td>
+      <td>thoroughly work in彻底工作</td>
+      <td>His hands were grained with dirt他的双手被污垢弄脏了</td>
+      <td></td>
+      <td></td>
+      <td>[perforate, penetrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>greɪn</td>
+      <td>['granulate']</td>
+      <td></td>
+      <td>form into grains形成谷物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>greɪn</td>
+      <td>['granulate']</td>
+      <td></td>
+      <td>become granular变得颗粒状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change shape, deform, change form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>paint (a surface) to make it look like stone or wood油漆（表面）使其看起来像石头或木头</td>
+      <td></td>
+      <td>[graining]</td>
+      <td></td>
+      <td>[paint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td>['texture']</td>
+      <td></td>
+      <td>the physical composition of something (especially with respect to the size and shape of the small constituents of a substance)某物的物理成分（特别是物质中小成分的大小和形状）</td>
+      <td>sand of a fine grain细粒的沙子a stone of coarse grain一块粗粮</td>
+      <td></td>
+      <td></td>
+      <td>[makeup, make-up, constitution, composition, physical composition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td>['metric grain']</td>
+      <td></td>
+      <td>a weight unit used for pearls or diamonds: 50 mg or 1/4 carat用于珍珠或钻石的重量单位：50毫克或1/4克拉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weight unit, metric weight unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td>['caryopsis']</td>
+      <td></td>
+      <td>dry seed-like fruit produced by the cereal grasses: e.g. wheat, barley, Indian corn由谷物草产生的干燥的种子状果实：例如小麦，大麦，印度玉米</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td>['cereal', 'food grain']</td>
+      <td></td>
+      <td>foodstuff prepared from the starchy grains of cereal grasses由谷物草的淀粉谷物制备的食品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foodstuff, food product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>1/60 dram; equals an avoirdupois grain or 64.799 milligrams1/60德拉姆;等于avoirdupois谷物或64.799毫克</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[apothecaries' unit, apothecaries' weight, troy unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>1/7000 pound; equals a troy grain or 64.799 milligrams1/7000磅;等于特洛伊谷物或64.799毫克</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[avoirdupois unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>a cereal grass谷物草</td>
+      <td>wheat is a grain that is grown in Kansas小麦是在堪萨斯州种植的谷物</td>
+      <td></td>
+      <td></td>
+      <td>[cereal, cereal grass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>a relatively small granular particle of a substance相对较小的物质颗粒</td>
+      <td>a grain of sand一粒沙子a grain of sugar一粒糖</td>
+      <td>[granular, grainy]</td>
+      <td></td>
+      <td>[particle, mote, molecule, atom, corpuscle, speck]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>the direction, texture, or pattern of fibers found in wood or leather or stone or in a woven fabric木材，皮革，石头或织物中纤维的方向，纹理或图案</td>
+      <td>saw the board across the grain看到了整个谷物的板子</td>
+      <td></td>
+      <td></td>
+      <td>[texture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>the side of leather from which the hair has been removed去除头发的皮革侧面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grain</th>
+      <td>rain</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>greɪn</td>
+      <td></td>
+      <td></td>
+      <td>the smallest possible unit of anything任何可能的最小单位</td>
+      <td>there was a grain of truth in what he said他说的话有一点道理he does not have a grain of sense他没有一点意义</td>
+      <td></td>
+      <td></td>
+      <td>[smallness, littleness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rainy</th>
+      <td>rain</td>
+      <td>3.66</td>
+      <td>adj</td>
+      <td>'reɪni</td>
+      <td>['showery'], similarTo:['wet']</td>
+      <td></td>
+      <td>(of weather) wet by periods of rain（天气）被雨水弄湿了</td>
+      <td>rainy days雨天</td>
+      <td>[rain]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

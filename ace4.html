@@ -1,0 +1,875 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['face', 'race', 'pace', 'lace', 'mace', 'dace']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td>['confront'], alos:['face off']</td>
+      <td></td>
+      <td>oppose, as in hostility or a competition反对，如敌对或竞争</td>
+      <td>Jackson faced Smith in the boxing ring杰克逊在拳击场面对史密斯</td>
+      <td></td>
+      <td></td>
+      <td>[meet, encounter, take on, play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td>['front', 'look']</td>
+      <td></td>
+      <td>be oriented in a certain direction, often with respect to another reference point; be opposite to通常相对于另一个参考点定向在某个方向;与...相反</td>
+      <td>The building faces the park该建筑面向公园</td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td>['confront', 'face up']</td>
+      <td></td>
+      <td>deal with (something unpleasant) head on处理（不愉快的事情）</td>
+      <td>He faced the terrible consequences of his mistakes他面临着错误的可怕后果</td>
+      <td></td>
+      <td>[confront, present]</td>
+      <td>[go about, approach, set about]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td>['confront', 'present']</td>
+      <td></td>
+      <td>present somebody with something, usually to accuse or criticize向某人提出某些东西，通常是指控或批评</td>
+      <td>He was faced with all the evidence and could no longer deny his actions他面对所有证据，再也不能否认他的行为An enormous dilemma faces us我们面临着一个巨大的困境</td>
+      <td></td>
+      <td>[face up, confront]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>be opposite对</td>
+      <td>the two sofas face each other两张沙发面对面</td>
+      <td></td>
+      <td>[front, look]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>cover the front or surface of覆盖前面或表面</td>
+      <td>The building was faced with beautiful stones建筑物面对着美丽的石头</td>
+      <td>[facing]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>line the edge (of a garment) with a different material用不同的材料划线（服装的）边缘</td>
+      <td>face the lapels of the jacket面对夹克的翻领</td>
+      <td>[facing]</td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>turn so as to expose the face转身露出脸部</td>
+      <td>face a playing card面对一张扑克牌</td>
+      <td></td>
+      <td></td>
+      <td>[disclose, expose, uncover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>turn so as to face; turn the face in a certain direction转身面对;把脸转向某个方向</td>
+      <td>Turn and face your partner now现在转身面对你的伴侣</td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td>['grimace']</td>
+      <td></td>
+      <td>a contorted facial expression扭曲的面部表情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[facial expression, facial gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td>['case', 'font', 'fount', 'typeface']</td>
+      <td></td>
+      <td>a specific size and style of type within a type family类型系列中特定的大小和类型</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[type]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td>['aspect', 'expression', 'facial expression', 'look']</td>
+      <td></td>
+      <td>the feelings expressed on a person's face在一个人的脸上表达的感情</td>
+      <td>an angry face生气的脸</td>
+      <td></td>
+      <td></td>
+      <td>[visage, countenance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td>['side']</td>
+      <td></td>
+      <td>a surface forming part of the outside of an object形成物体外部一部分的表面</td>
+      <td>dew dripped from the face of the leaf露水从叶子的脸上滴下来they travelled across the face of the continent他们穿越了整个大陆的面貌</td>
+      <td>[facial]</td>
+      <td></td>
+      <td>[surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td>['human face']</td>
+      <td></td>
+      <td>the front of the human head from the forehead to the chin and ear to ear人体头部的前部从额头到下巴，耳朵到耳朵</td>
+      <td>he washed his face他洗了脸I wish I had seen the look on his face when he got the news我希望他得到消息时能看到他脸上的表情</td>
+      <td>[facial]</td>
+      <td></td>
+      <td>[external body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td>['boldness', 'brass', 'cheek', 'nerve']</td>
+      <td></td>
+      <td>impudent aggressiveness无礼的侵略性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aggressiveness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>a part of a person that is used to refer to a person用于指代某人的人的一部分</td>
+      <td>he looked out at a roomful of faces他看着满屋的脸when he returned to work he met many new faces当他回到工作岗位时，他遇到了许多新面孔</td>
+      <td></td>
+      <td></td>
+      <td>[mortal, someone, somebody, person, soul, individual]</td>
+      <td>[synecdoche]</td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>a vertical surface of a building or cliff建筑物或悬崖的垂直表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vertical surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>status in the eyes of others他人眼中的地位</td>
+      <td>he lost face他丢了脸</td>
+      <td></td>
+      <td></td>
+      <td>[status, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>the general outward appearance of something事物的总体外观</td>
+      <td>the face of the city is changing城市的面貌正在发生变化</td>
+      <td></td>
+      <td></td>
+      <td>[appearance, visual aspect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>the part of an animal corresponding to the human face与人脸相对应的动物部分</td>
+      <td></td>
+      <td>[facial]</td>
+      <td></td>
+      <td>[external body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>the side upon which the use of a thing depends (usually the most prominent surface of an object)使用物品的一面（通常是物体最突出的表面）</td>
+      <td>he dealt the cards face down他把牌面朝下</td>
+      <td></td>
+      <td></td>
+      <td>[front]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>face</th>
+      <td>ace</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>feɪs</td>
+      <td></td>
+      <td></td>
+      <td>the striking or working surface of an implement工具的醒目或工作表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>reɪs</td>
+      <td>['run']</td>
+      <td></td>
+      <td>compete in a race参加比赛</td>
+      <td>let's race and see who gets there first让我们比赛，看看谁先到达那里</td>
+      <td>[racer, racing]</td>
+      <td></td>
+      <td>[compete, vie, contend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>reɪs</td>
+      <td>['rush']</td>
+      <td></td>
+      <td>cause to move fast or to rush or race导致快速移动或匆忙或竞赛</td>
+      <td>The psychologist raced the rats through a long maze心理学家通过一个长长的迷宫对老鼠进行了比赛</td>
+      <td>[racer]</td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>reɪs</td>
+      <td>['belt along', 'bucket along', 'cannonball along', 'hasten', 'hie', 'hotfoot', 'pelt along', 'rush', 'rush along', 'speed', 'step on it']</td>
+      <td></td>
+      <td>move hurridly赶紧行动吧</td>
+      <td>The cars raced down the street汽车在街上奔跑</td>
+      <td></td>
+      <td></td>
+      <td>[go, travel, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>reɪs</td>
+      <td></td>
+      <td></td>
+      <td>to work as fast as possible towards a goal, sometimes in competition with others尽可能快地朝着目标努力，有时与其他人竞争</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>reɪs</td>
+      <td>['airstream', 'backwash', 'slipstream', 'wash']</td>
+      <td></td>
+      <td>the flow of air that is driven backwards by an aircraft propeller被飞机螺旋桨向后驱动的空气流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>reɪs</td>
+      <td>['raceway']</td>
+      <td></td>
+      <td>a canal for a current of water一条水流的运河</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[canal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>reɪs</td>
+      <td>['subspecies']</td>
+      <td></td>
+      <td>(biology) a taxonomic group that is a division of a species; usually arises as a consequence of geographical isolation within a species（生物学）一个分类群，是一个物种的分裂;通常由于物种内的地理隔离而产生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[taxonomic group, taxon, taxonomic category]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>reɪs</td>
+      <td></td>
+      <td></td>
+      <td>a contest of speed速度的比赛</td>
+      <td>the race is to the swift比赛是迅速的</td>
+      <td>[racy]</td>
+      <td></td>
+      <td>[contest, competition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>reɪs</td>
+      <td></td>
+      <td></td>
+      <td>any competition任何比赛</td>
+      <td>the race for the presidency总统竞选</td>
+      <td></td>
+      <td></td>
+      <td>[competition, contest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>race</th>
+      <td>ace</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>reɪs</td>
+      <td></td>
+      <td></td>
+      <td>people who are believed to belong to the same genetic stock被认为属于同一基因种群的人</td>
+      <td>some biologists doubt that there are important genetic differences between races of human beings一些生物学家怀疑人类种族之间存在重要的遗传差异</td>
+      <td>[racial]</td>
+      <td></td>
+      <td>[group, grouping]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>peɪs</td>
+      <td>['step']</td>
+      <td></td>
+      <td>measure (distances) by pacing通过起搏测量（距离）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[quantify, measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>peɪs</td>
+      <td></td>
+      <td></td>
+      <td>go at a pace走得很快</td>
+      <td>The horse paced马踱步</td>
+      <td>[pacer]</td>
+      <td></td>
+      <td>[locomote, travel, go, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>peɪs</td>
+      <td></td>
+      <td></td>
+      <td>regulate or set the pace of规范或设定步伐</td>
+      <td></td>
+      <td>[pacer]</td>
+      <td></td>
+      <td>[shape, mold, influence, regulate, determine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>peɪs</td>
+      <td></td>
+      <td></td>
+      <td>walk with slow or fast paces慢节奏或快节奏地走路</td>
+      <td>He paced up and down the hall他在大厅里上下踱步</td>
+      <td>[pacing]</td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>peɪs</td>
+      <td>['yard']</td>
+      <td></td>
+      <td>a unit of length equal to 3 feet; defined as 91.44 centimeters; originally taken to be the average length of a stride一个长度等于3英尺的单位;定义为91.44厘米;最初被视为步幅的平均长度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linear measure, linear unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>peɪs</td>
+      <td>['rate']</td>
+      <td></td>
+      <td>the relative speed of progress or change进步或变化的相对速度</td>
+      <td>he lived at a fast pace他的生活节奏很快the pace of events accelerated事件的节奏加快了</td>
+      <td></td>
+      <td></td>
+      <td>[temporal property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>peɪs</td>
+      <td>['gait']</td>
+      <td></td>
+      <td>the rate of moving (especially walking or running)移动速度（特别是步行或跑步）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>peɪs</td>
+      <td>['tempo']</td>
+      <td></td>
+      <td>the rate of some repeating event一些重复事件的发生率</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>peɪs</td>
+      <td>['stride', 'tread']</td>
+      <td></td>
+      <td>a step in walking or running步行或跑步的一步</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[step]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pace</th>
+      <td>ace</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>peɪs</td>
+      <td>['footstep', 'step', 'stride']</td>
+      <td></td>
+      <td>the distance covered by a step步骤所涵盖的距离</td>
+      <td>he stepped off ten paces from the old tree and began to dig他从老树上走了十步，开始挖掘</td>
+      <td></td>
+      <td></td>
+      <td>[indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lace</th>
+      <td>ace</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>leɪs</td>
+      <td>['fortify', 'spike']</td>
+      <td></td>
+      <td>add alcohol to (beverages)添加酒精（饮料）</td>
+      <td></td>
+      <td>[lacing]</td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lace</th>
+      <td>ace</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>leɪs</td>
+      <td>['enlace', 'entwine', 'interlace', 'intertwine', 'twine']</td>
+      <td></td>
+      <td>spin, wind, or twist together旋转，缠绕或扭曲在一起</td>
+      <td></td>
+      <td></td>
+      <td>[twine]</td>
+      <td>[twist, distort, twine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lace</th>
+      <td>ace</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>leɪs</td>
+      <td>['lace up']</td>
+      <td></td>
+      <td>draw through eyes or holes通过眼睛或洞吸引</td>
+      <td>lace the shoelaces系鞋带</td>
+      <td>[lacer, lacing]</td>
+      <td></td>
+      <td>[bind, tie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lace</th>
+      <td>ace</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>leɪs</td>
+      <td>['braid', 'plait']</td>
+      <td></td>
+      <td>make by braiding or interlacing通过编织或交织来制作</td>
+      <td>lace a tablecloth系带桌布</td>
+      <td></td>
+      <td></td>
+      <td>[tissue, weave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lace</th>
+      <td>ace</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>leɪs</td>
+      <td></td>
+      <td></td>
+      <td>do lacework做花边</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weave, tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lace</th>
+      <td>ace</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>leɪs</td>
+      <td>['lacing']</td>
+      <td></td>
+      <td>a cord that is drawn through eyelets or around hooks in order to draw together two edges (as of a shoe or garment)通过孔眼或钩子拉出的绳子，以便将两个边缘（如鞋子或衣服）拉在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cord]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lace</th>
+      <td>ace</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>leɪs</td>
+      <td></td>
+      <td></td>
+      <td>a delicate decorative fabric woven in an open web of symmetrical patterns一种精致的装饰织物，在对称图案的开放网中编织</td>
+      <td></td>
+      <td>[lacy]</td>
+      <td></td>
+      <td>[material, cloth, fabric, textile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mace</th>
+      <td>ace</td>
+      <td>3.25</td>
+      <td>nou</td>
+      <td>meɪs</td>
+      <td>['macebearer', 'macer']</td>
+      <td></td>
+      <td>an official who carries a mace of office一个带着职责的官员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[official, functionary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mace</th>
+      <td>ace</td>
+      <td>3.25</td>
+      <td>nou</td>
+      <td>meɪs</td>
+      <td>['chemical mace']</td>
+      <td></td>
+      <td>(trademark) a liquid that temporarily disables a person; prepared as an aerosol and sprayed in the face, it irritates the eyes and causes dizziness and immobilization（商标）暂时禁用某人的液体;以喷雾剂的形式喷洒并喷洒在脸上，会刺激眼睛，引起头晕和僵持</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chloroacetophenone, cn gas]</td>
+      <td>[trademark]</td>
+    </tr>
+    <tr>
+      <th>mace</th>
+      <td>ace</td>
+      <td>3.25</td>
+      <td>nou</td>
+      <td>meɪs</td>
+      <td></td>
+      <td></td>
+      <td>a ceremonial staff carried as a symbol of office or authority礼仪工作人员作为办公室或权威的象征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[staff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mace</th>
+      <td>ace</td>
+      <td>3.25</td>
+      <td>nou</td>
+      <td>meɪs</td>
+      <td></td>
+      <td></td>
+      <td>spice made from the dried fleshy covering of the nutmeg seed由肉豆蔻种子的干肉质覆盖物制成的香料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dace</th>
+      <td>ace</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>deɪs</td>
+      <td>['leuciscus leuciscus']</td>
+      <td></td>
+      <td>small European freshwater fish with a slender bluish-green body欧洲小型淡水鱼，身体细长蓝绿色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cyprinid, cyprinid fish]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

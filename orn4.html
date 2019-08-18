@@ -1,0 +1,485 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['born', 'horn', 'corn', 'worn', 'torn']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>born</th>
+      <td>orn</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>bɔrn</td>
+      <td>['max born']</td>
+      <td></td>
+      <td>British nuclear physicist (born in Germany) honored for his contributions to quantum mechanics (1882-1970)英国核物理学家（出生于德国）因其对量子力学的贡献而获奖（1882-1970）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>born</th>
+      <td>orn</td>
+      <td>5.07</td>
+      <td>adj</td>
+      <td>bɔrn</td>
+      <td>['innate', 'natural'], similarTo:['intelligent']</td>
+      <td></td>
+      <td>being talented through inherited qualities通过继承的品质获得才华</td>
+      <td>a born musician天生的音乐家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>born</th>
+      <td>orn</td>
+      <td>5.07</td>
+      <td>adj</td>
+      <td>bɔrn</td>
+      <td>, similarTo:['hatched']</td>
+      <td>[unborn]</td>
+      <td>brought into existence生存</td>
+      <td>he was a child born of adultery他是一个因通奸而生的孩子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>ver</td>
+      <td>hɔrn</td>
+      <td>['tusk']</td>
+      <td></td>
+      <td>stab or pierce with a horn or tusk用角或尖刺刺伤或刺穿</td>
+      <td>the rhino horned the explorer犀牛角探了探险家</td>
+      <td></td>
+      <td></td>
+      <td>[pierce, thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td>['french horn']</td>
+      <td></td>
+      <td>a brass musical instrument consisting of a conical tube that is coiled into a spiral and played by means of valves一种铜管乐器，由锥形管组成，盘旋成螺旋状，通过阀门起作用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[brass, brass instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td>['saddle horn']</td>
+      <td></td>
+      <td>a high pommel of a Western saddle (usually metal covered with leather)西部马鞍的高鞍（通常是皮革覆盖的金属）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[saddlebow, pommel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td>['cornet', 'trump', 'trumpet']</td>
+      <td></td>
+      <td>a brass musical instrument with a brilliant tone; has a narrow tube and a flared bell and is played by means of valves一种带有明亮色调的铜管乐器;有一个狭窄的管和一个喇叭形的铃铛，通过阀门播放</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[brass, brass instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td>['automobile horn', 'car horn', 'hooter', 'motor horn']</td>
+      <td></td>
+      <td>a device on an automobile for making a warning noise汽车上用于发出警告噪音的装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alarm system, alarm, warning device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td></td>
+      <td></td>
+      <td>a device having the shape of a horn具有喇叭形状的装置</td>
+      <td>horns at the ends of a new moon新月结束时的号角the horn of an anvil铁砧的角the cleat had two horns夹板有两个角</td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td></td>
+      <td></td>
+      <td>an alarm device that makes a loud warning sound一个发出响亮警告声的报警装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alarm system, alarm, warning device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td></td>
+      <td></td>
+      <td>a noise made by the driver of an automobile to give warning汽车司机发出的噪音警告</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alert, alarm, alarum, warning signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td></td>
+      <td></td>
+      <td>a noisemaker (as at parties or games) that makes a loud noise when you blow through it一个发声器（如派对或游戏），当你吹过它时发出巨响</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noisemaker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td></td>
+      <td></td>
+      <td>any hard protuberance from the head of an organism that is similar to or suggestive of a horn来自有机体头部的任何类似或暗示角的硬突起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[process, appendage, outgrowth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td></td>
+      <td></td>
+      <td>one of the bony outgrowths on the heads of certain ungulates某些有蹄类动物头上的骨骼生长之一</td>
+      <td></td>
+      <td>[horny]</td>
+      <td></td>
+      <td>[appendage, process, outgrowth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>horn</th>
+      <td>orn</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>hɔrn</td>
+      <td></td>
+      <td></td>
+      <td>the material (mostly keratin) that covers the horns of ungulates and forms hooves and claws and nails覆盖有蹄类角的材料（主要是角蛋白），形成蹄，爪和指甲</td>
+      <td></td>
+      <td>[horny]</td>
+      <td></td>
+      <td>[animal material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>kɔrn</td>
+      <td></td>
+      <td></td>
+      <td>feed (cattle) with corn用玉米喂（牛）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feed, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>kɔrn</td>
+      <td></td>
+      <td></td>
+      <td>preserve with salt用盐保存</td>
+      <td>corned beef咸牛肉</td>
+      <td></td>
+      <td></td>
+      <td>[preserve, keep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>kɔrn</td>
+      <td>['clavus']</td>
+      <td></td>
+      <td>a hard thickening of the skin (especially on the top or sides of the toes) caused by the pressure of ill-fitting shoes由于不合脚的鞋子的压力造成的皮肤硬化（特别是在脚趾的顶部或侧面）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[callus, callosity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>kɔrn</td>
+      <td>['indian corn', 'maize', 'zea mays']</td>
+      <td></td>
+      <td>tall annual cereal grass bearing kernels on large ears: widely cultivated in America in many varieties; the principal cereal in Mexico and Central and South America since pre-Columbian times大耳朵上一年生高大的谷物草粒：在美国广泛种植，品种繁多;自哥伦比亚时代以来墨西哥和中南美洲的主要谷物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cereal grass, cereal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>kɔrn</td>
+      <td>['edible corn']</td>
+      <td></td>
+      <td>ears of corn that can be prepared and served for human food玉米穗，可以准备和供人类食用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[food grain, cereal, grain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>kɔrn</td>
+      <td>['corn whiskey', 'corn whisky']</td>
+      <td></td>
+      <td>whiskey distilled from a mash of not less than 80 percent corn威士忌从不低于80％的玉米醪中蒸馏而来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[whisky, whiskey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>kɔrn</td>
+      <td></td>
+      <td></td>
+      <td>(Great Britain) any of various cereal plants (especially the dominant crop of the region--wheat in Great Britain or oats in Scotland and Ireland)（英国）任何一种谷类植物（特别是该地区的主要作物 - 英国的小麦或苏格兰和爱尔兰的燕麦）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cereal grass, cereal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>kɔrn</td>
+      <td></td>
+      <td></td>
+      <td>something sentimental or trite一些多愁善感或陈腐的东西</td>
+      <td>that movie was pure corn那部电影是纯玉米</td>
+      <td>[corny]</td>
+      <td></td>
+      <td>[drippiness, soupiness, mawkishness, mushiness, sentimentality, sloppiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>corn</th>
+      <td>orn</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>kɔrn</td>
+      <td></td>
+      <td></td>
+      <td>the dried grains or kernels or corn used as animal feed or ground for meal玉米的干燥谷物或玉米粒用作动物饲料或用于膳食的地面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kernel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>worn</th>
+      <td>orn</td>
+      <td>4.06</td>
+      <td>adj</td>
+      <td>woʊrn</td>
+      <td>['careworn', 'drawn', 'haggard', 'raddled'], similarTo:['tired']</td>
+      <td></td>
+      <td>showing the wearing effects of overwork or care or suffering显示过度劳累或护理或痛苦的磨损效果</td>
+      <td>looking careworn as she bent over her mending当她弯腰修补时，看起来很忧伤shocked to see the worn look of his handsome young face震惊地看到他英俊的年轻脸的破旧外观</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>worn</th>
+      <td>orn</td>
+      <td>4.06</td>
+      <td>adj</td>
+      <td>woʊrn</td>
+      <td>, similarTo:['attrited', 'battered', 'clapped out', 'creaky', 'decrepit', 'derelict', 'dog-eared', 'eared', 'eroded', 'flea-bitten', 'frayed', 'mangey', 'mangy', 'moth-eaten', 'mothy', 'played out', 'raddled', 'ragged', 'ratty', 'run-down', 'scoured', 'scruffy', 'seedy', 'shabby', 'shopsoiled', 'shopworn', 'tatterdemalion', 'tattered', 'tatty', 'threadbare', 'thumbed', 'worn-out', 'aged', 'vermiculate', 'waterworn', 'weather-beaten', 'weathered', 'weatherworn', 'well-worn', 'woebegone', 'worm-eaten', 'wormy'], alos:['old']</td>
+      <td>[new]</td>
+      <td>affected by wear; damaged by long use受磨损影响;长期使用会损坏</td>
+      <td>worn threads on the screw螺丝上有磨损的螺纹a worn suit穿着西装the worn pockets on the jacket夹克上破旧的口袋</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>torn</th>
+      <td>orn</td>
+      <td>4.03</td>
+      <td>adj</td>
+      <td>toʊrn</td>
+      <td>['lacerate', 'lacerated', 'mangled'], similarTo:['injured']</td>
+      <td></td>
+      <td>having edges that are jagged from injury边缘因受伤而锯齿状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>torn</th>
+      <td>orn</td>
+      <td>4.03</td>
+      <td>adj</td>
+      <td>toʊrn</td>
+      <td>, similarTo:['divided']</td>
+      <td></td>
+      <td>disrupted by the pull of contrary forces受到相反力量的冲击而中断</td>
+      <td>torn between love and hate在爱与恨之间徘徊torn by conflicting loyalties被忠诚的冲突所撕裂torn by religious dissensions被宗教纷争撕裂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

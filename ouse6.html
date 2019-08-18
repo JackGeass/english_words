@@ -1,0 +1,395 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['blouse', 'spouse', 'arouse', 'grouse', 'mouser', 'mousey', 'scouse', 'soused', 'crouse', 'chouse', 'rouser']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>blouse</th>
+      <td>ouse</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>blaʊs</td>
+      <td></td>
+      <td></td>
+      <td>a top worn by women女士穿的上衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[top]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spouse</th>
+      <td>ouse</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>spaʊz</td>
+      <td>['better half', 'married person', 'mate', 'partner']</td>
+      <td></td>
+      <td>a person's partner in marriage一个人在婚姻中的伴侣</td>
+      <td></td>
+      <td>[spousal]</td>
+      <td></td>
+      <td>[spousal equivalent, significant other, domestic partner, spouse equivalent, relation, relative]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arouse</th>
+      <td>ouse</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>ə'raʊz</td>
+      <td>['elicit', 'enkindle', 'evoke', 'fire', 'kindle', 'provoke', 'raise']</td>
+      <td></td>
+      <td>call forth (emotions, feelings, and responses)呼唤（情绪，感受和反应）</td>
+      <td>arouse pity引起怜悯</td>
+      <td>[arousal]</td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arouse</th>
+      <td>ouse</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>ə'raʊz</td>
+      <td>['bring up', 'call down', 'call forth', 'conjure', 'conjure up', 'evoke', 'invoke', 'put forward', 'raise', 'stir']</td>
+      <td></td>
+      <td>summon into action or bring into existence, often as if by magic召唤行动或生存，通常好像是通过魔法</td>
+      <td></td>
+      <td></td>
+      <td>[kick up, call forth, evoke, provoke]</td>
+      <td>[summon, call up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arouse</th>
+      <td>ouse</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>ə'raʊz</td>
+      <td>['awake', 'awaken', 'come alive', 'wake', 'wake up', 'waken']</td>
+      <td></td>
+      <td>stop sleeping停止睡觉</td>
+      <td></td>
+      <td>[arousal]</td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arouse</th>
+      <td>ouse</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>ə'raʊz</td>
+      <td>['stir']</td>
+      <td></td>
+      <td>to begin moving开始移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arouse</th>
+      <td>ouse</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>ə'raʊz</td>
+      <td>['awaken', 'rouse', 'wake', 'wake up', 'waken']</td>
+      <td></td>
+      <td>cause to become awake or conscious导致变得清醒或有意识</td>
+      <td></td>
+      <td>[arousal, arouser]</td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arouse</th>
+      <td>ouse</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>ə'raʊz</td>
+      <td>['brace', 'energise', 'energize', 'perk up', 'stimulate']</td>
+      <td></td>
+      <td>cause to be alert and energetic因为要保持警觉和精力充沛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arouse</th>
+      <td>ouse</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>ə'raʊz</td>
+      <td>['excite', 'sex', 'turn on', 'wind up']</td>
+      <td></td>
+      <td>stimulate sexually刺激性生活</td>
+      <td>This movie usually arouses the male audience这部电影通常会引起男性观众的注意</td>
+      <td></td>
+      <td></td>
+      <td>[shake, shake up, stir, excite, stimulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>graʊs</td>
+      <td>['beef', 'bellyache', 'bitch', 'crab', 'gripe', 'holler', 'squawk']</td>
+      <td></td>
+      <td>complain抱怨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kvetch, plain, kick, sound off, quetch, complain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>graʊs</td>
+      <td></td>
+      <td></td>
+      <td>hunt grouse寻找松鸡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fowl]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>graʊs</td>
+      <td></td>
+      <td></td>
+      <td>flesh of any of various grouse of the family Tetraonidae; usually roasted; flesh too dry to broil四足科的各种松鸡的肉;通常烤;肉太干，不能烤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wildfowl]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>graʊs</td>
+      <td></td>
+      <td></td>
+      <td>popular game bird having a plump body and feathered legs and feet流行的游戏鸟有丰满的身体和羽毛腿和脚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[game bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mouser</th>
+      <td>ouse</td>
+      <td>2.48</td>
+      <td>nou</td>
+      <td>'maʊzər</td>
+      <td></td>
+      <td></td>
+      <td>a cat proficient at mousing一只精通鼠舍的猫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[domestic cat, felis catus, felis domesticus, house cat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mousey</th>
+      <td>ouse</td>
+      <td>2.33</td>
+      <td>adj</td>
+      <td>'maʊsi</td>
+      <td>['mouse-colored', 'mouselike', 'mousy'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of something having a drab pale brown color resembling a mouse具有类似鼠标的褐色浅褐色的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mousey</th>
+      <td>ouse</td>
+      <td>2.33</td>
+      <td>adj</td>
+      <td>'maʊsi</td>
+      <td>['mousy'], similarTo:['timid']</td>
+      <td></td>
+      <td>quiet and timid and ineffectual安静，胆怯和无效</td>
+      <td></td>
+      <td>[mouse]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mousey</th>
+      <td>ouse</td>
+      <td>2.33</td>
+      <td>adj</td>
+      <td>'maʊsi</td>
+      <td>['mousy']</td>
+      <td></td>
+      <td>infested with mice感染小鼠</td>
+      <td></td>
+      <td>[mouse]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scouse</th>
+      <td>ouse</td>
+      <td>2.03</td>
+      <td>nou</td>
+      <td>skæʊs</td>
+      <td>['lobscouse', 'lobscuse']</td>
+      <td></td>
+      <td>a stew of meat and vegetables and hardtack that is eaten by sailors炖肉和蔬菜以及被水手吃掉的硬壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stew]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soused</th>
+      <td>ouse</td>
+      <td>2.03</td>
+      <td>adj</td>
+      <td></td>
+      <td>['besotted', 'blind drunk', 'blotto', 'cockeyed', 'crocked', 'fuddled', 'loaded', 'pie-eyed', 'pissed', 'pixilated', 'plastered', 'slopped', 'sloshed', 'smashed', 'soaked', 'sozzled', 'squiffy', 'stiff', 'tight', 'wet'], similarTo:['drunk', 'gone', 'inebriated', 'intoxicated', 'ripped']</td>
+      <td></td>
+      <td>very drunk很醉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[argot, cant, jargon, lingo, patois, slang, vernacular]</td>
+    </tr>
+    <tr>
+      <th>crouse</th>
+      <td>ouse</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>kRus</td>
+      <td>['russel crouse']</td>
+      <td></td>
+      <td>United States playwright (1893-1966)美国剧作家（1893-1966）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chouse</th>
+      <td>ouse</td>
+      <td>1.82</td>
+      <td>ver</td>
+      <td>tʃaʊs</td>
+      <td>['cheat', 'chicane', 'jockey', 'screw', 'shaft']</td>
+      <td></td>
+      <td>defeat someone through trickery or deceit通过欺骗或欺骗来打败某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beat, beat out, crush, shell, trounce, vanquish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rouser</th>
+      <td>ouse</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>'raʊzɝr</td>
+      <td>['arouser', 'waker']</td>
+      <td></td>
+      <td>someone who rouses others from sleep从睡梦中唤醒别人的人</td>
+      <td></td>
+      <td>[rouse]</td>
+      <td></td>
+      <td>[attendant, attender, tender]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

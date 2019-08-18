@@ -1,0 +1,1145 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['top', 'cop', 'pop', 'hop', 'mop', 'ops', 'bop', 'wop', 'lop', 'opt', 'sop', 'fop']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td>['crown']</td>
+      <td></td>
+      <td>be the culminating event是最高级别的活动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[climax, culminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td>['clear']</td>
+      <td></td>
+      <td>pass by, over, or under without making contact在没有联系的情况下经过，经过或经过</td>
+      <td>the balloon cleared the tree tops气球清理了树顶</td>
+      <td></td>
+      <td></td>
+      <td>[overtake, overhaul, pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td>['exceed', 'go past', 'overstep', 'pass', 'transcend']</td>
+      <td></td>
+      <td>be superior or better than some standard优于或优于某些标准</td>
+      <td>She topped her performance of last year她在去年表现突出</td>
+      <td>[topper]</td>
+      <td></td>
+      <td>[surpass, excel, stand out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td>['pinch']</td>
+      <td></td>
+      <td>cut the top off切断顶部</td>
+      <td>top trees and bushes顶部的树木和灌木丛</td>
+      <td>[topper]</td>
+      <td></td>
+      <td>[clip, trim, snip, prune, lop, dress, cut back, crop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td>['top out']</td>
+      <td></td>
+      <td>provide with a top or finish the top (of a structure)提供顶部或完成顶部（结构）</td>
+      <td>the towers were topped with conical roofs塔顶有圆锥形屋顶</td>
+      <td>[topper]</td>
+      <td></td>
+      <td>[furnish, render, provide, supply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td>['lead']</td>
+      <td></td>
+      <td>be ahead of others; be the first领先于别人;成为第一个</td>
+      <td>she topped her class every year她每年都能上课</td>
+      <td>[topper]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td>['top off']</td>
+      <td></td>
+      <td>finish up or conclude完成或结束</td>
+      <td>They topped off their dinner with a cognac他们用干邑白兰地吃晚餐top the evening with champagne晚上喝香槟</td>
+      <td></td>
+      <td></td>
+      <td>[finish, complete]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td></td>
+      <td></td>
+      <td>be at the top of or constitute the top or highest point处于顶部或最高点或构成顶部或最高点</td>
+      <td>A star tops the Christmas Tree圣诞树上有一颗星星</td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td></td>
+      <td></td>
+      <td>reach or ascend the top of到达或上升</td>
+      <td>The hikers topped the mountain just before noon在中午之前，徒步旅行者在山上登顶</td>
+      <td></td>
+      <td></td>
+      <td>[hit, arrive at, attain, gain, make, reach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>tɑp</td>
+      <td></td>
+      <td></td>
+      <td>strike (the top part of a ball in golf, baseball, or pool) giving it a forward spin罢工（高尔夫，棒球或游泳池中的球的顶部）使其向前旋转</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td>['top of the inning']</td>
+      <td>[bottom]</td>
+      <td>the first half of an inning; while the visiting team is at bat一局的上半场;而访问团队正在蝙蝠</td>
+      <td>a relief pitcher took over in the top of the fifth一名救援投手接管了第五名</td>
+      <td></td>
+      <td></td>
+      <td>[round, bout, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td>['big top', 'circus tent', 'round top']</td>
+      <td></td>
+      <td>a canvas tent to house the audience at a circus performance一个帆布帐篷，在马戏表演中容纳观众</td>
+      <td>they had the big top up in less than an hour他们在不到一个小时的时间内获得了最大的收益</td>
+      <td></td>
+      <td></td>
+      <td>[canvass, canvas, canvas tent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td>['spinning top', 'teetotum', 'whirligig']</td>
+      <td></td>
+      <td>a conical child's plaything tapering to a steel point on which it can be made to spin一个圆锥形的孩子的玩具，逐渐变细到可以旋转的钢点上</td>
+      <td>he got a bright red top and string for his birthday他生日那天有一顶鲜红色的上衣和绳子</td>
+      <td></td>
+      <td></td>
+      <td>[plaything, toy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td>['top side', 'upper side', 'upside']</td>
+      <td></td>
+      <td>the highest or uppermost side of anything任何东西的最高或最高的一面</td>
+      <td>put your books on top of the desk把你的书放在桌子上only the top side of the box was painted只有盒子的顶部被涂上了</td>
+      <td></td>
+      <td></td>
+      <td>[side, face]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td>['cover']</td>
+      <td></td>
+      <td>covering for a hole (especially a hole in the top of a container)覆盖一个洞（特别是一个容器顶部的洞）</td>
+      <td>he removed the top of the carton他取下了纸箱的顶部he couldn't get the top off of the bottle他无法从瓶子上取下顶部</td>
+      <td></td>
+      <td></td>
+      <td>[covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td>['crest', 'crown', 'peak', 'summit', 'tip']</td>
+      <td></td>
+      <td>the top or extreme point of something (usually a mountain or hill)某物（通常是山或山）的顶点或极点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place, spot, topographic point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td>['acme', 'elevation', 'height', 'meridian', 'peak', 'pinnacle', 'summit', 'superlative', 'tiptop']</td>
+      <td></td>
+      <td>the highest level or degree attainable; the highest stage of development可达到的最高水平或程度;发展的最高阶段</td>
+      <td>at the top of his profession在他的职业的顶部</td>
+      <td></td>
+      <td></td>
+      <td>[point, stage, level, degree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td></td>
+      <td></td>
+      <td>a garment (especially for women) that extends from the shoulders to the waist or hips从肩部延伸到腰部或臀部的服装（特别是女性）</td>
+      <td>he stared as she buttoned her top他盯着她的上衣盯着他</td>
+      <td></td>
+      <td></td>
+      <td>[woman's clothing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td></td>
+      <td></td>
+      <td>platform surrounding the head of a lower mast平台围绕着下桅杆的头部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td></td>
+      <td></td>
+      <td>the greatest possible intensity最大可能的强度</td>
+      <td>he screamed at the top of his lungs他在他的肺部尖叫着</td>
+      <td></td>
+      <td></td>
+      <td>[intensiveness, intensity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>tɑp</td>
+      <td></td>
+      <td></td>
+      <td>the upper part of anything任何东西的上半部分</td>
+      <td>the mower cuts off the tops of the grass割草机切断了草的顶部the title should be written at the top of the first page标题应写在第一页的顶部</td>
+      <td></td>
+      <td></td>
+      <td>[part, region]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>op</td>
+      <td>5.14</td>
+      <td>adj</td>
+      <td>tɑp</td>
+      <td>, similarTo:['upper', 'uppermost', 'apical', 'topmost', 'crowning', 'upmost'], alos:['high', 'best']</td>
+      <td>[bottom, side]</td>
+      <td>situated at the top or highest position位于顶部或最高位置</td>
+      <td>the top shelf顶架</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cop</th>
+      <td>op</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>kɑp</td>
+      <td>['apprehend', 'arrest', 'collar', 'nab', 'nail', 'pick up']</td>
+      <td></td>
+      <td>take into custody看押</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prehend, clutch, seize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cop</th>
+      <td>op</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>kɑp</td>
+      <td>['glom', 'hook', 'knock off', 'snitch', 'thieve']</td>
+      <td></td>
+      <td>take by theft偷窃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip, steal, rip off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cop</th>
+      <td>op</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>kɑp</td>
+      <td>['bull', 'copper', 'fuzz', 'pig']</td>
+      <td></td>
+      <td>uncomplimentary terms for a policeman警察的非免费条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[policeman, police officer, officer]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td>['bug out', 'bulge', 'bulge out', 'come out', 'pop out', 'protrude', 'start']</td>
+      <td></td>
+      <td>bulge outward向外凸出</td>
+      <td>His eyes popped他的眼睛突然出现了</td>
+      <td></td>
+      <td></td>
+      <td>[deform, change form, change shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td>['belt down', 'bolt down', 'down', 'drink down', 'kill', 'pour down', 'toss off']</td>
+      <td></td>
+      <td>drink down entirely完全喝下去</td>
+      <td>They popped a few beer after work他们下班后喝了几杯啤酒</td>
+      <td></td>
+      <td></td>
+      <td>[drink, imbibe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td>['crop up', 'pop up']</td>
+      <td></td>
+      <td>appear suddenly or unexpectedly出现突然或意外</td>
+      <td>The farm popped into view as we turned the corner当我们转弯时，农场突然出现He suddenly popped up out of nowhere他突然突然冒出来了</td>
+      <td></td>
+      <td></td>
+      <td>[appear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>burst open with a sharp, explosive sound用尖锐的爆炸性声音爆开</td>
+      <td>The balloon popped气球爆裂了This popcorn pops quickly in the microwave oven这个爆米花在微波炉中快速流行</td>
+      <td></td>
+      <td></td>
+      <td>[break open, burst, split]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>cause to burst with a loud, explosive sound导致爆炸声响起</td>
+      <td>The child popped the balloon孩子弹出了气球</td>
+      <td>[popper]</td>
+      <td></td>
+      <td>[burst, collapse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>cause to make a sharp explosive sound导致尖锐的爆炸声</td>
+      <td>He popped the champagne bottle他弹出香槟酒瓶</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>fire a weapon with a loud explosive noise用巨大的爆炸声发射武器</td>
+      <td>The soldiers were popping士兵们突然出现了</td>
+      <td>[popping]</td>
+      <td></td>
+      <td>[discharge, fire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>hit a pop-fly打了一个流行音乐</td>
+      <td>He popped out to shortstop他突然出现在游击手中</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>hit or strike击中或罢工</td>
+      <td>He popped me on the head他把我甩在头上</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>make a sharp explosive noise发出尖锐的爆炸声</td>
+      <td>The cork of the champagne bottle popped香槟酒瓶的软木塞突然出现</td>
+      <td>[popping]</td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>put or thrust suddenly and forcefully突然和有力地推或推</td>
+      <td>pop the pizza into the microwave oven将披萨放入微波炉He popped the petit-four into his mouth他把小四口插入嘴里</td>
+      <td></td>
+      <td></td>
+      <td>[throw, thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>release suddenly突然释放</td>
+      <td>pop the clutch弹出离合器</td>
+      <td></td>
+      <td></td>
+      <td>[let go of, let go, release, relinquish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pɑp</td>
+      <td></td>
+      <td></td>
+      <td>take drugs, especially orally服用药物，特别是口服</td>
+      <td>The man charged with murder popped a valium to calm his nerves这名被控犯有谋杀罪的男子突然出现了安慰他的神经</td>
+      <td></td>
+      <td></td>
+      <td>[inject]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pɑp</td>
+      <td>['dad', 'dada', 'daddy', 'pa', 'papa', 'pappa']</td>
+      <td></td>
+      <td>an informal term for a father; probably derived from baby talk父亲的非正式用语;可能源于婴儿的谈话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[begetter, male parent, father]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pɑp</td>
+      <td>['pop music']</td>
+      <td></td>
+      <td>music of general appeal to teenagers; a bland watered-down version of rock'n'roll with more rhythm and harmony and an emphasis on romantic love对青少年有吸引力的音乐;一个平淡淡淡的摇滚版本摇滚乐，更有节奏和和谐，强调浪漫的爱情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[popular music, popular music genre]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pɑp</td>
+      <td>['popping']</td>
+      <td></td>
+      <td>a sharp explosive sound as from a gunshot or drawing a cork从枪声或拔出软木塞发出的尖锐爆炸声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pɑp</td>
+      <td>['soda', 'soda pop', 'soda water', 'tonic']</td>
+      <td></td>
+      <td>a sweet drink containing carbonated water and flavoring含有碳酸水和调味料的甜饮料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soft drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pop</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>adj</td>
+      <td>pɑp</td>
+      <td>['popular'], similarTo:['nonclassical']</td>
+      <td></td>
+      <td>(of music or art) new and of general appeal (especially among young people)（音乐或艺术）新的和一般的吸引力（特别是在年轻人中）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>hɑp</td>
+      <td>['hop-skip', 'skip'], alos:['hop on']</td>
+      <td></td>
+      <td>jump lightly轻轻一跳</td>
+      <td></td>
+      <td>[hopper]</td>
+      <td></td>
+      <td>[spring, bound, leap, jump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>hɑp</td>
+      <td></td>
+      <td></td>
+      <td>jump across跳过</td>
+      <td>He hopped the bush他跳了灌木丛</td>
+      <td></td>
+      <td></td>
+      <td>[top, clear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>hɑp</td>
+      <td></td>
+      <td></td>
+      <td>make a jump forward or upward向前或向上跳跃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leap, spring, bound, jump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>hɑp</td>
+      <td></td>
+      <td></td>
+      <td>move quickly from one place to another从一个地方迅速移动到另一个地方</td>
+      <td></td>
+      <td>[hopper]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>hɑp</td>
+      <td></td>
+      <td></td>
+      <td>travel by means of an aircraft, bus, etc.通过飞机，公共汽车等旅行</td>
+      <td>She hopped a train to Chicago她搭乘火车前往芝加哥He hopped rides all over the country他在全国各地骑车</td>
+      <td></td>
+      <td></td>
+      <td>[travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>hɑp</td>
+      <td></td>
+      <td></td>
+      <td>traverse as if by a short airplane trip好像是乘飞机短途旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut through, get across, get over, traverse, track, cover, cross, cut across, pass over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>hɑp</td>
+      <td>['hops']</td>
+      <td></td>
+      <td>twining perennials having cordate leaves and flowers arranged in conelike spikes; the dried flowers of this plant are used in brewing to add the characteristic bitter taste to beer缠绕多年生植物，心形叶子和花朵排列成锥形的穗状花序;这种植物的干花用于酿造，为啤酒增添特有的苦味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>hɑp</td>
+      <td>['record hop']</td>
+      <td></td>
+      <td>an informal dance where popular music is played一种非正式的舞蹈，播放流行音乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hop</th>
+      <td>op</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>hɑp</td>
+      <td></td>
+      <td></td>
+      <td>the act of hopping; jumping upward or forward (especially on one foot)跳跃的行为;向上或向前跳（特别是在一只脚上）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jumping, jump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mop</th>
+      <td>op</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>mɑp</td>
+      <td>['mop up', 'wipe up']</td>
+      <td></td>
+      <td>to wash or wipe with or as if with a mop用拖把清洗或擦拭</td>
+      <td>He mopped her forehead with a towel他用毛巾擦了擦额头</td>
+      <td>[mopper, mopping]</td>
+      <td></td>
+      <td>[take up, absorb, draw, imbibe, soak up, sop up, suck, suck up, take in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mop</th>
+      <td>op</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>mɑp</td>
+      <td>['mow', 'pout']</td>
+      <td></td>
+      <td>make a sad face and thrust out one's lower lip做一个悲伤的脸，并推出一个人的下唇</td>
+      <td>mop and mow拖把和割草</td>
+      <td></td>
+      <td></td>
+      <td>[grimace, pull a face, make a face]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mop</th>
+      <td>op</td>
+      <td>3.58</td>
+      <td>nou</td>
+      <td>mɑp</td>
+      <td>['swab', 'swob']</td>
+      <td></td>
+      <td>cleaning implement consisting of absorbent material fastened to a handle; for cleaning floors清洁工具，由固定在手柄上的吸收材料组成;用于清洁地板</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cleaning implement, cleaning equipment, cleaning device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ops</th>
+      <td>op</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>ɑps</td>
+      <td></td>
+      <td></td>
+      <td>(Roman mythology) goddess of abundance and fertility; wife of Saturn; counterpart of Greek Rhea and Cybele of ancient Asia Minor（罗马神话）丰富和生育的女神;土星的妻子;希腊瑞亚和古代小亚细亚的西布莉的对应物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bop</th>
+      <td>op</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>bɑp</td>
+      <td>['bash', 'bonk', 'sock', 'whap', 'whop']</td>
+      <td></td>
+      <td>hit hard用力打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bop</th>
+      <td>op</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>bɑp</td>
+      <td>['bebop']</td>
+      <td></td>
+      <td>dance the bebop跳过bebop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dance, trip the light fantastic toe, trip the light fantastic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bop</th>
+      <td>op</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>bɑp</td>
+      <td>['federal bureau of prisons']</td>
+      <td></td>
+      <td>the law enforcement agency of the Justice Department that operates a nationwide system of prisons and detention facilities to incarcerate inmates sentenced to imprisonment for federal crimes司法部的执法机构，在全国范围内设立监狱和拘留设施系统，以监禁因联邦罪行而被判入狱的囚犯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[law enforcement agency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bop</th>
+      <td>op</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>bɑp</td>
+      <td>['bebop']</td>
+      <td></td>
+      <td>an early form of modern jazz (originating around 1940)现代爵士乐的早期形式（起源于1940年左右）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jazz]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wop</th>
+      <td>op</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>wɑp</td>
+      <td>['dago', 'ginzo', 'greaseball', 'guinea']</td>
+      <td></td>
+      <td>(ethnic slur) offensive term for a person of Italian descent（民族诽谤）意大利血统的进攻性术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[italian]</td>
+      <td>[argot, cant, depreciation, derogation, disparagement, ethnic slur, vernacular, jargon, lingo, patois, slang]</td>
+    </tr>
+    <tr>
+      <th>lop</th>
+      <td>op</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>lɑp</td>
+      <td>['clip', 'crop', 'cut back', 'dress', 'prune', 'snip', 'trim']</td>
+      <td></td>
+      <td>cultivate, tend, and cut back the growth of培养，倾向和削减生长</td>
+      <td></td>
+      <td>[lopper]</td>
+      <td></td>
+      <td>[thin out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lop</th>
+      <td>op</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>lɑp</td>
+      <td>['discerp', 'sever']</td>
+      <td></td>
+      <td>cut off from a whole从一个整体切断</td>
+      <td></td>
+      <td>[lopper]</td>
+      <td>[break up, sever]</td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>opt</th>
+      <td>op</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>ɑpt</td>
+      <td>['choose', 'prefer']</td>
+      <td></td>
+      <td>select as an alternative over another选择作为另一种选择</td>
+      <td>She opted for the job on the East coast她选择了东海岸的工作</td>
+      <td>[optative, option]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sop</th>
+      <td>op</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>sɑp</td>
+      <td>['douse', 'dowse', 'drench', 'soak', 'souse']</td>
+      <td></td>
+      <td>cover with liquid; pour liquid onto盖上液体;倒入液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sop</th>
+      <td>op</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>sɑp</td>
+      <td>['soak through']</td>
+      <td></td>
+      <td>be or become thoroughly soaked or saturated with a liquid是或彻底浸透或浸透液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ooze through]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sop</th>
+      <td>op</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>sɑp</td>
+      <td></td>
+      <td></td>
+      <td>dip into liquid浸入液体中</td>
+      <td>sop bread into the sauce将面包放入酱汁中</td>
+      <td></td>
+      <td></td>
+      <td>[dip, douse, dunk, plunge, souse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sop</th>
+      <td>op</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>sɑp</td>
+      <td></td>
+      <td></td>
+      <td>give a conciliatory gift or bribe to给予和解礼物或贿赂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bribe, buy, grease one's palms, corrupt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sop</th>
+      <td>op</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>sɑp</td>
+      <td>['sops']</td>
+      <td></td>
+      <td>piece of solid food for dipping in a liquid一块固体食物浸在液体中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bit, bite, morsel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sop</th>
+      <td>op</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>sɑp</td>
+      <td>['standard operating procedure', 'standard procedure', 'standing operating procedure']</td>
+      <td></td>
+      <td>a prescribed procedure to be followed routinely常规遵循的规定程序</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[operating procedure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sop</th>
+      <td>op</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>sɑp</td>
+      <td></td>
+      <td></td>
+      <td>a concession given to mollify or placate给予安抚或安抚的让步</td>
+      <td>the offer was a sop to my feelings这个提议对我的感情很重要</td>
+      <td></td>
+      <td></td>
+      <td>[concession]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fop</th>
+      <td>op</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>fɑp</td>
+      <td>['beau', 'clotheshorse', 'dandy', 'dude', 'fashion plate', 'gallant', 'sheik', 'swell']</td>
+      <td></td>
+      <td>a man who is much concerned with his dress and appearance一个非常关心他的着装和外表的男人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult male, man]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

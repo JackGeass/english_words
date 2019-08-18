@@ -1,0 +1,965 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['high', 'sign', 'sigh', 'digs', 'twig', 'swig', 'brig', 'nigh', 'trig', 'prig', 'whig']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>haɪ</td>
+      <td>['heights']</td>
+      <td></td>
+      <td>a high place一个很高的地方</td>
+      <td>they stood on high and observed the countryside他们站在高处，观察着乡村</td>
+      <td></td>
+      <td></td>
+      <td>[topographic point, place, spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>haɪ</td>
+      <td>['high school', 'highschool', 'senior high', 'senior high school']</td>
+      <td></td>
+      <td>a public secondary school usually including grades 9 through 12公立中学，通常包括9至12年级</td>
+      <td>he goes to the neighborhood highschool他去了附近的高中</td>
+      <td></td>
+      <td></td>
+      <td>[lycee, secondary school, gymnasium, middle school, lyceum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>haɪ</td>
+      <td>['high gear']</td>
+      <td></td>
+      <td>a forward gear with a gear ratio that gives the greatest vehicle velocity for a given engine speed具有齿轮比的前进齿轮，其为给定的发动机速度提供最大的车辆速度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gear, gear mechanism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>haɪ</td>
+      <td></td>
+      <td>[low]</td>
+      <td>a lofty level or position or degree高级或职位或学位</td>
+      <td>summer temperatures reached an all-time high夏季气温达到历史最高水平</td>
+      <td></td>
+      <td></td>
+      <td>[level, grade, degree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>haɪ</td>
+      <td></td>
+      <td></td>
+      <td>an air mass of higher than normal pressure空气质量高于正常压力</td>
+      <td>the east coast benefits from a Bermuda high东海岸受益于百慕大的高点</td>
+      <td></td>
+      <td></td>
+      <td>[air mass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>haɪ</td>
+      <td></td>
+      <td></td>
+      <td>a state of altered consciousness induced by alcohol or narcotics由酒精或麻醉剂引起的意识改变状态</td>
+      <td>they took drugs to get a high on他们吸毒以获得高价</td>
+      <td></td>
+      <td></td>
+      <td>[elation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>haɪ</td>
+      <td></td>
+      <td>[low spirits]</td>
+      <td>a state of sustained elation持续兴高采烈的状态</td>
+      <td>I'm on a permanent high these days这些天我处于永久性的高潮</td>
+      <td></td>
+      <td></td>
+      <td>[elation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adv</td>
+      <td>haɪ</td>
+      <td>['luxuriously', 'richly']</td>
+      <td></td>
+      <td>in a rich manner以丰富的方式</td>
+      <td>he lives high他活得很高</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adv</td>
+      <td>haɪ</td>
+      <td>['high up']</td>
+      <td></td>
+      <td>at a great altitude在一个很高的海拔</td>
+      <td>he climbed high on the ladder他爬上了梯子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adj</td>
+      <td>haɪ</td>
+      <td>['mellow'], similarTo:['gone', 'drunk', 'inebriated', 'intoxicated', 'ripped']</td>
+      <td></td>
+      <td>slightly and pleasantly intoxicated from alcohol or a drug (especially marijuana)酒精或药物（特别是大麻）略微令人愉快地陶醉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adj</td>
+      <td>haɪ</td>
+      <td>['in high spirits'], similarTo:['elated']</td>
+      <td></td>
+      <td>happy and excited and energetic快乐，兴奋，精力充沛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adj</td>
+      <td>haɪ</td>
+      <td>['gamey', 'gamy'], similarTo:['unpleasant-smelling', 'stinky', 'malodorous', 'ill-smelling', 'malodourous']</td>
+      <td></td>
+      <td>(used of the smell of meat) smelling spoiled or tainted（用于肉的味道）闻起来变质或污染</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adj</td>
+      <td>haɪ</td>
+      <td>['high-pitched'], similarTo:['falsetto', 'screaky', 'screechy', 'sharp', 'shrill', 'sopranino', 'soprano', 'spiky', 'squeaking', 'squeaky', 'squealing', 'peaky', 'nasal', 'altissimo', 'tenor', 'alto', 'pinched', 'treble', 'countertenor', 'adenoidal']</td>
+      <td>[low]</td>
+      <td>used of sounds and voices; high in pitch or frequency用于声音和声音;音高或频率高</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adj</td>
+      <td>haɪ</td>
+      <td>['eminent'], similarTo:['superior']</td>
+      <td></td>
+      <td>standing above others in quality or position在质量或位置上站在他人之上</td>
+      <td>people in high places人们在高处the high priest大祭司</td>
+      <td>[highness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adj</td>
+      <td>haɪ</td>
+      <td>, similarTo:['broad', 'advanced', 'full', 'graduate', 'higher', 'last', 'postgraduate', 'soaring', 'utmost'], alos:['superior']</td>
+      <td>[low]</td>
+      <td>greater than normal in degree or intensity or amount程度，强度或数量均大于正常值</td>
+      <td>a high temperature高温a high price很高的价格the high point of his career他职业生涯的最高点high risks高风险has high hopes寄予厚望the river is high河很高he has a high opinion of himself他对自己有很高的评价</td>
+      <td>[highness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>high</th>
+      <td>ig</td>
+      <td>5.32</td>
+      <td>adj</td>
+      <td>haɪ</td>
+      <td>, similarTo:['high-altitude', 'high-level', 'high-stepped', 'high-stepping', 'high-top', 'high-topped', 'towering', 'dominating', 'steep', 'soaring', 'lofty', 'upper', 'overlooking', 'eminent', 'commanding', 'altitudinous'], alos:['tall', 'top', 'up']</td>
+      <td>[low]</td>
+      <td>(literal meaning) being at or having a relatively great or specific elevation or upward extension (sometimes used in combinations like `knee-high')（字面意思）处于或具有相对较大或特定的高度或向上延伸（有时用于“膝盖高”的组合）</td>
+      <td>a high mountain一座高山high ceilings高高的天花板high buildings高楼大厦a high forehead高额头a high incline高倾斜a foot high一英尺高</td>
+      <td>[highness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td>['subscribe'], alos:['sign away', 'sign in', 'sign over']</td>
+      <td></td>
+      <td>mark with one's signature; write one's name (on)标记一个人的签名;写一个人的名字（上）</td>
+      <td>She signed the letter and sent it off她签了信，然后把它寄出去了Please sign here请在这里签字</td>
+      <td>[signature, signer]</td>
+      <td></td>
+      <td>[write]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td>['bless']</td>
+      <td></td>
+      <td>make the sign of the cross over someone in order to call on God for protection; consecrate为了呼召上帝保护，在某人身上做出十字架的标志;供奉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gesture, gesticulate, motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td>['contract', 'sign on', 'sign up']</td>
+      <td></td>
+      <td>engage by written agreement通过书面协议进行</td>
+      <td>They signed two new pitchers for the next season他们为下个赛季签了两个新投手</td>
+      <td>[signer]</td>
+      <td></td>
+      <td>[hire, engage, employ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td>['ratify']</td>
+      <td></td>
+      <td>approve and express assent, responsibility, or obligation批准并表示同意，责任或义务</td>
+      <td>Have you signed your contract yet?你签了合同了吗？</td>
+      <td>[signer]</td>
+      <td></td>
+      <td>[formalize, formalise, validate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td>['signal', 'signalise', 'signalize']</td>
+      <td></td>
+      <td>communicate silently and non-verbally by signals or signs通过信号或标志静默地和非语言地进行通信</td>
+      <td>He signed his disapproval with a dismissive hand gesture他以一种不屑一顾的手势签署了他的反对意见The diner signaled the waiters to bring the menu小餐馆发信号通知服务员带上菜单</td>
+      <td>[signing, signer]</td>
+      <td></td>
+      <td>[communicate, intercommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>be engaged by a written agreement通过书面协议订婚</td>
+      <td>He signed to play the casino on Dec. 18他于12月18日签约参加赌场The soprano signed to sing the new opera女高音签约唱新歌</td>
+      <td>[signer]</td>
+      <td></td>
+      <td>[undertake, contract]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>communicate in sign language用手语沟通</td>
+      <td>I don't know how to sign, so I could not communicate with my deaf cousin我不知道如何签名，所以我无法与聋哑表弟交流</td>
+      <td>[signer]</td>
+      <td></td>
+      <td>[intercommunicate, communicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>ver</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>place signs, as along a road沿着道路放置标志</td>
+      <td>sign an intersection签一个十字路口This road has been signed这条路已经签署</td>
+      <td></td>
+      <td></td>
+      <td>[put, lay, pose, place, set, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td>['signboard']</td>
+      <td></td>
+      <td>structure displaying a board on which advertisements can be posted显示可以发布广告的板的结构</td>
+      <td>the highway was lined with signboards高速公路上布满了招牌</td>
+      <td></td>
+      <td></td>
+      <td>[structure, construction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td>['mark']</td>
+      <td></td>
+      <td>a perceptible indication of something not immediately apparent (as a visible clue that something has happened)一种不明显的东西的可察觉的指示（作为发生某事的可见线索）</td>
+      <td>he showed signs of strain他表现出紧张的迹象they welcomed the signs of spring他们欢迎春天的迹象</td>
+      <td>[signify]</td>
+      <td></td>
+      <td>[clew, clue, cue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td>['signal', 'signaling']</td>
+      <td></td>
+      <td>any nonverbal action or gesture that encodes a message任何编码信息的非语言动作或手势</td>
+      <td>signals from the boat suddenly stopped船上的信号突然停了下来</td>
+      <td>[signify]</td>
+      <td></td>
+      <td>[communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td>['augury', 'foretoken', 'preindication']</td>
+      <td></td>
+      <td>an event that is experienced as indicating important things to come一个经历过的事件，表明将要发生的重要事情</td>
+      <td>it was a sign from God这是上帝的标志</td>
+      <td></td>
+      <td></td>
+      <td>[experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td>['house', 'mansion', 'planetary house', 'sign of the zodiac', 'star sign']</td>
+      <td></td>
+      <td>(astrology) one of 12 equal areas into which the zodiac is divided（占星术）十二生肖被划分的12个相等区域之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[region, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td>['polarity']</td>
+      <td></td>
+      <td>having an indicated pole (as the distinction between positive and negative electric charges)具有指示的极点（作为正电荷和负电荷之间的区别）</td>
+      <td>charges of opposite sign相反指示的指控</td>
+      <td></td>
+      <td></td>
+      <td>[opposition, oppositeness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>a character indicating a relation between quantities表示数量之间关系的字符</td>
+      <td>don't forget the minus sign不要忘记减号</td>
+      <td>[signify]</td>
+      <td></td>
+      <td>[mathematical notation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>a fundamental linguistic unit linking a signifier to that which is signified一个基本的语言单位，将能指与所指的能指连接起来</td>
+      <td>The bond between the signifier and the signified is arbitrary能指与所指之间的联系是任意的</td>
+      <td></td>
+      <td></td>
+      <td>[linguistic unit, language unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>a gesture that is part of a sign language手势是手语的一部分</td>
+      <td></td>
+      <td>[signify]</td>
+      <td></td>
+      <td>[motion, gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>a public display of a message公开显示消息</td>
+      <td>he posted signs in all the shop windows他在所有橱窗上张贴了标志</td>
+      <td></td>
+      <td></td>
+      <td>[communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>nou</td>
+      <td>saɪn</td>
+      <td></td>
+      <td></td>
+      <td>(medicine) any objective evidence of the presence of a disorder or disease（医学）任何存在疾病或疾病的客观证据</td>
+      <td>there were no signs of asphyxiation没有窒息的迹象</td>
+      <td></td>
+      <td></td>
+      <td>[grounds, evidence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sign</th>
+      <td>ig</td>
+      <td>5.10</td>
+      <td>adj</td>
+      <td>saɪn</td>
+      <td>['gestural', 'sign-language', 'signed'], similarTo:['communicative', 'communicatory']</td>
+      <td></td>
+      <td>used of the language of the deaf用于聋人的语言</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sigh</th>
+      <td>ig</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>saɪ</td>
+      <td>['suspire']</td>
+      <td></td>
+      <td>heave or utter a sigh; breathe deeply and heavily叹了口气或叹了口气;深深地呼吸</td>
+      <td>She sighed sadly她伤心地叹了口气</td>
+      <td></td>
+      <td></td>
+      <td>[respire, take a breath, suspire, breathe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sigh</th>
+      <td>ig</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>saɪ</td>
+      <td></td>
+      <td></td>
+      <td>utter with a sigh叹了口气</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utter, emit, let loose, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sigh</th>
+      <td>ig</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>saɪ</td>
+      <td>['suspiration']</td>
+      <td></td>
+      <td>an utterance made by exhaling audibly通过听觉呼气所产生的话语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utterance, vocalization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sigh</th>
+      <td>ig</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>saɪ</td>
+      <td></td>
+      <td></td>
+      <td>a sound like a person sighing听起来就像一个人在叹息</td>
+      <td>she heard the sigh of the wind in the trees她听到树上的风叹息</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>digs</th>
+      <td>ig</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>dɪɡz</td>
+      <td>['diggings']</td>
+      <td></td>
+      <td>an excavation for ore or precious stones or for archaeology挖掘矿石或宝石或考古学</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[excavation]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>digs</th>
+      <td>ig</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>dɪɡz</td>
+      <td>['diggings', 'domiciliation', 'lodgings', 'pad']</td>
+      <td></td>
+      <td>temporary living quarters临时居住区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[living quarters, quarters]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twig</th>
+      <td>ig</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>twɪɡ</td>
+      <td>['catch on', 'cotton on', 'get it', 'get onto', 'get wise', 'latch on', 'tumble']</td>
+      <td></td>
+      <td>understand, usually after some initial difficulty了解，通常是经过一些初步的困难</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[apprehend, savvy, get the picture, grasp, grok, compass, comprehend, dig]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twig</th>
+      <td>ig</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>twɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>branch out in a twiglike manner以枝状的方式分叉</td>
+      <td>The lightning bolt twigged in several directions闪电箭在几个方向上蜿蜒曲折</td>
+      <td></td>
+      <td></td>
+      <td>[separate, branch, fork, furcate, ramify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twig</th>
+      <td>ig</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>twɪɡ</td>
+      <td>['branchlet', 'sprig']</td>
+      <td></td>
+      <td>a small branch or division of a branch (especially a terminal division); usually applied to branches of the current or preceding year分支机构的一个小分支机构（特别是终端分部）;通常适用于当前或前一年的分支机构</td>
+      <td></td>
+      <td>[twiggy]</td>
+      <td></td>
+      <td>[branch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swig</th>
+      <td>ig</td>
+      <td>3.18</td>
+      <td>ver</td>
+      <td>swɪɡ</td>
+      <td>['slog', 'slug']</td>
+      <td></td>
+      <td>strike heavily, especially with the fist or a bat严重打击，特别是用拳头或蝙蝠</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swig</th>
+      <td>ig</td>
+      <td>3.18</td>
+      <td>ver</td>
+      <td>swɪɡ</td>
+      <td>['gulp', 'quaff']</td>
+      <td></td>
+      <td>to swallow hurriedly or greedily or in one draught匆匆或贪婪或在一次选秀中吞下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imbibe, drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swig</th>
+      <td>ig</td>
+      <td>3.18</td>
+      <td>nou</td>
+      <td>swɪɡ</td>
+      <td>['draft', 'draught', 'gulp']</td>
+      <td></td>
+      <td>a large and hurried swallow一只大而匆匆的燕子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drink, swallow, deglutition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>brɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a penal institution (especially on board a ship)惩教机构（特别是在船上）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[penal facility, penal institution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brig</th>
+      <td>ig</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>brɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>two-masted sailing vessel square-rigged on both masts双桅帆船在两个桅杆上方形装配</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sailing ship, sailing vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nigh</th>
+      <td>ig</td>
+      <td>2.94</td>
+      <td>adv</td>
+      <td>naɪ</td>
+      <td>['close', 'near']</td>
+      <td></td>
+      <td>near in time or place or relationship在时间，地点或关系附近</td>
+      <td>The end draws nigh结束了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nigh</th>
+      <td>ig</td>
+      <td>2.94</td>
+      <td>adv</td>
+      <td>naɪ</td>
+      <td>['about', 'almost', 'most', 'near', 'nearly', 'virtually', 'well-nigh']</td>
+      <td></td>
+      <td>(of actions or states) slightly short of or not quite accomplished; all but（行动或国家）略微缺乏或没有完成;除了</td>
+      <td>talked for nigh onto 2 hours谈了两个小时the recording is well-nigh perfect录音几乎是完美的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nigh</th>
+      <td>ig</td>
+      <td>2.94</td>
+      <td>adj</td>
+      <td>naɪ</td>
+      <td>['close', 'near'], similarTo:['adjacent', 'hot', 'nearby', 'warm']</td>
+      <td></td>
+      <td>not far distant in time or space or degree or circumstances在时间，空间或程度或情况下不远处</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nigh</th>
+      <td>ig</td>
+      <td>2.94</td>
+      <td>adj</td>
+      <td>naɪ</td>
+      <td>['near'], similarTo:['left']</td>
+      <td></td>
+      <td>being on the left side在左边</td>
+      <td>the near or nigh horse is the one on the left近或近的马是左边的那匹马the animal's left side is its near or nigh side动物的左侧是近侧或近侧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trig</th>
+      <td>ig</td>
+      <td>2.64</td>
+      <td>nou</td>
+      <td>trɪɡ</td>
+      <td>['trigonometry']</td>
+      <td></td>
+      <td>the mathematics of triangles and trigonometric functions三角形和三角函数的数学</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pure mathematics]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trig</th>
+      <td>ig</td>
+      <td>2.64</td>
+      <td>adj</td>
+      <td>trɪɡ</td>
+      <td>['clean-cut', 'trim'], similarTo:['tidy']</td>
+      <td></td>
+      <td>neat and smart in appearance外观整洁，聪明</td>
+      <td>the trig corporal in his jaunty cap他的活泼帽子中的三角下士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prig</th>
+      <td>ig</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>prɪɡ</td>
+      <td>['snob', 'snoot', 'snot']</td>
+      <td></td>
+      <td>a person regarded as arrogant and annoying被视为傲慢和烦人的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whig</th>
+      <td>ig</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>hwɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a member of the political party that urged social reform in 18th and 19th century England; was the opposition party to the Tories18-19世纪英格兰敦促社会改革的政党成员;是托利党的反对党</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[englishman, liberal, liberalist, progressive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whig</th>
+      <td>ig</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>hwɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a member of the Whig Party that existed in the United States before the American Civil War在美国内战前存在于美国的辉格党成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pol, politician, politico, political leader]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whig</th>
+      <td>ig</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>hwɪɡ</td>
+      <td></td>
+      <td></td>
+      <td>a supporter of the American Revolution美国革命的支持者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supporter, booster, champion, friend, protagonist, admirer]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

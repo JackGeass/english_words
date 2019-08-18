@@ -1,0 +1,305 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['nice', 'rice', 'vice', 'dice']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>nice</th>
+      <td>ice</td>
+      <td>5.78</td>
+      <td>nou</td>
+      <td>nis</td>
+      <td></td>
+      <td></td>
+      <td>a city in southeastern France on the Mediterranean; the leading resort on the French Riviera法国东南部一个地中海城市;法国里维埃拉的主要度假胜地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nice</th>
+      <td>ice</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>nis</td>
+      <td>['skillful'], similarTo:['precise']</td>
+      <td></td>
+      <td>done with delicacy and skill以精致和技巧完成</td>
+      <td>a nice bit of craft一点点工艺a job requiring nice measurements with a micrometer需要使用千分尺进行精确测量的工作a nice shot一个很好的镜头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nice</th>
+      <td>ice</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>nis</td>
+      <td>['dainty', 'overnice', 'prissy', 'squeamish'], similarTo:['fastidious']</td>
+      <td></td>
+      <td>excessively fastidious and easily disgusted过分挑剔，容易反感</td>
+      <td>too nice about his food to take to camp cooking太好吃了他的食物去营地做饭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nice</th>
+      <td>ice</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>nis</td>
+      <td>['decent'], similarTo:['respectable']</td>
+      <td></td>
+      <td>socially or conventionally correct; refined or virtuous社会或传统上正确的;精致或善良</td>
+      <td>a nice girl一个好女孩</td>
+      <td>[niceness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nice</th>
+      <td>ice</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>nis</td>
+      <td>['courteous', 'gracious'], similarTo:['polite']</td>
+      <td></td>
+      <td>exhibiting courtesy and politeness表现出礼貌和礼貌</td>
+      <td>a nice gesture一个很好的姿态</td>
+      <td>[niceness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nice</th>
+      <td>ice</td>
+      <td>5.78</td>
+      <td>adj</td>
+      <td>nis</td>
+      <td>, similarTo:['good', 'pleasant'], alos:['pleasant']</td>
+      <td>[nasty]</td>
+      <td>pleasant or pleasing or agreeable in nature or appearance在性质或外观上令人愉悦或愉悦或愉快</td>
+      <td>what a nice fellow you are and we all thought you so nasty你真是个好人，我们都认为你这么讨厌nice manners礼貌a nice dress一件漂亮的衣服a nice face一张漂亮的脸蛋a nice day美好的一天had a nice time at the party在聚会上过得愉快the corn and tomatoes are nice today玉米和西红柿今天很好吃</td>
+      <td>[niceness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rice</th>
+      <td>ice</td>
+      <td>4.50</td>
+      <td>ver</td>
+      <td>raɪs</td>
+      <td></td>
+      <td></td>
+      <td>sieve so that it becomes the consistency of rice筛子使它成为大米的一致性</td>
+      <td>rice the potatoes把土豆碾碎</td>
+      <td>[ricer]</td>
+      <td></td>
+      <td>[sift, strain, sieve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rice</th>
+      <td>ice</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>raɪs</td>
+      <td>['sir tim rice', 'timothy miles bindon rice']</td>
+      <td></td>
+      <td>English lyricist who frequently worked with Andrew Lloyd Webber (born in 1944)经常与Andrew Lloyd Webber合作的英国词作者（出生于1944年）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rice</th>
+      <td>ice</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>raɪs</td>
+      <td>['elmer leopold rice', 'elmer reizenstein', 'elmer rice']</td>
+      <td></td>
+      <td>United States playwright (1892-1967)美国剧作家（1892-1967）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rice</th>
+      <td>ice</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>raɪs</td>
+      <td></td>
+      <td></td>
+      <td>annual or perennial rhizomatous marsh grasses; seed used for food; straw used for paper一年生或多年生根茎沼泽草;用于食物的种子;用于纸张的稻草</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cereal, cereal grass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rice</th>
+      <td>ice</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>raɪs</td>
+      <td></td>
+      <td></td>
+      <td>grains used as food either unpolished or more often polished用作食物的谷物，未经抛光或经常抛光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cereal, food grain, starches, grain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vice</th>
+      <td>ice</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>'vaɪsi</td>
+      <td>['frailty']</td>
+      <td></td>
+      <td>moral weakness道德上的弱点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[evil, evilness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vice</th>
+      <td>ice</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>'vaɪsi</td>
+      <td></td>
+      <td></td>
+      <td>a specific form of evildoing一种特定形式的恶行</td>
+      <td>vice offends the moral standards of the community副罪恶冒犯了社区的道德标准</td>
+      <td>[vicious]</td>
+      <td></td>
+      <td>[transgression, evildoing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dice</th>
+      <td>ice</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>daɪs</td>
+      <td>['cube']</td>
+      <td></td>
+      <td>cut into cubes切成方块</td>
+      <td></td>
+      <td>[dicer]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dice</th>
+      <td>ice</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>daɪs</td>
+      <td></td>
+      <td></td>
+      <td>play dice玩骰子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gamble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dice</th>
+      <td>ice</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>daɪs</td>
+      <td>['die']</td>
+      <td></td>
+      <td>a small cube with 1 to 6 spots on the six faces; used in gambling to generate random numbers一个小立方体，六个面上有1到6个斑点;用于赌博生成随机数</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cube, square block]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

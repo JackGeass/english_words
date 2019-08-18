@@ -1,0 +1,920 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['bitch', 'witch', 'pitch', 'ditch', 'hitch', 'itchy', 'fitch']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bitch</th>
+      <td>itch</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>bɪʧ</td>
+      <td>['backbite']</td>
+      <td></td>
+      <td>say mean things说些意思</td>
+      <td></td>
+      <td>[bitchery]</td>
+      <td></td>
+      <td>[sound off, plain, complain, kick, quetch, kvetch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bitch</th>
+      <td>itch</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>bɪʧ</td>
+      <td>['beef', 'bellyache', 'crab', 'gripe', 'grouse', 'holler', 'squawk']</td>
+      <td></td>
+      <td>complain抱怨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kick, quetch, sound off, complain, kvetch, plain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bitch</th>
+      <td>itch</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>bɪʧ</td>
+      <td>['beef', 'gripe', 'kick', 'squawk']</td>
+      <td></td>
+      <td>informal terms for objecting反对的非正式术语</td>
+      <td></td>
+      <td>[bitchy]</td>
+      <td></td>
+      <td>[objection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bitch</th>
+      <td>itch</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>bɪʧ</td>
+      <td>['cunt']</td>
+      <td></td>
+      <td>a person (usually but not necessarily a woman) who is thoroughly disliked一个完全不喜欢的人（通常但不一定是女人）</td>
+      <td>she said her son thought Hillary was a bitch她说她的儿子认为希拉里是个婊子</td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bitch</th>
+      <td>itch</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>bɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>an unpleasant difficulty一个令人不快的困难</td>
+      <td>this problem is a real bitch这个问题是一个真正的婊子</td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td>[argot, cant, jargon, lingo, patois, slang, vernacular]</td>
+    </tr>
+    <tr>
+      <th>bitch</th>
+      <td>itch</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>bɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>female of any member of the dog family任何狗家庭成员的女性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[canine, canid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>witch</th>
+      <td>itch</td>
+      <td>4.32</td>
+      <td>ver</td>
+      <td>wɪʧ</td>
+      <td>['bewitch', 'enchant', 'glamour', 'hex', 'jinx']</td>
+      <td></td>
+      <td>cast a spell over someone or something; put a hex on someone or something对某人或某事施加咒语;对某人或某事施加十六进制</td>
+      <td></td>
+      <td>[witchery]</td>
+      <td></td>
+      <td>[becharm, charm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>witch</th>
+      <td>itch</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>wɪʧ</td>
+      <td>['enchantress']</td>
+      <td></td>
+      <td>a female sorcerer or magician女巫师或魔术师</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[occultist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>witch</th>
+      <td>itch</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>wɪʧ</td>
+      <td>['beldam', 'beldame', 'crone', 'hag']</td>
+      <td></td>
+      <td>an ugly evil-looking old woman一个丑陋邪恶的老太婆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[old woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>witch</th>
+      <td>itch</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>wɪʧ</td>
+      <td>['wiccan']</td>
+      <td></td>
+      <td>a believer in WiccaWicca的信徒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pagan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>witch</th>
+      <td>itch</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>wɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a being (usually female) imagined to have special powers derived from the devil一个存在（通常是女性）想象具有来自魔鬼的特殊能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imaginary being, imaginary creature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['gear']</td>
+      <td></td>
+      <td>set the level or character of设置的级别或性质</td>
+      <td>She pitched her speech to the teenagers in the audience她向观众中的青少年发表演讲</td>
+      <td></td>
+      <td></td>
+      <td>[accommodate, adapt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['deliver']</td>
+      <td></td>
+      <td>throw or hurl from the mound to the batter, as in baseball像棒球一样从土墩投掷或投掷到击球手</td>
+      <td>The pitcher delivered the ball投手传球</td>
+      <td>[pitcher]</td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['cant', 'cant over', 'slant', 'tilt']</td>
+      <td></td>
+      <td>heel over脚后跟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['incline', 'slope']</td>
+      <td></td>
+      <td>be at an angle有一个角度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tilt, tip, lean, angle, slant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['hawk', 'huckster', 'monger', 'peddle', 'vend']</td>
+      <td></td>
+      <td>sell or offer for sale from place to place出售或出售从一个地方到另一个地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trade, deal, sell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['set up']</td>
+      <td></td>
+      <td>erect and fasten直立和紧固</td>
+      <td>pitch a tent搭一个帐篷</td>
+      <td></td>
+      <td></td>
+      <td>[erect, rear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['lurch', 'shift']</td>
+      <td></td>
+      <td>move abruptly突然行动</td>
+      <td></td>
+      <td>[pitching]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td>['flip', 'sky', 'toss']</td>
+      <td></td>
+      <td>throw or toss with a light motion投掷或折腾轻微运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>fall or plunge forward跌倒或向前冲</td>
+      <td>She pitched over the railing of the balcony她搭在阳台的栏杆上</td>
+      <td></td>
+      <td></td>
+      <td>[go down, descend, come down, fall]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>hit (a golf ball) in a high arc with a backspin击球（高尔夫球），高回旋，后旋</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>lead (a card) and establish the trump suit领先（一张牌）并建立王牌套装</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>pɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>set to a certain pitch设置为一定的音高</td>
+      <td>He pitched his voice very low他的声音很低</td>
+      <td></td>
+      <td></td>
+      <td>[set]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['tar']</td>
+      <td></td>
+      <td>any of various dark heavy viscid substances obtained as a residue作为残留物获得的各种深色重粘物质中的任何一种</td>
+      <td></td>
+      <td>[pitchy]</td>
+      <td></td>
+      <td>[bitumen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['lurch', 'pitching']</td>
+      <td></td>
+      <td>abrupt up-and-down motion (as caused by a ship or other conveyance)突然上下运动（由船舶或其他运输工具引起）</td>
+      <td>the pitching and tossing was quite exciting投球和投球非常令人兴奋</td>
+      <td></td>
+      <td></td>
+      <td>[motility, move, motion, movement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['sales pitch', 'sales talk']</td>
+      <td></td>
+      <td>promotion by means of an argument and demonstration通过论证和示范进行宣传</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[promotion, publicity, packaging, promo, promotional material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['auction pitch']</td>
+      <td></td>
+      <td>an all-fours game in which the first card led is a trump一个四肢游戏，其中第一张牌是特朗普</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[high-low-jack, all fours]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['soccer field']</td>
+      <td></td>
+      <td>a sports field with predetermined dimensions for playing soccer具有预定尺寸的运动场，用于踢足球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[playing area, athletic field, playing field, field]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['pitch shot']</td>
+      <td></td>
+      <td>a high approach shot in golf在高尔夫球场打高射门</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[approach shot, approach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['delivery']</td>
+      <td></td>
+      <td>(baseball) the act of throwing a baseball by a pitcher to a batter（棒球）用投手投掷棒球给击球手的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td>['rake', 'slant']</td>
+      <td></td>
+      <td>degree of deviation from a horizontal plane偏离水平面的程度</td>
+      <td>the roof had a steep pitch屋顶有一个陡峭的间距</td>
+      <td></td>
+      <td></td>
+      <td>[gradient, slope]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a vendor's position (especially on the sidewalk)供应商的位置（特别是在人行道上）</td>
+      <td>he was employed to see that his paper's news pitches were not trespassed upon by rival vendors他受雇于看到他的论文的新闻宣传不被竞争对手的供应商侵犯</td>
+      <td></td>
+      <td></td>
+      <td>[place, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>the action or manner of throwing something扔东西的动作或方式</td>
+      <td>his pitch fell short and his hat landed on the floor他的音调不足，他的帽子降落在地板上</td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pitch</th>
+      <td>itch</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>pɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>the property of sound that varies with variation in the frequency of vibration声音的特性随振动频率的变化而变化</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>ver</td>
+      <td>dɪʧ</td>
+      <td>['dump']</td>
+      <td></td>
+      <td>sever all ties with, usually unceremoniously or irresponsibly通常毫不客气地或不负责任地切断所有联系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remove, get rid of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>ver</td>
+      <td>dɪʧ</td>
+      <td>['trench']</td>
+      <td></td>
+      <td>cut a trench in, as for drainage排水沟，排水沟</td>
+      <td>ditch the land to drain it抛弃土地以排干它</td>
+      <td></td>
+      <td></td>
+      <td>[excavate, dig, hollow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>ver</td>
+      <td>dɪʧ</td>
+      <td>['chuck']</td>
+      <td></td>
+      <td>throw away丢弃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[abandon]</td>
+      <td>[patois, jargon, cant, argot, lingo, vernacular, slang]</td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>ver</td>
+      <td>dɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>crash or crash-land崩溃或崩溃</td>
+      <td>ditch a car扔车ditch a plane丢了一架飞机</td>
+      <td></td>
+      <td></td>
+      <td>[crash]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>ver</td>
+      <td>dɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>forsake背叛</td>
+      <td>ditch a lover放弃一个情人</td>
+      <td></td>
+      <td></td>
+      <td>[desolate, abandon, forsake, desert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>ver</td>
+      <td>dɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>make an emergency landing on water紧急降落在水面上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crash land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>dɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a long narrow excavation in the earth在地球上进行一次狭长的挖掘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[excavation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ditch</th>
+      <td>itch</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>dɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>any small natural waterway任何小型天然水道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[waterway]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hɪʧ</td>
+      <td>['catch']</td>
+      <td>[unhitch]</td>
+      <td>to hook or entangle钩住或纠缠</td>
+      <td></td>
+      <td></td>
+      <td>[catch]</td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hɪʧ</td>
+      <td>['gimp', 'hobble', 'limp']</td>
+      <td></td>
+      <td>walk impeded by some physical limitation or injury受到某些身体限制或伤害的阻碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hɪʧ</td>
+      <td>['buck', 'jerk']</td>
+      <td></td>
+      <td>jump vertically, with legs stiff and back arched垂直跳跃，双腿僵硬，背部拱起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hɪʧ</td>
+      <td>['hitchhike', 'thumb']</td>
+      <td></td>
+      <td>travel by getting free rides from motorists从驾驶者那里获得免费乘车旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>connect to a vehicle:连接到车辆：</td>
+      <td>hitch the trailer to the car将拖车挂在车上</td>
+      <td></td>
+      <td></td>
+      <td>[tie, connect, link up, link]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɪʧ</td>
+      <td>['duty tour', 'enlistment', 'term of enlistment', 'tour', 'tour of duty']</td>
+      <td></td>
+      <td>a period of time spent in military service在军队服役的一段时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[time period, period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɪʧ</td>
+      <td>['hang-up', 'rub', 'snag']</td>
+      <td></td>
+      <td>an unforeseen obstacle一个无法预料的障碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obstacle, obstruction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɪʧ</td>
+      <td>['arrest', 'check', 'halt', 'stay', 'stop', 'stoppage']</td>
+      <td></td>
+      <td>the state of inactivity following an interruption中断后的不活动状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inactiveness, inactivity, inaction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɪʧ</td>
+      <td>['hobble', 'limp']</td>
+      <td></td>
+      <td>the uneven manner of walking that results from an injured leg腿部受伤引起的不均匀行走方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɪʧ</td>
+      <td>['encumbrance', 'hinderance', 'hindrance', 'incumbrance', 'interference', 'preventative', 'preventive']</td>
+      <td></td>
+      <td>any obstruction that impedes or is burdensome任何妨碍或繁重的障碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[impediment, impedimenta, obstructer, obstruction, obstructor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a connection between a vehicle and the load that it pulls车辆与其拉动的负载之间的连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[connective, connector, connexion, connecter, connection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hitch</th>
+      <td>itch</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>a knot that can be undone by pulling against the strain that holds it; a temporary knot一个结，可以通过拉动持有它的应变来解除;一个临时的结</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[knot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itchy</th>
+      <td>itch</td>
+      <td>3.45</td>
+      <td>adj</td>
+      <td>'ɪʧi</td>
+      <td>['antsy', 'fidgety', 'fretful'], similarTo:['tense']</td>
+      <td></td>
+      <td>nervous and unable to relax紧张，无法放松</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itchy</th>
+      <td>itch</td>
+      <td>3.45</td>
+      <td>adj</td>
+      <td>'ɪʧi</td>
+      <td>, similarTo:['painful']</td>
+      <td></td>
+      <td>causing an irritating cutaneous sensation; being affect with an itch引起刺激性皮肤感觉;受痒影响</td>
+      <td>he had an itchy toe from the mosquito bite蚊子叮咬时脚趾发痒</td>
+      <td>[itch, itchiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fitch</th>
+      <td>itch</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>fɪʧ</td>
+      <td>['foulmart', 'foumart', 'mustela putorius', 'polecat']</td>
+      <td></td>
+      <td>dark brown mustelid of woodlands of Eurasia that gives off an unpleasant odor when threatened欧亚大陆的黑褐色鼬类，在受到威胁时散发出令人不快的气味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mustelid, musteline, musteline mammal]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

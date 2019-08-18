@@ -1,0 +1,545 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['box', 'fox', 'cox', 'pox', 'vox', 'lox', 'nox']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bɑks</td>
+      <td>['package']</td>
+      <td>[unbox]</td>
+      <td>put into a box放进一个盒子里</td>
+      <td>box the gift, please请把礼物包装好</td>
+      <td>[boxing, boxer]</td>
+      <td></td>
+      <td>[case, encase, incase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bɑks</td>
+      <td></td>
+      <td></td>
+      <td>engage in a boxing match参加拳击比赛</td>
+      <td></td>
+      <td>[boxing, boxer]</td>
+      <td></td>
+      <td>[fight, struggle, contend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>bɑks</td>
+      <td></td>
+      <td></td>
+      <td>hit with the fist用拳头打</td>
+      <td>I'll box your ears!我会把你的耳朵包起来！</td>
+      <td>[boxer, boxing]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td>['loge']</td>
+      <td></td>
+      <td>private area in a theater or grandstand where a small group can watch the performance剧院或看台上的私人区域，小组可以观看表演</td>
+      <td>the royal box was empty皇家盒子空无一人</td>
+      <td></td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td>['box seat']</td>
+      <td></td>
+      <td>the driver's seat on a coach驾驶员坐在教练座位上</td>
+      <td>an armed guard sat in the box with the driver一名武装警卫与司机坐在一起</td>
+      <td></td>
+      <td></td>
+      <td>[seat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td>['boxful']</td>
+      <td></td>
+      <td>the quantity contained in a box包装盒中的数量</td>
+      <td>he gave her a box of chocolates他给了她一盒巧克力</td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td>['boxwood']</td>
+      <td></td>
+      <td>evergreen shrubs or small trees常绿灌木或小乔木</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bush, shrub]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td>['corner']</td>
+      <td></td>
+      <td>a predicament from which a skillful or graceful escape is impossible一种难以从中获得熟练或优雅逃避的困境</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plight, quandary, predicament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td></td>
+      <td></td>
+      <td>a blow with the hand (usually on the ear)用手打击（通常在耳朵上）</td>
+      <td>I gave him a good box on the ear我给了他一个好盒子</td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td></td>
+      <td></td>
+      <td>any one of several designated areas on a ball field where the batter or catcher or coaches are positioned球场上的几个指定区域中的任何一个，击球手或接球手或教练位于其中</td>
+      <td>the umpire warned the batter to stay in the batter's box裁判警告击球手留在击球手的盒子里</td>
+      <td></td>
+      <td></td>
+      <td>[area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td></td>
+      <td></td>
+      <td>a rectangular drawing矩形图</td>
+      <td>the flowchart contained many boxes该流程图包含许多框</td>
+      <td></td>
+      <td></td>
+      <td>[rectangle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td></td>
+      <td></td>
+      <td>a (usually rectangular) container; may have a lid一个（通常是矩形的）容器;可能有盖子</td>
+      <td>he rummaged through a box of spare parts他翻遍一箱零件</td>
+      <td>[boxy]</td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>box</th>
+      <td>ox</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>bɑks</td>
+      <td></td>
+      <td></td>
+      <td>separate partitioned area in a public place for a few people在公共场所为少数人分隔区域</td>
+      <td>the sentry stayed in his box to avoid the cold哨兵留在他的箱子里避免感冒</td>
+      <td></td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>fɑks</td>
+      <td>['flim-flam', 'fob', 'play a joke on', 'play a trick on', 'play tricks', 'pull a fast one on', 'trick']</td>
+      <td></td>
+      <td>deceive somebody欺骗某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cozen, deceive, delude, lead on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>fɑks</td>
+      <td>['bedevil', 'befuddle', 'confound', 'confuse', 'discombobulate', 'fuddle', 'throw']</td>
+      <td></td>
+      <td>be confusing or perplexing to; cause to be unable to think clearly令人困惑或困惑;导致无法清楚地思考</td>
+      <td></td>
+      <td></td>
+      <td>[confuse, put off, disconcert, flurry]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>fɑks</td>
+      <td></td>
+      <td></td>
+      <td>become discolored with, or as if with, mildew spots变得褪色，或似乎有霉斑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>fɑks</td>
+      <td>['dodger', 'slyboots']</td>
+      <td></td>
+      <td>a shifty deceptive person一个狡猾的欺骗者</td>
+      <td></td>
+      <td>[foxy]</td>
+      <td></td>
+      <td>[slicker, beguiler, cheat, cheater, deceiver, trickster]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>fɑks</td>
+      <td>['charles james fox']</td>
+      <td></td>
+      <td>English statesman who supported American independence and the French Revolution (1749-1806)支持美国独立和法国大革命的英国政治家（1749-1806）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>fɑks</td>
+      <td>['george fox']</td>
+      <td></td>
+      <td>English religious leader who founded the Society of Friends (1624-1691)建立朋友协会的英国宗教领袖（1624-1691）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>fɑks</td>
+      <td></td>
+      <td></td>
+      <td>alert carnivorous mammal with pointed muzzle and ears and a bushy tail; most are predators that do not hunt in packs警报食肉哺乳动物，尖嘴和耳朵，浓密的尾巴;大多数是没有打包的掠食者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[canine, canid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>fɑks</td>
+      <td></td>
+      <td></td>
+      <td>a member of an Algonquian people formerly living west of Lake Michigan along the Fox River以前居住在密歇根湖以西的福克斯河沿岸的阿尔冈昆人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[algonquian, algonquin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>fɑks</td>
+      <td></td>
+      <td></td>
+      <td>the Algonquian language of the Fox福克斯的阿尔冈昆语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[algonquian language, algonquin, algonquian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fox</th>
+      <td>ox</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>fɑks</td>
+      <td></td>
+      <td></td>
+      <td>the grey or reddish-brown fur of a fox狐狸的灰色或红棕色皮毛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fur, pelt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cox</th>
+      <td>ox</td>
+      <td>3.41</td>
+      <td>ver</td>
+      <td>kɑks</td>
+      <td></td>
+      <td></td>
+      <td>act as the coxswain, in a boat race在赛艇比赛中充当舵手</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[follow, be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cox</th>
+      <td>ox</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>kɑks</td>
+      <td>['cyclooxygenase']</td>
+      <td></td>
+      <td>either of two related enzymes that control the production of prostaglandins and are blocked by aspirin控制前列腺素产生的两种相关酶中的任一种，并被阿司匹林阻断</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enzyme]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cox</th>
+      <td>ox</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>kɑks</td>
+      <td>['coxswain']</td>
+      <td></td>
+      <td>the helmsman of a ship's boat or a racing crew船上的舵手或赛艇工作人员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[steersman, steerer, helmsman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pox</th>
+      <td>ox</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>pɑks</td>
+      <td>['lues', 'lues venerea', 'syph', 'syphilis']</td>
+      <td></td>
+      <td>a common venereal disease caused by the treponema pallidum spirochete; symptoms change through progressive stages; can be congenital (transmitted through the placenta)由梅毒螺旋体引起的一种常见的性病;症状通过进步阶段改变;可以是先天性的（通过胎盘传播）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[social disease, venus's curse, venereal infection, venereal disease, vd, cupid's disease, cupid's itch, dose, sexually transmitted disease, std]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pox</th>
+      <td>ox</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>pɑks</td>
+      <td></td>
+      <td></td>
+      <td>a contagious disease characterized by purulent skin eruptions that may leave pock marks一种传染性疾病，其特征为化脓性皮疹，可能留下麻点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contagion, contagious disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vox</th>
+      <td>ox</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>vɑks</td>
+      <td>['phonation', 'vocalisation', 'vocalism', 'vocalization', 'voice']</td>
+      <td></td>
+      <td>the sound made by the vibration of vocal folds modified by the resonance of the vocal tract通过声道共振改变的声带振动产生的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lox</th>
+      <td>ox</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>lɑks</td>
+      <td>['liquid oxygen']</td>
+      <td></td>
+      <td>a bluish translucent magnetic liquid obtained by compressing gaseous oxygen and then cooling it below its boiling point; used as an oxidizer in rocket propellants通过压缩气态氧然后将其冷却至沸点以下而获得的蓝色半透明磁性液体;用作火箭推进剂中的氧化剂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[o, atomic number 8, oxygen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lox</th>
+      <td>ox</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>lɑks</td>
+      <td></td>
+      <td></td>
+      <td>brine-cured salmon that is lightly smoked盐水腌三文鱼，轻微熏制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smoked salmon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nox</th>
+      <td>ox</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td></td>
+      <td>['night']</td>
+      <td></td>
+      <td>Roman goddess of night; daughter of Erebus; counterpart of Greek Nyx罗马女神的夜晚;埃里伯斯的女儿;希腊Nyx的对应物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

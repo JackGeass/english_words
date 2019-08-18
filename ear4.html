@@ -1,0 +1,1385 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hear', 'year', 'dear', 'wear', 'fear', 'near', 'bear', 'earn', 'tear', 'gear', 'rear']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hear</th>
+      <td>ear</td>
+      <td>5.69</td>
+      <td>ver</td>
+      <td>hir</td>
+      <td>['discover', 'find out', 'get a line', 'get wind', 'get word', 'learn', 'pick up', 'see']</td>
+      <td></td>
+      <td>get to know or become aware of, usually accidentally通常意外地了解或意识到</td>
+      <td></td>
+      <td></td>
+      <td>[witness, find, see]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hear</th>
+      <td>ear</td>
+      <td>5.69</td>
+      <td>ver</td>
+      <td>hir</td>
+      <td>['listen', 'take heed']</td>
+      <td></td>
+      <td>listen and pay attention倾听并注意</td>
+      <td>We must hear the expert before we make a decision在做出决定之前，我们必须先听取专家的意见</td>
+      <td>[hearer, hearing]</td>
+      <td></td>
+      <td>[concentrate, focus, center, centre, rivet, pore]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hear</th>
+      <td>ear</td>
+      <td>5.69</td>
+      <td>ver</td>
+      <td>hir</td>
+      <td>['try']</td>
+      <td></td>
+      <td>examine or hear (evidence or a case) by judicial process通过司法程序审查或听取（证据或案件）</td>
+      <td>The jury had heard all the evidence陪审团听取了所有证据</td>
+      <td>[hearing]</td>
+      <td></td>
+      <td>[probe, examine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hear</th>
+      <td>ear</td>
+      <td>5.69</td>
+      <td>ver</td>
+      <td>hir</td>
+      <td></td>
+      <td></td>
+      <td>perceive (sound) via the auditory sense通过听觉感知（声音）</td>
+      <td></td>
+      <td>[hearable, hearing]</td>
+      <td></td>
+      <td>[comprehend, perceive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hear</th>
+      <td>ear</td>
+      <td>5.69</td>
+      <td>ver</td>
+      <td>hir</td>
+      <td></td>
+      <td></td>
+      <td>receive a communication from someone收到某人的来信</td>
+      <td>We heard nothing from our son for five years我们的儿子五年没有听到任何消息</td>
+      <td></td>
+      <td></td>
+      <td>[pick up, receive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>year</th>
+      <td>ear</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>jir</td>
+      <td>['class']</td>
+      <td></td>
+      <td>a body of students who graduate together一群毕业的学生</td>
+      <td>she was in my year at Hoehandle High她在Hoehandle High的一年</td>
+      <td></td>
+      <td></td>
+      <td>[assemblage, gathering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>year</th>
+      <td>ear</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>jir</td>
+      <td>['twelvemonth', 'yr']</td>
+      <td></td>
+      <td>a period of time containing 365 (or 366) days一段时间，包含365（或366）天</td>
+      <td>she is 4 years old她今年4岁in the year 1920在1920年</td>
+      <td>[yearly]</td>
+      <td></td>
+      <td>[period of time, time period, period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>year</th>
+      <td>ear</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>jir</td>
+      <td></td>
+      <td></td>
+      <td>a period of time occupying a regular part of a calendar year that is used for some particular activity占用一个日历年的常规部分的一段时间，用于某些特定活动</td>
+      <td>a school year一个学年</td>
+      <td></td>
+      <td></td>
+      <td>[period, time period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>year</th>
+      <td>ear</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>jir</td>
+      <td></td>
+      <td></td>
+      <td>the period of time that it takes for a planet (as, e.g., Earth or Mars) to make a complete revolution around the sun行星（例如地球或火星）围绕太阳进行完整旋转所需的时间</td>
+      <td>a Martian year takes 687 of our days火星年需要687天</td>
+      <td></td>
+      <td></td>
+      <td>[time period, period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>nou</td>
+      <td>dir</td>
+      <td>['lamb']</td>
+      <td></td>
+      <td>a sweet innocent mild-mannered person (especially a child)一个甜美无辜的温文尔雅的人（特别是一个孩子）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[innocent, inexperienced person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>nou</td>
+      <td>dir</td>
+      <td>['beloved', 'dearest', 'honey', 'love']</td>
+      <td></td>
+      <td>a beloved person; used as terms of endearment一个心爱的人;用作昵称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>adv</td>
+      <td>dir</td>
+      <td>['affectionately', 'dearly']</td>
+      <td></td>
+      <td>with affection以情</td>
+      <td>she loved him dearly她非常爱他</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>adv</td>
+      <td>dir</td>
+      <td>['dearly']</td>
+      <td></td>
+      <td>at a great cost费用很高</td>
+      <td>he paid dearly for the food他为这些食物付出了沉重的代价this cost him dear这让他很珍惜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>adj</td>
+      <td>dir</td>
+      <td>['good', 'near'], similarTo:['close']</td>
+      <td></td>
+      <td>with or in a close or intimate relationship与亲密或亲密的关系</td>
+      <td>my sisters and brothers are near and dear亲朋好友，亲朋好友</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>adj</td>
+      <td>dir</td>
+      <td>['costly', 'high-priced', 'pricey', 'pricy'], similarTo:['expensive']</td>
+      <td></td>
+      <td>having a high price价格高</td>
+      <td>much too dear for my pocketbook我的钱包非常珍贵</td>
+      <td>[dearness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>adj</td>
+      <td>dir</td>
+      <td>['beloved', 'darling'], similarTo:['loved']</td>
+      <td></td>
+      <td>dearly loved深爱着</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dear</th>
+      <td>ear</td>
+      <td>5.29</td>
+      <td>adj</td>
+      <td>dir</td>
+      <td>['devout', 'earnest', 'heartfelt'], similarTo:['sincere']</td>
+      <td></td>
+      <td>sincerely earnest真诚的认真</td>
+      <td>one's dearest wish一个人最亲爱的愿望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td>['fag', 'fag out', 'fatigue', 'jade', 'outwear', 'tire', 'tire out', 'wear down', 'wear out', 'wear upon', 'weary']</td>
+      <td></td>
+      <td>exhaust or get tired through overuse or great strain or stress通过过度使用或巨大的压力或压力来消耗或疲惫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indispose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td>['have on']</td>
+      <td></td>
+      <td>be dressed in穿上衣服</td>
+      <td>She was wearing yellow that day那天她穿着黄色</td>
+      <td>[wearable, wearer]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td>['bear']</td>
+      <td></td>
+      <td>have on one's person拥有一个人</td>
+      <td></td>
+      <td>[wearable, wearing]</td>
+      <td></td>
+      <td>[feature, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td>['break', 'bust', 'fall apart', 'wear out'], alos:['wear away', 'wear off']</td>
+      <td></td>
+      <td>go to pieces吵架</td>
+      <td></td>
+      <td></td>
+      <td>[bust, break]</td>
+      <td>[decay, crumble, dilapidate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td>['assume', 'don', 'get into', 'put on']</td>
+      <td></td>
+      <td>put clothing on one's body把衣服放在一个人的身上</td>
+      <td>What should I wear today?我今天应该穿什么？</td>
+      <td>[wearable]</td>
+      <td></td>
+      <td>[dress, get dressed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td>['wear down', 'wear off', 'wear out', 'wear thin']</td>
+      <td></td>
+      <td>deteriorate through use or stress通过使用或压力恶化</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deteriorate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td>['endure', 'hold out']</td>
+      <td></td>
+      <td>last and be usable最后并且可以使用</td>
+      <td></td>
+      <td>[wearable]</td>
+      <td></td>
+      <td>[last, endure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td></td>
+      <td></td>
+      <td>have in one's aspect; wear an expression of one's attitude or personality有一个方面;表达一个人的态度或个性</td>
+      <td>He always wears a smile他总是带着微笑</td>
+      <td></td>
+      <td></td>
+      <td>[have, feature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>wɜr</td>
+      <td></td>
+      <td></td>
+      <td>have or show an appearance of有或显示的外观</td>
+      <td>wear one's hair in a certain way以某种方式穿一根头发</td>
+      <td></td>
+      <td></td>
+      <td>[feature, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>wɜr</td>
+      <td>['wearing']</td>
+      <td></td>
+      <td>the act of having on your person as a covering or adornment将你的人作为封面或装饰的行为</td>
+      <td>she bought it for everyday wear她为日常穿着买了它</td>
+      <td></td>
+      <td></td>
+      <td>[human action, human activity, deed, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>wɜr</td>
+      <td>['article of clothing', 'clothing', 'habiliment', 'vesture', 'wearable']</td>
+      <td></td>
+      <td>a covering designed to be worn on a person's body设计用于佩戴在人体上的覆盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering, consumer goods]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wear</th>
+      <td>ear</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>wɜr</td>
+      <td></td>
+      <td></td>
+      <td>impairment resulting from long use长期使用造成的损害</td>
+      <td>the tires showed uneven wear轮胎表现出不均匀的磨损</td>
+      <td></td>
+      <td></td>
+      <td>[impairment, deterioration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>ver</td>
+      <td>fir</td>
+      <td>['revere', 'reverence', 'venerate']</td>
+      <td></td>
+      <td>regard with feelings of respect and reverence; consider hallowed or exalted or be in awe of尊重和敬畏的感受;考虑神圣或崇高或敬畏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[respect, value, prize, prise, esteem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>ver</td>
+      <td>fir</td>
+      <td>['dread']</td>
+      <td></td>
+      <td>be afraid or scared of; be frightened of害怕或害怕;被吓坏了</td>
+      <td>I fear the winters in Moscow我担心莫斯科的冬天We should not fear the Communists!我们不应该害怕共产党人！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>ver</td>
+      <td>fir</td>
+      <td></td>
+      <td></td>
+      <td>be afraid or feel anxious or apprehensive about a possible or probable situation or event对可能或可能的情况或事件感到害怕或感到焦虑或担忧</td>
+      <td>I fear she might get aggressive我担心她会变得好斗</td>
+      <td></td>
+      <td></td>
+      <td>[worry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>ver</td>
+      <td>fir</td>
+      <td></td>
+      <td></td>
+      <td>be sorry; used to introduce an unpleasant statement遗憾;过去常常引入不愉快的陈述</td>
+      <td>I fear I won't make it to your wedding party我担心我不会参加你的婚礼</td>
+      <td></td>
+      <td></td>
+      <td>[regret]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>nou</td>
+      <td>fir</td>
+      <td>['care', 'concern']</td>
+      <td></td>
+      <td>an anxious feeling一种焦虑的感觉</td>
+      <td>they hushed it up out of fear of public reaction他们出于对公众反应的恐惧而匆匆忙忙</td>
+      <td></td>
+      <td></td>
+      <td>[anxiety]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>nou</td>
+      <td>fir</td>
+      <td>['awe', 'reverence', 'veneration']</td>
+      <td></td>
+      <td>a feeling of profound respect for someone or something对某人或某事有深刻尊重的感觉</td>
+      <td>the fear of God对上帝的敬畏</td>
+      <td></td>
+      <td></td>
+      <td>[emotion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>nou</td>
+      <td>fir</td>
+      <td>['fearfulness', 'fright']</td>
+      <td>[fearlessness]</td>
+      <td>an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)在预期某些特定的疼痛或危险时经历的情绪（通常伴随着逃离或战斗的欲望）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emotion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fear</th>
+      <td>ear</td>
+      <td>4.98</td>
+      <td>Non</td>
+      <td>fir</td>
+      <td></td>
+      <td></td>
+      <td>be uneasy or apprehensive about不安或担心</td>
+      <td>I fear the results of the final exams我担心期末考试的结果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>nir</td>
+      <td>['approach', 'come near', 'come on', 'draw close', 'draw near', 'go up']</td>
+      <td></td>
+      <td>move towards朝着去</td>
+      <td>They are drawing near他们正在靠近The enemy army came nearer and nearer敌军越来越近了</td>
+      <td></td>
+      <td>[come near, approach]</td>
+      <td>[come up, come]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adv</td>
+      <td>nir</td>
+      <td>['close', 'nigh']</td>
+      <td></td>
+      <td>near in time or place or relationship在时间，地点或关系附近</td>
+      <td>as the wedding day drew near随着婚礼日临近stood near the door站在门边don't shoot until they come near直到他们走近才开枪getting near to the true explanation接近真正的解释her mother is always near她的母亲总是在附近</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adv</td>
+      <td>nir</td>
+      <td>['about', 'almost', 'most', 'nearly', 'nigh', 'virtually', 'well-nigh']</td>
+      <td></td>
+      <td>(of actions or states) slightly short of or not quite accomplished; all but（行动或国家）略微缺乏或没有完成;除了</td>
+      <td>he nearly fainted他几乎昏了过去I was near exhausted by the run跑步时我差点儿筋疲力尽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adj</td>
+      <td>nir</td>
+      <td>['dear', 'good'], similarTo:['close']</td>
+      <td></td>
+      <td>with or in a close or intimate relationship与亲密或亲密的关系</td>
+      <td>my sisters and brothers are near and dear亲朋好友，亲朋好友</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adj</td>
+      <td>nir</td>
+      <td>['close', 'nigh'], similarTo:['hot', 'nearby', 'adjacent', 'warm']</td>
+      <td>[far]</td>
+      <td>not far distant in time or space or degree or circumstances在时间，空间或程度或情况下不远处</td>
+      <td>near neighbors靠近邻居in the near future在不远的将来they are near equals他们接近平等his nearest approach to success他最接近成功的方法a very near thing一个非常接近的事情a near hit by the bomb炸弹近在咫尺she was near tears她快要哭了</td>
+      <td>[nearness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adj</td>
+      <td>nir</td>
+      <td>['nigh'], similarTo:['left']</td>
+      <td></td>
+      <td>being on the left side在左边</td>
+      <td>the near or nigh horse is the one on the left近或近的马是左边的那匹马the animal's left side is its near or nigh side动物的左侧是近侧或近侧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adj</td>
+      <td>nir</td>
+      <td>['approximate'], similarTo:['close']</td>
+      <td></td>
+      <td>very close in resemblance非常接近的相似之处</td>
+      <td>a near likeness近乎相似</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adj</td>
+      <td>nir</td>
+      <td>['cheeseparing', 'close', 'penny-pinching', 'skinny'], similarTo:['stingy', 'ungenerous']</td>
+      <td></td>
+      <td>giving or spending with reluctance不情愿地给予或消费</td>
+      <td>very close (or near) with his money与他的钱非常接近（或接近）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>near</th>
+      <td>ear</td>
+      <td>4.96</td>
+      <td>adj</td>
+      <td>nir</td>
+      <td>, similarTo:['unreal', 'artificial']</td>
+      <td></td>
+      <td>closely resembling the genuine article与真正的文章非常相似</td>
+      <td>near beer靠近啤酒a dress of near satin一件近缎面的连衣裙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['abide', 'brook', 'digest', 'endure', 'put up', 'stand', 'stick out', 'stomach', 'suffer', 'support', 'tolerate']</td>
+      <td></td>
+      <td>put up with something or somebody unpleasant忍受某事或某人不愉快</td>
+      <td>I cannot bear his constant criticism我无法忍受他不断的批评</td>
+      <td>[bearable]</td>
+      <td>[suffer]</td>
+      <td>[permit, allow, let, countenance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['wear']</td>
+      <td></td>
+      <td>have on one's person拥有一个人</td>
+      <td>bear a scar忍受伤疤</td>
+      <td></td>
+      <td></td>
+      <td>[have, feature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['turn out'], alos:['bear out']</td>
+      <td></td>
+      <td>bring forth带来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['accept', 'assume', 'take over']</td>
+      <td></td>
+      <td>take on as one's own the expenses or debts of another person以自己的身份承担他人的费用或债务</td>
+      <td>She agreed to bear the responsibility她同意承担责任</td>
+      <td></td>
+      <td></td>
+      <td>[take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['acquit', 'behave', 'carry', 'comport', 'conduct', 'deport']</td>
+      <td></td>
+      <td>behave in a certain manner表现得某种程度</td>
+      <td></td>
+      <td>[bearing]</td>
+      <td></td>
+      <td>[hold, carry, move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['birth', 'deliver', 'give birth', 'have']</td>
+      <td></td>
+      <td>cause to be born因为出生</td>
+      <td></td>
+      <td></td>
+      <td>[gestate, carry, expect, have a bun in the oven]</td>
+      <td>[produce, bring forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['hold']</td>
+      <td></td>
+      <td>have rightfully; of rights, titles, and offices合理地;权利，职称和办公室</td>
+      <td>She bears the title of Duchess她拥有公爵夫人的头衔</td>
+      <td>[bearer]</td>
+      <td></td>
+      <td>[have got, hold, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['carry', 'contain', 'hold']</td>
+      <td></td>
+      <td>contain or hold; have within包含或保持;在...内</td>
+      <td></td>
+      <td></td>
+      <td>[take, hold, contain]</td>
+      <td>[include]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['pay', 'yield']</td>
+      <td></td>
+      <td>bring in带进来</td>
+      <td>interest-bearing accounts计息账户</td>
+      <td></td>
+      <td></td>
+      <td>[earn, gain, make, pull in, realise, bring in, take in, realize, clear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['carry', 'hold']</td>
+      <td></td>
+      <td>support or hold in a certain manner支持或以某种方式持有</td>
+      <td></td>
+      <td>[bearing]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['carry', 'expect', 'gestate', 'have a bun in the oven']</td>
+      <td></td>
+      <td>be pregnant with孕育</td>
+      <td>She is bearing his child她正带着他的孩子</td>
+      <td></td>
+      <td>[birth, deliver, have, give birth, expect]</td>
+      <td>[birth, deliver, have, give birth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td></td>
+      <td></td>
+      <td>have有</td>
+      <td>bear a resemblance有相似之处bear a signature签名</td>
+      <td></td>
+      <td></td>
+      <td>[have, feature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td></td>
+      <td></td>
+      <td>move while holding up or supporting在举起或支持时移动</td>
+      <td>bear a heavy load承受沉重的负担bear news熊新闻bearing orders轴承订单</td>
+      <td>[bearer]</td>
+      <td></td>
+      <td>[carry, transport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>bɜr</td>
+      <td></td>
+      <td>[bull]</td>
+      <td>an investor with a pessimistic market outlook; an investor who expects prices to fall and so sells now in order to buy later at a lower price投资者，市场前景悲观;一个投资者，他预计价格会下跌，因此现在卖出以便以较低价格买入</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[investor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bear</th>
+      <td>ear</td>
+      <td>4.83</td>
+      <td>nou</td>
+      <td>bɜr</td>
+      <td></td>
+      <td></td>
+      <td>massive plantigrade carnivorous or omnivorous mammals with long shaggy coats and strong claws大规模的野生食肉或杂食性哺乳动物，长毛茸茸的外套和强壮的爪子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[carnivore]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>earn</th>
+      <td>ear</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ɜrn</td>
+      <td>['bring in', 'clear', 'gain', 'make', 'pull in', 'realise', 'realize', 'take in']</td>
+      <td></td>
+      <td>earn on some commercial or business transaction; earn as salary or wages通过某些商业或商业交易获得;赚取工资或工资</td>
+      <td>She earns a lot in her new job她在新工作中赚了很多钱</td>
+      <td>[earner]</td>
+      <td>[make, net, clear, sack, sack up]</td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>earn</th>
+      <td>ear</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ɜrn</td>
+      <td>['garner', 'win']</td>
+      <td></td>
+      <td>acquire or deserve by one's efforts or actions通过一个人的努力或行动获得或应得</td>
+      <td></td>
+      <td>[earnings]</td>
+      <td></td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>tɜr</td>
+      <td>['deplumate', 'deplume', 'displume', 'pluck', 'pull']</td>
+      <td></td>
+      <td>strip of feathers一条羽毛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>tɜr</td>
+      <td>['buck', 'charge', 'shoot', 'shoot down']</td>
+      <td></td>
+      <td>move quickly and violently快速而猛烈地行动</td>
+      <td></td>
+      <td></td>
+      <td>[shoot, dart, dash, flash, scoot, scud]</td>
+      <td>[pelt along, hasten, hie, step on it, speed, rush along, belt along, bucket along, cannonball along, rush, hotfoot, race]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>tɜr</td>
+      <td>['bust', 'rupture', 'snap'], alos:['tear apart', 'tear up', 'tear down']</td>
+      <td></td>
+      <td>separate or cause to separate abruptly分开或导致突然分开</td>
+      <td>tear the paper撕纸</td>
+      <td></td>
+      <td></td>
+      <td>[part, disunite, separate, divide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>tɜr</td>
+      <td></td>
+      <td></td>
+      <td>fill with tears or shed tears充满泪水或流泪</td>
+      <td>Her eyes were tearing她的眼睛在流泪</td>
+      <td>[tearing]</td>
+      <td></td>
+      <td>[cry, weep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>tɜr</td>
+      <td></td>
+      <td></td>
+      <td>to separate or be separated by force用力分开或分开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, divide, disunite, separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>tɜr</td>
+      <td>['teardrop']</td>
+      <td></td>
+      <td>a drop of the clear salty saline solution secreted by the lacrimal glands一滴由泪腺分泌的透明盐水溶液</td>
+      <td>his story brought tears to her eyes他的故事给她的眼睛带来了泪水</td>
+      <td></td>
+      <td></td>
+      <td>[drop, driblet, drib]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>tɜr</td>
+      <td>['binge', 'bout', 'bust']</td>
+      <td></td>
+      <td>an occasion for excessive eating or drinking过度饮食的场合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[revelry, revel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>tɜr</td>
+      <td>['rent', 'rip', 'snag', 'split']</td>
+      <td></td>
+      <td>an opening made forcibly as by pulling apart通过拉开而强行打开的开口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gap, opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tear</th>
+      <td>ear</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>tɜr</td>
+      <td></td>
+      <td></td>
+      <td>the act of tearing撕裂的行为</td>
+      <td>he took the manuscript in both hands and gave it a mighty tear他双手拿着手稿，给了它一个强大的眼泪</td>
+      <td></td>
+      <td></td>
+      <td>[separation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gear</th>
+      <td>ear</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>ɡir</td>
+      <td>['pitch']</td>
+      <td></td>
+      <td>set the level or character of设置的级别或性质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adapt, accommodate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gear</th>
+      <td>ear</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>ɡir</td>
+      <td>['gear mechanism']</td>
+      <td></td>
+      <td>a mechanism for transmitting motion for some specific purpose (as the steering gear of a vehicle)为某些特定目的（作为车辆的舵机）传递运动的机构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gear</th>
+      <td>ear</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>ɡir</td>
+      <td>['gearing', 'geartrain', 'power train', 'train']</td>
+      <td></td>
+      <td>wheelwork consisting of a connected set of rotating gears by which force is transmitted or motion or torque is changed轮子由一组连接的旋转齿轮组成，通过这些齿轮传递力或改变运动或扭矩</td>
+      <td>the fool got his tie caught in the geartrain傻瓜把他的领带夹在了geartrain里</td>
+      <td></td>
+      <td></td>
+      <td>[wheelwork]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gear</th>
+      <td>ear</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>ɡir</td>
+      <td>['cogwheel', 'gear wheel', 'geared wheel']</td>
+      <td></td>
+      <td>a toothed wheel that engages another toothed mechanism in order to change the speed or direction of transmitted motion齿轮与另一个齿形机构啮合，以改变传动运动的速度或方向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wheel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gear</th>
+      <td>ear</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>ɡir</td>
+      <td>['appurtenance', 'paraphernalia']</td>
+      <td></td>
+      <td>equipment consisting of miscellaneous articles needed for a particular operation or sport etc.由特定作业或运动等所需的杂项物品组成的设备</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>rir</td>
+      <td>['lift', 'rise']</td>
+      <td></td>
+      <td>rise up升起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[look, seem, appear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>rir</td>
+      <td>['erect']</td>
+      <td></td>
+      <td>cause to rise up起因</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[get up, elevate, raise, bring up, lift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>rir</td>
+      <td>['erect', 'put up', 'raise', 'set up']</td>
+      <td></td>
+      <td>construct, build, or erect建造，建造或竖立</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[build, construct, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>rir</td>
+      <td>['rise up']</td>
+      <td></td>
+      <td>stand up on the hind legs, of quadrupeds站立在四足动物的后腿上</td>
+      <td>The horse reared in terror这匹马恐怖地饲养着</td>
+      <td></td>
+      <td></td>
+      <td>[straighten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>rir</td>
+      <td>['bring up', 'nurture', 'parent', 'raise']</td>
+      <td></td>
+      <td>look after a child until it is an adult照顾孩子，直到成年人为止</td>
+      <td></td>
+      <td>[rearing]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>rir</td>
+      <td>['back end', 'backside']</td>
+      <td>[front]</td>
+      <td>the side of an object that is opposite its front与正面相对的物体的一侧</td>
+      <td>his room was toward the rear of the hotel他的房间朝向酒店后方</td>
+      <td></td>
+      <td></td>
+      <td>[face, side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>rir</td>
+      <td>['back']</td>
+      <td>[front]</td>
+      <td>the side that goes last or is not normally seen最后一面或通常不会看到的一面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>rir</td>
+      <td>['arse', 'ass', 'backside', 'behind', 'bottom', 'bum', 'buns', 'butt', 'buttocks', 'can', 'derriere', 'fanny', 'fundament', 'hind end', 'hindquarters', 'keister', 'nates', 'posterior', 'prat', 'rear end', 'rump', 'seat', 'stern', 'tail', 'tail end', 'tooshie', 'tush']</td>
+      <td></td>
+      <td>the fleshy part of the human body that you sit on你坐在人体的肉质部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>rir</td>
+      <td>['back']</td>
+      <td></td>
+      <td>the part of something that is furthest from the normal viewer与普通观众最远的部分</td>
+      <td>it was hidden in the rear of the store它隐藏在商店的后面</td>
+      <td></td>
+      <td></td>
+      <td>[position, place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>rir</td>
+      <td></td>
+      <td>[head]</td>
+      <td>the back of a military formation or procession军事编队或游行的背后</td>
+      <td>infantrymen were in the rear步兵在后方</td>
+      <td></td>
+      <td></td>
+      <td>[formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rear</th>
+      <td>ear</td>
+      <td>4.01</td>
+      <td>adj</td>
+      <td>rir</td>
+      <td>['rearward'], similarTo:['back']</td>
+      <td></td>
+      <td>located in or toward the back or rear位于后方或后方或后方</td>
+      <td>the chair's rear legs椅子的后腿the rear door of the plane飞机的后门on the rearward side在后方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

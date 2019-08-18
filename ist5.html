@@ -1,0 +1,515 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['exist', 'twist', 'wrist', 'misty', 'whist', 'grist']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>exist</th>
+      <td>ist</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>ɪɡ'zɪst</td>
+      <td>['live', 'subsist', 'survive']</td>
+      <td></td>
+      <td>support oneself支持自己</td>
+      <td>he could barely exist on such a low wage他几乎不能以如此低的工资存在</td>
+      <td></td>
+      <td>[live on, endure, last, go, hold out, hold up, survive, live]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>exist</th>
+      <td>ist</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>ɪɡ'zɪst</td>
+      <td>['be']</td>
+      <td></td>
+      <td>have an existence, be extant有存在，存在</td>
+      <td></td>
+      <td>[existence, existent]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td>['rick', 'sprain', 'turn', 'wrench', 'wrick']</td>
+      <td></td>
+      <td>twist suddenly so as to sprain扭曲突然扭伤</td>
+      <td>The wrestler twisted his shoulder摔跤手扭伤了他的肩膀</td>
+      <td></td>
+      <td></td>
+      <td>[injure, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td>['bend', 'deform', 'flex', 'turn']</td>
+      <td></td>
+      <td>cause (a plastic object) to assume a crooked or angular form使（塑料物体）呈现弯曲或棱角形状</td>
+      <td>twist the dough into a braid把面团拧成辫子</td>
+      <td></td>
+      <td></td>
+      <td>[deform, change form, change shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td>['wrench']</td>
+      <td></td>
+      <td>twist or pull violently or suddenly, especially so as to remove (something) from that to which it is attached or from where it originates猛烈地或突然地扭转或拉动，尤其是为了从其所附着的东西或其起源的地方移除（某物）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td>['distort', 'twine']</td>
+      <td>[untwist]</td>
+      <td>form into a spiral shape形成螺旋形状</td>
+      <td>The cord is all twisted绳子都是扭曲的</td>
+      <td></td>
+      <td></td>
+      <td>[change form, change shape, deform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td>['squirm', 'worm', 'wrestle', 'wriggle', 'writhe']</td>
+      <td></td>
+      <td>to move in a twisting or contorted motion, (especially when struggling)以扭曲或扭曲的动作移动（特别是在挣扎时）</td>
+      <td></td>
+      <td>[twister]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td>['curve', 'wind']</td>
+      <td></td>
+      <td>extend in curves and turns曲线和转弯延伸</td>
+      <td>the path twisted through the forest穿过森林的路径</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td>['convolute', 'pervert', 'sophisticate', 'twist around']</td>
+      <td></td>
+      <td>practice sophistry; change the meaning of or be vague about in order to mislead or deceive练习诡辩;为了误导或欺骗而改变含义或含糊不清</td>
+      <td>Don't twist my words不要扭曲我的话</td>
+      <td>[twisting]</td>
+      <td></td>
+      <td>[refer, denote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td></td>
+      <td></td>
+      <td>do the twist扭转</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trip the light fantastic toe, trip the light fantastic, dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td></td>
+      <td></td>
+      <td>form into twists形成曲折</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>twɪst</td>
+      <td></td>
+      <td></td>
+      <td>turn in the opposite direction转向相反的方向</td>
+      <td>twist one's head扭曲一个人的头</td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['pull', 'wrench']</td>
+      <td></td>
+      <td>a sharp strain on muscles or ligaments对肌肉或韧带造成严重压力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hurt, harm, trauma, injury]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['turn']</td>
+      <td></td>
+      <td>turning or twisting around (in place)转动或扭转（到位）</td>
+      <td>with a quick twist of his head he surveyed the room他快速转过头来调查房间</td>
+      <td></td>
+      <td></td>
+      <td>[rotation, rotary motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['eddy']</td>
+      <td></td>
+      <td>a miniature whirlpool or whirlwind resulting when the current of a fluid doubles back on itself当流体的电流翻倍时，产生微型漩涡或旋风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[current, stream]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['bend', 'crook', 'turn']</td>
+      <td></td>
+      <td>a circular segment of a curve曲线的圆形段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[curve, curved shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['construction']</td>
+      <td></td>
+      <td>an interpretation of a text or action对文本或行为的解释</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interpretation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['braid', 'plait', 'tress']</td>
+      <td></td>
+      <td>a hairdo formed by braiding or twisting the hair通过编织或扭曲头发形成的发型</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hairdo, coiffure, coif, hair style, hairstyle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['wind', 'winding']</td>
+      <td></td>
+      <td>the act of winding or twisting缠绕或扭曲的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rotary motion, rotation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['wrench']</td>
+      <td></td>
+      <td>a jerky pulling movement一个生涩的拉动运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motion, movement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['device', 'gimmick']</td>
+      <td></td>
+      <td>any clever maneuver任何聪明的机动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[manoeuvre, tactical manoeuvre, tactical maneuver, maneuver]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['kink', 'twirl']</td>
+      <td></td>
+      <td>a sharp bend in a line produced when a line having a loop is pulled tight当具有环的线被拉紧时产生的线弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bend, crease, crimp, flexure, fold, plication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['turn', 'turn of events']</td>
+      <td></td>
+      <td>an unforeseen development不可预见的发展</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[development]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td>['spin', 'twirl', 'twisting', 'whirl']</td>
+      <td></td>
+      <td>the act of rotating rapidly快速旋转的行为</td>
+      <td>it broke off after much twisting它经过多次扭曲后断了</td>
+      <td></td>
+      <td></td>
+      <td>[rotary motion, rotation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twist</th>
+      <td>ist</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>twɪst</td>
+      <td></td>
+      <td></td>
+      <td>social dancing in which couples vigorously twist their hips and arms in time to the music; was popular in the 1960s社交舞蹈，其中夫妇及时扭动他们的臀部和手臂音乐;在20世纪60年代流行</td>
+      <td>they liked to dance the twist他们喜欢跳舞</td>
+      <td></td>
+      <td></td>
+      <td>[social dancing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrist</th>
+      <td>ist</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>rɪst</td>
+      <td>['articulatio radiocarpea', 'carpus', 'radiocarpal joint', 'wrist joint']</td>
+      <td></td>
+      <td>a joint between the distal end of the radius and the proximal row of carpal bones桡骨远端与近端腕骨之间的关节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gliding joint, articulatio plana]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>misty</th>
+      <td>ist</td>
+      <td>3.30</td>
+      <td>adj</td>
+      <td>'mɪsti</td>
+      <td>['brumous', 'foggy', 'hazy'], similarTo:['cloudy']</td>
+      <td></td>
+      <td>filled or abounding with fog or mist充满或充满雾或雾</td>
+      <td></td>
+      <td>[mist, mistiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>misty</th>
+      <td>ist</td>
+      <td>3.30</td>
+      <td>adj</td>
+      <td>'mɪsti</td>
+      <td>, similarTo:['wet']</td>
+      <td></td>
+      <td>wet with mist湿雾</td>
+      <td>the misty evening朦胧的夜晚</td>
+      <td>[mist, mistiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whist</th>
+      <td>ist</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>hwɪst</td>
+      <td>['long whist', 'short whist']</td>
+      <td></td>
+      <td>a card game for four players who form two partnerships; a pack of 52 cards is dealt and each side scores one point for each trick it takes in excess of six四个玩家组成两个合作伙伴的纸牌游戏;一包52张牌被发出，每一个得分超过6的每一个得分为1分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[card game, cards]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grist</th>
+      <td>ist</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>grɪst</td>
+      <td></td>
+      <td></td>
+      <td>grain intended to be or that has been ground谷物打算或已被磨碎的谷物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cereal, food grain, grain]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

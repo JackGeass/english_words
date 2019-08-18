@@ -1,0 +1,980 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['have', 'save', 'wave', 'cave', 'rave', 'pave', 'nave', 'lave', 'aver']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['consume', 'ingest', 'take', 'take in']</td>
+      <td></td>
+      <td>serve oneself to, or consume regularly为自己服务，或定期消费</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['get', 'suffer', 'sustain']</td>
+      <td></td>
+      <td>undergo (as of injuries and illnesses)经历（伤病）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[receive, experience, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['have got', 'hold']</td>
+      <td></td>
+      <td>have or possess, either in a concrete or an abstract sense拥有或拥有，无论是具体的还是抽象的</td>
+      <td></td>
+      <td></td>
+      <td>[feature]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['take']</td>
+      <td></td>
+      <td>have sex with; archaic use发生性关系;古老的用法</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[have it away, bonk, bed, have a go at it, get laid, get it on, lie with, have it off, love, be intimate, have sex, bang, know, roll in the hay, jazz, have intercourse, hump, make love, make out, fuck, eff, sleep with, sleep together, screw, do it]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['own', 'possess']</td>
+      <td></td>
+      <td>have ownership or possession of拥有或拥有</td>
+      <td>How many cars does she have?她有几辆车？</td>
+      <td></td>
+      <td>[feature]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['get', 'make']</td>
+      <td></td>
+      <td>achieve a point or goal达到目的或目的</td>
+      <td></td>
+      <td></td>
+      <td>[make]</td>
+      <td>[rack up, hit, tally, score]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['experience', 'get', 'receive']</td>
+      <td></td>
+      <td>go through (mental or physical states or experiences)经历（精神或身体状态或经历）</td>
+      <td>have a feeling有一种感觉</td>
+      <td></td>
+      <td></td>
+      <td>[undergo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['receive']</td>
+      <td></td>
+      <td>get something; come into possession of取得一些东西;占有</td>
+      <td></td>
+      <td></td>
+      <td>[accept, take]</td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['give', 'hold', 'make', 'throw']</td>
+      <td></td>
+      <td>organize or be responsible for组织或负责</td>
+      <td>have, throw, or make a party拥有，投掷或参加聚会</td>
+      <td></td>
+      <td></td>
+      <td>[direct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['experience']</td>
+      <td></td>
+      <td>undergo经历</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['feature']</td>
+      <td>[lack]</td>
+      <td>have as a feature有一个功能</td>
+      <td></td>
+      <td></td>
+      <td>[possess, have got, hold, own]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['bear', 'birth', 'deliver', 'give birth']</td>
+      <td></td>
+      <td>cause to be born因为出生</td>
+      <td></td>
+      <td></td>
+      <td>[carry, expect, gestate, have a bun in the oven, bear]</td>
+      <td>[produce, bring forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['get', 'let']</td>
+      <td></td>
+      <td>cause to move; cause to be in a certain position or condition导致移动;导致处于某种位置或状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[get, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['cause', 'get', 'induce', 'make', 'stimulate']</td>
+      <td></td>
+      <td>cause to do; cause to act in a specified manner事业;导致以特定方式行事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td>['accept', 'take']</td>
+      <td></td>
+      <td>receive willingly something given or offered心甘情愿地接受给予或提供的东西</td>
+      <td>The only girl who would have him was the miller's daughter唯一拥有他的女孩是磨坊主的女儿I won't have this dog in my house!我家里不会有这只狗！</td>
+      <td></td>
+      <td>[receive]</td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td></td>
+      <td></td>
+      <td>have a personal or business relationship with someone与某人有个人或商业关系</td>
+      <td>have a postdoc有一个博士后have an assistant有一个助手have a lover有一个情人</td>
+      <td></td>
+      <td></td>
+      <td>[interact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td></td>
+      <td></td>
+      <td>have left离开了</td>
+      <td>I have two years left我还有两年的时间I don't have any money left我没有留下任何钱They have two more years before they retire他们退休前还有两年</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>ver</td>
+      <td>hæv</td>
+      <td></td>
+      <td></td>
+      <td>suffer from; be ill with受苦生病了</td>
+      <td></td>
+      <td></td>
+      <td>[sustain, suffer, get]</td>
+      <td>[hurt, suffer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>have</th>
+      <td>ave</td>
+      <td>6.82</td>
+      <td>nou</td>
+      <td>hæv</td>
+      <td>['rich person', 'wealthy person']</td>
+      <td></td>
+      <td>a person who possesses great material wealth一个拥有巨大物质财富的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[person, mortal, somebody, individual, someone, soul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['make unnecessary']</td>
+      <td></td>
+      <td>make unnecessary an expenditure or effort不必要的支出或努力</td>
+      <td>This will save money这样可以省钱I'll save you the trouble我会救你的麻烦This will save you a lot of time这将为您节省大量时间</td>
+      <td></td>
+      <td></td>
+      <td>[prevent, forestall, foreclose, forbid, preclude]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['lay aside', 'save up']</td>
+      <td></td>
+      <td>accumulate money for future use积累资金以备将来使用</td>
+      <td>He saves half his salary他节省了一半的工资</td>
+      <td>[savings]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['spare']</td>
+      <td></td>
+      <td>refrain from harming避免伤害</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[refrain, forbear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['write']</td>
+      <td></td>
+      <td>record data on a computer在计算机上记录数据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tape, record]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['deliver', 'redeem']</td>
+      <td></td>
+      <td>save from sins从罪中拯救</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['hold open', 'keep', 'keep open']</td>
+      <td></td>
+      <td>retain rights to保留权利</td>
+      <td></td>
+      <td></td>
+      <td>[hold on, keep]</td>
+      <td>[reserve, hold, book]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['relieve', 'salvage', 'salve']</td>
+      <td></td>
+      <td>save from ruin, destruction, or harm免于毁灭，破坏或伤害</td>
+      <td></td>
+      <td>[saver]</td>
+      <td></td>
+      <td>[deliver, rescue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['preserve']</td>
+      <td></td>
+      <td>to keep up and reserve for personal or special use保持个人或特殊用途</td>
+      <td>She saved the old family photographs in a drawer她把旧家庭照片保存在抽屉里</td>
+      <td>[saver]</td>
+      <td></td>
+      <td>[hold on, keep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['economise', 'economize']</td>
+      <td></td>
+      <td>spend sparingly, avoid the waste of节俭地花钱，避免浪费</td>
+      <td>This move will save money这一举措将节省资金</td>
+      <td>[saver]</td>
+      <td></td>
+      <td>[expend, drop, spend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td>['bring through', 'carry through', 'pull through']</td>
+      <td></td>
+      <td>bring into safety带入安全</td>
+      <td></td>
+      <td>[savior]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>seɪv</td>
+      <td></td>
+      <td></td>
+      <td>spend less; buy at a reduced price花费少一点;以较低的价格购买</td>
+      <td></td>
+      <td>[saver]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>save</th>
+      <td>ave</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>seɪv</td>
+      <td></td>
+      <td></td>
+      <td>(sports) the act of preventing the opposition from scoring（体育）防止反对派得分的行为</td>
+      <td>the goalie made a brilliant save守门员取得了辉煌的成就the relief pitcher got credit for a save救援投手得到了豁免</td>
+      <td></td>
+      <td></td>
+      <td>[bar, prevention]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>ver</td>
+      <td>weɪv</td>
+      <td>['beckon']</td>
+      <td></td>
+      <td>signal with the hands or nod用手或点头发出信号</td>
+      <td>She waved to her friends她向她的朋友挥手致意He waved his hand hospitably他热情地挥了挥手</td>
+      <td>[waving, waver]</td>
+      <td></td>
+      <td>[motion, gesture, gesticulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>ver</td>
+      <td>weɪv</td>
+      <td>['brandish', 'flourish']</td>
+      <td></td>
+      <td>move or swing back and forth前后移动或摆动</td>
+      <td>She waved her gun她挥了挥枪</td>
+      <td>[waver]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>ver</td>
+      <td>weɪv</td>
+      <td>['flap', 'roll', 'undulate']</td>
+      <td></td>
+      <td>move in a wavy pattern or with a rising and falling motion以波浪形图案或上升和下降动作移动</td>
+      <td>the waves rolled towards the beach海浪滚向海滩</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>ver</td>
+      <td>weɪv</td>
+      <td>['curl']</td>
+      <td></td>
+      <td>twist or roll into coils or ringlets扭曲或卷成线圈或小环</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[twist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>ver</td>
+      <td>weɪv</td>
+      <td></td>
+      <td></td>
+      <td>set waves in设置波浪</td>
+      <td>she asked the hairdresser to wave her hair她让理发师挥动她的头发</td>
+      <td></td>
+      <td></td>
+      <td>[coif, coiffure, do, dress, set, arrange, coiffe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td>['undulation']</td>
+      <td></td>
+      <td>(physics) a movement up and down or back and forth（物理学）一个上下或前后运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[movement, motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td>['undulation']</td>
+      <td></td>
+      <td>an undulating curve一条起伏的曲线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[curved shape, curve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td>['moving ridge']</td>
+      <td></td>
+      <td>one of a series of ridges that moves across the surface of a liquid (especially across a large body of water)在液体表面移动的一系列脊之一（特别是穿过大量的水）</td>
+      <td></td>
+      <td>[wavelet]</td>
+      <td></td>
+      <td>[movement, motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td>['wafture', 'waving']</td>
+      <td></td>
+      <td>the act of signaling by a movement of the hand通过手的动作发出信号的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motion, gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td></td>
+      <td></td>
+      <td>a hairdo that creates undulations in the hair一种在头发上产生起伏的发型</td>
+      <td></td>
+      <td>[wavy]</td>
+      <td></td>
+      <td>[hairdo, hairstyle, coif, coiffure, hair style]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td></td>
+      <td></td>
+      <td>a member of the women's reserve of the United States Navy; originally organized during World War II but now no longer a separate branch美国海军妇女保护区的一名成员;最初在第二次世界大战期间组织，但现在不再是一个单独的分支</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult female, woman, reservist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td></td>
+      <td></td>
+      <td>a movement like that of a sudden occurrence or increase in a specified phenomenon类似于特定现象的突然发生或增加的运动</td>
+      <td>a wave of settlers一波定居者troops advancing in waves部队在波浪中前进</td>
+      <td></td>
+      <td></td>
+      <td>[motility, motion, move, movement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td></td>
+      <td></td>
+      <td>a persistent and widespread unusual weather condition (especially of unusual temperatures)持续和广泛的异常天气条件（特别是不寻常的温度）</td>
+      <td>a heat wave热浪</td>
+      <td></td>
+      <td></td>
+      <td>[conditions, atmospheric condition, weather condition, weather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wave</th>
+      <td>ave</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>weɪv</td>
+      <td></td>
+      <td></td>
+      <td>something that rises rapidly一些迅速上升的东西</td>
+      <td>a wave of emotion swept over him一阵情绪笼罩着他there was a sudden wave of buying before the market closed市场收盘前突然出现买盘浪潮a wave of conservatism in the country led by the hard right由权利主导的国家保守主义浪潮</td>
+      <td></td>
+      <td></td>
+      <td>[rise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cave</th>
+      <td>ave</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>keɪv</td>
+      <td>['undermine']</td>
+      <td></td>
+      <td>hollow out as if making a cave or opening掏空，好像在做一个洞穴或开放</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[core out, hollow, hollow out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cave</th>
+      <td>ave</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>keɪv</td>
+      <td>['spelunk']</td>
+      <td></td>
+      <td>explore natural caves探索天然洞穴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[explore]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cave</th>
+      <td>ave</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>keɪv</td>
+      <td></td>
+      <td></td>
+      <td>a geological formation consisting of an underground enclosure with access from the surface of the ground or from the sea由地下表面组成的地质构造，可从地面或海面进入</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[geological formation, formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rave</th>
+      <td>ave</td>
+      <td>3.36</td>
+      <td>ver</td>
+      <td>reɪv</td>
+      <td>['jabber', 'mouth off', 'rabbit on', 'rant', 'spout']</td>
+      <td></td>
+      <td>talk in a noisy, excited, or declamatory manner以吵闹，兴奋或宣言的方式说话</td>
+      <td></td>
+      <td>[raver, raving]</td>
+      <td></td>
+      <td>[speak, mouth, utter, verbalise, verbalize, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rave</th>
+      <td>ave</td>
+      <td>3.36</td>
+      <td>ver</td>
+      <td>reɪv</td>
+      <td>['gush']</td>
+      <td></td>
+      <td>praise enthusiastically热情赞美</td>
+      <td>She raved about that new restaurant她对这家新餐厅赞不绝口</td>
+      <td></td>
+      <td></td>
+      <td>[praise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rave</th>
+      <td>ave</td>
+      <td>3.36</td>
+      <td>ver</td>
+      <td>reɪv</td>
+      <td></td>
+      <td></td>
+      <td>participate in an all-night techno dance party参加通宵techno舞会</td>
+      <td></td>
+      <td>[raver]</td>
+      <td></td>
+      <td>[party]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rave</th>
+      <td>ave</td>
+      <td>3.36</td>
+      <td>nou</td>
+      <td>reɪv</td>
+      <td></td>
+      <td></td>
+      <td>a dance party that lasts all night and electronically synthesized music is played一个持续整晚的电子合成音乐的舞会</td>
+      <td>raves are very popular in Berlin狂欢在柏林很受欢迎</td>
+      <td></td>
+      <td></td>
+      <td>[dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rave</th>
+      <td>ave</td>
+      <td>3.36</td>
+      <td>nou</td>
+      <td>reɪv</td>
+      <td></td>
+      <td></td>
+      <td>an extravagantly enthusiastic review一个极其热烈的评论</td>
+      <td>he gave it a rave他给了它一个狂欢</td>
+      <td></td>
+      <td></td>
+      <td>[critical review, critique, review, review article]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pave</th>
+      <td>ave</td>
+      <td>2.78</td>
+      <td>ver</td>
+      <td>peɪv</td>
+      <td></td>
+      <td></td>
+      <td>cover with a material such as stone or concrete to make suitable for vehicle traffic用石头或混凝土等材料覆盖，以适应车辆交通</td>
+      <td>pave the roads in the village铺平了村里的道路</td>
+      <td>[pavage, pavement, paving]</td>
+      <td></td>
+      <td>[surface, coat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pave</th>
+      <td>ave</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>peɪv</td>
+      <td></td>
+      <td></td>
+      <td>a setting with precious stones so closely set that no metal shows宝石镶嵌得如此紧密，没有金属表现</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mount, setting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nave</th>
+      <td>ave</td>
+      <td>2.73</td>
+      <td>nou</td>
+      <td>neɪv</td>
+      <td></td>
+      <td></td>
+      <td>the central area of a church教堂的中心区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lave</th>
+      <td>ave</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>leɪv</td>
+      <td>['wash up']</td>
+      <td></td>
+      <td>wash one's face and hands洗一个人的脸和手</td>
+      <td></td>
+      <td>[lavation]</td>
+      <td></td>
+      <td>[refreshen, refresh, freshen up, freshen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lave</th>
+      <td>ave</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>leɪv</td>
+      <td>['lap', 'wash']</td>
+      <td></td>
+      <td>wash or flow against洗涤或流动</td>
+      <td>the waves laved the shore海浪淹没了岸边</td>
+      <td></td>
+      <td></td>
+      <td>[flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lave</th>
+      <td>ave</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>leɪv</td>
+      <td>['wash']</td>
+      <td></td>
+      <td>cleanse (one's body) with soap and water用肥皂和水清洗（一个人的身体）</td>
+      <td></td>
+      <td>[lavage, lavation]</td>
+      <td>[wash]</td>
+      <td>[cleanse, clean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aver</th>
+      <td>ave</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>ə'vɛr</td>
+      <td>['allege', 'say']</td>
+      <td></td>
+      <td>report or maintain报告或维护</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[maintain, asseverate, assert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aver</th>
+      <td>ave</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>ə'vɛr</td>
+      <td>['affirm', 'assert', 'avow', 'swan', 'swear', 'verify']</td>
+      <td></td>
+      <td>to declare or affirm solemnly and formally as true庄严地，正式地宣布或肯定为真</td>
+      <td></td>
+      <td>[averment]</td>
+      <td></td>
+      <td>[declare]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

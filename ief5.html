@@ -1,0 +1,260 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['chief', 'thief', 'brief', 'grief']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>chief</th>
+      <td>ief</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>tʃif</td>
+      <td>['head', 'top dog']</td>
+      <td></td>
+      <td>a person who is in charge一个负责人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leader]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chief</th>
+      <td>ief</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>tʃif</td>
+      <td>['chieftain', 'headman', 'tribal chief']</td>
+      <td></td>
+      <td>the head of a tribe or clan部落或氏族的头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leader]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chief</th>
+      <td>ief</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>tʃif</td>
+      <td>['boss', 'foreman', 'gaffer', 'honcho']</td>
+      <td></td>
+      <td>a person who exercises control over workers控制工人的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supervisor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chief</th>
+      <td>ief</td>
+      <td>4.91</td>
+      <td>adj</td>
+      <td>tʃif</td>
+      <td>['main', 'master', 'primary', 'principal'], similarTo:['important', 'of import']</td>
+      <td></td>
+      <td>most important element最重要的因素</td>
+      <td>the chief aim of living生活的主要目标</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thief</th>
+      <td>ief</td>
+      <td>4.52</td>
+      <td>nou</td>
+      <td>θif</td>
+      <td>['stealer']</td>
+      <td></td>
+      <td>a criminal who takes property belonging to someone else with the intention of keeping it or selling it为了保留或出售财产而将财产归属于他人的犯罪分子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[criminal, felon, crook, malefactor, outlaw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brief</th>
+      <td>ief</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>brif</td>
+      <td></td>
+      <td></td>
+      <td>give essential information to someone向某人提供基本信息</td>
+      <td>The reporters were briefed about the President's plan to invade向记者介绍了总统的入侵计划</td>
+      <td>[briefing]</td>
+      <td></td>
+      <td>[apprize, instruct, apprise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brief</th>
+      <td>ief</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>brif</td>
+      <td>['legal brief']</td>
+      <td></td>
+      <td>a document stating the facts and points of law of a client's case一份陈述客户案件事实和法律观点的文件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[legal instrument, official document, instrument, legal document]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brief</th>
+      <td>ief</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>brif</td>
+      <td></td>
+      <td></td>
+      <td>a condensed written summary or abstract简明的书面摘要或摘要</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[abstract, outline, precis, synopsis]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brief</th>
+      <td>ief</td>
+      <td>4.06</td>
+      <td>adj</td>
+      <td>brif</td>
+      <td>['abbreviated'], similarTo:['short']</td>
+      <td></td>
+      <td>(of clothing) very short（服装）很短</td>
+      <td>a brief bikini简短的比基尼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brief</th>
+      <td>ief</td>
+      <td>4.06</td>
+      <td>adj</td>
+      <td>brif</td>
+      <td>, similarTo:['concise']</td>
+      <td></td>
+      <td>concise and succinct简明扼要</td>
+      <td>covered the matter in a brief statement在一份简短的声明中谈到了这个问题</td>
+      <td>[brevity, briefness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brief</th>
+      <td>ief</td>
+      <td>4.06</td>
+      <td>adj</td>
+      <td>brif</td>
+      <td>, similarTo:['short']</td>
+      <td></td>
+      <td>of short duration or distance持续时间短或距离短</td>
+      <td>a brief stay in the country在这个国家短暂停留</td>
+      <td>[brevity, briefness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grief</th>
+      <td>ief</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>grif</td>
+      <td>['brokenheartedness', 'heartache', 'heartbreak']</td>
+      <td></td>
+      <td>intense sorrow caused by loss of a loved one (especially by death)失去亲人（特别是死亡）引起的强烈悲伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sorrow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grief</th>
+      <td>ief</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>grif</td>
+      <td>['sorrow']</td>
+      <td></td>
+      <td>something that causes great unhappiness引起极大不快乐的事情</td>
+      <td>her death was a great grief to John她的死对约翰来说是一个巨大的悲痛</td>
+      <td></td>
+      <td></td>
+      <td>[negative stimulus]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

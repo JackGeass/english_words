@@ -1,0 +1,980 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['crush', 'brush', 'flush', 'sushi', 'shush', 'blush', 'pushy', 'mushy', 'slush', 'plush', 'bushy', 'cushy', 'gushy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td>['oppress', 'suppress']</td>
+      <td></td>
+      <td>come down on or keep down by unjust use of one's authority通过不公正地使用一个人的权威来贬低或保持下来</td>
+      <td></td>
+      <td>[crushing]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td>['beat', 'beat out', 'shell', 'trounce', 'vanquish']</td>
+      <td></td>
+      <td>come out better in a competition, race, or conflict在竞争，种族或冲突中表现得更好</td>
+      <td></td>
+      <td></td>
+      <td>[outsmart, outfox, overreach, outwit, beat, circumvent]</td>
+      <td>[overcome, defeat, get the better of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td>['mash', 'squash', 'squeeze', 'squelch']</td>
+      <td></td>
+      <td>to compress with violence, out of natural shape or condition压迫暴力，自然形状或条件</td>
+      <td>crush an aluminum can粉碎铝罐</td>
+      <td>[crusher]</td>
+      <td></td>
+      <td>[press]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td>['break down']</td>
+      <td></td>
+      <td>make ineffective使无效</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td>['smash']</td>
+      <td></td>
+      <td>humiliate or depress completely完全羞辱或压抑</td>
+      <td>She was crushed by his refusal of her invitation她因拒绝邀请而被压垮了</td>
+      <td></td>
+      <td></td>
+      <td>[mortify, chagrin, humble, humiliate, abase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td>['jam']</td>
+      <td></td>
+      <td>crush or bruise粉碎或瘀伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bruise, contuse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td></td>
+      <td></td>
+      <td>become injured, broken, or distorted by pressure因压力而受伤，折断或扭曲</td>
+      <td>The plastic bottle crushed against the wall塑料瓶压在墙上</td>
+      <td></td>
+      <td></td>
+      <td>[break, split up, come apart, fall apart, separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>krəʃ</td>
+      <td></td>
+      <td></td>
+      <td>break into small pieces分成小块</td>
+      <td>The car crushed the toy汽车粉碎了玩具</td>
+      <td>[crusher]</td>
+      <td></td>
+      <td>[fragmentize, break up, fragmentise, fragment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>krəʃ</td>
+      <td>['calf love', 'infatuation', 'puppy love']</td>
+      <td></td>
+      <td>temporary love of an adolescent暂时爱青少年</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[love]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>krəʃ</td>
+      <td>['jam', 'press']</td>
+      <td></td>
+      <td>a dense crowd of people密集的人群</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crowd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>krəʃ</td>
+      <td>['compaction', 'crunch']</td>
+      <td></td>
+      <td>the act of crushing粉碎的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[compression, compressing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crush</th>
+      <td>ush</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>krəʃ</td>
+      <td>['crushed leather']</td>
+      <td></td>
+      <td>leather that has had its grain pattern accentuated皮革的纹理图案更加突出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>ver</td>
+      <td>brəʃ</td>
+      <td>['sweep']</td>
+      <td></td>
+      <td>sweep across or over横扫或横扫</td>
+      <td>Her long skirt brushed the floor她的长裙刷在地板上</td>
+      <td></td>
+      <td>[sweep, sail]</td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>ver</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>clean with a brush用刷子清洁</td>
+      <td>She brushed the suit before hanging it back into the closet在把衣服挂回衣柜之前，她刷了一下衣服</td>
+      <td></td>
+      <td></td>
+      <td>[clean, make clean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>ver</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>cover by brushing用刷子盖住</td>
+      <td>brush the bread with melted butter用融化的黄油刷面包</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>ver</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>remove with or as if with a brush用刷子或用刷子移除</td>
+      <td>brush away the crumbs刷掉面包屑brush the dust from the jacket刷掉夹克上的灰尘brush aside the objections抛开反对意见</td>
+      <td></td>
+      <td></td>
+      <td>[withdraw, remove, take, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>ver</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>rub with a brush, or as if with a brush用刷子擦，或者用刷子擦</td>
+      <td>Johnson brushed the hairs from his jacket约翰逊从夹克上擦了擦头发</td>
+      <td></td>
+      <td></td>
+      <td>[rub]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>ver</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>touch lightly and briefly轻轻地，简单地触摸</td>
+      <td>He brushed the wall lightly他轻轻地擦了擦墙</td>
+      <td></td>
+      <td>[sweep]</td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td>['brushing']</td>
+      <td></td>
+      <td>the act of brushing your teeth刷牙的行为</td>
+      <td>the dentist recommended two brushes a day牙医每天推荐两把刷子</td>
+      <td></td>
+      <td></td>
+      <td>[dental care]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td>['brushwood', 'coppice', 'copse', 'thicket']</td>
+      <td></td>
+      <td>a dense growth of bushes灌木密集生长</td>
+      <td></td>
+      <td>[brushy]</td>
+      <td></td>
+      <td>[flora, vegetation, botany]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td>['brushing']</td>
+      <td></td>
+      <td>the act of brushing your hair刷头发的行为</td>
+      <td>he gave his hair a quick brush他快速刷了一下头发</td>
+      <td></td>
+      <td></td>
+      <td>[hair care, haircare, hairdressing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td>['light touch']</td>
+      <td></td>
+      <td>momentary contact短暂接触</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touch, touching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td>['clash', 'encounter', 'skirmish']</td>
+      <td></td>
+      <td>a minor short-term fight一场小规模的短期战斗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fight, fighting, scrap, combat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>a bushy tail or part of a bushy tail (especially of the fox)浓密的尾巴或浓密尾巴的一部分（特别是狐狸）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>an implement that has hairs or bristles firmly set into a handle一种将毛发或刷毛牢固地固定在手柄上的工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>conducts current between rotating and stationary parts of a generator or motor在发电机或电动机的旋转部件和静止部件之间传导电流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electrical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brush</th>
+      <td>ush</td>
+      <td>4.11</td>
+      <td>nou</td>
+      <td>brəʃ</td>
+      <td></td>
+      <td></td>
+      <td>contact with something dangerous or undesirable接触危险或不受欢迎的东西</td>
+      <td>I had a brush with danger on my way to work我上班的路上有一把带有危险的刷子he tried to avoid any brushes with the police他试图避开警察的任何刷子</td>
+      <td></td>
+      <td></td>
+      <td>[contact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>fləʃ</td>
+      <td>['blush', 'crimson', 'redden']</td>
+      <td></td>
+      <td>turn red, as if in embarrassment or shame变红了，仿佛陷入尴尬或羞耻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colour, discolour, discolor, color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>fləʃ</td>
+      <td>['sluice']</td>
+      <td></td>
+      <td>irrigate with water from a sluice用水冲洗水闸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dowse, souse, sop, soak, drench, douse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>fləʃ</td>
+      <td>['purge', 'scour']</td>
+      <td></td>
+      <td>rinse, clean, or empty with a liquid用液体冲洗，清洁或清空</td>
+      <td>flush the wound with antibiotics用抗生素冲洗伤口</td>
+      <td></td>
+      <td></td>
+      <td>[rinse off, rinse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>fləʃ</td>
+      <td>['even', 'even out', 'level']</td>
+      <td></td>
+      <td>make level or straight使水平或直线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>fləʃ</td>
+      <td></td>
+      <td></td>
+      <td>cause to flow or flood with or as if with water导致流动或泛滥或似乎与水</td>
+      <td>flush the meadows冲洗草地</td>
+      <td></td>
+      <td></td>
+      <td>[water, irrigate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>fləʃ</td>
+      <td></td>
+      <td></td>
+      <td>flow freely自由流动</td>
+      <td>The garbage flushed down the river垃圾冲下了河水</td>
+      <td></td>
+      <td></td>
+      <td>[feed, course, flow, run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>fləʃ</td>
+      <td></td>
+      <td></td>
+      <td>glow or cause to glow with warm color or light发光或使暖色或光线发光</td>
+      <td>the sky flushed with rosy splendor天空泛着红润的光彩</td>
+      <td></td>
+      <td></td>
+      <td>[glow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>fləʃ</td>
+      <td>['hot flash']</td>
+      <td></td>
+      <td>sudden brief sensation of heat (associated with menopause and some mental disorders)突然短暂的热感（与更年期和一些精神障碍有关）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[symptom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>fləʃ</td>
+      <td>['blush']</td>
+      <td></td>
+      <td>sudden reddening of the face (as from embarrassment or guilt or shame or modesty)脸部突然变红（从尴尬或内疚或羞耻或谦虚）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[innate reflex, unconditioned reflex, reflex response, reflex action, reflex, physiological reaction, instinctive reflex, inborn reflex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>fləʃ</td>
+      <td>['bloom', 'blush', 'rosiness']</td>
+      <td></td>
+      <td>a rosy color (especially in the cheeks) taken as a sign of good health玫瑰色（特别是在脸颊上），作为健康的标志</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[healthiness, good health]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>fləʃ</td>
+      <td>['bloom', 'blossom', 'efflorescence', 'flower', 'heyday', 'peak', 'prime']</td>
+      <td></td>
+      <td>the period of greatest prosperity or productivity最繁荣或生产力的时期</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[period, time period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>fləʃ</td>
+      <td>['gush', 'outpouring']</td>
+      <td></td>
+      <td>a sudden rapid flow (as of water)突然的快速流动（如水）</td>
+      <td>he heard the flush of a toilet他听到厕所冲洗了</td>
+      <td></td>
+      <td></td>
+      <td>[flowing, flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>fləʃ</td>
+      <td>['bang', 'boot', 'charge', 'kick', 'rush', 'thrill']</td>
+      <td></td>
+      <td>the swift release of a store of affective force迅速释放一个情感力量的存储</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exhilaration, excitement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>fləʃ</td>
+      <td></td>
+      <td></td>
+      <td>a poker hand with all 5 cards in the same suit所有5张牌都在同一套牌中的扑克牌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[poker hand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>fləʃ</td>
+      <td>['affluent', 'loaded', 'moneyed', 'substantial', 'wealthy'], similarTo:['rich']</td>
+      <td></td>
+      <td>having an abundant supply of money or possessions of value拥有丰富的资金或财产</td>
+      <td>a speculator flush with cash投机者用现金冲洗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flush</th>
+      <td>ush</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>fləʃ</td>
+      <td>, similarTo:['even']</td>
+      <td></td>
+      <td>of a surface exactly even with an adjoining one, forming the same plane一个表面与一个相邻的表面完全相同，形成相同的平面</td>
+      <td>a door flush with the wall一扇门与墙齐平the bottom of the window is flush with the floor窗户的底部与地板齐平</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sushi</th>
+      <td>ush</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>'suʃi</td>
+      <td></td>
+      <td></td>
+      <td>rice (with raw fish) wrapped in seaweed用海藻包裹的米饭（生鱼）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shush</th>
+      <td>ush</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>ʃəʃ</td>
+      <td></td>
+      <td></td>
+      <td>silence (someone) by uttering `shush!'沉默（某人）说出“嘘！”</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hush, hush up, quieten, shut up, silence, still]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blush</th>
+      <td>ush</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>bləʃ</td>
+      <td>['crimson', 'flush', 'redden']</td>
+      <td></td>
+      <td>turn red, as if in embarrassment or shame变红了，仿佛陷入尴尬或羞耻</td>
+      <td>The girl blushed when a young man whistled as she walked by当一个年轻人走路时吹口哨，女孩脸红了</td>
+      <td>[blusher]</td>
+      <td></td>
+      <td>[colour, discolor, discolour, color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blush</th>
+      <td>ush</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>bləʃ</td>
+      <td></td>
+      <td></td>
+      <td>become rosy or reddish变得红润或微红</td>
+      <td>her cheeks blushed in the cold winter air她的脸颊在寒冷的冬天里脸红了</td>
+      <td></td>
+      <td></td>
+      <td>[redden]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blush</th>
+      <td>ush</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>bləʃ</td>
+      <td>['flush']</td>
+      <td></td>
+      <td>sudden reddening of the face (as from embarrassment or guilt or shame or modesty)脸部突然变红（从尴尬或内疚或羞耻或谦虚）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inborn reflex, instinctive reflex, physiological reaction, reflex, reflex action, reflex response, unconditioned reflex, innate reflex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blush</th>
+      <td>ush</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>bləʃ</td>
+      <td>['bloom', 'flush', 'rosiness']</td>
+      <td></td>
+      <td>a rosy color (especially in the cheeks) taken as a sign of good health玫瑰色（特别是在脸颊上），作为健康的标志</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[good health, healthiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pushy</th>
+      <td>ush</td>
+      <td>3.20</td>
+      <td>adj</td>
+      <td>'pʊʃi</td>
+      <td>['pushful'], similarTo:['ambitious']</td>
+      <td></td>
+      <td>marked by aggressive ambition and energy and initiative以雄心壮志，充满活力和主动性为标志</td>
+      <td></td>
+      <td>[push, pushiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mushy</th>
+      <td>ush</td>
+      <td>3.09</td>
+      <td>adj</td>
+      <td>'məʃi</td>
+      <td>['bathetic', 'drippy', 'hokey', 'kitschy', 'maudlin', 'mawkish', 'sappy', 'schmaltzy', 'schmalzy', 'sentimental', 'slushy', 'soppy', 'soupy'], similarTo:['emotional']</td>
+      <td></td>
+      <td>effusively or insincerely emotional热情或不诚实的情感</td>
+      <td>mushy effusiveness糊涂的热情</td>
+      <td>[mushiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mushy</th>
+      <td>ush</td>
+      <td>3.09</td>
+      <td>adj</td>
+      <td>'məʃi</td>
+      <td>, similarTo:['soft']</td>
+      <td></td>
+      <td>having the consistency of mush具有糊状的一致性</td>
+      <td></td>
+      <td>[mush, mushiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slush</th>
+      <td>ush</td>
+      <td>2.95</td>
+      <td>ver</td>
+      <td>sləʃ</td>
+      <td>['slosh', 'splash', 'splosh']</td>
+      <td></td>
+      <td>make a splashing sound发出哗哗的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slush</th>
+      <td>ush</td>
+      <td>2.95</td>
+      <td>ver</td>
+      <td>sləʃ</td>
+      <td>['slosh', 'slosh around', 'slush around']</td>
+      <td></td>
+      <td>spill or splash copiously or clumsily大量或笨拙地溢出或溅出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[splatter, splosh, swash, plash, spatter, splash]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slush</th>
+      <td>ush</td>
+      <td>2.95</td>
+      <td>nou</td>
+      <td>sləʃ</td>
+      <td></td>
+      <td></td>
+      <td>partially melted snow部分融化的雪</td>
+      <td></td>
+      <td>[slushy]</td>
+      <td></td>
+      <td>[water, h2o]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plush</th>
+      <td>ush</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>pləʃ</td>
+      <td></td>
+      <td></td>
+      <td>a fabric with a nap that is longer and softer than velvet一种比绒毛更长更柔软的绒毛织物</td>
+      <td></td>
+      <td>[plushy]</td>
+      <td></td>
+      <td>[cloth, fabric, material, textile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plush</th>
+      <td>ush</td>
+      <td>2.81</td>
+      <td>adj</td>
+      <td>pləʃ</td>
+      <td>['lavish', 'lucullan', 'plushy'], similarTo:['rich']</td>
+      <td></td>
+      <td>characterized by extravagance and profusion奢侈和丰富的特点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bushy</th>
+      <td>ush</td>
+      <td>2.75</td>
+      <td>adj</td>
+      <td>'bʊʃi</td>
+      <td>['shaggy', 'shaggy-coated', 'shaggy-haired'], similarTo:['ungroomed']</td>
+      <td></td>
+      <td>used of hair; thick and poorly groomed用于头发;厚厚的，整齐的</td>
+      <td>bushy locks浓密的锁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bushy</th>
+      <td>ush</td>
+      <td>2.75</td>
+      <td>adj</td>
+      <td>'bʊʃi</td>
+      <td>, similarTo:['branchy']</td>
+      <td></td>
+      <td>resembling a bush in being thickly branched and spreading类似于丛林中的厚厚的分枝和蔓延</td>
+      <td></td>
+      <td>[bush]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cushy</th>
+      <td>ush</td>
+      <td>2.73</td>
+      <td>adj</td>
+      <td>'kʊʃi</td>
+      <td>['easygoing', 'soft'], similarTo:['easy']</td>
+      <td></td>
+      <td>not burdensome or demanding; borne or done easily and without hardship没有负担或要求;承担或轻松完成，没有困难</td>
+      <td>what a cushy job!多么轻松的工作！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>gushy</th>
+      <td>ush</td>
+      <td>2.27</td>
+      <td>adj</td>
+      <td>'ɡəʃi</td>
+      <td>['effusive', 'gushing'], similarTo:['demonstrative']</td>
+      <td></td>
+      <td>extravagantly demonstrative奢侈地示范</td>
+      <td>write unrestrained and gushy poetry写出无拘无束，滔滔不绝的诗歌</td>
+      <td>[gush]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

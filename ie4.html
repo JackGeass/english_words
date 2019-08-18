@@ -1,0 +1,755 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['view', 'lied', 'tied', 'diet', 'pier', 'brie', 'kiev', 'lien', 'tier', 'pied', 'fief', 'bier', 'erie', 'lief', 'mien']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>vju</td>
+      <td>['catch', 'see', 'take in', 'watch']</td>
+      <td></td>
+      <td>see or watch看或看</td>
+      <td>view a show on television在电视上观看节目view an exhibition观看展览</td>
+      <td>[viewer, viewable]</td>
+      <td>[see]</td>
+      <td>[watch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>vju</td>
+      <td>['consider', 'look at']</td>
+      <td></td>
+      <td>look at carefully; study mentally仔细看看;精神上学习</td>
+      <td>view a problem查看问题</td>
+      <td>[viewer]</td>
+      <td></td>
+      <td>[study, examine, analyse, analyze, canvass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>vju</td>
+      <td>['consider', 'reckon', 'regard', 'see']</td>
+      <td></td>
+      <td>deem to be认为是</td>
+      <td>She views this quite differently from me她认为这与我完全不同</td>
+      <td></td>
+      <td>[construe, interpret, see]</td>
+      <td>[believe, conceive, think, consider]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['sight', 'survey']</td>
+      <td></td>
+      <td>the act of looking or seeing or observing寻找，观察或观察的行为</td>
+      <td>he tried to get a better view of it他试图更好地了解它</td>
+      <td></td>
+      <td></td>
+      <td>[looking, looking at, look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['scene']</td>
+      <td></td>
+      <td>graphic art consisting of the graphic or photographic representation of a visual percept图形艺术由视觉感知的图形或摄影表示组成</td>
+      <td>figure 2 shows photographic and schematic views of the equipment图2显示了设备的照片和示意图</td>
+      <td></td>
+      <td></td>
+      <td>[graphic art]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['perspective', 'position']</td>
+      <td></td>
+      <td>a way of regarding situations or topics etc.一种关于情况或主题等的方式</td>
+      <td>consider what follows from the positivist view从实证主义的角度考虑一下</td>
+      <td></td>
+      <td></td>
+      <td>[orientation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['eyeshot']</td>
+      <td></td>
+      <td>the range of the eye眼睛的范围</td>
+      <td>they were soon out of view他们很快就消失了</td>
+      <td></td>
+      <td></td>
+      <td>[range, reach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['opinion', 'persuasion', 'sentiment', 'thought']</td>
+      <td></td>
+      <td>a personal belief or judgment that is not founded on proof or certainty个人信仰或判断，不是基于证据或确定性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[belief]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['aspect', 'panorama', 'prospect', 'scene', 'vista']</td>
+      <td></td>
+      <td>the visual percept of a region一个地区的视觉感知</td>
+      <td>the most desirable feature of the park are the beautiful views公园最令人向往的特色是美丽的景色</td>
+      <td></td>
+      <td></td>
+      <td>[visual image, visual percept]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['opinion']</td>
+      <td></td>
+      <td>a message expressing a belief about something; the expression of a belief that is held with confidence but not substantiated by positive knowledge or proof表达对某事物的信仰的信息;信仰的表达是有信心的，但没有通过积极的知识或证据来证实</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[subject matter, content, substance, message]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td>['horizon', 'purview']</td>
+      <td></td>
+      <td>the range of interest or activity that can be anticipated可预期的兴趣或活动范围</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reach, scope, range, ambit, compass, orbit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td></td>
+      <td></td>
+      <td>outward appearance外观</td>
+      <td>they look the same in outward view它们在外观上看起来一样</td>
+      <td></td>
+      <td></td>
+      <td>[appearance, visual aspect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>view</th>
+      <td>ie</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>vju</td>
+      <td></td>
+      <td></td>
+      <td>purpose; the phrase `with a view to' means `with the intention of' or `for the purpose of'目的; “以...为目的”这个短语的意思是“有意图”或“为了'的目的'</td>
+      <td>he took the computer with a view to pawning it他带着电脑去了解它</td>
+      <td></td>
+      <td></td>
+      <td>[intention, purpose, design, intent, aim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lied</th>
+      <td>ie</td>
+      <td>4.56</td>
+      <td>nou</td>
+      <td>lid</td>
+      <td></td>
+      <td></td>
+      <td>a German art song of the 19th century for voice and piano19世纪德国艺术歌曲，用于配音和钢琴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[song, vocal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tied</th>
+      <td>ie</td>
+      <td>4.38</td>
+      <td>adj</td>
+      <td>taɪd</td>
+      <td>['laced']</td>
+      <td></td>
+      <td>closed with a lace用蕾丝封闭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tied</th>
+      <td>ie</td>
+      <td>4.38</td>
+      <td>adj</td>
+      <td>taɪd</td>
+      <td>['even', 'level'], similarTo:['equal']</td>
+      <td></td>
+      <td>of the score in a contest比赛中的得分</td>
+      <td>the score is tied分数是平局的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tied</th>
+      <td>ie</td>
+      <td>4.38</td>
+      <td>adj</td>
+      <td>taɪd</td>
+      <td>['fastened'], similarTo:['knotted']</td>
+      <td>[untied]</td>
+      <td>fastened with strings or cords用绳子或绳子固定</td>
+      <td>a neatly tied bundle一个整齐的束缚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tied</th>
+      <td>ie</td>
+      <td>4.38</td>
+      <td>adj</td>
+      <td>taɪd</td>
+      <td>['trussed'], similarTo:['bound']</td>
+      <td></td>
+      <td>bound or secured closely严密约束或保密</td>
+      <td>the guard was found trussed up with his arms and legs securely tied发现这名警卫被捆绑起来，双臂和双腿紧紧系在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tied</th>
+      <td>ie</td>
+      <td>4.38</td>
+      <td>adj</td>
+      <td>taɪd</td>
+      <td>, similarTo:['united']</td>
+      <td></td>
+      <td>bound together by or as if by a strong rope; especially as by a bond of affection用绳子捆绑在一起或好像用绳子捆在一起;特别是因为感情的纽带</td>
+      <td>people tied by blood or marriage被血缘或婚姻束缚的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>diet</th>
+      <td>ie</td>
+      <td>4.19</td>
+      <td>ver</td>
+      <td>'daɪɪt</td>
+      <td></td>
+      <td></td>
+      <td>eat sparingly, for health reasons or to lose weight出于健康原因或减肥，请谨慎饮食</td>
+      <td></td>
+      <td>[dieter, dieting, dietary]</td>
+      <td></td>
+      <td>[fast]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>diet</th>
+      <td>ie</td>
+      <td>4.19</td>
+      <td>ver</td>
+      <td>'daɪɪt</td>
+      <td></td>
+      <td></td>
+      <td>follow a regimen or a diet, as for health reasons遵循养生法或饮食，健康原因</td>
+      <td>He has high blood pressure and must stick to a low-salt diet他有高血压，必须坚持低盐饮食</td>
+      <td>[dieting, dietary, dieter]</td>
+      <td></td>
+      <td>[fast]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>diet</th>
+      <td>ie</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>'daɪɪt</td>
+      <td>['dieting']</td>
+      <td></td>
+      <td>the act of restricting your food intake (or your intake of particular foods)限制食物摄入量（或摄入特定食物）的行为</td>
+      <td></td>
+      <td>[dietary, dietician]</td>
+      <td></td>
+      <td>[fast, fasting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>diet</th>
+      <td>ie</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>'daɪɪt</td>
+      <td></td>
+      <td></td>
+      <td>a legislative assembly in certain countries (e.g., Japan)某些国家的立法会议（例如日本）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[general assembly, legislature, legislative body, law-makers, legislative assembly]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>diet</th>
+      <td>ie</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>'daɪɪt</td>
+      <td></td>
+      <td></td>
+      <td>a prescribed selection of foods规定的食物选择</td>
+      <td></td>
+      <td>[dietary, dietetic, dietetical, dietician]</td>
+      <td></td>
+      <td>[fare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>diet</th>
+      <td>ie</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>'daɪɪt</td>
+      <td></td>
+      <td></td>
+      <td>the usual food and drink consumed by an organism (person or animal)有机体（人或动物）消耗的常用食物和饮料</td>
+      <td></td>
+      <td>[dietician, dietary, dietetic, dietetical]</td>
+      <td></td>
+      <td>[fare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pier</th>
+      <td>ie</td>
+      <td>3.71</td>
+      <td>nou</td>
+      <td>pir</td>
+      <td>['dock', 'wharf', 'wharfage']</td>
+      <td></td>
+      <td>a platform built out from the shore into the water and supported by piles; provides access to ships and boats一个从岸边建成水面并由桩支撑的平台;提供进入船只和船只的通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pier</th>
+      <td>ie</td>
+      <td>3.71</td>
+      <td>nou</td>
+      <td>pir</td>
+      <td></td>
+      <td></td>
+      <td>(architecture) a vertical supporting structure (as a portion of wall between two doors or windows)（建筑）垂直支撑结构（作为两扇门或窗户之间的墙壁的一部分）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pier</th>
+      <td>ie</td>
+      <td>3.71</td>
+      <td>nou</td>
+      <td>pir</td>
+      <td></td>
+      <td></td>
+      <td>a support for two adjacent bridge spans支撑两个相邻的桥跨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brie</th>
+      <td>ie</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>bRi</td>
+      <td></td>
+      <td></td>
+      <td>soft creamy white cheese; milder than Camembert柔软的乳白色奶酪;比卡门贝尔温和</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cheese]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kiev</th>
+      <td>ie</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>'kiɛf</td>
+      <td>['capital of the ukraine', 'kyyiv']</td>
+      <td></td>
+      <td>capital and largest city of the Ukraine; a major manufacturing and transportation center乌克兰首都和最大城市;一个主要的制造和运输中心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lien</th>
+      <td>ie</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>'laɪən</td>
+      <td>['spleen']</td>
+      <td></td>
+      <td>a large dark-red oval organ on the left side of the body between the stomach and the diaphragm; produces cells involved in immune responses在胃和膈肌之间的身体左侧有一个大的深红色椭圆形器官;产生参与免疫反应的细胞</td>
+      <td></td>
+      <td>[lienal]</td>
+      <td></td>
+      <td>[lymphatic tissue, lymphoid tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lien</th>
+      <td>ie</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>'laɪən</td>
+      <td></td>
+      <td></td>
+      <td>the right to take another's property if an obligation is not discharged如果不履行义务，有权取得他人的财产</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[security interest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tier</th>
+      <td>ie</td>
+      <td>2.88</td>
+      <td>nou</td>
+      <td>'taɪər</td>
+      <td>['tier up']</td>
+      <td></td>
+      <td>a worker who ties something关系某事的工人</td>
+      <td></td>
+      <td>[tie]</td>
+      <td></td>
+      <td>[worker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tier</th>
+      <td>ie</td>
+      <td>2.88</td>
+      <td>nou</td>
+      <td>'taɪər</td>
+      <td>['grade', 'level']</td>
+      <td></td>
+      <td>a relative position or degree of value in a graded group分级组中的相对位置或价值程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rank]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tier</th>
+      <td>ie</td>
+      <td>2.88</td>
+      <td>nou</td>
+      <td>'taɪər</td>
+      <td></td>
+      <td></td>
+      <td>any one of two or more competitors who tie one another两个或两个以上相互竞争的竞争者中的任何一个</td>
+      <td></td>
+      <td>[tie]</td>
+      <td></td>
+      <td>[competitor, contender, challenger, rival, competition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tier</th>
+      <td>ie</td>
+      <td>2.88</td>
+      <td>nou</td>
+      <td>'taɪər</td>
+      <td></td>
+      <td></td>
+      <td>one of two or more layers one atop another两个或多个层中的一层，一层在另一层之上</td>
+      <td>tier upon tier of huge casks层层叠叠的巨大桶a three-tier wedding cake三层结婚蛋糕</td>
+      <td></td>
+      <td></td>
+      <td>[layer, bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tier</th>
+      <td>ie</td>
+      <td>2.88</td>
+      <td>nou</td>
+      <td>'taɪər</td>
+      <td></td>
+      <td></td>
+      <td>something that is used for tying用于搭售的东西</td>
+      <td>the sail is fastened to the yard with tiers帆被固定在院子里</td>
+      <td>[tie]</td>
+      <td></td>
+      <td>[rope]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pied</th>
+      <td>ie</td>
+      <td>2.79</td>
+      <td>adj</td>
+      <td>paɪd</td>
+      <td>['calico', 'motley', 'multi-color', 'multi-colored', 'multi-colour', 'multi-coloured', 'multicolor', 'multicolored', 'multicolour', 'multicoloured', 'painted', 'particolored', 'particoloured', 'piebald', 'varicolored', 'varicoloured'], similarTo:['colored', 'colorful', 'coloured']</td>
+      <td></td>
+      <td>having sections or patches colored differently and usually brightly具有不同颜色的部分或补丁，通常是明亮的</td>
+      <td>pied daisies斑斓的雏菊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fief</th>
+      <td>ie</td>
+      <td>2.47</td>
+      <td>nou</td>
+      <td>fif</td>
+      <td>['feoff']</td>
+      <td></td>
+      <td>a piece of land held under the feudal system封建制度下的一块土地</td>
+      <td></td>
+      <td>[fiefdom]</td>
+      <td></td>
+      <td>[acres, demesne, estate, land, landed estate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bier</th>
+      <td>ie</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>bir</td>
+      <td></td>
+      <td></td>
+      <td>a coffin along with its stand一个棺材和它的立场</td>
+      <td>we followed the bier to the graveyard我们沿着棺材走向墓地</td>
+      <td></td>
+      <td></td>
+      <td>[casket, coffin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bier</th>
+      <td>ie</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>bir</td>
+      <td></td>
+      <td></td>
+      <td>a stand to support a corpse or a coffin prior to burial在埋葬之前支撑尸体或棺材的支架</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rack, stand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>erie</th>
+      <td>ie</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td>'iri</td>
+      <td>['lake erie']</td>
+      <td></td>
+      <td>the 4th largest of the Great Lakes; it is linked to the Hudson River by the New York State Barge Canal五大湖中的第四大湖;它与纽约州驳船运河的哈德逊河相连</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>erie</th>
+      <td>ie</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td>'iri</td>
+      <td></td>
+      <td></td>
+      <td>a member of an Iroquoian people formerly living on the south shore of Lake Erie in northern Ohio and northwest Pennsylvania and western New York以前生活在俄亥俄州北部伊利湖和宾夕法尼亚州西北部以及纽约州西部的易洛魁族人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[iroquois]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>erie</th>
+      <td>ie</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td>'iri</td>
+      <td></td>
+      <td></td>
+      <td>a port city on Lake Erie in northwestern Pennsylvania宾夕法尼亚州西北部伊利湖上的一个港口城市</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lief</th>
+      <td>ie</td>
+      <td>1.97</td>
+      <td>adv</td>
+      <td>lif</td>
+      <td>['fain', 'gladly']</td>
+      <td></td>
+      <td>in a willing manner以一种自愿的方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mien</th>
+      <td>ie</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>min</td>
+      <td>['bearing', 'comportment', 'presence']</td>
+      <td></td>
+      <td>dignified manner or conduct有尊严的方式或行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[manner, personal manner]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

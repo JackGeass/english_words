@@ -1,0 +1,425 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['him', 'dim', 'rim', 'nim', 'imp', 'vim']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>him</th>
+      <td>im</td>
+      <td>6.50</td>
+      <td>pro</td>
+      <td>hɪm</td>
+      <td></td>
+      <td></td>
+      <td>The objective case of he. See He.他的客观案例。见他。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>dɪm</td>
+      <td>['dip']</td>
+      <td></td>
+      <td>switch (a car's headlights) from a higher to a lower beam从较高光束到较低光束的开关（汽车的前灯）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change intensity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>dɪm</td>
+      <td>['blind']</td>
+      <td></td>
+      <td>make dim by comparison or conceal通过比较或隐瞒使昏暗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[darken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>dɪm</td>
+      <td>['blur', 'slur']</td>
+      <td></td>
+      <td>become vague or indistinct变得模糊或模糊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weaken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>dɪm</td>
+      <td></td>
+      <td></td>
+      <td>become dim or lusterless变得昏暗或无光泽</td>
+      <td>the lights dimmed and the curtain rose灯光暗了，窗帘升起</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>dɪm</td>
+      <td></td>
+      <td></td>
+      <td>make dim or lusterless使昏暗或无光泽</td>
+      <td>Time had dimmed the silver时间已经使银色变暗了</td>
+      <td></td>
+      <td></td>
+      <td>[darken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>adj</td>
+      <td>dɪm</td>
+      <td>['subdued'], similarTo:['dark']</td>
+      <td></td>
+      <td>lacking in light; not bright or harsh光线不足;没有明亮或刺耳</td>
+      <td>a dim light beside the bed床边的昏暗灯光</td>
+      <td>[dimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>adj</td>
+      <td>dɪm</td>
+      <td>['dense', 'dull', 'dumb', 'obtuse', 'slow'], similarTo:['stupid']</td>
+      <td></td>
+      <td>slow to learn or understand; lacking intellectual acuity学习或理解迟钝;缺乏智力敏锐度</td>
+      <td>never met anyone quite so dim从来没有遇到任何人如此暗淡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>adj</td>
+      <td>dɪm</td>
+      <td>['faint', 'shadowy', 'vague', 'wispy'], similarTo:['indistinct']</td>
+      <td></td>
+      <td>lacking clarity or distinctness缺乏清晰度或清晰度</td>
+      <td>a dim figure in the distance远处的昏暗身影</td>
+      <td>[dimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>adj</td>
+      <td>dɪm</td>
+      <td>['black', 'bleak'], similarTo:['hopeless']</td>
+      <td></td>
+      <td>offering little or no hope提供很少或没有希望</td>
+      <td>took a dim view of things对事物的看法很模糊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dim</th>
+      <td>im</td>
+      <td>3.54</td>
+      <td>adj</td>
+      <td>dɪm</td>
+      <td>['dimmed'], similarTo:['low-beam']</td>
+      <td></td>
+      <td>made dim or less bright昏暗或不太明亮</td>
+      <td>the dimmed houselights brought a hush of anticipation昏暗的室内灯带来了一丝期待dimmed headlights昏暗的头灯we like dimmed lights when we have dinner我们吃晚饭时，我们喜欢昏暗的灯光</td>
+      <td>[dimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>rɪm</td>
+      <td></td>
+      <td></td>
+      <td>furnish with a rim配有轮辋</td>
+      <td>rim a hat戴上帽子</td>
+      <td></td>
+      <td></td>
+      <td>[furnish, supply, render, provide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>rɪm</td>
+      <td></td>
+      <td></td>
+      <td>roll around the rim of绕着边缘滚动</td>
+      <td>the ball rimmed the basket球在篮筐上镶边</td>
+      <td></td>
+      <td></td>
+      <td>[turn over, roll]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>rɪm</td>
+      <td></td>
+      <td></td>
+      <td>run around the rim of绕着边缘奔跑</td>
+      <td>Sugar rimmed the dessert plate糖在甜点盘子上镶边</td>
+      <td></td>
+      <td></td>
+      <td>[line, run along]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>rɪm</td>
+      <td>['brim', 'lip']</td>
+      <td></td>
+      <td>the top edge of a vessel or other container容器或其他容器的顶部边缘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>rɪm</td>
+      <td>['flange']</td>
+      <td></td>
+      <td>a projection used for strength or for attaching to another object用于强度或附着在另一个物体上的投影</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>rɪm</td>
+      <td></td>
+      <td></td>
+      <td>(basketball) the hoop from which the net is suspended（篮球）网悬挂的篮筐</td>
+      <td>the ball hit the rim and bounced off球击中篮筐并反弹</td>
+      <td></td>
+      <td></td>
+      <td>[hoop, ring]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>rɪm</td>
+      <td></td>
+      <td></td>
+      <td>the outer part of a wheel to which the tire is attached轮胎附着的车轮的外部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ring, hoop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rim</th>
+      <td>im</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>rɪm</td>
+      <td></td>
+      <td></td>
+      <td>the shape of a raised edge of a more or less circular object一个或多或少圆形物体的凸起边缘的形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[round shape, edge, bound, boundary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nim</th>
+      <td>im</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>nɪm</td>
+      <td></td>
+      <td></td>
+      <td>game in which matchsticks are arranged in rows and players alternately remove one or more of them; in some versions the object is to take the last remaining matchstick on the table and in other versions the object is to avoid taking the last remaining matchstick on the table火柴杆排成行并且玩家交替移除其中一个或多个的游戏;在某些版本中，对象是将最后剩余的火柴棍放在桌子上，而在其他版本中，该对象是为了避免将最后剩下的火柴棍放在桌子上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[table game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>imp</th>
+      <td>im</td>
+      <td>2.64</td>
+      <td>nou</td>
+      <td>ɪmp</td>
+      <td>['monkey', 'rapscallion', 'rascal', 'scalawag', 'scallywag', 'scamp']</td>
+      <td></td>
+      <td>one who is playfully mischievous一个顽皮恶作剧的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[youngster, child, fry, kid, minor, nestling, nipper, small fry, tiddler, tike, tyke, shaver]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>imp</th>
+      <td>im</td>
+      <td>2.64</td>
+      <td>nou</td>
+      <td>ɪmp</td>
+      <td>['brownie', 'elf', 'gremlin', 'hob', 'pixie', 'pixy']</td>
+      <td></td>
+      <td>(folklore) fairies that are somewhat mischievous（民间传说）有点恶作剧的仙女</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[faery, faerie, fay, sprite, fairy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vim</th>
+      <td>im</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>vɪm</td>
+      <td>['energy', 'muscularity', 'vigor', 'vigour']</td>
+      <td></td>
+      <td>an imaginative lively style (especially style of writing)富有想象力的活泼风格（特别是写作风格）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[life, liveliness, spirit, sprightliness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vim</th>
+      <td>im</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>vɪm</td>
+      <td>['energy', 'vitality']</td>
+      <td></td>
+      <td>a healthy capacity for vigorous activity健康的活动能力</td>
+      <td>he seemed full of vim and vigor他似乎充满了活力</td>
+      <td></td>
+      <td></td>
+      <td>[healthiness, good health]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

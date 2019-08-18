@@ -1,0 +1,1700 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['stick', 'trick', 'chick', 'prick', 'thick', 'click', 'brick', 'slick', 'flick', 'picky', 'dicky', 'crick', 'spick', 'klick', 'snick']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['adhere', 'bind', 'bond', 'hold fast', 'stick to']</td>
+      <td></td>
+      <td>stick to firmly坚持下去</td>
+      <td></td>
+      <td>[sticker]</td>
+      <td>[cleave, adhere, cohere, cling]</td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['adhere']</td>
+      <td></td>
+      <td>be a devoted follower or supporter成为忠实的追随者或支持者</td>
+      <td>She sticks to her principles她坚持自己的原则</td>
+      <td></td>
+      <td></td>
+      <td>[adopt, follow, espouse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['stay', 'stay put', 'stick around']</td>
+      <td></td>
+      <td>stay put (in a certain place)留（在某个地方）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stay in place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['deposit', 'lodge', 'wedge'], alos:['stick out']</td>
+      <td></td>
+      <td>put, fix, force, or implant放，固定，强迫或植入</td>
+      <td>stick your thumb in the crack把拇指贴在裂缝上</td>
+      <td></td>
+      <td></td>
+      <td>[fix, secure, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['amaze', 'baffle', 'beat', 'bewilder', 'dumbfound', 'flummox', 'get', 'gravel', 'mystify', 'nonplus', 'perplex', 'pose', 'puzzle', 'stupefy', 'vex']</td>
+      <td></td>
+      <td>be a mystery or bewildering to是一个谜或令人困惑的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bedevil, befuddle, discombobulate, confuse, throw, confound, fox, fuddle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['adhere', 'stand by', 'stick by']</td>
+      <td></td>
+      <td>be loyal to忠诚于</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['sting']</td>
+      <td></td>
+      <td>saddle with something disagreeable or disadvantageous马鞍上有一些不愉快或不利的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thrust, force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td>['adhere', 'cleave', 'cling', 'cohere']</td>
+      <td></td>
+      <td>come or be in close contact with; stick or hold together and resist separation来或与之密切接触;坚持或保持在一起，抵制分离</td>
+      <td></td>
+      <td></td>
+      <td>[hold fast, bond, bind, adhere, stick to]</td>
+      <td>[touch, adjoin, contact, meet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>be or become fixed成为固定的</td>
+      <td>The door sticks--we will have to plane it门贴 - 我们将不得不飞机</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>cover and decorate with objects that pierce the surface用刺穿表面的物体覆盖和装饰</td>
+      <td>stick some feathers in the turkey before you serve it在你服务之前，在火鸡中留一些羽毛</td>
+      <td></td>
+      <td></td>
+      <td>[adorn, beautify, decorate, embellish, grace, ornament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>endure忍受</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stay, remain, persist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>fasten into place by fixing an end or point into something通过将一个端点或一个点固定到某个东西来固定到位</td>
+      <td>stick the corner of the sheet under the mattress把床单的角落粘在床垫下面</td>
+      <td></td>
+      <td></td>
+      <td>[fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>fasten with an adhesive material like glue用胶水等粘合材料固定</td>
+      <td>stick the poster onto the wall将海报贴在墙上</td>
+      <td></td>
+      <td>[cling, cleave, adhere, cohere]</td>
+      <td>[fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>fasten with or as with pins or nails用别针或钉子固定</td>
+      <td>stick the photo onto the corkboard把照片贴在软木板上</td>
+      <td></td>
+      <td></td>
+      <td>[fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>pierce or penetrate or puncture with something pointed用尖锐的东西刺穿或穿透或刺穿</td>
+      <td></td>
+      <td>[sticker]</td>
+      <td></td>
+      <td>[pierce, thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>ver</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>pierce with a thrust using a pointed instrument用尖头仪器刺穿</td>
+      <td></td>
+      <td>[sticker]</td>
+      <td></td>
+      <td>[pierce, thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td>['joint', 'marijuana cigarette', 'reefer', 'spliff']</td>
+      <td></td>
+      <td>marijuana leaves rolled into a cigarette for smoking大麻叶卷成一根烟，吸烟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cigarette, fag, cigaret, butt, coffin nail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td>['control stick', 'joystick']</td>
+      <td></td>
+      <td>a lever used by a pilot to control the ailerons and elevators of an airplane飞行员用来控制飞机副翼和升降舵的杠杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lever]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td>['peg', 'pin']</td>
+      <td></td>
+      <td>informal terms for the leg腿的非正式用语</td>
+      <td>fever left him weak on his sticks发烧使他的棍棒无力</td>
+      <td></td>
+      <td></td>
+      <td>[leg]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>a long implement (usually made of wood) that is shaped so that hockey or polo players can hit a puck or ball一种长的工具（通常由木头制成），其形状使得曲棍球或马球运动员可以击中冰球或球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sports equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>a long thin implement resembling a length of wood一种类似木头长度的长薄工具</td>
+      <td>cinnamon sticks肉桂条a stick of dynamite一根炸药</td>
+      <td></td>
+      <td></td>
+      <td>[implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>an implement consisting of a length of wood由一定长度的木材组成的工具</td>
+      <td>he collected dry sticks for a campfire他为篝火收集了干枝the kid had a candied apple on a stick那孩子在棍子上放了一个蜜饯苹果</td>
+      <td></td>
+      <td></td>
+      <td>[implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>a rectangular quarter pound block of butter or margarine一块四分之一磅的黄油或人造黄油块</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[butter, margarine, margarin, oleo, marge, oleomargarine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>a small thin branch of a tree一棵小树枝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tree branch, limb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stick</th>
+      <td>ick</td>
+      <td>4.91</td>
+      <td>nou</td>
+      <td>stɪk</td>
+      <td></td>
+      <td></td>
+      <td>threat of a penalty惩罚的威胁</td>
+      <td>the policy so far is all stick and no carrot到目前为止的政策都是坚持，没有胡萝卜</td>
+      <td></td>
+      <td></td>
+      <td>[penalisation, penalty, punishment, penalization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>ver</td>
+      <td>trɪk</td>
+      <td>['flim-flam', 'fob', 'fox', 'play a joke on', 'play a trick on', 'play tricks', 'pull a fast one on']</td>
+      <td></td>
+      <td>deceive somebody欺骗某人</td>
+      <td>We tricked the teacher into thinking that class would be cancelled next week我们欺骗老师认为下周将取消课程</td>
+      <td>[trickery, tricker]</td>
+      <td></td>
+      <td>[cozen, deceive, delude, lead on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>trɪk</td>
+      <td>['conjuration', 'conjuring trick', 'deception', 'illusion', 'legerdemain', 'magic', 'magic trick', 'thaumaturgy']</td>
+      <td></td>
+      <td>an illusory feat; considered magical by naive observers一个虚幻的壮举;被天真的观察者认为是神奇的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[performance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>trɪk</td>
+      <td>['fast one']</td>
+      <td></td>
+      <td>a cunning or deceitful action or device狡猾或欺骗性的行为或装置</td>
+      <td>he played a trick on me他对我起了诡计</td>
+      <td>[trickster, tricksy, tricky]</td>
+      <td></td>
+      <td>[gimmick, device, twist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>trɪk</td>
+      <td>['antic', 'caper', 'joke', 'prank', 'put-on']</td>
+      <td></td>
+      <td>a ludicrous or grotesque act done for fun and amusement为娱乐和娱乐而做的荒谬或怪诞的行为</td>
+      <td></td>
+      <td>[trickster]</td>
+      <td></td>
+      <td>[recreation, diversion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>trɪk</td>
+      <td>['john', 'whoremaster', 'whoremonger']</td>
+      <td></td>
+      <td>a prostitute's customer妓女的顾客</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[client, customer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>trɪk</td>
+      <td></td>
+      <td></td>
+      <td>an attempt to get you to do something foolish or imprudent试图让你做一些愚蠢或不谨慎的事</td>
+      <td>that offer was a dirty trick这个提议是一个肮脏的把戏</td>
+      <td>[trickster]</td>
+      <td></td>
+      <td>[knavery, dishonesty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>trɪk</td>
+      <td></td>
+      <td></td>
+      <td>a period of work or duty一段时间的工作或职责</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[duty period, work shift, shift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trick</th>
+      <td>ick</td>
+      <td>4.60</td>
+      <td>nou</td>
+      <td>trɪk</td>
+      <td></td>
+      <td></td>
+      <td>(card games) in a single round, the sequence of cards played by all the players; the high card is the winner（纸牌游戏）在一轮中，所有玩家所玩的牌顺序;高牌是胜利者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chick</th>
+      <td>ick</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>tʃɪk</td>
+      <td>['bird', 'dame', 'doll', 'skirt', 'wench']</td>
+      <td></td>
+      <td>informal terms for a (young) woman（年轻）女性的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[young woman, fille, miss, missy, young lady, girl]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chick</th>
+      <td>ick</td>
+      <td>4.47</td>
+      <td>nou</td>
+      <td>tʃɪk</td>
+      <td>['biddy']</td>
+      <td></td>
+      <td>young bird especially of domestic fowl幼鸟尤其是家禽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gallus gallus, chicken, young bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>prik</td>
+      <td>['goad']</td>
+      <td></td>
+      <td>stab or urge on as if with a pointed stick用尖头棒刺伤或催促</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jab, stab]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>prik</td>
+      <td>['cock up', 'prick up']</td>
+      <td></td>
+      <td>raise提高</td>
+      <td>The dog pricked up his ears那只狗竖起了耳朵</td>
+      <td></td>
+      <td></td>
+      <td>[rear, erect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>prik</td>
+      <td>['prickle']</td>
+      <td></td>
+      <td>make a small hole into, as with a needle or a thorn用针或刺做一个小洞</td>
+      <td>The nurse pricked my finger to get a small blood sample护士用手指刺了一小块血样</td>
+      <td>[pricker, pricking]</td>
+      <td></td>
+      <td>[pierce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>prik</td>
+      <td>['prickle']</td>
+      <td></td>
+      <td>cause a prickling sensation引起刺痛的感觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[twinge, sting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>prik</td>
+      <td>['bite', 'sting']</td>
+      <td></td>
+      <td>deliver a sting to发出刺痛的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pierce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>prik</td>
+      <td>['sting', 'twinge']</td>
+      <td></td>
+      <td>cause a stinging pain引起刺痛</td>
+      <td>The needle pricked his skin针刺了他的皮肤</td>
+      <td></td>
+      <td></td>
+      <td>[suffer, hurt, ache]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>prik</td>
+      <td></td>
+      <td></td>
+      <td>to cause a sharp emotional pain引起剧烈的情绪痛苦</td>
+      <td>The thought of her unhappiness pricked his conscience她不快乐的想法刺痛了他的良心</td>
+      <td></td>
+      <td></td>
+      <td>[fire, provoke, raise, arouse, elicit, enkindle, evoke, kindle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>prik</td>
+      <td>['asshole', 'bastard', 'cocksucker', 'dickhead', 'mother fucker', 'motherfucker', 'shit', 'sob', 'son of a bitch', 'whoreson']</td>
+      <td></td>
+      <td>insulting terms of address for people who are stupid or irritating or ridiculous对愚蠢或恼人或荒谬的人提出侮辱性的地址条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td>[dirty word, smut, vulgarism, filth, obscenity]</td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>prik</td>
+      <td>['dent', 'incision', 'scratch', 'slit']</td>
+      <td></td>
+      <td>a depression scratched or carved into a surface凹陷划伤或刻在表面上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imprint, impression, depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>prik</td>
+      <td>['pricking']</td>
+      <td></td>
+      <td>the act of puncturing with a small point用小点刺破的行为</td>
+      <td>he gave the balloon a small prick他给气球一个小小的刺</td>
+      <td></td>
+      <td></td>
+      <td>[puncture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prick</th>
+      <td>ick</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>prik</td>
+      <td>['cock', 'dick', 'pecker', 'putz', 'shaft', 'tool']</td>
+      <td></td>
+      <td>obscene terms for penis阴茎的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[penis, member, phallus]</td>
+      <td>[obscenity, dirty word, filth, smut, vulgarism]</td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>θɪk</td>
+      <td>['midst']</td>
+      <td></td>
+      <td>the location of something surrounded by other things被其他东西包围的东西的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inside, interior]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adv</td>
+      <td>θɪk</td>
+      <td>['thickly']</td>
+      <td></td>
+      <td>in quick succession快速连续</td>
+      <td>misfortunes come fast and thick不幸来得快而厚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adv</td>
+      <td>θɪk</td>
+      <td>['thickly']</td>
+      <td></td>
+      <td>with a thick consistency具有浓厚的一致性</td>
+      <td>the blood was flowing thick血液流淌得很浓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>['dense'], similarTo:['impenetrable']</td>
+      <td></td>
+      <td>hard to pass through because of dense growth由于密集的增长难以通过</td>
+      <td>thick woods厚厚的树林</td>
+      <td>[thickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>['slurred'], similarTo:['unintelligible']</td>
+      <td></td>
+      <td>spoken as if with a thick tongue说话，好像舌头厚</td>
+      <td>the thick speech of a drunkard一个醉汉的厚厚的演讲</td>
+      <td>[thickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>['compact', 'heavyset', 'stocky', 'thickset'], similarTo:['short', 'little']</td>
+      <td></td>
+      <td>having a short and solid form or stature有一个短而坚实的形式或身材</td>
+      <td>a thickset young man一个厚实的年轻人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>['blockheaded', 'boneheaded', 'duncical', 'duncish', 'fatheaded', 'loggerheaded', 'thick-skulled', 'thickheaded', 'wooden-headed'], similarTo:['stupid']</td>
+      <td></td>
+      <td>(used informally) stupid（非正式使用）愚蠢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>['deep'], similarTo:['intense']</td>
+      <td></td>
+      <td>(of darkness) densely dark（黑暗）浓密的黑暗</td>
+      <td>thick night厚厚的夜晚thick darkness厚厚的黑暗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>['buddy-buddy', 'chummy'], similarTo:['close']</td>
+      <td></td>
+      <td>(used informally) associated on close terms（非正式使用）密切关联</td>
+      <td>the two were thick as thieves for months这两个人像小偷一样厚了好几个月</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>, similarTo:['abundant']</td>
+      <td></td>
+      <td>abounding; having a lot of丰富;有很多</td>
+      <td>the top was thick with dust顶部有厚厚的灰尘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>, similarTo:['concentrated']</td>
+      <td></td>
+      <td>having component parts closely crowded together零部件密集在一起</td>
+      <td>thick crowds厚厚的人群a thick forest一片茂密的森林thick hair浓密的头发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>, similarTo:['deep-chested', 'deep', 'fat', 'four-ply', 'heavy', 'quilted', 'thickened', 'three-ply', 'two-ply'], alos:['fat', 'wide', 'broad']</td>
+      <td>[thin]</td>
+      <td>not thin; of a specific thickness or of relatively great extent from one surface to the opposite usually in the smallest of the three solid dimensions不瘦;通常在三个实心尺寸的最小值中，从一个表面到相对的一个特定厚度或相对较大的程度</td>
+      <td>an inch thick一英寸厚a thick board厚板a thick sandwich厚厚的三明治spread a thick layer of butter涂上一层厚厚的黄油thick coating of dust厚厚的灰尘涂层thick warm blankets厚厚的保暖毯</td>
+      <td>[thickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thick</th>
+      <td>ick</td>
+      <td>4.26</td>
+      <td>adj</td>
+      <td>θɪk</td>
+      <td>, similarTo:['grumose', 'grumous', 'heavy', 'thready', 'viscous', 'impenetrable', 'jellylike', 'creamy', 'syrupy', 'dense', 'thickened', 'gelatinlike', 'gelatinous', 'clogged', 'clotted', 'coagulable', 'coagulate', 'coagulated', 'curdled', 'ropey', 'ropy', 'soupy', 'stringy']</td>
+      <td>[thin]</td>
+      <td>relatively dense in consistency相对密集的一致性</td>
+      <td>thick cream浓稠的奶油thick soup羹thick smoke厚厚的烟雾thick fog浓雾</td>
+      <td>[thickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>klɪk</td>
+      <td>['snap']</td>
+      <td></td>
+      <td>move or strike with a noise有噪音的移动或罢工</td>
+      <td>he clicked on the light他点了灯</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>klɪk</td>
+      <td>['come home', 'dawn', 'fall into place', 'get across', 'get through', 'penetrate', 'sink in']</td>
+      <td></td>
+      <td>become clear or enter one's consciousness or emotions变得清醒或进入一个人的意识或情绪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>klɪk</td>
+      <td>['flick', 'snap']</td>
+      <td></td>
+      <td>cause to make a snapping sound导致发出噼啪声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>klɪk</td>
+      <td>['tick']</td>
+      <td></td>
+      <td>make a clicking or ticking sound点击或滴答声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>klɪk</td>
+      <td>['chatter']</td>
+      <td></td>
+      <td>click repeatedly or uncontrollably反复点击或不受控制地点击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>klɪk</td>
+      <td>['clack', 'cluck']</td>
+      <td></td>
+      <td>make a clucking sounds, characteristic of hens做一个咯咯的声音，母鸡的特征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utter, emit, let loose, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>klɪk</td>
+      <td></td>
+      <td></td>
+      <td>produce a click产生一次点击</td>
+      <td>Xhosa speakers clickXhosa发言者点击</td>
+      <td></td>
+      <td></td>
+      <td>[say, pronounce, sound out, enounce, articulate, enunciate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>klɪk</td>
+      <td>['suction stop']</td>
+      <td></td>
+      <td>a stop consonant made by the suction of air into the mouth (as in Bantu)通过吸入空气进入口腔制成的停止辅音（如班图语）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[occlusive, plosive, plosive consonant, plosive speech sound, stop, stop consonant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>klɪk</td>
+      <td>['mouse click']</td>
+      <td></td>
+      <td>depression of a button on a computer mouse按下计算机鼠标上的按钮</td>
+      <td>a click on the right button for example例如，单击右键</td>
+      <td></td>
+      <td></td>
+      <td>[depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>klɪk</td>
+      <td>['detent', 'dog', 'pawl']</td>
+      <td></td>
+      <td>a hinged catch that fits into a notch of a ratchet to move a wheel forward or prevent it from moving backward一个铰接的锁扣，适合棘轮的一个凹口，向前移动一个轮子或阻止它向后移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[catch, stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>click</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>klɪk</td>
+      <td>['chink', 'clink']</td>
+      <td></td>
+      <td>a short light metallic sound短暂的轻金属声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brick</th>
+      <td>ick</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>brɪk</td>
+      <td></td>
+      <td></td>
+      <td>a good fellow; helpful and trustworthy一个好人;乐于助人，值得信赖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[good person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brick</th>
+      <td>ick</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>brɪk</td>
+      <td></td>
+      <td></td>
+      <td>rectangular block of clay baked by the sun or in a kiln; used as a building or paving material由太阳或窑烤制的长方形粘土块;用作建筑物或铺路材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[building material, ceramic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>ver</td>
+      <td>slɪk</td>
+      <td>['sleek']</td>
+      <td></td>
+      <td>make slick or smooth使光滑或光滑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[polish, shine, smooth, smoothen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>ver</td>
+      <td>slɪk</td>
+      <td>['sleek down', 'slick down']</td>
+      <td></td>
+      <td>give a smooth and glossy appearance给人一种光滑亮丽的外观</td>
+      <td>slick one's hair光滑的一根头发</td>
+      <td></td>
+      <td></td>
+      <td>[comb, comb out, disentangle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>slɪk</td>
+      <td>['slickness', 'slip', 'slipperiness']</td>
+      <td></td>
+      <td>a slippery smoothness光滑的滑爽</td>
+      <td>he could feel the slickness of the tiller他能感觉到分蘖的光滑</td>
+      <td></td>
+      <td></td>
+      <td>[smoothness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>slɪk</td>
+      <td>['glossy', 'slick magazine']</td>
+      <td></td>
+      <td>a magazine printed on good quality paper一本杂志印在优质纸上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[magazine, mag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>slɪk</td>
+      <td></td>
+      <td></td>
+      <td>a film of oil or garbage floating on top of water漂浮在水面上的油画或垃圾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[film]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>nou</td>
+      <td>slɪk</td>
+      <td></td>
+      <td></td>
+      <td>a trowel used to make a surface slick用来制作表面浮油的抹子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trowel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>slɪk</td>
+      <td>['glib', 'pat'], similarTo:['plausible']</td>
+      <td></td>
+      <td>having only superficial plausibility只有肤浅的合理性</td>
+      <td>a slick commercial一个光滑的商业广告</td>
+      <td>[slickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>slɪk</td>
+      <td>['facile', 'neat'], similarTo:['superficial']</td>
+      <td></td>
+      <td>superficially impressive, but lacking depth and attention to the true complexities of a subject表面上令人印象深刻，但缺乏深度和对主题真正复杂性的关注</td>
+      <td>a slick advertising campaign一个光滑的广告活动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>slɪk</td>
+      <td>['satiny', 'silken', 'silklike', 'silky', 'sleek'], similarTo:['bright']</td>
+      <td></td>
+      <td>having a smooth, gleaming surface reflecting light具有光滑，闪闪发光的表面，反射光线</td>
+      <td>slick seals and otters光滑的海豹和水獭</td>
+      <td>[slickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>slɪk</td>
+      <td>['crafty', 'cunning', 'dodgy', 'foxy', 'guileful', 'knavish', 'sly', 'tricksy', 'tricky', 'wily'], similarTo:['artful']</td>
+      <td></td>
+      <td>marked by skill in deception以欺骗手段为标志</td>
+      <td>a slick evasive answer一个光滑的回避答案</td>
+      <td>[slickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slick</th>
+      <td>ick</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>slɪk</td>
+      <td>, similarTo:['slippy', 'slippery']</td>
+      <td></td>
+      <td>made slick by e.g. ice or grease通过例如光滑冰或油脂</td>
+      <td>sidewalks slick with ice人行道上有冰块roads are slickest when rain has just started and hasn't had time to wash away the oil当雨刚刚开始并且没有时间洗掉油时，道路是最狡猾的</td>
+      <td>[slickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td>['flip', 'leaf', 'riff', 'riffle', 'thumb']</td>
+      <td></td>
+      <td>look through a book or other written material翻阅书籍或其他书面材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[peruse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td>['jerk']</td>
+      <td></td>
+      <td>throw or toss with a quick motion快速投掷或折腾</td>
+      <td>flick a piece of paper across the table在桌子上轻弹一张纸</td>
+      <td></td>
+      <td></td>
+      <td>[push, force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td>['click', 'snap']</td>
+      <td></td>
+      <td>cause to make a snapping sound导致发出噼啪声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td>['flicker']</td>
+      <td></td>
+      <td>shine unsteadily不稳定地闪耀</td>
+      <td>The candle flickered蜡烛闪烁</td>
+      <td></td>
+      <td></td>
+      <td>[beam, shine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td>['flicker']</td>
+      <td></td>
+      <td>flash intermittently间歇性地闪烁</td>
+      <td>The lights flicked on and off灯光闪烁</td>
+      <td></td>
+      <td></td>
+      <td>[winkle, wink, flash, blink, twinkle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td>['riffle', 'ruffle']</td>
+      <td></td>
+      <td>twitch or flutter抽搐或扑动</td>
+      <td>the paper flicked纸张轻弹了</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td>['flip']</td>
+      <td></td>
+      <td>cause to move with a flick导致用电影移动</td>
+      <td>he flicked his Bic他轻弹他的Bic</td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td></td>
+      <td></td>
+      <td>remove with a flick (of the hand)用手轻弹（手）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[withdraw, remove, take, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>flɪk</td>
+      <td></td>
+      <td></td>
+      <td>touch or hit with a light, quick blow触摸或轻轻一击，快速打击</td>
+      <td>flicked him with his hand用手轻弹他</td>
+      <td></td>
+      <td></td>
+      <td>[brush]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>flɪk</td>
+      <td>['film', 'motion-picture show', 'motion picture', 'movie', 'moving-picture show', 'moving picture', 'pic', 'picture', 'picture show']</td>
+      <td></td>
+      <td>a form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement一种娱乐形式，通过声音和一系列图像来制作故事，给人一种连续运动的幻觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[show, production, product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>flɪk</td>
+      <td></td>
+      <td></td>
+      <td>a light sharp contact (usually with something flexible)轻微的接触（通常有灵活的东西）</td>
+      <td>he gave it a flick with his finger他用手指轻轻一挥he felt the flick of a whip他感觉到鞭子的轻弹</td>
+      <td></td>
+      <td></td>
+      <td>[impinging, contact, striking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flick</th>
+      <td>ick</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>flɪk</td>
+      <td></td>
+      <td></td>
+      <td>a short stroke短暂的一击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>picky</th>
+      <td>ick</td>
+      <td>3.45</td>
+      <td>adj</td>
+      <td>'pɪki</td>
+      <td>['finical', 'finicky', 'fussy', 'particular'], similarTo:['fastidious']</td>
+      <td></td>
+      <td>exacting especially about details严格要求细节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dicky</th>
+      <td>ick</td>
+      <td>3.13</td>
+      <td>nou</td>
+      <td>'dɪki</td>
+      <td>['dickey', 'dickie', 'shirtfront']</td>
+      <td></td>
+      <td>a man's detachable insert (usually starched) to simulate the front of a shirt一个男人的可拆卸插件（通常是淀粉）来模拟衬衫的正面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[insert, inset]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dicky</th>
+      <td>ick</td>
+      <td>3.13</td>
+      <td>nou</td>
+      <td>'dɪki</td>
+      <td>['dickey', 'dickey-seat', 'dickie', 'dickie-seat', 'dicky-seat']</td>
+      <td></td>
+      <td>a small third seat in the back of an old-fashioned two-seater位于老式双座位后面的小座位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[backseat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dicky</th>
+      <td>ick</td>
+      <td>3.13</td>
+      <td>adj</td>
+      <td>'dɪki</td>
+      <td>['dickey'], similarTo:['impaired']</td>
+      <td></td>
+      <td>(British informal) faulty（英国非正式）有缺陷</td>
+      <td>I've got this dicky heart我有这个蠢的心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>crick</th>
+      <td>ick</td>
+      <td>3.09</td>
+      <td>ver</td>
+      <td>krɪk</td>
+      <td></td>
+      <td></td>
+      <td>twist (a body part) into a strained position扭转（身体部位）进入紧张的位置</td>
+      <td>crick your neck舔你的脖子</td>
+      <td></td>
+      <td></td>
+      <td>[twist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crick</th>
+      <td>ick</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>krɪk</td>
+      <td>['kink', 'rick', 'wrick']</td>
+      <td></td>
+      <td>a painful muscle spasm especially in the neck or back (`rick' and `wrick' are British)疼痛的肌肉痉挛，尤其是颈部或背部（“瑞克”和“瑞克”是英国人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cramp, spasm, muscle spasm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crick</th>
+      <td>ick</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>krɪk</td>
+      <td>['francis crick', 'francis henry compton crick']</td>
+      <td></td>
+      <td>English biochemist who (with Watson in 1953) helped discover the helical structure of DNA (1916-2004)英国生物化学家（与Watson于1953年合作）帮助发现了DNA的螺旋结构（1916-2004）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spick</th>
+      <td>ick</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>spɪk</td>
+      <td>['spic', 'spik']</td>
+      <td></td>
+      <td>(ethnic slur) offensive term for persons of Latin American descent（种族诽谤）拉丁美洲人后裔的冒犯性词语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[latino, latin american]</td>
+      <td>[cant, depreciation, derogation, disparagement, ethnic slur, jargon, argot, slang, vernacular, lingo, patois]</td>
+    </tr>
+    <tr>
+      <th>spick</th>
+      <td>ick</td>
+      <td>2.57</td>
+      <td>adj</td>
+      <td>spɪk</td>
+      <td>['immaculate', 'speckless', 'spic', 'spic-and-span', 'spick-and-span', 'spotless'], similarTo:['clean']</td>
+      <td></td>
+      <td>completely neat and clean完全干净整洁</td>
+      <td>a spick-and-span kitchen一个spick-and-span厨房</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>klick</th>
+      <td>ick</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>klɪk</td>
+      <td>['kilometer', 'kilometre', 'km']</td>
+      <td></td>
+      <td>a metric unit of length equal to 1000 meters (or 0.621371 miles)公制单位，长度等于1000米（或0.621371英里）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metric linear unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snick</th>
+      <td>ick</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>snɪk</td>
+      <td>['nick']</td>
+      <td></td>
+      <td>cut slightly, with a razor用剃刀稍微削减一下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snick</th>
+      <td>ick</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>snɪk</td>
+      <td></td>
+      <td></td>
+      <td>hit a glancing blow with the edge of the bat用蝙蝠的边缘击打了一下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snick</th>
+      <td>ick</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>snɪk</td>
+      <td>['nick', 'notch']</td>
+      <td></td>
+      <td>a small cut小切</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cutting, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snick</th>
+      <td>ick</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>snɪk</td>
+      <td></td>
+      <td></td>
+      <td>a glancing contact with the ball off the edge of the cricket bat从板球蝙蝠的边缘看球与球的接触</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physical contact, contact]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

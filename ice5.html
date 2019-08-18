@@ -1,0 +1,515 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['price', 'twice', 'slice', 'spice', 'trice', 'dicey', 'dicer']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>praɪs</td>
+      <td></td>
+      <td></td>
+      <td>ascertain or learn the price of确定或了解价格</td>
+      <td>Have you priced personal computers lately?你最近定价过个人电脑吗？</td>
+      <td>[pricing]</td>
+      <td></td>
+      <td>[ascertain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>praɪs</td>
+      <td></td>
+      <td></td>
+      <td>determine the price of确定价格</td>
+      <td>The grocer priced his wares high杂货商对他的商品定价很高</td>
+      <td>[pricing]</td>
+      <td></td>
+      <td>[set, determine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>praɪs</td>
+      <td>['cost', 'toll']</td>
+      <td></td>
+      <td>value measured by what must be given or done or undergone to obtain something通过必须给予或完成或经历的东西来衡量价值</td>
+      <td>the price of success is hard work成功的代价是艰苦的what price glory?什么价格荣耀？</td>
+      <td></td>
+      <td></td>
+      <td>[value]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>praɪs</td>
+      <td>['cost', 'monetary value']</td>
+      <td></td>
+      <td>the property of having material worth (often indicated by the amount of money something would bring if sold)具有物质价值的财产（通常用出售时带来的金额表示）</td>
+      <td>he puts a high price on his services他为自己的服务付出了高昂的代价</td>
+      <td></td>
+      <td></td>
+      <td>[value]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>praɪs</td>
+      <td>['leontyne price', 'mary leontyne price']</td>
+      <td></td>
+      <td>United States operatic soprano (born 1927)美国歌剧女高音（1927年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>praɪs</td>
+      <td>['damage', 'terms']</td>
+      <td></td>
+      <td>the amount of money needed to purchase something购买东西所需的金额</td>
+      <td>the price of gasoline汽油的价格</td>
+      <td>[pricey, pricy]</td>
+      <td></td>
+      <td>[cost]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>praɪs</td>
+      <td></td>
+      <td></td>
+      <td>a monetary reward for helping to catch a criminal帮助抓捕罪犯的金钱奖励</td>
+      <td>the cattle thief has a price on his head牛贼在他头上有代价</td>
+      <td></td>
+      <td></td>
+      <td>[reward]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>praɪs</td>
+      <td></td>
+      <td></td>
+      <td>cost of bribing someone贿赂某人的费用</td>
+      <td>they say that every politician has a price他们说每个政客都有代价</td>
+      <td></td>
+      <td></td>
+      <td>[cost]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>price</th>
+      <td>ice</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>praɪs</td>
+      <td></td>
+      <td></td>
+      <td>the high value or worth of something某种东西的高价值或价值</td>
+      <td>her price is far above rubies她的价格远高于红宝石</td>
+      <td>[pricey, pricy]</td>
+      <td></td>
+      <td>[worth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twice</th>
+      <td>ice</td>
+      <td>4.74</td>
+      <td>adv</td>
+      <td>twaɪs</td>
+      <td>['double', 'doubly']</td>
+      <td></td>
+      <td>to double the degree把学位加倍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>slaɪs</td>
+      <td>['slice up']</td>
+      <td></td>
+      <td>cut into slices切成片</td>
+      <td></td>
+      <td>[slicer, slicing]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>slaɪs</td>
+      <td>['slit']</td>
+      <td></td>
+      <td>make a clean cut through做一个干净的切入</td>
+      <td></td>
+      <td>[slicer]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>slaɪs</td>
+      <td></td>
+      <td></td>
+      <td>hit a ball and put a spin on it so that it travels in a different direction击球并在其上旋转，使其向不同的方向行进</td>
+      <td></td>
+      <td>[slicer, slicing]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>slaɪs</td>
+      <td></td>
+      <td></td>
+      <td>hit a ball so that it causes a backspin击球，以便引起回旋</td>
+      <td></td>
+      <td>[slicing]</td>
+      <td></td>
+      <td>[strike, hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>slaɪs</td>
+      <td>['piece']</td>
+      <td></td>
+      <td>a share of something分享一些东西</td>
+      <td>a slice of the company's revenue公司收入的一部分</td>
+      <td></td>
+      <td></td>
+      <td>[percentage, share, portion, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>slaɪs</td>
+      <td>['fade', 'slicing']</td>
+      <td></td>
+      <td>a golf shot that curves to the right for a right-handed golfer高尔夫球拍向右侧弯曲的右手高尔夫球手</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swing, golf shot, golf stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>slaɪs</td>
+      <td>['cut', 'gash', 'slash']</td>
+      <td></td>
+      <td>a wound made by cutting通过切割制成的伤口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wound, lesion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>slaɪs</td>
+      <td>['piece']</td>
+      <td></td>
+      <td>a serving that has been cut from a larger portion从较大部分切下的份量</td>
+      <td>a slice of bread一片面包</td>
+      <td></td>
+      <td></td>
+      <td>[portion, helping, serving]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>slaɪs</td>
+      <td></td>
+      <td></td>
+      <td>a spatula for spreading paint or ink用于涂抹油漆或墨水的抹刀</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spatula]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slice</th>
+      <td>ice</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>slaɪs</td>
+      <td></td>
+      <td></td>
+      <td>a thin flat piece cut off of some object一块薄薄的扁平片从一些物体上切下来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spice</th>
+      <td>ice</td>
+      <td>3.68</td>
+      <td>ver</td>
+      <td>spaɪs</td>
+      <td>['spice up']</td>
+      <td></td>
+      <td>make more interesting or flavorful使更有趣或美味</td>
+      <td></td>
+      <td>[spicery]</td>
+      <td></td>
+      <td>[change, modify, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spice</th>
+      <td>ice</td>
+      <td>3.68</td>
+      <td>ver</td>
+      <td>spaɪs</td>
+      <td>['spice up', 'zest']</td>
+      <td></td>
+      <td>add herbs or spices to添加草药或香料</td>
+      <td></td>
+      <td>[spicery]</td>
+      <td></td>
+      <td>[flavor, season, flavour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spice</th>
+      <td>ice</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>spaɪs</td>
+      <td>['spicery', 'spiciness']</td>
+      <td></td>
+      <td>the property of being seasoned with spice and so highly flavored用香料调味，味道浓郁的特性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[taste property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spice</th>
+      <td>ice</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>spaɪs</td>
+      <td></td>
+      <td></td>
+      <td>any of a variety of pungent aromatic vegetable substances used for flavoring food用于调味食品的各种辛辣芳香植物物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seasoning, flavorer, flavoring, flavourer, flavouring, seasoner]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spice</th>
+      <td>ice</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>spaɪs</td>
+      <td></td>
+      <td></td>
+      <td>aromatic substances of vegetable origin used as a preservative植物芳香物质用作防腐剂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[preservative]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trice</th>
+      <td>ice</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>traɪs</td>
+      <td>['trice up']</td>
+      <td></td>
+      <td>raise with a line用一条线抬起来</td>
+      <td>trice a window shade一个窗帘</td>
+      <td></td>
+      <td></td>
+      <td>[raise, lift, bring up, elevate, get up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trice</th>
+      <td>ice</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>traɪs</td>
+      <td>['trice up']</td>
+      <td></td>
+      <td>hoist up or in and lash or secure with a small rope用小绳子提升或拴入或用绳子固定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wind, hoist, lift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trice</th>
+      <td>ice</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>traɪs</td>
+      <td>['blink of an eye', 'flash', 'heartbeat', 'instant', 'jiffy', 'new york minute', 'split second', 'twinkling', 'wink']</td>
+      <td></td>
+      <td>a very short time (as the time it takes the eye to blink or the heart to beat)很短的时间（因为眼睛眨眼或心脏跳动的时间）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bit, minute, mo, moment, second]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dicey</th>
+      <td>ice</td>
+      <td>2.43</td>
+      <td>adj</td>
+      <td>'daɪsi</td>
+      <td>['chanceful', 'chancy', 'dodgy'], similarTo:['dangerous', 'unsafe']</td>
+      <td></td>
+      <td>of uncertain outcome; especially fraught with risk不确定的结果;特别是充满风险</td>
+      <td>an extremely dicey future on a brave new world of liquid nitrogen, tar, and smog在液态氮，焦油和烟雾这个勇敢的新世界中，这是一个非常冒险的未来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dicer</th>
+      <td>ice</td>
+      <td>2.19</td>
+      <td>nou</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>a mechanical device used for dicing food用于切割食物的机械装置</td>
+      <td></td>
+      <td>[dice]</td>
+      <td></td>
+      <td>[mechanical device]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

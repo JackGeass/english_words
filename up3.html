@@ -1,0 +1,320 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['cup', 'pup', 'sup', 'tup']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kəp</td>
+      <td>['transfuse']</td>
+      <td></td>
+      <td>treat by applying evacuated cups to the patient's skin通过将疏散的杯子应用于患者的皮肤来治疗</td>
+      <td></td>
+      <td>[cupping]</td>
+      <td></td>
+      <td>[care for, treat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>form into the shape of a cup形成一个杯子的形状</td>
+      <td>She cupped her hands她捧着她的手</td>
+      <td></td>
+      <td></td>
+      <td>[shape, form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>put into a cup放入杯中</td>
+      <td>cup the milk把牛奶加上杯子</td>
+      <td></td>
+      <td></td>
+      <td>[introduce, insert, put in, stick in, enclose, inclose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td>['loving cup']</td>
+      <td></td>
+      <td>a large metal vessel with two handles that is awarded as a trophy to the winner of a competition一个带有两个把手的大型金属容器，被授予竞赛获胜者的奖杯</td>
+      <td>the school kept the cups is a special glass case学校保留的杯子是一个特殊的玻璃柜</td>
+      <td></td>
+      <td></td>
+      <td>[trophy, prize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td>['cupful']</td>
+      <td></td>
+      <td>the quantity a cup will hold杯子的数量</td>
+      <td>he drank a cup of coffee他喝了一杯咖啡he borrowed a cup of sugar他借了一杯糖</td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>any cup-shaped concavity任何杯形凹面</td>
+      <td>bees filled the waxen cups with honey蜜蜂用蜂蜜填满蜡杯he wore a jock strap with a metal cup他戴着带金属杯的运动背带the cup of her bra她的胸罩杯</td>
+      <td></td>
+      <td></td>
+      <td>[concave shape, incurvation, incurvature, concavity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>a punch served in a pitcher instead of a punch bowl在投手而不是打孔碗中打出一拳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[punch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>a small open container usually used for drinking; usually has a handle通常用于饮用的小型开放式容器;通常有一个手柄</td>
+      <td>he put the cup back in the saucer他把杯子放回碟子里the handle of the cup was missing杯子的把手不见了</td>
+      <td></td>
+      <td></td>
+      <td>[container, crockery, dishware]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>a United States liquid unit equal to 8 fluid ounces美国液体单位等于8液量盎司</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[united states liquid unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>cup-shaped plant organ杯状植物器官</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cup</th>
+      <td>up</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kəp</td>
+      <td></td>
+      <td></td>
+      <td>the hole (or metal container in the hole) on a golf green高尔夫果岭上的洞（或洞中的金属容器）</td>
+      <td>he swore as the ball rimmed the cup and rolled away他发誓说，球围着杯子滚开了put the flag back in the cup把旗子放回杯子里</td>
+      <td></td>
+      <td></td>
+      <td>[hole]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pup</th>
+      <td>up</td>
+      <td>3.39</td>
+      <td>ver</td>
+      <td>pəp</td>
+      <td>['whelp']</td>
+      <td></td>
+      <td>give birth to (a puppy)生下（小狗）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[have, deliver, give birth, bear, birth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pup</th>
+      <td>up</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>pəp</td>
+      <td>['puppy']</td>
+      <td></td>
+      <td>an inexperienced young person一个没有经验的年轻人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[younker, spring chicken, youth, young person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pup</th>
+      <td>up</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>pəp</td>
+      <td>['whelp']</td>
+      <td></td>
+      <td>young of any of various canines such as a dog or wolf年轻的各种犬类，如狗或狼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[young mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sup</th>
+      <td>up</td>
+      <td>3.34</td>
+      <td>ver</td>
+      <td>səp</td>
+      <td></td>
+      <td></td>
+      <td>take solid or liquid food into the mouth a little at a time either by drinking or by eating with a spoon通过饮用或用勺子进食，一次一点地将固体或液体食物放入口中</td>
+      <td></td>
+      <td>[supper, supping]</td>
+      <td></td>
+      <td>[consume, have, ingest, take, take in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sup</th>
+      <td>up</td>
+      <td>3.34</td>
+      <td>nou</td>
+      <td>səp</td>
+      <td>['swallow']</td>
+      <td></td>
+      <td>a small amount of liquid food少量的液体食物</td>
+      <td>a sup of ale一杯啤酒</td>
+      <td></td>
+      <td></td>
+      <td>[mouthful, taste]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tup</th>
+      <td>up</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td></td>
+      <td>['ram']</td>
+      <td></td>
+      <td>uncastrated adult male sheep未阉割的成年雄性绵羊</td>
+      <td>a British term is `tup'一个英国术语是'tup'</td>
+      <td></td>
+      <td></td>
+      <td>[sheep]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

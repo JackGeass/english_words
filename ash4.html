@@ -1,0 +1,1070 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['cash', 'wash', 'dash', 'rash', 'bash', 'hash', 'nash', 'mash', 'lash', 'gash', 'sash', 'ashy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>cash</th>
+      <td>ash</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kæʃ</td>
+      <td>['cash in'], alos:['cash in on']</td>
+      <td></td>
+      <td>exchange for cash换现金</td>
+      <td>I cashed the check as soon as it arrived in the mail我收到邮件后立即兑现了支票</td>
+      <td>[cashable]</td>
+      <td></td>
+      <td>[interchange, exchange, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cash</th>
+      <td>ash</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kæʃ</td>
+      <td>['hard cash', 'hard currency']</td>
+      <td></td>
+      <td>money in the form of bills or coins钞票或硬币形式的钱</td>
+      <td>there is a desperate shortage of hard cash现金急需短缺</td>
+      <td></td>
+      <td></td>
+      <td>[currency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cash</th>
+      <td>ash</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kæʃ</td>
+      <td>['john cash', 'johnny cash']</td>
+      <td></td>
+      <td>United States country music singer and songwriter (1932-2003)美国乡村音乐歌手兼词曲作者（1932-2003）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cash</th>
+      <td>ash</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kæʃ</td>
+      <td>['immediate payment']</td>
+      <td>[credit]</td>
+      <td>prompt payment for goods or services in currency or by check及时以货币或支票支付货物或服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[payment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['dampen', 'moisten']</td>
+      <td></td>
+      <td>make moist使潮湿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['launder']</td>
+      <td></td>
+      <td>cleanse with a cleaning agent, such as soap, and water用肥皂和水等清洁剂清洁</td>
+      <td></td>
+      <td>[washer, washable]</td>
+      <td>[rinse]</td>
+      <td>[clean, make clean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['wash away', 'wash off', 'wash out']</td>
+      <td></td>
+      <td>remove by the application of water or other liquid and soap or some other cleaning agent通过使用水或其他液体和肥皂或一些其他清洁剂去除</td>
+      <td>he washed the dirt from his coat他洗掉了外套上的污垢The nurse washed away the blood护士冲走了血Can you wash away the spots on the windows?你能洗掉窗户上的斑点吗？he managed to wash out the stains他设法洗掉了污渍</td>
+      <td></td>
+      <td>[wash out, rinse]</td>
+      <td>[take, remove, take away, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['lap', 'lave']</td>
+      <td></td>
+      <td>wash or flow against洗涤或流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['rinse']</td>
+      <td></td>
+      <td>clean with some chemical process用一些化学过程清洁</td>
+      <td></td>
+      <td>[washable, washer]</td>
+      <td>[wash away, wash off, launder, wash out]</td>
+      <td>[serve, swear out, process]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td>['lave'], alos:['wash up']</td>
+      <td></td>
+      <td>cleanse (one's body) with soap and water用肥皂和水清洗（一个人的身体）</td>
+      <td></td>
+      <td>[washing]</td>
+      <td></td>
+      <td>[cleanse, clean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>admit to testing or proof承认测试或证明</td>
+      <td>This silly excuse won't wash in traffic court这个愚蠢的借口不会在交通法庭上洗漱</td>
+      <td></td>
+      <td></td>
+      <td>[stand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>apply a thin coating of paint, metal, etc., to涂上一层薄薄的油漆，金属等涂料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>be capable of being washed能够被洗涤</td>
+      <td>Does this material wash?这种材料洗吗？</td>
+      <td>[washable]</td>
+      <td>[launder]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>form by erosion形成侵蚀</td>
+      <td>The river washed a ravine into the mountainside河水将山沟冲到山腰</td>
+      <td></td>
+      <td></td>
+      <td>[erode, fret, eat away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>move by or as if by water靠水或仿佛靠水</td>
+      <td>The swollen river washed away the footbridge肿胀的河水冲走了人行天桥</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>separate dirt or gravel from (precious minerals)从（珍贵矿物）中分离出污垢或砾石</td>
+      <td></td>
+      <td></td>
+      <td>[rinse]</td>
+      <td>[separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>to cleanse (itself or another animal) by licking通过舔清洗（本身或其他动物）</td>
+      <td>The cat washes several times a day猫每天洗几次</td>
+      <td></td>
+      <td>[lave]</td>
+      <td>[clean, cleanse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['washout']</td>
+      <td></td>
+      <td>the erosive process of washing away soil or gravel by water (as from a roadway)用水冲洗土壤或砾石的腐蚀过程（如从巷道）</td>
+      <td>from the house they watched the washout of their newly seeded lawn by the water他们从房子里看到了他们新近播下的草坪在水面上的冲刷</td>
+      <td></td>
+      <td></td>
+      <td>[soil erosion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['airstream', 'backwash', 'race', 'slipstream']</td>
+      <td></td>
+      <td>the flow of air that is driven backwards by an aircraft propeller被飞机螺旋桨向后驱动的空气流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['laundry', 'washables', 'washing']</td>
+      <td></td>
+      <td>garments or white goods that can be cleaned by laundering可以通过洗涤清洁的服装或白色家电</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garment, white goods, household linen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['lavation', 'washing']</td>
+      <td></td>
+      <td>the work of cleansing (usually with soap and water)清洁工作（通常用肥皂和水）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['dry wash']</td>
+      <td></td>
+      <td>the dry bed of an intermittent stream (as at the bottom of a canyon)间歇流的干燥床（如峡谷底部）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[streambed, creek bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td>['wash drawing']</td>
+      <td></td>
+      <td>a watercolor made by applying a series of monochrome washes one over the other通过将一系列单色洗涤应用于另一个而制成的水彩画</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water-colour, water-color, watercolour, watercolor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>any enterprise in which losses and gains cancel out任何损失和收益抵消的企业</td>
+      <td>at the end of the year the accounting department showed that it was a wash在年底，会计部门表明这是洗</td>
+      <td></td>
+      <td></td>
+      <td>[commercial activity, business activity]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wash</th>
+      <td>ash</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɑʃ</td>
+      <td></td>
+      <td></td>
+      <td>a thin coat of water-base paint一层薄薄的水性涂料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water-base paint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['dart', 'flash', 'scoot', 'scud', 'shoot']</td>
+      <td></td>
+      <td>run or move very quickly or hastily快速奔跑或移动或仓促行动</td>
+      <td>She dashed into the yard她冲进院子里</td>
+      <td></td>
+      <td>[buck, charge, tear, shoot, shoot down]</td>
+      <td>[speed, hasten, hie, hotfoot, bucket along, belt along, step on it, rush along, pelt along, rush, race, cannonball along]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['smash']</td>
+      <td></td>
+      <td>break into pieces, as by striking or knocking over通过敲击或敲击而破碎</td>
+      <td></td>
+      <td></td>
+      <td>[smash]</td>
+      <td>[break]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['crash']</td>
+      <td></td>
+      <td>hurl or thrust violently猛烈地投掷或猛烈地推</td>
+      <td>He dashed the plate against the wall他把盘子靠在墙上Waves were dashing against the rock海浪冲向岩石</td>
+      <td></td>
+      <td></td>
+      <td>[cast, hurl, hurtle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td>['daunt', 'frighten away', 'frighten off', 'pall', 'scare', 'scare away', 'scare off']</td>
+      <td></td>
+      <td>cause to lose courage导致失去勇气</td>
+      <td>dashed by the refusal因拒绝而破灭</td>
+      <td></td>
+      <td></td>
+      <td>[intimidate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td></td>
+      <td></td>
+      <td>add an enlivening or altering element to添加一个活跃或改变元素</td>
+      <td>blue paint dashed with white蓝色油漆用白色破灭</td>
+      <td></td>
+      <td></td>
+      <td>[mix in, mix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dæʃ</td>
+      <td></td>
+      <td></td>
+      <td>destroy or break毁灭或破坏</td>
+      <td>dashed ambitions and hopes虚伪的野心和希望</td>
+      <td></td>
+      <td></td>
+      <td>[queer, baffle, bilk, cross, foil, frustrate, scotch, spoil, thwart]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['dah']</td>
+      <td></td>
+      <td>the longer of the two telegraphic signals used in Morse code摩尔斯电码中使用的两个电报信号中的较长时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiotelegraphic signal, telegraphic signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['bolt']</td>
+      <td></td>
+      <td>the act of moving with great haste匆忙行动的行为</td>
+      <td>he made a dash for the door他冲了一下门</td>
+      <td></td>
+      <td></td>
+      <td>[rush, haste, hurry, rushing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['elan', 'flair', 'panache', 'style']</td>
+      <td></td>
+      <td>distinctive and stylish elegance独特而时尚的优雅</td>
+      <td>he wooed her with the confident dash of a cavalry officer他带着自信的骑兵军队向她求爱</td>
+      <td></td>
+      <td></td>
+      <td>[elegance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['hyphen']</td>
+      <td></td>
+      <td>a punctuation mark (-) used between parts of a compound word or between the syllables of a word when the word is divided at the end of a line of text当在一行文本的末尾划分单词时，在复合词的各个部分之间或单词的音节之间使用的标点符号（ - ）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[punctuation mark, punctuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td>['sprint']</td>
+      <td></td>
+      <td>a quick run快速运行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[run, running]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dash</th>
+      <td>ash</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dæʃ</td>
+      <td></td>
+      <td></td>
+      <td>a footrace run at top speed以最快的速度跑步</td>
+      <td>he is preparing for the 100-yard dash他正在为100码冲刺做准备</td>
+      <td></td>
+      <td></td>
+      <td>[track event]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>ash</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>ræʃ</td>
+      <td>['blizzard']</td>
+      <td></td>
+      <td>a series of unexpected and unpleasant occurrences一系列意外和不愉快的事件</td>
+      <td>a rash of bank robberies一连串的银行抢劫案</td>
+      <td></td>
+      <td></td>
+      <td>[series]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>ash</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>ræʃ</td>
+      <td>['efflorescence', 'roseola', 'skin rash']</td>
+      <td></td>
+      <td>any red eruption of the skin任何红色的皮肤喷发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eruption]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>ash</td>
+      <td>3.76</td>
+      <td>adj</td>
+      <td>ræʃ</td>
+      <td>['foolhardy', 'heady', 'reckless'], similarTo:['bold']</td>
+      <td></td>
+      <td>marked by defiant disregard for danger or consequences以挑衅无视危险或后果为标志</td>
+      <td>a rash attempt to climb Mount Everest一次鲁莽的尝试攀登珠穆朗玛峰</td>
+      <td>[rashness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rash</th>
+      <td>ash</td>
+      <td>3.76</td>
+      <td>adj</td>
+      <td>ræʃ</td>
+      <td>, similarTo:['imprudent']</td>
+      <td></td>
+      <td>imprudently incurring risk不可思议地招致风险</td>
+      <td>do something rash that he will forever repent做一些他会永远忏悔的事情</td>
+      <td>[rashness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bash</th>
+      <td>ash</td>
+      <td>3.60</td>
+      <td>ver</td>
+      <td>bæʃ</td>
+      <td>['bonk', 'bop', 'sock', 'whap', 'whop']</td>
+      <td></td>
+      <td>hit hard用力打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bash</th>
+      <td>ash</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>bæʃ</td>
+      <td>['bang', 'belt', 'knock', 'smash']</td>
+      <td></td>
+      <td>a vigorous blow一阵轰轰烈烈的打击</td>
+      <td>he took a bash right in his face他在脸上狠狠地砸了一下</td>
+      <td></td>
+      <td></td>
+      <td>[blow, bump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bash</th>
+      <td>ash</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>bæʃ</td>
+      <td>['brawl', 'do']</td>
+      <td></td>
+      <td>an uproarious party一个吵闹的派对</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[party]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hash</th>
+      <td>ash</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hæʃ</td>
+      <td></td>
+      <td></td>
+      <td>chop up砍了</td>
+      <td>hash the potatoes哈希土豆</td>
+      <td></td>
+      <td></td>
+      <td>[chop, chop up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hash</th>
+      <td>ash</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hæʃ</td>
+      <td>['haschisch', 'hasheesh', 'hashish']</td>
+      <td></td>
+      <td>purified resinous extract of the hemp plant; used as a hallucinogen大麻植物的纯化树脂提取物;用作迷幻剂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soft drug]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hash</th>
+      <td>ash</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hæʃ</td>
+      <td></td>
+      <td></td>
+      <td>chopped meat mixed with potatoes and browned切碎的肉混合土豆和褐色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nash</th>
+      <td>ash</td>
+      <td>3.44</td>
+      <td>nou</td>
+      <td>næʃ</td>
+      <td>['ogden nash']</td>
+      <td></td>
+      <td>United States writer noted for his droll epigrams (1902-1971)美国作家以他的流言蜚语而闻名（1902-1971）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>ash</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mæʃ</td>
+      <td>['crush', 'squash', 'squeeze', 'squelch']</td>
+      <td></td>
+      <td>to compress with violence, out of natural shape or condition压迫暴力，自然形状或条件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[press]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>ash</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mæʃ</td>
+      <td>['butterfly', 'chat up', 'coquet', 'coquette', 'dally', 'flirt', 'philander', 'romance']</td>
+      <td></td>
+      <td>talk or behave amorously, without serious intentions在没有严肃意图的情况下谈论或表现得很好</td>
+      <td></td>
+      <td>[masher]</td>
+      <td></td>
+      <td>[speak, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>ash</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mæʃ</td>
+      <td>['bray', 'comminute', 'crunch', 'grind']</td>
+      <td></td>
+      <td>reduce to small pieces or particles by pounding or abrading通过敲击或研磨将其减少为小块或颗粒</td>
+      <td>mash the garlic捣碎大蒜</td>
+      <td>[masher]</td>
+      <td></td>
+      <td>[break up, fragment, fragmentise, fragmentize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>ash</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>mæʃ</td>
+      <td></td>
+      <td></td>
+      <td>a mixture of mashed malt grains and hot water; used in brewing捣碎的麦芽谷物和热水的混合物;用于酿造</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[suspension]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mash</th>
+      <td>ash</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>mæʃ</td>
+      <td></td>
+      <td></td>
+      <td>mixture of ground animal feeds地面动物饲料的混合物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feed, provender]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>ash</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td>['flog', 'lather', 'slash', 'strap', 'trounce', 'welt', 'whip']</td>
+      <td></td>
+      <td>beat severely with a whip or rod用鞭子或杖严重击打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work over, beat, beat up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>ash</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td>['whip']</td>
+      <td></td>
+      <td>strike as if by whipping好像是通过鞭打打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>ash</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td></td>
+      <td>[unlash]</td>
+      <td>bind with a rope, chain, or cord用绳子，绳子或绳索捆绑</td>
+      <td>lash the horse鞭打马</td>
+      <td></td>
+      <td></td>
+      <td>[bind, tie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>ash</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>læʃ</td>
+      <td></td>
+      <td></td>
+      <td>lash or flick about sharply猛烈地鞭打或轻弹</td>
+      <td>The lion lashed its tail狮子鞭打它的尾巴</td>
+      <td></td>
+      <td></td>
+      <td>[sway, swing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>ash</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>læʃ</td>
+      <td>['thong']</td>
+      <td></td>
+      <td>leather strip that forms the flexible part of a whip皮革条带，形成鞭子的灵活部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leather strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>ash</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>læʃ</td>
+      <td>['cilium', 'eyelash']</td>
+      <td></td>
+      <td>any of the short curved hairs that grow from the edges of the eyelids任何从眼睑边缘长出的短弯曲的毛发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lash</th>
+      <td>ash</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>læʃ</td>
+      <td>['whip', 'whiplash']</td>
+      <td></td>
+      <td>a quick blow delivered with a whip or whiplike object用鞭子或鞭子般的物体快速打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>ash</td>
+      <td>2.85</td>
+      <td>ver</td>
+      <td>ɡæʃ</td>
+      <td>['slash']</td>
+      <td></td>
+      <td>cut open切开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>ash</td>
+      <td>2.85</td>
+      <td>nou</td>
+      <td>ɡæʃ</td>
+      <td>['slash']</td>
+      <td></td>
+      <td>a strong sweeping cut made with a sharp instrument用锋利的乐器进行强力扫描</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut, cutting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>ash</td>
+      <td>2.85</td>
+      <td>nou</td>
+      <td>ɡæʃ</td>
+      <td>['cut', 'slash', 'slice']</td>
+      <td></td>
+      <td>a wound made by cutting通过切割制成的伤口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lesion, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gash</th>
+      <td>ash</td>
+      <td>2.85</td>
+      <td>nou</td>
+      <td>ɡæʃ</td>
+      <td>['cut']</td>
+      <td></td>
+      <td>a trench resembling a furrow that was made by erosion or excavation一种类似于沟槽的沟槽，由侵蚀或挖掘制成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[furrow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sash</th>
+      <td>ash</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>sæʃ</td>
+      <td>['cincture', 'girdle', 'waistband', 'waistcloth']</td>
+      <td></td>
+      <td>a band of material around the waist that strengthens a skirt or trousers腰部有一条材料，可以加强裙子或裤子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[band]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sash</th>
+      <td>ash</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>sæʃ</td>
+      <td>['window sash']</td>
+      <td></td>
+      <td>a framework that holds the panes of a window in the window frame一个框架，用于保存窗口框架中窗口的窗格</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[frame, framework]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ashy</th>
+      <td>ash</td>
+      <td>2.17</td>
+      <td>adj</td>
+      <td>'æʃi</td>
+      <td>['ash-gray', 'ash-grey'], similarTo:['achromatic', 'neutral']</td>
+      <td></td>
+      <td>of a light grey浅灰色</td>
+      <td></td>
+      <td>[ash]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,1670 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['unit', 'punk', 'hunt', 'sung', 'cunt', 'junk', 'fund', 'lung', 'bunk', 'undo', 'sunk', 'buns', 'funk', 'dung', 'tung', 'hunk', 'runt', 'dunk', 'rung', 'shun', 'stun', 'puny', 'bunt', 'punt', 'pung', 'bung', 'mung', 'gunk', 'unix', 'zuni', 'lunt', 'unio']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>unit</th>
+      <td>un</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['social unit']</td>
+      <td></td>
+      <td>an organization regarded as part of a larger social group被视为更大社会群体一部分的组织</td>
+      <td>the coach said the offensive unit did a good job教练说进攻部队做得很好after the battle the soldier had trouble rejoining his unit战斗结束后士兵重新加入他的部队</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[organization, organisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>un</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['unit of measurement']</td>
+      <td></td>
+      <td>any division of quantity accepted as a standard of measurement or exchange任何数量划分作为衡量标准或交换标准</td>
+      <td>the dollar is the United States unit of currency美元是美元的货币单位a unit of wheat is a bushel小麦单位是蒲式耳change per unit volume每单位体积变化</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[definite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>un</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['whole']</td>
+      <td></td>
+      <td>an assemblage of parts that is regarded as a single entity被视为单一实体的部件集合</td>
+      <td>the team is a unit团队是一个单位</td>
+      <td>[unify, unitize]</td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>un</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['building block']</td>
+      <td></td>
+      <td>a single undivided natural thing occurring in the composition of something else在其他事物的构成中发生的单一的不可分割的自然事物</td>
+      <td>units of nucleic acids核酸单位</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[thing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>un</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td></td>
+      <td></td>
+      <td>an individual or group or structure or other entity regarded as a structural or functional constituent of a whole被视为整体结构或功能组成部分的个人或团体或结构或其他实体</td>
+      <td>the reduced the number of units and installations减少了单位和装置的数量the word is a basic linguistic unit这个词是一个基本的语言单位</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[constituent, portion, component part, component, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>un</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td></td>
+      <td></td>
+      <td>a single undivided whole一个不可分割的整体</td>
+      <td>an idea is not a unit that can be moved from one brain to another一个想法不是一个可以从一个大脑移动到另一个大脑的单元</td>
+      <td>[unify, unitize]</td>
+      <td></td>
+      <td>[whole]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>un</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['punk rock']</td>
+      <td></td>
+      <td>rock music with deliberately offensive lyrics expressing anger and social alienation; in part a reaction against progressive rock摇滚音乐故意冒犯歌词表达愤怒和社会异化;部分是对进步摇滚的反应</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rock-and-roll, rock, rock'n'roll, rock 'n' roll, rock and roll, rock music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>un</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['punk rocker']</td>
+      <td></td>
+      <td>a teenager or young adult who is a performer (or enthusiast) of punk rock and a member of the punk youth subculture少年或年轻的成年人，他是朋克摇滚乐的表演者（或狂热爱好者），也是朋克青年亚文化的成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adolescent, stripling, teen, teenager]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>un</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['kindling', 'spunk', 'tinder', 'touchwood']</td>
+      <td></td>
+      <td>material for starting a fire起火的材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ignitor, igniter, lighter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>un</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['goon', 'hood', 'hoodlum', 'strong-armer', 'thug', 'tough', 'toughie']</td>
+      <td></td>
+      <td>an aggressive and violent young criminal一个积极和暴力的年轻罪犯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[malefactor, outlaw, criminal, crook, felon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>un</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td></td>
+      <td></td>
+      <td>substance that smolders when ignited; used to light fuses (especially fireworks)被点燃时闷烧的物质;用于点燃保险丝（尤其是烟花）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lighter, ignitor, igniter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>un</td>
+      <td>4.41</td>
+      <td>adj</td>
+      <td>pəŋk</td>
+      <td>['bum', 'cheap', 'cheesy', 'chintzy', 'crummy', 'sleazy', 'tinny'], similarTo:['inferior']</td>
+      <td></td>
+      <td>of very poor quality; flimsy质量很差;单薄</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>hənt</td>
+      <td>['hound', 'trace']</td>
+      <td></td>
+      <td>pursue or chase relentlessly追求或追逐无情</td>
+      <td>The hunters traced the deer into the woods猎人追踪鹿进入树林</td>
+      <td>[hunter]</td>
+      <td></td>
+      <td>[dog, chase after, chase, tail, track, trail, give chase, go after, tag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>hənt</td>
+      <td>['hunt down', 'run', 'track down']</td>
+      <td></td>
+      <td>pursue for food or sport (as of wild animals)寻求食物或运动（如野生动物）</td>
+      <td>Goering often hunted wild boars in Poland戈林经常在波兰猎杀野猪The Duke hunted in these woods公爵在这些树林中猎杀</td>
+      <td>[hunting, hunter]</td>
+      <td>[run]</td>
+      <td>[catch, capture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>hənt</td>
+      <td></td>
+      <td></td>
+      <td>chase away, with as with force追逐，与力量一样</td>
+      <td>They hunted the unwanted immigrants out of the neighborhood他们将不受欢迎的移民赶出了邻居</td>
+      <td></td>
+      <td></td>
+      <td>[rouse, drive out, force out, rout out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>hənt</td>
+      <td></td>
+      <td></td>
+      <td>oscillate about a desired speed, position, or state to an undesirable extent以期望的速度，位置或状态振​​荡到不希望的程度</td>
+      <td>The oscillator hunts about the correct frequency振荡器捕获正确的频率</td>
+      <td></td>
+      <td></td>
+      <td>[vibrate, oscillate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>hənt</td>
+      <td></td>
+      <td></td>
+      <td>search (an area) for prey搜索（区域）猎物</td>
+      <td>The King used to hunt these forests国王过去常常捕杀这些森林</td>
+      <td>[hunting, hunter]</td>
+      <td>[run, track down, hunt down]</td>
+      <td>[search, look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>hənt</td>
+      <td></td>
+      <td></td>
+      <td>seek, search for寻求，寻找</td>
+      <td>She hunted for her reading glasses but was unable to locate them她寻找她的老花镜，却无法找到它们</td>
+      <td>[hunter, hunting]</td>
+      <td></td>
+      <td>[seek, look for, search]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>hənt</td>
+      <td></td>
+      <td></td>
+      <td>yaw back and forth about a flight path关于飞行路径来回摆动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[yaw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td>['hunt club']</td>
+      <td></td>
+      <td>an association of huntsmen who hunt for sport寻找运动的猎人协会</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[guild, order, lodge, social club, gild, club, society]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td>['hunting', 'search']</td>
+      <td></td>
+      <td>the activity of looking thoroughly in order to find something or someone为了找到某事或某人而彻底查看的活动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td>['richard morris hunt']</td>
+      <td></td>
+      <td>United States architect (1827-1895)美国建筑师（1827-1895）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td>['hunting']</td>
+      <td></td>
+      <td>the work of finding and killing or capturing animals for food or pelts为食物或毛皮寻找和杀死或捕获动物的工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[labor, labour, toil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td>['james henry leigh hunt', 'leigh hunt']</td>
+      <td></td>
+      <td>British writer who defended the Romanticism of Keats and Shelley (1784-1859)为济慈和雪莱的浪漫主义辩护的英国作家（1784-1859）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td>['hunting']</td>
+      <td></td>
+      <td>the pursuit and killing or capture of wild animals regarded as a sport追求和杀死或捕获被视为运动的野生动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[outdoor sport, field sport, blood sport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td>['holman hunt', 'william holman hunt']</td>
+      <td></td>
+      <td>Englishman and Pre-Raphaelite painter (1827-1910)英国人和拉斐尔前派画家（1827-1910）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunt</th>
+      <td>un</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>hənt</td>
+      <td></td>
+      <td></td>
+      <td>an instance of searching for something搜索某物的实例</td>
+      <td>the hunt for submarines寻找潜艇</td>
+      <td></td>
+      <td></td>
+      <td>[search]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sung</th>
+      <td>un</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>sʊŋ</td>
+      <td>['song', 'song dynasty', 'sung dynasty']</td>
+      <td></td>
+      <td>the imperial dynasty of China from 960 to 1279; noted for art and literature and philosophy中国的帝国王朝从960年到1279年;以艺术，文学和哲学着称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dynasty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cunt</th>
+      <td>un</td>
+      <td>4.25</td>
+      <td>nou</td>
+      <td></td>
+      <td>['bitch']</td>
+      <td></td>
+      <td>a person (usually but not necessarily a woman) who is thoroughly disliked一个完全不喜欢的人（通常但不一定是女人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cunt</th>
+      <td>un</td>
+      <td>4.25</td>
+      <td>nou</td>
+      <td></td>
+      <td>['puss', 'pussy', 'slit', 'snatch', 'twat']</td>
+      <td></td>
+      <td>obscene terms for female genitals女性生殖器的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fanny, female genital organ, female genitalia, female genitals]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>junk</th>
+      <td>un</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>dʒəŋk</td>
+      <td>['scrap', 'trash']</td>
+      <td></td>
+      <td>dispose of (something useless or old)处置（无用或旧的东西）</td>
+      <td>junk an old car垃圾一辆旧车</td>
+      <td></td>
+      <td></td>
+      <td>[toss out, throw away, throw out, toss, toss away, cast aside, cast away, cast out, chuck out, discard, dispose, fling, put away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>junk</th>
+      <td>un</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dʒəŋk</td>
+      <td>['debris', 'detritus', 'dust', 'rubble']</td>
+      <td></td>
+      <td>the remains of something that has been destroyed or broken up被破坏或破坏的东西的遗骸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scrap, trash, rubbish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>junk</th>
+      <td>un</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dʒəŋk</td>
+      <td></td>
+      <td></td>
+      <td>any of various Chinese boats with a high poop and lugsails各种中国船只中的任何一种都有高大便和拖尾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[boat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>fənd</td>
+      <td></td>
+      <td></td>
+      <td>accumulate a fund for the discharge of a recurrent liability积累经常性负债的基金</td>
+      <td>fund a medical care plan资助医疗保健计划</td>
+      <td></td>
+      <td></td>
+      <td>[compile, amass, collect, roll up, pile up, accumulate, hoard]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>fənd</td>
+      <td></td>
+      <td></td>
+      <td>convert (short-term floating debt) into long-term debt that bears fixed interest and is represented by bonds将（短期浮动债务）转换为具有固定利息并以债券为代表的长期债务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[finance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>fənd</td>
+      <td></td>
+      <td></td>
+      <td>furnish money for为...提供资金</td>
+      <td>The government funds basic research in many areas政府资助许多领域的基础研究</td>
+      <td>[funding]</td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>fənd</td>
+      <td></td>
+      <td></td>
+      <td>invest money in government securities投资于政府证券</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[invest, commit, place, put]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>fənd</td>
+      <td></td>
+      <td></td>
+      <td>place or store up in a fund for accumulation存入或储存在积累的基金中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accumulate, hoard, amass, pile up, compile, collect, roll up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>fənd</td>
+      <td></td>
+      <td></td>
+      <td>provide a fund for the redemption of principal or payment of interest为赎回本金或支付利息提供资金</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supply, provide, render, furnish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>fənd</td>
+      <td>['monetary fund']</td>
+      <td></td>
+      <td>a reserve of money set aside for some purpose为某种目的留出的储备金</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[money]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>fənd</td>
+      <td>['investment company', 'investment firm', 'investment trust']</td>
+      <td></td>
+      <td>a financial institution that sells shares to individuals and invests in securities issued by other companies向个人出售股票并投资其他公司发行的证券的金融机构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nondepository financial institution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fund</th>
+      <td>un</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>fənd</td>
+      <td>['stock', 'store']</td>
+      <td></td>
+      <td>a supply of something available for future use提供可供将来使用的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accumulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lung</th>
+      <td>un</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>ləŋ</td>
+      <td></td>
+      <td></td>
+      <td>either of two saclike respiratory organs in the chest of vertebrates; serves to remove carbon dioxide and provide oxygen to the blood脊椎动物胸部两个囊状呼吸器官中的任何一个;用于去除二氧化碳并为血液提供氧气</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[respiratory organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>bəŋk</td>
+      <td>['beat']</td>
+      <td></td>
+      <td>avoid paying避免付钱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chisel, cheat, rip off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>bəŋk</td>
+      <td>['break away', 'escape', 'fly the coop', 'head for the hills', 'hightail it', 'lam', 'run', 'run away', 'scarper', 'scat', 'take to the woods', 'turn tail']</td>
+      <td></td>
+      <td>flee; take to one's heels; cut and run逃跑;紧紧抓住;剪切并运行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go forth, go away, leave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>bəŋk</td>
+      <td></td>
+      <td></td>
+      <td>provide with a bunk提供一张双层床</td>
+      <td>We bunked the children upstairs我们把孩子们趴在楼上</td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['buncombe', 'bunkum', 'guff', 'hogwash', 'rot']</td>
+      <td></td>
+      <td>unacceptable behavior (especially ludicrously false statements)不可接受的行为（特别是荒谬的虚假陈述）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garbage, drivel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['berth', 'built in bed']</td>
+      <td></td>
+      <td>a bed on a ship or train; usually in tiers船上或火车上的床;通常分层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['feed bunk']</td>
+      <td></td>
+      <td>a long trough for feeding cattle喂养牛的长槽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trough, manger]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['bunk bed']</td>
+      <td></td>
+      <td>beds built one above the other床铺一个在另一个之上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['hokum', 'meaninglessness', 'nonsense', 'nonsensicality']</td>
+      <td></td>
+      <td>a message that seems to convey no meaning似乎没有任何意义的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[content, message, substance, subject matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>un</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td></td>
+      <td></td>
+      <td>a rough bed (as at a campsite)一张粗糙的床（如露营地）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>undo</th>
+      <td>un</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>ən'du</td>
+      <td>['unmake']</td>
+      <td></td>
+      <td>deprive of certain characteristics剥夺某些特征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>undo</th>
+      <td>un</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>ən'du</td>
+      <td>['unwrap']</td>
+      <td></td>
+      <td>remove the outer cover or wrapping of取下外壳或包裹</td>
+      <td>undo the parcel撤消包裹</td>
+      <td>[undoer]</td>
+      <td></td>
+      <td>[uncover, expose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>undo</th>
+      <td>un</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>ən'du</td>
+      <td>['loosen', 'untie']</td>
+      <td></td>
+      <td>cause to become loose导致变得松散</td>
+      <td>undo the shoelace撤消鞋带</td>
+      <td>[undoer, undoing]</td>
+      <td></td>
+      <td>[alter, modify, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>undo</th>
+      <td>un</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>ən'du</td>
+      <td></td>
+      <td></td>
+      <td>cancel, annul, or reverse an action or its effect取消，取消或撤销某项行动或其影响</td>
+      <td>I wish I could undo my actions我希望我可以撤消我的行为</td>
+      <td>[undoing]</td>
+      <td></td>
+      <td>[reverse, turn, change by reversal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>undo</th>
+      <td>un</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>ən'du</td>
+      <td></td>
+      <td></td>
+      <td>cause the ruin or downfall of导致毁灭或垮台</td>
+      <td></td>
+      <td>[undoer]</td>
+      <td></td>
+      <td>[ruin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sunk</th>
+      <td>un</td>
+      <td>3.59</td>
+      <td>adj</td>
+      <td>səŋk</td>
+      <td>['done for', 'ruined', 'undone', 'washed-up'], similarTo:['unsuccessful']</td>
+      <td></td>
+      <td>doomed to extinction注定要灭绝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>buns</th>
+      <td>un</td>
+      <td>3.56</td>
+      <td>nou</td>
+      <td>bʌnz</td>
+      <td>['arse', 'ass', 'backside', 'behind', 'bottom', 'bum', 'butt', 'buttocks', 'can', 'derriere', 'fanny', 'fundament', 'hind end', 'hindquarters', 'keister', 'nates', 'posterior', 'prat', 'rear', 'rear end', 'rump', 'seat', 'stern', 'tail', 'tail end', 'tooshie', 'tush']</td>
+      <td></td>
+      <td>the fleshy part of the human body that you sit on你坐在人体的肉质部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>un</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>fəŋk</td>
+      <td>['cringe', 'flinch', 'quail', 'recoil', 'shrink', 'squinch', 'wince']</td>
+      <td></td>
+      <td>draw back, as with fear or pain像恐惧或痛苦一样退缩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>un</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>fəŋk</td>
+      <td>['blue funk']</td>
+      <td></td>
+      <td>a state of nervous depression一种紧张抑郁的状态</td>
+      <td>he was in a funk他很恐怖</td>
+      <td></td>
+      <td></td>
+      <td>[depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>un</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>fəŋk</td>
+      <td>['casimir funk']</td>
+      <td></td>
+      <td>United States biochemist (born in Poland) who showed that several diseases were caused by dietary deficiencies and who coined the term `vitamin' for the chemicals involved (1884-1967)美国生物化学家（出生于波兰）表明，几种疾病是由饮食缺乏造成的，他们为所涉及的化学品创造了“维生素”一词（1884-1967）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>un</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>fəŋk</td>
+      <td></td>
+      <td></td>
+      <td>an earthy type of jazz combining it with blues and soul; has a heavy bass line that accentuates the first beat in the bar一种朴实的爵士乐，将它与蓝调和灵魂相结合;有一个沉重的低音线，突出了酒吧的第一拍</td>
+      <td></td>
+      <td>[funky]</td>
+      <td></td>
+      <td>[jazz]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dung</th>
+      <td>un</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>dəŋ</td>
+      <td></td>
+      <td></td>
+      <td>defecate; used of animals大便;用于动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[take a shit, take a crap, stool, shit, make, defecate, ca-ca, crap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dung</th>
+      <td>un</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>dəŋ</td>
+      <td></td>
+      <td></td>
+      <td>fertilize or dress with dung用粪便施肥或穿衣</td>
+      <td>you must dung the land你必须粪土</td>
+      <td></td>
+      <td></td>
+      <td>[feed, fertilise, fertilize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dung</th>
+      <td>un</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>dəŋ</td>
+      <td>['droppings', 'muck']</td>
+      <td></td>
+      <td>fecal matter of animals粪便的动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ordure, dejection, faecal matter, faeces, fecal matter, feces, bm, stool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tung</th>
+      <td>un</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>təŋ</td>
+      <td>['aleurites fordii', 'tung-oil tree', 'tung tree']</td>
+      <td></td>
+      <td>Chinese tree bearing seeds that yield tung oil带有桐油的中国树种子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angiospermous tree, flowering tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunk</th>
+      <td>un</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>həŋk</td>
+      <td>['lump']</td>
+      <td></td>
+      <td>a large piece of something without definite shape一大块没有明确形状的东西</td>
+      <td>a hunk of bread一大块面包</td>
+      <td></td>
+      <td></td>
+      <td>[part, piece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunk</th>
+      <td>un</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>həŋk</td>
+      <td></td>
+      <td></td>
+      <td>a well-built sexually attractive man一个精心打造的性吸引力的男人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult male, man]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>runt</th>
+      <td>un</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>rənt</td>
+      <td>['half-pint', 'peewee', 'shrimp']</td>
+      <td></td>
+      <td>disparaging terms for small people贬低小人的条款</td>
+      <td></td>
+      <td>[runty]</td>
+      <td></td>
+      <td>[small person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>un</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>dəŋk</td>
+      <td>['dip']</td>
+      <td></td>
+      <td>dip into a liquid while eating吃的同时浸入液体中</td>
+      <td>She dunked the piece of bread in the sauce她在酱汁里蘸了一块面包</td>
+      <td></td>
+      <td></td>
+      <td>[immerse, plunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>un</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>dəŋk</td>
+      <td>['dip', 'douse', 'plunge', 'souse']</td>
+      <td></td>
+      <td>immerse briefly into a liquid so as to wet, coat, or saturate将液体短暂浸入液体中，以便润湿，涂抹或饱和</td>
+      <td></td>
+      <td>[dunkard]</td>
+      <td></td>
+      <td>[plunge, immerse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>un</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>dəŋk</td>
+      <td></td>
+      <td></td>
+      <td>make a dunk shot, in basketball在篮球比赛中扣篮得分</td>
+      <td>He dunked the ball他扣篮得分</td>
+      <td></td>
+      <td></td>
+      <td>[shoot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>un</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>dəŋk</td>
+      <td>['dunk shot', 'stuff shot']</td>
+      <td></td>
+      <td>a basketball shot in which the basketball is propelled downward into the basket篮球射门，篮球向下推进篮筐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[basketball shot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rung</th>
+      <td>un</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>rəŋ</td>
+      <td>['rundle', 'spoke']</td>
+      <td></td>
+      <td>one of the crosspieces that form the steps of a ladder其中一个形成梯子台阶的横梁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crosspiece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rung</th>
+      <td>un</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>rəŋ</td>
+      <td>['round', 'stave']</td>
+      <td></td>
+      <td>a crosspiece between the legs of a chair椅子腿之间的横档</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crosspiece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shun</th>
+      <td>un</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>ʃən</td>
+      <td>['eschew']</td>
+      <td></td>
+      <td>avoid and stay away from deliberately; stay clear of避免和远离故意;保持清醒</td>
+      <td></td>
+      <td>[shunning]</td>
+      <td></td>
+      <td>[avoid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shun</th>
+      <td>un</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>ʃən</td>
+      <td>['ban', 'banish', 'blackball', 'cast out', 'ostracise', 'ostracize']</td>
+      <td></td>
+      <td>expel from a community or group驱逐出社区或团体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expel, kick out, throw out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stun</th>
+      <td>un</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>stən</td>
+      <td>['sandbag']</td>
+      <td></td>
+      <td>hit something or somebody as if with a sandbag用沙袋击打某物或某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stun</th>
+      <td>un</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>stən</td>
+      <td>['stupefy']</td>
+      <td></td>
+      <td>make senseless or dizzy by or as if by a blow通过打击或仿佛打击而使其变得毫无意义或晕眩</td>
+      <td>stun fish眩晕鱼</td>
+      <td></td>
+      <td></td>
+      <td>[immobilise, immobilize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stun</th>
+      <td>un</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>stən</td>
+      <td>['bedaze', 'daze']</td>
+      <td></td>
+      <td>overcome as with astonishment or disbelief以惊讶或难以置信的方式克服</td>
+      <td>The news stunned her这个消息震惊了她</td>
+      <td>[stunner]</td>
+      <td></td>
+      <td>[desensitise, desensitize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>puny</th>
+      <td>un</td>
+      <td>3.01</td>
+      <td>adj</td>
+      <td>'pjuni</td>
+      <td>['runty', 'shrimpy'], similarTo:['little', 'small']</td>
+      <td></td>
+      <td>(used especially of persons) of inferior size（特别是人使用）较差的人</td>
+      <td></td>
+      <td>[puniness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>puny</th>
+      <td>un</td>
+      <td>3.01</td>
+      <td>adj</td>
+      <td>'pjuni</td>
+      <td>, similarTo:['weak']</td>
+      <td></td>
+      <td>inferior in strength or significance力量或意义较差</td>
+      <td>a puny physique一个微不足道的体格puny excuses微不足道的借口</td>
+      <td>[puniness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunt</th>
+      <td>un</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>bənt</td>
+      <td>['drag a bunt']</td>
+      <td></td>
+      <td>hit a ball in such a way so as to make it go a short distance以这样的方式击球，以使它走近一小段距离</td>
+      <td></td>
+      <td>[bunter]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunt</th>
+      <td>un</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>bənt</td>
+      <td>['butt']</td>
+      <td></td>
+      <td>to strike, thrust or shove against罢工，推力或推动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunt</th>
+      <td>un</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>bənt</td>
+      <td>['tilletia caries']</td>
+      <td></td>
+      <td>fungus that destroys kernels of wheat by replacing them with greasy masses of smelly spores通过用油腻的大量臭味孢子代替它们来破坏小麦籽粒的真菌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smut fungus, smut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunt</th>
+      <td>un</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>bənt</td>
+      <td>['stinking smut', 'tilletia foetida']</td>
+      <td></td>
+      <td>similar to Tilletia caries类似于Tilletia龋病</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smut fungus, smut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunt</th>
+      <td>un</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>bənt</td>
+      <td>['stinking smut']</td>
+      <td></td>
+      <td>disease of wheat characterized by replacement of the grains with greasy masses of smelly smut spores小麦病害的特征是用油腻的臭疮孢子替代谷物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunt</th>
+      <td>un</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>bənt</td>
+      <td></td>
+      <td></td>
+      <td>(baseball) the act of hitting a baseball lightly without swinging the bat（棒球）轻轻击打棒球而不挥动球棒的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[striking, hit, hitting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punt</th>
+      <td>un</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>pʊnt</td>
+      <td>['pole']</td>
+      <td></td>
+      <td>propel with a pole用杆推进</td>
+      <td>We went punting in Cambridge我们在剑桥踢船了</td>
+      <td>[punter]</td>
+      <td></td>
+      <td>[impel, propel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punt</th>
+      <td>un</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>pʊnt</td>
+      <td>['back', 'bet on', 'gage', 'game', 'stake']</td>
+      <td></td>
+      <td>place a bet on打赌</td>
+      <td></td>
+      <td>[punter]</td>
+      <td></td>
+      <td>[wager, bet, play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punt</th>
+      <td>un</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>pʊnt</td>
+      <td></td>
+      <td></td>
+      <td>kick the ball踢那个球</td>
+      <td></td>
+      <td>[punting, punter]</td>
+      <td></td>
+      <td>[kick]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punt</th>
+      <td>un</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>pʊnt</td>
+      <td>['punting']</td>
+      <td></td>
+      <td>(football) a kick in which the football is dropped from the hands and kicked before it touches the ground（足球）足球从手中掉落并在接触地面之前被踢的踢</td>
+      <td>the punt traveled 50 yards平底船走了50码punting is an important part of the game撑船是游戏的重要组成部分</td>
+      <td></td>
+      <td></td>
+      <td>[kick, kicking, boot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punt</th>
+      <td>un</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>pʊnt</td>
+      <td>['irish pound', 'irish punt', 'pound']</td>
+      <td></td>
+      <td>formerly the basic unit of money in Ireland; equal to 100 pence以前是爱尔兰的基本货币单位;等于100便士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[irish monetary unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punt</th>
+      <td>un</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>pʊnt</td>
+      <td></td>
+      <td></td>
+      <td>an open flat-bottomed boat used in shallow waters and propelled by a long pole一种开放式平底船，用于浅水区，由长杆推进</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[boat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pung</th>
+      <td>un</td>
+      <td>2.67</td>
+      <td>nou</td>
+      <td>pəŋ</td>
+      <td></td>
+      <td></td>
+      <td>a one-horse sleigh consisting of a box on runners一匹单马雪橇，由一个跑步者的盒子组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sled, sledge, sleigh]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bung</th>
+      <td>un</td>
+      <td>2.47</td>
+      <td>ver</td>
+      <td>bəŋ</td>
+      <td>['fee', 'tip']</td>
+      <td></td>
+      <td>give a tip or gratuity to in return for a service, beyond the compensation agreed on除了商定的补偿之外，给予小费或小费以换取服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[give, present, gift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bung</th>
+      <td>un</td>
+      <td>2.47</td>
+      <td>ver</td>
+      <td>bəŋ</td>
+      <td></td>
+      <td></td>
+      <td>close with a cork or stopper用软木塞或塞子关闭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shut, close]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bung</th>
+      <td>un</td>
+      <td>2.47</td>
+      <td>nou</td>
+      <td>bəŋ</td>
+      <td>['spile']</td>
+      <td></td>
+      <td>a plug used to close a hole in a barrel or flask用于封闭桶或烧瓶孔的塞子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plug, stopper, stopple]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mung</th>
+      <td>un</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td></td>
+      <td>['golden gram', 'green bean', 'green gram', 'green soy', 'mash bean', 'monggo', 'moong', 'mung bean', 'munggo']</td>
+      <td></td>
+      <td>seed of the mung bean plant; used for food绿豆种子;用于食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mung</th>
+      <td>un</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td></td>
+      <td>['mung bean', 'mung bean plant', 'phaseolus aureus', 'vigna radiata']</td>
+      <td></td>
+      <td>erect bushy annual widely cultivated in warm regions of India and Indonesia and United States for forage and especially its edible seeds; chief source of bean sprouts used in Chinese cookery; sometimes placed in genus Phaseolus在印度，印度尼西亚和美国的温暖地区广泛种植的一年生丛生，用于饲料，特别是其可食用的种子;中国烹饪中使用的豆芽的主要来源;有时放在菜豆属</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[legume, leguminous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mung</th>
+      <td>un</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td></td>
+      <td>['golden gram', 'green bean', 'green gram', 'green soy', 'mash bean', 'monggo', 'moong', 'mung bean', 'munggo']</td>
+      <td></td>
+      <td>seed of the mung bean plant used for food用于食物的绿豆植物的种子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bean, edible bean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gunk</th>
+      <td>un</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>ɡəŋk</td>
+      <td>['goo', 'gook', 'goop', 'guck', 'muck', 'ooze', 'slime', 'sludge']</td>
+      <td></td>
+      <td>any thick, viscous matter任何厚厚的粘性物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unix</th>
+      <td>un</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>'junɪks</td>
+      <td>['unix operating system', 'unix system']</td>
+      <td></td>
+      <td>trademark for a powerful operating system强大的操作系统的商标</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[operating system, os]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zuni</th>
+      <td>un</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>'zunji</td>
+      <td></td>
+      <td></td>
+      <td>a member of the Pueblo people living in western New Mexico生活在新墨西哥州西部的普韦布洛人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pueblo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lunt</th>
+      <td>un</td>
+      <td>1.90</td>
+      <td>nou</td>
+      <td>lənt</td>
+      <td>['alfred lunt']</td>
+      <td></td>
+      <td>United States actor who performed with his wife Lynn Fontanne in many stage productions (1893-1977)美国演员与他的妻子Lynn Fontanne在许多舞台剧中演出（1893-1977）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unio</th>
+      <td>un</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td></td>
+      <td>['genus unio']</td>
+      <td></td>
+      <td>type genus of the family Unionidae属于Unionidae的类型属</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mollusk genus]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

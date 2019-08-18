@@ -1,0 +1,395 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['toe', 'woe', 'doe', 'foe', 'poe', 'hoe', 'roe']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>toʊ</td>
+      <td>['toenail']</td>
+      <td></td>
+      <td>drive obliquely倾斜地开车</td>
+      <td>toe a nail指甲</td>
+      <td></td>
+      <td></td>
+      <td>[force, ram, drive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>drive (a golf ball) with the toe of the club与俱乐部的脚趾一起驾驶（高尔夫球）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>hit (a golf ball) with the toe of the club用球杆的脚趾击打（高尔夫球）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>touch with the toe用脚趾触碰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>walk so that the toes assume an indicated position or direction走路使脚趾呈现指示的位置或方向</td>
+      <td>She toes inwards她脚趾向内</td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>forepart of a hoof蹄的前部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>(golf) the part of a clubhead farthest from the shaft（高尔夫球）距离杆身最远的杆头部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[portion, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>one of the digits of the foot脚的一个数字</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[digit, dactyl, extremity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toe</th>
+      <td>oe</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>toʊ</td>
+      <td></td>
+      <td></td>
+      <td>the part of footwear that provides a covering for the toes鞋类的一部分，为脚趾提供遮盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woe</th>
+      <td>oe</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>woʊ</td>
+      <td>['suffering']</td>
+      <td></td>
+      <td>misery resulting from affliction痛苦造成的苦难</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[miserableness, misery, wretchedness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woe</th>
+      <td>oe</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>woʊ</td>
+      <td>['woefulness']</td>
+      <td></td>
+      <td>intense mournfulness强烈的悲伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mournfulness, ruthfulness, sorrowfulness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>doe</th>
+      <td>oe</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>doʊ</td>
+      <td>['department of energy', 'energy', 'energy department']</td>
+      <td></td>
+      <td>the federal department responsible for maintaining a national energy policy of the United States; created in 1977负责维护美国国家能源政策的联邦部门;创建于1977年</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[executive department]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>doe</th>
+      <td>oe</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>doʊ</td>
+      <td></td>
+      <td></td>
+      <td>mature female of mammals of which the male is called `buck'哺乳动物的成熟雌性，其雄性称为“降压”</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eutherian mammal, eutherian, placental, placental mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foe</th>
+      <td>oe</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>foʊ</td>
+      <td>['enemy', 'foeman', 'opposition']</td>
+      <td></td>
+      <td>an armed adversary (especially a member of an opposing military force)武装对手（特别是对立军队的成员）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adversary, antagonist, opponent, opposer, resister]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foe</th>
+      <td>oe</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>foʊ</td>
+      <td>['enemy']</td>
+      <td>[friend]</td>
+      <td>a personal enemy个人敌人</td>
+      <td>they had been political foes for years他们多年来一直是政治敌人</td>
+      <td></td>
+      <td></td>
+      <td>[competition, competitor, contender, rival, challenger]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poe</th>
+      <td>oe</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>poʊ</td>
+      <td>['edgar allan poe']</td>
+      <td></td>
+      <td>United States writer and poet (1809-1849)美国作家和诗人（1809-1849）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hoe</th>
+      <td>oe</td>
+      <td>3.04</td>
+      <td>ver</td>
+      <td>hoʊ</td>
+      <td></td>
+      <td></td>
+      <td>dig with a hoe用锄头挖</td>
+      <td>He is hoeing the flower beds他正在锄花床</td>
+      <td></td>
+      <td></td>
+      <td>[till]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hoe</th>
+      <td>oe</td>
+      <td>3.04</td>
+      <td>nou</td>
+      <td>hoʊ</td>
+      <td></td>
+      <td></td>
+      <td>a tool with a flat blade attached at right angles to a long handle带有扁平刀片的工具，与长柄成直角</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roe</th>
+      <td>oe</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>roʊ</td>
+      <td>['hard roe']</td>
+      <td></td>
+      <td>fish eggs or egg-filled ovary; having a grainy texture鱼卵或卵子卵;具有颗粒状纹理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seafood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roe</th>
+      <td>oe</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>roʊ</td>
+      <td></td>
+      <td></td>
+      <td>eggs of female fish女性鱼卵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[egg]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roe</th>
+      <td>oe</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>roʊ</td>
+      <td></td>
+      <td></td>
+      <td>the egg mass or spawn of certain crustaceans such as the lobster蛋的质量或某些甲壳类动物如龙虾的产卵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spawn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roe</th>
+      <td>oe</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>roʊ</td>
+      <td></td>
+      <td></td>
+      <td>the eggs or egg-laden ovary of a fish鱼卵或卵子的卵巢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[egg]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

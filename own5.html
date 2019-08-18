@@ -1,0 +1,680 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['known', 'grown', 'brown', 'blown', 'clown', 'crown', 'drown', 'frown', 'downy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>known</th>
+      <td>own</td>
+      <td>5.06</td>
+      <td>adj</td>
+      <td>noʊn</td>
+      <td>, similarTo:['celebrated', 'famed', 'renowned', 'famous', 'far-famed', 'well-known', 'identified', 'illustrious', 'legendary', 'notable', 'noted', 'proverbial', 'best-known', 'better-known'], alos:['acknowledged', 'familiar', 'glorious']</td>
+      <td>[unknown]</td>
+      <td>apprehended with certainty被肯定地逮捕</td>
+      <td>a known quantity已知数量the limits of the known world已知世界的极限a musician known throughout the world世界闻名的音乐家a known criminal一个已知的罪犯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grown</th>
+      <td>own</td>
+      <td>4.62</td>
+      <td>adj</td>
+      <td>groʊn</td>
+      <td>['adult', 'big', 'full-grown', 'fully grown', 'grownup'], similarTo:['mature']</td>
+      <td></td>
+      <td>(of animals) fully developed（动物）完全发达</td>
+      <td>a grown woman一个成年女性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>braʊn</td>
+      <td>['embrown']</td>
+      <td></td>
+      <td>make brown in color使棕色的颜色</td>
+      <td>the draught browned the leaves on the trees in the yard草稿在院子里的树上涂上了褐色</td>
+      <td></td>
+      <td></td>
+      <td>[colour, colour in, colourise, colourize, color, color in, colorise, colorize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>ver</td>
+      <td>braʊn</td>
+      <td></td>
+      <td></td>
+      <td>fry in a pan until it changes color在平底锅里煎，直到它变色</td>
+      <td>brown the meat in the pan将肉放入锅中</td>
+      <td></td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>braʊn</td>
+      <td>['brown university']</td>
+      <td></td>
+      <td>a university in Rhode Island罗德岛的一所大学</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>braʊn</td>
+      <td>['brownness']</td>
+      <td></td>
+      <td>an orange of low brightness and saturation低亮度和饱和度的橙色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chromatic color, chromatic colour, spectral colour, spectral color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>braʊn</td>
+      <td>['john brown']</td>
+      <td></td>
+      <td>abolitionist who was hanged after leading an unsuccessful raid at Harper's Ferry, Virginia (1800-1859)在弗吉尼亚州哈珀斯费里（Harper Ferry）领导一次不成功的突袭行动后被废弃的废奴主义者（1800-1859）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>braʊn</td>
+      <td>['robert brown']</td>
+      <td></td>
+      <td>Scottish botanist who first observed the movement of small particles in fluids now known a Brownian motion (1773-1858)苏格兰植物学家首次观察到流体中小颗粒的运动现在称为布朗运动（1773-1858）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>adj</td>
+      <td>braʊn</td>
+      <td>['browned'], similarTo:['brunet', 'brunette']</td>
+      <td></td>
+      <td>(of skin) deeply suntanned（皮肤）深度晒黑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brown</th>
+      <td>own</td>
+      <td>4.54</td>
+      <td>adj</td>
+      <td>braʊn</td>
+      <td>['brownish', 'chocolate-brown', 'dark-brown'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of a color similar to that of wood or earth颜色与木材或泥土相似的颜色</td>
+      <td></td>
+      <td>[brownness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blown</th>
+      <td>own</td>
+      <td>4.16</td>
+      <td>adj</td>
+      <td>bloʊn</td>
+      <td>['pursy', 'short-winded', 'winded'], similarTo:['breathless', 'dyspneal', 'dyspneic', 'dyspnoeal', 'dyspnoeic']</td>
+      <td></td>
+      <td>breathing laboriously or convulsively辛苦或痉挛地呼吸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blown</th>
+      <td>own</td>
+      <td>4.16</td>
+      <td>adj</td>
+      <td>bloʊn</td>
+      <td>, similarTo:['moving']</td>
+      <td></td>
+      <td>being moved or acted upon by moving air or vapor通过移动空气或蒸汽移动或作用</td>
+      <td>blown clouds of dust choked the riders吹来的灰尘笼罩着车手blown soil mounded on the window sill吹过的土壤砸在窗台上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>klaʊn</td>
+      <td>['antic', 'clown around']</td>
+      <td></td>
+      <td>act as or like a clown扮演或喜欢小丑</td>
+      <td></td>
+      <td>[clowning]</td>
+      <td></td>
+      <td>[joke, jest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>klaʊn</td>
+      <td>['buffoon', 'goof', 'goofball', 'merry andrew']</td>
+      <td></td>
+      <td>a person who amuses others by ridiculous behavior一个通过荒谬的行为来娱乐他人的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[comedian, comic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>klaʊn</td>
+      <td>['buffoon']</td>
+      <td></td>
+      <td>a rude or vulgar fool一个粗鲁或粗俗的傻瓜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tomfool, muggins, sap, fool, saphead]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>kraʊn</td>
+      <td>['top']</td>
+      <td></td>
+      <td>be the culminating event是最高级别的活动</td>
+      <td>The speech crowned the meeting演讲加冕了会议</td>
+      <td></td>
+      <td></td>
+      <td>[culminate, climax]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>kraʊn</td>
+      <td>['coronate']</td>
+      <td></td>
+      <td>invest with regal power; enthrone以豪华权力投资;登基</td>
+      <td>The prince was crowned in Westminster Abbey王子在威斯敏斯特教堂加冕</td>
+      <td></td>
+      <td></td>
+      <td>[invest, enthrone, vest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>kraʊn</td>
+      <td></td>
+      <td></td>
+      <td>form the topmost part of形成最重要的部分</td>
+      <td>A weather vane crowns the building建筑物上有一个风向标</td>
+      <td></td>
+      <td></td>
+      <td>[head]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>kraʊn</td>
+      <td></td>
+      <td></td>
+      <td>put an enamel cover on盖上珐琅盖</td>
+      <td>crown my teeth我的牙齿</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td>['crest']</td>
+      <td></td>
+      <td>the center of a cambered road弧形道路的中心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[top side, top, upside, upper side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td>['diadem']</td>
+      <td></td>
+      <td>an ornamental jeweled headdress signifying sovereignty装饰性的宝石头饰，表示主权</td>
+      <td></td>
+      <td>[coronate]</td>
+      <td></td>
+      <td>[crown jewels, jewelled headdress, jeweled headdress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td>['crest', 'peak', 'summit', 'tip', 'top']</td>
+      <td></td>
+      <td>the top or extreme point of something (usually a mountain or hill)某物（通常是山或山）的顶点或极点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[topographic point, place, spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td>['treetop']</td>
+      <td></td>
+      <td>the upper branches and leaves of a tree or other plant树木或其他植物的上部树枝和树叶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[top]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td>['pate', 'poll']</td>
+      <td></td>
+      <td>the top of the head头顶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[upper side, top, top side, upside]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td>['cap', 'crownwork', 'jacket', 'jacket crown']</td>
+      <td></td>
+      <td>(dentistry) dental appliance consisting of an artificial crown for a broken or decayed tooth（牙科）牙科用具，包括用于破损或腐烂牙齿的人造牙冠</td>
+      <td>tomorrow my dentist will fit me for a crown明天，我的牙医将适合我的冠军</td>
+      <td></td>
+      <td></td>
+      <td>[dental appliance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td>['pennant']</td>
+      <td></td>
+      <td>the award given to the champion颁发给冠军的奖项</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accolade, award, honor, honour, laurels]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td></td>
+      <td></td>
+      <td>an English coin worth 5 shillings一枚价值5先令的英国硬币</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td></td>
+      <td></td>
+      <td>a wreath or garland worn on the head to signify victory戴在头上的花环或花环表示胜利</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garland, wreath, lei, chaplet, coronal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td></td>
+      <td></td>
+      <td>the Crown (or the reigning monarch) as the symbol of the power and authority of a monarchy王室（或统治君主）作为君主制权力和权威的象征</td>
+      <td></td>
+      <td>[coronate]</td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td></td>
+      <td></td>
+      <td>the part of a hat (the vertex) that covers the crown of the head帽子（顶点）的一部分，覆盖头部的冠部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acme, peak, vertex, apex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crown</th>
+      <td>own</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>kraʊn</td>
+      <td></td>
+      <td></td>
+      <td>the part of a tooth above the gum that is covered with enamel牙龈上面的牙齿部分覆盖着牙釉质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[top]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drown</th>
+      <td>own</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>draʊn</td>
+      <td>['overwhelm', 'submerge'], alos:['drown out']</td>
+      <td></td>
+      <td>cover completely or make imperceptible完全覆盖或不易察觉</td>
+      <td>I was drowned in work我被淹死在工作中The noise drowned out her speech噪音淹没了她的演讲</td>
+      <td></td>
+      <td></td>
+      <td>[spread over, cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drown</th>
+      <td>own</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>draʊn</td>
+      <td>['swim']</td>
+      <td></td>
+      <td>be covered with or submerged in a liquid被液体覆盖或浸没在液体中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drown</th>
+      <td>own</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>draʊn</td>
+      <td></td>
+      <td></td>
+      <td>be in danger of dying from submersion in a liquid and asphyxiation有淹没液体和窒息死亡的危险</td>
+      <td>the divers saved the drowning child潜水员救了溺水的孩子</td>
+      <td></td>
+      <td></td>
+      <td>[submerse, submerge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drown</th>
+      <td>own</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>draʊn</td>
+      <td></td>
+      <td></td>
+      <td>die from being submerged in water, getting water into the lungs, and asphyxiating被淹没在水中，让水进入肺部，窒息</td>
+      <td>The child drowned in the lake孩子淹死在湖中</td>
+      <td></td>
+      <td></td>
+      <td>[croak, decease, die, drop dead, choke, conk, perish, pop off, snuff it, buy the farm, cash in one's chips, exit, expire, give-up the ghost, go, kick the bucket, pass, pass away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drown</th>
+      <td>own</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>draʊn</td>
+      <td></td>
+      <td></td>
+      <td>get rid of as if by submerging摆脱好像通过淹没</td>
+      <td>She drowned her trouble in alcohol她酗酒溺水</td>
+      <td></td>
+      <td></td>
+      <td>[eliminate, do away with, extinguish, get rid of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drown</th>
+      <td>own</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>draʊn</td>
+      <td></td>
+      <td></td>
+      <td>kill by submerging in water通过淹没在水中杀死</td>
+      <td>He drowned the kittens他淹死了小猫</td>
+      <td></td>
+      <td></td>
+      <td>[kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frown</th>
+      <td>own</td>
+      <td>3.20</td>
+      <td>ver</td>
+      <td>fraʊn</td>
+      <td>['glower', 'lour', 'lower']</td>
+      <td></td>
+      <td>look angry or sullen, wrinkle one's forehead, as if to signal disapproval看起来生气或闷闷不乐，皱起一个额头，仿佛暗示不赞成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grimace, make a face, pull a face]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frown</th>
+      <td>own</td>
+      <td>3.20</td>
+      <td>nou</td>
+      <td>fraʊn</td>
+      <td>['scowl']</td>
+      <td></td>
+      <td>a facial expression of dislike or displeasure一种不喜欢或不悦的面部表情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[facial expression, facial gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>downy</th>
+      <td>own</td>
+      <td>2.54</td>
+      <td>adj</td>
+      <td>'daʊni</td>
+      <td>['puberulent', 'pubescent', 'sericeous'], similarTo:['haired', 'hairy', 'hirsute']</td>
+      <td></td>
+      <td>covered with fine soft hairs or down覆盖着细软的毛或向下</td>
+      <td>downy milkweed seeds柔软的乳草种子</td>
+      <td>[down, downiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>downy</th>
+      <td>own</td>
+      <td>2.54</td>
+      <td>adj</td>
+      <td>'daʊni</td>
+      <td>['downlike', 'flossy', 'fluffy'], similarTo:['soft']</td>
+      <td></td>
+      <td>like down or as soft as down喜欢向下或像向下一样柔软</td>
+      <td></td>
+      <td>[down, downiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

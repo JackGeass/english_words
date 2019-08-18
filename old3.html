@@ -1,0 +1,200 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['old']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>nou</td>
+      <td>oʊld</td>
+      <td></td>
+      <td></td>
+      <td>past times (especially in the phrase `in days of old')过去的时间（特别是在“老了几天”这句话中）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[past, past times, yesteryear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>['older'], similarTo:['experienced', 'experient']</td>
+      <td></td>
+      <td>skilled through long experience通过长期的经验熟练</td>
+      <td>an old offender一个老罪犯the older soldiers年长的士兵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>['erstwhile', 'former', 'one-time', 'onetime', 'quondam', 'sometime'], similarTo:['past']</td>
+      <td></td>
+      <td>belonging to some prior time属于某些先前的时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>['previous'], similarTo:['preceding']</td>
+      <td></td>
+      <td>just preceding something else in time or order在时间或顺序之前的其他东西</td>
+      <td>my old house was larger我的老房子比较大</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>['bang-up', 'bully', 'corking', 'cracking', 'dandy', 'great', 'groovy', 'keen', 'neat', 'nifty', 'not bad', 'peachy', 'slap-up', 'smashing', 'swell'], similarTo:['good']</td>
+      <td></td>
+      <td>very good很好</td>
+      <td>we had a grand old time我们过得很愉快</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>, similarTo:['early']</td>
+      <td></td>
+      <td>of a very early stage in development在发展的早期阶段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>, similarTo:['age-old', 'hand-me-down', 'yellowed', 'hoary', 'immemorial', 'long-ago', 'long-time', 'longtime', 'secondhand', 'antediluvian', 'sunset', 'antiquated', 'used', 'antique', 'archaic', 'auld', 'hand-down', 'yellow', 'patched', 'rusty'], alos:['worn', 'noncurrent', 'nonmodern', 'past', 'stale']</td>
+      <td>[new]</td>
+      <td>of long duration; not new持续时间长;不是新的</td>
+      <td>old tradition古老的传统old house老房子old wine老酒old country古老的国家old friendships旧友谊old money老钱</td>
+      <td>[oldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>, similarTo:['senior', 'aged', 'ageing', 'aging', 'ancient', 'anile', 'centenarian', 'darkened', 'doddering', 'doddery', 'elderly', 'emeritus', 'gaga', 'gray', 'gray-haired', 'gray-headed', 'grey', 'grey-haired', 'grey-headed', 'grizzly', 'hoar', 'hoary', 'middle-aged', 'nonagenarian', 'octogenarian', 'of age', 'older', 'oldish', 'over-the-hill', 'overage', 'overaged', 'senescent', 'senile', 'sexagenarian', 'superannuated', 'venerable', 'white-haired'], alos:['senior', 'experienced', 'experient', 'mature']</td>
+      <td>[young]</td>
+      <td>(used especially of persons) having lived for a relatively long time or attained a specific age（特别是人使用）已经生活了相当长的时间或达到了特定的年龄</td>
+      <td>his mother is very old他的母亲很老a ripe old age一个成熟的晚年how old are you?你几岁？</td>
+      <td>[oldness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>old</th>
+      <td>old</td>
+      <td>5.79</td>
+      <td>adj</td>
+      <td>oʊld</td>
+      <td>, similarTo:['familiar']</td>
+      <td></td>
+      <td>(used for emphasis) very familiar（用于强调）非常熟悉</td>
+      <td>good old boy好老头same old story同样的老故事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

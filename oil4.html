@@ -1,0 +1,620 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['soil', 'boil', 'foil', 'oily', 'toil', 'coil', 'roil']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>soil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>sɔɪl</td>
+      <td>['begrime', 'bemire', 'colly', 'dirty', 'grime']</td>
+      <td></td>
+      <td>make soiled, filthy, or dirty弄脏，弄脏或弄脏</td>
+      <td>don't soil your clothes when you play outside!外出玩耍时不要弄脏衣服！</td>
+      <td>[soiling, soilure]</td>
+      <td></td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>sɔɪl</td>
+      <td>['ground', 'land']</td>
+      <td></td>
+      <td>material in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use)植物可以生长的地球表层顶层的材料（特别是参考其质量或用途）</td>
+      <td>good agricultural soil良好的农业土壤</td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>sɔɪl</td>
+      <td>['dirt']</td>
+      <td></td>
+      <td>the part of the earth's surface consisting of humus and disintegrated rock地球表面的一部分由腐殖质和破碎的岩石组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ground, earth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>sɔɪl</td>
+      <td>['dirt', 'filth', 'grease', 'grime', 'grunge', 'stain']</td>
+      <td></td>
+      <td>the state of being covered with unclean things被不洁净的东西覆盖的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[uncleanness, dirtiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>sɔɪl</td>
+      <td>['territory']</td>
+      <td></td>
+      <td>the geographical area under the jurisdiction of a sovereign state主权国家管辖的地理区域</td>
+      <td>American troops were stationed on Japanese soil美国军队驻扎在日本的土地上</td>
+      <td></td>
+      <td></td>
+      <td>[geographical region, geographic area, geographic region, geographical area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boil</th>
+      <td>oil</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>bɔɪl</td>
+      <td>['churn', 'moil', 'roil']</td>
+      <td></td>
+      <td>be agitated激动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boil</th>
+      <td>oil</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>bɔɪl</td>
+      <td>['seethe']</td>
+      <td></td>
+      <td>be in an agitated emotional state处于激动的情绪状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boil</th>
+      <td>oil</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>bɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>bring to, or maintain at, the boiling point带来或维持在沸点</td>
+      <td>boil this liquid until it evaporates将这种液体煮沸直至蒸发</td>
+      <td>[boiler]</td>
+      <td></td>
+      <td>[alter, modify, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boil</th>
+      <td>oil</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>bɔɪl</td>
+      <td></td>
+      <td>[freeze]</td>
+      <td>come to the boiling point and change from a liquid to vapor达到沸点，从液体变为蒸汽</td>
+      <td>Water boils at 100 degrees Celsius水沸腾在100摄氏度</td>
+      <td>[boiler]</td>
+      <td></td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boil</th>
+      <td>oil</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>bɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>immerse or be immersed in a boiling liquid, often for cooking purposes浸泡或浸入沸腾的液体中，通常用于烹饪目的</td>
+      <td>boil potatoes煮土豆boil wool煮羊毛</td>
+      <td>[boiler]</td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boil</th>
+      <td>oil</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>bɔɪl</td>
+      <td>['furuncle']</td>
+      <td></td>
+      <td>a painful sore with a hard core filled with pus疼痛的疼痛，核心充满脓液</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[staphylococcal infection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boil</th>
+      <td>oil</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>bɔɪl</td>
+      <td>['boiling point']</td>
+      <td></td>
+      <td>the temperature at which a liquid boils at sea level液体在海平面沸腾的温度</td>
+      <td>they brought the water to a boil他们把水煮沸了</td>
+      <td></td>
+      <td></td>
+      <td>[temperature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>fɔɪl</td>
+      <td>['baffle', 'bilk', 'cross', 'frustrate', 'queer', 'scotch', 'spoil', 'thwart']</td>
+      <td></td>
+      <td>hinder or prevent (the efforts, plans, or desires) of妨碍或阻止（努力，计划或愿望）</td>
+      <td>foil your opponent打败你的对手</td>
+      <td>[foiling]</td>
+      <td></td>
+      <td>[preclude, prevent, forbid, foreclose, forestall]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>fɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>cover or back with foil用箔覆盖或背面</td>
+      <td>foil mirrors铝箔镜子</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>fɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>enhance by contrast相反提升</td>
+      <td>In this picture, the figures are foiled against the background在这张照片中，这些数字在背景中被挫败</td>
+      <td></td>
+      <td></td>
+      <td>[contrast, counterpoint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɔɪl</td>
+      <td>['hydrofoil']</td>
+      <td></td>
+      <td>a device consisting of a flat or curved piece (as a metal plate) so that its surface reacts to the water it is passing through由扁平或弯曲件（作为金属板）组成的装置，使其表面对其通过的水起反应</td>
+      <td>the fins of a fish act as hydrofoils鱼的鳍充当水翼</td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɔɪl</td>
+      <td>['enhancer']</td>
+      <td></td>
+      <td>anything that serves by contrast to call attention to another thing's good qualities相反的任何东西都会引起人们注意另一件事的优点</td>
+      <td>pretty girls like plain friends as foils漂亮的女孩喜欢普通的朋友作为箔</td>
+      <td></td>
+      <td></td>
+      <td>[attention]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɔɪl</td>
+      <td>['transparency']</td>
+      <td></td>
+      <td>picture consisting of a positive photograph or drawing on a transparent base; viewed with a projector图片由正面照片或透明底座上的图画组成;用投影仪观看</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[icon, image, ikon, picture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>a light slender flexible sword tipped by a button一个轻盈纤细的弹性剑，一个按钮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fencing sword]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>foil</th>
+      <td>oil</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>fɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>a piece of thin and flexible sheet metal一块薄而柔韧的金属板</td>
+      <td>the photographic film was wrapped in foil摄影胶片用箔包裹</td>
+      <td>[foliate]</td>
+      <td></td>
+      <td>[sheet metal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oily</th>
+      <td>oil</td>
+      <td>3.17</td>
+      <td>adj</td>
+      <td>'ɔɪli</td>
+      <td>['buttery', 'fulsome', 'oleaginous', 'smarmy', 'soapy', 'unctuous'], similarTo:['insincere']</td>
+      <td></td>
+      <td>unpleasantly and excessively suave or ingratiating in manner or speech在方式或言语中不愉快和过度的温文尔雅或讨好</td>
+      <td>an oily sycophantic press agent一种油性的sycophantic新闻剂</td>
+      <td>[oiliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oily</th>
+      <td>oil</td>
+      <td>3.17</td>
+      <td>adj</td>
+      <td>'ɔɪli</td>
+      <td>['greasy'], similarTo:['dirty', 'soiled', 'unclean']</td>
+      <td></td>
+      <td>smeared or soiled with grease or oil被油脂或油弄脏或弄脏</td>
+      <td>get rid of rubbish and oily rags摆脱垃圾和油性破布</td>
+      <td>[oiliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oily</th>
+      <td>oil</td>
+      <td>3.17</td>
+      <td>adj</td>
+      <td>'ɔɪli</td>
+      <td>['greasy', 'oleaginous', 'sebaceous'], similarTo:['fat', 'fatty']</td>
+      <td></td>
+      <td>containing an unusual amount of grease or oil含有异常量的油脂或油</td>
+      <td>oily fried potatoes油炸土豆</td>
+      <td>[oil, oiliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oily</th>
+      <td>oil</td>
+      <td>3.17</td>
+      <td>adj</td>
+      <td>'ɔɪli</td>
+      <td>, similarTo:['coated']</td>
+      <td></td>
+      <td>coated or covered with oil涂有油或覆盖油</td>
+      <td>oily puddles in the streets街上油腻的水坑</td>
+      <td>[oil, oiliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toil</th>
+      <td>oil</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>tɔɪl</td>
+      <td>['dig', 'drudge', 'fag', 'grind', 'labor', 'labour', 'moil', 'travail']</td>
+      <td></td>
+      <td>work hard努力工作</td>
+      <td></td>
+      <td>[toiler]</td>
+      <td></td>
+      <td>[do work, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toil</th>
+      <td>oil</td>
+      <td>3.17</td>
+      <td>nou</td>
+      <td>tɔɪl</td>
+      <td>['labor', 'labour']</td>
+      <td></td>
+      <td>productive work (especially physical work done for wages)生产性工作（特别是为工资做的体力劳动）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>ver</td>
+      <td>kɔɪl</td>
+      <td>['curl', 'loop']</td>
+      <td>[uncoil]</td>
+      <td>wind around something in coils or loops缠绕在线圈或环路中的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roll, twine, wind, wrap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>ver</td>
+      <td>kɔɪl</td>
+      <td>['hand-build', 'handbuild']</td>
+      <td></td>
+      <td>make without a potter's wheel没有陶工的轮子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mould, form, forge, work, shape, mold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>ver</td>
+      <td>kɔɪl</td>
+      <td>['gyrate', 'spiral']</td>
+      <td></td>
+      <td>to wind or move in a spiral course以螺旋形方式缠绕或移动</td>
+      <td>the muscles and nerves of his fine drawn body were coiling for action他画好身体的肌肉和神经都在盘旋行动black smoke coiling up into the sky黑色的烟雾卷入天空</td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>kɔɪl</td>
+      <td>['helix', 'spiral', 'volute', 'whorl']</td>
+      <td></td>
+      <td>a structure consisting of something wound in a continuous series of loops由连续系列环中缠绕的物体组成的结构</td>
+      <td>a coil of rope一卷绳子</td>
+      <td></td>
+      <td></td>
+      <td>[structure, construction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>kɔɪl</td>
+      <td>['curl', 'curlicue', 'gyre', 'ringlet', 'roll', 'scroll', 'whorl']</td>
+      <td></td>
+      <td>a round shape formed by a series of concentric circles (as formed by leaves or flower petals)由一系列同心圆形成的圆形（由叶子或花瓣形成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[round shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>kɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>a contraceptive device placed inside a woman's womb放置在女性子宫内的避孕器具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prophylactic device, birth control device, contraceptive, contraceptive device, preventative, preventive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>kɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>a transformer that supplies high voltage to spark plugs in a gasoline engine一种变压器，为汽油发动机中的火花塞提供高压</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transformer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>kɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>reactor consisting of a spiral of insulated wire that introduces inductance into a circuit电抗器由螺旋形绝缘线组成，将电感引入电路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reactor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coil</th>
+      <td>oil</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>kɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>tubing that is wound in a spiral以螺旋形缠绕的管子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tubing, tube]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roil</th>
+      <td>oil</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>rɔɪl</td>
+      <td>['rile']</td>
+      <td></td>
+      <td>make turbid by stirring up the sediments of通过搅拌沉积物使浑浊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[raise up, vex, commove, disturb, stir up, agitate, shake up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roil</th>
+      <td>oil</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>rɔɪl</td>
+      <td>['boil', 'churn', 'moil']</td>
+      <td></td>
+      <td>be agitated激动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

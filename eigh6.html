@@ -1,0 +1,410 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['weight', 'height', 'eighty', 'eighth', 'sleigh', 'aweigh']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>ver</td>
+      <td>weɪt</td>
+      <td>['burden', 'burthen', 'weight down']</td>
+      <td></td>
+      <td>weight down with a load减轻负荷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[charge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>ver</td>
+      <td>weɪt</td>
+      <td>['angle', 'slant']</td>
+      <td></td>
+      <td>present with a bias存在偏见</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[predetermine, bias]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td>['system of weights']</td>
+      <td></td>
+      <td>a system of units used to express the weight of something用于表达某事物重量的单位系统</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metric, system of measurement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td>['weightiness']</td>
+      <td></td>
+      <td>the relative importance granted to something给予某事的相对重要性</td>
+      <td>his opinion carries great weight他的意见很重要the progression implied an increasing weightiness of the items listed进展意味着所列物品的重量增加</td>
+      <td>[weighty]</td>
+      <td></td>
+      <td>[importance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td>['exercising weight', 'free weight']</td>
+      <td></td>
+      <td>sports equipment used in calisthenic exercises and weightlifting; it is not attached to anything and is raised and lowered by use of the hands and arms用于健美操和举重的运动器材;它没有附着在任何东西上，而是用手和手臂升高和降低</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sports equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td>['weighting']</td>
+      <td></td>
+      <td>(statistics) a coefficient assigned to elements of a frequency distribution in order to represent their relative importance（统计）分配给频率分布元素的系数，以表示它们的相对重要性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coefficient]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td>['weight unit']</td>
+      <td></td>
+      <td>a unit used to measure weight用于测量体重的单位</td>
+      <td>he placed two weights in the scale pan他在秤盘上放了两个砝码</td>
+      <td></td>
+      <td></td>
+      <td>[unit, unit of measurement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td></td>
+      <td></td>
+      <td>an artifact that is heavy一件沉重的神器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artifact, artefact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td></td>
+      <td></td>
+      <td>an oppressive feeling of heavy force一种压迫的重力感</td>
+      <td>bowed down by the weight of responsibility由责任的重压鞠躬</td>
+      <td>[weighty]</td>
+      <td></td>
+      <td>[oppressiveness, oppression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>weight</th>
+      <td>eigh</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>weɪt</td>
+      <td></td>
+      <td></td>
+      <td>the vertical force exerted by a mass as a result of gravity由重力引起的质量施加的垂直力</td>
+      <td></td>
+      <td>[weighty]</td>
+      <td></td>
+      <td>[physical property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>eigh</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>haɪt</td>
+      <td>['altitude']</td>
+      <td></td>
+      <td>elevation especially above sea level or above the earth's surface海拔特别高于海平面或高于地球表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[elevation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>eigh</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>haɪt</td>
+      <td>['tallness']</td>
+      <td></td>
+      <td>the vertical dimension of extension; distance from the base of something to the top延伸的垂直尺寸;从某物的底部到顶部的距离</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dimension]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>eigh</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>haɪt</td>
+      <td>['stature']</td>
+      <td></td>
+      <td>(of a standing person) the distance from head to foot（站立的人）从头到脚的距离</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bodily property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>height</th>
+      <td>eigh</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>haɪt</td>
+      <td>['acme', 'elevation', 'meridian', 'peak', 'pinnacle', 'summit', 'superlative', 'tiptop', 'top']</td>
+      <td></td>
+      <td>the highest level or degree attainable; the highest stage of development可达到的最高水平或程度;发展的最高阶段</td>
+      <td>at the height of her career在她职业生涯的高峰期</td>
+      <td></td>
+      <td></td>
+      <td>[degree, point, stage, level]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eighty</th>
+      <td>eigh</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'eɪti</td>
+      <td>['80', 'fourscore', 'lxxx']</td>
+      <td></td>
+      <td>the cardinal number that is the product of ten and eight基数是十和八的乘积</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large integer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eighty</th>
+      <td>eigh</td>
+      <td>3.77</td>
+      <td>adj</td>
+      <td>'eɪti</td>
+      <td>['80', 'fourscore', 'lxxx'], similarTo:['cardinal']</td>
+      <td></td>
+      <td>being ten more than seventy超过七十岁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eighth</th>
+      <td>eigh</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>eɪtθ</td>
+      <td>['one-eighth']</td>
+      <td></td>
+      <td>one part in eight equal parts八个相等部分中的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[common fraction, simple fraction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eighth</th>
+      <td>eigh</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>eɪtθ</td>
+      <td></td>
+      <td></td>
+      <td>position eight in a countable series of things在可数系列的东西中排名第八</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rank]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eighth</th>
+      <td>eigh</td>
+      <td>3.72</td>
+      <td>adj</td>
+      <td>eɪtθ</td>
+      <td>['8th'], similarTo:['ordinal']</td>
+      <td></td>
+      <td>coming next after the seventh and just before the ninth in position在第七名之后和第九名之前接下来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sleigh</th>
+      <td>eigh</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>sleɪ</td>
+      <td>['sled']</td>
+      <td></td>
+      <td>ride (on) a sled乘坐雪橇</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sleigh</th>
+      <td>eigh</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>sleɪ</td>
+      <td>['sled', 'sledge']</td>
+      <td></td>
+      <td>a vehicle mounted on runners and pulled by horses or dogs; for transportation over snow安装在跑道上并由马或狗拉动的车辆;在雪地上运输</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vehicle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aweigh</th>
+      <td>eigh</td>
+      <td>1.82</td>
+      <td>adj</td>
+      <td>ə'weɪ</td>
+      <td>['atrip'], similarTo:['free']</td>
+      <td></td>
+      <td>(of an anchor) just clear of the bottom（锚）只是从底部清除</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aweigh</th>
+      <td>eigh</td>
+      <td>1.82</td>
+      <td>adj</td>
+      <td>ə'weɪ</td>
+      <td>, similarTo:['up']</td>
+      <td></td>
+      <td>(used of an anchor) hanging clear of the bottom（用于锚）悬挂在底部</td>
+      <td>anchors aweigh锚定重量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

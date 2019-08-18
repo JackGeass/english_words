@@ -1,0 +1,470 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['they', 'obey', 'grey', 'prey', 'trey', 'okey', 'eyre', 'drey', 'whey', 'frey']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>they</th>
+      <td>ey</td>
+      <td>6.63</td>
+      <td>pro</td>
+      <td>ðeɪ</td>
+      <td></td>
+      <td></td>
+      <td>The plural of he, she, or it. They is never used adjectively, but always as a pronoun proper, and sometimes refers to persons without an antecedent expressed.他，她或它的复数。它们从未在形容词中使用过，但总是作为代词本身使用，有时指的是没有先行词表达的人。</td>
+      <td></td>
+      <td>[he, she, it]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>obey</th>
+      <td>ey</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>oʊ'beɪ</td>
+      <td></td>
+      <td>[disobey]</td>
+      <td>be obedient to顺从</td>
+      <td></td>
+      <td>[obedience, obedient, obeisance]</td>
+      <td></td>
+      <td>[conform, adjust, adapt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>greɪ</td>
+      <td>['gray']</td>
+      <td></td>
+      <td>make grey做灰色</td>
+      <td>The painter decided to grey the sky画家决定让天空变灰</td>
+      <td></td>
+      <td></td>
+      <td>[colorize, color, color in, colorise, colour, colour in, colourise, colourize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>greɪ</td>
+      <td>['gray']</td>
+      <td></td>
+      <td>turn grey变灰了</td>
+      <td>Her hair began to grey她的头发开始变灰了</td>
+      <td></td>
+      <td></td>
+      <td>[colour, discolor, color, discolour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['charles grey', 'second earl grey']</td>
+      <td></td>
+      <td>Englishman who as Prime Minister implemented social reforms including the abolition of slavery throughout the British Empire (1764-1845)英国首相实施社会改革，包括废除整个大英帝国的奴隶制（1764-1845）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['lady jane grey']</td>
+      <td></td>
+      <td>Queen of England for nine days in 1553; she was quickly replaced by Mary Tudor and beheaded for treason (1537-1554)1553年英格兰女王九天;她很快被玛丽都铎取代并因叛国罪被斩首（1537-1554）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['gray']</td>
+      <td></td>
+      <td>clothing that is a grey color衣服是灰色的</td>
+      <td>he was dressed in grey他穿着灰色衣服</td>
+      <td></td>
+      <td></td>
+      <td>[clothing, wearable, wear, article of clothing, vesture, habiliment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['gray', 'grayness', 'greyness']</td>
+      <td></td>
+      <td>a neutral achromatic color midway between white and black白色和黑色之间的中性无彩色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[achromatic colour, achromatic color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['zane grey']</td>
+      <td></td>
+      <td>United States writer of western adventure novels (1875-1939)美国西方冒险小说作家（1875-1939）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['gray']</td>
+      <td></td>
+      <td>horse of a light gray or whitish color浅灰色或白色的马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mount, riding horse, saddle horse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>greɪ</td>
+      <td>['gray']</td>
+      <td></td>
+      <td>any organization or party whose uniforms or badges are grey任何制服或徽章是灰色的组织或政党</td>
+      <td>the Confederate army was a vast grey同盟军是一个巨大的灰色</td>
+      <td></td>
+      <td></td>
+      <td>[organisation, organization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['gray', 'gray-haired', 'gray-headed', 'grey-haired', 'grey-headed', 'grizzly', 'hoar', 'hoary', 'white-haired'], similarTo:['old']</td>
+      <td></td>
+      <td>showing characteristics of age, especially having grey or white hair显示年龄特征，特别是灰白头发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['gray'], similarTo:['southern']</td>
+      <td></td>
+      <td>used to signify the Confederate forces in the American Civil War (who wore grey uniforms)用于表示美国内战中的南方军队（穿着灰色制服）</td>
+      <td>a stalwart grey figure一个坚定的灰色人物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['gray', 'grayish', 'greyish'], similarTo:['neutral', 'achromatic']</td>
+      <td></td>
+      <td>of an achromatic color of any lightness intermediate between the extremes of white and black在白色和黑色的极端之间的任何亮度的无彩色颜色</td>
+      <td>the little grey cells小灰细胞a man with greyish hair一个头发灰白的男人</td>
+      <td>[greyness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grey</th>
+      <td>ey</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>greɪ</td>
+      <td>['gray'], similarTo:['intermediate']</td>
+      <td></td>
+      <td>intermediate in character or position中间人物或位置</td>
+      <td>a grey area between clearly legal and strictly illegal在明显合法和严格违法之间的灰色区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prey</th>
+      <td>ey</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>preɪ</td>
+      <td>['feed']</td>
+      <td></td>
+      <td>profit from in an exploitatory manner以开拓的方式获利</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exploit, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prey</th>
+      <td>ey</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>preɪ</td>
+      <td>['predate', 'raven']</td>
+      <td></td>
+      <td>prey on or hunt for捕食或捕猎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[forage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prey</th>
+      <td>ey</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>preɪ</td>
+      <td>['quarry']</td>
+      <td></td>
+      <td>animal hunted or caught for food动物猎食或捕获食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal, animate being, beast, brute, creature, fauna]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prey</th>
+      <td>ey</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>preɪ</td>
+      <td>['fair game', 'quarry', 'target']</td>
+      <td></td>
+      <td>a person who is the aim of an attack (especially a victim of ridicule or exploitation) by some hostile person or influence某个敌人或影响力的攻击目标（特别是嘲笑或剥削的受害者）</td>
+      <td>he fell prey to muggers他成了抢劫者的牺牲品</td>
+      <td></td>
+      <td></td>
+      <td>[victim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trey</th>
+      <td>ey</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>treɪ</td>
+      <td>['3', 'deuce-ace', 'iii', 'leash', 'tercet', 'ternary', 'ternion', 'terzetto', 'three', 'threesome', 'tierce', 'triad', 'trine', 'trinity', 'trio', 'triplet', 'troika']</td>
+      <td></td>
+      <td>the cardinal number that is the sum of one and one and one基数是一和一的总和</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[digit, figure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trey</th>
+      <td>ey</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>treɪ</td>
+      <td>['three']</td>
+      <td></td>
+      <td>one of four playing cards in a deck having three pips有三个点的甲板上的四张扑克牌之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[playing card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>okey</th>
+      <td>ey</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>'oʊki</td>
+      <td>['o.k.', 'ok', 'okay', 'okeh']</td>
+      <td></td>
+      <td>an endorsement认可</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[countenance, endorsement, imprimatur, indorsement, sanction, warrant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eyre</th>
+      <td>ey</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>ɜr</td>
+      <td>['lake eyre']</td>
+      <td></td>
+      <td>a shallow salt lake in south central Australia about 35 feet below sea level; the largest lake in the country and the lowest point on the continent澳大利亚中南部一个浅海盐湖，海拔35英尺;该国最大的湖泊和非洲大陆的最低点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drey</th>
+      <td>ey</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>dreɪ</td>
+      <td></td>
+      <td></td>
+      <td>the nest of a squirrel一只松鼠的巢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whey</th>
+      <td>ey</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>hweɪ</td>
+      <td>['milk whey']</td>
+      <td></td>
+      <td>the serum or watery part of milk that is separated from the curd in making cheese在制作奶酪时从凝乳中分离出的牛奶的血清或含水部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blood serum, serum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whey</th>
+      <td>ey</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>hweɪ</td>
+      <td></td>
+      <td></td>
+      <td>watery part of milk produced when raw milk sours and coagulates当生乳酸和凝固时产生的含水部分牛奶</td>
+      <td>Little Miss Muffet sat on a tuffet eating some curds and wheyMuffet小姐坐在一个吃一些凝乳和乳清的tuffet上</td>
+      <td></td>
+      <td></td>
+      <td>[dairy product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frey</th>
+      <td>ey</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td>fraɪ</td>
+      <td>['freyr']</td>
+      <td></td>
+      <td>(Norse mythology) god of earth's fertility and peace and prosperity; son of Njorth and brother of Freya; originally of the Vanir; later with the Aesir（北欧神话）地球之神的生育与和平与繁荣; Njorth的儿子和Freya的兄弟;最初的Vanir;后来与Aesir</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,515 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['punk', 'junk', 'bunk', 'sunk', 'funk', 'hunk', 'dunk', 'gunk']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>punk</th>
+      <td>unk</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['punk rock']</td>
+      <td></td>
+      <td>rock music with deliberately offensive lyrics expressing anger and social alienation; in part a reaction against progressive rock摇滚音乐故意冒犯歌词表达愤怒和社会异化;部分是对进步摇滚的反应</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rock-and-roll, rock, rock'n'roll, rock 'n' roll, rock and roll, rock music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>unk</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['punk rocker']</td>
+      <td></td>
+      <td>a teenager or young adult who is a performer (or enthusiast) of punk rock and a member of the punk youth subculture少年或年轻的成年人，他是朋克摇滚乐的表演者（或狂热爱好者），也是朋克青年亚文化的成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adolescent, stripling, teen, teenager]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>unk</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['kindling', 'spunk', 'tinder', 'touchwood']</td>
+      <td></td>
+      <td>material for starting a fire起火的材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ignitor, igniter, lighter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>unk</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td>['goon', 'hood', 'hoodlum', 'strong-armer', 'thug', 'tough', 'toughie']</td>
+      <td></td>
+      <td>an aggressive and violent young criminal一个积极和暴力的年轻罪犯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[malefactor, outlaw, criminal, crook, felon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>unk</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>pəŋk</td>
+      <td></td>
+      <td></td>
+      <td>substance that smolders when ignited; used to light fuses (especially fireworks)被点燃时闷烧的物质;用于点燃保险丝（尤其是烟花）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lighter, ignitor, igniter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punk</th>
+      <td>unk</td>
+      <td>4.41</td>
+      <td>adj</td>
+      <td>pəŋk</td>
+      <td>['bum', 'cheap', 'cheesy', 'chintzy', 'crummy', 'sleazy', 'tinny'], similarTo:['inferior']</td>
+      <td></td>
+      <td>of very poor quality; flimsy质量很差;单薄</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>junk</th>
+      <td>unk</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>dʒəŋk</td>
+      <td>['scrap', 'trash']</td>
+      <td></td>
+      <td>dispose of (something useless or old)处置（无用或旧的东西）</td>
+      <td>junk an old car垃圾一辆旧车</td>
+      <td></td>
+      <td></td>
+      <td>[toss out, throw away, throw out, toss, toss away, cast aside, cast away, cast out, chuck out, discard, dispose, fling, put away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>junk</th>
+      <td>unk</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dʒəŋk</td>
+      <td>['debris', 'detritus', 'dust', 'rubble']</td>
+      <td></td>
+      <td>the remains of something that has been destroyed or broken up被破坏或破坏的东西的遗骸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scrap, trash, rubbish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>junk</th>
+      <td>unk</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>dʒəŋk</td>
+      <td></td>
+      <td></td>
+      <td>any of various Chinese boats with a high poop and lugsails各种中国船只中的任何一种都有高大便和拖尾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[boat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>bəŋk</td>
+      <td>['beat']</td>
+      <td></td>
+      <td>avoid paying避免付钱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chisel, cheat, rip off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>bəŋk</td>
+      <td>['break away', 'escape', 'fly the coop', 'head for the hills', 'hightail it', 'lam', 'run', 'run away', 'scarper', 'scat', 'take to the woods', 'turn tail']</td>
+      <td></td>
+      <td>flee; take to one's heels; cut and run逃跑;紧紧抓住;剪切并运行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go forth, go away, leave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>ver</td>
+      <td>bəŋk</td>
+      <td></td>
+      <td></td>
+      <td>provide with a bunk提供一张双层床</td>
+      <td>We bunked the children upstairs我们把孩子们趴在楼上</td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['buncombe', 'bunkum', 'guff', 'hogwash', 'rot']</td>
+      <td></td>
+      <td>unacceptable behavior (especially ludicrously false statements)不可接受的行为（特别是荒谬的虚假陈述）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garbage, drivel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['berth', 'built in bed']</td>
+      <td></td>
+      <td>a bed on a ship or train; usually in tiers船上或火车上的床;通常分层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['feed bunk']</td>
+      <td></td>
+      <td>a long trough for feeding cattle喂养牛的长槽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trough, manger]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['bunk bed']</td>
+      <td></td>
+      <td>beds built one above the other床铺一个在另一个之上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td>['hokum', 'meaninglessness', 'nonsense', 'nonsensicality']</td>
+      <td></td>
+      <td>a message that seems to convey no meaning似乎没有任何意义的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[content, message, substance, subject matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bunk</th>
+      <td>unk</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>bəŋk</td>
+      <td></td>
+      <td></td>
+      <td>a rough bed (as at a campsite)一张粗糙的床（如露营地）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sunk</th>
+      <td>unk</td>
+      <td>3.59</td>
+      <td>adj</td>
+      <td>səŋk</td>
+      <td>['done for', 'ruined', 'undone', 'washed-up'], similarTo:['unsuccessful']</td>
+      <td></td>
+      <td>doomed to extinction注定要灭绝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>unk</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>fəŋk</td>
+      <td>['cringe', 'flinch', 'quail', 'recoil', 'shrink', 'squinch', 'wince']</td>
+      <td></td>
+      <td>draw back, as with fear or pain像恐惧或痛苦一样退缩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>unk</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>fəŋk</td>
+      <td>['blue funk']</td>
+      <td></td>
+      <td>a state of nervous depression一种紧张抑郁的状态</td>
+      <td>he was in a funk他很恐怖</td>
+      <td></td>
+      <td></td>
+      <td>[depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>unk</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>fəŋk</td>
+      <td>['casimir funk']</td>
+      <td></td>
+      <td>United States biochemist (born in Poland) who showed that several diseases were caused by dietary deficiencies and who coined the term `vitamin' for the chemicals involved (1884-1967)美国生物化学家（出生于波兰）表明，几种疾病是由饮食缺乏造成的，他们为所涉及的化学品创造了“维生素”一词（1884-1967）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funk</th>
+      <td>unk</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>fəŋk</td>
+      <td></td>
+      <td></td>
+      <td>an earthy type of jazz combining it with blues and soul; has a heavy bass line that accentuates the first beat in the bar一种朴实的爵士乐，将它与蓝调和灵魂相结合;有一个沉重的低音线，突出了酒吧的第一拍</td>
+      <td></td>
+      <td>[funky]</td>
+      <td></td>
+      <td>[jazz]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunk</th>
+      <td>unk</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>həŋk</td>
+      <td>['lump']</td>
+      <td></td>
+      <td>a large piece of something without definite shape一大块没有明确形状的东西</td>
+      <td>a hunk of bread一大块面包</td>
+      <td></td>
+      <td></td>
+      <td>[part, piece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hunk</th>
+      <td>unk</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>həŋk</td>
+      <td></td>
+      <td></td>
+      <td>a well-built sexually attractive man一个精心打造的性吸引力的男人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult male, man]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>unk</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>dəŋk</td>
+      <td>['dip']</td>
+      <td></td>
+      <td>dip into a liquid while eating吃的同时浸入液体中</td>
+      <td>She dunked the piece of bread in the sauce她在酱汁里蘸了一块面包</td>
+      <td></td>
+      <td></td>
+      <td>[immerse, plunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>unk</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>dəŋk</td>
+      <td>['dip', 'douse', 'plunge', 'souse']</td>
+      <td></td>
+      <td>immerse briefly into a liquid so as to wet, coat, or saturate将液体短暂浸入液体中，以便润湿，涂抹或饱和</td>
+      <td></td>
+      <td>[dunkard]</td>
+      <td></td>
+      <td>[plunge, immerse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>unk</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>dəŋk</td>
+      <td></td>
+      <td></td>
+      <td>make a dunk shot, in basketball在篮球比赛中扣篮得分</td>
+      <td>He dunked the ball他扣篮得分</td>
+      <td></td>
+      <td></td>
+      <td>[shoot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dunk</th>
+      <td>unk</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>dəŋk</td>
+      <td>['dunk shot', 'stuff shot']</td>
+      <td></td>
+      <td>a basketball shot in which the basketball is propelled downward into the basket篮球射门，篮球向下推进篮筐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[basketball shot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gunk</th>
+      <td>unk</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>ɡəŋk</td>
+      <td>['goo', 'gook', 'goop', 'guck', 'muck', 'ooze', 'slime', 'sludge']</td>
+      <td></td>
+      <td>any thick, viscous matter任何厚厚的粘性物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[matter]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

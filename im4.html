@@ -1,0 +1,1115 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['swim', 'pimp', 'slim', 'limp', 'trim', 'grim', 'limb', 'whim', 'shim', 'skim', 'gimp', 'brim', 'prim', 'rimy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>swim</th>
+      <td>im</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>swɪm</td>
+      <td>['drown']</td>
+      <td></td>
+      <td>be covered with or submerged in a liquid被液体覆盖或浸没在液体中</td>
+      <td>the meat was swimming in a fatty gravy肉是用肥肉汁游泳的</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swim</th>
+      <td>im</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>swɪm</td>
+      <td>['float']</td>
+      <td></td>
+      <td>be afloat either on or below a liquid surface and not sink to the bottom漂浮在液体表面上或下方，不会沉到水底</td>
+      <td></td>
+      <td></td>
+      <td>[float]</td>
+      <td>[move, travel, go, locomote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swim</th>
+      <td>im</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>swɪm</td>
+      <td></td>
+      <td></td>
+      <td>be dizzy or giddy头晕或头晕</td>
+      <td>my brain is swimming after the bottle of champagne我的大脑在一瓶香槟后游泳</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swim</th>
+      <td>im</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>swɪm</td>
+      <td></td>
+      <td></td>
+      <td>move as if gliding through water移动，好像在水中滑行</td>
+      <td>this snake swims through the soil where it lives这条蛇在它所居住的土壤中游动</td>
+      <td></td>
+      <td></td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swim</th>
+      <td>im</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>swɪm</td>
+      <td></td>
+      <td></td>
+      <td>travel through water穿越水</td>
+      <td>We had to swim for 20 minutes to reach the shore我们不得不游泳20分钟到达岸边a big fish was swimming in the tank一条大鱼正在坦克里游泳</td>
+      <td>[swimming, swimmer]</td>
+      <td></td>
+      <td>[go, travel, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swim</th>
+      <td>im</td>
+      <td>4.56</td>
+      <td>nou</td>
+      <td>swɪm</td>
+      <td>['swimming']</td>
+      <td></td>
+      <td>the act of swimming游泳的行为</td>
+      <td>it was the swimming they enjoyed most这是他们最喜欢的游泳they took a short swim in the pool他们在游泳池里短暂游泳</td>
+      <td></td>
+      <td></td>
+      <td>[aquatics, water sport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pimp</th>
+      <td>im</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>pɪmp</td>
+      <td>['pander', 'procure']</td>
+      <td></td>
+      <td>arrange for sexual partners for others为他人安排性伴侣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cater, supply, provide, ply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pimp</th>
+      <td>im</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>pɪmp</td>
+      <td>['fancy man', 'pandar', 'pander', 'panderer', 'ponce', 'procurer']</td>
+      <td></td>
+      <td>someone who procures customers for whores (in England they call a pimp a ponce)为妓女买单的人（在英格兰他们称皮条客是个笨蛋）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wrongdoer, offender]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slim</th>
+      <td>im</td>
+      <td>3.90</td>
+      <td>ver</td>
+      <td>slɪm</td>
+      <td>['melt off', 'reduce', 'slenderize', 'slim down', 'thin']</td>
+      <td></td>
+      <td>take off weight起飞重量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slim</th>
+      <td>im</td>
+      <td>3.90</td>
+      <td>adj</td>
+      <td>slɪm</td>
+      <td>['slender', 'slight', 'svelte'], similarTo:['lean', 'thin']</td>
+      <td></td>
+      <td>being of delicate or slender build具有精致或纤细的构造</td>
+      <td>a slim girl with straight blonde hair一个苗条的女孩，金色直发</td>
+      <td>[slimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slim</th>
+      <td>im</td>
+      <td>3.90</td>
+      <td>adj</td>
+      <td>slɪm</td>
+      <td>['slender'], similarTo:['little', 'small']</td>
+      <td></td>
+      <td>small in quantity数量很少</td>
+      <td>a slim chance of winning获胜的机会很小</td>
+      <td>[slimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limp</th>
+      <td>im</td>
+      <td>3.60</td>
+      <td>ver</td>
+      <td>lɪmp</td>
+      <td>['gimp', 'hitch', 'hobble']</td>
+      <td></td>
+      <td>walk impeded by some physical limitation or injury受到某些身体限制或伤害的阻碍</td>
+      <td></td>
+      <td>[limper]</td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limp</th>
+      <td>im</td>
+      <td>3.60</td>
+      <td>ver</td>
+      <td>lɪmp</td>
+      <td></td>
+      <td></td>
+      <td>proceed slowly or with difficulty缓慢或困难地进行</td>
+      <td>the boat limped into the harbor船一瘸一拐地进入港口</td>
+      <td></td>
+      <td></td>
+      <td>[continue, go forward, proceed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limp</th>
+      <td>im</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>lɪmp</td>
+      <td>['hitch', 'hobble']</td>
+      <td></td>
+      <td>the uneven manner of walking that results from an injured leg腿部受伤引起的不均匀行走方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limp</th>
+      <td>im</td>
+      <td>3.60</td>
+      <td>adj</td>
+      <td>lɪmp</td>
+      <td>['wilted'], similarTo:['weak']</td>
+      <td></td>
+      <td>without energy or will没有能量或意志</td>
+      <td>gave a limp handshake给了一个柔软的握手a limp gesture as if waving away all desire to know一个柔软的手势，仿佛挥舞着所有想知道的欲望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limp</th>
+      <td>im</td>
+      <td>3.60</td>
+      <td>adj</td>
+      <td>lɪmp</td>
+      <td>, similarTo:['lax']</td>
+      <td></td>
+      <td>lacking or having lost rigidity缺乏或失去刚性</td>
+      <td>limp lettuce莴苣he felt his body go limp他觉得自己的身体一瘸一拐</td>
+      <td>[limpness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td>['bring down', 'cut', 'cut back', 'cut down', 'reduce', 'trim back', 'trim down']</td>
+      <td></td>
+      <td>cut down on; make a reduction in减少;减少</td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td>[decrease, minify, lessen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td>['clip', 'crop', 'cut back', 'dress', 'lop', 'prune', 'snip']</td>
+      <td></td>
+      <td>cultivate, tend, and cut back the growth of培养，倾向和削减生长</td>
+      <td></td>
+      <td>[trimmer, trimming]</td>
+      <td></td>
+      <td>[thin out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td>['dress', 'garnish']</td>
+      <td></td>
+      <td>decorate (food), as with parsley or other ornamental foods装饰（食物），如欧芹或其他装饰食品</td>
+      <td></td>
+      <td></td>
+      <td>[dress out, dress]</td>
+      <td>[decorate, ornament, beautify, adorn, embellish, grace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td>['pare']</td>
+      <td></td>
+      <td>remove the edges from and cut down to the desired size从边缘移除并减少到所需的大小</td>
+      <td>trim the photograph修剪照片trim lumber修剪木材</td>
+      <td>[trimmer]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td>['shave']</td>
+      <td></td>
+      <td>cut closely密切关注</td>
+      <td>trim my beard修剪我的胡子</td>
+      <td>[trimming]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td></td>
+      <td></td>
+      <td>adjust (sails on a ship) so that the wind is optimally used调整（在船上航行）以便最佳地使用风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adjust, set, correct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td></td>
+      <td></td>
+      <td>balance in flight by regulating the control surfaces通过调节控制面来平衡飞行</td>
+      <td>trim an airplane修剪飞机</td>
+      <td></td>
+      <td></td>
+      <td>[equilibrate, equilibrise, equilibrize, balance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td></td>
+      <td></td>
+      <td>be in equilibrium during a flight在飞行期间处于平衡状态</td>
+      <td>The airplane trimmed飞机修剪完毕</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>ver</td>
+      <td>trɪm</td>
+      <td></td>
+      <td></td>
+      <td>decorate, as with ornaments用装饰品装饰</td>
+      <td>trim the christmas tree修剪圣诞树trim a shop window修剪商店橱窗</td>
+      <td>[trimming]</td>
+      <td></td>
+      <td>[ornament, embellish, decorate, beautify, grace, adorn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>nou</td>
+      <td>trɪm</td>
+      <td>['clipping', 'trimming']</td>
+      <td></td>
+      <td>cutting down to the desired size or shape减少到所需的大小或形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cutting, cut, cutting off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>nou</td>
+      <td>trɪm</td>
+      <td>['passementerie', 'trimming']</td>
+      <td></td>
+      <td>a decoration or adornment on a garment服装上的装饰品或装饰品</td>
+      <td>the trimming on a hat修剪帽子the trim on a shirt衬衫上的饰边</td>
+      <td></td>
+      <td></td>
+      <td>[adornment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>nou</td>
+      <td>trɪm</td>
+      <td>['trimness']</td>
+      <td></td>
+      <td>a state of arrangement or appearance安排或外表的状态</td>
+      <td>in good trim很好的修剪</td>
+      <td></td>
+      <td></td>
+      <td>[neatness, spruceness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>nou</td>
+      <td>trɪm</td>
+      <td></td>
+      <td></td>
+      <td>attitude of an aircraft in flight when allowed to take its own orientation当飞机在飞行中被允许采取自己的方向时的态度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attitude]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>adj</td>
+      <td>trɪm</td>
+      <td>['spare'], similarTo:['lean', 'thin']</td>
+      <td></td>
+      <td>thin and fit又瘦又合身</td>
+      <td>a body kept trim by exercise一个身体通过锻炼保持修剪</td>
+      <td>[trimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>adj</td>
+      <td>trɪm</td>
+      <td>['clean-cut', 'trig'], similarTo:['tidy']</td>
+      <td></td>
+      <td>neat and smart in appearance外观整洁，聪明</td>
+      <td>a trim beard修剪的胡须</td>
+      <td>[trimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>adj</td>
+      <td>trɪm</td>
+      <td>['shipshape', 'well-kept'], similarTo:['tidy']</td>
+      <td></td>
+      <td>of places; characterized by order and neatness; free from disorder的地方;有序和整洁的特点;没有混乱</td>
+      <td>a trim little sailboat修剪小帆船</td>
+      <td>[trimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trim</th>
+      <td>im</td>
+      <td>3.58</td>
+      <td>adj</td>
+      <td>trɪm</td>
+      <td>['tailored'], similarTo:['plain']</td>
+      <td></td>
+      <td>severely simple in line or design线条或设计非常简单</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grim</th>
+      <td>im</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>grɪm</td>
+      <td>['dour', 'forbidding'], similarTo:['unpleasant']</td>
+      <td></td>
+      <td>harshly uninviting or formidable in manner or appearance在方式或外表上严厉不受欢迎或强大</td>
+      <td>a grim man loving duty more than humanity一个比人类更爱责任的冷酷人undoubtedly the grimmest part of him was his iron claw毫无疑问，他最严酷的部分就是他的铁爪</td>
+      <td>[grimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grim</th>
+      <td>im</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>grɪm</td>
+      <td>['blue', 'dark', 'dingy', 'disconsolate', 'dismal', 'drab', 'drear', 'dreary', 'gloomy', 'sorry'], similarTo:['uncheerful', 'cheerless', 'depressing']</td>
+      <td></td>
+      <td>causing dejection导致沮丧</td>
+      <td>grim rainy weather严峻的阴雨天气</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grim</th>
+      <td>im</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>grɪm</td>
+      <td>['inexorable', 'relentless', 'stern', 'unappeasable', 'unforgiving', 'unrelenting'], similarTo:['implacable']</td>
+      <td></td>
+      <td>not to be placated or appeased or moved by entreaty不要被恳求安抚或安抚</td>
+      <td>grim determination严峻的决心grim necessity严峻的必要性</td>
+      <td>[grimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grim</th>
+      <td>im</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>grɪm</td>
+      <td>['ghastly', 'grisly', 'gruesome', 'macabre', 'sick'], similarTo:['alarming']</td>
+      <td></td>
+      <td>shockingly repellent; inspiring horror令人震惊的驱蚊;鼓舞人心的恐怖</td>
+      <td>the grim aftermath of the bombing轰炸的严峻后果the grim task of burying the victims埋葬受害者的严峻任务</td>
+      <td>[grimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grim</th>
+      <td>im</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>grɪm</td>
+      <td>['blue', 'depressed', 'dispirited', 'down', 'down in the mouth', 'downcast', 'downhearted', 'gloomy', 'low', 'low-spirited'], similarTo:['dejected']</td>
+      <td></td>
+      <td>filled with melancholy and despondency充满了忧郁和沮丧</td>
+      <td>took a grim view of the economy对经济抱有严峻的看法</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grim</th>
+      <td>im</td>
+      <td>3.57</td>
+      <td>adj</td>
+      <td>grɪm</td>
+      <td>['black', 'mordant'], similarTo:['sarcastic']</td>
+      <td></td>
+      <td>harshly ironic or sinister严厉的讽刺或险恶</td>
+      <td>a grim joke一个严峻的笑话grim laughter冷酷的笑声</td>
+      <td>[grimness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limb</th>
+      <td>im</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>lɪm</td>
+      <td>['arm', 'branch']</td>
+      <td></td>
+      <td>any projection that is thought to resemble a human arm任何被认为类似于人类手臂的投影</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limb</th>
+      <td>im</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>lɪm</td>
+      <td>['tree branch']</td>
+      <td></td>
+      <td>any of the main branches arising from the trunk or a bough of a tree树干或树枝所产生的任何主枝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[branch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limb</th>
+      <td>im</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>lɪm</td>
+      <td></td>
+      <td></td>
+      <td>(astronomy) the circumferential edge of the apparent disc of the sun or the moon or a planet（天文学）太阳或月亮或行星的明显圆盘的圆周边缘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[border, edge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limb</th>
+      <td>im</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>lɪm</td>
+      <td></td>
+      <td></td>
+      <td>either of the two halves of a bow from handle to tip从手柄到尖端的两半弓中的任何一个</td>
+      <td>the upper limb of the bow弓的上肢</td>
+      <td></td>
+      <td></td>
+      <td>[part, portion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limb</th>
+      <td>im</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>lɪm</td>
+      <td></td>
+      <td></td>
+      <td>one of the jointed appendages of an animal used for locomotion or grasping: arm; leg; wing; flipper用于运动或抓握的动物的一个连接附肢：手臂;腿;翅膀;脚蹼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[appendage, extremity, member]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>limb</th>
+      <td>im</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>lɪm</td>
+      <td></td>
+      <td></td>
+      <td>the graduated arc that is attached to an instrument for measuring angles连接到仪器上用于测量角度的渐变弧</td>
+      <td>the limb of the sextant六分仪的肢体</td>
+      <td></td>
+      <td></td>
+      <td>[arc]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whim</th>
+      <td>im</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>wɪm</td>
+      <td>['caprice', 'impulse']</td>
+      <td></td>
+      <td>a sudden desire突然的欲望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whim</th>
+      <td>im</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>wɪm</td>
+      <td>['notion', 'whimsey', 'whimsy']</td>
+      <td></td>
+      <td>an odd or fanciful or capricious idea奇怪的，幻想的或反复无常的想法</td>
+      <td>he had a whimsy about flying to the moon他有一个关于飞向月球的奇思妙想whimsy can be humorous to someone with time to enjoy it对于有时间享受它的人来说，奇思妙想可以是幽默的</td>
+      <td></td>
+      <td></td>
+      <td>[idea, thought]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shim</th>
+      <td>im</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>ʃɪm</td>
+      <td></td>
+      <td></td>
+      <td>a thin wedge of material (wood or metal or stone) for driving into crevices一块薄薄的材料（木头或金属或石头），用于进入缝隙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wedge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>skɪm</td>
+      <td>['glance over', 'rake', 'run down', 'scan']</td>
+      <td></td>
+      <td>examine hastily匆匆检查</td>
+      <td></td>
+      <td>[skimming]</td>
+      <td></td>
+      <td>[examine, see]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>skɪm</td>
+      <td>['skim over']</td>
+      <td></td>
+      <td>read superficially从表面上看</td>
+      <td></td>
+      <td>[skimmer, skimming]</td>
+      <td></td>
+      <td>[read]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>skɪm</td>
+      <td>['skim over']</td>
+      <td></td>
+      <td>move or pass swiftly and lightly over the surface of在表面上快速轻轻地移动或通过</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>skɪm</td>
+      <td>['skip', 'skitter']</td>
+      <td></td>
+      <td>cause to skip over a surface导致跳过表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>skɪm</td>
+      <td>['plane']</td>
+      <td></td>
+      <td>travel on the surface of water在水面上旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[glide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>skɪm</td>
+      <td>['cream', 'cream off', 'skim off'], alos:['skim off']</td>
+      <td></td>
+      <td>remove from the surface从表面移除</td>
+      <td>skim cream from the surface of milk从牛奶表面撇去奶油</td>
+      <td>[skimmer, skimming]</td>
+      <td></td>
+      <td>[remove, take, take away, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>skɪm</td>
+      <td></td>
+      <td></td>
+      <td>coat (a liquid) with a layer带有一层的涂层（液体）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coat, surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>skɪm</td>
+      <td>['skimming']</td>
+      <td></td>
+      <td>reading or glancing through quickly阅读或快速浏览</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reading]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>skɪm</td>
+      <td></td>
+      <td></td>
+      <td>a thin layer covering the surface of a liquid覆盖液体表面的薄层</td>
+      <td>there was a thin skim of oil on the water水面上有一层薄薄的油污</td>
+      <td></td>
+      <td></td>
+      <td>[cover, covering, natural covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skim</th>
+      <td>im</td>
+      <td>2.84</td>
+      <td>adj</td>
+      <td>skɪm</td>
+      <td>['skimmed'], similarTo:['nonfat', 'fat-free', 'fatless']</td>
+      <td></td>
+      <td>used of milk and milk products from which the cream has been removed用于去除奶油的牛奶和奶制品</td>
+      <td>yogurt made with skim milk用脱脂牛奶制成的酸奶she can drink skimmed milk but should avoid butter她可以喝脱脂牛奶，但应该避免吃黄油</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gimp</th>
+      <td>im</td>
+      <td>2.80</td>
+      <td>ver</td>
+      <td>dʒɪmp</td>
+      <td>['hitch', 'hobble', 'limp']</td>
+      <td></td>
+      <td>walk impeded by some physical limitation or injury受到某些身体限制或伤害的阻碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gimp</th>
+      <td>im</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>dʒɪmp</td>
+      <td>['claudication', 'gameness', 'gimpiness', 'lameness', 'limping']</td>
+      <td></td>
+      <td>disability of walking due to crippling of the legs or feet由于腿或脚瘫痪导致的行走障碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disability of walking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brim</th>
+      <td>im</td>
+      <td>2.68</td>
+      <td>ver</td>
+      <td>brɪm</td>
+      <td></td>
+      <td></td>
+      <td>be completely full完全满了</td>
+      <td>His eyes brimmed with tears他的眼睛满是泪水</td>
+      <td></td>
+      <td></td>
+      <td>[feature, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brim</th>
+      <td>im</td>
+      <td>2.68</td>
+      <td>ver</td>
+      <td>brɪm</td>
+      <td></td>
+      <td></td>
+      <td>fill as much as possible尽可能多地填写</td>
+      <td>brim a cup to good fellowship喝杯子以获得良好的团契</td>
+      <td></td>
+      <td></td>
+      <td>[make full, fill, fill up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brim</th>
+      <td>im</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>brɪm</td>
+      <td>['lip', 'rim']</td>
+      <td></td>
+      <td>the top edge of a vessel or other container容器或其他容器的顶部边缘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brim</th>
+      <td>im</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>brɪm</td>
+      <td></td>
+      <td></td>
+      <td>a circular projection that sticks outward from the crown of a hat圆形投影，从帽子的顶部向外伸出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prim</th>
+      <td>im</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>prɪm</td>
+      <td>['prim out', 'prim up']</td>
+      <td></td>
+      <td>dress primly礼服</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[raiment, tog, fit out, clothe, dress, enclothe, apparel, garb, garment, habilitate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prim</th>
+      <td>im</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>prɪm</td>
+      <td></td>
+      <td></td>
+      <td>assume a prim appearance假设外表</td>
+      <td>They mince and prim他们剁碎和原始</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prim</th>
+      <td>im</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>prɪm</td>
+      <td></td>
+      <td></td>
+      <td>contract one's lips收缩一个人的嘴唇</td>
+      <td>She primmed her lips after every bite of food每吃一口食物后，她就会露出嘴唇</td>
+      <td></td>
+      <td></td>
+      <td>[press, constrict, squeeze, compress, compact, contract]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prim</th>
+      <td>im</td>
+      <td>2.62</td>
+      <td>adj</td>
+      <td>prɪm</td>
+      <td>['mincing', 'niminy-piminy', 'twee'], similarTo:['refined']</td>
+      <td></td>
+      <td>affectedly dainty or refined有点精致或精致</td>
+      <td></td>
+      <td>[primness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prim</th>
+      <td>im</td>
+      <td>2.62</td>
+      <td>adj</td>
+      <td>prɪm</td>
+      <td>['priggish', 'prissy', 'prudish', 'puritanical', 'square-toed', 'straight-laced', 'straightlaced', 'strait-laced', 'straitlaced', 'tight-laced', 'victorian'], similarTo:['proper']</td>
+      <td></td>
+      <td>exaggeratedly proper夸张地说得恰到好处</td>
+      <td></td>
+      <td>[primness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rimy</th>
+      <td>im</td>
+      <td>1.74</td>
+      <td>adj</td>
+      <td>'raɪmi</td>
+      <td>['frosty', 'rimed'], similarTo:['cold']</td>
+      <td></td>
+      <td>covered with frost满霜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

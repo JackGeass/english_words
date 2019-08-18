@@ -1,0 +1,1595 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['with', 'shit', 'city', 'pity', 'unit', 'spit', 'exit', 'slit', 'edit', 'itch', 'knit', 'wits', 'chit', 'ritz', 'brit', 'clit', 'grit', 'twit', 'whit', 'writ', 'mitt', 'titi', 'emit', 'skit', 'flit', 'omit', 'adit', 'pith', 'ziti', 'obit', 'crit', 'snit', 'kith', 'bitt']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>with</th>
+      <td>it</td>
+      <td>6.71</td>
+      <td>pre</td>
+      <td>wɪð</td>
+      <td></td>
+      <td></td>
+      <td>denotes or expresses some situation or relation of nearness, proximity, association, connection, or the like.表示或表达某种情况或接近，接近，关联，连接等的关系。</td>
+      <td>I will buy with you, talk with you, walk with you, and so following; but I will not eat with you, drink with you, nor pray with you.我会和你一起买，跟你说话，和你一起走，等等;但我不会和你一起吃饭，和你一起喝酒，也不会和你一起祷告。Fear not, for I am with thee, and will bless thee.不要害怕，因为我和你在一起，并会祝福你。</td>
+      <td>[]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>ver</td>
+      <td>ʃɪt</td>
+      <td>['ca-ca', 'crap', 'defecate', 'make', 'stool', 'take a crap', 'take a shit']</td>
+      <td></td>
+      <td>have a bowel movement有排便</td>
+      <td></td>
+      <td>[shitter, shitting]</td>
+      <td>[make water, make, pee, take a leak, wee-wee, spend a penny, relieve oneself, puddle, piss, piddle, pee-pee, pass water, wee, micturate, urinate]</td>
+      <td>[pass, egest, excrete, eliminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>ver</td>
+      <td>ʃɪt</td>
+      <td>['betray', 'denounce', 'give away', 'grass', 'rat', 'shop', 'snitch', 'stag', 'tell on']</td>
+      <td></td>
+      <td>give away information about somebody泄露有关某人的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>nou</td>
+      <td>ʃɪt</td>
+      <td>['crap', 'dirt', 'poop', 'shite', 'turd']</td>
+      <td></td>
+      <td>obscene terms for feces粪便的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fecal matter, faeces, faecal matter, ordure, dejection, stool, bm, feces]</td>
+      <td>[filth, dirty word, obscenity, smut, vulgarism]</td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>nou</td>
+      <td>ʃɪt</td>
+      <td>['asshole', 'bastard', 'cocksucker', 'dickhead', 'mother fucker', 'motherfucker', 'prick', 'sob', 'son of a bitch', 'whoreson']</td>
+      <td></td>
+      <td>insulting terms of address for people who are stupid or irritating or ridiculous对愚蠢或恼人或荒谬的人提出侮辱性的地址条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td>[smut, vulgarism, obscenity, filth, dirty word]</td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>nou</td>
+      <td>ʃɪt</td>
+      <td>['damn', 'darn', 'hoot', 'red cent', 'shucks', "tinker's dam", "tinker's damn"]</td>
+      <td></td>
+      <td>something of little value没什么价值的东西</td>
+      <td></td>
+      <td>[shitty]</td>
+      <td></td>
+      <td>[ineptitude, worthlessness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>nou</td>
+      <td>ʃɪt</td>
+      <td>['dump']</td>
+      <td></td>
+      <td>a coarse term for defecation排便的粗略术语</td>
+      <td>he took a shit他傻了</td>
+      <td></td>
+      <td></td>
+      <td>[laxation, shitting, defecation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>nou</td>
+      <td>ʃɪt</td>
+      <td>['bull', 'bullshit', 'crap', 'dogshit', 'horseshit', 'irish bull']</td>
+      <td></td>
+      <td>obscene words for unacceptable behavior淫秽的言辞是不可接受的行为</td>
+      <td>I put up with a lot of bullshit from that jerk我从这个混蛋中忍受了很多废话</td>
+      <td></td>
+      <td></td>
+      <td>[buncombe, rot, hogwash, guff, bunkum, bunk]</td>
+      <td>[dirty word, vulgarism, filth, obscenity, smut]</td>
+    </tr>
+    <tr>
+      <th>shit</th>
+      <td>it</td>
+      <td>5.80</td>
+      <td>nou</td>
+      <td>ʃɪt</td>
+      <td>['diddley', 'diddly', 'diddly-shit', 'diddly-squat', 'diddlyshit', 'diddlysquat', 'doodly-squat', 'jack', 'squat']</td>
+      <td></td>
+      <td>a small worthless amount一点点无价值</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>city</th>
+      <td>it</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>'sɪti</td>
+      <td>['metropolis']</td>
+      <td></td>
+      <td>people living in a large densely populated municipality居住在人口密集的大城市的人们</td>
+      <td>the city voted for Republicans in 1994该市于1994年投票支持共和党人</td>
+      <td>[citify]</td>
+      <td></td>
+      <td>[municipality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>city</th>
+      <td>it</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>'sɪti</td>
+      <td>['metropolis', 'urban center']</td>
+      <td></td>
+      <td>a large and densely populated urban area; may include several independent administrative districts人口稠密的大城市区域;可能包括几个独立的行政区</td>
+      <td>Ancient Troy was a great city古代特洛伊是一座伟大的城市</td>
+      <td>[citify]</td>
+      <td></td>
+      <td>[municipality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>city</th>
+      <td>it</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>'sɪti</td>
+      <td></td>
+      <td></td>
+      <td>an incorporated administrative district established by state charter由州宪章设立的行政区</td>
+      <td>the city raised the tax rate该市提高了税率</td>
+      <td></td>
+      <td></td>
+      <td>[territorial division, administrative division, administrative district]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pity</th>
+      <td>it</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>'pɪti</td>
+      <td>['compassionate', 'condole with', 'feel for', 'sympathize with']</td>
+      <td></td>
+      <td>share the suffering of分担痛苦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grieve, sorrow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pity</th>
+      <td>it</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>'pɪti</td>
+      <td>['commiseration', 'pathos', 'ruth']</td>
+      <td></td>
+      <td>a feeling of sympathy and sorrow for the misfortunes of others对别人的不幸表示同情和悲伤</td>
+      <td>the blind are too often objects of pity盲人往往是怜悯的对象</td>
+      <td>[piteous]</td>
+      <td></td>
+      <td>[fellow feeling, sympathy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pity</th>
+      <td>it</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>'pɪti</td>
+      <td>['compassion']</td>
+      <td></td>
+      <td>the humane quality of understanding the suffering of others and wanting to do something about it理解他人痛苦并希望对此做些什么的人性化品质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mercifulness, mercy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pity</th>
+      <td>it</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>'pɪti</td>
+      <td>['shame']</td>
+      <td></td>
+      <td>an unfortunate development一个不幸的发展</td>
+      <td>it's a pity he couldn't do it遗憾的是他无法做到这一点</td>
+      <td>[piteous]</td>
+      <td></td>
+      <td>[bad luck, misfortune]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>it</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['social unit']</td>
+      <td></td>
+      <td>an organization regarded as part of a larger social group被视为更大社会群体一部分的组织</td>
+      <td>the coach said the offensive unit did a good job教练说进攻部队做得很好after the battle the soldier had trouble rejoining his unit战斗结束后士兵重新加入他的部队</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[organization, organisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>it</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['unit of measurement']</td>
+      <td></td>
+      <td>any division of quantity accepted as a standard of measurement or exchange任何数量划分作为衡量标准或交换标准</td>
+      <td>the dollar is the United States unit of currency美元是美元的货币单位a unit of wheat is a bushel小麦单位是蒲式耳change per unit volume每单位体积变化</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[definite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>it</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['whole']</td>
+      <td></td>
+      <td>an assemblage of parts that is regarded as a single entity被视为单一实体的部件集合</td>
+      <td>the team is a unit团队是一个单位</td>
+      <td>[unify, unitize]</td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>it</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td>['building block']</td>
+      <td></td>
+      <td>a single undivided natural thing occurring in the composition of something else在其他事物的构成中发生的单一的不可分割的自然事物</td>
+      <td>units of nucleic acids核酸单位</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[thing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>it</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td></td>
+      <td></td>
+      <td>an individual or group or structure or other entity regarded as a structural or functional constituent of a whole被视为整体结构或功能组成部分的个人或团体或结构或其他实体</td>
+      <td>the reduced the number of units and installations减少了单位和装置的数量the word is a basic linguistic unit这个词是一个基本的语言单位</td>
+      <td>[unitize]</td>
+      <td></td>
+      <td>[constituent, portion, component part, component, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>unit</th>
+      <td>it</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>'junɪt</td>
+      <td></td>
+      <td></td>
+      <td>a single undivided whole一个不可分割的整体</td>
+      <td>an idea is not a unit that can be moved from one brain to another一个想法不是一个可以从一个大脑移动到另一个大脑的单元</td>
+      <td>[unify, unitize]</td>
+      <td></td>
+      <td>[whole]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>spɪt</td>
+      <td>['ptyalise', 'ptyalize', 'spew', 'spue'], alos:['spit up']</td>
+      <td></td>
+      <td>expel or eject (saliva or phlegm or sputum) from the mouth从口中排出或排出（唾液或痰或痰）</td>
+      <td></td>
+      <td>[spitter, spitting]</td>
+      <td></td>
+      <td>[expectorate, cough out, cough up, spit out, spit up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>spɪt</td>
+      <td>['patter', 'pitter-patter', 'spatter', 'sprinkle']</td>
+      <td></td>
+      <td>rain gently小雨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rain, rain down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>spɪt</td>
+      <td>['skewer']</td>
+      <td></td>
+      <td>drive a skewer through通过开叉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>spɪt</td>
+      <td>['spit out']</td>
+      <td></td>
+      <td>utter with anger or contempt愤怒或蔑视</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emit, utter, let loose, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>spɪt</td>
+      <td>['tongue']</td>
+      <td></td>
+      <td>a narrow strip of land that juts out into the sea狭窄的土地，伸入大海</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ness, cape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>spɪt</td>
+      <td>['expectoration', 'spitting']</td>
+      <td></td>
+      <td>the act of spitting (forcefully expelling saliva)随地吐痰的行为（强行驱逐唾液）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expulsion, forcing out, projection, ejection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>spɪt</td>
+      <td>['saliva', 'spittle']</td>
+      <td></td>
+      <td>a clear liquid secreted into the mouth by the salivary glands and mucous glands of the mouth; moistens the mouth and starts the digestion of starches唾液腺和口腔粘液腺分泌到口腔中的清澈液体;滋润口腔，开始消化淀粉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[secretion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spit</th>
+      <td>it</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>spɪt</td>
+      <td></td>
+      <td></td>
+      <td>a skewer for holding meat over a fire把肉放在火上的串</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[skewer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>exit</th>
+      <td>it</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>'ɛgzɪt</td>
+      <td>['get out', 'go out', 'leave']</td>
+      <td>[enter]</td>
+      <td>move out of or depart from搬出或离开</td>
+      <td></td>
+      <td></td>
+      <td>[go forth, leave, go away]</td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>exit</th>
+      <td>it</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>'ɛgzɪt</td>
+      <td>['buy the farm', "cash in one's chips", 'choke', 'conk', 'croak', 'decease', 'die', 'drop dead', 'expire', 'give-up the ghost', 'go', 'kick the bucket', 'pass', 'pass away', 'perish', 'pop off', 'snuff it']</td>
+      <td></td>
+      <td>pass from physical life and lose all bodily attributes and functions necessary to sustain life从物质生活中消失，失去维持生命所必需的所有身体属性和功能</td>
+      <td></td>
+      <td></td>
+      <td>[die, conk out, give way, give out, fail, break down, break, go, go bad]</td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>exit</th>
+      <td>it</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>'ɛgzɪt</td>
+      <td></td>
+      <td></td>
+      <td>lose the lead失去领先</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>exit</th>
+      <td>it</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>'ɛgzɪt</td>
+      <td>['issue', 'outlet', 'way out']</td>
+      <td></td>
+      <td>an opening that permits escape or release允许逃跑或释放的开口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>exit</th>
+      <td>it</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>'ɛgzɪt</td>
+      <td>['departure', 'expiration', 'going', 'loss', 'passing', 'release']</td>
+      <td></td>
+      <td>euphemistic expressions for death委婉的死亡表达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expiry, death, decease]</td>
+      <td>[euphemism]</td>
+    </tr>
+    <tr>
+      <th>exit</th>
+      <td>it</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>'ɛgzɪt</td>
+      <td></td>
+      <td></td>
+      <td>the act of going out外出的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[going away, departure, leaving, going]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slit</th>
+      <td>it</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>slɪt</td>
+      <td>['slice']</td>
+      <td></td>
+      <td>make a clean cut through做一个干净的切入</td>
+      <td>slit her throat割开她的喉咙</td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slit</th>
+      <td>it</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>slɪt</td>
+      <td></td>
+      <td></td>
+      <td>cut a slit into切成一条缝</td>
+      <td>slit the throat of the victim切开受害者的喉咙</td>
+      <td></td>
+      <td></td>
+      <td>[incise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slit</th>
+      <td>it</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>slɪt</td>
+      <td>['dent', 'incision', 'prick', 'scratch']</td>
+      <td></td>
+      <td>a depression scratched or carved into a surface凹陷划伤或刻在表面上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[impression, imprint, depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slit</th>
+      <td>it</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>slɪt</td>
+      <td>['cunt', 'puss', 'pussy', 'snatch', 'twat']</td>
+      <td></td>
+      <td>obscene terms for female genitals女性生殖器的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[female genitals, female genitalia, female genital organ, fanny]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slit</th>
+      <td>it</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>slɪt</td>
+      <td></td>
+      <td></td>
+      <td>a long narrow opening一个狭长的开口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slit</th>
+      <td>it</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>slɪt</td>
+      <td></td>
+      <td></td>
+      <td>a narrow fissure狭窄的裂缝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cleft, crack, crevice, fissure, scissure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>it</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td>['redact']</td>
+      <td></td>
+      <td>prepare for publication or presentation by correcting, revising, or adapting通过纠正，修改或改编来准备出版或演示</td>
+      <td>she edited the letters of the politician so as to omit the most personal passages她编辑了政治家的信件，以便省略最个人的段落</td>
+      <td>[editing, editor]</td>
+      <td></td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>it</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td>['cut', 'edit out']</td>
+      <td></td>
+      <td>cut and assemble the components of切割和组装的组件</td>
+      <td>edit film编辑电影</td>
+      <td></td>
+      <td>[abbreviate, foreshorten, shorten, contract, abridge, cut, reduce]</td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>it</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td>['blue-pencil', 'delete']</td>
+      <td></td>
+      <td>cut or eliminate削减或消除</td>
+      <td>she edited the juiciest scenes她编辑了最多汁的场景</td>
+      <td></td>
+      <td></td>
+      <td>[censor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>it</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td></td>
+      <td></td>
+      <td>supervise the publication of监督出版物</td>
+      <td>The same family has been editing the influential newspaper for almost 100 years这个家族近百年来一直在编辑有影响力的报纸</td>
+      <td></td>
+      <td></td>
+      <td>[put out, publish, release, issue, bring out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itch</th>
+      <td>it</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>ɪʧ</td>
+      <td>['spoil']</td>
+      <td></td>
+      <td>have a strong desire or urge to do something有强烈的愿望或渴望做某事</td>
+      <td>She is itching to start the project她渴望启动这个项目</td>
+      <td></td>
+      <td></td>
+      <td>[want, desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itch</th>
+      <td>it</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>ɪʧ</td>
+      <td>['rub', 'scratch']</td>
+      <td></td>
+      <td>scrape or rub as if to relieve itching刮擦或摩擦，好像是为了缓解瘙痒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[irritate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itch</th>
+      <td>it</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>ɪʧ</td>
+      <td></td>
+      <td></td>
+      <td>have or perceive an itch有或感觉到痒</td>
+      <td>I'm itching--the air is so dry!我很痒 - 空气太干了！</td>
+      <td>[itching]</td>
+      <td></td>
+      <td>[hurt, smart, ache]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itch</th>
+      <td>it</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>ɪʧ</td>
+      <td>['itchiness', 'itching']</td>
+      <td></td>
+      <td>an irritating cutaneous sensation that produces a desire to scratch刺激性的皮肤感觉，产生划伤的欲望</td>
+      <td></td>
+      <td>[itchy]</td>
+      <td></td>
+      <td>[cutaneous sensation, haptic sensation, skin sensation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itch</th>
+      <td>it</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>ɪʧ</td>
+      <td>['scabies']</td>
+      <td></td>
+      <td>a contagious skin infection caused by the itch mite; characterized by persistent itching and skin irritation由痒螨引起的传染性皮肤感染;以持续性瘙痒和皮肤刺激为特征</td>
+      <td>he has a bad case of the itch他有一个不好的痒病例</td>
+      <td></td>
+      <td></td>
+      <td>[infection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>itch</th>
+      <td>it</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>ɪʧ</td>
+      <td>['urge']</td>
+      <td></td>
+      <td>a strong restless desire强烈的不安欲望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knit</th>
+      <td>it</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>nɪt</td>
+      <td>['cockle', 'crumple', 'pucker', 'rumple']</td>
+      <td></td>
+      <td>to gather something into small wrinkles or folds把东西收集成小皱纹或皱褶</td>
+      <td></td>
+      <td></td>
+      <td>[draw]</td>
+      <td>[wrinkle, crinkle, crisp, ruckle, scrunch, scrunch up, crease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knit</th>
+      <td>it</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>nɪt</td>
+      <td>['entwine']</td>
+      <td></td>
+      <td>tie or link together捆绑或链接在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[conjoin, join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knit</th>
+      <td>it</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>nɪt</td>
+      <td></td>
+      <td></td>
+      <td>make (textiles) by knitting通过编织制作（纺织品）</td>
+      <td>knit a scarf编织围巾</td>
+      <td>[knitter, knitting]</td>
+      <td></td>
+      <td>[create from raw stuff, create from raw material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knit</th>
+      <td>it</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>nɪt</td>
+      <td>['knitting', 'knitwork']</td>
+      <td></td>
+      <td>needlework created by interlacing yarn in a series of connected loops using straight eyeless needles or by machine通过使用直的无针或机器在一系列连接的环中交织纱线而产生的针线活</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[needlecraft, needlework]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knit</th>
+      <td>it</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>nɪt</td>
+      <td>['knit stitch', 'plain', 'plain stitch']</td>
+      <td></td>
+      <td>a basic knitting stitch made by putting the needle through the front of the stitch from the lefthand side通过从左侧将针穿过针脚前部而制成的基本针织针迹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[knitting stitch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knit</th>
+      <td>it</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>nɪt</td>
+      <td></td>
+      <td></td>
+      <td>a fabric made by knitting由针织制成的面料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fabric, textile, material, cloth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wits</th>
+      <td>it</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>wɪts</td>
+      <td>['marbles']</td>
+      <td></td>
+      <td>the basic human power of intelligent thought and perception智慧思想和感知的基本人力</td>
+      <td>he used his wits to get ahead他用自己的智慧取得了成功I was scared out of my wits我吓坏了我的智慧</td>
+      <td></td>
+      <td></td>
+      <td>[intelligence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chit</th>
+      <td>it</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>tʃɪt</td>
+      <td>['check', 'tab']</td>
+      <td></td>
+      <td>the bill in a restaurant在一家餐馆的账单</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[invoice, bill, account]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chit</th>
+      <td>it</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>tʃɪt</td>
+      <td></td>
+      <td></td>
+      <td>a dismissive term for a girl who is immature or who lacks respect对于一个不成熟或缺乏尊重的女孩而言，这是一个轻率的用语</td>
+      <td>she was incensed that this chit of a girl should dare to make a fool of her in front of the class她很生气，一个女孩的这个女孩应该敢于在课堂上愚弄她she's a saucy chit她是一个俏皮的人</td>
+      <td></td>
+      <td></td>
+      <td>[missy, young lady, young woman, girl, fille, miss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ritz</th>
+      <td>it</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>rɪts</td>
+      <td>['cesar ritz']</td>
+      <td></td>
+      <td>Swiss hotelier who created a chain of elegant hotels (1850-1918)瑞士酒店经营者，创造了一系列优雅的酒店（1850-1918）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ritz</th>
+      <td>it</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>rɪts</td>
+      <td></td>
+      <td></td>
+      <td>an ostentatiously elegant hotel一个优雅的酒店</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hotel]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>ritz</th>
+      <td>it</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>rɪts</td>
+      <td></td>
+      <td></td>
+      <td>ostentatious display of elegance炫耀优雅的展示</td>
+      <td>they put on the ritz他们穿上了丽思</td>
+      <td>[ritzy]</td>
+      <td></td>
+      <td>[flash, ostentation, fanfare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brit</th>
+      <td>it</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>brit</td>
+      <td>['britisher', 'briton']</td>
+      <td></td>
+      <td>a native or inhabitant of Great Britain英国的本地人或居民</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[european]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brit</th>
+      <td>it</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>brit</td>
+      <td>['britt']</td>
+      <td></td>
+      <td>the young of a herring or sprat or similar fish年轻的鲱鱼，鲱鱼或类似的鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[young fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brit</th>
+      <td>it</td>
+      <td>3.16</td>
+      <td>nou</td>
+      <td>brit</td>
+      <td>['britt']</td>
+      <td></td>
+      <td>minute crustaceans forming food for right whales分甲壳类动物为正确的鲸鱼形成食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[copepod, copepod crustacean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clit</th>
+      <td>it</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td></td>
+      <td>['button', 'clitoris']</td>
+      <td></td>
+      <td>a female sexual organ homologous to the penis与阴茎同源的女性性器官</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[erectile organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grit</th>
+      <td>it</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>grɪt</td>
+      <td></td>
+      <td></td>
+      <td>clench together紧握在一起</td>
+      <td>grit one's teeth咬牙切齿</td>
+      <td></td>
+      <td></td>
+      <td>[clench]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grit</th>
+      <td>it</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>grɪt</td>
+      <td></td>
+      <td></td>
+      <td>cover with a grit用沙砾覆盖</td>
+      <td>grit roads砂砾路</td>
+      <td></td>
+      <td></td>
+      <td>[coat, surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grit</th>
+      <td>it</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>grɪt</td>
+      <td>['gritrock', 'gritstone']</td>
+      <td></td>
+      <td>a hard coarse-grained siliceous sandstone硬质粗粒硅质砂岩</td>
+      <td></td>
+      <td>[gritty]</td>
+      <td></td>
+      <td>[sandstone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grit</th>
+      <td>it</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>grɪt</td>
+      <td>['backbone', 'gumption', 'guts', 'moxie', 'sand']</td>
+      <td></td>
+      <td>fortitude and determination坚韧和决心</td>
+      <td></td>
+      <td>[gritty]</td>
+      <td></td>
+      <td>[fortitude]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>twit</th>
+      <td>it</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>twɪt</td>
+      <td>['bait', 'cod', 'rag', 'rally', 'razz', 'ride', 'tantalise', 'tantalize', 'taunt', 'tease']</td>
+      <td></td>
+      <td>harass with persistent criticism or carping骚扰持续的批评或讽刺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bemock, mock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twit</th>
+      <td>it</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>twɪt</td>
+      <td>['taunt', 'taunting']</td>
+      <td></td>
+      <td>aggravation by deriding or mocking or criticizing通过嘲笑或嘲笑或批评来加剧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[irritation, provocation, aggravation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twit</th>
+      <td>it</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>twɪt</td>
+      <td>['twerp', 'twirp']</td>
+      <td></td>
+      <td>someone who is regarded as contemptible被视为卑鄙的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[simpleton, simple]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whit</th>
+      <td>it</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>hwɪt</td>
+      <td>['iota', 'scintilla', 'shred', 'smidge', 'smidgen', 'smidgeon', 'smidgin', 'tittle']</td>
+      <td></td>
+      <td>a tiny or scarcely detectable amount微小的或几乎不可检测的量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>writ</th>
+      <td>it</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>rɪt</td>
+      <td>['judicial writ']</td>
+      <td></td>
+      <td>(law) a legal document issued by a court or judicial officer（法律）由法院或司法官员签发的法律文件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[official document, legal document, legal instrument, instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mitt</th>
+      <td>it</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>mɪt</td>
+      <td>['hand', 'manus', 'paw']</td>
+      <td></td>
+      <td>the (prehensile) extremity of the superior limb上肢的（上颌）肢体</td>
+      <td>he extended his mitt他伸出了手套</td>
+      <td></td>
+      <td></td>
+      <td>[extremity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mitt</th>
+      <td>it</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>mɪt</td>
+      <td>['baseball glove', 'baseball mitt', 'glove']</td>
+      <td></td>
+      <td>the handwear used by fielders in playing baseball外野手在打棒球时使用的手套</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[baseball equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>titi</th>
+      <td>it</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>'titi</td>
+      <td>['buckwheat tree', 'cliftonia monophylla']</td>
+      <td></td>
+      <td>tree of low-lying coastal areas of southeastern United States having glossy leaves and racemes of fragrant white flowers美国东南部低洼沿海地区的树，有光泽的叶子和总状花序的白色花朵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angiospermous tree, flowering tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>titi</th>
+      <td>it</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>'titi</td>
+      <td>['oxydendrum arboreum', 'sorrel tree', 'sourwood']</td>
+      <td></td>
+      <td>deciduous shrubby tree of eastern North America having deeply fissured bark and sprays of small fragrant white flowers and sour-tasting leaves北美东部落叶灌木状树，树皮深裂，喷洒小香白花和酸味叶子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angiospermous tree, flowering tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>titi</th>
+      <td>it</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>'titi</td>
+      <td>['titi monkey']</td>
+      <td></td>
+      <td>small South American monkeys with long beautiful fur and long nonprehensile tail小型南美洲猴子，长有美丽的毛皮和长长的不易弯曲的尾巴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platyrrhinian, new world monkey, platyrrhine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>emit</th>
+      <td>it</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>ɪ'mɪt</td>
+      <td>['breathe', 'pass off']</td>
+      <td></td>
+      <td>expel (gases or odors)驱逐（气体或气味）</td>
+      <td></td>
+      <td>[emission]</td>
+      <td></td>
+      <td>[eject, exhaust, expel, discharge, release]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>emit</th>
+      <td>it</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>ɪ'mɪt</td>
+      <td>['let loose', 'let out', 'utter']</td>
+      <td></td>
+      <td>express audibly; utter sounds (not necessarily words)听得见;完全的声音（不一定是单词）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>emit</th>
+      <td>it</td>
+      <td>2.84</td>
+      <td>ver</td>
+      <td>ɪ'mɪt</td>
+      <td>['give off', 'give out']</td>
+      <td>[absorb]</td>
+      <td>give off, send forth, or discharge; as of light, heat, or radiation, vapor, etc.放弃，发送或放电;光，热，辐射，蒸气等</td>
+      <td>The ozone layer blocks some harmful rays which the sun emits臭氧层阻挡了太阳发出的一些有害射线</td>
+      <td>[emission, emitter]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skit</th>
+      <td>it</td>
+      <td>2.67</td>
+      <td>nou</td>
+      <td>skɪt</td>
+      <td></td>
+      <td></td>
+      <td>a short theatrical episode短暂的戏剧情节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acting, performing, playacting, playing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flit</th>
+      <td>it</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>flɪt</td>
+      <td>['dart', 'fleet', 'flutter']</td>
+      <td></td>
+      <td>move along rapidly and lightly; skim or dart快速轻松地前进;脱脂或飞镖</td>
+      <td>The hummingbird flitted among the branches蜂鸟在树枝间掠过</td>
+      <td></td>
+      <td></td>
+      <td>[hurry, speed, travel rapidly, zip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flit</th>
+      <td>it</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>flɪt</td>
+      <td>['dart']</td>
+      <td></td>
+      <td>a sudden quick movement一个突然的快速运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[movement, motility, motion, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flit</th>
+      <td>it</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>flɪt</td>
+      <td></td>
+      <td></td>
+      <td>a secret move (to avoid paying debts)秘密举动（以避免偿还债务）</td>
+      <td>they did a moonlight flit他们做了月光掠过</td>
+      <td></td>
+      <td></td>
+      <td>[move, relocation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>omit</th>
+      <td>it</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>oʊ'mɪt</td>
+      <td>['drop', 'leave out', 'miss', 'neglect', 'overleap', 'overlook', 'pretermit']</td>
+      <td></td>
+      <td>leave undone or leave out离开或离开</td>
+      <td></td>
+      <td>[omissible, omission, omissive]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>omit</th>
+      <td>it</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>oʊ'mɪt</td>
+      <td>['except', 'exclude', 'leave off', 'leave out', 'take out']</td>
+      <td></td>
+      <td>prevent from being included or considered or accepted防止被包括，考虑或接受</td>
+      <td></td>
+      <td>[omissible, omission]</td>
+      <td></td>
+      <td>[get rid of, eliminate, extinguish, do away with]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>adit</th>
+      <td>it</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>'ædɪt</td>
+      <td></td>
+      <td></td>
+      <td>a nearly horizontal passage from the surface into a mine从地面到矿井的近乎水平的通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[passage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pith</th>
+      <td>it</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>pɪθ</td>
+      <td></td>
+      <td></td>
+      <td>remove the pith from (a plant)从（植物）中取出髓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remove, get rid of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pith</th>
+      <td>it</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>pɪθ</td>
+      <td>['center', 'centre', 'core', 'essence', 'gist', 'heart', 'heart and soul', 'inwardness', 'kernel', 'marrow', 'meat', 'nitty-gritty', 'nub', 'substance', 'sum']</td>
+      <td></td>
+      <td>the choicest or most essential or most vital part of some idea or experience某些想法或经验中最挑选或最重要或最重要的部分</td>
+      <td></td>
+      <td>[pithy]</td>
+      <td></td>
+      <td>[mental object, content, cognitive content]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pith</th>
+      <td>it</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>pɪθ</td>
+      <td></td>
+      <td></td>
+      <td>soft spongelike central cylinder of the stems of most flowering plants大多数开花植物茎的软海绵状中央圆筒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ziti</th>
+      <td>it</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>medium-sized tubular pasta in short pieces中等大小的管状面食</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alimentary paste, pasta]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>obit</th>
+      <td>it</td>
+      <td>2.03</td>
+      <td>nou</td>
+      <td>'oʊbɪt</td>
+      <td>['necrology', 'obituary']</td>
+      <td></td>
+      <td>a notice of someone's death; usually includes a short biography某人死亡的通知;通常包括简短的传记</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[notice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crit</th>
+      <td>it</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>krit</td>
+      <td>['criterium']</td>
+      <td></td>
+      <td>a bicycle race held on a short course (usually less than 5 km or 3 miles)在短程（一般不到5公里或3英里）举行的自行车比赛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bicycle race, bike race]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snit</th>
+      <td>it</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>snɪt</td>
+      <td></td>
+      <td></td>
+      <td>a state of agitated irritation一种激动的刺激状态</td>
+      <td>he was in a snit他嗤之以鼻</td>
+      <td></td>
+      <td></td>
+      <td>[annoyance, botheration, irritation, vexation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kith</th>
+      <td>it</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>kɪθ</td>
+      <td></td>
+      <td></td>
+      <td>your friends and acquaintances你的朋友和熟人</td>
+      <td>all his kith and kin他所有的亲戚和亲戚</td>
+      <td></td>
+      <td></td>
+      <td>[social group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bitt</th>
+      <td>it</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>bɪt</td>
+      <td></td>
+      <td></td>
+      <td>secure with a bitt用bitt保护</td>
+      <td>bitt the ship line咬了船线</td>
+      <td></td>
+      <td></td>
+      <td>[fasten, fix, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bitt</th>
+      <td>it</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['bollard']</td>
+      <td></td>
+      <td>a strong post (as on a wharf or quay or ship for attaching mooring lines)一个强大的岗位（如在码头或码头或船上附加系泊线）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[post]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

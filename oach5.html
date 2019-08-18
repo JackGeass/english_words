@@ -1,0 +1,320 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['coach', 'roach', 'poach', 'loach']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>coach</th>
+      <td>oach</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>koʊʧ</td>
+      <td>['train']</td>
+      <td></td>
+      <td>teach and supervise (someone); act as a trainer or coach (to), as in sports教导和监督（某人）;充当教练或教练（to），如在体育中</td>
+      <td>She is coaching the crew她正在指导工作人员</td>
+      <td>[coaching]</td>
+      <td>[train]</td>
+      <td>[instruct, learn, teach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coach</th>
+      <td>oach</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>koʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>drive a coach开车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coach</th>
+      <td>oach</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>koʊʧ</td>
+      <td>['autobus', 'bus', 'charabanc', 'double-decker', 'jitney', 'motorbus', 'motorcoach', 'omnibus', 'passenger vehicle']</td>
+      <td></td>
+      <td>a vehicle carrying many passengers; used for public transport一辆载有许多乘客的车辆;用于公共交通</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[public transport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coach</th>
+      <td>oach</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>koʊʧ</td>
+      <td>['handler', 'manager']</td>
+      <td></td>
+      <td>(sports) someone in charge of training an athlete or a team（运动）负责训练运动员或团队的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trainer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coach</th>
+      <td>oach</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>koʊʧ</td>
+      <td>['carriage', 'passenger car']</td>
+      <td></td>
+      <td>a railcar where passengers ride乘客乘坐的铁路车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[car, railroad car, railcar, railway car]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coach</th>
+      <td>oach</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>koʊʧ</td>
+      <td>['coach-and-four', 'four-in-hand']</td>
+      <td></td>
+      <td>a carriage pulled by four horses with one driver一辆马车由一匹司机拉着四匹马拉着</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rig, equipage, carriage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coach</th>
+      <td>oach</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>koʊʧ</td>
+      <td>['private instructor', 'tutor']</td>
+      <td></td>
+      <td>a person who gives private instruction (as in singing, acting, etc.)提供私人指导的人（如唱歌，表演等）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instructor, teacher]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roach</th>
+      <td>oach</td>
+      <td>3.30</td>
+      <td>ver</td>
+      <td>roʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>comb (hair) into a roach梳（头发）变成蟑螂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[comb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roach</th>
+      <td>oach</td>
+      <td>3.30</td>
+      <td>ver</td>
+      <td>roʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>cut the mane off (a horse)切掉鬃毛（一匹马）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut off, lop off, chop off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roach</th>
+      <td>oach</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>roʊʧ</td>
+      <td>['circle', 'forget me drug', 'mexican valium', 'r-2', 'roofy', 'rope', 'rophy']</td>
+      <td></td>
+      <td>street names for flunitrazepanflunitrazepan的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flunitrazepan, rohypnol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roach</th>
+      <td>oach</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>roʊʧ</td>
+      <td>['rutilus rutilus']</td>
+      <td></td>
+      <td>European freshwater food fish having a greenish back欧洲淡水食用鱼有绿色的背部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cyprinid fish, cyprinid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roach</th>
+      <td>oach</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>roʊʧ</td>
+      <td>['cockroach']</td>
+      <td></td>
+      <td>any of numerous chiefly nocturnal insects; some are domestic pests任何一种主要的夜间昆虫;有些是国内害虫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dictyopterous insect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roach</th>
+      <td>oach</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>roʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>a roll of hair brushed back from the forehead一缕头发从额头上刷回来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hairstyle, coiffure, coif, hair style, hairdo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roach</th>
+      <td>oach</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>roʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>the butt of a marijuana cigarette大麻烟的屁股</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stub, butt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poach</th>
+      <td>oach</td>
+      <td>2.43</td>
+      <td>ver</td>
+      <td>poʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>cook in a simmering liquid用煨液煮</td>
+      <td>poached apricots水煮杏子</td>
+      <td>[poacher, poaching]</td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poach</th>
+      <td>oach</td>
+      <td>2.43</td>
+      <td>ver</td>
+      <td>poʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>hunt illegally非法捕杀</td>
+      <td>people are poaching elephants for their ivory人们正在为他们的象牙偷猎大象</td>
+      <td>[poacher]</td>
+      <td></td>
+      <td>[hunt, hunt down, run, track down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loach</th>
+      <td>oach</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>loʊʧ</td>
+      <td></td>
+      <td></td>
+      <td>slender freshwater fishes of Eurasia and Africa resembling catfishes欧亚大陆和非洲的细长淡水鱼类，类似于鲶鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cypriniform fish]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,515 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['part', 'arts', 'cart', 'dart']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>ver</td>
+      <td>pɑrt</td>
+      <td>['break', 'break up', 'separate', 'split', 'split up']</td>
+      <td></td>
+      <td>discontinue an association or relation; go different ways停止关联或关系;走不同的方式</td>
+      <td>The business partners broke over a tax question商业伙伴打破了税务问题</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>ver</td>
+      <td>pɑrt</td>
+      <td>['disunite', 'divide', 'separate']</td>
+      <td></td>
+      <td>force, take, or pull apart强迫，接受或拉开</td>
+      <td>Moses parted the Red Sea摩西分开了红海</td>
+      <td>[partitive]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>ver</td>
+      <td>pɑrt</td>
+      <td>['depart', 'set forth', 'set off', 'set out', 'start', 'start out', 'take off'], alos:['part with']</td>
+      <td></td>
+      <td>leave离开</td>
+      <td></td>
+      <td>[parting]</td>
+      <td></td>
+      <td>[go forth, go away, leave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>ver</td>
+      <td>pɑrt</td>
+      <td>['separate', 'split']</td>
+      <td></td>
+      <td>go one's own way; move apart走自己的路;分开</td>
+      <td>The friends separated after the party派对结束后朋友分开了</td>
+      <td>[parting]</td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>ver</td>
+      <td>pɑrt</td>
+      <td>['divide', 'separate']</td>
+      <td></td>
+      <td>come apart分开</td>
+      <td></td>
+      <td>[partitive]</td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['contribution', 'share']</td>
+      <td></td>
+      <td>the effort contributed by a person in bringing about a result一个人为实现结果所做的努力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[endeavor, effort, try, endeavour, attempt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['function', 'office', 'role']</td>
+      <td></td>
+      <td>the actions and activities assigned to or required or expected of a person or group分配给或要求或预期的个人或团体的行动和活动</td>
+      <td>the government must do its part政府必须尽自己的一份力量</td>
+      <td></td>
+      <td></td>
+      <td>[duty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['percentage', 'portion', 'share']</td>
+      <td></td>
+      <td>assets belonging to or due to or contributed by an individual person or group属于或由个人或团体或由个人或团体贡献的资产</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assets]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['piece']</td>
+      <td></td>
+      <td>a portion of a natural object自然物体的一部分</td>
+      <td>they analyzed the river into three parts他们将河流分为三部分</td>
+      <td></td>
+      <td></td>
+      <td>[thing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['portion']</td>
+      <td></td>
+      <td>something less than the whole of a human artifact比整个人工制品少的东西</td>
+      <td>the rear part of the house房子的后部glue the two parts together将两个部分粘在一起</td>
+      <td>[partial]</td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['division', 'section']</td>
+      <td></td>
+      <td>one of the portions into which something is regarded as divided and which together constitute a whole某一部分被视为分裂的部分，它们共同构成一个整体</td>
+      <td>the written part of the exam考试的书面部分</td>
+      <td></td>
+      <td></td>
+      <td>[construct, concept, conception]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['voice']</td>
+      <td></td>
+      <td>the melody carried by a particular voice or instrument in polyphonic music由复调音乐中的特定声音或乐器携带的旋律</td>
+      <td>he tried to sing the tenor part他试图唱出男高音部分</td>
+      <td></td>
+      <td></td>
+      <td>[melodic phrase, melodic line, strain, melody, line, air, tune]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['piece']</td>
+      <td></td>
+      <td>an item that is an instance of some type一个项目，是某种类型的实例</td>
+      <td>my dog swallowed a Lego part我的狗吞下了乐高的一部分</td>
+      <td></td>
+      <td></td>
+      <td>[item]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['parting']</td>
+      <td></td>
+      <td>a line of scalp that can be seen when sections of hair are combed in opposite directions当头发的一部分朝相反的方向梳理时可以看到的一排头皮</td>
+      <td>his part was right in the middle他的部分正好在中间</td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['region']</td>
+      <td></td>
+      <td>the extended spatial location of something某事物的扩展空间位置</td>
+      <td>religions in all parts of the world世界各地的宗教</td>
+      <td></td>
+      <td></td>
+      <td>[location]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['component', 'component part', 'constituent', 'portion']</td>
+      <td></td>
+      <td>something determined in relation to something that includes it与包含它的东西有关的东西</td>
+      <td>he wanted to feel a part of something bigger than himself他想要感受到比自己更伟大的事物的一部分</td>
+      <td>[partial]</td>
+      <td></td>
+      <td>[relation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td>['character', 'persona', 'role', 'theatrical role']</td>
+      <td></td>
+      <td>an actor's portrayal of someone in a play演员在剧中扮演某人的角色</td>
+      <td>she played the part of Desdemona她扮演了苔丝狄蒙娜的角色</td>
+      <td></td>
+      <td></td>
+      <td>[personation, characterization, portrayal, enactment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>pɑrt</td>
+      <td></td>
+      <td></td>
+      <td>that which concerns a person with regard to a particular role or situation关于特定角色或情况的人</td>
+      <td>it requires vigilance on our part它需要我们保持警惕they resisted every effort on his part他们拒绝了他的一切努力</td>
+      <td></td>
+      <td></td>
+      <td>[concern]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>part</th>
+      <td>art</td>
+      <td>5.39</td>
+      <td>adv</td>
+      <td>pɑrt</td>
+      <td>['in part', 'partially', 'partly']</td>
+      <td></td>
+      <td>to some extent; in some degree; not wholly在某种程度上;在某种程度上;并非全部</td>
+      <td>I felt partly to blame我觉得有些责备He was partially paralyzed他部分瘫痪了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>arts</th>
+      <td>art</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>ɑrts</td>
+      <td>['humanistic discipline', 'humanities', 'liberal arts']</td>
+      <td></td>
+      <td>studies intended to provide general knowledge and intellectual skills (rather than occupational or professional skills)旨在提供一般知识和智力技能（而不是职业或专业技能）的研究</td>
+      <td>the college of arts and sciences艺术与科学学院</td>
+      <td></td>
+      <td></td>
+      <td>[bailiwick, field, field of study, study, subject, subject area, subject field, discipline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cart</th>
+      <td>art</td>
+      <td>3.98</td>
+      <td>ver</td>
+      <td>kɑrt</td>
+      <td>['drag', 'hale', 'haul']</td>
+      <td></td>
+      <td>draw slowly or heavily缓慢或沉重地画</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[draw, pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cart</th>
+      <td>art</td>
+      <td>3.98</td>
+      <td>ver</td>
+      <td>kɑrt</td>
+      <td></td>
+      <td></td>
+      <td>transport something in a cart在车里运送东西</td>
+      <td></td>
+      <td>[cartage, carter]</td>
+      <td></td>
+      <td>[carry, transport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cart</th>
+      <td>art</td>
+      <td>3.98</td>
+      <td>nou</td>
+      <td>kɑrt</td>
+      <td>['go-cart', 'handcart', 'pushcart']</td>
+      <td></td>
+      <td>wheeled vehicle that can be pushed by a person; may have one or two or four wheels可以被人推动的轮式车辆;可能有一个或两个或四个轮子</td>
+      <td>he used a handcart to carry the rocks away他用手推车把岩石带走了their pushcart was piled high with groceries他们的手推车堆满了杂货</td>
+      <td></td>
+      <td></td>
+      <td>[wheeled vehicle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cart</th>
+      <td>art</td>
+      <td>3.98</td>
+      <td>nou</td>
+      <td>kɑrt</td>
+      <td></td>
+      <td></td>
+      <td>a heavy open wagon usually having two wheels and drawn by an animal一辆重型敞篷马车，通常有两个轮子，由动物牵引</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wagon, waggon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dart</th>
+      <td>art</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>dɑrt</td>
+      <td>['dash', 'flash', 'scoot', 'scud', 'shoot']</td>
+      <td></td>
+      <td>run or move very quickly or hastily快速奔跑或移动或仓促行动</td>
+      <td></td>
+      <td></td>
+      <td>[tear, buck, charge, shoot, shoot down]</td>
+      <td>[race, hasten, hie, hotfoot, pelt along, rush, rush along, speed, belt along, step on it, bucket along, cannonball along]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dart</th>
+      <td>art</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>dɑrt</td>
+      <td>['fleet', 'flit', 'flutter']</td>
+      <td></td>
+      <td>move along rapidly and lightly; skim or dart快速轻松地前进;脱脂或飞镖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[zip, hurry, speed, travel rapidly]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dart</th>
+      <td>art</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>dɑrt</td>
+      <td></td>
+      <td></td>
+      <td>move with sudden speed以极快的速度移动</td>
+      <td>His forefinger darted in all directions as he spoke当他说话时，他的食指向四面八方冲去</td>
+      <td>[darter]</td>
+      <td></td>
+      <td>[hurl, thrust, hurtle, lunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dart</th>
+      <td>art</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>dɑrt</td>
+      <td>['flit']</td>
+      <td></td>
+      <td>a sudden quick movement一个突然的快速运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[movement, motion, motility, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dart</th>
+      <td>art</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>dɑrt</td>
+      <td></td>
+      <td></td>
+      <td>a small narrow pointed missile that is thrown or shot投掷或射击的小型尖尖导弹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[missile, projectile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dart</th>
+      <td>art</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>dɑrt</td>
+      <td></td>
+      <td></td>
+      <td>a tapered tuck made in dressmaking在制衣中制作的锥形褶裥</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tuck]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

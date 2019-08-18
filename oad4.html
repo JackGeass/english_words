@@ -1,0 +1,440 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['road', 'load', 'toad', 'goad', 'woad']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>road</th>
+      <td>oad</td>
+      <td>5.08</td>
+      <td>nou</td>
+      <td>roʊd</td>
+      <td>['route']</td>
+      <td></td>
+      <td>an open way (generally public) for travel or transportation旅行或运输的开放方式（一般是公共的）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[way]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>road</th>
+      <td>oad</td>
+      <td>5.08</td>
+      <td>nou</td>
+      <td>roʊd</td>
+      <td></td>
+      <td></td>
+      <td>a way or means to achieve something实现某些目标的方法或手段</td>
+      <td>the road to fame成名之路</td>
+      <td></td>
+      <td></td>
+      <td>[way, means, agency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>loʊd</td>
+      <td>['adulterate', 'debase', 'dilute', 'stretch']</td>
+      <td></td>
+      <td>corrupt, debase, or make impure by adding a foreign or inferior substance; often by replacing valuable ingredients with inferior ones通过添加外来物质或劣等物质来腐败，贬低或使其不纯洁;通常用劣质成分替代有价值的成分</td>
+      <td></td>
+      <td></td>
+      <td>[extend, stretch]</td>
+      <td>[spoil, corrupt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>loʊd</td>
+      <td>['charge']</td>
+      <td></td>
+      <td>provide (a device) with something necessary为（设备）提供必要的东西</td>
+      <td>He loaded his gun carefully他仔细地装了枪load the camera加载相机</td>
+      <td>[loader]</td>
+      <td></td>
+      <td>[make full, fill, fill up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>loʊd</td>
+      <td>['lade', 'laden', 'load up']</td>
+      <td></td>
+      <td>fill or place a load on填充或加载</td>
+      <td>load a car装车load the truck with hay用干草装载卡车</td>
+      <td>[loading, loader]</td>
+      <td></td>
+      <td>[fill, make full, fill up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>loʊd</td>
+      <td></td>
+      <td></td>
+      <td>put (something) on a structure or conveyance把（某物）放在结构或运输工具上</td>
+      <td>load the bags onto the trucks将行李装到卡车上</td>
+      <td>[loader, loading]</td>
+      <td></td>
+      <td>[lay, set, position, put, place, pose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>loʊd</td>
+      <td></td>
+      <td></td>
+      <td>transfer from a storage device to a computer's memory从存储设备传输到计算机的内存</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td>['loading']</td>
+      <td></td>
+      <td>a quantity that can be processed or transported at one time可以一次处理或运输的数量</td>
+      <td>the system broke down under excessive loads系统在负载过大时发生故障</td>
+      <td></td>
+      <td></td>
+      <td>[indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td>['lode']</td>
+      <td></td>
+      <td>a deposit of valuable ore occurring within definite boundaries separating it from surrounding rocks在有限的边界内发生的有价值矿石的沉积，将其与周围的岩石分开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alluviation, deposit, sedimentation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td>['cargo', 'consignment', 'freight', 'lading', 'loading', 'payload', 'shipment']</td>
+      <td></td>
+      <td>goods carried by a large vehicle由大型车辆运载的货物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ware, product, merchandise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td>['burden', 'loading']</td>
+      <td></td>
+      <td>weight to be borne or conveyed承受或传达的重量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td>['payload', 'warhead']</td>
+      <td></td>
+      <td>the front part of a guided missile or rocket or torpedo that carries the nuclear or explosive charge or the chemical or biological agents导弹或火箭或鱼雷的前部携带核或炸药或化学或生物制剂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[explosive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td>['burden', 'encumbrance', 'incumbrance', 'onus']</td>
+      <td></td>
+      <td>an onerous or difficult concern一个繁重或困难的问题</td>
+      <td>that's a load off my mind这是我心中的负担</td>
+      <td></td>
+      <td></td>
+      <td>[concern, headache, vexation, worry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td></td>
+      <td></td>
+      <td>an amount of alcohol sufficient to intoxicate一定量的酒精足以令人陶醉</td>
+      <td>he got a load on and started a brawl他受到了压力并开始了争吵</td>
+      <td></td>
+      <td></td>
+      <td>[indefinite quantity]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td></td>
+      <td></td>
+      <td>electrical device to which electrical power is delivered向其供电的电气设备</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electrical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>load</th>
+      <td>oad</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>loʊd</td>
+      <td></td>
+      <td></td>
+      <td>the power output of a generator or power plant发电机或发电厂的输出功率</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electric power, electrical power, wattage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toad</th>
+      <td>oad</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>toʊd</td>
+      <td>['anuran', 'batrachian', 'frog', 'salientian', 'toad frog']</td>
+      <td></td>
+      <td>any of various tailless stout-bodied amphibians with long hind limbs for leaping; semiaquatic and terrestrial species任何一种无尾无尾的两栖动物，长后肢可以跳跃;半水生和陆生物种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amphibian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goad</th>
+      <td>oad</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>ɡoʊd</td>
+      <td>['prick']</td>
+      <td></td>
+      <td>stab or urge on as if with a pointed stick用尖头棒刺伤或催促</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jab, stab]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goad</th>
+      <td>oad</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>ɡoʊd</td>
+      <td>['spur']</td>
+      <td></td>
+      <td>give heart or courage to给予内心或勇气</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[encourage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goad</th>
+      <td>oad</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>ɡoʊd</td>
+      <td>['needle']</td>
+      <td></td>
+      <td>annoy or provoke, as by constant criticism不断的批评，惹恼或激怒</td>
+      <td></td>
+      <td>[goading]</td>
+      <td></td>
+      <td>[plague, provoke, harass, harry, hassle, molest, beset, chevvy, chevy, chivvy, chivy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goad</th>
+      <td>oad</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>ɡoʊd</td>
+      <td></td>
+      <td></td>
+      <td>urge with or as if with a goad敦促或似乎与goad一起</td>
+      <td></td>
+      <td>[goading]</td>
+      <td></td>
+      <td>[incite, prod, egg on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goad</th>
+      <td>oad</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>ɡoʊd</td>
+      <td>['prod']</td>
+      <td></td>
+      <td>a pointed instrument that is used to prod into a state of motion用于刺激运动状态的尖头器械</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goad</th>
+      <td>oad</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>ɡoʊd</td>
+      <td>['goading', 'prod', 'prodding', 'spur', 'spurring', 'urging']</td>
+      <td></td>
+      <td>a verbalization that encourages you to attempt something鼓励你尝试某种东西的语言表达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[encouragement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woad</th>
+      <td>oad</td>
+      <td>2.02</td>
+      <td>nou</td>
+      <td>woʊd</td>
+      <td></td>
+      <td></td>
+      <td>a blue dyestuff obtained from the woad plant从woad植物中获得的蓝色染料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dyestuff, dye]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woad</th>
+      <td>oad</td>
+      <td>2.02</td>
+      <td>nou</td>
+      <td>woʊd</td>
+      <td></td>
+      <td></td>
+      <td>any of several herbs of the genus IsatisIsatis属的几种草本植物中的任何一种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herb, herbaceous plant]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

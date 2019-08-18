@@ -1,0 +1,455 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['new', 'few', 'jew', 'sew', 'dew', 'mew', 'pew', 'yew', 'hew']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adv</td>
+      <td>nu</td>
+      <td>['fresh', 'freshly', 'newly']</td>
+      <td></td>
+      <td>very recently最近</td>
+      <td>they are newly married他们是新婚的newly raised objections新提出的异议a newly arranged hairdo一个新安排的发型grass new washed by the rain草被雨洗了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>['fresh', 'novel'], similarTo:['original']</td>
+      <td></td>
+      <td>original and of a kind not seen before原始的和以前没有见过的那种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>['young'], similarTo:['early']</td>
+      <td></td>
+      <td>(of crops) harvested at an early stage of development; before complete maturity（作物）在发育的早期阶段收获;在完全成熟之前</td>
+      <td>new potatoes新土豆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>['modern'], similarTo:['late']</td>
+      <td></td>
+      <td>used of a living language; being the current stage in its development用于生活语言;是目前发展的阶段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>['raw'], similarTo:['inexperienced', 'inexperient']</td>
+      <td></td>
+      <td>lacking training or experience缺乏培训或经验</td>
+      <td>the new men were eager to fight新人们渴望战斗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>['unexampled'], similarTo:['unprecedented']</td>
+      <td></td>
+      <td>having no previous example or precedent or parallel没有先前的例子或先例或平行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>, similarTo:['late']</td>
+      <td></td>
+      <td>in use after medieval times在中世纪之后使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>, similarTo:['young', 'bran-new', 'brand-new', 'fresh', 'hot', 'spic-and-span', 'spick-and-span', 'sunrise', 'untested', 'untried', 'unused', 'virgin', 'new-fangled', 'new-sprung', 'newborn', 'newfangled', 'newfound', 'novel', 'parvenu', 'parvenue', 'radical', 'recent', 'red-hot', 'refreshing', 'revolutionary', 'rising'], alos:['modern', 'current', 'fresh']</td>
+      <td>[old]</td>
+      <td>not of long duration; having just (or relatively recently) come into being or been made or acquired or discovered持续时间不长;刚刚（或相对最近）生成或被制造或获得或发现</td>
+      <td>a new law新法律new cars新车a new comet一颗新的彗星a new friend一个新朋友a new year新的一年</td>
+      <td>[newness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>, similarTo:['unaccustomed to']</td>
+      <td></td>
+      <td>(often followed by `to') unfamiliar（经常跟着'到'）不熟悉</td>
+      <td>new experiences新经验experiences new to him给他带来新的体验errors of someone new to the job新工作人员的错误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>, similarTo:['other']</td>
+      <td></td>
+      <td>other than the former one(s); different除了前者之外;不同</td>
+      <td>they now have a new leaders他们现在有了新的领导者my new car is four years old but has only 15,000 miles on it我的新车已有四年，但只有15,000英里ready to take a new direction准备采取新的方向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>new</th>
+      <td>ew</td>
+      <td>5.84</td>
+      <td>adj</td>
+      <td>nu</td>
+      <td>, similarTo:['unweathered']</td>
+      <td>[worn]</td>
+      <td>unaffected by use or exposure不受使用或暴露影响</td>
+      <td>it looks like new它看起来像新的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>few</th>
+      <td>ew</td>
+      <td>5.46</td>
+      <td>nou</td>
+      <td>fju</td>
+      <td></td>
+      <td></td>
+      <td>a small elite group一个小精英群体</td>
+      <td>it was designed for the discriminating few它是为有识别的少数人设计的</td>
+      <td></td>
+      <td></td>
+      <td>[elite group, elite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>few</th>
+      <td>ew</td>
+      <td>5.46</td>
+      <td>adj</td>
+      <td>fju</td>
+      <td>, similarTo:['a couple of', 'a few', 'hardly a'], alos:['fewer', 'some']</td>
+      <td>[many]</td>
+      <td>a quantifier that can be used with count nouns and is often preceded by `a'; a small but indefinite number一个可以与计数名词一起使用的量词，通常以“a”开头;一个小但不确定的数字</td>
+      <td>a few weeks ago几周前a few more wagons than usual比往常多几辆货车an invalid's pleasures are few and far between无效的快乐是少之又少few roses were still blooming很少有玫瑰花开few women have led troops in battle很少有妇女在战斗中领导部队</td>
+      <td>[fewness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jew</th>
+      <td>ew</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>dʒu</td>
+      <td>['hebrew', 'israelite']</td>
+      <td></td>
+      <td>a person belonging to the worldwide group claiming descent from Jacob (or converted to it) and connected by cultural or religious ties属于世界范围集团的人，声称雅各布的血统（或转化为雅各布）并通过文化或宗教关系联系在一起</td>
+      <td></td>
+      <td>[judaic]</td>
+      <td></td>
+      <td>[someone, individual, person, mortal, soul, somebody]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sew</th>
+      <td>ew</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>sOu</td>
+      <td>['tailor', 'tailor-make']</td>
+      <td></td>
+      <td>create (clothes) with cloth用布料制作（衣服）</td>
+      <td>Can the seamstress sew me a suit by next week?女裁缝可以在下周给我穿西装吗？</td>
+      <td>[sewer, sewing]</td>
+      <td></td>
+      <td>[forge, fashion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sew</th>
+      <td>ew</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>sOu</td>
+      <td>['run up', 'sew together', 'stitch']</td>
+      <td></td>
+      <td>fasten by sewing; do needlework缝制紧固;做针线活</td>
+      <td></td>
+      <td>[sewer, sewing]</td>
+      <td></td>
+      <td>[fasten, secure, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dew</th>
+      <td>ew</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>du</td>
+      <td></td>
+      <td></td>
+      <td>water that has condensed on a cool surface overnight from water vapor in the air水从空气中的水蒸气中冷凝过夜</td>
+      <td>in the morning the grass was wet with dew早上，草被露水弄湿了</td>
+      <td>[dewy]</td>
+      <td></td>
+      <td>[condensate, condensation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mew</th>
+      <td>ew</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mju</td>
+      <td>['meow']</td>
+      <td></td>
+      <td>cry like a cat像猫一样哭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utter, emit, let loose, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mew</th>
+      <td>ew</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>mju</td>
+      <td></td>
+      <td></td>
+      <td>utter a high-pitched cry, as of seagulls像海鸥一样发出尖锐的呐喊声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utter, let out, emit, let loose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mew</th>
+      <td>ew</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>mju</td>
+      <td>['larus canus', 'mew gull', 'sea mew']</td>
+      <td></td>
+      <td>the common gull of Eurasia and northeastern North America欧亚大陆和北美东北部的常见海鸥</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gull, seagull, sea gull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mew</th>
+      <td>ew</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>mju</td>
+      <td>['meow', 'miaou', 'miaow', 'miaul']</td>
+      <td></td>
+      <td>the sound made by a cat (or any sound resembling this)猫发出的声音（或任何类似声音）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pew</th>
+      <td>ew</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>pju</td>
+      <td>['church bench']</td>
+      <td></td>
+      <td>long bench with backs; used in church by the congregation背长的长凳;会众在教会中使用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bench]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yew</th>
+      <td>ew</td>
+      <td>2.45</td>
+      <td>nou</td>
+      <td>ju</td>
+      <td></td>
+      <td></td>
+      <td>any of numerous evergreen trees or shrubs having red cup-shaped berries and flattened needlelike leaves任何一种常绿乔木或灌木，有红色的杯状浆果和扁平的针状叶子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coniferous tree, conifer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yew</th>
+      <td>ew</td>
+      <td>2.45</td>
+      <td>nou</td>
+      <td>ju</td>
+      <td></td>
+      <td></td>
+      <td>wood of a yew; especially the durable fine-grained light brown or red wood of the English yew valued for cabinetwork and archery bows红豆杉的木材;特别是英国红豆杉的耐用细粒浅棕色或红色木材，用于制作橱柜和射箭弓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hew</th>
+      <td>ew</td>
+      <td>2.20</td>
+      <td>ver</td>
+      <td>hju</td>
+      <td>['hew out']</td>
+      <td></td>
+      <td>make or shape as with an axe用斧子制作或塑造</td>
+      <td>hew out a path in the rock在岩石中凿出一条小路</td>
+      <td>[hewer]</td>
+      <td></td>
+      <td>[carve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hew</th>
+      <td>ew</td>
+      <td>2.20</td>
+      <td>ver</td>
+      <td>hju</td>
+      <td>, alos:['hew out']</td>
+      <td></td>
+      <td>strike with an axe; cut down, strike用斧头打击;减少，打击</td>
+      <td>hew an oak一棵橡树</td>
+      <td>[hewer]</td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

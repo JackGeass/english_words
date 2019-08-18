@@ -1,0 +1,995 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['dark', 'park', 'mark', 'bark']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>dɑrk</td>
+      <td>['night', 'nighttime']</td>
+      <td></td>
+      <td>the time after sunset and before sunrise while it is dark outside日落之后和日出之前的时间，外面是黑暗的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[period of time, period, time period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>dɑrk</td>
+      <td>['darkness']</td>
+      <td>[light]</td>
+      <td>absence of light or illumination没有光线或照明</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[illumination]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>dɑrk</td>
+      <td>['darkness', 'wickedness']</td>
+      <td></td>
+      <td>absence of moral or spiritual values没有道德或精神价值观</td>
+      <td>the powers of darkness黑暗的力量</td>
+      <td></td>
+      <td></td>
+      <td>[status, condition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>dɑrk</td>
+      <td>['darkness']</td>
+      <td></td>
+      <td>an unenlightened state一个没有开悟的国家</td>
+      <td>he was in the dark concerning their intentions关于他们的意图他是在黑暗中his lectures dispelled the darkness他的讲座消除了黑暗</td>
+      <td></td>
+      <td></td>
+      <td>[unenlightenment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>dɑrk</td>
+      <td>['darkness', 'shadow']</td>
+      <td></td>
+      <td>an unilluminated area一个没有照明的区域</td>
+      <td>he moved off into the darkness他搬到了黑暗中</td>
+      <td></td>
+      <td></td>
+      <td>[scene]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>['black', 'sinister'], similarTo:['evil']</td>
+      <td></td>
+      <td>stemming from evil characteristics or forces; wicked or dishonorable源于邪恶的特征或力量;邪恶或不光彩</td>
+      <td>Darth Vader of the dark side黑暗面的达斯维达a dark purpose一个黑暗的目的dark undercurrents of ethnic hostility种族敌意的黑暗暗流</td>
+      <td>[darkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>['blue', 'dingy', 'disconsolate', 'dismal', 'drab', 'drear', 'dreary', 'gloomy', 'grim', 'sorry'], similarTo:['depressing', 'uncheerful', 'cheerless']</td>
+      <td></td>
+      <td>causing dejection导致沮丧</td>
+      <td>the dark days of the war战争的黑暗日子a dark gloomy day一个黑暗阴沉的日子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>['benighted'], similarTo:['unenlightened']</td>
+      <td></td>
+      <td>lacking enlightenment or knowledge or culture缺乏启蒙或知识或文化</td>
+      <td>the dark ages黑暗时代a dark age in the history of education教育史上的黑暗时代</td>
+      <td>[darkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>['obscure'], similarTo:['uncomprehensible', 'incomprehensible']</td>
+      <td></td>
+      <td>marked by difficulty of style or expression以风格或表达的难度为标志</td>
+      <td>much that was dark is now quite clear to me对我来说，很多黑暗现在已经非常清楚了</td>
+      <td>[darkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>['dour', 'glowering', 'glum', 'moody', 'morose', 'saturnine', 'sour', 'sullen'], similarTo:['ill-natured']</td>
+      <td></td>
+      <td>showing a brooding ill humor显示沉思的幽默</td>
+      <td>a dark scowl黑暗的皱眉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>, similarTo:['brunette', 'brunet']</td>
+      <td></td>
+      <td>brunet (used of hair or skin or eyes)深色（用于头发或皮肤或眼睛）</td>
+      <td>dark eyes黑眼睛</td>
+      <td>[darkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>, similarTo:['unlit', 'caliginous', 'cimmerian', 'crepuscular', 'darkened', 'darkening', 'darkling', 'dim', 'dusky', 'gloomful', 'glooming', 'gloomy', 'lightless', 'pitch-black', 'pitch-dark', 'semidark', 'stygian', 'subdued', 'sulky', 'tenebrific', 'tenebrious', 'tenebrous', 'twilight', 'twilit', 'unilluminated', 'unlighted', 'acheronian', 'acherontic', 'aphotic', 'black']</td>
+      <td>[light]</td>
+      <td>devoid of or deficient in light or brightness; shadowed or black没有或缺乏光线或亮度;阴影或黑色</td>
+      <td>sitting in a dark corner坐在一个黑暗的角落里a dark day黑暗的一天dark shadows黑暗的阴影dark as the inside of a black cat像黑猫一样黑暗</td>
+      <td>[darkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>, similarTo:['inactive']</td>
+      <td></td>
+      <td>not giving performances; closed没有表演;关闭</td>
+      <td>the theater is dark on Mondays星期一剧院很黑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>, similarTo:['concealed']</td>
+      <td></td>
+      <td>secret秘密</td>
+      <td>keep it dark保持黑暗</td>
+      <td>[darkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dark</th>
+      <td>ark</td>
+      <td>5.00</td>
+      <td>adj</td>
+      <td>dɑrk</td>
+      <td>, similarTo:['darkish'], alos:['black']</td>
+      <td>[light]</td>
+      <td>(used of color) having a dark hue（颜色使用）具有深色调</td>
+      <td>dark green深绿色dark glasses墨镜dark colors like wine red or navy blue深红色，如酒红色或深蓝色</td>
+      <td>[darkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>ver</td>
+      <td>pɑrk</td>
+      <td></td>
+      <td></td>
+      <td>maneuver a vehicle into a parking space将车辆驶入停车位</td>
+      <td>Can you park right here?你能停在这儿吗？</td>
+      <td>[parking]</td>
+      <td></td>
+      <td>[manoeuvre, channelise, channelize, direct, manoeuver, guide, head, point, steer, maneuver]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>ver</td>
+      <td>pɑrk</td>
+      <td></td>
+      <td></td>
+      <td>place temporarily暂时放置</td>
+      <td>park the car in the yard把车停在院子里park the children with the in-laws把孩子和公婆一起停下来park your bag in this locker把你的行李放在这个储物柜里</td>
+      <td>[parking]</td>
+      <td></td>
+      <td>[set, place, lay, pose, position, put]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>pɑrk</td>
+      <td>['parkland']</td>
+      <td></td>
+      <td>a large area of land preserved in its natural state as public property在自然状态下保留的大面积土地作为公共财产</td>
+      <td>there are laws that protect the wildlife in this park有法律保护这个公园里的野生动物</td>
+      <td></td>
+      <td></td>
+      <td>[parcel of land, tract, piece of land, parcel, piece of ground]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>pɑrk</td>
+      <td>['common', 'commons', 'green']</td>
+      <td></td>
+      <td>a piece of open land for recreational use in an urban area一块在市区休闲娱乐的空地</td>
+      <td>they went for a walk in the park他们去公园散步</td>
+      <td></td>
+      <td></td>
+      <td>[tract, piece of land, parcel, piece of ground, parcel of land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>pɑrk</td>
+      <td>['mungo park']</td>
+      <td></td>
+      <td>Scottish explorer in Africa (1771-1806)非洲苏格兰探险家（1771-1806）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>pɑrk</td>
+      <td>['ballpark']</td>
+      <td></td>
+      <td>a facility in which ball games are played (especially baseball games)一个玩球类游戏的设施（特别是棒球比赛）</td>
+      <td>take me out to the ballpark带我去球场</td>
+      <td></td>
+      <td></td>
+      <td>[stadium, sports stadium, bowl, arena]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>pɑrk</td>
+      <td>['car park', 'parking area', 'parking lot']</td>
+      <td></td>
+      <td>a lot where cars are parked汽车停放的地方很多</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>park</th>
+      <td>ark</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>pɑrk</td>
+      <td></td>
+      <td></td>
+      <td>a gear position that acts as a parking brake作为驻车制动器的档位</td>
+      <td>the put the car in park and got out把车停在公园里然后下了车</td>
+      <td></td>
+      <td></td>
+      <td>[gear mechanism, gear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['commemorate']</td>
+      <td></td>
+      <td>celebrate by some ceremony or observation通过一些仪式或观察庆祝</td>
+      <td>The citizens mark the anniversary of the revolution with a march and a parade公民用游行和游行标志着革命的周年纪念日</td>
+      <td></td>
+      <td></td>
+      <td>[celebrate, keep, observe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['punctuate']</td>
+      <td></td>
+      <td>insert punctuation marks into插入标点符号</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[add]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['set']</td>
+      <td></td>
+      <td>establish as the highest level or best performance建立最高水平或最佳表现</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lay down, establish, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['grade', 'score']</td>
+      <td></td>
+      <td>assign a grade or rank to, according to one's evaluation根据一个人的评估，指定一个等级或等级</td>
+      <td>mark homework标记作业</td>
+      <td>[marking]</td>
+      <td></td>
+      <td>[valuate, evaluate, appraise, assess, value, measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['cross off', 'cross out', 'strike off', 'strike out']</td>
+      <td></td>
+      <td>remove from a list从列表中删除</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[take away, take out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['brand', 'denounce', 'stigmatise', 'stigmatize']</td>
+      <td></td>
+      <td>to accuse or condemn or openly or formally or brand as disgraceful控告或谴责或公开或正式或品牌为可耻的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['nock', 'score']</td>
+      <td></td>
+      <td>make small marks into the surface of在表面上留下小痕迹</td>
+      <td></td>
+      <td></td>
+      <td>[pit, scar, pock]</td>
+      <td>[notch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['check', 'check off', 'mark off', 'tick', 'tick off']</td>
+      <td></td>
+      <td>put a check mark on or near or next to在上面或附近或旁边打上复选标记</td>
+      <td>mark off the units标记单位</td>
+      <td></td>
+      <td>[suss out, insure, look into, control, ensure, go over, check, check up on, check out, check into, see, see to it, ascertain, assure, check over]</td>
+      <td>[verify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['differentiate', 'distinguish']</td>
+      <td></td>
+      <td>be a distinctive feature, attribute, or trait; sometimes in a very positive sense是一个与众不同的特征，属性或特征;有时候是非常积极的</td>
+      <td></td>
+      <td>[marker]</td>
+      <td></td>
+      <td>[characterise, characterize, qualify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['label', 'tag'], alos:['mark down', 'mark up']</td>
+      <td></td>
+      <td>attach a tag or label to附上标签或标签</td>
+      <td></td>
+      <td>[marking]</td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['note', 'notice']</td>
+      <td></td>
+      <td>notice or perceive注意或察觉</td>
+      <td>mark my words记住我的话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['pit', 'pock', 'scar']</td>
+      <td></td>
+      <td>mark with a scar留下疤痕</td>
+      <td></td>
+      <td></td>
+      <td>[nock, score]</td>
+      <td>[blemish, deface, disfigure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>['score']</td>
+      <td></td>
+      <td>make underscoring marks做出强调标记</td>
+      <td></td>
+      <td>[marker]</td>
+      <td></td>
+      <td>[put down, record, enter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td></td>
+      <td></td>
+      <td>designate as if by a mark用标记表示</td>
+      <td>This sign marks the border这个标志标志着边界</td>
+      <td>[marker]</td>
+      <td>[distinguish, differentiate]</td>
+      <td>[betoken, bespeak, indicate, point, signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>mɑrk</td>
+      <td>, alos:['mark out', 'mark off']</td>
+      <td></td>
+      <td>make or leave a mark on制作或留下印记</td>
+      <td>the scouts marked the trail侦察员标出了踪迹ash marked the believers' foreheads灰烬标志着信徒的额头</td>
+      <td>[marker, marking]</td>
+      <td>[label, tag]</td>
+      <td>[change, modify, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['brand', 'stain', 'stigma']</td>
+      <td></td>
+      <td>a symbol of disgrace or infamy耻辱或耻辱的象征</td>
+      <td>And the Lord set a mark upon Cain主在该隐上留下了印记</td>
+      <td></td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['print']</td>
+      <td></td>
+      <td>a visible indication made on a surface在表面上做出的可见指示</td>
+      <td>some previous reader had covered the pages with dozens of marks一些以前的读者已经用几十个标记覆盖了这些页面</td>
+      <td></td>
+      <td></td>
+      <td>[indication, indicant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['chump', 'fall guy', 'fool', 'gull', 'mug', 'patsy', 'soft touch', 'sucker']</td>
+      <td></td>
+      <td>a person who is gullible and easy to take advantage of一个容易上当受骗的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dupe, victim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['grade', 'score']</td>
+      <td></td>
+      <td>a number or letter indicating quality (especially of a student's performance)表示质量的数字或字母（特别是学生的表现）</td>
+      <td>she made good marks in algebra她在代数上取得了很好的成绩</td>
+      <td></td>
+      <td></td>
+      <td>[rating, valuation, evaluation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['sign']</td>
+      <td></td>
+      <td>a perceptible indication of something not immediately apparent (as a visible clue that something has happened)一种不明显的东西的可察觉的指示（作为发生某事的可见线索）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clue, clew, cue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['bell ringer', "bull's eye", 'home run']</td>
+      <td></td>
+      <td>something that exactly succeeds in achieving its goal完全成功实现其目标的东西</td>
+      <td>hit the mark达到了标记</td>
+      <td></td>
+      <td></td>
+      <td>[success]</td>
+      <td>[figure, figure of speech, image, trope]</td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['scar', 'scrape', 'scratch']</td>
+      <td></td>
+      <td>an indication of damage表明损坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[defect, blemish, mar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['deutsche mark', 'deutschmark', 'german mark']</td>
+      <td></td>
+      <td>formerly the basic unit of money in Germany以前是德国的基本货币单位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[german monetary unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['marker', 'marking']</td>
+      <td></td>
+      <td>a distinguishing symbol一个显着的象征</td>
+      <td>the owner's mark was on all the sheep主人的标记在所有的羊身上</td>
+      <td></td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['saint mark', 'st. mark']</td>
+      <td></td>
+      <td>Apostle and companion of Saint Peter; assumed to be the author of the second Gospel圣彼得的使徒和伴侣;被认为是第二本福音书的作者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['crisscross', 'cross']</td>
+      <td></td>
+      <td>a marking that consists of lines that cross each other由相互交叉的线组成的标记</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[marking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['target']</td>
+      <td></td>
+      <td>a reference point to shoot at射击的参考点</td>
+      <td>his arrow hit the mark他的箭射中了</td>
+      <td></td>
+      <td></td>
+      <td>[reference point, point of reference, reference]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td>['gospel according to mark']</td>
+      <td></td>
+      <td>the shortest of the four Gospels in the New Testament新约圣经中最短的四本福音书</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td></td>
+      <td></td>
+      <td>a written or printed symbol (as for punctuation)书面或印刷符号（标点符号）</td>
+      <td>his answer was just a punctuation mark他的回答只是一个标点符号</td>
+      <td></td>
+      <td></td>
+      <td>[written symbol, printed symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mark</th>
+      <td>ark</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>mɑrk</td>
+      <td></td>
+      <td></td>
+      <td>the impression created by doing something unusual or extraordinary that people notice and remember通过做一些人们注意到并记住的异常或非凡的事物所创造的印象</td>
+      <td>it was in London that he made his mark在伦敦，他取得了成功he left an indelible mark on the American theater他在美国剧院留下了不可磨灭的印记</td>
+      <td></td>
+      <td></td>
+      <td>[impression, effect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>bɑrk</td>
+      <td>['skin']</td>
+      <td></td>
+      <td>remove the bark of a tree去掉树皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>bɑrk</td>
+      <td></td>
+      <td></td>
+      <td>cover with bark覆盖着树皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>bɑrk</td>
+      <td></td>
+      <td></td>
+      <td>make barking sounds发出吠叫的声音</td>
+      <td>The dogs barked at the stranger狗叫着陌生人</td>
+      <td>[barker]</td>
+      <td></td>
+      <td>[utter, emit, let loose, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>bɑrk</td>
+      <td></td>
+      <td></td>
+      <td>speak in an unfriendly tone以不友好的语气说话</td>
+      <td>She barked into the dictaphone她咆哮着录音机</td>
+      <td></td>
+      <td></td>
+      <td>[verbalise, verbalize, talk, mouth, utter, speak]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>bɑrk</td>
+      <td></td>
+      <td></td>
+      <td>tan (a skin) with bark tannins棕褐色（皮肤），树皮单宁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>bɑrk</td>
+      <td>['barque']</td>
+      <td></td>
+      <td>a sailing ship with 3 (or more) masts一艘有3个（或更多）桅杆的帆船</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sailing ship, sailing vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>bɑrk</td>
+      <td></td>
+      <td></td>
+      <td>a noise resembling the bark of a dog一种类似狗的树皮的噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>bɑrk</td>
+      <td></td>
+      <td></td>
+      <td>the sound made by a dog狗发出的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bark</th>
+      <td>ark</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>bɑrk</td>
+      <td></td>
+      <td></td>
+      <td>tough protective covering of the woody stems and roots of trees and other woody plants树木和其他木本植物的木质茎和根的坚韧保护层</td>
+      <td></td>
+      <td>[barky]</td>
+      <td></td>
+      <td>[cover, natural covering, covering]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,2105 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['stop', 'drop', 'shop', 'copy', 'chop', 'tops', 'crop', 'flop', 'prop', 'slop', 'hops', 'hopi', 'soph', 'plop', 'clop', 'topi', 'whop', 'swop', 'ropy', 'glop', 'sops']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['cease', 'discontinue', 'give up', 'lay off', 'quit']</td>
+      <td></td>
+      <td>put an end to a state or an activity结束一个国家或一项活动</td>
+      <td></td>
+      <td>[stoppage]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['break', 'break off', 'discontinue']</td>
+      <td></td>
+      <td>prevent completion防止完成</td>
+      <td>stop the project停止这个项目</td>
+      <td></td>
+      <td></td>
+      <td>[end, terminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['block', 'halt', 'kibosh']</td>
+      <td></td>
+      <td>stop from happening or developing停止发生或发展</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foreclose, forbid, forestall, preclude, prevent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['bar', 'barricade', 'block', 'block off', 'block up', 'blockade']</td>
+      <td></td>
+      <td>render unsuitable for passage渲染不适合通过</td>
+      <td>stop the busy road停止繁忙的道路</td>
+      <td>[stopper]</td>
+      <td>[obstruct, block]</td>
+      <td>[obstruct, close up, impede, jam, occlude, block, obturate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['cease', 'end', 'finish', 'terminate']</td>
+      <td></td>
+      <td>have an end, in a temporal, spatial, or quantitative sense; either spatial or metaphorical以时间，空间或数量的方式结束;无论是空间的还是隐喻的</td>
+      <td>Your rights stop where you infringe upon the rights of other您的权利在您侵犯他人权利的地方停止</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['hold on']</td>
+      <td></td>
+      <td>stop and wait, as if awaiting further instructions or developments停下来等待，仿佛在等待进一步的指示或发展</td>
+      <td></td>
+      <td>[stoppage]</td>
+      <td></td>
+      <td>[break, interrupt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['stop over']</td>
+      <td></td>
+      <td>interrupt a trip打断旅行</td>
+      <td>we stopped at Aunt Mary's house我们在玛丽阿姨的家里停了下来they stopped for three days in Florence他们在佛罗伦萨停了三天</td>
+      <td></td>
+      <td></td>
+      <td>[disrupt, break up, interrupt, cut off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['intercept']</td>
+      <td></td>
+      <td>seize on its way抓住它的方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grab, catch, take hold of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['halt']</td>
+      <td>[start]</td>
+      <td>come to a halt, stop moving停下来，停止移动</td>
+      <td>the car stopped车停了She stopped in front of a store window她在商店橱窗前停了下来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td>['arrest', 'check', 'contain', 'hold back', 'turn back']</td>
+      <td></td>
+      <td>hold back, as of a danger or an enemy; check the expansion or influence of躲避危险或敌人;检查扩张或影响</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[defend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>ver</td>
+      <td>stɑp</td>
+      <td></td>
+      <td>[start]</td>
+      <td>cause to stop导致停止</td>
+      <td>stop a car停一车stop the thief阻止小偷</td>
+      <td>[stoppage]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['block', 'blockage', 'closure', 'occlusion', 'stoppage']</td>
+      <td></td>
+      <td>an obstruction in a pipe or tube管道或管道中的障碍物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obstructer, obstructor, obstruction, impediment, impedimenta]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['stoppage']</td>
+      <td></td>
+      <td>the act of stopping something阻止某事的行为</td>
+      <td>the third baseman made some remarkable stops三垒手做了一些非凡的停留his stoppage of the flow resulted in a flood他停止流动导致了洪水</td>
+      <td></td>
+      <td></td>
+      <td>[human action, act, deed, human activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['arrest', 'check', 'halt', 'hitch', 'stay', 'stoppage']</td>
+      <td></td>
+      <td>the state of inactivity following an interruption中断后的不活动状态</td>
+      <td>he spent the entire stop in his seat他把整个车停在座位上</td>
+      <td></td>
+      <td></td>
+      <td>[inactiveness, inactivity, inaction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['catch']</td>
+      <td></td>
+      <td>a restraint that checks the motion of something检查某事物运动的约束</td>
+      <td>he used a book as a stop to hold the door open他用一本书作为打开门的挡板</td>
+      <td></td>
+      <td></td>
+      <td>[constraint, restraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['diaphragm']</td>
+      <td></td>
+      <td>a mechanical device in a camera that controls size of aperture of the lens相机中的机械装置，用于控制镜头光圈的大小</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['occlusive', 'plosive', 'plosive consonant', 'plosive speech sound', 'stop consonant']</td>
+      <td></td>
+      <td>a consonant produced by stopping the flow of air at some point and suddenly releasing it通过在某个点阻止空气流动并突然释放它而产生的辅音</td>
+      <td>his stop consonants are too aspirated他的停止辅音太吸气了</td>
+      <td></td>
+      <td></td>
+      <td>[obstruent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['halt']</td>
+      <td></td>
+      <td>the event of something ending事情结束了</td>
+      <td>it came to a stop at the bottom of the hill它在山脚下停了下来</td>
+      <td></td>
+      <td></td>
+      <td>[finish, ending, conclusion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['layover', 'stopover']</td>
+      <td></td>
+      <td>a brief stay in the course of a journey在旅途中短暂停留</td>
+      <td>they made a stopover to visit their friends他们中途停留拜访他们的朋友</td>
+      <td></td>
+      <td></td>
+      <td>[stay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td>['full point', 'full stop', 'period', 'point']</td>
+      <td></td>
+      <td>a punctuation mark (.) placed at the end of a declarative sentence to indicate a full stop or after abbreviations在声明性句子末尾放置一个标点符号（。），表示句号完整或缩写后</td>
+      <td>in England they call a period a stop在英格兰，他们称一个时期停止</td>
+      <td></td>
+      <td></td>
+      <td>[punctuation mark, punctuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td></td>
+      <td></td>
+      <td>a spot where something halts or pauses某事停顿或暂停的地方</td>
+      <td>his next stop is Atlanta他的下一站是亚特兰大</td>
+      <td></td>
+      <td></td>
+      <td>[spot, topographic point, place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stop</th>
+      <td>op</td>
+      <td>5.96</td>
+      <td>nou</td>
+      <td>stɑp</td>
+      <td></td>
+      <td></td>
+      <td>(music) a knob on an organ that is pulled to change the sound quality from the organ pipes（音乐）器官上的旋钮，用于改变器官管道的音质</td>
+      <td>the organist pulled out all the stops风琴师全力以赴</td>
+      <td></td>
+      <td></td>
+      <td>[knob]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['discharge', 'drop off', 'put down', 'set down', 'unload']</td>
+      <td></td>
+      <td>remove (cargo, people, etc.) from and leave从（货物，人员等）移走和离开</td>
+      <td>drop off the passengers at the hotel放下酒店的乘客</td>
+      <td></td>
+      <td></td>
+      <td>[deliver]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['degenerate', 'deteriorate', 'devolve']</td>
+      <td></td>
+      <td>grow worse变得更糟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[worsen, decline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['drop down', 'sink']</td>
+      <td></td>
+      <td>fall or descend to a lower place or level跌倒或下降到较低的地方或水平</td>
+      <td></td>
+      <td></td>
+      <td>[fall off, slump, sink]</td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['dribble', 'drip']</td>
+      <td></td>
+      <td>let or cause to fall in drops让或导致跌倒</td>
+      <td></td>
+      <td>[dropper]</td>
+      <td>[drip]</td>
+      <td>[pour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['dismiss', 'send away', 'send packing']</td>
+      <td></td>
+      <td>stop associating with停止关联</td>
+      <td>They dropped her after she had a child out of wedlock在她生了一个非婚生子女之后，他们就放弃了她</td>
+      <td></td>
+      <td></td>
+      <td>[sack, dismiss, give the sack, can, give the axe, displace, give notice, fire, force out, terminate, send away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['expend', 'spend']</td>
+      <td></td>
+      <td>pay out付出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['cast', 'cast off', 'shake off', 'shed', 'throw', 'throw away', 'throw off']</td>
+      <td></td>
+      <td>get rid of摆脱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[take away, withdraw, remove, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['cut down', 'fell', 'strike down']</td>
+      <td></td>
+      <td>cause to fall by or as if by delivering a blow导致堕落或似乎是通过打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['dangle', 'swing']</td>
+      <td></td>
+      <td>hang freely自由地挂</td>
+      <td>The light dropped from the ceiling灯从天花板上掉了下来</td>
+      <td></td>
+      <td></td>
+      <td>[hang]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['knock off']</td>
+      <td></td>
+      <td>stop pursuing or acting停止追求或行动</td>
+      <td>drop a lawsuit撤诉</td>
+      <td></td>
+      <td></td>
+      <td>[lay off, give up, quit, discontinue, stop, cease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['leave out', 'miss', 'neglect', 'omit', 'overleap', 'overlook', 'pretermit']</td>
+      <td></td>
+      <td>leave undone or leave out离开或离开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td>['flatten']</td>
+      <td></td>
+      <td>lower the pitch of (musical notes)降低（音符）的音高</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>change from one level to another从一个级别变为另一个级别</td>
+      <td>She dropped into army jargon她掉进军队行话</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>fall or sink into a state of exhaustion or death跌倒或陷入疲惫或死亡的状态</td>
+      <td>shop til you drop商店直到你下降</td>
+      <td></td>
+      <td></td>
+      <td>[fall]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>give birth; used for animals生;用于动物</td>
+      <td>The cow dropped her calf this morning这头母牛今天早上掉了小牛</td>
+      <td></td>
+      <td></td>
+      <td>[bear, deliver, have, give birth, birth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>go down in value价值下降</td>
+      <td>Stock prices dropped股价下跌</td>
+      <td></td>
+      <td></td>
+      <td>[wane, go down, decline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>let fall to the ground让我们倒在地上</td>
+      <td>Don't drop the dishes不要放下碗碟</td>
+      <td></td>
+      <td>[sink, drop down]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>lose (a game)输（比赛）</td>
+      <td>The Giants dropped 11 of their first 13巨人队的前13名中有11名下降</td>
+      <td></td>
+      <td></td>
+      <td>[lose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>omit (a letter or syllable) in speaking or writing在说或写中省略（字母或音节）</td>
+      <td>New Englanders drop their post-vocalic r's新英格兰人放弃了他们的后声乐</td>
+      <td></td>
+      <td></td>
+      <td>[elide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>take (a drug, especially LSD), by mouth通过口服（一种药物，特别是LSD）</td>
+      <td>She dropped acid when she was a teenager她十几岁时就掉酸了</td>
+      <td></td>
+      <td></td>
+      <td>[do drugs, drug]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>terminate an association with终止与...的关联</td>
+      <td>drop him from the Republican ticket把他从共和党的票上扯下来</td>
+      <td></td>
+      <td>[dismiss, send away, send packing]</td>
+      <td>[remove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>to fall vertically垂直落下</td>
+      <td>the bombs are dropping on enemy targets炸弹落在敌方目标上</td>
+      <td></td>
+      <td></td>
+      <td>[come down, descend, fall, go down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>ver</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>utter with seeming casualness看似随意</td>
+      <td>drop a hint暗示drop names丢弃名称</td>
+      <td></td>
+      <td></td>
+      <td>[verbalize, express, give tongue to, verbalise, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td>['bead', 'pearl']</td>
+      <td></td>
+      <td>a shape that is spherical and small球形和小的形状</td>
+      <td>he studied the shapes of low-viscosity drops他研究了低粘度液滴的形状</td>
+      <td>[droplet]</td>
+      <td></td>
+      <td>[sphere]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td>['dip', 'fall', 'free fall']</td>
+      <td></td>
+      <td>a sudden sharp decrease in some quantity一些数量突然急剧下降</td>
+      <td>a drop of 57 points on the Dow Jones index道琼斯指数下跌57点there was a drop in pressure in the pulmonary artery肺动脉压力下降</td>
+      <td></td>
+      <td></td>
+      <td>[decrease, decrement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td>['fall']</td>
+      <td></td>
+      <td>a free and rapid descent by the force of gravity由重力自由快速下降</td>
+      <td>it was a miracle that he survived the drop from that height他从那个高度的下降中幸存下来是一个奇迹</td>
+      <td></td>
+      <td></td>
+      <td>[descent, gravitation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td>['drib', 'driblet']</td>
+      <td></td>
+      <td>a small indefinite quantity (especially of a liquid)少量无限量（特别是液体）</td>
+      <td>he had a drop too much to drink他喝得太多了a drop of each sample was analyzed分析每滴样品there is not a drop of pity in that man那个男人没有一丝怜悯</td>
+      <td>[droplet]</td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td>['cliff', 'drop-off']</td>
+      <td></td>
+      <td>a steep high face of rock陡峭的高高的岩石面</td>
+      <td>a steep drop急剧下降</td>
+      <td></td>
+      <td></td>
+      <td>[formation, geological formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td>['drop cloth', 'drop curtain']</td>
+      <td></td>
+      <td>a curtain that can be lowered and raised onto a stage from the flies; often used as background scenery可以从苍蝇上升到舞台上的窗帘;经常用作背景风景</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drapery, curtain, pall, mantle, drape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>a central depository where things can be left or picked up中央存放处，可以留下或拾取东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[repository, deposit, depositary, depository]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>a predetermined hiding place for the deposit and distribution of illicit goods (such as drugs or stolen property)存放和分发非法货物（如毒品或被盗财产）的预定藏身处</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hiding place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drop</th>
+      <td>op</td>
+      <td>5.06</td>
+      <td>nou</td>
+      <td>drɑp</td>
+      <td></td>
+      <td></td>
+      <td>the act of dropping something放弃某事的行为</td>
+      <td>they expected the drop would be successful他们预计下降会成功</td>
+      <td></td>
+      <td></td>
+      <td>[descent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shop</th>
+      <td>op</td>
+      <td>4.87</td>
+      <td>ver</td>
+      <td>ʃɑp</td>
+      <td>['browse']</td>
+      <td></td>
+      <td>shop around; not necessarily buying购物;不一定要买</td>
+      <td></td>
+      <td>[shopper, shopping]</td>
+      <td>[browse, surf]</td>
+      <td>[look for, seek, search]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shop</th>
+      <td>op</td>
+      <td>4.87</td>
+      <td>ver</td>
+      <td>ʃɑp</td>
+      <td>['betray', 'denounce', 'give away', 'grass', 'rat', 'shit', 'snitch', 'stag', 'tell on']</td>
+      <td></td>
+      <td>give away information about somebody泄露有关某人的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shop</th>
+      <td>op</td>
+      <td>4.87</td>
+      <td>ver</td>
+      <td>ʃɑp</td>
+      <td>['buy at', 'frequent', 'patronise', 'patronize', 'shop at', 'sponsor']</td>
+      <td></td>
+      <td>do one's shopping at; do business with; be a customer or client of做一个人的购物;做生意;成为客户或客户</td>
+      <td></td>
+      <td>[shopper]</td>
+      <td></td>
+      <td>[back up, support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shop</th>
+      <td>op</td>
+      <td>4.87</td>
+      <td>ver</td>
+      <td>ʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>do one's shopping做一个人的购物</td>
+      <td>She goes shopping every Friday她每周五去购物</td>
+      <td>[shopper, shopping]</td>
+      <td></td>
+      <td>[obtain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shop</th>
+      <td>op</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>ʃɑp</td>
+      <td>['workshop']</td>
+      <td></td>
+      <td>small workplace where handcrafts or manufacturing are done工作或制造工作的小型工作场所</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work, workplace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shop</th>
+      <td>op</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>ʃɑp</td>
+      <td>['store']</td>
+      <td></td>
+      <td>a mercantile establishment for the retail sale of goods or services零售商品或服务的商业机构</td>
+      <td>he bought it at a shop on Cape Cod他在科德角的一家商店买了它</td>
+      <td></td>
+      <td></td>
+      <td>[retail store, mercantile establishment, outlet, sales outlet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shop</th>
+      <td>op</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>ʃɑp</td>
+      <td>['shop class']</td>
+      <td></td>
+      <td>a course of instruction in a trade (as carpentry or electricity)贸易中的教学课程（如木工或电力）</td>
+      <td>I built a birdhouse in shop我在商店里建了一个鸟舍</td>
+      <td></td>
+      <td></td>
+      <td>[course of study, class, course of instruction, course]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>'kɑpi</td>
+      <td>['replicate']</td>
+      <td></td>
+      <td>reproduce or make an exact copy of复制或制作精确的副本</td>
+      <td>copy the genetic information复制遗传信息</td>
+      <td></td>
+      <td></td>
+      <td>[duplicate, double, repeat, reduplicate, replicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>'kɑpi</td>
+      <td>['re-create']</td>
+      <td></td>
+      <td>make a replica of制作复制品</td>
+      <td>copy that drawing复制那幅画</td>
+      <td>[copier, copying, copyist]</td>
+      <td></td>
+      <td>[make, create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>'kɑpi</td>
+      <td>['imitate', 'simulate']</td>
+      <td></td>
+      <td>reproduce someone's behavior or looks重现某人的行为或外表</td>
+      <td>Children often copy their parents or older siblings儿童经常抄袭父母或兄弟姐妹</td>
+      <td>[copying]</td>
+      <td></td>
+      <td>[reproduce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>'kɑpi</td>
+      <td></td>
+      <td></td>
+      <td>copy down as is按原样复制</td>
+      <td>The students were made to copy the alphabet over and over学生们一遍又一遍地复制字母表</td>
+      <td>[copying, copyist]</td>
+      <td></td>
+      <td>[write]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>'kɑpi</td>
+      <td>['transcript']</td>
+      <td></td>
+      <td>a reproduction of a written record (e.g. of a legal or school record)复制书面记录（例如法律或学校记录）</td>
+      <td></td>
+      <td>[copyist]</td>
+      <td></td>
+      <td>[written record, written account]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>'kɑpi</td>
+      <td>['written matter']</td>
+      <td></td>
+      <td>matter to be printed; exclusive of graphical materials要印刷的事情;不包括图形材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[text, textual matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>'kɑpi</td>
+      <td></td>
+      <td></td>
+      <td>a thing made to be similar or identical to another thing与其他东西相似或相同的东西</td>
+      <td>she made a copy of the designer dress她制作了一份名牌礼服的副本the clone was a copy of its ancestor克隆是其祖先的副本</td>
+      <td></td>
+      <td></td>
+      <td>[representation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>copy</th>
+      <td>op</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>'kɑpi</td>
+      <td></td>
+      <td></td>
+      <td>material suitable for a journalistic account适用于新闻账户的资料</td>
+      <td>catastrophes make good copy灾难是好的副本</td>
+      <td></td>
+      <td></td>
+      <td>[material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>tʃɑp</td>
+      <td>['chop up']</td>
+      <td></td>
+      <td>cut into pieces切成碎片</td>
+      <td>chop meat剁肉</td>
+      <td>[chopper]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>tʃɑp</td>
+      <td>['hack'], alos:['chop down', 'chop off', 'chop up']</td>
+      <td></td>
+      <td>cut with a hacking tool用黑客工具切割</td>
+      <td></td>
+      <td>[chopper]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>form or shape by chopping通过切碎形式或形状</td>
+      <td>chop a hole in the ground在地上砍一个洞</td>
+      <td></td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>hit sharply大打出手</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike, hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>move suddenly突然行动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>strike sharply, as in some sports像一些体育运动那样大幅度地罢工</td>
+      <td></td>
+      <td>[chopper]</td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td>['chopper']</td>
+      <td></td>
+      <td>a grounder that bounces high in the air一个在空中反弹的地滚球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hopper, ground ball, groundball, grounder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td>['chop shot']</td>
+      <td></td>
+      <td>a tennis return made with a downward motion that puts backspin on the ball一个向下运动的网球回归，将后旋球放在球上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[return]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>a jaw一个下巴</td>
+      <td>I'll hit him on the chops我会打他的</td>
+      <td></td>
+      <td></td>
+      <td>[jaw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>a small cut of meat including part of a rib一小块肉，包括肋骨的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut, cut of meat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chop</th>
+      <td>op</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>tʃɑp</td>
+      <td></td>
+      <td></td>
+      <td>the irregular motion of waves (usually caused by wind blowing in a direction opposite to the tide)波浪的不规则运动（通常是由与潮汐相反的方向吹来的风）</td>
+      <td>the boat headed into the chop船开进了剁</td>
+      <td>[choppy]</td>
+      <td></td>
+      <td>[physical phenomenon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tops</th>
+      <td>op</td>
+      <td>3.80</td>
+      <td>adj</td>
+      <td>tɑps</td>
+      <td>['a-one', 'ace', 'crack', 'first-rate', 'super', 'tiptop', 'top-notch', 'topnotch'], similarTo:['superior']</td>
+      <td></td>
+      <td>of the highest quality最高质量的</td>
+      <td>she is absolutely tops她绝对是上衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>krɑp</td>
+      <td>['clip', 'cut back', 'dress', 'lop', 'prune', 'snip', 'trim']</td>
+      <td></td>
+      <td>cultivate, tend, and cut back the growth of培养，倾向和削减生长</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thin out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>krɑp</td>
+      <td>['graze', 'pasture']</td>
+      <td></td>
+      <td>let feed in a field or pasture or meadow让饲料在田地或牧场或草地上</td>
+      <td></td>
+      <td></td>
+      <td>[graze, pasture, range, browse]</td>
+      <td>[feed, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>krɑp</td>
+      <td>['cultivate', 'work']</td>
+      <td></td>
+      <td>prepare for crops为作物做准备</td>
+      <td></td>
+      <td></td>
+      <td>[knead, work]</td>
+      <td>[gear up, ready, prepare, fix, set up, set]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>krɑp</td>
+      <td>['browse', 'graze', 'pasture', 'range']</td>
+      <td></td>
+      <td>feed as in a meadow or pasture像草地或牧场一样喂食</td>
+      <td></td>
+      <td></td>
+      <td>[range, graze, pasture]</td>
+      <td>[feed, eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>krɑp</td>
+      <td></td>
+      <td></td>
+      <td>cut short剪短</td>
+      <td>She wanted her hair cropped short她希望自己的头发剪短</td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>krɑp</td>
+      <td></td>
+      <td></td>
+      <td>yield crops产量作物</td>
+      <td>This land crops well这片土地播种良好</td>
+      <td></td>
+      <td></td>
+      <td>[bear, turn out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>krɑp</td>
+      <td>['harvest']</td>
+      <td></td>
+      <td>the yield from plants in a single growing season植物在单一生长季节的产量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[yield, output]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>krɑp</td>
+      <td>['craw']</td>
+      <td></td>
+      <td>a pouch in many birds and some lower animals that resembles a stomach for storage and preliminary maceration of food许多鸟类和一些低等动物的小袋，类似胃，用于储存和初步浸渍食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tummy, tum, breadbasket, stomach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>krɑp</td>
+      <td></td>
+      <td></td>
+      <td>a collection of people or things appearing together一起出现的人或事物的集合</td>
+      <td>the annual crop of students brings a new crop of ideas每年的学生群体带来了新的想法</td>
+      <td></td>
+      <td></td>
+      <td>[accumulation, aggregation, assemblage, collection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>krɑp</td>
+      <td></td>
+      <td></td>
+      <td>a cultivated plant that is grown commercially on a large scale一种大规模商业化种植的植物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flora, plant life, plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>krɑp</td>
+      <td></td>
+      <td></td>
+      <td>the output of something in a season一个赛季的东西输出</td>
+      <td>the latest crop of fashions is about to hit the stores最新一批时装即将上市</td>
+      <td></td>
+      <td></td>
+      <td>[output, end product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crop</th>
+      <td>op</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>krɑp</td>
+      <td></td>
+      <td></td>
+      <td>the stock or handle of a whip鞭子的股票或手柄</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[handle, hold, grip, handgrip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>flɑp</td>
+      <td>['fall flat', 'fall through', 'founder']</td>
+      <td></td>
+      <td>fail utterly; collapse完全失败;坍方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[miscarry, fail, go wrong]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>flɑp</td>
+      <td></td>
+      <td></td>
+      <td>fall loosely松散地掉下来</td>
+      <td>He flopped into a chair他瘫倒在椅子上</td>
+      <td></td>
+      <td></td>
+      <td>[give, give way, break, cave in, collapse, fall in, founder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>flɑp</td>
+      <td></td>
+      <td></td>
+      <td>fall suddenly and abruptly突然间突然跌倒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go down, descend, fall, come down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>flɑp</td>
+      <td>['dud', 'washout']</td>
+      <td></td>
+      <td>someone who is unsuccessful不成功的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[failure, unsuccessful person, nonstarter, loser]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>flɑp</td>
+      <td>['bust', 'fizzle']</td>
+      <td></td>
+      <td>a complete failure完全失败了</td>
+      <td>the play was a dismal flop这场比赛是一场糟糕的失败</td>
+      <td></td>
+      <td></td>
+      <td>[failure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>flɑp</td>
+      <td>['collapse']</td>
+      <td></td>
+      <td>the act of throwing yourself down把自己摔倒的行为</td>
+      <td>he landed on the bed with a great flop他翻了个身，翻了个身</td>
+      <td>[floppy]</td>
+      <td></td>
+      <td>[descent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>flɑp</td>
+      <td>['floating-point operation']</td>
+      <td></td>
+      <td>an arithmetic operation performed on floating-point numbers对浮点数执行的算术运算</td>
+      <td>this computer can perform a million flops per second这台计算机每秒可以执行一百万次触发</td>
+      <td></td>
+      <td></td>
+      <td>[computer operation, machine operation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>adv</td>
+      <td>flɑp</td>
+      <td>['right']</td>
+      <td></td>
+      <td>exactly究竟</td>
+      <td>he fell flop on his face他摔倒在脸上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>prop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>prɑp</td>
+      <td>['prop up', 'shore', 'shore up']</td>
+      <td></td>
+      <td>support by placing against something solid or rigid通过放置坚固或僵硬的东西来支撑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hold, hold up, support, sustain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>prɑp</td>
+      <td>['airplane propeller', 'airscrew']</td>
+      <td></td>
+      <td>a propeller that rotates to push against air螺旋桨旋转以推动空气</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[propeller, propellor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>prɑp</td>
+      <td>['property']</td>
+      <td></td>
+      <td>any movable articles or objects used on the set of a play or movie在戏剧或电影集上使用的任何可移动的物品或物品</td>
+      <td>before every scene he ran down his checklist of props在每一个场景之前，他都会把他的道具清单记下来</td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prop</th>
+      <td>op</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>prɑp</td>
+      <td></td>
+      <td></td>
+      <td>a support placed beneath or against something to keep it from shaking or falling放置在物体下方或靠着物体的支撑物，以防止震动或跌落</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>ver</td>
+      <td>slɑp</td>
+      <td>['slosh', 'splash', 'splosh', 'squelch', 'squish']</td>
+      <td></td>
+      <td>walk through mud or mire走过泥泞或泥潭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trudge, footslog, pad, plod, slog, tramp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>ver</td>
+      <td>slɑp</td>
+      <td>['swill']</td>
+      <td></td>
+      <td>feed pigs喂猪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[give, feed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>ver</td>
+      <td>slɑp</td>
+      <td>['spill', 'splatter']</td>
+      <td></td>
+      <td>cause or allow (a liquid substance) to run or flow from a container导致或允许（液体物质）从容器中流出或流出</td>
+      <td></td>
+      <td></td>
+      <td>[disgorge, spill, shed, run out]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>ver</td>
+      <td>slɑp</td>
+      <td></td>
+      <td></td>
+      <td>ladle clumsily笨拙地舀</td>
+      <td>slop the food onto the plate将食物放在盘子上</td>
+      <td></td>
+      <td></td>
+      <td>[laden, ladle, lade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>slɑp</td>
+      <td>['glop', 'mush', 'treacle']</td>
+      <td></td>
+      <td>writing or music that is excessively sweet and sentimental写作或音乐过于甜蜜和多愁善感</td>
+      <td></td>
+      <td>[sloppy]</td>
+      <td></td>
+      <td>[sentimentalism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>slɑp</td>
+      <td>['pigswill', 'pigwash', 'slops', 'swill']</td>
+      <td></td>
+      <td>wet feed (especially for pigs) consisting of mostly kitchen waste mixed with water or skimmed or sour milk湿饲料（特别是猪），主要由厨房垃圾与水或脱脂或酸奶混合而成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[provender, feed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>slɑp</td>
+      <td>['mire']</td>
+      <td></td>
+      <td>deep soft mud in water or slush水中或泥浆中的深软泥</td>
+      <td>they waded through the slop他们穿过斜坡</td>
+      <td>[sloppy]</td>
+      <td></td>
+      <td>[clay, mud]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>slɑp</td>
+      <td></td>
+      <td></td>
+      <td>(usually plural) waste water from a kitchen or bathroom or chamber pot that has to be emptied by hand（通常是复数）来自厨房或浴室或室内锅的废水，必须用手清空</td>
+      <td>she carried out the sink slops她执行了水槽污水</td>
+      <td></td>
+      <td></td>
+      <td>[waste product, waste, waste material, waste matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slop</th>
+      <td>op</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>slɑp</td>
+      <td></td>
+      <td></td>
+      <td>(usually plural) weak or watery unappetizing food or drink（通常是复数的）弱或水不好吃的食物或饮料</td>
+      <td>he lived on the thin slops that food kitchens provided他住在食品厨房提供的薄薄的污水上</td>
+      <td></td>
+      <td></td>
+      <td>[food, solid food]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hops</th>
+      <td>op</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>hɑps</td>
+      <td>['hop']</td>
+      <td></td>
+      <td>twining perennials having cordate leaves and flowers arranged in conelike spikes; the dried flowers of this plant are used in brewing to add the characteristic bitter taste to beer缠绕多年生植物，心形叶子和花朵排列成锥形的穗状花序;这种植物的干花用于酿造，为啤酒增添特有的苦味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hopi</th>
+      <td>op</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>hoʊpi</td>
+      <td></td>
+      <td></td>
+      <td>a member of the Shoshonean people of northeastern Arizona亚利桑那州东北部的肖肖尼人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shoshoni, shoshone, pueblo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hopi</th>
+      <td>op</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>hoʊpi</td>
+      <td></td>
+      <td></td>
+      <td>the Shoshonean language spoken by the Hopi霍皮人所说的肖肖尼语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shoshonian language, shoshonean language, shoshonean, shoshonian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soph</th>
+      <td>op</td>
+      <td>2.74</td>
+      <td>nou</td>
+      <td>sɑf</td>
+      <td>['sophomore']</td>
+      <td></td>
+      <td>a second-year undergraduate二年级本科生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lowerclassman, underclassman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plop</th>
+      <td>op</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>plɑp</td>
+      <td>['flump', 'plank', 'plonk', 'plump', 'plump down', 'plunk', 'plunk down']</td>
+      <td></td>
+      <td>set (something or oneself) down with or as if with a noise用（或某种东西）设置（或某种东西），或者用噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set down, place down, put down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plop</th>
+      <td>op</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>plɑp</td>
+      <td></td>
+      <td></td>
+      <td>drop something with a plopping sound用噗噗的声音丢下一些东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plop</th>
+      <td>op</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>plɑp</td>
+      <td></td>
+      <td></td>
+      <td>drop with the sound of something falling into water掉落在水中的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fall, go down, come down, descend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plop</th>
+      <td>op</td>
+      <td>2.73</td>
+      <td>nou</td>
+      <td>plɑp</td>
+      <td></td>
+      <td></td>
+      <td>the noise of a rounded object dropping into a liquid without a splash圆形物体的噪音在没有飞溅的情况下落入液体中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plop</th>
+      <td>op</td>
+      <td>2.73</td>
+      <td>adv</td>
+      <td>plɑp</td>
+      <td>['plunk']</td>
+      <td></td>
+      <td>with a short hollow thud空洞砰的一声</td>
+      <td>plop came the ball down to the corner of the greenplop把球传到果岭的角落里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>clop</th>
+      <td>op</td>
+      <td>2.38</td>
+      <td>ver</td>
+      <td>klɑp</td>
+      <td>['clump', 'clunk', 'plunk']</td>
+      <td></td>
+      <td>make or move along with a sound as of a horse's hooves striking the ground随着马蹄撞击地面的声音制作或移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clop</th>
+      <td>op</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>klɑp</td>
+      <td>['clip-clop', 'clippety-clop', 'clopping', 'clumping', 'clunking']</td>
+      <td></td>
+      <td>the sound of a horse's hoofs hitting on a hard surface马蹄击打坚硬表面的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>topi</th>
+      <td>op</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>toʊ'pi</td>
+      <td>['pith hat', 'pith helmet', 'sun helmet', 'topee']</td>
+      <td></td>
+      <td>a lightweight hat worn in tropical countries for protection from the sun在热带国家佩戴的轻质帽子，用于防晒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sun hat, sunhat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>topi</th>
+      <td>op</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>toʊ'pi</td>
+      <td>['damaliscus lunatus', 'sassaby']</td>
+      <td></td>
+      <td>a large South African antelope; considered the swiftest hoofed mammal南非大羚羊;被认为是最快的有蹄哺乳动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[antelope]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whop</th>
+      <td>op</td>
+      <td>2.12</td>
+      <td>ver</td>
+      <td>hwɑp</td>
+      <td>['bash', 'bonk', 'bop', 'sock', 'wallop', 'whack', 'wham', 'whap']</td>
+      <td></td>
+      <td>hit hard用力打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swop</th>
+      <td>op</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>swɑp</td>
+      <td>['swap', 'switch', 'trade']</td>
+      <td></td>
+      <td>exchange or give (something) in exchange for交换或交换（某物）以换取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interchange, change, exchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swop</th>
+      <td>op</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>swɑp</td>
+      <td>['barter', 'swap', 'trade']</td>
+      <td></td>
+      <td>an equal exchange平等的交换</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interchange, exchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ropy</th>
+      <td>op</td>
+      <td>1.97</td>
+      <td>adj</td>
+      <td>'roʊpi</td>
+      <td>['ropey'], similarTo:['inferior']</td>
+      <td></td>
+      <td>(British informal) very poor in quality（英国非正式）质量很差</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>ropy</th>
+      <td>op</td>
+      <td>1.97</td>
+      <td>adj</td>
+      <td>'roʊpi</td>
+      <td>['ropey', 'stringy', 'thready'], similarTo:['thick']</td>
+      <td></td>
+      <td>forming viscous or glutinous threads形成粘性或粘性线</td>
+      <td></td>
+      <td>[ropiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ropy</th>
+      <td>op</td>
+      <td>1.97</td>
+      <td>adj</td>
+      <td>'roʊpi</td>
+      <td>['ropey']</td>
+      <td></td>
+      <td>of or resembling rope (or ropes) in being long and strong绳索（或绳索）长而结实的</td>
+      <td></td>
+      <td>[rope]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glop</th>
+      <td>op</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>glɑp</td>
+      <td>['mush', 'slop', 'treacle']</td>
+      <td></td>
+      <td>writing or music that is excessively sweet and sentimental写作或音乐过于甜蜜和多愁善感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sentimentalism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glop</th>
+      <td>op</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>glɑp</td>
+      <td></td>
+      <td></td>
+      <td>any gummy shapeless matter; usually unpleasant任何粘性的无形物质;通常是不愉快的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sops</th>
+      <td>op</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td>sɑps</td>
+      <td>['sop']</td>
+      <td></td>
+      <td>piece of solid food for dipping in a liquid一块固体食物浸在液体中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bit, bite, morsel]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

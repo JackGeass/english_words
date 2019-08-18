@@ -1,0 +1,1100 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hands', 'stand', 'grand', 'candy', 'brand', 'sandy', 'randy', 'handy', 'dandy', 'sands', 'gland', 'bland', 'bandy', 'tandy', 'eland']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hands</th>
+      <td>and</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>hændz</td>
+      <td>['manpower', 'men', 'work force', 'workforce']</td>
+      <td></td>
+      <td>the force of workers available工人的力量可用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[force, personnel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hands</th>
+      <td>and</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>hændz</td>
+      <td>['custody']</td>
+      <td></td>
+      <td>(with `in') guardianship over; in divorce cases it is the right to house and care for and discipline a child（带'in'）监护权;在离婚案件中，有权收养和照顾和管教孩子</td>
+      <td>my fate is in your hands我的命运掌握在你手中too much power in the president's hands总统掌握的权力过大</td>
+      <td></td>
+      <td></td>
+      <td>[keeping, safekeeping, guardianship]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td>['abide', 'bear', 'brook', 'digest', 'endure', 'put up', 'stick out', 'stomach', 'suffer', 'support', 'tolerate']</td>
+      <td></td>
+      <td>put up with something or somebody unpleasant忍受某事或某人不愉快</td>
+      <td></td>
+      <td></td>
+      <td>[suffer]</td>
+      <td>[allow, countenance, let, permit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td>['remain firm']</td>
+      <td>[yield]</td>
+      <td>hold one's ground; maintain a position; be steadfast or upright抓住一个人的立场;保持一个位置;坚定或正直</td>
+      <td>I am standing my ground and won't give in!我站在自己的立场，不会放弃！</td>
+      <td></td>
+      <td>[resist, fend]</td>
+      <td>[hold out, resist, withstand, stand firm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td>['fend', 'resist']</td>
+      <td></td>
+      <td>withstand the force of something承受某种力量</td>
+      <td>stand the test of time经得起时间的考验</td>
+      <td></td>
+      <td>[remain firm]</td>
+      <td>[fight down, fight back, oppose, defend, fight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td>['place upright', 'stand up']</td>
+      <td></td>
+      <td>put into an upright position处于直立的位置</td>
+      <td>Can you stand the bookshelf up?你能站在书架上吗？</td>
+      <td>[standard]</td>
+      <td>[stand up]</td>
+      <td>[set, lay, put, place, position, pose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td>['stand up'], alos:['stand up']</td>
+      <td>[sit, lie]</td>
+      <td>be standing; be upright站着直立</td>
+      <td>We had to stand for the entire performance!我们必须代表整个表演！</td>
+      <td>[stander, stance, standee, standing]</td>
+      <td>[place upright, stand up]</td>
+      <td>[rest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>be available for stud services可用于服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[serve, service]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>be in effect; be or remain in force生效;是或继续有效</td>
+      <td>The law stands!法律立场！</td>
+      <td></td>
+      <td></td>
+      <td>[continue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td>, alos:['stand firm', 'stand by', 'stand out', 'stand for']</td>
+      <td></td>
+      <td>be in some specified state or condition处于某种特定的状态或条件</td>
+      <td>I stand corrected我纠正了</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>be tall; have a height of; copula高个子有一个高度;系词</td>
+      <td>She stands 6 feet tall她身高6英尺</td>
+      <td></td>
+      <td></td>
+      <td>[measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>have or maintain a position or stand on an issue在问题上拥有或保持立场或立场</td>
+      <td>Where do you stand on the War?你在战争中的立场是什么？</td>
+      <td>[stance]</td>
+      <td></td>
+      <td>[pass judgment, evaluate, judge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>occupy a place or location, also metaphorically占据一个地方或位置，也是比喻</td>
+      <td>We stand on common ground我们站在一个共同点上</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>ver</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>remain inactive or immobile保持不活动或不动</td>
+      <td>standing water积水</td>
+      <td></td>
+      <td></td>
+      <td>[stay, rest, remain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td>['base', 'pedestal']</td>
+      <td></td>
+      <td>a support or foundation支持或基础</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td>['standstill', 'tie-up']</td>
+      <td></td>
+      <td>an interruption of normal activity正常活动的中断</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[halt, stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td>['sales booth', 'stall']</td>
+      <td></td>
+      <td>a booth where articles are displayed for sale展示待售物品的展位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[booth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td>['bandstand', 'outdoor stage']</td>
+      <td></td>
+      <td>a platform where a (brass) band can play in the open air一个（黄铜）乐队可以在露天玩耍的平台</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td>['rack']</td>
+      <td></td>
+      <td>a support for displaying various articles支持显示各种文章</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td>['point of view', 'standpoint', 'viewpoint']</td>
+      <td></td>
+      <td>a mental position from which things are viewed从中看待事物的心理位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[position, posture, stance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>a defensive effort防守努力</td>
+      <td>the army made a final stand at the Rhone军队在罗纳河最后站了起来</td>
+      <td></td>
+      <td></td>
+      <td>[defensive measure, defence, defense]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>a growth of similar plants (usually trees) in a particular area特定地区的类似植物（通常是树木）的生长</td>
+      <td>they cut down a stand of trees他们砍下了树林</td>
+      <td></td>
+      <td></td>
+      <td>[flora, botany, vegetation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>a small table for holding articles of various kinds一个小桌子，用于存放各种物品</td>
+      <td>a bedside stand床头柜</td>
+      <td></td>
+      <td></td>
+      <td>[table]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>a stop made by a touring musical or theatrical group to give a performance由巡回音乐剧或戏剧团组成的表演</td>
+      <td>a one-night stand一夜情</td>
+      <td></td>
+      <td></td>
+      <td>[layover, stopover, stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>the position where a thing or person stands物品或人站立的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stand</th>
+      <td>and</td>
+      <td>5.31</td>
+      <td>nou</td>
+      <td>stænd</td>
+      <td></td>
+      <td></td>
+      <td>tiered seats consisting of a structure (often made of wood) where people can sit to watch an event (game or parade)分层座椅由一个结构（通常由木头制成）组成，人们可以坐在那里观看比赛（比赛或游行）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tiered seat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>grænd</td>
+      <td>['grand piano']</td>
+      <td></td>
+      <td>a piano with the strings on a horizontal harp-shaped frame; usually supported by three legs水平竖琴形框架上的琴弦;通常由三条腿支撑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[forte-piano, pianoforte, piano]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>grænd</td>
+      <td>['1000', 'chiliad', 'g', 'k', 'm', 'one thousand', 'thou', 'thousand', 'yard']</td>
+      <td></td>
+      <td>the cardinal number that is the product of 10 and 100基数是10和100的乘积</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large integer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>['expansive', 'heroic'], similarTo:['impressive']</td>
+      <td></td>
+      <td>of behavior that is impressive and ambitious in scale or scope在规模或范围上令人印象深刻且雄心勃勃的行为</td>
+      <td>in the grand manner以宏伟的方式collecting on a grand scale大规模收集</td>
+      <td>[grandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>['distinguished', 'imposing', 'magisterial'], similarTo:['dignified']</td>
+      <td></td>
+      <td>used of a person's appearance or behavior; befitting an eminent person用于一个人的外表或行为;适合一个知名人士</td>
+      <td></td>
+      <td>[grandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>['august', 'lordly'], similarTo:['noble']</td>
+      <td></td>
+      <td>of or befitting a lord领主或适合领主</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>['elevated', 'exalted', 'high-flown', 'high-minded', 'idealistic', 'lofty', 'noble-minded', 'rarefied', 'rarified', 'sublime'], similarTo:['noble']</td>
+      <td></td>
+      <td>of high moral or intellectual value; elevated in nature or style道德或智力价值高;在自然或风格上升高</td>
+      <td>a grand purpose一个宏伟的目标</td>
+      <td>[grandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>['deluxe', 'gilded', 'lush', 'luxurious', 'opulent', 'princely', 'sumptuous'], similarTo:['rich']</td>
+      <td></td>
+      <td>ostentatiously rich and superior in quality质量上乘，质量上乘</td>
+      <td></td>
+      <td>[grandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>['fantastic', 'howling', 'marvellous', 'marvelous', 'rattling', 'terrific', 'tremendous', 'wonderful', 'wondrous'], similarTo:['extraordinary']</td>
+      <td></td>
+      <td>extraordinarily good or great; used especially as intensifiers非常好或好;尤其用作增强剂</td>
+      <td></td>
+      <td>[grandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>, similarTo:['large', 'big']</td>
+      <td></td>
+      <td>large and impressive in physical size or extent物理尺寸或程度令人印象深刻</td>
+      <td>the bridge is a grand structure这座桥是一座宏伟的建筑</td>
+      <td>[grandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grand</th>
+      <td>and</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>grænd</td>
+      <td>, similarTo:['of import', 'important']</td>
+      <td></td>
+      <td>the most important and magnificent in adornment装饰中最重要和最宏伟的</td>
+      <td>grand ballroom大宴会厅grand staircase大楼梯</td>
+      <td>[grandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>candy</th>
+      <td>and</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>'kændi</td>
+      <td>['glaze', 'sugarcoat']</td>
+      <td></td>
+      <td>coat with something sweet, such as a hard sugar glaze涂上甜的东西，如硬糖釉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dulcify, dulcorate, edulcorate, sweeten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>candy</th>
+      <td>and</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>'kændi</td>
+      <td>['confect']</td>
+      <td></td>
+      <td>a rich sweet made of flavored sugar and often combined with fruit or nuts由调味糖制成的浓郁甜味，通常与水果或坚果混合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sweet, confection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>brænd</td>
+      <td>['brandmark', 'trademark']</td>
+      <td></td>
+      <td>mark with a brand or trademark标有品牌或商标</td>
+      <td>when this product is not branded it sells for a lower price当这个产品没有品牌时，它以较低的价格出售</td>
+      <td></td>
+      <td></td>
+      <td>[label, mark, tag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>brænd</td>
+      <td>['denounce', 'mark', 'stigmatise', 'stigmatize']</td>
+      <td></td>
+      <td>to accuse or condemn or openly or formally or brand as disgraceful控告或谴责或公开或正式或品牌为可耻的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>brænd</td>
+      <td>['post']</td>
+      <td></td>
+      <td>mark or expose as infamous标记或暴露为臭名昭着</td>
+      <td>She was branded a loose woman她被称为一个松散的女人</td>
+      <td></td>
+      <td></td>
+      <td>[call]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>brænd</td>
+      <td></td>
+      <td></td>
+      <td>burn with a branding iron to indicate ownership; of animals用品牌铁燃烧表明所有权;动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>brænd</td>
+      <td>['brand name', 'marque', 'trade name']</td>
+      <td></td>
+      <td>a name given to a product or service给产品或服务的名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[name]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>brænd</td>
+      <td>['mark', 'stain', 'stigma']</td>
+      <td></td>
+      <td>a symbol of disgrace or infamy耻辱或耻辱的象征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[symbol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>brænd</td>
+      <td>['firebrand']</td>
+      <td></td>
+      <td>a piece of wood that has been burned or is burning一块被烧或正在燃烧的木头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[firewood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>brænd</td>
+      <td>['blade', 'steel', 'sword']</td>
+      <td></td>
+      <td>a cutting or thrusting weapon that has a long metal blade and a hilt with a hand guard切割或推进武器，有一个长金属刀片和一个带护手的刀柄</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weapon, arm, weapon system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>brænd</td>
+      <td>['make']</td>
+      <td></td>
+      <td>a recognizable kind一种可识别的</td>
+      <td>there's a new brand of hero in the movies now现在电影里有一个新的英雄品牌</td>
+      <td></td>
+      <td></td>
+      <td>[sort, variety, form, kind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brand</th>
+      <td>and</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>brænd</td>
+      <td></td>
+      <td></td>
+      <td>identification mark on skin, made by burning皮肤上的识别标记，通过燃烧制成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[marking, marker, mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sandy</th>
+      <td>and</td>
+      <td>4.18</td>
+      <td>adj</td>
+      <td>'sændi</td>
+      <td>['flaxen'], similarTo:['blond', 'blonde', 'light-haired']</td>
+      <td></td>
+      <td>of hair color; pale yellowish to yellowish brown头发的颜色;淡黄色至黄棕色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sandy</th>
+      <td>and</td>
+      <td>4.18</td>
+      <td>adj</td>
+      <td>'sændi</td>
+      <td>['arenaceous', 'sandlike']</td>
+      <td></td>
+      <td>resembling or containing or abounding in sand; or growing in sandy areas类似于或含有或盛有沙子;或在沙地生长</td>
+      <td></td>
+      <td>[sand, sandiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>randy</th>
+      <td>and</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>'rændi</td>
+      <td>['aroused', 'horny', 'ruttish', 'steamy', 'turned on'], similarTo:['sexy']</td>
+      <td></td>
+      <td>feeling great sexual desire感觉很有性欲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>handy</th>
+      <td>and</td>
+      <td>3.91</td>
+      <td>nou</td>
+      <td>'hændi</td>
+      <td>['w. c. handy', 'william christopher handy']</td>
+      <td></td>
+      <td>United States blues musician who transcribed and published traditional blues music (1873-1958)转录并出版传统布鲁斯音乐的美国布鲁斯音乐家（1873-1958）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>handy</th>
+      <td>and</td>
+      <td>3.91</td>
+      <td>adj</td>
+      <td>'hændi</td>
+      <td>['ready to hand'], similarTo:['accessible']</td>
+      <td></td>
+      <td>easy to reach很容易到达</td>
+      <td>found a handy spot for the can opener为开罐器找到了一个方便的地方</td>
+      <td>[handiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>handy</th>
+      <td>and</td>
+      <td>3.91</td>
+      <td>adj</td>
+      <td>'hændi</td>
+      <td>, similarTo:['adroit']</td>
+      <td></td>
+      <td>skillful with the hands熟练的双手</td>
+      <td>handy with an axe方便的斧头</td>
+      <td>[handiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>handy</th>
+      <td>and</td>
+      <td>3.91</td>
+      <td>adj</td>
+      <td>'hændi</td>
+      <td>, similarTo:['useful', 'utile']</td>
+      <td></td>
+      <td>useful and convenient实用又方便</td>
+      <td>a handy gadget一个方便的小工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dandy</th>
+      <td>and</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>'dændi</td>
+      <td>['yawl']</td>
+      <td></td>
+      <td>a sailing vessel with two masts; a small mizzen is aft of the rudderpost一艘有两个桅杆的帆船;一个小的mizzen是rudderpost尾部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sailing ship, sailing vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dandy</th>
+      <td>and</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>'dændi</td>
+      <td>['beau', 'clotheshorse', 'dude', 'fashion plate', 'fop', 'gallant', 'sheik', 'swell']</td>
+      <td></td>
+      <td>a man who is much concerned with his dress and appearance一个非常关心他的着装和外表的男人</td>
+      <td></td>
+      <td>[dandify]</td>
+      <td></td>
+      <td>[adult male, man]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dandy</th>
+      <td>and</td>
+      <td>3.42</td>
+      <td>adj</td>
+      <td>'dændi</td>
+      <td>['bang-up', 'bully', 'corking', 'cracking', 'great', 'groovy', 'keen', 'neat', 'nifty', 'not bad', 'old', 'peachy', 'slap-up', 'smashing', 'swell'], similarTo:['good']</td>
+      <td></td>
+      <td>very good很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>sands</th>
+      <td>and</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>sændz</td>
+      <td>['litoral', 'littoral', 'littoral zone']</td>
+      <td></td>
+      <td>the region of the shore of a lake or sea or ocean湖岸或海洋或海洋的区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coast, sea-coast, seacoast, seashore]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gland</th>
+      <td>and</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>glænd</td>
+      <td>['secreter', 'secretor', 'secretory organ']</td>
+      <td></td>
+      <td>any of various organs that synthesize substances needed by the body and release it through ducts or directly into the bloodstream任何合成身体所需物质并通过导管释放或直接进入血液的器官</td>
+      <td></td>
+      <td>[glandular]</td>
+      <td></td>
+      <td>[organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bland</th>
+      <td>and</td>
+      <td>3.06</td>
+      <td>adj</td>
+      <td>blænd</td>
+      <td>['flat'], similarTo:['unexciting', 'unstimulating']</td>
+      <td></td>
+      <td>lacking stimulating characteristics; uninteresting缺乏刺激的特征;枯燥</td>
+      <td>a bland little drama一个平淡无奇的小戏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bland</th>
+      <td>and</td>
+      <td>3.06</td>
+      <td>adj</td>
+      <td>blænd</td>
+      <td>['politic', 'smooth', 'suave'], similarTo:['diplomatic', 'diplomatical']</td>
+      <td></td>
+      <td>smoothly agreeable and courteous with a degree of sophistication顺利和蔼可亲，有一定程度的成熟</td>
+      <td></td>
+      <td>[blandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bland</th>
+      <td>and</td>
+      <td>3.06</td>
+      <td>adj</td>
+      <td>blænd</td>
+      <td>['flat', 'flavorless', 'flavourless', 'insipid', 'savorless', 'savourless', 'vapid'], similarTo:['tasteless']</td>
+      <td></td>
+      <td>lacking taste or flavor or tang缺乏味道或味道的汤</td>
+      <td>a bland diet平淡的饮食</td>
+      <td>[blandness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bandy</th>
+      <td>and</td>
+      <td>2.75</td>
+      <td>ver</td>
+      <td>'bændi</td>
+      <td>['kick around']</td>
+      <td></td>
+      <td>discuss lightly轻轻地讨论</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[talk over, discuss, hash out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bandy</th>
+      <td>and</td>
+      <td>2.75</td>
+      <td>ver</td>
+      <td>'bændi</td>
+      <td></td>
+      <td></td>
+      <td>exchange blows交换打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[struggle, contend, fight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bandy</th>
+      <td>and</td>
+      <td>2.75</td>
+      <td>ver</td>
+      <td>'bændi</td>
+      <td></td>
+      <td></td>
+      <td>toss or strike a ball back and forth来回折腾或击球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bandy</th>
+      <td>and</td>
+      <td>2.75</td>
+      <td>adj</td>
+      <td>'bændi</td>
+      <td>['bandy-legged', 'bowed', 'bowleg', 'bowlegged'], similarTo:['unfit']</td>
+      <td></td>
+      <td>have legs that curve outward at the knees有腿在膝盖向外弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tandy</th>
+      <td>and</td>
+      <td>2.59</td>
+      <td>nou</td>
+      <td>'tændi</td>
+      <td>['jessica tandy']</td>
+      <td></td>
+      <td>United States actress (born in England) who made many stage appearances, often with her husband Hume Cronyn (1909-1994)美国女演员（出生于英格兰）经常与她的丈夫Hume Cronyn（1909-1994）进行多次舞台表演</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eland</th>
+      <td>and</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>'ilənd</td>
+      <td></td>
+      <td></td>
+      <td>either of two large African antelopes of the genus Taurotragus having short spirally twisted horns in both sexes两种大型非洲羚羊属Taurotragus属，两种性别都有短螺旋扭曲的角</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[antelope]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,620 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['camp', 'lamp', 'damp', 'ramp', 'vamp', 'tamp']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>kæmp</td>
+      <td>['camp down']</td>
+      <td></td>
+      <td>establish or set up a camp建立或建立一个营地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set up, pitch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>kæmp</td>
+      <td>['bivouac', 'camp out', 'encamp', 'tent']</td>
+      <td></td>
+      <td>live in or as if in a tent住在或好像在帐篷里</td>
+      <td>Can we go camping again this summer?今年夏天我们可以再去露营吗？The houseguests had to camp in the living room房客们不得不在起居室里露营</td>
+      <td>[camper, camping]</td>
+      <td></td>
+      <td>[inhabit, populate, live, dwell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>kæmp</td>
+      <td></td>
+      <td></td>
+      <td>give an artificially banal or sexual quality to给予人为的平庸或性欲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td>['clique', 'coterie', 'ingroup', 'inner circle', 'pack']</td>
+      <td></td>
+      <td>an exclusive circle of people with a common purpose一个有共同目标的人的专属圈子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set, band, lot, circle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td>['summer camp']</td>
+      <td></td>
+      <td>a site where care and activities are provided for children during the summer months在夏季为儿童提供护理和活动的场所</td>
+      <td>city kids get to see the country at a summer camp城里的孩子们可以去夏令营看看这个国家</td>
+      <td></td>
+      <td></td>
+      <td>[site, land site]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td>['refugee camp']</td>
+      <td></td>
+      <td>shelter for persons displaced by war or political oppression or for religious beliefs为因战争或政治压迫或宗教信仰而流离失所的人提供庇护</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td>['bivouac', 'cantonment', 'encampment']</td>
+      <td></td>
+      <td>temporary living quarters specially built by the army for soldiers军队专门为士兵建造的临时生活区</td>
+      <td>wherever he went in the camp the men were grumbling无论他走进营地，男人们都抱怨着</td>
+      <td></td>
+      <td></td>
+      <td>[military quarters]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td></td>
+      <td></td>
+      <td>a group of people living together in a camp一群人住在一个​​营地里</td>
+      <td>the whole camp laughed at his mistake整个营地都嘲笑他的错误</td>
+      <td></td>
+      <td></td>
+      <td>[gathering, assemblage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td></td>
+      <td></td>
+      <td>a penal institution (often for forced labor)惩教机构（通常为强迫劳动）</td>
+      <td>China has many camps for political prisoners中国有许多政治犯阵营</td>
+      <td></td>
+      <td></td>
+      <td>[penal facility, penal institution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td></td>
+      <td></td>
+      <td>something that is considered amusing not because of its originality but because of its unoriginality被认为有趣的东西不是因为它的原创性而是因为它的非原创性</td>
+      <td>the living room was pure camp起居室是纯粹的营地</td>
+      <td>[campy]</td>
+      <td></td>
+      <td>[staleness, triteness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>kæmp</td>
+      <td></td>
+      <td></td>
+      <td>temporary lodgings in the country for travelers or vacationers在该国为旅行者和度假者提供临时住宿</td>
+      <td>level ground is best for parking and camp areas平地最适合停车场和营地</td>
+      <td></td>
+      <td></td>
+      <td>[lodging, living accommodations, housing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>camp</th>
+      <td>amp</td>
+      <td>4.66</td>
+      <td>adj</td>
+      <td>kæmp</td>
+      <td>['campy'], similarTo:['tasteless']</td>
+      <td></td>
+      <td>providing sophisticated amusement by virtue of having artificially (and vulgarly) mannered or banal or sentimental qualities通过人为（和粗俗）的礼貌或平庸或感伤的品质提供复杂的娱乐</td>
+      <td>they played up the silliness of their roles for camp effect他们为营地效应扮演了愚蠢的角色campy Hollywood musicals of the 1940's1940年代的好莱坞音乐剧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lamp</th>
+      <td>amp</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>læmp</td>
+      <td></td>
+      <td></td>
+      <td>an artificial source of visible illumination人造可见光源</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[source of illumination]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lamp</th>
+      <td>amp</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>læmp</td>
+      <td></td>
+      <td></td>
+      <td>a piece of furniture holding one or more electric light bulbs一件装有一个或多个电灯泡的家具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[furniture, piece of furniture, article of furniture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>damp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>dæmp</td>
+      <td>['break', 'dampen', 'soften', 'weaken']</td>
+      <td></td>
+      <td>lessen in force or effect减少力量或效果</td>
+      <td></td>
+      <td>[damper]</td>
+      <td></td>
+      <td>[blunt, deaden]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>damp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>dæmp</td>
+      <td>['dampen', 'dull', 'muffle', 'mute', 'tone down']</td>
+      <td></td>
+      <td>deaden (a sound or noise), especially by wrappingdeaden（声音或噪音），特别是通过包裹</td>
+      <td></td>
+      <td>[damper]</td>
+      <td></td>
+      <td>[soften]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>damp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>dæmp</td>
+      <td>['dampen', 'deaden']</td>
+      <td></td>
+      <td>make vague or obscure or make (an image) less visible使模糊或模糊或使（图像）不那么明显</td>
+      <td></td>
+      <td>[damper]</td>
+      <td></td>
+      <td>[dampen, weaken, break, soften]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>damp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>dæmp</td>
+      <td></td>
+      <td></td>
+      <td>restrain or discourage抑制或劝阻</td>
+      <td>the sudden bad news damped the joyous atmosphere突然的坏消息抑制了欢乐的气氛</td>
+      <td>[damper]</td>
+      <td></td>
+      <td>[check, hold, hold in, moderate, contain, curb, control]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>damp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>dæmp</td>
+      <td>['dampness', 'moistness']</td>
+      <td></td>
+      <td>a slight wetness轻微的湿润</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wetness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>damp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>adj</td>
+      <td>dæmp</td>
+      <td>['dampish', 'moist'], similarTo:['wet']</td>
+      <td></td>
+      <td>slightly wet稍湿</td>
+      <td>clothes damp with perspiration衣服潮湿的汗水</td>
+      <td>[dampness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>ræmp</td>
+      <td>['rage', 'storm']</td>
+      <td></td>
+      <td>behave violently, as if in state of a great anger表现得很暴力，仿佛处于极度愤怒的状态</td>
+      <td></td>
+      <td>[rampant, rampage]</td>
+      <td></td>
+      <td>[act, do, behave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>ræmp</td>
+      <td></td>
+      <td></td>
+      <td>be rampant猖獗</td>
+      <td>the lion is rampant in this heraldic depiction狮子在这种纹章描写中猖獗</td>
+      <td>[rampant]</td>
+      <td></td>
+      <td>[pose, sit, model, posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>ræmp</td>
+      <td></td>
+      <td></td>
+      <td>creep up -- used especially of plants蠕动 - 特别是植物</td>
+      <td>The roses ramped over the wall玫瑰花在墙上翻过来</td>
+      <td></td>
+      <td></td>
+      <td>[go up, mount, climb up, climb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>ræmp</td>
+      <td></td>
+      <td></td>
+      <td>furnish with a ramp提供坡道</td>
+      <td>The ramped auditorium倾斜的礼堂</td>
+      <td></td>
+      <td></td>
+      <td>[supply, furnish, provide, render]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>ræmp</td>
+      <td></td>
+      <td></td>
+      <td>stand with arms or forelegs raised, as if menacing站立时双臂或前肢抬起，好像很危险</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stand, stand up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>ræmp</td>
+      <td>['allium tricoccum', 'wild leek']</td>
+      <td></td>
+      <td>North American perennial having a slender bulb and whitish flowers北美多年生植物，有一个细长的球茎和白色的花朵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alliaceous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>ræmp</td>
+      <td>['incline']</td>
+      <td></td>
+      <td>an inclined surface connecting two levels连接两层的倾斜表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inclined plane]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ramp</th>
+      <td>amp</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>ræmp</td>
+      <td></td>
+      <td></td>
+      <td>a movable staircase that passengers use to board or leave an aircraft乘客用来登机或离开飞机的可移动楼梯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[staircase, stairway]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vamp</th>
+      <td>amp</td>
+      <td>2.43</td>
+      <td>ver</td>
+      <td>væmp</td>
+      <td>['revamp']</td>
+      <td></td>
+      <td>provide (a shoe) with a new vamp为（鞋子）提供一个新的鞋面</td>
+      <td>revamp my old boots改造我的旧靴子</td>
+      <td></td>
+      <td></td>
+      <td>[repair, fix, doctor, restore, furbish up, touch on, bushel, mend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vamp</th>
+      <td>amp</td>
+      <td>2.43</td>
+      <td>ver</td>
+      <td>væmp</td>
+      <td>['vamp up']</td>
+      <td></td>
+      <td>piece (something old) with a new part片断（旧的）带有新的部分</td>
+      <td>vamp up an old speech发表一篇陈旧的演讲</td>
+      <td></td>
+      <td></td>
+      <td>[patch, piece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vamp</th>
+      <td>amp</td>
+      <td>2.43</td>
+      <td>ver</td>
+      <td>væmp</td>
+      <td>['vamp up']</td>
+      <td></td>
+      <td>make up化妆</td>
+      <td>vamp up an excuse for not attending the meeting为不参加会议找借口</td>
+      <td></td>
+      <td></td>
+      <td>[fabricate, cook up, invent, make up, manufacture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vamp</th>
+      <td>amp</td>
+      <td>2.43</td>
+      <td>ver</td>
+      <td>væmp</td>
+      <td></td>
+      <td></td>
+      <td>act seductively with (someone)与（某人）诱惑行事</td>
+      <td></td>
+      <td>[vamper]</td>
+      <td></td>
+      <td>[flirt, mash, butterfly, chat up, coquet, coquette, dally, romance, philander]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vamp</th>
+      <td>amp</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>væmp</td>
+      <td>['coquette', 'flirt', 'minx', 'prickteaser', 'tease', 'vamper']</td>
+      <td></td>
+      <td>a seductive woman who uses her sex appeal to exploit men一个诱人的女人利用她的性吸引力来剥削男人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[woman, adult female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vamp</th>
+      <td>amp</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>væmp</td>
+      <td></td>
+      <td></td>
+      <td>an improvised musical accompaniment一个即兴的音乐伴奏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accompaniment, backup, musical accompaniment, support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vamp</th>
+      <td>amp</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>væmp</td>
+      <td></td>
+      <td></td>
+      <td>piece of leather forming the front part of the upper of a shoe一块皮革，形成鞋面的前部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of leather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tamp</th>
+      <td>amp</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>tæmp</td>
+      <td>['pack', 'tamp down']</td>
+      <td></td>
+      <td>press down tightly紧紧地按下</td>
+      <td>tamp the coffee grinds in the container to make espresso捣实容器中的咖啡研磨制作浓缩咖啡</td>
+      <td>[tamper]</td>
+      <td></td>
+      <td>[compact, compress, pack together]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tamp</th>
+      <td>amp</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>tæmp</td>
+      <td>['tamper', 'tamping bar']</td>
+      <td></td>
+      <td>a tool for tamping (e.g., for tamping tobacco into a pipe bowl or a charge into a drill hole etc.)用于捣固的工具（例如，用于将烟草捣实到管碗中或者装入钻孔中等）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,1490 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['both', 'shot', 'lots', 'spot', 'plot', 'knot', 'otis', 'slot', 'moth', 'scot', 'snot', 'trot', 'clot', 'goth', 'blot', 'mott', 'grot', 'swot']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>both</th>
+      <td>ot</td>
+      <td>5.47</td>
+      <td>adj</td>
+      <td>boʊθ</td>
+      <td>, similarTo:['some']</td>
+      <td></td>
+      <td>(used with count nouns) two considered together; the two（与计数名词一起使用）两个一起考虑;他们俩</td>
+      <td>both girls are pretty两个女孩都很漂亮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['dead reckoning', 'guess', 'guessing', 'guesswork']</td>
+      <td></td>
+      <td>an estimate based on little or no information基于很少或没有信息的估计</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[estimation, approximation, estimate, idea]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['pellet']</td>
+      <td></td>
+      <td>a solid missile discharged from a firearm从枪支中释放的固体导弹</td>
+      <td>the shot buzzed past his ear镜头在他耳边嗡嗡作响</td>
+      <td></td>
+      <td></td>
+      <td>[missile, projectile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['shooter']</td>
+      <td></td>
+      <td>a person who shoots (usually with respect to their ability to shoot)射击的人（通常是他们的射击能力）</td>
+      <td>he is a crack shot他是个疯子</td>
+      <td></td>
+      <td></td>
+      <td>[expert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['snap', 'snapshot']</td>
+      <td></td>
+      <td>an informal photograph; usually made with a small hand-held camera非正式照片;通常用小型手持相机制作</td>
+      <td>my snapshots haven't been developed yet我的快照尚未开发he tried to get unposed shots of his friends他试图让他的朋友们不加掩饰</td>
+      <td></td>
+      <td></td>
+      <td>[exposure, picture, pic, photograph, photo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['barb', 'dig', 'gibe', 'jibe', 'shaft', 'slam']</td>
+      <td></td>
+      <td>an aggressive remark directed at a person like a missile and intended to have a telling effect针对像导弹这样的人的激进言论，旨在产生明显的效果</td>
+      <td>his parting shot was `drop dead'他的离别射击是“死了”</td>
+      <td></td>
+      <td></td>
+      <td>[remark, comment, input]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['crack']</td>
+      <td></td>
+      <td>a chance to do something有机会做某事</td>
+      <td>he wanted a shot at the champion他想要一个射门冠军</td>
+      <td></td>
+      <td></td>
+      <td>[opportunity, chance]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['blastoff']</td>
+      <td></td>
+      <td>the launching of a missile or spacecraft to a specified destination向指定目的地发射导弹或航天器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rocket firing, rocket launching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['scene']</td>
+      <td></td>
+      <td>a consecutive series of pictures that constitutes a unit of action in a film连续的一系列图片，构成了电影中的一个行动单位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[photograph, picture, photo, exposure, pic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['stroke']</td>
+      <td></td>
+      <td>(sports) the act of swinging or striking at a ball with a club or racket or bat or cue or hand（运动）用球杆或球拍或球棒或球杆或手挥动或击打球的动作</td>
+      <td>a good shot requires good balance and tempo好的投篮需要良好的平衡和节奏he left me an almost impossible shot他给我留下了几乎不可能的一击</td>
+      <td></td>
+      <td></td>
+      <td>[play, maneuver, manoeuvre]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['shooting']</td>
+      <td></td>
+      <td>the act of firing a projectile发射射弹的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[propulsion, actuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['stab']</td>
+      <td></td>
+      <td>informal words for any attempt or effort任何企图或努力的非正式词汇</td>
+      <td>he gave it his best shot他给了他最好的一击</td>
+      <td></td>
+      <td></td>
+      <td>[endeavor, attempt, endeavour, try, effort]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['injection']</td>
+      <td></td>
+      <td>the act of putting a liquid into the body by means of a syringe通过注射器将液体注入体内的行为</td>
+      <td>the nurse gave him a flu shot护士给了他流感疫苗</td>
+      <td></td>
+      <td></td>
+      <td>[medical aid, medical care]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td>['nip']</td>
+      <td></td>
+      <td>a small drink of liquor一小杯酒</td>
+      <td>he poured a shot of whiskey他倒了一杯威士忌</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td></td>
+      <td></td>
+      <td>a blow hard enough to cause injury一击足以造成伤害</td>
+      <td>he is still recovering from a shot to his leg他仍然从一次射击恢复到他的腿I caught him with a solid shot to the chin我抓住了他的下巴</td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td></td>
+      <td></td>
+      <td>an attempt to score in a game试图在比赛中得分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[try, effort, endeavor, attempt, endeavour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td></td>
+      <td></td>
+      <td>an explosive charge used in blasting用于爆破的炸药</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[charge, explosive charge, bursting charge, burster]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>nou</td>
+      <td>ʃɑt</td>
+      <td></td>
+      <td></td>
+      <td>sports equipment consisting of a heavy metal ball used in the shot put运动器材由铅球中使用的重金属球组成</td>
+      <td>he trained at putting the shot他接受了射击训练</td>
+      <td></td>
+      <td></td>
+      <td>[sports equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shot</th>
+      <td>ot</td>
+      <td>5.26</td>
+      <td>adj</td>
+      <td>ʃɑt</td>
+      <td>['changeable', 'chatoyant', 'iridescent'], similarTo:['colourful', 'colorful']</td>
+      <td></td>
+      <td>varying in color when seen in different lights or from different angles当在不同的光线或不同的角度看时，颜色会有所不同</td>
+      <td>chatoyant (or shot) silkchatoyant（或射击）丝绸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lots</th>
+      <td>ot</td>
+      <td>4.87</td>
+      <td>nou</td>
+      <td>lɑts</td>
+      <td>['dozens', 'gobs', 'heaps', 'lashings', 'loads', 'oodles', 'piles', 'rafts', 'scads', 'scores', 'slews', 'stacks', 'tons', 'wads']</td>
+      <td></td>
+      <td>a large number or amount大量或数量</td>
+      <td>made lots of new friends结交了很多新朋友</td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lots</th>
+      <td>ot</td>
+      <td>4.87</td>
+      <td>adv</td>
+      <td>lɑts</td>
+      <td>['a good deal', 'a great deal', 'a lot', 'much', 'very much']</td>
+      <td></td>
+      <td>to a very great degree or extent在很大程度上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>spɑt</td>
+      <td>['discern', 'distinguish', 'make out', 'pick out', 'recognise', 'recognize', 'tell apart']</td>
+      <td></td>
+      <td>detect with the senses用感官检测</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>spɑt</td>
+      <td>['blob', 'blot', 'fleck']</td>
+      <td></td>
+      <td>make a spot or mark onto制作一个地方或标记</td>
+      <td>The wine spotted the tablecloth葡萄酒发现了桌布</td>
+      <td>[spotting]</td>
+      <td>[stain]</td>
+      <td>[change surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>spɑt</td>
+      <td>['descry', 'espy', 'spy']</td>
+      <td></td>
+      <td>catch sight of看到了</td>
+      <td></td>
+      <td>[spotting, spotter]</td>
+      <td></td>
+      <td>[spy, sight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>spɑt</td>
+      <td>['blemish']</td>
+      <td></td>
+      <td>mar or impair with a flaw损害或损害</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[begrime, dirty, grime, bemire, colly, soil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>spɑt</td>
+      <td></td>
+      <td></td>
+      <td>become spotted变得发现</td>
+      <td>This dress spots quickly这件衣服很快发现</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>spɑt</td>
+      <td></td>
+      <td></td>
+      <td>mark with a spot or spots so as to allow easy recognition用斑点或斑点标记以便于识别</td>
+      <td>spot the areas that one should clearly identify发现一个人应该清楚识别的区域</td>
+      <td>[spotter]</td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['berth', 'billet', 'office', 'place', 'position', 'post', 'situation']</td>
+      <td></td>
+      <td>a job in an organization组织中的工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line, line of work, business, occupation, job]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['blot', 'smear', 'smirch', 'stain']</td>
+      <td></td>
+      <td>an act that brings discredit to the person who does it这种行为会给那些做这件事的人带来信誉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[error, mistake, fault]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['dapple', 'fleck', 'maculation', 'patch', 'speckle']</td>
+      <td></td>
+      <td>a small contrasting part of something某事物的一个小对比部分</td>
+      <td>a bald spot秃头a leopard's spots一只豹子的斑点</td>
+      <td></td>
+      <td></td>
+      <td>[marking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['spotlight']</td>
+      <td></td>
+      <td>a lamp that produces a strong beam of light to illuminate a restricted area; used to focus attention of a stage performer一盏产生强光束以照亮禁区的灯;过去常常关注舞台表演者的注意力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lamp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['place', 'topographic point']</td>
+      <td></td>
+      <td>a point located with respect to surface features of some region相对于某些区域的表面特征定位的点</td>
+      <td>a bright spot on a planet一个星球上的一个亮点</td>
+      <td></td>
+      <td></td>
+      <td>[point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['pip']</td>
+      <td></td>
+      <td>a mark on a die or on a playing card (shape depending on the suit)骰子或扑克牌上的标记（形状取决于套装）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mark, marker, marking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['point']</td>
+      <td></td>
+      <td>an outstanding characteristic一个突出的特点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[characteristic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['bit']</td>
+      <td></td>
+      <td>a small piece or quantity of something一小块或一小部分东西</td>
+      <td>a spot of tea一点茶</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite quantity, small indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['touch']</td>
+      <td></td>
+      <td>a slight attack of illness轻微的疾病袭击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td>['blot', 'daub', 'slur', 'smear', 'smirch', 'smudge']</td>
+      <td></td>
+      <td>a blemish made by dirt由污垢制成的瑕疵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mar, defect, blemish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td></td>
+      <td></td>
+      <td>a business establishment for entertainment娱乐的商业机构</td>
+      <td>night spot夜景</td>
+      <td></td>
+      <td></td>
+      <td>[business establishment, place of business]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td></td>
+      <td></td>
+      <td>a playing card with a specified number of pips on it to indicate its value一张具有指定数量点数的扑克牌，以表明其价值</td>
+      <td>an eight-spot八点</td>
+      <td></td>
+      <td></td>
+      <td>[playing card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td></td>
+      <td></td>
+      <td>a section of an entertainment that is assigned to a specific performer or performance分配给特定表演者或表演的娱乐部分</td>
+      <td>they changed his spot on the program他们改变了他对该计划的看法</td>
+      <td></td>
+      <td></td>
+      <td>[subdivision, section]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spot</th>
+      <td>ot</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>spɑt</td>
+      <td></td>
+      <td></td>
+      <td>a short section or illustration (as between radio or tv programs or in a magazine) that is often used for advertising通常用于广告的简短部分或插图（在广播或电视节目之间或在杂志中）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[section, subdivision]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>plɑt</td>
+      <td>['plat']</td>
+      <td></td>
+      <td>make a plat of制作平台</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[map]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>plɑt</td>
+      <td>['diagram']</td>
+      <td></td>
+      <td>make a schematic or technical drawing of that shows interactions among variables or how something is constructed制作一个示意图或技术图，显示变量之间的相互作用或如何构造某些东西</td>
+      <td></td>
+      <td>[plotter]</td>
+      <td></td>
+      <td>[draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>plɑt</td>
+      <td></td>
+      <td></td>
+      <td>devise the sequence of events in (a literary work or a play, movie, or ballet)设计（文学作品或戏剧，电影或芭蕾舞）中的事件顺序</td>
+      <td>the writer is plotting a new novel作家正在策划一部新小说</td>
+      <td></td>
+      <td></td>
+      <td>[plan, project, contrive, design]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>plɑt</td>
+      <td></td>
+      <td></td>
+      <td>plan secretly, usually something illegal秘密计划，通常是违法的</td>
+      <td>They plotted the overthrow of the government他们策划推翻了政府</td>
+      <td>[plotter]</td>
+      <td></td>
+      <td>[plan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>plɑt</td>
+      <td>['game', 'secret plan']</td>
+      <td></td>
+      <td>a secret scheme to do something (especially something underhand or illegal)做某事的秘密计划（特别是低手或非法的事情）</td>
+      <td>they concocted a plot to discredit the governor他们炮制了一个阴谋诋毁州长</td>
+      <td></td>
+      <td></td>
+      <td>[scheme, strategy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>plɑt</td>
+      <td>['patch', 'plot of ground', 'plot of land']</td>
+      <td></td>
+      <td>a small area of ground covered by specific vegetation由特定植被覆盖的一小块地面</td>
+      <td>a bean plot豆豆图</td>
+      <td></td>
+      <td></td>
+      <td>[tract, piece of land, parcel, piece of ground, parcel of land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>plɑt</td>
+      <td></td>
+      <td></td>
+      <td>a chart or graph showing the movements or progress of an object显示对象移动或进度的图表或图形</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[graph, chart]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plot</th>
+      <td>ot</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>plɑt</td>
+      <td></td>
+      <td></td>
+      <td>the story that is told in a novel or play or movie etc.在小说，戏剧或电影等中讲述的故事。</td>
+      <td>the characters were well drawn but the plot was banal人物画得很好，但剧情很平庸</td>
+      <td></td>
+      <td></td>
+      <td>[story]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>nɑt</td>
+      <td>['ravel', 'tangle']</td>
+      <td>[unknot]</td>
+      <td>tangle or complicate纠结或复杂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lace, intertwine, entwine, enlace, twine, interlace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>nɑt</td>
+      <td></td>
+      <td></td>
+      <td>make into knots; make knots out of结成结;打结</td>
+      <td>She knotted her fingers她打了她的手指</td>
+      <td></td>
+      <td></td>
+      <td>[create from raw stuff, create from raw material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>nɑt</td>
+      <td></td>
+      <td></td>
+      <td>tie or fasten into a knot打结或系结</td>
+      <td>knot the shoelaces打结鞋带</td>
+      <td></td>
+      <td></td>
+      <td>[tie, bind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>nɑt</td>
+      <td>['burl', 'slub']</td>
+      <td></td>
+      <td>soft lump or unevenness in a yarn; either an imperfection or created by design纱线中的软块或不均匀;不完美或由设计创造</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roughness, raggedness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>nɑt</td>
+      <td>['gnarl']</td>
+      <td></td>
+      <td>something twisted and tight and swollen扭曲，紧绷，肿胀的东西</td>
+      <td>their muscles stood out in knots他们的肌肉在结中脱颖而出his stomach was in knots他的胃结了</td>
+      <td>[knotty]</td>
+      <td></td>
+      <td>[distortion, distorted shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>nɑt</td>
+      <td>['calidris canutus', 'grayback', 'greyback']</td>
+      <td></td>
+      <td>a sandpiper that breeds in the Arctic and winters in the southern hemisphere一种在北极繁殖的鹬和南半球的冬季</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sandpiper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>nɑt</td>
+      <td></td>
+      <td></td>
+      <td>a hard cross-grained round piece of wood in a board where a branch emerged在一块树枝上出现的一块坚硬的交叉纹理的圆木片</td>
+      <td>the saw buckled when it hit a knot当锯打结时，锯子会弯曲</td>
+      <td></td>
+      <td></td>
+      <td>[wood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>nɑt</td>
+      <td></td>
+      <td></td>
+      <td>any of various fastenings formed by looping and tying a rope (or cord) upon itself or to another rope or to another object通过将绳索（或绳索）环绕并系在自身或另一根绳索或另一物体上而形成的各种紧固件中的任何一种</td>
+      <td></td>
+      <td>[knotty]</td>
+      <td></td>
+      <td>[fastener, fixing, holdfast, fastening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>nɑt</td>
+      <td></td>
+      <td></td>
+      <td>a tight cluster of people or things一群紧密的人或事</td>
+      <td>a small knot of women listened to his sermon一小撮女人听了他的讲道the bird had a knot of feathers forming a crest这只鸟有一簇羽毛形成一个嵴</td>
+      <td></td>
+      <td></td>
+      <td>[clump, clustering, cluster, bunch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knot</th>
+      <td>ot</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>nɑt</td>
+      <td></td>
+      <td></td>
+      <td>(of ships and wind) a unit of speed equal to one nautical mile per hour or about 1.15 statute miles per hour（船舶和风）一个速度单位，每小时一海里或每小时约1.15法定里程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>otis</th>
+      <td>ot</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>'oʊtɪs</td>
+      <td>['elisha graves otis']</td>
+      <td></td>
+      <td>United States inventor who manufactured the first elevator with a safety device (1811-1861)制造第一台带安全装置的电梯的美国发明家（1811-1861）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>otis</th>
+      <td>ot</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>'oʊtɪs</td>
+      <td>['genus otis']</td>
+      <td></td>
+      <td>type genus of the Otididae: European bustardOtididae类型：欧洲bust ..</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bird genus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>slɑt</td>
+      <td></td>
+      <td></td>
+      <td>assign a time slot分配一个时隙</td>
+      <td>slot a television program插入一个电视节目</td>
+      <td></td>
+      <td></td>
+      <td>[schedule]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>slɑt</td>
+      <td>['one-armed bandit']</td>
+      <td></td>
+      <td>a slot machine that is used for gambling用于赌博的老虎机</td>
+      <td>they spend hours and hours just playing the slots他们花了几个小时来玩老虎机</td>
+      <td></td>
+      <td></td>
+      <td>[slot machine, coin machine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>slɑt</td>
+      <td>['expansion slot']</td>
+      <td></td>
+      <td>(computer) a socket in a microcomputer that will accept a plug-in circuit board（计算机）微型计算机中的插座，它将接受插入式电路板</td>
+      <td>the PC had three slots for additional memoryPC有三个插槽用于增加内存</td>
+      <td></td>
+      <td></td>
+      <td>[receptacle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>slɑt</td>
+      <td>['time slot']</td>
+      <td></td>
+      <td>a time assigned on a schedule or agenda按时间表或议程分配的时间</td>
+      <td>the TV program has a new time slot电视节目有一个新的时段an aircraft landing slot飞机着陆槽</td>
+      <td></td>
+      <td></td>
+      <td>[interval, time interval]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>slɑt</td>
+      <td></td>
+      <td></td>
+      <td>a position in a grammatical linguistic construction in which a variety of alternative units are interchangeable语法语言结构中的一个位置，其中各种替代单元是可互换的</td>
+      <td>he developed a version of slot grammar他开发了一个插槽语法版本</td>
+      <td></td>
+      <td></td>
+      <td>[position, spatial relation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>slɑt</td>
+      <td></td>
+      <td></td>
+      <td>a position in a hierarchy or organization层次结构或组织中的位置</td>
+      <td>Bob Dylan occupied the top slot for several weeks鲍勃迪伦占据了几个星期的顶级位置she beat some tough competition for the number one slot她在头号位置上打败了一些激烈的比赛</td>
+      <td></td>
+      <td></td>
+      <td>[position, status]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>slɑt</td>
+      <td></td>
+      <td></td>
+      <td>a small slit (as for inserting a coin or depositing mail)一个小缝（如插入硬币或存放邮件）</td>
+      <td>he put a quarter in the slot他把四分之一放在了插槽中</td>
+      <td></td>
+      <td></td>
+      <td>[slit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slot</th>
+      <td>ot</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>slɑt</td>
+      <td></td>
+      <td></td>
+      <td>the trail of an animal (especially a deer)动物的踪迹（特别是鹿）</td>
+      <td>he followed the deer's slot over the soft turf to the edge of the trees他沿着柔软的草皮上的鹿的插槽走到了树的边缘</td>
+      <td></td>
+      <td></td>
+      <td>[trail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moth</th>
+      <td>ot</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>mɔθ</td>
+      <td></td>
+      <td></td>
+      <td>typically crepuscular or nocturnal insect having a stout body and feathery or hairlike antennae典型的黄昏或夜间昆虫，具有粗壮的身体和羽状或刺毛的触角</td>
+      <td></td>
+      <td>[mothy]</td>
+      <td></td>
+      <td>[lepidopterous insect, lepidopteran, lepidopteron]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scot</th>
+      <td>ot</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>skɑt</td>
+      <td>['scotchman', 'scotsman']</td>
+      <td></td>
+      <td>a native or inhabitant of Scotland苏格兰的本地人或居民</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[european]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snot</th>
+      <td>ot</td>
+      <td>3.36</td>
+      <td>nou</td>
+      <td>snɑt</td>
+      <td>['prig', 'snob', 'snoot']</td>
+      <td></td>
+      <td>a person regarded as arrogant and annoying被视为傲慢和烦人的人</td>
+      <td></td>
+      <td>[snotty]</td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snot</th>
+      <td>ot</td>
+      <td>3.36</td>
+      <td>nou</td>
+      <td>snɑt</td>
+      <td></td>
+      <td></td>
+      <td>nasal mucus鼻涕</td>
+      <td></td>
+      <td>[snotty]</td>
+      <td></td>
+      <td>[mucous secretion, mucus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trot</th>
+      <td>ot</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>trɑt</td>
+      <td>['clip', 'jog']</td>
+      <td></td>
+      <td>run at a moderately swift pace以适度的速度跑步</td>
+      <td></td>
+      <td>[trotter]</td>
+      <td></td>
+      <td>[run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trot</th>
+      <td>ot</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>trɑt</td>
+      <td></td>
+      <td></td>
+      <td>cause to trot导致小跑</td>
+      <td>She trotted the horse home她把马赶回家</td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trot</th>
+      <td>ot</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>trɑt</td>
+      <td></td>
+      <td></td>
+      <td>ride at a trot骑小跑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ride horseback]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trot</th>
+      <td>ot</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>trɑt</td>
+      <td>['jog', 'lope']</td>
+      <td></td>
+      <td>a slow pace of running跑步节奏缓慢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[locomotion, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trot</th>
+      <td>ot</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>trɑt</td>
+      <td>['crib', 'pony']</td>
+      <td></td>
+      <td>a literal translation used in studying a foreign language (often used illicitly)用于学习外语的字面翻译（通常非法使用）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[translation, rendering, interlingual rendition, version]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trot</th>
+      <td>ot</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>trɑt</td>
+      <td>['trotskyist', 'trotskyite']</td>
+      <td></td>
+      <td>radicals who support Trotsky's theory that socialism must be established throughout the world by continuing revolution支持托洛茨基理论的激进派，即必须通过持续革命在全世界建立社会主义</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radical]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trot</th>
+      <td>ot</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>trɑt</td>
+      <td></td>
+      <td></td>
+      <td>a gait faster than a walk; diagonally opposite legs strike the ground together步态快于步行;对角线对立的腿一起撞击地面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clot</th>
+      <td>ot</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>klɑt</td>
+      <td>['clabber', 'curdle']</td>
+      <td></td>
+      <td>turn into curds变成凝乳</td>
+      <td></td>
+      <td>[clotting]</td>
+      <td></td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clot</th>
+      <td>ot</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>klɑt</td>
+      <td>['coagulate']</td>
+      <td></td>
+      <td>change from a liquid to a thickened or solid state从液体变为增稠或固态</td>
+      <td></td>
+      <td>[clotting]</td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clot</th>
+      <td>ot</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>klɑt</td>
+      <td>['coagulate']</td>
+      <td></td>
+      <td>cause to change from a liquid to a solid or thickened state导致从液体变为固体或增稠状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clot</th>
+      <td>ot</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>klɑt</td>
+      <td>['clog']</td>
+      <td></td>
+      <td>coalesce or unite in a mass团结或团结</td>
+      <td>Blood clots血块</td>
+      <td>[clotting]</td>
+      <td></td>
+      <td>[coalesce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clot</th>
+      <td>ot</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>klɑt</td>
+      <td>['coagulum']</td>
+      <td></td>
+      <td>a lump of material formed from the content of a liquid由液体内容物形成的块状物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lump, ball, clod, clump, chunk, glob]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goth</th>
+      <td>ot</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>ɡɑθ</td>
+      <td>['barbarian', 'boor', 'churl', 'peasant', 'tike', 'tyke']</td>
+      <td></td>
+      <td>a crude uncouth ill-bred person lacking culture or refinement一个缺乏文化或精致的粗俗粗野的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goth</th>
+      <td>ot</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>ɡɑθ</td>
+      <td></td>
+      <td></td>
+      <td>one of the Teutonic people who invaded the Roman Empire in the 3rd to 5th centuries在3至5世纪入侵罗马帝国的条顿人之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[teuton]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blot</th>
+      <td>ot</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>blɑt</td>
+      <td>['blob', 'fleck', 'spot']</td>
+      <td></td>
+      <td>make a spot or mark onto制作一个地方或标记</td>
+      <td></td>
+      <td></td>
+      <td>[stain]</td>
+      <td>[change surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blot</th>
+      <td>ot</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>blɑt</td>
+      <td></td>
+      <td></td>
+      <td>dry (ink) with blotting paper用吸墨纸擦干（墨水）</td>
+      <td></td>
+      <td>[blotter]</td>
+      <td></td>
+      <td>[sop up, suck, draw, imbibe, suck up, take up, soak up, absorb, take in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blot</th>
+      <td>ot</td>
+      <td>2.74</td>
+      <td>nou</td>
+      <td>blɑt</td>
+      <td>['smear', 'smirch', 'spot', 'stain']</td>
+      <td></td>
+      <td>an act that brings discredit to the person who does it这种行为会给那些做这件事的人带来信誉</td>
+      <td>he made a huge blot on his copybook他在他的字帖上留下了很大的污点</td>
+      <td></td>
+      <td></td>
+      <td>[fault, mistake, error]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blot</th>
+      <td>ot</td>
+      <td>2.74</td>
+      <td>nou</td>
+      <td>blɑt</td>
+      <td>['daub', 'slur', 'smear', 'smirch', 'smudge', 'spot']</td>
+      <td></td>
+      <td>a blemish made by dirt由污垢制成的瑕疵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blemish, mar, defect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mott</th>
+      <td>ot</td>
+      <td>2.60</td>
+      <td>nou</td>
+      <td>mɑt</td>
+      <td>['lucretia coffin mott']</td>
+      <td></td>
+      <td>United States feminist and suffragist (1793-1880)美国女权主义者和女权主义者（1793-1880）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grot</th>
+      <td>ot</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>grɑt</td>
+      <td>['grotto']</td>
+      <td></td>
+      <td>a small cave (usually with attractive features)一个小洞穴（通常具有吸引力的特征）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swot</th>
+      <td>ot</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>swɑt</td>
+      <td>['bone', 'bone up', 'cram', 'drum', 'get up', 'grind away', 'mug up', 'swot up']</td>
+      <td></td>
+      <td>study intensively, as before an exam像考试前一样深入学习</td>
+      <td></td>
+      <td></td>
+      <td>[cram]</td>
+      <td>[hit the books, study]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swot</th>
+      <td>ot</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>swɑt</td>
+      <td>['dweeb', 'grind', 'nerd', 'wonk']</td>
+      <td></td>
+      <td>an insignificant student who is ridiculed as being affected or boringly studious一个微不足道的学生，被嘲笑为受影响或乏味的学习</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assimilator, learner, scholar]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

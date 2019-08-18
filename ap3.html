@@ -1,0 +1,1520 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['map', 'cap', 'tap', 'lap', 'rap', 'nap', 'gap', 'pap', 'sap', 'yap', 'zap', 'apt', 'jap', 'hap', 'apr', 'bap']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>mæp</td>
+      <td>['map out']</td>
+      <td></td>
+      <td>plan, delineate, or arrange in detail计划，描绘或安排详细</td>
+      <td>map one's future绘制一个人的未来</td>
+      <td></td>
+      <td></td>
+      <td>[design, plan, project, contrive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>mæp</td>
+      <td>['represent']</td>
+      <td></td>
+      <td>to establish a mapping (of mathematical elements or sets)建立映射（数学元素或集合）</td>
+      <td></td>
+      <td>[mapping]</td>
+      <td></td>
+      <td>[permute, commute, transpose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>mæp</td>
+      <td></td>
+      <td></td>
+      <td>depict as if on a map如同在地图上描绘一样</td>
+      <td>sorrow was mapped on the mother's face悲伤映在母亲的脸上</td>
+      <td></td>
+      <td></td>
+      <td>[depict, show, render, picture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>mæp</td>
+      <td></td>
+      <td></td>
+      <td>explore or survey for the purpose of making a map为了制作地图而进行探索或调查</td>
+      <td>We haven't even begun to map the many galaxies that we know exist我们甚至还没有开始绘制我们所知道的众多星系</td>
+      <td></td>
+      <td></td>
+      <td>[explore]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>mæp</td>
+      <td></td>
+      <td></td>
+      <td>locate within a specific region of a chromosome in relation to known DNA or gene sequences与已知的DNA或基因序列相关地定位在染色体的特定区域内</td>
+      <td>map the genes绘制基因图谱</td>
+      <td>[mapping]</td>
+      <td></td>
+      <td>[situate, locate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>ver</td>
+      <td>mæp</td>
+      <td></td>
+      <td></td>
+      <td>make a map of; show or establish the features of details of制作地图;显示或建立细节的特征</td>
+      <td>map the surface of Venus绘制金星表面</td>
+      <td>[mapper]</td>
+      <td></td>
+      <td>[represent, interpret]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>mæp</td>
+      <td>['function', 'mapping', 'mathematical function', 'single-valued function']</td>
+      <td></td>
+      <td>(mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function)（数学）一种数学关系，使得给定集合的每个元素（函数的域）与另一个集合的元素（函数的范围）相关联</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mathematical relation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>map</th>
+      <td>ap</td>
+      <td>4.51</td>
+      <td>nou</td>
+      <td>mæp</td>
+      <td></td>
+      <td></td>
+      <td>a diagrammatic representation of the earth's surface (or part of it)地球表面（或部分表面）的图解表示</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[representation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>kæp</td>
+      <td>['crest']</td>
+      <td></td>
+      <td>lie at the top of躺在顶部</td>
+      <td>Snow capped the mountains雪皑皑山脉</td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>kæp</td>
+      <td></td>
+      <td></td>
+      <td>restrict the number or amount of限制数量或数量</td>
+      <td>We had to cap the number of people we can accept into our club我们不得不限制我们接受进入俱乐部的人数</td>
+      <td></td>
+      <td></td>
+      <td>[circumscribe, confine to, limit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td>['hood']</td>
+      <td></td>
+      <td>a protective covering that is part of a plant作为植物一部分的保护性覆盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover, covering, natural covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td>['capital', 'chapiter']</td>
+      <td></td>
+      <td>the upper part of a column that supports the entablature支柱上部的支柱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[top]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td>['pileus']</td>
+      <td></td>
+      <td>a fruiting structure resembling an umbrella or a cone that forms the top of a stalked fleshy fungus such as a mushroom一种类似伞或锥形的果实结构，形成一种有杆的肉质真菌如蘑菇的顶部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant structure, plant part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td>['detonating device', 'detonator']</td>
+      <td></td>
+      <td>a mechanical or electrical explosive device or a small amount of explosive; can be used to initiate the reaction of a disrupting explosive机械或电气爆炸装置或少量爆炸物;可用于引发破坏性爆炸物的反应</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[explosive device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td>['ceiling', 'roof']</td>
+      <td></td>
+      <td>an upper limit on what is allowed允许的上限</td>
+      <td>they established a cap for prices他们确定了价格上限</td>
+      <td></td>
+      <td></td>
+      <td>[control]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td>['crown', 'crownwork', 'jacket', 'jacket crown']</td>
+      <td></td>
+      <td>(dentistry) dental appliance consisting of an artificial crown for a broken or decayed tooth（牙科）牙科用具，包括用于破损或腐烂牙齿的人造牙冠</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dental appliance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td></td>
+      <td></td>
+      <td>a tight-fitting headdress紧身头饰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[headdress, headgear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td></td>
+      <td></td>
+      <td>a top (as for a bottle)顶部（如瓶子）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[top, cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cap</th>
+      <td>ap</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>kæp</td>
+      <td></td>
+      <td></td>
+      <td>something serving as a cover or protection作为封面或保护的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protective covering, protective cover, protection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td>['exploit']</td>
+      <td></td>
+      <td>draw from; make good use of借鉴善用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[apply, employ, utilize, use, utilise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td>['bug', 'intercept', 'wiretap']</td>
+      <td></td>
+      <td>tap a telephone or telegraph wire to get information点击电话或电报线获取信息</td>
+      <td>The FBI was tapping the phone line of the suspected spy联邦调查局正在窃听可疑间谍的电话线</td>
+      <td>[tapper]</td>
+      <td></td>
+      <td>[eavesdrop, listen in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td>['tapdance']</td>
+      <td></td>
+      <td>dance and make rhythmic clicking sounds by means of metal plates nailed to the sole of the dance shoes通过钉在舞鞋底部的金属板跳舞并发出有节奏的咔哒声</td>
+      <td>Glover tapdances better than anybodyGlover tapdances比任何人都好</td>
+      <td>[tapper]</td>
+      <td></td>
+      <td>[dance, trip the light fantastic, trip the light fantastic toe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td>['beg', 'solicit']</td>
+      <td></td>
+      <td>make a solicitation or entreaty for something; request urgently or persistently为某事做出请求或恳求;迫切或持续地要求</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[request, bespeak, ask for, quest, call for]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td>['knock', 'pink', 'rap']</td>
+      <td></td>
+      <td>make light, repeated taps on a surface在表面上轻轻重复点击</td>
+      <td>he was tapping his fingers on the table impatiently他不耐烦地用手指敲桌子</td>
+      <td>[tapping]</td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td>['tip']</td>
+      <td></td>
+      <td>strike lightly轻轻罢工</td>
+      <td>He tapped me on the shoulder他拍了拍我的肩膀</td>
+      <td>[tapper]</td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>cut a female screw thread with a tap用水龙头切一个内螺纹</td>
+      <td></td>
+      <td>[tapper]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>draw from or dip into to get something从中抽取或汲取东西</td>
+      <td>tap one's memory点击一个人的记忆tap a source of money挖掘资金来源</td>
+      <td></td>
+      <td></td>
+      <td>[draw off, take out, draw, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>draw (liquor) from a tap从水龙头中抽出（酒）</td>
+      <td>tap beer in a bar在酒吧喝啤酒</td>
+      <td>[tapper]</td>
+      <td></td>
+      <td>[take out, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>furnish with a tap or spout, so as to be able to draw liquid from it配有水龙头或壶嘴，以便能够从中抽取液体</td>
+      <td>tap a cask of wine点一桶酒</td>
+      <td>[tapper]</td>
+      <td></td>
+      <td>[render, furnish, provide, supply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>pierce in order to draw a liquid from刺穿以便从中吸取液体</td>
+      <td>tap a maple tree for its syrup点一根枫树的糖浆tap a keg of beer点一桶啤酒</td>
+      <td></td>
+      <td></td>
+      <td>[pierce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>walk with a tapping sound用敲击的声音走路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td>['rap', 'strike']</td>
+      <td></td>
+      <td>a gentle blow轻轻一击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow, bump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td>['pat', 'rap']</td>
+      <td></td>
+      <td>the sound made by a gentle blow轻轻一击所发出的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td>['spigot']</td>
+      <td></td>
+      <td>a plug for a bunghole in a cask一个木桶塞的插头</td>
+      <td></td>
+      <td>[tapster]</td>
+      <td></td>
+      <td>[stopple, plug, stopper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td>['hydrant', 'water faucet', 'water tap']</td>
+      <td></td>
+      <td>a faucet for drawing water from a pipe or cask用于从管道或桶中抽水的水龙头</td>
+      <td></td>
+      <td>[tapster]</td>
+      <td></td>
+      <td>[spigot, plumbing fixture, faucet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td>['wiretap']</td>
+      <td></td>
+      <td>the act of tapping a telephone or telegraph line to get information点击电话或电报线获取信息的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[investigating, investigation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td>['dab', 'pat']</td>
+      <td></td>
+      <td>a light touch or stroke轻触或中风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touching, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>a small metal plate that attaches to the toe or heel of a shoe (as in tap dancing)一个小金属板，附着在鞋子的鞋头或鞋跟上（如踢踏舞）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tap</th>
+      <td>ap</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>tæp</td>
+      <td></td>
+      <td></td>
+      <td>a tool for cutting female (internal) screw threads用于切割内螺纹（内螺纹）的工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>læp</td>
+      <td>['lap up', 'lick']</td>
+      <td></td>
+      <td>take up with the tongue接受舌头</td>
+      <td>The cat lapped up the milk那只猫舔了一下牛奶</td>
+      <td></td>
+      <td></td>
+      <td>[drink, imbibe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>læp</td>
+      <td>['lick']</td>
+      <td></td>
+      <td>pass the tongue over把舌头翻过来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>læp</td>
+      <td>['lave', 'wash']</td>
+      <td></td>
+      <td>wash or flow against洗涤或流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>læp</td>
+      <td>['swish', 'swoosh', 'swosh']</td>
+      <td></td>
+      <td>move with or cause to move with a whistling or hissing sound与啸声或嘶嘶声一起移动或导致移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>læp</td>
+      <td></td>
+      <td></td>
+      <td>lie partly over or alongside of something or of one another部分位于某物或彼此之上或旁边</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td>['lap covering']</td>
+      <td></td>
+      <td>the part of a piece of clothing that covers the thighs一件覆盖大腿的衣服的一部分</td>
+      <td>his lap was covered with food stains他的膝盖上满是食物污渍</td>
+      <td></td>
+      <td></td>
+      <td>[cloth covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td>['lick']</td>
+      <td></td>
+      <td>touching with the tongue用舌头接触</td>
+      <td>the dog's laps were warm and wet狗的圈子温暖湿润</td>
+      <td></td>
+      <td></td>
+      <td>[touching, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td>['overlap']</td>
+      <td></td>
+      <td>a flap that lies over another part一个躺在另一个部位上的皮瓣</td>
+      <td>the lap of the shingles should be at least ten inches带状疱疹应该至少十英寸</td>
+      <td></td>
+      <td></td>
+      <td>[flap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td>['circle', 'circuit']</td>
+      <td></td>
+      <td>movement once around a course在课程周围运动一次</td>
+      <td>he drove an extra lap just for insurance为了保险，他开了一圈</td>
+      <td></td>
+      <td></td>
+      <td>[travel, locomotion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td></td>
+      <td></td>
+      <td>an area of control or responsibility控制或责任领域</td>
+      <td>the job fell right in my lap这份工作落在了我的腿上</td>
+      <td></td>
+      <td></td>
+      <td>[field, arena, orbit, sphere, area, domain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lap</th>
+      <td>ap</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>læp</td>
+      <td></td>
+      <td></td>
+      <td>the upper side of the thighs of a seated person坐着的人的大腿的上侧</td>
+      <td>he picked up the little girl and plopped her down in his lap他捡起那个小女孩，把她放在膝盖上</td>
+      <td></td>
+      <td></td>
+      <td>[thigh]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td>['knock', 'pink', 'tap']</td>
+      <td></td>
+      <td>make light, repeated taps on a surface在表面上轻轻重复点击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td>['knap']</td>
+      <td></td>
+      <td>strike sharply罢工</td>
+      <td>rap him on the knuckles在指关节上说唱他</td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td></td>
+      <td></td>
+      <td>perform rap music说唱音乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[perform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>ræp</td>
+      <td></td>
+      <td></td>
+      <td>talk volubly滔滔不绝地说话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[talk, speak]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td>['belt', 'knock', 'whack', 'whang']</td>
+      <td></td>
+      <td>the act of hitting vigorously大力打击的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td>['strike', 'tap']</td>
+      <td></td>
+      <td>a gentle blow轻轻一击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow, bump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td>['pat', 'tap']</td>
+      <td></td>
+      <td>the sound made by a gentle blow轻轻一击所发出的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td>['blame']</td>
+      <td></td>
+      <td>a reproach for some lapse or misdeed对某些失误或不当行为的责备</td>
+      <td>it was a bum rap这是一个流言蜚语</td>
+      <td></td>
+      <td></td>
+      <td>[reproach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td>['hip-hop', 'rap music']</td>
+      <td></td>
+      <td>genre of African-American music of the 1980s and 1990s in which rhyming lyrics are chanted to a musical accompaniment; several forms of rap have emerged20世纪80年代和90年代的非洲裔美国音乐流派，其中押韵的歌词被吟唱成音乐伴奏;已经出现了几种形式的说唱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[african-american music, black music, popular music, popular music genre]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rap</th>
+      <td>ap</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>ræp</td>
+      <td></td>
+      <td></td>
+      <td>voluble conversation谈话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[conversation]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>nap</th>
+      <td>ap</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>næp</td>
+      <td>['catch a wink', 'catnap']</td>
+      <td></td>
+      <td>take a siesta午睡</td>
+      <td>She naps everyday after lunch for an hour她每天午饭后小睡一小时</td>
+      <td></td>
+      <td></td>
+      <td>[catch some z's, slumber, log z's, sleep, kip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nap</th>
+      <td>ap</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>næp</td>
+      <td>['pile']</td>
+      <td></td>
+      <td>the yarn (as in a rug or velvet or corduroy) that stands up from the weave从编织中站起来的纱线（如在地毯或天鹅绒或灯芯绒中）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[yarn, thread]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nap</th>
+      <td>ap</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>næp</td>
+      <td>['sleep']</td>
+      <td></td>
+      <td>a period of time spent sleeping睡了一段时间</td>
+      <td>there wasn't time for a nap没有时间睡午觉</td>
+      <td></td>
+      <td></td>
+      <td>[period of time, time period, period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nap</th>
+      <td>ap</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>næp</td>
+      <td>['napoleon']</td>
+      <td></td>
+      <td>a card game similar to whist; usually played for stakes类似于惠斯特的纸牌游戏;通常为赌注而玩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cards, card game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nap</th>
+      <td>ap</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>næp</td>
+      <td>['catnap', 'forty winks', 'light sleep', 'short sleep', 'snooze']</td>
+      <td></td>
+      <td>sleeping for a short period of time (usually not in bed)睡了很短的时间（通常不在床上）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sleeping]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nap</th>
+      <td>ap</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>næp</td>
+      <td></td>
+      <td></td>
+      <td>a soft or fuzzy surface texture柔软或模糊的表面纹理</td>
+      <td></td>
+      <td>[nappy]</td>
+      <td></td>
+      <td>[texture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gap</th>
+      <td>ap</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>ɡæp</td>
+      <td>['breach']</td>
+      <td></td>
+      <td>make an opening or gap in开口或差距</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[open, open up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gap</th>
+      <td>ap</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>ɡæp</td>
+      <td>['break', 'disruption', 'interruption']</td>
+      <td></td>
+      <td>an act of delaying or interrupting the continuity延迟或中断连续性的行为</td>
+      <td>there was a gap in his account他的账户中存在差距</td>
+      <td></td>
+      <td></td>
+      <td>[holdup, delay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gap</th>
+      <td>ap</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>ɡæp</td>
+      <td>['opening']</td>
+      <td></td>
+      <td>an open or empty space in or between things事物之间或之间的开放空间</td>
+      <td>the explosion made a gap in the wall爆炸在墙上留下了空隙</td>
+      <td></td>
+      <td></td>
+      <td>[space]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gap</th>
+      <td>ap</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>ɡæp</td>
+      <td>['crack']</td>
+      <td></td>
+      <td>a narrow opening一个狭窄的开口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gap</th>
+      <td>ap</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>ɡæp</td>
+      <td>['spread']</td>
+      <td></td>
+      <td>a conspicuous disparity or difference as between two figures两个数字之间存在明显的差异或差异</td>
+      <td>gap between income and outgo收入和支出之间的差距</td>
+      <td></td>
+      <td></td>
+      <td>[disparity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gap</th>
+      <td>ap</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>ɡæp</td>
+      <td>['col']</td>
+      <td></td>
+      <td>a pass between mountain peaks山峰之间的通行证</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[notch, mountain pass, pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gap</th>
+      <td>ap</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>ɡæp</td>
+      <td></td>
+      <td></td>
+      <td>a difference (especially an unfortunate difference) between two opinions or two views or two situations两种观点或两种观点或两种情况之间的差异（尤其是不幸的差异）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[difference, difference of opinion, dispute, conflict]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pap</th>
+      <td>ap</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>pæp</td>
+      <td>['mamilla', 'mammilla', 'nipple', 'teat', 'tit']</td>
+      <td></td>
+      <td>the small projection of a mammary gland乳腺的小投影</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sex organ, reproductive organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pap</th>
+      <td>ap</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>pæp</td>
+      <td>['pablum']</td>
+      <td></td>
+      <td>worthless or oversimplified ideas无价值或过于简单的想法</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garbage, drivel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pap</th>
+      <td>ap</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>pæp</td>
+      <td>['soft diet', 'spoon food']</td>
+      <td></td>
+      <td>a diet that does not require chewing; advised for those with intestinal disorders不需要咀嚼的饮食;建议患有肠道疾病的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[diet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sap</th>
+      <td>ap</td>
+      <td>3.30</td>
+      <td>ver</td>
+      <td>sæp</td>
+      <td>['exhaust', 'play out', 'run down', 'tire']</td>
+      <td></td>
+      <td>deplete消耗</td>
+      <td></td>
+      <td>[sapper]</td>
+      <td>[play out]</td>
+      <td>[consume, deplete, eat, exhaust, run through, eat up, use up, wipe out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sap</th>
+      <td>ap</td>
+      <td>3.30</td>
+      <td>ver</td>
+      <td>sæp</td>
+      <td></td>
+      <td></td>
+      <td>excavate the earth beneath挖掘下面的地球</td>
+      <td></td>
+      <td>[sapper]</td>
+      <td></td>
+      <td>[undermine, cave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sap</th>
+      <td>ap</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>sæp</td>
+      <td>['fool', 'muggins', 'saphead', 'tomfool']</td>
+      <td></td>
+      <td>a person who lacks good judgment一个缺乏良好判断力的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[simpleton, simple]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sap</th>
+      <td>ap</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>sæp</td>
+      <td>['blackjack', 'cosh']</td>
+      <td></td>
+      <td>a piece of metal covered by leather with a flexible handle; used for hitting people一块金属覆盖的金属，手柄柔软;用来击打人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bludgeon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sap</th>
+      <td>ap</td>
+      <td>3.30</td>
+      <td>nou</td>
+      <td>sæp</td>
+      <td></td>
+      <td></td>
+      <td>a watery solution of sugars, salts, and minerals that circulates through the vascular system of a plant水，糖，盐和矿物质的水溶液，循环通过植物的血管系统</td>
+      <td></td>
+      <td>[sappy]</td>
+      <td></td>
+      <td>[solution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yap</th>
+      <td>ap</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>jɑp</td>
+      <td>['yelp', 'yip']</td>
+      <td></td>
+      <td>bark in a high-pitched tone以高音调的树皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yap</th>
+      <td>ap</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>jɑp</td>
+      <td>['cakehole', 'gob', 'hole', 'maw', 'trap']</td>
+      <td></td>
+      <td>informal terms for the mouth口头的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mouth, oral cavity, oral fissure, rima oris]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zap</th>
+      <td>ap</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>zæp</td>
+      <td>['micro-cook', 'microwave', 'nuke']</td>
+      <td></td>
+      <td>cook or heat in a microwave oven在微波炉中煮或加热</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zap</th>
+      <td>ap</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>zæp</td>
+      <td>['atomise', 'atomize', 'nuke']</td>
+      <td></td>
+      <td>strike at with firepower or bombs用火力或炸弹打击</td>
+      <td>zap the enemy击败敌人</td>
+      <td></td>
+      <td></td>
+      <td>[bombard, bomb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zap</th>
+      <td>ap</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>zæp</td>
+      <td>['vaporize']</td>
+      <td></td>
+      <td>kill with or as if with a burst of gunfire or electric current or as if by shooting用一阵枪声或电流或似乎通过射击杀死或好像用枪杀一样</td>
+      <td></td>
+      <td>[zapper]</td>
+      <td></td>
+      <td>[kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zap</th>
+      <td>ap</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>zæp</td>
+      <td></td>
+      <td></td>
+      <td>strike suddenly and with force突然用力罢工</td>
+      <td>This show zaps the viewers with some shocking scenes这个节目用一些令人震惊的场景来摧毁观众</td>
+      <td></td>
+      <td></td>
+      <td>[impress, affect, move, strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zap</th>
+      <td>ap</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>zæp</td>
+      <td></td>
+      <td></td>
+      <td>a sudden event that imparts energy or excitement, usually with a dramatic impact突然发生的事件，通常会带来巨大的冲击力</td>
+      <td>they gave it another zap of radiation他们给了它另一个辐射</td>
+      <td></td>
+      <td></td>
+      <td>[event]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apt</th>
+      <td>ap</td>
+      <td>3.15</td>
+      <td>adj</td>
+      <td>æpt</td>
+      <td>['apposite', 'pertinent'], similarTo:['apropos']</td>
+      <td></td>
+      <td>being of striking appropriateness and pertinence具有惊人的适当性和针对性</td>
+      <td>an apt reply一个贴切的答复</td>
+      <td>[aptness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apt</th>
+      <td>ap</td>
+      <td>3.15</td>
+      <td>adj</td>
+      <td>æpt</td>
+      <td>['disposed', 'given', 'minded', 'tending'], similarTo:['inclined']</td>
+      <td></td>
+      <td>(usually followed by `to') naturally disposed toward（通常后跟“to”）自然地朝向</td>
+      <td>he is apt to ignore matters he considers unimportant他容易忽视他认为不重要的事情</td>
+      <td>[aptness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apt</th>
+      <td>ap</td>
+      <td>3.15</td>
+      <td>adj</td>
+      <td>æpt</td>
+      <td>['clever'], similarTo:['intelligent']</td>
+      <td></td>
+      <td>mentally quick and resourceful精神上快速和足智多谋</td>
+      <td>an apt pupil一个学生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apt</th>
+      <td>ap</td>
+      <td>3.15</td>
+      <td>adj</td>
+      <td>æpt</td>
+      <td>['liable'], similarTo:['likely']</td>
+      <td></td>
+      <td>at risk of or subject to experiencing something usually unpleasant面临或经历通常令人不愉快的事情的风险</td>
+      <td>he is apt to lose他容易输</td>
+      <td>[aptness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jap</th>
+      <td>ap</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>dʒæp</td>
+      <td>['nip']</td>
+      <td></td>
+      <td>(offensive slang) offensive term for a person of Japanese descent（进攻性俚语）日本血统的进攻性术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[japanese, nipponese]</td>
+      <td>[vernacular, cant, depreciation, derogation, disparagement, slang, argot, jargon, lingo, patois]</td>
+    </tr>
+    <tr>
+      <th>hap</th>
+      <td>ap</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>hæp</td>
+      <td>['come about', 'fall out', 'go on', 'happen', 'occur', 'pass', 'pass off', 'take place']</td>
+      <td></td>
+      <td>come to pass应验</td>
+      <td>What is happening?怎么了？</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hap</th>
+      <td>ap</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>hæp</td>
+      <td></td>
+      <td></td>
+      <td>an accidental happening意外发生</td>
+      <td>he recorded all the little haps and mishaps of his life他记录了他生命中的所有小小的痛苦和不幸</td>
+      <td></td>
+      <td></td>
+      <td>[accident, chance event, fortuity, stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>apr</th>
+      <td>ap</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td></td>
+      <td>['april']</td>
+      <td></td>
+      <td>the month following March and preceding May三月和五月之后的一个月</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gregorian calendar month]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bap</th>
+      <td>ap</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>a small loaf or roll of soft bread一小块面包或一卷软面包</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bread, breadstuff, staff of life]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

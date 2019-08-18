@@ -1,0 +1,410 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['allow', 'blown', 'clown', 'lowly', 'lowry', 'aglow', 'blowy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['appropriate', 'earmark', 'reserve', 'set aside']</td>
+      <td></td>
+      <td>give or assign a resource to a particular person or cause为特定的人或事业提供或分配资源</td>
+      <td></td>
+      <td>[allowance]</td>
+      <td></td>
+      <td>[portion, allot, assign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['let', 'permit']</td>
+      <td></td>
+      <td>make it possible through a specific action or lack of action for something to happen通过特定的行动或缺乏行动来实现某些事情</td>
+      <td>This sealed door won't allow the water come into the basement这个密封的门不允许水进入地下室</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['take into account']</td>
+      <td></td>
+      <td>allow or plan for a certain possibility; concede the truth or validity of something允许或计划某种可能性;承认某事的真实性或有效性</td>
+      <td>I allow for this possibility我允许这种可能性</td>
+      <td>[allowable]</td>
+      <td></td>
+      <td>[count on, reckon, figure, calculate, forecast, estimate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['grant']</td>
+      <td>[deny]</td>
+      <td>let have让我们</td>
+      <td>Mandela was allowed few visitors in prison曼德拉在监狱里被允许的访客很少</td>
+      <td></td>
+      <td>[let, countenance, permit]</td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['permit', 'tolerate']</td>
+      <td></td>
+      <td>allow the presence of or allow (an activity) without opposing or prohibiting允许存在或允许（活动）而不反对或禁止</td>
+      <td>We don't allow dogs here我们这里不允许狗</td>
+      <td>[allowance]</td>
+      <td></td>
+      <td>[countenance, let, permit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['countenance', 'let', 'permit']</td>
+      <td>[disallow]</td>
+      <td>consent to, give permission同意，给予许可</td>
+      <td>I cannot allow you to see your exam我不能让你看你的考试</td>
+      <td>[allowable]</td>
+      <td>[grant]</td>
+      <td>[accept, go for, consent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['give up']</td>
+      <td></td>
+      <td>allow the other (baseball) team to score让其他（棒球）队得分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['admit']</td>
+      <td></td>
+      <td>afford possibility提供可能性</td>
+      <td>This short story allows of several different interpretations这个简短的故事允许几种不同的解释</td>
+      <td>[allowable]</td>
+      <td>[allow for, leave, provide]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td>['allow for', 'leave', 'provide']</td>
+      <td></td>
+      <td>make a possibility or provide opportunity for; permit to be attainable or cause to remain为...提供可能性或提供机会;允许可以实现或保持</td>
+      <td>The evidence allows only one conclusion证据只能得出一个结论allow for mistakes容许错误</td>
+      <td></td>
+      <td>[admit]</td>
+      <td>[give, yield, afford]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>allow</th>
+      <td>low</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>ə'laʊ</td>
+      <td></td>
+      <td></td>
+      <td>grant as a discount or in exchange作为折扣或交换授予</td>
+      <td>The camera store owner allowed me $50 on my old camera相机店老板在我的旧相机上给了我50美元</td>
+      <td></td>
+      <td></td>
+      <td>[discount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blown</th>
+      <td>low</td>
+      <td>4.16</td>
+      <td>adj</td>
+      <td>bloʊn</td>
+      <td>['pursy', 'short-winded', 'winded'], similarTo:['breathless', 'dyspneal', 'dyspneic', 'dyspnoeal', 'dyspnoeic']</td>
+      <td></td>
+      <td>breathing laboriously or convulsively辛苦或痉挛地呼吸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blown</th>
+      <td>low</td>
+      <td>4.16</td>
+      <td>adj</td>
+      <td>bloʊn</td>
+      <td>, similarTo:['moving']</td>
+      <td></td>
+      <td>being moved or acted upon by moving air or vapor通过移动空气或蒸汽移动或作用</td>
+      <td>blown clouds of dust choked the riders吹来的灰尘笼罩着车手blown soil mounded on the window sill吹过的土壤砸在窗台上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clown</th>
+      <td>low</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>klaʊn</td>
+      <td>['antic', 'clown around']</td>
+      <td></td>
+      <td>act as or like a clown扮演或喜欢小丑</td>
+      <td></td>
+      <td>[clowning]</td>
+      <td></td>
+      <td>[joke, jest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clown</th>
+      <td>low</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>klaʊn</td>
+      <td>['buffoon', 'goof', 'goofball', 'merry andrew']</td>
+      <td></td>
+      <td>a person who amuses others by ridiculous behavior一个通过荒谬的行为来娱乐他人的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[comedian, comic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clown</th>
+      <td>low</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>klaʊn</td>
+      <td>['buffoon']</td>
+      <td></td>
+      <td>a rude or vulgar fool一个粗鲁或粗俗的傻瓜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tomfool, muggins, sap, fool, saphead]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lowly</th>
+      <td>low</td>
+      <td>3.34</td>
+      <td>adj</td>
+      <td>'loʊli</td>
+      <td>['base', 'baseborn', 'humble'], similarTo:['lowborn']</td>
+      <td></td>
+      <td>of low birth or station (`base' is archaic in this sense)低生育或站（“基地”在这个意义上是古老的）</td>
+      <td>of humble (or lowly) birth谦卑（或卑微）的出生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lowly</th>
+      <td>low</td>
+      <td>3.34</td>
+      <td>adj</td>
+      <td>'loʊli</td>
+      <td>['humble', 'low', 'modest', 'small'], similarTo:['inferior']</td>
+      <td></td>
+      <td>low or inferior in station or quality车站或质量低或低</td>
+      <td>a lowly parish priest一个卑微的教区牧师</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lowly</th>
+      <td>low</td>
+      <td>3.34</td>
+      <td>adj</td>
+      <td>'loʊli</td>
+      <td>['humble', 'menial'], similarTo:['unskilled']</td>
+      <td></td>
+      <td>used of unskilled work (especially domestic work)用于非熟练工作（特别是家庭工作）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lowly</th>
+      <td>low</td>
+      <td>3.34</td>
+      <td>adj</td>
+      <td>'loʊli</td>
+      <td>['junior-grade', 'lower-ranking', 'petty', 'secondary', 'subaltern'], similarTo:['junior']</td>
+      <td></td>
+      <td>inferior in rank or status等级或地位低劣</td>
+      <td>a lowly corporal一个卑微的下士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lowry</th>
+      <td>low</td>
+      <td>2.63</td>
+      <td>nou</td>
+      <td>'laʊri</td>
+      <td>['clarence malcolm lowry', 'malcolm lowry']</td>
+      <td></td>
+      <td>English novelist (1909-1957)英国小说家（1909-1957）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lowry</th>
+      <td>low</td>
+      <td>2.63</td>
+      <td>nou</td>
+      <td>'laʊri</td>
+      <td>['l. s. lowry', 'laurence stephen lowry']</td>
+      <td></td>
+      <td>English painter (1887-1976)英国画家（1887-1976）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aglow</th>
+      <td>low</td>
+      <td>2.36</td>
+      <td>adj</td>
+      <td>əgloʊ</td>
+      <td>['lambent', 'lucent', 'luminous'], similarTo:['bright']</td>
+      <td></td>
+      <td>softly bright or radiant柔和明亮或容光焕发</td>
+      <td>a house aglow with lights房子发光，灯火通明</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blowy</th>
+      <td>low</td>
+      <td>2.12</td>
+      <td>adj</td>
+      <td>'bloʊi</td>
+      <td>['breezy', 'windy'], similarTo:['stormy']</td>
+      <td></td>
+      <td>abounding in or exposed to the wind or breezes充满或暴露在风中或微风中</td>
+      <td>blowy weather多风的天气</td>
+      <td>[blow]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

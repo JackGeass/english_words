@@ -1,0 +1,650 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['drunk', 'trunk', 'punks', 'funky', 'skunk', 'chunk', 'spunk', 'flunk', 'junky', 'clunk', 'plunk', 'punky']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>drunk</th>
+      <td>unk</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>drəŋk</td>
+      <td>['drunkard', 'inebriate', 'rummy', 'sot', 'wino']</td>
+      <td></td>
+      <td>a chronic drinker慢性饮酒者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[toper, juicer, imbiber, drinker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drunk</th>
+      <td>unk</td>
+      <td>4.94</td>
+      <td>nou</td>
+      <td>drəŋk</td>
+      <td></td>
+      <td></td>
+      <td>someone who is intoxicated一个陶醉的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imbiber, toper, juicer, drinker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drunk</th>
+      <td>unk</td>
+      <td>4.94</td>
+      <td>adj</td>
+      <td>drəŋk</td>
+      <td>['gone', 'inebriated', 'intoxicated', 'ripped'], similarTo:['half-seas-over', 'high', 'hopped-up', 'loaded', 'mellow', 'narcotised', 'narcotized', 'orgiastic', 'pie-eyed', 'pissed', 'pixilated', 'plastered', 'potty', 'slopped', 'sloshed', 'smashed', 'soaked', 'sottish', 'soused', 'sozzled', 'squiffy', 'stiff', 'stoned', 'tiddly', 'tight', 'tipsy', 'wet', 'bacchanal', 'bacchanalian', 'bacchic', 'beery', 'besotted', 'bibulous', 'blind drunk', 'blotto', 'boozy', 'carousing', 'cockeyed', 'crocked', 'doped', 'drugged', 'drunken', 'fuddled']</td>
+      <td></td>
+      <td>stupefied or excited by a chemical substance (especially alcohol)被化学物质（特别是酒精）恍惚或兴奋</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drunk</th>
+      <td>unk</td>
+      <td>4.94</td>
+      <td>adj</td>
+      <td>drəŋk</td>
+      <td>['intoxicated'], similarTo:['excited']</td>
+      <td></td>
+      <td>as if under the influence of alcohol好像受酒精的影响</td>
+      <td>drunk with excitement兴奋地喝醉了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trunk</th>
+      <td>unk</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>trəŋk</td>
+      <td>['proboscis']</td>
+      <td></td>
+      <td>a long flexible snout as of an elephant像大象一样长而灵活的鼻子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[snout, neb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trunk</th>
+      <td>unk</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>trəŋk</td>
+      <td>['bole', 'tree trunk']</td>
+      <td></td>
+      <td>the main stem of a tree; usually covered with bark; the bole is usually the part that is commercially useful for lumber一棵树的主茎;通常用树皮覆盖;伯乐通常是商业上对木材有用的部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stalk, stem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trunk</th>
+      <td>unk</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>trəŋk</td>
+      <td>['body', 'torso']</td>
+      <td></td>
+      <td>the body excluding the head and neck and limbs身体不包括头部和颈部和四肢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trunk</th>
+      <td>unk</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>trəŋk</td>
+      <td>['automobile trunk', 'boot', 'luggage compartment']</td>
+      <td></td>
+      <td>compartment in an automobile that carries luggage or shopping or tools汽车中的隔间，用于携带行李或购物或工具</td>
+      <td>he put his golf bag in the trunk他把高尔夫球袋放在后备箱里</td>
+      <td></td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trunk</th>
+      <td>unk</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>trəŋk</td>
+      <td></td>
+      <td></td>
+      <td>luggage consisting of a large strong case used when traveling or for storage行李箱包括旅行或存放时使用的大型箱子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[luggage, baggage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>punks</th>
+      <td>unk</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>pʌŋks</td>
+      <td></td>
+      <td></td>
+      <td>a youth subculture closely associated with punk rock music in the late 1970s; in part a reaction to the hippy subculture; dress was optional but intended to shock (plastic garbage bags or old school uniforms) and hair was dyed in bright colors (in Mohican haircuts or sometimes spiked in bright plumes)20世纪70年代后期与朋克摇滚音乐密切相关的青年亚文化;部分是对嬉皮亚文化的反应;礼服是可选的，但意图震惊（塑料垃圾袋或旧校服）和头发染成鲜艳的颜色（在Mohican理发或有时尖刺的明亮羽毛）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[youth subculture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funky</th>
+      <td>unk</td>
+      <td>3.64</td>
+      <td>adj</td>
+      <td>'fəŋki</td>
+      <td>['low-down'], similarTo:['emotional']</td>
+      <td></td>
+      <td>(of jazz) having the soulful feeling of early blues（爵士乐）具有早期忧郁的深情</td>
+      <td></td>
+      <td>[funk]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funky</th>
+      <td>unk</td>
+      <td>3.64</td>
+      <td>adj</td>
+      <td>'fəŋki</td>
+      <td>['fetid', 'foetid', 'foul', 'foul-smelling', 'ill-scented', 'noisome', 'smelly', 'stinking'], similarTo:['unpleasant-smelling', 'malodorous', 'malodourous', 'stinky', 'ill-smelling']</td>
+      <td></td>
+      <td>offensively malodorous进攻性的恶臭</td>
+      <td>the kitchen smelled really funky厨房闻起来很时髦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funky</th>
+      <td>unk</td>
+      <td>3.64</td>
+      <td>adj</td>
+      <td>'fəŋki</td>
+      <td>, similarTo:['fearful', 'cowardly']</td>
+      <td></td>
+      <td>in a state of cowardly fright处于怯懦的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>funky</th>
+      <td>unk</td>
+      <td>3.64</td>
+      <td>adj</td>
+      <td>'fəŋki</td>
+      <td>, similarTo:['unconventional']</td>
+      <td></td>
+      <td>stylish and modern in an unconventional way时尚而现代的非传统方式</td>
+      <td>she likes funky clothes她喜欢时髦的衣服we did it all in black and white in a very funky sixties style我们以六十年代非常时髦的风格完成了黑白两色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skunk</th>
+      <td>unk</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>skəŋk</td>
+      <td>['lurch']</td>
+      <td></td>
+      <td>defeat by a lurch失败了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[overcome, defeat, get the better of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skunk</th>
+      <td>unk</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>skəŋk</td>
+      <td>['polecat', 'wood pussy']</td>
+      <td></td>
+      <td>American musteline mammal typically ejecting an intensely malodorous fluid when startled; in some classifications put in a separate subfamily Mephitinae美国的musteline哺乳动物在受到惊吓时通常会喷出强烈恶臭的液体;在一些分类中放入一个单独的亚科Mephitinae</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mustelid, musteline, musteline mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skunk</th>
+      <td>unk</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>skəŋk</td>
+      <td>['shutout']</td>
+      <td></td>
+      <td>a defeat in a game where one side fails to score在一方未能得分的比赛中失败</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[licking, defeat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skunk</th>
+      <td>unk</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>skəŋk</td>
+      <td>['bum', 'crumb', 'dirty dog', 'git', 'lowlife', 'puke', 'rat', 'rotter', 'scum bag', 'so-and-so', 'stinker', 'stinkpot']</td>
+      <td></td>
+      <td>a person who is deemed to be despicable or contemptible被视为卑鄙或卑鄙的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unpleasant person, disagreeable person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skunk</th>
+      <td>unk</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>skəŋk</td>
+      <td>['dope', 'gage', 'grass', 'green goddess', 'locoweed', 'mary jane', 'pot', 'sens', 'sess', 'smoke', 'weed']</td>
+      <td></td>
+      <td>street names for marijuana大麻的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ganja, cannabis, marijuana, marihuana]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chunk</th>
+      <td>unk</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>tʃəŋk</td>
+      <td>['collocate', 'lump']</td>
+      <td></td>
+      <td>group or chunk together in a certain order or place side by side按特定顺序或并排排列或组合在一起</td>
+      <td></td>
+      <td>[chunking]</td>
+      <td></td>
+      <td>[group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chunk</th>
+      <td>unk</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>tʃəŋk</td>
+      <td>['lump']</td>
+      <td></td>
+      <td>put together indiscriminately不分青红皂白地拼凑起来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roll up, accumulate, amass, collect, compile, hoard, pile up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chunk</th>
+      <td>unk</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>tʃəŋk</td>
+      <td>['ball', 'clod', 'clump', 'glob', 'lump']</td>
+      <td></td>
+      <td>a compact mass紧凑的质量</td>
+      <td></td>
+      <td>[chunky]</td>
+      <td></td>
+      <td>[agglomeration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chunk</th>
+      <td>unk</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>tʃəŋk</td>
+      <td></td>
+      <td></td>
+      <td>a substantial amount大量的</td>
+      <td>we won a chunk of money我们赢了一大笔钱</td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite quantity, large indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spunk</th>
+      <td>unk</td>
+      <td>3.04</td>
+      <td>nou</td>
+      <td>spəŋk</td>
+      <td>['heart', 'mettle', 'nerve']</td>
+      <td></td>
+      <td>the courage to carry on勇于继续</td>
+      <td>he kept fighting on pure spunk他一直在坚持战斗</td>
+      <td>[spunky]</td>
+      <td></td>
+      <td>[braveness, courageousness, bravery, courage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spunk</th>
+      <td>unk</td>
+      <td>3.04</td>
+      <td>nou</td>
+      <td>spəŋk</td>
+      <td>['kindling', 'punk', 'tinder', 'touchwood']</td>
+      <td></td>
+      <td>material for starting a fire起火的材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[igniter, ignitor, lighter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flunk</th>
+      <td>unk</td>
+      <td>3.03</td>
+      <td>ver</td>
+      <td>fləŋk</td>
+      <td>['bomb', 'fail', 'flush it']</td>
+      <td></td>
+      <td>fail to get a passing grade未能获得及格分数</td>
+      <td></td>
+      <td></td>
+      <td>[fail]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flunk</th>
+      <td>unk</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>fləŋk</td>
+      <td>['failing']</td>
+      <td></td>
+      <td>failure to reach a minimum required performance未能达到最低要求的性能</td>
+      <td>he got two flunks on his report他的报告中有两个方面</td>
+      <td></td>
+      <td></td>
+      <td>[failure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>junky</th>
+      <td>unk</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>'dʒʌŋki</td>
+      <td>['addict', 'freak', 'junkie', 'nut']</td>
+      <td></td>
+      <td>someone who is so ardently devoted to something that it resembles an addiction一个如此热衷于某种类似于上瘾的东西的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enthusiast, partisan, partizan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>junky</th>
+      <td>unk</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>'dʒʌŋki</td>
+      <td>['drug addict', 'junkie']</td>
+      <td></td>
+      <td>a narcotics addict一个麻醉品瘾君子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[addict]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clunk</th>
+      <td>unk</td>
+      <td>2.64</td>
+      <td>ver</td>
+      <td>kləŋk</td>
+      <td>['clop', 'clump', 'plunk']</td>
+      <td></td>
+      <td>make or move along with a sound as of a horse's hooves striking the ground随着马蹄撞击地面的声音制作或移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clunk</th>
+      <td>unk</td>
+      <td>2.64</td>
+      <td>nou</td>
+      <td>kləŋk</td>
+      <td>['clump', 'thud', 'thump', 'thumping']</td>
+      <td></td>
+      <td>a heavy dull sound (as made by impact of heavy objects)沉重的沉闷声音（由重物撞击造成）</td>
+      <td></td>
+      <td>[clunky]</td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plunk</th>
+      <td>unk</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>pləŋk</td>
+      <td>['pick', 'pluck']</td>
+      <td></td>
+      <td>pull lightly but sharply with a plucking motion用拔毛动作轻轻但尖锐地拉动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plunk</th>
+      <td>unk</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>pləŋk</td>
+      <td>['clop', 'clump', 'clunk']</td>
+      <td></td>
+      <td>make or move along with a sound as of a horse's hooves striking the ground随着马蹄撞击地面的声音制作或移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plunk</th>
+      <td>unk</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>pləŋk</td>
+      <td>['flump', 'plank', 'plonk', 'plop', 'plump', 'plump down', 'plunk down']</td>
+      <td></td>
+      <td>set (something or oneself) down with or as if with a noise用（或某种东西）设置（或某种东西），或者用噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place down, put down, set down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plunk</th>
+      <td>unk</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>pləŋk</td>
+      <td>['dive', 'plunge']</td>
+      <td></td>
+      <td>drop steeply急剧下降</td>
+      <td></td>
+      <td></td>
+      <td>[dump, plunge]</td>
+      <td>[go down, come down, descend, fall]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plunk</th>
+      <td>unk</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>pləŋk</td>
+      <td>['plunker']</td>
+      <td></td>
+      <td>(baseball) hitting a baseball so that it drops suddenly（棒球）击中棒球，以便突然下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit, hitting, striking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plunk</th>
+      <td>unk</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>pləŋk</td>
+      <td></td>
+      <td></td>
+      <td>a hollow twanging sound空洞的嗡嗡声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plunk</th>
+      <td>unk</td>
+      <td>2.17</td>
+      <td>adv</td>
+      <td>pləŋk</td>
+      <td>['plop']</td>
+      <td></td>
+      <td>with a short hollow thud空洞砰的一声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>punky</th>
+      <td>unk</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>'pʌŋki</td>
+      <td>['biting midge', 'no-see-um', 'punkey', 'punkie']</td>
+      <td></td>
+      <td>minute two-winged insect that sucks the blood of mammals and birds and other insects分钟的双翅昆虫吸食哺乳动物，鸟类和其他昆虫的血液</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gnat]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

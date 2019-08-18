@@ -1,0 +1,1640 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['but', 'put', 'cut', 'nut', 'hut', 'gut', 'tut', 'rut', 'jut']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>but</th>
+      <td>ut</td>
+      <td>6.67</td>
+      <td>adv</td>
+      <td>bət</td>
+      <td>['just', 'merely', 'only', 'simply']</td>
+      <td></td>
+      <td>and nothing more仅此而已</td>
+      <td>hopes that last but a moment希望持续一会儿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td>['assign']</td>
+      <td></td>
+      <td>attribute or give属性或给</td>
+      <td>She put too much emphasis on her the last statement她过分强调她最后的陈述He put all his efforts into this job他全力以赴地完成这项工作The teacher put an interesting twist to the interpretation of the story老师对这个故事的解释提出了一个有趣的转折</td>
+      <td></td>
+      <td></td>
+      <td>[utilize, utilise, apply, employ, use]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td>['cast', 'couch', 'frame', 'redact']</td>
+      <td></td>
+      <td>formulate in a particular style or language以特定的风格或语言表达</td>
+      <td>I wouldn't put it that way我不会这么说</td>
+      <td></td>
+      <td></td>
+      <td>[word, formulate, give voice, articulate, phrase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td>['arrange', 'order', 'set up']</td>
+      <td></td>
+      <td>arrange thoughts, ideas, temporal events安排思想，想法，时间事件</td>
+      <td>I put these memories with those of bygone times我把这些记忆与过去的记忆相提并论</td>
+      <td></td>
+      <td></td>
+      <td>[organise, organize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td>['lay', 'place', 'pose', 'position', 'set'], alos:['put across', 'put away', 'put back', 'put down', 'put off', 'put on', 'put over', 'put together', 'put up']</td>
+      <td></td>
+      <td>put into a certain place or abstract location放到某个地方或抽象的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td>['commit', 'invest', 'place']</td>
+      <td></td>
+      <td>make an investment投资</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expend, drop, spend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td>['place', 'set']</td>
+      <td></td>
+      <td>estimate估计</td>
+      <td>We put the time of arrival at 8 P.M.我们把到达时间定在下午8点。</td>
+      <td></td>
+      <td></td>
+      <td>[guess, judge, approximate, estimate, gauge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td></td>
+      <td></td>
+      <td>adapt适应</td>
+      <td>put these words to music把这些话放在音乐上</td>
+      <td></td>
+      <td></td>
+      <td>[set, arrange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td></td>
+      <td></td>
+      <td>cause (someone) to undergo something导致（某人）接受某事</td>
+      <td>He put her to the torture他让她受到折磨</td>
+      <td></td>
+      <td></td>
+      <td>[subject]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>ver</td>
+      <td>pʊt</td>
+      <td>, alos:['put away', 'put up', 'put down', 'put off', 'put out', 'put through', 'put to sleep', 'put under']</td>
+      <td></td>
+      <td>cause to be in a certain state; cause to be in a certain relation导致处于某种状态;导致某种关系</td>
+      <td>That song put me in awful good humor那首歌给我带来了可怕的幽默感put your ideas in writing把你的想法写成文字</td>
+      <td></td>
+      <td></td>
+      <td>[change, alter, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>put</th>
+      <td>ut</td>
+      <td>5.86</td>
+      <td>nou</td>
+      <td>pʊt</td>
+      <td>['put option']</td>
+      <td></td>
+      <td>the option to sell a given stock (or stock index or commodity future) at a given price before a given date在给定日期之前以给定价格出售给定股票（或股票指数或商品期货）的期权</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[option]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['prune', 'rationalise', 'rationalize'], alos:['cut back', 'cut out']</td>
+      <td></td>
+      <td>weed out unwanted or unnecessary things清除不需要的或不必要的东西</td>
+      <td>We had to lose weight, so we cut the sugar from our diet我们不得不减肥，所以我们从饮食中减少了糖</td>
+      <td></td>
+      <td></td>
+      <td>[extinguish, get rid of, do away with, eliminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['bring down', 'cut back', 'cut down', 'reduce', 'trim', 'trim back', 'trim down']</td>
+      <td></td>
+      <td>cut down on; make a reduction in减少;减少</td>
+      <td>The employer wants to cut back health benefits雇主希望削减健康福利</td>
+      <td></td>
+      <td></td>
+      <td>[lessen, minify, decrease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['dilute', 'reduce', 'thin', 'thin out']</td>
+      <td></td>
+      <td>lessen the strength or flavor of a solution or mixture减少溶液或混合物的强度或味道</td>
+      <td>cut bourbon切波本威士忌</td>
+      <td>[cutting]</td>
+      <td></td>
+      <td>[weaken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['edit', 'edit out']</td>
+      <td></td>
+      <td>cut and assemble the components of切割和组装的组件</td>
+      <td>cut recording tape切录音带</td>
+      <td>[cutting]</td>
+      <td>[contract, shorten, abbreviate, foreshorten, reduce, abridge]</td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['abbreviate', 'abridge', 'contract', 'foreshorten', 'reduce', 'shorten']</td>
+      <td></td>
+      <td>reduce in scope while retaining essential elements在保留基本要素的同时缩小范围</td>
+      <td></td>
+      <td></td>
+      <td>[edit out, edit]</td>
+      <td>[minify, decrease, lessen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['disregard', 'ignore', 'snub']</td>
+      <td></td>
+      <td>refuse to acknowledge拒绝承认</td>
+      <td>She cut him dead at the meeting她在会议上把他当死了</td>
+      <td></td>
+      <td></td>
+      <td>[handle, treat, do by]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['curve', 'sheer', 'slew', 'slue', 'swerve', 'trend', 'veer']</td>
+      <td></td>
+      <td>turn sharply; change direction abruptly转得厉害;突然改变方向</td>
+      <td>The car cut to the left at the intersection汽车在十字路口向左切</td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['hack']</td>
+      <td></td>
+      <td>be able to manage or manage successfully能够成功管理或管理</td>
+      <td>she could not cut the long days in the office她不能在办公室里度过漫长的日子</td>
+      <td></td>
+      <td></td>
+      <td>[grapple, get by, make do, cope, contend, deal, make out, manage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['tailor']</td>
+      <td></td>
+      <td>style and tailor in a certain fashion风格和裁缝以某种方式</td>
+      <td>cut a dress剪一件连衣裙</td>
+      <td></td>
+      <td></td>
+      <td>[design]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['burn']</td>
+      <td></td>
+      <td>create by duplicating data通过复制数据来创建</td>
+      <td>cut a disk切一个磁盘</td>
+      <td></td>
+      <td></td>
+      <td>[make, create, produce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['cut off'], alos:['cut off']</td>
+      <td></td>
+      <td>cease, stop停止，停止</td>
+      <td>cut the noise减少噪音We had to cut short the conversation我们不得不缩短谈话时间</td>
+      <td></td>
+      <td></td>
+      <td>[cut off, disrupt, interrupt, break up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['geld']</td>
+      <td></td>
+      <td>cut off the testicles (of male animals such as horses)切断睾丸（马等雄性动物）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[castrate, demasculinise, emasculate, demasculinize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['issue', 'make out', 'write out']</td>
+      <td></td>
+      <td>make out and issue制定和发布</td>
+      <td>cut a ticket打了一张票</td>
+      <td></td>
+      <td></td>
+      <td>[write]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['skip']</td>
+      <td></td>
+      <td>intentionally fail to attend故意不参加</td>
+      <td>cut class削减课程</td>
+      <td></td>
+      <td></td>
+      <td>[miss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>['switch off', 'turn off', 'turn out']</td>
+      <td></td>
+      <td>cause to stop operating by disengaging a switch导致通过断开开关来停止操作</td>
+      <td>cut the engine切断发动机</td>
+      <td></td>
+      <td></td>
+      <td>[switch, flip, throw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>allow incision or separation允许切口或分离</td>
+      <td>This bread cuts easily这种面包容易削减</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>discharge from a group从一个群体中排出</td>
+      <td>The coach cut two players from the team教练从球队中裁掉两名球员</td>
+      <td></td>
+      <td></td>
+      <td>[free, discharge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>dissolve by breaking down the fat of通过分解脂肪来溶解</td>
+      <td>soap cuts grease肥皂削减油脂</td>
+      <td></td>
+      <td></td>
+      <td>[resolve, break up, dissolve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>divide a deck of cards at random into two parts to make selection difficult将一副牌随意分成两部分，使选择变得困难</td>
+      <td>Wayne cut韦恩切She cut the deck for a long time她把甲板切了很久</td>
+      <td>[cutting]</td>
+      <td></td>
+      <td>[ruffle, shuffle, mix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>fell by sawing; hew锯掉了;槎</td>
+      <td>The Vietnamese cut a lot of timber while they occupied Cambodia越南人在占领柬埔寨时砍伐了大量木材</td>
+      <td></td>
+      <td></td>
+      <td>[fell, cut down, strike down, drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>form by probing, penetrating, or digging通过探测，穿透或挖掘来形成</td>
+      <td>cut a hole切了一个洞cut trenches切沟The sweat cut little rivulets into her face汗水把小小的小溪切成了她的脸</td>
+      <td></td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>form or shape by cutting or incising通过切割或切割形成或形状</td>
+      <td>cut paper dolls切纸娃娃</td>
+      <td>[cutting]</td>
+      <td></td>
+      <td>[make, create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>function as a cutting instrument作为切割工具</td>
+      <td>This knife cuts well这把刀切得很好</td>
+      <td></td>
+      <td></td>
+      <td>[operate, run, work, function, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>give the appearance or impression of给人一种外表或印象</td>
+      <td>cut a nice figure切了一个好人</td>
+      <td></td>
+      <td></td>
+      <td>[seem, look, appear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>grow through the gums通过牙龈生长</td>
+      <td>The new tooth is cutting新的牙齿正在切割</td>
+      <td></td>
+      <td></td>
+      <td>[grow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>have a reducing effect有减少效果</td>
+      <td>This cuts into my earnings这削减了我的收入</td>
+      <td></td>
+      <td>[trim back, trim down, trim, bring down, reduce, cut down, cut back]</td>
+      <td>[decrease, lessen, minify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>have grow through the gums已经通过牙龈生长</td>
+      <td>The baby cut a tooth宝宝割了一颗牙</td>
+      <td></td>
+      <td></td>
+      <td>[produce, acquire, develop, grow, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>hit (a ball) with a spin so that it turns in the opposite direction用旋转击中（一个球），使其向相反方向转动</td>
+      <td>cut a Ping-Pong ball切了一个乒乓球</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>, alos:['cut to']</td>
+      <td></td>
+      <td>make an abrupt change of image or sound使图像或声音突然改变</td>
+      <td>cut from one scene to another从一个场景切换到另一个场景</td>
+      <td>[cutting]</td>
+      <td></td>
+      <td>[switch, shift, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>make an incision or separation做切口或分离</td>
+      <td>cut along the dotted line沿着虚线切割</td>
+      <td>[cutting]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>make a recording of录制</td>
+      <td>cut the songs削减歌曲She cut all of her major titles again她再次削减了所有主要头衔</td>
+      <td></td>
+      <td></td>
+      <td>[record, tape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>move (one's fist)移动（一拳）</td>
+      <td>his opponent cut upward toward his chin他的对手朝下巴向上切</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>pass directly and often in haste通过直接和经常匆忙</td>
+      <td>We cut through the neighbor's yard to get home sooner我们穿过邻居的院子，早点回家</td>
+      <td></td>
+      <td></td>
+      <td>[pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>pass through or across穿过或穿过</td>
+      <td>The boat cut the water船划水了</td>
+      <td></td>
+      <td></td>
+      <td>[pass through, move through, pass over, pass across, transit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>penetrate injuriously有害地穿透</td>
+      <td>The glass from the shattered windshield cut into her forehead破碎的挡风玻璃上的玻璃切入她的额头</td>
+      <td></td>
+      <td></td>
+      <td>[perforate, penetrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>perform or carry out执行或执行</td>
+      <td>cut a caper切了一口</td>
+      <td></td>
+      <td></td>
+      <td>[do, perform, execute]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>reap or harvest收获或收获</td>
+      <td>cut grain切粒</td>
+      <td></td>
+      <td></td>
+      <td>[glean, harvest, reap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>record a performance on (a medium)记录表演（中等）</td>
+      <td>cut a record创下纪录</td>
+      <td></td>
+      <td>[burn]</td>
+      <td>[record, tape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td>, alos:['cut into', 'cut away', 'cut off', 'cut out', 'cut up']</td>
+      <td></td>
+      <td>separate with or as if with an instrument与仪器分开或似乎与仪器分开</td>
+      <td></td>
+      <td>[cutter, cutting]</td>
+      <td></td>
+      <td>[divide, part, separate, disunite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>shorten as if by severing the edges or ends of通过切断边缘或末端来缩短</td>
+      <td>cut my hair剪了我的头发</td>
+      <td></td>
+      <td></td>
+      <td>[shorten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>ver</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>stop filming停止拍摄</td>
+      <td>cut a movie scene剪了一个电影场景</td>
+      <td></td>
+      <td></td>
+      <td>[stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['deletion', 'excision']</td>
+      <td></td>
+      <td>the omission that is made when an editorial change shortens a written passage当编辑改变缩短书面段落时所作的遗漏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[redaction, editing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['cutting']</td>
+      <td></td>
+      <td>the act of penetrating or opening open with a sharp edge用锋利的边缘穿透或打开的行为</td>
+      <td>his cut in the lining revealed the hidden jewels他在衬里的剪裁揭示了隐藏的珠宝</td>
+      <td></td>
+      <td></td>
+      <td>[opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['baseball swing', 'swing']</td>
+      <td></td>
+      <td>in baseball; a batter's attempt to hit a pitched ball在棒球;击球手试图击球</td>
+      <td>he took a vicious cut at the ball他对球进行了恶毒的切入</td>
+      <td></td>
+      <td></td>
+      <td>[stroke, shot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['cutting']</td>
+      <td></td>
+      <td>the act of cutting something into parts把东西切成零件的行为</td>
+      <td>his cuts were skillful他的削减很有技巧his cutting of the cake made a terrible mess他切蛋糕造成了可怕的混乱</td>
+      <td></td>
+      <td></td>
+      <td>[division]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['cold shoulder', 'snub']</td>
+      <td></td>
+      <td>a refusal to recognize someone you know拒绝承认你认识的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slight, rebuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['cutting', 'cutting off']</td>
+      <td></td>
+      <td>the act of shortening something by chopping off the ends通过切断两端来缩短某些东西的行为</td>
+      <td>the barber gave him a good cut理发师给了他一个好切口</td>
+      <td></td>
+      <td></td>
+      <td>[shortening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['undercut']</td>
+      <td></td>
+      <td>(sports) a stroke that puts reverse spin on the ball（运动）一种使球反向旋转的击球</td>
+      <td>cuts do not bother a good tennis player削减不会打扰一个优秀的网球运动员</td>
+      <td></td>
+      <td></td>
+      <td>[stroke, shot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['gash', 'slash', 'slice']</td>
+      <td></td>
+      <td>a wound made by cutting通过切割制成的伤口</td>
+      <td>he put a bandage over the cut他把绷带放在切口上</td>
+      <td></td>
+      <td></td>
+      <td>[lesion, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['cut of meat']</td>
+      <td></td>
+      <td>a piece of meat that has been cut from an animal carcass一块从动物尸体上切下来的肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[meat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['gash']</td>
+      <td></td>
+      <td>a trench resembling a furrow that was made by erosion or excavation一种类似于沟槽的沟槽，由侵蚀或挖掘制成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[furrow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['stinger']</td>
+      <td></td>
+      <td>a remark capable of wounding mentally一种能够伤害精神的言论</td>
+      <td>the unkindest cut of all所有人中最不切实际的</td>
+      <td></td>
+      <td></td>
+      <td>[revilement, contumely, abuse, insult, vilification]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['track']</td>
+      <td></td>
+      <td>a distinct selection of music from a recording or a compact disc来自录音或光盘的独特音乐选择</td>
+      <td>he played the first cut on the cd他在CD上首次出场</td>
+      <td></td>
+      <td></td>
+      <td>[selection, excerpt, extract, excerption]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td>['cutting']</td>
+      <td></td>
+      <td>the division of a deck of cards before dealing在交易之前划分一副牌</td>
+      <td>he insisted that we give him the last cut before every deal他坚持要求我们在每笔交易之前给他最后一笔the cutting of the cards soon became a ritual切割卡片很快成为一种仪式</td>
+      <td></td>
+      <td></td>
+      <td>[division]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>a canal made by erosion or excavation通过侵蚀或挖掘制成的运河</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[canal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>an unexcused absence from class无故缺课</td>
+      <td>he was punished for taking too many cuts in his math class因为在数学课上削减太多而受到惩罚</td>
+      <td></td>
+      <td></td>
+      <td>[absence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>a share of the profits分享利润</td>
+      <td>everyone got a cut of the earnings每个人都获得了收益</td>
+      <td></td>
+      <td></td>
+      <td>[share, percentage, part, portion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>a step on some scale在某种程度上迈出了一步</td>
+      <td>he is a cut above the rest他比其他人更胜一筹</td>
+      <td></td>
+      <td></td>
+      <td>[step, gradation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>(film) an immediate transition from one shot to the next（电影）从一个镜头到另一个镜头的立即过渡</td>
+      <td>the cut from the accident scene to the hospital seemed too abrupt从事故现场到医院的切口似乎太突然了</td>
+      <td></td>
+      <td></td>
+      <td>[transition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>the act of reducing the amount or number减少金额或数量的行为</td>
+      <td>the mayor proposed extensive cuts in the city budget市长提议大幅削减城市预算</td>
+      <td></td>
+      <td></td>
+      <td>[decrease, step-down, reduction, diminution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>kət</td>
+      <td></td>
+      <td></td>
+      <td>the style in which a garment is cut服装裁剪的风格</td>
+      <td>a dress of traditional cut一件传统剪裁的连衣裙</td>
+      <td></td>
+      <td></td>
+      <td>[fashion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>['trimmed'], similarTo:['clipped']</td>
+      <td></td>
+      <td>made neat and tidy by trimming通过修剪使整洁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>['slashed'], similarTo:['decreased', 'reduced']</td>
+      <td></td>
+      <td>(used of rates or prices) reduced usually sharply（使用的价格或价格）通常急剧下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>['mown'], similarTo:['new-mown']</td>
+      <td></td>
+      <td>(used of grass or vegetation) cut down with a hand implement or machine（用于草或植被）用手工具或机器切割</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>['thinned', 'weakened'], similarTo:['dilute', 'diluted']</td>
+      <td></td>
+      <td>mixed with water与水混合</td>
+      <td>sold cut whiskey卖切威士忌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>['shortened'], similarTo:['abridged']</td>
+      <td></td>
+      <td>with parts removed拆除部件</td>
+      <td>the drastically cut film大幅削减的电影</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>['emasculated', 'gelded'], similarTo:['unsexed', 'castrated']</td>
+      <td></td>
+      <td>(of a male animal) having the testicles removed（雄性动物）去除睾丸</td>
+      <td>a cut horse一匹马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>, similarTo:['hand-hewn', 'hewn', 'sheared', 'cut out', 'slashed']</td>
+      <td>[uncut]</td>
+      <td>fashioned or shaped by cutting通过切割塑造或塑造</td>
+      <td>a well-cut suit一件剪裁得体的西装cut diamonds切钻石cut velvet切天鹅绒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>kət</td>
+      <td>, similarTo:['incised', 'perforate', 'severed', 'sliced', 'perforated', 'chopped', 'cut off', 'pierced', 'cut up', 'split', 'shredded', 'punctured']</td>
+      <td>[uncut]</td>
+      <td>separated into parts or laid open or penetrated with a sharp edge or instrument分开的部分或用锋利的边缘或仪器打开或穿透</td>
+      <td>the cut surface was mottled切面是斑驳的cut tobacco烟丝blood from his cut forehead他额头上的鲜血bandages on her cut wrists她手腕上的绷带</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cut</th>
+      <td>ut</td>
+      <td>5.37</td>
+      <td>Non</td>
+      <td>kət</td>
+      <td></td>
+      <td>[uncut]</td>
+      <td>(of pages of a book) having the folds of the leaves trimmed or slit（书的页面）具有修剪或切开的叶子的折叠</td>
+      <td>the cut pages of the book这本书的剪切页面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>nət</td>
+      <td></td>
+      <td></td>
+      <td>gather nuts聚集坚果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull together, collect, garner, gather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>nət</td>
+      <td>['addict', 'freak', 'junkie', 'junky']</td>
+      <td></td>
+      <td>someone who is so ardently devoted to something that it resembles an addiction一个如此热衷于某种类似于上瘾的东西的人</td>
+      <td>a car nut汽车螺母</td>
+      <td></td>
+      <td></td>
+      <td>[partizan, enthusiast, partisan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>nət</td>
+      <td>['en']</td>
+      <td></td>
+      <td>half the width of an em一半的宽度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linear unit, linear measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>nət</td>
+      <td>['crackpot', 'crank', 'fruitcake', 'nut case', 'screwball']</td>
+      <td></td>
+      <td>a whimsically eccentric person一个异想天开的怪人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eccentric, flake, oddball, geek, eccentric person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>nət</td>
+      <td>['ball', 'ballock', 'bollock', 'egg', 'orchis', 'testicle', 'testis']</td>
+      <td></td>
+      <td>one of the two male reproductive glands that produce spermatozoa and secrete androgens两个产生精子和分泌雄激素的雄性生殖腺体之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sex gland, gonad, male reproductive gland]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>nət</td>
+      <td></td>
+      <td></td>
+      <td>a small (usually square or hexagonal) metal block with internal screw thread to be fitted onto a bolt一个小的（通常是正方形或六边形）金属块，带有内螺纹，可以安装到螺栓上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>nət</td>
+      <td></td>
+      <td></td>
+      <td>Egyptian goddess of the sky埃及女神的天空</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nut</th>
+      <td>ut</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>nət</td>
+      <td></td>
+      <td></td>
+      <td>usually large hard-shelled seed通常是大型硬壳种子</td>
+      <td></td>
+      <td>[nutty]</td>
+      <td></td>
+      <td>[seed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hut</th>
+      <td>ut</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>hət</td>
+      <td>['army hut', 'field hut']</td>
+      <td></td>
+      <td>temporary military shelter临时军事庇护所</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hut</th>
+      <td>ut</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>hət</td>
+      <td>['hovel', 'hutch', 'shack', 'shanty']</td>
+      <td></td>
+      <td>small crude shelter used as a dwelling用作住宅的小型原油避难所</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gut</th>
+      <td>ut</td>
+      <td>3.91</td>
+      <td>ver</td>
+      <td>ɡət</td>
+      <td></td>
+      <td></td>
+      <td>empty completely; destroy the inside of完全空虚;摧毁内心</td>
+      <td></td>
+      <td>[gutter]</td>
+      <td></td>
+      <td>[empty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gut</th>
+      <td>ut</td>
+      <td>3.91</td>
+      <td>ver</td>
+      <td>ɡət</td>
+      <td></td>
+      <td></td>
+      <td>remove the guts of去除胆量</td>
+      <td>gut the sheep羊</td>
+      <td>[gutter]</td>
+      <td></td>
+      <td>[remove, take, take away, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gut</th>
+      <td>ut</td>
+      <td>3.91</td>
+      <td>nou</td>
+      <td>ɡət</td>
+      <td>['bowel', 'intestine']</td>
+      <td></td>
+      <td>the part of the alimentary canal between the stomach and the anus胃和肛门之间的消化道的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[internal organ, viscus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gut</th>
+      <td>ut</td>
+      <td>3.91</td>
+      <td>nou</td>
+      <td>ɡət</td>
+      <td>['catgut']</td>
+      <td></td>
+      <td>a strong cord made from the intestines of sheep and used in surgery由绵羊肠制成的强力绳索，用于外科手术</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cord]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gut</th>
+      <td>ut</td>
+      <td>3.91</td>
+      <td>nou</td>
+      <td>ɡət</td>
+      <td></td>
+      <td></td>
+      <td>a narrow channel or strait狭窄的通道或海峡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[channel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tut</th>
+      <td>ut</td>
+      <td>3.14</td>
+      <td>ver</td>
+      <td>tʌt</td>
+      <td>['tsk', 'tut-tut']</td>
+      <td></td>
+      <td>utter `tsk,' `tut,' or `tut-tut,' as in disapproval在不赞成的情况下说出“tsk”，“tut”或“tut-tut”</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emit, let loose, let out, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rut</th>
+      <td>ut</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>rət</td>
+      <td>['furrow', 'groove']</td>
+      <td></td>
+      <td>hollow out in the form of a furrow or groove以犁沟或沟槽的形式挖空</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut into, delve, dig, turn over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rut</th>
+      <td>ut</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>rət</td>
+      <td></td>
+      <td></td>
+      <td>be in a state of sexual excitement; of male mammals处于性兴奋状态;雄性哺乳动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rut</th>
+      <td>ut</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>rət</td>
+      <td>['groove']</td>
+      <td></td>
+      <td>a settled and monotonous routine that is hard to escape一个难以逃脱的定居和单调的例行公事</td>
+      <td>they fell into a conversational rut他们陷入了对话的困境</td>
+      <td></td>
+      <td></td>
+      <td>[routine, modus operandi]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rut</th>
+      <td>ut</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>rət</td>
+      <td>['estrus', 'heat', 'oestrus']</td>
+      <td></td>
+      <td>applies to nonhuman mammals: a state or period of heightened sexual arousal and activity适用于非人类哺乳动物：性唤起和活动增强的状态或时期</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physiological state, physical condition, physiological condition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rut</th>
+      <td>ut</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>rət</td>
+      <td></td>
+      <td></td>
+      <td>a groove or furrow (especially one in soft earth caused by wheels)凹槽或沟槽（特别是由车轮引起的软土中的凹槽或沟槽）</td>
+      <td></td>
+      <td>[rutty]</td>
+      <td></td>
+      <td>[channel, groove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jut</th>
+      <td>ut</td>
+      <td>2.36</td>
+      <td>ver</td>
+      <td>dʒət</td>
+      <td>['jut out', 'project', 'protrude', 'stick out']</td>
+      <td></td>
+      <td>extend out or project in space延伸或在太空中投射</td>
+      <td>His sharp nose jutted out他尖锐的鼻子突然出现了</td>
+      <td>[jutting]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jut</th>
+      <td>ut</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>dʒət</td>
+      <td>['bulge', 'bump', 'excrescence', 'extrusion', 'gibbosity', 'gibbousness', 'hump', 'prominence', 'protrusion', 'protuberance', 'swelling']</td>
+      <td></td>
+      <td>something that bulges out or is protuberant or projects from its surroundings突起或突出或从周围环境中投射出来的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jut</th>
+      <td>ut</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>dʒət</td>
+      <td>['jutting', 'projection', 'protrusion']</td>
+      <td></td>
+      <td>the act of projecting out from something从某事物中突出的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change of shape]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

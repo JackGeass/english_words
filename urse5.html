@@ -1,0 +1,395 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['nurse', 'curse', 'purse']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>nurse</th>
+      <td>urse</td>
+      <td>4.52</td>
+      <td>ver</td>
+      <td>'nɜrs</td>
+      <td>['breastfeed', 'give suck', 'lactate', 'suck', 'suckle', 'wet-nurse']</td>
+      <td></td>
+      <td>give suck to吮吸</td>
+      <td>The wetnurse suckled the infant湿漉漉的吮吸着婴儿You cannot nurse your baby in public in some places在某些地方，您无法在公共场所照顾宝宝</td>
+      <td>[nursery, nursing]</td>
+      <td>[suck]</td>
+      <td>[give, feed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nurse</th>
+      <td>urse</td>
+      <td>4.52</td>
+      <td>ver</td>
+      <td>'nɜrs</td>
+      <td>['entertain', 'harbor', 'harbour', 'hold']</td>
+      <td></td>
+      <td>maintain (a theory, thoughts, or feelings)保持（理论，思想或感受）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feel, experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nurse</th>
+      <td>urse</td>
+      <td>4.52</td>
+      <td>ver</td>
+      <td>'nɜrs</td>
+      <td></td>
+      <td></td>
+      <td>serve as a nurse; care for sick or handicapped people担任护士;照顾病人或残障人士</td>
+      <td></td>
+      <td>[nursing]</td>
+      <td></td>
+      <td>[give care, care]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nurse</th>
+      <td>urse</td>
+      <td>4.52</td>
+      <td>ver</td>
+      <td>'nɜrs</td>
+      <td></td>
+      <td></td>
+      <td>treat carefully小心对待</td>
+      <td>He nursed his injured back by lying in bed several hours every afternoon他每天下午几个小时躺在床上养护受伤的人He nursed the flowers in his garden and fertilized them regularly他在花园里养花，定期施肥</td>
+      <td>[nurser]</td>
+      <td></td>
+      <td>[handle, treat, do by]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nurse</th>
+      <td>urse</td>
+      <td>4.52</td>
+      <td>ver</td>
+      <td>'nɜrs</td>
+      <td></td>
+      <td></td>
+      <td>try to cure by special care of treatment, of an illness or injury试着通过特殊护理治疗，疾病或受伤来治愈</td>
+      <td>He nursed his cold with Chinese herbs他用中草药治好了感冒</td>
+      <td>[nursing]</td>
+      <td></td>
+      <td>[care for, treat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nurse</th>
+      <td>urse</td>
+      <td>4.52</td>
+      <td>nou</td>
+      <td>'nɜrs</td>
+      <td>['nanny', 'nursemaid']</td>
+      <td></td>
+      <td>a woman who is the custodian of children一个女孩是孩子的监护人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[woman, adult female, keeper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nurse</th>
+      <td>urse</td>
+      <td>4.52</td>
+      <td>nou</td>
+      <td>'nɜrs</td>
+      <td></td>
+      <td></td>
+      <td>one skilled in caring for young children or the sick (usually under the supervision of a physician)擅长照顾幼儿或病人的人（通常在医生的监督下）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pcp, caregiver, health care provider, primary care provider, health professional]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>kɜrs</td>
+      <td>['blaspheme', 'cuss', 'imprecate', 'swear']</td>
+      <td></td>
+      <td>utter obscenities or profanities完全猥亵或亵渎</td>
+      <td></td>
+      <td></td>
+      <td>[blaspheme]</td>
+      <td>[give tongue to, express, utter, verbalise, verbalize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>kɜrs</td>
+      <td>['excommunicate', 'unchurch']</td>
+      <td></td>
+      <td>exclude from a church or a religious community从教堂或宗教团体中排除</td>
+      <td></td>
+      <td></td>
+      <td>[excommunicate]</td>
+      <td>[exclude, keep out, shut, shut out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>kɜrs</td>
+      <td>['anathemise', 'anathemize', 'bedamn', 'beshrew', 'damn', 'imprecate', 'maledict']</td>
+      <td>[bless]</td>
+      <td>wish harm upon; invoke evil upon希望受到伤害;援引邪恶</td>
+      <td>The bad witch cursed the child坏女巫诅咒孩子</td>
+      <td></td>
+      <td></td>
+      <td>[conjure up, raise, bring up, arouse, stir, put forward, evoke, conjure, call forth, invoke, call down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>kɜrs</td>
+      <td></td>
+      <td></td>
+      <td>heap obscenities upon堆猥亵</td>
+      <td>The taxi driver who felt he didn't get a high enough tip cursed the passenger觉得他没有得到足够高的小费的出租车司机诅咒乘客</td>
+      <td></td>
+      <td></td>
+      <td>[clapperclaw, abuse, blackguard, shout]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>kɜrs</td>
+      <td>['curse word', 'cuss', 'expletive', 'oath', 'swearing', 'swearword']</td>
+      <td></td>
+      <td>profane or obscene expression usually of surprise or anger亵渎或淫秽的表达通常是惊讶或愤怒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[profanity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>kɜrs</td>
+      <td>['hex', 'jinx', 'whammy']</td>
+      <td></td>
+      <td>an evil spell一个邪恶的咒语</td>
+      <td>a witch put a curse on his whole family一个女巫对他的整个家庭施以诅咒</td>
+      <td></td>
+      <td></td>
+      <td>[magic spell, charm, magical spell, spell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>kɜrs</td>
+      <td>['bane', 'nemesis', 'scourge']</td>
+      <td></td>
+      <td>something causing misery or death造成痛苦或死亡的事情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affliction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>kɜrs</td>
+      <td>['torment']</td>
+      <td></td>
+      <td>a severe affliction严重的痛苦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[affliction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>curse</th>
+      <td>urse</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>kɜrs</td>
+      <td>['condemnation', 'execration']</td>
+      <td></td>
+      <td>an appeal to some supernatural power to inflict evil on someone or some group呼吁一些超自然力量对某人或某些团体施加邪恶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[denunciation, denouncement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>purse</th>
+      <td>urse</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>pɜrs</td>
+      <td>['wrinkle']</td>
+      <td></td>
+      <td>gather or contract into wrinkles or folds; pucker收集或收缩皱纹或皱褶;皱纹</td>
+      <td>purse ones's lips钱包一个人的嘴唇</td>
+      <td></td>
+      <td></td>
+      <td>[contract]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>purse</th>
+      <td>urse</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>pɜrs</td>
+      <td></td>
+      <td></td>
+      <td>contract one's lips into a rounded shape将一个人的嘴唇收缩成圆润的形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[round, round off, round out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>purse</th>
+      <td>urse</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>pɜrs</td>
+      <td>['bag', 'handbag', 'pocketbook']</td>
+      <td></td>
+      <td>a container used for carrying money and small personal items or accessories (especially by women)用于携带钱和小件个人物品或配件的容器（特别是女性）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>purse</th>
+      <td>urse</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>pɜrs</td>
+      <td></td>
+      <td></td>
+      <td>a small bag for carrying money一个装钱的小包</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>purse</th>
+      <td>urse</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>pɜrs</td>
+      <td></td>
+      <td></td>
+      <td>a sum of money offered as a prize作为奖品提供的一笔钱</td>
+      <td>the purse barely covered the winner's expenses钱包几乎不包括赢家的费用</td>
+      <td></td>
+      <td></td>
+      <td>[amount, sum of money, sum, amount of money]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>purse</th>
+      <td>urse</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>pɜrs</td>
+      <td></td>
+      <td></td>
+      <td>a sum of money spoken of as the contents of a money purse作为钱包内容的一笔钱</td>
+      <td>he made the contribution out of his own purse他用自己的钱包做出了贡献he and his wife shared a common purse他和他的妻子分享了一个共同的钱包</td>
+      <td></td>
+      <td></td>
+      <td>[amount, amount of money, sum, sum of money]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

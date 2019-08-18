@@ -1,0 +1,470 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['miss', 'kiss', 'piss', 'hiss', 'diss']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td>['lose']</td>
+      <td></td>
+      <td>fail to perceive or to catch with the senses or the mind没有察觉或接触感官或思想</td>
+      <td>I missed that remark我错过了那句话She missed his point她错过了他的观点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td>['escape']</td>
+      <td></td>
+      <td>fail to experience没经验</td>
+      <td>Fortunately, I missed the hurricane幸运的是，我错过了飓风</td>
+      <td></td>
+      <td></td>
+      <td>[avoid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td>['lack']</td>
+      <td>[have]</td>
+      <td>be without没有</td>
+      <td>There is something missing in my jewelry box!我的珠宝盒中缺少一些东西！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td>['drop', 'leave out', 'neglect', 'omit', 'overleap', 'overlook', 'pretermit']</td>
+      <td></td>
+      <td>leave undone or leave out离开或离开</td>
+      <td>How could I miss that typo?我怎么能错过那个错字？The workers on the conveyor belt miss one out of ten传送带上的工人错过了十分之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td></td>
+      <td>[attend]</td>
+      <td>fail to attend an event or activity没有参加活动或活动</td>
+      <td>I missed the concert我错过了音乐会He missed school for a week他错过了学校一个星期</td>
+      <td></td>
+      <td></td>
+      <td>[neglect, fail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td></td>
+      <td>[hit]</td>
+      <td>fail to reach无法达到</td>
+      <td>The arrow missed the target箭射中了目标</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td></td>
+      <td></td>
+      <td>fail to reach or get to无法到达或到达</td>
+      <td>She missed her train她错过了她的火车</td>
+      <td></td>
+      <td></td>
+      <td>[miscarry, go wrong, fail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>ver</td>
+      <td>mɪs</td>
+      <td></td>
+      <td></td>
+      <td>feel or suffer from the lack of感到或遭受缺乏</td>
+      <td>He misses his mother他想念他的母亲</td>
+      <td></td>
+      <td></td>
+      <td>[desire, want]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>nou</td>
+      <td>mɪs</td>
+      <td>['fille', 'girl', 'missy', 'young lady', 'young woman']</td>
+      <td></td>
+      <td>a young female一个年轻的女性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[woman, adult female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>nou</td>
+      <td>mɪs</td>
+      <td>['misfire']</td>
+      <td></td>
+      <td>a failure to hit (or meet or find etc)未能击中（或遇到或找到等）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[failure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>miss</th>
+      <td>iss</td>
+      <td>5.52</td>
+      <td>nou</td>
+      <td>mɪs</td>
+      <td></td>
+      <td></td>
+      <td>a form of address for an unmarried woman一种未婚女子的地址形式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[title, title of respect, form of address]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kiss</th>
+      <td>iss</td>
+      <td>5.08</td>
+      <td>ver</td>
+      <td>kɪs</td>
+      <td>['buss', 'osculate', 'snog']</td>
+      <td></td>
+      <td>touch with the lips or press the lips (against someone's mouth or other body part) as an expression of love, greeting, etc.触摸嘴唇或按压嘴唇（对着某人的嘴或其他身体部位）作为爱，问候等的表达。</td>
+      <td>The newly married couple kissed这对新婚夫妇吻了吻She kissed her grandfather on the forehead when she entered the room当她进入房间时，她在前额上吻了她的祖父</td>
+      <td>[kisser, kissing]</td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kiss</th>
+      <td>iss</td>
+      <td>5.08</td>
+      <td>ver</td>
+      <td>kɪs</td>
+      <td></td>
+      <td></td>
+      <td>touch lightly or gently轻轻地或轻轻地触摸</td>
+      <td>the blossoms were kissed by the soft rain柔软的雨水让花儿吻了一下</td>
+      <td></td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kiss</th>
+      <td>iss</td>
+      <td>5.08</td>
+      <td>nou</td>
+      <td>kɪs</td>
+      <td>['buss', 'osculation']</td>
+      <td></td>
+      <td>the act of caressing with the lips (or an instance thereof)用嘴唇抚摸的行为（或其实例）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touching, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kiss</th>
+      <td>iss</td>
+      <td>5.08</td>
+      <td>nou</td>
+      <td>kɪs</td>
+      <td>['candy kiss']</td>
+      <td></td>
+      <td>any of several bite-sized candies几种一口大小的糖果中的任何一种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[confect, candy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kiss</th>
+      <td>iss</td>
+      <td>5.08</td>
+      <td>nou</td>
+      <td>kɪs</td>
+      <td></td>
+      <td></td>
+      <td>a cookie made of egg whites and sugar由蛋清和糖制成的饼干</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cooky, cookie, biscuit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kiss</th>
+      <td>iss</td>
+      <td>5.08</td>
+      <td>nou</td>
+      <td>kɪs</td>
+      <td></td>
+      <td></td>
+      <td>a light glancing touch轻轻的瞥了一眼</td>
+      <td>there was a brief kiss of their hands in passing他们的手过去了一个简短的吻</td>
+      <td></td>
+      <td></td>
+      <td>[touch, touching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>piss</th>
+      <td>iss</td>
+      <td>4.64</td>
+      <td>ver</td>
+      <td>pɪs</td>
+      <td>['make', 'make water', 'micturate', 'pass water', 'pee', 'pee-pee', 'piddle', 'puddle', 'relieve oneself', 'spend a penny', 'take a leak', 'urinate', 'wee', 'wee-wee']</td>
+      <td></td>
+      <td>eliminate urine消除尿液</td>
+      <td></td>
+      <td>[pisser, pissing]</td>
+      <td>[crap, ca-ca, defecate, make, shit, stool, take a crap, take a shit, urinate]</td>
+      <td>[egest, pass, excrete, eliminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>piss</th>
+      <td>iss</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪs</td>
+      <td>['pee', 'piddle', 'urine', 'water', 'weewee']</td>
+      <td></td>
+      <td>liquid excretory product液体排泄产品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body waste, excretion, excrement, excretory product, excreta]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>piss</th>
+      <td>iss</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>pɪs</td>
+      <td>['pee', 'peeing', 'pissing']</td>
+      <td></td>
+      <td>informal terms for urination排尿的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[urination, micturition]</td>
+      <td>[dirty word, obscenity, smut, vulgarism, filth]</td>
+    </tr>
+    <tr>
+      <th>hiss</th>
+      <td>iss</td>
+      <td>2.93</td>
+      <td>ver</td>
+      <td>hɪs</td>
+      <td>['sibilate', 'siss', 'sizz']</td>
+      <td></td>
+      <td>make a sharp hissing sound, as if to show disapproval发出尖锐的嘶嘶声，仿佛表示不赞成</td>
+      <td></td>
+      <td>[hissing, hisser]</td>
+      <td></td>
+      <td>[emit, utter, let loose, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hiss</th>
+      <td>iss</td>
+      <td>2.93</td>
+      <td>ver</td>
+      <td>hɪs</td>
+      <td>['sibilate', 'siss', 'sizz']</td>
+      <td></td>
+      <td>express or utter with a hiss用嘶嘶声表达或说出</td>
+      <td></td>
+      <td>[hissing]</td>
+      <td></td>
+      <td>[verbalize, mouth, speak, talk, utter, verbalise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hiss</th>
+      <td>iss</td>
+      <td>2.93</td>
+      <td>ver</td>
+      <td>hɪs</td>
+      <td>['whoosh']</td>
+      <td></td>
+      <td>move with a whooshing sound随着嘶嘶声的声音移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[locomote, move, go, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hiss</th>
+      <td>iss</td>
+      <td>2.93</td>
+      <td>ver</td>
+      <td>hɪs</td>
+      <td>['boo']</td>
+      <td></td>
+      <td>show displeasure, as after a performance or speech表演或演讲后表示不满</td>
+      <td></td>
+      <td>[hissing, hisser]</td>
+      <td></td>
+      <td>[condemn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hiss</th>
+      <td>iss</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>hɪs</td>
+      <td>['fizzle', 'hissing', 'hushing', 'sibilation']</td>
+      <td></td>
+      <td>a fricative sound (especially as an expression of disapproval)摩擦音（特别是作为不赞成的表达）</td>
+      <td>the performers could not be heard over the hissing of the audience表演者听不到观众的嘶嘶声</td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hiss</th>
+      <td>iss</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>hɪs</td>
+      <td>['bird', 'boo', 'bronx cheer', 'hoot', 'raspberry', 'razz', 'razzing', 'snort']</td>
+      <td></td>
+      <td>a cry or noise made to express displeasure or contempt用来表达不满或蔑视的呐喊声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[outcry, cry, yell, call, shout, vociferation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>diss</th>
+      <td>iss</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>dɪs</td>
+      <td>['affront', 'insult']</td>
+      <td></td>
+      <td>treat, mention, or speak to rudely粗鲁地对待，提及或说话</td>
+      <td>the student who had betrayed his classmate was dissed by everyone背叛了他的同学的学生被每个人都贬低了</td>
+      <td></td>
+      <td></td>
+      <td>[bruise, hurt, injure, offend, spite, wound]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

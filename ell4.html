@@ -1,0 +1,1160 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['well', 'tell', 'hell', 'sell', 'fell', 'cell', 'bell', 'yell', 'dell', 'jell']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>ver</td>
+      <td>wɛl</td>
+      <td>['swell']</td>
+      <td></td>
+      <td>come up, as of a liquid从液体中出来</td>
+      <td>Tears well in her eyes眼泪很好the currents well up电流很好</td>
+      <td></td>
+      <td></td>
+      <td>[surface, come up, rise, rise up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>nou</td>
+      <td>wɛl</td>
+      <td>['fountainhead', 'wellspring']</td>
+      <td></td>
+      <td>an abundant source丰富的资源</td>
+      <td>she was a well of information她是一个很好的信息</td>
+      <td></td>
+      <td></td>
+      <td>[source]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>nou</td>
+      <td>wɛl</td>
+      <td></td>
+      <td></td>
+      <td>a cavity or vessel used to contain liquid用于容纳液体的空腔或容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>nou</td>
+      <td>wɛl</td>
+      <td></td>
+      <td></td>
+      <td>a deep hole or shaft dug or drilled to obtain water or oil or gas or brine深挖孔或钻孔或钻孔以获得水或油或气体或盐水</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[excavation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>nou</td>
+      <td>wɛl</td>
+      <td></td>
+      <td></td>
+      <td>an enclosed compartment in a ship or plane for holding something as e.g. fish or a plane's landing gear or for protecting something as e.g. a ship's pumps船舶或飞机上的封闭隔间，用于容纳某物，例如鱼或飞机的起落架或用于保护物品，例如：一艘船的泵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>nou</td>
+      <td>wɛl</td>
+      <td></td>
+      <td></td>
+      <td>an open shaft through the floors of a building (as for a stairway)穿过建筑物地板的开放式竖井（如楼梯）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shaft]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adv</td>
+      <td>wɛl</td>
+      <td>['advantageously']</td>
+      <td>[badly]</td>
+      <td>in a manner affording benefit or advantage以提供利益或利益的方式</td>
+      <td>she married well她结婚很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adv</td>
+      <td>wɛl</td>
+      <td>['good']</td>
+      <td>[ill]</td>
+      <td>(often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')（通常用作组合形式）以良好或适当或令人满意的方式或高标准（“好”是“井”的非标准方言变体）</td>
+      <td>the children behaved well孩子们表现得很好a task well done一项任务做得很好the party went well派对进展顺利he slept well他睡得很好a well-argued thesis一篇有争议的论文a well-seasoned dish一道经验丰富的菜a well-planned party精心策划的派对</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[combining form]</td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adv</td>
+      <td>wɛl</td>
+      <td>['easily']</td>
+      <td></td>
+      <td>indicating high probability; in all likelihood表明概率很高;在所有的可能性</td>
+      <td>I might well do it我很可能会这样做you may well need your umbrella你可能需要你的雨伞he could equally well be trying to deceive us他同样可以试图欺骗我们</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adv</td>
+      <td>wɛl</td>
+      <td>['considerably', 'substantially']</td>
+      <td></td>
+      <td>to a great extent or degree在很大程度上</td>
+      <td>I'm afraid the film was well over budget我担心这部电影远远超出预算</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adv</td>
+      <td>wɛl</td>
+      <td>['intimately']</td>
+      <td></td>
+      <td>with great or especially intimate knowledge拥有伟大或特别亲密的知识</td>
+      <td>we knew them well我们很了解他们</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adv</td>
+      <td>wɛl</td>
+      <td>['comfortably']</td>
+      <td></td>
+      <td>in financial comfort财务安慰</td>
+      <td>They live well他们生活得很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adv</td>
+      <td>wɛl</td>
+      <td></td>
+      <td></td>
+      <td>(used for emphasis or as an intensifier) entirely or fully（完全或完全用于强调或作为增强器）</td>
+      <td>a book well worth reading一本值得一读的书was well aware of the difficulties ahead我很清楚未来的困难suspected only too well what might be going on怀疑只是太好了可能会发生什么</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intensive, intensifier]</td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adj</td>
+      <td>wɛl</td>
+      <td>['good'], similarTo:['fortunate']</td>
+      <td></td>
+      <td>resulting favorably结果很好</td>
+      <td>it is well that no one saw you很好，没有人看到你all's well that ends well一切都很顺利</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adj</td>
+      <td>wɛl</td>
+      <td>, similarTo:['symptomless', 'asymptomatic', 'cured', 'healed', 'recovered'], alos:['healthy', 'fit']</td>
+      <td>[ill]</td>
+      <td>in good health especially after having suffered illness or injury特别是在患病或受伤后身体健康</td>
+      <td>appears to be entirely well似乎完全没问题the wound is nearly well伤口几乎很好a well man一个好人I think I'm well; at least I feel well我觉得我很好;至少我感觉很好</td>
+      <td>[wellness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>adj</td>
+      <td>wɛl</td>
+      <td>, similarTo:['advisable']</td>
+      <td></td>
+      <td>wise or advantageous and hence advisable明智的或有利的，因此是可取的</td>
+      <td>it would be well to start early提前开始会很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>Non</td>
+      <td>wɛl</td>
+      <td></td>
+      <td>[ill]</td>
+      <td>favorably; with approval有利;经批准</td>
+      <td>their neighbors spoke well of them他们的邻居说得很好he thought well of the book他认为这本书很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>Non</td>
+      <td>wɛl</td>
+      <td></td>
+      <td>[badly]</td>
+      <td>with skill or in a pleasing manner以技巧或愉快的方式</td>
+      <td>she dances well她跳得很好he writes well他写得很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>well</th>
+      <td>ell</td>
+      <td>6.36</td>
+      <td>Non</td>
+      <td>wɛl</td>
+      <td></td>
+      <td>[badly]</td>
+      <td>without unusual distress or resentment; with good humor没有异常的痛苦或怨恨;幽默</td>
+      <td>took the joke well好好开玩笑took the tragic news well抓好悲惨的新闻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td>['enjoin', 'order', 'say']</td>
+      <td></td>
+      <td>give instructions to or direct somebody to do something with authority给予指示或指示某人有权做某事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[request]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td>['evidence'], alos:['tell apart']</td>
+      <td></td>
+      <td>give evidence提供证据</td>
+      <td>he was telling on all his former colleague他告诉他所有的前同事</td>
+      <td>[telling]</td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td>['narrate', 'recite', 'recount']</td>
+      <td></td>
+      <td>narrate or give a detailed account of叙述或详细说明</td>
+      <td></td>
+      <td>[telling, teller, tale]</td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td>['assure']</td>
+      <td></td>
+      <td>inform positively and with certainty and confidence积极地，肯定地和自信地告知</td>
+      <td>I tell you that man is a crook!我告诉你，男人是骗子！</td>
+      <td></td>
+      <td></td>
+      <td>[affirm, swear, swan, assert, aver, verify, avow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td>['say', 'state']</td>
+      <td></td>
+      <td>express in words用语言表达</td>
+      <td>tell me what is bothering you告诉我什么在打扰你</td>
+      <td>[telling, teller]</td>
+      <td>[say]</td>
+      <td>[verbalise, express, give tongue to, verbalize, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td>['differentiate', 'distinguish', 'secern', 'secernate', 'separate', 'severalise', 'severalize', 'tell apart']</td>
+      <td></td>
+      <td>mark as different标记为不同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place, identify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td></td>
+      <td></td>
+      <td>discern or comprehend辨别或理解</td>
+      <td>He could tell that she was unhappy他可以说她不开心</td>
+      <td></td>
+      <td></td>
+      <td>[guess, infer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>ver</td>
+      <td>tɛl</td>
+      <td>, alos:['tell off']</td>
+      <td></td>
+      <td>let something be known让一些事物被人知道</td>
+      <td></td>
+      <td>[tale]</td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tell</th>
+      <td>ell</td>
+      <td>6.20</td>
+      <td>nou</td>
+      <td>tɛl</td>
+      <td>['william tell']</td>
+      <td></td>
+      <td>a Swiss patriot who lived in the early 14th century and who was renowned for his skill as an archer; according to legend an Austrian governor compelled him to shoot an apple from his son's head with his crossbow (which he did successfully without mishap)瑞士爱国者，生活于14世纪初，以射手的技艺而闻名;根据传说，一位奥地利州长迫使他用他的弩从他儿子的头上射出一个苹果（他成功地没有发生事故）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hell</th>
+      <td>ell</td>
+      <td>5.66</td>
+      <td>nou</td>
+      <td>hɛl</td>
+      <td>['infernal region', 'inferno', 'nether region', 'perdition', 'pit']</td>
+      <td>[heaven]</td>
+      <td>(Christianity) the abode of Satan and the forces of evil; where sinners suffer eternal punishment（基督教）撒旦的居所和邪恶势力;罪人遭受永恒的惩罚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mythical place, fictitious place, imaginary place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hell</th>
+      <td>ell</td>
+      <td>5.66</td>
+      <td>nou</td>
+      <td>hɛl</td>
+      <td>['hades', 'infernal region', 'netherworld', 'scheol', 'underworld']</td>
+      <td></td>
+      <td>(religion) the world of the dead（宗教）死者的世界</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imaginary place, mythical place, fictitious place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hell</th>
+      <td>ell</td>
+      <td>5.66</td>
+      <td>nou</td>
+      <td>hɛl</td>
+      <td>['blaze']</td>
+      <td></td>
+      <td>noisy and unrestrained mischief嘈杂和无拘无束的恶作剧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deviltry, devilment, shenanigan, mischief, mischief-making, mischievousness, roguishness, roguery, devilry, rascality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hell</th>
+      <td>ell</td>
+      <td>5.66</td>
+      <td>nou</td>
+      <td>hɛl</td>
+      <td>['hell on earth', 'hellhole', 'inferno', 'snake pit', 'the pits']</td>
+      <td></td>
+      <td>any place of pain and turmoil任何痛苦和混乱的地方</td>
+      <td>the hell of battle战斗的地狱</td>
+      <td></td>
+      <td></td>
+      <td>[part, region]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hell</th>
+      <td>ell</td>
+      <td>5.66</td>
+      <td>nou</td>
+      <td>hɛl</td>
+      <td>['blaze']</td>
+      <td></td>
+      <td>a cause of difficulty and suffering困难和痛苦的原因</td>
+      <td>war is hell战争是地狱</td>
+      <td></td>
+      <td></td>
+      <td>[trouble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td>['betray']</td>
+      <td></td>
+      <td>deliver to an enemy by treachery通过背叛传递给敌人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lead on, cozen, deceive, delude]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td>['deal', 'trade']</td>
+      <td></td>
+      <td>do business; offer for sale as for one's livelihood做业务;提供出售和生计</td>
+      <td>The brothers sell shoes兄弟卖鞋子</td>
+      <td>[seller, selling]</td>
+      <td>[deal]</td>
+      <td>[transact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>be approved of or gain acceptance获得批准或获得认可</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>be responsible for the sale of负责销售</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>be sold at a certain price or in a certain way以某种价格或以某种方式出售</td>
+      <td>These books sell like hot cakes这些书像热蛋糕一样卖</td>
+      <td>[selling]</td>
+      <td>[deal, trade]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td></td>
+      <td>[buy]</td>
+      <td>exchange or deliver for money or its equivalent兑换或交换金钱或等价物</td>
+      <td>She sells her body to survive and support her drug habit她出售自己的身体以生存并支持她的吸毒习惯</td>
+      <td>[seller, selling]</td>
+      <td></td>
+      <td>[change, interchange, exchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>give up for a price or reward放弃价格或奖励</td>
+      <td></td>
+      <td></td>
+      <td>[betray]</td>
+      <td>[deliver, surrender, give up, cede]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>ver</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>persuade somebody to accept something说服某人接受某事</td>
+      <td>The French try to sell us their image as great lovers法国人试图向我们推销他们作为伟大爱好者的形象</td>
+      <td></td>
+      <td></td>
+      <td>[persuade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sell</th>
+      <td>ell</td>
+      <td>5.07</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>the activity of persuading someone to buy说服某人购买的活动</td>
+      <td>it was a hard sell这很难卖</td>
+      <td></td>
+      <td></td>
+      <td>[sale]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>fɛl</td>
+      <td>['fly', 'vanish']</td>
+      <td></td>
+      <td>pass away rapidly快速过世</td>
+      <td></td>
+      <td></td>
+      <td>[vaporize, fly, vanish]</td>
+      <td>[go by, elapse, glide by, go along, lapse, pass, slide by, slip away, slip by]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>fɛl</td>
+      <td>['cut down', 'drop', 'strike down']</td>
+      <td></td>
+      <td>cause to fall by or as if by delivering a blow导致堕落或似乎是通过打击</td>
+      <td></td>
+      <td>[feller]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>fɛl</td>
+      <td></td>
+      <td></td>
+      <td>sew a seam by folding the edges通过折叠边缘缝合接缝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stitch, run up, sew, sew together]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>fɛl</td>
+      <td>['hide']</td>
+      <td></td>
+      <td>the dressed skin of an animal (especially a large animal)动物的皮肤（特别是大型动物）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal skin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>fɛl</td>
+      <td>['felled seam']</td>
+      <td></td>
+      <td>seam made by turning under or folding together and stitching the seamed materials to avoid rough edges通过翻转或折叠在一起并缝合接缝材料以避免粗糙边缘而制成的接缝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seam]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>fɛl</td>
+      <td></td>
+      <td></td>
+      <td>the act of felling something (as a tree)感受某事的行为（如树）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[putting to death, killing, kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>adj</td>
+      <td>fɛl</td>
+      <td>['barbarous', 'brutal', 'cruel', 'roughshod', 'savage', 'vicious'], similarTo:['inhumane']</td>
+      <td></td>
+      <td>(of persons or their actions) able or disposed to inflict pain or suffering（人或他们的行为）能够或处置以造成痛苦或痛苦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>ell</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td>['jail cell', 'prison cell']</td>
+      <td></td>
+      <td>a room where a prisoner is kept一个囚犯被关押的房间</td>
+      <td></td>
+      <td>[cellular]</td>
+      <td></td>
+      <td>[room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>ell</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td>['cubicle']</td>
+      <td></td>
+      <td>small room in which a monk or nun lives僧侣或修女居住的小房间</td>
+      <td></td>
+      <td>[cellular]</td>
+      <td></td>
+      <td>[room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>ell</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td>['electric cell']</td>
+      <td></td>
+      <td>a device that delivers an electric current as the result of a chemical reaction由化学反应产生电流的装置</td>
+      <td></td>
+      <td>[cellular]</td>
+      <td></td>
+      <td>[electrical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>ell</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td>['cellphone', 'cellular phone', 'cellular telephone', 'mobile phone']</td>
+      <td></td>
+      <td>a hand-held mobile radiotelephone for use in an area divided into small sections, each with its own short-range transmitter/receiver手持式移动无线电话，用于分成小部分的区域，每个区域都有自己的短程发射器/接收器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiophone, radiotelephone, wireless telephone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>ell</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td>['cadre']</td>
+      <td></td>
+      <td>a small unit serving as part of or as the nucleus of a larger political movement一个小单位，作为一个更大的政治运动的一部分或作为核心</td>
+      <td></td>
+      <td>[cellular]</td>
+      <td></td>
+      <td>[political unit, political entity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>ell</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>any small compartment任何小隔间</td>
+      <td>the cells of a honeycomb蜂窝状细胞</td>
+      <td>[cellular]</td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>ell</td>
+      <td>4.88</td>
+      <td>nou</td>
+      <td>sɛl</td>
+      <td></td>
+      <td></td>
+      <td>(biology) the basic structural and functional unit of all organisms; they may exist as independent units of life (as in monads) or may form colonies or tissues as in higher plants and animals（生物学）所有生物的基本结构和功能单元;它们可以作为独立的生命单元存在（如单子中），也可以形成高等植物和动物中的菌落或组织</td>
+      <td></td>
+      <td>[cellular]</td>
+      <td></td>
+      <td>[living thing, animate thing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>bɛl</td>
+      <td></td>
+      <td></td>
+      <td>attach a bell to给一个铃铛</td>
+      <td>bell cows钟奶牛</td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>['bell shape', 'campana']</td>
+      <td></td>
+      <td>the shape of a bell钟的形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[curved shape, curve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>['toll']</td>
+      <td></td>
+      <td>the sound of a bell being struck敲响了钟声</td>
+      <td>saved by the bell被钟声保存she heard the distant toll of church bells她听到了远处教堂钟声的声音</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>['buzzer', 'doorbell']</td>
+      <td></td>
+      <td>a push button at an outer door that gives a ringing or buzzing signal when pushed外门上的按钮，按下时会发出振铃或嗡嗡声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[button, push, push button]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>['vanessa bell', 'vanessa stephen']</td>
+      <td></td>
+      <td>English painter; sister of Virginia Woolf; prominent member of the Bloomsbury Group (1879-1961)英国画家;弗吉尼亚伍尔夫的妹妹;布鲁姆斯伯里集团的重要成员（1879-1961）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>["ship's bell"]</td>
+      <td></td>
+      <td>(nautical) each of the eight half-hour units of nautical time signaled by strokes of a ship's bell; eight bells signals 4:00, 8:00, or 12:00 o'clock, either a.m. or p.m.（航海）航行时间的八个半小时单位中的每一个都是由船钟敲击的信号; 8个铃铛在上午4点，8点或12点发出信号，或者是上午或下午12点。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[time unit, unit of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>['alexander melville bell', 'melville bell']</td>
+      <td></td>
+      <td>a phonetician and father of Alexander Graham Bell (1819-1905)一位语音学家和亚历山大·格雷厄姆·贝尔的父亲（1819-1905）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>['chime', 'gong']</td>
+      <td></td>
+      <td>a percussion instrument consisting of a set of tuned bells that are struck with a hammer; used as an orchestral instrument一种打击乐器，由一组用锤子敲击的铃声组成;用作管弦乐器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[percussion instrument, percussive instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td>['alexander bell', 'alexander graham bell']</td>
+      <td></td>
+      <td>United States inventor (born in Scotland) of the telephone (1847-1922)美国发明家（出生于苏格兰）的电话（1847-1922）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td></td>
+      <td></td>
+      <td>a hollow device made of metal that makes a ringing sound when struck由金属制成的中空装置，在敲击时发出响声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[signaling device, acoustic device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bell</th>
+      <td>ell</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>bɛl</td>
+      <td></td>
+      <td></td>
+      <td>the flared opening of a tubular device管状装置的喇叭形开口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yell</th>
+      <td>ell</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>jɛl</td>
+      <td>['call', 'cry', 'holler', 'hollo', 'scream', 'shout', 'shout out', 'squall']</td>
+      <td></td>
+      <td>utter a sudden loud cry突然大声喊叫</td>
+      <td>I yelled to her from the window but she couldn't hear me我从窗口向她喊叫，但她听不到我的声音</td>
+      <td>[yelling]</td>
+      <td>[outcry, call, exclaim, shout, call out, cry out, cry]</td>
+      <td>[emit, utter, let out, let loose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yell</th>
+      <td>ell</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>jɛl</td>
+      <td>['scream']</td>
+      <td></td>
+      <td>utter or declare in a very loud voice说声或声音很大声</td>
+      <td>You don't have to yell--I can hear you just fine你不必大喊 - 我能听到你的声音</td>
+      <td>[yeller]</td>
+      <td></td>
+      <td>[shout]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yell</th>
+      <td>ell</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>jɛl</td>
+      <td>['cry']</td>
+      <td></td>
+      <td>a loud utterance of emotion (especially when inarticulate)一种响亮的情绪表达（特别是在说不清楚时）</td>
+      <td>a yell of pain痛苦的叫喊</td>
+      <td></td>
+      <td></td>
+      <td>[utterance, vocalization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yell</th>
+      <td>ell</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>jɛl</td>
+      <td>['call', 'cry', 'outcry', 'shout', 'vociferation']</td>
+      <td></td>
+      <td>a loud utterance; often in protest or opposition一个响亮的话语;经常是抗议或反对</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utterance, vocalization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dell</th>
+      <td>ell</td>
+      <td>3.34</td>
+      <td>nou</td>
+      <td>dɛl</td>
+      <td>['dingle']</td>
+      <td></td>
+      <td>a small wooded hollow一个小树木繁茂的空心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[holler, hollow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jell</th>
+      <td>ell</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>dʒɛl</td>
+      <td>['congeal', 'set']</td>
+      <td></td>
+      <td>become gelatinous变得凝胶状</td>
+      <td>the liquid jelled after we added the enzyme我们加入酶后液体凝结</td>
+      <td></td>
+      <td></td>
+      <td>[solidify]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

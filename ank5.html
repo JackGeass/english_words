@@ -1,0 +1,1010 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['thank', 'frank', 'banks', 'blank', 'ankle', 'prank', 'crank', 'flank', 'spank', 'hanks', 'plank', 'hanky', 'clank', 'shank', 'lanky', 'swank', 'manky']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>thank</th>
+      <td>ank</td>
+      <td>5.99</td>
+      <td>ver</td>
+      <td>θæŋk</td>
+      <td>['give thanks']</td>
+      <td></td>
+      <td>express gratitude or show appreciation to表示感谢或表示感谢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[convey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frank</th>
+      <td>ank</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fRɑnk</td>
+      <td>['postmark']</td>
+      <td></td>
+      <td>stamp with a postmark to indicate date and time of mailing带有邮戳的邮票，表明邮寄的日期和时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stamp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frank</th>
+      <td>ank</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fRɑnk</td>
+      <td></td>
+      <td></td>
+      <td>exempt by means of an official pass or letter, as from customs or other checks通过海关或其他支票的正式通行证或信件豁免</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[let off, relieve, exempt, excuse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frank</th>
+      <td>ank</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>fRɑnk</td>
+      <td>['dog', 'frankfurter', 'hot dog', 'hotdog', 'weenie', 'wiener', 'wienerwurst']</td>
+      <td></td>
+      <td>a smooth-textured sausage of minced beef or pork usually smoked; often served on a bread roll一种质地光滑的碎牛肉或猪肉香肠，通常是熏制的;经常在面包卷上吃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sausage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frank</th>
+      <td>ank</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>fRɑnk</td>
+      <td></td>
+      <td></td>
+      <td>a member of the ancient Germanic peoples who spread from the Rhine into the Roman Empire in the 4th century在4世纪从莱茵河传入罗马帝国的古代日耳曼民族的一员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[european]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frank</th>
+      <td>ank</td>
+      <td>4.89</td>
+      <td>adj</td>
+      <td>fRɑnk</td>
+      <td>['blunt', 'candid', 'forthright', 'free-spoken', 'outspoken', 'plainspoken', 'point-blank', 'straight-from-the-shoulder'], similarTo:['direct']</td>
+      <td></td>
+      <td>characterized by directness in manner or speech; without subtlety or evasion以直接的方式或言语为特征;没有微妙或逃避</td>
+      <td>tell me what you think--and you may just as well be frank告诉我你的想法 - 你也可以坦率地说</td>
+      <td>[frankness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frank</th>
+      <td>ank</td>
+      <td>4.89</td>
+      <td>adj</td>
+      <td>fRɑnk</td>
+      <td>, similarTo:['obvious']</td>
+      <td></td>
+      <td>clearly manifest; evident清楚地表明;明显</td>
+      <td>frank enjoyment坦诚享受</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>banks</th>
+      <td>ank</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bæŋks</td>
+      <td>['sir joseph banks']</td>
+      <td></td>
+      <td>English botanist who accompanied Captain Cook on his first voyage to the Pacific Ocean (1743-1820)陪同库克船长第一次航行到太平洋的英国植物学家（1743-1820）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>ver</td>
+      <td>blæŋk</td>
+      <td></td>
+      <td></td>
+      <td>keep the opposing (baseball) team from winning让对方（棒球）队伍不再获胜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prevent, keep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>blæŋk</td>
+      <td>['lacuna']</td>
+      <td></td>
+      <td>a blank gap or missing part空白缺口或缺失部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crack, gap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>blæŋk</td>
+      <td>['space']</td>
+      <td></td>
+      <td>a blank character used to separate successive words in writing or printing用于在书写或打印中分隔连续单词的空白字符</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[character, graphic symbol, graph, grapheme]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>blæŋk</td>
+      <td>['blank shell', 'dummy']</td>
+      <td></td>
+      <td>a cartridge containing an explosive charge but no bullet一个装有爆炸装药但没有子弹的弹药筒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cartridge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>blæŋk</td>
+      <td></td>
+      <td></td>
+      <td>a piece of material ready to be made into something一块准备制成东西的材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sheet, flat solid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>adj</td>
+      <td>blæŋk</td>
+      <td>['utter'], similarTo:['complete']</td>
+      <td></td>
+      <td>complete and absolute完整而绝对</td>
+      <td>blank stupidity空白的愚蠢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>adj</td>
+      <td>blæŋk</td>
+      <td>['clean', 'white'], similarTo:['empty']</td>
+      <td></td>
+      <td>(of a surface) not written or printed on（表面）未书写或印刷的</td>
+      <td>blank pages空白页fill in the blank spaces填写空格</td>
+      <td>[blankness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>adj</td>
+      <td>blæŋk</td>
+      <td>, similarTo:['unloaded']</td>
+      <td></td>
+      <td>not charged with a bullet没有子弹</td>
+      <td>a blank cartridge一个空白墨盒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blank</th>
+      <td>ank</td>
+      <td>4.00</td>
+      <td>adj</td>
+      <td>blæŋk</td>
+      <td>, similarTo:['unperceiving', 'unperceptive']</td>
+      <td></td>
+      <td>without comprehension没有理解</td>
+      <td>When I called her name, she gave me a blank look, as though she didn't know me当我打电话给她的名字时，她给了我一个空白的样子，好像她不认识我一样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ankle</th>
+      <td>ank</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>'æŋkəl</td>
+      <td>['ankle joint', 'articulatio talocruralis', 'mortise joint']</td>
+      <td></td>
+      <td>a gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus胫骨和腓骨远端与距骨近端之间的滑动关节</td>
+      <td></td>
+      <td>[anklet]</td>
+      <td></td>
+      <td>[articulatio plana, gliding joint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prank</th>
+      <td>ank</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>præŋk</td>
+      <td></td>
+      <td></td>
+      <td>dress or decorate showily or gaudily穿着或装饰华丽或华丽</td>
+      <td>Roses were pranking the lawn玫瑰花在草坪上</td>
+      <td></td>
+      <td></td>
+      <td>[ornament, grace, embellish, decorate, adorn, beautify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prank</th>
+      <td>ank</td>
+      <td>3.66</td>
+      <td>ver</td>
+      <td>præŋk</td>
+      <td></td>
+      <td></td>
+      <td>dress up showily装扮得很好</td>
+      <td>He pranked himself out in his best clothes他穿着最好的衣服恶作剧</td>
+      <td></td>
+      <td></td>
+      <td>[trick up, attire, deck out, deck up, dress up, fancy up, fig out, fig up, get up, gussy up, overdress, prink, rig out, tog out, tog up, trick out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prank</th>
+      <td>ank</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>præŋk</td>
+      <td>['antic', 'caper', 'joke', 'put-on', 'trick']</td>
+      <td></td>
+      <td>a ludicrous or grotesque act done for fun and amusement为娱乐和娱乐而做的荒谬或怪诞的行为</td>
+      <td></td>
+      <td>[prankster]</td>
+      <td></td>
+      <td>[recreation, diversion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prank</th>
+      <td>ank</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>præŋk</td>
+      <td>['buffoonery', 'clowning', 'frivolity', 'harlequinade', 'japery']</td>
+      <td></td>
+      <td>acting like a clown or buffoon表现得像个小丑或小丑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foolery, folly, indulgence, lunacy, craziness, tomfoolery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>kræŋk</td>
+      <td>['crank up']</td>
+      <td></td>
+      <td>start by cranking从曲柄开始</td>
+      <td>crank up the engine启动发动机</td>
+      <td></td>
+      <td></td>
+      <td>[start up, start]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>kræŋk</td>
+      <td>['crank up']</td>
+      <td></td>
+      <td>rotate with a crank用曲柄旋转</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[circumvolve, rotate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>kræŋk</td>
+      <td>['zigzag']</td>
+      <td></td>
+      <td>travel along a zigzag path沿着曲折的道路旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, travel, locomote, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>kræŋk</td>
+      <td></td>
+      <td></td>
+      <td>bend into the shape of a crank弯曲成曲柄的形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, flex, twist, deform, bend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>kræŋk</td>
+      <td></td>
+      <td></td>
+      <td>fasten with a crank用曲柄固定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[secure, fasten, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>kræŋk</td>
+      <td>['crackpot', 'fruitcake', 'nut', 'nut case', 'screwball']</td>
+      <td></td>
+      <td>a whimsically eccentric person一个异想天开的怪人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[oddball, eccentric, geek, flake, eccentric person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>kræŋk</td>
+      <td>['chalk', 'chicken feed', 'deoxyephedrine', 'glass', 'ice', 'meth', 'methamphetamine', 'methamphetamine hydrochloride', 'methedrine', 'shabu', 'trash']</td>
+      <td></td>
+      <td>an amphetamine derivative (trade name Methedrine) used in the form of a crystalline hydrochloride; used as a stimulant to the nervous system and as an appetite suppressant以结晶盐酸盐形式使用的苯丙胺衍生物（商品名Methedrine）;用作神经系统的兴奋剂和食欲抑制剂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amphetamine, controlled substance, pep pill, speed, upper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>kræŋk</td>
+      <td>['starter']</td>
+      <td></td>
+      <td>a hand tool consisting of a rotating shaft with parallel handle手动工具，由带有平行手柄的旋转轴组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hand tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>kræŋk</td>
+      <td>['churl', 'crosspatch', 'grouch', 'grump']</td>
+      <td></td>
+      <td>a bad-tempered person一个脾气暴躁的人</td>
+      <td></td>
+      <td>[cranky]</td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crank</th>
+      <td>ank</td>
+      <td>3.61</td>
+      <td>adj</td>
+      <td>kræŋk</td>
+      <td>['cranky', 'tender', 'tippy'], similarTo:['unstable']</td>
+      <td></td>
+      <td>(used of boats) inclined to heel over easily under sail（用于船只）倾向于在帆下倾斜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flank</th>
+      <td>ank</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>flæŋk</td>
+      <td></td>
+      <td></td>
+      <td>be located at the sides of something or somebody位于某物或某人的两侧</td>
+      <td></td>
+      <td>[flanker]</td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flank</th>
+      <td>ank</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>flæŋk</td>
+      <td>['wing']</td>
+      <td></td>
+      <td>the side of military or naval formation军事或海军编队的一面</td>
+      <td>they attacked the enemy's right flank他们袭击了敌人的右翼</td>
+      <td></td>
+      <td></td>
+      <td>[formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flank</th>
+      <td>ank</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>flæŋk</td>
+      <td></td>
+      <td></td>
+      <td>a cut from the fleshy part of an animal's side between the ribs and the leg从肋骨和腿之间的动物侧面的肉质部分切开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut of beef]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flank</th>
+      <td>ank</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>flæŋk</td>
+      <td></td>
+      <td></td>
+      <td>a subfigure consisting of a side of something由一个东西组成的子图</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[subfigure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flank</th>
+      <td>ank</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>flæŋk</td>
+      <td></td>
+      <td></td>
+      <td>the side between ribs and hipbone肋骨和髋骨之间的侧面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spank</th>
+      <td>ank</td>
+      <td>3.39</td>
+      <td>ver</td>
+      <td>spæŋk</td>
+      <td>['larrup', 'paddle']</td>
+      <td></td>
+      <td>give a spanking to; subject to a spanking给打屁股;受到打屁股的影响</td>
+      <td></td>
+      <td>[spanker, spanking]</td>
+      <td></td>
+      <td>[beat, beat up, work over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spank</th>
+      <td>ank</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>spæŋk</td>
+      <td></td>
+      <td></td>
+      <td>a slap with the flat of the hand手掌扁平一巴掌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slap, smack, smacking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hanks</th>
+      <td>ank</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>hæŋks</td>
+      <td>['thomas j. hanks', 'tom hanks']</td>
+      <td></td>
+      <td>United States film actor (born in 1956)美国电影演员（1956年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plank</th>
+      <td>ank</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>plæŋk</td>
+      <td>['plank over']</td>
+      <td></td>
+      <td>cover with planks用木板盖住</td>
+      <td>The streets were planked街道上都是木板条</td>
+      <td>[planking]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plank</th>
+      <td>ank</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>plæŋk</td>
+      <td>['flump', 'plonk', 'plop', 'plump', 'plump down', 'plunk', 'plunk down']</td>
+      <td></td>
+      <td>set (something or oneself) down with or as if with a noise用（或某种东西）设置（或某种东西），或者用噪音</td>
+      <td>He planked the money on the table他把钱放在桌子上He planked himself into the sofa他把自己趴在沙发上</td>
+      <td></td>
+      <td></td>
+      <td>[put down, set down, place down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plank</th>
+      <td>ank</td>
+      <td>3.21</td>
+      <td>ver</td>
+      <td>plæŋk</td>
+      <td></td>
+      <td></td>
+      <td>cook and serve on a plank在木板上做饭和服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dish out, dish up, serve up, dish, serve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plank</th>
+      <td>ank</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>plæŋk</td>
+      <td>['board']</td>
+      <td></td>
+      <td>a stout length of sawn timber; made in a wide variety of sizes and used for many purposes一块粗壮的锯材;制成各种尺寸，用于多种用途</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lumber, timber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plank</th>
+      <td>ank</td>
+      <td>3.21</td>
+      <td>nou</td>
+      <td>plæŋk</td>
+      <td></td>
+      <td></td>
+      <td>an endorsed policy in the platform of a political party在政党平台上的认可政策</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[policy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hanky</th>
+      <td>ank</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>'hæŋki</td>
+      <td>['handkerchief', 'hankey', 'hankie']</td>
+      <td></td>
+      <td>a square piece of cloth used for wiping the eyes or nose or as a costume accessory用于擦拭眼睛或鼻子的方形布或作为服装配件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of cloth, piece of material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clank</th>
+      <td>ank</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>klæŋk</td>
+      <td></td>
+      <td></td>
+      <td>make a clank做一个铮铮</td>
+      <td>the train clanked through the village火车穿过村庄</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clank</th>
+      <td>ank</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>klæŋk</td>
+      <td>['clang', 'clangor', 'clangoring', 'clangour', 'clash', 'crash']</td>
+      <td></td>
+      <td>a loud resonant repeating noise一个响亮的共振重复噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>ver</td>
+      <td>ʃæŋk</td>
+      <td></td>
+      <td></td>
+      <td>hit (a golf ball) with the heel of a club, causing the ball to veer in the wrong direction用球杆的后跟击打（高尔夫球），使球向错误的方向转向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td>['stem']</td>
+      <td></td>
+      <td>cylinder forming a long narrow part of something圆柱形成一个狭长的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cylinder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td>['cannon']</td>
+      <td></td>
+      <td>lower part of the leg extending from the hock to the fetlock in hoofed mammals在有蹄哺乳动物的腿部的下半部分从飞节延伸到胎儿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td>['waist']</td>
+      <td></td>
+      <td>the narrow part of the shoe connecting the heel and the wide part of the sole鞋跟的狭窄部分连接鞋跟和鞋底的宽阔部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, portion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td></td>
+      <td></td>
+      <td>a cut of meat (beef or veal or mutton or lamb) from the upper part of the leg从腿的上部切下一块肉（牛肉或小牛肉或羊肉或羊肉）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut, cut of meat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td></td>
+      <td></td>
+      <td>a poor golf stroke in which the heel of the club hits the ball一个糟糕的高尔夫球击球，其中球杆的后跟撞击球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[golf stroke, golf shot, swing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td></td>
+      <td></td>
+      <td>cylinder forming the part of a bit by which it is held in the drill圆柱体形成钻头中的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cylinder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td></td>
+      <td></td>
+      <td>cylinder forming the part of a bolt between the thread and the head圆柱形成螺纹和头部之间的螺栓的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cylinder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shank</th>
+      <td>ank</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>ʃæŋk</td>
+      <td></td>
+      <td></td>
+      <td>the part of the human leg between the knee and the ankle膝盖和脚踝之间的人腿部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lanky</th>
+      <td>ank</td>
+      <td>2.40</td>
+      <td>adj</td>
+      <td>'læŋki</td>
+      <td>['gangling', 'gangly', 'rangy'], similarTo:['tall']</td>
+      <td></td>
+      <td>tall and thin and having long slender limbs又高又瘦，四肢长而细长</td>
+      <td>a lanky kid transformed almost overnight into a handsome young man一个瘦长的孩子几乎在一夜之间变成了一个英俊的年轻人</td>
+      <td>[lankiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lanky</th>
+      <td>ank</td>
+      <td>2.40</td>
+      <td>adj</td>
+      <td>'læŋki</td>
+      <td>['gangling', 'gangly'], similarTo:['lean', 'thin']</td>
+      <td></td>
+      <td>tall and thin又高又瘦</td>
+      <td></td>
+      <td>[lankiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swank</th>
+      <td>ank</td>
+      <td>2.33</td>
+      <td>ver</td>
+      <td>swæŋk</td>
+      <td>['flash', 'flaunt', 'ostentate', 'show off']</td>
+      <td></td>
+      <td>display proudly; act ostentatiously or pretentiously自豪地展示;炫耀或自命不凡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exhibit, expose, display]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swank</th>
+      <td>ank</td>
+      <td>2.33</td>
+      <td>nou</td>
+      <td>swæŋk</td>
+      <td>['chic', 'chichi', 'chicness', 'last word', 'modishness', 'smartness', 'stylishness']</td>
+      <td></td>
+      <td>elegance by virtue of being fashionable时尚的优雅</td>
+      <td></td>
+      <td>[swanky]</td>
+      <td></td>
+      <td>[elegance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swank</th>
+      <td>ank</td>
+      <td>2.33</td>
+      <td>adj</td>
+      <td>swæŋk</td>
+      <td>['swanky'], similarTo:['fashionable', 'stylish']</td>
+      <td></td>
+      <td>imposingly fashionable and elegant气势雄伟，时尚优雅</td>
+      <td>a swank apartment一间豪华的公寓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>manky</th>
+      <td>ank</td>
+      <td>2.27</td>
+      <td>adj</td>
+      <td>'mæŋki</td>
+      <td>, similarTo:['worthless']</td>
+      <td></td>
+      <td>inferior and worthless低劣而且毫无价值</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

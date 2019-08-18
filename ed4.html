@@ -1,0 +1,680 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['used', 'edge', 'shed', 'eyed', 'aged', 'edit', 'eddy', 'sled', 'edgy', 'dyed', 'awed', 'edda']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>used</th>
+      <td>ed</td>
+      <td>5.54</td>
+      <td>adj</td>
+      <td>juzd</td>
+      <td>['exploited', 'ill-used', 'put-upon', 'victimised', 'victimized'], similarTo:['misused']</td>
+      <td></td>
+      <td>(of persons) taken advantage of（人）利用</td>
+      <td>after going out of his way to help his friend get the job he felt not appreciated but used在竭尽全力帮助他的朋友得到这份工作之后，他觉得自己并不欣赏，而是习惯了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>used</th>
+      <td>ed</td>
+      <td>5.54</td>
+      <td>adj</td>
+      <td>juzd</td>
+      <td>['secondhand'], similarTo:['old']</td>
+      <td></td>
+      <td>previously used or owned by another以前使用或拥有的另一个</td>
+      <td>bought a secondhand (or used) car买了二手（或二手）汽车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>used</th>
+      <td>ed</td>
+      <td>5.54</td>
+      <td>adj</td>
+      <td>juzd</td>
+      <td>, similarTo:['employed', 'in use', 'utilised', 'utilized']</td>
+      <td>[misused]</td>
+      <td>employed in accomplishing something用于完成某事</td>
+      <td>the principle of surprise is the most used and misused of all the principles of war惊讶的原则是所有战争原则中最常用和最滥用的原因</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>ɛdʒ</td>
+      <td>['abut', 'adjoin', 'border', 'butt', 'butt against', 'butt on', 'march']</td>
+      <td></td>
+      <td>lie adjacent to another or share a boundary与另一个人相邻或分享边界</td>
+      <td></td>
+      <td>[edging]</td>
+      <td></td>
+      <td>[meet, contact, adjoin, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>ɛdʒ</td>
+      <td>['inch'], alos:['edge in']</td>
+      <td></td>
+      <td>advance slowly, as if by inches慢慢前进，好像以英寸为单位</td>
+      <td>He edged towards the car他朝车子走去</td>
+      <td></td>
+      <td></td>
+      <td>[march on, go on, move on, advance, progress, pass on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>ɛdʒ</td>
+      <td>['border']</td>
+      <td></td>
+      <td>provide with a border or edge提供边框或边缘</td>
+      <td>edge the tablecloth with embroidery桌布上绣有刺绣</td>
+      <td>[edger]</td>
+      <td></td>
+      <td>[provide, supply, render, furnish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>ɛdʒ</td>
+      <td></td>
+      <td></td>
+      <td>provide with an edge提供优势</td>
+      <td>edge a blade刀刃</td>
+      <td></td>
+      <td></td>
+      <td>[sharpen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>ɛdʒ</td>
+      <td>['sharpness']</td>
+      <td></td>
+      <td>the attribute of urgency in tone of voice语气紧迫的属性</td>
+      <td>his voice had an edge to it他的声音很有优势</td>
+      <td>[edgy]</td>
+      <td></td>
+      <td>[urgency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>ɛdʒ</td>
+      <td>['border']</td>
+      <td></td>
+      <td>the boundary of a surface表面的边界</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[boundary, bound, bounds]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>ɛdʒ</td>
+      <td>['bound', 'boundary']</td>
+      <td></td>
+      <td>a line determining the limits of an area确定区域限制的线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>ɛdʒ</td>
+      <td></td>
+      <td></td>
+      <td>a sharp side formed by the intersection of two surfaces of an object由物体的两个表面的交叉形成的锐边</td>
+      <td>he rounded the edges of the box他把盒子的边缘弄圆了</td>
+      <td></td>
+      <td></td>
+      <td>[side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>ɛdʒ</td>
+      <td></td>
+      <td></td>
+      <td>a slight competitive advantage略有竞争优势</td>
+      <td>he had an edge on the competition他在比赛中占据优势</td>
+      <td></td>
+      <td></td>
+      <td>[favorable position, favourable position, superiority]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edge</th>
+      <td>ed</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>ɛdʒ</td>
+      <td></td>
+      <td></td>
+      <td>the outside limit of an object or area or surface; a place farthest away from the center of something物体或区域或表面的外部界限;距离某事物中心最远的地方</td>
+      <td>the edge of the leaf is wavy叶子的边缘是波浪状的she sat on the edge of the bed她坐在床边the water's edge水的边缘</td>
+      <td></td>
+      <td></td>
+      <td>[demarcation, demarcation line, limit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shed</th>
+      <td>ed</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>ʃɛd</td>
+      <td>['exuviate', 'molt', 'moult', 'slough']</td>
+      <td></td>
+      <td>cast off hair, skin, horn, or feathers脱掉头发，皮肤，角或羽毛</td>
+      <td>our dog sheds every Spring每年春天我们的狗都会流下</td>
+      <td>[shedding]</td>
+      <td></td>
+      <td>[shake off, throw off, throw away, throw, cast, cast off, drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shed</th>
+      <td>ed</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>ʃɛd</td>
+      <td>['pour forth', 'spill']</td>
+      <td></td>
+      <td>pour out in drops or small quantities or as if in drops or small quantities滴入或少量倒出或好像滴或少量</td>
+      <td>shed tears声泪俱下God shed His grace on Thee上帝在你身上摆脱了他的恩典</td>
+      <td></td>
+      <td></td>
+      <td>[pour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shed</th>
+      <td>ed</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>ʃɛd</td>
+      <td>['disgorge', 'spill']</td>
+      <td></td>
+      <td>cause or allow (a solid substance) to flow or run out or over导致或允许（固体物质）流动或用完或流出</td>
+      <td></td>
+      <td></td>
+      <td>[slop, spill, splatter]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shed</th>
+      <td>ed</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>ʃɛd</td>
+      <td>['cast', 'cast off', 'drop', 'shake off', 'throw', 'throw away', 'throw off']</td>
+      <td></td>
+      <td>get rid of摆脱</td>
+      <td>he shed his image as a pushy boss他把自己的形象当成了一个强势的老板shed your clothes脱掉你的衣服</td>
+      <td></td>
+      <td></td>
+      <td>[take away, remove, take, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shed</th>
+      <td>ed</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>ʃɛd</td>
+      <td></td>
+      <td></td>
+      <td>an outbuilding with a single story; used for shelter or storage一个单层的附属建筑;用于避难或储存</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[outbuilding]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shed</th>
+      <td>ed</td>
+      <td>4.14</td>
+      <td>adj</td>
+      <td>ʃɛd</td>
+      <td>['caducous'], similarTo:['deciduous']</td>
+      <td></td>
+      <td>shed at an early stage of development处于发展的早期阶段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eyed</th>
+      <td>ed</td>
+      <td>3.93</td>
+      <td>adj</td>
+      <td>aɪd</td>
+      <td>, similarTo:['almond-eyed', 'blue-eyed', 'eyelike', 'keen-eyed', 'left-eyed', 'one-eyed', 'ox-eyed', 'popeyed', 'purple-eyed', 'right-eyed', 'round-eyed', 'saucer-eyed', 'sharp-eyed', 'skew-eyed']</td>
+      <td>[eyeless]</td>
+      <td>having an eye or eyes or eyelike feature especially as specified; often used in combination有特定眼睛或眼睛或眼睛的特征;经常结合使用</td>
+      <td>a peacock's eyed feathers一只孔雀的眼睛羽毛red-eyed红眼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>ed</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>'eɪdʒɪd</td>
+      <td>['elderly']</td>
+      <td>[young]</td>
+      <td>people who are old collectively老人集体的人</td>
+      <td>special arrangements were available for the aged为老年人提供特别安排</td>
+      <td></td>
+      <td></td>
+      <td>[age group, cohort, age bracket]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>ed</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['cured'], similarTo:['preserved']</td>
+      <td></td>
+      <td>(used of tobacco) aging as a preservative process (`aged' is pronounced as one syllable)（用于烟草）老化作为防腐过程（“老化”发音为一个音节）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>ed</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['of age'], similarTo:['old']</td>
+      <td></td>
+      <td>having attained a specific age; (`aged' is pronounced as one syllable)达到特定年龄; （`age'发音为一个音节）</td>
+      <td>aged ten十岁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>ed</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['ripened'], similarTo:['mature', 'ripe']</td>
+      <td></td>
+      <td>of wines, fruit, cheeses; having reached a desired or final condition; (`aged' pronounced as one syllable)葡萄酒，水果，奶酪;达到了预期或最终状态; （'岁'发音为一个音节）</td>
+      <td>mature well-aged cheeses成熟的奶酪</td>
+      <td>[agedness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>ed</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['elderly', 'older', 'senior'], similarTo:['old']</td>
+      <td></td>
+      <td>advanced in years; (`aged' is pronounced as two syllables)多年前进; （`age'发音为两个音节）</td>
+      <td>aged members of the society社会老年人</td>
+      <td>[agedness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>ed</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>, similarTo:['worn']</td>
+      <td></td>
+      <td>at an advanced stage of erosion (pronounced as one syllable)处于侵蚀的高级阶段（发音为一个音节）</td>
+      <td>aged rocks岁的岩石</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>ed</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td>['redact']</td>
+      <td></td>
+      <td>prepare for publication or presentation by correcting, revising, or adapting通过纠正，修改或改编来准备出版或演示</td>
+      <td>she edited the letters of the politician so as to omit the most personal passages她编辑了政治家的信件，以便省略最个人的段落</td>
+      <td>[editing, editor]</td>
+      <td></td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>ed</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td>['cut', 'edit out']</td>
+      <td></td>
+      <td>cut and assemble the components of切割和组装的组件</td>
+      <td>edit film编辑电影</td>
+      <td></td>
+      <td>[abbreviate, foreshorten, shorten, contract, abridge, cut, reduce]</td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>ed</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td>['blue-pencil', 'delete']</td>
+      <td></td>
+      <td>cut or eliminate削减或消除</td>
+      <td>she edited the juiciest scenes她编辑了最多汁的场景</td>
+      <td></td>
+      <td></td>
+      <td>[censor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edit</th>
+      <td>ed</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>'ɛdɪt</td>
+      <td></td>
+      <td></td>
+      <td>supervise the publication of监督出版物</td>
+      <td>The same family has been editing the influential newspaper for almost 100 years这个家族近百年来一直在编辑有影响力的报纸</td>
+      <td></td>
+      <td></td>
+      <td>[put out, publish, release, issue, bring out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eddy</th>
+      <td>ed</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>'ɛdi</td>
+      <td>['purl', 'swirl', 'whirl', 'whirlpool']</td>
+      <td></td>
+      <td>flow in a circular current, of liquids流过圆形电流的液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[course, run, feed, flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eddy</th>
+      <td>ed</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>'ɛdi</td>
+      <td>['twist']</td>
+      <td></td>
+      <td>a miniature whirlpool or whirlwind resulting when the current of a fluid doubles back on itself当流体的电流翻倍时，产生微型漩涡或旋风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stream, current]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>eddy</th>
+      <td>ed</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>'ɛdi</td>
+      <td>['mary baker eddy', 'mary morse baker eddy']</td>
+      <td></td>
+      <td>founder of Christian Science in 1866 (1821-1910)基督教科学创始人1866年（1821-1910）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sled</th>
+      <td>ed</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>slɛd</td>
+      <td>['sleigh']</td>
+      <td></td>
+      <td>ride (on) a sled乘坐雪橇</td>
+      <td></td>
+      <td>[sledder, sledding]</td>
+      <td></td>
+      <td>[ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sled</th>
+      <td>ed</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>slɛd</td>
+      <td>['sledge', 'sleigh']</td>
+      <td></td>
+      <td>a vehicle mounted on runners and pulled by horses or dogs; for transportation over snow安装在跑道上并由马或狗拉动的车辆;在雪地上运输</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vehicle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edgy</th>
+      <td>ed</td>
+      <td>3.26</td>
+      <td>adj</td>
+      <td>'ɛdʒi</td>
+      <td>['high-strung', 'highly strung', 'jittery', 'jumpy', 'nervy', 'overstrung', 'restive', 'uptight'], similarTo:['tense']</td>
+      <td></td>
+      <td>being in a tense state处于紧张状态</td>
+      <td></td>
+      <td>[edge, edginess]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dyed</th>
+      <td>ed</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>daɪd</td>
+      <td>['bleached', 'colored', 'coloured'], similarTo:['artificial', 'unreal']</td>
+      <td></td>
+      <td>(used of color) artificially produced; not natural（用于颜色）人工制作;不自然</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>awed</th>
+      <td>ed</td>
+      <td>2.56</td>
+      <td>adj</td>
+      <td>ɔd</td>
+      <td>['awful'], similarTo:['reverent']</td>
+      <td></td>
+      <td>inspired by a feeling of fearful wonderment or reverence灵感来自恐惧的惊奇或敬畏</td>
+      <td>awed by the silence沉默敬畏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>awed</th>
+      <td>ed</td>
+      <td>2.56</td>
+      <td>adj</td>
+      <td>ɔd</td>
+      <td>['awestricken', 'awestruck'], similarTo:['overawed']</td>
+      <td>[unawed]</td>
+      <td>having or showing a feeling of mixed reverence and respect and wonder and dread拥有或表现出一种混合的敬畏和尊重以及惊奇和恐惧的感觉</td>
+      <td>stood in awed silence before the shrine在靖国神社前，他们默默地站着</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edda</th>
+      <td>ed</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>'ɛdə</td>
+      <td>['cocoyam', 'dasheen', 'taro', 'taro root']</td>
+      <td></td>
+      <td>tropical starchy tuberous root热带淀粉块茎根</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[root vegetable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>edda</th>
+      <td>ed</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>'ɛdə</td>
+      <td></td>
+      <td></td>
+      <td>either of two distinct works in Old Icelandic dating from the late 13th century and consisting of 34 mythological and heroic ballads composed between 800 and 1200; the primary source for Scandinavian mythology可以追溯到13世纪晚期的冰岛古代两件作品中的两件作品，包括34部800至1200年的神话和英雄民谣;斯堪的纳维亚神话的主要来源</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ballad, lay]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

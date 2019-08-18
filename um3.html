@@ -1,0 +1,695 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['mum', 'bum', 'sum', 'gum', 'rum', 'hum', 'cum', 'tum', 'ump']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>mum</th>
+      <td>um</td>
+      <td>4.98</td>
+      <td>nou</td>
+      <td>məm</td>
+      <td>['chrysanthemum morifolium', 'dendranthema grandifloruom', "florist's chrysanthemum", "florists' chrysanthemum"]</td>
+      <td></td>
+      <td>of China中国</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chrysanthemum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mum</th>
+      <td>um</td>
+      <td>4.98</td>
+      <td>nou</td>
+      <td>məm</td>
+      <td>['ma', 'mama', 'mamma', 'mammy', 'mom', 'momma', 'mommy', 'mummy']</td>
+      <td></td>
+      <td>informal terms for a mother母亲的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[female parent, mother]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mum</th>
+      <td>um</td>
+      <td>4.98</td>
+      <td>nou</td>
+      <td>məm</td>
+      <td></td>
+      <td></td>
+      <td>secrecy保密</td>
+      <td>mum's the word妈妈是这个词</td>
+      <td></td>
+      <td></td>
+      <td>[silence, secretiveness, secrecy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mum</th>
+      <td>um</td>
+      <td>4.98</td>
+      <td>adj</td>
+      <td>məm</td>
+      <td>['silent'], similarTo:['incommunicative', 'uncommunicative']</td>
+      <td></td>
+      <td>failing to speak or communicate etc when expected to在预期的时候没有说话或沟通等</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bum</th>
+      <td>um</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>bəm</td>
+      <td>['cadge', 'grub', 'mooch', 'sponge']</td>
+      <td></td>
+      <td>ask for and get free; be a parasite要求并获得自由;是一种寄生虫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obtain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bum</th>
+      <td>um</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>bəm</td>
+      <td>['arse about', 'arse around', 'bum about', 'bum around', 'frig around', 'fuck off', 'loaf', 'loll', 'loll around', 'lounge about', 'lounge around', "waste one's time"]</td>
+      <td></td>
+      <td>be lazy or idle懒惰或闲着</td>
+      <td>Her son is just bumming around all day她的儿子整天都在玩弄</td>
+      <td></td>
+      <td></td>
+      <td>[laze, slug, idle, stagnate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bum</th>
+      <td>um</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>bəm</td>
+      <td>['do-nothing', 'idler', 'layabout', 'loafer']</td>
+      <td></td>
+      <td>person who does no work没有工作的人</td>
+      <td>a lazy bum一个懒惰的流浪汉</td>
+      <td></td>
+      <td></td>
+      <td>[nonworker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bum</th>
+      <td>um</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>bəm</td>
+      <td>['crumb', 'dirty dog', 'git', 'lowlife', 'puke', 'rat', 'rotter', 'scum bag', 'skunk', 'so-and-so', 'stinker', 'stinkpot']</td>
+      <td></td>
+      <td>a person who is deemed to be despicable or contemptible被视为卑鄙或卑鄙的人</td>
+      <td>throw the bum out抛出屁股</td>
+      <td></td>
+      <td></td>
+      <td>[unpleasant person, disagreeable person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bum</th>
+      <td>um</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>bəm</td>
+      <td>['hobo', 'tramp']</td>
+      <td></td>
+      <td>a vagrant一个流浪汉</td>
+      <td>he tried to help the really down-and-out bums他试图帮助真正彻头彻尾的流氓</td>
+      <td></td>
+      <td></td>
+      <td>[floater, clochard, vagrant, drifter, vagabond]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bum</th>
+      <td>um</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>bəm</td>
+      <td>['arse', 'ass', 'backside', 'behind', 'bottom', 'buns', 'butt', 'buttocks', 'can', 'derriere', 'fanny', 'fundament', 'hind end', 'hindquarters', 'keister', 'nates', 'posterior', 'prat', 'rear', 'rear end', 'rump', 'seat', 'stern', 'tail', 'tail end', 'tooshie', 'tush']</td>
+      <td></td>
+      <td>the fleshy part of the human body that you sit on你坐在人体的肉质部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bum</th>
+      <td>um</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>bəm</td>
+      <td>['cheap', 'cheesy', 'chintzy', 'crummy', 'punk', 'sleazy', 'tinny'], similarTo:['inferior']</td>
+      <td></td>
+      <td>of very poor quality; flimsy质量很差;单薄</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>səm</td>
+      <td>['add', 'add together', 'add up', 'sum up', 'summate', 'tally', 'tot', 'tot up', 'total', 'tote up']</td>
+      <td></td>
+      <td>determine the sum of确定总和</td>
+      <td></td>
+      <td>[summation]</td>
+      <td>[add, add together]</td>
+      <td>[count, enumerate, number, numerate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>səm</td>
+      <td>['sum up', 'summarise', 'summarize']</td>
+      <td></td>
+      <td>be a summary of是一个总结</td>
+      <td>The abstract summarizes the main ideas in the paper摘要总结了论文的主要观点</td>
+      <td>[summation]</td>
+      <td>[summarize, resume, summarise, sum up]</td>
+      <td>[say, state, tell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səm</td>
+      <td>['sum total', 'summation']</td>
+      <td></td>
+      <td>the final aggregate最后的聚合</td>
+      <td>the sum of all our troubles did not equal the misery they suffered我们所有麻烦的总和并不等于他们遭受的痛苦</td>
+      <td>[summate]</td>
+      <td></td>
+      <td>[aggregation, collection, assemblage, accumulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səm</td>
+      <td>['join', 'union']</td>
+      <td></td>
+      <td>a set containing all and only the members of two or more given sets包含所有且仅包含两个或更多给定集的成员的集合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səm</td>
+      <td>['aggregate', 'total', 'totality']</td>
+      <td></td>
+      <td>the whole amount全部金额</td>
+      <td></td>
+      <td>[summate]</td>
+      <td></td>
+      <td>[unit, whole]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səm</td>
+      <td>['amount', 'amount of money', 'sum of money']</td>
+      <td></td>
+      <td>a quantity of money一定数量的钱</td>
+      <td>he borrowed a large sum他借了一大笔钱</td>
+      <td></td>
+      <td></td>
+      <td>[assets]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səm</td>
+      <td>['amount', 'total']</td>
+      <td></td>
+      <td>a quantity obtained by the addition of a group of numbers通过添加一组数字获得的数量</td>
+      <td></td>
+      <td>[summate]</td>
+      <td></td>
+      <td>[quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sum</th>
+      <td>um</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səm</td>
+      <td>['center', 'centre', 'core', 'essence', 'gist', 'heart', 'heart and soul', 'inwardness', 'kernel', 'marrow', 'meat', 'nitty-gritty', 'nub', 'pith', 'substance']</td>
+      <td></td>
+      <td>the choicest or most essential or most vital part of some idea or experience某些想法或经验中最挑选或最重要或最重要的部分</td>
+      <td></td>
+      <td>[summate]</td>
+      <td></td>
+      <td>[mental object, content, cognitive content]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ɡəm</td>
+      <td>['mumble']</td>
+      <td></td>
+      <td>grind with the gums; chew without teeth and with great difficulty用牙龈研磨;咀嚼没有牙齿，非常困难</td>
+      <td></td>
+      <td>[gumming]</td>
+      <td></td>
+      <td>[manducate, chew, jaw, masticate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ɡəm</td>
+      <td></td>
+      <td></td>
+      <td>become sticky变得粘稠</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ɡəm</td>
+      <td></td>
+      <td></td>
+      <td>cover, fill, fix or smear with or as if with gum覆盖，填充，修复或涂抹或似乎与口香糖</td>
+      <td>if you gum the tape it is stronger如果你给胶带胶，那就更强了</td>
+      <td></td>
+      <td></td>
+      <td>[put on, apply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ɡəm</td>
+      <td></td>
+      <td></td>
+      <td>exude or form gum散发或形成口香糖</td>
+      <td>these trees gum in the Spring这些树胶在春天</td>
+      <td></td>
+      <td></td>
+      <td>[exudate, ooze, ooze out, exude, transude]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>ɡəm</td>
+      <td>['gumwood']</td>
+      <td></td>
+      <td>wood or lumber from any of various gum trees especially the sweet gum来自各种胶树的木材或木材，尤其是甜胶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>ɡəm</td>
+      <td>['gum tree']</td>
+      <td></td>
+      <td>any of various trees of the genera Eucalyptus or Liquidambar or Nyssa that are sources of gum桉属或枫香属或Nyssa属的各种树木，是树胶的来源</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>ɡəm</td>
+      <td>['chewing gum']</td>
+      <td></td>
+      <td>a preparation (usually made of sweetened chicle) for chewing用于咀嚼的制剂（通常由甜味的角质层制成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[confection, sweet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>ɡəm</td>
+      <td>['gingiva']</td>
+      <td></td>
+      <td>the tissue (covered by mucous membrane) of the jaws that surrounds the bases of the teeth围绕牙齿基部的颌骨组织（被粘膜覆盖）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>ɡəm</td>
+      <td>['glue', 'mucilage']</td>
+      <td></td>
+      <td>cement consisting of a sticky substance that is used as an adhesive水泥由粘性物质组成，用作粘合剂</td>
+      <td></td>
+      <td>[gummy]</td>
+      <td></td>
+      <td>[cement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gum</th>
+      <td>um</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>ɡəm</td>
+      <td></td>
+      <td></td>
+      <td>any of various substances (soluble in water) that exude from certain plants; they are gelatinous when moist but harden on drying从某些植物中渗出的各种物质（可溶于水）;它们在潮湿时是凝胶状的，但在干燥时会变硬</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exudation, exudate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rum</th>
+      <td>um</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>rəm</td>
+      <td>['rummy']</td>
+      <td></td>
+      <td>a card game based on collecting sets and sequences; the winner is the first to meld all their cards基于收集集和序列的纸牌游戏;获胜者是第一个将所有卡片融合在一起的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cards, card game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rum</th>
+      <td>um</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>rəm</td>
+      <td></td>
+      <td></td>
+      <td>liquor distilled from fermented molasses从发酵糖蜜中蒸馏出的酒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[liquor, strong drink, spirits, booze, hard drink, john barleycorn, hard liquor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rum</th>
+      <td>um</td>
+      <td>3.80</td>
+      <td>adj</td>
+      <td>rəm</td>
+      <td>['curious', 'funny', 'odd', 'peculiar', 'queer', 'rummy', 'singular'], similarTo:['unusual', 'strange']</td>
+      <td></td>
+      <td>beyond or deviating from the usual or expected超出或偏离通常或预期的</td>
+      <td>what a rum fellow什么朗姆酒家伙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hum</th>
+      <td>um</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>həm</td>
+      <td>['thrum']</td>
+      <td></td>
+      <td>sound with a monotonous hum声音单调嗡嗡声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hum</th>
+      <td>um</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>həm</td>
+      <td>['buzz', 'seethe']</td>
+      <td></td>
+      <td>be noisy with activity对活动很吵</td>
+      <td></td>
+      <td>[humming]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hum</th>
+      <td>um</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>həm</td>
+      <td></td>
+      <td></td>
+      <td>make a low continuous sound发出低声连续的声音</td>
+      <td>The refrigerator is humming冰箱嗡嗡作响</td>
+      <td>[humming]</td>
+      <td></td>
+      <td>[noise, make noise, resound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hum</th>
+      <td>um</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>həm</td>
+      <td></td>
+      <td></td>
+      <td>sing with closed lips闭着嘴唇唱歌</td>
+      <td>She hummed a melody她哼着旋律</td>
+      <td>[humming, hummer]</td>
+      <td></td>
+      <td>[sing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hum</th>
+      <td>um</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>həm</td>
+      <td>['al faran', 'harkat-ul-mujahidin', 'harkat ul-ansar', 'harkat ul-mujahedeen', 'hua', 'movement of holy warriors']</td>
+      <td></td>
+      <td>an Islamic fundamentalist group in Pakistan that fought the Soviet Union in Afghanistan in the 1980s; now operates as a terrorist organization primarily in Kashmir and seeks Kashmir's accession by Pakistan巴基斯坦的一个伊斯兰原教旨主义组织，在1980年代在阿富汗与苏联作战;现在作为主要在克什米尔的恐怖主义组织运作，并寻求巴基斯坦加入克什米尔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hum</th>
+      <td>um</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>həm</td>
+      <td>['humming']</td>
+      <td></td>
+      <td>a humming noise一阵嗡嗡声</td>
+      <td>the hum of distant traffic遥远的交通嗡嗡声</td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hum</th>
+      <td>um</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>həm</td>
+      <td>['busyness']</td>
+      <td></td>
+      <td>the state of being or appearing to be actively engaged in an activity存在或似乎积极参与某项活动的状态</td>
+      <td>there is a constant hum of military preparation军事准备不断嗡嗡作响</td>
+      <td></td>
+      <td></td>
+      <td>[action, activity, activeness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cum</th>
+      <td>um</td>
+      <td>3.50</td>
+      <td>nou</td>
+      <td>kəm</td>
+      <td>['come', 'ejaculate', 'seed', 'semen', 'seminal fluid']</td>
+      <td></td>
+      <td>the thick white fluid containing spermatozoa that is ejaculated by the male genital tract含有精子的浓稠白色液体，由男性生殖道射精</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bodily fluid, body fluid, humor, humour, liquid body substance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tum</th>
+      <td>um</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>təm</td>
+      <td>['breadbasket', 'stomach', 'tummy']</td>
+      <td></td>
+      <td>an enlarged and muscular saclike organ of the alimentary canal; the principal organ of digestion消化道的扩大和肌肉囊状器官;消化的主要器官</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[internal organ, viscus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ump</th>
+      <td>um</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>əmp</td>
+      <td>['umpire']</td>
+      <td></td>
+      <td>an official at a baseball game棒球比赛的官员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[official]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

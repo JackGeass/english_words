@@ -1,0 +1,575 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['cross', 'gross', 'gloss']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td>['intersect']</td>
+      <td></td>
+      <td>meet at a point在某一点见面</td>
+      <td></td>
+      <td>[crossing]</td>
+      <td></td>
+      <td>[meet, run into, run across, see, come across, encounter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td>['span', 'sweep', 'traverse']</td>
+      <td></td>
+      <td>to cover or extend over an area or time period覆盖或延伸一个区域或时间段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[continue, extend, cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td>['cover', 'cut across', 'cut through', 'get across', 'get over', 'pass over', 'track', 'traverse']</td>
+      <td></td>
+      <td>travel across or pass over穿越或经过</td>
+      <td></td>
+      <td>[crossing]</td>
+      <td></td>
+      <td>[pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td>['baffle', 'bilk', 'foil', 'frustrate', 'queer', 'scotch', 'spoil', 'thwart'], alos:['double cross']</td>
+      <td></td>
+      <td>hinder or prevent (the efforts, plans, or desires) of妨碍或阻止（努力，计划或愿望）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[preclude, forbid, foreclose, forestall, prevent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td>['crossbreed', 'hybridise', 'hybridize', 'interbreed']</td>
+      <td></td>
+      <td>breed animals or plants using parents of different races and varieties使用不同种族和品种的父母繁殖动物或植物</td>
+      <td>cross a horse and a donkey穿过马和驴Mendel tried crossbreeding孟德尔尝试过杂交</td>
+      <td>[crossing]</td>
+      <td></td>
+      <td>[breed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td></td>
+      <td>[uncross]</td>
+      <td>fold so as to resemble a cross折叠以便像十字架</td>
+      <td>she crossed her legs她越过她的腿</td>
+      <td></td>
+      <td></td>
+      <td>[fold, turn up, fold up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td></td>
+      <td></td>
+      <td>meet and pass见面并通过</td>
+      <td>the trains crossed火车越过了</td>
+      <td></td>
+      <td></td>
+      <td>[intersect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>krɔs</td>
+      <td></td>
+      <td></td>
+      <td>trace a line through or across通过或跨越一条线</td>
+      <td>cross your `t'越过你的't'</td>
+      <td></td>
+      <td></td>
+      <td>[write]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>krɔs</td>
+      <td>['crown of thorns']</td>
+      <td></td>
+      <td>any affliction that causes great suffering任何造成巨大痛苦的痛苦</td>
+      <td>that is his cross to bear那是他的十字架</td>
+      <td></td>
+      <td></td>
+      <td>[affliction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>krɔs</td>
+      <td>['crisscross', 'mark']</td>
+      <td></td>
+      <td>a marking that consists of lines that cross each other由相互交叉的线组成的标记</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[marking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>krɔs</td>
+      <td>['crossbreeding', 'crossing', 'hybridisation', 'hybridization', 'hybridizing', 'interbreeding']</td>
+      <td></td>
+      <td>(genetics) the act of mixing different species or varieties of animals or plants and thus to produce hybrids（遗传学）混合不同物种或种类的动物或植物从而产生杂种的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coupling, pairing, sexual union, mating, union, conjugation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>krɔs</td>
+      <td>['crossbreed', 'hybrid']</td>
+      <td></td>
+      <td>(genetics) an organism that is the offspring of genetically dissimilar parents or stock; especially offspring produced by breeding plants or animals of different varieties or breeds or species（遗传学）一种有机体，是遗传上不同的父母或种群的后代;特别是由繁殖植物或不同品种或品种的动物产生的后代</td>
+      <td>a mule is a cross between a horse and a donkey骡子是马和驴之间的交叉</td>
+      <td></td>
+      <td></td>
+      <td>[being, organism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>krɔs</td>
+      <td></td>
+      <td></td>
+      <td>a representation of the structure on which Jesus was crucified; used as an emblem of Christianity or in heraldry耶稣被钉在十字架上的结构的代表;用作基督教或纹章的象征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emblem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>krɔs</td>
+      <td></td>
+      <td></td>
+      <td>a wooden structure consisting of an upright post with a transverse piece一种木结构，由一个带横向件的立柱组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[structure, construction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>adj</td>
+      <td>krɔs</td>
+      <td>['thwartwise', 'transversal', 'transverse'], similarTo:['crosswise']</td>
+      <td></td>
+      <td>extending or lying across; in a crosswise direction; at right angles to the long axis伸展或躺着;在横向方向;与长轴成直角</td>
+      <td>cross members should be all steel横梁应全是钢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cross</th>
+      <td>oss</td>
+      <td>4.82</td>
+      <td>adj</td>
+      <td>krɔs</td>
+      <td>['bad-tempered', 'crabbed', 'crabby', 'fussy', 'grouchy', 'grumpy', 'ill-tempered'], similarTo:['ill-natured']</td>
+      <td></td>
+      <td>annoyed and irritable生气，烦躁</td>
+      <td></td>
+      <td>[crossness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>groʊs</td>
+      <td></td>
+      <td></td>
+      <td>earn before taxes, expenses, etc.在税前，费用等方面赚取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[realise, take in, pull in, realize, bring in, clear, earn, gain, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>groʊs</td>
+      <td>['receipts', 'revenue']</td>
+      <td></td>
+      <td>the entire amount of income before any deductions are made扣除前的全部收入</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amount, amount of money, sum, sum of money]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>groʊs</td>
+      <td>['144']</td>
+      <td></td>
+      <td>twelve dozen十二打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large integer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>groʊs</td>
+      <td>['arrant', 'complete', 'consummate', 'double-dyed', 'everlasting', 'perfect', 'pure', 'sodding', 'staring', 'stark', 'thorough', 'thoroughgoing', 'unadulterated', 'utter'], similarTo:['unmitigated']</td>
+      <td></td>
+      <td>without qualification; used informally as (often pejorative) intensifiers没有资格;非正式地使用（通常是贬义的）增强器</td>
+      <td>gross negligence重大过失</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>groʊs</td>
+      <td>['porcine'], similarTo:['fat']</td>
+      <td></td>
+      <td>repellently fat反感肥胖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>groʊs</td>
+      <td>['crying', 'egregious', 'flagrant', 'glaring', 'rank'], similarTo:['conspicuous']</td>
+      <td></td>
+      <td>conspicuously and outrageously bad or reprehensible显然和蛮横的坏或应受谴责</td>
+      <td>gross ineptitude严重无能gross injustice严重不公正</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>groʊs</td>
+      <td>['megascopic'], similarTo:['seeable', 'visible']</td>
+      <td></td>
+      <td>visible to the naked eye (especially of rocks and anatomical features)肉眼可见（特别是岩石和解剖学特征）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>groʊs</td>
+      <td>['crude', 'earthy', 'vulgar'], similarTo:['indecent']</td>
+      <td></td>
+      <td>conspicuously and tastelessly indecent显而易见，无味的不雅</td>
+      <td>a revoltingly gross expletive令人反感的咒骂</td>
+      <td>[grossness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>groʊs</td>
+      <td>, similarTo:['overall']</td>
+      <td>[net]</td>
+      <td>before any deductions在任何扣除之前</td>
+      <td>gross income总收入</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gross</th>
+      <td>oss</td>
+      <td>4.22</td>
+      <td>adj</td>
+      <td>groʊs</td>
+      <td>, similarTo:['general']</td>
+      <td></td>
+      <td>lacking fine distinctions or detail缺乏细微的区别或细节</td>
+      <td>the gross details of the structure appear reasonable结构的细节看似合理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>glɑs</td>
+      <td>['annotate', 'comment']</td>
+      <td></td>
+      <td>provide interlinear explanations for words or phrases为单词或短语提供行间解释</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interpret, rede]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>glɑs</td>
+      <td>['color', 'colour']</td>
+      <td></td>
+      <td>give a deceptive explanation or excuse for给出一个欺骗性的解释或借口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[apologize, rationalise, excuse, apologise, rationalize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>glɑs</td>
+      <td>, alos:['gloss over']</td>
+      <td></td>
+      <td>give a shine or gloss to, usually by rubbing通常通过摩擦给予光泽或光泽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[polish, shine, smooth, smoothen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>glɑs</td>
+      <td></td>
+      <td></td>
+      <td>provide an interlinear translation of a word or phrase提供单词或短语的行间平移</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[translate, render, interpret]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>glɑs</td>
+      <td>['glossary']</td>
+      <td></td>
+      <td>an alphabetical list of technical terms in some specialized field of knowledge; usually published as an appendix to a text on that field在某些专业知识领域按字母顺序排列的技术术语清单;通常作为该领域文本的附录出版</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wordbook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>glɑs</td>
+      <td>['color', 'colour', 'semblance']</td>
+      <td></td>
+      <td>an outward or token appearance or form that is deliberately misleading故意误导的外在或象征性外观或形式</td>
+      <td>he tried to give his falsehood the gloss of moral sanction他试图将他的谎言视为道德制裁的光泽</td>
+      <td></td>
+      <td></td>
+      <td>[appearance, visual aspect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>glɑs</td>
+      <td>['burnish', 'glossiness', 'polish']</td>
+      <td></td>
+      <td>the property of being smooth and shiny光滑有光泽的特性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiance, refulgence, refulgency, shine, smoothness, effulgence, radiancy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gloss</th>
+      <td>oss</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>glɑs</td>
+      <td>['rubric']</td>
+      <td></td>
+      <td>an explanation or definition of an obscure word in a text对文本中一个模糊词的解释或定义</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[account, explanation]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

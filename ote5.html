@@ -1,0 +1,200 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hotel', 'motel', 'noted', 'totem', 'voter', 'emote', 'motet', 'toter']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hotel</th>
+      <td>ote</td>
+      <td>4.97</td>
+      <td>nou</td>
+      <td>hoʊ'tɛl</td>
+      <td></td>
+      <td></td>
+      <td>a building where travelers can pay for lodging and meals and other services旅行者可以支付住宿和膳食以及其他服务的建筑物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[building, edifice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>motel</th>
+      <td>ote</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>moʊ'tɛl</td>
+      <td></td>
+      <td></td>
+      <td>a motor hotel汽车旅馆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motor inn, motor lodge, tourist court, court, motor hotel]</td>
+      <td>[blend, portmanteau, portmanteau word]</td>
+    </tr>
+    <tr>
+      <th>noted</th>
+      <td>ote</td>
+      <td>3.59</td>
+      <td>adj</td>
+      <td>'noʊtɪd</td>
+      <td>['celebrated', 'famed', 'famous', 'far-famed', 'illustrious', 'notable', 'renowned'], similarTo:['known']</td>
+      <td></td>
+      <td>widely known and esteemed广为人知和尊敬</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>totem</th>
+      <td>ote</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>'toʊtəm</td>
+      <td></td>
+      <td></td>
+      <td>a clan or tribe identified by their kinship to a common totemic object一个氏族或部落，由他们的血缘关系确定为一个共同的图腾物体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kin, kinship group, tribe, clan, kin group, kindred]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>totem</th>
+      <td>ote</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>'toʊtəm</td>
+      <td></td>
+      <td></td>
+      <td>emblem consisting of an object such as an animal or plant; serves as the symbol of a family or clan (especially among American Indians)由动物或植物等物体组成的徽章;作为家庭或氏族的象征（尤其是美洲印第安人）</td>
+      <td></td>
+      <td>[totemic]</td>
+      <td></td>
+      <td>[emblem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>voter</th>
+      <td>ote</td>
+      <td>2.75</td>
+      <td>nou</td>
+      <td>'voʊtər</td>
+      <td>['elector']</td>
+      <td></td>
+      <td>a citizen who has a legal right to vote拥有合法投票权的公民</td>
+      <td></td>
+      <td>[vote]</td>
+      <td></td>
+      <td>[citizen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>emote</th>
+      <td>ote</td>
+      <td>1.82</td>
+      <td>ver</td>
+      <td>ɪ'moʊt</td>
+      <td></td>
+      <td></td>
+      <td>give expression or emotion to, in a stage or movie role在舞台或电影角色中表达或表达情感</td>
+      <td></td>
+      <td>[emotion, emotive]</td>
+      <td></td>
+      <td>[act, play, represent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>motet</th>
+      <td>ote</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td>moʊ'tɛt</td>
+      <td></td>
+      <td></td>
+      <td>an unaccompanied choral composition with sacred lyrics; intended to be sung as part of a church service; originated in the 13th century伴随着神圣歌词的无伴奏合唱作品;打算作为教会服务的一部分进行演唱;起源于13世纪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[composition, musical composition, opus, piece, piece of music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toter</th>
+      <td>ote</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td></td>
+      <td>['bearer', 'carrier']</td>
+      <td></td>
+      <td>someone whose employment involves carrying something工作涉及携带物品的人</td>
+      <td></td>
+      <td>[tote]</td>
+      <td></td>
+      <td>[traveler, traveller]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

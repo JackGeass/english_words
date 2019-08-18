@@ -1,0 +1,1040 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['look', 'book', 'cook', 'hook', 'rook', 'nook', 'kook', 'gook', 'jook']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td>['attend', 'see', 'take care']</td>
+      <td></td>
+      <td>take charge of or deal with负责或处理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[care, give care]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td>['bank', 'bet', 'calculate', 'count', 'depend', 'reckon', 'rely', 'swear']</td>
+      <td></td>
+      <td>have faith or confidence in有信心或有信心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td>['appear', 'seem']</td>
+      <td></td>
+      <td>give a certain impression or have a certain outward aspect给人一种印象或有一定的外在方面</td>
+      <td>This project looks fishy这个项目看起来很可疑</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td>['await', 'expect', 'wait']</td>
+      <td></td>
+      <td>look forward to the probable occurrence of期待可能发生的</td>
+      <td>She is looking to a promotion她正在寻求晋升</td>
+      <td></td>
+      <td>[anticipate, expect]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td>['face', 'front']</td>
+      <td></td>
+      <td>be oriented in a certain direction, often with respect to another reference point; be opposite to通常相对于另一个参考点定向在某个方向;与...相反</td>
+      <td>The house looks north房子向北看My backyard look onto the pond我的后院看着池塘</td>
+      <td></td>
+      <td>[face]</td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td>['search']</td>
+      <td></td>
+      <td>search or seek搜索或寻找</td>
+      <td>We looked all day and finally found the child in the forest我们整天看着，终于在森林里找到了这个孩子</td>
+      <td></td>
+      <td></td>
+      <td>[examine, see]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td></td>
+      <td></td>
+      <td>accord in appearance with符合外观</td>
+      <td>You don't look your age!你不看你的年龄！</td>
+      <td></td>
+      <td></td>
+      <td>[check, match, gibe, fit, jibe, correspond, tally, agree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td></td>
+      <td></td>
+      <td>convey by one's expression通过一个人的表达来表达</td>
+      <td>She looked her devotion to me她看着她对我的忠诚</td>
+      <td></td>
+      <td></td>
+      <td>[convey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td></td>
+      <td></td>
+      <td>have a certain outward or facial expression有一定的外在或面部表情</td>
+      <td>How does she look?她怎么样？The child looks unhappy孩子看起来不高兴She looked pale after the surgery手术后她脸色苍白</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>lʊk</td>
+      <td>, alos:['look back', 'look into', 'look for', 'look after', 'look away', 'look up to', 'look up', 'look on']</td>
+      <td></td>
+      <td>perceive with attention; direct one's gaze towards注意察觉;指向一个人的目光</td>
+      <td>She looked over the expanse of land她望着广阔的土地</td>
+      <td>[looker]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>lʊk</td>
+      <td>['feel', 'feeling', 'flavor', 'flavour', 'smell', 'spirit', 'tone']</td>
+      <td></td>
+      <td>the general atmosphere of a place or situation and the effect that it has on people一个地方或一个地方的总体氛围及其对人们的影响</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ambience, ambiance, atmosphere]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>lʊk</td>
+      <td>['aspect', 'expression', 'face', 'facial expression']</td>
+      <td></td>
+      <td>the feelings expressed on a person's face在一个人的脸上表达的感情</td>
+      <td>a look of triumph一脸胜利</td>
+      <td></td>
+      <td></td>
+      <td>[visage, countenance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>lʊk</td>
+      <td>['looking', 'looking at']</td>
+      <td></td>
+      <td>the act of directing the eyes toward something and perceiving it visually将眼睛指向某物并在视觉上感知它的行为</td>
+      <td>he went out to have a look他出去看看his look was fixed on her eyes他的表情固定在她的眼睛上he gave it a good looking at他好好看了一下his camera does his looking for him他的相机让他找他</td>
+      <td></td>
+      <td></td>
+      <td>[perception, sensing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>look</th>
+      <td>ook</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>lʊk</td>
+      <td></td>
+      <td></td>
+      <td>physical appearance外表</td>
+      <td>I don't like the looks of this place我不喜欢这个地方的样子</td>
+      <td></td>
+      <td></td>
+      <td>[visual aspect, appearance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>bʊk</td>
+      <td>['hold', 'reserve']</td>
+      <td></td>
+      <td>arrange for and reserve (something for someone else) in advance提前安排和保留（为他人提供的东西）</td>
+      <td>The agent booked tickets to the show for the whole family代理商为整个家庭预订了演出门票</td>
+      <td>[bookable, booking]</td>
+      <td>[reserve]</td>
+      <td>[request, bespeak, call for, quest, ask for]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>bʊk</td>
+      <td></td>
+      <td></td>
+      <td>engage for a performance参与表演</td>
+      <td>Her agent had booked her for several concerts in Tokyo她的经纪人在东京为她举办了几场音乐会</td>
+      <td>[booker, booking]</td>
+      <td></td>
+      <td>[schedule]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>bʊk</td>
+      <td></td>
+      <td></td>
+      <td>record a charge in a police register在警察登记簿上记录指控</td>
+      <td>The policeman booked her when she tried to solicit a man当她试图招揽男子时，警察预定了她</td>
+      <td></td>
+      <td></td>
+      <td>[record, put down, enter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>bʊk</td>
+      <td></td>
+      <td></td>
+      <td>register in a hotel booker在酒店预订处注册</td>
+      <td></td>
+      <td>[booking, bookable]</td>
+      <td></td>
+      <td>[register]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td>['volume']</td>
+      <td></td>
+      <td>physical objects consisting of a number of pages bound together由绑定在一起的多个页面组成的物理对象</td>
+      <td>he used a large book as a doorstop他用一本大书作为门挡</td>
+      <td>[booklet]</td>
+      <td></td>
+      <td>[product, production]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td>['account book', 'book of account', 'ledger', 'leger']</td>
+      <td></td>
+      <td>a record in which commercial accounts are recorded记录商业帐户的记录</td>
+      <td>they got a subpoena to examine our books他们收到传票来检查我们的书</td>
+      <td></td>
+      <td></td>
+      <td>[record]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td>["al-qur'an", 'koran', 'quran']</td>
+      <td></td>
+      <td>the sacred writings of Islam revealed by God to the prophet Muhammad during his life at Mecca and Medina上帝在麦加和麦地那的生活中向先知穆罕默德揭示了神圣的伊斯兰教着作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td>['record', 'record book']</td>
+      <td></td>
+      <td>a compilation of the known facts regarding something or someone关于某事或某人的已知事实的汇编</td>
+      <td>his name is in all the record books他的名字出现在所有的记录册中</td>
+      <td></td>
+      <td></td>
+      <td>[fact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td>['playscript', 'script']</td>
+      <td></td>
+      <td>a written version of a play or other dramatic composition; used in preparing for a performance戏剧或其他戏剧作品的书面版本;用于准备表演</td>
+      <td></td>
+      <td>[booklet]</td>
+      <td></td>
+      <td>[dramatic work, dramatic composition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td>['bible', 'christian bible', 'good book', 'holy scripture', 'holy writ', 'scripture', 'word', 'word of god']</td>
+      <td></td>
+      <td>the sacred writings of the Christian religions基督教宗教的神圣着作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[religious writing, sacred writing, sacred text, religious text]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td>['rule book']</td>
+      <td></td>
+      <td>a collection of rules or prescribed standards on the basis of which decisions are made作出决定的规则或规定标准的集合</td>
+      <td>they run things by the book around here他们围着这本书运行</td>
+      <td></td>
+      <td></td>
+      <td>[collection, accumulation, assemblage, aggregation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td></td>
+      <td></td>
+      <td>a collection of playing cards satisfying the rules of a card game一系列满足纸牌游戏规则的扑克牌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[collection, assemblage, accumulation, aggregation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td></td>
+      <td></td>
+      <td>a major division of a long written composition长篇文章的主要部分</td>
+      <td>the book of Isaiah以赛亚书</td>
+      <td></td>
+      <td></td>
+      <td>[section, subdivision]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td></td>
+      <td></td>
+      <td>a number of sheets (ticket or stamps etc.) bound together on one edge许多床单（票或邮票等）在一条边上绑在一起</td>
+      <td>he bought a book of stamps他买了一本邮票</td>
+      <td></td>
+      <td></td>
+      <td>[production, product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>book</th>
+      <td>ook</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>bʊk</td>
+      <td></td>
+      <td></td>
+      <td>a written work or composition that has been published (printed on pages bound together)已出版的书面作品或作品（印在绑在一起的页面）</td>
+      <td>I am reading a good book on economics我正在读一本关于经济学的好书</td>
+      <td>[booklet]</td>
+      <td></td>
+      <td>[publication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cook</th>
+      <td>ook</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kuk</td>
+      <td>['fake', 'falsify', 'fudge', 'manipulate', 'misrepresent', 'wangle'], alos:['cook up']</td>
+      <td></td>
+      <td>tamper, with the purpose of deception篡改，以欺骗为目的</td>
+      <td>cook the books煮书</td>
+      <td></td>
+      <td></td>
+      <td>[chisel, cheat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cook</th>
+      <td>ook</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kuk</td>
+      <td>['fix', 'make', 'prepare', 'ready']</td>
+      <td></td>
+      <td>prepare for eating by applying heat通过加热准备进食</td>
+      <td></td>
+      <td>[cooker, cookery, cooking]</td>
+      <td>[make]</td>
+      <td>[create from raw material, create from raw stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cook</th>
+      <td>ook</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kuk</td>
+      <td></td>
+      <td></td>
+      <td>prepare a hot meal准备一顿热饭</td>
+      <td>My husband doesn't cook我丈夫不做饭</td>
+      <td>[cookery, cooking]</td>
+      <td></td>
+      <td>[create from raw stuff, create from raw material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cook</th>
+      <td>ook</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kuk</td>
+      <td></td>
+      <td></td>
+      <td>transform and make suitable for consumption by heating转换并适合加热消费</td>
+      <td>These potatoes have to cook for 20 minutes这些土豆必须煮20分钟</td>
+      <td>[cookery, cooking]</td>
+      <td></td>
+      <td>[change integrity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cook</th>
+      <td>ook</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kuk</td>
+      <td></td>
+      <td></td>
+      <td>transform by heating通过加热变换</td>
+      <td>The apothecary cooked the medicinal mixture in a big iron kettle药剂师用大铁壶煮药剂</td>
+      <td>[cooker]</td>
+      <td></td>
+      <td>[change, modify, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cook</th>
+      <td>ook</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kuk</td>
+      <td>['captain cook', 'captain james cook', 'james cook']</td>
+      <td></td>
+      <td>English navigator who claimed the east coast of Australia for Britain and discovered several Pacific islands (1728-1779)英国航海家声称澳大利亚东海岸为英国并发现了几个太平洋岛屿（1728-1779）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cook</th>
+      <td>ook</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kuk</td>
+      <td></td>
+      <td></td>
+      <td>someone who cooks food有人做饭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trained worker, skilled workman, skilled worker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>['abstract', 'cabbage', 'filch', 'lift', 'nobble', 'pilfer', 'pinch', 'purloin', 'snarf', 'sneak', 'swipe']</td>
+      <td></td>
+      <td>make off with belongings of others用他人的财物来弥补</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip off, rip, steal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>['accost', 'solicit']</td>
+      <td></td>
+      <td>approach with an offer of sexual favors提供性服务的方法</td>
+      <td></td>
+      <td></td>
+      <td>[snare]</td>
+      <td>[offer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>['cop', 'glom', 'knock off', 'snitch', 'thieve']</td>
+      <td></td>
+      <td>take by theft偷窃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip off, steal, rip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>['addict']</td>
+      <td></td>
+      <td>to cause (someone or oneself) to become dependent (on something, especially a narcotic drug)导致（某人或某人）变得依赖（某事物，特别是麻醉药）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accustom, habituate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>['crochet']</td>
+      <td></td>
+      <td>make a piece of needlework by interlocking and looping thread with a hooked needle通过用钩针互锁和环绕螺纹制作一块针线</td>
+      <td></td>
+      <td></td>
+      <td>[crochet]</td>
+      <td>[intertwine, loop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>['fleece', 'gazump', 'overcharge', 'pluck', 'plume', 'rob', 'soak', 'surcharge']</td>
+      <td></td>
+      <td>rip off; ask an unreasonable price撕掉;问一个不合理的价格</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip off, chisel, cheat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>['snare']</td>
+      <td></td>
+      <td>entice and trap诱惑和陷阱</td>
+      <td></td>
+      <td></td>
+      <td>[accost, solicit]</td>
+      <td>[entice, lure, tempt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td></td>
+      <td></td>
+      <td>catch with a hook抓钩</td>
+      <td>hook a fish勾一条鱼</td>
+      <td></td>
+      <td></td>
+      <td>[catch, take hold of, grab]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td>, alos:['hook up']</td>
+      <td>[unhook]</td>
+      <td>fasten with a hook用钩子固定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fix, secure, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td></td>
+      <td></td>
+      <td>hit a ball and put a spin on it so that it travels to the left击球并旋转它，使其向左移动</td>
+      <td></td>
+      <td>[hooker, hooking]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td></td>
+      <td></td>
+      <td>hit with a hook用钩子打</td>
+      <td>His opponent hooked him badly他的对手严重迷上了他</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>hʊk</td>
+      <td></td>
+      <td></td>
+      <td>secure with the foot用脚固定</td>
+      <td>hook the ball勾住球</td>
+      <td></td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td>['bait', 'come-on', 'lure', 'sweetener']</td>
+      <td></td>
+      <td>anything that serves as an enticement任何充当诱惑的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[temptation, enticement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td>['draw', 'hooking']</td>
+      <td></td>
+      <td>a golf shot that curves to the left for a right-handed golfer高尔夫球拍向右侧高尔夫球手左侧弯曲</td>
+      <td>he took lessons to cure his hooking他上了课，以治愈他的钩子</td>
+      <td></td>
+      <td></td>
+      <td>[swing, golf shot, golf stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td>['crotchet']</td>
+      <td></td>
+      <td>a sharp curve or crook; a shape resembling a hook尖锐的曲线或弯曲;形状类似钩子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[curve, curved shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td>['claw']</td>
+      <td></td>
+      <td>a mechanical device that is curved or bent to suspend or hold or pull something弯曲或弯曲以悬挂或固定或拉动物体的机械装置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td>['hook shot']</td>
+      <td></td>
+      <td>a basketball shot made over the head with the hand that is farther from the basket用一只手离篮筐更远的篮球射门</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[basketball shot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td></td>
+      <td></td>
+      <td>a catch for locking a door用于锁门的锁扣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[catch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td></td>
+      <td></td>
+      <td>a curved or bent implement for suspending or pulling something弯曲或弯曲的工具，用于悬挂或拉动物品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hook</th>
+      <td>ook</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>hʊk</td>
+      <td></td>
+      <td></td>
+      <td>a short swinging punch delivered from the side with the elbow bent从肘部弯曲的侧面伸出一个短的摆动冲头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clout, poke, punch, slug, biff, lick]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rook</th>
+      <td>ook</td>
+      <td>3.07</td>
+      <td>ver</td>
+      <td>rʊk</td>
+      <td>['bunco', 'con', 'defraud', 'diddle', 'goldbrick', 'hornswoggle', 'mulct', 'nobble', 'scam', 'short-change', 'swindle', 'victimize']</td>
+      <td></td>
+      <td>deprive of by deceit以欺骗手段剥夺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cheat, chisel, rip off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rook</th>
+      <td>ook</td>
+      <td>3.07</td>
+      <td>nou</td>
+      <td>rʊk</td>
+      <td>['corvus frugilegus']</td>
+      <td></td>
+      <td>common gregarious Old World bird about the size and color of the American crow关于美国乌鸦大小和颜色的常见群居旧世界鸟类</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[corvine bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rook</th>
+      <td>ook</td>
+      <td>3.07</td>
+      <td>nou</td>
+      <td>rʊk</td>
+      <td>['castle']</td>
+      <td></td>
+      <td>(chess) the piece that can move any number of unoccupied squares in a direction parallel to the sides of the chessboard（国际象棋）可以在平行于棋盘两侧的方向上移动任意数量的未占用方块的棋子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chess piece, chessman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nook</th>
+      <td>ook</td>
+      <td>3.04</td>
+      <td>nou</td>
+      <td>nʊk</td>
+      <td>['corner']</td>
+      <td></td>
+      <td>an interior angle formed by two meeting walls由两个会议墙形成的内角</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nook</th>
+      <td>ook</td>
+      <td>3.04</td>
+      <td>nou</td>
+      <td>nʊk</td>
+      <td></td>
+      <td></td>
+      <td>a sheltered and secluded place一个庇护和隐蔽的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[retreat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kook</th>
+      <td>ook</td>
+      <td>2.87</td>
+      <td>nou</td>
+      <td>kuk</td>
+      <td>['odd fellow', 'odd fish', 'odd man out', 'queer bird', 'queer duck']</td>
+      <td></td>
+      <td>someone regarded as eccentric or crazy and standing out from a group被视为古怪或疯狂并从群体中脱颖而出的人</td>
+      <td></td>
+      <td>[kooky]</td>
+      <td></td>
+      <td>[individual, mortal, person, somebody, someone, soul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gook</th>
+      <td>ook</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>ɡʊk</td>
+      <td>['goo', 'goop', 'guck', 'gunk', 'muck', 'ooze', 'slime', 'sludge']</td>
+      <td></td>
+      <td>any thick, viscous matter任何厚厚的粘性物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jook</th>
+      <td>ook</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>dʒuk</td>
+      <td>['congee']</td>
+      <td></td>
+      <td>a Chinese rice gruel eaten for breakfast一顿中国大米粥吃早餐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gruel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jook</th>
+      <td>ook</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>dʒuk</td>
+      <td>['jook house', 'jook joint', 'juke', 'juke house', 'juke joint']</td>
+      <td></td>
+      <td>a small roadside establishment in the southeastern United States where you can eat and drink and dance to music provided by a jukebox美国东南部的一个小型路边营业所，您可以在这里享用美食，饮酒和跳舞音乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[joint]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

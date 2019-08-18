@@ -1,0 +1,920 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['chump', 'trump', 'thump', 'dumps', 'jumpy', 'lumpy', 'bumpy', 'stump', 'plump', 'slump', 'mumps', 'clump', 'dumpy', 'grump', 'frump', 'crump']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>chump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>tʃəmp</td>
+      <td>['fall guy', 'fool', 'gull', 'mark', 'mug', 'patsy', 'soft touch', 'sucker']</td>
+      <td></td>
+      <td>a person who is gullible and easy to take advantage of一个容易上当受骗的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dupe, victim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>ver</td>
+      <td>trəmp</td>
+      <td>['ruff']</td>
+      <td></td>
+      <td>play a trump发挥特朗普</td>
+      <td></td>
+      <td>[trumping]</td>
+      <td></td>
+      <td>[go, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>ver</td>
+      <td>trəmp</td>
+      <td>['trump out']</td>
+      <td></td>
+      <td>proclaim or announce with or as if with a fanfare宣传或宣布或似乎大张旗鼓地宣布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[announce, denote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>ver</td>
+      <td>trəmp</td>
+      <td>['best', 'outdo', 'outflank', 'scoop']</td>
+      <td></td>
+      <td>get the better of变得更好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vanquish, beat, beat out, crush, shell, trounce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>ver</td>
+      <td>trəmp</td>
+      <td></td>
+      <td></td>
+      <td>produce a sound as if from a trumpet从小号发出声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>trəmp</td>
+      <td>['trump card']</td>
+      <td></td>
+      <td>a playing card in the suit that has been declared trumps穿着西装的扑克牌已被宣布为王牌</td>
+      <td>the ace of trumps is a sure winner特朗普的王牌是肯定的赢家</td>
+      <td></td>
+      <td></td>
+      <td>[playing card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>trəmp</td>
+      <td>['cornet', 'horn', 'trumpet']</td>
+      <td></td>
+      <td>a brass musical instrument with a brilliant tone; has a narrow tube and a flared bell and is played by means of valves一种带有明亮色调的铜管乐器;有一个狭窄的管和一个喇叭形的铃铛，通过阀门播放</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[brass instrument, brass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trump</th>
+      <td>ump</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>trəmp</td>
+      <td></td>
+      <td></td>
+      <td>(card games) the suit that has been declared to rank above all other suits for the duration of the hand（纸牌游戏）已经宣布在手牌持续时间内排名高于所有其他套装的套装</td>
+      <td>clubs were declared trumps俱乐部被宣布为王牌a trump can take a trick even when a card of a different suit is led即使领着不同套装的牌，特朗普也可以采取行动</td>
+      <td></td>
+      <td></td>
+      <td>[suit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thump</th>
+      <td>ump</td>
+      <td>3.35</td>
+      <td>ver</td>
+      <td>θəmp</td>
+      <td>['poke', 'pound']</td>
+      <td></td>
+      <td>hit hard with the hand, fist, or some heavy instrument用手，拳头或一些重型乐器用力击打</td>
+      <td>a bible-thumping Southern Baptist一个圣经重击南方浸信会</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thump</th>
+      <td>ump</td>
+      <td>3.35</td>
+      <td>ver</td>
+      <td>θəmp</td>
+      <td>['beat', 'pound']</td>
+      <td></td>
+      <td>move rhythmically有节奏地移动</td>
+      <td></td>
+      <td></td>
+      <td>[beat]</td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thump</th>
+      <td>ump</td>
+      <td>3.35</td>
+      <td>ver</td>
+      <td>θəmp</td>
+      <td>['thud']</td>
+      <td></td>
+      <td>make a dull sound发出沉闷的声音</td>
+      <td></td>
+      <td>[thumping]</td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thump</th>
+      <td>ump</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>θəmp</td>
+      <td>['clump', 'clunk', 'thud', 'thumping']</td>
+      <td></td>
+      <td>a heavy dull sound (as made by impact of heavy objects)沉重的沉闷声音（由重物撞击造成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thump</th>
+      <td>ump</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>θəmp</td>
+      <td></td>
+      <td></td>
+      <td>a heavy blow with the hand用手猛烈一击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dumps</th>
+      <td>ump</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>dəmps</td>
+      <td>['mopes']</td>
+      <td></td>
+      <td>an informal expression for a mildly depressed state温和沮丧的状态的非正式表达</td>
+      <td>in the dumps在转储中</td>
+      <td></td>
+      <td></td>
+      <td>[low spirits]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>jumpy</th>
+      <td>ump</td>
+      <td>3.32</td>
+      <td>adj</td>
+      <td>'dʒəmpi</td>
+      <td>['edgy', 'high-strung', 'highly strung', 'jittery', 'nervy', 'overstrung', 'restive', 'uptight'], similarTo:['tense']</td>
+      <td></td>
+      <td>being in a tense state处于紧张状态</td>
+      <td></td>
+      <td>[jumpiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jumpy</th>
+      <td>ump</td>
+      <td>3.32</td>
+      <td>adj</td>
+      <td>'dʒəmpi</td>
+      <td>['bumpy', 'jolting', 'jolty', 'rocky', 'rough']</td>
+      <td></td>
+      <td>causing or characterized by jolts and irregular movements引起或以摇晃和不规则运动为特征</td>
+      <td></td>
+      <td>[jump]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lumpy</th>
+      <td>ump</td>
+      <td>3.30</td>
+      <td>adj</td>
+      <td>'ləmpi</td>
+      <td>['chunky'], similarTo:['unshapely']</td>
+      <td></td>
+      <td>like or containing small sticky lumps喜欢或含有小粘块</td>
+      <td></td>
+      <td>[lump]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lumpy</th>
+      <td>ump</td>
+      <td>3.30</td>
+      <td>adj</td>
+      <td>'ləmpi</td>
+      <td>, similarTo:['uneven']</td>
+      <td></td>
+      <td>having lumps; not smooth and even in texture有肿块;不光滑，甚至质地</td>
+      <td>lumpy gravy块状肉汁</td>
+      <td>[lump]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bumpy</th>
+      <td>ump</td>
+      <td>3.23</td>
+      <td>adj</td>
+      <td>'bəmpi</td>
+      <td>['jolting', 'jolty', 'jumpy', 'rocky', 'rough']</td>
+      <td></td>
+      <td>causing or characterized by jolts and irregular movements引起或以摇晃和不规则运动为特征</td>
+      <td></td>
+      <td>[bump]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bumpy</th>
+      <td>ump</td>
+      <td>3.23</td>
+      <td>adj</td>
+      <td>'bəmpi</td>
+      <td>, similarTo:['rough', 'unsmooth']</td>
+      <td></td>
+      <td>covered with or full of bumps覆盖或充满颠簸</td>
+      <td>a bumpy country road一条颠簸的乡间小路</td>
+      <td>[bumpiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>stəmp</td>
+      <td>['stamp', 'stomp']</td>
+      <td></td>
+      <td>walk heavily走得很重</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>stəmp</td>
+      <td>['mix up']</td>
+      <td></td>
+      <td>cause to be perplexed or confounded导致困惑或困惑</td>
+      <td>This problem stumped her这个问题困扰了她</td>
+      <td>[stumper]</td>
+      <td></td>
+      <td>[pose, bewilder, stick, dumbfound, flummox, get, gravel, mystify, nonplus, perplex, puzzle, vex, stupefy, amaze, baffle, beat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>stəmp</td>
+      <td></td>
+      <td></td>
+      <td>remove tree stumps from删除树桩</td>
+      <td>stump a field残局</td>
+      <td></td>
+      <td></td>
+      <td>[clear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>stəmp</td>
+      <td></td>
+      <td></td>
+      <td>travel through a district and make political speeches穿越一个地区并发表政治演讲</td>
+      <td>the candidate stumped the Northeast候选人难倒东北</td>
+      <td></td>
+      <td></td>
+      <td>[run, campaign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>stəmp</td>
+      <td>['tree stump']</td>
+      <td></td>
+      <td>the base part of a tree that remains standing after the tree has been felled在砍伐树木后仍然站立的树的基部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant structure, plant part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>stəmp</td>
+      <td>['ambo', 'dais', 'podium', 'pulpit', 'rostrum', 'soapbox']</td>
+      <td></td>
+      <td>a platform raised above the surrounding level to give prominence to the person on it在平台上方升起的平台，以突出其上的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>stəmp</td>
+      <td></td>
+      <td></td>
+      <td>(cricket) any of three upright wooden posts that form the wicket（板球）任何形成检票口的三个直立木柱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[post]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stump</th>
+      <td>ump</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>stəmp</td>
+      <td></td>
+      <td></td>
+      <td>the part of a limb or tooth that remains after the rest is removed移除其余部分后留下的肢体或牙齿部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plump</th>
+      <td>ump</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>pləmp</td>
+      <td>['fat', 'fatten', 'fatten out', 'fatten up', 'fill out', 'flesh out', 'plump out']</td>
+      <td></td>
+      <td>make fat or plump使脂肪或丰满</td>
+      <td>We will plump out that poor starving child我们将使这个可怜的饥饿的孩子变得肥胖</td>
+      <td></td>
+      <td></td>
+      <td>[alter, modify, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plump</th>
+      <td>ump</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>pləmp</td>
+      <td>['flump', 'plank', 'plonk', 'plop', 'plump down', 'plunk', 'plunk down']</td>
+      <td></td>
+      <td>set (something or oneself) down with or as if with a noise用（或某种东西）设置（或某种东西），或者用噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place down, put down, set down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plump</th>
+      <td>ump</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>pləmp</td>
+      <td>['plummet']</td>
+      <td></td>
+      <td>drop sharply急剧下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plump</th>
+      <td>ump</td>
+      <td>3.17</td>
+      <td>ver</td>
+      <td>pləmp</td>
+      <td>['go']</td>
+      <td></td>
+      <td>give support (to) or make a choice (of) one out of a group or number给予支持（或）或从群组或号码中选择一个</td>
+      <td>I plumped for the losing candidates我为失败的候选人而苦苦挣扎</td>
+      <td></td>
+      <td></td>
+      <td>[take, select, pick out, choose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plump</th>
+      <td>ump</td>
+      <td>3.17</td>
+      <td>nou</td>
+      <td>pləmp</td>
+      <td></td>
+      <td></td>
+      <td>the sound of a sudden heavy fall突如其来的沉重声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plump</th>
+      <td>ump</td>
+      <td>3.17</td>
+      <td>adv</td>
+      <td>pləmp</td>
+      <td></td>
+      <td></td>
+      <td>straight down especially heavily or abruptly特别严重或突然地直接向下</td>
+      <td>the anchor fell plump into the sea锚落在海里we dropped the rock plump into the water我们把岩石的丰满物倒入水中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>plump</th>
+      <td>ump</td>
+      <td>3.17</td>
+      <td>adj</td>
+      <td>pləmp</td>
+      <td>['chubby', 'embonpoint'], similarTo:['fat']</td>
+      <td></td>
+      <td>sufficiently fat so as to have a pleasing fullness of figure足够的脂肪，以获得令人满意的丰满的身材</td>
+      <td>pleasingly plump令人愉快的丰满</td>
+      <td>[plumpness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slump</th>
+      <td>ump</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>sləmp</td>
+      <td>['fall off', 'sink']</td>
+      <td></td>
+      <td>fall heavily or suddenly; decline markedly严重或突然跌倒;显着下降</td>
+      <td></td>
+      <td></td>
+      <td>[sink, drop, drop down]</td>
+      <td>[drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slump</th>
+      <td>ump</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>sləmp</td>
+      <td>['slouch']</td>
+      <td></td>
+      <td>assume a drooping posture or carriage假设下垂姿势或运输</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swag, droop, flag, sag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slump</th>
+      <td>ump</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>sləmp</td>
+      <td>['correct', 'decline']</td>
+      <td></td>
+      <td>go down in value价值下降</td>
+      <td>prices slumped价格暴跌</td>
+      <td></td>
+      <td></td>
+      <td>[come down, fall, go down, descend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slump</th>
+      <td>ump</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>sləmp</td>
+      <td>['sink', 'slide down']</td>
+      <td></td>
+      <td>fall or sink heavily摔倒或下沉</td>
+      <td>He slumped onto the couch他瘫倒在沙发上</td>
+      <td></td>
+      <td></td>
+      <td>[fall in, founder, give, give way, cave in, collapse, break]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slump</th>
+      <td>ump</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>sləmp</td>
+      <td>['drop-off', 'falling off', 'falloff', 'slack']</td>
+      <td></td>
+      <td>a noticeable deterioration in performance or quality性能或质量明显下降</td>
+      <td>the team went into a slump球队陷入低迷</td>
+      <td></td>
+      <td></td>
+      <td>[worsening, deterioration, declension, decline in quality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slump</th>
+      <td>ump</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>sləmp</td>
+      <td>['depression', 'economic crisis']</td>
+      <td></td>
+      <td>a long-term economic state characterized by unemployment and low prices and low levels of trade and investment一个以失业和低价格以及低水平的贸易和投资为特征的长期经济国家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[economic condition, crisis]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mumps</th>
+      <td>ump</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>məmps</td>
+      <td>['epidemic parotitis']</td>
+      <td></td>
+      <td>an acute contagious viral disease characterized by fever and by swelling of the parotid glands一种急性传染性病毒性疾病，其特征是发烧和腮腺肿胀</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[infectious disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clump</th>
+      <td>ump</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>kləmp</td>
+      <td>['clomp']</td>
+      <td></td>
+      <td>walk clumsily笨拙地走路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clump</th>
+      <td>ump</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>kləmp</td>
+      <td>['clop', 'clunk', 'plunk']</td>
+      <td></td>
+      <td>make or move along with a sound as of a horse's hooves striking the ground随着马蹄撞击地面的声音制作或移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clump</th>
+      <td>ump</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>kləmp</td>
+      <td>['cluster', 'constellate', 'flock']</td>
+      <td></td>
+      <td>come together as in a cluster or flock像群集或群集一样聚集在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foregather, assemble, gather, meet, forgather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clump</th>
+      <td>ump</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>kləmp</td>
+      <td>['bunch', 'bundle', 'cluster']</td>
+      <td></td>
+      <td>gather or cause to gather into a cluster聚集或聚集成一个集群</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clump</th>
+      <td>ump</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>kləmp</td>
+      <td>['clunk', 'thud', 'thump', 'thumping']</td>
+      <td></td>
+      <td>a heavy dull sound (as made by impact of heavy objects)沉重的沉闷声音（由重物撞击造成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clump</th>
+      <td>ump</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>kləmp</td>
+      <td>['bunch', 'cluster', 'clustering']</td>
+      <td></td>
+      <td>a grouping of a number of similar things一组相似的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[agglomeration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clump</th>
+      <td>ump</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>kləmp</td>
+      <td>['ball', 'chunk', 'clod', 'glob', 'lump']</td>
+      <td></td>
+      <td>a compact mass紧凑的质量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[agglomeration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dumpy</th>
+      <td>ump</td>
+      <td>2.50</td>
+      <td>adj</td>
+      <td>'dəmpi</td>
+      <td>['podgy', 'pudgy', 'roly-poly', 'tubby'], similarTo:['fat']</td>
+      <td></td>
+      <td>short and plump短而丰满</td>
+      <td></td>
+      <td>[dumpiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dumpy</th>
+      <td>ump</td>
+      <td>2.50</td>
+      <td>adj</td>
+      <td>'dəmpi</td>
+      <td>['chunky', 'low-set', 'squat', 'squatty', 'stumpy'], similarTo:['little', 'short']</td>
+      <td></td>
+      <td>short and thick; as e.g. having short legs and heavy musculature短而粗;例如，有短腿和沉重的肌肉组织</td>
+      <td>a dumpy little dumpling of a woman一个女人的饺子小饺子</td>
+      <td>[dumpiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dumpy</th>
+      <td>ump</td>
+      <td>2.50</td>
+      <td>Non</td>
+      <td>'dəmpi</td>
+      <td></td>
+      <td></td>
+      <td>resembling a garbage dump类似垃圾场</td>
+      <td></td>
+      <td>[dump]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grump</th>
+      <td>ump</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>grəmp</td>
+      <td>['churl', 'crank', 'crosspatch', 'grouch']</td>
+      <td></td>
+      <td>a bad-tempered person一个脾气暴躁的人</td>
+      <td></td>
+      <td>[grumpy]</td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frump</th>
+      <td>ump</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>frəmp</td>
+      <td>['dog']</td>
+      <td></td>
+      <td>a dull unattractive unpleasant girl or woman一个沉闷没有吸引力的不愉快的女孩或女人</td>
+      <td>she got a reputation as a frump她有一个名声</td>
+      <td>[frumpy]</td>
+      <td></td>
+      <td>[disagreeable woman, unpleasant woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crump</th>
+      <td>ump</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>krəmp</td>
+      <td>['scrunch', 'thud']</td>
+      <td></td>
+      <td>make a noise typical of an engine lacking lubricants制造一种缺乏润滑剂的发动机噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crackle, crunch, scranch, scraunch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crump</th>
+      <td>ump</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>krəmp</td>
+      <td></td>
+      <td></td>
+      <td>bombard with heavy shells轰炸重炮弹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blast, shell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crump</th>
+      <td>ump</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>krəmp</td>
+      <td></td>
+      <td></td>
+      <td>explode heavily or with a loud dull noise剧烈爆炸或大声沉闷的噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[explode, burst]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

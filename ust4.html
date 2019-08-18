@@ -1,0 +1,710 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['just', 'must', 'dust', 'bust', 'lust', 'rust', 'gust']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adv</td>
+      <td>dʒəst</td>
+      <td>['simply']</td>
+      <td></td>
+      <td>(used for emphasis) absolutely（用于强调）绝对</td>
+      <td>I just can't take it anymore我不能再忍受了he was just grand as Romeo他像罗密欧一样盛大</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intensifier, intensive]</td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adv</td>
+      <td>dʒəst</td>
+      <td>['exactly', 'precisely', 'properly']</td>
+      <td></td>
+      <td>indicating exactness or preciseness表明准确性或准确性</td>
+      <td>it was just as he said--the jewel was gone就像他说的那样 - 宝石消失了it has just enough salt它有足够的盐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adv</td>
+      <td>dʒəst</td>
+      <td>['barely']</td>
+      <td></td>
+      <td>by a little一点点</td>
+      <td>I only just caught the bus我刚刚赶上了公交车he finished the marathon in just under 3 hours他在短短3个小时内完成了马拉松比赛the batter just missed being hit击球手刚刚被击中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adv</td>
+      <td>dʒəst</td>
+      <td>['but', 'merely', 'only', 'simply']</td>
+      <td></td>
+      <td>and nothing more仅此而已</td>
+      <td>just a scratch只是一个划痕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adv</td>
+      <td>dʒəst</td>
+      <td>['just now']</td>
+      <td></td>
+      <td>only a moment ago就在刚才</td>
+      <td>he has just arrived他刚刚到了the sun just now came out太阳刚刚出来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adv</td>
+      <td>dʒəst</td>
+      <td>['barely', 'hardly', 'scarce', 'scarcely']</td>
+      <td></td>
+      <td>only a very short time before只是很短的时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adj</td>
+      <td>dʒəst</td>
+      <td>['fair'], similarTo:['antitrust', 'antimonopoly', 'fair-and-square', 'fair-minded', 'sporty', 'sporting', 'sportsmanlike', 'clean'], alos:['impartial', 'sensible', 'reasonable']</td>
+      <td></td>
+      <td>free from favoritism or self-interest or bias or deception; conforming with established standards or rules免于偏袒或自私或偏见或欺骗;符合既定标准或规则</td>
+      <td></td>
+      <td>[justness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adj</td>
+      <td>dʒəst</td>
+      <td>['good', 'upright'], similarTo:['righteous']</td>
+      <td></td>
+      <td>of moral excellence道德卓越</td>
+      <td>a just cause一个正义的事业</td>
+      <td>[justness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adj</td>
+      <td>dʒəst</td>
+      <td>['equitable'], similarTo:['fair', 'honest', 'evenhanded'], alos:['fair', 'impartial']</td>
+      <td></td>
+      <td>fair to all parties as dictated by reason and conscience对理性和良心所决定的所有各方都公平</td>
+      <td></td>
+      <td>[justness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>just</th>
+      <td>ust</td>
+      <td>6.62</td>
+      <td>adj</td>
+      <td>dʒəst</td>
+      <td>, similarTo:['vindicatory', 'fitting', 'conscionable', 'meet', 'retributive', 'retributory', 'rightful'], alos:['fair', 'righteous', 'honorable', 'honourable', 'right']</td>
+      <td>[unjust]</td>
+      <td>used especially of what is legally or ethically right or proper or fitting特别是在合法或道德上正确或恰当或适合的地方使用</td>
+      <td>a just and lasting peace公正持久的和平a kind and just man一个善良而公正的人a just reward一个公正的奖励his just inheritance他的公正继承</td>
+      <td>[justness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>must</th>
+      <td>ust</td>
+      <td>5.90</td>
+      <td>nou</td>
+      <td>məst</td>
+      <td>['moldiness', 'mustiness']</td>
+      <td></td>
+      <td>the quality of smelling or tasting old or stale or mouldy闻起来或品尝旧的或陈旧或发霉的质量</td>
+      <td></td>
+      <td>[musty]</td>
+      <td></td>
+      <td>[staleness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>must</th>
+      <td>ust</td>
+      <td>5.90</td>
+      <td>nou</td>
+      <td>məst</td>
+      <td></td>
+      <td></td>
+      <td>a necessary or essential thing必要或必不可少的东西</td>
+      <td>seat belts are an absolute must安全带是绝对必须的</td>
+      <td></td>
+      <td></td>
+      <td>[essential, necessity, requirement, requisite, necessary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>must</th>
+      <td>ust</td>
+      <td>5.90</td>
+      <td>nou</td>
+      <td>məst</td>
+      <td></td>
+      <td></td>
+      <td>grape juice before or during fermentation发酵前或发酵过程中的葡萄汁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grape juice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>must</th>
+      <td>ust</td>
+      <td>5.90</td>
+      <td>adj</td>
+      <td>məst</td>
+      <td>, similarTo:['essential']</td>
+      <td></td>
+      <td>highly recommended强烈推荐</td>
+      <td>a book that is must reading一本必读的书</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dust</th>
+      <td>ust</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>dəst</td>
+      <td>['disperse', 'dot', 'scatter', 'sprinkle']</td>
+      <td></td>
+      <td>distribute loosely松散地散布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[discharge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dust</th>
+      <td>ust</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>dəst</td>
+      <td></td>
+      <td></td>
+      <td>cover with a light dusting of a substance覆盖物质的轻微粉尘</td>
+      <td>dust the bread with flour用面粉抹面包</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dust</th>
+      <td>ust</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>dəst</td>
+      <td></td>
+      <td></td>
+      <td>remove the dust from去除灰尘</td>
+      <td>dust the cabinets把柜子弄脏了</td>
+      <td>[duster]</td>
+      <td></td>
+      <td>[clean, make clean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dust</th>
+      <td>ust</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>dəst</td>
+      <td></td>
+      <td></td>
+      <td>rub the dust over a surface so as to blur the outlines of a shape擦拭表面上的灰尘，以模糊形状的轮廓</td>
+      <td>The artist dusted the charcoal drawing down to a faint image艺术家把木炭拂去了一幅微弱的图像</td>
+      <td></td>
+      <td></td>
+      <td>[smear, blur, smutch, smudge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dust</th>
+      <td>ust</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>dəst</td>
+      <td>['debris', 'detritus', 'junk', 'rubble']</td>
+      <td></td>
+      <td>the remains of something that has been destroyed or broken up被破坏或破坏的东西的遗骸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scrap, rubbish, trash]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dust</th>
+      <td>ust</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>dəst</td>
+      <td></td>
+      <td></td>
+      <td>fine powdery material such as dry earth or pollen that can be blown about in the air细小的粉状物质，如干土或花粉，可在空气中吹散</td>
+      <td>the furniture was covered with dust家具上布满了灰尘</td>
+      <td>[dusty]</td>
+      <td></td>
+      <td>[particulate matter, particulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dust</th>
+      <td>ust</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>dəst</td>
+      <td></td>
+      <td></td>
+      <td>free microscopic particles of solid material自由的微观固体颗粒</td>
+      <td>astronomers say that the empty space between planets actually contains measurable amounts of dust天文学家说，行星之间的空隙实际上含有可测量的尘埃</td>
+      <td></td>
+      <td></td>
+      <td>[material, stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>bəst</td>
+      <td>['raid']</td>
+      <td></td>
+      <td>search without warning, make a sudden surprise attack on在没有警告的情况下搜索，突然突然袭击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assail, attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>bəst</td>
+      <td>['rupture', 'snap', 'tear']</td>
+      <td></td>
+      <td>separate or cause to separate abruptly分开或导致突然分开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, divide, disunite, separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>bəst</td>
+      <td>['break', 'fall apart', 'wear', 'wear out']</td>
+      <td></td>
+      <td>go to pieces吵架</td>
+      <td></td>
+      <td></td>
+      <td>[break]</td>
+      <td>[dilapidate, crumble, decay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>bəst</td>
+      <td>['break'], alos:['bust up']</td>
+      <td></td>
+      <td>ruin completely彻底毁了</td>
+      <td>He busted my radio!他把收音机搞砸了！</td>
+      <td>[buster]</td>
+      <td>[fall apart, wear, wear out, break]</td>
+      <td>[destroy, ruin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>bəst</td>
+      <td>['burst']</td>
+      <td></td>
+      <td>break open or apart suddenly and forcefully突然和有力地打开或分开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[come apart, split up, separate, fall apart, break]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>bəst</td>
+      <td>['binge', 'bout', 'tear']</td>
+      <td></td>
+      <td>an occasion for excessive eating or drinking过度饮食的场合</td>
+      <td>they went on a bust that lasted three days他们经历了持续三天的半身像</td>
+      <td></td>
+      <td></td>
+      <td>[revel, revelry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>bəst</td>
+      <td>['female chest']</td>
+      <td></td>
+      <td>the chest of a woman一个女人的胸部</td>
+      <td></td>
+      <td>[busty]</td>
+      <td></td>
+      <td>[chest, thorax, pectus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>bəst</td>
+      <td>['fizzle', 'flop']</td>
+      <td></td>
+      <td>a complete failure完全失败了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[failure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>bəst</td>
+      <td></td>
+      <td></td>
+      <td>a sculpture of the head and shoulders of a person一个人的头和肩膀的雕塑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sculpture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bust</th>
+      <td>ust</td>
+      <td>4.24</td>
+      <td>adj</td>
+      <td>bəst</td>
+      <td>['broke', 'skint', 'stone-broke', 'stony-broke'], similarTo:['poor']</td>
+      <td></td>
+      <td>lacking funds缺乏资金</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lust</th>
+      <td>ust</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ləst</td>
+      <td>['crave', 'hunger', 'starve', 'thirst']</td>
+      <td></td>
+      <td>have a craving, appetite, or great desire for对...有渴望，胃口或渴望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[desire, want]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lust</th>
+      <td>ust</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ləst</td>
+      <td>['lecherousness', 'lustfulness']</td>
+      <td></td>
+      <td>a strong sexual desire强烈的性欲</td>
+      <td></td>
+      <td>[lusty]</td>
+      <td></td>
+      <td>[concupiscence, eros, physical attraction, sexual desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lust</th>
+      <td>ust</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ləst</td>
+      <td>['luxuria']</td>
+      <td></td>
+      <td>self-indulgent sexual desire (personified as one of the deadly sins)自我放纵的性欲（拟人化为致命的罪恶之一）</td>
+      <td></td>
+      <td>[lusty]</td>
+      <td></td>
+      <td>[deadly sin, mortal sin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>rəst</td>
+      <td>['corrode']</td>
+      <td></td>
+      <td>become destroyed by water, air, or a corrosive such as an acid被水，空气或腐蚀性物质（如酸）破坏</td>
+      <td>The pipes rusted管道生锈了</td>
+      <td></td>
+      <td>[eat, corrode]</td>
+      <td>[crumble, decay, dilapidate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>rəst</td>
+      <td>['corrode', 'eat']</td>
+      <td></td>
+      <td>cause to deteriorate due to the action of water, air, or an acid由于水，空气或酸的作用而导致变质</td>
+      <td>The steady dripping of water rusted the metal stopper in the sink水的稳定滴落使金属塞子在水槽中生锈</td>
+      <td></td>
+      <td>[corrode]</td>
+      <td>[damage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>rəst</td>
+      <td></td>
+      <td></td>
+      <td>become coated with oxide变成氧化物涂层</td>
+      <td></td>
+      <td></td>
+      <td>[oxidize, oxidise, oxidate]</td>
+      <td>[oxidize, oxidise, oxidate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>rəst</td>
+      <td>['rusting']</td>
+      <td></td>
+      <td>the formation of reddish-brown ferric oxides on iron by low-temperature oxidation in the presence of water在水存在下通过低温氧化在铁上形成红褐色氧化铁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[erosion, corrosion, corroding, oxidization, oxidisation, oxidation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>rəst</td>
+      <td>['rust fungus']</td>
+      <td></td>
+      <td>any of various fungi causing rust disease in plants任何一种在植物中引起锈病的真菌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fungus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>rəst</td>
+      <td></td>
+      <td></td>
+      <td>a plant disease that produces a reddish-brown discoloration of leaves and stems; caused by various rust fungi一种植物病，会产生红褐色的叶和茎变色;由各种锈菌引起的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>rəst</td>
+      <td></td>
+      <td></td>
+      <td>a red or brown oxide coating on iron or steel caused by the action of oxygen and moisture由氧气和水分的作用引起的铁或钢上的红色或棕色氧化物涂层</td>
+      <td></td>
+      <td>[rusty]</td>
+      <td></td>
+      <td>[ferric oxide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rust</th>
+      <td>ust</td>
+      <td>3.48</td>
+      <td>adj</td>
+      <td>rəst</td>
+      <td>['rust-brown', 'rusty'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of the brown color of rust褐锈的颜色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gust</th>
+      <td>ust</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>ɡəst</td>
+      <td>['blast', 'blow']</td>
+      <td></td>
+      <td>a strong current of air强劲的空气流动</td>
+      <td>the tree was bent almost double by the gust阵阵的树几乎翻了一倍</td>
+      <td>[gusty]</td>
+      <td></td>
+      <td>[air current, current of air, wind]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

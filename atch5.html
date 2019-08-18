@@ -1,0 +1,1550 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['watch', 'catch', 'match', 'patch', 'hatch', 'batch', 'latch']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>wɑʧ</td>
+      <td>['catch', 'see', 'take in', 'view']</td>
+      <td></td>
+      <td>see or watch看或看</td>
+      <td></td>
+      <td></td>
+      <td>[see]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>wɑʧ</td>
+      <td>['ascertain', 'check', 'determine', 'find out', 'learn', 'see']</td>
+      <td></td>
+      <td>find out, learn, or determine with certainty, usually by making an inquiry or other effort通常通过询问或其他努力来确定，学习或确定</td>
+      <td></td>
+      <td></td>
+      <td>[see, ascertain, control, determine, ensure, insure, assure, find out, find, see to it, check]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>wɑʧ</td>
+      <td>['look on']</td>
+      <td></td>
+      <td>observe with attention注意观察</td>
+      <td>They watched as the murderer was executed他们看着凶手被处决了</td>
+      <td>[watching, watcher]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>wɑʧ</td>
+      <td>['follow', 'keep an eye on', 'observe', 'watch over']</td>
+      <td></td>
+      <td>follow with the eyes or the mind跟随眼睛或头脑</td>
+      <td>The world is watching Sarajevo世界正在关注萨拉热窝</td>
+      <td></td>
+      <td>[trace, follow]</td>
+      <td>[check over, suss out, check, check into, check out, check up on, go over, look into]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>wɑʧ</td>
+      <td>['look out', 'watch out']</td>
+      <td></td>
+      <td>be vigilant, be on the lookout or be careful保持警惕，注意或小心</td>
+      <td></td>
+      <td>[watcher]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>wɑʧ</td>
+      <td></td>
+      <td></td>
+      <td>look attentively仔细一看</td>
+      <td>watch a basketball game看一场篮球比赛</td>
+      <td>[watcher]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>wɑʧ</td>
+      <td>['lookout', 'lookout man', 'picket', 'scout', 'sentinel', 'sentry', 'spotter']</td>
+      <td></td>
+      <td>a person employed to keep watch for some anticipated event被雇用来监视某些预期事件的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[watchman, watcher, security guard]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>wɑʧ</td>
+      <td>['vigil']</td>
+      <td></td>
+      <td>a purposeful surveillance to guard or observe有目的的监视以保护或观察</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surveillance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>wɑʧ</td>
+      <td>['ticker']</td>
+      <td></td>
+      <td>a small portable timepiece一个小型便携式时计</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[timepiece, horologe, timekeeper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>wɑʧ</td>
+      <td>['vigil']</td>
+      <td></td>
+      <td>the rite of staying awake for devotional purposes (especially on the eve of a religious festival)为了灵修目的而保持清醒的仪式（特别是在宗教节日的前夕）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rite, religious rite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>wɑʧ</td>
+      <td></td>
+      <td></td>
+      <td>a period of time (4 or 2 hours) during which some of a ship's crew are on duty一段时间（4或2小时），其中一些船员值班</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[duty period, shift, work shift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>wɑʧ</td>
+      <td></td>
+      <td></td>
+      <td>the period during which someone (especially a guard) is on duty某人（特别是警卫）值班的时期</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[period of time, period, time period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>watch</th>
+      <td>atch</td>
+      <td>5.49</td>
+      <td>Non</td>
+      <td>wɑʧ</td>
+      <td></td>
+      <td></td>
+      <td>observe or determine by looking通过观察来观察或确定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['get']</td>
+      <td></td>
+      <td>reach with a blow or hit in a particular spot在特定地点受到打击或击中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['pick up']</td>
+      <td></td>
+      <td>perceive with the senses quickly, suddenly, or momentarily迅速地，突然地或暂时地感知到感官</td>
+      <td>ears open to catch every sound耳朵张开，抓住每一个声音</td>
+      <td></td>
+      <td></td>
+      <td>[perceive, comprehend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['get']</td>
+      <td></td>
+      <td>perceive by hearing通过听觉感知</td>
+      <td>I didn't catch your name我没听清楚你的名字</td>
+      <td></td>
+      <td>[overhear, take in]</td>
+      <td>[hear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['get']</td>
+      <td></td>
+      <td>suffer from the receipt of收到了</td>
+      <td>She will catch hell for this behavior!她会因为这种行为而陷入地狱！</td>
+      <td></td>
+      <td>[receive, get]</td>
+      <td>[hurt, suffer, ache]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['see', 'take in', 'view', 'watch']</td>
+      <td></td>
+      <td>see or watch看或看</td>
+      <td></td>
+      <td></td>
+      <td>[see]</td>
+      <td>[watch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['grab', 'take hold of'], alos:['catch up']</td>
+      <td></td>
+      <td>take hold of so as to seize or restrain or stop the motion of抓住，抓住或制止或停止动议</td>
+      <td></td>
+      <td>[catcher]</td>
+      <td></td>
+      <td>[prehend, seize, clutch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['overhear', 'take in']</td>
+      <td></td>
+      <td>hear, usually without the knowledge of the speakers听到，通常不知道发言者</td>
+      <td></td>
+      <td></td>
+      <td>[get]</td>
+      <td>[hear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['capture', 'get']</td>
+      <td></td>
+      <td>succeed in catching or seizing, especially after a chase成功抓住或抓住，特别是在追逐之后</td>
+      <td>Did you catch the thief?你抓到小偷了吗？</td>
+      <td></td>
+      <td></td>
+      <td>[clutch, seize, prehend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['hitch']</td>
+      <td></td>
+      <td>to hook or entangle钩住或纠缠</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['get']</td>
+      <td></td>
+      <td>apprehend and reproduce accurately准确地理解和复制</td>
+      <td></td>
+      <td></td>
+      <td>[get]</td>
+      <td>[reproduce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['arrest', 'get']</td>
+      <td></td>
+      <td>attract and fix吸引并修复</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[draw, attract, draw in, pull in, pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['capture']</td>
+      <td></td>
+      <td>capture as if by hunting, snaring, or trapping捕捉，好像通过狩猎，捕捉或诱捕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['trip up']</td>
+      <td></td>
+      <td>detect a blunder or misstep发现错误或失误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hear, pick up, discover, get word, learn, get wind, get a line, find out, see]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['becharm', 'beguile', 'bewitch', 'captivate', 'capture', 'charm', 'enamor', 'enamour', 'enchant', 'entrance', 'fascinate', 'trance']</td>
+      <td></td>
+      <td>attract; cause to be enamored吸引;因为迷恋</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[appeal, attract]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['catch up with', 'overtake']</td>
+      <td></td>
+      <td>catch up with and possibly overtake赶上并可能超车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td>['get']</td>
+      <td></td>
+      <td>grasp with the mind or develop an understanding of掌握心灵或发展理解</td>
+      <td>did you catch that allusion?你有没有注意到这种暗示？don't catch your meaning不明白你的意思</td>
+      <td></td>
+      <td>[get]</td>
+      <td>[understand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>become aware of意识到</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[see, witness, find]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>be struck or affected by受到打击或影响</td>
+      <td>catch fire着火catch the mood抓住心情</td>
+      <td></td>
+      <td>[get]</td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>be the catcher成为捕手</td>
+      <td>Who is catching?谁在捕捉？</td>
+      <td>[catcher]</td>
+      <td>[take hold of, grab]</td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>cause to become accidentally or suddenly caught, ensnared, or entangled导致意外或突然陷入，陷入或纠缠</td>
+      <td></td>
+      <td></td>
+      <td>[hitch]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>check oneself during an action在行动中检查自己</td>
+      <td>She managed to catch herself before telling her boss what was on her mind在告诉老板她的想法之前，她设法抓住了自己</td>
+      <td></td>
+      <td></td>
+      <td>[contain, moderate, curb, control, check, hold, hold in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>contract合同</td>
+      <td>did you catch a cold?你感冒了吗？</td>
+      <td></td>
+      <td>[contract, get, take]</td>
+      <td>[contract, get, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>delay or hold up; prevent from proceeding on schedule or as planned延迟或阻止;防止按计划或按计划进行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[detain, delay, hold up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>discover or come upon accidentally, suddenly, or unexpectedly; catch somebody doing something or in a certain state偶然，突然或意外发现或偶然发现;抓住某人做某事或处于某种状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surprise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>get or regain something necessary, usually quickly or briefly通常快速或短暂地获得或恢复必要的东西</td>
+      <td>catch one's breath抓住一个人的呼吸</td>
+      <td></td>
+      <td></td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>reach in time及时到达</td>
+      <td>I have to catch a train at 7 o'clock我必须在7点钟赶火车</td>
+      <td></td>
+      <td>[catch up with, overtake]</td>
+      <td>[board, get on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>spread or be communicated传播或传播</td>
+      <td>The fashion did not catch时尚没有抓住</td>
+      <td></td>
+      <td></td>
+      <td>[propagate, spread]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>start burning开始燃烧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[catch fire, ignite, erupt, take fire, combust, conflagrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>ver</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>take in and retain接受并保留</td>
+      <td>We have a big barrel to catch the rainwater我们有一个大桶来捕捉雨水</td>
+      <td>[catchment]</td>
+      <td>[capture]</td>
+      <td>[amass, pile up, hoard, roll up, collect, accumulate, compile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td>['grab', 'snap', 'snatch']</td>
+      <td></td>
+      <td>the act of catching an object with the hands用手抓住物体的行为</td>
+      <td>Mays made the catch with his back to the plate梅斯用背对着盘子抓住了</td>
+      <td></td>
+      <td></td>
+      <td>[touching, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td>['gimmick']</td>
+      <td></td>
+      <td>a drawback or difficulty that is not readily evident一个不容易明显的缺点或困难</td>
+      <td>it sounds good but what's the catch?这听起来不错，但有什么收获？</td>
+      <td>[catchy]</td>
+      <td></td>
+      <td>[drawback]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td>['haul']</td>
+      <td></td>
+      <td>the quantity that was caught捕获的数量</td>
+      <td>the catch was only 10 fish渔获量只有10条鱼</td>
+      <td></td>
+      <td></td>
+      <td>[indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td>['stop']</td>
+      <td></td>
+      <td>a restraint that checks the motion of something检查某事物运动的约束</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[constraint, restraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td>['apprehension', 'arrest', 'collar', 'pinch', 'taking into custody']</td>
+      <td></td>
+      <td>the act of apprehending (especially apprehending a criminal)逮捕行为（特别是逮捕罪犯）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seizure, capture, gaining control]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td>['match']</td>
+      <td></td>
+      <td>a person regarded as a good matrimonial prospect被视为良好婚姻前景的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult, grownup]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a break or check in the voice (usually a sign of strong emotion)休息或检查声音（通常是情绪强烈的迹象）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[delivery, speech, manner of speaking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a cooperative game in which a ball is passed back and forth球在前后传球的合作比赛</td>
+      <td>he played catch with his son in the backyard他在后院与儿子玩耍</td>
+      <td></td>
+      <td></td>
+      <td>[game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a fastener that fastens or locks a door or window用于固定或锁定门或窗的紧固件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fixing, fastening, holdfast, fastener]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>catch</th>
+      <td>atch</td>
+      <td>5.14</td>
+      <td>nou</td>
+      <td>kæʧ</td>
+      <td></td>
+      <td></td>
+      <td>anything that is caught (especially if it is worth catching)任何被抓住的东西（特别是如果它值得捕捉）</td>
+      <td>he shared his catch with the others他和其他人分享了他的收获</td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td>['oppose', 'pit', 'play off']</td>
+      <td></td>
+      <td>set into opposition or rivalry陷入反对或竞争</td>
+      <td>let them match their best athletes against ours让他们匹配他们最好的运动员对抗我们</td>
+      <td></td>
+      <td></td>
+      <td>[face, confront]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td>['equal', 'rival', 'touch']</td>
+      <td></td>
+      <td>be equal to in quality or ability在质量或能力上是平等的</td>
+      <td>Her persistence and ambition only matches that of her parents她的坚持和野心只与她父母的那种相符</td>
+      <td></td>
+      <td>[equalize, equate, equal, equalise]</td>
+      <td>[compete, vie, contend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td>['fit']</td>
+      <td></td>
+      <td>make correspond or harmonize使对应或协调</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[correct, set, adjust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td>['equal', 'equalise', 'equalize', 'equate']</td>
+      <td></td>
+      <td>make equal, uniform, corresponding, or matching使相等，统一，对应或匹配</td>
+      <td>The company matched the discount policy of its competitors该公司符合其竞争对手的折扣政策</td>
+      <td></td>
+      <td>[rival, equal, touch]</td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td>['couple', 'mate', 'pair', 'twin']</td>
+      <td></td>
+      <td>bring two objects, ideas, or people together将两个对象，想法或人物聚集在一起</td>
+      <td>Matchmaker, can you match my daughter with a nice young man?红娘，你能和我的女儿和一个好男人相匹配吗？</td>
+      <td></td>
+      <td></td>
+      <td>[join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td>['agree', 'check', 'correspond', 'fit', 'gibe', 'jibe', 'tally']</td>
+      <td></td>
+      <td>be compatible, similar or consistent; coincide in their characteristics兼容，相似或一致;与他们的特点相吻合</td>
+      <td>The suspect's fingerprints don't match those on the gun嫌疑人的指纹与枪上的指纹不符</td>
+      <td></td>
+      <td>[accord, agree, check, check out, concord, consort, fit in, harmonise, harmonize]</td>
+      <td>[be, equal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td></td>
+      <td></td>
+      <td>be equal or harmonize平等或协调</td>
+      <td>The two pieces match这两件作品相配</td>
+      <td></td>
+      <td>[fit]</td>
+      <td>[conform, adapt, adjust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td></td>
+      <td></td>
+      <td>give or join in marriage给予或加入婚姻</td>
+      <td></td>
+      <td>[matcher]</td>
+      <td>[couple, mate, twin, pair]</td>
+      <td>[join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>ver</td>
+      <td>mæʧ</td>
+      <td></td>
+      <td></td>
+      <td>provide funds complementary to提供补充资金</td>
+      <td>The company matched the employees' contributions该公司与员工的贡献相匹配</td>
+      <td></td>
+      <td></td>
+      <td>[provide, render, supply, furnish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td>['compeer', 'equal', 'peer']</td>
+      <td></td>
+      <td>a person who is of equal standing with another in a group与群体中的另一个人具有同等地位的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[person, somebody, soul, mortal, someone, individual]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td>['friction match', 'lucifer']</td>
+      <td></td>
+      <td>lighter consisting of a thin piece of wood or cardboard tipped with combustible chemical; ignites with friction打火机由一块薄薄的木头或纸板组成，上面装有可燃化学品;用摩擦点燃</td>
+      <td>he always carries matches to light his pipe他总是拿着火柴点燃他的烟斗</td>
+      <td></td>
+      <td></td>
+      <td>[ignitor, igniter, lighter, light]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td>['couple', 'mates']</td>
+      <td></td>
+      <td>a pair of people who live together一对住在一起的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[family unit, family]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td>['catch']</td>
+      <td></td>
+      <td>a person regarded as a good matrimonial prospect被视为良好婚姻前景的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grownup, adult]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td>['mate']</td>
+      <td></td>
+      <td>an exact duplicate完全相同的</td>
+      <td>when a match is found an entry is made in the notebook当找到匹配项时，在笔记本中创建一个条目</td>
+      <td></td>
+      <td></td>
+      <td>[duplicate, duplication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a burning piece of wood or cardboard燃烧的木头或纸板</td>
+      <td>if you drop a match in there the whole place will explode如果你在那里放一个比赛，整个地方都会爆炸</td>
+      <td></td>
+      <td></td>
+      <td>[light, ignitor, igniter, lighter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a formal contest in which two or more persons or teams compete两个或两个以上的人或团队参加比赛的正式比赛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contest, competition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td></td>
+      <td></td>
+      <td>something that resembles or harmonizes with类似于或与之协调的东西</td>
+      <td>that tie makes a good match with your jacket这条领带与你的夹克搭配得很好</td>
+      <td></td>
+      <td></td>
+      <td>[vis-a-vis, counterpart, opposite number]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>match</th>
+      <td>atch</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>mæʧ</td>
+      <td></td>
+      <td></td>
+      <td>the score needed to win a match赢得比赛所需的分数</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[score]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>pæʧ</td>
+      <td>['piece']</td>
+      <td></td>
+      <td>repair by adding pieces通过添加件修复</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[restore, touch on, bushel, doctor, fix, furbish up, repair, mend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>pæʧ</td>
+      <td>['patch up'], alos:['patch up']</td>
+      <td></td>
+      <td>mend by putting a patch on修补补丁</td>
+      <td>patch a hole修补一个洞</td>
+      <td>[patching]</td>
+      <td></td>
+      <td>[bushel, fix, touch on, furbish up, doctor, restore, repair, mend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>pæʧ</td>
+      <td>['piece']</td>
+      <td></td>
+      <td>to join or unite the pieces of加入或团结</td>
+      <td>patch the skirt修补裙子</td>
+      <td>[patching]</td>
+      <td></td>
+      <td>[conjoin, join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>pæʧ</td>
+      <td></td>
+      <td></td>
+      <td>provide with a patch; also used metaphorically提供补丁;也用比喻</td>
+      <td>The field was patched with snow田野被雪覆了</td>
+      <td>[patching]</td>
+      <td></td>
+      <td>[render, provide, furnish, supply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td>['dapple', 'fleck', 'maculation', 'speckle', 'spot']</td>
+      <td></td>
+      <td>a small contrasting part of something某事物的一个小对比部分</td>
+      <td>a patch of clouds一片云patches of thin ice薄冰块</td>
+      <td>[patchy]</td>
+      <td></td>
+      <td>[marking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td>['temporary hookup']</td>
+      <td></td>
+      <td>a connection intended to be used for a limited time旨在用于有限时间的连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[connective, connector, contrivance, lash-up, connexion, connecter, connection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td>['eyepatch']</td>
+      <td></td>
+      <td>a protective cloth covering for an injured eye用于受伤眼睛的防护布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cloth covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td>['darn', 'mend']</td>
+      <td></td>
+      <td>sewing that repairs a worn or torn hole (especially in a garment)用于修理磨损或破损孔的缝纫（特别是在服装中）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sewing, stitchery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td>['bandage']</td>
+      <td></td>
+      <td>a piece of soft material that covers and protects an injured part of the body一块柔软的材料，覆盖并保护身体受伤的部位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[medical dressing, dressing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td>['piece', 'spell', 'while']</td>
+      <td></td>
+      <td>a period of indeterminate length (usually short) marked by some action or condition一段不确定的长度（通常很短），以某种行为或条件为标志</td>
+      <td>a patch of bad weather恶劣的天气</td>
+      <td></td>
+      <td></td>
+      <td>[time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td>['plot', 'plot of ground', 'plot of land']</td>
+      <td></td>
+      <td>a small area of ground covered by specific vegetation由特定植被覆盖的一小块地面</td>
+      <td>a cabbage patch白菜补丁a briar patch一个石楠补丁</td>
+      <td></td>
+      <td></td>
+      <td>[tract, parcel, piece of ground, piece of land, parcel of land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a piece of cloth used as decoration or to mend or cover a hole用作装饰或修补或覆盖孔的一块布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of cloth, piece of material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>patch</th>
+      <td>atch</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>pæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a short set of commands to correct a bug in a computer program一组用于纠正计算机程序中的错误的命令</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[computer program, computer programme, program, programme]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>hæʧ</td>
+      <td>['concoct', 'dream up', 'think of', 'think up']</td>
+      <td></td>
+      <td>devise or invent设计或发明</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[create mentally, create by mental act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>hæʧ</td>
+      <td>['brood', 'cover', 'incubate']</td>
+      <td></td>
+      <td>sit on (eggs)坐在（鸡蛋）</td>
+      <td></td>
+      <td></td>
+      <td>[breed, cover]</td>
+      <td>[procreate, multiply, reproduce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>hæʧ</td>
+      <td></td>
+      <td></td>
+      <td>draw, cut, or engrave lines, usually parallel, on metal, wood, or paper在金属，木材或纸张上绘制，切割或雕刻通常平行的线条</td>
+      <td>hatch the sheet孵化表</td>
+      <td>[hachure, hatching]</td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>hæʧ</td>
+      <td></td>
+      <td></td>
+      <td>emerge from the eggs从鸡蛋中出现</td>
+      <td>young birds, fish, and reptiles hatch幼鸟，鱼和爬行动物孵化</td>
+      <td>[hatchery, hatching]</td>
+      <td>[incubate, cover, brood]</td>
+      <td>[be born]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>hæʧ</td>
+      <td></td>
+      <td></td>
+      <td>inlay with narrow strips or lines of a different substance such as gold or silver, for the purpose of decorating为了装饰，用窄条或不同物质的线条镶嵌，如金或银</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inlay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>hæʧ</td>
+      <td>['crosshatch', 'hachure', 'hatching']</td>
+      <td></td>
+      <td>shading consisting of multiple crossing lines阴影由多条交叉线组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shading]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>hæʧ</td>
+      <td>['hatchback', 'hatchback door', 'liftgate']</td>
+      <td></td>
+      <td>a sloping rear car door that is lifted to open一个倾斜的后车门，抬起打开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[car door]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>hæʧ</td>
+      <td>['hatching']</td>
+      <td></td>
+      <td>the production of young from an egg从一个鸡蛋生产年轻人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[giving birth, parturition, birth, birthing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hatch</th>
+      <td>atch</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>hæʧ</td>
+      <td></td>
+      <td></td>
+      <td>a movable barrier covering a hatchway覆盖舱口的可移动屏障</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[movable barrier]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>batch</th>
+      <td>atch</td>
+      <td>3.52</td>
+      <td>ver</td>
+      <td>bæʧ</td>
+      <td></td>
+      <td></td>
+      <td>batch together; assemble or process as a batch批量合计;批量组装或处理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>batch</th>
+      <td>atch</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>bæʧ</td>
+      <td>['clutch']</td>
+      <td></td>
+      <td>a collection of things or persons to be handled together一起处理的事物或人员的集合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assemblage, accumulation, collection, aggregation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>batch</th>
+      <td>atch</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>bæʧ</td>
+      <td>['deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td>a batch of letters一批信件</td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>batch</th>
+      <td>atch</td>
+      <td>3.52</td>
+      <td>nou</td>
+      <td>bæʧ</td>
+      <td></td>
+      <td></td>
+      <td>all the loaves of bread baked at the same time所有的面包同时烤制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aggregation, accumulation, assemblage, collection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>latch</th>
+      <td>atch</td>
+      <td>3.14</td>
+      <td>ver</td>
+      <td>læʧ</td>
+      <td></td>
+      <td></td>
+      <td>fasten with a latch用闩锁固定</td>
+      <td>latch the door闩上门</td>
+      <td></td>
+      <td></td>
+      <td>[fasten, fix, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>latch</th>
+      <td>atch</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>læʧ</td>
+      <td>['door latch']</td>
+      <td></td>
+      <td>spring-loaded doorlock that can only be opened from the outside with a key弹簧式门锁，只能用钥匙从外面打开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>latch</th>
+      <td>atch</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>læʧ</td>
+      <td></td>
+      <td></td>
+      <td>catch for fastening a door or gate; a bar that can be lowered or slid into a groove抓住门或门;一个可以降低或滑入凹槽的杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[catch]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

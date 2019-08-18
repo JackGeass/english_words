@@ -1,0 +1,425 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['boy', 'joy', 'toy', 'soy', 'coy', 'goy', 'hoy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>boy</th>
+      <td>oy</td>
+      <td>5.64</td>
+      <td>nou</td>
+      <td>bɔɪ</td>
+      <td>['son']</td>
+      <td>[girl]</td>
+      <td>a male human offspring一个男性的人类后代</td>
+      <td>his boy is taller than he is他的男孩比他高</td>
+      <td></td>
+      <td></td>
+      <td>[male offspring, man-child]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boy</th>
+      <td>oy</td>
+      <td>5.64</td>
+      <td>nou</td>
+      <td>bɔɪ</td>
+      <td>['male child']</td>
+      <td>[girl]</td>
+      <td>a youthful male person一个年轻的男性</td>
+      <td>the baby was a boy宝宝还是个男孩she made the boy brush his teeth every night她让这个男孩每晚都刷牙most soldiers are only boys in uniform大多数士兵都是穿制服的男孩</td>
+      <td>[boyhood]</td>
+      <td></td>
+      <td>[male, male person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boy</th>
+      <td>oy</td>
+      <td>5.64</td>
+      <td>nou</td>
+      <td>bɔɪ</td>
+      <td></td>
+      <td></td>
+      <td>a friendly informal reference to a grown man对成年男子的友好非正式参考</td>
+      <td>he likes to play golf with the boys他喜欢和男生一起打高尔夫球</td>
+      <td></td>
+      <td></td>
+      <td>[man, adult male]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joy</th>
+      <td>oy</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>dʒɔɪ</td>
+      <td>['rejoice']</td>
+      <td></td>
+      <td>feel happiness or joy感到快乐或快乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feel, experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joy</th>
+      <td>oy</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>dʒɔɪ</td>
+      <td>['gladden']</td>
+      <td></td>
+      <td>make glad or happy使高兴或快乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joy</th>
+      <td>oy</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>dʒɔɪ</td>
+      <td>['joyfulness', 'joyousness']</td>
+      <td>[sorrow]</td>
+      <td>the emotion of great happiness幸福的情感</td>
+      <td></td>
+      <td>[joyous]</td>
+      <td></td>
+      <td>[emotion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joy</th>
+      <td>oy</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>dʒɔɪ</td>
+      <td>['delight', 'pleasure']</td>
+      <td></td>
+      <td>something or someone that provides a source of happiness某事或某人提供幸福的来源</td>
+      <td>a joy to behold很高兴看到</td>
+      <td></td>
+      <td></td>
+      <td>[positive stimulus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>toʊj</td>
+      <td>['diddle', 'fiddle', 'play'], alos:['toy with']</td>
+      <td></td>
+      <td>manipulate manually or in one's mind or imagination手动或在一个人的思想或想象中操纵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[manipulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>toʊj</td>
+      <td>['dally', 'flirt', 'play']</td>
+      <td></td>
+      <td>behave carelessly or indifferently粗心大意或漠不关心</td>
+      <td></td>
+      <td>[toying]</td>
+      <td>[trifle, dally, play]</td>
+      <td>[move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>ver</td>
+      <td>toʊj</td>
+      <td>['play']</td>
+      <td></td>
+      <td>engage in an activity as if it were a game rather than take it seriously参与一项活动就好像它是一场游戏而不是认真对待它</td>
+      <td>toy with an idea有想法的玩具</td>
+      <td></td>
+      <td></td>
+      <td>[behave, act, do]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>toʊj</td>
+      <td>['toy dog']</td>
+      <td></td>
+      <td>any of several breeds of very small dogs kept purely as pets任何一种非常小的犬只都是纯粹的宠物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dog, domestic dog, canis familiaris]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>toʊj</td>
+      <td>['miniature']</td>
+      <td></td>
+      <td>a copy that reproduces a person or thing in greatly reduced size复制尺寸大大缩小的人或物的副本</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[copy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>toʊj</td>
+      <td>['plaything']</td>
+      <td></td>
+      <td>an artifact designed to be played with设计用于玩耍的神器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artefact, artifact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>toʊj</td>
+      <td></td>
+      <td></td>
+      <td>a device regarded as providing amusement被视为提供娱乐的设备</td>
+      <td>private airplanes are a rich man's toy私人飞机是富人的玩具</td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toy</th>
+      <td>oy</td>
+      <td>4.24</td>
+      <td>nou</td>
+      <td>toʊj</td>
+      <td></td>
+      <td></td>
+      <td>a nonfunctional replica of something else (frequently used as a modifier)其他东西的非功能性复制品（经常用作修饰符）</td>
+      <td>a toy stove一个玩具炉</td>
+      <td></td>
+      <td></td>
+      <td>[replica, replication, reproduction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soy</th>
+      <td>oy</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>sɔɪ</td>
+      <td>['soy sauce']</td>
+      <td></td>
+      <td>thin sauce made of fermented soy beans由发酵的大豆制成的薄酱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[condiment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soy</th>
+      <td>oy</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>sɔɪ</td>
+      <td>['glycine max', 'soja', 'soja bean', 'soya', 'soya bean', 'soybean', 'soybean plant']</td>
+      <td></td>
+      <td>erect bushy hairy annual herb having trifoliate leaves and purple to pink flowers; extensively cultivated for food and forage and soil improvement but especially for its nutritious oil-rich seeds; native to Asia一种浓密多毛的一年生草本植物，有三叶叶和紫色到粉红色的花;广泛种植用于食物和饲料和土壤改良，但特别是其营养丰富的富含油的种子;原产于亚洲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[legume, leguminous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soy</th>
+      <td>oy</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>sɔɪ</td>
+      <td>['soya bean', 'soybean']</td>
+      <td></td>
+      <td>a source of oil; used for forage and soil improvement and as food石油来源;用于饲料和土壤改良以及作为食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>soy</th>
+      <td>oy</td>
+      <td>3.66</td>
+      <td>nou</td>
+      <td>sɔɪ</td>
+      <td>['soya', 'soya bean', 'soybean']</td>
+      <td></td>
+      <td>the most highly proteinaceous vegetable known; the fruit of the soybean plant is used in a variety of foods and as fodder (especially as a replacement for animal protein)已知最高蛋白质的蔬菜;大豆植物的果实用于各种食物和饲料（特别是作为动物蛋白的替代品）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edible bean, bean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coy</th>
+      <td>oy</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>kɔɪ</td>
+      <td>['demure', 'overmodest'], similarTo:['modest']</td>
+      <td></td>
+      <td>affectedly modest or shy especially in a playful or provocative way特别是以俏皮或挑衅的方式谦虚或害羞</td>
+      <td></td>
+      <td>[coyness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coy</th>
+      <td>oy</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>kɔɪ</td>
+      <td>, similarTo:['timid']</td>
+      <td></td>
+      <td>modestly or warily rejecting approaches or overtures谦虚地或谨慎地拒绝接近或提议</td>
+      <td>like a wild young colt, very inquisitive but very coy and not to be easily cajoled像一只野生的小马驹，非常好奇，但非常腼腆，不容易被哄骗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coy</th>
+      <td>oy</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>kɔɪ</td>
+      <td>, similarTo:['indefinite']</td>
+      <td></td>
+      <td>showing marked and often playful or irritating evasiveness or reluctance to make a definite or committing statement显示出明显且经常有趣或恼人的回避或不愿作出明确或承诺的陈述</td>
+      <td>a politician coy about his intentions一位政治家对他的意图腼腆</td>
+      <td>[coyness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goy</th>
+      <td>oy</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>ɡɔɪ</td>
+      <td>['gentile', 'non-jew']</td>
+      <td></td>
+      <td>a Christian as contrasted with a Jew与犹太人形成鲜明对比的基督徒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[christian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hoy</th>
+      <td>oy</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>hɔɪ</td>
+      <td>['barge', 'flatboat', 'lighter']</td>
+      <td></td>
+      <td>a flatbottom boat for carrying heavy loads (especially on canals)平底船用于承载重物（特别是在运河上）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[boat]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

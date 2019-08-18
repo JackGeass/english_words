@@ -1,0 +1,965 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hand', 'land', 'band', 'sand', 'wand', 'rand']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>ver</td>
+      <td>hænd</td>
+      <td>['give', 'pass', 'pass on', 'reach', 'turn over'], alos:['hand out', 'hand down', 'hand over']</td>
+      <td></td>
+      <td>place into the hands or custody of放在手中或保管</td>
+      <td>hand me the spoon, please请把勺子递给我</td>
+      <td></td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>ver</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>guide or conduct or usher somewhere指导或进行或引导某处</td>
+      <td>hand the elderly lady into the taxi把老太太递进出租车</td>
+      <td></td>
+      <td></td>
+      <td>[lead, take, conduct, guide, direct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td>['manus', 'mitt', 'paw']</td>
+      <td></td>
+      <td>the (prehensile) extremity of the superior limb上肢的（上颌）肢体</td>
+      <td>he had the hands of a surgeon他有一位外科医生的手</td>
+      <td></td>
+      <td></td>
+      <td>[extremity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td>['hired hand', 'hired man']</td>
+      <td></td>
+      <td>a hired laborer on a farm or ranch在农场或牧场雇佣的劳动者</td>
+      <td>the hired hand fixed the railing雇用的手固定栏杆a ranch hand牧场的手</td>
+      <td></td>
+      <td></td>
+      <td>[manual laborer, laborer, jack, labourer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td>['handwriting', 'script']</td>
+      <td></td>
+      <td>something written by hand用手写的东西</td>
+      <td>she recognized his handwriting她认出了自己的笔迹his hand was illegible他的手难以辨认</td>
+      <td></td>
+      <td></td>
+      <td>[writing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td>['bridge player']</td>
+      <td></td>
+      <td>a card player in a game of bridge桥牌游戏中的纸牌玩家</td>
+      <td>we need a 4th hand for bridge我们需要一个第四手桥</td>
+      <td></td>
+      <td></td>
+      <td>[card player]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td>['deal']</td>
+      <td></td>
+      <td>the cards held in a card game by a given player at any given time在任何给定时间由给定玩家在纸牌游戏中持有的牌</td>
+      <td>I didn't hold a good hand all evening我整个晚上都没有握好手he kept trying to see my hand他一直想看看我的手</td>
+      <td></td>
+      <td></td>
+      <td>[collection, aggregation, assemblage, accumulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td>['helping hand']</td>
+      <td></td>
+      <td>physical assistance身体援助</td>
+      <td>give me a hand with the chores帮我一把家务</td>
+      <td></td>
+      <td></td>
+      <td>[help, aid, assistance, assist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>ability能力</td>
+      <td>he wanted to try his hand at singing他想尝试唱歌</td>
+      <td></td>
+      <td></td>
+      <td>[ability, power]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>a member of the crew of a ship船员的一名成员</td>
+      <td>all hands on deck所有的手放在桌上</td>
+      <td></td>
+      <td></td>
+      <td>[crewman, sailor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>a position given by its location to the side of an object由其位置给出物体侧面的位置</td>
+      <td>objections were voiced on every hand每一方面都表达了反对意见</td>
+      <td></td>
+      <td></td>
+      <td>[side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>a rotating pointer on the face of a timepiece钟表上的旋转指针</td>
+      <td>the big hand counts the minutes大手数分钟</td>
+      <td></td>
+      <td></td>
+      <td>[pointer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>a round of applause to signify approval一阵掌声表示赞同</td>
+      <td>give the little lady a great big hand给小女人一个大手</td>
+      <td></td>
+      <td></td>
+      <td>[hand clapping, applause, clapping]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>a unit of length equal to 4 inches; used in measuring horses一个长度等于4英寸的单位;用于测量马匹</td>
+      <td>the horse stood 20 hands那匹马站着20只手</td>
+      <td></td>
+      <td></td>
+      <td>[handbreadth, handsbreadth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>one of two sides of an issue问题的两个方面之一</td>
+      <td>on the one hand..., but on the other hand...一方面......，但另一方面......</td>
+      <td></td>
+      <td></td>
+      <td>[side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hand</th>
+      <td>and</td>
+      <td>5.47</td>
+      <td>nou</td>
+      <td>hænd</td>
+      <td></td>
+      <td></td>
+      <td>terminal part of the forelimb in certain vertebrates (e.g. apes or kangaroos)某些脊椎动物前肢的末端部分（例如猿或袋鼠）</td>
+      <td>the kangaroo's forearms seem undeveloped but the powerful five-fingered hands are skilled at feinting and clouting袋鼠的前臂似乎尚未发育，但强大的五指手擅长假装和嬉戏</td>
+      <td></td>
+      <td></td>
+      <td>[forepaw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>ver</td>
+      <td>lænd</td>
+      <td>['set down']</td>
+      <td></td>
+      <td>reach or come to rest到达或休息</td>
+      <td>The bird landed on the highest branch这只鸟降落在最高的树枝上The plane landed in Istanbul飞机降落在伊斯坦布尔</td>
+      <td>[lander, landing]</td>
+      <td></td>
+      <td>[get, come, arrive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>ver</td>
+      <td>lænd</td>
+      <td>['bring']</td>
+      <td></td>
+      <td>bring into a different state进入一个不同的状态</td>
+      <td>this may land you in jail这可能会让你入狱</td>
+      <td></td>
+      <td></td>
+      <td>[alter, modify, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>ver</td>
+      <td>lænd</td>
+      <td>['set ashore', 'shore']</td>
+      <td></td>
+      <td>arrive on shore到达岸边</td>
+      <td>The ship landed in Pearl Harbor这艘船降落在珍珠港</td>
+      <td>[landing]</td>
+      <td></td>
+      <td>[get, come, arrive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>ver</td>
+      <td>lænd</td>
+      <td>['bring down', 'put down']</td>
+      <td></td>
+      <td>cause to come to the ground因为来到了地面</td>
+      <td>the pilot managed to land the airplane safely飞行员设法安全降落飞机</td>
+      <td>[landing]</td>
+      <td></td>
+      <td>[arrive, get, come]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>ver</td>
+      <td>lænd</td>
+      <td>['down', 'shoot down']</td>
+      <td></td>
+      <td>shoot at and force to come down射击并强行降下来</td>
+      <td>the enemy landed several of our aircraft敌人降落了我们的几架飞机</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>ver</td>
+      <td>lænd</td>
+      <td></td>
+      <td></td>
+      <td>bring ashore上岸</td>
+      <td>The drug smugglers landed the heroin on the beach of the island毒品走私者将海洛因降落在岛上的海滩上</td>
+      <td>[landing]</td>
+      <td></td>
+      <td>[take, bring, convey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>ver</td>
+      <td>lænd</td>
+      <td></td>
+      <td></td>
+      <td>deliver (a blow)交付（一击）</td>
+      <td>He landed several blows on his opponent's head他对对手的头部进行了几次打击</td>
+      <td></td>
+      <td></td>
+      <td>[deliver, drive home]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['ground', 'soil']</td>
+      <td></td>
+      <td>material in the top layer of the surface of the earth in which plants can grow (especially with reference to its quality or use)植物可以生长的地球表层顶层的材料（特别是参考其质量或用途）</td>
+      <td>the land had never been plowed这片土地从来没有耕过</td>
+      <td></td>
+      <td></td>
+      <td>[physical object, object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['country', 'state']</td>
+      <td></td>
+      <td>the territory occupied by a nation一个国家占领的领土</td>
+      <td>he returned to the land of his birth他回到了他出生的土地上</td>
+      <td></td>
+      <td></td>
+      <td>[administrative district, administrative division, territorial division]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['body politic', 'commonwealth', 'country', 'nation', 'res publica', 'state']</td>
+      <td></td>
+      <td>a politically organized body of people under a single government单一政府下的政治组织</td>
+      <td>an industrialized land工业化土地</td>
+      <td></td>
+      <td></td>
+      <td>[political entity, political unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['din land', 'edwin herbert land']</td>
+      <td></td>
+      <td>United States inventor who incorporated Polaroid film into lenses and invented the one step photographic process (1909-1991)美国发明家将宝丽来胶片纳入镜片并发明了一步式摄影工艺（1909-1991）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['acres', 'demesne', 'estate', 'landed estate']</td>
+      <td></td>
+      <td>extensive landed property (especially in the country) retained by the owner for his own use业主为自用而保留的广泛土地（特别是在该国）</td>
+      <td>the family owned a large estate on Long Island这家人在长岛拥有一个大型庄园</td>
+      <td></td>
+      <td></td>
+      <td>[realty, immovable, real property, real estate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['country', 'nation']</td>
+      <td></td>
+      <td>the people who live in a nation or country生活在一个国家或国家的人们</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[people]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['farming']</td>
+      <td></td>
+      <td>agriculture considered as an occupation or way of life农业被视为一种职业或生活方式</td>
+      <td>there's no work on the land any more陆地上再也没有工作了</td>
+      <td></td>
+      <td></td>
+      <td>[business, line of work, line, job, occupation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['dry land', 'earth', 'ground', 'solid ground', 'terra firma']</td>
+      <td></td>
+      <td>the solid part of the earth's surface地球表面的坚固部分</td>
+      <td>the plane turned away from the sea and moved back over land飞机转身离开大海，回到了陆地上</td>
+      <td></td>
+      <td></td>
+      <td>[object, physical object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['demesne', 'domain']</td>
+      <td></td>
+      <td>territory over which rule or control is exercised行使规则或控制权的领土</td>
+      <td>he made it the law of the land他把它变成了这片土地的法则</td>
+      <td></td>
+      <td></td>
+      <td>[region]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td>['kingdom', 'realm']</td>
+      <td></td>
+      <td>a domain in which something is dominant某事物占主导地位的领域</td>
+      <td>a land of make-believe一个虚构的土地</td>
+      <td></td>
+      <td></td>
+      <td>[field, area, sphere, arena, domain, orbit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>land</th>
+      <td>and</td>
+      <td>5.05</td>
+      <td>nou</td>
+      <td>lænd</td>
+      <td></td>
+      <td></td>
+      <td>the land on which real estate is located房地产所在的土地</td>
+      <td>he built the house on land leased from the city他在从城市租来的土地上建造房屋</td>
+      <td></td>
+      <td></td>
+      <td>[realty, immovable, real property, real estate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>ver</td>
+      <td>bænd</td>
+      <td>['ring']</td>
+      <td></td>
+      <td>attach a ring to the foot of, in order to identify将一个环连接到脚上，以便识别</td>
+      <td>band the geese to observe their migratory patterns带鹅观察他们的迁徙模式</td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>ver</td>
+      <td>bænd</td>
+      <td></td>
+      <td></td>
+      <td>bind or tie together, as with a band捆绑或绑在一起，就像带一样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tie, bind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td>['circle', 'lot', 'set']</td>
+      <td></td>
+      <td>an unofficial association of people or groups人或团体的非官方协会</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[social group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td>['isthmus']</td>
+      <td></td>
+      <td>a cord-like tissue connecting two larger parts of an anatomical structure连接解剖结构的两个较大部分的绳状组织</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td>['banding', 'stria', 'striation']</td>
+      <td></td>
+      <td>a stripe or stripes of contrasting color条纹或条纹对比色</td>
+      <td>chromosomes exhibit characteristic bands染色体表现出特征带the black and yellow banding of bees and wasps蜜蜂和黄蜂的黑色和黄色条带</td>
+      <td></td>
+      <td></td>
+      <td>[bar, streak, stripe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td>['dance band', 'dance orchestra']</td>
+      <td></td>
+      <td>a group of musicians playing popular music for dancing一群音乐家演奏流行音乐跳舞</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[musical organisation, musical organization, musical group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td>['banding', 'stripe']</td>
+      <td></td>
+      <td>an adornment consisting of a strip of a contrasting color or material由对比色或材料条组成的装饰品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adornment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td>['ring']</td>
+      <td></td>
+      <td>jewelry consisting of a circlet of precious metal (often set with jewels) worn on the finger珠宝由手指上戴的贵重金属圆圈（通常镶有珠宝）组成</td>
+      <td>he noted that she wore a wedding band他注意到她戴了一个结婚戒指</td>
+      <td></td>
+      <td></td>
+      <td>[jewellery, jewelry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td>['ring']</td>
+      <td></td>
+      <td>a strip of material attached to the leg of a bird to identify it (as in studies of bird migration)附着在鸟的腿上的一条材料以识别它（如在鸟类迁徙的研究中）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strip, slip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td></td>
+      <td></td>
+      <td>a driving belt in machinery机械传动带</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[belt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td></td>
+      <td></td>
+      <td>a range of frequencies between two limits两个极限之间的频率范围</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[range]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td></td>
+      <td></td>
+      <td>a restraint put around something to hold it together约束放在一起把它固定在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[constraint, restraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td></td>
+      <td></td>
+      <td>a thin flat strip of flexible material that is worn around the body or one of the limbs (especially to decorate the body)柔软材料的薄扁平条带，穿在身体或其中一个肢体周围（特别是装饰身体）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strip, slip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td></td>
+      <td></td>
+      <td>a thin flat strip or loop of flexible material that goes around or over something else, typically to hold it together or as a decoration一种薄的扁平条状或柔性材料环，围绕或覆盖其他东西，通常用于将它们固定在一起或作为装饰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[loop, strip, slip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>band</th>
+      <td>and</td>
+      <td>4.80</td>
+      <td>nou</td>
+      <td>bænd</td>
+      <td></td>
+      <td></td>
+      <td>instrumentalists not including string players乐器演奏者不包括弦乐演奏者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[musical organization, musical group, musical organisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sand</th>
+      <td>and</td>
+      <td>4.36</td>
+      <td>ver</td>
+      <td>sænd</td>
+      <td>['sandpaper']</td>
+      <td></td>
+      <td>rub with sandpaper用砂纸擦</td>
+      <td>sandpaper the wooden surface砂纸木质表面</td>
+      <td>[sander]</td>
+      <td></td>
+      <td>[smoothen, smooth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sand</th>
+      <td>and</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>sænd</td>
+      <td>['amandine aurore lucie dupin', 'baroness dudevant', 'george sand']</td>
+      <td></td>
+      <td>French writer known for works concerning women's rights and independence (1804-1876)法国作家因妇女权利和独立而闻名（1804-1876）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sand</th>
+      <td>and</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>sænd</td>
+      <td>['backbone', 'grit', 'gumption', 'guts', 'moxie']</td>
+      <td></td>
+      <td>fortitude and determination坚韧和决心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fortitude]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>sand</th>
+      <td>and</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>sænd</td>
+      <td></td>
+      <td></td>
+      <td>a loose material consisting of grains of rock or coral松散的材料，由岩石或珊瑚组成</td>
+      <td></td>
+      <td>[sandy]</td>
+      <td></td>
+      <td>[dirt, soil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wand</th>
+      <td>and</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>wɑnd</td>
+      <td>['scepter', 'sceptre', 'verge']</td>
+      <td></td>
+      <td>a ceremonial or emblematic staff礼仪或标志性的工作人员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[staff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wand</th>
+      <td>and</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>wɑnd</td>
+      <td>['baton']</td>
+      <td></td>
+      <td>a thin tapered rod used by a conductor to lead an orchestra or choir导体用来引导管弦乐队或合唱团的薄锥形杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rod]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wand</th>
+      <td>and</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>wɑnd</td>
+      <td></td>
+      <td></td>
+      <td>a rod used by a magician or water diviner魔术师或水分配器使用的杆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rod]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wand</th>
+      <td>and</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>wɑnd</td>
+      <td></td>
+      <td></td>
+      <td>a thin supple twig or rod薄而柔软的树枝或杆</td>
+      <td>stems bearing slender wands of flowers茎上有细长的花朵</td>
+      <td></td>
+      <td></td>
+      <td>[twig, branchlet, sprig]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rand</th>
+      <td>and</td>
+      <td>3.07</td>
+      <td>nou</td>
+      <td>rænd</td>
+      <td>['reef', 'witwatersrand']</td>
+      <td></td>
+      <td>a rocky region in the southern Transvaal in northeastern South Africa; contains rich gold deposits and coal and manganese位于南非东北部德兰士瓦南部的岩石区域;含有丰富的金矿床和煤和锰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rand</th>
+      <td>and</td>
+      <td>3.07</td>
+      <td>nou</td>
+      <td>rænd</td>
+      <td>['ayn rand']</td>
+      <td></td>
+      <td>United States writer (born in Russia) noted for her polemical novels and political conservativism (1905-1982)美国作家（出生于俄罗斯）因其辩论小说和政治保守主义而闻名（1905-1982）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rand</th>
+      <td>and</td>
+      <td>3.07</td>
+      <td>nou</td>
+      <td>rænd</td>
+      <td></td>
+      <td></td>
+      <td>the basic unit of money in South Africa; equal to 100 cents南非的基本货币单位;等于100美分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[south african monetary unit]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

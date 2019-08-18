@@ -1,0 +1,860 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['good', 'food', 'mood', 'wood', 'hood', 'rood']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>nou</td>
+      <td>ɡʊd</td>
+      <td>['goodness']</td>
+      <td>[bad]</td>
+      <td>that which is pleasing or valuable or useful那令人愉快，有价值或有用的东西</td>
+      <td>weigh the good against the bad权衡好坏与坏among the highest goods of all are happiness and self-realization在所有最高级的商品中，幸福和自我实现</td>
+      <td></td>
+      <td></td>
+      <td>[quality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>nou</td>
+      <td>ɡʊd</td>
+      <td>['commodity', 'trade good']</td>
+      <td></td>
+      <td>articles of commerce商品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artefact, artifact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>nou</td>
+      <td>ɡʊd</td>
+      <td>['goodness']</td>
+      <td>[evil]</td>
+      <td>moral excellence or admirableness道德卓越或令人钦佩</td>
+      <td>there is much good to be found in people人们有很多好处</td>
+      <td></td>
+      <td></td>
+      <td>[morality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>nou</td>
+      <td>ɡʊd</td>
+      <td></td>
+      <td></td>
+      <td>benefit效益</td>
+      <td>for your own good为了你自己的利益what's the good of worrying?什么是令人担忧的好处？</td>
+      <td></td>
+      <td></td>
+      <td>[advantage, vantage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adv</td>
+      <td>ɡʊd</td>
+      <td>['well']</td>
+      <td></td>
+      <td>(often used as a combining form) in a good or proper or satisfactory manner or to a high standard (`good' is a nonstandard dialectal variant for `well')（通常用作组合形式）以良好或适当或令人满意的方式或高标准（“好”是“井”的非标准方言变体）</td>
+      <td>the baby can walk pretty good宝宝可以走得很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[combining form]</td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adv</td>
+      <td>ɡʊd</td>
+      <td>['soundly', 'thoroughly']</td>
+      <td></td>
+      <td>completely and absolutely (`good' is sometimes used informally for `thoroughly')完全绝对（'好'有时非常用于'彻底'）</td>
+      <td>we beat him good我们打败了他</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['dear', 'near'], similarTo:['close']</td>
+      <td></td>
+      <td>with or in a close or intimate relationship与亲密或亲密的关系</td>
+      <td>a good friend一个好朋友</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['effective', 'in effect', 'in force'], similarTo:['operative']</td>
+      <td></td>
+      <td>exerting force or influence施加力量或影响力</td>
+      <td>a warranty good for two years保修期为两年</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['beneficial'], similarTo:['advantageous', 'favourable', 'favorable']</td>
+      <td></td>
+      <td>promoting or enhancing well-being促进或增强福祉</td>
+      <td>the experience was good for her这段经历对她有好处</td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['salutary'], similarTo:['healthful']</td>
+      <td></td>
+      <td>tending to promote physical well-being; beneficial to health倾向于促进身体健康;有益于健康</td>
+      <td>a good night's sleep晚安睡个好觉</td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['serious'], similarTo:['intellectual']</td>
+      <td></td>
+      <td>appealing to the mind吸引人的思想</td>
+      <td>good music好的音乐</td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['just', 'upright'], similarTo:['righteous']</td>
+      <td></td>
+      <td>of moral excellence道德卓越</td>
+      <td>a genuinely good person一个真正善良的人</td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['unspoiled', 'unspoilt'], similarTo:['fresh']</td>
+      <td></td>
+      <td>not left to spoil不要溺爱</td>
+      <td>the meat is still good肉还很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['sound'], similarTo:['healthy']</td>
+      <td></td>
+      <td>in excellent physical condition身体状况良好</td>
+      <td>good teeth好牙齿I still have one good leg我还有一条好腿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['honest'], similarTo:['genuine', 'echt']</td>
+      <td></td>
+      <td>not forged没有伪造</td>
+      <td>a good dollar bill一张好的美元钞票</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['full'], similarTo:['ample']</td>
+      <td></td>
+      <td>having the normally expected amount具有通常预期的金额</td>
+      <td>gives good measure很好的措施a good mile from here距离这里一英里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['estimable', 'honorable', 'respectable'], similarTo:['reputable']</td>
+      <td></td>
+      <td>deserving of esteem and respect值得尊重和尊重</td>
+      <td>ruined the family's good name破坏了这个家庭的好名声</td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['well'], similarTo:['fortunate']</td>
+      <td></td>
+      <td>resulting favorably结果很好</td>
+      <td>it's a good thing that I wasn't there我不在那里是一件好事it is good that you stayed你留下来很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['adept', 'expert', 'practiced', 'proficient', 'skilful', 'skillful'], similarTo:['skilled']</td>
+      <td></td>
+      <td>having or showing knowledge and skill and aptitude拥有或展示知识，技能和才能</td>
+      <td>a good mechanic一个好机械师</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['dependable', 'safe', 'secure'], similarTo:['sound']</td>
+      <td></td>
+      <td>financially safe财务安全</td>
+      <td>a good investment一个很好的投资</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>['right', 'ripe'], similarTo:['opportune']</td>
+      <td></td>
+      <td>most suitable or right for a particular purpose最适合或特定用途的</td>
+      <td>a good time to plant tomatoes种植西红柿的好时机</td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>, similarTo:['nice']</td>
+      <td></td>
+      <td>agreeable or pleasing令人愉快或愉快</td>
+      <td>we all had a good time我们都玩得很开心good manners有礼貌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>, similarTo:['pleasing']</td>
+      <td></td>
+      <td>capable of pleasing能够取悦</td>
+      <td>good looks好看</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>, similarTo:['discriminating']</td>
+      <td></td>
+      <td>generally admired一般都很佩服</td>
+      <td>good taste味道好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>, similarTo:['bully', 'hot', 'groovy', 'great', 'good enough', 'goodish', 'superb', 'solid', 'smashing', 'slap-up', 'well behaved', 'satisfactory', 'well-behaved', 'swell', 'redeeming', 'peachy', 'acceptable', 'old', 'bang-up', 'not bad', 'corking', 'cracking', 'dandy', 'decent', 'neat', 'keen', 'nifty'], alos:['favorable', 'obedient', 'favourable', 'best', 'respectable', 'better']</td>
+      <td>[bad]</td>
+      <td>having desirable or positive qualities especially those suitable for a thing specified具有理想或积极的品质，特别是适合于指定产品的品质</td>
+      <td>good news from the hospital来自医院的好消息a good report card一张好的成绩单when she was good she was very very good当她很好的时候，她非常善良a good knife is one good for cutting一把好刀可以用来切割this stump will make a good picnic table这个树桩将成为一个很好的野餐桌a good check一个很好的检查a good joke一个好笑话a good exterior paint一个很好的外墙涂料a good secretary一个好秘书a good dress for the office办公室的好衣服</td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>, similarTo:['sainted', 'goody-goody', 'white', 'beatific', 'angelical', 'angelic', 'redeeming', 'redemptive', 'saving', 'saintly', 'saintlike'], alos:['moral', 'virtuous', 'righteous', 'worthy', 'right']</td>
+      <td>[evil]</td>
+      <td>morally admirable在道德上令人钦佩</td>
+      <td></td>
+      <td>[goodness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>good</th>
+      <td>ood</td>
+      <td>6.40</td>
+      <td>adj</td>
+      <td>ɡʊd</td>
+      <td>, similarTo:['complete']</td>
+      <td></td>
+      <td>thorough彻底</td>
+      <td>had a good workout锻炼得很好gave the house a good cleaning给了房子一个很好的清洁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>food</th>
+      <td>ood</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>fud</td>
+      <td>['solid food']</td>
+      <td></td>
+      <td>any solid substance (as opposed to liquid) that is used as a source of nourishment任何用作营养来源的固体物质（与液体相对）</td>
+      <td>food and drink饮食</td>
+      <td></td>
+      <td></td>
+      <td>[solid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>food</th>
+      <td>ood</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>fud</td>
+      <td>['food for thought', 'intellectual nourishment']</td>
+      <td></td>
+      <td>anything that provides mental stimulus for thinking任何为思考提供精神刺激的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mental object, content, cognitive content]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>food</th>
+      <td>ood</td>
+      <td>5.27</td>
+      <td>nou</td>
+      <td>fud</td>
+      <td>['nutrient']</td>
+      <td></td>
+      <td>any substance that can be metabolized by an animal to give energy and build tissue任何可以被动物代谢以提供能量和构建组织的物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[substance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mood</th>
+      <td>ood</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>mud</td>
+      <td>['climate']</td>
+      <td></td>
+      <td>the prevailing psychological state流行的心理状态</td>
+      <td>the national mood had changed radically since the last election自上次大选以来，民族情绪发生了根本性的变化</td>
+      <td></td>
+      <td></td>
+      <td>[condition, status]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mood</th>
+      <td>ood</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>mud</td>
+      <td>['modality', 'mode']</td>
+      <td></td>
+      <td>verb inflections that express how the action or state is conceived by the speaker动词变形，表达演讲者如何构思动作或状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grammatical relation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mood</th>
+      <td>ood</td>
+      <td>4.54</td>
+      <td>nou</td>
+      <td>mud</td>
+      <td>['humor', 'humour', 'temper']</td>
+      <td></td>
+      <td>a characteristic (habitual or relatively temporary) state of feeling一种特征（习惯性或相对临时性）的感觉状态</td>
+      <td></td>
+      <td>[moody]</td>
+      <td></td>
+      <td>[feeling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td>['grant wood']</td>
+      <td></td>
+      <td>United States painter noted for works based on life in the Midwest (1892-1942)美国画家因中西部生活（1892-1942）的作品而闻名</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td>['forest', 'woods']</td>
+      <td></td>
+      <td>the trees and other plants in a large densely wooded area树木和其他植物在一个茂密的树木繁茂的地区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flora, botany, vegetation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td>['natalie wood']</td>
+      <td></td>
+      <td>United States film actress (1938-1981)美国电影女演员（1938-1981）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td>['woodwind', 'woodwind instrument']</td>
+      <td></td>
+      <td>any wind instrument other than the brass instruments除铜管乐器以外的任何管乐器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wind, wind instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td>['sir henry joseph wood', 'sir henry wood']</td>
+      <td></td>
+      <td>English conductor (1869-1944)英国指挥（1869-1944）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td>['ellen price wood', 'mrs. henry wood']</td>
+      <td></td>
+      <td>English writer of novels about murders and thefts and forgeries (1814-1887)谋杀与盗​​窃和伪造小说的英国作家（1814-1887）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td></td>
+      <td></td>
+      <td>a golf club with a long shaft used to hit long shots; originally made with a wooden head一个长杆用来击打远射的高尔夫球杆;最初用木头制成</td>
+      <td>metal woods are now standard金属木材现在是标准配置</td>
+      <td></td>
+      <td></td>
+      <td>[golfclub, club, golf-club, golf club]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wood</th>
+      <td>ood</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>wʊd</td>
+      <td></td>
+      <td></td>
+      <td>the hard fibrous lignified substance under the bark of trees树皮下的坚硬纤维木质化物质</td>
+      <td></td>
+      <td>[woody]</td>
+      <td></td>
+      <td>[plant substance, plant material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>ver</td>
+      <td>hʊd</td>
+      <td></td>
+      <td></td>
+      <td>cover with a hood盖上盖子</td>
+      <td>The bandits were hooded匪徒戴着头巾</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td>['cap']</td>
+      <td></td>
+      <td>a protective covering that is part of a plant作为植物一部分的保护性覆盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering, cover, natural covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td>['bonnet', 'cowl', 'cowling']</td>
+      <td></td>
+      <td>protective covering consisting of a metal part that covers the engine保护罩，由覆盖发动机的金属部件组成</td>
+      <td>there are powerful engines under the hoods of new cars在新车的引擎盖下有强大的发动机</td>
+      <td></td>
+      <td></td>
+      <td>[protection, protective covering, protective cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td>['goon', 'hoodlum', 'punk', 'strong-armer', 'thug', 'tough', 'toughie']</td>
+      <td></td>
+      <td>an aggressive and violent young criminal一个积极和暴力的年轻罪犯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crook, outlaw, malefactor, felon, criminal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td>['exhaust hood']</td>
+      <td></td>
+      <td>metal covering leading to a vent that exhausts smoke or fumes金属覆盖物通向一个排出烟雾或烟雾的通风口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td>['lens hood']</td>
+      <td></td>
+      <td>a tubular attachment used to keep stray light out of the lens of a camera用于将杂散光保持在相机镜头之外的管状附件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attachment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td></td>
+      <td></td>
+      <td>a headdress that protects the head and face保护头部和脸部的头饰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[headdress, headgear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td></td>
+      <td></td>
+      <td>(falconry) a leather covering for a hawk's head（猎鹰）用于鹰头的皮革覆盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td></td>
+      <td></td>
+      <td>(slang) a neighborhood（俚语）一个社区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[neighborhood, neighbourhood]</td>
+      <td>[vernacular, cant, jargon, lingo, patois, argot, slang]</td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td></td>
+      <td></td>
+      <td>the folding roof of a carriage一个马车的折叠车顶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roof]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hood</th>
+      <td>ood</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>hʊd</td>
+      <td></td>
+      <td></td>
+      <td>(zoology) an expandable part or marking that resembles a hood on the head or neck of an animal（动物学）一种可扩展的部分或标记，类似于动物头部或颈部的引擎盖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[external body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rood</th>
+      <td>ood</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>rud</td>
+      <td>['crucifix', 'rood-tree']</td>
+      <td></td>
+      <td>representation of the cross on which Jesus died代表耶稣死的十字架</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cross]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,1250 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['still', 'silly', 'billy', 'chill', 'drill', 'skill', 'spill', 'grill', 'mills', 'filly', 'swill', 'krill', 'brill', 'hilly', 'trill', 'shill', 'twill', 'frill', 'sills']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>ver</td>
+      <td>stɪl</td>
+      <td>['calm', 'calm down', 'lull', 'quiet', 'quieten', 'tranquilize', 'tranquillise', 'tranquillize']</td>
+      <td></td>
+      <td>make calm or still保持冷静或静止</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soothe, comfort, console, solace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>ver</td>
+      <td>stɪl</td>
+      <td>['allay', 'ease', 'relieve']</td>
+      <td></td>
+      <td>lessen the intensity of or calm减轻或平静的强度</td>
+      <td>still the fears仍然是恐惧</td>
+      <td></td>
+      <td></td>
+      <td>[console, soothe, comfort, solace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>ver</td>
+      <td>stɪl</td>
+      <td>['hush', 'hush up', 'quieten', 'shut up', 'silence']</td>
+      <td></td>
+      <td>cause to be quiet or not talk安静或不说话</td>
+      <td></td>
+      <td></td>
+      <td>[hush, quieten, quiet down, quiet, quiesce, pipe down]</td>
+      <td>[conquer, suppress, subdue, stamp down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>ver</td>
+      <td>stɪl</td>
+      <td></td>
+      <td></td>
+      <td>make motionless一动不动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>nou</td>
+      <td>stɪl</td>
+      <td>['distillery']</td>
+      <td></td>
+      <td>a plant and works where alcoholic drinks are made by distillation一种植物，通过蒸馏制造酒精饮料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant, industrial plant, works]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>nou</td>
+      <td>stɪl</td>
+      <td>['hush', 'stillness']</td>
+      <td></td>
+      <td>(poetic) tranquil silence（诗意的）宁静的沉默</td>
+      <td>the still of the night寂静的夜晚</td>
+      <td></td>
+      <td></td>
+      <td>[quiet, silence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>nou</td>
+      <td>stɪl</td>
+      <td></td>
+      <td></td>
+      <td>an apparatus used for the distillation of liquids; consists of a vessel in which a substance is vaporized by heat and a condenser where the vapor is condensed用于蒸馏液体的装置;由一个物质通过加热蒸发的容器和一个冷凝蒸汽的冷凝器组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[setup, apparatus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>nou</td>
+      <td>stɪl</td>
+      <td></td>
+      <td></td>
+      <td>a static photograph (especially one taken from a movie and used for advertising purposes)静态照片（特别是从电影中拍摄并用于广告目的的照片）</td>
+      <td>he wanted some stills for a magazine ad他想要杂志广告的一些剧照</td>
+      <td></td>
+      <td></td>
+      <td>[picture, pic, photograph, exposure, photo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adv</td>
+      <td>stɪl</td>
+      <td>['even', 'yet']</td>
+      <td></td>
+      <td>to a greater degree or extent; used with comparisons更大程度或更大程度;用于比较</td>
+      <td>an even (or still) more interesting problem一个甚至（或仍然）更有趣的问题still another problem must be solved还有一个问题必须解决</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adv</td>
+      <td>stɪl</td>
+      <td>['all the same', 'at the same time', 'even so', 'however', 'nevertheless', 'nonetheless', 'notwithstanding', 'withal', 'yet']</td>
+      <td></td>
+      <td>despite anything to the contrary (usually preceding a concession)尽管有任何相反的事情（通常在特许权之前）</td>
+      <td>granted that it is dangerous, all the same I still want to go我认为它很危险，我仍然想要去</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adv</td>
+      <td>stɪl</td>
+      <td>['stock-still']</td>
+      <td></td>
+      <td>without moving or making a sound没有移动或发出声音</td>
+      <td>he sat still as a statue他像雕像一样坐着time stood still时间暂停they waited stock-still outside the door他们在门外等待股票he couldn't hold still any longer他不能再忍住了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adj</td>
+      <td>stɪl</td>
+      <td>['placid', 'quiet', 'smooth', 'tranquil', 'unruffled'], similarTo:['calm']</td>
+      <td></td>
+      <td>(of a body of water) free from disturbance by heavy waves（一个水体）没有受到大浪的干扰</td>
+      <td>scarcely a ripple on the still water静水上几乎没有波纹</td>
+      <td>[stillness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adj</td>
+      <td>stɪl</td>
+      <td>['silent', 'soundless'], similarTo:['quiet']</td>
+      <td></td>
+      <td>marked by absence of sound以没有声音为标志</td>
+      <td>the night was still夜晚还在</td>
+      <td>[stillness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adj</td>
+      <td>stɪl</td>
+      <td>['noneffervescent']</td>
+      <td>[sparkling]</td>
+      <td>not sparkling没有闪闪发光</td>
+      <td>a still wine还是葡萄酒still mineral water还是矿泉水</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adj</td>
+      <td>stɪl</td>
+      <td>['inactive', 'motionless', 'static'], similarTo:['unmoving', 'nonmoving']</td>
+      <td></td>
+      <td>not in physical motion不是在运动中</td>
+      <td></td>
+      <td>[stillness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>adj</td>
+      <td>stɪl</td>
+      <td>, similarTo:['standing']</td>
+      <td></td>
+      <td>free from noticeable current没有明显的电流</td>
+      <td>a still pond一个静止的池塘still waters run deep静水流深</td>
+      <td>[stillness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>Non</td>
+      <td>stɪl</td>
+      <td></td>
+      <td>[no longer]</td>
+      <td>with reference to action or condition; without change, interruption, or cessation关于行动或条件;没有改变，中断或停止</td>
+      <td>it's still warm outside它外面仍然很温暖will you still love me when we're old and grey?我们老了，灰白的时候你还会爱我吗？</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>still</th>
+      <td>ill</td>
+      <td>5.92</td>
+      <td>Non</td>
+      <td>stɪl</td>
+      <td></td>
+      <td>[moving]</td>
+      <td>used of pictures; of a single or static photograph not presented so as to create the illusion of motion; or representing objects not capable of motion用于图片;未呈现的单张或静态照片，以产生运动的幻觉;或代表不能运动的物体</td>
+      <td>a still photograph一张照片Cezanne's still life of apples塞尚的苹果静物</td>
+      <td>[stillness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>silly</th>
+      <td>ill</td>
+      <td>4.77</td>
+      <td>nou</td>
+      <td>'sɪli</td>
+      <td></td>
+      <td></td>
+      <td>a word used for misbehaving children用于行为不端儿童的词</td>
+      <td>don't be a silly不要傻</td>
+      <td></td>
+      <td></td>
+      <td>[child, shaver, small fry, tiddler, tike, tyke, youngster, fry, kid, minor, nestling, nipper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>silly</th>
+      <td>ill</td>
+      <td>4.77</td>
+      <td>adj</td>
+      <td>'sɪli</td>
+      <td>['pathetic', 'ridiculous'], similarTo:['undignified']</td>
+      <td></td>
+      <td>inspiring scornful pity鼓舞人心的鄙视</td>
+      <td>how silly an ardent and unsuccessful wooer can be especially if he is getting on in years如果多年来他的成功，那么一个热情而不成功的求爱者尤其愚蠢</td>
+      <td>[silliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>silly</th>
+      <td>ill</td>
+      <td>4.77</td>
+      <td>adj</td>
+      <td>'sɪli</td>
+      <td>['airheaded', 'dizzy', 'empty-headed', 'featherbrained', 'giddy', 'light-headed', 'lightheaded'], similarTo:['frivolous']</td>
+      <td></td>
+      <td>lacking seriousness; given to frivolity缺乏严肃性;给予轻浮</td>
+      <td>silly giggles傻笑</td>
+      <td>[silliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>silly</th>
+      <td>ill</td>
+      <td>4.77</td>
+      <td>adj</td>
+      <td>'sɪli</td>
+      <td>['goofy', 'wacky', 'whacky', 'zany'], similarTo:['foolish']</td>
+      <td></td>
+      <td>ludicrous, foolish荒唐，愚蠢</td>
+      <td>a silly idea一个愚蠢的想法</td>
+      <td>[silliness]</td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>silly</th>
+      <td>ill</td>
+      <td>4.77</td>
+      <td>adj</td>
+      <td>'sɪli</td>
+      <td>['punch-drunk', 'slaphappy'], similarTo:['confused']</td>
+      <td></td>
+      <td>dazed from or as if from repeated blows从反复打击中茫然或仿佛从反复打击中茫然</td>
+      <td>knocked silly by the impact受到影响而被愚弄了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>billy</th>
+      <td>ill</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>'bɪli</td>
+      <td>['baton', 'billy club', 'billystick', 'nightstick', 'truncheon']</td>
+      <td></td>
+      <td>a short stout club used primarily by policemen一个主要由警察使用的短粗壮俱乐部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[club]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>billy</th>
+      <td>ill</td>
+      <td>4.59</td>
+      <td>nou</td>
+      <td>'bɪli</td>
+      <td>['billy goat', 'he-goat']</td>
+      <td></td>
+      <td>male goat雄性山羊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[caprine animal, goat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chill</th>
+      <td>ill</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>tʃɪl</td>
+      <td>['cool', 'cool down']</td>
+      <td></td>
+      <td>make cool or cooler使凉爽或凉爽</td>
+      <td></td>
+      <td>[chilling]</td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chill</th>
+      <td>ill</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>tʃɪl</td>
+      <td>['cool', 'cool down']</td>
+      <td></td>
+      <td>loose heat散热</td>
+      <td></td>
+      <td>[chilling]</td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chill</th>
+      <td>ill</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>tʃɪl</td>
+      <td></td>
+      <td></td>
+      <td>depress or discourage压抑或沮丧</td>
+      <td>The news of the city's surrender chilled the soldiers这个城市投降的消息使士兵们感到寒冷</td>
+      <td></td>
+      <td></td>
+      <td>[deject, demoralize, cast down, get down, dispirit, dismay, depress, demoralise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chill</th>
+      <td>ill</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>tʃɪl</td>
+      <td>['gelidity', 'iciness']</td>
+      <td></td>
+      <td>coldness due to a cold environment寒冷的环境造成的寒冷</td>
+      <td></td>
+      <td>[chilly]</td>
+      <td></td>
+      <td>[cold, frigidity, frigidness, low temperature, coldness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chill</th>
+      <td>ill</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>tʃɪl</td>
+      <td>['pall']</td>
+      <td></td>
+      <td>a sudden numbing dread突然麻木的恐惧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dread, apprehensiveness, apprehension]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chill</th>
+      <td>ill</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>tʃɪl</td>
+      <td>['shivering']</td>
+      <td></td>
+      <td>a sensation of cold that often marks the start of an infection and the development of a fever感冒通常标志着感染的开始和发烧的发展</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[symptom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chill</th>
+      <td>ill</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>tʃɪl</td>
+      <td>['frisson', 'quiver', 'shiver', 'shudder', 'thrill', 'tingle']</td>
+      <td></td>
+      <td>an almost pleasurable sensation of fright一种几乎令人愉快的恐惧感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fear, fright, fearfulness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>drɪl</td>
+      <td>['bore']</td>
+      <td></td>
+      <td>make a hole, especially with a pointed power or hand tool打洞，特别是用尖头动力或手动工具</td>
+      <td>don't drill here, there's a gas pipe不要在这里钻，有一个煤气管drill a hole into the wall在墙上钻一个洞drill for oil钻油</td>
+      <td>[drilling, electric drill]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>drɪl</td>
+      <td>['exercise', 'practice', 'practise']</td>
+      <td></td>
+      <td>learn by repetition通过重复学习</td>
+      <td>We drilled French verbs every day我们每天都练习法语动词</td>
+      <td></td>
+      <td></td>
+      <td>[take, learn, study, read]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>drɪl</td>
+      <td></td>
+      <td></td>
+      <td>teach by repetition通过重复教导</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instruct, teach, learn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>drɪl</td>
+      <td></td>
+      <td></td>
+      <td>train in the military, e.g., in the use of weapons在军队中训练，例如使用武器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[develop, educate, train, prepare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>drɪl</td>
+      <td></td>
+      <td></td>
+      <td>undergo military training or do military exercises接受军事训练或进行军事演习</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[prepare, train]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>drɪl</td>
+      <td>['exercise', 'practice', 'practice session', 'recitation']</td>
+      <td></td>
+      <td>systematic training by multiple repetitions多次重复的系统训练</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grooming, preparation, training]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>drɪl</td>
+      <td>['mandrillus leucophaeus']</td>
+      <td></td>
+      <td>similar to the mandrill but smaller and less brightly colored类似于山茱萸，但较小，颜色较浅</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[baboon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>drɪl</td>
+      <td></td>
+      <td></td>
+      <td>a tool with a sharp point and cutting edges for making holes in hard materials (usually rotating rapidly or by repeated blows)具有尖锐点和切削刃的工具，用于在硬质材料上钻孔（通常快速旋转或反复冲击）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drill</th>
+      <td>ill</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>drɪl</td>
+      <td></td>
+      <td></td>
+      <td>(military) the training of soldiers to march (as in ceremonial parades) or to perform the manual of arms（军事）训练士兵游行（如在仪式游行中）或执行武器手册</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[training, preparation, grooming]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skill</th>
+      <td>ill</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>skɪl</td>
+      <td>['accomplishment', 'acquirement', 'acquisition', 'attainment']</td>
+      <td></td>
+      <td>an ability that has been acquired by training通过培训获得的能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[power, ability]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skill</th>
+      <td>ill</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>skɪl</td>
+      <td>['science']</td>
+      <td></td>
+      <td>ability to produce solutions in some problem domain能够在某个问题领域产生解决方案</td>
+      <td>the skill of a well-trained boxer训练有素的拳击手的技巧</td>
+      <td></td>
+      <td></td>
+      <td>[power, ability]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>spɪl</td>
+      <td>['run out']</td>
+      <td></td>
+      <td>flow, run or fall out and become lost流动，跑步或跌落而迷失</td>
+      <td>The milk spilled across the floor牛奶洒在地板上The wine spilled onto the table酒洒在桌子上</td>
+      <td></td>
+      <td>[splatter, slop]</td>
+      <td>[flow, course, run, feed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>spɪl</td>
+      <td>['pour forth', 'shed']</td>
+      <td></td>
+      <td>pour out in drops or small quantities or as if in drops or small quantities滴入或少量倒出或好像滴或少量</td>
+      <td>spill blood溢血</td>
+      <td></td>
+      <td></td>
+      <td>[pour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>spɪl</td>
+      <td>['disgorge', 'shed']</td>
+      <td></td>
+      <td>cause or allow (a solid substance) to flow or run out or over导致或允许（固体物质）流动或用完或流出</td>
+      <td>spill the beans all over the table把豆子洒到桌子上</td>
+      <td></td>
+      <td>[slop, splatter]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>spɪl</td>
+      <td>['talk']</td>
+      <td></td>
+      <td>reveal information透露信息</td>
+      <td>The former employee spilled all the details前雇员泄露了所有细节</td>
+      <td></td>
+      <td>[blab out, spill the beans, blab, babble out, babble, peach, talk, tattle, let the cat out of the bag, sing]</td>
+      <td>[tell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>spɪl</td>
+      <td>['slop', 'splatter']</td>
+      <td></td>
+      <td>cause or allow (a liquid substance) to run or flow from a container导致或允许（液体物质）从容器中流出或流出</td>
+      <td>spill the milk把牛奶洒了</td>
+      <td>[spillage, spiller]</td>
+      <td>[shed, disgorge, run out]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>spɪl</td>
+      <td></td>
+      <td></td>
+      <td>reduce the pressure of wind on (a sail)降低风的压力（帆）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut back, trim down, reduce, cut, bring down, trim, cut down, trim back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>spɪl</td>
+      <td>['release', 'spillage']</td>
+      <td></td>
+      <td>the act of allowing a fluid to escape让流体逃逸的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow, stream]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>spɪl</td>
+      <td>['fall', 'tumble']</td>
+      <td></td>
+      <td>a sudden drop from an upright position从直立位置突然下降</td>
+      <td>he had a nasty spill on the ice他在冰上有一个令人讨厌的漏油事件</td>
+      <td></td>
+      <td></td>
+      <td>[slip, trip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>spɪl</td>
+      <td>['spillway', 'wasteweir']</td>
+      <td></td>
+      <td>a channel that carries excess water over or around a dam or other obstruction在水坝或其他障碍物上方或周围携带多余水的通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[conduit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spill</th>
+      <td>ill</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>spɪl</td>
+      <td></td>
+      <td></td>
+      <td>liquid that is spilled溢出的液体</td>
+      <td>clean up the spills清理泄漏</td>
+      <td></td>
+      <td></td>
+      <td>[liquid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grill</th>
+      <td>ill</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>grɪl</td>
+      <td></td>
+      <td></td>
+      <td>cook over or under a grill在烤架上或烤架下做饭</td>
+      <td>grill the sausages烤香肠</td>
+      <td>[grilling]</td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grill</th>
+      <td>ill</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>grɪl</td>
+      <td></td>
+      <td></td>
+      <td>examine thoroughly仔细检查</td>
+      <td>the student was grilled for two hours on the subject of phonology这个学生在音韵学上被烧了两个小时</td>
+      <td></td>
+      <td></td>
+      <td>[examine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grill</th>
+      <td>ill</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>grɪl</td>
+      <td>['grillroom']</td>
+      <td></td>
+      <td>a restaurant where food is cooked on a grill一个餐厅，在烤架上烹饪食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eatery, restaurant, eating house, eating place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grill</th>
+      <td>ill</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>grɪl</td>
+      <td>['grille', 'grillwork']</td>
+      <td></td>
+      <td>a framework of metal bars used as a partition or a grate用作隔板或炉排的金属棒框架</td>
+      <td>he cooked hamburgers on the grill他在烤架上煮汉堡包</td>
+      <td></td>
+      <td></td>
+      <td>[framework, frame]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mills</th>
+      <td>ill</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>mɪlz</td>
+      <td>['robert mills']</td>
+      <td></td>
+      <td>United States architect who was the presidentially appointed architect of Washington D.C. (1781-1855)美国建筑师，华盛顿特区总统任命的建筑师（1781-1855）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>filly</th>
+      <td>ill</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>'fɪli</td>
+      <td></td>
+      <td></td>
+      <td>a young female horse under the age of four一匹四岁以下的年轻母马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[female, foal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swill</th>
+      <td>ill</td>
+      <td>2.80</td>
+      <td>ver</td>
+      <td>swɪl</td>
+      <td>['swill down']</td>
+      <td></td>
+      <td>drink large quantities of (liquid, especially alcoholic drink)大量饮用（液体，特别是酒精饮料）</td>
+      <td></td>
+      <td>[swilling]</td>
+      <td></td>
+      <td>[drink, imbibe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swill</th>
+      <td>ill</td>
+      <td>2.80</td>
+      <td>ver</td>
+      <td>swɪl</td>
+      <td>['slop']</td>
+      <td></td>
+      <td>feed pigs喂猪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feed, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swill</th>
+      <td>ill</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>swɪl</td>
+      <td>['pigswill', 'pigwash', 'slop', 'slops']</td>
+      <td></td>
+      <td>wet feed (especially for pigs) consisting of mostly kitchen waste mixed with water or skimmed or sour milk湿饲料（特别是猪），主要由厨房垃圾与水或脱脂或酸奶混合而成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feed, provender]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>krill</th>
+      <td>ill</td>
+      <td>2.59</td>
+      <td>nou</td>
+      <td>krɪl</td>
+      <td></td>
+      <td></td>
+      <td>shrimp-like planktonic crustaceans; major source of food for e.g. baleen whales虾状浮游甲壳类动物;例如食物的主要来源须鲸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[malacostracan crustacean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brill</th>
+      <td>ill</td>
+      <td>2.40</td>
+      <td>nou</td>
+      <td>brɪl</td>
+      <td>['scophthalmus rhombus']</td>
+      <td></td>
+      <td>European food fish欧洲食用鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lefteye flounder, lefteyed flounder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hilly</th>
+      <td>ill</td>
+      <td>2.38</td>
+      <td>adj</td>
+      <td>'hɪli</td>
+      <td>['cragged', 'craggy', 'mountainous'], similarTo:['rough', 'unsmooth']</td>
+      <td></td>
+      <td>having hills and crags有山丘和峭壁</td>
+      <td>hilly terrain丘陵地形</td>
+      <td>[hill, hilliness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trill</th>
+      <td>ill</td>
+      <td>2.24</td>
+      <td>ver</td>
+      <td>'trɪlɪŋ</td>
+      <td>['quaver', 'warble']</td>
+      <td></td>
+      <td>sing or play with trills, alternating with the half note above or below唱歌或玩颤音，与上面或下面的半音符交替</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trill</th>
+      <td>ill</td>
+      <td>2.24</td>
+      <td>ver</td>
+      <td>'trɪlɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>pronounce with a trill, of the phoneme `r'用颤音发音，音素'r'</td>
+      <td>Some speakers trill their r's一些发言者试着挥舞着他们的r</td>
+      <td></td>
+      <td></td>
+      <td>[enunciate, pronounce, say, sound out, articulate, enounce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trill</th>
+      <td>ill</td>
+      <td>2.24</td>
+      <td>nou</td>
+      <td>'trɪlɪŋ</td>
+      <td>['shake']</td>
+      <td></td>
+      <td>a note that alternates rapidly with another note a semitone above it一张音符，与另一张音符快速交替，音符在其上方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tone, musical note, note]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trill</th>
+      <td>ill</td>
+      <td>2.24</td>
+      <td>nou</td>
+      <td>'trɪlɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>the articulation of a consonant (especially the consonant `r') with a rapid flutter of the tongue against the palate or uvula辅音（特别是辅音“r”）与舌头或悬雍垂的舌头快速颤动的关节</td>
+      <td>he pronounced his R's with a distinct trill他用一种截然不同的颤音宣布他的R'</td>
+      <td></td>
+      <td></td>
+      <td>[articulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shill</th>
+      <td>ill</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>ʃɪl</td>
+      <td></td>
+      <td></td>
+      <td>act as a shill作为一个shill</td>
+      <td>This man shilled and bid for an expensive carpet during the auction in order to drive the price up为了推高价格，这名男子在拍卖期间出售并购买昂贵的地毯</td>
+      <td></td>
+      <td></td>
+      <td>[cozen, deceive, delude, lead on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shill</th>
+      <td>ill</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>ʃɪl</td>
+      <td></td>
+      <td></td>
+      <td>a decoy who acts as an enthusiastic customer in order to stimulate the participation of others一个诱饵，作为一个热情的客户，以刺激他人的参与</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[decoy, steerer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twill</th>
+      <td>ill</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>twɪl</td>
+      <td></td>
+      <td></td>
+      <td>weave diagonal lines into (textiles)将对角线编织成（纺织品）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tissue, weave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twill</th>
+      <td>ill</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>twɪl</td>
+      <td>['twill weave']</td>
+      <td></td>
+      <td>a weave used to produce the effect of parallel diagonal ribs用于产生平行斜肋的效果的编织物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twill</th>
+      <td>ill</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>twɪl</td>
+      <td></td>
+      <td></td>
+      <td>a cloth with parallel diagonal lines or ribs平行对角线或肋条的布料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cloth, fabric, material, textile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frill</th>
+      <td>ill</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>frɪl</td>
+      <td>['ruff']</td>
+      <td></td>
+      <td>an external body part consisting of feathers or hair about the neck of a bird or other animal由鸟或其他动物的颈部周围的羽毛或毛发组成的外部身体部位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[external body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frill</th>
+      <td>ill</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>frɪl</td>
+      <td>['falderol', 'folderal', 'gimcrack', 'gimcrackery', 'nonsense', 'trumpery']</td>
+      <td></td>
+      <td>ornamental objects of no great value装饰物没有什么价值</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[decoration, ornament, ornamentation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frill</th>
+      <td>ill</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>frɪl</td>
+      <td>['flounce', 'furbelow', 'ruffle']</td>
+      <td></td>
+      <td>a strip of pleated material used as a decoration or a trim一条用作装饰或装饰的褶皱材料</td>
+      <td></td>
+      <td>[frilly]</td>
+      <td></td>
+      <td>[adornment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frill</th>
+      <td>ill</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>frɪl</td>
+      <td></td>
+      <td></td>
+      <td>(paleontology) a bony plate that curves upward behind the skull of many ceratopsian dinosaurs（古生物学）一种骨板，在许多角龙类恐龙的头骨后面向上弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sills</th>
+      <td>ill</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>sɪlz</td>
+      <td>['belle miriam silverman', 'beverly sills']</td>
+      <td></td>
+      <td>United States operatic soprano (born in 1929)美国歌剧女高音（1929年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

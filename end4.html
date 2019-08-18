@@ -1,0 +1,590 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['send', 'lend', 'bend', 'tend', 'mend', 'fend', 'rend', 'vend', 'wend']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['get off', 'send off']</td>
+      <td></td>
+      <td>transfer传递</td>
+      <td></td>
+      <td>[sending]</td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['mail', 'post']</td>
+      <td></td>
+      <td>cause to be directed or transmitted to another place导致被传导或传送到另一个地方</td>
+      <td>send me your latest results把你最新的结果发给我</td>
+      <td>[sending, sender, sendee]</td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['place', 'post', 'station']</td>
+      <td></td>
+      <td>assign to a station分配到一个电台</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['send out'], alos:['send back']</td>
+      <td></td>
+      <td>to cause or order to be taken, directed, or transmitted to another place引起或命令被带走，指挥或传送到另一个地方</td>
+      <td></td>
+      <td>[sender, sending]</td>
+      <td></td>
+      <td>[transmit, transport, channelize, channelise, channel, transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['direct'], alos:['send away']</td>
+      <td></td>
+      <td>cause to go somewhere因为去某个地方</td>
+      <td></td>
+      <td>[sending]</td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['charge', 'commit', 'institutionalise', 'institutionalize']</td>
+      <td></td>
+      <td>cause to be admitted; of persons to an institution原因被录取;人员到一个机构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['air', 'beam', 'broadcast', 'transmit']</td>
+      <td></td>
+      <td>broadcast over the airwaves, as in radio or television通过无线电广播，如广播或电视</td>
+      <td></td>
+      <td>[sender]</td>
+      <td></td>
+      <td>[air, publicise, bare, publicize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>send</th>
+      <td>end</td>
+      <td>5.23</td>
+      <td>ver</td>
+      <td>sɛnd</td>
+      <td>['ship', 'transport'], alos:['send off', 'send on']</td>
+      <td></td>
+      <td>transport commercially商业运输</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lend</th>
+      <td>end</td>
+      <td>4.30</td>
+      <td>ver</td>
+      <td>lɛnd</td>
+      <td>['add', 'bestow', 'bring', 'contribute', 'impart']</td>
+      <td></td>
+      <td>bestow a quality on赋予品质</td>
+      <td>Her presence lends a certain cachet to the company她的出现为公司带来了一定的印记</td>
+      <td></td>
+      <td></td>
+      <td>[alter, modify, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lend</th>
+      <td>end</td>
+      <td>4.30</td>
+      <td>ver</td>
+      <td>lɛnd</td>
+      <td>['loan']</td>
+      <td>[borrow]</td>
+      <td>give temporarily; let have for a limited time临时给予;让我们在有限的时间内</td>
+      <td>I will lend you my car我会借给你我的车</td>
+      <td>[lendable, lender]</td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lend</th>
+      <td>end</td>
+      <td>4.30</td>
+      <td>ver</td>
+      <td>lɛnd</td>
+      <td></td>
+      <td></td>
+      <td>have certain characteristics of qualities for something; be open or vulnerable to具有某些品质特征;开放或易受伤害</td>
+      <td>This story would lend itself well to serialization on television这个故事很适合电视连载The current system lends itself to great abuse现行制度极易受到滥用</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>bɛnd</td>
+      <td>['deflect', 'turn away']</td>
+      <td></td>
+      <td>turn from a straight course, fixed direction, or line of interest从直线路线，固定方向或感兴趣线路转弯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>bɛnd</td>
+      <td>['flex']</td>
+      <td></td>
+      <td>bend a joint弯曲一个关节</td>
+      <td>bend your knees弯曲你的膝盖</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>bɛnd</td>
+      <td>['deform', 'flex', 'turn', 'twist']</td>
+      <td>[unbend]</td>
+      <td>cause (a plastic object) to assume a crooked or angular form使（塑料物体）呈现弯曲或棱角形状</td>
+      <td>bend the rod弯曲杆</td>
+      <td>[bendable, bender]</td>
+      <td></td>
+      <td>[change shape, change form, deform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>bɛnd</td>
+      <td>['flex']</td>
+      <td>[straighten]</td>
+      <td>form a curve形成一条曲线</td>
+      <td>The stick does not bend棍子不会弯曲</td>
+      <td>[bendable, bender]</td>
+      <td></td>
+      <td>[change shape, change form, deform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>bɛnd</td>
+      <td>['bow', 'crouch', 'stoop']</td>
+      <td></td>
+      <td>bend one's back forward from the waist on down从腰部向下弯曲一个向后弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>bɛnd</td>
+      <td></td>
+      <td></td>
+      <td>change direction改变方向</td>
+      <td>The road bends道路弯曲</td>
+      <td>[bender]</td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>bɛnd</td>
+      <td>['bending']</td>
+      <td></td>
+      <td>movement that causes the formation of a curve导致曲线形成的运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motion, movement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>bɛnd</td>
+      <td>['crease', 'crimp', 'flexure', 'fold', 'plication']</td>
+      <td></td>
+      <td>an angular or rounded shape made by folding通过折叠制成的角形或圆形</td>
+      <td>a bend of his elbow他的肘部弯曲</td>
+      <td></td>
+      <td></td>
+      <td>[angular shape, angularity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>bɛnd</td>
+      <td>['curve']</td>
+      <td></td>
+      <td>curved segment (of a road or river or railroad track etc.)弯曲段（道路或河流或铁轨等）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[section, segment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>bɛnd</td>
+      <td>['crook', 'turn', 'twist']</td>
+      <td></td>
+      <td>a circular segment of a curve曲线的圆形段</td>
+      <td>a bend in the road在路上弯曲</td>
+      <td></td>
+      <td></td>
+      <td>[curve, curved shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>bɛnd</td>
+      <td>['bend dexter']</td>
+      <td></td>
+      <td>diagonal line traversing a shield from the upper right corner to the lower left对角线从右上角到左下角穿过盾牌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ordinary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bend</th>
+      <td>end</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>bɛnd</td>
+      <td></td>
+      <td></td>
+      <td>a town in central Oregon at the eastern foot of the Cascade Range俄勒冈州中部喀斯喀特山脉东麓的一个小镇</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tend</th>
+      <td>end</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>tɛnd</td>
+      <td>['be given', 'incline', 'lean', 'run']</td>
+      <td></td>
+      <td>have a tendency or disposition to do or be something; be inclined有倾向或倾向去做或做某事;倾向于</td>
+      <td>She tends to be nervous before her lectures她在讲课前往往很紧张</td>
+      <td>[tendency]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tend</th>
+      <td>end</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>tɛnd</td>
+      <td></td>
+      <td></td>
+      <td>have care of or look after照顾或照顾</td>
+      <td>She tends to the children她倾向于孩子们</td>
+      <td>[tender, tending]</td>
+      <td></td>
+      <td>[see, look, attend, take care]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tend</th>
+      <td>end</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>tɛnd</td>
+      <td></td>
+      <td></td>
+      <td>manage or run管理或运行</td>
+      <td>tend a store倾向于商店</td>
+      <td></td>
+      <td></td>
+      <td>[mind, take care]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>ver</td>
+      <td>mɛnd</td>
+      <td>['bushel', 'doctor', 'fix', 'furbish up', 'repair', 'restore', 'touch on']</td>
+      <td></td>
+      <td>restore by replacing a part or putting together what is torn or broken通过更换零件或将撕裂或破损的东西放在一起来恢复</td>
+      <td></td>
+      <td>[mender, mending]</td>
+      <td></td>
+      <td>[amend, improve, meliorate, ameliorate, better]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>ver</td>
+      <td>mɛnd</td>
+      <td>['heal']</td>
+      <td></td>
+      <td>heal or recover愈合或恢复</td>
+      <td>My broken leg is mending我的断腿正在修补</td>
+      <td></td>
+      <td></td>
+      <td>[better, improve, meliorate, ameliorate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>mɛnd</td>
+      <td>['darn', 'patch']</td>
+      <td></td>
+      <td>sewing that repairs a worn or torn hole (especially in a garment)用于修理磨损或破损孔的缝纫（特别是在服装中）</td>
+      <td>her stockings had several mends她的袜子有几个修补</td>
+      <td></td>
+      <td></td>
+      <td>[stitchery, sewing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mend</th>
+      <td>end</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>mɛnd</td>
+      <td>['fix', 'fixing', 'fixture', 'mending', 'repair', 'reparation']</td>
+      <td></td>
+      <td>the act of putting something in working order again将某物再次运转起来的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[improvement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fend</th>
+      <td>end</td>
+      <td>3.13</td>
+      <td>ver</td>
+      <td>fɛnd</td>
+      <td>['resist', 'stand']</td>
+      <td></td>
+      <td>withstand the force of something承受某种力量</td>
+      <td>The mountain climbers had to fend against the ice and snow登山者不得不抵御冰雪</td>
+      <td>[fender]</td>
+      <td>[stand, remain firm]</td>
+      <td>[fight, oppose, defend, fight back, fight down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fend</th>
+      <td>end</td>
+      <td>3.13</td>
+      <td>ver</td>
+      <td>fɛnd</td>
+      <td></td>
+      <td></td>
+      <td>try to manage without help尝试无需帮助即可管理</td>
+      <td>The youngsters had to fend for themselves after their parents died父母去世后，年轻人不得不自生自灭</td>
+      <td></td>
+      <td></td>
+      <td>[contend, cope, deal, get by, grapple, make do, make out, manage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rend</th>
+      <td>end</td>
+      <td>2.33</td>
+      <td>ver</td>
+      <td>'rɛnd</td>
+      <td>['pull', 'rip', 'rive']</td>
+      <td></td>
+      <td>tear or be torn violently撕裂或猛烈撕裂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bust, rupture, snap, tear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vend</th>
+      <td>end</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>vɛnd</td>
+      <td>['hawk', 'huckster', 'monger', 'peddle', 'pitch']</td>
+      <td></td>
+      <td>sell or offer for sale from place to place出售或出售从一个地方到另一个地方</td>
+      <td></td>
+      <td>[vendable, vender, vendible, vending, vendition, vendor]</td>
+      <td></td>
+      <td>[deal, sell, trade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wend</th>
+      <td>end</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>wɛnd</td>
+      <td></td>
+      <td></td>
+      <td>direct one's course or way指导一个人的课程或方式</td>
+      <td>wend your way through the crowds在人群中穿行</td>
+      <td></td>
+      <td></td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

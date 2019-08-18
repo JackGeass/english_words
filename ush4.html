@@ -1,0 +1,1010 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['push', 'rush', 'bush', 'hush', 'mush', 'lush', 'tush', 'gush']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td>['bear on']</td>
+      <td></td>
+      <td>press, drive, or impel (someone) to action or completion of an action按下，驱动或推动（某人）采取行动或完成某项行动</td>
+      <td>He pushed her to finish her doctorate他推动她完成博士学位</td>
+      <td></td>
+      <td>[labor, drive, labour, tug]</td>
+      <td>[urge on, exhort, press, urge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td>['press']</td>
+      <td></td>
+      <td>make strenuous pushing movements during birth to expel the baby在出生时做出剧烈的推动动作以驱逐婴儿</td>
+      <td>`Now push hard,' said the doctor to the woman“现在努力推，”医生对那个女人说</td>
+      <td></td>
+      <td></td>
+      <td>[force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td>['force']</td>
+      <td>[pull]</td>
+      <td>move with force用力地移动</td>
+      <td>He pushed the table into a corner他把桌子推到角落里</td>
+      <td>[pushing, pusher]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td>['drive', 'labor', 'labour', 'tug'], alos:['push on']</td>
+      <td></td>
+      <td>strive and make an effort to reach a goal努力并努力实现目标</td>
+      <td>We have to push a little to make the deadline!我们必须推动一点才能完成最后期限！</td>
+      <td></td>
+      <td>[bear on]</td>
+      <td>[struggle, fight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td>['advertise', 'advertize', 'promote']</td>
+      <td></td>
+      <td>make publicity for; try to sell (a product)宣传;试着卖（一种产品）</td>
+      <td>The salesman is aggressively pushing the new computer model推销员正在积极推动新的计算机模型</td>
+      <td></td>
+      <td>[agitate, campaign, press, crusade, fight]</td>
+      <td>[praise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td>['crowd']</td>
+      <td></td>
+      <td>approach a certain age or speed接近一定的年龄或速度</td>
+      <td>She is pushing fifty她正在推五十</td>
+      <td></td>
+      <td></td>
+      <td>[draw close, come on, draw near, near, go up, approach, come near]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td>['agitate', 'campaign', 'crusade', 'fight', 'press']</td>
+      <td></td>
+      <td>exert oneself continuously, vigorously, or obtrusively to gain an end or engage in a crusade for a certain cause or person; be an advocate for为了特定的事业或个人而不断地，有力地或突兀地发挥作用以结束或进行讨伐;是一个倡导者</td>
+      <td>The liberal party pushed for reforms自由党推动改革The Dean is pushing for his favorite candidate迪恩正在推动他最喜欢的候选人</td>
+      <td></td>
+      <td>[advertise, advertize, promote]</td>
+      <td>[advertize, advertise, promote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td></td>
+      <td></td>
+      <td>move strenuously and with effort努力奋斗</td>
+      <td>The crowd pushed forward人群向前推进</td>
+      <td></td>
+      <td></td>
+      <td>[move, locomote, travel, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td></td>
+      <td></td>
+      <td>press against forcefully without moving强行压迫而不动</td>
+      <td>she pushed against the wall with all her strength她全力以赴地靠在墙上</td>
+      <td></td>
+      <td>[force]</td>
+      <td>[press]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>pʊʃ</td>
+      <td></td>
+      <td></td>
+      <td>sell or promote the sale of (illegal goods such as drugs)出售或促销（药品等非法商品）</td>
+      <td>The guy hanging around the school is pushing drugs学校周围的人正在推动毒品</td>
+      <td>[pusher]</td>
+      <td></td>
+      <td>[sell, deal, trade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>pʊʃ</td>
+      <td>['pushing']</td>
+      <td></td>
+      <td>the act of applying force in order to move something away施加武力以移走某物的行为</td>
+      <td>he gave the door a hard push他猛地推开门the pushing is good exercise推动是好运动</td>
+      <td></td>
+      <td></td>
+      <td>[propulsion, actuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>pʊʃ</td>
+      <td>['button', 'push button']</td>
+      <td></td>
+      <td>an electrical switch operated by pressing按下电动开关</td>
+      <td>the elevator was operated by push buttons电梯由按钮操作the push beside the bed operated a buzzer at the desk床边的推动器在桌子上操作了一个蜂鸣器</td>
+      <td></td>
+      <td></td>
+      <td>[electric switch, electrical switch, switch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>pʊʃ</td>
+      <td>['thrust']</td>
+      <td></td>
+      <td>the force used in pushing用于推动的力量</td>
+      <td>the push of the water on the walls of the tank推动水箱壁上的水</td>
+      <td></td>
+      <td></td>
+      <td>[force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>pʊʃ</td>
+      <td>['energy', 'get-up-and-go']</td>
+      <td></td>
+      <td>enterprising or ambitious drive进取或雄心勃勃的驱动力</td>
+      <td></td>
+      <td>[pushy]</td>
+      <td></td>
+      <td>[drive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>push</th>
+      <td>ush</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>pʊʃ</td>
+      <td></td>
+      <td></td>
+      <td>an effort to advance努力前进</td>
+      <td>the army made a push toward the sea军队向大海推进</td>
+      <td></td>
+      <td></td>
+      <td>[advance, progress, forward motion, progression, procession, onward motion, advancement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>rəʃ</td>
+      <td>['hurry']</td>
+      <td>[delay]</td>
+      <td>urge to an unnatural speed敦促以不自然的速度</td>
+      <td>Don't rush me, please!请不要急着我！</td>
+      <td></td>
+      <td></td>
+      <td>[urge, exhort, urge on, press]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>rəʃ</td>
+      <td>['race']</td>
+      <td></td>
+      <td>cause to move fast or to rush or race导致快速移动或匆忙或竞赛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>rəʃ</td>
+      <td>['belt along', 'bucket along', 'cannonball along', 'hasten', 'hie', 'hotfoot', 'pelt along', 'race', 'rush along', 'speed', 'step on it']</td>
+      <td>[linger]</td>
+      <td>move hurridly赶紧行动吧</td>
+      <td>He rushed down the hall to receive his guests他冲下大厅接待他的客人</td>
+      <td>[rushing]</td>
+      <td></td>
+      <td>[locomote, go, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>rəʃ</td>
+      <td>['hasten', 'induce', 'stimulate']</td>
+      <td></td>
+      <td>cause to occur rapidly导致迅速发生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[effectuate, set up, effect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>rəʃ</td>
+      <td>['festinate', 'hasten', 'hurry', 'look sharp']</td>
+      <td></td>
+      <td>act or move at high speed高速行动或移动</td>
+      <td>We have to rush!我们要赶紧去！</td>
+      <td>[rusher, rushing]</td>
+      <td></td>
+      <td>[move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>rəʃ</td>
+      <td></td>
+      <td></td>
+      <td>attack suddenly突然袭击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attack, assault, set on, assail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>ver</td>
+      <td>rəʃ</td>
+      <td></td>
+      <td></td>
+      <td>run with the ball, in football在足球场上用球跑</td>
+      <td></td>
+      <td>[rusher, rushing]</td>
+      <td></td>
+      <td>[run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>rəʃ</td>
+      <td>['spate', 'surge', 'upsurge']</td>
+      <td></td>
+      <td>a sudden forceful flow突然强有力的流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flowing, flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>rəʃ</td>
+      <td>['haste', 'hurry', 'rushing']</td>
+      <td></td>
+      <td>the act of moving hurriedly and in a careless manner匆忙地，粗心地移动的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, movement, motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>rəʃ</td>
+      <td>['benjamin rush']</td>
+      <td></td>
+      <td>physician and American Revolutionary leader; signer of the Declaration of Independence (1745-1813)医师和美国革命领袖;独立宣言签署人（1745-1813）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>rəʃ</td>
+      <td>['rushing']</td>
+      <td></td>
+      <td>(American football) an attempt to advance the ball by running into the line（美式足球）试图通过跑进球来推进球</td>
+      <td>the linebackers were ready to stop a rush线卫们准备好赶紧赶去</td>
+      <td></td>
+      <td></td>
+      <td>[running play, running, run, running game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>rəʃ</td>
+      <td>['bang', 'boot', 'charge', 'flush', 'kick', 'thrill']</td>
+      <td></td>
+      <td>the swift release of a store of affective force迅速释放一个情感力量的存储</td>
+      <td>he got a quick rush from injecting heroin他因注射海洛因而迅速匆忙</td>
+      <td></td>
+      <td></td>
+      <td>[exhilaration, excitement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>rəʃ</td>
+      <td></td>
+      <td></td>
+      <td>a sudden burst of activity一阵突如其来的活动</td>
+      <td>come back after the rush匆忙之后回来</td>
+      <td></td>
+      <td></td>
+      <td>[flare-up, outburst, burst]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>nou</td>
+      <td>rəʃ</td>
+      <td></td>
+      <td></td>
+      <td>grasslike plants growing in wet places and having cylindrical often hollow stems草状植物生长在潮湿的地方，有圆柱形的空心茎</td>
+      <td></td>
+      <td>[rushy]</td>
+      <td></td>
+      <td>[marsh plant, bog plant, swamp plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>adj</td>
+      <td>rəʃ</td>
+      <td>['first-come-first-serve'], similarTo:['unreserved']</td>
+      <td></td>
+      <td>not accepting reservations不接受预订</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rush</th>
+      <td>ush</td>
+      <td>4.53</td>
+      <td>adj</td>
+      <td>rəʃ</td>
+      <td>['rushed'], similarTo:['hurried']</td>
+      <td></td>
+      <td>done under pressure在压力下完成</td>
+      <td>a rush job急忙的工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>ver</td>
+      <td>bʊʃ</td>
+      <td></td>
+      <td></td>
+      <td>provide with a bushing提供套管</td>
+      <td></td>
+      <td>[bushing]</td>
+      <td></td>
+      <td>[render, supply, furnish, provide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>bʊʃ</td>
+      <td>['dubya', 'dubyuh', 'george bush', 'george w. bush', 'george walker bush', 'president bush', 'president george w. bush']</td>
+      <td></td>
+      <td>43rd President of the United States; son of George Herbert Walker Bush (born in 1946)第43届美国总统;乔治·赫伯特·沃克·布什的儿子（1946年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>bʊʃ</td>
+      <td>['vannevar bush']</td>
+      <td></td>
+      <td>United States electrical engineer who designed an early analogue computer and who led the scientific program of the United States during World War II (1890-1974)美国电气工程师，他设计了一台早期的模拟计算机，并在第二次世界大战期间领导了美国的科学计划（1890-1974）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>bʊʃ</td>
+      <td>['chaparral', 'scrub']</td>
+      <td></td>
+      <td>dense vegetation consisting of stunted trees or bushes茂密的植被，由发育不良的树木或灌木组成</td>
+      <td></td>
+      <td>[bushy]</td>
+      <td></td>
+      <td>[flora, vegetation, botany]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>bʊʃ</td>
+      <td>['george bush', 'george h. w. bush', 'george h.w. bush', 'george herbert walker bush', 'president bush']</td>
+      <td></td>
+      <td>vice president under Reagan and 41st President of the United States (born in 1924)里根副总统和美国第41任总统（1924年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>bʊʃ</td>
+      <td>['shrub']</td>
+      <td></td>
+      <td>a low woody perennial plant usually having several major stems一种低木质多年生植物，通常有几个主茎</td>
+      <td></td>
+      <td>[bushy]</td>
+      <td></td>
+      <td>[woody plant, ligneous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>bʊʃ</td>
+      <td>['crotch hair', 'pubic hair']</td>
+      <td></td>
+      <td>hair growing in the pubic area头发生长在阴部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>nou</td>
+      <td>bʊʃ</td>
+      <td></td>
+      <td></td>
+      <td>a large wilderness area一个大的荒野地区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wilderness, wild]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bush</th>
+      <td>ush</td>
+      <td>4.39</td>
+      <td>adj</td>
+      <td>bʊʃ</td>
+      <td>['bush-league'], similarTo:['inferior']</td>
+      <td></td>
+      <td>not of the highest quality or sophistication不是最高质量或最高级的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hush</th>
+      <td>ush</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>həʃ</td>
+      <td>['hush up', 'quieten', 'shut up', 'silence', 'still'], alos:['hush up']</td>
+      <td></td>
+      <td>cause to be quiet or not talk安静或不说话</td>
+      <td></td>
+      <td></td>
+      <td>[quiet, quiet down, pipe down, quieten, quiesce]</td>
+      <td>[subdue, suppress, conquer, stamp down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hush</th>
+      <td>ush</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>həʃ</td>
+      <td>['pipe down', 'quiesce', 'quiet', 'quiet down', 'quieten']</td>
+      <td></td>
+      <td>become quiet or quieter变得安静或安静</td>
+      <td></td>
+      <td></td>
+      <td>[still, hush up, quieten, shut up, silence]</td>
+      <td>[change intensity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hush</th>
+      <td>ush</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>həʃ</td>
+      <td></td>
+      <td></td>
+      <td>become quiet or still; fall silent变得安静或静止;沉默了</td>
+      <td>hush my baby!嘘我的宝贝！</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hush</th>
+      <td>ush</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>həʃ</td>
+      <td></td>
+      <td></td>
+      <td>run water over the ground to erode (soil), revealing the underlying strata and valuable minerals在地面上运水以侵蚀（土壤），揭示下面的地层和宝贵的矿物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water, irrigate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hush</th>
+      <td>ush</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>həʃ</td>
+      <td></td>
+      <td></td>
+      <td>wash by removing particles通过去除颗粒来清洗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wash, lave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hush</th>
+      <td>ush</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>həʃ</td>
+      <td>['still', 'stillness']</td>
+      <td></td>
+      <td>(poetic) tranquil silence（诗意的）宁静的沉默</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[quiet, silence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mush</th>
+      <td>ush</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>məʃ</td>
+      <td>['dogsled']</td>
+      <td></td>
+      <td>travel with a dogsled和狗拉雪橇一起旅行</td>
+      <td></td>
+      <td>[musher]</td>
+      <td></td>
+      <td>[sled, sleigh]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mush</th>
+      <td>ush</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>məʃ</td>
+      <td></td>
+      <td></td>
+      <td>drive (a team of dogs or a dogsled)开车（一队狗或狗拉雪橇）</td>
+      <td></td>
+      <td>[musher]</td>
+      <td>[dogsled]</td>
+      <td>[drive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mush</th>
+      <td>ush</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>məʃ</td>
+      <td>['glop', 'slop', 'treacle']</td>
+      <td></td>
+      <td>writing or music that is excessively sweet and sentimental写作或音乐过于甜蜜和多愁善感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sentimentalism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mush</th>
+      <td>ush</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>məʃ</td>
+      <td>['cornmeal mush']</td>
+      <td></td>
+      <td>cornmeal boiled in water玉米面煮沸在水中</td>
+      <td></td>
+      <td>[mushy]</td>
+      <td></td>
+      <td>[hot cereal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mush</th>
+      <td>ush</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>məʃ</td>
+      <td>['pulp']</td>
+      <td></td>
+      <td>any soft or soggy mass任何柔软或潮湿的质量</td>
+      <td></td>
+      <td>[mushy]</td>
+      <td></td>
+      <td>[mass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mush</th>
+      <td>ush</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>məʃ</td>
+      <td></td>
+      <td></td>
+      <td>a journey by dogsled狗拉雪橇之旅</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[journeying, journey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lush</th>
+      <td>ush</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>ləʃ</td>
+      <td>['alcoholic', 'alky', 'boozer', 'dipsomaniac', 'soaker', 'souse']</td>
+      <td></td>
+      <td>a person who drinks alcohol to excess habitually一个习惯性饮酒过量的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drunk, drunkard, inebriate, rummy, sot, wino]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lush</th>
+      <td>ush</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>ləʃ</td>
+      <td>['succulent'], similarTo:['juicy']</td>
+      <td></td>
+      <td>tender and full of juice温柔而充满果汁</td>
+      <td>lush fruits茂盛的水果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lush</th>
+      <td>ush</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>ləʃ</td>
+      <td>['juicy', 'luscious', 'red-hot', 'toothsome', 'voluptuous'], similarTo:['sexy']</td>
+      <td></td>
+      <td>having strong sexual appeal具有强烈的性吸引力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lush</th>
+      <td>ush</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>ləʃ</td>
+      <td>['deluxe', 'gilded', 'grand', 'luxurious', 'opulent', 'princely', 'sumptuous'], similarTo:['rich']</td>
+      <td></td>
+      <td>ostentatiously rich and superior in quality质量上乘，质量上乘</td>
+      <td>these architecture magazines are full of the lush interiors of the rich and famous这些建筑杂志充满了富人和名人的郁郁葱葱的室内设计</td>
+      <td>[lushness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lush</th>
+      <td>ush</td>
+      <td>3.19</td>
+      <td>adj</td>
+      <td>ləʃ</td>
+      <td>['exuberant', 'luxuriant', 'profuse', 'riotous'], similarTo:['abundant']</td>
+      <td></td>
+      <td>produced or growing in extreme abundance生产或生长极其丰富</td>
+      <td></td>
+      <td>[lushness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tush</th>
+      <td>ush</td>
+      <td>2.76</td>
+      <td>nou</td>
+      <td>tʊʃ</td>
+      <td>['arse', 'ass', 'backside', 'behind', 'bottom', 'bum', 'buns', 'butt', 'buttocks', 'can', 'derriere', 'fanny', 'fundament', 'hind end', 'hindquarters', 'keister', 'nates', 'posterior', 'prat', 'rear', 'rear end', 'rump', 'seat', 'stern', 'tail', 'tail end', 'tooshie']</td>
+      <td></td>
+      <td>the fleshy part of the human body that you sit on你坐在人体的肉质部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gush</th>
+      <td>ush</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>ɡəʃ</td>
+      <td>['jet']</td>
+      <td></td>
+      <td>issue in a jet; come out in a jet; stream or spring forth喷气机问题;喷射出来;流或涌出</td>
+      <td></td>
+      <td>[gusher]</td>
+      <td></td>
+      <td>[course, run, feed, flow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gush</th>
+      <td>ush</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>ɡəʃ</td>
+      <td>['spirt', 'spout', 'spurt']</td>
+      <td></td>
+      <td>gush forth in a sudden stream or jet在突然的溪流或喷射中涌出</td>
+      <td>water gushed forth水冲了出来</td>
+      <td>[gusher]</td>
+      <td></td>
+      <td>[pour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gush</th>
+      <td>ush</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>ɡəʃ</td>
+      <td>['rave']</td>
+      <td></td>
+      <td>praise enthusiastically热情赞美</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[praise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gush</th>
+      <td>ush</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>ɡəʃ</td>
+      <td>['blowup', 'ebullition', 'effusion', 'outburst']</td>
+      <td></td>
+      <td>an unrestrained expression of emotion一种无拘无束的情感表达</td>
+      <td></td>
+      <td>[gushy]</td>
+      <td></td>
+      <td>[expression, reflexion, reflection, manifestation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gush</th>
+      <td>ush</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>ɡəʃ</td>
+      <td>['flush', 'outpouring']</td>
+      <td></td>
+      <td>a sudden rapid flow (as of water)突然的快速流动（如水）</td>
+      <td>there was a little gush of blood有一点血</td>
+      <td></td>
+      <td></td>
+      <td>[flowing, flow]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

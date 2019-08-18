@@ -1,0 +1,845 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['work', 'pork', 'fork', 'cork']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['knead']</td>
+      <td></td>
+      <td>make uniform制作制服</td>
+      <td>work the clay until it is soft粘土直到它变软</td>
+      <td></td>
+      <td>[crop, cultivate]</td>
+      <td>[manipulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['function', 'go', 'operate', 'run']</td>
+      <td></td>
+      <td>perform as expected when applied应用时按预期执行</td>
+      <td>This old radio doesn't work anymore这台旧收音机不再用了</td>
+      <td></td>
+      <td>[run]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['do work']</td>
+      <td></td>
+      <td>be employed受雇</td>
+      <td>Is your husband working again?你丈夫又来了吗？My wife never worked我的妻子从未工作过Do you want to work after the age of 60?你想在60岁以后工作吗？She never did any work because she inherited a lot of money她从未做过任何工作，因为她继承了很多钱She works as a waitress to put herself through college她是一名服务员，让自己完成大学学业</td>
+      <td>[worker]</td>
+      <td>[put to work]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['act upon', 'influence']</td>
+      <td></td>
+      <td>have and exert influence or effect拥有并施加影响或影响</td>
+      <td>The artist's work influenced the young painter这位艺术家的作品影响了这位年轻的画家She worked on her friends to support the political candidate她与朋友们一起支持政治候选人</td>
+      <td></td>
+      <td></td>
+      <td>[impact, affect, touch, bear upon, bear on, touch on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['forge', 'form', 'mold', 'mould', 'shape']</td>
+      <td></td>
+      <td>make something, usually for a specific function做某事，通常用于特定的功能</td>
+      <td></td>
+      <td></td>
+      <td>[process, work on]</td>
+      <td>[create from raw stuff, create from raw material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['bring', 'make for', 'play', 'wreak']</td>
+      <td></td>
+      <td>cause to happen or to occur as a consequence因此发生或发生的原因</td>
+      <td>I cannot work a miracle我无法创造奇迹</td>
+      <td>[workable]</td>
+      <td>[act]</td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['put to work']</td>
+      <td></td>
+      <td>cause to work工作的原因</td>
+      <td>he is working his servants hard他正在努力工作他的仆人</td>
+      <td></td>
+      <td>[do work]</td>
+      <td>[use, utilise, employ, utilize, apply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['figure out', 'lick', 'puzzle out', 'solve', 'work out']</td>
+      <td></td>
+      <td>find the solution to (a problem or question) or understand the meaning of找到（问题或问题）的解决方案或理解其中的含义</td>
+      <td>this unpleasant situation isn't going to work itself out这种不愉快的情况不会自行解决He could not work the math problem他无法解决数学问题</td>
+      <td>[workable]</td>
+      <td></td>
+      <td>[understand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['act']</td>
+      <td></td>
+      <td>have an effect or outcome; often the one desired or expected有效果或结果;通常是期望或预期的</td>
+      <td>The voting process doesn't work as well as people thought投票过程不像人们想象的那样有效How does your idea work in practice?你的想法在实践中如何运作？This method doesn't work此方法不起作用The medicine works only if you take it with a lot of water这种药只有在你用大量水的情况下才有效</td>
+      <td>[workable]</td>
+      <td>[wreak, play, make for, bring]</td>
+      <td>[succeed, win, deliver the goods, come through, bring home the bacon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['exploit']</td>
+      <td></td>
+      <td>use or manipulate to one's advantage使用或操纵一个人的优势</td>
+      <td>She knows how to work the system她知道如何使用该系统he works his parents for sympathy他为父母的同情而努力</td>
+      <td></td>
+      <td></td>
+      <td>[use, utilise, utilize, apply, employ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['make']</td>
+      <td></td>
+      <td>proceed along a path沿着一条路走</td>
+      <td>work one's way through the crowd在人群中工作</td>
+      <td></td>
+      <td></td>
+      <td>[pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['crop', 'cultivate']</td>
+      <td></td>
+      <td>prepare for crops为作物做准备</td>
+      <td></td>
+      <td></td>
+      <td>[knead]</td>
+      <td>[gear up, set, fix, set up, prepare, ready]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['process', 'work on']</td>
+      <td></td>
+      <td>shape, form, or improve a material形状，形状或改善材料</td>
+      <td>work stone into tools工作石头成工具work the metal工作金属</td>
+      <td>[workable]</td>
+      <td>[forge, shape, mold, mould, form]</td>
+      <td>[transform, transmute, transubstantiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['ferment']</td>
+      <td></td>
+      <td>cause to undergo fermentation导致发酵</td>
+      <td>The vintner worked the wine in big oak vats葡萄酒商用大橡木桶酿酒</td>
+      <td></td>
+      <td>[sour, ferment, turn]</td>
+      <td>[convert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['exercise', 'work out']</td>
+      <td></td>
+      <td>give a workout to锻炼身体</td>
+      <td>My personal trainer works me hard我的私人教练努力工作work one's muscles锻炼一个人的肌肉</td>
+      <td></td>
+      <td>[work out, exercise]</td>
+      <td>[put to work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td>['ferment', 'sour', 'turn']</td>
+      <td></td>
+      <td>go sour or spoil变酸或变质</td>
+      <td>The wine worked葡萄酒起作用了</td>
+      <td></td>
+      <td>[ferment]</td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>arrive at a certain condition through repeated motion通过反复动作到达某种状态</td>
+      <td>The stitches of the hem worked loose after she wore the skirt many times在她多次穿裙子后，下摆的针脚松了一圈</td>
+      <td></td>
+      <td></td>
+      <td>[get, become, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>behave in a certain way when handled在处理时以某种方式行事</td>
+      <td>This dough does not work easily这种面团不容易The soft metal works well软金属效果很好</td>
+      <td></td>
+      <td>[knead]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>cause to operate or function导致操作或功能</td>
+      <td>This pilot works the controls该飞行员可以控制Can you work an electric drill?你能用电钻吗？</td>
+      <td>[workable]</td>
+      <td></td>
+      <td>[care, handle, deal, manage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td>[idle]</td>
+      <td>exert oneself by doing mental or physical work for a purpose or out of necessity通过为某种目的或出于必要而进行精神或体力劳动来发挥自己的作用</td>
+      <td>I will work hard to improve my grades我会努力提高成绩she worked hard for better living conditions for the poor她努力为穷人改善生活条件</td>
+      <td>[worker]</td>
+      <td>[do work]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>gratify and charm, usually in order to influence满足和魅力，通常是为了影响</td>
+      <td>the political candidate worked the crowds政治候选人为人群工作</td>
+      <td></td>
+      <td></td>
+      <td>[becharm, fascinate, trance, enamor, captivate, charm, capture, beguile, catch, bewitch, entrance, enchant, enamour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>move in an agitated manner以激动的方式行动</td>
+      <td>His fingers worked with tension他的手指紧张</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>move into or onto进入或进入</td>
+      <td>work the raisins into the dough将葡萄干放入面团中the student worked a few jokes into his presentation这个学生在他的演讲中开了几个笑话work the body onto the flatbed truck将车身放在平板车上</td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>operate in a certain place, area, or specialty在某个地方，地区或专业经营</td>
+      <td>She works the night clubs她在夜总会工作The salesman works the Midwest推销员在中西部工作This artist works mostly in acrylics这位艺术家主要从事丙烯酸树脂</td>
+      <td></td>
+      <td>[do work]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>operate in or through在或通过</td>
+      <td></td>
+      <td></td>
+      <td>[operate, run, function, go]</td>
+      <td>[operate, run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>proceed towards a goal or along a path or through an activity朝着目标或沿着路径或通过活动前进</td>
+      <td>work your way through every problem or task通过每个问题或任务来解决问题She was working on her second martini when the guests arrived当客人到达时，她正在研究她的第二个马提尼酒Start from the bottom and work towards the top从底部开始，向顶部努力</td>
+      <td></td>
+      <td>[make]</td>
+      <td>[move, proceed, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>ver</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>provoke or excite挑衅或激动</td>
+      <td>The rock musician worked the crowd of young girls into a frenzy这位摇滚音乐家为年轻女孩们带来了疯狂的热情</td>
+      <td></td>
+      <td>[exploit]</td>
+      <td>[stir, stimulate, excite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>nou</td>
+      <td>wɜrk</td>
+      <td>['study']</td>
+      <td></td>
+      <td>applying the mind to learning and understanding a subject (especially by reading)运用思想来学习和理解一门学科（特别是通过阅读）</td>
+      <td>mastering a second language requires a lot of work掌握第二语言需要大量的工作</td>
+      <td></td>
+      <td></td>
+      <td>[acquisition, learning]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>nou</td>
+      <td>wɜrk</td>
+      <td>['employment']</td>
+      <td></td>
+      <td>the occupation for which you are paid您获得报酬的职业</td>
+      <td>a lot of people are out of work很多人都失业了</td>
+      <td></td>
+      <td></td>
+      <td>[occupation, line of work, line, job, business]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>nou</td>
+      <td>wɜrk</td>
+      <td>['piece of work']</td>
+      <td></td>
+      <td>a product produced or accomplished through the effort or activity or agency of a person or thing通过人或事物的努力或活动或代理产生或完成的产品</td>
+      <td>it is not regarded as one of his more memorable works它不被视为他令人难忘的作品之一the symphony was hailed as an ingenious work这部交响曲被誉为一部巧妙的作品he was indebted to the pioneering work of John Dewey他非常感谢John Dewey的开创性工作the work of an active imagination积极想象的工作erosion is the work of wind or water over time侵蚀是风或水的作用随着时间的推移</td>
+      <td></td>
+      <td></td>
+      <td>[production, product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>nou</td>
+      <td>wɜrk</td>
+      <td>['workplace']</td>
+      <td></td>
+      <td>a place where work is done工作的地方</td>
+      <td>he arrived at work early today他今天早上到了工作岗位</td>
+      <td></td>
+      <td></td>
+      <td>[geographical point, geographic point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>nou</td>
+      <td>wɜrk</td>
+      <td>['body of work', 'oeuvre']</td>
+      <td></td>
+      <td>the total output of a writer or artist (or a substantial part of it)作家或艺术家（或其中很大一部分）的总产出</td>
+      <td>Picasso's work can be divided into periods毕加索的作品可以分为几个时期</td>
+      <td></td>
+      <td></td>
+      <td>[output, end product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>nou</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>activity directed toward making or doing something针对制造或做某事的活动</td>
+      <td>she checked several points needing further work她查了几点需要进一步的工作</td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>work</th>
+      <td>ork</td>
+      <td>5.94</td>
+      <td>nou</td>
+      <td>wɜrk</td>
+      <td></td>
+      <td></td>
+      <td>(physics) a manifestation of energy; the transfer of energy from one physical system to another expressed as the product of a force and the distance through which it moves a body in the direction of that force（物理学）能量的表现;能量从一个物理系统转移到另一个物理系统，表示为力的作用，以及它沿着力的方向移动物体的距离</td>
+      <td>work equals force times distance工作等于力的时间距离</td>
+      <td></td>
+      <td></td>
+      <td>[energy, free energy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pork</th>
+      <td>ork</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>poʊrk</td>
+      <td>['porc']</td>
+      <td></td>
+      <td>meat from a domestic hog or pig来自家养猪或猪的肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[meat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pork</th>
+      <td>ork</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>poʊrk</td>
+      <td>['pork barrel']</td>
+      <td></td>
+      <td>a legislative appropriation designed to ingratiate legislators with their constituents旨在使立法者与其选民讨好的立法拨款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[appropriation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>ver</td>
+      <td>fɔrk</td>
+      <td>['pitchfork']</td>
+      <td></td>
+      <td>lift with a pitchfork用干草叉举起</td>
+      <td>pitchfork hay干草叉干草</td>
+      <td></td>
+      <td></td>
+      <td>[lift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>ver</td>
+      <td>fɔrk</td>
+      <td>['branch', 'furcate', 'ramify', 'separate']</td>
+      <td></td>
+      <td>divide into two or more branches so as to form a fork分成两个或多个分支以形成一个分叉</td>
+      <td>The road forks道路叉</td>
+      <td>[forking]</td>
+      <td>[branch, ramify]</td>
+      <td>[diverge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>ver</td>
+      <td>fɔrk</td>
+      <td></td>
+      <td></td>
+      <td>place under attack with one's own pieces, of two enemy pieces用自己的碎片攻击两个敌人的碎片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aggress, attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>ver</td>
+      <td>fɔrk</td>
+      <td></td>
+      <td></td>
+      <td>shape like a fork形状像叉子</td>
+      <td>She forked her fingers她分叉她的手指</td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>fɔrk</td>
+      <td>['crotch']</td>
+      <td></td>
+      <td>the region of the angle formed by the junction of two branches由两个分支的连接形成的角度区域</td>
+      <td>they took the south fork他们拿了南叉</td>
+      <td></td>
+      <td></td>
+      <td>[branch, ramification, leg]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>fɔrk</td>
+      <td>['crotch']</td>
+      <td></td>
+      <td>the angle formed by the inner sides of the legs where they join the human trunk腿部内侧形成的角度，它们与人体躯干相连</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>fɔrk</td>
+      <td>['branching', 'forking', 'ramification']</td>
+      <td></td>
+      <td>the act of branching out or dividing into branches分支或分支的行为</td>
+      <td></td>
+      <td>[bifurcate]</td>
+      <td></td>
+      <td>[division]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>fɔrk</td>
+      <td></td>
+      <td></td>
+      <td>an agricultural tool used for lifting or digging; has a handle and metal prongs用于提升或挖掘的农具;有把手和金属叉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fork</th>
+      <td>ork</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>fɔrk</td>
+      <td></td>
+      <td></td>
+      <td>cutlery used for serving and eating food用于服务和吃食物的餐具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cutlery, eating utensil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cork</th>
+      <td>ork</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>kɔrk</td>
+      <td>['cork up']</td>
+      <td>[uncork]</td>
+      <td>close a bottle with a cork用软木塞关闭一个瓶子</td>
+      <td></td>
+      <td>[corker]</td>
+      <td></td>
+      <td>[secure, stop up, plug]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cork</th>
+      <td>ork</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>kɔrk</td>
+      <td></td>
+      <td></td>
+      <td>stuff with cork用软木塞的东西</td>
+      <td>The baseball player stuffed his bat with cork to make it lighter棒球运动员用软木塞他的球棒使其变轻</td>
+      <td></td>
+      <td></td>
+      <td>[stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cork</th>
+      <td>ork</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>kɔrk</td>
+      <td>['bottle cork']</td>
+      <td></td>
+      <td>the plug in the mouth of a bottle (especially a wine bottle)插在瓶口（特别是酒瓶）</td>
+      <td></td>
+      <td>[corky]</td>
+      <td></td>
+      <td>[stopple, stopper, plug]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cork</th>
+      <td>ork</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>kɔrk</td>
+      <td>['bob', 'bobber', 'bobfloat']</td>
+      <td></td>
+      <td>a small float usually made of cork; attached to a fishing line通常由软木制成的小浮子;附在钓鱼线上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[float]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cork</th>
+      <td>ork</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>kɔrk</td>
+      <td>['phellem']</td>
+      <td></td>
+      <td>(botany) outer tissue of bark; a protective layer of dead cells（植物学）树皮的外层组织;死细胞的保护层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cork</th>
+      <td>ork</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>kɔrk</td>
+      <td></td>
+      <td></td>
+      <td>a port city in southern Ireland爱尔兰南部的一个港口城市</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cork</th>
+      <td>ork</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>kɔrk</td>
+      <td></td>
+      <td></td>
+      <td>outer bark of the cork oak; used for stoppers for bottles etc.软木橡木的外皮;用于瓶子等塞子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant substance, bark, plant material]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

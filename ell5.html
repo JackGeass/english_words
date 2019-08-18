@@ -1,0 +1,1145 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['smell', 'spell', 'kelly', 'belly', 'shell', 'swell', 'jelly', 'wells', 'telly', 'dwell', 'knell']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>smɛl</td>
+      <td>['reek', 'smack']</td>
+      <td></td>
+      <td>have an element suggestive (of something)有一个元素暗示（的东西）</td>
+      <td>this passage smells of plagiarism这段经文闻到了抄袭</td>
+      <td></td>
+      <td></td>
+      <td>[paint a picture, suggest, evoke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>smɛl</td>
+      <td>['sense', 'smell out']</td>
+      <td></td>
+      <td>become aware of not through the senses but instinctively不是通过感官而是本能地意识到</td>
+      <td>I smell trouble我闻到了麻烦smell out corruption闻到腐败</td>
+      <td></td>
+      <td></td>
+      <td>[perceive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>smɛl</td>
+      <td>, alos:['smell up']</td>
+      <td></td>
+      <td>emit an odor散发出异味</td>
+      <td>The soup smells good汤闻起来很香</td>
+      <td></td>
+      <td></td>
+      <td>[cause to be perceived]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>smɛl</td>
+      <td></td>
+      <td></td>
+      <td>inhale the odor of; perceive by the olfactory sense吸入气味;通过嗅觉感知</td>
+      <td></td>
+      <td>[smelling]</td>
+      <td></td>
+      <td>[perceive, comprehend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>ver</td>
+      <td>smɛl</td>
+      <td></td>
+      <td></td>
+      <td>smell bad臭</td>
+      <td>He rarely washes, and he smells他很少洗，而且闻起来很香</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>smɛl</td>
+      <td>['aroma', 'odor', 'odour', 'olfactory property', 'scent']</td>
+      <td></td>
+      <td>any property detected by the olfactory system嗅觉系统检测到的任何财产</td>
+      <td></td>
+      <td>[smelly]</td>
+      <td></td>
+      <td>[property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>smɛl</td>
+      <td>['feel', 'feeling', 'flavor', 'flavour', 'look', 'spirit', 'tone']</td>
+      <td></td>
+      <td>the general atmosphere of a place or situation and the effect that it has on people一个地方或一个地方的总体氛围及其对人们的影响</td>
+      <td>it had the smell of treason它有叛国的气味</td>
+      <td></td>
+      <td></td>
+      <td>[ambience, atmosphere, ambiance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>smɛl</td>
+      <td>['olfaction', 'olfactory modality', 'sense of smell']</td>
+      <td></td>
+      <td>the faculty that enables us to distinguish scents使我们能够区分气味的能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sense modality, sensory system, modality, exteroception]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>smɛl</td>
+      <td>['smelling']</td>
+      <td></td>
+      <td>the act of perceiving the odor of something感知某事气味的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sensing, perception]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smell</th>
+      <td>ell</td>
+      <td>4.96</td>
+      <td>nou</td>
+      <td>smɛl</td>
+      <td>['odor', 'odour', 'olfactory perception', 'olfactory sensation']</td>
+      <td></td>
+      <td>the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form当气体形式的特定化学物质刺激鼻子中的嗅觉受体时产生的感觉</td>
+      <td>she loved the smell of roses她喜欢玫瑰的味道</td>
+      <td></td>
+      <td></td>
+      <td>[aesthesis, sense impression, sense experience, sense datum, sensation, esthesis]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>spɛl</td>
+      <td>['import']</td>
+      <td></td>
+      <td>indicate or signify表示或表示</td>
+      <td>I'm afraid this spells trouble!我担心这会给你带来麻烦！</td>
+      <td></td>
+      <td></td>
+      <td>[intend, mean]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>spɛl</td>
+      <td>['write']</td>
+      <td></td>
+      <td>write or name the letters that comprise the conventionally accepted form of (a word or part of a word)写下或命名包含传统上接受的形式（一个词或一个词的一部分）的字母</td>
+      <td>He spelled the word wrong in this letter他在这封信中拼错了这个词</td>
+      <td>[spelling]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>spɛl</td>
+      <td>['spell out']</td>
+      <td></td>
+      <td>orally recite the letters of or give the spelling of口头背诵字母或拼写</td>
+      <td>How do you spell this word?你怎么拼这个词？We had to spell out our names for the police officer我们不得不为警察说出我们的名字</td>
+      <td>[speller, spelling]</td>
+      <td></td>
+      <td>[recite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>spɛl</td>
+      <td></td>
+      <td>[unspell]</td>
+      <td>place under a spell在一个咒语下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hex, witch, bewitch, glamour, jinx, enchant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>spɛl</td>
+      <td></td>
+      <td></td>
+      <td>relieve (someone) from work by taking a turn轮流解雇（某人）</td>
+      <td>She spelled her husband at the wheel她拼了她的丈夫</td>
+      <td></td>
+      <td></td>
+      <td>[take over, relieve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>spɛl</td>
+      <td></td>
+      <td></td>
+      <td>take turns working轮流工作</td>
+      <td>the workers spell every four hours工人每四个小时拼一次</td>
+      <td></td>
+      <td></td>
+      <td>[take turns, alternate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>spɛl</td>
+      <td>['charm', 'magic spell', 'magical spell']</td>
+      <td></td>
+      <td>a verbal formula believed to have magical force一个被认为具有魔力的口头公式</td>
+      <td>he whispered a spell as he moved his hands他动了手，低声咒骂</td>
+      <td></td>
+      <td></td>
+      <td>[spoken communication, spoken language, oral communication, voice communication, speech, language, speech communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>spɛl</td>
+      <td>['enchantment', 'trance']</td>
+      <td></td>
+      <td>a psychological state induced by (or as if induced by) a magical incantation由魔法咒语诱导（或似乎由其引起）的心理状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mental condition, psychological state, psychological condition, mental state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>spɛl</td>
+      <td>['go', 'tour', 'turn']</td>
+      <td></td>
+      <td>a time period for working (after which you will be relieved by someone else)工作的时间段（之后你会被其他人解除）</td>
+      <td>a spell of work一份工作</td>
+      <td></td>
+      <td></td>
+      <td>[duty period, shift, work shift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spell</th>
+      <td>ell</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>spɛl</td>
+      <td>['patch', 'piece', 'while']</td>
+      <td></td>
+      <td>a period of indeterminate length (usually short) marked by some action or condition一段不确定的长度（通常很短），以某种行为或条件为标志</td>
+      <td>a spell of good weather一阵好天气</td>
+      <td></td>
+      <td></td>
+      <td>[time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kelly</th>
+      <td>ell</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>'kɛli</td>
+      <td>['emmett kelly', 'weary willie']</td>
+      <td></td>
+      <td>United States circus clown (1898-1979)美国马戏团小丑（1898-1979）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kelly</th>
+      <td>ell</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>'kɛli</td>
+      <td>['eugene curran kelly', 'gene kelly']</td>
+      <td></td>
+      <td>United States dancer who performed in many musical films (1912-1996)在许多音乐电影中演出的美国舞者（1912-1996）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kelly</th>
+      <td>ell</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>'kɛli</td>
+      <td>['grace kelly', 'grace patricia kelly', 'princess grace of monaco']</td>
+      <td></td>
+      <td>United States film actress who retired when she married into the royal family of Monaco (1928-1982)美国电影女演员在嫁入摩纳哥王室时退休（1928-1982）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>belly</th>
+      <td>ell</td>
+      <td>4.25</td>
+      <td>ver</td>
+      <td>'bɛli</td>
+      <td>['belly out']</td>
+      <td></td>
+      <td>swell out or bulge out膨胀或膨胀</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tumefy, swell, swell up, intumesce, tumesce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>belly</th>
+      <td>ell</td>
+      <td>4.25</td>
+      <td>nou</td>
+      <td>'bɛli</td>
+      <td>['abdomen', 'stomach', 'venter']</td>
+      <td></td>
+      <td>the region of the body of a vertebrate between the thorax and the pelvis胸部和骨盆之间脊椎动物体的区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>belly</th>
+      <td>ell</td>
+      <td>4.25</td>
+      <td>nou</td>
+      <td>'bɛli</td>
+      <td>['paunch']</td>
+      <td></td>
+      <td>a protruding abdomen突出的腹部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fat, fatty tissue, adipose tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>belly</th>
+      <td>ell</td>
+      <td>4.25</td>
+      <td>nou</td>
+      <td>'bɛli</td>
+      <td></td>
+      <td></td>
+      <td>a part that bulges deeply一个深深膨胀的部分</td>
+      <td>the belly of a sail一个帆的肚子</td>
+      <td></td>
+      <td></td>
+      <td>[hump, swelling, protuberance, jut, protrusion, bulge, bump, prominence, excrescence, extrusion, gibbosity, gibbousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>belly</th>
+      <td>ell</td>
+      <td>4.25</td>
+      <td>nou</td>
+      <td>'bɛli</td>
+      <td></td>
+      <td></td>
+      <td>the hollow inside of something某事物的空洞</td>
+      <td>in the belly of the ship在船的腹部</td>
+      <td></td>
+      <td></td>
+      <td>[inside, interior]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>belly</th>
+      <td>ell</td>
+      <td>4.25</td>
+      <td>nou</td>
+      <td>'bɛli</td>
+      <td></td>
+      <td></td>
+      <td>the underpart of the body of certain vertebrates such as snakes or fish某些脊椎动物身体的下部，如蛇或鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[underpart]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td>['husk']</td>
+      <td></td>
+      <td>remove the husks from从中移除外壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remove, take away, withdraw, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td>['beat', 'beat out', 'crush', 'trounce', 'vanquish']</td>
+      <td></td>
+      <td>come out better in a competition, race, or conflict在竞争，种族或冲突中表现得更好</td>
+      <td></td>
+      <td></td>
+      <td>[outwit, circumvent, outsmart, beat, outfox, overreach]</td>
+      <td>[get the better of, overcome, defeat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td>['blast']</td>
+      <td></td>
+      <td>use explosives on使用炸药</td>
+      <td>The enemy has been shelling us all day敌人整天都在炮轰我们</td>
+      <td>[shelling]</td>
+      <td></td>
+      <td>[bombard, bomb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td>['blast']</td>
+      <td></td>
+      <td>create by using explosives用炸药制造</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>fall out of the pod or husk从豆荚或外壳掉下来</td>
+      <td>The corn shelled玉米去壳</td>
+      <td></td>
+      <td></td>
+      <td>[emerge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>hit the pitches of hard and regularly经常打出艰难的球场</td>
+      <td>He shelled the pitcher for eight runs in the first inning他在第一局中将投手击中投手8次</td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>look for and collect shells by the seashore寻找并收集海边的贝壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>remove from its shell or outer covering从其外壳或外壳上卸下</td>
+      <td>shell the legumes壳豆类shell mussels贝壳贻贝</td>
+      <td>[sheller]</td>
+      <td></td>
+      <td>[take, withdraw, remove, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td>['carapace', 'cuticle', 'shield']</td>
+      <td></td>
+      <td>hard outer covering or case of certain organisms such as arthropods and turtles坚硬的外壳或某些生物的例子，如节肢动物和乌龟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scute]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td>['eggshell']</td>
+      <td></td>
+      <td>the exterior covering of a bird's egg鸟蛋的外壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover, covering, natural covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td>['case', 'casing']</td>
+      <td></td>
+      <td>the housing or outer covering of something某物的外壳或外壳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[housing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td>['plate', 'scale']</td>
+      <td></td>
+      <td>a metal sheathing of uniform thickness (such as the shield attached to an artillery piece to protect the gunners)一个厚度均匀的金属护套（例如连接在火炮上的护罩以保护枪手）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shield]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td>['racing shell']</td>
+      <td></td>
+      <td>a very light narrow racing boat一艘非常轻的赛艇</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[racing boat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile; fired from a large gun弹药由装有爆炸装药和弹丸的圆柱形金属外壳组成;从一把大枪开火</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ammo, ammunition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>a rigid covering that envelops an object包裹物体的刚性覆盖物</td>
+      <td>the satellite is covered with a smooth shell of ice卫星上覆盖着光滑的冰壳</td>
+      <td></td>
+      <td></td>
+      <td>[covering, cover, natural covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>the hard largely calcareous covering of a mollusc or a brachiopod软体动物或腕足动物的坚硬钙质覆盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural covering, covering, cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>the hard usually fibrous outer layer of some fruits especially nuts一些水果特别是坚果的硬质纤维外层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shell</th>
+      <td>ell</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>ʃɛl</td>
+      <td></td>
+      <td></td>
+      <td>the material that forms the hard outer covering of many animals形成许多动物坚硬外壳的材料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>swɛl</td>
+      <td>['intumesce', 'swell up', 'tumefy', 'tumesce']</td>
+      <td></td>
+      <td>expand abnormally异常扩张</td>
+      <td>The bellies of the starving children are swelling饥饿儿童的腹部肿胀</td>
+      <td>[swelling]</td>
+      <td></td>
+      <td>[expand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>swɛl</td>
+      <td>['well up']</td>
+      <td></td>
+      <td>come up (as of feelings and thoughts, or other ephemeral things)上来（如感情和想法，或其他短暂的事情）</td>
+      <td>Smoke swelled from it烟雾从它膨胀</td>
+      <td></td>
+      <td></td>
+      <td>[uprise, rise, originate, spring up, arise, grow, develop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>swɛl</td>
+      <td>['puff up']</td>
+      <td></td>
+      <td>become filled with pride, arrogance, or anger充满骄傲，傲慢或愤怒</td>
+      <td>The mother was swelling with importance when she spoke of her son当她谈到她的儿子时，母亲的重要性正在膨胀</td>
+      <td></td>
+      <td></td>
+      <td>[do, act, behave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>swɛl</td>
+      <td>['well']</td>
+      <td></td>
+      <td>come up, as of a liquid从液体中出来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surface, come up, rise, rise up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>swɛl</td>
+      <td></td>
+      <td></td>
+      <td>cause to become swollen导致肿胀</td>
+      <td>The water swells the wood水使木头膨胀</td>
+      <td></td>
+      <td></td>
+      <td>[grow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>swɛl</td>
+      <td></td>
+      <td></td>
+      <td>increase in size, magnitude, number, or intensity增加大小，数量，数量或强度</td>
+      <td>The music swelled to a crescendo音乐逐渐膨胀</td>
+      <td></td>
+      <td></td>
+      <td>[increase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>swɛl</td>
+      <td>['beau', 'clotheshorse', 'dandy', 'dude', 'fashion plate', 'fop', 'gallant', 'sheik']</td>
+      <td></td>
+      <td>a man who is much concerned with his dress and appearance一个非常关心他的着装和外表的男人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[man, adult male]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>swɛl</td>
+      <td>['crestless wave']</td>
+      <td></td>
+      <td>the undulating movement of the surface of the open sea公海表面的起伏运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wave, moving ridge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>swɛl</td>
+      <td></td>
+      <td></td>
+      <td>a crescendo followed by a decrescendo渐渐渐渐渐渐降临</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crescendo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>swɛl</td>
+      <td></td>
+      <td></td>
+      <td>a rounded elevation (especially one on an ocean floor)圆形的高程（特别是在海底的一个）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[elevation, natural elevation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swell</th>
+      <td>ell</td>
+      <td>3.81</td>
+      <td>adj</td>
+      <td>swɛl</td>
+      <td>['bang-up', 'bully', 'corking', 'cracking', 'dandy', 'great', 'groovy', 'keen', 'neat', 'nifty', 'not bad', 'old', 'peachy', 'slap-up', 'smashing'], similarTo:['good']</td>
+      <td></td>
+      <td>very good很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>jelly</th>
+      <td>ell</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>'dʒɛli</td>
+      <td>['jellify']</td>
+      <td></td>
+      <td>make into jelly变成果冻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change integrity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jelly</th>
+      <td>ell</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'dʒɛli</td>
+      <td>['gelatin']</td>
+      <td></td>
+      <td>an edible jelly (sweet or pungent) made with gelatin and used as a dessert or salad base or a coating for foods用明胶制成的可食用果冻（甜或辛辣），用作甜点或沙拉基料或食品涂层</td>
+      <td></td>
+      <td>[jellify]</td>
+      <td></td>
+      <td>[dainty, delicacy, goody, kickshaw, treat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jelly</th>
+      <td>ell</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'dʒɛli</td>
+      <td></td>
+      <td></td>
+      <td>any substance having the consistency of jelly or gelatin任何具有果冻或明胶稠度的物质</td>
+      <td></td>
+      <td>[jellify]</td>
+      <td></td>
+      <td>[substance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jelly</th>
+      <td>ell</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>'dʒɛli</td>
+      <td></td>
+      <td></td>
+      <td>a preserve made of the jelled juice of fruit由果冻果汁制成的果酱</td>
+      <td></td>
+      <td>[jellify]</td>
+      <td></td>
+      <td>[conserves, preserves, conserve, preserve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wells</th>
+      <td>ell</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>wɛlz</td>
+      <td>['h. g. wells', 'herbert george wells']</td>
+      <td></td>
+      <td>prolific English writer best known for his science-fiction novels; he also wrote on contemporary social problems and wrote popular accounts of history and science (1866-1946)多才多艺的英国作家，以其科幻小说而闻名;他还撰写了关于当代社会问题的文章并撰写了历史和科学的流行报道（1866-1946）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>telly</th>
+      <td>ell</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>'tɛli</td>
+      <td>['boob tube', 'goggle box', 'idiot box', 'television', 'television receiver', 'television set', 'tv', 'tv set']</td>
+      <td></td>
+      <td>an electronic device that receives television signals and displays them on a screen接收电视信号并在屏幕上显示的电子设备</td>
+      <td>the British call a tv set a telly英国称电视机为电视</td>
+      <td></td>
+      <td></td>
+      <td>[receiver, receiving system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dwell</th>
+      <td>ell</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>dwɛl</td>
+      <td>['inhabit']</td>
+      <td></td>
+      <td>exist or be situated within存在或位于</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exist, be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dwell</th>
+      <td>ell</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>dwɛl</td>
+      <td>['inhabit', 'live', 'populate']</td>
+      <td></td>
+      <td>be an inhabitant of or reside in是居民或居住在</td>
+      <td>this kind of fish dwells near the bottom of the ocean这种鱼栖息在海底附近</td>
+      <td>[dweller, dwelling]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dwell</th>
+      <td>ell</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>dwɛl</td>
+      <td>['brood'], alos:['dwell on']</td>
+      <td></td>
+      <td>think moodily or anxiously about something心情愉快或焦虑地思考某事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[worry, care]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dwell</th>
+      <td>ell</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>dwɛl</td>
+      <td>['consist', 'lie', 'lie in']</td>
+      <td></td>
+      <td>originate (in)起源（in）</td>
+      <td>The problems dwell in the social injustices in this country问题存在于这个国家的社会不公正中</td>
+      <td></td>
+      <td></td>
+      <td>[exist, be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dwell</th>
+      <td>ell</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>dwɛl</td>
+      <td>['harp']</td>
+      <td></td>
+      <td>come back to回来</td>
+      <td>Don't dwell on the past不要纠缠于过去</td>
+      <td></td>
+      <td></td>
+      <td>[reiterate, ingeminate, iterate, retell, repeat, restate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knell</th>
+      <td>ell</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>nɛl</td>
+      <td>['ring']</td>
+      <td></td>
+      <td>make (bells) ring, often for the purposes of musical edification制作（铃铛）戒指，通常用于音乐熏陶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knell</th>
+      <td>ell</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>nɛl</td>
+      <td></td>
+      <td></td>
+      <td>ring as in announcing death在宣布死亡时响起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ring, peal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knell</th>
+      <td>ell</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>nɛl</td>
+      <td></td>
+      <td></td>
+      <td>the sound of a bell rung slowly to announce a death or a funeral or the end of something钟声响起，慢慢宣布死亡，葬礼或某事结束</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bell, toll]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

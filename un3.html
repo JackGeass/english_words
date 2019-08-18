@@ -1,0 +1,1445 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['run', 'fun', 'gun', 'sun', 'nun', 'bun', 'hun', 'pun', 'dun', 'tun']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['go']</td>
+      <td></td>
+      <td>have a particular form有一个特定的形式</td>
+      <td>the story or argument runs as follows故事或论点如下</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['function', 'go', 'operate', 'work']</td>
+      <td></td>
+      <td>perform as expected when applied应用时按预期执行</td>
+      <td>Does this old car still run well?这辆旧车还能运行良好吗？</td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['race'], alos:['run off']</td>
+      <td></td>
+      <td>compete in a race参加比赛</td>
+      <td>he is running the Marathon this year他今年正在参加马拉松比赛</td>
+      <td>[runner, running]</td>
+      <td></td>
+      <td>[contend, vie, compete]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['unravel']</td>
+      <td></td>
+      <td>become undone变得松散</td>
+      <td></td>
+      <td></td>
+      <td>[ladder]</td>
+      <td>[disintegrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['campaign']</td>
+      <td></td>
+      <td>run, stand, or compete for an office or a position跑，站，或竞争办公室或职位</td>
+      <td>Who's running for treasurer this year?谁今年竞选财务主管？</td>
+      <td></td>
+      <td></td>
+      <td>[race]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['ladder']</td>
+      <td></td>
+      <td>come unraveled or undone as if by snagging像钩住一样解开或解开</td>
+      <td>Her nylons were running她的尼龙正在跑</td>
+      <td></td>
+      <td>[unravel]</td>
+      <td>[break, come apart, split up, fall apart, separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['operate']</td>
+      <td></td>
+      <td>direct or control; projects, businesses, etc.直接或控制;项目，企业等</td>
+      <td>She is running a relief operation in the Sudan她正在苏丹开展救援行动</td>
+      <td>[running]</td>
+      <td></td>
+      <td>[direct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['run for']</td>
+      <td></td>
+      <td>extend or continue for a certain period of time延长或继续一段时间</td>
+      <td>The film runs 5 hours这部电影耗时5个小时</td>
+      <td></td>
+      <td></td>
+      <td>[last, endure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['carry']</td>
+      <td></td>
+      <td>include as the content; broadcast or publicize包括作为内容;广播或宣传</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disperse, broadcast, pass around, spread, disseminate, propagate, diffuse, distribute, circulate, circularize, circularise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['draw', 'guide', 'pass']</td>
+      <td></td>
+      <td>pass over, across, or through通过，跨越或通过</td>
+      <td></td>
+      <td></td>
+      <td>[thread, lead, draw, string]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['ply']</td>
+      <td></td>
+      <td>travel a route regularly定期旅行</td>
+      <td></td>
+      <td></td>
+      <td>[black market]</td>
+      <td>[trip, travel, jaunt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['execute']</td>
+      <td></td>
+      <td>carry out a process or program, as on a computer or a machine执行一个过程或程序，如在计算机或机器上</td>
+      <td>run a new program on the Mac在Mac上运行一个新程序</td>
+      <td></td>
+      <td>[play]</td>
+      <td>[implement, apply, enforce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['break away', 'bunk', 'escape', 'fly the coop', 'head for the hills', 'hightail it', 'lam', 'run away', 'scarper', 'scat', 'take to the woods', 'turn tail']</td>
+      <td></td>
+      <td>flee; take to one's heels; cut and run逃跑;紧紧抓住;剪切并运行</td>
+      <td>If you see this man, run!如果你看到这个男人，跑吧！</td>
+      <td></td>
+      <td></td>
+      <td>[go forth, leave, go away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['lead']</td>
+      <td></td>
+      <td>cause something to pass or lead somewhere导致某事传递或领导某个地方</td>
+      <td></td>
+      <td></td>
+      <td>[pass, range, draw, guide]</td>
+      <td>[make pass, pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['be given', 'incline', 'lean', 'tend']</td>
+      <td></td>
+      <td>have a tendency or disposition to do or be something; be inclined有倾向或倾向去做或做某事;倾向于</td>
+      <td>These dresses run small这些连衣裙很小</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['extend', 'go', 'lead', 'pass'], alos:['run along']</td>
+      <td></td>
+      <td>stretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point伸展距离，空间，时间或范围;在两点之间运行或延伸或超过某一点</td>
+      <td>Service runs all the way to Cranbury服务一直运行到克兰伯里</td>
+      <td></td>
+      <td>[range]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['play']</td>
+      <td></td>
+      <td>cause to emit recorded audio or video导致发出录制的音频或视频</td>
+      <td></td>
+      <td></td>
+      <td>[play, execute]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['consort']</td>
+      <td></td>
+      <td>keep company在一起</td>
+      <td>the heifers run with the bulls to produce offspring小母牛与公牛一起生产后代</td>
+      <td></td>
+      <td></td>
+      <td>[accompany]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['range']</td>
+      <td></td>
+      <td>change or be different within limits变化或在限度内变化</td>
+      <td>Interest rates run from 5 to 10 percent利率从5％到10％不等</td>
+      <td></td>
+      <td>[pass, lead, go, extend]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['black market']</td>
+      <td></td>
+      <td>deal in illegally, such as arms or liquor非法交易，如武器或酒类</td>
+      <td></td>
+      <td></td>
+      <td>[ply]</td>
+      <td>[merchandise, trade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['die hard', 'endure', 'persist', 'prevail']</td>
+      <td></td>
+      <td>continue to exist继续存在</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[continue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['melt', 'melt down']</td>
+      <td></td>
+      <td>reduce or cause to be reduced from a solid to a liquid state, usually by heating通常通过加热减少或导致从固态变为液态</td>
+      <td></td>
+      <td></td>
+      <td>[bleed]</td>
+      <td>[resolve, break up, dissolve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['bleed']</td>
+      <td></td>
+      <td>be diffused被分散</td>
+      <td>These dyes and colors are guaranteed not to run这些染料和颜色保证不会运行</td>
+      <td></td>
+      <td>[melt down, melt]</td>
+      <td>[spread out, spread, fan out, diffuse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['course', 'feed', 'flow'], alos:['run over']</td>
+      <td></td>
+      <td>move along, of liquids液体移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['go', 'move']</td>
+      <td></td>
+      <td>progress by being changed通过改变进步</td>
+      <td>run through your presentation before the meeting在会议开始前完成演示</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>['hunt', 'hunt down', 'track down']</td>
+      <td></td>
+      <td>pursue for food or sport (as of wild animals)寻求食物或运动（如野生动物）</td>
+      <td>The dogs are running deer狗正在跑鹿</td>
+      <td></td>
+      <td>[hunt]</td>
+      <td>[catch, capture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>be affected by; be subjected to受到影响;受到</td>
+      <td>run a temperature跑一个温度run a risk冒险</td>
+      <td></td>
+      <td></td>
+      <td>[incur]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td>[idle]</td>
+      <td>be operating, running or functioning运作，运行或运作</td>
+      <td>The car is still running--turn it off!汽车仍在运转 - 关掉它！</td>
+      <td>[running]</td>
+      <td>[operate, work, function, go]</td>
+      <td>[operate, work, function, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>carry out完成</td>
+      <td>run an errand跑一个差事</td>
+      <td></td>
+      <td></td>
+      <td>[carry out, carry through, fulfill, accomplish, fulfil, execute, action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>cause an animal to move fast导致动物快速移动</td>
+      <td>run the dogs跑狗</td>
+      <td></td>
+      <td>[hunt, hunt down, track down]</td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>cause to perform导致执行</td>
+      <td>run a subject经营一个主题run a process运行一个过程</td>
+      <td></td>
+      <td>[play]</td>
+      <td>[process, treat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>change from one state to another从一个州转到另一个州</td>
+      <td>run amok奔跑run rogue流氓run riot骚乱</td>
+      <td></td>
+      <td></td>
+      <td>[go, become, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>cover by running; run a certain distance通过跑步掩盖;跑一定距离</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>make without a miss毫无疑问</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[win, succeed, bring home the bacon, deliver the goods, come through]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>move about freely and without restraint, or act as if running around in an uncontrolled way自由地，无约束地行动，或者好像以不受控制的方式奔跑</td>
+      <td>who are these people running around in the building?这些人在楼里跑来跑去？She runs around telling everyone of her troubles她跑来跑去告诉大家她的麻烦let the dogs run free让狗自由奔跑</td>
+      <td></td>
+      <td></td>
+      <td>[go, locomote, travel, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td>, alos:['run away', 'run around']</td>
+      <td></td>
+      <td>move fast by using one's feet, with one foot off the ground at any given time在任何给定时间用一只脚离开地面快速移动</td>
+      <td>Don't run--you'll be out of breath不要跑 - 你会喘不过气来</td>
+      <td>[runner, running]</td>
+      <td></td>
+      <td>[travel rapidly, hurry, speed, zip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>occur persistently持续发生</td>
+      <td>Musical talent runs in the family音乐人才在家庭中运行</td>
+      <td></td>
+      <td>[die hard, prevail, persist, endure]</td>
+      <td>[occur]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>run with the ball; in such sports as football带球跑;在足球这样的运动中</td>
+      <td></td>
+      <td>[running]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>sail before the wind在风前航行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>set animals loose to graze将动物放松以放牧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[release, free, unloose, unloosen, loose, liberate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>ver</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>travel rapidly, by any (unspecified) means通过任何（未指明的）手段快速旅行</td>
+      <td>She always runs to Italy, because she has a lover there她总是跑到意大利，因为那里有一个情人</td>
+      <td></td>
+      <td></td>
+      <td>[go, move, locomote, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['rill', 'rivulet', 'runnel', 'streamlet']</td>
+      <td></td>
+      <td>a small stream一条小溪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stream, watercourse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['ladder', 'ravel']</td>
+      <td></td>
+      <td>a row of unravelled stitches一排破裂的针脚</td>
+      <td>she got a run in her stocking她的袜子跑了</td>
+      <td></td>
+      <td></td>
+      <td>[damage, harm, impairment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['tally']</td>
+      <td></td>
+      <td>a score in baseball made by a runner touching all four bases safely由跑步者安全触摸所有四个基地制作的棒球比分</td>
+      <td>the Yankees scored 3 runs in the bottom of the 9th洋基队在第9洞的底部连得3分</td>
+      <td></td>
+      <td></td>
+      <td>[score]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['campaign', 'political campaign']</td>
+      <td></td>
+      <td>a race between candidates for elective office选举办公室候选人之间的竞赛</td>
+      <td>he is raising money for a Senate run他正在参议院竞选筹集资金</td>
+      <td></td>
+      <td></td>
+      <td>[race]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['test', 'trial']</td>
+      <td></td>
+      <td>the act of testing something测试某事的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attempt, try, endeavour, endeavor, effort]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['running']</td>
+      <td></td>
+      <td>the act of running; traveling on foot at a fast pace奔跑的行为;快节奏地徒步旅行</td>
+      <td>he broke into a run他闯进了一个跑道his daily run keeps him fit他每天的跑步让他保持健康</td>
+      <td></td>
+      <td></td>
+      <td>[travel, locomotion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['foot race', 'footrace']</td>
+      <td></td>
+      <td>a race run on foot跑步比赛</td>
+      <td>she broke the record for the half-mile run她打破了半英里跑的记录</td>
+      <td></td>
+      <td></td>
+      <td>[race]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['streak']</td>
+      <td></td>
+      <td>an unbroken series of events一系列不间断的事件</td>
+      <td>Nicklaus had a run of birdies尼克劳斯有一连串的小鸟</td>
+      <td></td>
+      <td></td>
+      <td>[succession]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['discharge', 'outpouring']</td>
+      <td></td>
+      <td>the pouring forth of a fluid倾泻而出的液体</td>
+      <td></td>
+      <td>[runny]</td>
+      <td></td>
+      <td>[flow, flowing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td>['running', 'running game', 'running play']</td>
+      <td></td>
+      <td>(American football) a play in which a player attempts to carry the ball through or past the opposing team（美式足球）一种球员试图将球带过对手球队的比赛</td>
+      <td>the defensive line braced to stop the run支持防守线以阻止跑步the coach put great emphasis on running教练非常重视跑步</td>
+      <td></td>
+      <td></td>
+      <td>[football play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>an unbroken chronological sequence一个完整的时间顺序</td>
+      <td>the play had a long run on Broadway这出戏在百老汇有很长的路要走the team enjoyed a brief run of victories球队获得了短暂的胜利</td>
+      <td></td>
+      <td></td>
+      <td>[chronological sequence, successiveness, sequence, succession, chronological succession]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>a regular trip定期旅行</td>
+      <td>the ship made its run in record time这艘船以创纪录的速度运行</td>
+      <td></td>
+      <td></td>
+      <td>[trip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>a short trip短途旅行</td>
+      <td>take a run into town跑进城里去</td>
+      <td></td>
+      <td></td>
+      <td>[trip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>the continuous period of time during which something (a machine or a factory) operates or continues in operation某物（机器或工厂）运行或继续运行的连续时间段</td>
+      <td>the assembly line was on a 12-hour run装配线运行了12个小时</td>
+      <td></td>
+      <td></td>
+      <td>[period, time period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>the production achieved during a continuous period of operation (of a machine or factory etc.)在连续运行期间（机器或工厂等）实现的生产</td>
+      <td>a daily run of 100,000 gallons of paint每天运行100,000加仑的油漆</td>
+      <td></td>
+      <td></td>
+      <td>[indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>run</th>
+      <td>un</td>
+      <td>5.53</td>
+      <td>nou</td>
+      <td>rən</td>
+      <td></td>
+      <td></td>
+      <td>unrestricted freedom to use不受限制的使用自由</td>
+      <td>he has the run of the house他有房子的奔跑</td>
+      <td></td>
+      <td></td>
+      <td>[liberty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fun</th>
+      <td>un</td>
+      <td>5.35</td>
+      <td>nou</td>
+      <td>fən</td>
+      <td>['merriment', 'playfulness']</td>
+      <td></td>
+      <td>activities that are enjoyable or amusing愉快或有趣的活动</td>
+      <td>I do it for the fun of it我这样做是为了它的乐趣he is fun to have around他很有趣</td>
+      <td>[funny]</td>
+      <td></td>
+      <td>[diversion, recreation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fun</th>
+      <td>un</td>
+      <td>5.35</td>
+      <td>nou</td>
+      <td>fən</td>
+      <td>['playfulness']</td>
+      <td></td>
+      <td>a disposition to find (or make) causes for amusement寻找（或制造）娱乐的原因</td>
+      <td>he was fun to be with他很有趣</td>
+      <td></td>
+      <td></td>
+      <td>[frivolity, frivolousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fun</th>
+      <td>un</td>
+      <td>5.35</td>
+      <td>nou</td>
+      <td>fən</td>
+      <td>['play', 'sport']</td>
+      <td></td>
+      <td>verbal wit or mockery (often at another's expense but not to be taken seriously)口头的机智或嘲弄（通常由另一个人承担费用但不被认真对待）</td>
+      <td>he became a figure of fun他成了一个有趣的人物</td>
+      <td></td>
+      <td></td>
+      <td>[humor, witticism, humour, wit, wittiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fun</th>
+      <td>un</td>
+      <td>5.35</td>
+      <td>nou</td>
+      <td>fən</td>
+      <td></td>
+      <td></td>
+      <td>violent and excited activity暴力和兴奋的活动</td>
+      <td>she asked for money and then the fun began她要钱，然后开始有趣</td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>ɡən</td>
+      <td>, alos:['gun down']</td>
+      <td></td>
+      <td>shoot with a gun用枪射击</td>
+      <td></td>
+      <td>[gunner]</td>
+      <td></td>
+      <td>[blast, shoot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>ɡən</td>
+      <td>['grease gun']</td>
+      <td></td>
+      <td>a hand-operated pump that resembles a pistol; forces grease into parts of a machine一个类似手枪的手动泵;将油脂压入机器的部件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>ɡən</td>
+      <td>['artillery', 'heavy weapon', 'ordnance']</td>
+      <td></td>
+      <td>large but transportable armament大而可移动的武器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[armament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>ɡən</td>
+      <td>['gunman']</td>
+      <td></td>
+      <td>a person who shoots a gun (as regards their ability)射枪的人（关于他们的能力）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shot, shooter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>ɡən</td>
+      <td>['accelerator', 'accelerator pedal', 'gas', 'gas pedal', 'throttle']</td>
+      <td></td>
+      <td>a pedal that controls the throttle valve一个控制节流阀的踏板</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[treadle, foot lever, foot pedal, pedal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>ɡən</td>
+      <td>['gun for hire', 'gunman', 'gunslinger', 'hired gun', 'hit man', 'hitman', 'shooter', 'torpedo', 'triggerman']</td>
+      <td></td>
+      <td>a professional killer who uses a gun使用枪的专业杀手</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[liquidator, manslayer, murderer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>ɡən</td>
+      <td></td>
+      <td></td>
+      <td>a weapon that discharges a missile at high velocity (especially from a metal tube or barrel)高速射击导弹的武器（特别是从金属管或枪管中射出）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weapon, arm, weapon system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gun</th>
+      <td>un</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>ɡən</td>
+      <td></td>
+      <td></td>
+      <td>the discharge of a firearm as signal or as a salute in military ceremonies在军事仪式中发射枪支作为信号或致敬</td>
+      <td>two runners started before the gun两名选手在枪前开始a twenty gun salute二十枪致敬</td>
+      <td></td>
+      <td></td>
+      <td>[discharge, firing off, firing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sun</th>
+      <td>un</td>
+      <td>5.02</td>
+      <td>ver</td>
+      <td>sən</td>
+      <td>['sunbathe']</td>
+      <td></td>
+      <td>expose one's body to the sun将一个人的身体暴露在阳光下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sun</th>
+      <td>un</td>
+      <td>5.02</td>
+      <td>ver</td>
+      <td>sən</td>
+      <td>['insolate', 'solarise', 'solarize']</td>
+      <td></td>
+      <td>expose to the rays of the sun or affect by exposure to the sun暴露在阳光下或暴露在阳光下</td>
+      <td>These herbs suffer when sunned这些草药在晒黑时会受到影响</td>
+      <td></td>
+      <td></td>
+      <td>[expose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sun</th>
+      <td>un</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>sən</td>
+      <td>['dominicus', "lord's day", 'sunday']</td>
+      <td></td>
+      <td>first day of the week; observed as a day of rest and worship by most Christians一周的第一天;被观察为大多数基督徒休息和敬拜的日子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[day of rest, rest day]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sun</th>
+      <td>un</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>sən</td>
+      <td>['sunlight', 'sunshine']</td>
+      <td></td>
+      <td>the rays of the sun太阳的光芒</td>
+      <td>the shingles were weathered by the sun and wind带状疱疹受到阳光和风的影响</td>
+      <td></td>
+      <td></td>
+      <td>[light, visible radiation, visible light]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sun</th>
+      <td>un</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>sən</td>
+      <td></td>
+      <td></td>
+      <td>any star around which a planetary system revolves行星系统围绕其旋转的任何恒星</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[star]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sun</th>
+      <td>un</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>sən</td>
+      <td></td>
+      <td></td>
+      <td>a person considered as a source of warmth or energy or glory etc被认为是温暖，能量或荣耀等的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[personage, important person, influential person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sun</th>
+      <td>un</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>sən</td>
+      <td></td>
+      <td></td>
+      <td>the star that is the source of light and heat for the planets in the solar system这颗恒星是太阳系中行星的光和热源</td>
+      <td>the sun contains 99.85% of the mass in the solar system太阳包含太阳系中99.85％的质量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nun</th>
+      <td>un</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>nun</td>
+      <td>['conical buoy', 'nun buoy']</td>
+      <td></td>
+      <td>a buoy resembling a cone一个类似锥形的浮标</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[buoy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nun</th>
+      <td>un</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>nun</td>
+      <td></td>
+      <td></td>
+      <td>a woman religious一个女人的宗教</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[religious]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nun</th>
+      <td>un</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>nun</td>
+      <td></td>
+      <td></td>
+      <td>the 14th letter of the Hebrew alphabet希伯来字母的第14个字母</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alphabetic character, letter, letter of the alphabet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bun</th>
+      <td>un</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>bən</td>
+      <td>['roll']</td>
+      <td></td>
+      <td>small rounded bread either plain or sweet小圆面包，无论是普通的还是甜的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bread, breadstuff, staff of life]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hun</th>
+      <td>un</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>hən</td>
+      <td>['boche', 'jerry', 'kraut', 'krauthead']</td>
+      <td></td>
+      <td>offensive term for a person of German descent德国血统的进攻性术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[german]</td>
+      <td>[cant, depreciation, derogation, disparagement, jargon, lingo, vernacular, argot, patois, slang]</td>
+    </tr>
+    <tr>
+      <th>hun</th>
+      <td>un</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>hən</td>
+      <td></td>
+      <td></td>
+      <td>a member of a nomadic people who invaded Europe in the 4th century他是4世纪入侵欧洲的游牧民族的一员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nomad]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pun</th>
+      <td>un</td>
+      <td>3.20</td>
+      <td>ver</td>
+      <td>pən</td>
+      <td></td>
+      <td></td>
+      <td>make a play on words在文字上发挥作用</td>
+      <td>Japanese like to pun--their language is well suited to punning日本人喜欢双关语 - 他们的语言很适合打双关语</td>
+      <td>[punning]</td>
+      <td></td>
+      <td>[jest, joke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pun</th>
+      <td>un</td>
+      <td>3.20</td>
+      <td>nou</td>
+      <td>pən</td>
+      <td>['paronomasia', 'punning', 'wordplay']</td>
+      <td></td>
+      <td>a humorous play on words一个幽默的文字游戏</td>
+      <td>I do it for the pun of it我这样做是为了它的双关语his constant punning irritated her他不断的抨击激怒了她</td>
+      <td>[punster]</td>
+      <td></td>
+      <td>[fun, play, sport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dun</th>
+      <td>un</td>
+      <td>2.91</td>
+      <td>ver</td>
+      <td>dən</td>
+      <td>['bedevil', 'crucify', 'frustrate', 'rag', 'torment']</td>
+      <td></td>
+      <td>treat cruelly残忍地对待</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[molest, chivy, beset, chevvy, plague, provoke, chevy, harass, harry, chivvy, hassle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dun</th>
+      <td>un</td>
+      <td>2.91</td>
+      <td>ver</td>
+      <td>dən</td>
+      <td></td>
+      <td></td>
+      <td>cure by salting通过腌制来治愈</td>
+      <td>dun codfish鳕鱼</td>
+      <td></td>
+      <td></td>
+      <td>[cure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dun</th>
+      <td>un</td>
+      <td>2.91</td>
+      <td>ver</td>
+      <td>dən</td>
+      <td></td>
+      <td></td>
+      <td>make a dun color做一个颜色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[darken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dun</th>
+      <td>un</td>
+      <td>2.91</td>
+      <td>ver</td>
+      <td>dən</td>
+      <td></td>
+      <td></td>
+      <td>persistently ask for overdue payment坚持要求逾期付款</td>
+      <td>The grocer dunned his customers every day by telephone杂货商每天都打电话给他的顾客</td>
+      <td></td>
+      <td></td>
+      <td>[demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dun</th>
+      <td>un</td>
+      <td>2.91</td>
+      <td>nou</td>
+      <td>dən</td>
+      <td>['fawn', 'grayish brown', 'greyish brown']</td>
+      <td></td>
+      <td>a color or pigment varying around a light grey-brown color浅灰褐色的颜色或颜料</td>
+      <td>she wore dun她穿着敦</td>
+      <td></td>
+      <td></td>
+      <td>[light brown]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dun</th>
+      <td>un</td>
+      <td>2.91</td>
+      <td>nou</td>
+      <td>dən</td>
+      <td></td>
+      <td></td>
+      <td>horse of a dull brownish grey color暗褐色灰色的马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mount, saddle horse, riding horse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dun</th>
+      <td>un</td>
+      <td>2.91</td>
+      <td>adj</td>
+      <td>dən</td>
+      <td>, similarTo:['chromatic']</td>
+      <td></td>
+      <td>of a dull greyish brown to brownish grey color暗灰褐色至棕灰色</td>
+      <td>the dun and dreary prairie笨蛋和沉闷的草原</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tun</th>
+      <td>un</td>
+      <td>2.73</td>
+      <td>nou</td>
+      <td>tən</td>
+      <td></td>
+      <td></td>
+      <td>a large cask especially one holding a volume equivalent to 2 butts or 252 gals一个大桶，特别是一个容量相当于2个烟头或252个加仑的桶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[barrel, cask]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

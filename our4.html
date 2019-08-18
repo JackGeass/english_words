@@ -1,0 +1,575 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['four', 'hour', 'tour', 'pour', 'sour', 'lour', 'dour']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>four</th>
+      <td>our</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>foʊr</td>
+      <td>['four-spot']</td>
+      <td></td>
+      <td>a playing card or domino or die whose upward face shows four pips扑克牌或多米诺骨牌或骰子，其上面显示四个点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[domino, die, dice, spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>four</th>
+      <td>our</td>
+      <td>5.37</td>
+      <td>nou</td>
+      <td>foʊr</td>
+      <td>['4', 'foursome', 'iv', 'little joe', 'quadruplet', 'quartet', 'quatern', 'quaternary', 'quaternion', 'quaternity', 'tetrad']</td>
+      <td></td>
+      <td>the cardinal number that is the sum of three and one基数是三和一的总和</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[figure, digit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>four</th>
+      <td>our</td>
+      <td>5.37</td>
+      <td>adj</td>
+      <td>foʊr</td>
+      <td>['4', 'iv'], similarTo:['cardinal']</td>
+      <td></td>
+      <td>being one more than three超过三个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hour</th>
+      <td>our</td>
+      <td>5.19</td>
+      <td>nou</td>
+      <td>aʊr</td>
+      <td>['time of day']</td>
+      <td></td>
+      <td>clock time时钟时间</td>
+      <td>the hour is getting late时间已经很晚了</td>
+      <td>[horary]</td>
+      <td></td>
+      <td>[time, clock time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hour</th>
+      <td>our</td>
+      <td>5.19</td>
+      <td>nou</td>
+      <td>aʊr</td>
+      <td>['minute']</td>
+      <td></td>
+      <td>distance measured by the time taken to cover it距离所测量的距离</td>
+      <td>we live an hour from the airport我们住一个小时从机场</td>
+      <td></td>
+      <td></td>
+      <td>[distance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hour</th>
+      <td>our</td>
+      <td>5.19</td>
+      <td>nou</td>
+      <td>aʊr</td>
+      <td>['60 minutes', 'hr']</td>
+      <td></td>
+      <td>a period of time equal to 1/24th of a day一段时间等于一天的1/24</td>
+      <td>the job will take more than an hour这份工作需要一个多小时</td>
+      <td>[horary, hourly]</td>
+      <td></td>
+      <td>[unit of time, time unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hour</th>
+      <td>our</td>
+      <td>5.19</td>
+      <td>nou</td>
+      <td>aʊr</td>
+      <td></td>
+      <td></td>
+      <td>a special and memorable period一个特别而难忘的时期</td>
+      <td>it was their finest hour这是他们最好的时刻</td>
+      <td></td>
+      <td></td>
+      <td>[period of time, period, time period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tour</th>
+      <td>our</td>
+      <td>4.49</td>
+      <td>ver</td>
+      <td>tʊr</td>
+      <td></td>
+      <td></td>
+      <td>make a tour of a certain place游览某个地方</td>
+      <td>We toured the Provence this summer我们今年夏天参观了普罗旺斯</td>
+      <td>[tourer, tourist]</td>
+      <td></td>
+      <td>[journey, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tour</th>
+      <td>our</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>tʊr</td>
+      <td>['duty tour', 'enlistment', 'hitch', 'term of enlistment', 'tour of duty']</td>
+      <td></td>
+      <td>a period of time spent in military service在军队服役的一段时间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[time period, period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tour</th>
+      <td>our</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>tʊr</td>
+      <td>['circuit']</td>
+      <td></td>
+      <td>a journey or route all the way around a particular place or area在特定地点或区域周围的旅程或路线</td>
+      <td>they took an extended tour of Europe他们进行了欧洲之旅</td>
+      <td>[tourist]</td>
+      <td></td>
+      <td>[journey, journeying]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tour</th>
+      <td>our</td>
+      <td>4.49</td>
+      <td>nou</td>
+      <td>tʊr</td>
+      <td>['go', 'spell', 'turn']</td>
+      <td></td>
+      <td>a time period for working (after which you will be relieved by someone else)工作的时间段（之后你会被其他人解除）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[duty period, shift, work shift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pour</th>
+      <td>our</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>poʊr</td>
+      <td>['decant', 'pour out']</td>
+      <td></td>
+      <td>pour out倒出来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pour</th>
+      <td>our</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>poʊr</td>
+      <td>['pelt', 'rain buckets', 'rain cats and dogs', 'stream']</td>
+      <td></td>
+      <td>rain heavily下大雨</td>
+      <td>Put on your rain coat-- it's pouring outside!穿上你的雨衣 - 它在外面倾泻而出！</td>
+      <td></td>
+      <td></td>
+      <td>[rain down, rain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pour</th>
+      <td>our</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>poʊr</td>
+      <td>['pullulate', 'stream', 'swarm', 'teem']</td>
+      <td></td>
+      <td>move in large numbers大量移动</td>
+      <td>people were pouring out of the theater人们涌出剧院</td>
+      <td></td>
+      <td></td>
+      <td>[crowd together, crowd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pour</th>
+      <td>our</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>poʊr</td>
+      <td>, alos:['pour down']</td>
+      <td></td>
+      <td>cause to run导致运行</td>
+      <td>pour water over the floor把水倒在地板上</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pour</th>
+      <td>our</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>poʊr</td>
+      <td></td>
+      <td></td>
+      <td>flow in a spurt流淌着</td>
+      <td>Water poured all over the floor水倒在地板上</td>
+      <td></td>
+      <td></td>
+      <td>[feed, course, flow, run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pour</th>
+      <td>our</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>poʊr</td>
+      <td></td>
+      <td></td>
+      <td>supply in large amounts or quantities供应量大或数量多</td>
+      <td>We poured money into the education of our children我们把钱投入到孩子的教育中</td>
+      <td></td>
+      <td></td>
+      <td>[provide, furnish, supply, render]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>saʊr</td>
+      <td>['ferment', 'turn', 'work']</td>
+      <td></td>
+      <td>go sour or spoil变酸或变质</td>
+      <td>The milk has soured牛奶已经变质了</td>
+      <td>[souring]</td>
+      <td>[work, ferment]</td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>saʊr</td>
+      <td>['acetify', 'acidify', 'acidulate']</td>
+      <td>[sweeten]</td>
+      <td>make sour or more sour酸或更酸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change taste]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>saʊr</td>
+      <td>['acidity', 'sourness']</td>
+      <td></td>
+      <td>the property of being acidic属于酸性的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[taste property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>saʊr</td>
+      <td>['sourness', 'tartness']</td>
+      <td></td>
+      <td>the taste experience when vinegar or lemon juice is taken into the mouth将醋或柠檬汁放入口中时的味觉体验</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[taste sensation, gustatory sensation, gustatory perception, taste perception, taste]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>saʊr</td>
+      <td></td>
+      <td></td>
+      <td>a cocktail made of a liquor (especially whiskey or gin) mixed with lemon or lime juice and sugar鸡尾酒（特别是威士忌或杜松子酒）与柠檬汁或酸橙汁和糖混合制成的鸡尾酒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cocktail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>adj</td>
+      <td>saʊr</td>
+      <td>['false', 'off-key'], similarTo:['unharmonious', 'inharmonious']</td>
+      <td></td>
+      <td>inaccurate in pitch音高不准确</td>
+      <td>a false (or sour) note假的（或酸的）音符</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>adj</td>
+      <td>saʊr</td>
+      <td>['rancid'], similarTo:['stinky', 'ill-smelling', 'unpleasant-smelling', 'malodorous', 'malodourous']</td>
+      <td></td>
+      <td>smelling of fermentation or staleness闻起来发酵或陈旧</td>
+      <td></td>
+      <td>[sourness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>adj</td>
+      <td>saʊr</td>
+      <td>['dark', 'dour', 'glowering', 'glum', 'moody', 'morose', 'saturnine', 'sullen'], similarTo:['ill-natured']</td>
+      <td></td>
+      <td>showing a brooding ill humor显示沉思的幽默</td>
+      <td>a sour temper脾气暴躁</td>
+      <td>[sourness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>adj</td>
+      <td>saʊr</td>
+      <td>['off', 'turned'], similarTo:['soured']</td>
+      <td></td>
+      <td>in an unpalatable state在一个令人不快的状态</td>
+      <td>sour milk酸牛奶</td>
+      <td>[sourness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>adj</td>
+      <td>saʊr</td>
+      <td>, similarTo:['vinegary', 'acerb', 'acerbic', 'acetose', 'acetous', 'acid', 'acidic', 'acidulent', 'acidulous', 'astringent', 'lemonlike', 'lemony', 'sourish', 'subacid', 'tangy', 'tart', 'vinegarish'], alos:['tasty', 'soured', 'dry']</td>
+      <td>[sweet]</td>
+      <td>having a sharp biting taste有尖锐的口感</td>
+      <td></td>
+      <td>[sourness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sour</th>
+      <td>our</td>
+      <td>3.81</td>
+      <td>adj</td>
+      <td>saʊr</td>
+      <td>, similarTo:['tasty']</td>
+      <td></td>
+      <td>one of the four basic taste sensations; like the taste of vinegar or lemons四种基本味觉之一;喜欢醋或柠檬的味道</td>
+      <td></td>
+      <td>[sourness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lour</th>
+      <td>our</td>
+      <td>2.31</td>
+      <td>ver</td>
+      <td>laʊr</td>
+      <td>['lower']</td>
+      <td></td>
+      <td>set lower设置得更低</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[devalue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lour</th>
+      <td>our</td>
+      <td>2.31</td>
+      <td>ver</td>
+      <td>laʊr</td>
+      <td>['frown', 'glower', 'lower']</td>
+      <td></td>
+      <td>look angry or sullen, wrinkle one's forehead, as if to signal disapproval看起来生气或闷闷不乐，皱起一个额头，仿佛暗示不赞成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[make a face, pull a face, grimace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lour</th>
+      <td>our</td>
+      <td>2.31</td>
+      <td>ver</td>
+      <td>laʊr</td>
+      <td>['lower', 'turn down']</td>
+      <td></td>
+      <td>make lower or quieter降低或更安静</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[decrease, lessen, minify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dour</th>
+      <td>our</td>
+      <td>2.20</td>
+      <td>adj</td>
+      <td>dʊr</td>
+      <td>['forbidding', 'grim'], similarTo:['unpleasant']</td>
+      <td></td>
+      <td>harshly uninviting or formidable in manner or appearance在方式或外表上严厉不受欢迎或强大</td>
+      <td>a dour, self-sacrificing life一种自卑，自我牺牲的生活</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dour</th>
+      <td>our</td>
+      <td>2.20</td>
+      <td>adj</td>
+      <td>dʊr</td>
+      <td>['dogged', 'persistent', 'pertinacious', 'tenacious', 'unyielding'], similarTo:['obstinate', 'stubborn', 'unregenerate']</td>
+      <td></td>
+      <td>stubbornly unyielding固执地不屈不挠</td>
+      <td>dour determination沉闷的决心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dour</th>
+      <td>our</td>
+      <td>2.20</td>
+      <td>adj</td>
+      <td>dʊr</td>
+      <td>['dark', 'glowering', 'glum', 'moody', 'morose', 'saturnine', 'sour', 'sullen'], similarTo:['ill-natured']</td>
+      <td></td>
+      <td>showing a brooding ill humor显示沉思的幽默</td>
+      <td>the proverbially dour New England Puritan众所周知的新英格兰清教徒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

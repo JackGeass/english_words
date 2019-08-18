@@ -1,0 +1,1250 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['sick', 'pick', 'kick', 'dick', 'nick', 'rick', 'mick', 'lick', 'tick', 'hick', 'icky', 'wick']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>ver</td>
+      <td>sɪk</td>
+      <td>['barf', 'be sick', 'cast', 'cat', 'chuck', 'disgorge', 'honk', 'puke', 'purge', 'regorge', 'regurgitate', 'retch', 'spew', 'spue', 'throw up', 'upchuck', 'vomit', 'vomit up']</td>
+      <td></td>
+      <td>eject the contents of the stomach through the mouth通过口腔排出胃内容物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[excrete, pass, egest, eliminate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>nou</td>
+      <td>sɪk</td>
+      <td></td>
+      <td></td>
+      <td>people who are sick生病的人</td>
+      <td>they devote their lives to caring for the sick他们毕生致力于照顾病人</td>
+      <td></td>
+      <td></td>
+      <td>[people]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>adj</td>
+      <td>sɪk</td>
+      <td>['ill'], similarTo:['woozy', 'sick-abed', 'sickish', 'sickly', 'sneezy', 'spastic', 'stricken', 'swooning', 'tubercular', 'tuberculous', 'under the weather', 'unhealed', 'unwell', 'upset', 'vertiginous', 'afflicted', 'aguish', 'ailing', 'air sick', 'airsick', 'autistic', 'bedfast', 'bedrid', 'bedridden', 'bilious', 'bronchitic', 'carsick', 'consumptive', 'convalescent', 'delirious', 'diabetic', 'dizzy', 'dyspeptic', 'faint', 'feverish', 'feverous', 'funny', 'giddy', 'gouty', 'green', 'hallucinating', 'indisposed', 'laid low', 'laid up', 'light', 'light-headed', 'lightheaded', 'liverish', 'livery', 'milk-sick', 'nauseated', 'nauseous', 'palsied', 'paralytic', 'paralyzed', 'paraplegic', 'peaked', 'poorly', 'queasy', 'rachitic', 'recovering', 'rickety', 'scrofulous', 'seasick', 'seedy'], alos:['unfit', 'unhealthy']</td>
+      <td></td>
+      <td>affected by an impairment of normal physical or mental function受正常身体或精神功能损害的影响</td>
+      <td></td>
+      <td>[sickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>adj</td>
+      <td>sɪk</td>
+      <td>['brainsick', 'crazy', 'demented', 'disturbed', 'mad', 'unbalanced', 'unhinged'], similarTo:['insane']</td>
+      <td></td>
+      <td>affected with madness or insanity疯狂或精神错乱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>adj</td>
+      <td>sɪk</td>
+      <td>['disgusted', 'fed up', 'sick of', 'tired of'], similarTo:['displeased']</td>
+      <td></td>
+      <td>having a strong distaste from surfeit过度厌恶</td>
+      <td>sick of it all厌倦了这一切sick to death of flattery奉承生病gossip that makes one sick使一个人生病的八卦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>adj</td>
+      <td>sɪk</td>
+      <td>['pale', 'pallid', 'wan'], similarTo:['weak']</td>
+      <td></td>
+      <td>(of light) lacking in intensity or brightness; dim or feeble（光）缺乏强度或亮度;昏暗或虚弱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>adj</td>
+      <td>sɪk</td>
+      <td>['ghastly', 'grim', 'grisly', 'gruesome', 'macabre'], similarTo:['alarming']</td>
+      <td></td>
+      <td>shockingly repellent; inspiring horror令人震惊的驱蚊;鼓舞人心的恐怖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>adj</td>
+      <td>sɪk</td>
+      <td>['nauseated', 'nauseous', 'queasy', 'sickish'], similarTo:['ill']</td>
+      <td></td>
+      <td>feeling nausea; feeling about to vomit感到恶心;感觉要呕吐</td>
+      <td></td>
+      <td>[sickness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sick</th>
+      <td>ick</td>
+      <td>5.22</td>
+      <td>adj</td>
+      <td>sɪk</td>
+      <td>, similarTo:['affected', 'moved', 'touched', 'stirred']</td>
+      <td></td>
+      <td>deeply affected by a strong feeling深受强烈的感情影响</td>
+      <td>sat completely still, sick with envy完全静止，嫉妒she was sick with longing她怀有渴望</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['pluck', 'plunk']</td>
+      <td></td>
+      <td>pull lightly but sharply with a plucking motion用拔毛动作轻轻但尖锐地拉动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['foot']</td>
+      <td></td>
+      <td>pay for something买单</td>
+      <td>pick up the tab拿起标签pick up the burden of high-interest mortgages承担高息抵押贷款的负担</td>
+      <td></td>
+      <td></td>
+      <td>[pay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['cull', 'pluck'], alos:['pick over', 'pick off', 'pick up']</td>
+      <td></td>
+      <td>look for and gather寻找并聚集</td>
+      <td>pick mushrooms摘蘑菇pick flowers摘花</td>
+      <td>[picking, picker]</td>
+      <td></td>
+      <td>[collect, garner, gather, pull together]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['blame', 'find fault']</td>
+      <td></td>
+      <td>harass with constant criticism骚扰不断的批评</td>
+      <td>Don't always pick on your little brother不要总是挑选你的小弟弟</td>
+      <td></td>
+      <td></td>
+      <td>[pick apart, knock, criticize, criticise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['nibble', 'piece']</td>
+      <td></td>
+      <td>eat intermittently; take small bites of间歇性地吃;小咬一口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['clean']</td>
+      <td></td>
+      <td>remove unwanted substances from, such as feathers or pits去除不需要的物质，如羽毛或凹坑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remove, withdraw, take away, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['break up']</td>
+      <td></td>
+      <td>attack with or as if with a pickaxe of ice or rocky ground, for example例如，用冰或岩石地面的镐攻击或仿佛使用镐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pierce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td>['beak', 'peck']</td>
+      <td></td>
+      <td>hit lightly with a picking motion用拣选动作轻轻拍打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td></td>
+      <td></td>
+      <td>pilfer or rob偷窃或抢劫</td>
+      <td>pick pockets挑选口袋</td>
+      <td>[pickings]</td>
+      <td></td>
+      <td>[rob]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td></td>
+      <td></td>
+      <td>provoke惹</td>
+      <td>pick a fight or a quarrel选择一场战斗或争吵</td>
+      <td></td>
+      <td></td>
+      <td>[evoke, kick up, provoke, call forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td></td>
+      <td></td>
+      <td>remove in small bits删除一点点</td>
+      <td>pick meat from a bone从骨头里摘肉</td>
+      <td></td>
+      <td></td>
+      <td>[take, take away, withdraw, remove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>ver</td>
+      <td>pɪk</td>
+      <td></td>
+      <td></td>
+      <td>select carefully from a group从小组中仔细选择</td>
+      <td>She finally picked her successor她终于选了她的继任者He picked his way carefully他仔细地选择了他的路</td>
+      <td>[picker]</td>
+      <td></td>
+      <td>[take, pick out, select, choose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td>['picking']</td>
+      <td></td>
+      <td>the quantity of a crop that is harvested收获的作物数量</td>
+      <td>he sent the first picking of berries to the market他向市场发送了第一批浆果it was the biggest peach pick in years这是多年来最大的桃子选择</td>
+      <td></td>
+      <td></td>
+      <td>[output, production, yield]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td>['choice', 'selection']</td>
+      <td></td>
+      <td>the person or thing chosen or selected选择或选择的人或事物</td>
+      <td>he was my pick for mayor他是我市长的选择</td>
+      <td></td>
+      <td></td>
+      <td>[deciding, decision making]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td>['pickax', 'pickaxe']</td>
+      <td></td>
+      <td>a heavy iron tool with a wooden handle and a curved head that is pointed on both ends一个重型铁制工具，带有木制手柄和两端都有尖头的弯头</td>
+      <td>they used picks and sledges to break the rocks他们用镐和雪橇来打破岩石</td>
+      <td></td>
+      <td></td>
+      <td>[edge tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td>['choice', 'option', 'selection']</td>
+      <td></td>
+      <td>the act of choosing or selecting选择或选择的行为</td>
+      <td>you can take your pick你可以选择</td>
+      <td></td>
+      <td></td>
+      <td>[action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td>['cream']</td>
+      <td></td>
+      <td>the best people or things in a group团队中最好的人或事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[elite, elite group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td>['plectron', 'plectrum']</td>
+      <td></td>
+      <td>a small thin device (of metal or plastic or ivory) used to pluck a stringed instrument用于拔弦乐器的小型薄器件（金属或塑料或象牙）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td>['filling', 'weft', 'woof']</td>
+      <td></td>
+      <td>the yarn woven across the warp yarn in weaving纱线在编织过程中穿过经纱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thread, yarn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td></td>
+      <td></td>
+      <td>a basketball maneuver; obstructing an opponent with one's body篮球机动;用一个人的身体阻挡对手</td>
+      <td>he was called for setting an illegal pick他被要求设置非法选秀权</td>
+      <td></td>
+      <td></td>
+      <td>[basketball play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pick</th>
+      <td>ick</td>
+      <td>5.21</td>
+      <td>nou</td>
+      <td>pɪk</td>
+      <td></td>
+      <td></td>
+      <td>a thin sharp implement used for removing unwanted material用于去除不需要的材料的薄的锋利工具</td>
+      <td>he used a pick to clean the dirt out of the cracks他用一个镐来清理裂缝中的污垢</td>
+      <td></td>
+      <td></td>
+      <td>[hand tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td>['complain', 'kvetch', 'plain', 'quetch', 'sound off']</td>
+      <td></td>
+      <td>express complaints, discontent, displeasure, or unhappiness表达抱怨，不满，不满或不快乐</td>
+      <td>She has a lot to kick about她有很多事要做</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td>['give up']</td>
+      <td></td>
+      <td>stop consuming停止消费</td>
+      <td>kick a habit养一个习惯</td>
+      <td></td>
+      <td></td>
+      <td>[dispense with, relinquish, waive, forego, foreswear, forgo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td>['kick back', 'recoil']</td>
+      <td></td>
+      <td>spring back, as from a forceful thrust从强大的推力中回弹</td>
+      <td>The gun kicked back into my shoulder枪开回了我的肩膀</td>
+      <td></td>
+      <td></td>
+      <td>[spring, resile, bounce, reverberate, rebound, ricochet, recoil, take a hop, bound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td></td>
+      <td></td>
+      <td>drive or propel with the foot用脚开车或推进</td>
+      <td></td>
+      <td>[kicker, kicking]</td>
+      <td></td>
+      <td>[impel, propel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td></td>
+      <td></td>
+      <td>kick a leg up踢了一条腿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trip the light fantastic, trip the light fantastic toe, dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td></td>
+      <td></td>
+      <td>make a goal做一个目标</td>
+      <td>He kicked the extra point after touchdown他在达阵后踢出了额外的分数</td>
+      <td></td>
+      <td></td>
+      <td>[hit, tally, score, rack up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td>, alos:['kick in', 'kick down', 'kick up', 'kick out']</td>
+      <td></td>
+      <td>strike with the foot用脚罢工</td>
+      <td>The boy kicked the dog那个男孩踢了狗</td>
+      <td>[kicking]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>kɪk</td>
+      <td></td>
+      <td></td>
+      <td>thrash about or strike out with the feet用脚捶打或罢工</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kɪk</td>
+      <td>['boot', 'kicking']</td>
+      <td></td>
+      <td>the act of delivering a blow with the foot用脚打击的行为</td>
+      <td>he gave the ball a powerful kick他给了球一个强大的踢球the team's kicking was excellent球队的踢球很棒</td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kɪk</td>
+      <td>['beef', 'bitch', 'gripe', 'squawk']</td>
+      <td></td>
+      <td>informal terms for objecting反对的非正式术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[objection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kɪk</td>
+      <td>['recoil']</td>
+      <td></td>
+      <td>the backward jerk of a gun when it is fired当枪被射击时，枪的向后猛拉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[movement, motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kɪk</td>
+      <td>['kicking']</td>
+      <td></td>
+      <td>a rhythmic thrusting movement of the legs as in swimming or calisthenics在游泳或健美操中腿部的节奏性推动运动</td>
+      <td>the kick must be synchronized with the arm movements踢腿必须与手臂动作同步the swimmer's kicking left a wake behind him游泳运动员的踢球在他身后留下了一个尾迹</td>
+      <td></td>
+      <td></td>
+      <td>[motion, motility, movement, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kɪk</td>
+      <td>['bang', 'boot', 'charge', 'flush', 'rush', 'thrill']</td>
+      <td></td>
+      <td>the swift release of a store of affective force迅速释放一个情感力量的存储</td>
+      <td>he does it for kicks他是为了踢球而做的</td>
+      <td></td>
+      <td></td>
+      <td>[excitement, exhilaration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kick</th>
+      <td>ick</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>kɪk</td>
+      <td></td>
+      <td></td>
+      <td>the sudden stimulation provided by strong drink (or certain drugs)强烈饮料（或某些药物）提供的突然刺激</td>
+      <td>a sidecar is a smooth drink but it has a powerful kick边车是一种顺畅的饮料，但它有一个强大的踢</td>
+      <td></td>
+      <td></td>
+      <td>[stimulus, stimulant, stimulation, input]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dick</th>
+      <td>ick</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>dɪk</td>
+      <td>['gumshoe', 'hawkshaw']</td>
+      <td></td>
+      <td>someone who is a detective某人是侦探</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[investigator, tec, detective, police detective]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>dick</th>
+      <td>ick</td>
+      <td>4.79</td>
+      <td>nou</td>
+      <td>dɪk</td>
+      <td>['cock', 'pecker', 'prick', 'putz', 'shaft', 'tool']</td>
+      <td></td>
+      <td>obscene terms for penis阴茎的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[penis, phallus, member]</td>
+      <td>[vulgarism, dirty word, filth, obscenity, smut]</td>
+    </tr>
+    <tr>
+      <th>nick</th>
+      <td>ick</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>nɪk</td>
+      <td>['chip']</td>
+      <td></td>
+      <td>cut a nick into切入了一个缺口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nick</th>
+      <td>ick</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>nɪk</td>
+      <td>['snick']</td>
+      <td></td>
+      <td>cut slightly, with a razor用剃刀稍微削减一下</td>
+      <td>The barber's knife nicked his cheek理发师的刀划伤了他的脸颊</td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nick</th>
+      <td>ick</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>nɪk</td>
+      <td></td>
+      <td></td>
+      <td>divide or reset the tail muscles of分开或重置尾部肌肉</td>
+      <td>nick horses尼克马</td>
+      <td></td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nick</th>
+      <td>ick</td>
+      <td>4.69</td>
+      <td>ver</td>
+      <td>nɪk</td>
+      <td></td>
+      <td></td>
+      <td>mate successfully; of livestock交配成功;牲畜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[copulate, mate, pair, couple]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nick</th>
+      <td>ick</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>nɪk</td>
+      <td>['notch', 'snick']</td>
+      <td></td>
+      <td>a small cut小切</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cutting, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nick</th>
+      <td>ick</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>nɪk</td>
+      <td>['dent', 'ding', 'gouge']</td>
+      <td></td>
+      <td>an impression in a surface (as made by a blow)表面上的印象（由打击造成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mar, defect, blemish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nick</th>
+      <td>ick</td>
+      <td>4.69</td>
+      <td>nou</td>
+      <td>nɪk</td>
+      <td></td>
+      <td></td>
+      <td>(British slang) a prison（英国俚语）一个监狱</td>
+      <td>he's in the nick他在昵称</td>
+      <td></td>
+      <td></td>
+      <td>[prison, prison house]</td>
+      <td>[argot, cant, jargon, lingo, patois, slang, vernacular]</td>
+    </tr>
+    <tr>
+      <th>rick</th>
+      <td>ick</td>
+      <td>4.19</td>
+      <td>ver</td>
+      <td>rɪk</td>
+      <td>['sprain', 'turn', 'twist', 'wrench', 'wrick']</td>
+      <td></td>
+      <td>twist suddenly so as to sprain扭曲突然扭伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[injure, wound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rick</th>
+      <td>ick</td>
+      <td>4.19</td>
+      <td>ver</td>
+      <td>rɪk</td>
+      <td></td>
+      <td></td>
+      <td>pile in ricks在里克斯堆</td>
+      <td>rick hay瑞克干草</td>
+      <td></td>
+      <td></td>
+      <td>[heap, stack, pile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rick</th>
+      <td>ick</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>rɪk</td>
+      <td>['crick', 'kink', 'wrick']</td>
+      <td></td>
+      <td>a painful muscle spasm especially in the neck or back (`rick' and `wrick' are British)疼痛的肌肉痉挛，尤其是颈部或背部（“瑞克”和“瑞克”是英国人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spasm, cramp, muscle spasm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rick</th>
+      <td>ick</td>
+      <td>4.19</td>
+      <td>nou</td>
+      <td>rɪk</td>
+      <td>['hayrick', 'haystack']</td>
+      <td></td>
+      <td>a stack of hay一堆干草</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mick</th>
+      <td>ick</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>mɪk</td>
+      <td>['mickey', 'paddy']</td>
+      <td></td>
+      <td>(ethnic slur) offensive term for a person of Irish descent（种族诽谤）一个爱尔兰血统的人的进攻性术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[irishman]</td>
+      <td>[depreciation, derogation, disparagement, ethnic slur]</td>
+    </tr>
+    <tr>
+      <th>lick</th>
+      <td>ick</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>lɪk</td>
+      <td>['lap', 'lap up']</td>
+      <td></td>
+      <td>take up with the tongue接受舌头</td>
+      <td>the cub licked the milk from its mother's breast小熊从母亲的乳房里舔掉了牛奶</td>
+      <td></td>
+      <td></td>
+      <td>[imbibe, drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lick</th>
+      <td>ick</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>lɪk</td>
+      <td>['lap']</td>
+      <td></td>
+      <td>pass the tongue over把舌头翻过来</td>
+      <td>the dog licked her hand那只狗舔了舔她的手</td>
+      <td></td>
+      <td></td>
+      <td>[stroke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lick</th>
+      <td>ick</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>lɪk</td>
+      <td>['figure out', 'puzzle out', 'solve', 'work', 'work out']</td>
+      <td></td>
+      <td>find the solution to (a problem or question) or understand the meaning of找到（问题或问题）的解决方案或理解其中的含义</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[understand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lick</th>
+      <td>ick</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>lɪk</td>
+      <td>['bat', 'clobber', 'cream', 'drub', 'thrash']</td>
+      <td></td>
+      <td>beat thoroughly and conclusively in a competition or fight在比赛或战斗中彻底击败并彻底击败</td>
+      <td>We licked the other team on Sunday!星期天我们舔了另一支队伍！</td>
+      <td></td>
+      <td>[thrash, flail, lam, thresh]</td>
+      <td>[trounce, shell, beat, crush, beat out, vanquish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lick</th>
+      <td>ick</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>lɪk</td>
+      <td>['lap']</td>
+      <td></td>
+      <td>touching with the tongue用舌头接触</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touching, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lick</th>
+      <td>ick</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>lɪk</td>
+      <td>['biff', 'clout', 'poke', 'punch', 'slug']</td>
+      <td></td>
+      <td>(boxing) a blow with the fist（拳击）用拳头打击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lick</th>
+      <td>ick</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>lɪk</td>
+      <td>['salt lick']</td>
+      <td></td>
+      <td>a salt deposit that animals regularly lick动物经常舔的盐沉积物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sediment, deposit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>tɪk</td>
+      <td>['beat', 'ticktack', 'ticktock']</td>
+      <td></td>
+      <td>make a sound like a clock or a timer发出类似时钟或计时器的声音</td>
+      <td>the clocks were ticking时钟在滴答作响</td>
+      <td>[ticker, ticking]</td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>tɪk</td>
+      <td>['retick']</td>
+      <td></td>
+      <td>sew缝</td>
+      <td>tick a mattress打一个床垫</td>
+      <td>[ticking]</td>
+      <td></td>
+      <td>[run up, sew together, stitch, sew]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>tɪk</td>
+      <td>['click']</td>
+      <td></td>
+      <td>make a clicking or ticking sound点击或滴答声</td>
+      <td>The clock ticked away时钟开始了</td>
+      <td>[ticking]</td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>tɪk</td>
+      <td>['check', 'check off', 'mark', 'mark off', 'tick off']</td>
+      <td></td>
+      <td>put a check mark on or near or next to在上面或附近或旁边打上复选标记</td>
+      <td>tick off the items勾选项目</td>
+      <td></td>
+      <td>[check over, check up on, control, ensure, check into, check, go over, insure, look into, ascertain, assure, suss out, check out, see, see to it]</td>
+      <td>[verify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>tɪk</td>
+      <td>['ticking']</td>
+      <td></td>
+      <td>a metallic tapping sound金属敲击声</td>
+      <td>he counted the ticks of the clock他计算了时钟的滴答声</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>tɪk</td>
+      <td>['check', 'check mark']</td>
+      <td></td>
+      <td>a mark indicating that something has been noted or completed etc.表示已注明或已完成某事的标记等。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>tɪk</td>
+      <td></td>
+      <td></td>
+      <td>a light mattress轻便的床垫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mattress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tick</th>
+      <td>ick</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>tɪk</td>
+      <td></td>
+      <td></td>
+      <td>any of two families of small parasitic arachnids with barbed proboscis; feed on blood of warm-blooded animals带刺倒刺的两种小型寄生蛛形纲动物中的任何一种;以温血动物的血为食</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acarine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hick</th>
+      <td>ick</td>
+      <td>3.36</td>
+      <td>nou</td>
+      <td>hɪk</td>
+      <td>['bumpkin', 'chawbacon', 'hayseed', 'rube', 'yahoo', 'yokel']</td>
+      <td></td>
+      <td>a person who is not very intelligent or interested in culture一个不太聪明或对文化感兴趣的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rustic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hick</th>
+      <td>ick</td>
+      <td>3.36</td>
+      <td>adj</td>
+      <td>hɪk</td>
+      <td>['bumpkinly', 'rustic', 'unsophisticated'], similarTo:['provincial']</td>
+      <td></td>
+      <td>awkwardly simple and provincial笨笨而省</td>
+      <td>a hick town一个希克镇</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>icky</th>
+      <td>ick</td>
+      <td>3.02</td>
+      <td>adj</td>
+      <td>'ɪki</td>
+      <td>['gooey'], similarTo:['adhesive']</td>
+      <td></td>
+      <td>soft and sticky柔软而有粘性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>icky</th>
+      <td>ick</td>
+      <td>3.02</td>
+      <td>adj</td>
+      <td>'ɪki</td>
+      <td>['crappy', 'lousy', 'rotten', 'shitty', 'stinking', 'stinky'], similarTo:['bad']</td>
+      <td></td>
+      <td>very bad很坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wick</th>
+      <td>ick</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>wɪk</td>
+      <td>['taper']</td>
+      <td></td>
+      <td>a loosely woven cord (in a candle or oil lamp) that draws fuel by capillary action up into the flame松散编织的绳索（在蜡烛或油灯中），通过毛细管作用将燃料吸入火焰中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cord]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wick</th>
+      <td>ick</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>wɪk</td>
+      <td></td>
+      <td></td>
+      <td>any piece of cord that conveys liquid by capillary action任何通过毛细管作用输送液体的绳索</td>
+      <td>the physician put a wick in the wound to drain it医生在伤口处放了一根芯子以排干它</td>
+      <td></td>
+      <td></td>
+      <td>[cord]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

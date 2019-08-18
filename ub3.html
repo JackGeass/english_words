@@ -1,0 +1,440 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['rub', 'sub', 'pub', 'tub', 'dub', 'cub', 'hub', 'nub']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>rub</th>
+      <td>ub</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>rəb</td>
+      <td>['chafe', 'fray', 'fret', 'scratch']</td>
+      <td></td>
+      <td>cause friction导致摩擦</td>
+      <td></td>
+      <td>[rubbing]</td>
+      <td></td>
+      <td>[adjoin, contact, touch, meet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rub</th>
+      <td>ub</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>rəb</td>
+      <td>['itch', 'scratch']</td>
+      <td></td>
+      <td>scrape or rub as if to relieve itching刮擦或摩擦，好像是为了缓解瘙痒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[irritate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rub</th>
+      <td>ub</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>rəb</td>
+      <td>, alos:['rub out', 'rub down', 'rub off']</td>
+      <td></td>
+      <td>move over something with pressure在压力下移动一些东西</td>
+      <td>rub my hands擦我的手rub oil into her skin擦油到她的皮肤</td>
+      <td>[rubbing]</td>
+      <td></td>
+      <td>[pass, run, guide, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rub</th>
+      <td>ub</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>rəb</td>
+      <td>['hang-up', 'hitch', 'snag']</td>
+      <td></td>
+      <td>an unforeseen obstacle一个无法预料的障碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obstruction, obstacle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rub</th>
+      <td>ub</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>rəb</td>
+      <td>['wipe']</td>
+      <td></td>
+      <td>the act of rubbing or wiping摩擦或擦拭的行为</td>
+      <td>he gave the hood a quick rub他给引擎盖快速擦了一下</td>
+      <td></td>
+      <td></td>
+      <td>[contact, physical contact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sub</th>
+      <td>ub</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>səb</td>
+      <td>['fill in', 'stand in', 'substitute']</td>
+      <td></td>
+      <td>be a substitute是一个替代品</td>
+      <td>The young teacher had to substitute for the sick colleague年轻的老师不得不替换生病的同事The skim milk substitutes for cream--we are on a strict diet脱脂牛奶替代奶油 - 我们严格控制饮食</td>
+      <td>[subbing]</td>
+      <td></td>
+      <td>[change, exchange, interchange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sub</th>
+      <td>ub</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səb</td>
+      <td>['bomber', 'cuban sandwich', 'grinder', 'hero', 'hero sandwich', 'hoagie', 'hoagy', 'italian sandwich', 'poor boy', 'submarine', 'submarine sandwich', 'torpedo', 'wedge', 'zep']</td>
+      <td></td>
+      <td>a large sandwich made of a long crusty roll split lengthwise and filled with meats and cheese (and tomato and onion and lettuce and condiments); different names are used in different sections of the United States一个由长硬皮卷纵向分开的大三明治，里面装满肉类和奶酪（以及番茄，洋葱，生菜和调味品）;在美国的不同部分使用不同的名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sandwich]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sub</th>
+      <td>ub</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>səb</td>
+      <td>['pigboat', 'submarine', 'u-boat']</td>
+      <td></td>
+      <td>a submersible warship usually armed with torpedoes一艘通常装有鱼雷的潜水战舰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[submersible, submersible warship]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pub</th>
+      <td>ub</td>
+      <td>3.99</td>
+      <td>nou</td>
+      <td>pəb</td>
+      <td>['gin mill', 'pothouse', 'public house', 'saloon', 'taphouse']</td>
+      <td></td>
+      <td>tavern consisting of a building with a bar and public rooms; often provides light meals小酒馆由一座带酒吧和公共房间的建筑组成;经常提供便餐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tavern, tap house]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tub</th>
+      <td>ub</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>təb</td>
+      <td>['bathing tub', 'bathtub']</td>
+      <td></td>
+      <td>a relatively large open container that you fill with water and use to wash the body一个相对较大的开放式容器，用水填充并用于清洗身体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tub</th>
+      <td>ub</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>təb</td>
+      <td>['tubful']</td>
+      <td></td>
+      <td>the amount that a tub will hold浴缸容纳的数量</td>
+      <td>a tub of water一盆水</td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tub</th>
+      <td>ub</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>təb</td>
+      <td>['vat']</td>
+      <td></td>
+      <td>a large open vessel for holding or storing liquids用于盛放或储存液体的大型开口容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dub</th>
+      <td>ub</td>
+      <td>3.73</td>
+      <td>ver</td>
+      <td>dəb</td>
+      <td>['nickname']</td>
+      <td></td>
+      <td>give a nickname to给一个昵称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[know as, name, be known as, call]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dub</th>
+      <td>ub</td>
+      <td>3.73</td>
+      <td>ver</td>
+      <td>dəb</td>
+      <td>['knight']</td>
+      <td></td>
+      <td>raise (someone) to knighthood提升（某人）骑士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[entitle, gentle, ennoble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dub</th>
+      <td>ub</td>
+      <td>3.73</td>
+      <td>ver</td>
+      <td>dəb</td>
+      <td></td>
+      <td></td>
+      <td>provide (movies) with a soundtrack of a foreign language提供（电影）外语的配乐</td>
+      <td></td>
+      <td>[dubbing]</td>
+      <td></td>
+      <td>[synchronize, synchronise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dub</th>
+      <td>ub</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>dəb</td>
+      <td></td>
+      <td></td>
+      <td>the new sounds added by dubbing配音增加了新的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[auditory sensation, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cub</th>
+      <td>ub</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>kəb</td>
+      <td></td>
+      <td></td>
+      <td>give birth to cubs生小熊</td>
+      <td>bears cub every year每年都有小熊</td>
+      <td></td>
+      <td></td>
+      <td>[have, bear, birth, deliver, give birth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cub</th>
+      <td>ub</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>kəb</td>
+      <td>['lad', 'laddie', 'sonny', 'sonny boy']</td>
+      <td></td>
+      <td>a male child (a familiar term of address to a boy)一个男孩（一个男孩熟悉的术语）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[male child, boy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cub</th>
+      <td>ub</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>kəb</td>
+      <td>['greenhorn', 'rookie']</td>
+      <td></td>
+      <td>an awkward and inexperienced youth一个尴尬而缺乏经验的年轻人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tiro, tyro, novice, initiate, beginner]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cub</th>
+      <td>ub</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>kəb</td>
+      <td>['young carnivore']</td>
+      <td></td>
+      <td>the young of certain carnivorous mammals such as the bear or wolf or lion年幼的某些食肉哺乳动物，如熊，狼或狮子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[young mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hub</th>
+      <td>ub</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>həb</td>
+      <td></td>
+      <td></td>
+      <td>a center of activity or interest or commerce or transportation; a focal point around which events revolve活动中心或兴趣或商业或交通;事件围绕着它的焦点</td>
+      <td>the playground is the hub of parental supervision操场是父母监督的中心the airport is the economic hub of the area机场是该地区的经济中心</td>
+      <td></td>
+      <td></td>
+      <td>[heart, center, eye, centre, middle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hub</th>
+      <td>ub</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>həb</td>
+      <td></td>
+      <td></td>
+      <td>the central part of a car wheel (or fan or propeller etc) through which the shaft or axle passes轴或轴穿过的车轮（或风扇或螺旋桨等）的中心部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[portion, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nub</th>
+      <td>ub</td>
+      <td>2.45</td>
+      <td>nou</td>
+      <td>nəb</td>
+      <td>['nubble']</td>
+      <td></td>
+      <td>a small lump or protuberance一个小块或突起</td>
+      <td></td>
+      <td>[nubby]</td>
+      <td></td>
+      <td>[swelling, bulge, bump, excrescence, extrusion, gibbosity, gibbousness, hump, jut, prominence, protrusion, protuberance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nub</th>
+      <td>ub</td>
+      <td>2.45</td>
+      <td>nou</td>
+      <td>nəb</td>
+      <td>['center', 'centre', 'core', 'essence', 'gist', 'heart', 'heart and soul', 'inwardness', 'kernel', 'marrow', 'meat', 'nitty-gritty', 'pith', 'substance', 'sum']</td>
+      <td></td>
+      <td>the choicest or most essential or most vital part of some idea or experience某些想法或经验中最挑选或最重要或最重要的部分</td>
+      <td>the nub of the story故事的核心</td>
+      <td></td>
+      <td></td>
+      <td>[mental object, cognitive content, content]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nub</th>
+      <td>ub</td>
+      <td>2.45</td>
+      <td>nou</td>
+      <td>nəb</td>
+      <td>['stub']</td>
+      <td></td>
+      <td>a small piece一小块</td>
+      <td>a nub of coal一团煤</td>
+      <td></td>
+      <td></td>
+      <td>[piece, part]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

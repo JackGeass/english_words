@@ -1,0 +1,1760 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['clock', 'knock', 'block', 'shock', 'stock', 'rocky', 'flock', 'cocky', 'crock', 'spock', 'frock', 'chock', 'smock']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>clock</th>
+      <td>ock</td>
+      <td>4.82</td>
+      <td>ver</td>
+      <td>klɑk</td>
+      <td>['time']</td>
+      <td></td>
+      <td>measure the time or duration of an event or action or the person who performs an action in a certain period of time衡量事件或行动的时间或持续时间或在特定时间段内执行行动的人</td>
+      <td>he clocked the runners他给跑步者打了一针</td>
+      <td>[clocking]</td>
+      <td></td>
+      <td>[quantify, measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clock</th>
+      <td>ock</td>
+      <td>4.82</td>
+      <td>nou</td>
+      <td>klɑk</td>
+      <td></td>
+      <td></td>
+      <td>a timepiece that shows the time of day一个显示一天中时间的时计</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[timepiece, timekeeper, horologe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>nɑk</td>
+      <td>['criticise', 'criticize', 'pick apart']</td>
+      <td></td>
+      <td>find fault with; express criticism of; point out real or perceived flaws发现错误;表达批评;指出真实或感知的缺陷</td>
+      <td>Don't knock the food--it's free不要敲食物 - 它是免费的</td>
+      <td></td>
+      <td></td>
+      <td>[notice, comment, point out, remark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>nɑk</td>
+      <td>['strike hard'], alos:['knock over', 'knock cold', 'knock out', 'knock down']</td>
+      <td></td>
+      <td>deliver a sharp blow or push发出猛烈的打击或推动</td>
+      <td>He knocked the glass clear across the room他把房间里的玻璃杯打得很清楚</td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>nɑk</td>
+      <td>['bump'], alos:['knock about', 'knock against']</td>
+      <td></td>
+      <td>knock against with force or violence用武力或暴力冲击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[impinge on, strike, run into, hit, collide with]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>nɑk</td>
+      <td>['pink', 'rap', 'tap']</td>
+      <td></td>
+      <td>make light, repeated taps on a surface在表面上轻轻重复点击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>nɑk</td>
+      <td>['ping', 'pink']</td>
+      <td></td>
+      <td>sound like a car engine that is firing too early听起来像汽车引擎过早发射</td>
+      <td></td>
+      <td>[knocking]</td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>nɑk</td>
+      <td></td>
+      <td></td>
+      <td>rap with the knuckles用指关节说唱</td>
+      <td>knock on the door敲门</td>
+      <td>[knocker, knocking]</td>
+      <td></td>
+      <td>[rap, knap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>nɑk</td>
+      <td>['bang', 'bash', 'belt', 'smash']</td>
+      <td></td>
+      <td>a vigorous blow一阵轰轰烈烈的打击</td>
+      <td>the sudden knock floored him突如其来的敲门声震惊了他</td>
+      <td></td>
+      <td></td>
+      <td>[bump, blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>nɑk</td>
+      <td>['belt', 'rap', 'whack', 'whang']</td>
+      <td></td>
+      <td>the act of hitting vigorously大力打击的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>nɑk</td>
+      <td>['knocking']</td>
+      <td></td>
+      <td>the sound of knocking (as on a door or in an engine or bearing)敲门声（如在门上或发动机或轴承中）</td>
+      <td>the knocking grew louder敲门声越来越大</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>nɑk</td>
+      <td>['roast']</td>
+      <td></td>
+      <td>negative criticism消极的批评</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[critique, criticism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knock</th>
+      <td>ock</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>nɑk</td>
+      <td></td>
+      <td></td>
+      <td>a bad experience糟糕的经历</td>
+      <td>the school of hard knocks学校的艰难</td>
+      <td></td>
+      <td></td>
+      <td>[misfortune, bad luck]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['freeze', 'immobilise', 'immobilize']</td>
+      <td>[unblock]</td>
+      <td>prohibit the conversion or use of (assets)禁止转换或使用（资产）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[keep back, withhold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['halt', 'kibosh', 'stop']</td>
+      <td></td>
+      <td>stop from happening or developing停止发生或发展</td>
+      <td></td>
+      <td>[blockage]</td>
+      <td></td>
+      <td>[forestall, forbid, foreclose, preclude, prevent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['blank out', 'draw a blank', 'forget']</td>
+      <td></td>
+      <td>be unable to remember无法记住</td>
+      <td>You are blocking the name of your first wife!你阻止了你的第一任妻子的名字！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['close up', 'impede', 'jam', 'obstruct', 'obturate', 'occlude']</td>
+      <td></td>
+      <td>block passage through阻止通过</td>
+      <td></td>
+      <td>[blocking]</td>
+      <td></td>
+      <td>[hinder, impede]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['bar', 'barricade', 'block off', 'block up', 'blockade', 'stop']</td>
+      <td></td>
+      <td>render unsuitable for passage渲染不适合通过</td>
+      <td>block the way挡路</td>
+      <td>[blocking, blockage]</td>
+      <td>[obstruct]</td>
+      <td>[close up, obturate, impede, occlude, obstruct, jam]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['obstruct']</td>
+      <td></td>
+      <td>shut out from view or get in the way so as to hide from sight从视线中被遮挡或挡住以避开视线</td>
+      <td>The thick curtain blocked the action on the stage厚厚的窗帘挡住了舞台上的动作</td>
+      <td>[blockage]</td>
+      <td>[barricade, blockade, stop, block off, block up, bar]</td>
+      <td>[hide, conceal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['jam']</td>
+      <td></td>
+      <td>interfere with or prevent the reception of signals干扰或阻止信号的接收</td>
+      <td>block the signals emitted by this station阻止该站发出的信号</td>
+      <td></td>
+      <td></td>
+      <td>[break up, interrupt, cut off, disrupt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['choke up', 'lug', 'stuff']</td>
+      <td></td>
+      <td>obstruct阻碍</td>
+      <td>Her arteries are blocked她的动脉受阻了</td>
+      <td>[blockage]</td>
+      <td></td>
+      <td>[clog up, clog, choke off, congest, foul, back up, choke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['deflect', 'parry']</td>
+      <td></td>
+      <td>impede the movement of (an opponent or a ball)阻碍（对手或球）的运动</td>
+      <td>block an attack阻止攻击</td>
+      <td>[blocker, blockage, blocking]</td>
+      <td></td>
+      <td>[fence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td>['blockade', 'embarrass', 'hinder', 'obstruct', 'stymie', 'stymy']</td>
+      <td></td>
+      <td>hinder or prevent the progress or accomplishment of妨碍或阻止进步或完成</td>
+      <td>His brother blocked him at every turn他的兄弟动辄阻止了他</td>
+      <td>[blockage]</td>
+      <td></td>
+      <td>[prevent, forbid, preclude, forestall, foreclose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>interrupt the normal function of by means of anesthesia通过麻醉中断正常功能</td>
+      <td>block a nerve阻止神经block a muscle阻止肌肉</td>
+      <td>[blocker]</td>
+      <td></td>
+      <td>[anaesthetize, anesthetize, anaesthetise, put under, put out, anesthetise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>run on a block system在块系统上运行</td>
+      <td>block trains拦截列车</td>
+      <td></td>
+      <td></td>
+      <td>[operate, run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>shape by using a block通过使用块来塑造</td>
+      <td>block a garment阻止一件衣服</td>
+      <td></td>
+      <td></td>
+      <td>[shape, form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>shape into a block or blocks塑造成块或块</td>
+      <td>block the graphs so one can see the results clearly阻止图表，以便可以清楚地看到结果</td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>stamp or emboss a title or design on a book with a block在带有块的书上盖章或压印标题或设计</td>
+      <td>block the book cover阻止书籍封面</td>
+      <td></td>
+      <td></td>
+      <td>[stamp, emboss, boss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>ver</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>support, secure, or raise with a block使用块支持，保护或提升</td>
+      <td>block a plate for printing挡住印版block the wheels of a car挡住汽车的轮子</td>
+      <td></td>
+      <td></td>
+      <td>[hold up, sustain, support, hold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['blockage', 'closure', 'occlusion', 'stop', 'stoppage']</td>
+      <td></td>
+      <td>an obstruction in a pipe or tube管道或管道中的障碍物</td>
+      <td>we had to call a plumber to clear out the blockage in the drainpipe我们不得不打电话给管道工清除排水管中的堵塞物</td>
+      <td></td>
+      <td></td>
+      <td>[impediment, impedimenta, obstructer, obstruction, obstructor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['blocking']</td>
+      <td></td>
+      <td>the act of obstructing or deflecting someone's movements妨碍或偏转某人运动的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obstruction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['auction block']</td>
+      <td></td>
+      <td>a platform from which an auctioneer sells拍卖师出售的平台</td>
+      <td>they put their paintings on the block他们把画作放在了街区</td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['cube']</td>
+      <td></td>
+      <td>a three-dimensional shape with six square or rectangular sides具有六个正方形或矩形边的三维形状</td>
+      <td></td>
+      <td>[blocky]</td>
+      <td></td>
+      <td>[solid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['mental block']</td>
+      <td></td>
+      <td>an inability to remember or think of something you normally can do; often caused by emotional tension无法记住或想到你通常可以做的事情;经常由情绪紧张引起</td>
+      <td>I knew his name perfectly well but I had a temporary block我完全知道他的名字，但我有一个临时区块</td>
+      <td></td>
+      <td></td>
+      <td>[inability]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['pulley', 'pulley-block', 'pulley block']</td>
+      <td></td>
+      <td>a simple machine consisting of a wheel with a groove in which a rope can run to change the direction or point of application of a force applied to the rope一个简单的机器，由一个带有凹槽的轮子组成，绳子可以在其中运行，以改变施加在绳索上的力的方向或施加点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[simple machine, machine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['cylinder block', 'engine block']</td>
+      <td></td>
+      <td>a metal casting containing the cylinders and cooling ducts of an engine包含发动机的气缸和冷却管的金属铸件</td>
+      <td>the engine had to be replaced because the block was cracked由于块被破坏，必须更换发动机</td>
+      <td></td>
+      <td></td>
+      <td>[casting, cast]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td>['city block']</td>
+      <td></td>
+      <td>a rectangular area in a city surrounded by streets and usually containing several buildings城市中的一个长方形区域，周围环绕着街道，通常包含几栋建筑</td>
+      <td>he lives in the next block他住在下一个街区</td>
+      <td></td>
+      <td></td>
+      <td>[area, country]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>a number or quantity of related things dealt with as a unit作为一个单元处理的相关事物的数量或数量</td>
+      <td>he reserved a large block of seats他预留了一大块座位he held a large block of the company's stock他持有该公司股票的大块</td>
+      <td></td>
+      <td></td>
+      <td>[accumulation, collection, aggregation, assemblage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>a solid piece of something (usually having flat rectangular sides)一块坚固的东西（通常有扁平的长边）</td>
+      <td>the pyramids were built with large stone blocks金字塔是用大石块建造的</td>
+      <td>[blocky]</td>
+      <td></td>
+      <td>[artifact, artefact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>(computer science) a sector or group of sectors that function as the smallest data unit permitted（计算机科学）作为允许的最小数据单元的扇区或扇区组</td>
+      <td>since blocks are often defined as a single sector, the terms `block' and `sector' are sometimes used interchangeably由于块通常被定义为单个扇区，因此术语“块”和“扇区”有时可互换使用</td>
+      <td></td>
+      <td></td>
+      <td>[computer memory unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>block</th>
+      <td>ock</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>blɑk</td>
+      <td></td>
+      <td></td>
+      <td>housing in a large building that is divided into separate units住在一个大楼里，分成不同的单元</td>
+      <td>there is a block of classrooms in the west wing西翼有一幢教室</td>
+      <td></td>
+      <td></td>
+      <td>[living accommodations, lodging, housing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ʃɑk</td>
+      <td>['ball over', 'blow out of the water', 'floor', 'take aback']</td>
+      <td></td>
+      <td>surprise greatly; knock someone's socks off大大惊喜;敲打别人的袜子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surprise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ʃɑk</td>
+      <td>['traumatise', 'traumatize']</td>
+      <td></td>
+      <td>inflict a trauma upon造成创伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wound, injure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ʃɑk</td>
+      <td>['appal', 'appall', 'offend', 'outrage', 'scandalise', 'scandalize']</td>
+      <td></td>
+      <td>strike with disgust or revulsion憎恶或反感</td>
+      <td>The scandalous behavior of this married woman shocked her friends这位已婚妇女的丑闻使她的朋友感到震惊</td>
+      <td>[shocker]</td>
+      <td></td>
+      <td>[disgust, nauseate, revolt, churn up, sicken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>collect or gather into shocks收集或收集冲击</td>
+      <td>shock grain震惊的粮食</td>
+      <td></td>
+      <td></td>
+      <td>[garner, collect, pull together, gather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>collide violently猛烈地碰撞</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clash, collide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>strike with horror or terror罢工恐怖或恐怖</td>
+      <td>The news of the bombing shocked her轰炸的消息震惊了她</td>
+      <td>[shocker]</td>
+      <td></td>
+      <td>[alarm, appal, appall, dismay, horrify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>ʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>subject to electrical shocks受到电击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[treat, care for]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td>['impact']</td>
+      <td></td>
+      <td>the violent interaction of individuals or groups entering into combat进入战斗的个人或团体的暴力互动</td>
+      <td>the armies met in the shock of battle军队在战斗的冲击中相遇</td>
+      <td></td>
+      <td></td>
+      <td>[scrap, fight, fighting, combat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td>['jar', 'jolt', 'jounce']</td>
+      <td></td>
+      <td>a sudden jarring impact一阵突如其来的冲击力</td>
+      <td>all the jars and jolts were smoothed out by the shock absorbers所有的罐子和颠簸都被减震器弄平了</td>
+      <td></td>
+      <td></td>
+      <td>[blow, bump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td>['cushion', 'shock absorber']</td>
+      <td></td>
+      <td>a mechanical damper; absorbs energy of sudden impulses机械阻尼器;吸收突然冲动的能量</td>
+      <td>the old car needed a new set of shocks这辆旧车需要一系列新的震动</td>
+      <td></td>
+      <td></td>
+      <td>[muffler, damper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td>['electric shock', 'electrical shock']</td>
+      <td></td>
+      <td>a reflex response to the passage of electric current through the body对电流通过身体的反射反应</td>
+      <td>subjects received a small electric shock when they made the wrong response当受试者做出错误的反应时，他们会受到轻微的电击electricians get accustomed to occasional shocks电工习惯于偶尔的冲击</td>
+      <td></td>
+      <td></td>
+      <td>[unconditioned reflex, inborn reflex, innate reflex, instinctive reflex, physiological reaction, reflex, reflex action, reflex response]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td>['blow']</td>
+      <td></td>
+      <td>an unpleasant or disappointing surprise令人不快或令人失望的惊喜</td>
+      <td>it came as a shock to learn that he was injured得知他受伤是令人震惊的</td>
+      <td></td>
+      <td></td>
+      <td>[surprise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td>['seismic disturbance']</td>
+      <td></td>
+      <td>an instance of agitation of the earth's crust地壳骚动的一个例子</td>
+      <td>the first shock of the earthquake came shortly after noon while workers were at lunch当工人们在午餐时间中午不久，地震发生了第一次震动</td>
+      <td></td>
+      <td></td>
+      <td>[temblor, seism, earthquake, quake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td>['daze', 'stupor']</td>
+      <td></td>
+      <td>the feeling of distress and disbelief that you have when something bad happens accidentally当一些不良事件意外发生时，你会感到痛苦和难以置信</td>
+      <td>he was numb with shock他因震惊而麻木</td>
+      <td></td>
+      <td></td>
+      <td>[stupefaction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>a bushy thick mass (especially hair)浓密的浓密物质（特别是头发）</td>
+      <td>he had an unruly shock of black hair他有一头不羁的黑头发</td>
+      <td></td>
+      <td></td>
+      <td>[mass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>a pile of sheaves of grain set on end in a field to dry; stalks of Indian corn set up in a field将一堆谷物放在田地的末端晾干;印度玉米秸秆在一个领域设立</td>
+      <td>corn is bound in small sheaves and several sheaves are set up together in shocks玉米被捆在小滑轮中，并且几个滑轮一起设置在震动中whole fields of wheat in shock整个麦田震惊</td>
+      <td></td>
+      <td></td>
+      <td>[agglomerate, pile, cumulation, mound, cumulus, heap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shock</th>
+      <td>ock</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>ʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>(pathology) bodily collapse or near collapse caused by inadequate oxygen delivery to the cells; characterized by reduced cardiac output and rapid heartbeat and circulatory insufficiency and pallor（病理学）由于输送到细胞的氧气不足而导致身体塌陷或接近塌陷;特点是心输出量减少，心跳加速，循环功能不全和面色苍白</td>
+      <td>loss of blood is an important cause of shock失血是导致休克的重要原因</td>
+      <td></td>
+      <td></td>
+      <td>[collapse, prostration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>stɑk</td>
+      <td>['sprout']</td>
+      <td></td>
+      <td>put forth and grow sprouts or shoots提出并种植豆芽或芽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[get, develop, acquire, grow, produce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>stɑk</td>
+      <td>['carry', 'stockpile']</td>
+      <td></td>
+      <td>have on hand在手边</td>
+      <td></td>
+      <td>[stockist]</td>
+      <td></td>
+      <td>[have got, hold, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>stɑk</td>
+      <td>['buy in', 'stock up']</td>
+      <td></td>
+      <td>amass so as to keep for future use or sale or for a particular occasion or use聚集以便将来使用或销售或特定场合或使用</td>
+      <td>let's stock coffee as long as prices are low只要价格低，我们就可以买咖啡</td>
+      <td>[stockist]</td>
+      <td></td>
+      <td>[provide, supply, furnish, render]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>equip with a stock装备库存</td>
+      <td>stock a rifle一支步枪</td>
+      <td></td>
+      <td></td>
+      <td>[equip, fit out, fit, outfit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>provide or furnish with a stock of something提供或提供某种东西的库存</td>
+      <td>stock the larder with meat储存有肉的储藏室</td>
+      <td>[stockist, stocking]</td>
+      <td></td>
+      <td>[provide, supply, render, furnish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>supply with fish供应鱼</td>
+      <td>stock a lake库存湖泊</td>
+      <td></td>
+      <td></td>
+      <td>[supply, render, furnish, provide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>ver</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>supply with livestock供应牲畜</td>
+      <td>stock a farm库存一个农场</td>
+      <td></td>
+      <td></td>
+      <td>[furnish, render, provide, supply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['gunstock']</td>
+      <td></td>
+      <td>the handle of a handgun or the butt end of a rifle or shotgun or part of the support of a machine gun or artillery gun手枪的手柄或步枪或霰弹枪的枪托末端或机枪或火炮炮支架的一部分</td>
+      <td>the rifle had been fitted with a special stock步枪上装有特殊的枪托</td>
+      <td></td>
+      <td></td>
+      <td>[grip, handle, support, handgrip, hold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['inventory']</td>
+      <td></td>
+      <td>the merchandise that a shop has on hand商店现有的商品</td>
+      <td></td>
+      <td>[stockist]</td>
+      <td></td>
+      <td>[merchandise, ware, product]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['caudex']</td>
+      <td></td>
+      <td>persistent thickened stem of a herbaceous perennial plant多年生草本植物的持续增厚的茎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stem, stalk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['gillyflower']</td>
+      <td></td>
+      <td>any of several Old World plants cultivated for their brightly colored flowers任何一种由鲜艳花朵栽培的旧世界植物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flower]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['ancestry', 'blood', 'blood line', 'bloodline', 'descent', 'line', 'line of descent', 'lineage', 'origin', 'parentage', 'pedigree', 'stemma']</td>
+      <td></td>
+      <td>the descendants of one individual一个人的后代</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[genealogy, family tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['malcolm stock']</td>
+      <td></td>
+      <td>any of various ornamental flowering plants of the genus Malcolmia马尔科米亚属的任何一种观赏性开花植物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flower]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['breed', 'strain']</td>
+      <td></td>
+      <td>a special variety of domesticated animals within a species一种特殊的驯养动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[variety, animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['fund', 'store']</td>
+      <td></td>
+      <td>a supply of something available for future use提供可供将来使用的东西</td>
+      <td></td>
+      <td>[stocker, stockist]</td>
+      <td></td>
+      <td>[accumulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['farm animal', 'livestock']</td>
+      <td></td>
+      <td>any animals kept for use or profit任何动物保持使用或利润</td>
+      <td></td>
+      <td>[stocker]</td>
+      <td></td>
+      <td>[placental, placental mammal, eutherian mammal, eutherian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['stock certificate']</td>
+      <td></td>
+      <td>a certificate documenting the shareholder's ownership in the corporation证明股东在公司中所有权的证明</td>
+      <td>the value of his stocks doubled during the past year他的股票价值在过去一年翻了一番</td>
+      <td></td>
+      <td></td>
+      <td>[security, certificate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['broth']</td>
+      <td></td>
+      <td>liquid in which meat and vegetables are simmered; used as a basis for e.g. soups or sauces炖肉和蔬菜的液体;用作例如汤或酱汁</td>
+      <td>she made gravy with a base of beef stock她用牛肉汤做成肉汁</td>
+      <td></td>
+      <td></td>
+      <td>[soup]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td>['neckcloth']</td>
+      <td></td>
+      <td>an ornamental white cravat一件装饰性的白色领结</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cravat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>a plant or stem onto which a graft is made; especially a plant grown specifically to provide the root part of grafted plants植物或茎上的移植物;特别是一种专门生长以提供嫁接植物根部的植物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant part, plant structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>lumber used in the construction of something用于建造某物的木材</td>
+      <td>they will cut round stock to 1-inch diameter他们会将圆形切割成1英寸直径</td>
+      <td></td>
+      <td></td>
+      <td>[timber, lumber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>the capital raised by a corporation through the issue of shares entitling holders to an ownership interest (equity)公司通过发行赋予持有人所有权权益（股权）的股份筹集的资本</td>
+      <td>he owns a controlling share of the company's stock他拥有该公司股票的控股权</td>
+      <td></td>
+      <td></td>
+      <td>[capital, working capital]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>the handle end of some implements or tools一些工具或工具的句柄结束</td>
+      <td>he grabbed the cue by the stock他抓住了股票的暗示</td>
+      <td></td>
+      <td></td>
+      <td>[handgrip, handle, grip, hold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>stɑk</td>
+      <td></td>
+      <td></td>
+      <td>the reputation and popularity a person has一个人的声誉和受欢迎程度</td>
+      <td>his stock was so high he could have been elected mayor他的股票如此之高，他本可以当选市长</td>
+      <td></td>
+      <td></td>
+      <td>[repute, reputation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>adj</td>
+      <td>stɑk</td>
+      <td>['banal', 'commonplace', 'hackneyed', 'old-hat', 'shopworn', 'threadbare', 'timeworn', 'tired', 'trite', 'well-worn'], similarTo:['unoriginal']</td>
+      <td></td>
+      <td>repeated too often; overfamiliar through overuse经常重复;过度使用过度熟悉</td>
+      <td>a stock answer股票回答</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>adj</td>
+      <td>stɑk</td>
+      <td>['standard'], similarTo:['regular']</td>
+      <td></td>
+      <td>regularly and widely used or sold定期广泛使用或出售</td>
+      <td>a stock item库存商品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stock</th>
+      <td>ock</td>
+      <td>4.33</td>
+      <td>adj</td>
+      <td>stɑk</td>
+      <td>, similarTo:['standard']</td>
+      <td></td>
+      <td>routine常规</td>
+      <td>a stock answer股票回答</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rocky</th>
+      <td>ock</td>
+      <td>3.99</td>
+      <td>adj</td>
+      <td>'rɑki</td>
+      <td>['rough'], similarTo:['difficult', 'hard']</td>
+      <td></td>
+      <td>full of hardship or trials充满艰辛或考验</td>
+      <td>the rocky road to success通往成功的艰难之路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rocky</th>
+      <td>ock</td>
+      <td>3.99</td>
+      <td>adj</td>
+      <td>'rɑki</td>
+      <td>['bouldered', 'bouldery', 'stony'], similarTo:['rough', 'unsmooth']</td>
+      <td></td>
+      <td>abounding in rocks or stones丰富的岩石或石头</td>
+      <td>rocky fields岩石领域</td>
+      <td>[rock, rockiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rocky</th>
+      <td>ock</td>
+      <td>3.99</td>
+      <td>adj</td>
+      <td>'rɑki</td>
+      <td>['bumpy', 'jolting', 'jolty', 'jumpy', 'rough']</td>
+      <td></td>
+      <td>causing or characterized by jolts and irregular movements引起或以摇晃和不规则运动为特征</td>
+      <td></td>
+      <td>[rock]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rocky</th>
+      <td>ock</td>
+      <td>3.99</td>
+      <td>adj</td>
+      <td>'rɑki</td>
+      <td>, similarTo:['unstable']</td>
+      <td></td>
+      <td>liable to rock容易摇滚</td>
+      <td>on high rocky heels在高跟鞋上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flock</th>
+      <td>ock</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>flɑk</td>
+      <td>['clump', 'cluster', 'constellate']</td>
+      <td></td>
+      <td>come together as in a cluster or flock像群集或群集一样聚集在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[meet, assemble, gather, forgather, foregather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flock</th>
+      <td>ock</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>flɑk</td>
+      <td></td>
+      <td></td>
+      <td>move as a crowd or in a group作为一群人或一群人行动</td>
+      <td>Tourists flocked to the shrine where the statue was said to have shed tears游客蜂拥到神殿，据说雕像已经流下了眼泪</td>
+      <td></td>
+      <td></td>
+      <td>[travel, go, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flock</th>
+      <td>ock</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>flɑk</td>
+      <td>['troop']</td>
+      <td></td>
+      <td>an orderly crowd一个有序的人群</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crowd]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flock</th>
+      <td>ock</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>flɑk</td>
+      <td>['fold']</td>
+      <td></td>
+      <td>a group of sheep or goats一群绵羊或山羊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flock</th>
+      <td>ock</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>flɑk</td>
+      <td>['batch', 'deal', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite quantity, large indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flock</th>
+      <td>ock</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>flɑk</td>
+      <td></td>
+      <td></td>
+      <td>a church congregation guided by a pastor由牧师指导的教会会众</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[congregation, faithful, fold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flock</th>
+      <td>ock</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>flɑk</td>
+      <td></td>
+      <td></td>
+      <td>a group of birds一群鸟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cocky</th>
+      <td>ock</td>
+      <td>3.62</td>
+      <td>adj</td>
+      <td>'kɑki</td>
+      <td>, similarTo:['assertive', 'self-asserting', 'self-assertive']</td>
+      <td></td>
+      <td>overly self-confident or self-assertive过于自信或自我主张</td>
+      <td>a very cocky young man一个非常自大的年轻人</td>
+      <td>[cockiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crock</th>
+      <td>ock</td>
+      <td>3.28</td>
+      <td>ver</td>
+      <td>krɑk</td>
+      <td></td>
+      <td></td>
+      <td>release color when rubbed, of badly dyed fabric擦拭时，颜色很深的织物会释放颜色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[run, bleed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crock</th>
+      <td>ock</td>
+      <td>3.28</td>
+      <td>ver</td>
+      <td>krɑk</td>
+      <td></td>
+      <td></td>
+      <td>soil with or as with crock与瓦砾一样的土壤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colly, dirty, grime, begrime, soil, bemire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crock</th>
+      <td>ock</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>krɑk</td>
+      <td>['earthenware jar']</td>
+      <td></td>
+      <td>an earthen jar (made of baked clay)瓦罐（由粘土制成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crock</th>
+      <td>ock</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>krɑk</td>
+      <td>['carbon black', 'lampblack', 'smut', 'soot']</td>
+      <td></td>
+      <td>a black colloidal substance consisting wholly or principally of amorphous carbon and used to make pigments and ink黑色胶体物质，全部或主要由无定形碳组成，用于制造颜料和油墨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[carbon, c, atomic number 6]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crock</th>
+      <td>ock</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>krɑk</td>
+      <td></td>
+      <td></td>
+      <td>nonsense; foolish talk废话;愚蠢的谈话</td>
+      <td>that's a crock那是一个缸</td>
+      <td></td>
+      <td></td>
+      <td>[nonsense, nonsensicality, bunk, hokum, meaninglessness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spock</th>
+      <td>ock</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>spɑk</td>
+      <td>['benjamin spock']</td>
+      <td></td>
+      <td>United States pediatrician whose many books on child care influenced the upbringing of children around the world (1903-1998)美国儿科医生，他的许多儿童保育书籍影响了全世界儿童的成长（1903-1998）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frock</th>
+      <td>ock</td>
+      <td>2.98</td>
+      <td>ver</td>
+      <td>frɑk</td>
+      <td></td>
+      <td></td>
+      <td>put a frock on穿上衣服</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garment, habilitate, apparel, clothe, raiment, tog, dress, enclothe, fit out, garb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frock</th>
+      <td>ock</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>frɑk</td>
+      <td>['dress']</td>
+      <td></td>
+      <td>a one-piece garment for a woman; has skirt and bodice一件女式连衣裙;有裙子和紧身胸衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[woman's clothing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frock</th>
+      <td>ock</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>frɑk</td>
+      <td></td>
+      <td></td>
+      <td>a habit worn by clerics神职人员的习惯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[habit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frock</th>
+      <td>ock</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>frɑk</td>
+      <td></td>
+      <td></td>
+      <td>a long, loose outer garment一件长而宽松的外衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[overgarment, outer garment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chock</th>
+      <td>ock</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>tʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>secure with chocks用塞子固定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fasten, secure, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chock</th>
+      <td>ock</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>tʃɑk</td>
+      <td></td>
+      <td></td>
+      <td>support on chocks支撑在轴承座上</td>
+      <td>chock the boat塞满了船</td>
+      <td></td>
+      <td></td>
+      <td>[sustain, hold, hold up, support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chock</th>
+      <td>ock</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>tʃɑk</td>
+      <td>['wedge']</td>
+      <td></td>
+      <td>a block of wood used to prevent the sliding or rolling of a heavy object用于防止重物滑动或滚动的木块</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chock</th>
+      <td>ock</td>
+      <td>2.72</td>
+      <td>adv</td>
+      <td>tʃɑk</td>
+      <td>['chock-a-block']</td>
+      <td></td>
+      <td>as completely as possible尽可能完全</td>
+      <td>it was chock-a-block full它是满满的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smock</th>
+      <td>ock</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>smɑk</td>
+      <td></td>
+      <td></td>
+      <td>embellish by sewing in straight lines crossing each other diagonally通过沿对角线相互交叉的直线缝制来修饰</td>
+      <td>The folk dancers wore smocked shirts民间舞者穿着衬衫</td>
+      <td>[smocking]</td>
+      <td></td>
+      <td>[adorn, beautify, decorate, embellish, grace, ornament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smock</th>
+      <td>ock</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>smɑk</td>
+      <td>['dust coat', 'duster', 'gabardine', 'gaberdine']</td>
+      <td></td>
+      <td>a loose coverall (coat or frock) reaching down to the ankles一件宽松的套装（外套或连衣裙）伸向脚踝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coverall]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

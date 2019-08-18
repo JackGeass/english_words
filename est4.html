@@ -1,0 +1,1175 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['best', 'rest', 'test', 'west', 'nest', 'vest', 'pest', 'jest', 'zest']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>best</th>
+      <td>est</td>
+      <td>5.61</td>
+      <td>ver</td>
+      <td>bɛst</td>
+      <td>['outdo', 'outflank', 'scoop', 'trump']</td>
+      <td></td>
+      <td>get the better of变得更好</td>
+      <td>the goal was to best the competition目标是最好的竞争</td>
+      <td></td>
+      <td></td>
+      <td>[shell, trounce, beat, crush, beat out, vanquish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>best</th>
+      <td>est</td>
+      <td>5.61</td>
+      <td>nou</td>
+      <td>bɛst</td>
+      <td>['c. h. best', 'charles herbert best']</td>
+      <td></td>
+      <td>Canadian physiologist (born in the United States) who assisted F. G. Banting in research leading to the discovery of insulin (1899-1978)加拿大生理学家（出生于美国），协助F. G. Banting进行胰岛素发现研究（1899-1978）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>best</th>
+      <td>est</td>
+      <td>5.61</td>
+      <td>nou</td>
+      <td>bɛst</td>
+      <td>['topper']</td>
+      <td></td>
+      <td>the person who is most outstanding or excellent; someone who tops all others最杰出或最优秀的人;在所有其他人中名列前茅的人</td>
+      <td>he could beat the best of them他可以击败他们中最好的</td>
+      <td></td>
+      <td></td>
+      <td>[soul, someone, somebody, mortal, person, individual]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>best</th>
+      <td>est</td>
+      <td>5.61</td>
+      <td>nou</td>
+      <td>bɛst</td>
+      <td></td>
+      <td>[worst]</td>
+      <td>the supreme effort one can make人们可以做出的最大努力</td>
+      <td>they did their best他们尽了最大努力</td>
+      <td></td>
+      <td></td>
+      <td>[attempt, endeavour, endeavor, effort, try]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>best</th>
+      <td>est</td>
+      <td>5.61</td>
+      <td>adv</td>
+      <td>bɛst</td>
+      <td>['better']</td>
+      <td></td>
+      <td>from a position of superiority or authority从优越或权威的位置</td>
+      <td>father knows best父亲最了解</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>best</th>
+      <td>est</td>
+      <td>5.61</td>
+      <td>adj</td>
+      <td>bɛst</td>
+      <td>['better'], similarTo:['advisable']</td>
+      <td></td>
+      <td>(comparative and superlative of `well') wiser or more advantageous and hence advisable（“井”的比较和最高级）更明智或更有利，因此是可取的</td>
+      <td>the White House thought it best not to respond白宫认为最好不回应</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[comparative degree, comparative]</td>
+    </tr>
+    <tr>
+      <th>best</th>
+      <td>est</td>
+      <td>5.61</td>
+      <td>adj</td>
+      <td>bɛst</td>
+      <td>, similarTo:['world-class', 'prizewinning', 'record-breaking', 'second-best', 'sunday-go-to-meeting', 'superfine', 'top-grade', 'top-quality', 'unexceeded', 'unexcelled', 'unsurpassable', 'unsurpassed', 'champion', 'first', 'foremost', 'go-to-meeting', 'high-grade', 'optimal', 'optimum', 'primo'], alos:['uncomparable', 'superior', 'top', 'good', 'incomparable']</td>
+      <td>[worst]</td>
+      <td>(superlative of `good') having the most positive qualities（最好的“好”）具有最积极的品质</td>
+      <td>the best film of the year年度最佳影片the best solution最好的解决方案the best time for planting种植的最佳时间wore his best suit穿着他最好的西装</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[superlative]</td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td>['perch', 'roost']</td>
+      <td></td>
+      <td>sit, as on a branch坐在树枝上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sit, sit down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td>['remain', 'stay']</td>
+      <td></td>
+      <td>stay the same; remain in a certain state保持原样;保持某种状态</td>
+      <td>rest assured放心</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td>['breathe', "catch one's breath", 'take a breather']</td>
+      <td></td>
+      <td>take a short break from one's activities in order to relax从一个人的活动中休息一下，放松一下</td>
+      <td></td>
+      <td>[rester]</td>
+      <td></td>
+      <td>[break, pause, intermit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td>['pillow']</td>
+      <td></td>
+      <td>rest on or as if on a pillow在枕头上或似乎在枕头上休息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lay, pose, position, place, put, set]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td>['repose', 'reside']</td>
+      <td></td>
+      <td>be inherent or innate in是固有的或天生的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attach to, inhere in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td>['lie']</td>
+      <td></td>
+      <td>have a place in relation to something else有一个与其他事物有关的地方</td>
+      <td>The responsibility rests with the Allies责任在盟军身上</td>
+      <td></td>
+      <td>[lie]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td></td>
+      <td>[be active]</td>
+      <td>be at rest保持安静</td>
+      <td></td>
+      <td>[rester]</td>
+      <td></td>
+      <td>[recline, recumb, repose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td></td>
+      <td></td>
+      <td>be inactive, refrain from acting不活动，不要采取行动</td>
+      <td>The committee is resting over the summer委员会将在夏天休息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td></td>
+      <td></td>
+      <td>give a rest to休息一下</td>
+      <td>He rested his bad leg他休息了他的坏腿</td>
+      <td>[rester]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td>, alos:['rest on']</td>
+      <td></td>
+      <td>not move; be in a resting position不动;处于休息状态</td>
+      <td></td>
+      <td>[rester]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td></td>
+      <td></td>
+      <td>put something in a resting position, as for support or steadying把东西放在静止的位置，如支撑或稳定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place, position, set, pose, put, lay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>rɛst</td>
+      <td>['eternal rest', 'eternal sleep', 'quietus', 'sleep']</td>
+      <td></td>
+      <td>euphemisms for death (based on an analogy between lying in a bed and in a tomb)死亡委婉语（基于躺在床上和坟墓中的类比）</td>
+      <td>she was laid to rest beside her husband她躺在丈夫旁边休息</td>
+      <td></td>
+      <td></td>
+      <td>[death]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>rɛst</td>
+      <td>['ease', 'relaxation', 'repose']</td>
+      <td></td>
+      <td>freedom from activity (work or strain or responsibility)免于活动（工作或紧张或责任）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inactivity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>rɛst</td>
+      <td>['balance', 'remainder', 'residual', 'residue', 'residuum']</td>
+      <td></td>
+      <td>something left after other parts have been taken away其他部分被带走后留下的东西</td>
+      <td>he threw away the rest他把剩下的扔掉了</td>
+      <td></td>
+      <td></td>
+      <td>[portion, component part, component, constituent, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>rɛst</td>
+      <td>['relief', 'respite', 'rest period']</td>
+      <td></td>
+      <td>a pause for relaxation暂停放松</td>
+      <td>people actually accomplish more when they take time for short rests当人们花时间休息时，人们实际上会做得更多</td>
+      <td></td>
+      <td></td>
+      <td>[break, suspension, interruption, intermission, pause]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>rɛst</td>
+      <td></td>
+      <td></td>
+      <td>a musical notation indicating a silence of a specified duration表示指定持续时间的静音的乐谱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[musical notation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>rɛst</td>
+      <td></td>
+      <td></td>
+      <td>a state of inaction无所作为的状态</td>
+      <td>a body will continue in a state of rest until acted upon一个身体将继续处于休息状态，直到采取行动</td>
+      <td></td>
+      <td></td>
+      <td>[inaction, inactiveness, inactivity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rest</th>
+      <td>est</td>
+      <td>5.32</td>
+      <td>nou</td>
+      <td>rɛst</td>
+      <td></td>
+      <td></td>
+      <td>a support on which things can be put可以提供支持的支持</td>
+      <td>the gun was steadied on a special rest枪在特别休息时稳定下来</td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>tɛst</td>
+      <td>['screen']</td>
+      <td></td>
+      <td>test or examine for the presence of disease or infection测试或检查是否存在疾病或感染</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[check]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>tɛst</td>
+      <td>['quiz']</td>
+      <td></td>
+      <td>examine someone's knowledge of something检查某人对某事的了解</td>
+      <td>The teacher tests us every week老师每周都会测试我们</td>
+      <td>[testee, testing, tester]</td>
+      <td></td>
+      <td>[examine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>tɛst</td>
+      <td>['essay', 'examine', 'prove', 'try', 'try out']</td>
+      <td></td>
+      <td>put to the test, as for its quality, or give experimental use to对其质量进行测试，或给予实验用途</td>
+      <td></td>
+      <td>[testing]</td>
+      <td></td>
+      <td>[judge, pass judgment, evaluate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>tɛst</td>
+      <td></td>
+      <td></td>
+      <td>achieve a certain score or rating on a test在测试中达到一定的分数或评分</td>
+      <td>She tested high on the LSAT and was admitted to all the good law schools她在LSAT上取得了很高的成绩，并被所有优秀的法学院录取</td>
+      <td></td>
+      <td></td>
+      <td>[score]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>tɛst</td>
+      <td></td>
+      <td></td>
+      <td>determine the presence or properties of (a substance)确定（一种物质）的存在或性质</td>
+      <td></td>
+      <td>[testing]</td>
+      <td></td>
+      <td>[learn, check, determine, see, ascertain, watch, find out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>tɛst</td>
+      <td></td>
+      <td></td>
+      <td>show a certain characteristic when tested在测试时显示出某种特征</td>
+      <td>He tested positive for HIV他检测出HIV阳性</td>
+      <td>[testing]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>ver</td>
+      <td>tɛst</td>
+      <td></td>
+      <td></td>
+      <td>undergo a test接受考验</td>
+      <td>She doesn't test well她测试不好</td>
+      <td>[testee]</td>
+      <td>[quiz]</td>
+      <td>[submit, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>tɛst</td>
+      <td>['trial', 'trial run', 'tryout']</td>
+      <td></td>
+      <td>trying something to find out about it尝试一些事情来了解它</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[experimentation, experiment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>tɛst</td>
+      <td>['mental test', 'mental testing', 'psychometric test']</td>
+      <td></td>
+      <td>any standardized procedure for measuring sensitivity or memory or intelligence or aptitude or personality etc用于测量敏感度或记忆力或智力或能力或个性等的任何标准化程序</td>
+      <td>the test was standardized on a large sample of students该测试在大量学生样本上标准化</td>
+      <td></td>
+      <td></td>
+      <td>[mental measurement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>tɛst</td>
+      <td>['exam', 'examination']</td>
+      <td></td>
+      <td>a set of questions or exercises evaluating skill or knowledge评估技能或知识的一系列问题或练习</td>
+      <td>when the test was stolen the professor had to make a new set of questions当测试被盗时，教授不得不提出一系列新问题</td>
+      <td></td>
+      <td></td>
+      <td>[communicating, communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>tɛst</td>
+      <td>['run', 'trial']</td>
+      <td></td>
+      <td>the act of testing something测试某事的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[effort, attempt, endeavor, endeavour, try]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>tɛst</td>
+      <td>['trial']</td>
+      <td></td>
+      <td>the act of undergoing testing正在接受测试的行为</td>
+      <td>he survived the great test of battle他在战斗的伟大考验中幸存下来</td>
+      <td></td>
+      <td></td>
+      <td>[try, endeavour, endeavor, effort, attempt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>test</th>
+      <td>est</td>
+      <td>4.90</td>
+      <td>nou</td>
+      <td>tɛst</td>
+      <td></td>
+      <td></td>
+      <td>a hard outer covering as of some amoebas and sea urchins一些坚硬的外壳，如一些变形虫和海胆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural covering, cover, covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td>['mae west']</td>
+      <td></td>
+      <td>United States film actress (1892-1980)美国电影女演员（1892-1980）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td>['western united states']</td>
+      <td></td>
+      <td>the region of the United States lying to the west of the Mississippi River位于密西西比河以西的美国地区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td>['benjamin west']</td>
+      <td></td>
+      <td>English painter (born in America) who became the second president of the Royal Academy (1738-1820)英国画家（出生于美国）成为皇家艺术学院第二任校长（1738-1820）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td>['occident']</td>
+      <td></td>
+      <td>the countries of (originally) Europe and (now including) North America and South America（最初）欧洲和（现在包括）北美和南美洲的国家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td>['cicily isabel fairfield', 'dame rebecca west', 'rebecca west']</td>
+      <td></td>
+      <td>British writer (born in Ireland) (1892-1983)英国作家（出生于爱尔兰）（1892-1983）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td>['due west', 'w', 'westward']</td>
+      <td></td>
+      <td>the cardinal compass point that is a 270 degrees主要罗盘点是270度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cardinal compass point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td></td>
+      <td></td>
+      <td>a location in the western part of a country, region, or city位于国家，地区或城市西部的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[location]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>wɛst</td>
+      <td></td>
+      <td></td>
+      <td>the direction corresponding to the westward cardinal compass point与西向主要罗盘点对应的方向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[direction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>west</th>
+      <td>est</td>
+      <td>4.71</td>
+      <td>adj</td>
+      <td>wɛst</td>
+      <td>, similarTo:['westerly', 'westside', 'westbound', 'westward', 'westmost', 'westernmost', 'western']</td>
+      <td>[east]</td>
+      <td>situated in or facing or moving toward the west位于或面向或向西移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>nɛst</td>
+      <td>['cuddle', 'draw close', 'nestle', 'nuzzle', 'snuggle']</td>
+      <td></td>
+      <td>move or arrange oneself in a comfortable and cozy position移动或安排自己舒适和舒适的位置</td>
+      <td></td>
+      <td></td>
+      <td>[nestle, draw close, snuggle]</td>
+      <td>[clutch, hold close, hold tight, cling to]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>fit together or fit inside适合在一起或适合内部</td>
+      <td>nested bowls嵌套的碗</td>
+      <td>[nester]</td>
+      <td></td>
+      <td>[implant, engraft, embed, plant, imbed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>gather nests收集巢穴</td>
+      <td></td>
+      <td>[nester]</td>
+      <td></td>
+      <td>[pull together, garner, collect, gather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>inhabit a nest, usually after building通常在建筑之后居住在巢中</td>
+      <td>birds are nesting outside my window every Spring每年春天，鸟儿都在窗外筑巢</td>
+      <td>[nester]</td>
+      <td></td>
+      <td>[dwell, live, populate, inhabit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>a cosy or secluded retreat一个舒适或隐蔽的休息场所</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[retreat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>a gang of people (criminals or spies or terrorists) assembled in one locality一群人（罪犯或间谍或恐怖分子）聚集在一个地方</td>
+      <td>a nest of thieves一窝小偷</td>
+      <td></td>
+      <td></td>
+      <td>[mob, ring, pack, gang]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>a kind of gun emplacement一种枪支安置</td>
+      <td>a machine-gun nest机枪窝a nest of snipers一群狙击手</td>
+      <td></td>
+      <td></td>
+      <td>[gun emplacement, weapons emplacement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>a structure in which animals lay eggs or give birth to their young动物产卵或生幼龄的结构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nest</th>
+      <td>est</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>nɛst</td>
+      <td></td>
+      <td></td>
+      <td>furniture pieces made to fit close together家具件紧密贴合在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of furniture, article of furniture, furniture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vest</th>
+      <td>est</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>vɛst</td>
+      <td>['enthrone', 'invest']</td>
+      <td></td>
+      <td>provide with power and authority提供权力和权威</td>
+      <td>They vested the council with special rights他们赋予理事会特殊权利</td>
+      <td></td>
+      <td></td>
+      <td>[instal, install]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vest</th>
+      <td>est</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>vɛst</td>
+      <td>['robe']</td>
+      <td></td>
+      <td>clothe formally; especially in ecclesiastical robes正式穿衣;特别是在教会长袍</td>
+      <td></td>
+      <td>[vestment, vesture]</td>
+      <td></td>
+      <td>[garb, apparel, clothe, dress, enclothe, fit out, garment, habilitate, raiment, tog]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vest</th>
+      <td>est</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>vɛst</td>
+      <td></td>
+      <td></td>
+      <td>become legally vested合法归属</td>
+      <td>The property vests in the trustees该物业归受托人所有</td>
+      <td></td>
+      <td></td>
+      <td>[change hands, change owners]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vest</th>
+      <td>est</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>vɛst</td>
+      <td></td>
+      <td></td>
+      <td>clothe oneself in ecclesiastical garments穿着教会服装</td>
+      <td></td>
+      <td></td>
+      <td>[robe]</td>
+      <td>[dress, dress up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vest</th>
+      <td>est</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>vɛst</td>
+      <td></td>
+      <td></td>
+      <td>place (authority, property, or rights) in the control of a person or group of persons地方（权力，财产或权利）控制一个人或一组人</td>
+      <td>She vested her vast fortune in her two sons她在她的两个儿子身上获得了巨额财富</td>
+      <td></td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vest</th>
+      <td>est</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>vɛst</td>
+      <td>['waistcoat']</td>
+      <td></td>
+      <td>a man's sleeveless garment worn underneath a coat男人的无袖衣服穿在外套下面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vest</th>
+      <td>est</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>vɛst</td>
+      <td>['singlet', 'undershirt']</td>
+      <td></td>
+      <td>a collarless men's undergarment for the upper part of the body身体上半身的无领男士内衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unmentionable, undergarment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pest</th>
+      <td>est</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>pɛst</td>
+      <td>['pestilence', 'plague']</td>
+      <td></td>
+      <td>any epidemic disease with a high death rate任何具有高死亡率的流行病</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[epidemic disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pest</th>
+      <td>est</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>pɛst</td>
+      <td>['blighter', 'cuss', 'gadfly', 'pesterer']</td>
+      <td></td>
+      <td>a persistently annoying person一个持续讨厌的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[persecutor, tormenter, tormentor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pest</th>
+      <td>est</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>pɛst</td>
+      <td>['pestilence', 'pestis', 'plague']</td>
+      <td></td>
+      <td>a serious (sometimes fatal) infection of rodents caused by Yersinia pestis and accidentally transmitted to humans by the bite of a flea that has bitten an infected animal由鼠疫耶尔森氏菌引起的严重（有时是致命的）啮齿动物感染，并且通过咬伤被感染动物的跳蚤叮咬而意外传染给人类</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[epidemic disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pest</th>
+      <td>est</td>
+      <td>3.49</td>
+      <td>nou</td>
+      <td>pɛst</td>
+      <td></td>
+      <td></td>
+      <td>any unwanted and destructive insect or other animal that attacks food or crops or livestock etc.任何不受欢迎的破坏性昆虫或其他攻击食物或作物或牲畜等的动物</td>
+      <td>he sprayed the garden to get rid of pests他喷洒了花园以摆脱害虫many pests have developed resistance to the common pesticides许多害虫已经对常见农药产生了抵抗力</td>
+      <td></td>
+      <td></td>
+      <td>[animate being, beast, brute, animal, creature, fauna]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jest</th>
+      <td>est</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>dʒɛst</td>
+      <td>['joke']</td>
+      <td></td>
+      <td>act in a funny or teasing way以有趣或戏弄的方式行事</td>
+      <td></td>
+      <td>[jester]</td>
+      <td></td>
+      <td>[do, act, behave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jest</th>
+      <td>est</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>dʒɛst</td>
+      <td>['joke'], alos:['jest at']</td>
+      <td></td>
+      <td>tell a joke; speak humorously说一个笑话;幽默地说</td>
+      <td></td>
+      <td>[jester]</td>
+      <td></td>
+      <td>[communicate, intercommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jest</th>
+      <td>est</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>dʒɛst</td>
+      <td>['jocularity', 'joke']</td>
+      <td></td>
+      <td>activity characterized by good humor以幽默为特色的活动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[diversion, recreation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jest</th>
+      <td>est</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>dʒɛst</td>
+      <td>['gag', 'jape', 'joke', 'laugh']</td>
+      <td></td>
+      <td>a humorous anecdote or remark intended to provoke laughter旨在引发笑声的幽默轶事或评论</td>
+      <td>he laughed unpleasantly at his own jest他以自己的笑话不愉快地笑了起来</td>
+      <td></td>
+      <td></td>
+      <td>[humor, wit, witticism, wittiness, humour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zest</th>
+      <td>est</td>
+      <td>2.81</td>
+      <td>ver</td>
+      <td>zɛst</td>
+      <td>['spice', 'spice up']</td>
+      <td></td>
+      <td>add herbs or spices to添加草药或香料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[season, flavor, flavour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zest</th>
+      <td>est</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>zɛst</td>
+      <td>['nip', 'piquance', 'piquancy', 'piquantness', 'tang', 'tanginess']</td>
+      <td></td>
+      <td>a tart spicy quality酸辣的质量</td>
+      <td></td>
+      <td>[zesty]</td>
+      <td></td>
+      <td>[spiciness, spice, spicery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zest</th>
+      <td>est</td>
+      <td>2.81</td>
+      <td>nou</td>
+      <td>zɛst</td>
+      <td>['gusto', 'relish', 'zestfulness']</td>
+      <td></td>
+      <td>vigorous and enthusiastic enjoyment充满活力和热情的享受</td>
+      <td></td>
+      <td>[zesty]</td>
+      <td></td>
+      <td>[enjoyment, enthusiasm]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

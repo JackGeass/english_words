@@ -1,0 +1,1505 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['to', 'of', 'do', 'on', 'no', 'so', 'go', 'oh', 'or', 'ok', 'ho', 'co', 'mo', 'po', 'ox', 'ko', 'ro', 'fo', 'od', 'os', 'ob']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>to</th>
+      <td>o</td>
+      <td>7.35</td>
+      <td>pre</td>
+      <td>tu</td>
+      <td></td>
+      <td>[from]</td>
+      <td>The preposition to primarily indicates approach and arrival, motion made in the direction of a place or thing and attaining it, access; and also, motion or tendency without arrival; movement toward.介词主要表示进场和到达，在一个地方或事物的方向上进行的运动并获得它，进入;而且，没有到达的动作或倾向;走向。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>of</th>
+      <td>o</td>
+      <td>7.05</td>
+      <td>pre</td>
+      <td>ʌv</td>
+      <td></td>
+      <td></td>
+      <td>In a general sense, from, or out from; proceeding from; belonging to; relating to; concerning; -- used in a variety of applications.在一般意义上，来自或来自;从;属于;关系到;关于; - 用于各种应用。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['execute', 'perform']</td>
+      <td></td>
+      <td>carry out or perform an action执行或执行操作</td>
+      <td></td>
+      <td>[doer]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['manage']</td>
+      <td></td>
+      <td>carry on or function继续或功能</td>
+      <td>We could do with a little more help around here我们可以在这里多做一些帮助</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['answer', 'serve', 'suffice']</td>
+      <td></td>
+      <td>be sufficient; be adequate, either in quality or quantity足够了;无论是质量还是数量都足够</td>
+      <td>Will $100 do?100美元会吗？A `B' grade doesn't suffice to get me into medical school“B”级不足以让我进入医学院</td>
+      <td></td>
+      <td></td>
+      <td>[live up to, fulfil, satisfy, fulfill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['make']</td>
+      <td></td>
+      <td>create or design, often in a certain way通常以某种方式创造或设计</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['perform']</td>
+      <td></td>
+      <td>get (something) done得到（某事）</td>
+      <td></td>
+      <td>[doer]</td>
+      <td></td>
+      <td>[execute, action, accomplish, fulfill, fulfil, carry out, carry through]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['act', 'behave']</td>
+      <td></td>
+      <td>behave in a certain manner; show a certain behavior; conduct or comport oneself表现得某种程度;表现出某种行为;进行或遵守自己</td>
+      <td>What makes her do this way?是什么让她这样做？The dog acts ferocious, but he is really afraid of people这只狗行为凶猛，但他真的害怕人</td>
+      <td></td>
+      <td>[dissemble, play, act, pretend, act as]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['cause', 'make']</td>
+      <td></td>
+      <td>give rise to; cause to happen or occur, not always intentionally会发生;导致发生或发生，并非总是故意</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[make, create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['come', 'fare', 'get along', 'make out']</td>
+      <td></td>
+      <td>proceed or get along继续或相处</td>
+      <td>How is she doing in her new job?她的新工作怎么样？</td>
+      <td></td>
+      <td></td>
+      <td>[proceed, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['make']</td>
+      <td></td>
+      <td>engage in加入，参与</td>
+      <td>do research做研究do nothing没做什么</td>
+      <td></td>
+      <td>[make]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['exercise', 'practice', 'practise']</td>
+      <td></td>
+      <td>carry out or practice; as of jobs and professions进行或实践;就业和职业</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['arrange', 'coif', 'coiffe', 'coiffure', 'dress', 'set']</td>
+      <td></td>
+      <td>arrange attractively安排得很漂亮</td>
+      <td></td>
+      <td></td>
+      <td>[curry, groom, dress]</td>
+      <td>[groom, neaten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td>['serve']</td>
+      <td></td>
+      <td>spend time in prison or in a labor camp花时间在监狱或劳教所</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spend, pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>ver</td>
+      <td>du</td>
+      <td></td>
+      <td></td>
+      <td>travel or traverse (a distance)旅行或穿越（距离）</td>
+      <td>This car does 150 miles per hour这辆车每小时行驶150英里</td>
+      <td></td>
+      <td></td>
+      <td>[travel, locomote, go, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>nou</td>
+      <td>du</td>
+      <td>['doctor of osteopathy']</td>
+      <td></td>
+      <td>doctor's degree in osteopathy骨科医生的学位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[doctorate, doctor's degree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>nou</td>
+      <td>du</td>
+      <td>['bash', 'brawl']</td>
+      <td></td>
+      <td>an uproarious party一个吵闹的派对</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[party]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>do</th>
+      <td>o</td>
+      <td>6.81</td>
+      <td>nou</td>
+      <td>du</td>
+      <td>['doh', 'ut']</td>
+      <td></td>
+      <td>the syllable naming the first (tonic) note of any major scale in solmization命名为solmization中任何主要音阶的第一个（音调）音符的音节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[solfa syllable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>on</th>
+      <td>o</td>
+      <td>6.80</td>
+      <td>adv</td>
+      <td>ɑn</td>
+      <td>['along']</td>
+      <td></td>
+      <td>with a forward motion向前运动</td>
+      <td>we drove along admiring the view我们开车欣赏这个景色the horse trotted along at a steady pace那匹马以稳定的步伐小跑着the circus traveled on to the next city马戏团前往下一个城市move along向前走march on继续前进</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>on</th>
+      <td>o</td>
+      <td>6.80</td>
+      <td>adj</td>
+      <td>ɑn</td>
+      <td>, similarTo:['connected']</td>
+      <td>[off]</td>
+      <td>in operation or operational在操作或操作</td>
+      <td>left the oven on离开烤箱the switch is in the on position开关处于开启位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>on</th>
+      <td>o</td>
+      <td>6.80</td>
+      <td>Non</td>
+      <td>ɑn</td>
+      <td></td>
+      <td>[off]</td>
+      <td>(of events) planned or scheduled（计划或预定的）事件</td>
+      <td>the picnic is on, rain or shine野餐开启，风雨无阻we have nothing on for Friday night星期五晚上我们什么都没有</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>no</th>
+      <td>o</td>
+      <td>6.78</td>
+      <td>nou</td>
+      <td>noʊ</td>
+      <td>['atomic number 102', 'nobelium']</td>
+      <td></td>
+      <td>a radioactive transuranic element synthesized by bombarding curium with carbon ions; 7 isotopes are known通过用碳离子轰击cur合成的放射性超铀元素;已知7种同位素</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chemical element, element]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>no</th>
+      <td>o</td>
+      <td>6.78</td>
+      <td>nou</td>
+      <td>noʊ</td>
+      <td></td>
+      <td>[yes]</td>
+      <td>a negative否定的</td>
+      <td>his no was loud and clear他的声音很响亮</td>
+      <td></td>
+      <td></td>
+      <td>[negative]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>no</th>
+      <td>o</td>
+      <td>6.78</td>
+      <td>adv</td>
+      <td>noʊ</td>
+      <td>['no more']</td>
+      <td></td>
+      <td>referring to the degree to which a certain quality is present指某种质量存在的程度</td>
+      <td>he was no heavier than a child他并不比孩子重</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>no</th>
+      <td>o</td>
+      <td>6.78</td>
+      <td>adj</td>
+      <td>noʊ</td>
+      <td>, similarTo:['nary', 'none', 'zero']</td>
+      <td>[all, some]</td>
+      <td>(quantifier) used with either mass nouns or plural count nouns for indicating a complete or almost complete lack or zero quantity of（量词）与质量名词或复数名词一起使用，表示完全或几乎完全缺乏或零数量</td>
+      <td>we have no bananas我们没有香蕉no eggs left and no money to buy any没有鸡蛋离开，没有钱买任何have you no decency?你没有礼貌吗？did it with no help没有帮助就做到了I'll get you there in no time我马上就能帮你</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>so</th>
+      <td>o</td>
+      <td>6.65</td>
+      <td>nou</td>
+      <td>soʊ</td>
+      <td>['soh', 'sol']</td>
+      <td></td>
+      <td>the syllable naming the fifth (dominant) note of any musical scale in solmization这个音节命名为solmization中任何音阶的第五个（显性）音符</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[solfa syllable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>so</th>
+      <td>o</td>
+      <td>6.65</td>
+      <td>adv</td>
+      <td>soʊ</td>
+      <td>['hence', 'thence', 'therefore', 'thus']</td>
+      <td></td>
+      <td>(used to introduce a logical conclusion) from that fact or reason or as a result（用于从该事实或原因或结果引入逻辑结论）</td>
+      <td>the witness is biased and so cannot be trusted证人有偏见，所以不可信任</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>so</th>
+      <td>o</td>
+      <td>6.65</td>
+      <td>adv</td>
+      <td>soʊ</td>
+      <td>['thus', 'thusly']</td>
+      <td></td>
+      <td>in the way indicated在指示的方式</td>
+      <td>hold the brush so拿着刷子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>so</th>
+      <td>o</td>
+      <td>6.65</td>
+      <td>adv</td>
+      <td>soʊ</td>
+      <td>['indeed']</td>
+      <td></td>
+      <td>in truth (often tends to intensify)事实上（往往会加剧）</td>
+      <td>he did so do it!他这样做了！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>so</th>
+      <td>o</td>
+      <td>6.65</td>
+      <td>adv</td>
+      <td>soʊ</td>
+      <td>['and so', 'then']</td>
+      <td></td>
+      <td>subsequently or soon afterward (often used as sentence connectors)随后或不久之后（通常用作句子连接器）</td>
+      <td>and so home and to bed所以回家和睡觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>so</th>
+      <td>o</td>
+      <td>6.65</td>
+      <td>adv</td>
+      <td>soʊ</td>
+      <td></td>
+      <td></td>
+      <td>to a very great extent or degree在很大程度上或程度</td>
+      <td>the idea is so obvious这个想法是如此明显never been so happy从未如此开心I love you so我是如此爱你my head aches so!我的头疼了！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intensifier, intensive]</td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['proceed']</td>
+      <td></td>
+      <td>follow a certain course按照一定的路线</td>
+      <td>how did your interview go?你的面试怎么样？</td>
+      <td></td>
+      <td></td>
+      <td>[hap, take place, occur, go on, pass, come about, pass off, fall out, happen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['run']</td>
+      <td></td>
+      <td>have a particular form有一个特定的形式</td>
+      <td>as the saying goes...俗话说...</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['depart', 'go away']</td>
+      <td>[come]</td>
+      <td>move away from a place into another direction从一个地方转移到另一个方向</td>
+      <td></td>
+      <td>[goer, going]</td>
+      <td></td>
+      <td>[go out, get out, exit, leave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['function', 'operate', 'run', 'work']</td>
+      <td></td>
+      <td>perform as expected when applied应用时按预期执行</td>
+      <td>The washing machine won't go unless it's plugged in除非插上电源，否则洗衣机不会去</td>
+      <td></td>
+      <td>[run, work]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['locomote', 'move', 'travel'], alos:['go by', 'go down', 'go off', 'go on', 'go around', 'go out', 'go under', 'go up']</td>
+      <td></td>
+      <td>change location; move, travel, or proceed, also metaphorically换地点;移动，旅行或继续，也是比喻</td>
+      <td>How fast does your new car go?你的新车有多快？</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['belong']</td>
+      <td></td>
+      <td>be in the right place or situation在正确的地方或情况</td>
+      <td>Let's put health care where it belongs--under the control of the government让我们把医疗保健放在它所属的地方 - 在政府的控制之下Where do these books go?这些书去哪儿了？</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['buy the farm', "cash in one's chips", 'choke', 'conk', 'croak', 'decease', 'die', 'drop dead', 'exit', 'expire', 'give-up the ghost', 'kick the bucket', 'pass', 'pass away', 'perish', 'pop off', 'snuff it']</td>
+      <td></td>
+      <td>pass from physical life and lose all bodily attributes and functions necessary to sustain life从物质生活中消失，失去维持生命所必需的所有身体属性和功能</td>
+      <td></td>
+      <td>[going]</td>
+      <td>[give way, go bad, break, die, give out, conk out, break down, fail]</td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['sound']</td>
+      <td></td>
+      <td>make a certain noise or sound发出一定的噪音或声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cause to be perceived]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['lead']</td>
+      <td></td>
+      <td>lead, extend, or afford access领导，扩展或提供访问权限</td>
+      <td>This door goes to the basement这扇门进入地下室</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['endure', 'hold out', 'hold up', 'last', 'live', 'live on', 'survive']</td>
+      <td></td>
+      <td>continue to live and avoid dying继续生活，避免死亡</td>
+      <td></td>
+      <td></td>
+      <td>[subsist, survive, be, exist, live]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['get going', 'start']</td>
+      <td></td>
+      <td>begin or set in motion开始或开始运动</td>
+      <td>Ready, set, go!预备，准备，开始！</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['break', 'break down', 'conk out', 'die', 'fail', 'give out', 'give way', 'go bad']</td>
+      <td></td>
+      <td>stop operating or functioning停止运作或运作</td>
+      <td></td>
+      <td></td>
+      <td>[snuff it, pass, break, exit, drop dead, pass away, kick the bucket, expire, conk, choke, perish, buy the farm, give-up the ghost, croak, decease, die, cash in one's chips, pop off]</td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['run low', 'run short']</td>
+      <td></td>
+      <td>to be spent or finished花费或完成</td>
+      <td>The money had gone after a few days几天后钱就消失了</td>
+      <td></td>
+      <td></td>
+      <td>[terminate, stop, finish, cease, end]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['blend', 'blend in']</td>
+      <td></td>
+      <td>blend or harmonize融合或协调</td>
+      <td>This sofa won't go with the chairs这张沙发不配椅子</td>
+      <td></td>
+      <td>[fit]</td>
+      <td>[accord, agree, fit in, consort, harmonise, harmonize, concord]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['rifle']</td>
+      <td></td>
+      <td>go through in search of something; search through someone's belongings in an unauthorized way经历一番寻找;以未经授权的方式搜索某人的财物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[search]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['become', 'get']</td>
+      <td></td>
+      <td>enter or assume a certain state or condition进入或承担某种状态或条件</td>
+      <td>Get going!开始吧！</td>
+      <td></td>
+      <td></td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['move']</td>
+      <td></td>
+      <td>have a turn; make one's move in a game转弯;让一个人在游戏中移动</td>
+      <td>Can I go now?我现在可以走了吗？</td>
+      <td></td>
+      <td>[make a motion, move]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['plump']</td>
+      <td></td>
+      <td>give support (to) or make a choice (of) one out of a group or number给予支持（或）或从群组或号码中选择一个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[select, pick out, choose, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['extend', 'lead', 'pass', 'run']</td>
+      <td></td>
+      <td>stretch out over a distance, space, time, or scope; run or extend between two points or beyond a certain point伸展距离，空间，时间或范围;在两点之间运行或延伸或超过某一点</td>
+      <td>His knowledge doesn't go very far他的知识不是很远</td>
+      <td></td>
+      <td>[range, run]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['move', 'proceed']</td>
+      <td></td>
+      <td>follow a procedure or take a course按照程序或参加课程</td>
+      <td>We should go farther in this matter我们应该在这个问题上走得更远go about the world in a certain manner以某种方式走向世界Messages must go through diplomatic channels信息必须通过外交渠道</td>
+      <td></td>
+      <td></td>
+      <td>[act, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['fit']</td>
+      <td></td>
+      <td>be the right size or shape; fit correctly or as desired是正确的大小或形状;适合或根据需要适合</td>
+      <td></td>
+      <td></td>
+      <td>[blend in, blend]</td>
+      <td>[fit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td>['move', 'run']</td>
+      <td></td>
+      <td>progress by being changed通过改变进步</td>
+      <td>The speech has to go through several more drafts演讲必须经过几次草稿</td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td></td>
+      <td></td>
+      <td>be abolished or discarded被废除或丢弃</td>
+      <td>These ugly billboards have to go!这些丑陋的广告牌必须去！These luxuries all had to go under the Khmer Rouge这些奢侈品都必须在红色高棉之下</td>
+      <td></td>
+      <td></td>
+      <td>[vanish, go away, disappear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td></td>
+      <td></td>
+      <td>be or continue to be in a certain condition是或继续处于某种状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td></td>
+      <td></td>
+      <td>be ranked or compare被排名或比较</td>
+      <td>This violinist is as good as Juilliard-trained violinists go这位小提琴手和茱莉亚音乐学院的小提琴手一样好</td>
+      <td></td>
+      <td></td>
+      <td>[compare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>ver</td>
+      <td>ɡoʊ</td>
+      <td></td>
+      <td></td>
+      <td>be spent花了</td>
+      <td></td>
+      <td></td>
+      <td>[run short, run low]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>nou</td>
+      <td>ɡoʊ</td>
+      <td>['crack', 'fling', 'offer', 'pass', 'whirl']</td>
+      <td></td>
+      <td>a usually brief attempt通常是短暂的尝试</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[effort, try, endeavour, endeavor, attempt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>nou</td>
+      <td>ɡoʊ</td>
+      <td>['go game']</td>
+      <td></td>
+      <td>a board game for two players who place counters on a grid; the object is to surround and so capture the opponent's counters一个棋盘游戏，用于两个将计数器放在网格上的玩家;对象是围绕并捕获对手的计数器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[board game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>nou</td>
+      <td>ɡoʊ</td>
+      <td>['adam', 'cristal', 'disco biscuit', 'ecstasy', 'hug drug', 'x', 'xtc']</td>
+      <td></td>
+      <td>street names for methylenedioxymethamphetamine亚甲二氧基甲基苯丙胺的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[methylenedioxymethamphetamine, mdma]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>nou</td>
+      <td>ɡoʊ</td>
+      <td>['spell', 'tour', 'turn']</td>
+      <td></td>
+      <td>a time period for working (after which you will be relieved by someone else)工作的时间段（之后你会被其他人解除）</td>
+      <td>it's my go这是我的去处</td>
+      <td></td>
+      <td></td>
+      <td>[work shift, shift, duty period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>adj</td>
+      <td>ɡoʊ</td>
+      <td>, similarTo:['a-ok', 'a-okay']</td>
+      <td>[no-go]</td>
+      <td>functioning correctly and ready for action正常运作并准备采取行动</td>
+      <td>all systems are go所有的系统都去了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>go</th>
+      <td>o</td>
+      <td>6.62</td>
+      <td>Non</td>
+      <td>ɡoʊ</td>
+      <td>, alos:['go with']</td>
+      <td></td>
+      <td>pass, fare, or elapse; of a certain state of affairs or action通过，票价或过去;某种事态或行为</td>
+      <td>How is it going?最近好吗？The day went well until I got your call这一天进展顺利，直到我接到你的电话</td>
+      <td>[going]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oh</th>
+      <td>o</td>
+      <td>6.36</td>
+      <td>nou</td>
+      <td>oʊ</td>
+      <td>['buckeye state', 'ohio']</td>
+      <td></td>
+      <td>a midwestern state in north central United States in the Great Lakes region美国中北部的一个中西部州，位于大湖区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>or</th>
+      <td>o</td>
+      <td>6.24</td>
+      <td>nou</td>
+      <td>ər</td>
+      <td>['beaver state', 'ore.', 'oregon']</td>
+      <td></td>
+      <td>a state in northwestern United States on the Pacific美国西北部太平洋地区的一个州</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>or</th>
+      <td>o</td>
+      <td>6.24</td>
+      <td>nou</td>
+      <td>ər</td>
+      <td>['operating room', 'operating theater', 'operating theatre', 'surgery']</td>
+      <td></td>
+      <td>a room in a hospital equipped for the performance of surgical operations医院的一个房间，用于进行外科手术</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hospital room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ok</th>
+      <td>o</td>
+      <td>5.86</td>
+      <td>nou</td>
+      <td>oʊ'keɪ</td>
+      <td>['o.k.', 'okay', 'okeh', 'okey']</td>
+      <td></td>
+      <td>an endorsement认可</td>
+      <td></td>
+      <td>[o.k.]</td>
+      <td></td>
+      <td>[warrant, sanction, indorsement, imprimatur, endorsement, countenance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ok</th>
+      <td>o</td>
+      <td>5.86</td>
+      <td>nou</td>
+      <td>oʊ'keɪ</td>
+      <td>['okla.', 'oklahoma', 'sooner state']</td>
+      <td></td>
+      <td>a state in south central United States美国中南部的一个州</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ok</th>
+      <td>o</td>
+      <td>5.86</td>
+      <td>adv</td>
+      <td>oʊ'keɪ</td>
+      <td>['all right', 'alright', 'fine', 'very well']</td>
+      <td></td>
+      <td>an expression of agreement normally occurring at the beginning of a sentence通常在句子开头发生的协议表达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ok</th>
+      <td>o</td>
+      <td>5.86</td>
+      <td>adj</td>
+      <td>oʊ'keɪ</td>
+      <td>['all right', 'cool', 'fine', 'hunky-dory', 'o.k.', 'okay'], similarTo:['satisfactory']</td>
+      <td></td>
+      <td>being satisfactory or in satisfactory condition满意或状况良好</td>
+      <td>things are okay事情还可以</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>ho</th>
+      <td>o</td>
+      <td>4.78</td>
+      <td>nou</td>
+      <td>hoʊ</td>
+      <td>['atomic number 67', 'holmium']</td>
+      <td></td>
+      <td>a trivalent metallic element of the rare earth group; occurs together with yttrium; forms highly magnetic compounds稀土族的三价金属元素;与钇一起发生;形成高磁性化合物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metal, metallic element]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>co</th>
+      <td>o</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>koʊ</td>
+      <td>['centennial state', 'colo.', 'colorado']</td>
+      <td></td>
+      <td>a state in west central United States in the Rocky Mountains美国中西部落基山脉的一个州</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>co</th>
+      <td>o</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>koʊ</td>
+      <td>['atomic number 27', 'cobalt']</td>
+      <td></td>
+      <td>a hard ferromagnetic silver-white bivalent or trivalent metallic element; a trace element in plant and animal nutrition硬铁磁性银白色二价或三价金属元素;植物和动物营养中的微量元素</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metallic element, metal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>co</th>
+      <td>o</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>koʊ</td>
+      <td>['carbon monoxide', 'carbon monoxide gas']</td>
+      <td></td>
+      <td>an odorless very poisonous gas that is a product of incomplete combustion of carbon一种无味的非常有毒的气体，是碳不完全燃烧的产物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[monoxide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>co</th>
+      <td>o</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>koʊ</td>
+      <td>['conscientious objector']</td>
+      <td></td>
+      <td>one who refuses to serve in the armed forces on grounds of conscience一个以良心为由拒绝在武装部队服役的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dissenter, protester, contestant, objector, dissident]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mo</th>
+      <td>o</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>moʊ</td>
+      <td>['bit', 'minute', 'moment', 'second']</td>
+      <td></td>
+      <td>an indefinitely short time无限短暂的时间</td>
+      <td>wait just a moment等一会儿in a mo在一个莫</td>
+      <td></td>
+      <td></td>
+      <td>[time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mo</th>
+      <td>o</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>moʊ</td>
+      <td>['missouri', 'mo.', 'show me state']</td>
+      <td></td>
+      <td>a midwestern state in central United States; a border state during the American Civil War, Missouri was admitted to the Confederacy without actually seceding from the Union美国中部的一个中西部州;在美国内战期间，密苏里州是一个边境国家，在没有真正脱离联邦的情况下被接纳为联邦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mo</th>
+      <td>o</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>moʊ</td>
+      <td>['atomic number 42', 'molybdenum']</td>
+      <td></td>
+      <td>a polyvalent metallic element that resembles chromium and tungsten in its properties; used to strengthen and harden steel一种多价金属元素，其性质类似于铬和钨;用来强化和硬化钢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metal, metallic element]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>po</th>
+      <td>o</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>poʊ</td>
+      <td>['post office', 'united states post office', 'us post office']</td>
+      <td></td>
+      <td>an independent agency of the federal government responsible for mail delivery (and sometimes telecommunications) between individuals and businesses in the United States联邦政府的一个独立机构，负责美国个人和企业之间的邮件递送（有时是电信）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[independent agency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>po</th>
+      <td>o</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>poʊ</td>
+      <td>['atomic number 84', 'polonium']</td>
+      <td></td>
+      <td>a radioactive metallic element that is similar to tellurium and bismuth; occurs in uranium ores but can be produced by bombarding bismuth with neutrons in a nuclear reactor放射性金属元素，类似于碲和铋;发生在铀矿石中，但可以通过在核反应堆中用中子轰击铋来生产</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metal, metallic element]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>po</th>
+      <td>o</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>poʊ</td>
+      <td>['po river']</td>
+      <td></td>
+      <td>a European river; flows into the Adriatic Sea欧洲河流;流入亚得里亚海</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>po</th>
+      <td>o</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>poʊ</td>
+      <td>['p.o.', 'petty officer']</td>
+      <td></td>
+      <td>a noncommissioned officer in the Navy or Coast Guard with a rank comparable to sergeant in the Army海军或海岸警卫队的一名士官，其军衔与陆军中士相当</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noncom, enlisted officer, noncommissioned officer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ox</th>
+      <td>o</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>ɑks</td>
+      <td>['wild ox']</td>
+      <td></td>
+      <td>any of various wild bovines especially of the genera Bos or closely related Bibos任何一种野生牛，特别是Bos属或密切相关的Bibos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bovine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ox</th>
+      <td>o</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>ɑks</td>
+      <td></td>
+      <td></td>
+      <td>an adult castrated bull of the genus Bos; especially Bos taurus一种成年阉割的Bos属公牛;特别是博斯金牛座</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[oxen, bos taurus, cattle, cows, kine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ko</th>
+      <td>o</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>koʊ</td>
+      <td>['kayo', 'knockout']</td>
+      <td></td>
+      <td>a blow that renders the opponent unconscious打击让对手失去意识</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ro</th>
+      <td>o</td>
+      <td>3.65</td>
+      <td>nou</td>
+      <td>roʊ</td>
+      <td></td>
+      <td></td>
+      <td>an artificial language for international use that rejects all existing words and is based instead on an abstract analysis of ideas一种国际使用的人工语言，它拒绝所有现有的单词，而是基于对想法的抽象分析</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artificial language]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fo</th>
+      <td>o</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>foʊ</td>
+      <td>['field-grade officer', 'field officer']</td>
+      <td></td>
+      <td>an officer holding the rank of major or lieutenant colonel or colonel一名持有少校或中校或上校军官的军官</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[commissioned military officer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>od</th>
+      <td>o</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɑd</td>
+      <td>['doctor of optometry']</td>
+      <td></td>
+      <td>a doctor's degree in optometry视光学博士学位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[doctor's degree, doctorate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>od</th>
+      <td>o</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɑd</td>
+      <td>['oculus dexter']</td>
+      <td></td>
+      <td>the right eye右眼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eye, oculus, optic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>os</th>
+      <td>o</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>ɑs</td>
+      <td>['oculus sinister']</td>
+      <td></td>
+      <td>the left eye左眼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eye, oculus, optic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>os</th>
+      <td>o</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>ɑs</td>
+      <td>['operating system']</td>
+      <td></td>
+      <td>(computer science) software that controls the execution of computer programs and may provide various services（计算机科学）软件，控制计算机程序的执行，并可提供各种服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[computer software, package, software package, software program, software system, software]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>os</th>
+      <td>o</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>ɑs</td>
+      <td>['bone']</td>
+      <td></td>
+      <td>rigid connective tissue that makes up the skeleton of vertebrates构成脊椎动物骨骼的刚性结缔组织</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[connective tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>os</th>
+      <td>o</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>ɑs</td>
+      <td>['atomic number 76', 'osmium']</td>
+      <td></td>
+      <td>a hard brittle blue-grey or blue-black metallic element that is one of the platinum metals; the heaviest metal known一种硬脆的蓝灰色或蓝黑色金属元素，是铂金属之一;已知最重的金属</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metal, metallic element]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>os</th>
+      <td>o</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>ɑs</td>
+      <td></td>
+      <td></td>
+      <td>a mouth or mouthlike opening嘴巴或嘴巴的开口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[opening, orifice, porta]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ob</th>
+      <td>o</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>ɔp</td>
+      <td>['midwifery', 'obstetrics', 'tocology']</td>
+      <td></td>
+      <td>the branch of medicine dealing with childbirth and care of the mother处理分娩和照顾母亲的医学分支</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[medicine, medical specialty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ob</th>
+      <td>o</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>ɔp</td>
+      <td>['ob river']</td>
+      <td></td>
+      <td>a major river of western Siberia; flows generally northward and westward to the Gulf of Ob and the Kara Sea西伯利亚西部的一条主要河流;通常向北和向西流向Ob湾和卡拉海</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,1430 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['tip', 'hip', 'rip', 'lip', 'sip', 'zip', 'dip', 'yip', 'nip', 'kip', 'pip', 'gip', 'vip']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td>['bung', 'fee']</td>
+      <td></td>
+      <td>give a tip or gratuity to in return for a service, beyond the compensation agreed on除了商定的补偿之外，给予小费或小费以换取服务</td>
+      <td>Remember to tip the waiter记得给服务员小费</td>
+      <td>[tipper]</td>
+      <td></td>
+      <td>[give, present, gift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td>['tip off']</td>
+      <td></td>
+      <td>give insider information or advise to给内幕消息或建议</td>
+      <td>He tipped off the police about the terrorist plot他向警方报告了恐怖主义情节</td>
+      <td></td>
+      <td></td>
+      <td>[counsel, advise, rede]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td>['topple', 'tumble']</td>
+      <td></td>
+      <td>cause to topple or tumble by pushing导致翻倒或跌倒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[push, force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td>['tippytoe', 'tiptoe']</td>
+      <td></td>
+      <td>walk on one's toes走在一个人的脚趾上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td>['angle', 'lean', 'slant', 'tilt'], alos:['tip over']</td>
+      <td></td>
+      <td>to incline or bend from a vertical position从垂直位置倾斜或弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flex, bend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td>['tap']</td>
+      <td></td>
+      <td>strike lightly轻轻罢工</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td></td>
+      <td></td>
+      <td>cause to tilt导致倾斜</td>
+      <td>tip the screen upward将屏幕向上倾斜</td>
+      <td>[tipper]</td>
+      <td></td>
+      <td>[reorient]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td></td>
+      <td></td>
+      <td>mark with a tip用小费标记</td>
+      <td>tip the arrow with the small stone用小石头翘起箭头</td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>ver</td>
+      <td>tɪp</td>
+      <td></td>
+      <td></td>
+      <td>remove the tip from从中删除提示</td>
+      <td>tip artichokes提示朝鲜蓟</td>
+      <td></td>
+      <td></td>
+      <td>[withdraw, take away, take, remove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>tɪp</td>
+      <td>['peak', 'point']</td>
+      <td></td>
+      <td>a V shapeV形</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[convex shape, convexity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>tɪp</td>
+      <td>['crest', 'crown', 'peak', 'summit', 'top']</td>
+      <td></td>
+      <td>the top or extreme point of something (usually a mountain or hill)某物（通常是山或山）的顶点或极点</td>
+      <td>they clambered to the tip of Monadnock他们爬到了Monadnock的尖端</td>
+      <td></td>
+      <td></td>
+      <td>[spot, place, topographic point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>tɪp</td>
+      <td>['backsheesh', 'baksheesh', 'bakshis', 'bakshish', 'gratuity', 'pourboire']</td>
+      <td></td>
+      <td>a relatively small amount of money given for services rendered (as by a waiter)提供服务的金额相对较少（由服务员提供）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[perquisite, perk, fringe benefit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>tɪp</td>
+      <td>['confidential information', 'hint', 'lead', 'steer', 'wind']</td>
+      <td></td>
+      <td>an indication of potential opportunity潜在机会的迹象</td>
+      <td>he got a tip on the stock market他得到了股票市场的小费</td>
+      <td>[tipster]</td>
+      <td></td>
+      <td>[counselling, direction, guidance, counsel, counseling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tip</th>
+      <td>ip</td>
+      <td>4.40</td>
+      <td>nou</td>
+      <td>tɪp</td>
+      <td></td>
+      <td></td>
+      <td>the extreme end of something; especially something pointed某事的极端;尤其是尖锐的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[end, terminal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hip</th>
+      <td>ip</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>hɪp</td>
+      <td>['pelvic arch', 'pelvic girdle', 'pelvis']</td>
+      <td></td>
+      <td>the structure of the vertebrate skeleton supporting the lower limbs in humans and the hind limbs or corresponding parts in other vertebrates脊椎动物骨架的结构，支撑人类的下肢和后肢或其他脊椎动物的相应部位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[girdle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hip</th>
+      <td>ip</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>hɪp</td>
+      <td>['articulatio coxae', 'coxa', 'hip joint']</td>
+      <td></td>
+      <td>the ball-and-socket joint between the head of the femur and the acetabulum股骨头和髋臼之间的球窝关节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enarthrodial joint, articulatio spheroidea, ball-and-socket joint, cotyloid joint, enarthrosis, spheroid joint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hip</th>
+      <td>ip</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>hɪp</td>
+      <td>['rose hip', 'rosehip']</td>
+      <td></td>
+      <td>the fruit of a rose plant玫瑰植物的果实</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fruit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hip</th>
+      <td>ip</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>hɪp</td>
+      <td></td>
+      <td></td>
+      <td>(architecture) the exterior angle formed by the junction of a sloping side and a sloping end of a roof（建筑）由倾斜侧和屋顶倾斜端的连接形成的外角</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exterior angle, external angle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hip</th>
+      <td>ip</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>hɪp</td>
+      <td></td>
+      <td></td>
+      <td>either side of the body below the waist and above the thigh身体两侧腰部以下和大腿上方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hip</th>
+      <td>ip</td>
+      <td>4.32</td>
+      <td>adj</td>
+      <td>hɪp</td>
+      <td>['hep', 'hip to'], similarTo:['informed']</td>
+      <td></td>
+      <td>informed about the latest trends了解最新趋势</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>rɪp</td>
+      <td>['rip off', 'steal']</td>
+      <td></td>
+      <td>take without the owner's consent未经所有者同意</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>rɪp</td>
+      <td>['pull', 'rend', 'rive']</td>
+      <td></td>
+      <td>tear or be torn violently撕裂或猛烈撕裂</td>
+      <td>The curtain ripped from top to bottom窗帘从上到下撕开pull the cooked chicken into strips把煮熟的鸡肉拉成条状</td>
+      <td></td>
+      <td></td>
+      <td>[rupture, tear, snap, bust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>rɪp</td>
+      <td></td>
+      <td></td>
+      <td>criticize or abuse strongly and violently批评或滥用强烈和暴力</td>
+      <td>The candidate ripped into his opponent mercilessly候选人无情地撕裂了他的对手</td>
+      <td></td>
+      <td></td>
+      <td>[assault, lash out, round, snipe, assail, attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>rɪp</td>
+      <td></td>
+      <td></td>
+      <td>cut (wood) along the grain沿着谷物切割（木头）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>ver</td>
+      <td>rɪp</td>
+      <td></td>
+      <td></td>
+      <td>move precipitously or violently急剧地或猛烈地移动</td>
+      <td>The tornado ripped along the coast龙卷风沿着海岸撕裂</td>
+      <td></td>
+      <td></td>
+      <td>[shoot, shoot down, charge, tear, buck]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>rɪp</td>
+      <td>['blood', 'profligate', 'rake', 'rakehell', 'roue']</td>
+      <td></td>
+      <td>a dissolute man in fashionable society时尚社会中一个放荡的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[debauchee, rounder, libertine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>rɪp</td>
+      <td>['rent', 'snag', 'split', 'tear']</td>
+      <td></td>
+      <td>an opening made forcibly as by pulling apart通过拉开而强行打开的开口</td>
+      <td>there was a rip in his pants他的裤子里有一条裂口</td>
+      <td></td>
+      <td></td>
+      <td>[opening, gap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>rɪp</td>
+      <td>['countercurrent', 'crosscurrent', 'riptide', 'tide rip']</td>
+      <td></td>
+      <td>a stretch of turbulent water in a river or the sea caused by one current flowing into or across another current河流或海洋中的一股湍流水，由一股电流流入或流过另一股电流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turbulency, turbulence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rip</th>
+      <td>ip</td>
+      <td>4.31</td>
+      <td>nou</td>
+      <td>rɪp</td>
+      <td>['rent', 'split']</td>
+      <td></td>
+      <td>the act of rending or ripping or splitting something撕裂或撕裂或分裂某物的行为</td>
+      <td>he gave the envelope a vigorous rip他给信封一个充满活力的撕裂</td>
+      <td></td>
+      <td></td>
+      <td>[tear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lip</th>
+      <td>ip</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>lɪp</td>
+      <td>['brim', 'rim']</td>
+      <td></td>
+      <td>the top edge of a vessel or other container容器或其他容器的顶部边缘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lip</th>
+      <td>ip</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>lɪp</td>
+      <td>['back talk', 'backtalk', 'mouth', 'sass', 'sassing']</td>
+      <td></td>
+      <td>an impudent or insolent rejoinder无礼或无礼的反驳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rejoinder, riposte, comeback, counter, return, retort, replication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lip</th>
+      <td>ip</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>lɪp</td>
+      <td></td>
+      <td></td>
+      <td>(botany) either of the two parts of a bilabiate corolla or calyx（植物学）双层花冠或花萼的两个部分中的任何一个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant part, plant structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lip</th>
+      <td>ip</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>lɪp</td>
+      <td></td>
+      <td></td>
+      <td>either of two fleshy folds of tissue that surround the mouth and play a role in speaking围绕嘴巴的两个肉质褶皱组织中的任何一个，并在说话中发挥作用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[articulator, external body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lip</th>
+      <td>ip</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>lɪp</td>
+      <td></td>
+      <td></td>
+      <td>either the outer margin or the inner margin of the aperture of a gastropod's shell腹足动物壳的孔的外边缘或内边缘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[margin, perimeter, border]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>ver</td>
+      <td>sɪp</td>
+      <td></td>
+      <td></td>
+      <td>drink in sips啜饮</td>
+      <td>She was sipping her tea她正在喝着茶</td>
+      <td>[sipper]</td>
+      <td></td>
+      <td>[drink, imbibe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>sɪp</td>
+      <td></td>
+      <td></td>
+      <td>a small drink一小杯饮料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deglutition, drink, swallow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>ver</td>
+      <td>zɪp</td>
+      <td>['hurry', 'speed', 'travel rapidly']</td>
+      <td></td>
+      <td>move very fast行动非常快</td>
+      <td>The runner zipped past us at breakneck speed跑步者以惊人的速度拉过我们</td>
+      <td></td>
+      <td></td>
+      <td>[go, move, travel, locomote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>ver</td>
+      <td>zɪp</td>
+      <td>['zip up', 'zipper']</td>
+      <td></td>
+      <td>close with a zipper靠近拉链</td>
+      <td></td>
+      <td>[zipper]</td>
+      <td></td>
+      <td>[fasten, secure, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>zɪp</td>
+      <td>['slide fastener', 'zip fastener', 'zipper']</td>
+      <td></td>
+      <td>a fastener for locking together two toothed edges by means of a sliding tab用于通过滑动舌片将两个齿形边缘锁定在一起的紧固件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[holdfast, fastening, fixing, fastener]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>zɪp</td>
+      <td>['energy', 'vigor', 'vigour']</td>
+      <td></td>
+      <td>forceful exertion有力的努力</td>
+      <td>he's full of zip他充满了拉链</td>
+      <td>[zippy]</td>
+      <td></td>
+      <td>[forcefulness, strength, force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>zɪp</td>
+      <td>['aught', 'cipher', 'cypher', 'goose egg', 'nada', 'naught', 'nil', 'nix', 'nothing', 'null', 'zero', 'zilch', 'zippo']</td>
+      <td></td>
+      <td>a quantity of no importance一点不重要</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[relative quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zip</th>
+      <td>ip</td>
+      <td>3.82</td>
+      <td>nou</td>
+      <td>zɪp</td>
+      <td>['postal code', 'postcode', 'zip code']</td>
+      <td></td>
+      <td>a code of letters and digits added to a postal address to aid in the sorting of mail添加到邮政地址的字母和数字代码，以帮助分类邮件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[code]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td>['sink']</td>
+      <td></td>
+      <td>appear to move downward似乎向下移动</td>
+      <td>The sun dipped below the horizon太阳落在地平线以下</td>
+      <td></td>
+      <td></td>
+      <td>[decline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td>['dim']</td>
+      <td></td>
+      <td>switch (a car's headlights) from a higher to a lower beam从较高光束到较低光束的开关（汽车的前灯）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change intensity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td>['dunk']</td>
+      <td></td>
+      <td>dip into a liquid while eating吃的同时浸入液体中</td>
+      <td></td>
+      <td>[dipper]</td>
+      <td></td>
+      <td>[immerse, plunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td>['douse', 'dunk', 'plunge', 'souse']</td>
+      <td></td>
+      <td>immerse briefly into a liquid so as to wet, coat, or saturate将液体短暂浸入液体中，以便润湿，涂抹或饱和</td>
+      <td>dip the garment into the cleaning solution将衣服浸入清洁液中dip the brush into the paint将刷子浸入油漆中</td>
+      <td>[dipper]</td>
+      <td></td>
+      <td>[immerse, plunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td>['douse', 'duck']</td>
+      <td></td>
+      <td>dip into a liquid浸入液体中</td>
+      <td>He dipped into the pool他蘸了一下游泳池</td>
+      <td></td>
+      <td></td>
+      <td>[dunk, plunge, douse, souse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>go down momentarily一会儿</td>
+      <td>Prices dipped价格下跌</td>
+      <td></td>
+      <td></td>
+      <td>[go down, decline, wane]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>immerse in a disinfectant solution浸入消毒液中</td>
+      <td>dip the sheep蘸羊</td>
+      <td></td>
+      <td></td>
+      <td>[immerse, plunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>lower briefly简短地说</td>
+      <td>She dipped her knee她跪了下来</td>
+      <td></td>
+      <td></td>
+      <td>[let down, lower, get down, take down, bring down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>place (candle wicks) into hot, liquid wax将（蜡烛灯芯）放入热的液态蜡中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[create from raw stuff, create from raw material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>plunge (one's hand or a receptacle) into a container将（一只手或一个容器）插入容器中</td>
+      <td>He dipped into his pocket他掏进口袋里</td>
+      <td></td>
+      <td></td>
+      <td>[plunge, immerse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>scoop up by plunging one's hand or a ladle below the surface通过在表面下方握住一只手或一把勺子来舀起来</td>
+      <td>dip water out of a container从容器中汲水</td>
+      <td></td>
+      <td></td>
+      <td>[scoop out, lift out, scoop, scoop up, take up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>slope downwards向下倾斜</td>
+      <td>Our property dips towards the river我们的财产淹没了河流</td>
+      <td></td>
+      <td></td>
+      <td>[slope, pitch, incline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>stain an object by immersing it in a liquid通过将物体浸入液体中来弄脏物体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>take a small amount from从中取出一小部分</td>
+      <td>I had to dip into my savings to buy him this present我不得不掏钱买他这件礼物</td>
+      <td></td>
+      <td></td>
+      <td>[take out, withdraw, draw, draw off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td>['drop', 'fall', 'free fall']</td>
+      <td></td>
+      <td>a sudden sharp decrease in some quantity一些数量突然急剧下降</td>
+      <td>a dip in prices价格下跌</td>
+      <td></td>
+      <td></td>
+      <td>[decrease, decrement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td>['cutpurse', 'pickpocket']</td>
+      <td></td>
+      <td>a thief who steals from the pockets or purses of others in public places在公共场所偷窃他人的口袋或钱包的小偷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thief, stealer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td>['angle of dip', 'inclination', 'magnetic dip', 'magnetic inclination']</td>
+      <td></td>
+      <td>(physics) the angle that a magnetic needle makes with the plane of the horizon（物理学）磁针与地平面的夹角</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td>['plunge']</td>
+      <td></td>
+      <td>a brief swim in water在水中短暂游泳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swimming, swim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>a brief immersion简短的沉浸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[submerging, submergence, immersion, submersion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>a candle that is made by repeated dipping in a pool of wax or tallow通过重复浸泡在蜡或动物油池中制成的蜡烛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wax light, candle, taper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>a depression in an otherwise level surface在其他水平表面上的凹陷</td>
+      <td>there was a dip in the road路上有一个下降</td>
+      <td></td>
+      <td></td>
+      <td>[impression, depression, imprint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>a gymnastic exercise on the parallel bars in which the body is lowered and raised by bending and straightening the arms在双杠上进行体操锻炼，通过弯曲和拉直手臂来降低和抬起身体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gymnastic exercise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dip</th>
+      <td>ip</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>dɪp</td>
+      <td></td>
+      <td></td>
+      <td>tasty mixture or liquid into which bite-sized foods are dipped美味的混合物或液体，一口大小的食物浸入其中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[condiment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yip</th>
+      <td>ip</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>jɪp</td>
+      <td>['yap', 'yelp']</td>
+      <td></td>
+      <td>bark in a high-pitched tone以高音调的树皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yip</th>
+      <td>ip</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>jɪp</td>
+      <td>['yelp', 'yelping']</td>
+      <td></td>
+      <td>a sharp high-pitched cry (especially by a dog)一声尖锐的高声呐喊（特别是一只狗）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>ver</td>
+      <td>nɪp</td>
+      <td>['clip', 'nip off', 'snip', 'snip off']</td>
+      <td></td>
+      <td>sever or remove by pinching or snipping通过挤压或剪断切断或移除</td>
+      <td>nip off the flowers咬掉鲜花</td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>ver</td>
+      <td>nɪp</td>
+      <td>['pinch', 'squeeze', 'tweet', 'twinge', 'twitch']</td>
+      <td></td>
+      <td>squeeze tightly between the fingers紧紧地夹在手指之间</td>
+      <td></td>
+      <td>[nipper]</td>
+      <td></td>
+      <td>[grip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>ver</td>
+      <td>nɪp</td>
+      <td></td>
+      <td></td>
+      <td>give a small sharp bite to咬一口小吃</td>
+      <td>The Queen's corgis always nip at her staff's ankles女王的corgis总是咬着她的员工的脚踝</td>
+      <td></td>
+      <td></td>
+      <td>[bite, seize with teeth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>nɪp</td>
+      <td>['piquance', 'piquancy', 'piquantness', 'tang', 'tanginess', 'zest']</td>
+      <td></td>
+      <td>a tart spicy quality酸辣的质量</td>
+      <td></td>
+      <td>[nippy]</td>
+      <td></td>
+      <td>[spiciness, spicery, spice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>nɪp</td>
+      <td>['flavor', 'flavour', 'relish', 'sapidity', 'savor', 'savour', 'smack', 'tang']</td>
+      <td></td>
+      <td>the taste experience when a savoury condiment is taken into the mouth将咸味调味品放入口中时的味觉体验</td>
+      <td></td>
+      <td>[nippy]</td>
+      <td></td>
+      <td>[gustatory perception, taste perception, taste sensation, taste, gustatory sensation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>nɪp</td>
+      <td>['chilliness', 'coolness']</td>
+      <td></td>
+      <td>the property of being moderately cold中度冷的特性</td>
+      <td></td>
+      <td>[nippy]</td>
+      <td></td>
+      <td>[low temperature, frigidness, frigidity, coldness, cold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>nɪp</td>
+      <td>['jap']</td>
+      <td></td>
+      <td>(offensive slang) offensive term for a person of Japanese descent（进攻性俚语）日本血统的进攻性术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nipponese, japanese]</td>
+      <td>[patois, cant, depreciation, derogation, disparagement, vernacular, jargon, lingo, argot, slang]</td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>nɪp</td>
+      <td>['pinch']</td>
+      <td></td>
+      <td>a small sharp bite or snip一个小尖锐的咬或剪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chomp, bite, clipping, snip, clip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nip</th>
+      <td>ip</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>nɪp</td>
+      <td>['shot']</td>
+      <td></td>
+      <td>a small drink of liquor一小杯酒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite quantity, small indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kip</th>
+      <td>ip</td>
+      <td>3.19</td>
+      <td>ver</td>
+      <td>kɪp</td>
+      <td>["catch some z's", "log z's", 'sleep', 'slumber']</td>
+      <td></td>
+      <td>be asleep睡着了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kip</th>
+      <td>ip</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>kɪp</td>
+      <td>['upstart']</td>
+      <td></td>
+      <td>a gymnastic exercise performed starting from a position with the legs over the upper body and moving to an erect position by arching the back and swinging the legs out and down while forcing the chest upright从腿部上方的位置开始进行体操锻炼，并通过拱起背部并向前和向下摆动腿部，同时迫使胸部挺直而移动到直立位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gymnastic exercise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kip</th>
+      <td>ip</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>kɪp</td>
+      <td></td>
+      <td></td>
+      <td>sleep睡觉</td>
+      <td>roused him from his kip从他的基普中唤醒了他</td>
+      <td></td>
+      <td></td>
+      <td>[nap, sleep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kip</th>
+      <td>ip</td>
+      <td>3.19</td>
+      <td>nou</td>
+      <td>kɪp</td>
+      <td></td>
+      <td></td>
+      <td>the basic unit of money in Laos老挝的基本货币单位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[laotian monetary unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>ver</td>
+      <td>pɪp</td>
+      <td>['hit', 'shoot']</td>
+      <td></td>
+      <td>hit with a missile from a weapon用武器击中导弹</td>
+      <td></td>
+      <td></td>
+      <td>[hit, blast, shoot, strike]</td>
+      <td>[wound, injure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>ver</td>
+      <td>pɪp</td>
+      <td>['shoot']</td>
+      <td></td>
+      <td>kill by firing a missile通过发射导弹杀死</td>
+      <td></td>
+      <td></td>
+      <td>[hit, shoot]</td>
+      <td>[kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>ver</td>
+      <td>pɪp</td>
+      <td>['mop up', 'rack up', 'whip', 'worst']</td>
+      <td></td>
+      <td>defeat thoroughly彻底失败</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trounce, beat, beat out, crush, vanquish, shell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>pɪp</td>
+      <td>['spot']</td>
+      <td></td>
+      <td>a mark on a die or on a playing card (shape depending on the suit)骰子或扑克牌上的标记（形状取决于套装）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[marker, mark, marking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>pɪp</td>
+      <td>['blip', 'radar target']</td>
+      <td></td>
+      <td>a radar echo displayed so as to show the position of a reflecting surface显示雷达回波以显示反射表面的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radar echo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>pɪp</td>
+      <td></td>
+      <td></td>
+      <td>a disease of poultry一种家禽疾病</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>pɪp</td>
+      <td></td>
+      <td></td>
+      <td>a minor nonspecific ailment一种轻微的非特异性疾病</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[complaint, ailment, ill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pip</th>
+      <td>ip</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>pɪp</td>
+      <td></td>
+      <td></td>
+      <td>a small hard seed found in some fruits在一些水果中发现的小硬籽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gip</th>
+      <td>ip</td>
+      <td>2.60</td>
+      <td>ver</td>
+      <td>dʒɪp</td>
+      <td>['gyp']</td>
+      <td></td>
+      <td>(sometimes offensive) to cheat or swindle（有时是冒犯性的）作弊或诈骗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chisel, rip off, cheat]</td>
+      <td>[depreciation, derogation, disparagement]</td>
+    </tr>
+    <tr>
+      <th>gip</th>
+      <td>ip</td>
+      <td>2.60</td>
+      <td>nou</td>
+      <td>dʒɪp</td>
+      <td>['gyp']</td>
+      <td></td>
+      <td>(sometimes offensive) an act of swindling or cheating（有时令人反感）一种欺骗或欺骗的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cheat, rig, swindle]</td>
+      <td>[derogation, disparagement, depreciation]</td>
+    </tr>
+    <tr>
+      <th>vip</th>
+      <td>ip</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td></td>
+      <td>['dignitary', 'high-up', 'high muckamuck', 'panjandrum', 'very important person']</td>
+      <td></td>
+      <td>an important or influential (and often overbearing) person重要的或有影响力的（通常是霸道的）人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[important person, influential person, personage]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

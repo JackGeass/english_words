@@ -1,0 +1,515 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['body', 'todd', 'odds', 'odin', 'prod', 'clod', 'plod', 'shod', 'tody', 'mods']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>ver</td>
+      <td>'bɑdi</td>
+      <td>['personify']</td>
+      <td></td>
+      <td>invest with or as with a body; give body to投资或与身体一起投资;给身体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be, personify, embody]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td>['consistence', 'consistency', 'substance']</td>
+      <td></td>
+      <td>the property of holding together and retaining its shape保持在一起并保持其形状的特性</td>
+      <td>wool has more body than rayon羊毛比人造丝更多</td>
+      <td></td>
+      <td></td>
+      <td>[property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td>['soundbox']</td>
+      <td></td>
+      <td>a resonating chamber in a musical instrument (as the body of a violin)乐器中的共振腔（作为小提琴的主体）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cavity resonator, resonator, resonating chamber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td>['organic structure']</td>
+      <td></td>
+      <td>the entire physical structure of an organism (an animal, plant, or human being)生物体（动物，植物或人类）的整个物理结构</td>
+      <td>he felt as if his whole body were on fire他觉得好像他的整个身体都着火了</td>
+      <td>[bodily]</td>
+      <td></td>
+      <td>[natural object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td>['torso', 'trunk']</td>
+      <td></td>
+      <td>the body excluding the head and neck and limbs身体不包括头部和颈部和四肢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td>['dead body']</td>
+      <td></td>
+      <td>a natural object consisting of a dead animal or person由死去的动物或人组成的自然物</td>
+      <td>they found the body in the lake他们在湖中找到了尸体</td>
+      <td></td>
+      <td></td>
+      <td>[natural object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td></td>
+      <td></td>
+      <td>a collection of particulars considered as a system被视为系统的一系列细节</td>
+      <td>a body of law一套法律a body of doctrine一套教义a body of precedents一系列先例</td>
+      <td></td>
+      <td></td>
+      <td>[scheme, system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td></td>
+      <td></td>
+      <td>a group of persons associated by some common tie or occupation and regarded as an entity由一些共同关系或职业联系起来并被视为实体的一群人</td>
+      <td>the whole body filed out of the auditorium全身从礼堂出来the student body学生团体administrative body行政机构</td>
+      <td></td>
+      <td></td>
+      <td>[social group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td></td>
+      <td></td>
+      <td>an individual 3-dimensional object that has mass and that is distinguishable from other objects一个单独的三维物体，具有质量，可与其他物体区分开来</td>
+      <td>heavenly body星球</td>
+      <td></td>
+      <td></td>
+      <td>[natural object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td></td>
+      <td></td>
+      <td>the central message of a communication沟通的核心信息</td>
+      <td>the body of the message was short消息的主体很短</td>
+      <td></td>
+      <td></td>
+      <td>[subject matter, content, message, substance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td></td>
+      <td></td>
+      <td>the external structure of a vehicle车辆的外部结构</td>
+      <td>the body of the car was badly rusted汽车的车身严重生锈</td>
+      <td></td>
+      <td></td>
+      <td>[construction, structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>body</th>
+      <td>od</td>
+      <td>5.36</td>
+      <td>nou</td>
+      <td>'bɑdi</td>
+      <td></td>
+      <td></td>
+      <td>the main mass of a thing一件事的主要质量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>todd</th>
+      <td>od</td>
+      <td>4.09</td>
+      <td>nou</td>
+      <td>tɑd</td>
+      <td>['sweeney todd']</td>
+      <td></td>
+      <td>fictional character in a play by George Pitt; a barber who murdered his customers乔治皮特戏剧中的虚构角色;一个谋杀他的顾客的理发师</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>todd</th>
+      <td>od</td>
+      <td>4.09</td>
+      <td>nou</td>
+      <td>tɑd</td>
+      <td>['lord todd', 'sir alexander robertus todd']</td>
+      <td></td>
+      <td>Scottish chemist noted for his research into the structure of nucleic acids (born in 1907)苏格兰化学家因其对核酸结构的研究而着称（1907年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odds</th>
+      <td>od</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>ɑdz</td>
+      <td>['betting odds']</td>
+      <td></td>
+      <td>the ratio by which one better's wager is greater than that of another一个更好的下注的比率大于另一个下注的比率</td>
+      <td>he offered odds of two to one他提出了两比一的赔率</td>
+      <td></td>
+      <td></td>
+      <td>[ratio]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odds</th>
+      <td>od</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>ɑdz</td>
+      <td></td>
+      <td></td>
+      <td>the likelihood of a thing occurring rather than not occurring事物发生而非发生的可能性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[likelihood, likeliness]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>odin</th>
+      <td>od</td>
+      <td>3.15</td>
+      <td>nou</td>
+      <td>'oʊdɪn</td>
+      <td></td>
+      <td></td>
+      <td>(Norse mythology) ruler of the Aesir; supreme god of war and poetry and knowledge and wisdom (for which he gave an eye) and husband of Frigg; identified with the Teutonic Wotan（北欧神话）Aesir的统治者;至高无上的战神，诗歌，知识和智慧（他为此睁开眼睛）和弗里格的丈夫;与条顿沃坦认同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prod</th>
+      <td>od</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>prɑd</td>
+      <td>['nudge', 'poke at']</td>
+      <td></td>
+      <td>to push against gently轻轻推开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[push, force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prod</th>
+      <td>od</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>prɑd</td>
+      <td>['dig', 'jab', 'poke', 'stab']</td>
+      <td></td>
+      <td>poke or thrust abruptly突然捅或推</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[thrust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prod</th>
+      <td>od</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>prɑd</td>
+      <td>['egg on', 'incite']</td>
+      <td></td>
+      <td>urge on; cause to act敦促;采取行动</td>
+      <td></td>
+      <td>[prodding]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prod</th>
+      <td>od</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>prɑd</td>
+      <td>['goad']</td>
+      <td></td>
+      <td>a pointed instrument that is used to prod into a state of motion用于刺激运动状态的尖头器械</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>prod</th>
+      <td>od</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>prɑd</td>
+      <td>['goad', 'goading', 'prodding', 'spur', 'spurring', 'urging']</td>
+      <td></td>
+      <td>a verbalization that encourages you to attempt something鼓励你尝试某种东西的语言表达</td>
+      <td>the ceaseless prodding got on his nerves无休止的刺激让他神经紧张</td>
+      <td></td>
+      <td></td>
+      <td>[encouragement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clod</th>
+      <td>od</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>klɑd</td>
+      <td>['gawk', 'goon', 'lout', 'lubber', 'lummox', 'lump', 'oaf', 'stumblebum']</td>
+      <td></td>
+      <td>an awkward stupid person一个尴尬的愚蠢的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[clumsy person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clod</th>
+      <td>od</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>klɑd</td>
+      <td>['ball', 'chunk', 'clump', 'glob', 'lump']</td>
+      <td></td>
+      <td>a compact mass紧凑的质量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[agglomeration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plod</th>
+      <td>od</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>plɑd</td>
+      <td>['footslog', 'pad', 'slog', 'tramp', 'trudge']</td>
+      <td></td>
+      <td>walk heavily and firmly, as when weary, or through mud当疲倦或通过泥泞时，我们会坚定地走路</td>
+      <td>Mules plodded in a circle around a grindstone骡子在磨刀石周围环绕着一圈</td>
+      <td>[plodder, plodding]</td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plod</th>
+      <td>od</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>plɑd</td>
+      <td>['plodding']</td>
+      <td></td>
+      <td>the act of walking with a slow heavy gait步态缓慢行走的行为</td>
+      <td>I could recognize his plod anywhere我可以在任何地方识别他的笨蛋</td>
+      <td></td>
+      <td></td>
+      <td>[walk, walking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shod</th>
+      <td>od</td>
+      <td>2.17</td>
+      <td>adj</td>
+      <td>ʃɑd</td>
+      <td>['calced']</td>
+      <td></td>
+      <td>used of certain religious orders who wear shoes用于穿鞋的某些宗教团体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shod</th>
+      <td>od</td>
+      <td>2.17</td>
+      <td>adj</td>
+      <td>ʃɑd</td>
+      <td>['shodden', 'shoed'], similarTo:['booted', 'ironshod', 'roughshod', 'sandaled', 'sandalled', 'slippered']</td>
+      <td>[unshod]</td>
+      <td>wearing footgear穿着footgear</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tody</th>
+      <td>od</td>
+      <td>2.12</td>
+      <td>nou</td>
+      <td>'toʊdi</td>
+      <td></td>
+      <td></td>
+      <td>tiny insectivorous West Indian bird having red-and-green plumage and a long straight bill微小的食虫西印度鸟，有红绿色的羽毛和长直的喙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coraciiform bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mods</th>
+      <td>od</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>a youth subculture that began in London in the early 1960s; a working-class movement with highly stylized dress and short hair; listened to rhythm and blues music and travelled on motor scooters20世纪60年代初在伦敦开始的青年亚文化;工人阶级运动，高度风格化的礼服和短发;听了节奏和布鲁斯音乐，并乘坐小型摩托车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[youth subculture]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,755 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['pants', 'plant', 'grant', 'chant', 'panty', 'slant', 'antsy', 'scant', 'brant', 'canty', 'antic']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>pants</th>
+      <td>ant</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>pænts</td>
+      <td>['bloomers', 'drawers', 'knickers']</td>
+      <td></td>
+      <td>(used in the plural) underpants worn by women（用于复数）女性穿的内裤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[underpants]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>plænt</td>
+      <td>['set']</td>
+      <td></td>
+      <td>put or set (seeds, seedlings, or plants) into the ground把（种子，幼苗或植物）放入或放置在地上</td>
+      <td>Let's plant flowers in the garden我们在花园里种花</td>
+      <td>[planter, planting]</td>
+      <td></td>
+      <td>[set, put, lay, position, place, pose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>plænt</td>
+      <td>['implant']</td>
+      <td></td>
+      <td>put firmly in the mind牢牢记在心里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[communicate, pass along, pass, pass on, put across]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>plænt</td>
+      <td>['embed', 'engraft', 'imbed', 'implant']</td>
+      <td></td>
+      <td>fix or set securely or deeply安全或深入地固定或设置</td>
+      <td>He planted a knee in the back of his opponent他在对手后面种了一个膝盖The dentist implanted a tooth in the gum牙医在牙龈中植入了一颗牙齿</td>
+      <td>[planting]</td>
+      <td></td>
+      <td>[enter, infix, insert, introduce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>plænt</td>
+      <td>['constitute', 'establish', 'found', 'institute']</td>
+      <td></td>
+      <td>set up or lay the groundwork for建立或奠定基础</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[initiate, pioneer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>plænt</td>
+      <td></td>
+      <td></td>
+      <td>place into a river放入河中</td>
+      <td>plant fish植物鱼</td>
+      <td></td>
+      <td></td>
+      <td>[stock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>ver</td>
+      <td>plænt</td>
+      <td></td>
+      <td></td>
+      <td>place something or someone in a certain position in order to secretly observe or deceive将某事或某人放在某个位置以暗中观察或欺骗</td>
+      <td>plant bugs in the dissident's apartment在持不同政见者的公寓里种植虫子</td>
+      <td></td>
+      <td></td>
+      <td>[pose, put, position, place, set, lay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>plænt</td>
+      <td>['flora', 'plant life']</td>
+      <td></td>
+      <td>(botany) a living organism lacking the power of locomotion（植物学）一种缺乏运动能力的活生物体</td>
+      <td></td>
+      <td>[plantal, plantlet]</td>
+      <td></td>
+      <td>[organism, being]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>plænt</td>
+      <td>['industrial plant', 'works']</td>
+      <td></td>
+      <td>buildings for carrying on industrial labor进行工业劳动的建筑物</td>
+      <td>they built a large plant to manufacture automobiles他们建造了一个大型工厂来制造汽车</td>
+      <td></td>
+      <td></td>
+      <td>[complex, building complex]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>plænt</td>
+      <td></td>
+      <td></td>
+      <td>an actor situated in the audience whose acting is rehearsed but seems spontaneous to the audience一个位于观众中的演员，他的表演被排练，但对观众来说似乎是自发的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[role player, actor, player, thespian, histrion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plant</th>
+      <td>ant</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>plænt</td>
+      <td></td>
+      <td></td>
+      <td>something planted secretly for discovery by another偷偷地为另一个人发现的东西</td>
+      <td>the police used a plant to trick the thieves警察使用一种植物欺骗小偷he claimed that the evidence against him was a plant他声称反对他的证据是一种植物</td>
+      <td></td>
+      <td></td>
+      <td>[contrivance, dodge, stratagem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>grænt</td>
+      <td>['award']</td>
+      <td></td>
+      <td>give as judged due or on the basis of merit给予判断到期或基于功绩</td>
+      <td>Funds are granted to qualified researchers资金授予合格的研究人员</td>
+      <td>[grantee]</td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>grænt</td>
+      <td>['allow']</td>
+      <td></td>
+      <td>let have让我们</td>
+      <td>grant permission授予权限</td>
+      <td>[granter]</td>
+      <td>[countenance, allow, let, permit]</td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>grænt</td>
+      <td>['give']</td>
+      <td></td>
+      <td>bestow, especially officially赐予，特别是正式</td>
+      <td>grant a degree授予学位This bill grants us new rights该法案赋予我们新的权利</td>
+      <td>[grantee, granter]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>grænt</td>
+      <td>['cede', 'concede', 'yield']</td>
+      <td></td>
+      <td>give over; surrender or relinquish to the physical control of another给了;放弃或放弃对另一个人的物理控制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>grænt</td>
+      <td>['concede', 'yield']</td>
+      <td></td>
+      <td>be willing to concede愿意让步</td>
+      <td>I grant you this much我非常感谢你</td>
+      <td></td>
+      <td></td>
+      <td>[concord, hold, concur, agree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>grænt</td>
+      <td>['accord', 'allot']</td>
+      <td></td>
+      <td>allow to have允许拥有</td>
+      <td>grant a privilege授予特权</td>
+      <td></td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>grænt</td>
+      <td>['deed over']</td>
+      <td></td>
+      <td>transfer by deed契约转移</td>
+      <td>grant land授予土地</td>
+      <td>[grantee, grantor]</td>
+      <td></td>
+      <td>[give, gift, present]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td>['hiram ulysses grant', 'president grant', 'ulysses grant', 'ulysses s. grant', 'ulysses simpson grant']</td>
+      <td></td>
+      <td>18th President of the United States; commander of the Union armies in the American Civil War (1822-1885)第18任美国总统;美国内战中的联盟军队指挥官（1822-1885）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td>['subsidisation', 'subsidization']</td>
+      <td></td>
+      <td>the act of providing a subsidy提供补贴的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assignation, parceling, apportioning, parcelling, apportionment, allotment, allocation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td>['assignment']</td>
+      <td></td>
+      <td>(law) a transfer of property by deed of conveyance（法律）通过运输契约转让财产</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transferred property, transferred possession]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td>['duncan grant', 'duncan james corrow grant']</td>
+      <td></td>
+      <td>Scottish painter; cousin of Lytton Strachey and member of the Bloomsbury Group (1885-1978)苏格兰画家; Lytton Strachey的表弟和Bloomsbury集团的成员（1885-1978）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td>['concession']</td>
+      <td></td>
+      <td>a contract granting the right to operate a subsidiary business授予经营子公司业务的合同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contract]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td>['cary grant']</td>
+      <td></td>
+      <td>United States actor (born in England) who was the elegant leading man in many films (1904-1986)美国演员（出生于英格兰）是许多电影中的优雅领导人（1904-1986）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td></td>
+      <td></td>
+      <td>any monetary aid任何货币援助</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assistance, aid, economic assistance, financial aid, financial assistance, economic aid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grant</th>
+      <td>ant</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>grænt</td>
+      <td></td>
+      <td></td>
+      <td>a right or privilege that has been granted被授予的权利或特权</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[right]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chant</th>
+      <td>ant</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>tʃænt</td>
+      <td>['cantillate', 'intonate', 'intone']</td>
+      <td></td>
+      <td>recite with musical intonation; recite as a chant or a psalm背诵音乐语调;背诵作为颂歌或诗篇</td>
+      <td>The rabbi chanted a prayer拉比高呼祷告</td>
+      <td>[chanter, chanting]</td>
+      <td></td>
+      <td>[sing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chant</th>
+      <td>ant</td>
+      <td>3.46</td>
+      <td>ver</td>
+      <td>tʃænt</td>
+      <td>['intone', 'tone']</td>
+      <td></td>
+      <td>utter monotonously and repetitively and rhythmically完全单调，重复和有节奏地</td>
+      <td>The students chanted the same slogan over and over again学生们一遍又一遍地喊着同样的口号</td>
+      <td></td>
+      <td></td>
+      <td>[speak, mouth, utter, verbalise, verbalize, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chant</th>
+      <td>ant</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>tʃænt</td>
+      <td></td>
+      <td></td>
+      <td>a repetitive song in which as many syllables as necessary are assigned to a single tone重复的歌曲，其中根据需要将多个音节分配给单个音调</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[religious song]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>panty</th>
+      <td>ant</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>'pænti</td>
+      <td>['pantie', 'scanty', 'step-in']</td>
+      <td></td>
+      <td>short underpants for women or children (usually used in the plural)女士或儿童短内裤（通常以复数形式使用）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[underpants]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>slant</th>
+      <td>ant</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>slænt</td>
+      <td>['cant', 'cant over', 'pitch', 'tilt']</td>
+      <td></td>
+      <td>heel over脚后跟</td>
+      <td>The ceiling is slanting天花板倾斜</td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slant</th>
+      <td>ant</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>slænt</td>
+      <td>['angle', 'weight']</td>
+      <td></td>
+      <td>present with a bias存在偏见</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[predetermine, bias]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slant</th>
+      <td>ant</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>slænt</td>
+      <td>['angle', 'lean', 'tilt', 'tip']</td>
+      <td></td>
+      <td>to incline or bend from a vertical position从垂直位置倾斜或弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flex, bend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slant</th>
+      <td>ant</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>slænt</td>
+      <td></td>
+      <td></td>
+      <td>lie obliquely倾斜地说谎</td>
+      <td>A scar slanted across his face一条疤痕在他脸上倾斜</td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slant</th>
+      <td>ant</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>slænt</td>
+      <td>['angle']</td>
+      <td></td>
+      <td>a biased way of looking at or presenting something一种偏见的看待或呈现某种东西的方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[viewpoint, stand, point of view, standpoint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slant</th>
+      <td>ant</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>slænt</td>
+      <td>['pitch', 'rake']</td>
+      <td></td>
+      <td>degree of deviation from a horizontal plane偏离水平面的程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slope, gradient]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>antsy</th>
+      <td>ant</td>
+      <td>2.62</td>
+      <td>adj</td>
+      <td>'æntsi</td>
+      <td>['fidgety', 'fretful', 'itchy'], similarTo:['tense']</td>
+      <td></td>
+      <td>nervous and unable to relax紧张，无法放松</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scant</th>
+      <td>ant</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>skænt</td>
+      <td>['skimp', 'stint']</td>
+      <td></td>
+      <td>supply sparingly and with restricted quantities少量供应，数量有限</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[provide, furnish, render, supply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scant</th>
+      <td>ant</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>skænt</td>
+      <td>['skimp']</td>
+      <td></td>
+      <td>work hastily or carelessly; deal with inadequately and superficially匆匆忙忙地工作;处理不充分和表面上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scant</th>
+      <td>ant</td>
+      <td>2.52</td>
+      <td>ver</td>
+      <td>skænt</td>
+      <td>['skimp']</td>
+      <td></td>
+      <td>limit in quality or quantity质量或数量限制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[limit, restrict, confine, bound, throttle, trammel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scant</th>
+      <td>ant</td>
+      <td>2.52</td>
+      <td>adj</td>
+      <td>skænt</td>
+      <td>['light', 'short'], similarTo:['insufficient', 'deficient']</td>
+      <td></td>
+      <td>less than the correct or legal or full amount often deliberately so经常故意不到正确或合法或全额</td>
+      <td>a scant cup of sugar一杯糖</td>
+      <td>[scantness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brant</th>
+      <td>ant</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>brænt</td>
+      <td>['brant goose', 'brent', 'brent goose']</td>
+      <td></td>
+      <td>small dark geese that breed in the north and migrate southward在北方繁殖并向南迁移的小黑雁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[goose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>canty</th>
+      <td>ant</td>
+      <td>2.02</td>
+      <td>adj</td>
+      <td>'kænti</td>
+      <td>, similarTo:['energetic']</td>
+      <td></td>
+      <td>lively and brisk活泼活泼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>antic</th>
+      <td>ant</td>
+      <td>1.97</td>
+      <td>ver</td>
+      <td>'æntɪk</td>
+      <td>['clown', 'clown around']</td>
+      <td></td>
+      <td>act as or like a clown扮演或喜欢小丑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jest, joke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>antic</th>
+      <td>ant</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'æntɪk</td>
+      <td>['caper', 'joke', 'prank', 'put-on', 'trick']</td>
+      <td></td>
+      <td>a ludicrous or grotesque act done for fun and amusement为娱乐和娱乐而做的荒谬或怪诞的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[diversion, recreation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>antic</th>
+      <td>ant</td>
+      <td>1.97</td>
+      <td>adj</td>
+      <td>'æntɪk</td>
+      <td>['fantastic', 'fantastical', 'grotesque'], similarTo:['strange', 'unusual']</td>
+      <td></td>
+      <td>ludicrously odd荒唐奇怪</td>
+      <td>Hamlet's assumed antic disposition哈姆雷特假设的滑稽倾向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

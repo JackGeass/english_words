@@ -1,0 +1,1235 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['bag', 'fag', 'tag', 'rag', 'hag', 'gag', 'nag', 'mag', 'lag', 'jag', 'wag', 'dag', 'sag', 'zag']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>ver</td>
+      <td>bæɡ</td>
+      <td>['pocket']</td>
+      <td></td>
+      <td>take unlawfully非法采取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip, steal, rip off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>ver</td>
+      <td>bæɡ</td>
+      <td>['bulge']</td>
+      <td></td>
+      <td>bulge out; form a bulge outward, or be so full as to appear to bulge凸出向外形成一个凸起，或者是如此充满以至于看起来凸起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jut, protrude, project, jut out, stick out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>ver</td>
+      <td>bæɡ</td>
+      <td></td>
+      <td></td>
+      <td>capture or kill, as in hunting捕获或杀死，如在狩猎</td>
+      <td>bag a few pheasants包了几个野鸡</td>
+      <td></td>
+      <td></td>
+      <td>[catch, capture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>ver</td>
+      <td>bæɡ</td>
+      <td></td>
+      <td></td>
+      <td>hang loosely, like an empty bag松散地挂起，就像一个空袋子</td>
+      <td></td>
+      <td>[bagging]</td>
+      <td></td>
+      <td>[sag, swag, droop, flag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>ver</td>
+      <td>bæɡ</td>
+      <td></td>
+      <td></td>
+      <td>put into a bag放进一个袋子里</td>
+      <td>The supermarket clerk bagged the groceries超市店员装满了杂货</td>
+      <td>[bagger, bagging]</td>
+      <td></td>
+      <td>[pack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td>['cup of tea', 'dish']</td>
+      <td></td>
+      <td>an activity that you like or at which you are superior您喜欢或优越的活动</td>
+      <td>his bag now is learning to play golf他的包现在正在学习打高尔夫球</td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td>['grip', 'suitcase', 'traveling bag', 'travelling bag']</td>
+      <td></td>
+      <td>a portable rectangular container for carrying clothes便携式长方形容器，用于携带衣服</td>
+      <td>he carried his small bag onto the plane with him他把他的小包带到了飞机上</td>
+      <td></td>
+      <td></td>
+      <td>[luggage, baggage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td>['base']</td>
+      <td></td>
+      <td>a place that the runner must touch before scoring在得分之前跑步者必须触摸的地方</td>
+      <td>he scrambled to get back to the bag他争先恐后地回到了包里</td>
+      <td></td>
+      <td></td>
+      <td>[baseball equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td>['handbag', 'pocketbook', 'purse']</td>
+      <td></td>
+      <td>a container used for carrying money and small personal items or accessories (especially by women)用于携带钱和小件个人物品或配件的容器（特别是女性）</td>
+      <td>she reached into her bag and found a comb她伸进她的包里，发现了一把梳子</td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td>['bagful']</td>
+      <td></td>
+      <td>the quantity that a bag will hold一个袋子的数量</td>
+      <td>he ate a large bag of popcorn他吃了一大袋爆米花</td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td>['udder']</td>
+      <td></td>
+      <td>mammary gland of bovids (cows and sheep and goats)牛的乳腺（奶牛和绵羊和山羊）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mamma, mammary gland]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td>['old bag']</td>
+      <td></td>
+      <td>an ugly or ill-tempered woman一个丑陋或脾气暴躁的女人</td>
+      <td>he was romancing the old bag for her money为了她的钱，他正在用旧包装袋</td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable woman, unpleasant woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a flexible container with a single opening一个带有单个开口的柔性容器</td>
+      <td>he stuffed his laundry into a large bag他把衣服塞进一个大包里</td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bag</th>
+      <td>ag</td>
+      <td>5.02</td>
+      <td>nou</td>
+      <td>bæɡ</td>
+      <td></td>
+      <td></td>
+      <td>the quantity of game taken in a particular period (usually by one person)在特定时期（通常由一个人）进行的游戏数量</td>
+      <td>his bag included two deer他的包包括两只鹿</td>
+      <td></td>
+      <td></td>
+      <td>[indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fag</th>
+      <td>ag</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>fæɡ</td>
+      <td>['fag out', 'fatigue', 'jade', 'outwear', 'tire', 'tire out', 'wear', 'wear down', 'wear out', 'wear upon', 'weary']</td>
+      <td></td>
+      <td>exhaust or get tired through overuse or great strain or stress通过过度使用或巨大的压力或压力来消耗或疲惫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indispose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fag</th>
+      <td>ag</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>fæɡ</td>
+      <td>['dig', 'drudge', 'grind', 'labor', 'labour', 'moil', 'toil', 'travail']</td>
+      <td></td>
+      <td>work hard努力工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work, do work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fag</th>
+      <td>ag</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>fæɡ</td>
+      <td></td>
+      <td></td>
+      <td>act as a servant for older boys, in British public schools在英国公立学校担任年龄较大男孩的仆人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[serve, attend to, attend, assist, wait on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fag</th>
+      <td>ag</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>fæɡ</td>
+      <td>['faggot', 'fagot', 'fairy', 'nance', 'pansy', 'poof', 'poove', 'pouf', 'queen', 'queer']</td>
+      <td></td>
+      <td>offensive term for a homosexual man同性恋者的冒犯性词语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gay, homo, homosexual, homophile]</td>
+      <td>[depreciation, disparagement, derogation]</td>
+    </tr>
+    <tr>
+      <th>fag</th>
+      <td>ag</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>fæɡ</td>
+      <td>['butt', 'cigaret', 'cigarette', 'coffin nail']</td>
+      <td></td>
+      <td>finely ground tobacco wrapped in paper; for smoking用纸包着的细磨烟草;吸烟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smoke, roll of tobacco]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tæɡ</td>
+      <td>['chase', 'chase after', 'dog', 'give chase', 'go after', 'tail', 'track', 'trail'], alos:['tag along']</td>
+      <td></td>
+      <td>go after with the intent to catch追求意图捕捉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[follow, pursue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tæɡ</td>
+      <td>['label', 'mark']</td>
+      <td></td>
+      <td>attach a tag or label to附上标签或标签</td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tæɡ</td>
+      <td></td>
+      <td></td>
+      <td>provide with a name or nickname提供姓名或昵称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[call, know as, be known as, name]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tæɡ</td>
+      <td></td>
+      <td></td>
+      <td>supply (blank verse or prose) with rhymes供韵（空白诗句或散文）与押韵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rhyme, rime]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tæɡ</td>
+      <td></td>
+      <td></td>
+      <td>touch a player while he is holding the ball在他拿球时触摸一名球员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tæɡ</td>
+      <td>['ticket']</td>
+      <td></td>
+      <td>a label written or printed on paper, cardboard, or plastic that is attached to something to indicate its owner, nature, price, etc.在纸张，纸板或塑料上书写或印刷的标签，附在某物上以表明其所有者，性质，价格等。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tæɡ</td>
+      <td>['rag', 'shred', 'tag end', 'tatter']</td>
+      <td></td>
+      <td>a small piece of cloth or paper一小块布或纸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of cloth, piece of material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a game in which one child chases the others; the one who is caught becomes the next chaser一个孩子追逐其他孩子的游戏;被捕的人成为下一个追逐者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[child's game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a label associated with something for the purpose of identification与识别目的相关的标签</td>
+      <td>semantic tags were attached in order to identify different meanings of the word附加语义标签以识别单词的不同含义</td>
+      <td></td>
+      <td></td>
+      <td>[label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tag</th>
+      <td>ag</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tæɡ</td>
+      <td></td>
+      <td></td>
+      <td>(sports) the act of touching a player in a game (which changes their status in the game)（体育）在游戏中触摸玩家的行为（改变他们在游戏中的状态）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touching, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>ræɡ</td>
+      <td>['bedevil', 'crucify', 'dun', 'frustrate', 'torment']</td>
+      <td></td>
+      <td>treat cruelly残忍地对待</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chivy, chivvy, chevy, chevvy, molest, beset, plague, provoke, harass, harry, hassle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>ræɡ</td>
+      <td>['bawl out', 'berate', 'call down', 'call on the carpet', 'chew out', 'chew up', 'chide', 'dress down', 'have words', 'jaw', 'lambast', 'lambaste', 'lecture', 'rebuke', 'remonstrate', 'reprimand', 'scold', 'take to task', 'trounce']</td>
+      <td></td>
+      <td>censure severely or angrily严厉或愤怒地谴责</td>
+      <td>The deputy ragged the Prime Minister副总统抨击总理</td>
+      <td></td>
+      <td></td>
+      <td>[pick apart, knock, criticise, criticize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>ræɡ</td>
+      <td>['bait', 'cod', 'rally', 'razz', 'ride', 'tantalise', 'tantalize', 'taunt', 'tease', 'twit']</td>
+      <td></td>
+      <td>harass with persistent criticism or carping骚扰持续的批评或讽刺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mock, bemock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>ræɡ</td>
+      <td>['annoy', 'bother', 'chafe', 'devil', 'get at', 'get to', 'gravel', 'irritate', 'nark', 'nettle', 'rile', 'vex']</td>
+      <td></td>
+      <td>cause annoyance in; disturb, especially by minor irritations引起烦恼;打扰，尤其是轻微的烦恼</td>
+      <td></td>
+      <td></td>
+      <td>[chafe]</td>
+      <td>[displease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>ræɡ</td>
+      <td></td>
+      <td></td>
+      <td>break into lumps before sorting在分拣之前闯入肿块</td>
+      <td>rag ore抹布矿石</td>
+      <td></td>
+      <td></td>
+      <td>[fragmentise, fragmentize, break up, fragment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>ræɡ</td>
+      <td></td>
+      <td></td>
+      <td>play in ragtime在拉格泰姆玩</td>
+      <td>rag that old tune旧调</td>
+      <td></td>
+      <td></td>
+      <td>[spiel, play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>ræɡ</td>
+      <td>['rag week']</td>
+      <td></td>
+      <td>a week at British universities during which side-shows and processions of floats are organized to raise money for charities在英国大学学习一周，在这些大学里组织了一系列花车和游行队伍来为慈善机构筹集资金</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[week, hebdomad]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>ræɡ</td>
+      <td>['sheet', 'tabloid']</td>
+      <td></td>
+      <td>newspaper with half-size pages半尺寸的报纸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[newspaper, paper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>ræɡ</td>
+      <td>['ragtime']</td>
+      <td></td>
+      <td>music with a syncopated melody (usually for the piano)具有切分旋律的音乐（通常用于钢琴）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dance music]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>ræɡ</td>
+      <td>['shred', 'tag', 'tag end', 'tatter']</td>
+      <td></td>
+      <td>a small piece of cloth or paper一小块布或纸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[piece of cloth, piece of material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rag</th>
+      <td>ag</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>ræɡ</td>
+      <td></td>
+      <td></td>
+      <td>a boisterous practical joke (especially by college students)一个吵闹的恶作剧（特别是大学生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[practical joke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hag</th>
+      <td>ag</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>hæɡ</td>
+      <td>['hagfish', 'slime eels']</td>
+      <td></td>
+      <td>eellike cyclostome having a tongue with horny teeth in a round mouth surrounded by eight tentacles; feeds on dead or trapped fishes by boring into their bodieseellike cyclostome有一个舌头有角质的牙齿，圆形的嘴被八个触手包围;通过钻进他们的身体来喂养死鱼或被困鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jawless vertebrate, jawless fish, agnathan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hag</th>
+      <td>ag</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>hæɡ</td>
+      <td>['beldam', 'beldame', 'crone', 'witch']</td>
+      <td></td>
+      <td>an ugly evil-looking old woman一个丑陋邪恶的老太婆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[old woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>ɡæɡ</td>
+      <td>['muzzle']</td>
+      <td></td>
+      <td>prevent from speaking out防止说出来</td>
+      <td>The press was gagged媒体被堵住了</td>
+      <td></td>
+      <td></td>
+      <td>[hush, still, hush up, quieten, shut up, silence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>ɡæɡ</td>
+      <td>['heave', 'retch']</td>
+      <td></td>
+      <td>make an unsuccessful effort to vomit; strain to vomit呕吐不成功;呕吐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>ɡæɡ</td>
+      <td>['muzzle']</td>
+      <td></td>
+      <td>tie a gag around someone's mouth in order to silence them在别人的嘴周围扎一个塞子，以使他们沉默</td>
+      <td>The burglars gagged the home owner and tied him to a chair窃贼堵住了房主，把他绑在椅子上</td>
+      <td></td>
+      <td></td>
+      <td>[tie, bind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>ɡæɡ</td>
+      <td>['quip']</td>
+      <td></td>
+      <td>make jokes or quips开玩笑或打趣</td>
+      <td>The students were gagging during dinner学生们在吃饭时呕吐</td>
+      <td></td>
+      <td></td>
+      <td>[jest, joke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>ɡæɡ</td>
+      <td>['choke', 'strangle', 'suffocate']</td>
+      <td></td>
+      <td>struggle for breath; have insufficient oxygen intake为呼吸而奋斗;氧气摄入不足</td>
+      <td>he swallowed a fishbone and gagged他吞下鱼骨，塞住了</td>
+      <td></td>
+      <td></td>
+      <td>[suffer, hurt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>ɡæɡ</td>
+      <td>['choke', 'fret']</td>
+      <td></td>
+      <td>be too tight; rub or press太紧了;擦或按</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contract, compress, constrict, squeeze, press, compact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>ver</td>
+      <td>ɡæɡ</td>
+      <td>['choke']</td>
+      <td></td>
+      <td>cause to retch or choke导致呕吐或窒息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sicken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>nou</td>
+      <td>ɡæɡ</td>
+      <td>['muzzle']</td>
+      <td></td>
+      <td>restraint put into a person's mouth to prevent speaking or shouting限制放入一个人的嘴里，以防止说话或喊叫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[constraint, restraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gag</th>
+      <td>ag</td>
+      <td>3.54</td>
+      <td>nou</td>
+      <td>ɡæɡ</td>
+      <td>['jape', 'jest', 'joke', 'laugh']</td>
+      <td></td>
+      <td>a humorous anecdote or remark intended to provoke laughter旨在引发笑声的幽默轶事或评论</td>
+      <td>he knows a million gags他知道一百万个噱头</td>
+      <td>[gagster]</td>
+      <td></td>
+      <td>[humor, humour, wittiness, wit, witticism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nag</th>
+      <td>ag</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>næɡ</td>
+      <td>['hen-peck', 'peck']</td>
+      <td></td>
+      <td>bother persistently with trivial complaints坚持不懈地抱怨琐事</td>
+      <td>She nags her husband all day long她整天都唠叨着她的丈夫</td>
+      <td>[nagger]</td>
+      <td></td>
+      <td>[plain, sound off, quetch, complain, kick, kvetch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nag</th>
+      <td>ag</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>næɡ</td>
+      <td></td>
+      <td></td>
+      <td>remind or urge constantly不断提醒或催促</td>
+      <td>she nagged to take a vacation她唠叨着去度假</td>
+      <td></td>
+      <td></td>
+      <td>[remind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nag</th>
+      <td>ag</td>
+      <td>3.42</td>
+      <td>ver</td>
+      <td>næɡ</td>
+      <td></td>
+      <td></td>
+      <td>worry persistently持续担心</td>
+      <td>nagging concerns and doubts唠叨的担忧和怀疑</td>
+      <td></td>
+      <td></td>
+      <td>[vex, worry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nag</th>
+      <td>ag</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>næɡ</td>
+      <td>['common scold', 'nagger', 'scold', 'scolder']</td>
+      <td></td>
+      <td>someone (especially a woman) who annoys people by constantly finding fault某人（特别是女人）通过不断发现错误来惹恼人们</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nag</th>
+      <td>ag</td>
+      <td>3.42</td>
+      <td>nou</td>
+      <td>næɡ</td>
+      <td>['hack', 'jade', 'plug']</td>
+      <td></td>
+      <td>an old or over-worked horse一匹陈旧或过度劳累的马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equus caballus, horse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mag</th>
+      <td>ag</td>
+      <td>3.25</td>
+      <td>nou</td>
+      <td>mæɡ</td>
+      <td>['magazine']</td>
+      <td></td>
+      <td>a periodic publication containing pictures and stories and articles of interest to those who purchase it or subscribe to it定期出版物，其中包含购买或订阅的图片，故事和感兴趣的文章</td>
+      <td>it takes several years before a magazine starts to break even or make money在杂志开始收支平衡或赚钱之前需要几年的时间</td>
+      <td></td>
+      <td></td>
+      <td>[public press, press, publication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lag</th>
+      <td>ag</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>læɡ</td>
+      <td>['gaol', 'immure', 'imprison', 'incarcerate', 'jail', 'jug', 'put away', 'put behind bars', 'remand']</td>
+      <td></td>
+      <td>lock up or confine, in or as in a jail锁定或限制，在监狱中或在监狱中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[detain, confine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lag</th>
+      <td>ag</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>læɡ</td>
+      <td>['dawdle', 'fall back', 'fall behind']</td>
+      <td></td>
+      <td>hang (back) or fall (behind) in movement, progress, development, etc.在运动，进步，发展等方面悬挂（后退）或摔倒（后面）</td>
+      <td></td>
+      <td>[laggard, lagger]</td>
+      <td></td>
+      <td>[follow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lag</th>
+      <td>ag</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>læɡ</td>
+      <td></td>
+      <td></td>
+      <td>cover with lagging to prevent heat loss覆盖有防滞剂以防止热量流失</td>
+      <td>lag pipes滞后管道</td>
+      <td>[lagging]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lag</th>
+      <td>ag</td>
+      <td>3.22</td>
+      <td>ver</td>
+      <td>læɡ</td>
+      <td></td>
+      <td></td>
+      <td>throw or pitch at a mark, as with coins像硬币一样投掷或投球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flip, pitch, sky, toss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lag</th>
+      <td>ag</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>læɡ</td>
+      <td>['interim', 'meantime', 'meanwhile']</td>
+      <td></td>
+      <td>the time between one event, process, or period and another一个事件，过程或期间与另一个事件，过程或期间之间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[time interval, interval]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lag</th>
+      <td>ag</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>læɡ</td>
+      <td>['retardation', 'slowdown']</td>
+      <td></td>
+      <td>the act of slowing down or falling behind放慢或落后的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[delay, holdup]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lag</th>
+      <td>ag</td>
+      <td>3.22</td>
+      <td>nou</td>
+      <td>læɡ</td>
+      <td>['stave']</td>
+      <td></td>
+      <td>one of several thin slats of wood forming the sides of a barrel or bucket几个薄木板中的一个，形成一个桶或桶的侧面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slat, spline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jag</th>
+      <td>ag</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>dʒæɡ</td>
+      <td></td>
+      <td></td>
+      <td>cut teeth into; make a jagged cutting edge切齿;制作锯齿状的切边</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jag</th>
+      <td>ag</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>dʒæɡ</td>
+      <td>['dag']</td>
+      <td></td>
+      <td>a flap along the edge of a garment; used in medieval clothing沿着衣服边缘的一个翻盖;用于中世纪服装</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jag</th>
+      <td>ag</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>dʒæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a bout of drinking or drug taking一次饮酒或吸毒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[self-indulgence, intemperance, intemperateness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jag</th>
+      <td>ag</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>dʒæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a sharp projection on an edge or surface边缘或表面上的尖锐投影</td>
+      <td>he clutched a jag of the rock他紧紧抓住一块石头</td>
+      <td>[jaggy]</td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jag</th>
+      <td>ag</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>dʒæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a slit in a garment that exposes material of a different color underneath; used in Renaissance clothing衣服上的一个缝隙，露出下面不同颜色的材料;用于文艺复兴时期的服装</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wag</th>
+      <td>ag</td>
+      <td>3.02</td>
+      <td>ver</td>
+      <td>wæɡ</td>
+      <td>['waggle']</td>
+      <td></td>
+      <td>move from side to side从一边到另一边</td>
+      <td>The happy dog wagged his tail快乐的狗摇了摇他的尾巴</td>
+      <td></td>
+      <td></td>
+      <td>[jiggle, joggle, wiggle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wag</th>
+      <td>ag</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>wæɡ</td>
+      <td>['card', 'wit']</td>
+      <td></td>
+      <td>a witty amusing person who makes jokes一个诙谐有趣的人开玩笑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[humorist, humourist]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wag</th>
+      <td>ag</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>wæɡ</td>
+      <td>['shake', 'waggle']</td>
+      <td></td>
+      <td>causing to move repeatedly from side to side导致从一侧到另一侧反复移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[agitation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dag</th>
+      <td>ag</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>dɑɡ</td>
+      <td>['decagram', 'dekagram', 'dkg']</td>
+      <td></td>
+      <td>10 grams10克</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weight unit, metric weight unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dag</th>
+      <td>ag</td>
+      <td>2.99</td>
+      <td>nou</td>
+      <td>dɑɡ</td>
+      <td>['jag']</td>
+      <td></td>
+      <td>a flap along the edge of a garment; used in medieval clothing沿着衣服边缘的一个翻盖;用于中世纪服装</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sag</th>
+      <td>ag</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>sæɡ</td>
+      <td>['sag down']</td>
+      <td></td>
+      <td>cause to sag导致下垂</td>
+      <td>The children sagged their bottoms down even more comfortably孩子们更舒服地下垂了他们的裤子</td>
+      <td></td>
+      <td></td>
+      <td>[drop down, drop, sink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sag</th>
+      <td>ag</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>sæɡ</td>
+      <td>['droop', 'flag', 'swag']</td>
+      <td></td>
+      <td>droop, sink, or settle from or as if from pressure or loss of tautness下垂，下沉，或从压力或失去紧张感中解脱出来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drop down, sink, drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sag</th>
+      <td>ag</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>sæɡ</td>
+      <td>['droop']</td>
+      <td></td>
+      <td>a shape that sags一种下垂的形状</td>
+      <td>there was a sag in the chair seat椅座上有一个凹陷</td>
+      <td></td>
+      <td></td>
+      <td>[depression, impression, imprint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zag</th>
+      <td>ag</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>zæɡ</td>
+      <td>['zig', 'zigzag']</td>
+      <td></td>
+      <td>an angular shape characterized by sharp turns in alternating directions角形，其特征在于交替方向上的急转弯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angular shape, angularity]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

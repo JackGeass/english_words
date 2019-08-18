@@ -1,0 +1,4475 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['find', 'into', 'kind', 'mind', 'king', 'sing', 'ring', 'wind', 'skin', 'tiny', 'pink', 'thin', 'wing', 'sink', 'inch', 'ling', 'link', 'spin', 'ming', 'twin', 'chin', 'mini', 'ding', 'shin', 'info', 'ping', 'hint', 'mint', 'bind', 'pint', 'erin', 'jinx', 'finn', 'ting', 'wink', 'grin', 'hind', 'rink', 'mink', 'odin', 'tink', 'inga', 'dink', 'fink', 'minx', 'zinc', 'akin', 'inca', 'zing', 'lint', 'lind', 'dint', 'kink', 'tint', 'rind', 'inky', 'sind', 'inst']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['bump', 'chance', 'encounter', 'happen']</td>
+      <td></td>
+      <td>come upon, as if by accident; meet with来吧，好像是偶然的;会见</td>
+      <td>We find this idea in Plato我们在柏拉图找到了这个想法</td>
+      <td>[finder]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['detect', 'discover', 'notice', 'observe']</td>
+      <td></td>
+      <td>discover or determine the existence, presence, or fact of发现或确定其存在，存在或事实</td>
+      <td></td>
+      <td>[finder, finding]</td>
+      <td>[discover]</td>
+      <td>[sight, spy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['feel']</td>
+      <td></td>
+      <td>come to believe on the basis of emotion, intuitions, or indefinite grounds开始相信情感，直觉或无限的理由</td>
+      <td>I find him to be obnoxious我发现他是令人讨厌的</td>
+      <td></td>
+      <td>[rule]</td>
+      <td>[conclude, reason out, reason]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['see', 'witness']</td>
+      <td></td>
+      <td>perceive or be contemporaneous with感知或与之同时发生</td>
+      <td></td>
+      <td>[finder]</td>
+      <td>[learn, get wind, get word, see, discover, find out, hear, get a line, pick up]</td>
+      <td>[experience, go through, see]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['recover', 'regain', 'retrieve']</td>
+      <td></td>
+      <td>get or find back; recover the use of得到或找​​回;恢复使用</td>
+      <td></td>
+      <td></td>
+      <td>[regain]</td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['find oneself']</td>
+      <td></td>
+      <td>accept and make use of one's personality, abilities, and situation接受并利用一个人的个性，能力和情境</td>
+      <td>My son went to Berkeley to find himself我的儿子去伯克利寻找自己</td>
+      <td></td>
+      <td></td>
+      <td>[grow, maturate, mature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['discover'], alos:['find out']</td>
+      <td></td>
+      <td>make a discovery发现</td>
+      <td></td>
+      <td></td>
+      <td>[discover]</td>
+      <td>[discover, hear, get a line, learn, get wind, see, get word, find out, pick up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['get', 'incur', 'obtain', 'receive']</td>
+      <td></td>
+      <td>receive a specified treatment (abstract)接受指定的治疗（摘要）</td>
+      <td>These aspects of civilization do not find expression or receive an interpretation文明的这些方面没有找到表达或接受解释</td>
+      <td></td>
+      <td>[get, acquire]</td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['ascertain', 'determine', 'find out']</td>
+      <td></td>
+      <td>establish after a calculation, investigation, experiment, survey, or study通过计算，调查，实验，调查或研究后建立</td>
+      <td>find the product of two numbers找到两个数字的乘积</td>
+      <td>[finding]</td>
+      <td>[find out, learn, ascertain, watch, determine, see, discover, check]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['discover']</td>
+      <td></td>
+      <td>make a discovery, make a new finding发现一个新的发现</td>
+      <td></td>
+      <td>[finding]</td>
+      <td>[notice, determine, find out, detect, discover, ascertain, observe]</td>
+      <td>[conceptualise, conceptualize, conceive, gestate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['come up', 'get hold', 'line up']</td>
+      <td></td>
+      <td>get something or somebody for a specific purpose为特定目的得到某事或某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['rule']</td>
+      <td></td>
+      <td>decide on and make a declaration about决定并作出声明</td>
+      <td>find someone guilty找人有罪</td>
+      <td>[finding]</td>
+      <td>[feel]</td>
+      <td>[judge, pronounce, label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td>['regain']</td>
+      <td>[lose]</td>
+      <td>come upon after searching; find the location of something that was missed or lost寻找后来吧;找到错过或丢失的东西的位置</td>
+      <td>Did you find your glasses?你找到了眼镜吗？I cannot find my gloves!我找不到手套！</td>
+      <td>[finder]</td>
+      <td>[recover, retrieve, regain]</td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td></td>
+      <td></td>
+      <td>obtain through effort or management通过努力或管理获得</td>
+      <td></td>
+      <td></td>
+      <td>[regain]</td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td></td>
+      <td></td>
+      <td>perceive oneself to be in a certain condition or place感知自己处于某种状态或地点</td>
+      <td></td>
+      <td></td>
+      <td>[see, witness]</td>
+      <td>[comprehend, perceive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>ver</td>
+      <td>faɪnd</td>
+      <td></td>
+      <td></td>
+      <td>succeed in reaching; arrive at成功达到;到达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attain, gain, make, reach, arrive at, hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>nou</td>
+      <td>faɪnd</td>
+      <td>['discovery', 'uncovering']</td>
+      <td></td>
+      <td>the act of discovering something发现某事的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[human activity, act, deed, human action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>find</th>
+      <td>in</td>
+      <td>5.90</td>
+      <td>nou</td>
+      <td>faɪnd</td>
+      <td>['breakthrough', 'discovery']</td>
+      <td></td>
+      <td>a productive insight富有成效的见解</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[brainwave, brainstorm, insight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>into</th>
+      <td>in</td>
+      <td>5.88</td>
+      <td>pre</td>
+      <td>ɪn'tu</td>
+      <td></td>
+      <td></td>
+      <td>To the inside of; within. It is used in a variety of applications.到里面;内。它用于各种应用。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>in</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kaɪnd</td>
+      <td>['form', 'sort', 'variety']</td>
+      <td></td>
+      <td>a category of things distinguished by some common characteristic or quality一类通过某些共同特征或品质区分的事物</td>
+      <td>what kinds of desserts are there?那里有什么样的甜点？</td>
+      <td></td>
+      <td></td>
+      <td>[category]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>in</td>
+      <td>5.68</td>
+      <td>adj</td>
+      <td>kaɪnd</td>
+      <td>['genial'], similarTo:['hospitable']</td>
+      <td></td>
+      <td>agreeable, conducive to comfort和蔼可亲，有利于安慰</td>
+      <td>a dry climate kind to asthmatics干燥的气候对哮喘患者有益hot summer pavements are anything but kind to the feet炎热的夏季路面对脚来说不是什么好事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>in</td>
+      <td>5.68</td>
+      <td>adj</td>
+      <td>kaɪnd</td>
+      <td>['tolerant'], similarTo:['forgiving']</td>
+      <td></td>
+      <td>tolerant and forgiving under provocation在挑衅下宽容和宽容</td>
+      <td>our neighbor was very kind about the window our son broke我们的邻居对我们儿子破窗的窗户很好</td>
+      <td>[kindness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kind</th>
+      <td>in</td>
+      <td>5.68</td>
+      <td>adj</td>
+      <td>kaɪnd</td>
+      <td>, similarTo:['benevolent', 'gentle', 'good-hearted', 'sympathetic', 'charitable', 'gracious', 'benignant', 'kind-hearted', 'kindhearted', 'kindly', 'large-hearted', 'benign', 'openhearted'], alos:['soft', 'benign', 'considerate', 'benignant', 'good-natured', 'merciful']</td>
+      <td>[unkind]</td>
+      <td>having or showing a tender and considerate and helpful nature; used especially of persons and their behavior拥有或表现出温柔，体贴和乐于助人的性质;特别是人和他们的行为</td>
+      <td>kind to sick patients善待病人a kind master善良的主人kind words showing understanding and sympathy善意的话语表达了理解和同情thanked her for her kind letter感谢她的来信</td>
+      <td>[kindness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['heed', 'listen']</td>
+      <td></td>
+      <td>pay close attention to; give heed to密切关注;注意</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['bear in mind']</td>
+      <td>[forget]</td>
+      <td>keep in mind记住</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[remember, think of]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['take care']</td>
+      <td></td>
+      <td>be in charge of or deal with负责或处理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[care, deal, manage, handle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td>['beware']</td>
+      <td></td>
+      <td>be on one's guard; be cautious or wary about; be alert to保持警惕;保持谨慎或谨慎;警惕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[look out, watch, watch out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>be concerned with or about something or somebody关心或关注某事或某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[think about]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>ver</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>be offended or bothered by; take offense with, be bothered by被冒犯或困扰;冒犯，被打扰</td>
+      <td>I don't mind your behavior我不介意你的行为</td>
+      <td></td>
+      <td></td>
+      <td>[object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['brain', 'head', 'nous', 'psyche']</td>
+      <td></td>
+      <td>that which is responsible for one's thoughts, feelings, and conscious brain functions; the seat of the faculty of reason对一个人的思想，情感和有意识的大脑功能负责的;理性能力的所在地</td>
+      <td>his mind wandered他的思绪徘徊</td>
+      <td></td>
+      <td></td>
+      <td>[cognition, noesis, knowledge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['intellect']</td>
+      <td></td>
+      <td>knowledge and intellectual ability知识和智力</td>
+      <td>he reads to improve his mind他读着改善主意</td>
+      <td></td>
+      <td></td>
+      <td>[intelligence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['creative thinker', 'thinker']</td>
+      <td></td>
+      <td>an important intellectual重要的知识分子</td>
+      <td>the great minds of the 17th century17世纪的伟大思想</td>
+      <td></td>
+      <td></td>
+      <td>[intellect, intellectual]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['idea']</td>
+      <td></td>
+      <td>your intention; what you intend to do你的意图;你打算做什么</td>
+      <td>he had in mind to see his old teacher他想到要看他的老师</td>
+      <td></td>
+      <td></td>
+      <td>[aim, purpose, design, intention, intent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td>['judgement', 'judgment']</td>
+      <td></td>
+      <td>an opinion formed by judging something判断事物形成的意见</td>
+      <td>she changed her mind她改变了主意</td>
+      <td></td>
+      <td></td>
+      <td>[view, sentiment, opinion, persuasion, thought]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>attention注意</td>
+      <td>don't pay him any mind不要理他的钱</td>
+      <td></td>
+      <td></td>
+      <td>[notice, observation, observance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mind</th>
+      <td>in</td>
+      <td>5.60</td>
+      <td>nou</td>
+      <td>maɪnd</td>
+      <td></td>
+      <td></td>
+      <td>recall or remembrance回忆或记忆</td>
+      <td>it came to mind它浮现在脑海中</td>
+      <td></td>
+      <td></td>
+      <td>[recall, recollection, reminiscence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td>['male monarch', 'rex']</td>
+      <td>[queen]</td>
+      <td>a male sovereign; ruler of a kingdom男性主权;一个王国的统治者</td>
+      <td></td>
+      <td>[kingdom, kingly, kingship]</td>
+      <td></td>
+      <td>[monarch, crowned head, sovereign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td>['queen', 'world-beater']</td>
+      <td></td>
+      <td>a competitor who holds a preeminent position拥有卓越地位的竞争对手</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contender, rival, challenger, competition, competitor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td>['baron', 'big businessman', 'business leader', 'magnate', 'mogul', 'power', 'top executive', 'tycoon']</td>
+      <td></td>
+      <td>a very wealthy or powerful businessman一个非常富有或强大的商人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[businessman, man of affairs]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td>['b. b. king', 'riley b king']</td>
+      <td></td>
+      <td>United States guitar player and singer of the blues (born in 1925)美国吉他手和布鲁斯歌手（1925年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td>['billie jean king', 'billie jean moffitt king']</td>
+      <td></td>
+      <td>United States woman tennis player (born in 1943)美国女子网球运动员（1943年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td>['martin luther king', 'martin luther king jr.']</td>
+      <td></td>
+      <td>United States charismatic civil rights leader and Baptist minister who campaigned against the segregation of Blacks (1929-1968)美国具有超凡魅力的民权领袖和浸信会牧师，反对黑人的种族隔离（1929-1968）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a checker that has been moved to the opponent's first row where it is promoted to a piece that is free to move either forward or backward一个已经移动到对手第一排的检查器，它被提升为一个可以向前或向后移动的部件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[checker, chequer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>(chess) the weakest but the most important piece（国际象棋）最弱但最重要的一块</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chess piece, chessman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>one of the four playing cards in a deck bearing the picture of a king带有国王照片的甲板上的四张扑克牌之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[court card, picture card, face card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>king</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>kɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>preeminence in a particular category or group or field在特定类别或组或领域中的卓越性</td>
+      <td>the lion is the king of beasts狮子是野兽之王</td>
+      <td></td>
+      <td></td>
+      <td>[note, distinction, preeminence, eminence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sing</th>
+      <td>in</td>
+      <td>5.15</td>
+      <td>ver</td>
+      <td>sɪŋ</td>
+      <td>['whistle']</td>
+      <td></td>
+      <td>make a whining, ringing, or whistling sound发出呜呜声，响声或哨声</td>
+      <td>the kettle was singing水壶在唱歌</td>
+      <td>[song]</td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sing</th>
+      <td>in</td>
+      <td>5.15</td>
+      <td>ver</td>
+      <td>sɪŋ</td>
+      <td>['babble', 'babble out', 'blab', 'blab out', 'let the cat out of the bag', 'peach', 'spill the beans', 'talk', 'tattle']</td>
+      <td></td>
+      <td>divulge confidential information or secrets泄露机密信息或秘密</td>
+      <td></td>
+      <td>[singing]</td>
+      <td>[talk, spill]</td>
+      <td>[disclose, discover, reveal, let on, give away, bring out, break, let out, uncover, unwrap, divulge, expose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sing</th>
+      <td>in</td>
+      <td>5.15</td>
+      <td>ver</td>
+      <td>sɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>deliver by singing通过唱歌传递</td>
+      <td></td>
+      <td>[song, singer, singing]</td>
+      <td></td>
+      <td>[interpret, render]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sing</th>
+      <td>in</td>
+      <td>5.15</td>
+      <td>ver</td>
+      <td>sɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>produce tones with the voice用声音产生音调</td>
+      <td>She was singing while she was cooking她在做饭的时候正在唱歌My brother sings very well我哥哥唱得很好</td>
+      <td>[song, singer, singing]</td>
+      <td></td>
+      <td>[talk, speak, utter, verbalize, mouth, verbalise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sing</th>
+      <td>in</td>
+      <td>5.15</td>
+      <td>ver</td>
+      <td>sɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>to make melodious sounds发出悦耳的声音</td>
+      <td>The nightingale was singing夜莺在唱歌</td>
+      <td>[song, singer]</td>
+      <td></td>
+      <td>[emit, utter, let out, let loose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>rɪŋ</td>
+      <td>['echo', 'resound', 'reverberate']</td>
+      <td></td>
+      <td>ring or echo with sound响声或响声</td>
+      <td></td>
+      <td>[ringing]</td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>rɪŋ</td>
+      <td>['border', 'environ', 'skirt', 'surround']</td>
+      <td></td>
+      <td>extend on all sides of simultaneously; encircle同时延伸到各方面;环绕</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adjoin, contact, touch, meet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>rɪŋ</td>
+      <td>['knell']</td>
+      <td></td>
+      <td>make (bells) ring, often for the purposes of musical edification制作（铃铛）戒指，通常用于音乐熏陶</td>
+      <td>My uncle rings every Sunday at the local church我的叔叔每个星期天都在当地教堂响个不停</td>
+      <td>[ringing, ringer]</td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>rɪŋ</td>
+      <td>['band']</td>
+      <td></td>
+      <td>attach a ring to the foot of, in order to identify将一个环连接到脚上，以便识别</td>
+      <td>ring birds环鸟</td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>rɪŋ</td>
+      <td>['peal'], alos:['ring out']</td>
+      <td></td>
+      <td>sound loudly and sonorously声音响亮而响亮</td>
+      <td></td>
+      <td>[ringing]</td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>ver</td>
+      <td>rɪŋ</td>
+      <td>['call', 'call up', 'phone', 'telephone']</td>
+      <td></td>
+      <td>get or try to get into communication (with someone) by telephone通过电话获得或尝试与某人进行交流</td>
+      <td></td>
+      <td></td>
+      <td>[call]</td>
+      <td>[telecommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td>['ringing', 'tintinnabulation']</td>
+      <td></td>
+      <td>the sound of a bell ringing铃声响起</td>
+      <td>the distinctive ring of the church bell教堂钟的特色戒指the ringing of the telephone电话响了the tintinnabulation that so voluminously swells from the ringing and the dinging of the bells从钟声响起的铃声和声音中大量膨胀的tintinnabulation</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td>['anchor ring', 'annulus', 'doughnut', 'halo']</td>
+      <td></td>
+      <td>a toroidal shape环形</td>
+      <td>a ring of ships in the harbor港口的一圈船</td>
+      <td></td>
+      <td></td>
+      <td>[toroid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td>['closed chain']</td>
+      <td></td>
+      <td>(chemistry) a chain of atoms in a molecule that forms a closed loop（化学）分子中形成闭环的原子链</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chemical chain, chain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td>['gang', 'mob', 'pack']</td>
+      <td></td>
+      <td>an association of criminals犯罪团伙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[association]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td>['hoop']</td>
+      <td></td>
+      <td>a rigid circular band of metal or wood or other material used for holding or fastening or hanging or pulling用于固定或固定或悬挂或拉动的金属或木材或其他材料的刚性圆形带</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[band]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td>['band']</td>
+      <td></td>
+      <td>jewelry consisting of a circlet of precious metal (often set with jewels) worn on the finger珠宝由手指上戴的贵重金属圆圈（通常镶有珠宝）组成</td>
+      <td>she had rings on every finger她的每根手指都有戒指</td>
+      <td></td>
+      <td></td>
+      <td>[jewellery, jewelry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td>['band']</td>
+      <td></td>
+      <td>a strip of material attached to the leg of a bird to identify it (as in studies of bird migration)附着在鸟的腿上的一条材料以识别它（如在鸟类迁徙的研究中）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strip, slip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a characteristic sound特有的声音</td>
+      <td>it has the ring of sincerity它有诚意的环</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ring</th>
+      <td>in</td>
+      <td>4.93</td>
+      <td>nou</td>
+      <td>rɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a platform usually marked off by ropes in which contestants box or wrestle通常由绳索标记的平台，其中参赛者将拳击或摔跤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['hoist', 'lift']</td>
+      <td></td>
+      <td>raise or haul up with or as if with mechanical help用或似乎机械帮助提升或牵引</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[raise, lift, get up, elevate, bring up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['nose', 'scent']</td>
+      <td></td>
+      <td>catch the scent of; get wind of抓住气味;得到风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['wreathe']</td>
+      <td></td>
+      <td>form into a wreath形成一个花圈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[twine, intertwine, lace, entwine, enlace, interlace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['roll', 'twine', 'wrap']</td>
+      <td>[unwind]</td>
+      <td>arrange or or coil around安排或绕圈</td>
+      <td></td>
+      <td>[winder]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['meander', 'thread', 'wander', 'weave']</td>
+      <td></td>
+      <td>to move or cause to move in a sinuous, spiral, or circular course移动或导致在弯曲，螺旋或圆形路线中移动</td>
+      <td>the river winds through the hills河流蜿蜒穿过山丘</td>
+      <td></td>
+      <td>[wander]</td>
+      <td>[go, locomote, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['curve', 'twist']</td>
+      <td></td>
+      <td>extend in curves and turns曲线和转弯延伸</td>
+      <td>The road winds around the lake这条路蜿蜒在湖边</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>ver</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['wind up']</td>
+      <td></td>
+      <td>coil the spring of (some mechanical device) by turning a stem通过转动阀杆来卷绕（一些机械装置）的弹簧</td>
+      <td>wind your watch刮你的手表</td>
+      <td>[winder]</td>
+      <td></td>
+      <td>[fasten, tighten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['breaking wind', 'fart', 'farting', 'flatus']</td>
+      <td></td>
+      <td>a reflex that expels intestinal gas through the anus通过肛门排出肠道气体的反射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reflex, instinctive reflex, innate reflex, reflex action, physiological reaction, unconditioned reflex, inborn reflex, reflex response]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['idle words', 'jazz', 'malarkey', 'malarky', 'nothingness']</td>
+      <td></td>
+      <td>empty rhetoric or insincere or exaggerated talk空洞的言辞或虚伪或夸张的谈话</td>
+      <td>that's a lot of wind这是很多风</td>
+      <td>[windy]</td>
+      <td></td>
+      <td>[talking, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['twist', 'winding']</td>
+      <td></td>
+      <td>the act of winding or twisting缠绕或扭曲的行为</td>
+      <td>he put the key in the old clock and gave it a good wind他把钥匙放在旧钟上，给了它一阵风</td>
+      <td></td>
+      <td></td>
+      <td>[rotation, rotary motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['wind instrument']</td>
+      <td></td>
+      <td>a musical instrument in which the sound is produced by an enclosed column of air that is moved by bellows or the human breath一种乐器，其中声音是由被风箱或人类呼吸移动的封闭空气柱产生的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instrument, musical instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['air current', 'current of air']</td>
+      <td></td>
+      <td>air moving (sometimes with considerable force) from an area of high pressure to an area of low pressure空气移动（有时用相当大的力）从高压区域到低压区域</td>
+      <td>trees bent under the fierce winds树木在狂风下弯曲when there is no wind, row当没有风，排</td>
+      <td>[windy]</td>
+      <td></td>
+      <td>[weather, weather condition, atmospheric condition, conditions]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td>['confidential information', 'hint', 'lead', 'steer', 'tip']</td>
+      <td></td>
+      <td>an indication of potential opportunity潜在机会的迹象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[direction, counsel, counseling, guidance, counselling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td></td>
+      <td></td>
+      <td>a tendency or force that influences events影响事件的倾向或力量</td>
+      <td>the winds of change变化之风</td>
+      <td></td>
+      <td></td>
+      <td>[influence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wind</th>
+      <td>in</td>
+      <td>4.81</td>
+      <td>nou</td>
+      <td>wɪnd, noun:wɪnd, verb:waɪnd</td>
+      <td></td>
+      <td></td>
+      <td>breath呼吸</td>
+      <td>the collision knocked the wind out of him碰撞将风从他身上撞了出来</td>
+      <td></td>
+      <td></td>
+      <td>[expiration, breathing out, exhalation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>skɪn</td>
+      <td>['clamber', 'scramble', 'shin', 'shinny', 'sputter', 'struggle']</td>
+      <td></td>
+      <td>climb awkwardly, as if by scrambling笨拙地爬，仿佛在争抢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[climb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>skɪn</td>
+      <td>['bark']</td>
+      <td></td>
+      <td>remove the bark of a tree去掉树皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>skɪn</td>
+      <td>['pare', 'peel']</td>
+      <td></td>
+      <td>strip the skin off脱掉皮肤</td>
+      <td></td>
+      <td>[skinner]</td>
+      <td></td>
+      <td>[strip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>skɪn</td>
+      <td>['scrape']</td>
+      <td></td>
+      <td>bruise, cut, or injure the skin or the surface of瘀伤，切伤或伤害皮肤或表面</td>
+      <td>The boy skinned his knee when he fell这个男孩摔倒时剥了皮</td>
+      <td></td>
+      <td></td>
+      <td>[wound, injure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td>['skinhead']</td>
+      <td></td>
+      <td>a member of any of several British or American groups consisting predominantly of young people who shave their heads; some engage in white supremacist and anti-immigrant activities and this leads to the perception that all skinheads are racist and violent英国或美国几个团体中的一员，主要由年轻人剃光头;一些人从事白人至上主义和反移民活动，这导致人们认为所有光头党都是种族主义和暴力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tough, yob, ruffian, yobbo, yobo, rowdy, roughneck, bully, hooligan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td>['peel']</td>
+      <td></td>
+      <td>the rind of a fruit or vegetable水果或蔬菜的外皮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td>['cutis', 'tegument']</td>
+      <td></td>
+      <td>a natural protective body covering and site of the sense of touch天然的保护性身体覆盖物和触觉的部位</td>
+      <td>your skin is the largest organ of your body你的皮肤是你身体最大的器官</td>
+      <td>[skinny]</td>
+      <td></td>
+      <td>[connective tissue, body covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td>['hide', 'pelt']</td>
+      <td></td>
+      <td>body covering of a living animal身体覆盖的活体动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td>['baldhead', 'baldpate', 'baldy', 'skinhead']</td>
+      <td></td>
+      <td>a person whose head is bald or shaved头秃或剃光的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[someone, individual, soul, person, somebody, mortal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td></td>
+      <td></td>
+      <td>a bag serving as a container for liquids; it is made from the hide of an animal用作液体容器的袋子;它是由动物的皮革制成的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td></td>
+      <td></td>
+      <td>an outer surface (usually thin)外表面（通常很薄）</td>
+      <td>the skin of an airplane飞机的皮肤</td>
+      <td></td>
+      <td></td>
+      <td>[surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skin</th>
+      <td>in</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>skɪn</td>
+      <td></td>
+      <td></td>
+      <td>a person's skin regarded as their life一个人的皮肤被视为他们的生命</td>
+      <td>he tried to save his skin他试图挽救他的皮肤</td>
+      <td></td>
+      <td></td>
+      <td>[life, animation, aliveness, living]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tiny</th>
+      <td>in</td>
+      <td>4.57</td>
+      <td>adj</td>
+      <td>'taɪni</td>
+      <td>['bantam', 'diminutive', 'flyspeck', 'lilliputian', 'midget', 'petite'], similarTo:['little', 'small']</td>
+      <td></td>
+      <td>very small很小</td>
+      <td>tiny feet小脚</td>
+      <td>[tininess]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>in</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>pɪŋk</td>
+      <td>['knock', 'rap', 'tap']</td>
+      <td></td>
+      <td>make light, repeated taps on a surface在表面上轻轻重复点击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>in</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>pɪŋk</td>
+      <td>['knock', 'ping']</td>
+      <td></td>
+      <td>sound like a car engine that is firing too early听起来像汽车引擎过早发射</td>
+      <td>The car pinked when the ignition was too far retarded当点火速度太迟时，汽车会变粉红</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>in</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>pɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>cut in a zigzag pattern with pinking shears, in sewing用缝制的粉红色剪刀切割成锯齿形图案</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>in</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>pɪŋk</td>
+      <td>['pinko']</td>
+      <td></td>
+      <td>a person with mildly leftist political views一个有轻微左翼政治观点的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[left-winger, collectivist, leftist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>in</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>pɪŋk</td>
+      <td>['garden pink']</td>
+      <td></td>
+      <td>any of various flowers of plants of the genus Dianthus cultivated for their fragrant flowers石竹属植物的各种花卉，为其芬芳的花朵栽培</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flower]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>in</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>pɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a light shade of red浅红色</td>
+      <td></td>
+      <td>[pinkify]</td>
+      <td></td>
+      <td>[spectral color, chromatic colour, chromatic color, spectral colour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>in</td>
+      <td>4.35</td>
+      <td>adj</td>
+      <td>pɪŋk</td>
+      <td>['pinkish'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of a light shade of red浅红色的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>θɪn</td>
+      <td>['melt off', 'reduce', 'slenderize', 'slim', 'slim down']</td>
+      <td></td>
+      <td>take off weight起飞重量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>θɪn</td>
+      <td>['cut', 'dilute', 'reduce', 'thin out']</td>
+      <td></td>
+      <td>lessen the strength or flavor of a solution or mixture减少溶液或混合物的强度或味道</td>
+      <td></td>
+      <td>[thinning, thinner]</td>
+      <td></td>
+      <td>[weaken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>θɪn</td>
+      <td></td>
+      <td>[thicken]</td>
+      <td>lose thickness; become thin or thinner失去厚度;变得稀薄或变薄</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>θɪn</td>
+      <td></td>
+      <td>[thicken]</td>
+      <td>make thin or thinner使薄或更薄</td>
+      <td></td>
+      <td>[thinner]</td>
+      <td></td>
+      <td>[trim down, trim back, reduce, cut down, cut back, trim, bring down, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adv</td>
+      <td>θɪn</td>
+      <td>['thinly']</td>
+      <td></td>
+      <td>without viscosity没有粘度</td>
+      <td>the blood was flowing thin血液稀薄</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>['lean'], similarTo:['shrunken', 'skeletal', 'skinny', 'anorectic', 'slender', 'anorexic', 'slender-waisted', 'slight', 'slim', 'slim-waisted', 'spare', 'spindle-legged', 'spindle-shanked', 'spindly', 'sunken-eyed', 'svelte', 'sylphic', 'sylphlike', 'trim', 'stringy', 'shriveled', 'shrivelled', 'gangling', 'gangly', 'gaunt', 'wiry', 'haggard', 'hollow-eyed', 'lank', 'lanky', 'wasted', 'wasp-waisted', 'pinched', 'underweight', 'twiglike', 'rawboned', 'reedlike', 'reedy', 'weedy', 'scarecrowish', 'scraggly', 'scraggy', 'scrawny', 'twiggy', 'boney', 'bony', 'cadaverous', 'wizened', 'wizen', 'withered', 'deep-eyed', 'wispy', 'emaciated', 'wisplike'], alos:['ectomorphic']</td>
+      <td>[fat]</td>
+      <td>lacking excess flesh缺乏多余的肉体</td>
+      <td>you can't be too rich or too thin你不能太富裕或太瘦</td>
+      <td>[thinness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>['sparse'], similarTo:['distributed']</td>
+      <td></td>
+      <td>not dense不密集</td>
+      <td>a thin beard一个瘦小的胡子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>['flimsy', 'fragile', 'slight', 'tenuous'], similarTo:['unimportant', 'insignificant']</td>
+      <td></td>
+      <td>lacking substance or significance缺乏实质或意义</td>
+      <td>a thin plot一个薄的情节</td>
+      <td>[thinness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>['slender'], similarTo:['narrow']</td>
+      <td></td>
+      <td>very narrow非常窄</td>
+      <td>a thin line across the page页面上有一条细线</td>
+      <td>[thinness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>, similarTo:['spiritless']</td>
+      <td></td>
+      <td>lacking spirit or sincere effort缺乏精神或真诚的努力</td>
+      <td>a thin smile一个微笑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>, similarTo:['see-through', 'bladed', 'capillary', 'cobwebby', 'compressed', 'depressed', 'diaphanous', 'filamentlike', 'filamentous', 'filiform', 'filmy', 'fine', 'flat', 'gauze-like', 'gauzy', 'gossamer', 'hairlike', 'hyperfine', 'light', 'paper thin', 'papery', 'ribbonlike', 'ribbony', 'sheer', 'sleazy', 'slender', 'tenuous', 'threadlike', 'thready', 'transparent', 'vaporous', 'vapourous', 'wafer-thin'], alos:['narrow', 'lean']</td>
+      <td>[thick]</td>
+      <td>of relatively small extent from one surface to the opposite or in cross section从一个表面到相对的或横截面的相对小的程度</td>
+      <td>thin wire细线a thin chiffon blouse薄薄的雪纺上衣a thin book一本薄薄的书a thin layer of paint一层薄薄的油漆</td>
+      <td>[thinness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>, similarTo:['pale']</td>
+      <td>[full]</td>
+      <td>(of sound) lacking resonance or volume（声音）缺乏共振或音量</td>
+      <td>a thin feeble cry一个微弱的哭声</td>
+      <td>[thinness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>thin</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>adj</td>
+      <td>θɪn</td>
+      <td>, similarTo:['rarefied', 'rare', 'tenuous', 'rarified']</td>
+      <td>[thick]</td>
+      <td>relatively thin in consistency or low in density; not viscous相对较薄的稠度或较低的密度;不粘稠</td>
+      <td>air is thin at high altitudes高海拔的空气很薄a thin soup一个薄汤skimmed milk is much thinner than whole milk脱脂牛奶比全脂牛奶薄得多thin oil稀油</td>
+      <td>[thinness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>wɪŋ</td>
+      <td>['fly']</td>
+      <td></td>
+      <td>travel through the air; be airborne在空中旅行;空降</td>
+      <td></td>
+      <td></td>
+      <td>[fly]</td>
+      <td>[travel, move, locomote, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td>['annex', 'annexe', 'extension']</td>
+      <td></td>
+      <td>an addition that extends a main building扩建主楼的附加物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[improver, addition, add-on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td>['backstage', 'offstage']</td>
+      <td></td>
+      <td>a stage area out of sight of the audience一个不受观众看见的舞台区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td>['fender']</td>
+      <td></td>
+      <td>a barrier that surrounds the wheels of a vehicle to block splashing water or mud围绕车轮的挡板，阻挡水或泥的飞溅</td>
+      <td>in Britain they call a fender a wing在英国，他们称挡泥板为机翼</td>
+      <td></td>
+      <td></td>
+      <td>[barrier]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td>['flank']</td>
+      <td></td>
+      <td>the side of military or naval formation军事或海军编队的一面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a group within a political party or legislature or other organization that holds distinct views or has a particular function政党或立法机构或其他组织内持有不同观点或具有特定职能的团体</td>
+      <td>they are the progressive wing of the Republican Party他们是共和党的进步派</td>
+      <td></td>
+      <td></td>
+      <td>[social group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a hockey player stationed in a forward position on either side一名曲棍球运动员驻扎在两侧的前锋位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ice-hockey player, hockey player]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a movable organ for flying (one of a pair)一个可移动的飞行器官（一对中的一个）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a unit of military aircraft一架军用飞机</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[air unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>(in flight formation) a position to the side and just to the rear of another aircraft（在飞行编队中）位于另一架飞机的侧面和正后方的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[position, place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>one of the horizontal airfoils on either side of the fuselage of an airplane飞机机身两侧的一个水平翼型</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[surface, airfoil, control surface, aerofoil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wing</th>
+      <td>in</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>wɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>the wing of a fowl家禽的翅膀</td>
+      <td>he preferred the drumsticks to the wings他更喜欢把鼓槌放在翅膀上</td>
+      <td></td>
+      <td></td>
+      <td>[helping, serving, portion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['fall off', 'slump']</td>
+      <td></td>
+      <td>fall heavily or suddenly; decline markedly严重或突然跌倒;显着下降</td>
+      <td></td>
+      <td></td>
+      <td>[drop, drop down]</td>
+      <td>[drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['dip']</td>
+      <td></td>
+      <td>appear to move downward似乎向下移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[decline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['drop', 'drop down']</td>
+      <td></td>
+      <td>fall or descend to a lower place or level跌倒或下降到较低的地方或水平</td>
+      <td></td>
+      <td></td>
+      <td>[drop, fall off, slump]</td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['go down', 'go under', 'settle'], alos:['sink in']</td>
+      <td>[float]</td>
+      <td>go under走了</td>
+      <td></td>
+      <td>[sinker, sinking]</td>
+      <td></td>
+      <td>[fall, come down, go down, descend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['lapse', 'pass']</td>
+      <td></td>
+      <td>pass into a specified state or condition进入指定的状态或条件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['slide down', 'slump']</td>
+      <td></td>
+      <td>fall or sink heavily摔倒或下沉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[give way, break, cave in, collapse, fall in, founder, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['bury']</td>
+      <td></td>
+      <td>embed deeply深深嵌入</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imbed, plant, embed, implant, engraft]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['subside']</td>
+      <td></td>
+      <td>descend into or as if into some soft substance or place进入或仿佛进入一些柔软的物质或地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fall, come down, descend, go down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>cause to sink导致下沉</td>
+      <td></td>
+      <td></td>
+      <td>[settle, go under, go down]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td>['sinkhole', 'swallow hole']</td>
+      <td></td>
+      <td>a depression in the ground communicating with a subterranean passage (especially in limestone) and formed by solution or by collapse of a cavern roof地下凹陷与地下通道（特别是石灰岩）连通并通过溶液或洞室顶板坍塌形成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural depression, depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td>['cesspit', 'cesspool', 'sump']</td>
+      <td></td>
+      <td>a covered cistern; waste water and sewage flow into it一个有盖的蓄水池;废水和污水流入其中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cistern]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>plumbing fixture consisting of a water basin fixed to a wall or floor and having a drainpipe卫生设备包括固定在墙壁或地板上的水盆，并配有排水管</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plumbing fixture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>in</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td></td>
+      <td>[source]</td>
+      <td>(technology) a process that acts to absorb or remove energy or a substance from a system（技术）一种用于吸收或去除系统中的能量或物质的过程</td>
+      <td>the ocean is a sink for carbon dioxide海洋是二氧化碳的汇</td>
+      <td></td>
+      <td></td>
+      <td>[natural action, activity, natural process, action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inch</th>
+      <td>in</td>
+      <td>4.16</td>
+      <td>ver</td>
+      <td>ɪnʧ</td>
+      <td>['edge']</td>
+      <td></td>
+      <td>advance slowly, as if by inches慢慢前进，好像以英寸为单位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[progress, go on, advance, pass on, move on, march on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inch</th>
+      <td>in</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>ɪnʧ</td>
+      <td>['column inch']</td>
+      <td></td>
+      <td>a unit of measurement for advertising space广告空间的计量单位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area unit, square measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inch</th>
+      <td>in</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>ɪnʧ</td>
+      <td>['in']</td>
+      <td></td>
+      <td>a unit of length equal to one twelfth of a foot长度单位等于十二分之一英尺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linear unit, linear measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ling</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋ</td>
+      <td>['burbot', 'cusk', 'eelpout', 'lota lota']</td>
+      <td></td>
+      <td>elongate freshwater cod of northern Europe and Asia and North America having barbels around its mouth欧洲北部和亚洲及北美洲的细长淡水鳕鱼，嘴周围有喙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cod, codfish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ling</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋ</td>
+      <td>['broom', 'calluna vulgaris', 'heather', 'scots heather']</td>
+      <td></td>
+      <td>common Old World heath represented by many varieties; low evergreen grown widely in the northern hemisphere共同的旧世界健康由许多品种代表;低半常绿在北半球广泛种植</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[heath]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ling</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋ</td>
+      <td>['molva molva']</td>
+      <td></td>
+      <td>elongated marine food fish of Greenland and northern Europe; often salted and dried格陵兰岛和欧洲北部的细长海水食用鱼;经常腌制和晒干</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gadoid, gadoid fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ling</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋ</td>
+      <td>['ling ko', 'trapa bicornis']</td>
+      <td></td>
+      <td>water chestnut whose spiny fruit has two rather than 4 prongswater荠多刺的果实有两个而不是四个叉子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water chestnut plant, caltrop, water chestnut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ling</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>American hakes美国的鳕鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['associate', 'colligate', 'connect', 'link up', 'relate', 'tie in']</td>
+      <td></td>
+      <td>make a logical or causal connection建立逻辑或因果联系</td>
+      <td></td>
+      <td>[linkage]</td>
+      <td></td>
+      <td>[cerebrate, cogitate, think]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['connect', 'join', 'link up', 'unite']</td>
+      <td></td>
+      <td>be or become joined or united or linked成为或联合或联合或联系</td>
+      <td>The travelers linked up again at the airport旅客们在机场再次联系起来</td>
+      <td>[linkage]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['yoke']</td>
+      <td></td>
+      <td>link with or as with a yoke与轭连接或与轭连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['connect', 'link up', 'tie']</td>
+      <td></td>
+      <td>connect, fasten, or put together two or more pieces连接，紧固或组合两件或更多件</td>
+      <td></td>
+      <td>[linkage]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['radio link']</td>
+      <td></td>
+      <td>a two-way radio communication system (usually microwave); part of a more extensive telecommunication network双向无线电通信系统（通常是微波炉）;更广泛的电信网络的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[communication system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['linkup', 'tie', 'tie-in']</td>
+      <td></td>
+      <td>a fastener that serves to join or connect用于连接或连接的紧固件</td>
+      <td>the walls are held together with metal links placed in the wet mortar during construction在施工期间，墙壁与放置在湿砂浆中的金属链节保持在一起</td>
+      <td></td>
+      <td></td>
+      <td>[fastening, fastener, holdfast, fixing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['data link']</td>
+      <td></td>
+      <td>an interconnecting circuit between two or more locations for the purpose of transmitting and receiving data两个或多个位置之间的互连电路，用于发送和接收数据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electric circuit, circuit, electrical circuit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['nexus']</td>
+      <td></td>
+      <td>the means of connection between things linked in series串联链接的事物之间的联系方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linkage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['connectedness', 'connection']</td>
+      <td></td>
+      <td>the state of being connected被连接的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[union, unification]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['connection', 'connexion']</td>
+      <td></td>
+      <td>a connecting shape连接形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['contact', 'inter-group communication', 'liaison']</td>
+      <td></td>
+      <td>a channel for communication between groups组之间进行通信的渠道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line, channel, communication channel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a unit of length equal to 1/100 of a chain长度单位等于链的1/100</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linear unit, linear measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>in</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>(computing) an instruction that connects one part of a program or an element on a list to another program or list（计算）将程序的一个部分或列表上的元素连接到另一个程序或列表的指令</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[command, instruction, program line, statement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td>['birl', 'twirl', 'whirl']</td>
+      <td></td>
+      <td>cause to spin导致旋转</td>
+      <td>spin a coin旋转一枚硬币</td>
+      <td>[spinner]</td>
+      <td></td>
+      <td>[rotate, circumvolve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td>['spin out']</td>
+      <td></td>
+      <td>prolong or extend延长或延长</td>
+      <td>spin out a visit分散访问</td>
+      <td></td>
+      <td></td>
+      <td>[protract, draw out, extend, prolong]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td>['gyrate', 'reel', 'spin around', 'whirl']</td>
+      <td></td>
+      <td>revolve quickly and repeatedly around one's own axis围绕自己的轴快速反复旋转</td>
+      <td></td>
+      <td>[spinner]</td>
+      <td></td>
+      <td>[revolve, rotate, go around]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>form a web by making a thread通过制作一个线程形成一个网络</td>
+      <td>spiders spin a fine web蜘蛛旋转精美的网络</td>
+      <td></td>
+      <td></td>
+      <td>[create from raw material, create from raw stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>make up a story编造一个故事</td>
+      <td>spin a yarn摆龙门阵</td>
+      <td></td>
+      <td></td>
+      <td>[fabricate, cook up, invent, make up, manufacture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>stream in jets, of liquids喷射流，液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stream, well out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>twist and turn so as to give an intended interpretation扭转并转动以便给出预期的解释</td>
+      <td>The President's spokesmen had to spin the story to make it less embarrassing总统的发言人不得不改变这个故事，使其不那么尴尬</td>
+      <td></td>
+      <td></td>
+      <td>[present, lay out, represent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>ver</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>work natural fibers into a thread将天然纤维加工成线</td>
+      <td>spin silk纺丝</td>
+      <td>[spinning, spinner]</td>
+      <td></td>
+      <td>[distort, twist, twine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>spɪn</td>
+      <td>['tailspin']</td>
+      <td></td>
+      <td>rapid descent of an aircraft in a steep spiral飞机在陡峭的螺旋中快速下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aerobatics, stunting, acrobatics, stunt flying]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>spɪn</td>
+      <td>['twirl', 'twist', 'twisting', 'whirl']</td>
+      <td></td>
+      <td>the act of rotating rapidly快速旋转的行为</td>
+      <td>he gave the crank a spin他给了曲柄一个旋转</td>
+      <td></td>
+      <td></td>
+      <td>[rotation, rotary motion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>a distinctive interpretation (especially as used by politicians to sway public opinion)独特的解释（特别是政客用来影响公众舆论）</td>
+      <td>the campaign put a favorable spin on the story该活动为这个故事带来了好转</td>
+      <td></td>
+      <td></td>
+      <td>[rendition, interpretation, rendering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>a short drive in a car开车很短的车程</td>
+      <td>he took the new car for a spin他把新车转了一圈</td>
+      <td></td>
+      <td></td>
+      <td>[drive, ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spin</th>
+      <td>in</td>
+      <td>4.13</td>
+      <td>nou</td>
+      <td>spɪn</td>
+      <td></td>
+      <td></td>
+      <td>a swift whirling motion (usually of a missile)快速的旋转运动（通常是导弹）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rotation, gyration, revolution]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ming</th>
+      <td>in</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>mɪŋ</td>
+      <td>['ming dynasty']</td>
+      <td></td>
+      <td>the imperial dynasty of China from 1368 to 1644中国的帝国王朝从1368年到1644年</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dynasty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>twɪn</td>
+      <td>['duplicate', 'parallel']</td>
+      <td></td>
+      <td>duplicate or match重复或匹配</td>
+      <td>The polished surface twinned his face and chest in reverse抛光的表面使他的脸和胸部相反</td>
+      <td></td>
+      <td></td>
+      <td>[fit, tally, agree, check, correspond, match, gibe, jibe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>twɪn</td>
+      <td>['couple', 'match', 'mate', 'pair']</td>
+      <td></td>
+      <td>bring two objects, ideas, or people together将两个对象，想法或人物聚集在一起</td>
+      <td></td>
+      <td></td>
+      <td>[match]</td>
+      <td>[join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>twɪn</td>
+      <td></td>
+      <td></td>
+      <td>give birth to twins生下双胞胎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deliver, give birth, have, bear, birth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>ver</td>
+      <td>twɪn</td>
+      <td></td>
+      <td></td>
+      <td>grow as twins成长为双胞胎</td>
+      <td>twin crystals双晶</td>
+      <td></td>
+      <td></td>
+      <td>[grow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>twɪn</td>
+      <td>['counterpart', 'similitude']</td>
+      <td></td>
+      <td>a duplicate copy副本</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[duplication, duplicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>twɪn</td>
+      <td>['gemini']</td>
+      <td></td>
+      <td>(astrology) a person who is born while the sun is in Gemini（占星术）一个在太阳落在双子座时出生的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mortal, somebody, person, soul, individual, someone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>twɪn</td>
+      <td>['twin falls']</td>
+      <td></td>
+      <td>a waterfall in the Snake River in southern Idaho爱达荷州南部斯内克河的瀑布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>twɪn</td>
+      <td></td>
+      <td></td>
+      <td>either of two offspring born at the same time from the same pregnancy两个后代中的任何一个在同一次怀孕的同时出生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sibling, sib]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>twin</th>
+      <td>in</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>twɪn</td>
+      <td>['duplicate', 'matching', 'twinned'], similarTo:['matched']</td>
+      <td></td>
+      <td>being two identical是两个相同的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chin</th>
+      <td>in</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>tʃɪn</td>
+      <td>['chin up']</td>
+      <td></td>
+      <td>raise oneself while hanging from one's hands until one's chin is level with the support bar从一个人的手上垂下来，直到一个人的下巴与支撑杆齐平</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lift, get up, bring up, elevate, raise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chin</th>
+      <td>in</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>tʃɪn</td>
+      <td>['mentum']</td>
+      <td></td>
+      <td>the protruding part of the lower jaw下颚的突出部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[feature, lineament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chin</th>
+      <td>in</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>tʃɪn</td>
+      <td>['kuki', 'kuki-chin']</td>
+      <td></td>
+      <td>Kamarupan languages spoken in western Burma and Bangladesh and easternmost India在缅甸西部和孟加拉国以及印度最东部使用的Kamarupan语言</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kamarupan]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mini</th>
+      <td>in</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>'mɪni</td>
+      <td>['miniskirt']</td>
+      <td></td>
+      <td>a very short skirt一条很短的裙子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[skirt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mini</th>
+      <td>in</td>
+      <td>4.00</td>
+      <td>adj</td>
+      <td>'mɪni</td>
+      <td></td>
+      <td>[maxi, midi]</td>
+      <td>used of women's clothing; very short with hemline above the knee用于女装;膝盖以上的底边非常短</td>
+      <td>a mini dress迷你连衣裙miniskirts迷你裙</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[combining form]</td>
+    </tr>
+    <tr>
+      <th>ding</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>dɪŋ</td>
+      <td>['dingdong', 'dong']</td>
+      <td></td>
+      <td>go `ding dong', like a bell去'叮咚'，就像一个铃铛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ring, peal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ding</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>dɪŋ</td>
+      <td>['dent', 'gouge', 'nick']</td>
+      <td></td>
+      <td>an impression in a surface (as made by a blow)表面上的印象（由打击造成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mar, defect, blemish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ding</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>dɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a ringing sound一阵响亮的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shin</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>ʃɪn</td>
+      <td>['clamber', 'scramble', 'shinny', 'skin', 'sputter', 'struggle']</td>
+      <td></td>
+      <td>climb awkwardly, as if by scrambling笨拙地爬，仿佛在争抢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[climb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shin</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ʃɪn</td>
+      <td>['shin bone']</td>
+      <td></td>
+      <td>a cut of meat from the lower part of the leg从腿下部切下一块肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut of meat, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shin</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ʃɪn</td>
+      <td>['shin bone', 'shinbone', 'tibia']</td>
+      <td></td>
+      <td>the inner and thicker of the two bones of the human leg between the knee and ankle膝盖和脚踝之间人体两条骨头的内部和较厚的部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leg bone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shin</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ʃɪn</td>
+      <td></td>
+      <td></td>
+      <td>the 22nd letter of the Hebrew alphabet希伯来字母的第22个字母</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alphabetic character, letter, letter of the alphabet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shin</th>
+      <td>in</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ʃɪn</td>
+      <td></td>
+      <td></td>
+      <td>the front part of the human leg between the knee and the ankle膝盖和脚踝之间的人腿的前部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>info</th>
+      <td>in</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>'ɪnfoʊ</td>
+      <td>['information']</td>
+      <td></td>
+      <td>a message received and understood收到并理解的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[subject matter, substance, content, message]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ping</th>
+      <td>in</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>piŋ</td>
+      <td>['knock', 'pink']</td>
+      <td></td>
+      <td>sound like a car engine that is firing too early听起来像汽车引擎过早发射</td>
+      <td>the car pinged when I put in low-octane gasoline当我装入低辛烷值的汽油时，汽车会被夹住</td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ping</th>
+      <td>in</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>piŋ</td>
+      <td></td>
+      <td></td>
+      <td>contact, usually in order to remind of something联系，通常是为了提醒一些事情</td>
+      <td>I'll ping my accountant--April 15 is nearing我会打电话给我的会计师 -  4月15日即将来临</td>
+      <td></td>
+      <td></td>
+      <td>[contact, get hold of, reach, get through]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ping</th>
+      <td>in</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>piŋ</td>
+      <td></td>
+      <td></td>
+      <td>hit with a pinging noise发出砰砰声</td>
+      <td>The bugs pinged the lamp shade这些虫子刺破了灯罩</td>
+      <td></td>
+      <td></td>
+      <td>[strike, collide with, hit, impinge on, run into]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ping</th>
+      <td>in</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>piŋ</td>
+      <td></td>
+      <td></td>
+      <td>make a short high-pitched sound发出一声短促的高音</td>
+      <td>the bullet pinged when they struck the car当他们撞到汽车时，子弹被钉住了</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ping</th>
+      <td>in</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>piŋ</td>
+      <td></td>
+      <td></td>
+      <td>send a message from one computer to another to check whether it is reachable and active从一台计算机向另一台计算机发送消息，以检查它是否可访问和活动</td>
+      <td>ping your machine in the office在办公室ping你的机器</td>
+      <td></td>
+      <td></td>
+      <td>[get through, reach, get hold of, contact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ping</th>
+      <td>in</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>piŋ</td>
+      <td>['ping river']</td>
+      <td></td>
+      <td>a river in western Thailand; a major tributary of the Chao Phraya泰国西部的一条河流;湄南河的一个主要支流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ping</th>
+      <td>in</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>piŋ</td>
+      <td></td>
+      <td></td>
+      <td>a sharp high-pitched resonant sound (as of a sonar echo or a bullet striking metal)尖锐的高音共鸣声（如声纳回声或子弹击打金属）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hint</th>
+      <td>in</td>
+      <td>3.76</td>
+      <td>ver</td>
+      <td>hɪnt</td>
+      <td>['suggest']</td>
+      <td></td>
+      <td>drop a hint; intimate by a hint暗示;亲密的暗示</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[convey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hint</th>
+      <td>in</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>hɪnt</td>
+      <td>['clue']</td>
+      <td></td>
+      <td>a slight indication一个轻微的迹象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indicant, indication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hint</th>
+      <td>in</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>hɪnt</td>
+      <td>['suggestion', 'tint', 'trace']</td>
+      <td></td>
+      <td>a just detectable amount一个可以检测到的数量</td>
+      <td>a hint mockery in her manner以她的方式暗示着一丝嘲弄</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite quantity, small indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hint</th>
+      <td>in</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>hɪnt</td>
+      <td>['jot', 'mite', 'pinch', 'soupcon', 'speck', 'tinge', 'touch']</td>
+      <td></td>
+      <td>a slight but appreciable amount一个轻微但可观的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hint</th>
+      <td>in</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>hɪnt</td>
+      <td>['breath', 'intimation']</td>
+      <td></td>
+      <td>an indirect suggestion间接的建议</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[suggestion, proposition, proffer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hint</th>
+      <td>in</td>
+      <td>3.76</td>
+      <td>nou</td>
+      <td>hɪnt</td>
+      <td>['confidential information', 'lead', 'steer', 'tip', 'wind']</td>
+      <td></td>
+      <td>an indication of potential opportunity潜在机会的迹象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[direction, guidance, counsel, counseling, counselling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>mɪnt</td>
+      <td>['coin', 'strike']</td>
+      <td></td>
+      <td>form by stamping, punching, or printing通过冲压，冲压或印刷形式</td>
+      <td></td>
+      <td>[mintage, minter]</td>
+      <td></td>
+      <td>[create from raw stuff, create from raw material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mɪnt</td>
+      <td>['mint candy']</td>
+      <td></td>
+      <td>a candy that is flavored with a mint oil一种用薄荷油调味的糖果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[confect, candy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mɪnt</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td>he made a mint on the stock market他在股市上做了一个薄荷</td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite quantity, large indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mɪnt</td>
+      <td></td>
+      <td></td>
+      <td>any member of the mint family of plants薄荷植物家族的任何成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[labiatae, lamiaceae, mint family, family labiatae, family lamiaceae]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mɪnt</td>
+      <td></td>
+      <td></td>
+      <td>any north temperate plant of the genus Mentha with aromatic leaves and small mauve flowers薄荷属的任何北温带植物，有芳香的叶子和小的淡紫色花</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herbaceous plant, herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mɪnt</td>
+      <td></td>
+      <td></td>
+      <td>a plant where money is coined by authority of the government由政府授权创造资金的工厂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[industrial plant, plant, works]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mɪnt</td>
+      <td></td>
+      <td></td>
+      <td>the leaves of a mint plant used fresh or candied薄荷植物的叶子用新鲜或蜜饯</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mint</th>
+      <td>in</td>
+      <td>3.69</td>
+      <td>adj</td>
+      <td>mɪnt</td>
+      <td>, similarTo:['perfect']</td>
+      <td></td>
+      <td>as if new好像是新的</td>
+      <td>in mint condition完好无损</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['adhere', 'bond', 'hold fast', 'stick', 'stick to']</td>
+      <td></td>
+      <td>stick to firmly坚持下去</td>
+      <td></td>
+      <td>[binder, binding]</td>
+      <td>[cleave, cohere, adhere, stick, cling]</td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['attach', 'bond', 'tie']</td>
+      <td></td>
+      <td>create social or emotional ties建立社交或情感联系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[relate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['tie']</td>
+      <td></td>
+      <td>fasten or secure with a rope, string, or cord用绳子，绳子或绳子固定或固定</td>
+      <td></td>
+      <td>[bindable, binder]</td>
+      <td></td>
+      <td>[secure, fix, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['constipate']</td>
+      <td></td>
+      <td>cause to be constipated导致便秘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indispose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['hold', 'obligate', 'oblige']</td>
+      <td></td>
+      <td>bind by an obligation; cause to be indebted责任约束;导致负债累累</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[relate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['bandage']</td>
+      <td></td>
+      <td>wrap around with something so as to cover or enclose用东西包裹以便覆盖或包围</td>
+      <td></td>
+      <td>[bindable, binding]</td>
+      <td></td>
+      <td>[fasten, fix, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td>['tie down', 'tie up', 'truss']</td>
+      <td></td>
+      <td>secure with or as if with ropes使用或似乎用绳索固定</td>
+      <td></td>
+      <td>[bindable]</td>
+      <td></td>
+      <td>[constrain, hold, confine, restrain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td></td>
+      <td>form a chemical bond with与...形成化学键</td>
+      <td>The hydrogen binds the oxygen氢结合氧</td>
+      <td>[binding, binder]</td>
+      <td></td>
+      <td>[hold fast, stick, bond, adhere, stick to]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td>[unbind]</td>
+      <td>make fast; tie or secure, with or as if with a rope快速;系绳或用绳索固定或固定</td>
+      <td>The Chinese would bind the feet of their women中国人会束缚女人的脚</td>
+      <td>[bindable, binder]</td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>ver</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td></td>
+      <td>provide with a binding提供绑定</td>
+      <td>bind the books in leather用皮革装订书籍</td>
+      <td>[binding, binder, bindery]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bind</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>baɪnd</td>
+      <td></td>
+      <td></td>
+      <td>something that hinders as if with bonds像债券一样阻碍的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deterrent, hinderance, handicap, check, impediment, hindrance, baulk, balk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pint</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>paɪnt</td>
+      <td>['dry pint']</td>
+      <td></td>
+      <td>a United States dry unit equal to 0.5 quart or 33.6 cubic inches美国干燥单位等于0.5夸脱或33.6立方英寸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[united states dry unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pint</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>paɪnt</td>
+      <td></td>
+      <td></td>
+      <td>a British imperial capacity measure (liquid or dry) equal to 4 gills or 568.26 cubic centimeters英国的皇家容量测量（液体或干燥）等于4鳃或568.26立方厘米</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imperial capacity unit, british capacity unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pint</th>
+      <td>in</td>
+      <td>3.61</td>
+      <td>nou</td>
+      <td>paɪnt</td>
+      <td></td>
+      <td></td>
+      <td>a United States liquid unit equal to 16 fluid ounces; two pints equal one quart美国液体单位等于16液量盎司;两品脱等于一夸脱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[united states liquid unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>erin</th>
+      <td>in</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>'ɛrɪn</td>
+      <td></td>
+      <td></td>
+      <td>an early name of Ireland that is now used in poetry爱尔兰的早期名称，现在用于诗歌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jinx</th>
+      <td>in</td>
+      <td>3.56</td>
+      <td>ver</td>
+      <td>dʒɪŋks</td>
+      <td>['bewitch', 'enchant', 'glamour', 'hex', 'witch']</td>
+      <td></td>
+      <td>cast a spell over someone or something; put a hex on someone or something对某人或某事施加咒语;对某人或某事施加十六进制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[becharm, charm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jinx</th>
+      <td>in</td>
+      <td>3.56</td>
+      <td>ver</td>
+      <td>dʒɪŋks</td>
+      <td></td>
+      <td></td>
+      <td>foredoom to failureforedoom失败</td>
+      <td>This project is jinxed!这个项目是jinxed！</td>
+      <td></td>
+      <td></td>
+      <td>[foreordain, predestine, preordain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jinx</th>
+      <td>in</td>
+      <td>3.56</td>
+      <td>nou</td>
+      <td>dʒɪŋks</td>
+      <td>['curse', 'hex', 'whammy']</td>
+      <td></td>
+      <td>an evil spell一个邪恶的咒语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[charm, magic spell, magical spell, spell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jinx</th>
+      <td>in</td>
+      <td>3.56</td>
+      <td>nou</td>
+      <td>dʒɪŋks</td>
+      <td>['jonah']</td>
+      <td></td>
+      <td>a person believed to bring bad luck to those around him一个人认为会给周围的人带来厄运</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unfortunate, unfortunate person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>finn</th>
+      <td>in</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>fɪn</td>
+      <td></td>
+      <td></td>
+      <td>a native or inhabitant of Finland芬兰的本地人或居民</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[european]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ting</th>
+      <td>in</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>tɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>cause to make a ting因为做一个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ting</th>
+      <td>in</td>
+      <td>3.45</td>
+      <td>ver</td>
+      <td>tɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>make a light, metallic sound; go `ting'发出轻盈的金属声;去'ting'</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ting</th>
+      <td>in</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>tɪŋ</td>
+      <td>['tinkle']</td>
+      <td></td>
+      <td>a light clear metallic sound as of a small bell一种轻盈的金属声，如小铃铛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>in</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'blink away']</td>
+      <td></td>
+      <td>keep back by blinking通过眨眼来保持</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[restrain, hold back, keep, keep back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>in</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'flash', 'twinkle', 'winkle']</td>
+      <td></td>
+      <td>gleam or glow intermittently间歇地闪烁或发光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>in</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'nictate', 'nictitate']</td>
+      <td></td>
+      <td>briefly shut the eyes短暂闭上眼睛</td>
+      <td></td>
+      <td>[winker, winking]</td>
+      <td></td>
+      <td>[act involuntarily, act reflexively]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>in</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>signal by winking通过眨眼发出信号</td>
+      <td>She winked at him她对他眨了眨眼</td>
+      <td>[winker]</td>
+      <td></td>
+      <td>[motion, gesture, gesticulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>in</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>wɪŋk</td>
+      <td>['blink of an eye', 'flash', 'heartbeat', 'instant', 'jiffy', 'new york minute', 'split second', 'trice', 'twinkling']</td>
+      <td></td>
+      <td>a very short time (as the time it takes the eye to blink or the heart to beat)很短的时间（因为眼睛眨眼或心脏跳动的时间）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bit, minute, mo, moment, second]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>in</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'blinking', 'eye blink', 'nictation', 'nictitation', 'winking']</td>
+      <td></td>
+      <td>a reflex that closes and opens the eyes rapidly一种快速关闭并睁开眼睛的反射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inborn reflex, physiological reaction, reflex, reflex action, innate reflex, instinctive reflex, unconditioned reflex, reflex response]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>in</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>wɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>closing one eye quickly as a signal快速闭上一只眼睛作为信号</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[facial expression, facial gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grin</th>
+      <td>in</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>grɪn</td>
+      <td></td>
+      <td></td>
+      <td>to draw back the lips and reveal the teeth, in a smile, grimace, or snarl以微笑，鬼脸或咆哮的方式拉回嘴唇并露出牙齿</td>
+      <td></td>
+      <td>[grinner, grinning]</td>
+      <td></td>
+      <td>[smile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grin</th>
+      <td>in</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>grɪn</td>
+      <td>['grinning', 'smile', 'smiling']</td>
+      <td></td>
+      <td>a facial expression characterized by turning up the corners of the mouth; usually shows pleasure or amusement一种面部表情，其特征是翻出嘴角;通常表现出快乐或娱乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[facial expression, facial gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hind</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>haɪnd</td>
+      <td></td>
+      <td></td>
+      <td>a female deer, especially an adult female red deer雌鹿，尤其是成年雌性红鹿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[red deer, elk, cervus elaphus, wapiti, american elk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hind</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>haɪnd</td>
+      <td></td>
+      <td></td>
+      <td>any of several mostly spotted fishes that resemble groupers几种大多数斑点鱼类，类似于石斑鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grouper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hind</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>adj</td>
+      <td>haɪnd</td>
+      <td>['back', 'hinder'], similarTo:['posterior']</td>
+      <td></td>
+      <td>located at or near the back of an animal位于动物背部或附近</td>
+      <td>back (or hind) legs后腿（或后腿）the hinder part of a carcass胴体的阻碍部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rink</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>rɪŋk</td>
+      <td>['skating rink']</td>
+      <td></td>
+      <td>building that contains a surface for ice skating or roller skating包含用于滑冰或轮滑的表面的建筑物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[building, edifice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mink</th>
+      <td>in</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>mɪŋk</td>
+      <td>['mink coat']</td>
+      <td></td>
+      <td>fur coat made from the soft lustrous fur of minks皮草外套采用柔软光泽的水貂皮制成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fur coat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mink</th>
+      <td>in</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>mɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>slender-bodied semiaquatic mammal having partially webbed feet; valued for its fur具有部分蹼足的细长体半水生哺乳动物;因其毛皮而受到重视</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mustelid, musteline mammal, musteline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mink</th>
+      <td>in</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>mɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>the expensive fur of a mink貂皮的昂贵皮毛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fur, pelt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odin</th>
+      <td>in</td>
+      <td>3.15</td>
+      <td>nou</td>
+      <td>'oʊdɪn</td>
+      <td></td>
+      <td></td>
+      <td>(Norse mythology) ruler of the Aesir; supreme god of war and poetry and knowledge and wisdom (for which he gave an eye) and husband of Frigg; identified with the Teutonic Wotan（北欧神话）Aesir的统治者;至高无上的战神，诗歌，知识和智慧（他为此睁开眼睛）和弗里格的丈夫;与条顿沃坦认同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tink</th>
+      <td>in</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td></td>
+      <td>['chink', 'clink', 'tinkle']</td>
+      <td></td>
+      <td>make or emit a high sound发出或发出高声</td>
+      <td>tinkling bells叮叮当当的钟声</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inga</th>
+      <td>in</td>
+      <td>3.04</td>
+      <td>nou</td>
+      <td>'ɪŋɡə</td>
+      <td></td>
+      <td></td>
+      <td>any tree or shrub of the genus Inga having pinnate leaves and showy usually white flowers; cultivated as ornamentalsInga属的任何树或灌木，有羽状叶和艳丽的白色花朵;作为观赏植物栽培</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dink</th>
+      <td>in</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>dɪŋk</td>
+      <td>['drop shot']</td>
+      <td></td>
+      <td>a soft return so that the tennis ball drops abruptly after crossing the net柔软的回归，使网球在穿过网后突然下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[return]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dink</th>
+      <td>in</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>dɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a couple who both have careers and no children (an acronym for dual income no kids)一对夫妻双方都有职业而且没有孩子（双收入的首字母缩写，没有孩子）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[couple, match, mates]</td>
+      <td>[acronym, initialism]</td>
+    </tr>
+    <tr>
+      <th>fink</th>
+      <td>in</td>
+      <td>2.94</td>
+      <td>ver</td>
+      <td>fɪŋk</td>
+      <td>['confess', 'squeal']</td>
+      <td></td>
+      <td>confess to a punishable or reprehensible deed, usually under pressure通常在压力下承认应受惩罚或应受谴责的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acknowledge, admit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fink</th>
+      <td>in</td>
+      <td>2.94</td>
+      <td>ver</td>
+      <td>fɪŋk</td>
+      <td>['blackleg', 'rat', 'scab']</td>
+      <td></td>
+      <td>take the place of work of someone on strike取代某人的工作地点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[do work, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fink</th>
+      <td>in</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>fɪŋk</td>
+      <td>['canary', 'sneak', 'sneaker', 'snitch', 'snitcher', 'stool pigeon', 'stoolie', 'stoolpigeon']</td>
+      <td></td>
+      <td>someone acting as an informer or decoy for the police某人扮演警察的告密者或诱饵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[informer, rat, squealer, betrayer, blabber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>minx</th>
+      <td>in</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>mɪŋks</td>
+      <td>['coquette', 'flirt', 'prickteaser', 'tease', 'vamp', 'vamper']</td>
+      <td></td>
+      <td>a seductive woman who uses her sex appeal to exploit men一个诱人的女人利用她的性吸引力来剥削男人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult female, woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zinc</th>
+      <td>in</td>
+      <td>2.88</td>
+      <td>ver</td>
+      <td>zɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>coat or cover with zinc涂上锌或盖上锌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coat, surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zinc</th>
+      <td>in</td>
+      <td>2.88</td>
+      <td>nou</td>
+      <td>zɪŋk</td>
+      <td>['atomic number 30', 'zn']</td>
+      <td></td>
+      <td>a bluish-white lustrous metallic element; brittle at ordinary temperatures but malleable when heated; used in a wide variety of alloys and in galvanizing iron; it occurs naturally as zinc sulphide in zinc blende蓝白色有光泽的金属元素;在常温下易碎但在加热时具有延展性;用于各种合金和镀锌铁;它在锌闪锌矿中作为硫化锌自然发生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[metal, metallic element]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>akin</th>
+      <td>in</td>
+      <td>2.85</td>
+      <td>adj</td>
+      <td>ə'kɪn</td>
+      <td>['kindred'], similarTo:['similar']</td>
+      <td></td>
+      <td>similar in quality or character质量或性质相似</td>
+      <td>a feeling akin to terror一种类似于恐怖的感觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>akin</th>
+      <td>in</td>
+      <td>2.85</td>
+      <td>adj</td>
+      <td>ə'kɪn</td>
+      <td>['blood-related', 'cognate', 'consanguine', 'consanguineal', 'consanguineous', 'kin'], similarTo:['related']</td>
+      <td></td>
+      <td>related by blood与血有关</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inca</th>
+      <td>in</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>'ɪŋkə</td>
+      <td>['inka']</td>
+      <td></td>
+      <td>the small group of Quechua living in the Cuzco Valley in Peru who established hegemony over their neighbors in order to create an empire that lasted from about 1100 until the Spanish conquest in the early 1530s生活在秘鲁库斯科山谷的克丘亚小团体，他们为邻国建立霸权，以创建一个从大约1100年到1530年代初西班牙征服的帝国</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inca</th>
+      <td>in</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>'ɪŋkə</td>
+      <td>['incan', 'inka']</td>
+      <td></td>
+      <td>a member of the Quechuan people living in the Cuzco valley in Peru居住在秘鲁库斯科山谷的盖丘人的一员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kechua, quechua]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inca</th>
+      <td>in</td>
+      <td>2.78</td>
+      <td>nou</td>
+      <td>'ɪŋkə</td>
+      <td></td>
+      <td></td>
+      <td>a ruler of the Incas (or a member of his family)印加人的统治者（或他的家庭成员）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swayer, ruler]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zing</th>
+      <td>in</td>
+      <td>2.75</td>
+      <td>nou</td>
+      <td>zɪŋ</td>
+      <td>['dynamism', 'oomph', 'pizzaz', 'pizzazz']</td>
+      <td></td>
+      <td>the activeness of an energetic personality精力充沛的人格的积极性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[activeness, activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zing</th>
+      <td>in</td>
+      <td>2.75</td>
+      <td>nou</td>
+      <td>zɪŋ</td>
+      <td></td>
+      <td></td>
+      <td>a brief high-pitched buzzing or humming sound短促的嗡嗡声或嗡嗡声</td>
+      <td>the zing of the passing bullet通过子弹的zing</td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lint</th>
+      <td>in</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>lɪnt</td>
+      <td></td>
+      <td></td>
+      <td>cotton or linen fabric with the nap raised on one side; used to dress wounds棉质或亚麻织物，一面绒毛;习惯穿伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[textile, fabric, material, cloth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lint</th>
+      <td>in</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>lɪnt</td>
+      <td></td>
+      <td></td>
+      <td>fine ravellings of cotton or linen fibers精细的棉或亚麻纤维</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fiber, fibre]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lind</th>
+      <td>in</td>
+      <td>2.66</td>
+      <td>nou</td>
+      <td>lɪnd</td>
+      <td>['jenny lind', 'swedish nightingale']</td>
+      <td></td>
+      <td>Swedish soprano who toured the United States under the management of P. T. Barnum (1820-1887)在P. T. Barnum（1820-1887）的管理下巡回美国的瑞典女高音歌唱家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dint</th>
+      <td>in</td>
+      <td>2.63</td>
+      <td>nou</td>
+      <td>dɪnt</td>
+      <td></td>
+      <td></td>
+      <td>interchangeable with `means' in the expression `by means of'在'通过'的表达中可以与`means'互换</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[agency, means, way]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>kɪŋk</td>
+      <td>['crape', 'crimp', 'frizz', 'frizzle', 'kink up']</td>
+      <td></td>
+      <td>curl tightly紧紧地卷曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wave, curl]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>kɪŋk</td>
+      <td>['curl', 'curve']</td>
+      <td></td>
+      <td>form a curl, curve, or kink形成卷曲，曲线或扭结</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td>['crick', 'rick', 'wrick']</td>
+      <td></td>
+      <td>a painful muscle spasm especially in the neck or back (`rick' and `wrick' are British)疼痛的肌肉痉挛，尤其是颈部或背部（“瑞克”和“瑞克”是英国人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spasm, cramp, muscle spasm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td>['twirl', 'twist']</td>
+      <td></td>
+      <td>a sharp bend in a line produced when a line having a loop is pulled tight当具有环的线被拉紧时产生的线弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bend, crease, crimp, flexure, fold, plication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a difficulty or flaw in a plan or operation计划或操作中的困难或缺陷</td>
+      <td>there are still a few kinks to iron out还有一些问题需要解决</td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>an eccentric idea一个古怪的想法</td>
+      <td></td>
+      <td>[kinky]</td>
+      <td></td>
+      <td>[thought, idea]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a person with unusual sexual tastes性欲异常的人</td>
+      <td></td>
+      <td>[kinky]</td>
+      <td></td>
+      <td>[soul, person, individual, somebody, someone, mortal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tint</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>tɪnt</td>
+      <td>['tinct', 'tinge', 'touch']</td>
+      <td></td>
+      <td>color lightly浅色</td>
+      <td></td>
+      <td>[tinter, tinting]</td>
+      <td></td>
+      <td>[color, color in, colorise, colorize, colour, colour in, colourise, colourize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tint</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>tɪnt</td>
+      <td>['shade', 'tincture', 'tone']</td>
+      <td></td>
+      <td>a quality of a given color that differs slightly from another color给定颜色的质量与另一种颜色略有不同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[color, coloring, colour, colouring]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tint</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>tɪnt</td>
+      <td>['hair coloring', 'hair dye']</td>
+      <td></td>
+      <td>a dye for coloring the hair用于染发的染料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dye, dyestuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tint</th>
+      <td>in</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>tɪnt</td>
+      <td>['hint', 'suggestion', 'trace']</td>
+      <td></td>
+      <td>a just detectable amount一个可以检测到的数量</td>
+      <td>a tint of glamour一种魅力</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rind</th>
+      <td>in</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>raɪnd</td>
+      <td></td>
+      <td></td>
+      <td>the natural outer covering of food (usually removed before eating)食物的天然外壳（通常在食用前去除）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[material, stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inky</th>
+      <td>in</td>
+      <td>2.33</td>
+      <td>adj</td>
+      <td>'ɪŋki</td>
+      <td>['ink-black', 'inky-black'], similarTo:['achromatic', 'neutral']</td>
+      <td></td>
+      <td>of the color of black ink黑色墨水的颜色</td>
+      <td></td>
+      <td>[ink, inkiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sind</th>
+      <td>in</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>sɪnd</td>
+      <td></td>
+      <td></td>
+      <td>a region of southeastern Pakistan巴基斯坦东南部的一个地区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, region]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inst</th>
+      <td>in</td>
+      <td>1.73</td>
+      <td>adj</td>
+      <td></td>
+      <td>['instant'], similarTo:['present']</td>
+      <td></td>
+      <td>in or of the present month在本月或本月</td>
+      <td>your letter of the 10th inst你的第10个月的信</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

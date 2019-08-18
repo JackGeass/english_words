@@ -1,0 +1,365 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['marks', 'shark', 'spark', 'stark', 'parks']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>marks</th>
+      <td>ark</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>mɑrks</td>
+      <td>['first baron marks of broughton', 'simon marks']</td>
+      <td></td>
+      <td>English businessman who created a retail chain (1888-1964)创建零售连锁店的英国商人（1888-1964）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shark</th>
+      <td>ark</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>ʃɑrk</td>
+      <td></td>
+      <td></td>
+      <td>hunt shark捕猎鲨鱼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shark</th>
+      <td>ark</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>ʃɑrk</td>
+      <td></td>
+      <td></td>
+      <td>play the shark; act with trickery玩鲨鱼;用诡计行事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chisel, cheat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shark</th>
+      <td>ark</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>ʃɑrk</td>
+      <td></td>
+      <td></td>
+      <td>any of numerous elongate mostly marine carnivorous fishes with heterocercal caudal fins and tough skin covered with small toothlike scales许多细长的海洋食肉鱼类中的任何一种，具有异尾鳍尾鳍和坚硬的皮肤，覆盖着小齿状鳞片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[selachian, elasmobranch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shark</th>
+      <td>ark</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>ʃɑrk</td>
+      <td></td>
+      <td></td>
+      <td>a person who is ruthless and greedy and dishonest一个无情，贪婪和不诚实的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wrongdoer, offender]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shark</th>
+      <td>ark</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>ʃɑrk</td>
+      <td></td>
+      <td></td>
+      <td>a person who is unusually skilled in certain ways在某些方面非常熟练的人</td>
+      <td>a card shark卡鲨</td>
+      <td></td>
+      <td></td>
+      <td>[expert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>spɑrk</td>
+      <td>['activate', 'actuate', 'set off', 'spark off', 'touch off', 'trigger', 'trigger off', 'trip']</td>
+      <td></td>
+      <td>put in motion or move to act采取行动或采取行动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pioneer, initiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>ver</td>
+      <td>spɑrk</td>
+      <td>['sparkle']</td>
+      <td></td>
+      <td>emit or produce sparks发出或产生火花</td>
+      <td>A high tension wire, brought down by a storm, can continue to spark被风暴击落的高压线可以继续点火</td>
+      <td></td>
+      <td></td>
+      <td>[give out, emit, give off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>spɑrk</td>
+      <td>['light', 'sparkle', 'twinkle']</td>
+      <td></td>
+      <td>merriment expressed by a brightness or gleam or animation of countenance表达的亮度或闪光或动画表达的欢乐</td>
+      <td>he had a sparkle in his eye他的眼睛闪闪发光</td>
+      <td></td>
+      <td></td>
+      <td>[facial expression, expression, face, aspect, look, verve, vitality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>spɑrk</td>
+      <td>['arc', 'discharge', 'electric arc', 'electric discharge']</td>
+      <td></td>
+      <td>electrical conduction through a gas in an applied electric field在施加的电场中通过气体的电传导</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electrical conduction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>spɑrk</td>
+      <td>['flicker', 'glint']</td>
+      <td></td>
+      <td>a momentary flash of light一瞬间的闪光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flash]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>spɑrk</td>
+      <td>['dame muriel spark', 'muriel sarah spark', 'muriel spark']</td>
+      <td></td>
+      <td>Scottish writer of satirical novels (born in 1918)苏格兰讽刺小说作家（1918年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>spɑrk</td>
+      <td></td>
+      <td></td>
+      <td>a small but noticeable trace of some quality that might become stronger一种可能变得更强的一些质量的小而明显的痕迹</td>
+      <td>a spark of interest感兴趣的火花a spark of decency体面的火花</td>
+      <td></td>
+      <td></td>
+      <td>[tint, trace, suggestion, hint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spark</th>
+      <td>ark</td>
+      <td>3.77</td>
+      <td>nou</td>
+      <td>spɑrk</td>
+      <td></td>
+      <td></td>
+      <td>a small fragment of a burning substance thrown out by burning material or by friction通过燃烧材料或摩擦抛出的燃烧物质的一小部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fragment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stark</th>
+      <td>ark</td>
+      <td>3.66</td>
+      <td>adj</td>
+      <td>stɑrk</td>
+      <td>['arrant', 'complete', 'consummate', 'double-dyed', 'everlasting', 'gross', 'perfect', 'pure', 'sodding', 'staring', 'thorough', 'thoroughgoing', 'unadulterated', 'utter'], similarTo:['unmitigated']</td>
+      <td></td>
+      <td>without qualification; used informally as (often pejorative) intensifiers没有资格;非正式地使用（通常是贬义的）增强器</td>
+      <td>stark staring mad斯塔克盯着疯了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stark</th>
+      <td>ark</td>
+      <td>3.66</td>
+      <td>adj</td>
+      <td>stɑrk</td>
+      <td>['bare', 'barren', 'bleak', 'desolate'], similarTo:['inhospitable']</td>
+      <td></td>
+      <td>providing no shelter or sustenance不提供住所或寄托</td>
+      <td>a stark landscape一个鲜明的风景</td>
+      <td>[starkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stark</th>
+      <td>ark</td>
+      <td>3.66</td>
+      <td>adj</td>
+      <td>stɑrk</td>
+      <td>['blunt', 'crude'], similarTo:['unconditional', 'unconditioned']</td>
+      <td></td>
+      <td>devoid of any qualifications or disguise or adornment没有任何资格或伪装或装饰</td>
+      <td>facing the stark reality of the deadline面对截止日期的严峻现实</td>
+      <td>[starkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stark</th>
+      <td>ark</td>
+      <td>3.66</td>
+      <td>adj</td>
+      <td>stɑrk</td>
+      <td>['austere', 'severe', 'stern'], similarTo:['plain']</td>
+      <td></td>
+      <td>severely simple非常简单</td>
+      <td>a stark interior一个鲜明的内部</td>
+      <td>[starkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stark</th>
+      <td>ark</td>
+      <td>3.66</td>
+      <td>adj</td>
+      <td>stɑrk</td>
+      <td>, similarTo:['immoderate']</td>
+      <td></td>
+      <td>complete or extreme完全或极端</td>
+      <td>stark poverty严酷的贫困a stark contrast形成鲜明对比</td>
+      <td>[starkness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>parks</th>
+      <td>ark</td>
+      <td>3.58</td>
+      <td>nou</td>
+      <td>pɑrks</td>
+      <td>['rosa parks']</td>
+      <td></td>
+      <td>United States civil rights leader who refused to give up her seat on a bus to a white man in Montgomery (Alabama) and so triggered the national Civil Rights movement (born in 1913)美国民权领袖拒绝在蒙哥马利（阿拉巴马州）的公共汽车上放弃自己的座位，因此引发了全国民权运动（1913年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

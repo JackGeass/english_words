@@ -1,0 +1,275 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['breach', 'preach', 'bleach', 'peachy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>breach</th>
+      <td>each</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>briʧ</td>
+      <td>['break', 'go against', 'infract', 'offend', 'transgress', 'violate']</td>
+      <td></td>
+      <td>act in disregard of laws, rules, contracts, or promises无视法律，规则，合同或承诺行事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disrespect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>breach</th>
+      <td>each</td>
+      <td>3.74</td>
+      <td>ver</td>
+      <td>briʧ</td>
+      <td>['gap']</td>
+      <td></td>
+      <td>make an opening or gap in开口或差距</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[open, open up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>breach</th>
+      <td>each</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>briʧ</td>
+      <td>['break', 'falling out', 'rift', 'rupture', 'severance']</td>
+      <td></td>
+      <td>a personal or social separation (as between opposing factions)个人或社会分离（在对立阵营之间）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[breakup, separation, detachment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>breach</th>
+      <td>each</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>briʧ</td>
+      <td></td>
+      <td></td>
+      <td>a failure to perform some promised act or obligation未能履行某些承诺的行为或义务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[failure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>breach</th>
+      <td>each</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>briʧ</td>
+      <td></td>
+      <td></td>
+      <td>an opening (especially a gap in a dike or fortification)开口（特别是堤防或防御工程中的间隙）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gap, opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>preach</th>
+      <td>each</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>priʧ</td>
+      <td>['prophesy']</td>
+      <td></td>
+      <td>deliver a sermon传道</td>
+      <td>The minister is not preaching this Sunday部长本周日没有讲道</td>
+      <td>[preacher, preaching, preachment]</td>
+      <td></td>
+      <td>[talk, lecture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>preach</th>
+      <td>each</td>
+      <td>3.63</td>
+      <td>ver</td>
+      <td>priʧ</td>
+      <td>['advocate']</td>
+      <td></td>
+      <td>speak, plead, or argue in favor of说，恳求，或赞成</td>
+      <td></td>
+      <td>[preaching]</td>
+      <td></td>
+      <td>[urge on, exhort, press, urge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bleach</th>
+      <td>each</td>
+      <td>3.26</td>
+      <td>ver</td>
+      <td>bliʧ</td>
+      <td>['bleach out', 'decolor', 'decolorise', 'decolorize', 'decolour', 'decolourise', 'decolourize', 'discolorise', 'discolorize', 'discolourise']</td>
+      <td></td>
+      <td>remove color from去除颜色</td>
+      <td>The sun bleached the red shirt太阳漂白了红色的衬衫</td>
+      <td>[bleacher]</td>
+      <td></td>
+      <td>[discolor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bleach</th>
+      <td>each</td>
+      <td>3.26</td>
+      <td>ver</td>
+      <td>bliʧ</td>
+      <td></td>
+      <td></td>
+      <td>make whiter or lighter使白色或更轻</td>
+      <td>bleach the laundry漂洗衣物</td>
+      <td>[bleacher]</td>
+      <td></td>
+      <td>[whiten, white]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bleach</th>
+      <td>each</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>bliʧ</td>
+      <td>['blanching agent', 'bleaching agent', 'whitener']</td>
+      <td></td>
+      <td>an agent that makes things white or colorless使物质变白或无色的物质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[agent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bleach</th>
+      <td>each</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>bliʧ</td>
+      <td></td>
+      <td></td>
+      <td>the act of whitening something by bleaching it (exposing it to sunlight or using a chemical bleaching agent)通过漂白（将其暴露在阳光下或使用化学漂白剂）来美白某物的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[whitening, lightening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bleach</th>
+      <td>each</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>bliʧ</td>
+      <td></td>
+      <td></td>
+      <td>the whiteness that results from removing the color from something从某些东西中去除颜色所产生的白度</td>
+      <td>a complete bleach usually requires several applications完全漂白剂通常需要多次使用</td>
+      <td></td>
+      <td></td>
+      <td>[white, whiteness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>peachy</th>
+      <td>each</td>
+      <td>2.98</td>
+      <td>adj</td>
+      <td>'piʧi</td>
+      <td>['peachy-colored', 'peachy-coloured'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of something resembling a peach in color一种类似桃子的颜色</td>
+      <td></td>
+      <td>[peach]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>peachy</th>
+      <td>each</td>
+      <td>2.98</td>
+      <td>adj</td>
+      <td>'piʧi</td>
+      <td>['bang-up', 'bully', 'corking', 'cracking', 'dandy', 'great', 'groovy', 'keen', 'neat', 'nifty', 'not bad', 'old', 'slap-up', 'smashing', 'swell'], similarTo:['good']</td>
+      <td></td>
+      <td>very good很好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

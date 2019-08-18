@@ -1,0 +1,815 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['shut', 'nuts', 'duty', 'butt', 'guts', 'slut', 'ruth', 'mutt', 'knut', 'putt', 'putz', 'smut', 'abut', 'brut', 'glut', 'scut']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>shut</th>
+      <td>ut</td>
+      <td>5.48</td>
+      <td>ver</td>
+      <td>ʃət</td>
+      <td>['close'], alos:['shut up', 'shut in']</td>
+      <td></td>
+      <td>move so that an opening or passage is obstructed; make shut移动以使开口或通道受阻;闭嘴</td>
+      <td>shut the window关上窗户</td>
+      <td>[shutter, shutting]</td>
+      <td>[close]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shut</th>
+      <td>ut</td>
+      <td>5.48</td>
+      <td>ver</td>
+      <td>ʃət</td>
+      <td>['exclude', 'keep out', 'shut out']</td>
+      <td></td>
+      <td>prevent from entering; shut out防止进入;闭嘴</td>
+      <td>The trees were shutting out all sunlight树木遮挡了所有的阳光</td>
+      <td>[shutter]</td>
+      <td></td>
+      <td>[keep, prevent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shut</th>
+      <td>ut</td>
+      <td>5.48</td>
+      <td>ver</td>
+      <td>ʃət</td>
+      <td>['close']</td>
+      <td></td>
+      <td>become closed变得封闭</td>
+      <td></td>
+      <td>[shutter]</td>
+      <td>[close]</td>
+      <td>[change state, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shut</th>
+      <td>ut</td>
+      <td>5.48</td>
+      <td>adj</td>
+      <td>ʃət</td>
+      <td>['closed'], similarTo:['squinched', 'tight', 'winking', 'blinking', 'compressed', 'squinting']</td>
+      <td></td>
+      <td>used especially of mouth or eyes特别用于口腔或眼睛</td>
+      <td>his eyes were shut against the sunlight他的眼睛被阳光挡住了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shut</th>
+      <td>ut</td>
+      <td>5.48</td>
+      <td>adj</td>
+      <td>ʃət</td>
+      <td>['closed', 'unopen'], alos:['closed']</td>
+      <td>[open]</td>
+      <td>not open没开</td>
+      <td>the door slammed shut门砰地关上了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nuts</th>
+      <td>ut</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>nəts</td>
+      <td>['around the bend', 'balmy', 'barmy', 'bats', 'batty', 'bonkers', 'buggy', 'cracked', 'crackers', 'daft', 'dotty', 'fruity', 'haywire', 'kookie', 'kooky', 'loco', 'loony', 'loopy', 'nutty', 'round the bend', 'wacky', 'whacky'], similarTo:['insane']</td>
+      <td></td>
+      <td>informal or slang terms for mentally irregular精神上不正常的非正式或俚语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duty</th>
+      <td>ut</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>'duti</td>
+      <td>['obligation', 'responsibility']</td>
+      <td></td>
+      <td>the social force that binds you to the courses of action demanded by that force将你与这支部队所要求的行动方针联系在一起的社会力量</td>
+      <td>we must instill a sense of duty in our children我们必须向孩子灌输责任感every right implies a responsibility; every opportunity, an obligation; every possession, a duty每一项权利都意味着责任;每个机会，义务;每一次占有，一种责任</td>
+      <td>[duteous]</td>
+      <td></td>
+      <td>[social control]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duty</th>
+      <td>ut</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>'duti</td>
+      <td>['tariff']</td>
+      <td></td>
+      <td>a government tax on imports or exports对进口或出口征收政府税</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[indirect tax]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>duty</th>
+      <td>ut</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>'duti</td>
+      <td></td>
+      <td></td>
+      <td>work that you are obliged to perform for moral or legal reasons由于道德或法律原因你必须履行的工作</td>
+      <td></td>
+      <td>[duteous]</td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>ver</td>
+      <td>bət</td>
+      <td>['abut', 'adjoin', 'border', 'butt against', 'butt on', 'edge', 'march']</td>
+      <td></td>
+      <td>lie adjacent to another or share a boundary与另一个人相邻或分享边界</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adjoin, contact, touch, meet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>ver</td>
+      <td>bət</td>
+      <td>['bunt'], alos:['butt against']</td>
+      <td></td>
+      <td>to strike, thrust or shove against罢工，推力或推动</td>
+      <td>He butted his sister out of the way他把他的妹妹挡了出去The goat butted the hiker with his horns山羊用他的角撞击了徒步旅行者</td>
+      <td>[butter]</td>
+      <td></td>
+      <td>[strike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>ver</td>
+      <td>bət</td>
+      <td></td>
+      <td></td>
+      <td>place end to end without overlapping端到端放置而不重叠</td>
+      <td>The frames must be butted at the joints框架必须在接头处对接</td>
+      <td></td>
+      <td></td>
+      <td>[set, place, pose, position, lay, put]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td>['goat', 'laughingstock', 'stooge']</td>
+      <td></td>
+      <td>a victim of ridicule or pranks嘲笑或恶作剧的受害者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dupe, victim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td>['butt joint']</td>
+      <td></td>
+      <td>a joint made by fastening ends together without overlapping通过将端部紧固在一起而不重叠而形成的接头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[joint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td>['cigaret', 'cigarette', 'coffin nail', 'fag']</td>
+      <td></td>
+      <td>finely ground tobacco wrapped in paper; for smoking用纸包着的细磨烟草;吸烟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[smoke, roll of tobacco]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td>['butt end']</td>
+      <td></td>
+      <td>thick end of the handle手柄厚的一端</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td>['arse', 'ass', 'backside', 'behind', 'bottom', 'bum', 'buns', 'buttocks', 'can', 'derriere', 'fanny', 'fundament', 'hind end', 'hindquarters', 'keister', 'nates', 'posterior', 'prat', 'rear', 'rear end', 'rump', 'seat', 'stern', 'tail', 'tail end', 'tooshie', 'tush']</td>
+      <td></td>
+      <td>the fleshy part of the human body that you sit on你坐在人体的肉质部分</td>
+      <td>he deserves a good kick in the butt他应该得到一个很好的踢腿</td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td>['stub']</td>
+      <td></td>
+      <td>the small unused part of something (especially the end of a cigarette that is left after smoking)某些未使用过的小部分（尤其是吸烟后留下的香烟末端）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, portion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td>['target']</td>
+      <td></td>
+      <td>sports equipment consisting of an object set up for a marksman or archer to aim at运动器材，由射手或射手设定的物体组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sports equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td></td>
+      <td></td>
+      <td>a large cask (especially one holding a volume equivalent to 2 hogsheads or 126 gallons)一个大桶（特别是一个容量相当于2个大头或126加仑的桶）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cask, barrel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>butt</th>
+      <td>ut</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>bət</td>
+      <td></td>
+      <td></td>
+      <td>the part of a plant from which the roots spring or the part of a stalk or trunk nearest the roots植物的一部分，根部弹簧或茎的一部分或最接近根部的树干</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, constituent, portion, component part, component]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>guts</th>
+      <td>ut</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>ɡəts</td>
+      <td>['backbone', 'grit', 'gumption', 'moxie', 'sand']</td>
+      <td></td>
+      <td>fortitude and determination坚韧和决心</td>
+      <td>he didn't have the guts to try it他没有勇气去尝试</td>
+      <td>[gutsy]</td>
+      <td></td>
+      <td>[fortitude]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>slut</th>
+      <td>ut</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>slət</td>
+      <td>['adulteress', 'fornicatress', 'hussy', 'jade', 'loose woman', 'strumpet', 'trollop']</td>
+      <td></td>
+      <td>a woman adulterer一个女人奸夫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adulterer, fornicator]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slut</th>
+      <td>ut</td>
+      <td>4.32</td>
+      <td>nou</td>
+      <td>slət</td>
+      <td>['slattern', 'slovenly woman', 'trollop']</td>
+      <td></td>
+      <td>a dirty untidy woman一个肮脏不整洁的女人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pig, slob, sloven, slovenly person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruth</th>
+      <td>ut</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ruθ</td>
+      <td>['commiseration', 'pathos', 'pity']</td>
+      <td></td>
+      <td>a feeling of sympathy and sorrow for the misfortunes of others对别人的不幸表示同情和悲伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fellow feeling, sympathy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruth</th>
+      <td>ut</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ruθ</td>
+      <td>['book of ruth']</td>
+      <td></td>
+      <td>a book of the Old Testament that tells the story of Ruth who was not an Israelite but who married an Israelite and who stayed with her mother-in-law Naomi after her husband died旧约的一本书讲述了露丝的故事，露丝不是以色列人，而是与以色列人结婚，并在丈夫去世后与她的婆婆娜奥米待在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruth</th>
+      <td>ut</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ruθ</td>
+      <td>['babe ruth', 'george herman ruth', 'sultan of swat']</td>
+      <td></td>
+      <td>United States professional baseball player famous for hitting home runs (1895-1948)美国职业棒球运动员因击球本垒打而闻名（1895-1948）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruth</th>
+      <td>ut</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>ruθ</td>
+      <td></td>
+      <td></td>
+      <td>the great-grandmother of king David whose story is told in the Book of Ruth in the Old Testament大卫王的曾祖母在旧约中的路得记中讲述了他的故事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mutt</th>
+      <td>ut</td>
+      <td>3.62</td>
+      <td>nou</td>
+      <td>mət</td>
+      <td>['cur', 'mongrel']</td>
+      <td></td>
+      <td>an inferior dog or one of mixed breed劣质犬或混合品种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[canis familiaris, dog, domestic dog]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knut</th>
+      <td>ut</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>knut</td>
+      <td>['canute', 'canute the great', 'cnut']</td>
+      <td></td>
+      <td>king of Denmark and Norway who forced Edmund II to divide England with him; on the death of Edmund II, Canute became king of all England (994-1035)丹麦国王和挪威国王强迫埃德蒙二世与他分裂英格兰;在埃德蒙二世去世后，卡努特成为全英国的国王（994-1035）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>putt</th>
+      <td>ut</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>pət</td>
+      <td></td>
+      <td></td>
+      <td>hit a putt打了一个推杆</td>
+      <td>he lost because he putted so poorly他失败了，因为他推得如此糟糕</td>
+      <td>[putter, putting]</td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>putt</th>
+      <td>ut</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>pət</td>
+      <td></td>
+      <td></td>
+      <td>strike (a golf ball) lightly, with a putter用推杆轻轻击打（高尔夫球）</td>
+      <td>he putted the ball several feet past the hole他把球推到洞口几英尺处</td>
+      <td>[putter, putting]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>putt</th>
+      <td>ut</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>pət</td>
+      <td>['putting']</td>
+      <td></td>
+      <td>hitting a golf ball that is on the green using a putter用推杆击中果岭上的高尔夫球</td>
+      <td>his putting let him down today; he didn't sink a single putt over three feet他的推杆让他今天失望;他没有在三英尺的位置上下一个推杆</td>
+      <td></td>
+      <td></td>
+      <td>[golf shot, golf stroke, swing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>putz</th>
+      <td>ut</td>
+      <td>2.89</td>
+      <td>nou</td>
+      <td>pʌts</td>
+      <td>['cock', 'dick', 'pecker', 'prick', 'shaft', 'tool']</td>
+      <td></td>
+      <td>obscene terms for penis阴茎的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[phallus, member, penis]</td>
+      <td>[obscenity, vulgarism, dirty word, filth, smut]</td>
+    </tr>
+    <tr>
+      <th>putz</th>
+      <td>ut</td>
+      <td>2.89</td>
+      <td>nou</td>
+      <td>pʌts</td>
+      <td></td>
+      <td></td>
+      <td>(Yiddish) a fool; an idiot（意第绪语）傻瓜;一个白痴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sap, saphead, muggins, tomfool, fool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>smət</td>
+      <td></td>
+      <td></td>
+      <td>affect with smut or mildew, as of a crop such as corn与玉米等作物一样，对黑穗病或霉病产生影响</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[taint, infect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>smət</td>
+      <td></td>
+      <td></td>
+      <td>become affected with smut受到黑穗病的影响</td>
+      <td>the corn smutted and could not be eaten玉米枯萎了，无法吃掉</td>
+      <td></td>
+      <td></td>
+      <td>[mildew, mold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>smət</td>
+      <td></td>
+      <td></td>
+      <td>make obscene制造淫秽</td>
+      <td>This line in the play smuts the entire act戏剧中的这一行会影响整个行为</td>
+      <td></td>
+      <td></td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>smət</td>
+      <td></td>
+      <td></td>
+      <td>stain with a dirty substance, such as soot用脏物质染色，如烟灰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>smət</td>
+      <td>['dirty word', 'filth', 'obscenity', 'vulgarism']</td>
+      <td></td>
+      <td>an offensive or indecent word or phrase令人反感或不雅的词或短语</td>
+      <td></td>
+      <td>[smutty]</td>
+      <td></td>
+      <td>[profanity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>smət</td>
+      <td>['carbon black', 'crock', 'lampblack', 'soot']</td>
+      <td></td>
+      <td>a black colloidal substance consisting wholly or principally of amorphous carbon and used to make pigments and ink黑色胶体物质，全部或主要由无定形碳组成，用于制造颜料和油墨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[c, atomic number 6, carbon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>smət</td>
+      <td>['smut fungus']</td>
+      <td></td>
+      <td>any fungus of the order Ustilaginales任何真菌的Ustilaginales</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fungus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>smət</td>
+      <td>['erotica', 'porn', 'porno', 'pornography']</td>
+      <td></td>
+      <td>creative activity (writing or pictures or films etc.) of no literary or artistic value other than to stimulate sexual desire除了刺激性欲之外没有文学或艺术价值的创造性活动（写作或图片或电影等）</td>
+      <td></td>
+      <td>[smutty]</td>
+      <td></td>
+      <td>[creative activity, creation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smut</th>
+      <td>ut</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>smət</td>
+      <td></td>
+      <td></td>
+      <td>destructive diseases of plants (especially cereal grasses) caused by fungi that produce black powdery masses of spores由产生黑色粉末状孢子的真菌引起的植物（特别是谷物草）的破坏性疾病</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>abut</th>
+      <td>ut</td>
+      <td>2.60</td>
+      <td>ver</td>
+      <td>ə'bət</td>
+      <td>['adjoin', 'border', 'butt', 'butt against', 'butt on', 'edge', 'march']</td>
+      <td></td>
+      <td>lie adjacent to another or share a boundary与另一个人相邻或分享边界</td>
+      <td></td>
+      <td>[abutment, abutter]</td>
+      <td></td>
+      <td>[adjoin, contact, meet, touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brut</th>
+      <td>ut</td>
+      <td>2.20</td>
+      <td>adj</td>
+      <td>brut</td>
+      <td>, similarTo:['dry']</td>
+      <td></td>
+      <td>(of champagne) extremely dry（香槟酒）非常干燥</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glut</th>
+      <td>ut</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>glət</td>
+      <td>['binge', 'englut', 'engorge', 'gorge', 'gormandise', 'gormandize', 'gourmandize', 'ingurgitate', 'overeat', 'overgorge', 'overindulge', 'pig out', 'satiate', 'scarf out', 'stuff']</td>
+      <td></td>
+      <td>overeat or eat immodestly; make a pig of oneself过度吃得过饱;做一个自己的猪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glut</th>
+      <td>ut</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>glət</td>
+      <td>['flood', 'oversupply']</td>
+      <td></td>
+      <td>supply with an excess of供应超过</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supply, furnish, provide, render]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glut</th>
+      <td>ut</td>
+      <td>2.08</td>
+      <td>nou</td>
+      <td>glət</td>
+      <td>['oversupply', 'surfeit']</td>
+      <td></td>
+      <td>the quality of being so overabundant that prices fall价格下降的过剩质量如此之高</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[overabundance, overmuchness, superabundance, overmuch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scut</th>
+      <td>ut</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>skət</td>
+      <td></td>
+      <td></td>
+      <td>a short erect tail一条短直的尾巴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tail]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

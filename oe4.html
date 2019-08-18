@@ -1,0 +1,365 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['shoe', 'poem', 'poet', 'joel', 'noel', 'oboe', 'toed', 'doer', 'aloe', 'boer', 'goer', 'floe', 'sloe']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>shoe</th>
+      <td>oe</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>ʃu</td>
+      <td></td>
+      <td></td>
+      <td>furnish with shoes装鞋</td>
+      <td>the children were well shoed孩子们穿得很好</td>
+      <td></td>
+      <td></td>
+      <td>[tog, garment, habilitate, raiment, apparel, clothe, dress, enclothe, fit out, garb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shoe</th>
+      <td>oe</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>ʃu</td>
+      <td>['brake shoe', 'skid']</td>
+      <td></td>
+      <td>a restraint provided when the brake linings are moved hydraulically against the brake drum to retard the wheel's rotation当制动衬片液压地移动到制动鼓上时，提供约束以延迟车轮的旋转</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[restraint, constraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shoe</th>
+      <td>oe</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>ʃu</td>
+      <td>['horseshoe']</td>
+      <td></td>
+      <td>U-shaped plate nailed to underside of horse's hoofU形板钉在马蹄的下面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scale, plate, shell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shoe</th>
+      <td>oe</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>ʃu</td>
+      <td></td>
+      <td></td>
+      <td>(card games) a case from which playing cards are dealt one at a time（纸牌游戏）一次发出一张扑克牌的情况</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[case]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shoe</th>
+      <td>oe</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>ʃu</td>
+      <td></td>
+      <td></td>
+      <td>footwear shaped to fit the foot (below the ankle) with a flexible upper of leather or plastic and a sole and heel of heavier material鞋子的形状适合脚（脚踝下方），皮革或塑料的鞋面和鞋底和较重材料的鞋跟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[footwear, footgear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poem</th>
+      <td>oe</td>
+      <td>4.18</td>
+      <td>nou</td>
+      <td>'poʊəm</td>
+      <td>['verse form']</td>
+      <td></td>
+      <td>a composition written in metrical feet forming rhythmical lines用韵律脚写成的构图，形成有节奏的线条</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[literary work, literary composition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>poet</th>
+      <td>oe</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>'poʊɪt</td>
+      <td></td>
+      <td></td>
+      <td>a writer of poems (the term is usually reserved for writers of good poetry)诗歌作家（这个词通常留给好诗作家）</td>
+      <td></td>
+      <td>[poetic, poetise, poetize]</td>
+      <td></td>
+      <td>[author, writer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joel</th>
+      <td>oe</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>'dʒoʊəl</td>
+      <td>['book of joel']</td>
+      <td></td>
+      <td>an Old Testament book telling Joel's prophecies一本旧约书，讲述了约珥的预言</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>joel</th>
+      <td>oe</td>
+      <td>3.72</td>
+      <td>nou</td>
+      <td>'dʒoʊəl</td>
+      <td></td>
+      <td></td>
+      <td>a Hebrew minor prophet希伯来的小先知</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>noel</th>
+      <td>oe</td>
+      <td>3.45</td>
+      <td>nou</td>
+      <td>noʊ'ɛl</td>
+      <td>['christmas', 'christmastide', 'christmastime', 'yule', 'yuletide']</td>
+      <td></td>
+      <td>period extending from Dec. 24 to Jan. 6期限从12月24日延长至1月6日</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[season]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>oboe</th>
+      <td>oe</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>'oʊboʊ</td>
+      <td>['hautbois', 'hautboy']</td>
+      <td></td>
+      <td>a slender double-reed instrument; a woodwind with a conical bore and a double-reed mouthpiece细长的双簧管乐器;木管乐器，带锥形孔和双簧管</td>
+      <td></td>
+      <td>[oboist]</td>
+      <td></td>
+      <td>[double reed, double-reed instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toed</th>
+      <td>oe</td>
+      <td>2.66</td>
+      <td>adj</td>
+      <td>toʊd</td>
+      <td>, similarTo:['pointed-toe', 'pointy-toed', 'square-toed', 'squared-toe', 'two-toe', 'two-toed']</td>
+      <td>[toeless]</td>
+      <td>having a toe or toes of a specified kind; often used in combination有特定种类的脚趾或脚趾;经常结合使用</td>
+      <td>long-toed长趾five-toed五趾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>doer</th>
+      <td>oe</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>'duər</td>
+      <td>['actor', 'worker']</td>
+      <td></td>
+      <td>a person who acts and gets things done行动和完成任务的人</td>
+      <td>when you want something done get a doer当你想要完成任务时，就得到一个实干家</td>
+      <td>[do]</td>
+      <td></td>
+      <td>[someone, soul, individual, mortal, person, somebody]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aloe</th>
+      <td>oe</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>'æloʊ</td>
+      <td></td>
+      <td></td>
+      <td>succulent plants having rosettes of leaves usually with fiber like hemp and spikes of showy flowers; found chiefly in Africa有叶子的玫瑰花的多汁植物，通常有纤维，如大麻和艳丽的花朵;主要在非洲发现</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[succulent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boer</th>
+      <td>oe</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>boʊr</td>
+      <td>['afrikander', 'afrikaner']</td>
+      <td></td>
+      <td>a white native of Cape Province who is a descendant of Dutch settlers and who speaks Afrikaans白人土生土长的开普省，是荷兰定居者的后裔，讲南非荷兰语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[south african]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goer</th>
+      <td>oe</td>
+      <td>2.47</td>
+      <td>nou</td>
+      <td>'ɡoʊər</td>
+      <td>['departer', 'leaver']</td>
+      <td></td>
+      <td>someone who leaves离开的人</td>
+      <td></td>
+      <td>[go]</td>
+      <td></td>
+      <td>[migrant, migrator]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>floe</th>
+      <td>oe</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>floʊ</td>
+      <td>['ice floe']</td>
+      <td></td>
+      <td>a flat mass of ice (smaller than an ice field) floating at sea在海上漂浮的扁平冰块（小于冰场）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ice mass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sloe</th>
+      <td>oe</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>sloʊ</td>
+      <td>['alleghany plum', 'allegheny plum', 'prunus alleghaniensis']</td>
+      <td></td>
+      <td>wild plum of northeastern United States having dark purple fruits with yellow flesh美国东北部的一种野生李子，有深紫色的果实和黄色的果肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wild plum, wild plum tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sloe</th>
+      <td>oe</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>sloʊ</td>
+      <td>['blackthorn', 'prunus spinosa']</td>
+      <td></td>
+      <td>a thorny Eurasian bush with plumlike fruits一种棘手的欧亚丛林，有李子般的水果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bush, shrub]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sloe</th>
+      <td>oe</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>sloʊ</td>
+      <td></td>
+      <td></td>
+      <td>small sour dark purple fruit of especially the Allegheny plum bush特别是阿勒格尼梅花灌木的小酸黑紫色水果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plum]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

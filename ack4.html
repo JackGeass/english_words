@@ -1,0 +1,1925 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['back', 'jack', 'pack', 'lack', 'sack', 'rack', 'hack', 'mack', 'tack', 'yack']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td>['endorse', 'indorse', 'second']</td>
+      <td></td>
+      <td>give support or one's approval to给予支持或一个人的批准</td>
+      <td>I can't back this plan我不能支持这个计划</td>
+      <td>[backing]</td>
+      <td>[indorse, endorse, plunk for, plump for, support]</td>
+      <td>[support, back up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td>['back up']</td>
+      <td></td>
+      <td>establish as valid or genuine建立有效或真实的</td>
+      <td>Can you back up your claims?你可以备份你的索赔吗？</td>
+      <td></td>
+      <td></td>
+      <td>[sustain, substantiate, support, confirm, corroborate, affirm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td>['bet on', 'gage', 'game', 'punt', 'stake']</td>
+      <td></td>
+      <td>place a bet on打赌</td>
+      <td>Which horse are you backing?你支持哪匹马？</td>
+      <td></td>
+      <td></td>
+      <td>[bet, wager, play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td>['endorse', 'indorse', 'plump for', 'plunk for', 'support']</td>
+      <td></td>
+      <td>be behind; approve of落后;批准</td>
+      <td>I backed Kennedy in 1960我在1960年支持肯尼迪</td>
+      <td>[backing]</td>
+      <td>[endorse, second, indorse]</td>
+      <td>[okay, sanction, approve, o.k.]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td></td>
+      <td>[front]</td>
+      <td>be in back of在...的后面</td>
+      <td>My garage backs their yard我的车库支撑着他们的院子</td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td></td>
+      <td>[advance]</td>
+      <td>cause to travel backward导致后退</td>
+      <td>back the car into the parking spot把车开进停车位</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td></td>
+      <td>[veer]</td>
+      <td>shift to a counterclockwise direction转向逆时针方向</td>
+      <td>the wind backed风支持</td>
+      <td></td>
+      <td></td>
+      <td>[switch, change over, shift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td></td>
+      <td></td>
+      <td>strengthen by providing with a back or backing通过提供背部或背衬加强</td>
+      <td></td>
+      <td>[backing]</td>
+      <td></td>
+      <td>[strengthen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td></td>
+      <td></td>
+      <td>support financial backing for支持财政支持</td>
+      <td>back this enterprise支持这个企业</td>
+      <td>[backing, backer]</td>
+      <td></td>
+      <td>[finance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>ver</td>
+      <td>bæk</td>
+      <td>, alos:['back out', 'back up', 'back off', 'back down']</td>
+      <td></td>
+      <td>travel backward向后旅行</td>
+      <td>back into the driveway回到车道The car backed up and hit the tree汽车倒车然后撞到了树上</td>
+      <td></td>
+      <td></td>
+      <td>[travel, locomote, go, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td>['backrest']</td>
+      <td></td>
+      <td>a support that you can lean against while sitting坐着时可以靠着的支撑物</td>
+      <td>the back of the dental chair was adjustable牙科椅的背面是可调节的</td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td>['rear']</td>
+      <td></td>
+      <td>the side that goes last or is not normally seen最后一面或通常不会看到的一面</td>
+      <td>he wrote the date on the back of the photograph他在照片背面写了日期</td>
+      <td></td>
+      <td></td>
+      <td>[side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td>['binding', 'book binding', 'cover']</td>
+      <td></td>
+      <td>the protective covering on the front, back, and spine of a book书的正面，背面和书脊上的保护层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protective cover, protection, protective covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td>['backbone', 'rachis', 'spinal column', 'spine', 'vertebral column']</td>
+      <td></td>
+      <td>the series of vertebrae forming the axis of the skeleton and protecting the spinal cord一系列椎骨形成骨骼轴并保护脊髓</td>
+      <td>the fall broke his back秋天摔倒了</td>
+      <td></td>
+      <td></td>
+      <td>[skeletal structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td>['dorsum']</td>
+      <td></td>
+      <td>the posterior part of a human (or animal) body from the neck to the end of the spine从颈部到脊柱末端的人（或动物）身体的后部</td>
+      <td>his back was nicely tanned他的背部很好地晒黑了</td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td>['rear']</td>
+      <td>[front]</td>
+      <td>the part of something that is furthest from the normal viewer与普通观众最远的部分</td>
+      <td>he stood at the back of the stage他站在舞台后面</td>
+      <td></td>
+      <td></td>
+      <td>[position, place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td></td>
+      <td></td>
+      <td>(American football) the position of a player on a football team who is stationed behind the line of scrimmage（美式足球）一名球员在一支橄榄球队中的位置，他们驻扎在争球线后面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td></td>
+      <td></td>
+      <td>(football) a person who plays in the backfield（足球）在后场打球的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[footballer, football player]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>nou</td>
+      <td>bæk</td>
+      <td></td>
+      <td></td>
+      <td>the part of a garment that covers the back of your body衣服的一部分，覆盖你的身体后部</td>
+      <td>they pinned a `kick me' sign on his back他们在他的背上钉了一个“踢我”标志</td>
+      <td></td>
+      <td></td>
+      <td>[cloth covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>adv</td>
+      <td>bæk</td>
+      <td>['backward']</td>
+      <td>[ahead]</td>
+      <td>in or to or toward a past time过去或过去的时间</td>
+      <td>set the clocks back an hour将时钟设置回一小时never look back永不回头lovers of the past looking fondly backward过去的恋人看起来非常落后</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>adv</td>
+      <td>bæk</td>
+      <td>['backward', 'backwards', 'rearward', 'rearwards']</td>
+      <td></td>
+      <td>at or to or toward the back or rear朝向或朝向后方或后方</td>
+      <td>he moved back他搬回去了tripped when he stepped backward当他退后一步时绊倒了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>adj</td>
+      <td>bæk</td>
+      <td>['hind', 'hinder'], similarTo:['posterior']</td>
+      <td></td>
+      <td>located at or near the back of an animal位于动物背部或附近</td>
+      <td>back (or hind) legs后腿（或后腿）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>adj</td>
+      <td>bæk</td>
+      <td>, similarTo:['noncurrent']</td>
+      <td></td>
+      <td>of an earlier date早些时候的</td>
+      <td>back issues of the magazine回到杂志的问题</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>back</th>
+      <td>ack</td>
+      <td>6.27</td>
+      <td>adj</td>
+      <td>bæk</td>
+      <td>, similarTo:['hindermost', 'rearmost', 'rearward', 'backmost', 'hindmost', 'rear'], alos:['aft', 'posterior']</td>
+      <td>[front]</td>
+      <td>related to or located at the back与后面有关或位于后面的</td>
+      <td>the back yard后院the back entrance后门</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>dʒæk</td>
+      <td>['jacklight']</td>
+      <td></td>
+      <td>hunt with a jacklight用夹克打猎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[run, hunt, hunt down, track down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>dʒæk</td>
+      <td>['jack up']</td>
+      <td></td>
+      <td>lift with a special device使用特殊装置升降机</td>
+      <td>jack up the car so you can change the tire抬起汽车，这样你就可以更换轮胎了</td>
+      <td></td>
+      <td></td>
+      <td>[elevate, bring up, raise, get up, lift]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td>['laborer', 'labourer', 'manual laborer']</td>
+      <td></td>
+      <td>someone who works with their hands; someone engaged in manual labor有人用手工作的人;有人从事体力劳动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[workman, working man, working person, workingman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td>['jackass']</td>
+      <td></td>
+      <td>male donkey雄驴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td>['jackfruit', 'jak']</td>
+      <td></td>
+      <td>immense East Indian fruit resembling breadfruit; it contains an edible pulp and nutritious seeds that are commonly roasted巨大的东印度水果，类似面包果;它含有可食用的果肉和通常烤的营养种子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edible fruit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td>['jackstones']</td>
+      <td></td>
+      <td>game equipment consisting of one of several small six-pointed metal pieces that are picked up while bouncing a ball in the game of jacks游戏装备由几个小六角金属件中的一个组成，这些金属件在千斤顶游戏中弹起时被拾取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[game equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td>['diddley', 'diddly', 'diddly-shit', 'diddly-squat', 'diddlyshit', 'diddlysquat', 'doodly-squat', 'shit', 'squat']</td>
+      <td></td>
+      <td>a small worthless amount一点点无价值</td>
+      <td>you don't know jack你不知道杰克</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td>['gob', 'jack-tar', 'mariner', 'old salt', 'sea dog', 'seafarer', 'seaman', 'tar']</td>
+      <td></td>
+      <td>a man who serves as a sailor一个担任水手的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crewman, sailor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td>['knave']</td>
+      <td></td>
+      <td>one of four face cards in a deck bearing a picture of a young prince甲板上的四张面牌之一，上面有一张年轻王子的照片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[face card, court card, picture card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td></td>
+      <td></td>
+      <td>an electrical device consisting of a connector socket designed for the insertion of a plug一种电气设备，包括一个用于插入插头的连接器插座</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electrical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td></td>
+      <td></td>
+      <td>any of several fast-swimming predacious fishes of tropical to warm temperate seas任何一种快速游动的捕食性鱼类，从热带到温暖的温带海域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[carangid fish, carangid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td></td>
+      <td></td>
+      <td>a small ball at which players aim in lawn bowling一个小球，球员瞄准草坪保龄球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ball]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td></td>
+      <td></td>
+      <td>small flag indicating a ship's nationality小旗子，表示船舶的国籍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jack</th>
+      <td>ack</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>dʒæk</td>
+      <td></td>
+      <td></td>
+      <td>tool for exerting pressure or lifting用于施加压力或提升的工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td>['tamp', 'tamp down']</td>
+      <td></td>
+      <td>press down tightly紧紧地按下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[compress, compact, pack together]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td>['carry', 'take']</td>
+      <td></td>
+      <td>have with oneself; have on one's person与自己有关;拥有一个人</td>
+      <td>She packs a gun when she goes into the mountains她进山时她拿着枪</td>
+      <td></td>
+      <td>[carry]</td>
+      <td>[feature, have]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td>['backpack']</td>
+      <td></td>
+      <td>hike with a backpack徒步背包</td>
+      <td>Every summer they are backpacking in the Rockies每年夏天，他们都会在落基山脉背包旅行</td>
+      <td>[packing, packer]</td>
+      <td></td>
+      <td>[hike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td>['bundle', 'compact', 'wad']</td>
+      <td></td>
+      <td>compress into a wad压缩成一团</td>
+      <td></td>
+      <td>[packing]</td>
+      <td>[compact]</td>
+      <td>[set up, arrange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td>['jam', 'mob', 'pile', 'throng']</td>
+      <td></td>
+      <td>press tightly together or cram紧紧地挤在一起或塞满</td>
+      <td>The crowd packed the auditorium人群挤满了礼堂</td>
+      <td></td>
+      <td></td>
+      <td>[crowd, crowd together]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td>['load down']</td>
+      <td></td>
+      <td>load with a pack用一包装</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[load up, load, laden, lade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td>['compact']</td>
+      <td></td>
+      <td>have the property of being packable or of compacting easily具有可包装或易于压实的特性</td>
+      <td>Such odd-shaped items do not pack well这种奇形怪状的物品包装不好</td>
+      <td></td>
+      <td>[wad, bundle, compact]</td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td></td>
+      <td>[unpack]</td>
+      <td>arrange in a container安排在一个容器中</td>
+      <td>pack the books into the boxes把书装进盒子里</td>
+      <td>[packing, packer, package]</td>
+      <td></td>
+      <td>[case, encase, incase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>carry, as on one's back随身携带，就像背上一样</td>
+      <td></td>
+      <td>[packing]</td>
+      <td></td>
+      <td>[transport, carry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>fill to capacity填补能力</td>
+      <td>This singer always packs the concert halls这位歌手总是收拾音乐厅The murder trial packed the court house谋杀案审判挤满了法庭</td>
+      <td></td>
+      <td></td>
+      <td>[make full, fill, fill up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>seal with packing密封包装</td>
+      <td>pack the faucet打包水龙头</td>
+      <td></td>
+      <td></td>
+      <td>[seal, seal off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>set up a committee or legislative body with one's own supporters so as to influence the outcome与自己的支持者建立一个委员会或立法机构，以影响结果</td>
+      <td>pack a jury包装陪审团</td>
+      <td></td>
+      <td></td>
+      <td>[constitute, nominate, name, appoint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>ver</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>treat the body or any part of it by wrapping it, as with blankets or sheets, and applying compresses to it, or stuffing it to provide cover, containment, or therapy, or to absorb blood通过包裹它来处理身体或其任何部分，如毯子或床单，并对其施加压缩，或填塞它以提供覆盖，收容或治疗，或吸收血液</td>
+      <td>The nurse packed gauze in the wound护士在伤口处装了纱布You had better pack your swollen ankle with ice你最好用冰块包裹肿胀的脚踝</td>
+      <td></td>
+      <td></td>
+      <td>[care for, treat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td>['face pack']</td>
+      <td></td>
+      <td>a cream that cleanses and tones the skin一种清洁和调理皮肤的乳霜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[corrective, restorative]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td>['camp', 'clique', 'coterie', 'ingroup', 'inner circle']</td>
+      <td></td>
+      <td>an exclusive circle of people with a common purpose一个有共同目标的人的专属圈子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set, band, circle, lot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td>['gang', 'mob', 'ring']</td>
+      <td></td>
+      <td>an association of criminals犯罪团伙</td>
+      <td>a pack of thieves一群小偷</td>
+      <td></td>
+      <td></td>
+      <td>[association]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td>['battalion', 'large number', 'multitude', 'plurality']</td>
+      <td></td>
+      <td>a large indefinite number一个大的不确定数字</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite quantity, large indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>a bundle (especially one carried on the back)捆（特别是背上的一个）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sheaf, bundle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>a complete collection of similar things完整的类似事物的集合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aggregation, assemblage, collection, accumulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>a convenient package or parcel (as of cigarettes or film)方便的包裹或包裹（如香烟或薄膜）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[parcel, package]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>a group of hunting animals一群狩猎动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pack</th>
+      <td>ack</td>
+      <td>4.65</td>
+      <td>nou</td>
+      <td>pæk</td>
+      <td></td>
+      <td></td>
+      <td>a sheet or blanket (either dry or wet) to wrap around the body for its therapeutic effect用薄膜或毯子（干燥或湿润）包裹身体以获得治疗效果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[restorative, corrective]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lack</th>
+      <td>ack</td>
+      <td>4.36</td>
+      <td>ver</td>
+      <td>læk</td>
+      <td>['miss']</td>
+      <td></td>
+      <td>be without没有</td>
+      <td>This soup lacks salt这汤没有盐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lack</th>
+      <td>ack</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>læk</td>
+      <td>['deficiency', 'want']</td>
+      <td></td>
+      <td>the state of needing something that is absent or unavailable需要缺少或不可用的东西的状态</td>
+      <td>there is a serious lack of insight into the problem对这个问题缺乏洞察力</td>
+      <td></td>
+      <td></td>
+      <td>[need, demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>sæk</td>
+      <td>['clear', 'net', 'sack up']</td>
+      <td></td>
+      <td>make as a net profit作为净利润</td>
+      <td></td>
+      <td></td>
+      <td>[make, bring in, clear, earn, gain, net, pull in, realise, realize, take in]</td>
+      <td>[profit, gain, benefit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>sæk</td>
+      <td>['plunder']</td>
+      <td></td>
+      <td>plunder (a town) after capture捕获后掠夺（一个镇）</td>
+      <td>the barbarians sacked Rome野蛮人解雇了罗马</td>
+      <td></td>
+      <td></td>
+      <td>[take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>sæk</td>
+      <td>['can', 'dismiss', 'displace', 'fire', 'force out', 'give notice', 'give the axe', 'give the sack', 'send away', 'terminate']</td>
+      <td></td>
+      <td>terminate the employment of; discharge from an office or position终止雇用;从办公室或职位卸下</td>
+      <td></td>
+      <td>[sacking]</td>
+      <td></td>
+      <td>[remove]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>ver</td>
+      <td>sæk</td>
+      <td>, alos:['sack up']</td>
+      <td></td>
+      <td>put in a sack放进一个麻袋里</td>
+      <td>The grocer sacked the onions杂货商解雇了洋葱</td>
+      <td></td>
+      <td></td>
+      <td>[incase, encase, case]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td>['pocket', 'pouch', 'sac']</td>
+      <td></td>
+      <td>an enclosed space封闭的空间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cavity, enclosed space]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td>['carrier bag', 'paper bag', 'poke']</td>
+      <td></td>
+      <td>a bag made of paper or plastic for holding customer's purchases用纸或塑料制成的袋子，用于存放顾客的购买物品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td>['discharge', 'dismissal', 'dismission', 'firing', 'liberation', 'release', 'sacking']</td>
+      <td></td>
+      <td>the termination of someone's employment (leaving them free to depart)终止某人的工作（让他们自由离开）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[termination, conclusion, ending]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td>['hammock']</td>
+      <td></td>
+      <td>a hanging bed of canvas or rope netting (usually suspended between two trees); swings easily帆布或绳网的悬挂床（通常悬挂在两棵树之间）;容易摆动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td>['chemise', 'shift']</td>
+      <td></td>
+      <td>a loose-fitting dress hanging straight from the shoulders without a waist这款宽松连衣裙直接从肩部垂下，没有腰部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[frock, dress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td>['sackful']</td>
+      <td></td>
+      <td>the quantity contained in a sack麻袋里的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td>['sacque']</td>
+      <td></td>
+      <td>a woman's full loose hiplength jacket一个女人的宽松长裤夹克</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jacket]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td></td>
+      <td></td>
+      <td>any of various light dry strong white wine from Spain and Canary Islands (including sherry)来自西班牙和加那利群岛的各种淡干白葡萄酒（包括雪利酒）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[white wine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sack</th>
+      <td>ack</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>sæk</td>
+      <td></td>
+      <td></td>
+      <td>the plundering of a place by an army or mob; usually involves destruction and slaughter一个军队或暴徒掠夺一个地方;通常涉及破坏和屠杀</td>
+      <td>the sack of Rome罗马的袋子</td>
+      <td></td>
+      <td></td>
+      <td>[plundering, pillage, pillaging]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td>['excruciate', 'torment', 'torture']</td>
+      <td></td>
+      <td>torment emotionally or mentally在情感或精神上折磨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hurt, anguish, pain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td>['single-foot']</td>
+      <td></td>
+      <td>go at a rack去机架</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td>['extort', 'gouge', 'squeeze', 'wring']</td>
+      <td></td>
+      <td>obtain by coercion or intimidation通过胁迫或恐吓获得</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pluck, overcharge, surcharge, soak, rob, fleece, gazump, hook, plume]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td>['scud']</td>
+      <td></td>
+      <td>run before a gale在大风前奔跑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>draw off from the lees从酒糟中抽出来</td>
+      <td>rack wine机架酒</td>
+      <td></td>
+      <td></td>
+      <td>[take out, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>fly in high wind在大风中飞翔</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wing, fly]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>put on a rack and pinion放在齿条和小齿轮上</td>
+      <td>rack a camera架着相机</td>
+      <td></td>
+      <td></td>
+      <td>[put to work, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>seize together, as of parallel ropes of a tackle in order to prevent running through the block抓住一个平行的绳索，以防止穿过街区</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seize, clutch, prehend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>stretch to the limits伸展到极限</td>
+      <td>rack one's brains绞尽脑汁</td>
+      <td></td>
+      <td></td>
+      <td>[stress, try, strain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>torture on the rack在架子上折磨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[torture, excruciate, torment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>work on a rack在架子上工作</td>
+      <td>rack leather皮革</td>
+      <td></td>
+      <td></td>
+      <td>[process, work, work on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td>['wheel']</td>
+      <td></td>
+      <td>an instrument of torture that stretches or disjoints or mutilates victims一种折磨工具，可以拉伸或剥夺或伤害受害者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[instrument of torture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td>['stand']</td>
+      <td></td>
+      <td>a support for displaying various articles支持显示各种文章</td>
+      <td>the newspapers were arranged on a rack报纸被安排在架子上</td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td>['single-foot']</td>
+      <td></td>
+      <td>a rapid gait of a horse in which each foot strikes the ground separately一只马的快速步态，每只脚分别撞击地面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td>['wrack']</td>
+      <td></td>
+      <td>the destruction or collapse of something某事物的破坏或崩溃</td>
+      <td>wrack and ruin破坏和毁灭</td>
+      <td></td>
+      <td></td>
+      <td>[destruction, wipeout, demolition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>a form of torture in which pain is inflicted by stretching the body一种折磨形式，通过拉伸身体来施加疼痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[torture, torturing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>framework for holding objects持有对象的框架</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[frame, framework]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rack</th>
+      <td>ack</td>
+      <td>3.81</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>rib section of a forequarter of veal or pork or especially lamb or mutton小牛肉或猪肉或特别是羊肉或羊肉的前部的肋骨部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut of meat, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td>['whoop']</td>
+      <td></td>
+      <td>cough spasmodically痉挛痉挛</td>
+      <td>The patient with emphysema is hacking all day患有肺气肿的患者整天都在进行黑客攻击</td>
+      <td></td>
+      <td></td>
+      <td>[cough]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td>['chop']</td>
+      <td></td>
+      <td>cut with a hacking tool用黑客工具切割</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td>['cut']</td>
+      <td></td>
+      <td>be able to manage or manage successfully能够成功管理或管理</td>
+      <td>I can't hack it anymore我再也不能破解了</td>
+      <td></td>
+      <td></td>
+      <td>[make do, grapple, cope, deal, manage, make out, contend, get by]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td>['cut up']</td>
+      <td></td>
+      <td>significantly cut up a manuscript大幅削减了手稿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[redact, edit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td>['hack on']</td>
+      <td></td>
+      <td>fix a computer program piecemeal until it works直接修复计算机程序，直到它工作</td>
+      <td>I'm not very good at hacking but I'll give it my best我不是很擅长黑客，但我会尽我所能</td>
+      <td>[hacker]</td>
+      <td></td>
+      <td>[program, programme]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td></td>
+      <td></td>
+      <td>cut away切掉了</td>
+      <td>he hacked his way through the forest他在森林里砍了他的路</td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td></td>
+      <td></td>
+      <td>kick on the arms踢上武器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>ver</td>
+      <td>hæk</td>
+      <td></td>
+      <td></td>
+      <td>kick on the shins踢胫骨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[foul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td>['jade', 'nag', 'plug']</td>
+      <td></td>
+      <td>an old or over-worked horse一匹陈旧或过度劳累的马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[horse, equus caballus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td>['cab', 'taxi', 'taxicab']</td>
+      <td></td>
+      <td>a car driven by a person whose job is to take passengers where they want to go in exchange for money由一个人驾驶的汽车，其工作是将乘客带到他们想去的地方以换钱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[car, auto, automobile, machine, motorcar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td>['hack writer', 'literary hack']</td>
+      <td></td>
+      <td>a mediocre and disdained writer一个平庸而鄙视的作家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[author, writer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td>['drudge', 'hacker']</td>
+      <td></td>
+      <td>one who works hard at boring tasks一个努力工作的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unskilled person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td>['machine politician', 'political hack', 'ward-heeler']</td>
+      <td></td>
+      <td>a politician who belongs to a small clique that controls a political party for private rather than public ends一个政治家，属于一个控制政党的私人而不是公共目的的小集团</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pol, political leader, politician, politico]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td></td>
+      <td></td>
+      <td>a horse kept for hire一匹马继续租用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equus caballus, horse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td></td>
+      <td></td>
+      <td>a saddle horse used for transportation rather than sport etc.用于运输而不是运动等的马鞍马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mount, riding horse, saddle horse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hack</th>
+      <td>ack</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>hæk</td>
+      <td></td>
+      <td></td>
+      <td>a tool (as a hoe or pick or mattock) used for breaking up the surface of the soil用于破碎土壤表面的工具（如锄头或镐或鹤嘴锄）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mack</th>
+      <td>ack</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mæk</td>
+      <td>['mac', 'macintosh', 'mackintosh']</td>
+      <td></td>
+      <td>a waterproof raincoat made of rubberized fabric由橡胶织物制成的防水雨衣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[waterproof, raincoat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>tæk</td>
+      <td>['alternate', 'flip', 'flip-flop', 'interchange', 'switch']</td>
+      <td></td>
+      <td>reverse (a direction, attitude, or course of action)逆转（方向，态度或行动方针）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, change by reversal, reverse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>tæk</td>
+      <td>['wear round']</td>
+      <td></td>
+      <td>turn into the wind转向风</td>
+      <td>The sailors decided to tack the boat水手们决定把船钉起来The boat tacked船加了</td>
+      <td>[tacking]</td>
+      <td></td>
+      <td>[sail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>tæk</td>
+      <td>['assemble', 'piece', 'put together', 'set up', 'tack together']</td>
+      <td></td>
+      <td>create by putting components or members together通过将组件或成员放在一起来创建</td>
+      <td>He tacked together some verses他把一些经文加在一起</td>
+      <td></td>
+      <td></td>
+      <td>[make, join, create]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>tæk</td>
+      <td>['baste']</td>
+      <td></td>
+      <td>sew together loosely, with large stitches缝合松散，缝线大</td>
+      <td></td>
+      <td>[tacker]</td>
+      <td></td>
+      <td>[sew together, sew, stitch, run up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>tæk</td>
+      <td>['append', 'hang on', 'tack on', 'tag on']</td>
+      <td></td>
+      <td>fix to; attach修复;连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>tæk</td>
+      <td>, alos:['tack on']</td>
+      <td></td>
+      <td>fasten with tacks用大头钉固定</td>
+      <td>tack the notice on the board在董事会上发布通知</td>
+      <td>[tacker]</td>
+      <td></td>
+      <td>[fix, secure, fasten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>tæk</td>
+      <td>['saddlery', 'stable gear']</td>
+      <td></td>
+      <td>gear for a horse马的装备</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gear, appurtenance, paraphernalia]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>tæk</td>
+      <td>['mainsheet', 'sheet', 'shroud', 'weather sheet']</td>
+      <td></td>
+      <td>(nautical) a line (rope or chain) that regulates the angle at which a sail is set in relation to the wind（航海）一条线（绳索或链条），用于调节帆相对于风的角度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>tæk</td>
+      <td>['tacking']</td>
+      <td></td>
+      <td>(nautical) the act of changing tack（航海）改变大头钉的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change of course]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>tæk</td>
+      <td></td>
+      <td></td>
+      <td>a short nail with a sharp point and a large head一个尖锐的尖头和一个大头的短钉子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>tæk</td>
+      <td></td>
+      <td></td>
+      <td>sailing a zigzag course航行曲折的课程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sailing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>tæk</td>
+      <td></td>
+      <td></td>
+      <td>the heading or position of a vessel relative to the trim of its sails船舶相对于其帆的纵倾的航向或位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[heading, aim, bearing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yack</th>
+      <td>ack</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>jæk</td>
+      <td>['jaw', 'rattle on', 'yack away', 'yap away']</td>
+      <td></td>
+      <td>talk incessantly and tiresomely不停地谈论和厌倦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mouth, speak, talk, utter, verbalise, verbalize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yack</th>
+      <td>ack</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>jæk</td>
+      <td>['cackle', 'chatter', 'yak', 'yakety-yak']</td>
+      <td></td>
+      <td>noisy talk吵闹</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[talk, talking]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

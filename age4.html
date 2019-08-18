@@ -1,0 +1,650 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['page', 'cage', 'rage', 'aged', 'wage', 'sage', 'gage']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>ver</td>
+      <td>peɪdʒ</td>
+      <td>['foliate', 'paginate']</td>
+      <td></td>
+      <td>number the pages of a book or manuscript编号书或手稿的页面</td>
+      <td></td>
+      <td>[paging]</td>
+      <td></td>
+      <td>[number]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>ver</td>
+      <td>peɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>contact, as with a pager or by calling somebody's name over a P.A. system联系，如寻呼机或在P.A.上呼叫某人的名字。系统</td>
+      <td></td>
+      <td>[pager, paging]</td>
+      <td></td>
+      <td>[summon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>ver</td>
+      <td>peɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>work as a page作为一个页面工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>peɪdʒ</td>
+      <td>['thomas nelson page']</td>
+      <td></td>
+      <td>United States diplomat and writer about the Old South (1853-1922)关于旧南方的美国外交官和作家（1853-1922）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>peɪdʒ</td>
+      <td>['sir frederick handley page']</td>
+      <td></td>
+      <td>English industrialist who pioneered in the design and manufacture of aircraft (1885-1962)在飞机设计和制造方面处于领先地位的英国实业家（1885-1962）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>peɪdʒ</td>
+      <td>['varlet']</td>
+      <td></td>
+      <td>in medieval times a youth acting as a knight's attendant as the first stage in training for knighthood在中世纪，一个青年扮演骑士的角色，作为骑士训练的第一阶段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tender, attender, attendant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>peɪdʒ</td>
+      <td>['pageboy']</td>
+      <td></td>
+      <td>a boy who is employed to run errands一个受雇经营差事的男孩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[errand boy, messenger boy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>peɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>a youthful attendant at official functions or ceremonies such as legislative functions and weddings在立法职能和婚礼等官方活动或仪式上的年轻服务员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tender, attendant, attender]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td>age</td>
+      <td>4.50</td>
+      <td>nou</td>
+      <td>peɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>one side of one leaf (of a book or magazine or newspaper or letter etc.) or the written or pictorial matter it contains一片叶子的一面（书籍或杂志或报纸或信件等）或其包含的书面或图画物品</td>
+      <td></td>
+      <td>[paginate]</td>
+      <td></td>
+      <td>[leaf, folio]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cage</th>
+      <td>age</td>
+      <td>4.14</td>
+      <td>ver</td>
+      <td>keɪdʒ</td>
+      <td>['cage in']</td>
+      <td></td>
+      <td>confine in a cage笼罩在笼子里</td>
+      <td>The animal was caged这只动物被关在笼子里</td>
+      <td></td>
+      <td></td>
+      <td>[detain, confine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cage</th>
+      <td>age</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>keɪdʒ</td>
+      <td>['batting cage']</td>
+      <td></td>
+      <td>a movable screen placed behind home base to catch balls during batting practice一个可移动的屏幕放置在家庭基地后面，以便在击球练习期间接球</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[baseball equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cage</th>
+      <td>age</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>keɪdʒ</td>
+      <td>['coop']</td>
+      <td></td>
+      <td>an enclosure made or wire or metal bars in which birds or animals can be kept由金属丝或金属条制成的外壳，可以保存鸟类或动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enclosure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cage</th>
+      <td>age</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>keɪdʒ</td>
+      <td>['john cage', 'john milton cage jr.']</td>
+      <td></td>
+      <td>United States composer of avant-garde music (1912-1992)美国前卫音乐作曲家（1912-1992）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cage</th>
+      <td>age</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>keɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>something that restricts freedom as a cage restricts movement限制自由作为笼子的东西限制了运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[restraint, constraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cage</th>
+      <td>age</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>keɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>the net that is the goal in ice hockey这个网是冰球的目标</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[net]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>reɪdʒ</td>
+      <td>['ramp', 'storm']</td>
+      <td></td>
+      <td>behave violently, as if in state of a great anger表现得很暴力，仿佛处于极度愤怒的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[behave, do, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>reɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>be violent; as of fires and storms暴力火灾和暴风雨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>reɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>feel intense anger感到强烈的愤怒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>reɪdʒ</td>
+      <td>['passion']</td>
+      <td></td>
+      <td>something that is desired intensely强烈要求的东西</td>
+      <td>his rage for fame destroyed him他对名声的狂热摧毁了他</td>
+      <td></td>
+      <td></td>
+      <td>[desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>reɪdʒ</td>
+      <td>['craze', 'cult', 'fad', 'furor', 'furore']</td>
+      <td></td>
+      <td>an interest followed with exaggerated zeal一种兴趣伴随着夸张的热情</td>
+      <td>it was all the rage that season那个季节风靡一时</td>
+      <td></td>
+      <td></td>
+      <td>[fashion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>reɪdʒ</td>
+      <td>['fury', 'madness']</td>
+      <td></td>
+      <td>a feeling of intense anger一种强烈的愤怒感</td>
+      <td>his face turned red with rage他的脸因愤怒而变红了</td>
+      <td></td>
+      <td></td>
+      <td>[choler, anger, ire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>reɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>a state of extreme anger一种极度愤怒的状态</td>
+      <td>she fell into a rage and refused to answer她愤怒地拒绝回答</td>
+      <td></td>
+      <td></td>
+      <td>[angriness, anger]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rage</th>
+      <td>age</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>reɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>violent state of the elements暴力状态的元素</td>
+      <td>the sea hurled itself in thundering rage against the rocks大海在对岩石的雷鸣般的愤怒中投掷</td>
+      <td></td>
+      <td></td>
+      <td>[violence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>age</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>'eɪdʒɪd</td>
+      <td>['elderly']</td>
+      <td>[young]</td>
+      <td>people who are old collectively老人集体的人</td>
+      <td>special arrangements were available for the aged为老年人提供特别安排</td>
+      <td></td>
+      <td></td>
+      <td>[age group, cohort, age bracket]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>age</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['cured'], similarTo:['preserved']</td>
+      <td></td>
+      <td>(used of tobacco) aging as a preservative process (`aged' is pronounced as one syllable)（用于烟草）老化作为防腐过程（“老化”发音为一个音节）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>age</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['of age'], similarTo:['old']</td>
+      <td></td>
+      <td>having attained a specific age; (`aged' is pronounced as one syllable)达到特定年龄; （`age'发音为一个音节）</td>
+      <td>aged ten十岁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>age</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['ripened'], similarTo:['mature', 'ripe']</td>
+      <td></td>
+      <td>of wines, fruit, cheeses; having reached a desired or final condition; (`aged' pronounced as one syllable)葡萄酒，水果，奶酪;达到了预期或最终状态; （'岁'发音为一个音节）</td>
+      <td>mature well-aged cheeses成熟的奶酪</td>
+      <td>[agedness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>age</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>['elderly', 'older', 'senior'], similarTo:['old']</td>
+      <td></td>
+      <td>advanced in years; (`aged' is pronounced as two syllables)多年前进; （`age'发音为两个音节）</td>
+      <td>aged members of the society社会老年人</td>
+      <td>[agedness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aged</th>
+      <td>age</td>
+      <td>3.87</td>
+      <td>adj</td>
+      <td>'eɪdʒɪd</td>
+      <td>, similarTo:['worn']</td>
+      <td></td>
+      <td>at an advanced stage of erosion (pronounced as one syllable)处于侵蚀的高级阶段（发音为一个音节）</td>
+      <td>aged rocks岁的岩石</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wage</th>
+      <td>age</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>weɪdʒ</td>
+      <td>['engage']</td>
+      <td></td>
+      <td>carry on (wars, battles, or campaigns)继续（战争，战斗或运动）</td>
+      <td>Napoleon and Hitler waged war against all of Europe拿破仑和希特勒对整个欧洲发动了战争</td>
+      <td></td>
+      <td></td>
+      <td>[contend, struggle, fight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wage</th>
+      <td>age</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>weɪdʒ</td>
+      <td>['earnings', 'pay', 'remuneration', 'salary']</td>
+      <td></td>
+      <td>something that remunerates有报酬的东西</td>
+      <td>wages were paid by check工资是通过支票支付的</td>
+      <td></td>
+      <td></td>
+      <td>[regular payment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sage</th>
+      <td>age</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>seɪdʒ</td>
+      <td>['salvia']</td>
+      <td></td>
+      <td>any of various plants of the genus Salvia; a cosmopolitan herb任何一种丹参属植物;一种世界性的草药</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herb, herbaceous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sage</th>
+      <td>age</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>seɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>a mentor in spiritual and philosophical topics who is renowned for profound wisdom精神和哲学主题的导师，以深刻的智慧而闻名</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wise man, mentor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sage</th>
+      <td>age</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>seɪdʒ</td>
+      <td></td>
+      <td></td>
+      <td>aromatic fresh or dried grey-green leaves used widely as seasoning for meats and fowl and game etc芳香的新鲜或干燥的灰绿色叶子广泛用作肉类和家禽和游戏等的调味品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sage</th>
+      <td>age</td>
+      <td>3.40</td>
+      <td>adj</td>
+      <td>seɪdʒ</td>
+      <td>['sage-green'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of the grey-green color of sage leaves鼠尾草叶子的灰绿色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sage</th>
+      <td>age</td>
+      <td>3.40</td>
+      <td>adj</td>
+      <td>seɪdʒ</td>
+      <td>, similarTo:['wise']</td>
+      <td></td>
+      <td>having wisdom that comes with age and experience拥有随着年龄和经验而来的智慧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gage</th>
+      <td>age</td>
+      <td>3.05</td>
+      <td>ver</td>
+      <td>ɡeɪdʒ</td>
+      <td>['back', 'bet on', 'game', 'punt', 'stake']</td>
+      <td></td>
+      <td>place a bet on打赌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wager, bet, play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gage</th>
+      <td>age</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>ɡeɪdʒ</td>
+      <td>['gauge']</td>
+      <td></td>
+      <td>a measuring instrument for measuring and indicating a quantity such as the thickness of wire or the amount of rain etc.用于测量和指示诸如电线厚度或雨量等量的测量仪器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[measuring device, measuring instrument, measuring system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gage</th>
+      <td>age</td>
+      <td>3.05</td>
+      <td>nou</td>
+      <td>ɡeɪdʒ</td>
+      <td>['dope', 'grass', 'green goddess', 'locoweed', 'mary jane', 'pot', 'sens', 'sess', 'skunk', 'smoke', 'weed']</td>
+      <td></td>
+      <td>street names for marijuana大麻的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ganja, marihuana, marijuana, cannabis]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

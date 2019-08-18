@@ -1,0 +1,785 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['gift', 'lift', 'rift', 'sift']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>gift</th>
+      <td>ift</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>ɡɪft</td>
+      <td>['give', 'present']</td>
+      <td></td>
+      <td>give as a present; make a gift of作为礼物;做个礼物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gift</th>
+      <td>ift</td>
+      <td>4.85</td>
+      <td>ver</td>
+      <td>ɡɪft</td>
+      <td>['empower', 'endow', 'endue', 'indue', 'invest']</td>
+      <td></td>
+      <td>give qualities or abilities to赋予品质或能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gift</th>
+      <td>ift</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>ɡɪft</td>
+      <td>['endowment', 'natural endowment', 'talent']</td>
+      <td></td>
+      <td>natural abilities or qualities自然能力或品质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural ability]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gift</th>
+      <td>ift</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>ɡɪft</td>
+      <td>['giving']</td>
+      <td></td>
+      <td>the act of giving给予的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sharing, share-out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gift</th>
+      <td>ift</td>
+      <td>4.85</td>
+      <td>nou</td>
+      <td>ɡɪft</td>
+      <td></td>
+      <td></td>
+      <td>something acquired without compensation没有补偿的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acquisition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['hoist', 'wind']</td>
+      <td></td>
+      <td>raise or haul up with or as if with mechanical help用或似乎机械帮助提升或牵引</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[raise, elevate, bring up, get up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['airlift']</td>
+      <td></td>
+      <td>fly people or goods to or from places not accessible by other means将人或货物送往或送往其他无法通过其他方式进入的地方</td>
+      <td>Food is airlifted into Bosnia食物被空运到波斯尼亚</td>
+      <td></td>
+      <td></td>
+      <td>[fly]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['raise']</td>
+      <td></td>
+      <td>invigorate or heighten振奋或提高</td>
+      <td>lift my spirits振作精神lift his ego解除他的自我</td>
+      <td></td>
+      <td></td>
+      <td>[meliorate, better, improve, amend, ameliorate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['abstract', 'cabbage', 'filch', 'hook', 'nobble', 'pilfer', 'pinch', 'purloin', 'snarf', 'sneak', 'swipe']</td>
+      <td></td>
+      <td>make off with belongings of others用他人的财物来弥补</td>
+      <td></td>
+      <td>[lifter]</td>
+      <td></td>
+      <td>[steal, rip, rip off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['rear', 'rise']</td>
+      <td></td>
+      <td>rise up升起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[appear, look, seem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['annul', 'countermand', 'overturn', 'repeal', 'rescind', 'reverse', 'revoke', 'vacate']</td>
+      <td></td>
+      <td>cancel officially正式取消</td>
+      <td>lift an embargo解除禁运</td>
+      <td></td>
+      <td></td>
+      <td>[cancel, strike down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['face-lift']</td>
+      <td></td>
+      <td>perform cosmetic surgery on someone's face在某人的脸上进行整容手术</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[operate, operate on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['rustle']</td>
+      <td></td>
+      <td>take illegally非法采取</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip off, rip, steal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['raise']</td>
+      <td></td>
+      <td>put an end to杜绝</td>
+      <td>lift a ban取消禁令</td>
+      <td></td>
+      <td></td>
+      <td>[terminate, end]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['bring up', 'elevate', 'get up', 'raise'], alos:['lift up']</td>
+      <td></td>
+      <td>raise from a lower to a higher position从较低位置升至较高位置</td>
+      <td></td>
+      <td>[lifter]</td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['raise']</td>
+      <td></td>
+      <td>move upwards向上移动</td>
+      <td>lift one's eyes抬起一只眼睛</td>
+      <td></td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['plagiarise', 'plagiarize']</td>
+      <td></td>
+      <td>take without referencing from someone else's writing or speech; of intellectual property不参考别人的写作或演讲;知识产权</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rip, rip off, steal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['arise', 'come up', 'go up', 'move up', 'rise', 'uprise']</td>
+      <td></td>
+      <td>move upward向上移动</td>
+      <td>The fog lifted大雾升起了</td>
+      <td></td>
+      <td></td>
+      <td>[locomote, travel, move, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td>['elevate', 'raise']</td>
+      <td></td>
+      <td>raise in rank or condition提升等级或条件</td>
+      <td>The new law lifted many people from poverty新法律使许多人摆脱了贫困</td>
+      <td></td>
+      <td></td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>call to stop the hunt or to retire, as of hunting dogs呼吁停止狩猎或退休，如狩猎犬</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[send for, call]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>make audible发出声音</td>
+      <td>He lifted a war whoop他举起了一场战争呐喊</td>
+      <td></td>
+      <td></td>
+      <td>[emit, let out, utter, let loose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>pay off (a mortgage)还清（抵押）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pay off, liquidate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>remove from a seedbed or from a nursery从苗床或托儿所移走</td>
+      <td>lift the tulip bulbs举起郁金香球茎</td>
+      <td></td>
+      <td></td>
+      <td>[take, take away, remove, withdraw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>remove from a surface从表面移除</td>
+      <td>the detective carefully lifted some fingerprints from the table侦探小心翼翼地从桌子上拿出一些指纹</td>
+      <td></td>
+      <td></td>
+      <td>[remove, withdraw, take, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>remove (hair) by scalping通过剥皮去除（头发）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scalp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>rise upward, as from pressure or moisture从压力或水分上升</td>
+      <td>The floor is lifting slowly地板缓慢升起</td>
+      <td></td>
+      <td></td>
+      <td>[buckle, heave, warp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>take hold of something and move it to a different location掌握一些东西并将其移动到不同的位置</td>
+      <td>lift the box onto the table将盒子抬到桌子上</td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>take off or away by decreasing通过减少起飞或离开</td>
+      <td>lift the pressure提升压力</td>
+      <td></td>
+      <td></td>
+      <td>[take away, remove, withdraw, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>ver</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>take (root crops) out of the ground把（块根作物）从地里拿出来</td>
+      <td>lift potatoes举起土豆</td>
+      <td></td>
+      <td></td>
+      <td>[dig, dig out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['elevator']</td>
+      <td></td>
+      <td>lifting device consisting of a platform or cage that is raised and lowered mechanically in a vertical shaft in order to move people from one floor to another in a building起重装置由平台或保持架组成，在垂直轴上机械升降，以便将人从一层移动到另一层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lifting device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['heave', 'raise']</td>
+      <td></td>
+      <td>the act of raising something提高某事的行为</td>
+      <td>he responded with a lift of his eyebrow他抬起眉毛回应道</td>
+      <td></td>
+      <td></td>
+      <td>[actuation, propulsion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['airlift']</td>
+      <td></td>
+      <td>transportation of people or goods by air (especially when other means of access are unavailable)空运人员或货物（特别是在没有其他通道的情况下）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transfer, conveyance, transportation, transport, transferral]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['rise']</td>
+      <td></td>
+      <td>a wave that lifts the surface of the water or ground提升水面或地面的波浪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[moving ridge, wave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['cosmetic surgery', 'face lift', 'face lifting', 'facelift', 'nip and tuck', 'rhytidectomy', 'rhytidoplasty']</td>
+      <td></td>
+      <td>plastic surgery to remove wrinkles and other signs of aging from your face; an incision is made near the hair line and skin is pulled back and excess tissue is excised整形手术，以消除脸上的皱纹和其他衰老迹象;在发线附近做一个切口，拉回皮肤，切除多余的组织</td>
+      <td>some actresses have more than one face lift有些女演员有一个以上的整容</td>
+      <td></td>
+      <td></td>
+      <td>[plastic surgery, reconstructive surgery, anaplasty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['elevation', 'raising']</td>
+      <td></td>
+      <td>the event of something being raised upward事情被提升的事件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ascension, rise, rising, ascent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['aerodynamic lift']</td>
+      <td></td>
+      <td>the component of the aerodynamic forces acting on an airfoil that opposes gravity作用在与重力相对的翼型上的空气动力的分量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aerodynamic force]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td>['ski lift', 'ski tow']</td>
+      <td></td>
+      <td>a powered conveyance that carries skiers up a hill一种动力的运输工具，将滑雪者带到山上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transport, conveyance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>a device worn in a shoe or boot to make the wearer look taller or to correct a shortened leg穿在鞋子或靴子中的装置，以使穿着者看起来更高或纠正缩短的腿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>a ride in a car坐车</td>
+      <td>he gave me a lift home他给我一个电梯回家</td>
+      <td></td>
+      <td></td>
+      <td>[drive, ride]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>one of the layers forming the heel of a shoe or boot其中一层形成鞋或靴子的鞋跟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed, layer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lift</th>
+      <td>ift</td>
+      <td>4.66</td>
+      <td>nou</td>
+      <td>lɪft</td>
+      <td></td>
+      <td></td>
+      <td>the act of giving temporary assistance提供临时援助的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aid, help, assistance, assist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rift</th>
+      <td>ift</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>rɪft</td>
+      <td>['breach', 'break', 'falling out', 'rupture', 'severance']</td>
+      <td></td>
+      <td>a personal or social separation (as between opposing factions)个人或社会分离（在对立阵营之间）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[separation, detachment, breakup]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rift</th>
+      <td>ift</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>rɪft</td>
+      <td></td>
+      <td></td>
+      <td>a gap between cloud masses云团之间的差距</td>
+      <td>the sun shone through a rift in the clouds太阳透过云层中的裂缝照耀着</td>
+      <td></td>
+      <td></td>
+      <td>[opening, gap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rift</th>
+      <td>ift</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>rɪft</td>
+      <td></td>
+      <td></td>
+      <td>a narrow fissure in rock岩石中的狭窄裂缝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crack, cleft, fissure, crevice, scissure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sift</th>
+      <td>ift</td>
+      <td>2.63</td>
+      <td>ver</td>
+      <td>sɪft</td>
+      <td>['sieve']</td>
+      <td></td>
+      <td>distinguish and separate out区分和分离</td>
+      <td>sift through the job candidates筛选求职者</td>
+      <td></td>
+      <td></td>
+      <td>[take, choose, pick out, select]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sift</th>
+      <td>ift</td>
+      <td>2.63</td>
+      <td>ver</td>
+      <td>sɪft</td>
+      <td>['sieve', 'strain']</td>
+      <td></td>
+      <td>separate by passing through a sieve or other straining device to separate out coarser elements通过筛子或其他应变装置分开以分离出较粗糙的元件</td>
+      <td>sift the flour筛面粉</td>
+      <td>[sieve, sifter, sifting]</td>
+      <td></td>
+      <td>[separate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sift</th>
+      <td>ift</td>
+      <td>2.63</td>
+      <td>ver</td>
+      <td>sɪft</td>
+      <td>['sieve']</td>
+      <td></td>
+      <td>check and sort carefully仔细检查和排序</td>
+      <td>sift the information筛选信息</td>
+      <td></td>
+      <td></td>
+      <td>[analyze, canvass, examine, analyse, study]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sift</th>
+      <td>ift</td>
+      <td>2.63</td>
+      <td>ver</td>
+      <td>sɪft</td>
+      <td></td>
+      <td></td>
+      <td>move as if through a sieve像通过筛子一样移动</td>
+      <td>The soldiers sifted through the woods士兵们穿过树林</td>
+      <td></td>
+      <td></td>
+      <td>[move, travel, go, locomote]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

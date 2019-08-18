@@ -1,0 +1,320 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['chest', 'crest', 'brest', 'testy', 'wrest', 'zesty', 'blest']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>chest</th>
+      <td>est</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>tʃɛst</td>
+      <td>['breast']</td>
+      <td></td>
+      <td>the front of the trunk from the neck to the abdomen从颈部到腹部的躯干前部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[external body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chest</th>
+      <td>est</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>tʃɛst</td>
+      <td>['bureau', 'chest of drawers', 'dresser']</td>
+      <td></td>
+      <td>furniture with drawers for keeping clothes带抽屉的家具，用于保持衣物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[article of furniture, piece of furniture, furniture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chest</th>
+      <td>est</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>tʃɛst</td>
+      <td>['pectus', 'thorax']</td>
+      <td></td>
+      <td>the part of the human torso between the neck and the diaphragm or the corresponding part in other vertebrates颈部和横膈膜之间的人体躯干部分或其他脊椎动物的相应部分</td>
+      <td></td>
+      <td>[chesty]</td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chest</th>
+      <td>est</td>
+      <td>4.48</td>
+      <td>nou</td>
+      <td>tʃɛst</td>
+      <td></td>
+      <td></td>
+      <td>box with a lid; used for storage; usually large and sturdy带盖的盒子;用于储存;通常大而坚固</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[box]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crest</th>
+      <td>est</td>
+      <td>3.18</td>
+      <td>ver</td>
+      <td>krɛst</td>
+      <td>['cap']</td>
+      <td></td>
+      <td>lie at the top of躺在顶部</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crest</th>
+      <td>est</td>
+      <td>3.18</td>
+      <td>ver</td>
+      <td>krɛst</td>
+      <td></td>
+      <td></td>
+      <td>reach a high point达到高潮</td>
+      <td>The river crested last night这条河昨晚有顶饰</td>
+      <td></td>
+      <td></td>
+      <td>[top out, peak]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crest</th>
+      <td>est</td>
+      <td>3.18</td>
+      <td>nou</td>
+      <td>krɛst</td>
+      <td>['crown']</td>
+      <td></td>
+      <td>the center of a cambered road弧形道路的中心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[top, top side, upper side, upside]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crest</th>
+      <td>est</td>
+      <td>3.18</td>
+      <td>nou</td>
+      <td>krɛst</td>
+      <td>['crown', 'peak', 'summit', 'tip', 'top']</td>
+      <td></td>
+      <td>the top or extreme point of something (usually a mountain or hill)某物（通常是山或山）的顶点或极点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place, spot, topographic point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crest</th>
+      <td>est</td>
+      <td>3.18</td>
+      <td>nou</td>
+      <td>krɛst</td>
+      <td></td>
+      <td></td>
+      <td>a showy growth of e.g. feathers or skin on the head of a bird or other animal例如，鸟类或其他动物头上的羽毛或皮肤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[process, appendage, outgrowth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crest</th>
+      <td>est</td>
+      <td>3.18</td>
+      <td>nou</td>
+      <td>krɛst</td>
+      <td></td>
+      <td></td>
+      <td>(heraldry) in medieval times, an emblem used to decorate a helmet（纹章）在中世纪，用来装饰头盔的徽章</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emblem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crest</th>
+      <td>est</td>
+      <td>3.18</td>
+      <td>nou</td>
+      <td>krɛst</td>
+      <td></td>
+      <td></td>
+      <td>the top line of a hill, mountain, or wave山丘，山脉或波浪的顶线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brest</th>
+      <td>est</td>
+      <td>2.63</td>
+      <td>nou</td>
+      <td>brɛst</td>
+      <td></td>
+      <td></td>
+      <td>a port city in northwestern France (in Brittany); the chief naval station of France法国西北部的一个港口城市（布列塔尼）;法国首席海军基地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>testy</th>
+      <td>est</td>
+      <td>2.63</td>
+      <td>adj</td>
+      <td>'tɛsti</td>
+      <td>['cranky', 'fractious', 'irritable', 'nettlesome', 'peckish', 'peevish', 'pettish', 'petulant', 'scratchy', 'techy', 'tetchy'], similarTo:['ill-natured']</td>
+      <td></td>
+      <td>easily irritated or annoyed容易烦恼或生气</td>
+      <td></td>
+      <td>[testiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrest</th>
+      <td>est</td>
+      <td>2.20</td>
+      <td>ver</td>
+      <td>rɛst</td>
+      <td></td>
+      <td></td>
+      <td>obtain by seizing forcibly or violently, also metaphorically通过强行或猛烈地抓住来获得，也是比喻性的</td>
+      <td>wrest the knife from his hands从他手中夺取刀wrest a meaning from the old text从旧文本中夺取意义wrest power from the old government夺取旧政府的权力</td>
+      <td>[wrester]</td>
+      <td></td>
+      <td>[seize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zesty</th>
+      <td>est</td>
+      <td>2.17</td>
+      <td>adj</td>
+      <td></td>
+      <td>['barmy', 'yeasty', 'zestful'], similarTo:['spirited']</td>
+      <td></td>
+      <td>marked by spirited enjoyment充满活力的享受</td>
+      <td></td>
+      <td>[zest]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zesty</th>
+      <td>est</td>
+      <td>2.17</td>
+      <td>adj</td>
+      <td></td>
+      <td>['piquant', 'savory', 'savoury'], similarTo:['tasty']</td>
+      <td></td>
+      <td>having an agreeably pungent taste有一种令人愉快的刺激性味道</td>
+      <td></td>
+      <td>[zest]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blest</th>
+      <td>est</td>
+      <td>1.90</td>
+      <td>adj</td>
+      <td>blɛst</td>
+      <td>['blessed'], similarTo:['fortunate', 'golden']</td>
+      <td></td>
+      <td>highly favored or fortunate (as e.g. by divine grace)高度青睐或幸运（例如神圣的恩典）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

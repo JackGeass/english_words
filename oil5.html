@@ -1,0 +1,305 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['spoil', 'broil', 'doily']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['ball up', 'blow', 'bobble', 'bodge', 'bollix', 'bollix up', 'bollocks', 'bollocks up', 'botch', 'botch up', 'bumble', 'bungle', 'flub', 'fluff', 'foul up', 'fuck up', 'fumble', 'louse up', 'mess up', 'mishandle', 'muck up', 'muff', 'screw up']</td>
+      <td></td>
+      <td>make a mess of, destroy or ruin搞乱，破坏或破坏</td>
+      <td></td>
+      <td>[spoiling, spoilage]</td>
+      <td></td>
+      <td>[go wrong, miscarry, fail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['itch']</td>
+      <td></td>
+      <td>have a strong desire or urge to do something有强烈的愿望或渴望做某事</td>
+      <td>He is spoiling for a fight他正在吵架</td>
+      <td></td>
+      <td></td>
+      <td>[desire, want]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['despoil', 'plunder', 'rape', 'violate']</td>
+      <td></td>
+      <td>destroy and strip of its possession摧毁并剥夺其占有权</td>
+      <td></td>
+      <td>[spoliation, spoilation]</td>
+      <td></td>
+      <td>[destroy, ruin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['baffle', 'bilk', 'cross', 'foil', 'frustrate', 'queer', 'scotch', 'thwart']</td>
+      <td></td>
+      <td>hinder or prevent (the efforts, plans, or desires) of妨碍或阻止（努力，计划或愿望）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[forbid, preclude, forestall, prevent, foreclose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['deflower', 'impair', 'mar', 'vitiate']</td>
+      <td></td>
+      <td>make imperfect使不完美</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[damage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['baby', 'cocker', 'coddle', 'cosset', 'featherbed', 'indulge', 'mollycoddle', 'pamper']</td>
+      <td></td>
+      <td>treat with excessive indulgence过度放纵</td>
+      <td></td>
+      <td>[spoiler]</td>
+      <td></td>
+      <td>[do by, treat, handle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['go bad']</td>
+      <td></td>
+      <td>become unfit for consumption or use变得不适合消费或使用</td>
+      <td>the meat must be eaten before it spoils肉必须在变质之前食用</td>
+      <td>[spoilage, spoiling]</td>
+      <td></td>
+      <td>[decay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>ver</td>
+      <td>spɔɪl</td>
+      <td>['corrupt']</td>
+      <td></td>
+      <td>alter from the original改变原来的</td>
+      <td></td>
+      <td>[spoliation]</td>
+      <td></td>
+      <td>[modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>spɔɪl</td>
+      <td>['despoilation', 'despoilment', 'despoliation', 'spoilation', 'spoliation']</td>
+      <td></td>
+      <td>the act of stripping and taking by force剥夺和武力夺取的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pillage, pillaging, plundering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>spɔɪl</td>
+      <td>['spoilage', 'spoiling']</td>
+      <td></td>
+      <td>the act of spoiling something by causing damage to it通过对其造成损害来破坏某物的行为</td>
+      <td>her spoiling my dress was deliberate她故意破坏我的衣服</td>
+      <td></td>
+      <td></td>
+      <td>[injury]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoil</th>
+      <td>oil</td>
+      <td>4.06</td>
+      <td>nou</td>
+      <td>spɔɪl</td>
+      <td></td>
+      <td></td>
+      <td>(usually plural) valuables taken by violence (especially in war)（通常是复数的）暴力夺取的贵重物品（特别是在战争中）</td>
+      <td>to the victor belong the spoils of the enemy胜利者属于敌人的战利品</td>
+      <td></td>
+      <td></td>
+      <td>[stolen property]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>broil</th>
+      <td>oil</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>brɔɪl</td>
+      <td>['bake']</td>
+      <td></td>
+      <td>be very hot, due to hot weather or exposure to the sun由于天气炎热或暴露在阳光下，天气很热</td>
+      <td>The town was broiling in the sun小镇在阳光下炙烤</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broil</th>
+      <td>oil</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>brɔɪl</td>
+      <td>['oven broil']</td>
+      <td></td>
+      <td>cook under a broiler在肉鸡下做饭</td>
+      <td>broil fish烤鱼</td>
+      <td>[broiler]</td>
+      <td></td>
+      <td>[grill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broil</th>
+      <td>oil</td>
+      <td>2.17</td>
+      <td>ver</td>
+      <td>brɔɪl</td>
+      <td>['bake']</td>
+      <td></td>
+      <td>heat by a natural force通过自然力量加热</td>
+      <td>The sun broils the valley in the summer太阳在夏天烧毁了山谷</td>
+      <td></td>
+      <td></td>
+      <td>[heat, heat up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broil</th>
+      <td>oil</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>brɔɪl</td>
+      <td>['broiling', 'grilling']</td>
+      <td></td>
+      <td>cooking by direct exposure to radiant heat (as over a fire or under a grill)通过直接暴露于辐射热（在火上或在烤架下）烹饪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cookery, preparation, cooking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>doily</th>
+      <td>oil</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>'dɔɪli</td>
+      <td>['doyley', 'doyly']</td>
+      <td></td>
+      <td>a small round piece of linen placed under a dish or bowl将一小块亚麻布放在盘子或碗下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linen]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

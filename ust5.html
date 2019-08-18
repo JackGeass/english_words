@@ -1,0 +1,545 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['trust', 'rusty', 'dusty', 'crust', 'musty', 'lusty', 'busty', 'gusty', 'adust', 'fusty']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>trəst</td>
+      <td>['desire', 'hope']</td>
+      <td></td>
+      <td>expect and wish期待和希望</td>
+      <td>I trust you will behave better from now on我相信你从现在开始会表现得更好</td>
+      <td></td>
+      <td></td>
+      <td>[wish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>trəst</td>
+      <td>['believe']</td>
+      <td></td>
+      <td>be confident about something对某事充满信心</td>
+      <td></td>
+      <td>[truster]</td>
+      <td></td>
+      <td>[anticipate, expect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>trəst</td>
+      <td>['commit', 'confide', 'entrust', 'intrust']</td>
+      <td></td>
+      <td>confer a trust upon赋予信任</td>
+      <td>The messenger was entrusted with the general's secret信使被委以将军的秘密</td>
+      <td>[trustee]</td>
+      <td></td>
+      <td>[pass, give, hand, pass on, reach, turn over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>trəst</td>
+      <td></td>
+      <td></td>
+      <td>allow without fear允许没有恐惧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[permit, let, countenance, allow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>trəst</td>
+      <td></td>
+      <td></td>
+      <td>(chiefly archaic) extend credit to（主要是陈旧的）将信贷延伸至</td>
+      <td>don't trust my ex-wife; I won't pay her debts anymore不相信我的前妻;我不再偿还债务了</td>
+      <td></td>
+      <td></td>
+      <td>[loan, lend]</td>
+      <td>[archaicism, archaism]</td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>trəst</td>
+      <td></td>
+      <td>[distrust, mistrust]</td>
+      <td>have confidence or faith in有信心或有信心</td>
+      <td>We can trust in our government我们可以信任我们的政府</td>
+      <td></td>
+      <td></td>
+      <td>[believe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>trəst</td>
+      <td>['faith']</td>
+      <td></td>
+      <td>complete confidence in a person or plan etc对一个人或计划等完全信任</td>
+      <td>the doctor-patient relationship is based on trust医患关系基于信任</td>
+      <td>[trusty]</td>
+      <td></td>
+      <td>[belief]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>trəst</td>
+      <td>['cartel', 'combine', 'corporate trust']</td>
+      <td></td>
+      <td>a consortium of independent organizations formed to limit competition by controlling the production and distribution of a product or service一个由独立组织组成的联盟，旨在通过控制产品或服务的生产和分销来限制竞争</td>
+      <td>they set up the trust in the hope of gaining a monopoly他们建立了信任，希望获得垄断</td>
+      <td></td>
+      <td></td>
+      <td>[consortium, pool, syndicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>trəst</td>
+      <td>['reliance']</td>
+      <td></td>
+      <td>certainty based on past experience基于过去经验的确定性</td>
+      <td>he put more trust in his own two legs than in the gun他对自己的两条腿比对枪更加信任</td>
+      <td></td>
+      <td></td>
+      <td>[certainty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>trəst</td>
+      <td>['confidence']</td>
+      <td></td>
+      <td>a trustful relationship一种信任的关系</td>
+      <td>he betrayed their trust他背叛了他们的信任</td>
+      <td>[trusty]</td>
+      <td></td>
+      <td>[friendly relationship, friendship]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>trəst</td>
+      <td>['trustfulness', 'trustingness']</td>
+      <td>[distrust]</td>
+      <td>the trait of believing in the honesty and reliability of others相信他人诚实和可靠的特质</td>
+      <td>the experience destroyed his trust and personal dignity这种经历破坏了他的信任和个人尊严</td>
+      <td>[trusty]</td>
+      <td></td>
+      <td>[trait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trust</th>
+      <td>ust</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>trəst</td>
+      <td></td>
+      <td></td>
+      <td>something (as property) held by one party (the trustee) for the benefit of another (the beneficiary)一方（受托人）为另一方（受益人）的利益持有的东西（作为财产）</td>
+      <td>he is the beneficiary of a generous trust set up by his father他是父亲设立的慷慨信托的受益者</td>
+      <td></td>
+      <td></td>
+      <td>[belongings, holding, property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rusty</th>
+      <td>ust</td>
+      <td>3.93</td>
+      <td>adj</td>
+      <td>'rəsti</td>
+      <td>['out of practice'], similarTo:['unskilled']</td>
+      <td></td>
+      <td>impaired in skill by neglect被忽视的技能受损</td>
+      <td></td>
+      <td>[rustiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rusty</th>
+      <td>ust</td>
+      <td>3.93</td>
+      <td>adj</td>
+      <td>'rəsti</td>
+      <td>['rust', 'rust-brown'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of the brown color of rust褐锈的颜色</td>
+      <td></td>
+      <td>[rust]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rusty</th>
+      <td>ust</td>
+      <td>3.93</td>
+      <td>adj</td>
+      <td>'rəsti</td>
+      <td>['hoary'], similarTo:['old']</td>
+      <td></td>
+      <td>ancient古</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rusty</th>
+      <td>ust</td>
+      <td>3.93</td>
+      <td>adj</td>
+      <td>'rəsti</td>
+      <td>, similarTo:['rusted']</td>
+      <td></td>
+      <td>covered with or consisting of rust覆盖或由铁锈组成</td>
+      <td>a rusty machine生锈的机器rusty deposits生锈的存款</td>
+      <td>[rust, rustiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dusty</th>
+      <td>ust</td>
+      <td>3.69</td>
+      <td>adj</td>
+      <td>'dəsti</td>
+      <td>['dust-covered'], similarTo:['covered']</td>
+      <td></td>
+      <td>covered with a layer of dust覆盖着一层灰尘</td>
+      <td>a dusty pile of books一堆满是灰尘的书</td>
+      <td>[dust, dustiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dusty</th>
+      <td>ust</td>
+      <td>3.69</td>
+      <td>adj</td>
+      <td>'dəsti</td>
+      <td>['cold', 'moth-eaten', 'stale'], similarTo:['unoriginal']</td>
+      <td></td>
+      <td>lacking originality or spontaneity; no longer new缺乏原创性或自发性;不再是新的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crust</th>
+      <td>ust</td>
+      <td>3.59</td>
+      <td>ver</td>
+      <td>krəst</td>
+      <td></td>
+      <td></td>
+      <td>form a crust or form into a crust形成一个外壳或形成一个地壳</td>
+      <td>The bread crusted in the oven面包在烤箱里结了硬皮</td>
+      <td></td>
+      <td></td>
+      <td>[change surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crust</th>
+      <td>ust</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>krəst</td>
+      <td>['cheekiness', 'freshness', 'gall', 'impertinence', 'impudence', 'insolence']</td>
+      <td></td>
+      <td>the trait of being rude and impertinent; inclined to take liberties粗鲁无礼的特质;倾向于采取自由</td>
+      <td></td>
+      <td>[crusty]</td>
+      <td></td>
+      <td>[discourtesy, rudeness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crust</th>
+      <td>ust</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>krəst</td>
+      <td>["earth's crust"]</td>
+      <td></td>
+      <td>the outer layer of the Earth地球的外层</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[layer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crust</th>
+      <td>ust</td>
+      <td>3.59</td>
+      <td>nou</td>
+      <td>krəst</td>
+      <td>['encrustation', 'incrustation']</td>
+      <td></td>
+      <td>a hard outer layer that covers something一个坚硬的外层，覆盖一些东西</td>
+      <td></td>
+      <td>[crusty]</td>
+      <td></td>
+      <td>[natural covering, cover, covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>musty</th>
+      <td>ust</td>
+      <td>2.59</td>
+      <td>adj</td>
+      <td>'məsti</td>
+      <td>['frowsty', 'fusty'], similarTo:['ill-smelling', 'malodorous', 'malodourous', 'stinky', 'unpleasant-smelling']</td>
+      <td></td>
+      <td>stale and unclean smelling陈旧和不洁的气味</td>
+      <td></td>
+      <td>[must, mustiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>musty</th>
+      <td>ust</td>
+      <td>2.59</td>
+      <td>adj</td>
+      <td>'məsti</td>
+      <td>['moldy', 'mouldy'], similarTo:['stale']</td>
+      <td></td>
+      <td>covered with or smelling of mold覆盖或闻到霉菌</td>
+      <td>a moldy (or musty) odor发霉（或发霉）的气味</td>
+      <td>[must, mustiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lusty</th>
+      <td>ust</td>
+      <td>2.49</td>
+      <td>adj</td>
+      <td>'ləsti</td>
+      <td>['full-blooded', 'hearty', 'red-blooded'], similarTo:['healthy']</td>
+      <td></td>
+      <td>endowed with or exhibiting great bodily or mental health赋予或表现出良好的身体或精神健康</td>
+      <td></td>
+      <td>[lustiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lusty</th>
+      <td>ust</td>
+      <td>2.49</td>
+      <td>adj</td>
+      <td>'ləsti</td>
+      <td>['concupiscent', 'lustful'], similarTo:['passionate']</td>
+      <td></td>
+      <td>vigorously passionate充满激情</td>
+      <td></td>
+      <td>[lust]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>busty</th>
+      <td>ust</td>
+      <td>2.40</td>
+      <td>adj</td>
+      <td>'bəsti</td>
+      <td>['bosomy', 'buxom', 'curvaceous', 'curvy', 'full-bosomed', 'sonsie', 'sonsy', 'stacked', 'voluptuous', 'well-endowed'], similarTo:['shapely']</td>
+      <td></td>
+      <td>(of a woman's body) having a large bosom and pleasing curves（一个女人的身体）有一个大胸部和令人愉快的曲线</td>
+      <td></td>
+      <td>[bust]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gusty</th>
+      <td>ust</td>
+      <td>2.17</td>
+      <td>adj</td>
+      <td>'ɡəsti</td>
+      <td>['puffy'], similarTo:['stormy']</td>
+      <td></td>
+      <td>blowing in puffs or short intermittent blasts吹气泡或短暂的间歇性爆炸</td>
+      <td>gusty winds阵风</td>
+      <td>[gust]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>adust</th>
+      <td>ust</td>
+      <td>1.74</td>
+      <td>adj</td>
+      <td>ə'dəst</td>
+      <td>['baked', 'parched', 'scorched', 'sunbaked'], similarTo:['dry']</td>
+      <td></td>
+      <td>dried out by heat or excessive exposure to sunlight通过加热或过度暴露在阳光下干燥</td>
+      <td>a vast desert all adust一片浩瀚的沙漠</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>adust</th>
+      <td>ust</td>
+      <td>1.74</td>
+      <td>adj</td>
+      <td>ə'dəst</td>
+      <td>, similarTo:['brunet', 'brunette']</td>
+      <td></td>
+      <td>burned brown by the sun被太阳烧成棕色</td>
+      <td>of an adust complexion一个adust肤色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[archaicism, archaism]</td>
+    </tr>
+    <tr>
+      <th>fusty</th>
+      <td>ust</td>
+      <td>1.73</td>
+      <td>adj</td>
+      <td>'fəsti</td>
+      <td>['frowsty', 'musty'], similarTo:['ill-smelling', 'malodorous', 'malodourous', 'stinky', 'unpleasant-smelling']</td>
+      <td></td>
+      <td>stale and unclean smelling陈旧和不洁的气味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fusty</th>
+      <td>ust</td>
+      <td>1.73</td>
+      <td>adj</td>
+      <td>'fəsti</td>
+      <td>['nonprogressive', 'standpat', 'unprogressive'], similarTo:['conservative']</td>
+      <td></td>
+      <td>old-fashioned and out of date老式的，过时的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

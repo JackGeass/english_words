@@ -1,0 +1,215 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['crunch', 'brunch', 'bunchy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>crunch</th>
+      <td>unch</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>krənʧ</td>
+      <td>['munch']</td>
+      <td></td>
+      <td>chew noisily吵闹地咀嚼</td>
+      <td>The children crunched the celery sticks孩子们把芹菜棒碾碎了</td>
+      <td></td>
+      <td></td>
+      <td>[jaw, masticate, manducate, chew]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crunch</th>
+      <td>unch</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>krənʧ</td>
+      <td>['bray', 'comminute', 'grind', 'mash']</td>
+      <td></td>
+      <td>reduce to small pieces or particles by pounding or abrading通过敲击或研磨将其减少为小块或颗粒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fragmentize, break up, fragment, fragmentise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crunch</th>
+      <td>unch</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>krənʧ</td>
+      <td>['crackle', 'scranch', 'scraunch']</td>
+      <td></td>
+      <td>make a crushing noise发出一阵哗哗的声音</td>
+      <td>his shoes were crunching on the gravel他的鞋子在砾石上嘎吱作响</td>
+      <td></td>
+      <td></td>
+      <td>[resound, make noise, noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crunch</th>
+      <td>unch</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>krənʧ</td>
+      <td>['cranch', 'craunch', 'grind']</td>
+      <td></td>
+      <td>press or grind with a crushing noise用压碎的噪音压榨或研磨</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[press]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crunch</th>
+      <td>unch</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>krənʧ</td>
+      <td>['compaction', 'crush']</td>
+      <td></td>
+      <td>the act of crushing粉碎的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[compressing, compression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crunch</th>
+      <td>unch</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>krənʧ</td>
+      <td></td>
+      <td></td>
+      <td>a critical situation that arises because of a shortage (as a shortage of time or money or resources)由于短缺（由于时间或金钱或资源短缺）而出现的危急情况</td>
+      <td>an end-of-the year crunch年终紧缩a financial crunch金融危机</td>
+      <td></td>
+      <td></td>
+      <td>[situation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crunch</th>
+      <td>unch</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>krənʧ</td>
+      <td></td>
+      <td></td>
+      <td>the sound of something crunching嘎吱嘎吱的声音</td>
+      <td>he heard the crunch of footsteps on the gravel path他听到了砾石路上的脚步声</td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brunch</th>
+      <td>unch</td>
+      <td>3.26</td>
+      <td>ver</td>
+      <td>brənʧ</td>
+      <td></td>
+      <td></td>
+      <td>eat a meal in the late morning早上吃一顿饭</td>
+      <td>We brunch in Sundays我们周日早午餐</td>
+      <td></td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brunch</th>
+      <td>unch</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>brənʧ</td>
+      <td></td>
+      <td></td>
+      <td>combination breakfast and lunch; usually served in late morning早餐和午餐组合;通常在上午晚些时候服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[meal, repast]</td>
+      <td>[blend, portmanteau, portmanteau word]</td>
+    </tr>
+    <tr>
+      <th>bunchy</th>
+      <td>unch</td>
+      <td>1.74</td>
+      <td>adj</td>
+      <td>'bənʧi</td>
+      <td>, similarTo:['concentrated']</td>
+      <td></td>
+      <td>occurring close together in bunches or clusters在束或簇中发生在一起</td>
+      <td></td>
+      <td>[bunch]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

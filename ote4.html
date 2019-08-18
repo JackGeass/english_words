@@ -1,0 +1,500 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['note', 'vote', 'tote', 'dote', 'rote', 'cote', 'mote']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>noʊt</td>
+      <td>['mention', 'observe', 'remark']</td>
+      <td></td>
+      <td>make mention of提到</td>
+      <td>They noted that it was a fine day to go sailing他们指出，这是航行的好日子</td>
+      <td></td>
+      <td></td>
+      <td>[say, state, tell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>noʊt</td>
+      <td>['observe', 'take note']</td>
+      <td></td>
+      <td>observe with care or pay close attention to小心观察或密切注意</td>
+      <td>Take note of this chemical reaction注意这种化学反应</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>noʊt</td>
+      <td>['take down']</td>
+      <td></td>
+      <td>make a written note of写下笔记</td>
+      <td>she noted everything the teacher said that morning她注意到那天早上老师说的一切</td>
+      <td>[notation]</td>
+      <td></td>
+      <td>[get down, write down, set down, put down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>ver</td>
+      <td>noʊt</td>
+      <td>['mark', 'notice']</td>
+      <td></td>
+      <td>notice or perceive注意或察觉</td>
+      <td>She noted that someone was following her她注意到有人跟着她</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td>['bank bill', 'bank note', "banker's bill", 'banknote', 'bill', 'federal reserve note', 'government note', 'greenback']</td>
+      <td></td>
+      <td>a piece of paper money (especially one issued by a central bank)一张纸币（特别是一张由中央银行发行的纸币）</td>
+      <td>he peeled off five one-thousand-zloty notes他剥掉了五千个兹罗提音符</td>
+      <td></td>
+      <td></td>
+      <td>[folding money, paper money, paper currency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td>['musical note', 'tone']</td>
+      <td></td>
+      <td>a notation representing the pitch and duration of a musical sound表示音乐声音的音高和持续时间的符号</td>
+      <td>the singer held the note too long歌手把这张纸条拿得太久了</td>
+      <td></td>
+      <td></td>
+      <td>[musical notation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td>['billet', 'line', 'short letter']</td>
+      <td></td>
+      <td>a short personal letter一封简短的私人信件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[personal letter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td>['note of hand', 'promissory note']</td>
+      <td></td>
+      <td>a promise to pay a specified amount on demand or at a certain time承诺按要求或在特定时间支付指定金额</td>
+      <td>I had to co-sign his note at the bank我不得不在银行共同签署他的笔记</td>
+      <td></td>
+      <td></td>
+      <td>[obligation, debt instrument, certificate of indebtedness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td>['distinction', 'eminence', 'preeminence']</td>
+      <td></td>
+      <td>high status importance owing to marked superiority由于显着的优越性，地位重要性很高</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[high status]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td>['annotation', 'notation']</td>
+      <td></td>
+      <td>a comment or instruction (usually added)评论或指示（通常添加）</td>
+      <td>his notes were appended at the end of the article他的笔记附在文章的最后</td>
+      <td>[annotate]</td>
+      <td></td>
+      <td>[commentary, comment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td></td>
+      <td></td>
+      <td>a brief written record简短的书面记录</td>
+      <td>he made a note of the appointment他记下了这个约会</td>
+      <td></td>
+      <td></td>
+      <td>[written record, written account]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td></td>
+      <td></td>
+      <td>a characteristic emotional quality一种特有的情感品质</td>
+      <td>it ended on a sour note它结束了一个不好的消息there was a note of gaiety in her manner以她的方式有一种欢乐的记录he detected a note of sarcasm他发现了一张讽刺的讽刺</td>
+      <td></td>
+      <td></td>
+      <td>[atmosphere, air, aura]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>note</th>
+      <td>ote</td>
+      <td>4.62</td>
+      <td>nou</td>
+      <td>noʊt</td>
+      <td></td>
+      <td></td>
+      <td>a tone of voice that shows what the speaker is feeling一种表达说话者感受的语调</td>
+      <td>there was a note of uncertainty in his voice他的声音中充满了不确定性</td>
+      <td></td>
+      <td></td>
+      <td>[tone, tone of voice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>voʊt</td>
+      <td></td>
+      <td></td>
+      <td>bring into existence or make available by vote通过投票生效或提供</td>
+      <td>They voted aid for the underdeveloped countries in Asia他们投票支持亚洲欠发达国家</td>
+      <td>[voter]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>voʊt</td>
+      <td></td>
+      <td></td>
+      <td>express a choice or opinion表达选择或意见</td>
+      <td>I vote that we all go home我投票说我们都回家了She voted for going to the Chinese restaurant她投票去了中国餐馆</td>
+      <td></td>
+      <td></td>
+      <td>[express, state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>voʊt</td>
+      <td></td>
+      <td></td>
+      <td>express one's choice or preference by vote通过投票表达一个人的选择或偏好</td>
+      <td>vote the Democratic ticket投票民主党票</td>
+      <td>[voting, voter]</td>
+      <td></td>
+      <td>[express, state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>ver</td>
+      <td>voʊt</td>
+      <td>, alos:['vote in', 'vote out']</td>
+      <td></td>
+      <td>express one's preference for a candidate or for a measure or resolution; cast a vote表达对候选人或某项措施或决议的偏好;投票</td>
+      <td>He voted for the motion他投了赞成票None of the Democrats voted last night没有一个民主党人昨晚投了票</td>
+      <td>[voting, voter]</td>
+      <td></td>
+      <td>[select, choose, pick out, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>voʊt</td>
+      <td>['right to vote', 'suffrage']</td>
+      <td></td>
+      <td>a legal right guaranteed by the 15th amendment to the US Constitution; guaranteed to women by the 19th amendment美国宪法第15修正案保障的合法权利;第19修正案保证妇女</td>
+      <td>American women got the vote in 1920美国妇女在1920年获得了投票权</td>
+      <td></td>
+      <td></td>
+      <td>[enfranchisement, franchise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>voʊt</td>
+      <td>['ballot', 'balloting', 'voting']</td>
+      <td></td>
+      <td>a choice that is made by counting the number of people in favor of each alternative通过计算每个替代方案的人数来做出选择</td>
+      <td>there were only 17 votes in favor of the motion只有17票赞成动议they allowed just one vote per person他们每人只允许一票</td>
+      <td></td>
+      <td></td>
+      <td>[option, choice, pick, selection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>voʊt</td>
+      <td>['voter turnout']</td>
+      <td></td>
+      <td>the total number of voters who participated参加选民的总人数</td>
+      <td>they are expecting a large vote他们期待大投票</td>
+      <td></td>
+      <td></td>
+      <td>[numerical quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>voʊt</td>
+      <td></td>
+      <td></td>
+      <td>a body of voters who have the same interests一群拥有相同兴趣的选民</td>
+      <td>he failed to get the Black vote他未能获得黑人投票</td>
+      <td></td>
+      <td></td>
+      <td>[body]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vote</th>
+      <td>ote</td>
+      <td>4.46</td>
+      <td>nou</td>
+      <td>voʊt</td>
+      <td></td>
+      <td></td>
+      <td>the opinion of a group as determined by voting通过投票确定的团体意见</td>
+      <td>they put the question to a vote他们把这个问题付诸表决</td>
+      <td></td>
+      <td></td>
+      <td>[group action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tote</th>
+      <td>ote</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>toʊt</td>
+      <td>['lug', 'tug']</td>
+      <td></td>
+      <td>carry with difficulty难以携带</td>
+      <td></td>
+      <td>[toter]</td>
+      <td></td>
+      <td>[carry, transport]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tote</th>
+      <td>ote</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>toʊt</td>
+      <td>['carryall', 'holdall', 'tote bag']</td>
+      <td></td>
+      <td>a capacious bag or basket宽大的包或篮子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dote</th>
+      <td>ote</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>doʊt</td>
+      <td></td>
+      <td></td>
+      <td>be foolish or senile due to old age因年老而变得愚蠢或衰老</td>
+      <td></td>
+      <td>[dotard]</td>
+      <td></td>
+      <td>[age, get on, maturate, mature, senesce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dote</th>
+      <td>ote</td>
+      <td>2.57</td>
+      <td>ver</td>
+      <td>doʊt</td>
+      <td></td>
+      <td></td>
+      <td>shower with love; show excessive affection for用爱淋浴;表现出过分的感情</td>
+      <td>Grandmother dotes on the twins祖母溺爱双胞胎</td>
+      <td></td>
+      <td></td>
+      <td>[love]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rote</th>
+      <td>ote</td>
+      <td>2.43</td>
+      <td>nou</td>
+      <td>roʊt</td>
+      <td>['rote learning']</td>
+      <td></td>
+      <td>memorization by repetition通过重复记忆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[committal to memory, memorisation, memorization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cote</th>
+      <td>ote</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>koʊt</td>
+      <td></td>
+      <td></td>
+      <td>a small shelter for domestic animals (as sheep or pigeons)家养动物的小型庇护所（如绵羊或鸽子）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mote</th>
+      <td>ote</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>moʊt</td>
+      <td>['atom', 'corpuscle', 'molecule', 'particle', 'speck']</td>
+      <td></td>
+      <td>(nontechnical usage) a tiny piece of anything（非技术用法）一小块东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[material, stuff]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

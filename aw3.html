@@ -1,0 +1,545 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['saw', 'law', 'raw', 'jaw']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>saw</th>
+      <td>aw</td>
+      <td>5.61</td>
+      <td>ver</td>
+      <td>sɔ</td>
+      <td></td>
+      <td></td>
+      <td>cut with a saw锯</td>
+      <td>saw wood for the fireplace看到木头为壁炉</td>
+      <td>[sawyer]</td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>saw</th>
+      <td>aw</td>
+      <td>5.61</td>
+      <td>nou</td>
+      <td>sɔ</td>
+      <td>['power saw', 'sawing machine']</td>
+      <td></td>
+      <td>a power tool for cutting wood用于切割木材的动力工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[power tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>saw</th>
+      <td>aw</td>
+      <td>5.61</td>
+      <td>nou</td>
+      <td>sɔ</td>
+      <td>['adage', 'byword', 'proverb']</td>
+      <td></td>
+      <td>a condensed but memorable saying embodying some important fact of experience that is taken as true by many people一个浓缩但令人难忘的说法，体现了一些重要的经验事实，被许多人视为真实</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[saying, locution, expression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>saw</th>
+      <td>aw</td>
+      <td>5.61</td>
+      <td>nou</td>
+      <td>sɔ</td>
+      <td></td>
+      <td></td>
+      <td>hand tool having a toothed blade for cutting具有齿形刀片的手动工具用于切割</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hand tool]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>law</th>
+      <td>aw</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>lɔ</td>
+      <td>['practice of law']</td>
+      <td></td>
+      <td>the learned profession that is mastered by graduate study in a law school and that is responsible for the judicial system由法学院的研究生学习掌握并负责司法系统的学术专业</td>
+      <td>he studied law at Yale他在耶鲁大学学习法律</td>
+      <td>[lawyer]</td>
+      <td></td>
+      <td>[learned profession]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>law</th>
+      <td>aw</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>lɔ</td>
+      <td>['natural law']</td>
+      <td></td>
+      <td>a rule or body of rules of conduct inherent in human nature and essential to or binding upon human society人性中固有的一种规则或行为规则，对人类社会必不可少或具有约束力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[concept, construct, conception]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>law</th>
+      <td>aw</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>lɔ</td>
+      <td>['jurisprudence']</td>
+      <td></td>
+      <td>the collection of rules imposed by authority权威机构强加的规则集合</td>
+      <td>civilization presupposes respect for the law文明的前提是尊重法律</td>
+      <td></td>
+      <td></td>
+      <td>[collection, assemblage, accumulation, aggregation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>law</th>
+      <td>aw</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>lɔ</td>
+      <td>['constabulary', 'police', 'police force']</td>
+      <td></td>
+      <td>the force of policemen and officers警察和军官的力量</td>
+      <td>the law came looking for him法律来寻找他</td>
+      <td></td>
+      <td></td>
+      <td>[force, personnel, law enforcement agency]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>law</th>
+      <td>aw</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>lɔ</td>
+      <td>['jurisprudence', 'legal philosophy']</td>
+      <td></td>
+      <td>the branch of philosophy concerned with the law and the principles that lead courts to make the decisions they do哲学的一个分支，涉及法律和引导法院做出决定的原则</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[philosophy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>law</th>
+      <td>aw</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>lɔ</td>
+      <td>['law of nature']</td>
+      <td></td>
+      <td>a generalization that describes recurring facts or events in nature描述自然界中反复出现的事实或事件的概括</td>
+      <td>the laws of thermodynamics热力学定律</td>
+      <td></td>
+      <td></td>
+      <td>[construct, concept, conception]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>law</th>
+      <td>aw</td>
+      <td>5.17</td>
+      <td>nou</td>
+      <td>lɔ</td>
+      <td></td>
+      <td></td>
+      <td>legal document setting forth rules governing a particular kind of activity法律文件，规定管理特定活动的规则</td>
+      <td>there is a law against kidnapping有一项禁止绑架的法律</td>
+      <td></td>
+      <td></td>
+      <td>[legal document, legal instrument, instrument, official document]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>rɔ</td>
+      <td>['altogether', 'birthday suit']</td>
+      <td></td>
+      <td>informal terms for nakedness赤裸裸的非正式条款</td>
+      <td>in the raw在原始</td>
+      <td></td>
+      <td></td>
+      <td>[nudity, nakedness, nudeness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['sensitive', 'sore', 'tender'], similarTo:['painful']</td>
+      <td></td>
+      <td>hurting伤害</td>
+      <td></td>
+      <td>[rawness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['new'], similarTo:['inexperienced', 'inexperient']</td>
+      <td></td>
+      <td>lacking training or experience缺乏培训或经验</td>
+      <td>raw recruits原始新兵</td>
+      <td>[rawness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['unsanded'], similarTo:['unfinished']</td>
+      <td></td>
+      <td>used of wood and furniture用于木材和家具</td>
+      <td>raw wood原木</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['bare-ass', 'bare-assed', 'in the altogether', 'in the buff', 'in the raw', 'naked as a jaybird', 'peeled', 'stark naked'], similarTo:['unclothed']</td>
+      <td></td>
+      <td>(used informally) completely unclothed（非正式使用）完全没穿衣服</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['natural', 'rude'], similarTo:['unprocessed']</td>
+      <td></td>
+      <td>(used especially of commodities) being unprocessed or manufactured using only simple or minimal processes（仅用于商品）未经加工或仅使用简单或最小的工艺制造</td>
+      <td>raw wool原毛raw sugar原糖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['naked'], similarTo:['open', 'overt']</td>
+      <td></td>
+      <td>devoid of elaboration or diminution or concealment; bare and pure没有精心制作或减少或隐瞒;光秃秃的</td>
+      <td>raw fury原始的愤怒you may kill someone someday with your raw power你可能有一天会用你的原始力量杀死某人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['crude'], similarTo:['unanalyzed']</td>
+      <td></td>
+      <td>not processed or subjected to analysis未处理或进行分析</td>
+      <td>raw data原始数据the raw cost of production原始生产成本</td>
+      <td>[rawness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>['bleak', 'cutting'], similarTo:['cold']</td>
+      <td></td>
+      <td>unpleasantly cold and damp令人不快的寒冷和潮湿</td>
+      <td></td>
+      <td>[rawness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>, similarTo:['unfair', 'unjust']</td>
+      <td></td>
+      <td>brutally unfair or harsh残忍地不公平或严厉</td>
+      <td>received raw treatment from his friends他的朋友们接受了原始治疗a raw deal原始协议</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>, similarTo:['injured']</td>
+      <td></td>
+      <td>having the surface exposed and painful表面暴露和疼痛</td>
+      <td>a raw wound原始的伤口</td>
+      <td>[rawness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>, similarTo:['untreated']</td>
+      <td></td>
+      <td>not processed or refined未经处理或改进</td>
+      <td>raw sewage未经处理的污</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>, similarTo:['rare', 'half-baked', 'uncooked', 'underdone', 'untoasted']</td>
+      <td>[cooked]</td>
+      <td>not treated with heat to prepare it for eating没有用热处理来准备进食</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raw</th>
+      <td>aw</td>
+      <td>4.04</td>
+      <td>adj</td>
+      <td>rɔ</td>
+      <td>, similarTo:['unpolished']</td>
+      <td></td>
+      <td>untempered and unrefined没有回复和未定义</td>
+      <td>raw talent天才raw beauty生美</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jaw</th>
+      <td>aw</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dʒɔ</td>
+      <td>['chaffer', 'chat', 'chatter', 'chew the fat', 'chit-chat', 'chitchat', 'claver', 'confab', 'confabulate', 'gossip', 'natter', 'shoot the breeze', 'visit']</td>
+      <td></td>
+      <td>talk socially without exchanging too much information在没有交换太多信息的情况下进行社交谈话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[converse, discourse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jaw</th>
+      <td>aw</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dʒɔ</td>
+      <td>['bawl out', 'berate', 'call down', 'call on the carpet', 'chew out', 'chew up', 'chide', 'dress down', 'have words', 'lambast', 'lambaste', 'lecture', 'rag', 'rebuke', 'remonstrate', 'reprimand', 'scold', 'take to task', 'trounce']</td>
+      <td></td>
+      <td>censure severely or angrily严厉或愤怒地谴责</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[criticize, pick apart, knock, criticise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jaw</th>
+      <td>aw</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dʒɔ</td>
+      <td>['rattle on', 'yack', 'yack away', 'yap away']</td>
+      <td></td>
+      <td>talk incessantly and tiresomely不停地谈论和厌倦</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[speak, verbalise, mouth, talk, utter, verbalize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jaw</th>
+      <td>aw</td>
+      <td>3.79</td>
+      <td>ver</td>
+      <td>dʒɔ</td>
+      <td>['chew', 'manducate', 'masticate']</td>
+      <td></td>
+      <td>chew (food); to bite and grind with the teeth咀嚼（食物）;咬牙咬牙</td>
+      <td>He jawed his bubble gum他咬着泡泡糖</td>
+      <td></td>
+      <td></td>
+      <td>[grind, grate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jaw</th>
+      <td>aw</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dʒɔ</td>
+      <td></td>
+      <td></td>
+      <td>holding device consisting of one or both of the opposing parts of a tool that close to hold an object保持装置由靠近保持物体的工具的一个或两个相对部分组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[holding device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jaw</th>
+      <td>aw</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dʒɔ</td>
+      <td></td>
+      <td></td>
+      <td>the bones of the skull that frame the mouth and serve to open it; the bones that hold the teeth头骨的骨头，用于打开嘴巴并用来打开它;抓住牙齿的骨头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lineament, feature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jaw</th>
+      <td>aw</td>
+      <td>3.79</td>
+      <td>nou</td>
+      <td>dʒɔ</td>
+      <td></td>
+      <td></td>
+      <td>the part of the skull of a vertebrate that frames the mouth and holds the teeth脊椎动物头骨的一部分，用于构成口腔并固定牙齿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bone, os]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

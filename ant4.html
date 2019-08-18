@@ -1,0 +1,455 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['want', 'anti', 'cant', 'pant', 'rant', 'kant']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɑnt</td>
+      <td>['need', 'require']</td>
+      <td></td>
+      <td>have need of需要的</td>
+      <td>This piano wants the attention of a competent tuner这架钢琴需要有能力的调音师的注意力</td>
+      <td>[wanter]</td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɑnt</td>
+      <td>['desire']</td>
+      <td></td>
+      <td>feel or have a desire for; want strongly感到或渴望;强烈要求</td>
+      <td>I want to go home now我现在想回家I want my own room我想要自己的房间</td>
+      <td>[wanter]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɑnt</td>
+      <td></td>
+      <td></td>
+      <td>be without, lack; be deficient in没有，缺乏;缺乏</td>
+      <td>want courtesy想要礼貌want the strength to go on living希望力量继续生活flood victims wanting food and shelter洪水灾民想要食物和住所</td>
+      <td>[wanter]</td>
+      <td></td>
+      <td>[miss, lack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɑnt</td>
+      <td></td>
+      <td></td>
+      <td>hunt or look for; want for a particular reason寻找或寻找;想要一个特别的原因</td>
+      <td>Your former neighbor is wanted by the FBI你的前邻居被联邦调查局通缉Uncle Sam wants you山姆大叔想要你</td>
+      <td>[wanter]</td>
+      <td></td>
+      <td>[search, look for, seek]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>ver</td>
+      <td>wɑnt</td>
+      <td></td>
+      <td></td>
+      <td>wish or demand the presence of希望或要求存在</td>
+      <td>I want you here at noon!我希望你在中午！</td>
+      <td>[wanter]</td>
+      <td></td>
+      <td>[demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>nou</td>
+      <td>wɑnt</td>
+      <td>['need']</td>
+      <td></td>
+      <td>anything that is necessary but lacking任何必要但缺乏的东西</td>
+      <td>I tried to supply his wants我试图满足他的需求</td>
+      <td></td>
+      <td></td>
+      <td>[requisite, requirement, necessary, necessity, essential]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>nou</td>
+      <td>wɑnt</td>
+      <td>['deprivation', 'neediness', 'privation']</td>
+      <td></td>
+      <td>a state of extreme poverty极度贫困的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[poverty, impoverishment, poorness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>nou</td>
+      <td>wɑnt</td>
+      <td>['deficiency', 'lack']</td>
+      <td></td>
+      <td>the state of needing something that is absent or unavailable需要缺少或不可用的东西的状态</td>
+      <td>for want of a nail the shoe was lost由于缺少钉子，鞋子丢失了</td>
+      <td></td>
+      <td></td>
+      <td>[need, demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>want</th>
+      <td>ant</td>
+      <td>6.46</td>
+      <td>nou</td>
+      <td>wɑnt</td>
+      <td>['wish', 'wishing']</td>
+      <td></td>
+      <td>a specific feeling of desire一种特定的欲望感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>anti</th>
+      <td>ant</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>'æntaɪ</td>
+      <td></td>
+      <td></td>
+      <td>a person who is opposed (to an action or policy or practice etc.)反对的人（行为或政策或实践等）</td>
+      <td>the antis smelled victory after a long battle经过长时间的战斗，反对者闻到了胜利</td>
+      <td></td>
+      <td></td>
+      <td>[individual, mortal, person, somebody, someone, soul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>anti</th>
+      <td>ant</td>
+      <td>4.33</td>
+      <td>Non</td>
+      <td>'æntaɪ</td>
+      <td></td>
+      <td>[pro]</td>
+      <td>not in favor of (an action or proposal etc.)不赞成（行动或提案等）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cant</th>
+      <td>ant</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>kɑnt</td>
+      <td>['cant over', 'pitch', 'slant', 'tilt']</td>
+      <td></td>
+      <td>heel over脚后跟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cant</th>
+      <td>ant</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>kɑnt</td>
+      <td>['argot', 'jargon', 'lingo', 'patois', 'slang', 'vernacular']</td>
+      <td></td>
+      <td>a characteristic language of a particular group (as among thieves)特定群体的特色语言（如小偷之间）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[non-standard speech]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cant</th>
+      <td>ant</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>kɑnt</td>
+      <td>['buzzword']</td>
+      <td></td>
+      <td>stock phrases that have become nonsense through endless repetition股票短语通过无休止的重复变得无稽之谈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hokum, nonsense, nonsensicality, meaninglessness, bunk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cant</th>
+      <td>ant</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>kɑnt</td>
+      <td>['pious platitude']</td>
+      <td></td>
+      <td>insincere talk about religion or morals不诚实地谈论宗教或道德</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[talking, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cant</th>
+      <td>ant</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>kɑnt</td>
+      <td>['bevel', 'chamfer']</td>
+      <td></td>
+      <td>two surfaces meeting at an angle different from 90 degrees两个表面以不同于90度的角度相交</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cant</th>
+      <td>ant</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>kɑnt</td>
+      <td>['bank', 'camber']</td>
+      <td></td>
+      <td>a slope in the turn of a road or track; the outside is higher than the inside in order to reduce the effects of centrifugal force道路或轨道转弯处的斜坡;外部高于内部，以减少离心力的影响</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[incline, side, slope]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pant</th>
+      <td>ant</td>
+      <td>3.26</td>
+      <td>ver</td>
+      <td>pænt</td>
+      <td>['gasp', 'heave', 'puff']</td>
+      <td></td>
+      <td>breathe noisily, as when one is exhausted当一个人筋疲力尽时，大声呼吸</td>
+      <td>The runners reached the finish line, panting heavily跑步者到达终点线，气喘吁吁</td>
+      <td>[panting]</td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pant</th>
+      <td>ant</td>
+      <td>3.26</td>
+      <td>ver</td>
+      <td>pænt</td>
+      <td></td>
+      <td></td>
+      <td>utter while panting, as if out of breath气喘吁吁，好像喘不过气来</td>
+      <td></td>
+      <td>[panting]</td>
+      <td></td>
+      <td>[emit, let loose, let out, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pant</th>
+      <td>ant</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>pænt</td>
+      <td>['gasp']</td>
+      <td></td>
+      <td>a short labored intake of breath with the mouth open口腔开放，呼吸短促</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inspiration, intake, breathing in, aspiration, inhalation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pant</th>
+      <td>ant</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>pænt</td>
+      <td>['pair of trousers', 'trousers']</td>
+      <td></td>
+      <td>(usually in the plural) a garment extending from the waist to the knee or ankle, covering each leg separately（通常为复数形式）从腰部延伸到膝盖或脚踝的衣服，分别覆盖每条腿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[garment]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>pant</th>
+      <td>ant</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>pænt</td>
+      <td></td>
+      <td></td>
+      <td>the noise made by a short puff of steam (as from an engine)一小撮蒸汽产生的噪音（来自发动机）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rant</th>
+      <td>ant</td>
+      <td>2.87</td>
+      <td>ver</td>
+      <td>rænt</td>
+      <td>['jabber', 'mouth off', 'rabbit on', 'rave', 'spout']</td>
+      <td></td>
+      <td>talk in a noisy, excited, or declamatory manner以吵闹，兴奋或宣言的方式说话</td>
+      <td></td>
+      <td>[ranter, ranting]</td>
+      <td></td>
+      <td>[mouth, speak, talk, utter, verbalise, verbalize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rant</th>
+      <td>ant</td>
+      <td>2.87</td>
+      <td>nou</td>
+      <td>rænt</td>
+      <td>['blah', 'bombast', 'claptrap', 'fustian']</td>
+      <td></td>
+      <td>pompous or pretentious talk or writing夸张或自命不凡的谈话或写作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grandiosity, magniloquence, ornateness, rhetoric, grandiloquence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rant</th>
+      <td>ant</td>
+      <td>2.87</td>
+      <td>nou</td>
+      <td>rænt</td>
+      <td>['harangue', 'ranting']</td>
+      <td></td>
+      <td>a loud bombastic declamation expressed with strong emotion用强烈的情感表达出来的夸张夸张的声明</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[declamation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kant</th>
+      <td>ant</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>kænt</td>
+      <td>['immanuel kant']</td>
+      <td></td>
+      <td>influential German idealist philosopher (1724-1804)有影响力的德国唯心主义哲学家（1724-1804）</td>
+      <td></td>
+      <td>[kantian]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

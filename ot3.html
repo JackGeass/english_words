@@ -1,0 +1,1085 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['not', 'lot', 'hot', 'pot', 'rot', 'dot', 'cot', 'bot', 'jot', 'tot', 'mot', 'sot', 'otc']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>not</th>
+      <td>ot</td>
+      <td>6.79</td>
+      <td>adv</td>
+      <td>nɑt</td>
+      <td>['non']</td>
+      <td></td>
+      <td>negation of a word or group of words否定一个词或一组词</td>
+      <td>he does not speak French他不会说法语she is not going她不会去they are not friends他们不是朋友not many不多not much不多not at all一点也不</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>ver</td>
+      <td>lɑt</td>
+      <td>['administer', 'allot', 'deal', 'deal out', 'dish out', 'dispense', 'distribute', 'dole out', 'mete out', 'parcel out', 'shell out']</td>
+      <td></td>
+      <td>administer or bestow, as in small portions管理或赐予，如小部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>ver</td>
+      <td>lɑt</td>
+      <td></td>
+      <td></td>
+      <td>divide into lots, as of land, for example例如，分为土地等</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[split up, carve up, dissever, divide, separate, split]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>nou</td>
+      <td>lɑt</td>
+      <td>['band', 'circle', 'set']</td>
+      <td></td>
+      <td>an unofficial association of people or groups人或团体的非官方协会</td>
+      <td>they were an angry lot他们很生气</td>
+      <td></td>
+      <td></td>
+      <td>[social group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>nou</td>
+      <td>lɑt</td>
+      <td>['draw']</td>
+      <td></td>
+      <td>anything (straws or pebbles etc.) taken or chosen at random随意拍摄或选择的任何东西（吸管或鹅卵石等）</td>
+      <td>they drew lots for it他们抽出了很多钱</td>
+      <td></td>
+      <td></td>
+      <td>[object, physical object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>nou</td>
+      <td>lɑt</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td>a lot of money很多钱</td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite quantity, large indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>nou</td>
+      <td>lɑt</td>
+      <td>['bunch', 'caboodle']</td>
+      <td></td>
+      <td>any collection in its entirety任何完整的集合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[collection, aggregation, assemblage, accumulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>nou</td>
+      <td>lɑt</td>
+      <td>['circumstances', 'destiny', 'fate', 'fortune', 'luck', 'portion']</td>
+      <td></td>
+      <td>your overall circumstances or condition in life (including everything that happens to you)你的整体情况或生活状况（包括发生在你身上的一切）</td>
+      <td>has a happy lot很开心</td>
+      <td></td>
+      <td></td>
+      <td>[condition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>nou</td>
+      <td>lɑt</td>
+      <td></td>
+      <td></td>
+      <td>a parcel of land having fixed boundaries一块有固定边界的土地</td>
+      <td>he bought a lot on the lake他在湖上买了很多东西</td>
+      <td></td>
+      <td></td>
+      <td>[piece of ground, tract, piece of land, parcel, parcel of land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lot</th>
+      <td>ot</td>
+      <td>5.71</td>
+      <td>nou</td>
+      <td>lɑt</td>
+      <td></td>
+      <td></td>
+      <td>(Old Testament) nephew of Abraham; God destroyed Sodom and Gomorrah but chose to spare Lot and his family who were told to flee without looking back at the destruction（旧约）亚伯拉罕的侄子;上帝摧毁了所多玛和蛾摩拉，但选择了罗得和他的家人，他们被告知要逃离而不回头看破坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>['spicy'], similarTo:['tasty']</td>
+      <td></td>
+      <td>producing a burning sensation on the taste nerves在味觉神经上产生灼烧感</td>
+      <td>hot salsa辣莎莎jalapeno peppers are very hot墨西哥胡椒很辣</td>
+      <td>[hotness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>['raging'], similarTo:['violent']</td>
+      <td></td>
+      <td>characterized by violent and forceful activity or movement; very intense以暴力和有力的活动或运动为特征;非常激烈</td>
+      <td>the fighting became hot and heavy战斗变得炙手可热a hot engagement一个热门的订婚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>['live'], similarTo:['charged']</td>
+      <td></td>
+      <td>charged or energized with electricity充电或通电</td>
+      <td>a hot wire热线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>['red-hot'], similarTo:['new']</td>
+      <td></td>
+      <td>newest or most recent最新的或最近的</td>
+      <td>news hot off the press新闻热点新闻red-hot information炽热的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>['blistering', 'red-hot'], similarTo:['fast']</td>
+      <td></td>
+      <td>very fast; capable of quick response and great speed非常快;能够快速响应和快速</td>
+      <td>a hot sports car一辆热门跑车got off to a hot start开始了一个热门的开始in hot pursuit紧追不舍a red-hot line drive一个红热线驱动器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['warm']</td>
+      <td></td>
+      <td>(color) bold and intense（颜色）大胆而激烈</td>
+      <td>hot pink亮粉色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['sizzling', 'flaming', 'fiery', 'torrid', 'heated', 'red-hot', 'white-hot', 'sultry', 'sensual'], alos:['passionate']</td>
+      <td>[cold]</td>
+      <td>extended meanings; especially of psychological heat; marked by intensity or vehemence especially of passion or enthusiasm扩展意义;尤其是心理热;强烈或激烈，特别是激情或热情</td>
+      <td>a hot temper脾气暴躁a hot topic一个热门话题a hot new book一本热门的新书a hot love affair热爱的事情a hot argument一个热门论点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['lucky']</td>
+      <td></td>
+      <td>having or bringing unusually good luck拥有或带来异乎寻常的好运</td>
+      <td>hot at craps掷骰子the dice are hot tonight骰子今晚很热</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['radioactive']</td>
+      <td></td>
+      <td>having or dealing with dangerously high levels of radioactivity拥有或处理危险的高放射性水平</td>
+      <td>hot fuel rods热油棒a hot laboratory一个热实验室</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['eager']</td>
+      <td></td>
+      <td>having or showing great eagerness or enthusiasm拥有或表现出极大的热情或热情</td>
+      <td>hot for travel热门旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['active']</td>
+      <td></td>
+      <td>marked by excited activity兴奋的活动标志着</td>
+      <td>a hot week on the stock market股市上涨了一周</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['fresh']</td>
+      <td></td>
+      <td>newly made新制作的</td>
+      <td>a hot scent一股火辣的气味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['close', 'near', 'nigh']</td>
+      <td></td>
+      <td>of a seeker; very near to the object sought寻求者;非常接近寻求的对象</td>
+      <td>you are hot你很热</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['skilled']</td>
+      <td></td>
+      <td>performed or performing with unusually great skill and daring and energy以非凡的技巧，大胆和精力表演或表演</td>
+      <td>a hot drummer一个热门的鼓手he's hot tonight他今晚很热</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['illegal']</td>
+      <td></td>
+      <td>recently stolen or smuggled最近被盗或走私</td>
+      <td>hot merchandise热门商品a hot car一辆热车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['sexy']</td>
+      <td></td>
+      <td>sexually excited or exciting性兴奋或兴奋</td>
+      <td>was hot for her对她来说很热hot pants热裤</td>
+      <td>[hotness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['white-hot', 'baking', 'baking hot', 'blistering', 'blistery', 'calefacient', 'calefactive', 'calefactory', 'calorifacient', 'calorific', 'fervent', 'fervid', 'fiery', 'heatable', 'heated', 'heated up', 'het', 'het up', 'hottish', 'igneous', 'overheated', 'red-hot', 'scorching', 'sizzling', 'stifling', 'sulfurous', 'sulphurous', 'sultry', 'sweltering', 'sweltry', 'thermal', 'torrid', 'tropic', 'tropical', 'warming', 'white'], alos:['warm']</td>
+      <td>[cold]</td>
+      <td>used of physical heat; having a high or higher than desirable temperature or giving off heat or feeling or causing a sensation of heat or burning用于物理热量;具有高于或高于所需温度或发热或感觉或引起热或燃烧的感觉</td>
+      <td>hot stove热炉hot water热水a hot August day炎热的八月天a hot stuffy room一个炎热的闷热的房间she's hot and tired她又热又累a hot forehead一个热的额头</td>
+      <td>[hotness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['good']</td>
+      <td></td>
+      <td>very good; often used in the negative很好;常用于否定</td>
+      <td>he's hot at math but not so hot at history他热衷于数学，但历史并不热</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['popular']</td>
+      <td></td>
+      <td>very popular or successful非常受欢迎或成功</td>
+      <td>one of the hot young talents一个热门的年轻人才cabbage patch dolls were hot last season上个季节白菜补丁娃娃很热</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['unpleasant']</td>
+      <td></td>
+      <td>very unpleasant or even dangerous非常不愉快甚至危险</td>
+      <td>make it hot for him让它变得热辣in the hot seat在炎热的座位上in hot water在热水中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hot</th>
+      <td>ot</td>
+      <td>5.27</td>
+      <td>adj</td>
+      <td>hɑt</td>
+      <td>, similarTo:['wanted']</td>
+      <td></td>
+      <td>wanted by the police被警方通缉</td>
+      <td>a hot suspect一个嫌疑人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>ver</td>
+      <td>pɑt</td>
+      <td></td>
+      <td></td>
+      <td>plant in a pot植物在一个锅里</td>
+      <td>He potted the palm他把手掌盆栽了</td>
+      <td></td>
+      <td></td>
+      <td>[plant, implant, engraft, imbed, embed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['bay window', 'corporation', 'potbelly', 'tummy']</td>
+      <td></td>
+      <td>slang for a paunch俚语俚语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[paunch, belly]</td>
+      <td>[argot, cant, jargon, lingo, patois, slang, vernacular]</td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['can', 'commode', 'crapper', 'potty', 'stool', 'throne', 'toilet']</td>
+      <td></td>
+      <td>a plumbing fixture for defecation and urination排便和排尿的卫生设备</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plumbing fixture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['potentiometer']</td>
+      <td></td>
+      <td>a resistor with three terminals, the third being an adjustable center terminal; used to adjust voltages in radios and TV sets一个带三个端子的电阻，第三个是可调中心端子;用来调整收音机和电视机的电压</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[potential divider, voltage divider]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['flowerpot']</td>
+      <td></td>
+      <td>a container in which plants are cultivated栽培植物的容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['dope', 'gage', 'grass', 'green goddess', 'locoweed', 'mary jane', 'sens', 'sess', 'skunk', 'smoke', 'weed']</td>
+      <td></td>
+      <td>street names for marijuana大麻的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[marihuana, cannabis, marijuana, ganja]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['potful']</td>
+      <td></td>
+      <td>the quantity contained in a pot锅中的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td>['jackpot', 'kitty']</td>
+      <td></td>
+      <td>the cumulative amount involved in a game (such as poker)游戏中涉及的累积金额（如扑克）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stakes, wager, stake, bet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pot</th>
+      <td>ot</td>
+      <td>4.42</td>
+      <td>nou</td>
+      <td>pɑt</td>
+      <td></td>
+      <td></td>
+      <td>metal or earthenware cooking vessel that is usually round and deep; often has a handle and lid金属或陶器烹饪容器，通常是圆形和深的;经常有把手和盖子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel, cooking utensil, cookware]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rot</th>
+      <td>ot</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>rɑt</td>
+      <td>['waste']</td>
+      <td></td>
+      <td>become physically weaker身体虚弱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[degenerate, devolve, deteriorate, drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rot</th>
+      <td>ot</td>
+      <td>4.03</td>
+      <td>ver</td>
+      <td>rɑt</td>
+      <td>['decompose', 'molder', 'moulder']</td>
+      <td></td>
+      <td>break down分解</td>
+      <td></td>
+      <td>[rotting]</td>
+      <td></td>
+      <td>[decay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rot</th>
+      <td>ot</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>rɑt</td>
+      <td>['buncombe', 'bunk', 'bunkum', 'guff', 'hogwash']</td>
+      <td></td>
+      <td>unacceptable behavior (especially ludicrously false statements)不可接受的行为（特别是荒谬的虚假陈述）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drivel, garbage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rot</th>
+      <td>ot</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>rɑt</td>
+      <td>['putrefaction']</td>
+      <td></td>
+      <td>a state of decay usually accompanied by an offensive odor腐烂状态通常伴有令人不快的气味</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[decay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rot</th>
+      <td>ot</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>rɑt</td>
+      <td>['breakdown', 'decomposition', 'putrefaction', 'rotting']</td>
+      <td></td>
+      <td>(biology) the process of decay caused by bacterial or fungal action（生物学）由细菌或真菌作用引起的腐烂过程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[decay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>ver</td>
+      <td>dɑt</td>
+      <td>['constellate', 'stud']</td>
+      <td></td>
+      <td>scatter or intersperse like dots or studs像点或螺柱一样散布或散布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[extend, continue, cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>ver</td>
+      <td>dɑt</td>
+      <td>['disperse', 'dust', 'scatter', 'sprinkle']</td>
+      <td></td>
+      <td>distribute loosely松散地散布</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[discharge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>ver</td>
+      <td>dɑt</td>
+      <td></td>
+      <td></td>
+      <td>make a dot or dots做一个点或点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[write]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>ver</td>
+      <td>dɑt</td>
+      <td></td>
+      <td></td>
+      <td>mark with a dot用点标记</td>
+      <td>dot your `i's点点你的我</td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>nou</td>
+      <td>dɑt</td>
+      <td>['acid', 'back breaker', 'battery-acid', 'dose', 'elvis', 'loony toons', 'lucy in the sky with diamonds', 'pane', 'superman', 'window pane', 'zen']</td>
+      <td></td>
+      <td>street name for lysergic acid diethylamide麦角酰二乙胺的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lsd, lysergic acid diethylamide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>nou</td>
+      <td>dɑt</td>
+      <td>['dit']</td>
+      <td></td>
+      <td>the shorter of the two telegraphic signals used in Morse code摩尔斯电码中使用的两个电报信号中较短的一个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[telegraphic signal, radiotelegraphic signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>nou</td>
+      <td>dɑt</td>
+      <td>['point']</td>
+      <td></td>
+      <td>a very small circular shape一个非常小的圆形</td>
+      <td>draw lines between the dots在点之间画线</td>
+      <td></td>
+      <td></td>
+      <td>[saucer, disk, disc]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dot</th>
+      <td>ot</td>
+      <td>3.89</td>
+      <td>nou</td>
+      <td>dɑt</td>
+      <td>['department of transportation', 'transportation']</td>
+      <td></td>
+      <td>the United States federal department that institutes and coordinates national transportation programs; created in 1966美国联邦部门负责制定和协调国家运输计划;创建于1966年</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[executive department]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cot</th>
+      <td>ot</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>kɑt</td>
+      <td>['crib']</td>
+      <td></td>
+      <td>baby bed with high sides made of slats婴儿床高边做的板条</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[baby's bed, baby bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cot</th>
+      <td>ot</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>kɑt</td>
+      <td>['fingerstall']</td>
+      <td></td>
+      <td>a sheath worn to protect a finger用来保护手指的护套</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sheath]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cot</th>
+      <td>ot</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>kɑt</td>
+      <td>['camp bed']</td>
+      <td></td>
+      <td>a small bed that folds up for storage or transport一张折叠起来储存或运输的小床</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bot</th>
+      <td>ot</td>
+      <td>3.00</td>
+      <td>nou</td>
+      <td>bɑt</td>
+      <td></td>
+      <td></td>
+      <td>botfly larva; typically develops inside the body of a horse or sheep or humanbotfly幼虫;通常在马或羊或人体内发育</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[larva]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jot</th>
+      <td>ot</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>dʒɑt</td>
+      <td>['jot down']</td>
+      <td></td>
+      <td>write briefly or hurriedly; write a short note of简要地或急忙写;写一个简短的说明</td>
+      <td></td>
+      <td>[jotter, jotting]</td>
+      <td></td>
+      <td>[write]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jot</th>
+      <td>ot</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>dʒɑt</td>
+      <td>['hint', 'mite', 'pinch', 'soupcon', 'speck', 'tinge', 'touch']</td>
+      <td></td>
+      <td>a slight but appreciable amount一个轻微但可观的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jot</th>
+      <td>ot</td>
+      <td>2.92</td>
+      <td>nou</td>
+      <td>dʒɑt</td>
+      <td>['jotting']</td>
+      <td></td>
+      <td>a brief (and hurriedly handwritten) note一个简短的（并且匆匆手写的）笔记</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[note]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tot</th>
+      <td>ot</td>
+      <td>2.91</td>
+      <td>ver</td>
+      <td>tɑt</td>
+      <td>['add', 'add together', 'add up', 'sum', 'sum up', 'summate', 'tally', 'tot up', 'total', 'tote up']</td>
+      <td></td>
+      <td>determine the sum of确定总和</td>
+      <td></td>
+      <td></td>
+      <td>[add, add together]</td>
+      <td>[count, enumerate, number, numerate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tot</th>
+      <td>ot</td>
+      <td>2.91</td>
+      <td>nou</td>
+      <td>tɑt</td>
+      <td>['bambino', 'toddler', 'yearling']</td>
+      <td></td>
+      <td>a young child一个小孩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kid, minor, nestling, nipper, shaver, small fry, tiddler, tike, tyke, youngster, child, fry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tot</th>
+      <td>ot</td>
+      <td>2.91</td>
+      <td>nou</td>
+      <td>tɑt</td>
+      <td></td>
+      <td></td>
+      <td>a small amount (especially of a drink)少量（特别是饮料）</td>
+      <td>a tot of rum一堆朗姆酒</td>
+      <td></td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mot</th>
+      <td>ot</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>moʊ</td>
+      <td>['bon mot']</td>
+      <td></td>
+      <td>a clever remark一个聪明的话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wittiness, witticism, humor, humour, wit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mot</th>
+      <td>ot</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>moʊ</td>
+      <td>['ministry of transportation test', 'mot test']</td>
+      <td></td>
+      <td>a compulsory annual test of older motor vehicles for safety and exhaust fumes对安全和废气的旧机动车进行强制性年度测试</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trial, test, run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sot</th>
+      <td>ot</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>sɑt</td>
+      <td>['drunk', 'drunkard', 'inebriate', 'rummy', 'wino']</td>
+      <td></td>
+      <td>a chronic drinker慢性饮酒者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[toper, drinker, imbiber, juicer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>otc</th>
+      <td>ot</td>
+      <td>1.73</td>
+      <td>adj</td>
+      <td></td>
+      <td>['over-the-counter'], similarTo:['unlisted']</td>
+      <td></td>
+      <td>(of securities) not traded on a stock exchange（证券）不在证券交易所交易</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

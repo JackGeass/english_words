@@ -1,0 +1,260 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['roads', 'broad', 'loads', 'toady']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>roads</th>
+      <td>oad</td>
+      <td>4.10</td>
+      <td>nou</td>
+      <td>roʊdz</td>
+      <td>['roadstead']</td>
+      <td></td>
+      <td>a partly sheltered anchorage一个部分遮蔽的锚地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[anchorage, anchorage ground]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>nou</td>
+      <td>brɔd</td>
+      <td></td>
+      <td></td>
+      <td>slang term for a woman一个女人的俚语</td>
+      <td>a broad is a woman who can throw a mean punch一个广泛的女人谁可以抛出一个平均拳</td>
+      <td></td>
+      <td></td>
+      <td>[woman, adult female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>['large-minded', 'liberal', 'tolerant'], similarTo:['broad-minded']</td>
+      <td></td>
+      <td>showing or characterized by broad-mindedness以宽广的胸襟展示或表征</td>
+      <td>a broad political stance广泛的政治立场generous and broad sympathies慷慨和广泛的同情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>['wide'], similarTo:['wide-screen', 'beamy', "bird's-eye", 'broad-brimmed', 'deep', 'fanlike', 'panoramic', 'sweeping'], alos:['thick', 'comprehensive']</td>
+      <td></td>
+      <td>having great (or a certain) extent from one side to the other从一边到另一边有很大（或某种程度）的范围</td>
+      <td>a river two miles broad一条两英里宽的河流broad shoulders宽阔的肩膀a broad river一条宽阔的河流</td>
+      <td>[broadness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>['unspecific'], similarTo:['general']</td>
+      <td></td>
+      <td>not detailed or specific不详细或具体</td>
+      <td>a broad rule广泛的规则the broad outlines of the plan该计划的大纲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>['unsubtle'], similarTo:['clear']</td>
+      <td></td>
+      <td>lacking subtlety; obvious缺乏微妙;明显</td>
+      <td>gave us a broad hint that it was time to leave给了我们一个广泛的暗示，是时候离开了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>['full'], similarTo:['high']</td>
+      <td></td>
+      <td>being at a peak or culminating point处于巅峰或最高点</td>
+      <td>broad daylight光天化日</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>['across-the-board', 'all-embracing', 'all-encompassing', 'all-inclusive', 'blanket', 'encompassing', 'extensive', 'panoptic', 'wide'], similarTo:['comprehensive']</td>
+      <td></td>
+      <td>broad in scope or content范围或内容广泛</td>
+      <td>an invention with broad applications具有广泛应用的发明</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>['spacious', 'wide'], similarTo:['large', 'big']</td>
+      <td></td>
+      <td>very large in expanse or scope非常大的范围或范围</td>
+      <td>a broad lawn宽阔的草坪</td>
+      <td>[broadness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>broad</th>
+      <td>oad</td>
+      <td>4.02</td>
+      <td>adj</td>
+      <td>brɔd</td>
+      <td>, similarTo:['noticeable']</td>
+      <td></td>
+      <td>(of speech) heavily and noticeably regional（言论）严重且明显地区域化</td>
+      <td>a broad southern accent宽阔的南方口音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loads</th>
+      <td>oad</td>
+      <td>4.00</td>
+      <td>nou</td>
+      <td>loʊdz</td>
+      <td>['dozens', 'gobs', 'heaps', 'lashings', 'lots', 'oodles', 'piles', 'rafts', 'scads', 'scores', 'slews', 'stacks', 'tons', 'wads']</td>
+      <td></td>
+      <td>a large number or amount大量或数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toady</th>
+      <td>oad</td>
+      <td>2.66</td>
+      <td>ver</td>
+      <td>'toʊdi</td>
+      <td>['bootlick', 'fawn', 'kotow', 'kowtow', 'suck up', 'truckle']</td>
+      <td></td>
+      <td>try to gain favor by cringing or flattering试图通过畏缩或讨人喜欢来获得青睐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blandish, flatter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toady</th>
+      <td>oad</td>
+      <td>2.66</td>
+      <td>nou</td>
+      <td>'toʊdi</td>
+      <td>['ass-kisser', 'crawler', 'lackey', 'sycophant']</td>
+      <td></td>
+      <td>a person who tries to please someone in order to gain a personal advantage试图取悦某人以获得个人利益的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adulator, flatterer]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

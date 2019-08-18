@@ -1,0 +1,710 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['dog', 'log', 'fog', 'hog', 'jog', 'bog', 'cog', 'nog', 'wog', 'tog']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>ver</td>
+      <td>dɔɡ</td>
+      <td>['chase', 'chase after', 'give chase', 'go after', 'tag', 'tail', 'track', 'trail']</td>
+      <td></td>
+      <td>go after with the intent to catch追求意图捕捉</td>
+      <td>the dog chased the rabbit狗追着兔子</td>
+      <td></td>
+      <td></td>
+      <td>[follow, pursue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>nou</td>
+      <td>dɔɡ</td>
+      <td>['frank', 'frankfurter', 'hot dog', 'hotdog', 'weenie', 'wiener', 'wienerwurst']</td>
+      <td></td>
+      <td>a smooth-textured sausage of minced beef or pork usually smoked; often served on a bread roll一种质地光滑的碎牛肉或猪肉香肠，通常是熏制的;经常在面包卷上吃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sausage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>nou</td>
+      <td>dɔɡ</td>
+      <td>['click', 'detent', 'pawl']</td>
+      <td></td>
+      <td>a hinged catch that fits into a notch of a ratchet to move a wheel forward or prevent it from moving backward一个铰接的锁扣，适合棘轮的一个凹口，向前移动一个轮子或阻止它向后移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stop, catch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>nou</td>
+      <td>dɔɡ</td>
+      <td>['blackguard', 'bounder', 'cad', 'heel', 'hound']</td>
+      <td></td>
+      <td>someone who is morally reprehensible一个在道德上应受谴责的人</td>
+      <td>you dirty dog你这只脏狗</td>
+      <td></td>
+      <td></td>
+      <td>[villain, scoundrel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>nou</td>
+      <td>dɔɡ</td>
+      <td>['frump']</td>
+      <td></td>
+      <td>a dull unattractive unpleasant girl or woman一个沉闷没有吸引力的不愉快的女孩或女人</td>
+      <td>she's a real dog她是一只真正的狗</td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable woman, unpleasant woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>nou</td>
+      <td>dɔɡ</td>
+      <td>['canis familiaris', 'domestic dog']</td>
+      <td></td>
+      <td>a member of the genus Canis (probably descended from the common wolf) that has been domesticated by man since prehistoric times; occurs in many breeds自史前时代以来被人类驯化的犬科动物（可能是普通狼的后裔）的成员;发生在许多品种</td>
+      <td>the dog barked all night狗整晚都在吠叫</td>
+      <td></td>
+      <td></td>
+      <td>[canine, canid, domestic animal, domesticated animal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>nou</td>
+      <td>dɔɡ</td>
+      <td>['andiron', 'dog-iron', 'firedog']</td>
+      <td></td>
+      <td>metal supports for logs in a fireplace金属支撑壁炉中的原木</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[support]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dog</th>
+      <td>og</td>
+      <td>5.34</td>
+      <td>nou</td>
+      <td>dɔɡ</td>
+      <td></td>
+      <td></td>
+      <td>informal term for a man一个男人的非正式用语</td>
+      <td>you lucky dog你是幸运的狗</td>
+      <td></td>
+      <td></td>
+      <td>[blighter, cuss, chap, fella, feller, fellow, gent, lad, bloke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>log</th>
+      <td>og</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>lɔɡ</td>
+      <td>['lumber']</td>
+      <td></td>
+      <td>cut lumber, as in woods and forests切割木材，如在树林和森林中</td>
+      <td></td>
+      <td>[logger, logging]</td>
+      <td></td>
+      <td>[fell, cut down, strike down, drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>log</th>
+      <td>og</td>
+      <td>3.93</td>
+      <td>ver</td>
+      <td>lɔɡ</td>
+      <td>, alos:['log up']</td>
+      <td></td>
+      <td>enter into a log, as on ships and planes进入日志，如在船只和飞机上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[record, enter, put down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>log</th>
+      <td>og</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>lɔɡ</td>
+      <td>['logarithm']</td>
+      <td></td>
+      <td>the exponent required to produce a given number产生给定数字所需的指数</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[exponent, index, power]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>log</th>
+      <td>og</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>lɔɡ</td>
+      <td></td>
+      <td></td>
+      <td>a segment of the trunk of a tree when stripped of branches剥去树枝时树干的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>log</th>
+      <td>og</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>lɔɡ</td>
+      <td></td>
+      <td></td>
+      <td>a written record of events on a voyage (of a ship or plane)航行（船舶或飞机）事件的书面记录</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[written account, written record]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>log</th>
+      <td>og</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>lɔɡ</td>
+      <td></td>
+      <td></td>
+      <td>a written record of messages sent or received发送或接收的消息的书面记录</td>
+      <td>they kept a log of all transmission by the radio station他们记录了广播电台的所有传输an email log电子邮件日志</td>
+      <td></td>
+      <td></td>
+      <td>[written account, written record]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>log</th>
+      <td>og</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>lɔɡ</td>
+      <td></td>
+      <td></td>
+      <td>measuring instrument that consists of a float that trails from a ship by a knotted line in order to measure the ship's speed through the water测量仪器，包括一个通过打结线从船上航行的浮子，以测量船舶在水中的速度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[measuring system, measuring instrument, measuring device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fog</th>
+      <td>og</td>
+      <td>3.88</td>
+      <td>ver</td>
+      <td>fɑɡ</td>
+      <td>['becloud', 'befog', 'cloud', 'haze over', 'mist', 'obnubilate', 'obscure']</td>
+      <td></td>
+      <td>make less visible or unclear使不太明显或不清楚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[conceal, hide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fog</th>
+      <td>og</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>fɑɡ</td>
+      <td>['daze', 'haze']</td>
+      <td></td>
+      <td>confusion characterized by lack of clarity混淆的特点是缺乏清晰度</td>
+      <td></td>
+      <td>[foggy]</td>
+      <td></td>
+      <td>[disarray, muddiness, confusion, confusedness, mental confusion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fog</th>
+      <td>og</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>fɑɡ</td>
+      <td>['fogginess', 'murk', 'murkiness']</td>
+      <td></td>
+      <td>an atmosphere in which visibility is reduced because of a cloud of some substance由于某种物质的云，能见度降低的气氛</td>
+      <td></td>
+      <td>[foggy]</td>
+      <td></td>
+      <td>[atmosphere, atmospheric state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fog</th>
+      <td>og</td>
+      <td>3.88</td>
+      <td>nou</td>
+      <td>fɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>droplets of water vapor suspended in the air near the ground水蒸气悬浮在地面附近的空气中</td>
+      <td></td>
+      <td>[foggy]</td>
+      <td></td>
+      <td>[aerosol]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hog</th>
+      <td>og</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>hɔɡ</td>
+      <td></td>
+      <td></td>
+      <td>take greedily; take more than one's share贪婪地占一个以上的份额</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[snaffle, grab, snap up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hog</th>
+      <td>og</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɔɡ</td>
+      <td>['grunter', 'pig', 'squealer', 'sus scrofa']</td>
+      <td></td>
+      <td>domestic swine家养猪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hog</th>
+      <td>og</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɔɡ</td>
+      <td>['pig']</td>
+      <td></td>
+      <td>a person regarded as greedy and pig-like被视为贪婪和猪般的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[selfish person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hog</th>
+      <td>og</td>
+      <td>3.53</td>
+      <td>nou</td>
+      <td>hɔɡ</td>
+      <td>['hogg', 'hogget']</td>
+      <td></td>
+      <td>a sheep up to the age of one year; one yet to be sheared一只绵羊，一岁以下;一个尚未被剪切的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lamb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>dʒɑɡ</td>
+      <td>['clip', 'trot']</td>
+      <td></td>
+      <td>run at a moderately swift pace以适度的速度跑步</td>
+      <td></td>
+      <td>[jogging, jogger]</td>
+      <td></td>
+      <td>[run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>dʒɑɡ</td>
+      <td>['even up', 'square up']</td>
+      <td></td>
+      <td>even up the edges of a stack of paper, in printing在打印时，甚至在纸叠的边缘</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[square]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>dʒɑɡ</td>
+      <td>['ramble', 'ramble on']</td>
+      <td></td>
+      <td>continue talking or writing in a desultory manner继续以一种无聊的方式说话或写作</td>
+      <td>This novel rambles on and jogs这部小说摇摇欲坠，慢跑</td>
+      <td></td>
+      <td></td>
+      <td>[continue, carry on, go on, proceed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>dʒɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>give a slight push to轻轻推动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nudge, poke at, prod]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>dʒɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>run for exercise跑步锻炼</td>
+      <td>jog along the canal沿着运河慢跑</td>
+      <td>[jogger, jogging]</td>
+      <td></td>
+      <td>[run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>ver</td>
+      <td>dʒɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>stimulate to remember刺激记住</td>
+      <td>jog my memory慢慢记住我的记忆</td>
+      <td></td>
+      <td></td>
+      <td>[stimulate, provoke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>dʒɑɡ</td>
+      <td>['lope', 'trot']</td>
+      <td></td>
+      <td>a slow pace of running跑步节奏缓慢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[travel, locomotion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>dʒɑɡ</td>
+      <td>['nudge']</td>
+      <td></td>
+      <td>a slight push or shake轻轻推动或摇晃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pushing, push]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jog</th>
+      <td>og</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>dʒɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>a sharp change in direction方向发生急剧变化</td>
+      <td>there was a jog in the road路上有一个慢跑</td>
+      <td></td>
+      <td></td>
+      <td>[angularity, angular shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bog</th>
+      <td>og</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>bɑɡ</td>
+      <td>['bog down']</td>
+      <td></td>
+      <td>get stuck while doing something在做某事时陷入困境</td>
+      <td>She bogged down many times while she wrote her dissertation在写论文时，她陷入了很多次陷入困境</td>
+      <td></td>
+      <td></td>
+      <td>[stop, break, break off, discontinue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bog</th>
+      <td>og</td>
+      <td>3.31</td>
+      <td>ver</td>
+      <td>bɑɡ</td>
+      <td>['bog down']</td>
+      <td></td>
+      <td>cause to slow down or get stuck导致减速或卡住</td>
+      <td>The vote would bog down the house投票将使房子陷入困境</td>
+      <td></td>
+      <td></td>
+      <td>[slow, slow up, slow down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bog</th>
+      <td>og</td>
+      <td>3.31</td>
+      <td>nou</td>
+      <td>bɑɡ</td>
+      <td>['peat bog']</td>
+      <td></td>
+      <td>wet spongy ground of decomposing vegetation; has poorer drainage than a swamp; soil is unfit for cultivation but can be cut and dried and used for fuel潮湿的海绵状地面分解植被;排水比沼泽更差;土壤不适合种植，但可以切割和干燥，用作燃料</td>
+      <td></td>
+      <td>[boggy]</td>
+      <td></td>
+      <td>[wetland]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cog</th>
+      <td>og</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>kɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>join pieces of wood with cogs用嵌齿轮连接木头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[join]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cog</th>
+      <td>og</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>kɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>roll steel ingots轧钢锭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[roll out, roll]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cog</th>
+      <td>og</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>kɑɡ</td>
+      <td>['sprocket']</td>
+      <td></td>
+      <td>tooth on the rim of gear wheel齿轮边缘上的齿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tooth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cog</th>
+      <td>og</td>
+      <td>2.83</td>
+      <td>nou</td>
+      <td>kɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>a subordinate who performs an important but routine function执行重要但常规功能的下属</td>
+      <td>he was a small cog in a large machine他是一台大型机器的小齿轮</td>
+      <td></td>
+      <td></td>
+      <td>[subordinate, foot soldier, underling, subsidiary]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nog</th>
+      <td>og</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>nɑɡ</td>
+      <td>['peg']</td>
+      <td></td>
+      <td>a wooden pin pushed or driven into a surface一个木针被推或推入表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nog</th>
+      <td>og</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>nɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>a wooden block built into a masonry wall so that joinery structure can be nailed to it砌成砖墙的木块，可以将细木工结构钉在上面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wog</th>
+      <td>og</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(offensive British slang) term used by the British to refer to people of color from Africa or Asia（英国俚语）英国人用来指非洲或亚洲有色人种的术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[person of color, person of colour]</td>
+      <td>[lingo, patois, slang, vernacular, cant, depreciation, derogation, disparagement, jargon, argot]</td>
+    </tr>
+    <tr>
+      <th>tog</th>
+      <td>og</td>
+      <td>1.97</td>
+      <td>ver</td>
+      <td>tɑɡ</td>
+      <td>['apparel', 'clothe', 'dress', 'enclothe', 'fit out', 'garb', 'garment', 'habilitate', 'raiment']</td>
+      <td></td>
+      <td>provide with clothes or put clothes on提供衣服或穿上衣服</td>
+      <td></td>
+      <td></td>
+      <td>[get dressed, dress]</td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

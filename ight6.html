@@ -1,0 +1,890 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['flight', 'bright', 'mighty', 'knight', 'slight', 'sights', 'fright', 'wright', 'plight', 'tights', 'alight', 'aright', 'blight']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>flaɪt</td>
+      <td>['fledge']</td>
+      <td></td>
+      <td>decorate with feathers用羽毛装饰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adorn, beautify, decorate, embellish, grace, ornament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>flaɪt</td>
+      <td></td>
+      <td></td>
+      <td>fly in a flock飞在一群</td>
+      <td>flighting wild geese飞行的野鹅</td>
+      <td></td>
+      <td></td>
+      <td>[fly, wing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>flaɪt</td>
+      <td></td>
+      <td></td>
+      <td>shoot a bird in flight在飞行中射一只鸟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shoot, pip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td>['flying']</td>
+      <td></td>
+      <td>an instance of traveling by air乘飞机旅行的一个例子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aviation, air, air travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td>['flight of stairs', 'flight of steps']</td>
+      <td></td>
+      <td>a stairway (set of steps) between one floor or landing and the next一层楼或一层楼之间的楼梯（一套台阶）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stairway, staircase]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td>['trajectory']</td>
+      <td></td>
+      <td>the path followed by an object moving through space物体在空间中移动的路径</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanical phenomenon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td>['escape']</td>
+      <td></td>
+      <td>the act of escaping physically逃避身体的行为</td>
+      <td>his flight was an indication of his guilt他的航班表明他有罪</td>
+      <td>[flee]</td>
+      <td></td>
+      <td>[running away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td></td>
+      <td></td>
+      <td>a flock of flying birds一群飞翔的鸟儿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td></td>
+      <td></td>
+      <td>a formation of aircraft in flight在飞行中形成飞机</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td></td>
+      <td></td>
+      <td>an air force unit smaller than a squadron比中队小的空军部队</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[air unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td></td>
+      <td></td>
+      <td>a scheduled trip by plane between designated airports指定机场之间的飞机预定行程</td>
+      <td>I took the noon flight to Chicago我乘中午飞往芝加哥</td>
+      <td></td>
+      <td></td>
+      <td>[trip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flight</th>
+      <td>ight</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>flaɪt</td>
+      <td></td>
+      <td></td>
+      <td>passing above and beyond ordinary bounds超越普通界限</td>
+      <td>a flight of fancy一阵幻想flights of rhetoric修辞的飞行flights of imagination想象力的飞行</td>
+      <td></td>
+      <td></td>
+      <td>[creativeness, creative thinking, creativity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adv</td>
+      <td>braɪt</td>
+      <td>['brightly', 'brilliantly']</td>
+      <td></td>
+      <td>with brightness有亮度</td>
+      <td>the windows glowed jewel bright窗户闪闪发光，宝石明亮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>['brilliant'], similarTo:['reverberant']</td>
+      <td></td>
+      <td>clear and sharp and ringing清晰，锐利，响亮</td>
+      <td>the bright sound of the trumpet section喇叭部分的明亮声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>['undimmed']</td>
+      <td></td>
+      <td>not made dim or less bright没有暗淡或不那么明亮</td>
+      <td></td>
+      <td>[brightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>['hopeful', 'promising'], similarTo:['auspicious']</td>
+      <td></td>
+      <td>likely to turn out well in the future未来很可能会好转</td>
+      <td>had a bright future in publishing出版业前景光明</td>
+      <td>[brightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>['burnished', 'lustrous', 'shining', 'shiny'], similarTo:['polished']</td>
+      <td></td>
+      <td>made smooth and bright by or as if by rubbing; reflecting a sheen or glow通过摩擦或似乎通过摩擦使光滑和光亮;反射光泽或发光</td>
+      <td>bright silver candlesticks明亮的银烛台</td>
+      <td>[brightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>['brilliant', 'vivid'], similarTo:['colourful', 'colorful']</td>
+      <td></td>
+      <td>having strong or striking color具有强烈或醒目的颜色</td>
+      <td>bright dress明亮的衣服</td>
+      <td>[brightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>['smart'], similarTo:['intelligent']</td>
+      <td></td>
+      <td>characterized by quickness and ease in learning学习速度快，容易学习</td>
+      <td>some children are brighter in one subject than another有些孩子比另一个孩子更聪明</td>
+      <td>[brightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>, similarTo:['happy']</td>
+      <td></td>
+      <td>characterized by happiness or gladness以幸福或快乐为特征</td>
+      <td>bright faces明亮的面孔all the world seems bright and gay全世界都看起来很聪明</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>, similarTo:['blazing', 'blinding', 'bright as a new penny', 'brilliant', 'buttonlike', 'buttony', 'coruscant', 'dazzling', 'effulgent', 'fulgent', 'fulgid', 'glaring', 'glary', 'gleaming', 'glimmery', 'glinting', 'glistening', 'glistering', 'glittering', 'glittery', 'glossy', 'twinkling', 'agleam', 'aglitter', 'aglow', 'ardent', 'beadlike', 'beady', 'beaming', 'beamy', 'silver', 'silvern', 'silvery', 'sleek', 'slick', 'sparkly', 'iridescent', 'lambent', 'lucent', 'luminous', 'lurid', 'lustrous', 'nacreous', 'nitid', 'noctilucent', 'opalescent', 'opaline', 'pearlescent', 'radiant', 'refulgent', 'satiny', 'scintillant', 'scintillating', 'self-luminous', 'sheeny', 'shimmery', 'shining', 'shiny', 'silken', 'silklike', 'silky']</td>
+      <td>[dull]</td>
+      <td>emitting or reflecting light readily or in large amounts容易地或大量地发光或反射光</td>
+      <td>the sun was bright and hot太阳明亮而炎热a bright sunlit room明亮的阳光房</td>
+      <td>[brightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>, similarTo:['light']</td>
+      <td></td>
+      <td>having lots of light either natural or artificial有很多自然或人工光</td>
+      <td>the room was bright and airy房间明亮通风a stage bright with spotlights聚光灯明亮的舞台</td>
+      <td>[brightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bright</th>
+      <td>ight</td>
+      <td>4.52</td>
+      <td>adj</td>
+      <td>braɪt</td>
+      <td>, similarTo:['glorious']</td>
+      <td></td>
+      <td>splendid灿烂</td>
+      <td>the bright stars of stage and screen舞台和屏幕的明亮星星a bright moment in history历史上一个光明的时刻the bright pageantry of court法院的明亮壮观</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mighty</th>
+      <td>ight</td>
+      <td>4.18</td>
+      <td>adv</td>
+      <td>'maɪti</td>
+      <td>['mightily', 'powerful', 'right']</td>
+      <td></td>
+      <td>(Southern regional intensive) very; to a great degree（南区域密集）非常;在很大程度上</td>
+      <td>the baby is mighty cute宝宝很可爱he's mighty tired他太累了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intensifier, intensive]</td>
+    </tr>
+    <tr>
+      <th>mighty</th>
+      <td>ight</td>
+      <td>4.18</td>
+      <td>adj</td>
+      <td>'maɪti</td>
+      <td>, similarTo:['powerful']</td>
+      <td></td>
+      <td>having or showing great strength or force or intensity具有或表现出很大的力量或力量或强度</td>
+      <td>struck a mighty blow打了一个强大的打击the mighty logger Paul Bunyan强大的伐木工Paul Bunyan</td>
+      <td>[might, mightiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knight</th>
+      <td>ight</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>naɪt</td>
+      <td>['dub']</td>
+      <td></td>
+      <td>raise (someone) to knighthood提升（某人）骑士</td>
+      <td>The Beatles were knighted披头士被封为爵士</td>
+      <td></td>
+      <td></td>
+      <td>[gentle, ennoble, entitle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knight</th>
+      <td>ight</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td>['horse']</td>
+      <td></td>
+      <td>a chessman shaped to resemble the head of a horse; can move two squares horizontally and one vertically (or vice versa)一个形状像马头的西洋棋棋子;可以水平移动两个方格，垂直移动一个（反之亦然）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chess piece, chessman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knight</th>
+      <td>ight</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td></td>
+      <td></td>
+      <td>originally a person of noble birth trained to arms and chivalry; today in Great Britain a person honored by the sovereign for personal merit最初是一个受过武装和骑士训练的贵族出生的人;今天在英国，一个人因为个人的功绩而受到主权者的尊敬</td>
+      <td></td>
+      <td>[knightly]</td>
+      <td></td>
+      <td>[male aristocrat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slight</th>
+      <td>ight</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>slaɪt</td>
+      <td>['cold-shoulder']</td>
+      <td></td>
+      <td>pay no attention to, disrespect不重视，不尊重</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dismiss, ignore, push aside, brush aside, discount, brush off, disregard]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slight</th>
+      <td>ight</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>slaɪt</td>
+      <td>['rebuff']</td>
+      <td></td>
+      <td>a deliberate discourteous act (usually as an expression of anger or disapproval)故意无礼的行为（通常表达愤怒或不赞成）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[offense, offensive activity, discourtesy, offence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slight</th>
+      <td>ight</td>
+      <td>3.86</td>
+      <td>adj</td>
+      <td>slaɪt</td>
+      <td>['flimsy', 'fragile', 'tenuous', 'thin'], similarTo:['unimportant', 'insignificant']</td>
+      <td></td>
+      <td>lacking substance or significance缺乏实质或意义</td>
+      <td>slight evidence轻微的证据</td>
+      <td>[slightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slight</th>
+      <td>ight</td>
+      <td>3.86</td>
+      <td>adj</td>
+      <td>slaɪt</td>
+      <td>['slender', 'slim', 'svelte'], similarTo:['thin', 'lean']</td>
+      <td></td>
+      <td>being of delicate or slender build具有精致或纤细的构造</td>
+      <td>watched her slight figure cross the street看着她的身影穿过街道</td>
+      <td>[slightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slight</th>
+      <td>ight</td>
+      <td>3.86</td>
+      <td>adj</td>
+      <td>slaɪt</td>
+      <td>['little'], similarTo:['small'], alos:['less']</td>
+      <td></td>
+      <td>(quantifier used with mass nouns) small in quantity or degree; not much or almost none or (with `a') at least some（与大量名词一起使用的量词）数量或程度小;没有多少或几乎没有或（至少有一些）</td>
+      <td>there's slight chance that it will work它有可能发挥作用there's a slight chance it will work有一点点机会它会起作用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sights</th>
+      <td>ight</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>saɪts</td>
+      <td></td>
+      <td></td>
+      <td>an optical instrument for aiding the eye in aiming, as on a firearm or surveying instrument用于帮助瞄准眼睛的光学仪器，如枪支或测量仪器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[optical instrument]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fright</th>
+      <td>ight</td>
+      <td>3.62</td>
+      <td>ver</td>
+      <td>fraɪt</td>
+      <td>['affright', 'frighten', 'scare']</td>
+      <td></td>
+      <td>cause fear in引起恐惧</td>
+      <td>The stranger who hangs around the building frightens me挂在建筑物周围的陌生人吓坏了我Ghosts could never affright her幽灵永远不会让她感到高兴</td>
+      <td></td>
+      <td></td>
+      <td>[shake, excite, shake up, stimulate, stir]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fright</th>
+      <td>ight</td>
+      <td>3.62</td>
+      <td>nou</td>
+      <td>fraɪt</td>
+      <td>['fear', 'fearfulness']</td>
+      <td></td>
+      <td>an emotion experienced in anticipation of some specific pain or danger (usually accompanied by a desire to flee or fight)在预期某些特定的疼痛或危险时经历的情绪（通常伴随着逃离或战斗的欲望）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emotion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wright</th>
+      <td>ight</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['frank lloyd wright']</td>
+      <td></td>
+      <td>influential United States architect (1869-1959)有影响力的美国建筑师（1869-1959）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wright</th>
+      <td>ight</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['richard wright']</td>
+      <td></td>
+      <td>United States writer whose work is concerned with the oppression of African Americans (1908-1960)美国作家，其工作涉及非洲裔美国人的压迫（1908-1960）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wright</th>
+      <td>ight</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['fanny wright', 'frances wright']</td>
+      <td></td>
+      <td>United States early feminist (born in Scotland) (1795-1852)美国早期女权主义者（出生于苏格兰）（1795-1852）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wright</th>
+      <td>ight</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['s. s. van dine', 'willard huntington wright']</td>
+      <td></td>
+      <td>United States writer of detective novels (1888-1939)美国侦探小说作家（1888-1939）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wright</th>
+      <td>ight</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['wilbur wright']</td>
+      <td></td>
+      <td>United States aviation pioneer who (with his brother Orville Wright) invented the airplane (1867-1912)美国航空先驱（与他的兄弟奥维尔赖特）发明了这架飞机（1867-1912）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wright</th>
+      <td>ight</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['orville wright']</td>
+      <td></td>
+      <td>United States aviation pioneer who (with his brother Wilbur Wright) invented the airplane (1871-1948)美国航空先驱（与他的兄弟威尔伯赖特）发明了这架飞机（1871-1948）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wright</th>
+      <td>ight</td>
+      <td>3.32</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td></td>
+      <td></td>
+      <td>someone who makes or repairs something (usually used in combination)制造或修理某物的人（通常组合使用）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artificer, artisan, craftsman, journeyman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plight</th>
+      <td>ight</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>plaɪt</td>
+      <td>['affiance', 'betroth', 'engage']</td>
+      <td></td>
+      <td>give to in marriage结婚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plight</th>
+      <td>ight</td>
+      <td>3.23</td>
+      <td>ver</td>
+      <td>plaɪt</td>
+      <td>['pledge']</td>
+      <td></td>
+      <td>promise solemnly and formally庄严而正式地承诺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assure, promise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plight</th>
+      <td>ight</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>plaɪt</td>
+      <td>['predicament', 'quandary']</td>
+      <td></td>
+      <td>a situation from which extrication is difficult especially an unpleasant or trying one解雇困难的情况，特别是令人不快或难以解决的情况</td>
+      <td>the woeful plight of homeless people无家可归者的可悲困境</td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>plight</th>
+      <td>ight</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>plaɪt</td>
+      <td>['troth']</td>
+      <td></td>
+      <td>a solemn pledge of fidelity庄严的忠诚保证</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assurance, pledge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tights</th>
+      <td>ight</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>taɪts</td>
+      <td>['leotards']</td>
+      <td></td>
+      <td>skintight knit hose covering the body from the waist to the feet worn by acrobats and dancers and as stockings by women and girls紧身针织软管，覆盖从杂技演员和舞者所穿的腰部到脚部的身体，以及女性和女性的长袜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hose, hosiery]</td>
+      <td>[plural, plural form]</td>
+    </tr>
+    <tr>
+      <th>alight</th>
+      <td>ight</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>ə'laɪt</td>
+      <td>['climb down']</td>
+      <td></td>
+      <td>come down坠落</td>
+      <td>the birds alighted鸟儿下了车</td>
+      <td></td>
+      <td></td>
+      <td>[come down, descend, fall, go down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alight</th>
+      <td>ight</td>
+      <td>2.92</td>
+      <td>ver</td>
+      <td>ə'laɪt</td>
+      <td>['light', 'perch']</td>
+      <td></td>
+      <td>to come to rest, settle安息吧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[land, set down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>alight</th>
+      <td>ight</td>
+      <td>2.92</td>
+      <td>adj</td>
+      <td>ə'laɪt</td>
+      <td>['ablaze', 'afire', 'aflame', 'aflare', 'on fire'], similarTo:['lit', 'lighted']</td>
+      <td></td>
+      <td>lighted up by or as by fire or flame由火或火焰点燃或照亮</td>
+      <td>candles alight on the tables蜡烛在桌子上下来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aright</th>
+      <td>ight</td>
+      <td>2.50</td>
+      <td>adv</td>
+      <td>ə'raɪt</td>
+      <td>['correctly', 'right']</td>
+      <td></td>
+      <td>in an accurate manner以准确的方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blight</th>
+      <td>ight</td>
+      <td>2.50</td>
+      <td>ver</td>
+      <td>blaɪt</td>
+      <td>['plague']</td>
+      <td></td>
+      <td>cause to suffer a blight导致疾病</td>
+      <td>Too much rain may blight the garden with mold太多的雨可能会使花园的霉菌枯萎</td>
+      <td></td>
+      <td></td>
+      <td>[afflict, smite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blight</th>
+      <td>ight</td>
+      <td>2.50</td>
+      <td>nou</td>
+      <td>blaɪt</td>
+      <td></td>
+      <td></td>
+      <td>any plant disease resulting in withering without rotting任何植物病害导致枯萎而不腐烂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blight</th>
+      <td>ight</td>
+      <td>2.50</td>
+      <td>nou</td>
+      <td>blaɪt</td>
+      <td></td>
+      <td></td>
+      <td>a state or condition being blighted被破坏的国家或条件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[devastation, desolation]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

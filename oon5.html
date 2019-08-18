@@ -1,0 +1,260 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['spoon', 'loony', 'swoon', 'moony', 'croon', 'goony']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>spoon</th>
+      <td>oon</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>spun</td>
+      <td>['smooch']</td>
+      <td></td>
+      <td>snuggle and lie in a position where one person faces the back of the others依偎并躺在一个人面对其他人背后的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[neck, make out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoon</th>
+      <td>oon</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>spun</td>
+      <td></td>
+      <td></td>
+      <td>scoop up or take up with a spoon舀起或拿起勺子</td>
+      <td>spoon the sauce over the roast把酱汁舀在烤肉上</td>
+      <td></td>
+      <td></td>
+      <td>[remove, take, withdraw, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoon</th>
+      <td>oon</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>spun</td>
+      <td>['spoonful']</td>
+      <td></td>
+      <td>as much as a spoon will hold就像勺子一样</td>
+      <td>he added two spoons of sugar他加了两汤匙糖</td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoon</th>
+      <td>oon</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>spun</td>
+      <td></td>
+      <td></td>
+      <td>a piece of cutlery with a shallow bowl-shaped container and a handle; used to stir or serve or take up food一件带有浅碗形容器和手柄的餐具;用来搅拌或服务或拿起食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cutlery, container, eating utensil]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spoon</th>
+      <td>oon</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>spun</td>
+      <td></td>
+      <td></td>
+      <td>formerly a golfing wood with an elevated face以前是打高尔夫球的木头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>loony</th>
+      <td>oon</td>
+      <td>3.26</td>
+      <td>nou</td>
+      <td>'luni</td>
+      <td>['crazy', 'looney', 'nutcase', 'weirdo']</td>
+      <td></td>
+      <td>someone deranged and possibly dangerous有人疯狂，可能有危险</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lunatic, madman, maniac]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>loony</th>
+      <td>oon</td>
+      <td>3.26</td>
+      <td>adj</td>
+      <td>'luni</td>
+      <td>['around the bend', 'balmy', 'barmy', 'bats', 'batty', 'bonkers', 'buggy', 'cracked', 'crackers', 'daft', 'dotty', 'fruity', 'haywire', 'kookie', 'kooky', 'loco', 'loopy', 'nuts', 'nutty', 'round the bend', 'wacky', 'whacky'], similarTo:['insane']</td>
+      <td></td>
+      <td>informal or slang terms for mentally irregular精神上不正常的非正式或俚语</td>
+      <td></td>
+      <td>[loon]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swoon</th>
+      <td>oon</td>
+      <td>2.88</td>
+      <td>ver</td>
+      <td>swun</td>
+      <td>['conk', 'faint', 'pass out']</td>
+      <td></td>
+      <td>pass out from weakness, physical or emotional distress due to a loss of blood supply to the brain由于大脑血液供应不足导致的虚弱，身体或情绪困扰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[black out, pass out, zonk out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swoon</th>
+      <td>oon</td>
+      <td>2.88</td>
+      <td>nou</td>
+      <td>swun</td>
+      <td>['deliquium', 'faint', 'syncope']</td>
+      <td></td>
+      <td>a spontaneous loss of consciousness caused by insufficient blood to the brain由大脑血液不足引起的自发性意识丧失</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[loss of consciousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moony</th>
+      <td>oon</td>
+      <td>2.78</td>
+      <td>adj</td>
+      <td>'muni</td>
+      <td>['moonlit']</td>
+      <td></td>
+      <td>lighted by moonlight被月光照亮</td>
+      <td></td>
+      <td>[moon]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moony</th>
+      <td>oon</td>
+      <td>2.78</td>
+      <td>adj</td>
+      <td>'muni</td>
+      <td>['dreamy', 'woolgathering'], similarTo:['inattentive']</td>
+      <td></td>
+      <td>dreamy in mood or nature在心情或自然中梦幻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>croon</th>
+      <td>oon</td>
+      <td>1.97</td>
+      <td>ver</td>
+      <td>krun</td>
+      <td></td>
+      <td></td>
+      <td>sing softly轻声唱歌</td>
+      <td></td>
+      <td>[crooner, crooning]</td>
+      <td></td>
+      <td>[sing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goony</th>
+      <td>oon</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td></td>
+      <td>['black-footed albatross', 'diomedea nigripes', 'gooney', 'gooney bird', 'goonie']</td>
+      <td></td>
+      <td>a variety of albatross with black feet各种信天翁黑脚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[albatross, mollymawk]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

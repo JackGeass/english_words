@@ -1,0 +1,1460 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['bit', 'sit', 'hit', 'fit', 'kit', 'pit', 'lit', 'wit', 'tit', 'git', 'mit', 'zit', 'dit', 'nit']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['minute', 'mo', 'moment', 'second']</td>
+      <td></td>
+      <td>an indefinitely short time无限短暂的时间</td>
+      <td>in just a bit只是一点点</td>
+      <td></td>
+      <td></td>
+      <td>[time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['snatch']</td>
+      <td></td>
+      <td>a small fragment一个小片段</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fragment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['bite', 'morsel']</td>
+      <td></td>
+      <td>a small amount of solid food; a mouthful少量的固体食物;满口</td>
+      <td>all they had left was a bit of bread他们剩下的只是一点点面包</td>
+      <td></td>
+      <td></td>
+      <td>[taste, mouthful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['spot']</td>
+      <td></td>
+      <td>a small piece or quantity of something一小块或一小部分东西</td>
+      <td>a bit of paper一点纸a bit of lint有点皮棉I gave him a bit of my mind我给了他一点心意</td>
+      <td>[bitty]</td>
+      <td></td>
+      <td>[small indefinite amount, small indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['act', 'number', 'routine', 'turn']</td>
+      <td></td>
+      <td>a short performance that is part of a longer program短期表演，是较长节目的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[performance, public presentation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['chip', 'flake', 'fleck', 'scrap']</td>
+      <td></td>
+      <td>a small fragment of something broken off from the whole从整体中分离出来的一小段碎片</td>
+      <td>a bit of rock caught him in the eye一点点岩石抓住了他的眼睛</td>
+      <td></td>
+      <td></td>
+      <td>[fragment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td>['piece']</td>
+      <td></td>
+      <td>an instance of some kind某种实例</td>
+      <td>he had a bit of good luck他有一点好运</td>
+      <td></td>
+      <td></td>
+      <td>[case, example, instance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td></td>
+      <td></td>
+      <td>a unit of measurement of information (from binary + digit); the amount of information in a system having two equiprobable states信息量度单位（二进制+数字）;具有两个等概率状态的系统中的信息量</td>
+      <td>there are 8 bits in a byte一个字节有8位</td>
+      <td></td>
+      <td></td>
+      <td>[unit, unit of measurement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td></td>
+      <td></td>
+      <td>piece of metal held in horse's mouth by reins and used to control the horse while riding用缰绳夹在马口的一块金属，用来骑马时控制马</td>
+      <td>the horse was not accustomed to a bit这匹马不习惯</td>
+      <td></td>
+      <td></td>
+      <td>[stable gear, saddlery, tack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td></td>
+      <td></td>
+      <td>the cutting part of a drill; usually pointed and threaded and is replaceable in a brace or bitstock or drill press钻头的切割部分;通常有尖头和螺纹，可在支架或钻头或钻床中更换</td>
+      <td>he looked around for the right size bit他环顾四周寻找合适的尺码</td>
+      <td></td>
+      <td></td>
+      <td>[cutting implement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bit</th>
+      <td>it</td>
+      <td>5.54</td>
+      <td>nou</td>
+      <td>bɪt</td>
+      <td></td>
+      <td></td>
+      <td>the part of a key that enters a lock and lifts the tumblers钥匙的一部分进入锁并抬起滚筒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[part, portion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td>['baby-sit', 'babysit']</td>
+      <td></td>
+      <td>work or act as a baby-sitter工作或担任保姆</td>
+      <td>I cannot baby-sit tonight; I have too much homework to do我今晚不能坐宝贝;我有太多的功课要做</td>
+      <td>[sitter]</td>
+      <td></td>
+      <td>[guard]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td>['seat', 'sit down']</td>
+      <td></td>
+      <td>show to a seat; assign a seat for显示到一个座位;为...分配座位</td>
+      <td></td>
+      <td></td>
+      <td>[sit down]</td>
+      <td>[set, place, pose, position, put, lay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td>['sit down'], alos:['sit out', 'sit down']</td>
+      <td>[lie, stand]</td>
+      <td>be seated就座</td>
+      <td></td>
+      <td>[sitting]</td>
+      <td>[sit down, seat]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td>['ride']</td>
+      <td></td>
+      <td>sit and travel on the back of animal, usually while controlling its motions坐在动物背上旅行，通常在控制动作的同时</td>
+      <td></td>
+      <td></td>
+      <td>[ride]</td>
+      <td>[travel, go, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td>['sit around']</td>
+      <td></td>
+      <td>be around, often idly or without specific purpose周围，​​经常闲散或没有特定目的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td>['sit down']</td>
+      <td></td>
+      <td>take a seat坐</td>
+      <td></td>
+      <td></td>
+      <td>[sit down]</td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td>['model', 'pose', 'posture']</td>
+      <td></td>
+      <td>assume a posture as for artistic purposes假设一种姿势，如艺术目的</td>
+      <td></td>
+      <td>[sitter, sitting]</td>
+      <td></td>
+      <td>[exhibit, expose, display]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td></td>
+      <td></td>
+      <td>be in session在会议上</td>
+      <td>When does the court of law sit?法院什么时候开始？</td>
+      <td>[sitting]</td>
+      <td></td>
+      <td>[convene]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td></td>
+      <td></td>
+      <td>be located or situated somewhere位于或位于某处</td>
+      <td>The White House sits on Pennsylvania Avenue白宫坐落在宾夕法尼亚大道上</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sit</th>
+      <td>it</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>sɪt</td>
+      <td></td>
+      <td></td>
+      <td>serve in a specific professional capacity以特定的专业能力服务</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[serve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['strike']</td>
+      <td></td>
+      <td>drive something violently into a location把东西猛烈地推到一个地方</td>
+      <td>he hit his fist on the table他在桌子上打了一拳</td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['bump off', 'dispatch', 'murder', 'off', 'polish off', 'remove', 'slay']</td>
+      <td></td>
+      <td>kill intentionally and with premeditation故意杀人和预谋</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[kill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['rack up', 'score', 'tally']</td>
+      <td></td>
+      <td>gain points in a game在游戏中获得积分</td>
+      <td>He hit a home run他打了一个本垒打He hit .300 in the past season他在上个赛季打出了.300</td>
+      <td></td>
+      <td></td>
+      <td>[gain ground, gain, pull ahead, make headway, get ahead, advance, win]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['pip', 'shoot']</td>
+      <td></td>
+      <td>hit with a missile from a weapon用武器击中导弹</td>
+      <td></td>
+      <td>[hitting]</td>
+      <td>[strike, pip, shoot, blast]</td>
+      <td>[wound, injure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['strike']</td>
+      <td></td>
+      <td>make a strategic, offensive, assault against an enemy, opponent, or a target对敌人，对手或目标进行战略性，攻击性攻击</td>
+      <td></td>
+      <td></td>
+      <td>[strike, pip, shoot]</td>
+      <td>[attack, assail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['strike']</td>
+      <td></td>
+      <td>affect or afflict suddenly, usually adversely突然影响或折磨，通常是不利的</td>
+      <td>We were hit by really bad weather我们被恶劣的天气击中了</td>
+      <td></td>
+      <td>[strike]</td>
+      <td>[affect, impact, touch, bear on, touch on, bear upon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['attain', 'reach']</td>
+      <td></td>
+      <td>reach a point in time, or a certain state or level到达某个时间点，或某个州或某个级别</td>
+      <td>The thermometer hit 100 degrees温度计达到100度</td>
+      <td></td>
+      <td></td>
+      <td>[arrive, come, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['stumble']</td>
+      <td></td>
+      <td>encounter by chance偶然相遇</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[come by, come into]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['come to', 'strike']</td>
+      <td></td>
+      <td>cause to experience suddenly因为突然经历</td>
+      <td>An interesting idea hit her一个有趣的想法击中了她</td>
+      <td></td>
+      <td>[move, strike, affect, impress]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['strike']</td>
+      <td></td>
+      <td>produce by manipulating keys or strings of musical instruments通过操纵乐器的键或弦来产生</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['arrive at', 'attain', 'gain', 'make', 'reach']</td>
+      <td></td>
+      <td>reach a destination, either real or abstract到达目的地，无论是真实的还是抽象的</td>
+      <td>We hit Detroit by noon我们中午打了底特律I have to hit the MAC machine before the weekend starts我必须在周末开始之​​前点击MAC机器</td>
+      <td></td>
+      <td>[make]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td>['collide with', 'impinge on', 'run into', 'strike']</td>
+      <td>[miss]</td>
+      <td>hit against; come into sudden contact with击中;突然接触</td>
+      <td>The car hit a tree车撞了一棵树</td>
+      <td>[hitting]</td>
+      <td>[strike]</td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>cause to move by striking引起罢工的原因</td>
+      <td>hit a ball打了一个球</td>
+      <td>[hitting, hitter]</td>
+      <td></td>
+      <td>[propel, impel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>deal a blow to, either with the hand or with an instrument用手或用乐器打击</td>
+      <td>He hit her hard in the face他用力击打她的脸</td>
+      <td>[hitting]</td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>hit the intended target or goal达到预定的目标或目标</td>
+      <td></td>
+      <td>[hitting]</td>
+      <td></td>
+      <td>[come through, succeed, bring home the bacon, deliver the goods, win]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>ver</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>pay unsolicited and usually unwanted sexual attention to支付未经请求且通常不受欢迎的性关注</td>
+      <td>He tries to hit on women in bars他试图打击酒吧里的女性</td>
+      <td></td>
+      <td></td>
+      <td>[approach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>nou</td>
+      <td>hɪt</td>
+      <td>['bang', 'smash', 'smasher', 'strike']</td>
+      <td></td>
+      <td>a conspicuous success一个显着的成功</td>
+      <td>that song was his first hit and marked the beginning of his career这首歌是他的第一首歌，标志着他职业生涯的开始</td>
+      <td></td>
+      <td></td>
+      <td>[success]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>nou</td>
+      <td>hɪt</td>
+      <td>['collision']</td>
+      <td></td>
+      <td>(physics) a brief event in which two or more bodies come together（物理学）一个简短的事件，其中两个或更多的身体聚集在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[impinging, striking, contact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>nou</td>
+      <td>hɪt</td>
+      <td>['hitting', 'striking']</td>
+      <td></td>
+      <td>the act of contacting one thing with another将一件事与另一件事联系起来的行为</td>
+      <td>repeated hitting raised a large bruise反复击打引起了大挫伤after three misses she finally got a hit三次失误后，她终于受到了打击</td>
+      <td></td>
+      <td></td>
+      <td>[touch, touching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>nou</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>a connection made via the internet to another website通过互联网连接到另一个网站</td>
+      <td>WordNet gets many hits from users worldwideWordNet获得了全球用户的热烈追捧</td>
+      <td></td>
+      <td></td>
+      <td>[connection, connexion, joining]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>nou</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>a dose of a narcotic drug一剂麻醉药</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dosage, dose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>nou</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>a murder carried out by an underworld syndicate黑社会集团谋杀案</td>
+      <td>it has all the earmarks of a Mafia hit它具有黑手党命中的所有特征</td>
+      <td></td>
+      <td></td>
+      <td>[slaying, execution, murder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hit</th>
+      <td>it</td>
+      <td>5.41</td>
+      <td>nou</td>
+      <td>hɪt</td>
+      <td></td>
+      <td></td>
+      <td>(baseball) a successful stroke in an athletic contest (especially in baseball)（棒球）在运动竞赛中成功击球（特别是在棒球比赛中）</td>
+      <td>he came all the way around on Williams' hit在威廉姆斯的命中，他一路走来</td>
+      <td></td>
+      <td></td>
+      <td>[effort, feat, exploit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td>['accommodate', 'suit']</td>
+      <td></td>
+      <td>be agreeable or acceptable to是否同意或接受</td>
+      <td></td>
+      <td>[fitter]</td>
+      <td></td>
+      <td>[satisfy, meet, fill, fulfill, fulfil, conform to]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td>['conform to', 'fill', 'fulfil', 'fulfill', 'meet', 'satisfy']</td>
+      <td></td>
+      <td>fill, satisfy or meet a want or need or condtion ro restriction填写，满足或满足需要或需要或条件或限制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ply, supply, provide, cater]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td>['match']</td>
+      <td></td>
+      <td>make correspond or harmonize使对应或协调</td>
+      <td></td>
+      <td>[fitting]</td>
+      <td>[match]</td>
+      <td>[adjust, set, correct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td>['go']</td>
+      <td></td>
+      <td>be the right size or shape; fit correctly or as desired是正确的大小或形状;适合或根据需要适合</td>
+      <td>This piece won't fit into the puzzle这件作品不适合拼图</td>
+      <td>[fitting]</td>
+      <td>[blend in, blend, go]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td>['equip', 'fit out', 'outfit']</td>
+      <td></td>
+      <td>provide with (something) usually for a specific purpose通常为特定目的提供（某物）</td>
+      <td></td>
+      <td>[fitting]</td>
+      <td></td>
+      <td>[render, furnish, supply, provide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td>['agree', 'check', 'correspond', 'gibe', 'jibe', 'match', 'tally']</td>
+      <td></td>
+      <td>be compatible, similar or consistent; coincide in their characteristics兼容，相似或一致;与他们的特点相吻合</td>
+      <td></td>
+      <td></td>
+      <td>[consort, check out, fit in, agree, concord, accord, harmonise, harmonize, check]</td>
+      <td>[be, equal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td></td>
+      <td></td>
+      <td>conform to some shape or size符合某种形状或大小</td>
+      <td>How does this shirt fit?这件衬衫怎么样？</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td></td>
+      <td></td>
+      <td>insert or adjust several objects or people插入或调整多个对象或人物</td>
+      <td>Can you fit the toy into the box?你能把玩具装进盒子里吗？This man can't fit himself into our work environment这个人无法适应我们的工作环境</td>
+      <td></td>
+      <td></td>
+      <td>[adapt, accommodate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>ver</td>
+      <td>fɪt</td>
+      <td></td>
+      <td></td>
+      <td>make fit使健康</td>
+      <td>fit a dress适合一件衣服He fitted other pieces of paper to his cut-out他在他的剪纸上装了其他纸片</td>
+      <td>[fitting, fitter]</td>
+      <td></td>
+      <td>[shape, form]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>fɪt</td>
+      <td>['convulsion', 'paroxysm']</td>
+      <td></td>
+      <td>a sudden uncontrollable attack突然无法控制的攻击</td>
+      <td>a fit of coughing一阵咳嗽</td>
+      <td></td>
+      <td></td>
+      <td>[attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>fɪt</td>
+      <td>['burst']</td>
+      <td></td>
+      <td>a sudden flurry of activity (often for no obvious reason)一阵突如其来的活动（通常没有明显的原因）</td>
+      <td>a fit of housecleaning适合大扫除</td>
+      <td></td>
+      <td></td>
+      <td>[activity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>fɪt</td>
+      <td>['conniption', 'scene', 'tantrum']</td>
+      <td></td>
+      <td>a display of bad temper脾气暴躁的表现</td>
+      <td>he had a fit他很健康</td>
+      <td></td>
+      <td></td>
+      <td>[bad temper, ill temper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>nou</td>
+      <td>fɪt</td>
+      <td></td>
+      <td></td>
+      <td>the manner in which something fits某种东西适合的方式</td>
+      <td>I admired the fit of her coat我很欣赏她的外套</td>
+      <td></td>
+      <td></td>
+      <td>[way, fashion, manner, style, mode]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>fɪt</td>
+      <td>['primed', 'set'], similarTo:['ready']</td>
+      <td></td>
+      <td>(usually followed by `to' or `for') on the point of or strongly disposed（通常在“to”或“for”之后）处于或强烈处置</td>
+      <td>in no fit state to continue处于不适合的状态继续下去fit to drop适合放弃laughing fit to burst笑得适合爆发she was fit to scream她很适合尖叫</td>
+      <td>[fitness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>fɪt</td>
+      <td>, similarTo:['worthy', 'acceptable', 'suitable', 'suited'], alos:['appropriate']</td>
+      <td>[unfit]</td>
+      <td>meeting adequate standards for a purpose达到目的的适当标准</td>
+      <td>a fit subject for discussion适合讨论的主题it is fit and proper that you be there你在那里是合适的water fit to drink水适合饮用fit for duty适合值班do as you see fit to按你的意愿去做</td>
+      <td>[fitness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fit</th>
+      <td>it</td>
+      <td>4.75</td>
+      <td>adj</td>
+      <td>fɪt</td>
+      <td>, similarTo:['conditioned', 'in condition', 'able', 'able-bodied'], alos:['sound', 'healthy', 'well']</td>
+      <td>[unfit]</td>
+      <td>physically and mentally sound or healthy身体和精神健康或健康</td>
+      <td>felt relaxed and fit after their holiday度假后感到放松和健康keeps fit with diet and exercise保持饮食和运动</td>
+      <td>[fitness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kit</th>
+      <td>it</td>
+      <td>4.08</td>
+      <td>ver</td>
+      <td>kɪt</td>
+      <td>['kit out', 'kit up']</td>
+      <td></td>
+      <td>supply with a set of articles or tools提供一套文章或工具</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equip, fit, fit out, outfit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kit</th>
+      <td>it</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>kɪt</td>
+      <td>['outfit']</td>
+      <td></td>
+      <td>gear consisting of a set of articles or tools for a specified purpose由一组用于特定目的的物品或工具组成的齿轮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gear, appurtenance, paraphernalia]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kit</th>
+      <td>it</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>kɪt</td>
+      <td></td>
+      <td></td>
+      <td>a case for containing a set of articles包含一组文章的案例</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[case]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kit</th>
+      <td>it</td>
+      <td>4.08</td>
+      <td>nou</td>
+      <td>kɪt</td>
+      <td></td>
+      <td></td>
+      <td>young of any of various fur-bearing animals年轻的各种毛皮动物</td>
+      <td>a fox kit狐狸套装</td>
+      <td></td>
+      <td></td>
+      <td>[young mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>pɪt</td>
+      <td>['match', 'oppose', 'play off']</td>
+      <td></td>
+      <td>set into opposition or rivalry陷入反对或竞争</td>
+      <td>pit a chess player against the Russian champion让一名国际象棋选手对抗俄罗斯冠军</td>
+      <td></td>
+      <td></td>
+      <td>[face, confront]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>pɪt</td>
+      <td>['stone']</td>
+      <td></td>
+      <td>remove the pits from从中移除凹坑</td>
+      <td>pit plums and cherries坑李子和樱桃</td>
+      <td></td>
+      <td></td>
+      <td>[withdraw, remove, take, take away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>pɪt</td>
+      <td>['mark', 'pock', 'scar']</td>
+      <td></td>
+      <td>mark with a scar留下疤痕</td>
+      <td></td>
+      <td>[pitting]</td>
+      <td>[mark, score, nock]</td>
+      <td>[blemish, disfigure, deface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['hell', 'infernal region', 'inferno', 'nether region', 'perdition']</td>
+      <td></td>
+      <td>(Christianity) the abode of Satan and the forces of evil; where sinners suffer eternal punishment（基督教）撒旦的居所和邪恶势力;罪人遭受永恒的惩罚</td>
+      <td>a demon from the depths of the pit一个来自深坑的恶魔</td>
+      <td></td>
+      <td></td>
+      <td>[mythical place, imaginary place, fictitious place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['orchestra pit']</td>
+      <td></td>
+      <td>lowered area in front of a stage where an orchestra accompanies the performers在乐团伴随表演者的舞台前降低了区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['cavity']</td>
+      <td></td>
+      <td>a sizeable hole (usually in the ground)一个相当大的洞（通常在地下）</td>
+      <td>they dug a pit to bury the body他们挖了一个坑来埋葬尸体</td>
+      <td></td>
+      <td></td>
+      <td>[hole, hollow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['pitfall']</td>
+      <td></td>
+      <td>a trap in the form of a concealed hole隐藏洞形式的陷阱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['fossa']</td>
+      <td></td>
+      <td>a concavity in a surface (especially an anatomical depression)表面凹陷（特别是解剖凹陷）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[concave shape, cavity, cavum, incurvation, bodily cavity, concavity, incurvature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['endocarp', 'stone']</td>
+      <td></td>
+      <td>the hard inner (usually woody) layer of the pericarp of some fruits (as peaches or plums or cherries or olives) that contains the seed含有种子的一些水果（如桃子，李子或樱桃或橄榄）的果皮坚硬内层（通常是木质的）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seed vessel, pericarp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['quarry', 'stone pit']</td>
+      <td></td>
+      <td>a surface excavation for extracting stone or slate用于提取石头或石板的表面挖掘</td>
+      <td>a British term for `quarry' is `stone pit'英国的“采石场”一词是“石坑”</td>
+      <td></td>
+      <td></td>
+      <td>[excavation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td>['colliery']</td>
+      <td></td>
+      <td>a workplace consisting of a coal mine plus all the buildings and equipment connected with it由煤矿组成的工作场所以及与之相关的所有建筑物和设备</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[workplace, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td></td>
+      <td></td>
+      <td>an enclosure in which animals are made to fight一个动物被制造的围场</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enclosure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td></td>
+      <td></td>
+      <td>(auto racing) an area at the side of a racetrack where the race cars are serviced and refueled（赛车）赛道旁边的一个区域，赛车在那里进行维修和加油</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pit</th>
+      <td>it</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>pɪt</td>
+      <td></td>
+      <td></td>
+      <td>(commodity exchange) the part of the floor of a commodity exchange where trading in a particular commodity is carried on（商品交易所）商品交易所场所中进行特定商品交易的部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lit</th>
+      <td>it</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>lɪt</td>
+      <td>['literature']</td>
+      <td></td>
+      <td>the humanistic study of a body of literature对文学体系的人文研究</td>
+      <td>he took a course in Russian lit他参加了俄语课程</td>
+      <td></td>
+      <td></td>
+      <td>[literary study]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lit</th>
+      <td>it</td>
+      <td>4.03</td>
+      <td>adj</td>
+      <td>lɪt</td>
+      <td>['lighted'], similarTo:['ablaze', 'afire', 'aflame', 'aflare', 'alight', 'enkindled', 'ignited', 'kindled', 'on fire']</td>
+      <td></td>
+      <td>set afire or burning燃烧或燃烧</td>
+      <td>a lit firecracker点燃的鞭炮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lit</th>
+      <td>it</td>
+      <td>4.03</td>
+      <td>adj</td>
+      <td>lɪt</td>
+      <td>['illuminated', 'lighted', 'well-lighted'], similarTo:['light']</td>
+      <td></td>
+      <td>provided with artificial light提供人造光</td>
+      <td>a brightly lit room一个明亮的房间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wit</th>
+      <td>it</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>wɪt</td>
+      <td>['card', 'wag']</td>
+      <td></td>
+      <td>a witty amusing person who makes jokes一个诙谐有趣的人开玩笑</td>
+      <td></td>
+      <td>[witty]</td>
+      <td></td>
+      <td>[humourist, humorist]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wit</th>
+      <td>it</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>wɪt</td>
+      <td>['brain', 'brainpower', 'learning ability', 'mental capacity', 'mentality']</td>
+      <td></td>
+      <td>mental ability心智能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intelligence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wit</th>
+      <td>it</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>wɪt</td>
+      <td>['humor', 'humour', 'witticism', 'wittiness']</td>
+      <td></td>
+      <td>a message whose ingenuity or verbal skill or incongruity has the power to evoke laughter一种信息，其聪明才智或语言能力或不协调有能力唤起笑声</td>
+      <td></td>
+      <td>[witty]</td>
+      <td></td>
+      <td>[content, message, substance, subject matter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tit</th>
+      <td>it</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>tɪt</td>
+      <td>['mamilla', 'mammilla', 'nipple', 'pap', 'teat']</td>
+      <td></td>
+      <td>the small projection of a mammary gland乳腺的小投影</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sex organ, reproductive organ]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tit</th>
+      <td>it</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>tɪt</td>
+      <td>['titmouse']</td>
+      <td></td>
+      <td>small insectivorous birds小食虫鸟类</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[oscine, oscine bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tit</th>
+      <td>it</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>tɪt</td>
+      <td>['boob', 'bosom', 'breast', 'knocker', 'titty']</td>
+      <td></td>
+      <td>either of two soft fleshy milk-secreting glandular organs on the chest of a woman一个女人胸部的两个软肉质乳汁分泌器官中的任何一个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mammary gland, mamma]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>git</th>
+      <td>it</td>
+      <td>3.23</td>
+      <td>nou</td>
+      <td>ɡɪt</td>
+      <td>['bum', 'crumb', 'dirty dog', 'lowlife', 'puke', 'rat', 'rotter', 'scum bag', 'skunk', 'so-and-so', 'stinker', 'stinkpot']</td>
+      <td></td>
+      <td>a person who is deemed to be despicable or contemptible被视为卑鄙或卑鄙的人</td>
+      <td>the British call a contemptible person a `git'英国称一个卑鄙的人为“git”</td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mit</th>
+      <td>it</td>
+      <td>2.95</td>
+      <td>nou</td>
+      <td>'ɛ'maɪ'ti</td>
+      <td>['massachusetts institute of technology']</td>
+      <td></td>
+      <td>an engineering university in Cambridge剑桥大学的工程大学</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>zit</th>
+      <td>it</td>
+      <td>2.76</td>
+      <td>nou</td>
+      <td></td>
+      <td>['hickey', 'pimple']</td>
+      <td></td>
+      <td>a small inflamed elevation of the skin; a pustule or papule; common symptom in acne皮肤发炎的一小部分;脓包或丘疹;痤疮的常见症状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acne]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dit</th>
+      <td>it</td>
+      <td>2.60</td>
+      <td>nou</td>
+      <td>dɪt</td>
+      <td>['dot']</td>
+      <td></td>
+      <td>the shorter of the two telegraphic signals used in Morse code摩尔斯电码中使用的两个电报信号中较短的一个</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiotelegraphic signal, telegraphic signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nit</th>
+      <td>it</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>nɪt</td>
+      <td></td>
+      <td></td>
+      <td>a luminance unit equal to 1 candle per square meter measured perpendicular to the rays from the source亮度单位等于每平方米1烛光，垂直于来自光源的光线测量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[luminance unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nit</th>
+      <td>it</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>nɪt</td>
+      <td></td>
+      <td></td>
+      <td>egg or young of an insect parasitic on mammals especially a sucking louse; often attached to a hair or item of clothing寄生在哺乳动物身上的昆虫的卵或幼虫，特别是吮吸虱子;经常附在头发或衣物上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[egg]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

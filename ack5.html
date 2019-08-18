@@ -1,0 +1,1940 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['black', 'track', 'crack', 'snack', 'smack', 'whack', 'stack', 'slack', 'shack', 'tacky', 'jacks', 'knack', 'wacky', 'flack', 'clack', 'wrack']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>blæk</td>
+      <td>['blacken', 'melanise', 'melanize']</td>
+      <td></td>
+      <td>make or become black制造或变黑</td>
+      <td>The smoke blackened the ceiling烟雾使天花板变黑The ceiling blackened天花板变黑了</td>
+      <td></td>
+      <td></td>
+      <td>[discolour, color, colour, discolor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>blæk</td>
+      <td>['shirley temple', 'shirley temple black']</td>
+      <td></td>
+      <td>popular child actress of the 1930's (born in 1928)1930年代的流行儿童女演员（1928年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>blæk</td>
+      <td>['blackness', 'inkiness']</td>
+      <td>[white]</td>
+      <td>the quality or state of the achromatic color of least lightness (bearing the least resemblance to white)无光色的最低亮度的质量或状态（与白色最不相似）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[achromatic colour, achromatic color]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>blæk</td>
+      <td>['joseph black']</td>
+      <td></td>
+      <td>British chemist who identified carbon dioxide and who formulated the concepts of specific heat and latent heat (1728-1799)英国化学家，他确定了二氧化碳，并制定了比热和潜热的概念（1728-1799）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>blæk</td>
+      <td>['blackness', 'lightlessness', 'pitch blackness', 'total darkness']</td>
+      <td></td>
+      <td>total absence of light完全没有光</td>
+      <td>in the black of night在黑夜里</td>
+      <td></td>
+      <td></td>
+      <td>[darkness, dark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>blæk</td>
+      <td>['african-american', 'negro', 'negroid']</td>
+      <td></td>
+      <td>a person with African ancestry,一个非洲血统的人，</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[soul, individual, mortal, person, somebody, someone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>blæk</td>
+      <td></td>
+      <td></td>
+      <td>black clothing (worn as a sign of mourning)黑色衣服（作为哀悼的标志）</td>
+      <td>the widow wore black寡妇穿黑衣服</td>
+      <td></td>
+      <td></td>
+      <td>[wear, habiliment, vesture, wearable, article of clothing, clothing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>blæk</td>
+      <td></td>
+      <td>[white]</td>
+      <td>(board games) the darker pieces（棋盘游戏）更黑暗的部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[man, piece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['disgraceful', 'ignominious', 'inglorious', 'opprobrious', 'shameful'], similarTo:['dishonourable', 'dishonorable']</td>
+      <td></td>
+      <td>(used of conduct or character) deserving or bringing disgrace or shame（用于行为或性格）值得或带来耻辱或羞耻</td>
+      <td>Man...has written one of his blackest records as a destroyer on the oceanic islands男人......在海洋岛屿上写下了他作为驱逐舰最黑暗的记录之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['pitch-black', 'pitch-dark'], similarTo:['dark']</td>
+      <td></td>
+      <td>extremely dark非常黑暗</td>
+      <td>a black moonless night一个黑色的无月夜through the pitch-black woods穿过漆黑的树林</td>
+      <td>[blackness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['dark', 'sinister'], similarTo:['evil']</td>
+      <td></td>
+      <td>stemming from evil characteristics or forces; wicked or dishonorable源于邪恶的特征或力量;邪恶或不光彩</td>
+      <td>black deeds黑人事迹a black lie一个黑色的谎言his black heart has concocted yet another black deed他的黑色心脏已经炮制了另一个黑色的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['blackened'], similarTo:['colored', 'colorful', 'coloured']</td>
+      <td></td>
+      <td>(of the face) made black especially as with suffused blood（脸部）特别是黑色的血液</td>
+      <td>a face black with fury脸上带着愤怒的黑色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['smutty'], similarTo:['dirty', 'unclean', 'soiled']</td>
+      <td></td>
+      <td>soiled with dirt or soot被污垢或烟灰弄脏了</td>
+      <td>with feet black from playing outdoors脚在户外玩黑色his shirt was black within an hour一小时内他的衬衫是黑色的</td>
+      <td>[blackness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['black-market', 'bootleg', 'contraband', 'smuggled'], similarTo:['illegal']</td>
+      <td></td>
+      <td>distributed or sold illicitly非法分发或出售</td>
+      <td>the black economy pays no taxes黑人经济不缴纳税款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['bleak', 'dim'], similarTo:['hopeless']</td>
+      <td></td>
+      <td>offering little or no hope提供很少或没有希望</td>
+      <td>the future looked black未来看起来很黑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['calamitous', 'disastrous', 'fatal', 'fateful'], similarTo:['unfortunate']</td>
+      <td></td>
+      <td>(of events) having extremely unfortunate or dire consequences; bringing ruin（事件）具有极其不幸或可怕的后果;带来毁灭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>['grim', 'mordant'], similarTo:['sarcastic']</td>
+      <td></td>
+      <td>harshly ironic or sinister严厉的讽刺或险恶</td>
+      <td>black humor黑色幽默</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>, alos:['dark']</td>
+      <td>[white]</td>
+      <td>being of the achromatic color of maximum darkness; having little or no hue owing to absorption of almost all incident light具有最大黑暗的无彩色;由于几乎所有入射光的吸收而具有很少或没有色调</td>
+      <td>black leather jackets黑色皮夹克as black as coal像煤一样黑rich black soil浓郁的黑土</td>
+      <td>[blackness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>, similarTo:['angry']</td>
+      <td></td>
+      <td>marked by anger or resentment or hostility以愤怒，怨恨或敌意为标志</td>
+      <td>black looks黑色的样子black words黑字</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>, similarTo:['undiluted']</td>
+      <td></td>
+      <td>(of coffee) without cream or sugar（咖啡）没有奶油或糖</td>
+      <td></td>
+      <td>[blackness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>, similarTo:['covert']</td>
+      <td></td>
+      <td>(of intelligence operations) deliberately misleading（情报行动）故意误导</td>
+      <td>black propaganda黑色宣传</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>black</th>
+      <td>ack</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>blæk</td>
+      <td>, similarTo:['african-american', 'afro-american', 'negro', 'coloured', 'colored']</td>
+      <td>[white]</td>
+      <td>of or belonging to a racial group especially of sub-Saharan African origin属于或属于撒哈拉以南非洲裔的种族群体</td>
+      <td>a great people--a black people--...injected new meaning and dignity into the veins of civilization伟大的人民 - 黑人 -  ......为文明的脉络注入了新的意义和尊严</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>træk</td>
+      <td>['cover', 'cross', 'cut across', 'cut through', 'get across', 'get over', 'pass over', 'traverse']</td>
+      <td></td>
+      <td>travel across or pass over穿越或经过</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>træk</td>
+      <td>['chase', 'chase after', 'dog', 'give chase', 'go after', 'tag', 'tail', 'trail']</td>
+      <td></td>
+      <td>go after with the intent to catch追求意图捕捉</td>
+      <td></td>
+      <td>[tracker, tracking]</td>
+      <td></td>
+      <td>[follow, pursue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>træk</td>
+      <td></td>
+      <td></td>
+      <td>carry on the feet and deposit踩脚和存款</td>
+      <td>track mud into the house跟踪泥进入房子</td>
+      <td></td>
+      <td></td>
+      <td>[introduce, bring in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>træk</td>
+      <td></td>
+      <td></td>
+      <td>make tracks upon跟踪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[create, make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>ver</td>
+      <td>træk</td>
+      <td></td>
+      <td></td>
+      <td>observe or plot the moving path of something观察或绘制某物的移动路径</td>
+      <td>track a missile跟踪导弹</td>
+      <td></td>
+      <td></td>
+      <td>[observe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['cart track', 'cartroad']</td>
+      <td></td>
+      <td>any road or path affording passage especially a rough one提供通道的任何道路或路径，特别是粗糙的通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[road, route]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['data track']</td>
+      <td></td>
+      <td>(computer science) one of the circular magnetic paths on a magnetic disk that serve as a guide for writing and reading data（计算机科学）磁盘上的一个圆形磁路，用作写入和读取数据的指南</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[path, itinerary, route]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['running']</td>
+      <td></td>
+      <td>the act of participating in an athletic competition involving running on a track参加体育比赛的行为，包括在赛道上跑步</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[track and field]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['caterpillar track', 'caterpillar tread']</td>
+      <td></td>
+      <td>an endless metal belt on which tracked vehicles move over the ground一条环形金属带，履带式车辆在地面上移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[belt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['racecourse', 'racetrack', 'raceway']</td>
+      <td></td>
+      <td>a course over which races are run比赛进行的过程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[course]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['lead', 'trail']</td>
+      <td></td>
+      <td>evidence pointing to a possible solution证据指出可能的解决方案</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grounds, evidence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['cut']</td>
+      <td></td>
+      <td>a distinct selection of music from a recording or a compact disc来自录音或光盘的独特音乐选择</td>
+      <td>the title track of the album专辑的标题曲目</td>
+      <td></td>
+      <td></td>
+      <td>[selection, excerpt, extract, excerption]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['course', 'path']</td>
+      <td></td>
+      <td>a line or route along which something travels or moves某物行进或移动的线或路线</td>
+      <td>the track of an animal动物的踪迹</td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td>['rail', 'rails', 'runway']</td>
+      <td></td>
+      <td>a bar or pair of parallel bars of rolled steel making the railway along which railroad cars or other vehicles can roll一条钢筋或一对钢筋双杠，使铁路车辆或其他车辆可以沿着铁路滚动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td></td>
+      <td></td>
+      <td>a groove on a phonograph recording留声机唱片上的凹槽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[groove, channel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>track</th>
+      <td>ack</td>
+      <td>4.67</td>
+      <td>nou</td>
+      <td>træk</td>
+      <td></td>
+      <td></td>
+      <td>a pair of parallel rails providing a runway for wheels一对平行的导轨，为车轮提供跑道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[artefact, artifact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td>['break', 'check']</td>
+      <td></td>
+      <td>become fractured; break or crack on the surface only变得骨折;仅在表面上破裂或破裂</td>
+      <td>The glass cracked when it was heated玻璃在加热时破裂</td>
+      <td></td>
+      <td>[chink, check]</td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td>['break up', 'collapse', 'crack up', 'crock up']</td>
+      <td></td>
+      <td>suffer a nervous breakdown遭受精神崩溃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[have, get, suffer, sustain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td>['snap']</td>
+      <td></td>
+      <td>break suddenly and abruptly, as under tension在紧张的情况下突然突然突然</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[separate, split up, break, come apart, fall apart]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td>['break through']</td>
+      <td></td>
+      <td>pass through (a barrier)穿过（障碍物）</td>
+      <td>Registrations cracked through the 30,000 mark in the county登记在该县的30,000大关中破获</td>
+      <td></td>
+      <td></td>
+      <td>[pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td>['snap']</td>
+      <td></td>
+      <td>make a sharp sound发出尖锐的声音</td>
+      <td></td>
+      <td>[cracker]</td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>break into simpler molecules by means of heat通过加热分解成更简单的分子</td>
+      <td>The petroleum cracked石油破裂了</td>
+      <td>[cracking]</td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>break partially but keep its integrity部分打破但保持其完整性</td>
+      <td>The glass cracked玻璃破裂了</td>
+      <td></td>
+      <td></td>
+      <td>[break, check]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>cause to become cracked导致破裂</td>
+      <td>heat and light cracked the back of the leather chair热和光裂开了皮椅的背面</td>
+      <td></td>
+      <td>[break, check]</td>
+      <td>[modify, alter, change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>gain unauthorized access computers with malicious intentions未经授权访问计算机有恶意</td>
+      <td>she cracked my password她破解了我的密码crack a safe破解安全</td>
+      <td>[cracker]</td>
+      <td></td>
+      <td>[break in, break]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>hit forcefully; deal a hard blow, making a cracking noise强行打击;发生严重打击，发出噼啪声</td>
+      <td>The teacher cracked him across the face with a ruler老师用尺子把他弄成了脸</td>
+      <td>[cracking]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>make a very sharp explosive sound发出非常尖锐的爆炸声</td>
+      <td>His gun cracked他的枪破了</td>
+      <td>[cracking, cracker]</td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>reduce (petroleum) to a simpler compound by cracking通过裂化将（石油）还原成更简单的化合物</td>
+      <td></td>
+      <td>[cracking]</td>
+      <td></td>
+      <td>[decompose, break up, break down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>tell spontaneously自发地说</td>
+      <td>crack a joke讲个笑话</td>
+      <td></td>
+      <td></td>
+      <td>[recite, recount, tell, narrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['crack cocaine', 'tornado']</td>
+      <td></td>
+      <td>a purified and potent form of cocaine that is smoked rather than snorted; highly addictive一种纯净而有效的可卡因，吸食而不是哼声;很容易上瘾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cocain, cocaine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['cleft', 'crevice', 'fissure', 'scissure']</td>
+      <td></td>
+      <td>a long narrow opening一个狭长的开口</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gap, opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['fling', 'go', 'offer', 'pass', 'whirl']</td>
+      <td></td>
+      <td>a usually brief attempt通常是短暂的尝试</td>
+      <td>he took a crack at it他对它采取了一个裂缝</td>
+      <td></td>
+      <td></td>
+      <td>[attempt, effort, endeavor, endeavour, try]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['gap']</td>
+      <td></td>
+      <td>a narrow opening一个狭窄的开口</td>
+      <td>he opened the window a crack他打开窗户裂缝</td>
+      <td></td>
+      <td></td>
+      <td>[opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['shot']</td>
+      <td></td>
+      <td>a chance to do something有机会做某事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chance, opportunity]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['quip', 'sally', 'wisecrack']</td>
+      <td></td>
+      <td>witty remark诙谐的话</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[comment, remark, input]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['chap', 'cranny', 'crevice', 'fissure']</td>
+      <td></td>
+      <td>a long narrow depression in a surface表面长而狭窄的凹陷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imprint, depression, impression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['cracking', 'snap']</td>
+      <td></td>
+      <td>a sudden sharp noise突如其来的尖锐噪音</td>
+      <td>the crack of a whip鞭子的裂缝he heard the cracking of the ice他听到冰裂了</td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td>['cracking', 'fracture']</td>
+      <td></td>
+      <td>the act of cracking something破解某事的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[breakage, break, breaking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>kræk</td>
+      <td></td>
+      <td></td>
+      <td>a blemish resulting from a break without complete separation of the parts由于断裂而没有完全分离部件而产生的瑕疵</td>
+      <td>there was a crack in the mirror镜子里有裂缝</td>
+      <td></td>
+      <td></td>
+      <td>[defect, blemish, mar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crack</th>
+      <td>ack</td>
+      <td>4.41</td>
+      <td>adj</td>
+      <td>kræk</td>
+      <td>['a-one', 'ace', 'first-rate', 'super', 'tiptop', 'top-notch', 'topnotch', 'tops'], similarTo:['superior']</td>
+      <td></td>
+      <td>of the highest quality最高质量的</td>
+      <td>a crack shot一个裂缝射击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>snack</th>
+      <td>ack</td>
+      <td>3.97</td>
+      <td>ver</td>
+      <td>snæk</td>
+      <td>['nosh']</td>
+      <td></td>
+      <td>eat a snack; eat lightly吃点零食;吃得很轻松</td>
+      <td>She never loses weight because she snacks between meals她从不减肥，因为她在两餐之间吃零食</td>
+      <td>[snacker]</td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snack</th>
+      <td>ack</td>
+      <td>3.97</td>
+      <td>nou</td>
+      <td>snæk</td>
+      <td>['bite', 'collation']</td>
+      <td></td>
+      <td>a light informal meal轻松的非正式餐点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[repast, meal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>ver</td>
+      <td>smæk</td>
+      <td>['thwack']</td>
+      <td></td>
+      <td>deliver a hard blow to给...带来沉重打击</td>
+      <td>The teacher smacked the student who had misbehaved老师殴打那个行为不端的学生</td>
+      <td>[smacker, smacking]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>ver</td>
+      <td>smæk</td>
+      <td>['peck']</td>
+      <td></td>
+      <td>kiss lightly轻轻吻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[osculate, kiss, buss, snog]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>ver</td>
+      <td>smæk</td>
+      <td>['taste']</td>
+      <td></td>
+      <td>have a distinctive or characteristic taste具有独特或独特的味道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[savour, savor, taste]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>ver</td>
+      <td>smæk</td>
+      <td>['reek', 'smell']</td>
+      <td></td>
+      <td>have an element suggestive (of something)有一个元素暗示（的东西）</td>
+      <td>his speeches smacked of racism他的讲话充斥着种族主义</td>
+      <td></td>
+      <td></td>
+      <td>[paint a picture, suggest, evoke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>ver</td>
+      <td>smæk</td>
+      <td></td>
+      <td></td>
+      <td>press (the lips) together and open (the lips) noisily, as in eating按下（嘴唇）在一起，大声地打开（嘴唇），就像吃饭一样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[let loose, utter, emit, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>smæk</td>
+      <td>['flavor', 'flavour', 'nip', 'relish', 'sapidity', 'savor', 'savour', 'tang']</td>
+      <td></td>
+      <td>the taste experience when a savoury condiment is taken into the mouth将咸味调味品放入口中时的味觉体验</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[taste sensation, taste perception, taste, gustatory perception, gustatory sensation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>smæk</td>
+      <td>['smooch']</td>
+      <td></td>
+      <td>an enthusiastic kiss一个热烈的吻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[buss, osculation, kiss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>smæk</td>
+      <td>['slap', 'smacking']</td>
+      <td></td>
+      <td>the act of smacking something; a blow delivered with an open hand砸东西的行为;用张开的手吹出一击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>smæk</td>
+      <td>['big h', 'hell dust', 'nose drops', 'scag', 'skag', 'thunder']</td>
+      <td></td>
+      <td>street names for heroin海洛因的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[heroin, diacetylmorphine]</td>
+      <td>[street name]</td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>smæk</td>
+      <td>['slap']</td>
+      <td></td>
+      <td>a blow from a flat object (as an open hand)来自扁平物体的打击（作为张开的手）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[blow, bump]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>nou</td>
+      <td>smæk</td>
+      <td></td>
+      <td></td>
+      <td>a sailing ship (usually rigged like a sloop or cutter) used in fishing and sailing along the coast用于沿海捕鱼和航行的帆船（通常像单桅帆船或割草机一样装配）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sailing ship, sailing vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smack</th>
+      <td>ack</td>
+      <td>3.90</td>
+      <td>adv</td>
+      <td>smæk</td>
+      <td>['bang', 'bolt', 'slap', 'slapdash']</td>
+      <td></td>
+      <td>directly直</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>whack</th>
+      <td>ack</td>
+      <td>3.86</td>
+      <td>ver</td>
+      <td>hwæk</td>
+      <td>['wallop', 'wham', 'whop']</td>
+      <td></td>
+      <td>hit hard用力打</td>
+      <td>The teacher whacked the boy老师打了那个男孩</td>
+      <td>[whacking]</td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whack</th>
+      <td>ack</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>hwæk</td>
+      <td>['belt', 'knock', 'rap', 'whang']</td>
+      <td></td>
+      <td>the act of hitting vigorously大力打击的行为</td>
+      <td>he gave the table a whack他把桌子弄得一团糟</td>
+      <td></td>
+      <td></td>
+      <td>[blow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>whack</th>
+      <td>ack</td>
+      <td>3.86</td>
+      <td>nou</td>
+      <td>hwæk</td>
+      <td></td>
+      <td></td>
+      <td>the sound made by a sharp swift blow猛烈的快速打击声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>ver</td>
+      <td>stæk</td>
+      <td>['heap', 'pile'], alos:['stack up']</td>
+      <td></td>
+      <td>arrange in stacks堆叠安排</td>
+      <td>stack your books up on the shelves把你的书堆放在书架上</td>
+      <td>[stacker]</td>
+      <td></td>
+      <td>[set up, arrange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>ver</td>
+      <td>stæk</td>
+      <td></td>
+      <td></td>
+      <td>arrange the order of so as to increase one's winning chances安排顺序，以增加一个人的获胜机会</td>
+      <td>stack the deck of cards堆叠卡片组</td>
+      <td></td>
+      <td></td>
+      <td>[set up, arrange]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>ver</td>
+      <td>stæk</td>
+      <td>, alos:['stack away']</td>
+      <td></td>
+      <td>load or cover with stacks装载或覆盖堆栈</td>
+      <td>stack a truck with boxes堆叠带盒子的卡车</td>
+      <td>[stacker]</td>
+      <td></td>
+      <td>[lade, laden, load, load up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>stæk</td>
+      <td>['smokestack']</td>
+      <td></td>
+      <td>a large tall chimney through which combustion gases and smoke can be evacuated一个很大的高烟囱，可以通过它排出燃烧气体和烟雾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chimney]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>stæk</td>
+      <td>['push-down list', 'push-down stack']</td>
+      <td></td>
+      <td>a list in which the next item to be removed is the item most recently stored (LIFO)要删除的下一个项目是最近存储的项目的列表（LIFO）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[listing, list]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>stæk</td>
+      <td>['push-down storage', 'push-down store']</td>
+      <td></td>
+      <td>a storage device that handles data so that the next item to be retrieved is the item most recently stored (LIFO)处理数据的存储设备，以便下一个要检索的项目是最近存储的项目（LIFO）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[memory device, storage device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>stæk</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'sight', 'slew', 'spate', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite quantity, large indefinite amount]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td>ack</td>
+      <td>3.70</td>
+      <td>nou</td>
+      <td>stæk</td>
+      <td></td>
+      <td></td>
+      <td>an orderly pile一个有序的堆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mound, cumulation, cumulus, agglomerate, heap, pile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td>['relax', 'slack up', 'slacken']</td>
+      <td></td>
+      <td>make less active or fast减少活动或快速</td>
+      <td>He slackened his pace as he got tired他厌倦了，他放松了脚步</td>
+      <td></td>
+      <td></td>
+      <td>[lessen, minify, decrease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td>['slake']</td>
+      <td></td>
+      <td>cause to heat and crumble by treatment with water用水处理导致加热和破碎</td>
+      <td>slack lime松懈的石灰</td>
+      <td></td>
+      <td></td>
+      <td>[hydrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td>['slacken', 'slow', 'slow down', 'slow up']</td>
+      <td></td>
+      <td>become slow or slower变慢或变慢</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[weaken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td>['abate', 'die away', 'let up', 'slack off']</td>
+      <td></td>
+      <td>become less in amount or intensity数量或强度变得越来越少</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[diminish, decrease, fall, lessen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td>['abate', 'slake']</td>
+      <td></td>
+      <td>make less active or intense减少活动或激烈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[minify, decrease, lessen]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td></td>
+      <td></td>
+      <td>avoid responsibilities and work, be idle避免责任和工作，闲着</td>
+      <td></td>
+      <td>[slacker, slacking]</td>
+      <td></td>
+      <td>[fiddle, goldbrick, shirk, shrink from]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td></td>
+      <td></td>
+      <td>be inattentive to, or neglect不注意或疏忽</td>
+      <td>He slacks his attention他放松了注意力</td>
+      <td>[slacking]</td>
+      <td></td>
+      <td>[neglect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>ver</td>
+      <td>slæk</td>
+      <td></td>
+      <td></td>
+      <td>release tension on释放紧张局势</td>
+      <td>slack the rope拉绳子</td>
+      <td></td>
+      <td></td>
+      <td>[loosen, loose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>slæk</td>
+      <td>['mire', 'morass', 'quag', 'quagmire']</td>
+      <td></td>
+      <td>a soft wet area of low-lying land that sinks underfoot低洼地的柔软潮湿区域，在脚下沉没</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bog, peat bog]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>slæk</td>
+      <td>['slack water']</td>
+      <td></td>
+      <td>a stretch of water without current or movement没有电流或运动的一段水</td>
+      <td>suddenly they were in a slack and the water was motionless他们突然松弛，水一动不动</td>
+      <td></td>
+      <td></td>
+      <td>[stretch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>slæk</td>
+      <td>['slackness']</td>
+      <td></td>
+      <td>the quality of being loose (not taut)松散的质量（不拉紧）</td>
+      <td>he hadn't counted on the slackness of the rope他没有指望绳索的松弛</td>
+      <td></td>
+      <td></td>
+      <td>[play, looseness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>slæk</td>
+      <td>['drop-off', 'falling off', 'falloff', 'slump']</td>
+      <td></td>
+      <td>a noticeable deterioration in performance or quality性能或质量明显下降</td>
+      <td>a gradual slack in output产量逐渐减少</td>
+      <td></td>
+      <td></td>
+      <td>[worsening, declension, decline in quality, deterioration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>slæk</td>
+      <td></td>
+      <td></td>
+      <td>a cord or rope or cable that is hanging loosely松散悬挂的绳索或绳索或电缆</td>
+      <td>he took up the slack他松了一口气</td>
+      <td></td>
+      <td></td>
+      <td>[cord]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>nou</td>
+      <td>slæk</td>
+      <td></td>
+      <td></td>
+      <td>dust consisting of a mixture of small coal fragments and coal dust and dirt that sifts out when coal is passed over a sieve灰尘由煤炭碎片和煤尘和泥土的混合物组成，当煤通过筛子时会被筛出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[debris, junk, dust, rubble, detritus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>adj</td>
+      <td>slæk</td>
+      <td>['loose'], similarTo:['lax']</td>
+      <td></td>
+      <td>not tense or taut不紧张或拉紧</td>
+      <td>slack and wrinkled skin松弛和皱纹的皮肤slack sails松弛的帆a slack rope松弛的绳子a slack grip松懈的抓地力</td>
+      <td>[slackness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>adj</td>
+      <td>slæk</td>
+      <td>['lax'], similarTo:['negligent']</td>
+      <td></td>
+      <td>lacking in rigor or strictness缺乏严谨或严格</td>
+      <td>slack in maintaining discipline保持纪律松懈</td>
+      <td>[slackness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slack</th>
+      <td>ack</td>
+      <td>3.67</td>
+      <td>adj</td>
+      <td>slæk</td>
+      <td>, similarTo:['standing']</td>
+      <td></td>
+      <td>flowing with little speed as e.g. at the turning of the tide以很小的速度流动，例如在转折的时候</td>
+      <td>slack water懒散的水</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shack</th>
+      <td>ack</td>
+      <td>3.56</td>
+      <td>ver</td>
+      <td>ʃæk</td>
+      <td>['trail']</td>
+      <td></td>
+      <td>move, proceed, or walk draggingly or slowly拖动或缓慢地移动，继续或行走</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[travel, go, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shack</th>
+      <td>ack</td>
+      <td>3.56</td>
+      <td>ver</td>
+      <td>ʃæk</td>
+      <td>['domicile', 'domiciliate', 'reside']</td>
+      <td></td>
+      <td>make one's home in a particular place or community在特定的地方或社区建立一个人的家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inhabit, populate, live, dwell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shack</th>
+      <td>ack</td>
+      <td>3.56</td>
+      <td>nou</td>
+      <td>ʃæk</td>
+      <td>['hovel', 'hut', 'hutch', 'shanty']</td>
+      <td></td>
+      <td>small crude shelter used as a dwelling用作住宅的小型原油避难所</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tacky</th>
+      <td>ack</td>
+      <td>3.42</td>
+      <td>adj</td>
+      <td>'tæki</td>
+      <td>['brassy', 'cheap', 'flash', 'flashy', 'garish', 'gaudy', 'gimcrack', 'loud', 'meretricious', 'tatty', 'tawdry', 'trashy'], similarTo:['tasteless']</td>
+      <td></td>
+      <td>tastelessly showy无味的华丽</td>
+      <td></td>
+      <td>[tackiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tacky</th>
+      <td>ack</td>
+      <td>3.42</td>
+      <td>adj</td>
+      <td>'tæki</td>
+      <td>, similarTo:['wet']</td>
+      <td></td>
+      <td>(of a glutinous liquid such as paint) not completely dried and slightly sticky to the touch（糯性液体如油漆）未完全干燥并且触感略微粘稠</td>
+      <td>tacky varnish俗气的清漆</td>
+      <td>[tackiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jacks</th>
+      <td>ack</td>
+      <td>3.36</td>
+      <td>nou</td>
+      <td>dʒæks</td>
+      <td>['jackstones', 'knucklebones']</td>
+      <td></td>
+      <td>a game in which jackstones are thrown and picked up in various groups between bounces of a small rubber ball这是一个游戏，在这个游戏中，在一个小橡皮球的弹跳之间，各种组中的巨型石被抛出并被拾起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[child's game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knack</th>
+      <td>ack</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>næk</td>
+      <td>['bent', 'hang']</td>
+      <td></td>
+      <td>a special way of doing something做某事的特殊方式</td>
+      <td>he had a special knack for getting into trouble他有陷入困境的特殊诀窍</td>
+      <td></td>
+      <td></td>
+      <td>[endowment, gift, natural endowment, talent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wacky</th>
+      <td>ack</td>
+      <td>3.15</td>
+      <td>adj</td>
+      <td>'wæki</td>
+      <td>['goofy', 'silly', 'whacky', 'zany'], similarTo:['foolish']</td>
+      <td></td>
+      <td>ludicrous, foolish荒唐，愚蠢</td>
+      <td>some wacky plan for selling more books出售更多书籍的一些古怪计划</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wacky</th>
+      <td>ack</td>
+      <td>3.15</td>
+      <td>adj</td>
+      <td>'wæki</td>
+      <td>['around the bend', 'balmy', 'barmy', 'bats', 'batty', 'bonkers', 'buggy', 'cracked', 'crackers', 'daft', 'dotty', 'fruity', 'haywire', 'kookie', 'kooky', 'loco', 'loony', 'loopy', 'nuts', 'nutty', 'round the bend', 'whacky'], similarTo:['insane']</td>
+      <td></td>
+      <td>informal or slang terms for mentally irregular精神上不正常的非正式或俚语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flack</th>
+      <td>ack</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>flæk</td>
+      <td>['ack-ack', 'ack-ack gun', 'antiaircraft', 'antiaircraft gun', 'flak', 'pom-pom']</td>
+      <td></td>
+      <td>artillery designed to shoot upward at airplanes设计用于在飞机上向上射击的火炮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gun]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flack</th>
+      <td>ack</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>flæk</td>
+      <td>['flack catcher', 'flak', 'flak catcher']</td>
+      <td></td>
+      <td>a slick spokesperson who can turn any criticism to the advantage of their employer一个光滑的发言人，可以将任何批评转变为雇主的优势</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[interpreter, representative, spokesperson, voice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flack</th>
+      <td>ack</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>flæk</td>
+      <td>['attack', 'blast', 'fire', 'flak']</td>
+      <td></td>
+      <td>intense adverse criticism强烈的不利批评</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[criticism, unfavorable judgment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clack</th>
+      <td>ack</td>
+      <td>2.82</td>
+      <td>ver</td>
+      <td>klæk</td>
+      <td>['brattle', 'clatter']</td>
+      <td></td>
+      <td>make a rattling sound发出嘎嘎声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[resound, make noise, noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clack</th>
+      <td>ack</td>
+      <td>2.82</td>
+      <td>ver</td>
+      <td>klæk</td>
+      <td>['blab', 'blabber', 'chatter', 'gabble', 'gibber', 'maunder', 'palaver', 'piffle', 'prate', 'prattle', 'tattle', 'tittle-tattle', 'twaddle']</td>
+      <td></td>
+      <td>speak (about unimportant matters) rapidly and incessantly快速而不断地说（关于不重要的事情）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[verbalize, mouth, speak, talk, utter, verbalise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clack</th>
+      <td>ack</td>
+      <td>2.82</td>
+      <td>ver</td>
+      <td>klæk</td>
+      <td>['click', 'cluck']</td>
+      <td></td>
+      <td>make a clucking sounds, characteristic of hens做一个咯咯的声音，母鸡的特征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emit, let loose, let out, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clack</th>
+      <td>ack</td>
+      <td>2.82</td>
+      <td>nou</td>
+      <td>klæk</td>
+      <td>['clap']</td>
+      <td></td>
+      <td>a sharp abrupt noise as if two objects hit together; may be repeated一个尖锐的突然噪音，仿佛两个物体碰在一起;可能会重复</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clack</th>
+      <td>ack</td>
+      <td>2.82</td>
+      <td>nou</td>
+      <td>klæk</td>
+      <td>['clack valve', 'clapper valve']</td>
+      <td></td>
+      <td>a simple valve with a hinge on one side; allows fluid to flow in only one direction一个简单的阀门，一侧有铰链;允许流体仅在一个方向流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[valve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrack</th>
+      <td>ack</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>ræk</td>
+      <td>['bust up', 'wreck']</td>
+      <td></td>
+      <td>smash or break forcefully粉碎或强行打破</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[destroy, ruin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrack</th>
+      <td>ack</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td>['sea wrack']</td>
+      <td></td>
+      <td>growth of marine vegetation especially of the large forms such as rockweeds and kelp海洋植被的生长，尤其是岩石和海藻等大型植物的生长</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seaweed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrack</th>
+      <td>ack</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td>['rack']</td>
+      <td></td>
+      <td>the destruction or collapse of something某事物的破坏或崩溃</td>
+      <td>wrack and ruin破坏和毁灭</td>
+      <td></td>
+      <td></td>
+      <td>[destruction, demolition, wipeout]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wrack</th>
+      <td>ack</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>ræk</td>
+      <td></td>
+      <td></td>
+      <td>dried seaweed especially that cast ashore干海藻特别是上岸的海藻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seaweed]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

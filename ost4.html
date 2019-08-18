@@ -1,0 +1,875 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['most', 'lost', 'cost', 'post', 'host']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>most</th>
+      <td>ost</td>
+      <td>5.56</td>
+      <td>adv</td>
+      <td>moʊst</td>
+      <td>['about', 'almost', 'near', 'nearly', 'nigh', 'virtually', 'well-nigh']</td>
+      <td></td>
+      <td>(of actions or states) slightly short of or not quite accomplished; all but（行动或国家）略微缺乏或没有完成;除了</td>
+      <td>the baby was almost asleep when the alarm sounded当警报响起时，婴儿几乎睡着了we're almost finished我们差不多完成了most everyone agrees大多数人都同意</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>most</th>
+      <td>ost</td>
+      <td>5.56</td>
+      <td>adv</td>
+      <td>moʊst</td>
+      <td>['to the highest degree']</td>
+      <td>[least]</td>
+      <td>used to form the superlative用来形成最高级的</td>
+      <td>the king cobra is the most dangerous snake眼镜王蛇是最危险的蛇</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>most</th>
+      <td>ost</td>
+      <td>5.56</td>
+      <td>adv</td>
+      <td>moʊst</td>
+      <td></td>
+      <td></td>
+      <td>very非常</td>
+      <td>a most welcome relief最受欢迎的救济</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intensifier, intensive]</td>
+    </tr>
+    <tr>
+      <th>most</th>
+      <td>ost</td>
+      <td>5.56</td>
+      <td>adj</td>
+      <td>moʊst</td>
+      <td></td>
+      <td>[fewest]</td>
+      <td>(superlative of `many' used with count nouns and often preceded by `the') quantifier meaning the greatest in number（与计数名词一起使用的'many'的最高级，通常在'the'之前）量词意味着数量最多</td>
+      <td>who has the most apples?谁拥有最多的苹果？most people like eggs大多数人喜欢鸡蛋most fishes have fins大多数鱼都有鳍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[superlative]</td>
+    </tr>
+    <tr>
+      <th>most</th>
+      <td>ost</td>
+      <td>5.56</td>
+      <td>adj</td>
+      <td>moʊst</td>
+      <td></td>
+      <td>[least]</td>
+      <td>the superlative of `much' that can be used with mass nouns and is usually preceded by `the'; a quantifier meaning the greatest in amount or extent or degree可以与大量名词一起使用的“多”的最高级，通常以“the”开头;量词意味着数量或程度或程度最大</td>
+      <td>made the most money he could他赚的钱最多what attracts the most attention?什么吸引了最多的关注？made the most of a bad deal最糟糕的交易</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[superlative]</td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>nou</td>
+      <td>lɔst</td>
+      <td>['doomed']</td>
+      <td></td>
+      <td>people who are destined to die soon注定会很快死去的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[people]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>['bemused', 'preoccupied'], similarTo:['thoughtful']</td>
+      <td></td>
+      <td>deeply absorbed in thought深深沉浸在思想中</td>
+      <td>lost in thought陷入沉思</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>['missed'], similarTo:['uncomprehensible', 'incomprehensible']</td>
+      <td></td>
+      <td>not caught with the senses or the mind没有被感官或头脑所吸引</td>
+      <td>words lost in the din在喧嚣中丢失的话语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>['at sea', 'baffled', 'befuddled', 'bemused', 'bewildered', 'confounded', 'confused', 'mazed', 'mixed-up'], similarTo:['perplexed']</td>
+      <td></td>
+      <td>perplexed by many conflicting situations or statements; filled with bewilderment困惑于许多相互矛盾的情况或陈述;充满了困惑</td>
+      <td>she felt lost on the first day of school她在上学的第一天就感到茫然</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>['helpless'], similarTo:['hopeless']</td>
+      <td></td>
+      <td>unable to function; without help无法运作;没有帮助</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>['confused', 'disoriented'], similarTo:['unoriented']</td>
+      <td></td>
+      <td>having lost your bearings; confused as to time or place or personal identity丢失了你的方位;对时间，地点或个人身份感到困惑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>, similarTo:['irrecoverable', 'unrecoverable']</td>
+      <td></td>
+      <td>incapable of being recovered or regained无法恢复或重新获得</td>
+      <td>his lost honor他失去了荣誉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>, similarTo:['wasted', 'mislaid', 'misplaced', 'missing', 'squandered', 'stray', 'straying']</td>
+      <td>[found]</td>
+      <td>no longer in your possession or control; unable to be found or recovered不再由你掌握或控制;无法找到或恢复</td>
+      <td>a lost child一个失散的孩子lost friends失去了朋友his lost book他丢失的书lost opportunities失去了机会</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>, similarTo:['forfeited', 'confiscate', 'forfeit']</td>
+      <td>[won]</td>
+      <td>not gained or won没有获得或赢得</td>
+      <td>a lost battle一场失败的战斗a lost prize丢了奖品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lost</th>
+      <td>ost</td>
+      <td>5.52</td>
+      <td>adj</td>
+      <td>lɔst</td>
+      <td>, similarTo:['cursed', 'ruined', 'destroyed', 'doomed', 'unredeemed', 'unsaved', 'damned'], alos:['unregenerated', 'unregenerate', 'cursed', 'curst']</td>
+      <td>[saved]</td>
+      <td>spiritually or physically doomed or destroyed在精神上或身体上注定或毁灭</td>
+      <td>lost souls失去了灵魂a lost generation失落的一代a lost ship丢失的船the lost platoon丢失的排</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cost</th>
+      <td>ost</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kɔst</td>
+      <td>['be']</td>
+      <td></td>
+      <td>be priced at定价为</td>
+      <td>These shoes cost $100这双鞋售价100美元</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cost</th>
+      <td>ost</td>
+      <td>4.73</td>
+      <td>ver</td>
+      <td>kɔst</td>
+      <td></td>
+      <td></td>
+      <td>require to lose, suffer, or sacrifice要求失去，受苦或牺牲</td>
+      <td>This mistake cost him his job这个错误让他失去了工作</td>
+      <td></td>
+      <td></td>
+      <td>[require, ask, call for, demand, involve, necessitate, need, postulate, take]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cost</th>
+      <td>ost</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kɔst</td>
+      <td>['price', 'toll']</td>
+      <td></td>
+      <td>value measured by what must be given or done or undergone to obtain something通过必须给予或完成或经历的东西来衡量价值</td>
+      <td>the cost in human life was enormous人类生活的代价是巨大的</td>
+      <td>[costly]</td>
+      <td></td>
+      <td>[value]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cost</th>
+      <td>ost</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kɔst</td>
+      <td>['monetary value', 'price']</td>
+      <td></td>
+      <td>the property of having material worth (often indicated by the amount of money something would bring if sold)具有物质价值的财产（通常用出售时带来的金额表示）</td>
+      <td>he couldn't calculate the cost of the collection他无法计算收藏的成本</td>
+      <td>[costly]</td>
+      <td></td>
+      <td>[value]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cost</th>
+      <td>ost</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>kɔst</td>
+      <td></td>
+      <td></td>
+      <td>the total spent for goods or services including money and time and labor商品或服务的总支出，包括金钱，时间和劳动力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spending, outlay, expenditure, outgo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td>['stake']</td>
+      <td></td>
+      <td>mark with a stake标记有赌注</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td>['carry']</td>
+      <td></td>
+      <td>transfer (entries) from one account book to another从一个帐簿转移（条目）到另一个帐簿</td>
+      <td></td>
+      <td></td>
+      <td>[carry]</td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td>['mail', 'send']</td>
+      <td></td>
+      <td>cause to be directed or transmitted to another place导致被传导或传送到另一个地方</td>
+      <td></td>
+      <td>[postage, posting]</td>
+      <td></td>
+      <td>[transfer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td>['place', 'send', 'station']</td>
+      <td></td>
+      <td>assign to a station分配到一个电台</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td>['put up']</td>
+      <td></td>
+      <td>place so as to be noticed放置以便被注意到</td>
+      <td>post a sign发一个标志post a warning at the dump在转储处发布警告</td>
+      <td>[posting]</td>
+      <td></td>
+      <td>[set up, instal, install, put in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td>['brand']</td>
+      <td></td>
+      <td>mark or expose as infamous标记或暴露为臭名昭着</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[call]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>affix in a public place or for public notice在公共场所贴或公告</td>
+      <td>post a warning发布警告</td>
+      <td>[posting, poster]</td>
+      <td></td>
+      <td>[stick on, affix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>assign to a post; put into a post分配到一个帖子;投入一个帖子</td>
+      <td>The newspaper posted him in Timbuktu报纸把他贴在廷巴克图</td>
+      <td>[poster]</td>
+      <td></td>
+      <td>[depute, designate, assign, delegate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>display, as of records in sports games显示，体育比赛中的记录</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[put down, enter, record]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>enter on a public list进入公开名单</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[list]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>publicize with, or as if with, a poster用海报宣传或仿佛用海报宣传</td>
+      <td>I'll post the news on the bulletin board我会在公告板上发布新闻</td>
+      <td>[poster, posting]</td>
+      <td></td>
+      <td>[denote, announce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>ver</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>ride Western style and bob up and down in the saddle in rhythm with a horse's trotting gait乘坐西式风格，在马鞍上上下摆动，以马的小跑步态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ride horseback]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['berth', 'billet', 'office', 'place', 'position', 'situation', 'spot']</td>
+      <td></td>
+      <td>a job in an organization组织中的工作</td>
+      <td>he occupied a post in the treasury他在财政部任职</td>
+      <td></td>
+      <td></td>
+      <td>[job, line of work, business, occupation, line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['c. w. post', 'charles william post']</td>
+      <td></td>
+      <td>United States manufacturer of breakfast cereals and Postum (1854-1914)美国早餐谷物和Postum制造商（1854-1914）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['emily post', 'emily price post']</td>
+      <td></td>
+      <td>United States female author who wrote a book and a syndicated newspaper column on etiquette (1872-1960)美国女作家，他在礼仪上写了一本书和一个辛迪加的报纸专栏（1872-1960）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['military post']</td>
+      <td></td>
+      <td>military installation at which a body of troops is stationed一支部队驻扎的军事设施</td>
+      <td>this military post provides an important source of income for the town nearby这个军事岗位为附近的城镇提供了重要的收入来源there is an officer's club on the post邮局上有一个军官俱乐部</td>
+      <td></td>
+      <td></td>
+      <td>[military installation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['stake']</td>
+      <td></td>
+      <td>a pole or stake set up to mark something (as the start or end of a race track)设置标记某物的杆或桩（作为赛道的起点或终点）</td>
+      <td>a pair of posts marked the goal一对帖子标志着目标</td>
+      <td></td>
+      <td></td>
+      <td>[visual signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['mail', 'mail service', 'postal service']</td>
+      <td></td>
+      <td>the system whereby messages are transmitted via the post office消息通过邮局传输的系统</td>
+      <td>in England they call mail `the post'在英格兰，他们称邮件为“帖子”</td>
+      <td>[postal]</td>
+      <td></td>
+      <td>[communication, communicating]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['mail']</td>
+      <td></td>
+      <td>any particular collection of letters or packages that is delivered交付的任何特定字母或包裹集合</td>
+      <td>is there any post for me?我有什么帖子吗？she was opening her post她正在打开她的职位</td>
+      <td></td>
+      <td></td>
+      <td>[collection, aggregation, accumulation, assemblage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['station']</td>
+      <td></td>
+      <td>the position where someone (as a guard or sentry) stands or is assigned to stand某人（作为警卫或哨兵）站立或被指派站立的位置</td>
+      <td>a soldier manned the entrance post一名士兵载着入口哨所</td>
+      <td></td>
+      <td></td>
+      <td>[place, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td>['wiley post']</td>
+      <td></td>
+      <td>United States aviator who in 1933 made the first solo flight around the world (1899-1935)美国飞行员于1933年首次在世界各地进行单人飞行（1899-1935）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>an upright consisting of a piece of timber or metal fixed firmly in an upright position由一块木材或金属牢固固定在直立位置的直立部分</td>
+      <td>he set a row of posts in the ground and strung barbwire between them他在地上设置了一排柱子，并在它们之间串起了铁丝网</td>
+      <td></td>
+      <td></td>
+      <td>[vertical, upright]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>post</th>
+      <td>ost</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>poʊst</td>
+      <td></td>
+      <td></td>
+      <td>the delivery and collection of letters and packages信件和包裹的交付和收集</td>
+      <td>it came by the first post它来自第一篇文章if you hurry you'll catch the post如果你快点，你会抓住这个帖子</td>
+      <td>[postal]</td>
+      <td></td>
+      <td>[bringing, delivery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>ver</td>
+      <td>hoʊst</td>
+      <td></td>
+      <td></td>
+      <td>be the host of or for成为或的主人</td>
+      <td>We hosted 4 couples last night我们昨晚接待了4对夫妇</td>
+      <td></td>
+      <td></td>
+      <td>[entertain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td>['emcee', 'master of ceremonies']</td>
+      <td></td>
+      <td>a person who acts as host at formal occasions (makes an introductory speech and introduces other speakers)在正式场合担任主持人的人（作介绍性演讲并介绍其他发言人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[entertainer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td>['server']</td>
+      <td></td>
+      <td>(computer science) a computer that provides client stations with access to files and printers as shared resources to a computer network（计算机科学）一种计算机，它为客户站提供对文件和打印机的访问，作为计算机网络的共享资源</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[information processing system, data processor, computing machine, computing device, computer, electronic computer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td>['legion']</td>
+      <td></td>
+      <td>archaic terms for army军队的古老条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ground forces, regular army, army]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td>['boniface', 'innkeeper']</td>
+      <td></td>
+      <td>the owner or manager of an inn旅馆的所有者或经理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[patron]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td>['horde', 'legion']</td>
+      <td></td>
+      <td>a vast multitude一大群人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[multitude, concourse, throng]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td></td>
+      <td>[parasite]</td>
+      <td>an animal or plant that nourishes and supports a parasite; it does not benefit and is often harmed by the association滋养和支持寄生虫的动物或植物;它没有受益，往往受到协会的伤害</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[being, organism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td></td>
+      <td></td>
+      <td>any organization that provides resources and facilities for a function or event为功能或事件提供资源和设施的任何组织</td>
+      <td>Atlanta was chosen to be host for the Olympic Games亚特兰大被选为奥运会的东道主</td>
+      <td></td>
+      <td></td>
+      <td>[organization, organisation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td></td>
+      <td></td>
+      <td>a person who invites guests to a social event (such as a party in his or her own home) and who is responsible for them while they are there邀请客人参加社交活动（例如在他或她自己家中举办派对）并在他们在场的时候对他们负责的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grownup, adult]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td></td>
+      <td></td>
+      <td>a technical name for the bread used in the service of Mass or Holy Communion用于弥撒或圣餐的面包的技术名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[breadstuff, bread, staff of life]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>host</th>
+      <td>ost</td>
+      <td>4.12</td>
+      <td>nou</td>
+      <td>hoʊst</td>
+      <td></td>
+      <td></td>
+      <td>(medicine) recipient of transplanted tissue or organ from a donor（药物）来自供体的移植组织或器官的接受者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[recipient, receiver]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

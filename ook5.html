@@ -1,0 +1,320 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['shook', 'crook', 'hooks', 'spook', 'brook', 'hooky', 'kooky', 'cooky', 'snook', 'nooky']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>shook</th>
+      <td>ook</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>ʃʊk</td>
+      <td></td>
+      <td></td>
+      <td>a disassembled barrel; the parts packed for storage or shipment一个拆开的桶;包装用于储存或运输的零件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[barrel, cask]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crook</th>
+      <td>ook</td>
+      <td>3.68</td>
+      <td>ver</td>
+      <td>krʊk</td>
+      <td>['curve']</td>
+      <td></td>
+      <td>bend or cause to bend弯曲或导致弯曲</td>
+      <td>He crooked his index finger他歪着食指</td>
+      <td></td>
+      <td></td>
+      <td>[flex, bend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crook</th>
+      <td>ook</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>krʊk</td>
+      <td>['bend', 'turn', 'twist']</td>
+      <td></td>
+      <td>a circular segment of a curve曲线的圆形段</td>
+      <td>a crook in the path路上的骗子</td>
+      <td></td>
+      <td></td>
+      <td>[curve, curved shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crook</th>
+      <td>ook</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>krʊk</td>
+      <td>['criminal', 'felon', 'malefactor', 'outlaw']</td>
+      <td></td>
+      <td>someone who has committed a crime or has been legally convicted of a crime犯下罪行或在法律上被定罪的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[principal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crook</th>
+      <td>ook</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>krʊk</td>
+      <td>["shepherd's crook"]</td>
+      <td></td>
+      <td>a long staff with one end being hook shaped一个长长的工作人员，一端是钩形的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[staff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hooks</th>
+      <td>ook</td>
+      <td>3.50</td>
+      <td>nou</td>
+      <td>hʊks</td>
+      <td>['maulers', 'meat hooks']</td>
+      <td></td>
+      <td>large strong hand (as of a fighter)强大的手（如战斗机）</td>
+      <td>wait till I get my hooks on him等到我抓住他的时候</td>
+      <td></td>
+      <td></td>
+      <td>[hand, manus, mitt, paw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spook</th>
+      <td>ook</td>
+      <td>3.20</td>
+      <td>ver</td>
+      <td>spuk</td>
+      <td></td>
+      <td></td>
+      <td>frighten or scare, and often provoke into a violent action吓唬或吓唬，经常引发暴力行为</td>
+      <td>The noise spooked the horse噪音吓坏了马</td>
+      <td></td>
+      <td></td>
+      <td>[scare, affright, fright, frighten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spook</th>
+      <td>ook</td>
+      <td>3.20</td>
+      <td>nou</td>
+      <td>spuk</td>
+      <td>['ghost', 'shade', 'specter', 'spectre', 'wraith']</td>
+      <td></td>
+      <td>a mental representation of some haunting experience一种难以忘怀的经历的心理表征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[apparition, fantasm, phantasm, phantasma, phantom, shadow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>spook</th>
+      <td>ook</td>
+      <td>3.20</td>
+      <td>nou</td>
+      <td>spuk</td>
+      <td>['creep', 'weirdie', 'weirdo', 'weirdy']</td>
+      <td></td>
+      <td>someone unpleasantly strange or eccentric有人不愉快的奇怪或古怪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brook</th>
+      <td>ook</td>
+      <td>3.06</td>
+      <td>ver</td>
+      <td>brʊk</td>
+      <td>['abide', 'bear', 'digest', 'endure', 'put up', 'stand', 'stick out', 'stomach', 'suffer', 'support', 'tolerate']</td>
+      <td></td>
+      <td>put up with something or somebody unpleasant忍受某事或某人不愉快</td>
+      <td></td>
+      <td></td>
+      <td>[suffer]</td>
+      <td>[allow, countenance, permit, let]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brook</th>
+      <td>ook</td>
+      <td>3.06</td>
+      <td>nou</td>
+      <td>brʊk</td>
+      <td>['creek']</td>
+      <td></td>
+      <td>a natural stream of water smaller than a river (and often a tributary of a river)比河流小的天然水流（通常是河流的一条支流）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[watercourse, stream]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hooky</th>
+      <td>ook</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>'hʊki</td>
+      <td>['truancy']</td>
+      <td></td>
+      <td>failure to attend (especially school)未能参加（尤其是学校）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nonattendance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kooky</th>
+      <td>ook</td>
+      <td>2.60</td>
+      <td>adj</td>
+      <td>'kuki</td>
+      <td>['around the bend', 'balmy', 'barmy', 'bats', 'batty', 'bonkers', 'buggy', 'cracked', 'crackers', 'daft', 'dotty', 'fruity', 'haywire', 'kookie', 'loco', 'loony', 'loopy', 'nuts', 'nutty', 'round the bend', 'wacky', 'whacky'], similarTo:['insane']</td>
+      <td></td>
+      <td>informal or slang terms for mentally irregular精神上不正常的非正式或俚语</td>
+      <td></td>
+      <td>[kook]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cooky</th>
+      <td>ook</td>
+      <td>2.33</td>
+      <td>nou</td>
+      <td>'kʊki</td>
+      <td>['cookie']</td>
+      <td></td>
+      <td>the cook on a ranch or at a camp牧场或营地的厨师</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cooky</th>
+      <td>ook</td>
+      <td>2.33</td>
+      <td>nou</td>
+      <td>'kʊki</td>
+      <td>['biscuit', 'cookie']</td>
+      <td></td>
+      <td>any of various small flat sweet cakes (`biscuit' is the British term)任何一种小扁平的甜蛋糕（`饼干'是英国的术语）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cake]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snook</th>
+      <td>ook</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>snuk</td>
+      <td></td>
+      <td></td>
+      <td>large tropical American food and game fishes of coastal and brackish waters; resemble pike沿海和咸淡水域的大型热带美洲食物和野生鱼类;像派克一样</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[robalo]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nooky</th>
+      <td>ook</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'nʊki</td>
+      <td>['ass', 'fuck', 'fucking', 'nookie', 'piece of ass', 'piece of tail', 'roll in the hay', 'screw', 'screwing', 'shag', 'shtup']</td>
+      <td></td>
+      <td>slang for sexual intercourse俚语用于性交</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[carnal knowledge, coition, coitus, copulation, sexual relation, relation, intercourse, sex act, sexual congress, sexual intercourse]</td>
+      <td>[vulgarism, cant, dirty word, filth, jargon, lingo, obscenity, patois, slang, smut, vernacular, argot]</td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

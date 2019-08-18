@@ -1,0 +1,575 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['frog', 'ogre', 'yogi', 'hogg', 'clog', 'flog', 'ogle', 'smog', 'slog', 'grog', 'snog', 'agog', 'logy', 'fogy', 'togs', 'bogy']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>frog</th>
+      <td>og</td>
+      <td>4.01</td>
+      <td>ver</td>
+      <td>frɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>hunt frogs for food寻找青蛙的食物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[capture, catch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frog</th>
+      <td>og</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>frɑɡ</td>
+      <td>['gaul']</td>
+      <td></td>
+      <td>a person of French descent一个法国血统的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[frenchman, frenchwoman, french person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frog</th>
+      <td>og</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>frɑɡ</td>
+      <td>['anuran', 'batrachian', 'salientian', 'toad', 'toad frog']</td>
+      <td></td>
+      <td>any of various tailless stout-bodied amphibians with long hind limbs for leaping; semiaquatic and terrestrial species任何一种无尾无尾的两栖动物，长后肢可以跳跃;半水生和陆生物种</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amphibian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frog</th>
+      <td>og</td>
+      <td>4.01</td>
+      <td>nou</td>
+      <td>frɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>a decorative loop of braid or cord编织物或绳索的装饰环</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adornment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ogre</th>
+      <td>og</td>
+      <td>3.50</td>
+      <td>nou</td>
+      <td>'oʊɡər</td>
+      <td>['demon', 'devil', 'fiend', 'monster']</td>
+      <td></td>
+      <td>a cruel wicked and inhuman person一个残酷的邪恶和不人道的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ogre</th>
+      <td>og</td>
+      <td>3.50</td>
+      <td>nou</td>
+      <td>'oʊɡər</td>
+      <td></td>
+      <td></td>
+      <td>(folklore) a giant who likes to eat human beings（民间传说）一个喜欢吃人类的巨人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[giant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yogi</th>
+      <td>og</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>'joʊɡi</td>
+      <td>['berra', 'lawrence peter berra', 'yogi berra']</td>
+      <td></td>
+      <td>United States baseball player (born 1925)美国棒球运动员（1925年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yogi</th>
+      <td>og</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>'joʊɡi</td>
+      <td></td>
+      <td></td>
+      <td>one who practices yoga and has achieved a high level of spiritual insight一个练习瑜伽并获得高水平精神洞察力的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[philosopher]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hogg</th>
+      <td>og</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>hɔɡ</td>
+      <td>['james hogg']</td>
+      <td></td>
+      <td>Scottish writer of rustic verse (1770-1835)乡村诗歌的苏格兰作家（1770-1835）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hogg</th>
+      <td>og</td>
+      <td>2.93</td>
+      <td>nou</td>
+      <td>hɔɡ</td>
+      <td>['hog', 'hogget']</td>
+      <td></td>
+      <td>a sheep up to the age of one year; one yet to be sheared一只绵羊，一岁以下;一个尚未被剪切的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lamb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>klɑɡ</td>
+      <td>['back up', 'choke', 'choke off', 'clog up', 'congest', 'foul']</td>
+      <td>[unclog]</td>
+      <td>become or cause to become obstructed变得或导致受阻</td>
+      <td>The leaves clog our drains in the Fall叶子在秋天堵塞我们的排水沟</td>
+      <td></td>
+      <td></td>
+      <td>[occlude, close up, obturate, obstruct, jam, impede, block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>klɑɡ</td>
+      <td>['constipate']</td>
+      <td></td>
+      <td>impede with a clog or as if with a clog遇到堵塞或好像有堵塞</td>
+      <td>The market is being clogged by these operations市场正受到这些业务的阻碍</td>
+      <td></td>
+      <td></td>
+      <td>[slow up, slow, slow down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>klɑɡ</td>
+      <td>['overload']</td>
+      <td></td>
+      <td>fill to excess so that function is impaired填补过多，使功能受损</td>
+      <td>Fear clogged her mind恐惧堵塞了她的思绪The story was clogged with too many details这个故事被太多细节堵塞了</td>
+      <td></td>
+      <td></td>
+      <td>[fill, fill up, make full]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>klɑɡ</td>
+      <td>['clot']</td>
+      <td></td>
+      <td>coalesce or unite in a mass团结或团结</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coalesce]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>klɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>dance a clog dance跳一个木cl舞</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dance, trip the light fantastic toe, trip the light fantastic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>ver</td>
+      <td>klɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>impede the motion of, as with a chain or a burden妨碍运动，如链条或负担</td>
+      <td>horses were clogged until they were tamed马被堵塞直到它们被驯服</td>
+      <td></td>
+      <td></td>
+      <td>[restrain, cumber, encumber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>klɑɡ</td>
+      <td>['geta', 'patten', 'sabot']</td>
+      <td></td>
+      <td>footwear usually with wooden soles鞋类通常带有木质鞋底</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[footwear, footgear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>klɑɡ</td>
+      <td>['clog dance', 'clog dancing']</td>
+      <td></td>
+      <td>a dance performed while wearing shoes with wooden soles; has heavy stamping steps穿着木质鞋底的舞蹈表演;有很重的冲压步骤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tap dancing, tap dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clog</th>
+      <td>og</td>
+      <td>2.90</td>
+      <td>nou</td>
+      <td>klɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>any object that acts as a hindrance or obstruction任何妨碍或阻碍的物体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[encumbrance, hinderance, hindrance, hitch, incumbrance, preventative, interference, preventive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flog</th>
+      <td>og</td>
+      <td>2.79</td>
+      <td>ver</td>
+      <td>flɑɡ</td>
+      <td>['lash', 'lather', 'slash', 'strap', 'trounce', 'welt', 'whip']</td>
+      <td></td>
+      <td>beat severely with a whip or rod用鞭子或杖严重击打</td>
+      <td>The teacher often flogged the students老师经常鞭打学生</td>
+      <td>[flogging]</td>
+      <td></td>
+      <td>[beat, work over, beat up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flog</th>
+      <td>og</td>
+      <td>2.79</td>
+      <td>ver</td>
+      <td>flɑɡ</td>
+      <td>['cane', 'lambast', 'lambaste']</td>
+      <td></td>
+      <td>beat with a cane用拐杖打败</td>
+      <td></td>
+      <td>[flogging]</td>
+      <td></td>
+      <td>[beat, work over, beat up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ogle</th>
+      <td>og</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>'oʊɡəl</td>
+      <td></td>
+      <td></td>
+      <td>look at with amorous intentions用多情的意图来看待</td>
+      <td></td>
+      <td>[ogler]</td>
+      <td></td>
+      <td>[look]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>smog</th>
+      <td>og</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>smɑɡ</td>
+      <td>['smogginess']</td>
+      <td></td>
+      <td>air pollution by a mixture of smoke and fog烟雾混合造成的空气污染</td>
+      <td></td>
+      <td>[smoggy]</td>
+      <td></td>
+      <td>[air pollution]</td>
+      <td>[blend, portmanteau, portmanteau word]</td>
+    </tr>
+    <tr>
+      <th>slog</th>
+      <td>og</td>
+      <td>2.64</td>
+      <td>ver</td>
+      <td>slɑɡ</td>
+      <td>["keep one's nose to the grindstone", "keep one's shoulder to the wheel", 'peg away', 'plug away']</td>
+      <td></td>
+      <td>work doggedly or persistently坚持不懈地工作</td>
+      <td></td>
+      <td>[slogger]</td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slog</th>
+      <td>og</td>
+      <td>2.64</td>
+      <td>ver</td>
+      <td>slɑɡ</td>
+      <td>['slug', 'swig']</td>
+      <td></td>
+      <td>strike heavily, especially with the fist or a bat严重打击，特别是用拳头或蝙蝠</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slog</th>
+      <td>og</td>
+      <td>2.64</td>
+      <td>ver</td>
+      <td>slɑɡ</td>
+      <td>['footslog', 'pad', 'plod', 'tramp', 'trudge']</td>
+      <td></td>
+      <td>walk heavily and firmly, as when weary, or through mud当疲倦或通过泥泞时，我们会坚定地走路</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grog</th>
+      <td>og</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>grɑɡ</td>
+      <td></td>
+      <td></td>
+      <td>rum cut with water朗姆酒用水切</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snog</th>
+      <td>og</td>
+      <td>2.36</td>
+      <td>ver</td>
+      <td></td>
+      <td>['buss', 'kiss', 'osculate']</td>
+      <td></td>
+      <td>touch with the lips or press the lips (against someone's mouth or other body part) as an expression of love, greeting, etc.触摸嘴唇或按压嘴唇（对着某人的嘴或其他身体部位）作为爱，问候等的表达。</td>
+      <td></td>
+      <td>[snogging]</td>
+      <td></td>
+      <td>[touch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agog</th>
+      <td>og</td>
+      <td>2.12</td>
+      <td>adj</td>
+      <td>ə'ɡɑɡ</td>
+      <td>, similarTo:['excited']</td>
+      <td></td>
+      <td>highly excited by eagerness, curiosity, etc.渴望，好奇心等等都非常兴奋</td>
+      <td>I've been agog all afternoon, waiting for the next episode in your mystery story我整个下午一直都很激动，等待你神秘故事中的下一集</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>logy</th>
+      <td>og</td>
+      <td>2.02</td>
+      <td>adj</td>
+      <td>'loʊɡi</td>
+      <td>['dazed', 'foggy', 'groggy', 'stuporous'], similarTo:['lethargic', 'unenergetic']</td>
+      <td></td>
+      <td>stunned or confused and slow to react (as from blows or drunkenness or exhaustion)震惊或困惑，反应缓慢（如打击或酗酒或疲惫）</td>
+      <td></td>
+      <td>[loginess]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fogy</th>
+      <td>og</td>
+      <td>1.90</td>
+      <td>nou</td>
+      <td>'foʊɡi</td>
+      <td>['dodo', 'fogey', 'fossil']</td>
+      <td></td>
+      <td>someone whose style is out of fashion一个风格过时的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[golden ager, old person, oldster, senior citizen]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>togs</th>
+      <td>og</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>'tɑgz</td>
+      <td>['duds', 'threads']</td>
+      <td></td>
+      <td>informal terms for clothing非正式的服装条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[habiliment, vesture, wear, article of clothing, wearable, clothing]</td>
+      <td>[plural form, plural]</td>
+    </tr>
+    <tr>
+      <th>bogy</th>
+      <td>og</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td>'boʊɡi</td>
+      <td>['bogey', 'bogie']</td>
+      <td></td>
+      <td>an unidentified (and possibly enemy) aircraft一架身份不明（也可能是敌人）的飞机</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aircraft]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bogy</th>
+      <td>og</td>
+      <td>1.74</td>
+      <td>nou</td>
+      <td>'boʊɡi</td>
+      <td>['bogey', 'bogie']</td>
+      <td></td>
+      <td>an evil spirit邪恶的灵魂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[evil spirit]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

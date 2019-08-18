@@ -1,0 +1,395 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['wild', 'mild', 'gild']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>waɪld</td>
+      <td>['natural state', 'state of nature']</td>
+      <td></td>
+      <td>a wild primitive state untouched by civilization一个未受文明影响的野生原始国家</td>
+      <td>he lived in the wild他住在野外they collected mushrooms in the wild他们在野外采集蘑菇</td>
+      <td></td>
+      <td></td>
+      <td>[state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>nou</td>
+      <td>waɪld</td>
+      <td>['wilderness']</td>
+      <td></td>
+      <td>a wild and uninhabited area left in its natural condition一个荒芜无人居住的地区，处于自然状态</td>
+      <td>it was a wilderness preserved for the hawks and mountaineers这是一个为鹰派和登山者保留的荒野</td>
+      <td></td>
+      <td></td>
+      <td>[geographic region, geographical region, geographic area, geographical area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adv</td>
+      <td>waɪld</td>
+      <td>['rampantly']</td>
+      <td></td>
+      <td>in an uncontrolled and rampant manner以不受控制和猖獗的方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['barbarian', 'barbaric', 'savage', 'uncivilised', 'uncivilized'], similarTo:['noncivilised', 'noncivilized']</td>
+      <td></td>
+      <td>without civilizing influences没有文明的影响</td>
+      <td>wild tribes野生部落</td>
+      <td>[wildness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['baseless', 'groundless', 'idle', 'unfounded', 'unwarranted'], similarTo:['unsupported']</td>
+      <td></td>
+      <td>without a basis in reason or fact没有理由或事实依据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['untamed'], similarTo:['ferine', 'feral', 'savage', 'semi-wild', 'unbroken', 'undomesticated'], alos:['intractable']</td>
+      <td>[tame]</td>
+      <td>in a natural state; not tamed or domesticated or cultivated处于自然状态;没有驯服，驯化或耕种</td>
+      <td>wild geese野鹅edible wild plants食用野生植物</td>
+      <td>[wilderness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['fantastic'], similarTo:['unrealistic']</td>
+      <td></td>
+      <td>fanciful and unrealistic; foolish幻想和不切实际;傻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['raving mad'], similarTo:['insane']</td>
+      <td></td>
+      <td>talking or behaving irrationally说话或行为不合理</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['hazardous', 'risky'], similarTo:['unsafe', 'dangerous']</td>
+      <td></td>
+      <td>involving risk or danger涉及风险或危险</td>
+      <td>a wild financial scheme一个疯狂的金融计划</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['godforsaken', 'waste'], similarTo:['inhospitable']</td>
+      <td></td>
+      <td>located in a dismal or remote area; desolate位于一个凄凉或偏远的地区;荒凉</td>
+      <td>a godforsaken wilderness crossroads一个被遗忘的荒野十字路口a wild stretch of land一片荒凉的土地</td>
+      <td>[wilderness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['angry', 'furious', 'raging', 'tempestuous'], similarTo:['stormy']</td>
+      <td></td>
+      <td>(of the elements) as if showing violent anger（元素中的）好像表现出暴力的愤怒</td>
+      <td></td>
+      <td>[wildness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['crazy', 'dotty', 'gaga'], similarTo:['enthusiastic']</td>
+      <td></td>
+      <td>intensely enthusiastic about or preoccupied with非常热情或全神贯注</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>['violent'], similarTo:['intense']</td>
+      <td></td>
+      <td>(of colors or sounds) intensely vivid or loud（颜色或声音）强烈生动或响亮</td>
+      <td>wild colors野生的颜色wild shouts狂野的叫喊声</td>
+      <td>[wildness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>, similarTo:['uncontrolled']</td>
+      <td></td>
+      <td>deviating widely from an intended course偏离预期的路线</td>
+      <td>a wild bullet狂野的子弹he threw a wild pitch他扔了一个疯狂的球场</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>, similarTo:['passionate']</td>
+      <td></td>
+      <td>in a state of extreme emotion处于极度情绪状态</td>
+      <td>wild with anger野蛮愤怒wild with grief狂热的悲伤</td>
+      <td>[wildness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>adj</td>
+      <td>waɪld</td>
+      <td>, similarTo:['delirious', 'frenzied', 'mad', 'manic', 'unrestrained', 'unsubdued', 'chaotic', 'disorderly', 'excited', 'frantic'], alos:['unquiet']</td>
+      <td>[tame]</td>
+      <td>marked by extreme lack of restraint or control极端缺乏克制或控制</td>
+      <td>wild talk疯狂的谈话wild parties狂野派对</td>
+      <td>[wildness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wild</th>
+      <td>ild</td>
+      <td>4.73</td>
+      <td>Non</td>
+      <td>waɪld</td>
+      <td></td>
+      <td></td>
+      <td>in a wild or undomesticated manner以野外或未驯化的方式</td>
+      <td>growing wild野外生长roaming wild漫游狂野</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mild</th>
+      <td>ild</td>
+      <td>3.67</td>
+      <td>adj</td>
+      <td>maɪld</td>
+      <td>['balmy', 'soft'], similarTo:['clement']</td>
+      <td></td>
+      <td>mild and pleasant温和宜人</td>
+      <td>the climate was mild and conducive to life or growth气候温和，有利于生命或成长</td>
+      <td>[mildness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mild</th>
+      <td>ild</td>
+      <td>3.67</td>
+      <td>adj</td>
+      <td>maɪld</td>
+      <td>['meek', 'modest'], similarTo:['humble']</td>
+      <td></td>
+      <td>humble in spirit or manner; suggesting retiring mildness or even cowed submissiveness精神或态度谦卑;暗示退休温和甚至畏惧顺从</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mild</th>
+      <td>ild</td>
+      <td>3.67</td>
+      <td>adj</td>
+      <td>maɪld</td>
+      <td>, similarTo:['temperate', 'gentle', 'mild-mannered', 'moderate', 'soft'], alos:['temperate', 'moderate']</td>
+      <td>[intense]</td>
+      <td>moderate in type or degree or effect or force; far from extreme中等类型或程度或效果或力量;远非极端</td>
+      <td>a mild winter storm温和的冬季风暴a mild fever轻度发烧fortunately the pain was mild幸运的是，疼痛很轻微a mild rebuke温和的责备mild criticism温和的批评</td>
+      <td>[mildness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gild</th>
+      <td>ild</td>
+      <td>2.36</td>
+      <td>ver</td>
+      <td>ɡɪld</td>
+      <td>['begild', 'engild']</td>
+      <td></td>
+      <td>decorate with, or as if with, gold leaf or liquid gold用金箔或液体金装饰，或仿佛用金箔或液体金装饰</td>
+      <td></td>
+      <td>[gilder, gilding]</td>
+      <td></td>
+      <td>[grace, ornament, adorn, beautify, decorate, embellish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gild</th>
+      <td>ild</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>ɡɪld</td>
+      <td>['club', 'guild', 'lodge', 'order', 'social club', 'society']</td>
+      <td></td>
+      <td>a formal association of people with similar interests具有相似兴趣的人的正式协会</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[association]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

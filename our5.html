@@ -1,0 +1,620 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hours', 'court', 'flour', 'mourn', 'tours', 'amour', 'gourd', 'odour', 'scour', 'bourn', 'houri']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hours</th>
+      <td>our</td>
+      <td>5.28</td>
+      <td>nou</td>
+      <td>'aʊɝrz</td>
+      <td></td>
+      <td></td>
+      <td>an indefinite period of time无限期的</td>
+      <td>they talked for hours他们聊了几个小时</td>
+      <td></td>
+      <td></td>
+      <td>[time period, period of time, period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hours</th>
+      <td>our</td>
+      <td>5.28</td>
+      <td>nou</td>
+      <td>'aʊɝrz</td>
+      <td></td>
+      <td></td>
+      <td>a period of time assigned for work分配给工作的一段时间</td>
+      <td>they work long hours他们长时间工作</td>
+      <td></td>
+      <td></td>
+      <td>[work time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>koʊrt</td>
+      <td>['woo']</td>
+      <td></td>
+      <td>seek someone's favor寻求某人的青睐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>koʊrt</td>
+      <td>['romance', 'solicit', 'woo']</td>
+      <td></td>
+      <td>make amorous advances towards做出多情的进展</td>
+      <td>John is courting Mary约翰正在追求玛丽</td>
+      <td>[courting]</td>
+      <td></td>
+      <td>[move, act]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>koʊrt</td>
+      <td></td>
+      <td></td>
+      <td>engage in social activities leading to marriage从事导致婚姻的社会活动</td>
+      <td>We were courting for over ten years我们正在追求十多年</td>
+      <td>[courting]</td>
+      <td></td>
+      <td>[act, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['margaret court']</td>
+      <td></td>
+      <td>Australian woman tennis player who won many major championships (born in 1947)赢得许多大满贯赛冠军的澳大利亚女子网球运动员（1947年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['courtroom']</td>
+      <td></td>
+      <td>a room in which a lawcourt sits一个法庭所在的房间</td>
+      <td>television cameras were admitted in the courtroom电视摄像机在法庭上被录取</td>
+      <td></td>
+      <td></td>
+      <td>[room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['courtyard']</td>
+      <td></td>
+      <td>an area wholly or partly surrounded by walls or buildings全部或部分被墙壁或建筑物围绕的区域</td>
+      <td>the house was built around an inner court房子是围绕内院建造的</td>
+      <td></td>
+      <td></td>
+      <td>[area]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['court of justice', 'court of law', 'law court', 'lawcourt']</td>
+      <td></td>
+      <td>a tribunal that is presided over by a magistrate or by one or more judges who administer justice according to the laws由法官或由一名或多名依法执法的法官主持的法庭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tribunal, judicature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['royal court']</td>
+      <td></td>
+      <td>the sovereign and his advisers who are the governing power of a state作为一个国家的统治权力的主权者和他的顾问</td>
+      <td></td>
+      <td>[courtly]</td>
+      <td></td>
+      <td>[government, regime, authorities]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['homage']</td>
+      <td></td>
+      <td>respectful deference尊重的尊重</td>
+      <td>pay court to the emperor向皇帝付钱</td>
+      <td></td>
+      <td></td>
+      <td>[deference, respect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['motor hotel', 'motor inn', 'motor lodge', 'tourist court']</td>
+      <td></td>
+      <td>a hotel for motorists; provides direct access from rooms to parking area汽车旅馆的酒店;提供从客房到停车区的直达通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hotel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['royal court']</td>
+      <td></td>
+      <td>the family and retinue of a sovereign or prince一个君主或王子的家庭和随从</td>
+      <td></td>
+      <td>[courtly]</td>
+      <td></td>
+      <td>[cortege, suite, entourage, retinue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td>['judicature', 'tribunal']</td>
+      <td></td>
+      <td>an assembly (including one or more judges) to conduct judicial business开展司法业务的集会（包括一名或多名法官）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assembly]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td></td>
+      <td></td>
+      <td>a specially marked horizontal area within which a game is played一个特别标记的水平区域，在其中玩游戏</td>
+      <td>players had to reserve a court in advance球员必须提前预约球场</td>
+      <td></td>
+      <td></td>
+      <td>[playing area, field, athletic field, playing field]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>court</th>
+      <td>our</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>koʊrt</td>
+      <td></td>
+      <td></td>
+      <td>the residence of a sovereign or nobleman君主或贵族的住所</td>
+      <td>the king will visit the duke's court国王将访问公爵的法庭</td>
+      <td>[courtly]</td>
+      <td></td>
+      <td>[residence]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flour</th>
+      <td>our</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>flaʊr</td>
+      <td></td>
+      <td></td>
+      <td>convert grain into flour将谷物转化为面粉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[convert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flour</th>
+      <td>our</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>flaʊr</td>
+      <td></td>
+      <td></td>
+      <td>cover with flour盖上面粉</td>
+      <td>flour fish or meat before frying it在油炸之前将面粉鱼或肉</td>
+      <td></td>
+      <td></td>
+      <td>[dredge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flour</th>
+      <td>our</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>flaʊr</td>
+      <td></td>
+      <td></td>
+      <td>fine powdery foodstuff obtained by grinding and sifting the meal of a cereal grain通过研磨和筛选谷物粉得到的细粉状食品</td>
+      <td></td>
+      <td>[floury]</td>
+      <td></td>
+      <td>[food product, foodstuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mourn</th>
+      <td>our</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>moʊrn</td>
+      <td></td>
+      <td></td>
+      <td>feel sadness感到悲伤</td>
+      <td>She is mourning her dead child她在哀悼她死去的孩子</td>
+      <td>[mourner, mourning]</td>
+      <td></td>
+      <td>[grieve, sorrow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mourn</th>
+      <td>our</td>
+      <td>3.53</td>
+      <td>ver</td>
+      <td>moʊrn</td>
+      <td></td>
+      <td></td>
+      <td>observe the customs of mourning after the death of a loved one观察亲人去世后的哀悼习俗</td>
+      <td></td>
+      <td>[mourner]</td>
+      <td></td>
+      <td>[celebrate, keep, observe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tours</th>
+      <td>our</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>tʊr</td>
+      <td></td>
+      <td></td>
+      <td>an industrial city in western France on the Loire River法国西部卢瓦尔河上的工业城市</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>amour</th>
+      <td>our</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>ə'mʊr</td>
+      <td>['affair', 'affaire', 'intimacy', 'involvement', 'liaison']</td>
+      <td></td>
+      <td>a usually secretive or illicit sexual relationship通常是秘密或非法的性关系</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sexual relationship]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gourd</th>
+      <td>our</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>ɡoʊrd</td>
+      <td>['gourd vine']</td>
+      <td></td>
+      <td>any vine of the family Cucurbitaceae that bears fruits with hard rinds葫芦科的任何藤蔓，结出坚硬的果实</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gourd</th>
+      <td>our</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>ɡoʊrd</td>
+      <td>['calabash']</td>
+      <td></td>
+      <td>bottle made from the dried shell of a bottle gourd用葫芦的干壳制成的瓶子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bottle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gourd</th>
+      <td>our</td>
+      <td>3.14</td>
+      <td>nou</td>
+      <td>ɡoʊrd</td>
+      <td></td>
+      <td></td>
+      <td>any of numerous inedible fruits with hard rinds任何一种具有坚硬外皮的不可食用的水果</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fruit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odour</th>
+      <td>our</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td></td>
+      <td>['aroma', 'odor', 'olfactory property', 'scent', 'smell']</td>
+      <td></td>
+      <td>any property detected by the olfactory system嗅觉系统检测到的任何财产</td>
+      <td></td>
+      <td>[odourise]</td>
+      <td></td>
+      <td>[property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>odour</th>
+      <td>our</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td></td>
+      <td>['odor', 'olfactory perception', 'olfactory sensation', 'smell']</td>
+      <td></td>
+      <td>the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form当气体形式的特定化学物质刺激鼻子中的嗅觉受体时产生的感觉</td>
+      <td></td>
+      <td>[odourise]</td>
+      <td></td>
+      <td>[sense impression, esthesis, aesthesis, sense datum, sensation, sense experience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scour</th>
+      <td>our</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>skaʊr</td>
+      <td>['abrade']</td>
+      <td></td>
+      <td>rub hard or scrub擦硬或擦洗</td>
+      <td>scour the counter tops冲上台面</td>
+      <td></td>
+      <td></td>
+      <td>[rub]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scour</th>
+      <td>our</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>skaʊr</td>
+      <td>['flush', 'purge']</td>
+      <td></td>
+      <td>rinse, clean, or empty with a liquid用液体冲洗，清洁或清空</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rinse off, rinse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scour</th>
+      <td>our</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>skaʊr</td>
+      <td>['scrub']</td>
+      <td></td>
+      <td>clean with hard rubbing用硬摩擦清洁</td>
+      <td></td>
+      <td>[scourer, scouring]</td>
+      <td></td>
+      <td>[rub]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scour</th>
+      <td>our</td>
+      <td>2.74</td>
+      <td>ver</td>
+      <td>skaʊr</td>
+      <td></td>
+      <td></td>
+      <td>examine minutely追问</td>
+      <td>The police scoured the country for the fugitive警方在该国寻找逃犯</td>
+      <td>[scouring]</td>
+      <td></td>
+      <td>[seek, look for, search]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scour</th>
+      <td>our</td>
+      <td>2.74</td>
+      <td>nou</td>
+      <td>skaʊr</td>
+      <td></td>
+      <td></td>
+      <td>a place that is scoured (especially by running water)一个被冲刷的地方（特别是自来水）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[place, topographic point, spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bourn</th>
+      <td>our</td>
+      <td>1.90</td>
+      <td>nou</td>
+      <td>boʊrn</td>
+      <td>['bourne']</td>
+      <td></td>
+      <td>an archaic term for a goal or destination目标或目的地的古老术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[end, goal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bourn</th>
+      <td>our</td>
+      <td>1.90</td>
+      <td>nou</td>
+      <td>boʊrn</td>
+      <td>['bourne']</td>
+      <td></td>
+      <td>an archaic term for a boundary边界的古老术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bound, boundary, bounds]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>houri</th>
+      <td>our</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'hʊri</td>
+      <td>['nymph']</td>
+      <td></td>
+      <td>a voluptuously beautiful young woman一个性感美丽的年轻女子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult female, woman]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>houri</th>
+      <td>our</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>'hʊri</td>
+      <td></td>
+      <td></td>
+      <td>(Islam) one of the dark-eyed virgins of perfect beauty believed to live with the blessed in Paradise（伊斯兰教）一个完美美丽的黑眼睛的处女据信与天堂中的幸福生活在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mythical being]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

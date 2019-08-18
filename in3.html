@@ -1,0 +1,1205 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['win', 'sin', 'min', 'bin', 'pin', 'tin', 'lin', 'gin', 'ink', 'inn', 'fin', 'kin', 'yin', 'inc', 'ins', 'din', 'hin']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>win</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>ver</td>
+      <td>wɪn</td>
+      <td>['bring home the bacon', 'come through', 'deliver the goods', 'succeed']</td>
+      <td></td>
+      <td>attain success or reach a desired goal获得成功或达到预期目标</td>
+      <td></td>
+      <td>[winner]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>win</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>ver</td>
+      <td>wɪn</td>
+      <td>['acquire', 'gain']</td>
+      <td>[lose]</td>
+      <td>win something through one's efforts通过一个人的努力赢得一些东西</td>
+      <td>win someone's confidence and friendship赢得某人的信任和友谊</td>
+      <td>[winning, winner, winnings]</td>
+      <td></td>
+      <td>[get, acquire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>win</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>ver</td>
+      <td>wɪn</td>
+      <td>['advance', 'gain', 'gain ground', 'get ahead', 'make headway', 'pull ahead']</td>
+      <td></td>
+      <td>obtain advantages, such as points, etc.获得优势，如积分等</td>
+      <td>win points赢得积分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>win</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>ver</td>
+      <td>wɪn</td>
+      <td>['earn', 'garner']</td>
+      <td></td>
+      <td>acquire or deserve by one's efforts or actions通过一个人的努力或行动获得或应得</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acquire, get]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>win</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>ver</td>
+      <td>wɪn</td>
+      <td></td>
+      <td>[lose]</td>
+      <td>be the winner in a contest or competition; be victorious成为比赛或比赛的胜利者;胜利</td>
+      <td></td>
+      <td>[winner, winnings]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>win</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>wɪn</td>
+      <td>['profits', 'winnings']</td>
+      <td></td>
+      <td>something won (especially money)赢得的东西（特别是钱）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[financial gain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>win</th>
+      <td>in</td>
+      <td>5.16</td>
+      <td>nou</td>
+      <td>wɪn</td>
+      <td></td>
+      <td></td>
+      <td>a victory (as in a race or other competition)胜利（如在比赛或其他比赛中）</td>
+      <td>he was happy to get the win他很高兴获得胜利</td>
+      <td></td>
+      <td></td>
+      <td>[triumph, victory]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sin</th>
+      <td>in</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>sin</td>
+      <td>['blunder', 'boob', 'drop the ball', 'goof']</td>
+      <td></td>
+      <td>commit a faux pas or a fault or make a serious mistake犯错误或犯错误或犯了严重错误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[break, breach, offend, transgress, violate, infract, go against]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sin</th>
+      <td>in</td>
+      <td>4.44</td>
+      <td>ver</td>
+      <td>sin</td>
+      <td>['transgress', 'trespass']</td>
+      <td></td>
+      <td>commit a sin; violate a law of God or a moral law造孽;违反上帝的法律或道德法则</td>
+      <td></td>
+      <td>[sinner, sinning]</td>
+      <td></td>
+      <td>[violate, breach, break, go against, infract, offend, transgress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sin</th>
+      <td>in</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>sin</td>
+      <td>['sinfulness', 'wickedness']</td>
+      <td></td>
+      <td>estrangement from god与上帝疏远</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unrighteousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sin</th>
+      <td>in</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>sin</td>
+      <td>['sine']</td>
+      <td></td>
+      <td>ratio of the length of the side opposite the given angle to the length of the hypotenuse of a right-angled triangle与给定角度相反的边的长度与直角三角形的斜边的长度之比</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[circular function, trigonometric function]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sin</th>
+      <td>in</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>sin</td>
+      <td>['sinning']</td>
+      <td></td>
+      <td>an act that is regarded by theologians as a transgression of God's will被神学家视为违背上帝旨意的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[evildoing, transgression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sin</th>
+      <td>in</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>sin</td>
+      <td></td>
+      <td></td>
+      <td>(Akkadian) god of the Moon; counterpart of Sumerian Nanna（阿卡德）月亮之神; Sumerian Nanna的对应物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sin</th>
+      <td>in</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>sin</td>
+      <td></td>
+      <td></td>
+      <td>the 21st letter of the Hebrew alphabet希伯来字母的第21个字母</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[letter, letter of the alphabet, alphabetic character]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>in</td>
+      <td>4.30</td>
+      <td>nou</td>
+      <td>mɪn</td>
+      <td>['minute']</td>
+      <td></td>
+      <td>a unit of time equal to 60 seconds or 1/60th of an hour时间单位等于60秒或1/60小时</td>
+      <td>he ran a 4 minute mile他跑了4分钟</td>
+      <td></td>
+      <td></td>
+      <td>[time unit, unit of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>in</td>
+      <td>4.30</td>
+      <td>nou</td>
+      <td>mɪn</td>
+      <td>['amoy', 'fukien', 'fukkianese', 'hokkianese', 'min dialect', 'taiwanese']</td>
+      <td></td>
+      <td>any of the forms of Chinese spoken in Fukien province福建省任何一种中国人的口语形式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chinese]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>in</td>
+      <td>4.30</td>
+      <td>nou</td>
+      <td>mɪn</td>
+      <td></td>
+      <td></td>
+      <td>an Egyptian god of procreation埃及的生殖之神</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bin</th>
+      <td>in</td>
+      <td>4.09</td>
+      <td>ver</td>
+      <td>bɪn</td>
+      <td></td>
+      <td></td>
+      <td>store in bins存放在垃圾箱里</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lay in, put in, salt away, stash away, store, hive away, stack away]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bin</th>
+      <td>in</td>
+      <td>4.09</td>
+      <td>nou</td>
+      <td>bɪn</td>
+      <td>['aba transit number', 'bank identification number']</td>
+      <td></td>
+      <td>an identification number consisting of a two-part code assigned to banks and savings associations; the first part shows the location and the second identifies the bank itself识别号码由分配给银行和储蓄协会的两部分代码组成;第一部分显示位置，第二部分显示银行本身</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[number]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bin</th>
+      <td>in</td>
+      <td>4.09</td>
+      <td>nou</td>
+      <td>bɪn</td>
+      <td>['binful']</td>
+      <td></td>
+      <td>the quantity contained in a bin垃圾箱中包含的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bin</th>
+      <td>in</td>
+      <td>4.09</td>
+      <td>nou</td>
+      <td>bɪn</td>
+      <td></td>
+      <td></td>
+      <td>a container; usually has a lid一个容器;通常有一个盖子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>pɪn</td>
+      <td>['immobilise', 'immobilize', 'trap']</td>
+      <td></td>
+      <td>to hold fast or prevent from moving保持快速或防止移动</td>
+      <td>The child was pinned under the fallen tree孩子被钉在倒下的树下</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>pɪn</td>
+      <td></td>
+      <td>[unpin]</td>
+      <td>attach or fasten with pins用别针固定或固定</td>
+      <td>pin the needle to the shirt把针钉在衬衫上</td>
+      <td></td>
+      <td></td>
+      <td>[fix, fasten, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>pɪn</td>
+      <td></td>
+      <td></td>
+      <td>(chess) immobilize a piece（国际象棋）固定一块</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attack, aggress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>ver</td>
+      <td>pɪn</td>
+      <td></td>
+      <td></td>
+      <td>pierce with a pin用别针刺穿</td>
+      <td>pin down the butterfly把蝴蝶钉下来</td>
+      <td></td>
+      <td></td>
+      <td>[transfix, empale, impale, spike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['oarlock', 'peg', 'rowlock', 'thole', 'tholepin']</td>
+      <td></td>
+      <td>a holder attached to the gunwale of a boat that holds the oar in place and acts as a fulcrum for rowing一个固定在船舷上的支架，用于将桨固定在适当的位置，并作为划船的支点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[holder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['peg']</td>
+      <td></td>
+      <td>small markers inserted into a surface to mark scores or define locations etc.插入表面的小标记，用于标记分数或定义位置等。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mark, marker, marking]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['fall']</td>
+      <td></td>
+      <td>when a wrestler's shoulders are forced to the mat当摔跤手的肩膀被迫到垫子上时</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[triumph, victory]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['pin tumbler']</td>
+      <td></td>
+      <td>cylindrical tumblers consisting of two parts that are held in place by springs; when they are aligned with a key the bolt can be thrown圆柱形制动栓由两部分组成，由弹簧固定;当它们与钥匙对齐时，可以抛出螺栓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tumbler]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['pivot']</td>
+      <td></td>
+      <td>axis consisting of a short shaft that supports something that turns轴由短轴组成，支撑着转动的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[axis, axis of rotation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['personal identification number', 'pin number']</td>
+      <td></td>
+      <td>a number you choose and use to gain access to various accounts您选择并用于访问各种帐户的号码</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[number]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['flag']</td>
+      <td></td>
+      <td>flagpole used to mark the position of the hole on a golf green旗杆用于标记高尔夫果岭上洞的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[golf equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['peg', 'stick']</td>
+      <td></td>
+      <td>informal terms for the leg腿的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leg]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td>['bowling pin']</td>
+      <td></td>
+      <td>a club-shaped wooden object used in bowling; set up in triangular groups of ten as the target用于保龄球的俱乐部形木制物品;以十角形三角形组成的目标</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bowling equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td></td>
+      <td></td>
+      <td>a piece of jewelry that is pinned onto the wearer's garment一件钉在穿着者衣服上的珠宝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jewellery, jewelry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pin</th>
+      <td>in</td>
+      <td>4.07</td>
+      <td>nou</td>
+      <td>pɪn</td>
+      <td></td>
+      <td></td>
+      <td>a small slender (often pointed) piece of wood or metal used to support or fasten or attach things用于支撑或固定或附着物品的细长（通常是尖头）木片或金属片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fastener, fixing, holdfast, fastening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tin</th>
+      <td>in</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tɪn</td>
+      <td>['can', 'put up']</td>
+      <td></td>
+      <td>preserve in a can or tin保存在罐头或罐子里</td>
+      <td>tinned foods are not very tasty罐头食品不是很好吃</td>
+      <td></td>
+      <td></td>
+      <td>[keep, preserve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tin</th>
+      <td>in</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tɪn</td>
+      <td></td>
+      <td></td>
+      <td>plate with tin用锡板</td>
+      <td></td>
+      <td>[tinning]</td>
+      <td></td>
+      <td>[plate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tin</th>
+      <td>in</td>
+      <td>4.04</td>
+      <td>ver</td>
+      <td>tɪn</td>
+      <td></td>
+      <td></td>
+      <td>prepare (a metal) for soldering or brazing by applying a thin layer of solder to the surface通过在表面涂上薄薄的焊料来准备（金属）焊接或钎焊</td>
+      <td></td>
+      <td>[tinning]</td>
+      <td></td>
+      <td>[plate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tin</th>
+      <td>in</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tɪn</td>
+      <td>['atomic number 50', 'sn']</td>
+      <td></td>
+      <td>a silvery malleable metallic element that resists corrosion; used in many alloys and to coat other metals to prevent corrosion; obtained chiefly from cassiterite where it occurs as tin oxide银色可锻金属元素，耐腐蚀;用于许多合金中并涂覆其他金属以防止腐蚀;主要是从锡石中获得的，它以氧化锡的形式存在</td>
+      <td></td>
+      <td>[tinny]</td>
+      <td></td>
+      <td>[metallic element, metal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tin</th>
+      <td>in</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tɪn</td>
+      <td>['canister', 'cannister']</td>
+      <td></td>
+      <td>metal container for storing dry foods such as tea or flour用于储存茶叶或面粉等干燥食品的金属容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tin</th>
+      <td>in</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tɪn</td>
+      <td>['can', 'tin can']</td>
+      <td></td>
+      <td>airtight sealed metal container for food or drink or paint etc.用于食品或饮料或油漆等的气密密封金属容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[container]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tin</th>
+      <td>in</td>
+      <td>4.04</td>
+      <td>nou</td>
+      <td>tɪn</td>
+      <td></td>
+      <td></td>
+      <td>a vessel (box, can, pan, etc.) made of tinplate and used mainly in baking由马口铁制成的容器（盒子，罐头，盘子等），主要用于烘烤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lin</th>
+      <td>in</td>
+      <td>3.89</td>
+      <td>nou</td>
+      <td>lɪn</td>
+      <td>['maya lin']</td>
+      <td></td>
+      <td>United States sculptor and architect whose public works include the memorial to veterans of the Vietnam War in Washington (born in 1959)美国雕塑家和建筑师，其公共作品包括华盛顿越南战争退伍军人纪念碑（1959年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gin</th>
+      <td>in</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>ɡɪn</td>
+      <td></td>
+      <td></td>
+      <td>separate the seeds from (cotton) with a cotton gin用棉花杜松子酒将种子与（棉花）分开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[separate, disunite, divide, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gin</th>
+      <td>in</td>
+      <td>3.87</td>
+      <td>ver</td>
+      <td>ɡɪn</td>
+      <td></td>
+      <td></td>
+      <td>trap with a snare圈套陷阱</td>
+      <td>gin game杜松子酒游戏</td>
+      <td></td>
+      <td></td>
+      <td>[trap, ensnare, snare, trammel, entrap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gin</th>
+      <td>in</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>ɡɪn</td>
+      <td>['cotton gin']</td>
+      <td></td>
+      <td>a machine that separates the seeds from raw cotton fibers一种将种子与原棉纤维分开的机器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[machine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gin</th>
+      <td>in</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>ɡɪn</td>
+      <td>['gin rummy', 'knock rummy']</td>
+      <td></td>
+      <td>a form of rummy in which a player can go out if the cards remaining in their hand total less than 10 points一种拉米的形式，如果手中的牌总数少于10分，玩家可以外出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rum, rummy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gin</th>
+      <td>in</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>ɡɪn</td>
+      <td>['noose', 'snare']</td>
+      <td></td>
+      <td>a trap for birds or small mammals; often has a slip noose鸟类或小型哺乳动物的陷阱;经常有滑动绞索</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gin</th>
+      <td>in</td>
+      <td>3.87</td>
+      <td>nou</td>
+      <td>ɡɪn</td>
+      <td></td>
+      <td></td>
+      <td>strong liquor flavored with juniper berries浓香型杜松子酒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spirits, hard drink, hard liquor, john barleycorn, liquor, booze, strong drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ink</th>
+      <td>in</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>ɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>append one's signature to追加一个人的签名</td>
+      <td>They inked the contract他们签了合同</td>
+      <td></td>
+      <td></td>
+      <td>[sign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ink</th>
+      <td>in</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>ɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>fill with ink填充墨水</td>
+      <td>ink a pen画笔</td>
+      <td></td>
+      <td></td>
+      <td>[fill up, make full, fill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ink</th>
+      <td>in</td>
+      <td>3.84</td>
+      <td>ver</td>
+      <td>ɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>mark, coat, cover, or stain with ink用墨水标记，涂层，覆盖或污渍</td>
+      <td>he inked his finger他用手指着墨</td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ink</th>
+      <td>in</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>ɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a liquid used for printing or writing or drawing用于印刷，书写或绘画的液体</td>
+      <td></td>
+      <td>[inky]</td>
+      <td></td>
+      <td>[liquid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ink</th>
+      <td>in</td>
+      <td>3.84</td>
+      <td>nou</td>
+      <td>ɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>dark protective fluid ejected into the water by cuttlefish and other cephalopods墨鱼和其他头足类动物喷射到水中的黑色保护液</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[liquid body substance, humour, humor, body fluid, bodily fluid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inn</th>
+      <td>in</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>ɪn</td>
+      <td>['auberge', 'hostel', 'hostelry', 'lodge']</td>
+      <td></td>
+      <td>a hotel providing overnight lodging for travelers为旅行者提供过夜住宿的酒店</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hotel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>ver</td>
+      <td>fɪn</td>
+      <td>['break water']</td>
+      <td></td>
+      <td>show the fins above the water while swimming游泳时显示水面上的鳍</td>
+      <td>The sharks were finning near the surface鲨鱼在地表附近鳍</td>
+      <td></td>
+      <td></td>
+      <td>[swim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>ver</td>
+      <td>fɪn</td>
+      <td></td>
+      <td></td>
+      <td>equip (a car) with fins装备（汽车）鳍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equip, outfit, fit out, fit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>ver</td>
+      <td>fɪn</td>
+      <td></td>
+      <td></td>
+      <td>propel oneself through the water in a finning motion以鳍运动推动自己穿过水面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[swim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>fɪn</td>
+      <td>['flipper']</td>
+      <td></td>
+      <td>a shoe for swimming; the paddle-like front is an aid in swimming (especially underwater)一只游泳鞋;桨状前部有助于游泳（尤其是水下）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shoe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>fɪn</td>
+      <td>['louver', 'louvre']</td>
+      <td></td>
+      <td>one of a set of parallel slats in a door or window to admit air and reject rain门或窗户中的一组平行板条之一，用于吸入空气和拒绝雨水</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slat, spline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>fɪn</td>
+      <td>['5', 'cinque', 'five', 'fivesome', 'little phoebe', 'pentad', 'phoebe', 'quint', 'quintet', 'quintuplet', 'v']</td>
+      <td></td>
+      <td>the cardinal number that is the sum of four and one基数是四和一的总和</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[digit, figure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>fɪn</td>
+      <td>['tail fin', 'tailfin']</td>
+      <td></td>
+      <td>one of a pair of decorations projecting above the rear fenders of an automobile在汽车后挡泥板上方突出的一对装饰物之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ornament, decoration, ornamentation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>fɪn</td>
+      <td></td>
+      <td></td>
+      <td>a stabilizer on a ship that resembles the fin of a fish船上的稳定器，类似鱼的鳍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stabiliser, stabilizer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fin</th>
+      <td>in</td>
+      <td>3.68</td>
+      <td>nou</td>
+      <td>fɪn</td>
+      <td></td>
+      <td></td>
+      <td>organ of locomotion and balance in fishes and some other aquatic animals鱼类和其他一些水生动物的运动和平衡器官</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[appendage, extremity, member]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kin</th>
+      <td>in</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>kɪn</td>
+      <td>['family', 'kinsperson']</td>
+      <td></td>
+      <td>a person having kinship with another or others与另一人或其他人有血缘关系的人</td>
+      <td>he's kin他是亲戚</td>
+      <td>[kinship]</td>
+      <td></td>
+      <td>[relative, relation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kin</th>
+      <td>in</td>
+      <td>3.63</td>
+      <td>nou</td>
+      <td>kɪn</td>
+      <td>['clan', 'kin group', 'kindred', 'kinship group', 'tribe']</td>
+      <td></td>
+      <td>group of people related by blood or marriage一群人与血缘或婚姻有关</td>
+      <td></td>
+      <td>[kinship]</td>
+      <td></td>
+      <td>[social group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kin</th>
+      <td>in</td>
+      <td>3.63</td>
+      <td>adj</td>
+      <td>kɪn</td>
+      <td>['akin', 'blood-related', 'cognate', 'consanguine', 'consanguineal', 'consanguineous'], similarTo:['related']</td>
+      <td></td>
+      <td>related by blood与血有关</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yin</th>
+      <td>in</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>jɪn</td>
+      <td></td>
+      <td>[yang]</td>
+      <td>the dark negative feminine principle in Chinese dualistic cosmology中国二元宇宙学中的黑暗阴性女性原则</td>
+      <td>the interaction of yin and yang maintains the harmony of the universe阴阳的相互作用维持着宇宙的和谐</td>
+      <td></td>
+      <td></td>
+      <td>[rule, principle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inc</th>
+      <td>in</td>
+      <td>3.46</td>
+      <td>nou</td>
+      <td>ɪŋk</td>
+      <td>['iraqi national congress']</td>
+      <td></td>
+      <td>a heterogeneous collection of groups united in their opposition to Saddam Hussein's government of Iraq; formed in 1992 it is comprised of Sunni and Shiite Arabs and Kurds who hope to build a new government在反对萨达姆侯赛因的伊拉克政府时团结一致的各种团体;成立于1992年，由逊尼派和什叶派阿拉伯人以及希望建立新政府的库尔德人组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[opposition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ins</th>
+      <td>in</td>
+      <td>3.41</td>
+      <td>nou</td>
+      <td>ɪnz</td>
+      <td>['immigration and naturalization service']</td>
+      <td></td>
+      <td>an agency in the Department of Justice that enforces laws and regulations for the admission of foreign-born persons to the United States司法部的一个机构，负责执行法律和法规，允许外国出生的人进入美国</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[agency, authority, bureau, federal agency, government agency, office]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>din</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>ver</td>
+      <td>dɪn</td>
+      <td>['boom']</td>
+      <td></td>
+      <td>make a resonant sound, like artillery像炮兵一样发出共鸣声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sound, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>din</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>ver</td>
+      <td>dɪn</td>
+      <td></td>
+      <td></td>
+      <td>instill (into a person) by constant repetition通过不断重复灌输（进入一个人）</td>
+      <td>he dinned the lessons into his students他把课程告诉了他的学生</td>
+      <td></td>
+      <td></td>
+      <td>[instill, infuse, inculcate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>din</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>dɪn</td>
+      <td>['commotion', 'ruckus', 'ruction', 'rumpus', 'tumult']</td>
+      <td></td>
+      <td>the act of making a noisy disturbance吵闹的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disturbance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>din</th>
+      <td>in</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>dɪn</td>
+      <td>['blare', 'blaring', 'cacophony', 'clamor']</td>
+      <td></td>
+      <td>a loud harsh or strident noise一声巨响或刺耳的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[noise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hin</th>
+      <td>in</td>
+      <td>2.36</td>
+      <td>nou</td>
+      <td>hɪn</td>
+      <td></td>
+      <td></td>
+      <td>ancient Hebrew unit of liquid measure = 1.5 gallons古希伯来语液体单位= 1.5加仑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[capacity measure, capacity unit, cubage unit, cubature unit, cubic content unit, cubic measure, displacement unit, volume unit]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

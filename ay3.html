@@ -1,0 +1,1475 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['say', 'way', 'day', 'may', 'pay', 'gay', 'ray', 'lay', 'jay', 'bay', 'yay', 'hay', 'nay', 'fay', 'tay', 'cay']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td>['read']</td>
+      <td></td>
+      <td>have or contain a certain wording or form拥有或包含某种措辞或形式</td>
+      <td>What does the law say?法律说什么？</td>
+      <td></td>
+      <td>[read]</td>
+      <td>[have, feature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td>['enjoin', 'order', 'tell']</td>
+      <td></td>
+      <td>give instructions to or direct somebody to do something with authority给予指示或指示某人有权做某事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[request]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td>['suppose']</td>
+      <td></td>
+      <td>express a supposition表达一个假设</td>
+      <td>Let us say that he did not tell the truth让我们说他没说实话Let's say you had a lot of money--what would you do?假设你有很多钱 - 你会怎么做？</td>
+      <td></td>
+      <td></td>
+      <td>[speculate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td>['articulate', 'enounce', 'enunciate', 'pronounce', 'sound out']</td>
+      <td></td>
+      <td>speak, pronounce, or utter in a certain way以某种方式说话，发音或说话</td>
+      <td>I cannot say `zip wire'我不能说`zip wire'</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td>['allege', 'aver']</td>
+      <td></td>
+      <td>report or maintain报告或维护</td>
+      <td>The registrar says that I owe the school money注册员说我欠学校的钱</td>
+      <td></td>
+      <td></td>
+      <td>[maintain, assert, asseverate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td>['state', 'tell']</td>
+      <td></td>
+      <td>express in words用语言表达</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utter, verbalise, verbalize, give tongue to, express]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td></td>
+      <td></td>
+      <td>communicate or express nonverbally非语言沟通或表达</td>
+      <td>What does this painting say?这幅画说的是什么？Did his face say anything about how he felt?他的脸上有没有说出他的感受？</td>
+      <td></td>
+      <td></td>
+      <td>[convey]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td></td>
+      <td></td>
+      <td>indicate表明</td>
+      <td>The clock says noon时钟说中午</td>
+      <td></td>
+      <td></td>
+      <td>[read, register, record, show]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td></td>
+      <td></td>
+      <td>recite or repeat a fixed text背诵或重复固定的文字</td>
+      <td></td>
+      <td>[saying]</td>
+      <td></td>
+      <td>[recite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td></td>
+      <td></td>
+      <td>state as one's opinion or judgement; declare陈述一个人的意见或判断;宣布</td>
+      <td>I say let's forget this whole business我说让我们忘记这整个事业</td>
+      <td></td>
+      <td>[tell, state]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>ver</td>
+      <td>seɪ</td>
+      <td></td>
+      <td></td>
+      <td>utter aloud大声说</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utter, express, verbalize, give tongue to, verbalise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>say</th>
+      <td>ay</td>
+      <td>6.21</td>
+      <td>nou</td>
+      <td>seɪ</td>
+      <td></td>
+      <td></td>
+      <td>the chance to speak说话的机会</td>
+      <td>let him have his say让他发表意见</td>
+      <td></td>
+      <td></td>
+      <td>[opportunity, chance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td>['elbow room', 'room']</td>
+      <td></td>
+      <td>space for movement运动空间</td>
+      <td>make way for让路</td>
+      <td></td>
+      <td></td>
+      <td>[position, spatial relation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td>['path', 'way of life']</td>
+      <td></td>
+      <td>a course of conduct一个行为过程</td>
+      <td>we went our separate ways我们分道扬..</td>
+      <td></td>
+      <td></td>
+      <td>[course of action, course]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td>['agency', 'means']</td>
+      <td></td>
+      <td>thing or person that acts to produce a particular effect or achieve an end为产生特定效果或达到目的而起作用的事物或人</td>
+      <td>the true way to success成功的真正途径</td>
+      <td></td>
+      <td></td>
+      <td>[implementation, effectuation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td>['direction']</td>
+      <td></td>
+      <td>a line leading to a place or point通往某个地方或点的一条线</td>
+      <td>didn't know the way home不知道回家的路</td>
+      <td></td>
+      <td></td>
+      <td>[itinerary, path, route]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td>['fashion', 'manner', 'mode', 'style']</td>
+      <td></td>
+      <td>how something is done or how it happens如何做某事或如何发生</td>
+      <td>a lonely way of life一种孤独的生活方式</td>
+      <td></td>
+      <td></td>
+      <td>[property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>a general category of things; used in the expression `in the way of'一般类别的东西;用于表达`'的方式'</td>
+      <td>they didn't have much in the way of clothing他们没有太多的衣服</td>
+      <td></td>
+      <td></td>
+      <td>[category]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>a journey or passage旅程或通道</td>
+      <td>they are on the way他们正在路上</td>
+      <td></td>
+      <td></td>
+      <td>[journey, journeying]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>any artifact consisting of a road or path affording passage from one place to another任何由一条道路或一条道路组成的人工制品，从一个地方到另一个地方</td>
+      <td>he said he was looking for the way out他说他正在寻找出路</td>
+      <td></td>
+      <td></td>
+      <td>[artifact, artefact]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>a portion of something divided into shares一部分东西分成了股份</td>
+      <td>they split the loot three ways他们以三种方式分裂战利品</td>
+      <td></td>
+      <td></td>
+      <td>[portion, percentage, part, share]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>doing as one pleases or chooses做一个喜欢或选择</td>
+      <td>if I had my way如果我有我的方式</td>
+      <td></td>
+      <td></td>
+      <td>[pick, choice, selection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>the condition of things generally事物的状况一般</td>
+      <td>that's the way it is它就是这样儿的I felt the same way我有同感</td>
+      <td></td>
+      <td></td>
+      <td>[condition, status]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>nou</td>
+      <td>weɪ</td>
+      <td></td>
+      <td></td>
+      <td>the property of distance in general一般距离的属性</td>
+      <td>it's a long way to Moscow到莫斯科还有很长的路要走he went a long ways他走了很长的路</td>
+      <td></td>
+      <td></td>
+      <td>[distance]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>way</th>
+      <td>ay</td>
+      <td>6.11</td>
+      <td>adv</td>
+      <td>weɪ</td>
+      <td>['right smart']</td>
+      <td></td>
+      <td>to a great degree or by a great distance; very much (`right smart' is regional in the United States)在很大程度上或远距离;非常（“正确聪明”在美国是区域性的）</td>
+      <td>way over budget超出预算的方式way off base离开基地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td>['daylight', 'daytime']</td>
+      <td>[night]</td>
+      <td>the time after sunrise and before sunset while it is light outside日出之后和日落之前的时间，外面很轻</td>
+      <td>the dawn turned night into day黎明变成了白昼it is easier to make the repairs in the daytime在白天更容易进行维修</td>
+      <td></td>
+      <td></td>
+      <td>[time period, period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td>['24-hour interval', 'mean solar day', 'solar day', 'twenty-four hour period', 'twenty-four hours']</td>
+      <td></td>
+      <td>time for Earth to make a complete rotation on its axis地球在其轴上完成旋转的时间</td>
+      <td>two days later they left两天后他们离开了they put on two performances every day他们每天都进行两场演出there are 30,000 passengers per day每天有30,000名乘客</td>
+      <td>[daily]</td>
+      <td></td>
+      <td>[time unit, unit of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td>['sidereal day']</td>
+      <td></td>
+      <td>the time for one complete rotation of the earth relative to a particular star, about 4 minutes shorter than a mean solar day地球相对于特定恒星完全旋转的时间，比平均太阳日短约4分钟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sidereal time, time unit, unit of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td>['clarence day', 'clarence shepard day jr.']</td>
+      <td></td>
+      <td>United States writer best known for his autobiographical works (1874-1935)美国作家以其自传作品而闻名（1874-1935）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td></td>
+      <td></td>
+      <td>a day assigned to a particular purpose or observance分配给特定目的或遵守的一天</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[civil day, calendar day]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td></td>
+      <td></td>
+      <td>an era of existence or influence存在或影响的时代</td>
+      <td>in the day of the dinosaurs在恐龙的那一天in the days of the Roman Empire在罗马帝国时代in the days of sailing ships在帆船的时代he was a successful pianist in his day他那时是一位成功的钢琴家</td>
+      <td></td>
+      <td></td>
+      <td>[epoch, era]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td></td>
+      <td></td>
+      <td>a period of opportunity一段机会</td>
+      <td>he deserves his day in court他值得在法庭上度过他的一天every dog has his day时来运转</td>
+      <td></td>
+      <td></td>
+      <td>[opportunity, chance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td></td>
+      <td></td>
+      <td>some point or period in time某个时间点或某个时间段</td>
+      <td>it should arrive any day now它现在应该到达任何一天after that day she never trusted him again那天之后，她再也不相信他了those were the days那些日子these days it is not unusual这些天来并不罕见</td>
+      <td></td>
+      <td></td>
+      <td>[time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td></td>
+      <td></td>
+      <td>the period of time taken by a particular planet (e.g. Mars) to make a complete rotation on its axis特定行星（例如火星）在其轴上完成旋转所花费的时间</td>
+      <td>how long is a day on Jupiter?木星上的一天有多长？</td>
+      <td></td>
+      <td></td>
+      <td>[period, period of time, time period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>day</th>
+      <td>ay</td>
+      <td>5.95</td>
+      <td>nou</td>
+      <td>deɪ</td>
+      <td></td>
+      <td></td>
+      <td>the recurring hours when you are not sleeping (especially those when you are working)你不睡觉的经常性时间（尤其是你工作时的那些）</td>
+      <td>my day began early this morning我今天早上很早就开始了it was a busy day on the stock exchange这是股票交易所忙碌的一天she called it a day and went to bed她叫了一天然后去睡觉了</td>
+      <td></td>
+      <td></td>
+      <td>[work time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>may</th>
+      <td>ay</td>
+      <td>5.66</td>
+      <td>nou</td>
+      <td>meɪ</td>
+      <td>['crataegus laevigata', 'crataegus oxycantha', 'english hawthorn', 'whitethorn']</td>
+      <td></td>
+      <td>thorny Eurasian shrub of small tree having dense clusters of white to scarlet flowers followed by deep red berries; established as an escape in eastern North America棘手的欧亚灌木的小树，有密集的白色到猩红色的花簇，后面是深红色的浆果;在北美东部建立了逃脱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hawthorn, haw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>may</th>
+      <td>ay</td>
+      <td>5.66</td>
+      <td>nou</td>
+      <td>meɪ</td>
+      <td></td>
+      <td></td>
+      <td>the month following April and preceding June四月和六月之后的一个月</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gregorian calendar month]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td>['ante up', 'pay up']</td>
+      <td></td>
+      <td>cancel or discharge a debt取消或解除债务</td>
+      <td>pay up, please!付钱，拜托！</td>
+      <td>[payment]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td>['devote', 'give']</td>
+      <td></td>
+      <td>dedicate奉献</td>
+      <td>pay attention to注意</td>
+      <td></td>
+      <td>[give, sacrifice]</td>
+      <td>[cogitate, think, cerebrate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td>['give']</td>
+      <td></td>
+      <td>convey, as of a compliment, regards, attention, etc.; bestow传达，赞美，关心，注意等;赐给</td>
+      <td>Don't pay him any mind不要理他的钱pay attention请注意</td>
+      <td></td>
+      <td></td>
+      <td>[intercommunicate, communicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td>['compensate', 'make up', 'pay off'], alos:['pay off', 'pay back']</td>
+      <td></td>
+      <td>do or give something to somebody in return为某人作出回报或做某事</td>
+      <td>Does she pay you for the work you are doing?她会为你正在做的工作付钱吗？</td>
+      <td>[payee, payer]</td>
+      <td></td>
+      <td>[settle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td>['bear', 'yield']</td>
+      <td></td>
+      <td>bring in带进来</td>
+      <td>How much does this savings certificate pay annually?这个储蓄证书每年支付多少钱？</td>
+      <td></td>
+      <td></td>
+      <td>[clear, realize, realise, make, bring in, pull in, take in, earn, gain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td></td>
+      <td></td>
+      <td>bear (a cost or penalty), in recompense for some action承担（费用或罚款），以补偿某些行动</td>
+      <td>You'll pay for this!你会为此付出代价！She had to pay the penalty for speaking out rashly她不得不轻率地说出来支付罚款You'll pay for this opinion later你以后会支付这个意见</td>
+      <td>[payer]</td>
+      <td></td>
+      <td>[suffer, support, bear, tolerate, endure, brook, put up, abide, stick out, stomach, digest, stand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td></td>
+      <td></td>
+      <td>be worth it值得</td>
+      <td>It pays to go through the trouble经历麻烦是值得的</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td></td>
+      <td></td>
+      <td>discharge or settle放电或安顿下来</td>
+      <td>pay a debt偿还债务pay an obligation付出义务</td>
+      <td>[payment, payer]</td>
+      <td></td>
+      <td>[settle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td>, alos:['pay off', 'pay out', 'fund']</td>
+      <td></td>
+      <td>give money, usually in exchange for goods or services给钱，通常是为了换取商品或服务</td>
+      <td></td>
+      <td>[payment, payee, payer]</td>
+      <td></td>
+      <td>[give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td></td>
+      <td></td>
+      <td>make a compensation for赔偿</td>
+      <td></td>
+      <td></td>
+      <td>[get, pay off, pay back, fix]</td>
+      <td>[requite, repay]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>ver</td>
+      <td>peɪ</td>
+      <td></td>
+      <td></td>
+      <td>render给予</td>
+      <td>pay a visit访问pay a call打个电话</td>
+      <td></td>
+      <td></td>
+      <td>[make]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pay</th>
+      <td>ay</td>
+      <td>5.49</td>
+      <td>nou</td>
+      <td>peɪ</td>
+      <td>['earnings', 'remuneration', 'salary', 'wage']</td>
+      <td></td>
+      <td>something that remunerates有报酬的东西</td>
+      <td>he wasted his pay on drink他浪费了他的饮料</td>
+      <td></td>
+      <td></td>
+      <td>[regular payment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gay</th>
+      <td>ay</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>ɡeɪ</td>
+      <td>['homo', 'homophile', 'homosexual']</td>
+      <td></td>
+      <td>someone who is sexually attracted to persons of the same sex某人被同性的性吸引</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[person, soul, someone, somebody, mortal, individual]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gay</th>
+      <td>ay</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>ɡeɪ</td>
+      <td>['homophile', 'queer'], similarTo:['homosexual']</td>
+      <td></td>
+      <td>homosexual or arousing homosexual desires同性恋或唤起同性恋欲望</td>
+      <td></td>
+      <td>[gayness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gay</th>
+      <td>ay</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>ɡeɪ</td>
+      <td>['festal', 'festive', 'merry'], similarTo:['joyous']</td>
+      <td></td>
+      <td>offering fun and gaiety提供乐趣和欢乐</td>
+      <td>gay and exciting night life同性恋和令人兴奋的夜生活</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gay</th>
+      <td>ay</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>ɡeɪ</td>
+      <td>['jocund', 'jolly', 'jovial', 'merry', 'mirthful'], similarTo:['joyous']</td>
+      <td></td>
+      <td>full of or showing high-spirited merriment充满或表现出昂扬的欢乐</td>
+      <td>when hearts were young and gay当心灵年轻，同性恋a poet could not but be gay, in such a jocund company在这样一家公司里，一位诗人不得不成为同性恋</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gay</th>
+      <td>ay</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>ɡeɪ</td>
+      <td>['cheery', 'sunny'], similarTo:['cheerful']</td>
+      <td></td>
+      <td>bright and pleasant; promoting a feeling of cheer明亮宜人;促进欢呼的感觉</td>
+      <td>a gay sunny room一个同性恋的阳光房</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gay</th>
+      <td>ay</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>ɡeɪ</td>
+      <td>['brave', 'braw'], similarTo:['colourful', 'colorful']</td>
+      <td></td>
+      <td>brightly colored and showy色彩鲜艳，艳丽</td>
+      <td>a dress a bit too gay for her years她的衣服有点过于同性恋birds with gay plumage与同性恋羽毛的鸟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gay</th>
+      <td>ay</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>ɡeɪ</td>
+      <td>, similarTo:['indulgent']</td>
+      <td></td>
+      <td>given to social pleasures often including dissipation给予社会乐趣往往包括消散</td>
+      <td>led a gay Bohemian life带领同性恋波西米亚人的生活a gay old rogue with an eye for the ladies一个同性恋的老流氓，专注于女士们</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>ver</td>
+      <td>reɪ</td>
+      <td>['radiate']</td>
+      <td></td>
+      <td>extend or spread outward from a center or focus or inward towards a center从中心向外延伸或向外扩散或向内或朝向中心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[extend, lead, go, pass, run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>ver</td>
+      <td>reɪ</td>
+      <td>['irradiate']</td>
+      <td></td>
+      <td>expose to radiation暴露于辐射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[treat, process]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>ver</td>
+      <td>reɪ</td>
+      <td></td>
+      <td></td>
+      <td>emit as rays发射为光线</td>
+      <td>That tower rays a laser beam for miles across the sky那座塔在天空中射出数英里的激光束</td>
+      <td></td>
+      <td></td>
+      <td>[give out, emit, give off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>reɪ</td>
+      <td>['beam', 'electron beam']</td>
+      <td></td>
+      <td>a group of nearly parallel lines of electromagnetic radiation一组几乎平行的电磁辐射线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nonparticulate radiation, electromagnetic radiation, electromagnetic wave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>reɪ</td>
+      <td>['beam', 'beam of light', 'irradiation', 'light beam', 'ray of light', 'shaft', 'shaft of light']</td>
+      <td></td>
+      <td>a column of light (as from a beacon)一列光（来自灯塔）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[light, visible light, visible radiation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>reɪ</td>
+      <td>['re']</td>
+      <td></td>
+      <td>the syllable naming the second (supertonic) note of any major scale in solmization命名为solmization中任何主要音阶的第二（超音速）音符的音节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[solfa syllable]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>reɪ</td>
+      <td></td>
+      <td></td>
+      <td>a branch of an umbel or an umbelliform inflorescence伞形花序或伞形花序的分支</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pedicle, pedicel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>reɪ</td>
+      <td></td>
+      <td></td>
+      <td>any of the stiff bony spines in the fin of a fish鱼鳍中任何僵硬的骨刺</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>reɪ</td>
+      <td></td>
+      <td></td>
+      <td>cartilaginous fishes having horizontally flattened bodies and enlarged winglike pectoral fins with gills on the underside; most swim by moving the pectoral fins软骨鱼有水平扁平的身体和扩大的翼状胸鳍，下面有鳃;大多数是通过移动胸鳍来游泳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[elasmobranch, selachian]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ray</th>
+      <td>ay</td>
+      <td>4.76</td>
+      <td>nou</td>
+      <td>reɪ</td>
+      <td></td>
+      <td></td>
+      <td>(mathematics) a straight line extending from a point（数学）从一个点延伸的直线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vector]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>leɪ</td>
+      <td>['put down', 'repose'], alos:['lay aside', 'lay away', 'lay over']</td>
+      <td></td>
+      <td>put in a horizontal position放在水平位置</td>
+      <td>lay the books on the table把书放在桌子上lay the patient carefully onto the bed把病人小心地放在床上</td>
+      <td></td>
+      <td></td>
+      <td>[put, place, set, pose, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>leɪ</td>
+      <td>['place', 'pose', 'position', 'put', 'set'], alos:['lay out']</td>
+      <td></td>
+      <td>put into a certain place or abstract location放到某个地方或抽象的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>leɪ</td>
+      <td></td>
+      <td></td>
+      <td>impose as a duty, burden, or punishment作为义务，负担或惩罚</td>
+      <td>lay a responsibility on someone对某人负有责任</td>
+      <td></td>
+      <td></td>
+      <td>[impose, levy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>leɪ</td>
+      <td></td>
+      <td></td>
+      <td>lay eggs下蛋</td>
+      <td>This hen doesn't lay这只母鸡没有躺下</td>
+      <td>[layer]</td>
+      <td></td>
+      <td>[put down, repose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>ver</td>
+      <td>leɪ</td>
+      <td></td>
+      <td></td>
+      <td>prepare or position for action or operation准备或采取行动或行动</td>
+      <td>lay a fire放火lay the foundation for a new health care plan为新的医疗保健计划奠定基础</td>
+      <td></td>
+      <td></td>
+      <td>[organise, organize, prepare, devise, machinate, get up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>leɪ</td>
+      <td>['ballad']</td>
+      <td></td>
+      <td>a narrative poem of popular origin一部流行起源的叙事诗</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[verse form, poem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>nou</td>
+      <td>leɪ</td>
+      <td>['ballad']</td>
+      <td></td>
+      <td>a narrative song with a recurrent refrain一首反复出现的歌曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vocal, song]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>adj</td>
+      <td>leɪ</td>
+      <td>['laic', 'secular'], similarTo:['secular', 'profane']</td>
+      <td></td>
+      <td>characteristic of those who are not members of the clergy那些不是神职人员的人的特征</td>
+      <td>the lay ministry非专业事工</td>
+      <td>[laity]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lay</th>
+      <td>ay</td>
+      <td>4.70</td>
+      <td>adj</td>
+      <td>leɪ</td>
+      <td>, similarTo:['nonprofessional']</td>
+      <td></td>
+      <td>not of or from a profession不属于或来自专业</td>
+      <td>a lay opinion as to the cause of the disease对疾病的原因提出一个看法</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jay</th>
+      <td>ay</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>dʒeɪ</td>
+      <td>['john jay']</td>
+      <td></td>
+      <td>United States diplomat and jurist who negotiated peace treaties with Britain and served as the first chief justice of the United States Supreme Court (1745-1829)与英国谈判达成和平条约并担任美国最高法院首席大法官的美国外交官和法学家（1745-1829）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jay</th>
+      <td>ay</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>dʒeɪ</td>
+      <td></td>
+      <td></td>
+      <td>crested largely blue bird凤头大部分是蓝鸟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[corvine bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>beɪ</td>
+      <td>['quest']</td>
+      <td></td>
+      <td>bark with prolonged noises, of dogs狗的长时间噪音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>ver</td>
+      <td>beɪ</td>
+      <td></td>
+      <td></td>
+      <td>utter in deep prolonged tones深沉的长调</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utter, verbalise, verbalize, mouth, speak, talk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td>['alcove']</td>
+      <td></td>
+      <td>a small recess opening off a larger room一个较小的休息室打开一个较大的房间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[niche, recess]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td>['embayment']</td>
+      <td></td>
+      <td>an indentation of a shoreline larger than a cove but smaller than a gulf海岸线的凹陷大于海湾但小于海湾的海岸线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[water, body of water]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td>['bay laurel', 'bay tree', 'laurus nobilis', 'true laurel']</td>
+      <td></td>
+      <td>small Mediterranean evergreen tree with small blackish berries and glossy aromatic leaves used for flavoring in cooking; also used by ancient Greeks to crown victors小的地中海常绿树，带有小黑色浆果和光滑的芳香叶子，用于烹饪中的调味;也被古希腊人用于冠冕胜利者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[laurel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td></td>
+      <td></td>
+      <td>a compartment in an aircraft used for some specific purpose用于某些特定目的的飞机舱室</td>
+      <td>he opened the bomb bay他打开炸弹舱</td>
+      <td></td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td></td>
+      <td></td>
+      <td>a compartment on a ship between decks; often used as a hospital甲板上船上的隔间;经常用作医院</td>
+      <td>they put him in the sick bay他们把他放在病房里</td>
+      <td></td>
+      <td></td>
+      <td>[compartment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td></td>
+      <td></td>
+      <td>a horse of a moderate reddish-brown color一匹中等红褐色的马</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[horse, equus caballus]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td></td>
+      <td></td>
+      <td>the sound of a hound on the scent气味上的猎犬的声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bay</th>
+      <td>ay</td>
+      <td>4.21</td>
+      <td>adj</td>
+      <td>beɪ</td>
+      <td>, similarTo:['coloured', 'colored', 'colorful']</td>
+      <td></td>
+      <td>(used of animals especially a horse) of a moderate reddish-brown color（用于动物，特别是马），呈中度红褐色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yay</th>
+      <td>ay</td>
+      <td>3.85</td>
+      <td>nou</td>
+      <td>jeɪ</td>
+      <td></td>
+      <td></td>
+      <td>a branch of the Tai languages泰语的一个分支</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tai]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hay</th>
+      <td>ay</td>
+      <td>3.78</td>
+      <td>ver</td>
+      <td>heɪ</td>
+      <td></td>
+      <td></td>
+      <td>convert (plant material) into hay将（植物材料）转化为干草</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[convert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hay</th>
+      <td>ay</td>
+      <td>3.78</td>
+      <td>nou</td>
+      <td>heɪ</td>
+      <td></td>
+      <td></td>
+      <td>grass mowed and cured for use as fodder草被割草并腌制用作饲料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fodder]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nay</th>
+      <td>ay</td>
+      <td>3.43</td>
+      <td>nou</td>
+      <td>neɪ</td>
+      <td></td>
+      <td>[yea]</td>
+      <td>a negative否定的</td>
+      <td>the nays have it有没有</td>
+      <td></td>
+      <td></td>
+      <td>[negative]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fay</th>
+      <td>ay</td>
+      <td>3.15</td>
+      <td>nou</td>
+      <td>feɪ</td>
+      <td>['faerie', 'faery', 'fairy', 'sprite']</td>
+      <td></td>
+      <td>a small being, human in form, playful and having magical powers一个小的存在，人的形式，俏皮和具有魔力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[supernatural being, spiritual being]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tay</th>
+      <td>ay</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>teɪ</td>
+      <td></td>
+      <td></td>
+      <td>a branch of the Tai languages泰语的一个分支</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tai]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cay</th>
+      <td>ay</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>keɪ</td>
+      <td>['florida key', 'key']</td>
+      <td></td>
+      <td>a coral reef off the southern coast of Florida佛罗里达州南部海岸的珊瑚礁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coral reef]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

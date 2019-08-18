@@ -1,0 +1,1190 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['haven', 'saved', 'brave', 'grave', 'slave', 'shave', 'raven', 'crave', 'paved', 'navel', 'gavel', 'saver', 'avert', 'knave', 'waver', 'ravel', 'havel', 'stave', 'maven', 'laver', 'raver', 'trave', 'agave']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>haven</th>
+      <td>ave</td>
+      <td>5.52</td>
+      <td>nou</td>
+      <td>'heɪvən</td>
+      <td>['harbor', 'harbour', 'seaport']</td>
+      <td></td>
+      <td>a sheltered port where ships can take on or discharge cargo船舶可以承载或卸载货物的避风港</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[port]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>haven</th>
+      <td>ave</td>
+      <td>5.52</td>
+      <td>nou</td>
+      <td>'heɪvən</td>
+      <td>['oasis']</td>
+      <td></td>
+      <td>a shelter serving as a place of safety or sanctuary作为安全或庇护场所的庇护所</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>saved</th>
+      <td>ave</td>
+      <td>4.87</td>
+      <td>adj</td>
+      <td>seɪvd</td>
+      <td>['protected'], similarTo:['preserved']</td>
+      <td></td>
+      <td>guarded from injury or destruction防止受伤或毁坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>saved</th>
+      <td>ave</td>
+      <td>4.87</td>
+      <td>adj</td>
+      <td>seɪvd</td>
+      <td>, similarTo:['redeemed', 'rescued', 'salvageable', 'blessed', 'ransomed', 'reclaimed'], alos:['blest', 'regenerate', 'found', 'blessed']</td>
+      <td>[lost]</td>
+      <td>rescued; especially from the power and consequences of sin获救;尤其是来自罪恶的力量和后果</td>
+      <td>a saved soul一个得救的灵魂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brave</th>
+      <td>ave</td>
+      <td>4.56</td>
+      <td>ver</td>
+      <td>breɪv</td>
+      <td>['brave out', 'endure', 'weather']</td>
+      <td></td>
+      <td>face and withstand with courage面对并勇敢地承受</td>
+      <td>She braved the elements她勇敢地冒着元素</td>
+      <td></td>
+      <td></td>
+      <td>[withstand, defy, hold, hold up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brave</th>
+      <td>ave</td>
+      <td>4.56</td>
+      <td>nou</td>
+      <td>breɪv</td>
+      <td></td>
+      <td></td>
+      <td>a North American Indian warrior北美印第安战士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[warrior]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brave</th>
+      <td>ave</td>
+      <td>4.56</td>
+      <td>nou</td>
+      <td>breɪv</td>
+      <td></td>
+      <td>[timid]</td>
+      <td>people who are brave勇敢的人</td>
+      <td>the home of the free and the brave自由和勇敢的家</td>
+      <td></td>
+      <td></td>
+      <td>[people]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brave</th>
+      <td>ave</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>breɪv</td>
+      <td>['courageous'], similarTo:['game', 'gamey', 'gamy', 'gritty', 'heroic', 'lionhearted', 'mettlesome', 'gallant', 'spirited', 'spunky', 'stalwart', 'stouthearted', 'desperate', 'undaunted', 'valiant', 'valorous'], alos:['fearless', 'unafraid', 'adventuresome', 'adventurous', 'bold', 'resolute']</td>
+      <td>[cowardly]</td>
+      <td>possessing or displaying courage; able to face and deal with danger or fear without flinching拥有或表现出勇气;能够面对和处理危险或恐惧而不退缩</td>
+      <td>Familiarity with danger makes a brave man braver but less daring对危险的熟悉使勇敢的人勇敢但不那么大胆</td>
+      <td>[braveness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brave</th>
+      <td>ave</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>breɪv</td>
+      <td>['audacious', 'dauntless', 'fearless', 'hardy', 'intrepid', 'unfearing'], similarTo:['bold']</td>
+      <td></td>
+      <td>invulnerable to fear or intimidation不受恐惧或恐吓</td>
+      <td></td>
+      <td>[braveness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brave</th>
+      <td>ave</td>
+      <td>4.56</td>
+      <td>adj</td>
+      <td>breɪv</td>
+      <td>['braw', 'gay'], similarTo:['colourful', 'colorful']</td>
+      <td></td>
+      <td>brightly colored and showy色彩鲜艳，艳丽</td>
+      <td>girls decked out in brave new dresses女孩穿着勇敢的新衣服brave banners flying勇敢的横幅飞</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>greɪv</td>
+      <td>['engrave', 'inscribe', 'scratch']</td>
+      <td></td>
+      <td>carve, cut, or etch into a material or surface雕刻，切割或蚀刻成材料或表面</td>
+      <td>engrave a pen刻一支笔engraved the trophy cup with the winner's name用冠军的名字刻上奖杯</td>
+      <td></td>
+      <td>[etch, engrave]</td>
+      <td>[chip at, carve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>ver</td>
+      <td>greɪv</td>
+      <td>['sculpt', 'sculpture']</td>
+      <td></td>
+      <td>shape (a material like stone or wood) by whittling away at it通过削减它的形状（像石头或木头的材料）</td>
+      <td></td>
+      <td></td>
+      <td>[sculpt, sculpture]</td>
+      <td>[carve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>greɪv</td>
+      <td>['grave accent']</td>
+      <td></td>
+      <td>a mark (`) placed above a vowel to indicate pronunciation在元音上方放置一个标记（`）来表示发音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[accent, accent mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>greɪv</td>
+      <td>['tomb']</td>
+      <td></td>
+      <td>a place for the burial of a corpse (especially beneath the ground and marked by a tombstone)埋葬尸体的地方（特别是在地下并用墓碑标记）</td>
+      <td>he put flowers on his mother's grave他把鲜花放在母亲的坟墓上</td>
+      <td></td>
+      <td></td>
+      <td>[spot, place, topographic point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>nou</td>
+      <td>greɪv</td>
+      <td></td>
+      <td></td>
+      <td>death of a person一个人的死亡</td>
+      <td>he went to his grave without forgiving me他没有原谅我就去了他的坟墓from cradle to grave从摇篮到坟墓</td>
+      <td></td>
+      <td></td>
+      <td>[dying, death, demise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>adj</td>
+      <td>greɪv</td>
+      <td>['grievous', 'heavy', 'weighty'], similarTo:['of import', 'important']</td>
+      <td></td>
+      <td>of great gravity or crucial import; requiring serious thought重力或重要的进口;需要认真思考</td>
+      <td>grave responsibilities严重的责任faced a grave decision in a time of crisis在危机时刻面临严峻的决定</td>
+      <td>[graveness, gravity]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>adj</td>
+      <td>greɪv</td>
+      <td>['sedate', 'sober', 'solemn'], similarTo:['serious']</td>
+      <td></td>
+      <td>dignified and somber in manner or character and committed to keeping promises在态度或性格上有尊严和忧郁，并致力于兑现承诺</td>
+      <td>a grave God-fearing man一个严重敬畏上帝的人</td>
+      <td>[graveness, gravity]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grave</th>
+      <td>ave</td>
+      <td>4.43</td>
+      <td>adj</td>
+      <td>greɪv</td>
+      <td>['dangerous', 'grievous', 'life-threatening', 'serious', 'severe'], similarTo:['critical']</td>
+      <td></td>
+      <td>causing fear or anxiety by threatening great harm通过威胁巨大伤害引起恐惧或焦虑</td>
+      <td>a grave situation一个严峻的形势a grave illness严重的疾病</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slave</th>
+      <td>ave</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>sleɪv</td>
+      <td>["break one's back", 'buckle down', 'knuckle down']</td>
+      <td></td>
+      <td>work very hard, like a slave像奴隶一样努力工作</td>
+      <td></td>
+      <td>[slavery]</td>
+      <td></td>
+      <td>[do work, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slave</th>
+      <td>ave</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>sleɪv</td>
+      <td>['hard worker', 'striver']</td>
+      <td></td>
+      <td>someone who works as hard as a slave像奴隶一样努力工作的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[worker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slave</th>
+      <td>ave</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>sleɪv</td>
+      <td></td>
+      <td></td>
+      <td>a person who is owned by someone由某人拥有的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[someone, soul, individual, mortal, person, somebody]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slave</th>
+      <td>ave</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>sleɪv</td>
+      <td></td>
+      <td></td>
+      <td>someone entirely dominated by some influence or person某人完全由某种影响力或人物主宰</td>
+      <td>a slave to fashion时尚的奴隶a slave to cocaine可卡因的奴隶his mother was his abject slave他的母亲是他卑鄙的奴隶</td>
+      <td></td>
+      <td></td>
+      <td>[person, individual, mortal, somebody, someone, soul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shave</th>
+      <td>ave</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ʃeɪv</td>
+      <td>['trim']</td>
+      <td></td>
+      <td>cut closely密切关注</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shave</th>
+      <td>ave</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ʃeɪv</td>
+      <td>['knock off']</td>
+      <td></td>
+      <td>cut the price of降价</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut, cut back, cut down, reduce, trim down, bring down, trim back, trim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shave</th>
+      <td>ave</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ʃeɪv</td>
+      <td>['plane']</td>
+      <td></td>
+      <td>cut or remove with or as if with a plane用平面或用平面切割或移除</td>
+      <td>The machine shaved off fine layers from the piece of wood机器刮掉了这块木头上的细小层</td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shave</th>
+      <td>ave</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ʃeɪv</td>
+      <td></td>
+      <td></td>
+      <td>make shavings of or reduce to shavings削减或减少刨花</td>
+      <td>shave the radish刮萝卜</td>
+      <td>[shaving]</td>
+      <td></td>
+      <td>[carve, cut up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shave</th>
+      <td>ave</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ʃeɪv</td>
+      <td></td>
+      <td></td>
+      <td>remove body hair with a razor用剃刀去除体毛</td>
+      <td></td>
+      <td>[shaver, shaving]</td>
+      <td></td>
+      <td>[groom, neaten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shave</th>
+      <td>ave</td>
+      <td>4.05</td>
+      <td>ver</td>
+      <td>ʃeɪv</td>
+      <td></td>
+      <td></td>
+      <td>touch the surface of lightly轻轻触摸表面</td>
+      <td>His back shaved the counter in passing他的背在路过的时候刮了一下柜台</td>
+      <td>[shaving]</td>
+      <td></td>
+      <td>[rake, graze, crease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shave</th>
+      <td>ave</td>
+      <td>4.05</td>
+      <td>nou</td>
+      <td>ʃeɪv</td>
+      <td>['shaving']</td>
+      <td></td>
+      <td>the act of removing hair with a razor用剃刀去除头发的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[depilation, epilation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raven</th>
+      <td>ave</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>'reɪvən</td>
+      <td>['devour', 'guttle', 'pig']</td>
+      <td></td>
+      <td>eat greedily贪吃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raven</th>
+      <td>ave</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>'reɪvən</td>
+      <td>['predate', 'prey']</td>
+      <td></td>
+      <td>prey on or hunt for捕食或捕猎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[forage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raven</th>
+      <td>ave</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>'reɪvən</td>
+      <td></td>
+      <td></td>
+      <td>feed greedily贪吃</td>
+      <td>The lions ravened the bodies狮子们掠夺尸体</td>
+      <td></td>
+      <td></td>
+      <td>[feed, eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raven</th>
+      <td>ave</td>
+      <td>3.47</td>
+      <td>ver</td>
+      <td>'reɪvən</td>
+      <td></td>
+      <td></td>
+      <td>obtain or seize by violence通过暴力获取或抓住</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raven</th>
+      <td>ave</td>
+      <td>3.47</td>
+      <td>nou</td>
+      <td>'reɪvən</td>
+      <td>['corvus corax']</td>
+      <td></td>
+      <td>large black bird with a straight bill and long wedge-shaped tail大型黑鸟，直喙和长楔形尾巴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[corvine bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crave</th>
+      <td>ave</td>
+      <td>3.34</td>
+      <td>ver</td>
+      <td>kreɪv</td>
+      <td>['hunger', 'lust', 'starve', 'thirst']</td>
+      <td></td>
+      <td>have a craving, appetite, or great desire for对...有渴望，胃口或渴望</td>
+      <td></td>
+      <td>[craving]</td>
+      <td></td>
+      <td>[desire, want]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>crave</th>
+      <td>ave</td>
+      <td>3.34</td>
+      <td>ver</td>
+      <td>kreɪv</td>
+      <td></td>
+      <td></td>
+      <td>plead or ask for earnestly恳求或恳求</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beg, implore, pray]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>paved</th>
+      <td>ave</td>
+      <td>3.05</td>
+      <td>adj</td>
+      <td>peɪvd</td>
+      <td>, similarTo:['made-up', 'sealed']</td>
+      <td>[unpaved]</td>
+      <td>covered with a firm surface覆盖着坚固的表面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>navel</th>
+      <td>ave</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>'neɪvəl</td>
+      <td>['belly button', 'bellybutton', 'omphalos', 'omphalus', 'umbilicus']</td>
+      <td></td>
+      <td>a scar where the umbilical cord was attached附着脐带的疤痕</td>
+      <td>you were not supposed to show your navel on television你不应该在电视上露出你的肚脐they argued whether or not Adam had a navel他们争论亚当是否有肚脐</td>
+      <td></td>
+      <td></td>
+      <td>[point]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>navel</th>
+      <td>ave</td>
+      <td>3.02</td>
+      <td>nou</td>
+      <td>'neɪvəl</td>
+      <td>['navel point']</td>
+      <td></td>
+      <td>the center point or middle of something某事物的中心点或中间点</td>
+      <td>the Incas believed that Cuzco was the navel of the universe印加人认为库斯科是宇宙的肚脐</td>
+      <td></td>
+      <td></td>
+      <td>[center, centre, midpoint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gavel</th>
+      <td>ave</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>'ɡævəl</td>
+      <td></td>
+      <td></td>
+      <td>a small mallet used by a presiding officer or a judge主持人或法官使用的小槌</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beetle, mallet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>saver</th>
+      <td>ave</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>'seɪvər</td>
+      <td>['recoverer', 'rescuer']</td>
+      <td></td>
+      <td>someone who saves something from danger or violence从危险或暴力中拯救某些东西的人</td>
+      <td></td>
+      <td>[save]</td>
+      <td></td>
+      <td>[mortal, person, individual, somebody, someone, soul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>saver</th>
+      <td>ave</td>
+      <td>2.96</td>
+      <td>nou</td>
+      <td>'seɪvər</td>
+      <td></td>
+      <td></td>
+      <td>someone who saves (especially money)拯救的人（特别是钱）</td>
+      <td></td>
+      <td>[save]</td>
+      <td></td>
+      <td>[possessor, owner]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>avert</th>
+      <td>ave</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>ə'vɜrt</td>
+      <td>['avoid', 'debar', 'deflect', 'fend off', 'forefend', 'forfend', 'head off', 'obviate', 'stave off', 'ward off']</td>
+      <td></td>
+      <td>prevent the occurrence of; prevent from happening防止发生;防止发生</td>
+      <td>avert a strike避免罢工</td>
+      <td>[avertable, avertible]</td>
+      <td></td>
+      <td>[forbid, foreclose, forestall, preclude, prevent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>avert</th>
+      <td>ave</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>ə'vɜrt</td>
+      <td>['turn away']</td>
+      <td></td>
+      <td>turn away or aside转身离开</td>
+      <td>They averted their eyes when the King entered当国王进入时，他们避开了他们的眼睛</td>
+      <td>[aversion]</td>
+      <td></td>
+      <td>[turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knave</th>
+      <td>ave</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>neɪv</td>
+      <td>['rapscallion', 'rascal', 'rogue', 'scalawag', 'scallywag', 'varlet']</td>
+      <td></td>
+      <td>a deceitful and unreliable scoundrel一个欺骗性和不可靠的恶棍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scoundrel, villain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>knave</th>
+      <td>ave</td>
+      <td>2.80</td>
+      <td>nou</td>
+      <td>neɪv</td>
+      <td>['jack']</td>
+      <td></td>
+      <td>one of four face cards in a deck bearing a picture of a young prince甲板上的四张面牌之一，上面有一张年轻王子的照片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[court card, face card, picture card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>'weɪvər</td>
+      <td>['flicker', 'flitter', 'flutter', 'quiver']</td>
+      <td></td>
+      <td>move back and forth very rapidly来回快速地来回移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move back and forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>'weɪvər</td>
+      <td>['weave']</td>
+      <td></td>
+      <td>sway from side to side从一边到另一边摇摆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sway, swing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>'weɪvər</td>
+      <td>['hesitate', 'waffle']</td>
+      <td></td>
+      <td>pause or hold back in uncertainty or unwillingness暂停或阻止不确定或不愿意</td>
+      <td></td>
+      <td>[wavering, waverer]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>'weɪvər</td>
+      <td>['falter']</td>
+      <td></td>
+      <td>be unsure or weak不确定或虚弱</td>
+      <td></td>
+      <td>[waverer]</td>
+      <td></td>
+      <td>[hesitate, waffle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>'weɪvər</td>
+      <td>['falter']</td>
+      <td></td>
+      <td>move hesitatingly, as if about to give way犹豫不决，仿佛要让步</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>'weɪvər</td>
+      <td>['quaver']</td>
+      <td></td>
+      <td>give off unsteady sounds, alternating in amplitude or frequency发出不稳定的声音，在幅度或频率上交替出现</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vocalize, vocalise, sound, voice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>ver</td>
+      <td>'weɪvər</td>
+      <td>['fluctuate', 'vacillate']</td>
+      <td></td>
+      <td>move or sway in a rising and falling or wavelike pattern以上升和下降或波浪形式移动或摇摆</td>
+      <td></td>
+      <td>[wavering]</td>
+      <td>[fluctuate]</td>
+      <td>[swing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>nou</td>
+      <td>'weɪvər</td>
+      <td>['flicker', 'flutter']</td>
+      <td></td>
+      <td>the act of moving back and forth来回移动的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[motion, move, movement, motility]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>nou</td>
+      <td>'weɪvər</td>
+      <td>['falter', 'faltering', 'hesitation']</td>
+      <td></td>
+      <td>the act of pausing uncertainly不确定地停顿的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pause]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>waver</th>
+      <td>ave</td>
+      <td>2.59</td>
+      <td>nou</td>
+      <td>'weɪvər</td>
+      <td></td>
+      <td></td>
+      <td>someone who communicates by waving通过挥动来沟通的人</td>
+      <td></td>
+      <td>[wave]</td>
+      <td></td>
+      <td>[communicator]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ravel</th>
+      <td>ave</td>
+      <td>2.56</td>
+      <td>ver</td>
+      <td>rə'vɛl</td>
+      <td>['ravel out', 'unravel']</td>
+      <td></td>
+      <td>disentangle解开</td>
+      <td>can you unravel the mystery?你能解开这个谜团吗？</td>
+      <td>[ravelling, raveling]</td>
+      <td></td>
+      <td>[straighten out, disentangle, unsnarl]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ravel</th>
+      <td>ave</td>
+      <td>2.56</td>
+      <td>ver</td>
+      <td>rə'vɛl</td>
+      <td>['knot', 'tangle']</td>
+      <td>[unravel]</td>
+      <td>tangle or complicate纠结或复杂</td>
+      <td>a ravelled story一个狂热的故事</td>
+      <td></td>
+      <td></td>
+      <td>[interlace, intertwine, lace, entwine, twine, enlace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ravel</th>
+      <td>ave</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>rə'vɛl</td>
+      <td>['maurice ravel']</td>
+      <td></td>
+      <td>French composer and exponent of Impressionism (1875-1937)法国作曲家和印象派的代表人物（1875-1937）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ravel</th>
+      <td>ave</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>rə'vɛl</td>
+      <td>['ladder', 'run']</td>
+      <td></td>
+      <td>a row of unravelled stitches一排破裂的针脚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[damage, harm, impairment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>havel</th>
+      <td>ave</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>'hævʌl</td>
+      <td>['vaclav havel']</td>
+      <td></td>
+      <td>Czech dramatist and statesman whose plays opposed totalitarianism and who served as president of Czechoslovakia from 1989 to 1992 and president of the Czech Republic since 1993 (born in 1936)捷克戏剧家和政治家，他的戏剧反对极权主义，1989年至1992年担任捷克斯洛伐克总统，1993年起担任捷克共和国总统（1936年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stave</th>
+      <td>ave</td>
+      <td>2.49</td>
+      <td>ver</td>
+      <td>steɪv</td>
+      <td>['stave in']</td>
+      <td></td>
+      <td>burst or force (a hole) into something爆裂或强迫（一个洞）进入某物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[split, burst, break open]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stave</th>
+      <td>ave</td>
+      <td>2.49</td>
+      <td>ver</td>
+      <td>steɪv</td>
+      <td></td>
+      <td></td>
+      <td>furnish with staves提供五线谱</td>
+      <td>stave a ladder爬梯子</td>
+      <td></td>
+      <td></td>
+      <td>[equip, fit out, outfit, fit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stave</th>
+      <td>ave</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>steɪv</td>
+      <td>['staff']</td>
+      <td></td>
+      <td>(music) the system of five horizontal lines on which the musical notes are written（音乐）用于写入音符的五条水平线的系统</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[musical notation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stave</th>
+      <td>ave</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>steɪv</td>
+      <td>['lag']</td>
+      <td></td>
+      <td>one of several thin slats of wood forming the sides of a barrel or bucket几个薄木板中的一个，形成一个桶或桶的侧面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slat, spline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stave</th>
+      <td>ave</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>steɪv</td>
+      <td>['round', 'rung']</td>
+      <td></td>
+      <td>a crosspiece between the legs of a chair椅子腿之间的横档</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crosspiece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>maven</th>
+      <td>ave</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td>'meɪvən</td>
+      <td>['ace', 'adept', 'champion', 'genius', 'hotshot', 'mavin', 'sensation', 'star', 'superstar', 'virtuoso', 'whizz', 'whiz', 'wiz', 'wizard']</td>
+      <td></td>
+      <td>someone who is dazzlingly skilled in any field在任何领域都非常娴熟的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[expert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>laver</th>
+      <td>ave</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'leɪvər</td>
+      <td>['red laver']</td>
+      <td></td>
+      <td>edible red seaweeds食用红海藻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[red algae]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>laver</th>
+      <td>ave</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'leɪvər</td>
+      <td>['rod laver', 'rodney george laver']</td>
+      <td></td>
+      <td>Australian tennis player who in 1962 was the second man to win the Australian and French and English and United States singles titles in the same year; in 1969 he repeated this feat (born in 1938)澳大利亚网球运动员，1962年是同年获得澳大利亚和法国，英国和美国单打冠军的第二人; 1969年，他重复了这一壮举（1938年出生）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>laver</th>
+      <td>ave</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'leɪvər</td>
+      <td>['sea lettuce']</td>
+      <td></td>
+      <td>seaweed with edible translucent crinkly green fronds海藻与可食用的半透明褶皱绿叶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[green algae, chlorophyte]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>laver</th>
+      <td>ave</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'leɪvər</td>
+      <td></td>
+      <td></td>
+      <td>(Old Testament) large basin used by a priest in an ancient Jewish temple to perform ritual ablutions（旧约）大型盆地，由一位古代犹太教堂的牧师用来进行仪式洗浴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[basin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raver</th>
+      <td>ave</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'reɪvər</td>
+      <td>['ranter']</td>
+      <td></td>
+      <td>someone who rants and raves; speaks in a violent or loud manner咆哮和狂喜的人;以暴力或大声的方式说话</td>
+      <td></td>
+      <td>[rave]</td>
+      <td></td>
+      <td>[speaker, talker, utterer, verbaliser, verbalizer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>raver</th>
+      <td>ave</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td>'reɪvər</td>
+      <td></td>
+      <td></td>
+      <td>a participant in a rave dancing party参加狂欢派对的人</td>
+      <td></td>
+      <td>[rave]</td>
+      <td></td>
+      <td>[dancer, social dancer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trave</th>
+      <td>ave</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>treɪv</td>
+      <td>['crossbeam', 'crosspiece', 'traverse']</td>
+      <td></td>
+      <td>a horizontal beam that extends across something横跨某物的横梁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[beam]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agave</th>
+      <td>ave</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>ə'ɡeɪvi</td>
+      <td>['american aloe', 'century plant']</td>
+      <td></td>
+      <td>tropical American plants with basal rosettes of fibrous sword-shaped leaves and flowers in tall spikes; some cultivated for ornament or for fiber美洲热带植物，基部莲座丛中有纤维状的剑形叶子和花朵，高高的穗状花序;一些用于装饰或纤维</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[desert plant, xerophyte, xerophilous plant, xerophytic plant, xerophile]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

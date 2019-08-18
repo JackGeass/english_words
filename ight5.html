@@ -1,0 +1,2060 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['right', 'night', 'might', 'fight', 'light', 'tight', 'sight', 'wight', 'bight']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>ver</td>
+      <td>raɪt</td>
+      <td>['correct', 'rectify']</td>
+      <td></td>
+      <td>make right or correct做对或纠正</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, reverse, change by reversal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>ver</td>
+      <td>raɪt</td>
+      <td>['compensate', 'correct', 'redress']</td>
+      <td>[wrong]</td>
+      <td>make reparations or amends for进行赔偿或修改</td>
+      <td>right a wrongs done to the victims of the Holocaust对大屠杀的受害者犯了错误</td>
+      <td></td>
+      <td></td>
+      <td>[modify, change, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>ver</td>
+      <td>raɪt</td>
+      <td></td>
+      <td></td>
+      <td>put in or restore to an upright position放入或恢复到直立位置</td>
+      <td>They righted the sailboat that had capsized他们纠正了翻船的帆船</td>
+      <td></td>
+      <td></td>
+      <td>[change, alter, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>ver</td>
+      <td>raɪt</td>
+      <td></td>
+      <td></td>
+      <td>regain an upright or proper position恢复正确或正确的位置</td>
+      <td>The capsized boat righted again倾覆的船再次恢复正常</td>
+      <td></td>
+      <td></td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['right field', 'rightfield']</td>
+      <td></td>
+      <td>the piece of ground in the outfield on the catcher's right捕手右侧外场的一块地面</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[parcel, parcel of land, tract, piece of ground, piece of land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['rightfulness']</td>
+      <td>[wrong]</td>
+      <td>anything in accord with principles of justice任何符合正义原则的东西</td>
+      <td>he feels he is in the right他觉得自己是对的the rightfulness of his claim他的主张的合法性</td>
+      <td></td>
+      <td></td>
+      <td>[justness, justice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['right wing']</td>
+      <td></td>
+      <td>those who support political or social or economic conservatism; those who believe that things are better left unchanged那些支持政治，社会或经济保守主义的人;那些认为事情好转的人保持不变</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sect, faction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td>['right hand']</td>
+      <td></td>
+      <td>the hand that is on the right side of the body在身体右侧的手</td>
+      <td>he writes with his right hand but pitches with his left他用右手写道，但是左手投球hit him with quick rights to the body对他身体的快速权利打他</td>
+      <td></td>
+      <td></td>
+      <td>[manus, hand, mitt, paw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td></td>
+      <td></td>
+      <td>an abstract idea of that which is due to a person or governmental body by law or tradition or nature由法律，传统或性质引起的个人或政府机构的抽象概念</td>
+      <td>Certain rights can never be granted to the government but must be kept in the hands of the people某些权利永远不会授予政府，但必须掌握在人民手中a right is not something that somebody gives you; it is something that nobody can take away权利不是某人给你的东西;这是没人能带走的东西</td>
+      <td></td>
+      <td></td>
+      <td>[abstract, abstraction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td></td>
+      <td></td>
+      <td>a turn toward the side of the body that is on the south when the person is facing east当人朝东的时候转向南方身体的一侧</td>
+      <td>take a right at the corner在拐角处右转</td>
+      <td></td>
+      <td></td>
+      <td>[turning, turn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td></td>
+      <td></td>
+      <td>(frequently plural) the interest possessed by law or custom in some intangible thing（通常是复数的）法律或习俗在某些无形的东西中所拥有的利益</td>
+      <td>mineral rights矿产权film rights电影版权</td>
+      <td></td>
+      <td></td>
+      <td>[stake, interest]</td>
+      <td>[plural form, plural]</td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>nou</td>
+      <td>raɪt</td>
+      <td></td>
+      <td>[left]</td>
+      <td>location near or direction toward the right side; i.e. the side to the south when a person or object faces east靠近或靠近右侧的位置;即人或物体朝东时的南侧</td>
+      <td>he stood on the right他站在右边</td>
+      <td></td>
+      <td></td>
+      <td>[position, place]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adv</td>
+      <td>raɪt</td>
+      <td>['flop']</td>
+      <td></td>
+      <td>exactly究竟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adv</td>
+      <td>raɪt</td>
+      <td>['mightily', 'mighty', 'powerful']</td>
+      <td></td>
+      <td>(Southern regional intensive) very; to a great degree（南区域密集）非常;在很大程度上</td>
+      <td>they have a right nice place他们有一个正确的好地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intensive, intensifier]</td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adv</td>
+      <td>raɪt</td>
+      <td>['aright', 'correctly']</td>
+      <td>[wrongly]</td>
+      <td>in an accurate manner以准确的方式</td>
+      <td>he guessed right他猜对了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adv</td>
+      <td>raɪt</td>
+      <td>['all', 'altogether', 'completely', 'entirely', 'totally', 'whole', 'wholly']</td>
+      <td></td>
+      <td>to a complete degree or to the full or entire extent (`whole' is often used informally for `wholly')到一个完整的程度或完整或整个程度（“整体”通常非正式地用于“完全”）</td>
+      <td>she felt right at home她觉得自己在家里he fell right into the trap他陷入了陷阱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adv</td>
+      <td>raɪt</td>
+      <td>['decent', 'decently', 'properly']</td>
+      <td></td>
+      <td>in the right manner; correctly; suitably以正确的方式;正确;合适地</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adv</td>
+      <td>raɪt</td>
+      <td>['justly']</td>
+      <td></td>
+      <td>in accordance with moral or social standards按照道德或社会标准</td>
+      <td>that serves him right这对他有用do right by him做对了他</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adv</td>
+      <td>raɪt</td>
+      <td>['right on']</td>
+      <td></td>
+      <td>an interjection expressing agreement表达同意的感叹词</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['correct'], similarTo:['right-minded']</td>
+      <td>[wrong]</td>
+      <td>correct in opinion or judgment在意见或判断中纠正</td>
+      <td>time proved him right时间证明他是对的</td>
+      <td>[rightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['right-hand'], similarTo:['right-handed']</td>
+      <td></td>
+      <td>intended for the right hand打算用于右手</td>
+      <td>a right-hand glove一个右手手套</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['one'], similarTo:['extraordinary']</td>
+      <td></td>
+      <td>(informal) very; used informally as an intensifier非正式的;非正式地用作增强剂</td>
+      <td>a right fine day一个正确的好日子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['correct'], similarTo:['proper']</td>
+      <td></td>
+      <td>socially right or correct社交正确或正确</td>
+      <td>it isn't right to leave the party without saying goodbye在不说再见的情况下离开党是不对的</td>
+      <td>[rightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['correct'], similarTo:['proper']</td>
+      <td></td>
+      <td>in accord with accepted standards of usage or procedure符合公认的使用标准或程序</td>
+      <td>what's the right word for this?什么是正确的词？the right way to open oysters打开牡蛎的正确方法</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['veracious'], similarTo:['accurate']</td>
+      <td></td>
+      <td>precisely accurate准确无误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['correct'], similarTo:['letter-perfect', 'accurate', 'exact', 'straight', 'word-perfect', 'precise'], alos:['accurate', 'true', 'proper']</td>
+      <td>[wrong]</td>
+      <td>free from error; especially conforming to fact or truth没有错误;特别符合事实或真相</td>
+      <td>the right answer正确的答案took the right road走正确的道路the right decision正确的决定</td>
+      <td>[rightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['proper'], similarTo:['appropriate']</td>
+      <td></td>
+      <td>appropriate for a condition or purpose or occasion or a person's character, needs适合某种条件或目的或场合或某人的性格需要</td>
+      <td>the right man for the job适合这份工作的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>['good', 'ripe'], similarTo:['opportune']</td>
+      <td></td>
+      <td>most suitable or right for a particular purpose最适合或特定用途的</td>
+      <td>the right time to act行动的合适时机</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>, similarTo:['right-hand', 'far', 'starboard', 'rightmost'], alos:['right-handed']</td>
+      <td>[left]</td>
+      <td>being or located on or directed toward the side of the body to the east when facing north当朝北时，位于或指向身体侧面或指向东侧</td>
+      <td>my right hand我的右手right center field右中场a right-hand turn右转the right bank of a river is the bank on your right side when you are facing downstream当您面向下游时，右岸是您右侧的河岸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>, similarTo:['perpendicular']</td>
+      <td></td>
+      <td>having the axis perpendicular to the base轴垂直于基座</td>
+      <td>a right angle一个直角</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>, similarTo:['ethical', 'honorable', 'honourable'], alos:['proper', 'just', 'good', 'ethical']</td>
+      <td>[wrong]</td>
+      <td>in conformance with justice or law or morality符合正义，法律或道德</td>
+      <td>do the right thing and confess做正确的事并承认</td>
+      <td>[rightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>, similarTo:['satisfactory']</td>
+      <td></td>
+      <td>in or into a satisfactory condition处于满意的状态</td>
+      <td>things are right again now事情现在又好了put things right把事情做对了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>, similarTo:['reactionary', 'conservative', 'far-right', 'old-line', 'oldline', 'reactionist', 'right-wing', 'rightish', 'rightist'], alos:['conservative']</td>
+      <td>[center, left]</td>
+      <td>of or belonging to the political or intellectual right属于或属于政治或知识产权的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>adj</td>
+      <td>raɪt</td>
+      <td>, similarTo:['outside']</td>
+      <td></td>
+      <td>(of the side of cloth or clothing) facing or intended to face outward（面料或衣服的一面）面向或意图面向外</td>
+      <td>the right side of the cloth showed the pattern布料的右侧显示出图案be sure your shirt is right side out确保你的衬衫正面朝外</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>right</th>
+      <td>ight</td>
+      <td>6.51</td>
+      <td>Non</td>
+      <td>raɪt</td>
+      <td></td>
+      <td>[left]</td>
+      <td>toward or on the right; also used figuratively向右或向右;也用比喻</td>
+      <td>he looked right and left他向右看和向左看the party has moved right党已经向右移动了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td>['dark', 'nighttime']</td>
+      <td>[day]</td>
+      <td>the time after sunset and before sunrise while it is dark outside日落之后和日出之前的时间，外面是黑暗的</td>
+      <td></td>
+      <td>[nightly]</td>
+      <td></td>
+      <td>[period, period of time, time period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td>['nox']</td>
+      <td></td>
+      <td>Roman goddess of night; daughter of Erebus; counterpart of Greek Nyx罗马女神的夜晚;埃里伯斯的女儿;希腊Nyx的对应物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td></td>
+      <td></td>
+      <td>a period of ignorance or backwardness or gloom一段无知或落后或忧郁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[period, time period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td></td>
+      <td></td>
+      <td>a shortening of nightfall缩短夜幕降临</td>
+      <td>they worked from morning to night他们从早到晚工作</td>
+      <td></td>
+      <td></td>
+      <td>[crepuscle, crepuscule, twilight, dusk, evenfall, nightfall, fall, gloam, gloaming]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td></td>
+      <td></td>
+      <td>darkness黑暗</td>
+      <td>it vanished into the night它消失在夜晚</td>
+      <td></td>
+      <td></td>
+      <td>[darkness, dark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td></td>
+      <td></td>
+      <td>the dark part of the diurnal cycle considered a time unit昼夜循环的黑暗部分被认为是一个时间单位</td>
+      <td>three nights later he collapsed三个晚上他崩溃了</td>
+      <td></td>
+      <td></td>
+      <td>[unit of time, time unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td></td>
+      <td></td>
+      <td>the period spent sleeping睡觉的时间</td>
+      <td>I had a restless night我有一个不安的夜晚</td>
+      <td></td>
+      <td></td>
+      <td>[time period, period, period of time]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>night</th>
+      <td>ight</td>
+      <td>5.85</td>
+      <td>nou</td>
+      <td>naɪt</td>
+      <td></td>
+      <td></td>
+      <td>the time between sunset and midnight日落和午夜之间的时间</td>
+      <td>he watched television every night他每晚都看电视</td>
+      <td></td>
+      <td></td>
+      <td>[time period, period of time, period]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>might</th>
+      <td>ight</td>
+      <td>5.59</td>
+      <td>nou</td>
+      <td>maɪt</td>
+      <td>['mightiness', 'power']</td>
+      <td></td>
+      <td>physical strength体力</td>
+      <td></td>
+      <td>[mighty]</td>
+      <td></td>
+      <td>[strength]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>ver</td>
+      <td>faɪt</td>
+      <td>['contend', 'struggle'], alos:['fight off']</td>
+      <td></td>
+      <td>be engaged in a fight; carry on a fight参与战斗;继续战斗</td>
+      <td>Siblings are always fighting兄弟姐妹总是在战斗</td>
+      <td>[fighter, fighting]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>ver</td>
+      <td>faɪt</td>
+      <td>['struggle']</td>
+      <td></td>
+      <td>make a strenuous or labored effort做出艰苦或艰苦的努力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[assay, attempt, essay, seek, try]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>ver</td>
+      <td>faɪt</td>
+      <td>['agitate', 'campaign', 'crusade', 'press', 'push']</td>
+      <td></td>
+      <td>exert oneself continuously, vigorously, or obtrusively to gain an end or engage in a crusade for a certain cause or person; be an advocate for为了特定的事业或个人而不断地，有力地或突兀地发挥作用以结束或进行讨伐;是一个倡导者</td>
+      <td></td>
+      <td>[fighter]</td>
+      <td>[advertise, advertize, push, promote]</td>
+      <td>[advertize, push, promote, advertise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>ver</td>
+      <td>faɪt</td>
+      <td>['defend', 'fight back', 'fight down', 'oppose']</td>
+      <td></td>
+      <td>fight against or resist strongly强烈反对或抗拒</td>
+      <td>Don't fight it!不要打它！</td>
+      <td>[fighter]</td>
+      <td></td>
+      <td>[struggle, contend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>faɪt</td>
+      <td>['battle', 'conflict', 'engagement']</td>
+      <td></td>
+      <td>a hostile meeting of opposing military forces in the course of a war在战争期间敌对的军事力量会议</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[military action, action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>faɪt</td>
+      <td>['combat', 'fighting', 'scrap']</td>
+      <td></td>
+      <td>the act of fighting; any contest or struggle战斗行为;任何比赛或斗争</td>
+      <td>a fight broke out at the hockey game在曲棍球比赛中爆发了一场战斗there was fighting in the streets街上有战斗</td>
+      <td></td>
+      <td></td>
+      <td>[struggle, conflict, battle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>faɪt</td>
+      <td>['competitiveness']</td>
+      <td></td>
+      <td>an aggressive willingness to compete积极的竞争意愿</td>
+      <td>the team was full of fight团队充满了斗争</td>
+      <td></td>
+      <td></td>
+      <td>[aggressiveness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>faɪt</td>
+      <td></td>
+      <td></td>
+      <td>a boxing or wrestling match拳击或摔跤比赛</td>
+      <td>the fight was on television last night战斗昨晚在电视上播出</td>
+      <td></td>
+      <td></td>
+      <td>[fisticuffs, pugilism, boxing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fight</th>
+      <td>ight</td>
+      <td>5.33</td>
+      <td>nou</td>
+      <td>faɪt</td>
+      <td></td>
+      <td></td>
+      <td>an intense verbal dispute激烈的口头纠纷</td>
+      <td>a violent fight over the bill is expected in the Senate预计参议院将对该法案进行激烈的斗争</td>
+      <td></td>
+      <td></td>
+      <td>[contention, arguing, argument, contestation, controversy, disceptation, disputation, tilt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>laɪt</td>
+      <td>['fall']</td>
+      <td></td>
+      <td>fall to somebody by assignment or lot通过任务或批次落到某人身上</td>
+      <td></td>
+      <td></td>
+      <td>[fall, accrue]</td>
+      <td>[fall, devolve, pass, return]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>laɪt</td>
+      <td>['ignite']</td>
+      <td></td>
+      <td>cause to start burning; subject to fire or great heat导致开始燃烧;受到火或大火的影响</td>
+      <td></td>
+      <td>[lighter]</td>
+      <td></td>
+      <td>[burn, combust]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>laɪt</td>
+      <td>['fire', 'ignite']</td>
+      <td></td>
+      <td>start or maintain a fire in开始或保持火灾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>laɪt</td>
+      <td>['illume', 'illuminate', 'illumine', 'light up']</td>
+      <td></td>
+      <td>make lighter or brighter使更轻或更亮</td>
+      <td>This lamp lightens the room a bit这盏灯照亮了房间</td>
+      <td></td>
+      <td></td>
+      <td>[lighten up, lighten]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>laɪt</td>
+      <td>['alight', 'perch']</td>
+      <td></td>
+      <td>to come to rest, settle安息吧</td>
+      <td>Misfortune lighted upon him不幸点燃了他</td>
+      <td></td>
+      <td></td>
+      <td>[set down, land]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>laɪt</td>
+      <td>['dismount', 'get down', 'get off', 'unhorse']</td>
+      <td></td>
+      <td>alight from (a horse)从（一匹马）下来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[come down, go down, fall, descend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>ver</td>
+      <td>laɪt</td>
+      <td>['fire up', 'light up']</td>
+      <td></td>
+      <td>begin to smoke开始吸烟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ignite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['brightness', 'brightness level', 'luminance', 'luminosity', 'luminousness']</td>
+      <td></td>
+      <td>the quality of being luminous; emitting or reflecting light发光的质量;发光或反射光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physical property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['lighting']</td>
+      <td>[dark]</td>
+      <td>having abundant light or illumination拥有充足的光线或照明</td>
+      <td>they played as long as it was light只要它很轻就玩as long as the lighting was good只要灯光很好</td>
+      <td></td>
+      <td></td>
+      <td>[illumination]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['spark', 'sparkle', 'twinkle']</td>
+      <td></td>
+      <td>merriment expressed by a brightness or gleam or animation of countenance表达的亮度或闪光或动画表达的欢乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aspect, look, verve, expression, face, facial expression, vitality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['illumination']</td>
+      <td></td>
+      <td>a condition of spiritual awareness; divine illumination精神意识的条件;神圣的光照</td>
+      <td>follow God's light跟随上帝的光</td>
+      <td></td>
+      <td></td>
+      <td>[status, condition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['visible light', 'visible radiation']</td>
+      <td></td>
+      <td>(physics) electromagnetic radiation that can produce a visual sensation（物理学）电磁辐射可以产生视觉感受</td>
+      <td>the light was filtered through a soft glass window光线通过柔软的玻璃窗过滤</td>
+      <td></td>
+      <td></td>
+      <td>[actinic ray, actinic radiation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['christ within', 'inner light', 'light within']</td>
+      <td></td>
+      <td>a divine presence believed by Quakers to enlighten and guide the soul贵格会相信神圣的存在，以启迪和引导灵魂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ethical motive, ethics, morality, morals]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['lightness']</td>
+      <td></td>
+      <td>the visual effect of illumination on objects or scenes as created in pictures照明对图片中创建的对象或场景的视觉效果</td>
+      <td>he could paint the lightest light and the darkest dark他可以画出最轻的光线和最黑暗的光线</td>
+      <td></td>
+      <td></td>
+      <td>[visual property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['igniter', 'ignitor', 'lighter']</td>
+      <td></td>
+      <td>a device for lighting or igniting fuel or charges or fires用于照明或点燃燃料或充电或火灾的装置</td>
+      <td>do you have a light?你有火吗？</td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td>['light source']</td>
+      <td></td>
+      <td>any device serving as a source of illumination任何用作照明光源的设备</td>
+      <td>he stopped the car and turned off the lights他停下车，关灯</td>
+      <td></td>
+      <td></td>
+      <td>[source of illumination]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td></td>
+      <td></td>
+      <td>an illuminated area一个照明区域</td>
+      <td>he stepped into the light他走进了光明</td>
+      <td></td>
+      <td></td>
+      <td>[scene]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td></td>
+      <td></td>
+      <td>a particular perspective or aspect of a situation情况的特定视角或方面</td>
+      <td>although he saw it in a different light, he still did not understand虽然他以不同的眼光看待它，但他仍然不明白</td>
+      <td></td>
+      <td></td>
+      <td>[position, view, perspective]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td></td>
+      <td></td>
+      <td>a person regarded very fondly一个人非常喜欢</td>
+      <td>the light of my life我的生命之光</td>
+      <td></td>
+      <td></td>
+      <td>[friend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td></td>
+      <td></td>
+      <td>a visual warning signal视觉警告信号</td>
+      <td>they saw the light of the beacon他们看到了灯塔的光芒there was a light at every corner每个角落都有一盏灯</td>
+      <td></td>
+      <td></td>
+      <td>[visual signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td></td>
+      <td></td>
+      <td>mental understanding as an enlightening experience心理理解是一种启发性的体验</td>
+      <td>he finally saw the light他终于看到了光明can you shed light on this problem?你能说清楚这个问题吗？</td>
+      <td></td>
+      <td></td>
+      <td>[insight, brainstorm, brainwave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>nou</td>
+      <td>laɪt</td>
+      <td></td>
+      <td></td>
+      <td>public awareness公共意识</td>
+      <td>it brought the scandal to light它让丑闻曝光</td>
+      <td></td>
+      <td></td>
+      <td>[public knowledge, general knowledge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adv</td>
+      <td>laɪt</td>
+      <td>['lightly']</td>
+      <td></td>
+      <td>with few burdens负担很少</td>
+      <td>experienced travellers travel light经验丰富的旅行者旅行</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['faint', 'light-headed', 'lightheaded', 'swooning'], similarTo:['sick', 'ill']</td>
+      <td></td>
+      <td>weak and likely to lose consciousness弱，可能会失去意识</td>
+      <td>felt light in the head感觉头部轻盈light-headed with wine淡淡的葡萄酒light-headed from lack of sleep因睡眠不足而头晕目眩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['abstemious'], similarTo:['temperate']</td>
+      <td></td>
+      <td>marked by temperance in indulgence以放纵的节制为标志</td>
+      <td>a light eater一个食客a light smoker一个轻微的吸烟者ate a light supper吃了一顿清淡的晚餐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['calorie-free', 'lite', 'low-cal'], similarTo:['fatless', 'fat-free', 'nonfat']</td>
+      <td></td>
+      <td>having relatively few calories卡路里相对较少</td>
+      <td>light (or lite) beer轻（或精）啤酒lite (or light) mayonnaise轻（或轻）蛋黄酱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['unaccented', 'weak'], similarTo:['unstressed']</td>
+      <td></td>
+      <td>(used of vowels or syllables) pronounced with little or no stress（用于元音或音节）发音很少或没有压力</td>
+      <td>a syllable that ends in a short vowel is a light syllable以短元音结尾的音节是轻音节</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['lightsome', 'tripping'], similarTo:['light-footed']</td>
+      <td></td>
+      <td>moving easily and quickly; nimble轻松快速地移动;敏捷</td>
+      <td>the dancer was light and graceful舞者轻盈优雅a lightsome buoyant step一个轻盈的浮力步骤walked with a light tripping step走了一个轻快的绊倒步骤</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['wakeful'], similarTo:['shallow']</td>
+      <td></td>
+      <td>(of sleep) easily disturbed（睡觉）容易受到干扰</td>
+      <td>in a light doze在轻微的打瞌睡a light sleeper轻便的睡眠者</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['easy', 'loose', 'promiscuous', 'sluttish', 'wanton'], similarTo:['unchaste']</td>
+      <td></td>
+      <td>casual and unrestrained in sexual behavior性行为随意和无拘无束</td>
+      <td>he was told to avoid loose (or light) women他被告知要避免松散（或轻微）的女性</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['clean', 'clear', 'unclouded'], similarTo:['pure']</td>
+      <td></td>
+      <td>(of sound or color) free from anything that dulls or dims（声音或颜色）没有任何暗淡或暗淡的东西</td>
+      <td>a light lilting voice like a silver bell像银铃一样轻盈的轻声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['idle'], similarTo:['frivolous']</td>
+      <td></td>
+      <td>silly or trivial愚蠢或琐碎</td>
+      <td>light banter轻快的戏..light idle chatter光闲聊</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['scant', 'short'], similarTo:['insufficient', 'deficient']</td>
+      <td></td>
+      <td>less than the correct or legal or full amount often deliberately so经常故意不到正确或合法或全额</td>
+      <td>a light pound轻盈的一磅</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>['light-colored'], similarTo:['pastel', 'palish', 'pale', 'powdery'], alos:['white']</td>
+      <td>[dark]</td>
+      <td>(used of color) having a relatively small amount of coloring agent（使用颜色）具有相对少量的着色剂</td>
+      <td>light blue浅蓝light colors such as pastels浅色如粉彩a light-colored powder浅色粉末</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['candent', 'ablaze', 'autofluorescent', 'bioluminescent', 'bright', 'candescent', 'floodlighted', 'floodlit', 'fluorescent', 'illuminated', 'incandescent', 'inflamed', 'lamplit', 'lighted', 'lighting-up', 'lit', 'livid', 'luminescent', 'phosphorescent', 'reddened', 'sunlit', 'sunstruck', 'well-lighted', 'white']</td>
+      <td>[dark]</td>
+      <td>characterized by or emitting light特征在于或发光</td>
+      <td>a room that is light when the shutters are open百叶窗打开时房间很亮the inside of the house was airy and light房子里面通风透气</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['undemanding']</td>
+      <td></td>
+      <td>demanding little effort; not burdensome要求很少的努力;不累赘</td>
+      <td>light housework轻松的家务light exercise轻度运动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['light-duty']</td>
+      <td></td>
+      <td>designed for ease of movement or to carry little weight设计便于移动或承受轻微的重量</td>
+      <td>light aircraft轻型飞机a light truck一辆轻型卡车</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['digestible']</td>
+      <td></td>
+      <td>easily assimilated in the alimentary canal; not rich or heavily seasoned容易被消化道同化;不富裕或经验丰富</td>
+      <td>a light diet清淡的饮食</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['insignificant', 'unimportant']</td>
+      <td></td>
+      <td>having little importance没什么重要的</td>
+      <td>losing his job was no light matter失去工作并不轻松</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['frivolous']</td>
+      <td></td>
+      <td>intended primarily as entertainment; not serious or profound主要用作娱乐;不严肃或深刻</td>
+      <td>light verse轻诗a light comedy一部轻喜剧</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['lighter-than-air', 'lightweight', 'low-density', 'floaty', 'airy', 'buoyant']</td>
+      <td>[heavy]</td>
+      <td>of comparatively little physical weight or density相对较小的物理重量或密度</td>
+      <td>a light load轻载magnesium is a light metal--having a specific gravity of 1.74 at 20 degrees C镁是一种轻金属 - 在20摄氏度时比重为1.74</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['easy', 'gentle', 'soft']</td>
+      <td>[heavy]</td>
+      <td>of little intensity or power or force强度，力量或力量小</td>
+      <td>the light touch of her fingers她的手指轻轻一抹a light breeze一阵微风</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['light-armed', 'lightly-armed']</td>
+      <td>[heavy]</td>
+      <td>of the military or industry; using (or being) relatively small or light arms or equipment军队或工业;使用（或是）相对较小或较轻的手臂或设备</td>
+      <td>light infantry轻步兵light cavalry轻骑兵light industry轻工业light weapons轻武器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td></td>
+      <td>[heavy]</td>
+      <td>(physics, chemistry) not having atomic weight greater than average（物理学，化学）原子量不大于平均值</td>
+      <td>light water is ordinary water淡水是普通的水</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['fooling', 'casual']</td>
+      <td>[heavy]</td>
+      <td>psychologically light; especially free from sadness or troubles心理上轻松;特别是没有悲伤或烦恼</td>
+      <td>a light heart一颗轻松的心</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['loose']</td>
+      <td></td>
+      <td>(used of soil) loose and large-grained in consistency（用于土壤）松散和大粒度的一致性</td>
+      <td>light soil轻土</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>adj</td>
+      <td>laɪt</td>
+      <td>, similarTo:['thin']</td>
+      <td></td>
+      <td>very thin and insubstantial非常薄而且没有实质性</td>
+      <td>light summer dresses浅夏装</td>
+      <td>[lightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>light</th>
+      <td>ight</td>
+      <td>5.25</td>
+      <td>Non</td>
+      <td>laɪt</td>
+      <td></td>
+      <td>[heavy]</td>
+      <td>not great in degree or quantity or number在程度，数量或数量上都不是很好</td>
+      <td>a light sentence轻判a light accent轻盈的口音casualties were light伤亡人数很少light snow was falling小雪正在下降light misty rain轻雾多雨light smoke from the chimney来自烟囱的轻烟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adv</td>
+      <td>taɪt</td>
+      <td>['close', 'closely']</td>
+      <td></td>
+      <td>in an attentive manner以细心的方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adv</td>
+      <td>taɪt</td>
+      <td>['fast']</td>
+      <td></td>
+      <td>firmly or closely坚定地或紧密地</td>
+      <td>held tight紧张</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['besotted', 'blind drunk', 'blotto', 'cockeyed', 'crocked', 'fuddled', 'loaded', 'pie-eyed', 'pissed', 'pixilated', 'plastered', 'slopped', 'sloshed', 'smashed', 'soaked', 'soused', 'sozzled', 'squiffy', 'stiff', 'wet'], similarTo:['intoxicated', 'ripped', 'inebriated', 'drunk', 'gone']</td>
+      <td></td>
+      <td>very drunk很醉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vernacular, patois, lingo, jargon, cant, argot, slang]</td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['close'], similarTo:['fine']</td>
+      <td></td>
+      <td>of textiles纺织品</td>
+      <td>smooth percale with a very tight weave光滑的percale，非常紧密的编织</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['mean', 'mingy', 'miserly'], similarTo:['stingy', 'ungenerous']</td>
+      <td></td>
+      <td>(used of persons or behavior) characterized by or indicative of lack of generosity（用于人或行为）以缺乏慷慨为特征或表示缺乏慷慨</td>
+      <td></td>
+      <td>[tightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['rigorous', 'stringent'], similarTo:['demanding']</td>
+      <td></td>
+      <td>demanding strict attention to rules and procedures要求严格遵守规则和程序</td>
+      <td>tight security严密的安全</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['compressed'], similarTo:['shut', 'closed']</td>
+      <td></td>
+      <td>pressed tightly together紧紧地压在一起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['taut'], similarTo:['tense']</td>
+      <td></td>
+      <td>pulled or drawn tight拉紧或拉紧</td>
+      <td>a tight drumhead一个紧鼓膜a tight rope一根紧绳</td>
+      <td>[tightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['nasty'], similarTo:['hard', 'difficult']</td>
+      <td></td>
+      <td>exasperatingly difficult to handle or circumvent极其难以处理或规避</td>
+      <td>a good man to have on your side in a tight situation一个好人，在紧张的情况下站在你这一边</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>['close'], similarTo:['equal']</td>
+      <td></td>
+      <td>(of a contest or contestants) evenly matched（比赛或参赛者）均匀匹配</td>
+      <td>a tight game一场紧张的比赛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>, similarTo:['scarce']</td>
+      <td></td>
+      <td>affected by scarcity and expensive to borrow受到稀缺和借贷费用的影响</td>
+      <td>tight money紧钱a tight market市场紧张</td>
+      <td>[tightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>, similarTo:['choky', 'clenched', 'clinched', 'close', 'close-fitting', 'skintight', 'skinny', 'viselike', 'tightly fitting', 'tightfitting', 'tight fitting', 'tight-fitting', 'snug', 'skin-tight'], alos:['tense']</td>
+      <td>[loose]</td>
+      <td>closely constrained or constricted or constricting严密约束或收缩或收缩</td>
+      <td>tight skirts紧身裙he hated tight starched collars他讨厌紧身衣领fingers closed in a tight fist手指紧紧地闭着a tight feeling in his chest胸口紧绷的感觉</td>
+      <td>[tightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>, similarTo:['dripless', 'hermetic', 'gas-tight', 'waterproof', 'watertight', 'air-tight', 'leakproof', 'rainproof', 'snug', 'airtight', 'waterproofed'], alos:['impermeable', 'seaworthy']</td>
+      <td>[leaky]</td>
+      <td>of such close construction as to be impermeable这种紧密结构是不可渗透的</td>
+      <td>a tight roof一个紧凑的屋顶warm in our tight little house在我们紧凑的小房子里温暖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>, similarTo:['compact']</td>
+      <td></td>
+      <td>packed closely together紧密地挤在一起</td>
+      <td>they stood in a tight little group他们站在一个紧凑的小团体里hair in tight curls头发紧卷发the pub was packed tight酒吧紧凑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>, similarTo:['secure']</td>
+      <td></td>
+      <td>securely or solidly fixed in place; rigid牢固或牢固地固定到位;死板</td>
+      <td>the bolts are tight螺栓很紧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tight</th>
+      <td>ight</td>
+      <td>4.72</td>
+      <td>adj</td>
+      <td>taɪt</td>
+      <td>, similarTo:['invulnerable']</td>
+      <td></td>
+      <td>set so close together as to be invulnerable to penetration如此接近以至于无法穿透</td>
+      <td>in tight formation在紧密的形成a tight blockade严密的封锁</td>
+      <td>[tightness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>ver</td>
+      <td>saɪt</td>
+      <td>['spy']</td>
+      <td></td>
+      <td>catch sight of; to perceive with the eyes看到了;用眼睛感知</td>
+      <td>he caught sight of the king's men coming over the ridge他看到国王的人越过山脊</td>
+      <td>[sighting]</td>
+      <td></td>
+      <td>[perceive, comprehend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>ver</td>
+      <td>saɪt</td>
+      <td></td>
+      <td></td>
+      <td>take aim by looking through the sights of a gun (or other device)通过观察枪（或其他设备）的景点来瞄准</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[train, aim, direct, take, take aim]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>saɪt</td>
+      <td>['vision', 'visual modality', 'visual sense']</td>
+      <td></td>
+      <td>the ability to see; the visual faculty能够看到;视觉能力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sensory system, exteroception, modality, sense modality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>saɪt</td>
+      <td>['survey', 'view']</td>
+      <td></td>
+      <td>the act of looking or seeing or observing寻找，观察或观察的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[looking, look, looking at]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>saɪt</td>
+      <td>['ken']</td>
+      <td></td>
+      <td>the range of vision视野范围</td>
+      <td>out of sight of land看不见土地</td>
+      <td></td>
+      <td></td>
+      <td>[compass, range, grasp, reach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>saɪt</td>
+      <td>['batch', 'deal', 'flock', 'good deal', 'great deal', 'hatful', 'heap', 'lot', 'mass', 'mess', 'mickle', 'mint', 'mountain', 'muckle', 'passel', 'peck', 'pile', 'plenty', 'pot', 'quite a little', 'raft', 'slew', 'spate', 'stack', 'tidy sum', 'wad']</td>
+      <td></td>
+      <td>(often followed by `of') a large number or amount or extent（通常后跟“of”）大量或数量或程度</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>saɪt</td>
+      <td></td>
+      <td></td>
+      <td>an instance of visual perception视觉感知的一个例子</td>
+      <td>the sight of his wife brought him back to reality他妻子的视线使他恢复了现实the train was an unexpected sight火车是一个意想不到的景象</td>
+      <td></td>
+      <td></td>
+      <td>[visual image, visual percept]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>saɪt</td>
+      <td></td>
+      <td></td>
+      <td>anything that is seen任何被看见的东西</td>
+      <td>he was a familiar sight on the television他是电视上熟悉的景象they went to Paris to see the sights他们去巴黎看风景</td>
+      <td></td>
+      <td></td>
+      <td>[display]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sight</th>
+      <td>ight</td>
+      <td>4.64</td>
+      <td>nou</td>
+      <td>saɪt</td>
+      <td></td>
+      <td></td>
+      <td>a range of mental vision一系列的精神愿景</td>
+      <td>in his sight she could do no wrong在他看来，她没有错</td>
+      <td></td>
+      <td></td>
+      <td>[perspective, view, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wight</th>
+      <td>ight</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>waɪt</td>
+      <td>['creature']</td>
+      <td></td>
+      <td>a human being; `wight' is an archaic term一个人; “怀特”是一个古老的术语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[individual, somebody, soul, person, mortal, someone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wight</th>
+      <td>ight</td>
+      <td>2.57</td>
+      <td>nou</td>
+      <td>waɪt</td>
+      <td>['isle of wight']</td>
+      <td></td>
+      <td>an isle and county of southern England in the English Channel英格兰海峡的一个岛屿和英格兰南部的郡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[county]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bight</th>
+      <td>ight</td>
+      <td>1.73</td>
+      <td>ver</td>
+      <td>baɪt</td>
+      <td></td>
+      <td></td>
+      <td>fasten with a bight紧紧地系好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[secure, fasten, fix]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bight</th>
+      <td>ight</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>baɪt</td>
+      <td></td>
+      <td></td>
+      <td>a bend or curve (especially in a coastline)弯曲或弯曲（特别是在海岸线）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[turn, bend, crook, twist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bight</th>
+      <td>ight</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>baɪt</td>
+      <td></td>
+      <td></td>
+      <td>a broad bay formed by an indentation in the shoreline由海岸线压痕形成的宽阔海湾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bay, embayment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bight</th>
+      <td>ight</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>baɪt</td>
+      <td></td>
+      <td></td>
+      <td>a loop in a rope绳子里的一个环</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[loop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bight</th>
+      <td>ight</td>
+      <td>1.73</td>
+      <td>nou</td>
+      <td>baɪt</td>
+      <td></td>
+      <td></td>
+      <td>the middle part of a slack rope (as distinguished from its ends)松绳的中间部分（与其末端不同）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[center, centre, midpoint]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

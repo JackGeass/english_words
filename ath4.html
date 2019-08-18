@@ -1,0 +1,215 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['path', 'bath', 'math', 'lath']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>path</th>
+      <td>ath</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>pæθ</td>
+      <td>['itinerary', 'route']</td>
+      <td></td>
+      <td>an established line of travel or access已建立的旅行或通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>path</th>
+      <td>ath</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>pæθ</td>
+      <td>['way', 'way of life']</td>
+      <td></td>
+      <td>a course of conduct一个行为过程</td>
+      <td>the path of virtue美德之路our paths in life led us apart我们生活的道路使我们分开genius usually follows a revolutionary path天才通常遵循革命道路</td>
+      <td></td>
+      <td></td>
+      <td>[course, course of action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>path</th>
+      <td>ath</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>pæθ</td>
+      <td>['course', 'track']</td>
+      <td></td>
+      <td>a line or route along which something travels or moves某物行进或移动的线或路线</td>
+      <td>the hurricane demolished houses in its path飓风在它的道路上摧毁了房屋</td>
+      <td></td>
+      <td></td>
+      <td>[line]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>path</th>
+      <td>ath</td>
+      <td>4.57</td>
+      <td>nou</td>
+      <td>pæθ</td>
+      <td></td>
+      <td></td>
+      <td>a way especially designed for a particular use一种专门为特定用途而设计的方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[way]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bath</th>
+      <td>ath</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>bæθ</td>
+      <td></td>
+      <td></td>
+      <td>an ancient Hebrew liquid measure equal to about 10 gallons一种古老的希伯来液体量，约等于10加仑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[liquid unit, liquid measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bath</th>
+      <td>ath</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>bæθ</td>
+      <td></td>
+      <td></td>
+      <td>a soaking and washing in a bathtub浸泡在浴缸里洗</td>
+      <td>he has a good bath every morning他每天早上都洗个澡</td>
+      <td></td>
+      <td></td>
+      <td>[washup, bathing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bath</th>
+      <td>ath</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>bæθ</td>
+      <td></td>
+      <td></td>
+      <td>a town in southwestern England on the River Avon; famous for its hot springs and Roman remains英格兰西南部一个位于埃文河畔的小镇;以其温泉和罗马遗迹而闻名</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bath</th>
+      <td>ath</td>
+      <td>4.55</td>
+      <td>nou</td>
+      <td>bæθ</td>
+      <td></td>
+      <td></td>
+      <td>a vessel containing liquid in which something is immersed (as to process it or to maintain it at a constant temperature or to lubricate it)装有液体的容器，其中浸没了某些物质（处理它或将其保持在恒定温度或润滑它）</td>
+      <td>she soaked the etching in an acid bath她把蚀刻浸泡在酸浴中</td>
+      <td></td>
+      <td></td>
+      <td>[vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>math</th>
+      <td>ath</td>
+      <td>4.16</td>
+      <td>nou</td>
+      <td>məθ</td>
+      <td>['mathematics', 'maths']</td>
+      <td></td>
+      <td>a science (or group of related sciences) dealing with the logic of quantity and shape and arrangement处理数量，形状和排列逻辑的科学（或相关科学小组）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[science, scientific discipline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lath</th>
+      <td>ath</td>
+      <td>2.19</td>
+      <td>nou</td>
+      <td>læθ</td>
+      <td></td>
+      <td></td>
+      <td>a narrow thin strip of wood used as backing for plaster or to make latticework狭窄的薄木条，用作石膏的背衬或制作格子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slat, spline]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

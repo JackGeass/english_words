@@ -1,0 +1,350 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['toast', 'coast', 'roast', 'boast']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>toast</th>
+      <td>oast</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>toʊst</td>
+      <td>['drink', 'pledge', 'salute', 'wassail']</td>
+      <td></td>
+      <td>propose a toast to提议敬酒</td>
+      <td>Let us toast the birthday girl!让我们祝贺生日女郎！</td>
+      <td></td>
+      <td></td>
+      <td>[honor, reward, honour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toast</th>
+      <td>oast</td>
+      <td>4.41</td>
+      <td>ver</td>
+      <td>toʊst</td>
+      <td>['crisp', 'crispen']</td>
+      <td></td>
+      <td>make brown and crisp by heating通过加热使棕色和脆</td>
+      <td>toast bread吐司面包</td>
+      <td>[toaster, toasting]</td>
+      <td></td>
+      <td>[heat, heat up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toast</th>
+      <td>oast</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>toʊst</td>
+      <td>['pledge']</td>
+      <td></td>
+      <td>a drink in honor of or to the health of a person or event为了纪念某人或某事物的健康而饮用的饮品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toast</th>
+      <td>oast</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>toʊst</td>
+      <td>['goner']</td>
+      <td></td>
+      <td>a person in desperate straits; someone doomed一个绝望的人;有人注定了</td>
+      <td>one mistake and you're toast一个错误，你敬酒</td>
+      <td></td>
+      <td></td>
+      <td>[desperate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toast</th>
+      <td>oast</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>toʊst</td>
+      <td></td>
+      <td></td>
+      <td>a celebrity who receives much acclaim and attention一个受到很多好评和关注的名人</td>
+      <td>he was the toast of the town他是镇上的祝酒词</td>
+      <td></td>
+      <td></td>
+      <td>[celebrity, famous person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>toast</th>
+      <td>oast</td>
+      <td>4.41</td>
+      <td>nou</td>
+      <td>toʊst</td>
+      <td></td>
+      <td></td>
+      <td>slices of bread that have been toasted已经烤过的面包片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bread, breadstuff, staff of life]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coast</th>
+      <td>oast</td>
+      <td>4.37</td>
+      <td>ver</td>
+      <td>koʊst</td>
+      <td></td>
+      <td></td>
+      <td>move effortlessly; by force of gravity毫不费力地移动;通过重力</td>
+      <td></td>
+      <td>[coaster]</td>
+      <td></td>
+      <td>[glide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coast</th>
+      <td>oast</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>koʊst</td>
+      <td>['glide', 'slide']</td>
+      <td></td>
+      <td>the act of moving smoothly along a surface while remaining in contact with it在与表面保持接触的同时沿表面平滑移动的行为</td>
+      <td>the children lined up for a coast down the snowy slope孩子们排成一条沿着雪坡的海岸</td>
+      <td></td>
+      <td></td>
+      <td>[motion, move, movement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coast</th>
+      <td>oast</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>koʊst</td>
+      <td>['sea-coast', 'seacoast', 'seashore']</td>
+      <td></td>
+      <td>the shore of a sea or ocean大海或海洋的岸边</td>
+      <td></td>
+      <td>[coastal]</td>
+      <td></td>
+      <td>[shore]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coast</th>
+      <td>oast</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>koʊst</td>
+      <td></td>
+      <td></td>
+      <td>a slope down which sleds may coast雪橇可以滑行的斜坡</td>
+      <td>when it snowed they made a coast on the golf course下雪的时候，他们在高尔夫球场上划了一条海岸</td>
+      <td></td>
+      <td></td>
+      <td>[slope, incline, side]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>coast</th>
+      <td>oast</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>koʊst</td>
+      <td></td>
+      <td></td>
+      <td>the area within view视野内的区域</td>
+      <td>the coast is clear海岸很清楚</td>
+      <td></td>
+      <td></td>
+      <td>[prospect, aspect, panorama, scene, view, vista]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roast</th>
+      <td>oast</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>roʊst</td>
+      <td>['blackguard', 'guy', 'jest at', 'laugh at', 'make fun', 'poke fun', 'rib', 'ridicule']</td>
+      <td></td>
+      <td>subject to laughter or ridicule受到欢笑或嘲笑</td>
+      <td>His former students roasted the professor at his 60th birthday他的前学生在他60岁生日那天烤了教授</td>
+      <td></td>
+      <td></td>
+      <td>[bemock, mock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roast</th>
+      <td>oast</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>roʊst</td>
+      <td></td>
+      <td></td>
+      <td>cook with dry heat, usually in an oven用干热煮，通常在烤箱中</td>
+      <td>roast the turkey烤火鸡</td>
+      <td>[roaster, roasting]</td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roast</th>
+      <td>oast</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>roʊst</td>
+      <td>['joint']</td>
+      <td></td>
+      <td>a piece of meat roasted or for roasting and of a size for slicing into more than one portion烤肉或烤制的一块肉，切成一个以上的部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut of meat, cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roast</th>
+      <td>oast</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>roʊst</td>
+      <td>['knock']</td>
+      <td></td>
+      <td>negative criticism消极的批评</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[critique, criticism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>roast</th>
+      <td>oast</td>
+      <td>3.92</td>
+      <td>adj</td>
+      <td>roʊst</td>
+      <td>['roasted'], similarTo:['cooked']</td>
+      <td></td>
+      <td>(meat) cooked by dry heat in an oven（肉）在烤箱中通过干热烹饪</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boast</th>
+      <td>oast</td>
+      <td>3.18</td>
+      <td>ver</td>
+      <td>boʊst</td>
+      <td>['blow', 'bluster', 'brag', 'gas', 'gasconade', 'shoot a line', 'swash', 'tout', 'vaunt']</td>
+      <td></td>
+      <td>show off炫耀</td>
+      <td></td>
+      <td>[boaster]</td>
+      <td></td>
+      <td>[hyperbolise, hyperbolize, magnify, overdraw, amplify, exaggerate, overstate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boast</th>
+      <td>oast</td>
+      <td>3.18</td>
+      <td>ver</td>
+      <td>boʊst</td>
+      <td>['feature', 'sport']</td>
+      <td></td>
+      <td>wear or display in an ostentatious or proud manner以炫耀或自豪的方式穿着或展示</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[have, feature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>boast</th>
+      <td>oast</td>
+      <td>3.18</td>
+      <td>nou</td>
+      <td>boʊst</td>
+      <td>['boasting', 'jactitation', 'self-praise']</td>
+      <td></td>
+      <td>speaking of yourself in superlatives用最高级的话说出自己</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[speech act]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,335 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['proud', 'cloud', 'aloud']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>proud</th>
+      <td>oud</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>praʊd</td>
+      <td>['gallant', 'lofty', 'majestic'], similarTo:['impressive']</td>
+      <td></td>
+      <td>having or displaying great dignity or nobility拥有或表现出极大的尊严或高贵</td>
+      <td>proud alpine peaks骄傲的阿尔卑斯峰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>proud</th>
+      <td>oud</td>
+      <td>4.86</td>
+      <td>adj</td>
+      <td>praʊd</td>
+      <td>, similarTo:['beaming', 'big', 'bigheaded', 'boastful', 'braggart', 'bragging', 'braggy', 'chesty', 'cock-a-hoop', 'conceited', 'crowing', 'dignified', 'disdainful', 'egotistic', 'egotistical', 'haughty', 'house-proud', 'imperious', 'lordly', 'overbearing', 'overproud', 'persnickety', 'pleased', 'prideful', 'proud of', 'purse-proud', 'self-aggrandising', 'self-aggrandizing', 'self-conceited', 'self-important', 'self-respectful', 'self-respecting', 'shabby-genteel', 'sniffy', 'snooty', 'snot-nosed', 'snotty', 'stuck-up', 'supercilious', 'swaggering', 'swelled', 'swollen', 'swollen-headed', "too big for one's breeches", 'uppish', 'vain', 'vainglorious', 'arrogant'], alos:['immodest']</td>
+      <td>[humble]</td>
+      <td>feeling self-respect or pleasure in something by which you measure your self-worth; or being a reason for pride在衡量自我价值的事物上感受到自尊或快乐;或者是自豪的原因</td>
+      <td>proud parents自豪的父母a proud moment一个自豪的时刻proud to serve his country为自己的国家服务感到自豪a proud name一个自豪的名字proud princes骄傲的王子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td>['overcast'], alos:['cloud up', 'cloud over']</td>
+      <td></td>
+      <td>make overcast or cloudy阴天或阴天</td>
+      <td></td>
+      <td>[clouding]</td>
+      <td></td>
+      <td>[darken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td>['corrupt', 'defile', 'sully', 'taint']</td>
+      <td></td>
+      <td>place under suspicion or cast doubt upon怀疑或怀疑的地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spoil, vitiate, mar, impair, deflower]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td>['becloud', 'befog', 'fog', 'haze over', 'mist', 'obnubilate', 'obscure']</td>
+      <td></td>
+      <td>make less visible or unclear使不太明显或不清楚</td>
+      <td>The stars are obscured by the clouds星星被云遮蔽了</td>
+      <td></td>
+      <td></td>
+      <td>[conceal, hide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td>['dapple', 'mottle']</td>
+      <td></td>
+      <td>colour with streaks or blotches of different shades颜色与条纹或不同色调的斑点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>billow up in the form of a cloud以云的形式滚滚而来</td>
+      <td>The smoke clouded above the houses烟雾笼罩在房屋上方</td>
+      <td></td>
+      <td></td>
+      <td>[billow, wallow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>make gloomy or depressed使阴郁或沮丧</td>
+      <td>Their faces were clouded with sadness他们的脸上充满了悲伤的阴影</td>
+      <td></td>
+      <td></td>
+      <td>[impress, strike, affect, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>make less clear不太清楚</td>
+      <td>the stroke clouded memories of her youth中风使她年轻时的记忆蒙上阴影</td>
+      <td></td>
+      <td></td>
+      <td>[change, modify, alter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>ver</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>make milky or dull使乳白色或暗沉</td>
+      <td>The chemical clouded the liquid to which it was added化学物质使加入的液体混浊</td>
+      <td></td>
+      <td></td>
+      <td>[dull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>klaʊd</td>
+      <td>['swarm']</td>
+      <td></td>
+      <td>a group of many things in the air or on the ground空中或地面上的许多东西</td>
+      <td>clouds of blossoms盛开的花朵it discharged a cloud of spores它排出了一团孢子</td>
+      <td></td>
+      <td></td>
+      <td>[grouping, group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>a cause of worry or gloom or trouble引起忧虑或忧郁或麻烦的原因</td>
+      <td>the only cloud on the horizon was the possibility of dissent by the French地平线上唯一的云就是法国人不同意的可能性</td>
+      <td></td>
+      <td></td>
+      <td>[gloominess, glumness, gloom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>any collection of particles (e.g., smoke or dust) or gases that is visible任何可见的颗粒（例如烟雾或灰尘）或气体的集合</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[physical phenomenon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>a visible mass of water or ice particles suspended at a considerable altitude在相当高的海拔处悬浮的可见质量的水或冰粒</td>
+      <td></td>
+      <td>[cloudy]</td>
+      <td></td>
+      <td>[atmospheric phenomenon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>out of touch with reality脱离现实</td>
+      <td>his head was in the clouds他的头在云端</td>
+      <td></td>
+      <td></td>
+      <td>[irreality, unreality]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cloud</th>
+      <td>oud</td>
+      <td>4.20</td>
+      <td>nou</td>
+      <td>klaʊd</td>
+      <td></td>
+      <td></td>
+      <td>suspicion affecting your reputation怀疑影响你的声誉</td>
+      <td>after that mistake he was under a cloud在那个错误之后，他在云下</td>
+      <td></td>
+      <td></td>
+      <td>[suspicion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aloud</th>
+      <td>oud</td>
+      <td>3.40</td>
+      <td>adv</td>
+      <td>ə'laʊd</td>
+      <td>['loud', 'loudly']</td>
+      <td></td>
+      <td>with relatively high volume体积相对较大</td>
+      <td>cried aloud for help大声呼救</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>aloud</th>
+      <td>oud</td>
+      <td>3.40</td>
+      <td>adv</td>
+      <td>ə'laʊd</td>
+      <td>['out loud']</td>
+      <td></td>
+      <td>using the voice; not silently使用声音;没有默默</td>
+      <td>please read the passage aloud请大声朗读这段经文</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

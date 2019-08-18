@@ -1,0 +1,350 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['bond', 'fond', 'pond']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>bɑnd</td>
+      <td>['adhere', 'bind', 'hold fast', 'stick', 'stick to']</td>
+      <td></td>
+      <td>stick to firmly坚持下去</td>
+      <td></td>
+      <td>[bondable]</td>
+      <td>[cling, cohere, stick, adhere, cleave]</td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>bɑnd</td>
+      <td>['attach', 'bind', 'tie']</td>
+      <td></td>
+      <td>create social or emotional ties建立社交或情感联系</td>
+      <td>The grandparents want to bond with the child祖父母希望与孩子保持联系</td>
+      <td></td>
+      <td></td>
+      <td>[relate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>bɑnd</td>
+      <td>['draw together']</td>
+      <td></td>
+      <td>bring together in a common cause or emotion汇集在一个共同的事业或情感</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[unify, unite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>bɑnd</td>
+      <td></td>
+      <td></td>
+      <td>issue bonds on发行债券</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mortgage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['bail', 'bail bond']</td>
+      <td></td>
+      <td>(criminal law) money that must be forfeited by the bondsman if an accused person fails to appear in court for trial（刑法）如果被告未能出庭接受审判，必须由债券人没收的钱</td>
+      <td>a $10,000 bond was furnished by an alderman一名市议员提供了10,000美元的保证金</td>
+      <td></td>
+      <td></td>
+      <td>[recognizance, recognisance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['bond certificate']</td>
+      <td></td>
+      <td>a certificate of debt (usually interest-bearing or discounted) that is issued by a government or corporation in order to raise money; the issuer is required to pay a fixed sum annually until maturity and then a fixed sum to repay the principal由政府或公司为筹集资金而发行的债务证明（通常是有息或贴现的）;发行人必须每年支付固定金额直至到期，然后支付固定金额以偿还本金</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[debt instrument, certificate, certificate of indebtedness, security, obligation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['bond paper']</td>
+      <td></td>
+      <td>a superior quality of strong durable white writing paper; originally made for printing documents优质耐用的白色书写纸;最初用于打印文件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[writing paper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['hamper', 'shackle', 'trammel']</td>
+      <td></td>
+      <td>a restraint that confines or restricts freedom (especially something used to tie down or restrain a prisoner)约束限制或限制自由（特别是用来束缚或限制囚犯的东西）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[constraint, restraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['adherence', 'adhesion', 'adhesiveness']</td>
+      <td></td>
+      <td>the property of sticking together (as of glue and wood) or the joining of surfaces of different composition粘合（如胶水和木材）或不同成分表面的连接的性质</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stickiness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['alliance']</td>
+      <td></td>
+      <td>a connection based on kinship or marriage or common interest基于亲属关系或婚姻或共同利益的联系</td>
+      <td>their friendship constitutes a powerful bond between them他们的友谊是他们之间强大的纽带</td>
+      <td></td>
+      <td></td>
+      <td>[connexion, connectedness, connection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['julian bond']</td>
+      <td></td>
+      <td>United States civil rights leader who was elected to the legislature in Georgia but was barred from taking his seat because he opposed the Vietnam War (born 1940)美国民权领袖被选入格鲁吉亚的立法机构，但由于他反对越南战争（1940年出生）而被禁止上座</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['james bond']</td>
+      <td></td>
+      <td>British secret operative 007 in novels by Ian Fleming英国秘密特工007在伊恩弗莱明的小说中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['attachment']</td>
+      <td></td>
+      <td>a connection that fastens things together将事物固定在一起的连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[connexion, connector, connective, connecter, connection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bond</th>
+      <td>ond</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>bɑnd</td>
+      <td>['chemical bond']</td>
+      <td></td>
+      <td>an electrical force linking atoms连接原子的电力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attractive force, attraction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fond</th>
+      <td>ond</td>
+      <td>4.07</td>
+      <td>adj</td>
+      <td>fɑnd</td>
+      <td>['adoring', 'doting'], similarTo:['loving']</td>
+      <td></td>
+      <td>extravagantly or foolishly loving and indulgent奢侈或愚蠢地爱和放纵</td>
+      <td>hopelessly spoiled by a fond mother被一位喜爱的母亲无可救药地宠坏了</td>
+      <td>[fondness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fond</th>
+      <td>ond</td>
+      <td>4.07</td>
+      <td>adj</td>
+      <td>fɑnd</td>
+      <td>['partial'], similarTo:['inclined']</td>
+      <td></td>
+      <td>(followed by `of' or `to') having a strong preference or liking for（其次是'of'或`to'）有强烈的偏好或喜欢</td>
+      <td>fond of chocolate喜欢巧克力</td>
+      <td>[fondness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fond</th>
+      <td>ond</td>
+      <td>4.07</td>
+      <td>adj</td>
+      <td>fɑnd</td>
+      <td>['affectionate', 'lovesome', 'tender'], similarTo:['loving']</td>
+      <td></td>
+      <td>having or displaying warmth or affection拥有或表现出温暖或亲情</td>
+      <td>a fond embrace一个喜欢拥抱fond of his nephew喜欢他的侄子</td>
+      <td>[fondness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fond</th>
+      <td>ond</td>
+      <td>4.07</td>
+      <td>adj</td>
+      <td>fɑnd</td>
+      <td>, similarTo:['foolish']</td>
+      <td></td>
+      <td>absurd or silly because unlikely荒谬或愚蠢，因为不太可能</td>
+      <td>fond hopes of becoming President成为总统的希望fond fancies喜欢幻想</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pond</th>
+      <td>ond</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>pɑnd</td>
+      <td>['pool']</td>
+      <td></td>
+      <td>a small lake一个小湖</td>
+      <td>the pond was too small for sailing池塘太小，无法航行</td>
+      <td></td>
+      <td></td>
+      <td>[lake]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

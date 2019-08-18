@@ -1,0 +1,635 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['hug', 'bug', 'dug', 'rug', 'mug', 'tug', 'jug', 'lug', 'pug', 'fug']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hug</th>
+      <td>ug</td>
+      <td>4.36</td>
+      <td>ver</td>
+      <td>həɡ</td>
+      <td>['bosom', 'embrace', 'squeeze']</td>
+      <td></td>
+      <td>hold (someone) tightly in your arms, usually with fondness把（某人）紧紧地抱在怀里，通常是喜欢</td>
+      <td>He hugged her close to him他紧紧抱住她</td>
+      <td>[hugger, hugging]</td>
+      <td></td>
+      <td>[clasp]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hug</th>
+      <td>ug</td>
+      <td>4.36</td>
+      <td>ver</td>
+      <td>həɡ</td>
+      <td></td>
+      <td></td>
+      <td>fit closely or tightly紧密贴合</td>
+      <td>The dress hugged her hips这件衣服紧紧抓住她的臀部</td>
+      <td></td>
+      <td></td>
+      <td>[touch, adjoin, contact, meet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hug</th>
+      <td>ug</td>
+      <td>4.36</td>
+      <td>nou</td>
+      <td>həɡ</td>
+      <td>['clinch', 'squeeze']</td>
+      <td></td>
+      <td>a tight or amorous embrace紧拥或多情的拥抱</td>
+      <td>come here and give me a big hug过来给我一个大大的拥抱</td>
+      <td></td>
+      <td></td>
+      <td>[embracement, embrace, embracing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bug</th>
+      <td>ug</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>bəɡ</td>
+      <td>['intercept', 'tap', 'wiretap']</td>
+      <td></td>
+      <td>tap a telephone or telegraph wire to get information点击电话或电报线获取信息</td>
+      <td>Is this hotel room bugged?这个酒店房间有问题吗？</td>
+      <td></td>
+      <td></td>
+      <td>[listen in, eavesdrop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bug</th>
+      <td>ug</td>
+      <td>4.26</td>
+      <td>ver</td>
+      <td>bəɡ</td>
+      <td>['badger', 'beleaguer', 'pester', 'tease']</td>
+      <td></td>
+      <td>annoy persistently一直懊恼</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[crucify, bedevil, frustrate, rag, torment, dun]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bug</th>
+      <td>ug</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>bəɡ</td>
+      <td>['hemipteran', 'hemipteron', 'hemipterous insect']</td>
+      <td></td>
+      <td>insects with sucking mouthparts and forewings thickened and leathery at the base; usually show incomplete metamorphosis吮吸口器和前翅的昆虫在基部变厚且有革质;通常显示不完全变态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[insect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bug</th>
+      <td>ug</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>bəɡ</td>
+      <td>['glitch']</td>
+      <td></td>
+      <td>a fault or defect in a computer program, system, or machine计算机程序，系统或机器中的故障或缺陷</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[defect, flaw, fault]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bug</th>
+      <td>ug</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>bəɡ</td>
+      <td>['germ', 'microbe']</td>
+      <td></td>
+      <td>a minute life form (especially a disease-causing bacterium); the term is not in technical use一种微小的生命形式（特别是一种引起疾病的细菌）;该术语不是技术用途</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[micro-organism, microorganism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bug</th>
+      <td>ug</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>bəɡ</td>
+      <td></td>
+      <td></td>
+      <td>a small hidden microphone; for listening secretly一个小隐藏的麦克风;偷偷听</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mic, microphone, mike]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bug</th>
+      <td>ug</td>
+      <td>4.26</td>
+      <td>nou</td>
+      <td>bəɡ</td>
+      <td></td>
+      <td></td>
+      <td>general term for any insect or similar creeping or crawling invertebrate任何昆虫或类似爬行或爬行无脊椎动物的总称</td>
+      <td></td>
+      <td>[buggy]</td>
+      <td></td>
+      <td>[insect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dug</th>
+      <td>ug</td>
+      <td>3.93</td>
+      <td>nou</td>
+      <td>dəɡ</td>
+      <td></td>
+      <td></td>
+      <td>an udder or breast or teat乳房，乳房或乳头</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mamma, mammary gland]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rug</th>
+      <td>ug</td>
+      <td>3.74</td>
+      <td>nou</td>
+      <td>rəɡ</td>
+      <td>['carpet', 'carpeting']</td>
+      <td></td>
+      <td>floor covering consisting of a piece of thick heavy fabric (usually with nap or pile)地板覆盖物由一块厚重的织物（通常有绒毛或绒毛）组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[floor cover, floor covering, furnishing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mug</th>
+      <td>ug</td>
+      <td>3.73</td>
+      <td>ver</td>
+      <td>məɡ</td>
+      <td></td>
+      <td></td>
+      <td>rob at gunpoint or with the threat of violence在枪口下或以暴力威胁抢劫</td>
+      <td>I was mugged in the streets of New York last night昨晚我在纽约街头被抢劫</td>
+      <td>[muggee, mugger, mugging]</td>
+      <td></td>
+      <td>[hold up, stick up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mug</th>
+      <td>ug</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>məɡ</td>
+      <td>['chump', 'fall guy', 'fool', 'gull', 'mark', 'patsy', 'soft touch', 'sucker']</td>
+      <td></td>
+      <td>a person who is gullible and easy to take advantage of一个容易上当受骗的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[victim, dupe]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mug</th>
+      <td>ug</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>məɡ</td>
+      <td>['countenance', 'kisser', 'phiz', 'physiognomy', 'smiler', 'visage']</td>
+      <td></td>
+      <td>the human face (`kisser' and `smiler' and `mug' are informal terms for `face' and `phiz' is British)人脸（`kisser'和'smiler'和'mug'是'face'和`phiz'的非正式术语是英国人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[human face, face]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>mug</th>
+      <td>ug</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>məɡ</td>
+      <td>['mugful']</td>
+      <td></td>
+      <td>the quantity that can be held in a mug可以装在杯子里的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mug</th>
+      <td>ug</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>məɡ</td>
+      <td></td>
+      <td></td>
+      <td>with handle and usually cylindrical带把手，通常是圆柱形的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drinking vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>təɡ</td>
+      <td>['lug', 'tote']</td>
+      <td></td>
+      <td>carry with difficulty难以携带</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transport, carry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>təɡ</td>
+      <td>['drive', 'labor', 'labour', 'push']</td>
+      <td></td>
+      <td>strive and make an effort to reach a goal努力并努力实现目标</td>
+      <td>She tugged for years to make a decent living她拖了很多年才能过上体面的生活</td>
+      <td></td>
+      <td>[push, bear on]</td>
+      <td>[fight, struggle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>təɡ</td>
+      <td></td>
+      <td></td>
+      <td>move by pulling hard通过努力拉动</td>
+      <td>The horse finally tugged the cart out of the mud那匹马终于把车从泥里拉出来了</td>
+      <td>[tugger]</td>
+      <td></td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>təɡ</td>
+      <td></td>
+      <td></td>
+      <td>pull hard拉得很厉害</td>
+      <td>The prisoner tugged at the chains囚犯拽着锁链This movie tugs at the heart strings这部电影牵动着心弦</td>
+      <td>[tugger]</td>
+      <td></td>
+      <td>[attract, draw, draw in, pull, pull in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>təɡ</td>
+      <td></td>
+      <td></td>
+      <td>pull or strain hard at拉扯或拉紧</td>
+      <td>Each oar was tugged by several men每个桨都被几个男人拉扯着</td>
+      <td></td>
+      <td></td>
+      <td>[pull, draw]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>təɡ</td>
+      <td></td>
+      <td></td>
+      <td>struggle in opposition反对斗争</td>
+      <td>She tugged and wrestled with her conflicts她拉扯并与她的冲突搏斗</td>
+      <td></td>
+      <td></td>
+      <td>[struggle, fight, contend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>ver</td>
+      <td>təɡ</td>
+      <td></td>
+      <td></td>
+      <td>tow (a vessel) with a tug用拖船牵引（船）</td>
+      <td>The tugboat tugged the freighter into the harbor拖船将货轮拉入港口</td>
+      <td>[tugger]</td>
+      <td></td>
+      <td>[tow]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>təɡ</td>
+      <td>['jerk']</td>
+      <td></td>
+      <td>a sudden abrupt pull突然突然拉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pull, pulling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tug</th>
+      <td>ug</td>
+      <td>3.33</td>
+      <td>nou</td>
+      <td>təɡ</td>
+      <td>['towboat', 'tower', 'tugboat']</td>
+      <td></td>
+      <td>a powerful small boat designed to pull or push larger ships一艘强大的小船，用于拉动或推动大型船只</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[boat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jug</th>
+      <td>ug</td>
+      <td>3.13</td>
+      <td>ver</td>
+      <td>dʒəɡ</td>
+      <td>['gaol', 'immure', 'imprison', 'incarcerate', 'jail', 'lag', 'put away', 'put behind bars', 'remand']</td>
+      <td></td>
+      <td>lock up or confine, in or as in a jail锁定或限制，在监狱中或在监狱中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[confine, detain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jug</th>
+      <td>ug</td>
+      <td>3.13</td>
+      <td>ver</td>
+      <td>dʒəɡ</td>
+      <td></td>
+      <td></td>
+      <td>stew in an earthenware jug炖在陶罐里</td>
+      <td>jug the rabbit兔子</td>
+      <td></td>
+      <td></td>
+      <td>[stew]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jug</th>
+      <td>ug</td>
+      <td>3.13</td>
+      <td>nou</td>
+      <td>dʒəɡ</td>
+      <td>['jugful']</td>
+      <td></td>
+      <td>the quantity contained in a jug水壶中的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jug</th>
+      <td>ug</td>
+      <td>3.13</td>
+      <td>nou</td>
+      <td>dʒəɡ</td>
+      <td></td>
+      <td></td>
+      <td>a large bottle with a narrow mouth一个狭窄的大瓶子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bottle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lug</th>
+      <td>ug</td>
+      <td>3.10</td>
+      <td>ver</td>
+      <td>lʊx</td>
+      <td>['tote', 'tug']</td>
+      <td></td>
+      <td>carry with difficulty难以携带</td>
+      <td>You'll have to lug this suitcase你必须把这个行李箱拉下来</td>
+      <td>[luggage]</td>
+      <td></td>
+      <td>[transport, carry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lug</th>
+      <td>ug</td>
+      <td>3.10</td>
+      <td>ver</td>
+      <td>lʊx</td>
+      <td>['block', 'choke up', 'stuff']</td>
+      <td></td>
+      <td>obstruct阻碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[choke off, back up, clog up, congest, foul, clog, choke]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lug</th>
+      <td>ug</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>lʊx</td>
+      <td>['lugh']</td>
+      <td></td>
+      <td>ancient Celtic god古代凯尔特人的神</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lug</th>
+      <td>ug</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>lʊx</td>
+      <td>['lobworm', 'lugworm']</td>
+      <td></td>
+      <td>marine worms having a row of tufted gills along each side of the back; often used for fishing bait海龟在背部两侧有一排簇状鳃;常用于钓鱼诱饵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[polychaete worm, polychete, polychete worm, polychaete]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lug</th>
+      <td>ug</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>lʊx</td>
+      <td>['lugsail']</td>
+      <td></td>
+      <td>a sail with four corners that is hoisted from a yard that is oblique to the mast一个有四个角的帆从一个倾斜到桅杆的院子里悬挂下来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fore-and-aft sail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lug</th>
+      <td>ug</td>
+      <td>3.10</td>
+      <td>nou</td>
+      <td>lʊx</td>
+      <td></td>
+      <td></td>
+      <td>a projecting piece that is used to lift or support or turn something用于提升或支撑或转动物品的突出件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[projection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pug</th>
+      <td>ug</td>
+      <td>2.89</td>
+      <td>nou</td>
+      <td>pəɡ</td>
+      <td>['pug-dog']</td>
+      <td></td>
+      <td>small compact smooth-coated breed of Asiatic origin having a tightly curled tail and broad flat wrinkled muzzle亚洲原产的小型光滑涂层品种，具有紧密卷曲的尾巴和宽阔的扁平皱纹口吻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[canis familiaris, dog, domestic dog]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fug</th>
+      <td>ug</td>
+      <td>2.84</td>
+      <td>nou</td>
+      <td>fəɡ</td>
+      <td></td>
+      <td></td>
+      <td>(British informal) an airless smoky smelly atmosphere（英国非正式）一种无气味的烟熏臭气氛</td>
+      <td></td>
+      <td>[fuggy]</td>
+      <td></td>
+      <td>[fog, fogginess, murkiness, murk]</td>
+      <td>[colloquialism]</td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

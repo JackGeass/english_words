@@ -1,0 +1,515 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['ask', 'ass', 'gas', 'ash', 'das', 'pas', 'ras', 'vas', 'fas', 'asp']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>ask</th>
+      <td>as</td>
+      <td>5.70</td>
+      <td>ver</td>
+      <td>æsk</td>
+      <td>['expect', 'require']</td>
+      <td></td>
+      <td>consider obligatory; request and expect考虑强制性;请求和期望</td>
+      <td>Aren't we asking too much of these children?我们不是要求这些孩子过多吗？</td>
+      <td></td>
+      <td></td>
+      <td>[demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ask</th>
+      <td>as</td>
+      <td>5.70</td>
+      <td>ver</td>
+      <td>æsk</td>
+      <td>['ask out', 'invite out', 'take out']</td>
+      <td></td>
+      <td>make a date约会</td>
+      <td>Has he asked you out yet?他问你了吗？</td>
+      <td></td>
+      <td></td>
+      <td>[bespeak, ask for, call for, quest, request]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ask</th>
+      <td>as</td>
+      <td>5.70</td>
+      <td>ver</td>
+      <td>æsk</td>
+      <td>['enquire', 'inquire']</td>
+      <td></td>
+      <td>address a question to and expect an answer from解决问题并期待答案</td>
+      <td>The children asked me about their dead grandmother孩子们问我他们死去的祖母He had to ask directions several times他不得不多次询问方向</td>
+      <td>[asker]</td>
+      <td></td>
+      <td>[communicate, intercommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ask</th>
+      <td>as</td>
+      <td>5.70</td>
+      <td>ver</td>
+      <td>æsk</td>
+      <td>['call for', 'demand', 'involve', 'necessitate', 'need', 'postulate', 'require', 'take']</td>
+      <td></td>
+      <td>require as useful, just, or proper要求有用，公正或恰当</td>
+      <td>This job asks a lot of patience and skill这项工作需要很多耐心和技巧</td>
+      <td></td>
+      <td>[take, exact, claim]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ask</th>
+      <td>as</td>
+      <td>5.70</td>
+      <td>ver</td>
+      <td>æsk</td>
+      <td></td>
+      <td></td>
+      <td>direct or put; seek an answer to直接或放寻求答案</td>
+      <td>ask a question问一个问题</td>
+      <td>[asker]</td>
+      <td>[inquire, enquire]</td>
+      <td>[phrase, articulate, word, give voice, formulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ask</th>
+      <td>as</td>
+      <td>5.70</td>
+      <td>ver</td>
+      <td>æsk</td>
+      <td>, alos:['ask in', 'ask out', 'ask over', 'ask round']</td>
+      <td></td>
+      <td>make a request or demand for something to somebody向某人提出要求或要求某事</td>
+      <td>She asked him for a loan她向他索要贷款</td>
+      <td></td>
+      <td></td>
+      <td>[call for, ask for, request, quest, bespeak]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ask</th>
+      <td>as</td>
+      <td>5.70</td>
+      <td>ver</td>
+      <td>æsk</td>
+      <td></td>
+      <td></td>
+      <td>require or ask for as a price or condition要求或要求作为价格或条件</td>
+      <td>He is asking $200 for the table他要价200美元The kidnappers are asking a million dollars in return for the release of their hostage绑架者要求一百万美元作为释放人质的回报</td>
+      <td></td>
+      <td></td>
+      <td>[demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ass</th>
+      <td>as</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>æs</td>
+      <td>['fuck', 'fucking', 'nookie', 'nooky', 'piece of ass', 'piece of tail', 'roll in the hay', 'screw', 'screwing', 'shag', 'shtup']</td>
+      <td></td>
+      <td>slang for sexual intercourse俚语用于性交</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intercourse, copulation, coitus, coition, relation, carnal knowledge, sex act, sexual congress, sexual intercourse, sexual relation]</td>
+      <td>[argot, cant, filth, lingo, jargon, obscenity, slang, smut, vulgarism, vernacular, patois, dirty word]</td>
+    </tr>
+    <tr>
+      <th>ass</th>
+      <td>as</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>æs</td>
+      <td>['arse', 'backside', 'behind', 'bottom', 'bum', 'buns', 'butt', 'buttocks', 'can', 'derriere', 'fanny', 'fundament', 'hind end', 'hindquarters', 'keister', 'nates', 'posterior', 'prat', 'rear', 'rear end', 'rump', 'seat', 'stern', 'tail', 'tail end', 'tooshie', 'tush']</td>
+      <td></td>
+      <td>the fleshy part of the human body that you sit on你坐在人体的肉质部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ass</th>
+      <td>as</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>æs</td>
+      <td></td>
+      <td></td>
+      <td>a pompous fool一个自负的傻瓜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sap, fool, tomfool, muggins, saphead]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ass</th>
+      <td>as</td>
+      <td>5.39</td>
+      <td>nou</td>
+      <td>æs</td>
+      <td></td>
+      <td></td>
+      <td>hardy and sure-footed animal smaller and with longer ears than the horse比马更强壮，更健壮的动物，更小，更长的耳朵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[equine, equid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>ver</td>
+      <td>ɡæs</td>
+      <td>['blow', 'bluster', 'boast', 'brag', 'gasconade', 'shoot a line', 'swash', 'tout', 'vaunt']</td>
+      <td></td>
+      <td>show off炫耀</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[amplify, exaggerate, hyperbolise, hyperbolize, magnify, overdraw, overstate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>ver</td>
+      <td>ɡæs</td>
+      <td></td>
+      <td></td>
+      <td>attack with gas; subject to gas fumes用气体攻击;受到气体污染</td>
+      <td>The despot gassed the rebellious tribes暴君给叛逆的部落充气</td>
+      <td>[gassing]</td>
+      <td></td>
+      <td>[assail, attack]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>nou</td>
+      <td>ɡæs</td>
+      <td>['natural gas']</td>
+      <td></td>
+      <td>a fossil fuel in the gaseous state; used for cooking and heating homes气态的化石燃料;用于烹饪和取暖房屋</td>
+      <td></td>
+      <td>[gasify]</td>
+      <td></td>
+      <td>[fossil fuel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>nou</td>
+      <td>ɡæs</td>
+      <td>['gasolene', 'gasoline', 'petrol']</td>
+      <td></td>
+      <td>a volatile flammable mixture of hydrocarbons (hexane and heptane and octane etc.) derived from petroleum; used mainly as a fuel in internal-combustion engines一种挥发性易燃的碳氢化合物混合物（己烷，庚烷和辛烷等），来自石油;主要用作内燃机的燃料</td>
+      <td></td>
+      <td>[gasify]</td>
+      <td></td>
+      <td>[hydrocarbon, fuel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>nou</td>
+      <td>ɡæs</td>
+      <td>['flatulence', 'flatulency']</td>
+      <td></td>
+      <td>a state of excessive gas in the alimentary canal消化道中气体过多的状态</td>
+      <td></td>
+      <td>[gassy]</td>
+      <td></td>
+      <td>[physiological condition, physical condition, physiological state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>nou</td>
+      <td>ɡæs</td>
+      <td>['gaseous state']</td>
+      <td></td>
+      <td>the state of matter distinguished from the solid and liquid states by: relatively low density and viscosity; relatively great expansion and contraction with changes in pressure and temperature; the ability to diffuse readily; and the spontaneous tendency to become distributed uniformly throughout any container通过以下方式区分固态和液态的物质状态：相对低的密度和粘度;随着压力和温度的变化，膨胀和收缩相对较大;容易扩散的能力;以及在整个容器中均匀分布的自发倾向</td>
+      <td></td>
+      <td>[gaseous, gasify, gassy]</td>
+      <td></td>
+      <td>[state of matter, state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>nou</td>
+      <td>ɡæs</td>
+      <td>['accelerator', 'accelerator pedal', 'gas pedal', 'gun', 'throttle']</td>
+      <td></td>
+      <td>a pedal that controls the throttle valve一个控制节流阀的踏板</td>
+      <td>he stepped on the gas他踩油门</td>
+      <td></td>
+      <td></td>
+      <td>[foot lever, foot pedal, treadle, pedal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gas</th>
+      <td>as</td>
+      <td>4.77</td>
+      <td>nou</td>
+      <td>ɡæs</td>
+      <td></td>
+      <td></td>
+      <td>a fluid in the gaseous state having neither independent shape nor volume and being able to expand indefinitely气态的流体既不具有独立的形状也不具有体积，并且能够无限地膨胀</td>
+      <td></td>
+      <td>[gasify, gaseous]</td>
+      <td></td>
+      <td>[fluid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ash</th>
+      <td>as</td>
+      <td>3.96</td>
+      <td>ver</td>
+      <td>æʃ</td>
+      <td></td>
+      <td></td>
+      <td>convert into ashes变成灰烬</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ash</th>
+      <td>as</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>æʃ</td>
+      <td>['ash tree']</td>
+      <td></td>
+      <td>any of various deciduous pinnate-leaved ornamental or timber trees of the genus Fraxinus任何一种水曲柳属的落叶羽状叶观赏植物或木材树木</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ash</th>
+      <td>as</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>æʃ</td>
+      <td></td>
+      <td></td>
+      <td>strong elastic wood of any of various ash trees; used for furniture and tool handles and sporting goods such as baseball bats任何各种灰树的强弹性木材;用于家具和工具手柄以及棒球棒等体育用品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wood]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ash</th>
+      <td>as</td>
+      <td>3.96</td>
+      <td>nou</td>
+      <td>æʃ</td>
+      <td></td>
+      <td></td>
+      <td>the residue that remains when something is burned什么东西被烧毁时残留的残留物</td>
+      <td></td>
+      <td>[ashy]</td>
+      <td></td>
+      <td>[residue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>das</th>
+      <td>as</td>
+      <td>3.44</td>
+      <td>nou</td>
+      <td>dæs</td>
+      <td>['coney', 'cony', 'dassie', 'hyrax']</td>
+      <td></td>
+      <td>any of several small ungulate mammals of Africa and Asia with rodent-like incisors and feet with hooflike toes非洲和亚洲的几种小型有蹄类哺乳动物中的任何一种，具有类似啮齿动物的门牙和带有蹄状脚趾的脚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eutherian, eutherian mammal, placental, placental mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pas</th>
+      <td>as</td>
+      <td>3.36</td>
+      <td>nou</td>
+      <td>pɑ</td>
+      <td></td>
+      <td></td>
+      <td>(ballet) a step in dancing (especially in classical ballet)（芭蕾舞）跳舞的一步（尤其是古典芭蕾舞）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[step]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ras</th>
+      <td>as</td>
+      <td>3.01</td>
+      <td>nou</td>
+      <td>ræs</td>
+      <td>['reticular activating system']</td>
+      <td></td>
+      <td>the network in the reticular formation that serves an alerting or arousal function网状结构中的网络，提供警报或唤醒功能</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[neural net, neural network]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>vas</th>
+      <td>as</td>
+      <td>2.82</td>
+      <td>nou</td>
+      <td>væs</td>
+      <td>['vessel']</td>
+      <td></td>
+      <td>a tube in which a body fluid circulates体液循环的管</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tube, tube-shaped structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fas</th>
+      <td>as</td>
+      <td>2.47</td>
+      <td>nou</td>
+      <td></td>
+      <td>['fetal alcohol syndrome']</td>
+      <td></td>
+      <td>a congenital medical condition in which body deformation occurs or facial development or mental ability is impaired because the mother drinks alcohol during pregnancy由于母亲在怀孕期间饮酒，导致身体发生变形或面部发育或智力受损的先天性疾病</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[syndrome]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>asp</th>
+      <td>as</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>æsp</td>
+      <td>['asp viper', 'vipera aspis']</td>
+      <td></td>
+      <td>of southern Europe; similar to but smaller than the adder南欧;类似但小于加法器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[viper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>asp</th>
+      <td>as</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>æsp</td>
+      <td>['egyptian cobra', 'naja haje']</td>
+      <td></td>
+      <td>cobra used by the Pharaohs as a symbol of their power over life and death法老王用它作为生命和死亡权力的象征</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cobra]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,305 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['ghost', 'costs', 'frost']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>ghost</th>
+      <td>ost</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>ɡoʊst</td>
+      <td>['haunt', 'obsess']</td>
+      <td></td>
+      <td>haunt like a ghost; pursue像鬼一样出没;追求</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[preoccupy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ghost</th>
+      <td>ost</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>ɡoʊst</td>
+      <td>['ghostwrite']</td>
+      <td></td>
+      <td>write for someone else写给别人</td>
+      <td>How many books have you ghostwritten so far?到目前为止你有多少本书写过鬼？</td>
+      <td></td>
+      <td></td>
+      <td>[author]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ghost</th>
+      <td>ost</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>ɡoʊst</td>
+      <td></td>
+      <td></td>
+      <td>move like a ghost像鬼一样移动</td>
+      <td>The masked men ghosted across the moonlit yard蒙面男子穿过月光下的院子</td>
+      <td></td>
+      <td></td>
+      <td>[travel, go, locomote, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ghost</th>
+      <td>ost</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>ɡoʊst</td>
+      <td>['touch', 'trace']</td>
+      <td></td>
+      <td>a suggestion of some quality一些质量的建议</td>
+      <td>he detected a ghost of a smile on her face他发现脸上露出一丝笑容</td>
+      <td></td>
+      <td></td>
+      <td>[suggestion, proffer, proposition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ghost</th>
+      <td>ost</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>ɡoʊst</td>
+      <td>['shade', 'specter', 'spectre', 'spook', 'wraith']</td>
+      <td></td>
+      <td>a mental representation of some haunting experience一种难以忘怀的经历的心理表征</td>
+      <td>he looked like he had seen a ghost他看起来像是看到了鬼魂</td>
+      <td></td>
+      <td></td>
+      <td>[shadow, apparition, fantasm, phantasm, phantasma, phantom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ghost</th>
+      <td>ost</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>ɡoʊst</td>
+      <td>['ghostwriter']</td>
+      <td></td>
+      <td>a writer who gives the credit of authorship to someone else将作者身份归功于其他人的作家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[author, writer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ghost</th>
+      <td>ost</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>ɡoʊst</td>
+      <td></td>
+      <td></td>
+      <td>the visible disembodied soul of a dead person一个死人的可见无实体的灵魂</td>
+      <td></td>
+      <td>[ghostly]</td>
+      <td></td>
+      <td>[psyche, soul]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>costs</th>
+      <td>ost</td>
+      <td>4.33</td>
+      <td>nou</td>
+      <td>kɑsts</td>
+      <td></td>
+      <td></td>
+      <td>pecuniary reimbursement to the winning party for the expenses of litigation金钱报销给胜诉方的诉讼费用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[reimbursement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>frɔst</td>
+      <td>['ice']</td>
+      <td></td>
+      <td>decorate with frosting用糖霜装饰</td>
+      <td>frost a cake霜一块蛋糕</td>
+      <td>[frosting]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>frɔst</td>
+      <td></td>
+      <td></td>
+      <td>cover with frost覆盖着霜冻</td>
+      <td>ice crystals frosted the glass冰晶磨砂玻璃</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>frɔst</td>
+      <td></td>
+      <td></td>
+      <td>damage by frost霜冻造成的伤害</td>
+      <td>The icy precipitation frosted the flowers and they turned brown冰冷的降水使花朵结霜，变成棕色</td>
+      <td></td>
+      <td></td>
+      <td>[damage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>ver</td>
+      <td>frɔst</td>
+      <td></td>
+      <td></td>
+      <td>provide with a rough or speckled surface or appearance提供粗糙或有斑点的表面或外观</td>
+      <td>frost the glass冰霜玻璃she frosts her hair她霜冻了她的头发</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>frɔst</td>
+      <td>['hoar', 'hoarfrost', 'rime']</td>
+      <td></td>
+      <td>ice crystals forming a white deposit (especially on objects outside)冰晶形成白色沉积物（特别是在外面的物体上）</td>
+      <td></td>
+      <td>[frosty]</td>
+      <td></td>
+      <td>[ice, water ice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>frɔst</td>
+      <td>['freeze']</td>
+      <td></td>
+      <td>weather cold enough to cause freezing天气冷得足以引起冻结</td>
+      <td></td>
+      <td>[frosty]</td>
+      <td></td>
+      <td>[cold weather]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>frɔst</td>
+      <td>['icing']</td>
+      <td></td>
+      <td>the formation of frost or ice on a surface在表面形成霜或冰</td>
+      <td></td>
+      <td>[frosty]</td>
+      <td></td>
+      <td>[freeze, freezing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>frost</th>
+      <td>ost</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>frɔst</td>
+      <td>['robert frost', 'robert lee frost']</td>
+      <td></td>
+      <td>United States poet famous for his lyrical poems on country life in New England (1874-1963)美国诗人以他在新英格兰乡村生活的抒情诗而闻名（1874-1963）</td>
+      <td></td>
+      <td>[frostian]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

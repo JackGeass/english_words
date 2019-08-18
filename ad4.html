@@ -1,0 +1,440 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['lady', 'glad', 'brad', 'chad', 'grad', 'shad', 'clad', 'adit', 'wads', 'trad', 'wadi', 'hadj']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>lady</th>
+      <td>ad</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>'leɪdi</td>
+      <td>['dame', 'gentlewoman', "ma'am", 'madam']</td>
+      <td></td>
+      <td>a woman of refinement一个精致的女人</td>
+      <td>a chauffeur opened the door of the limousine for the grand lady一位司机为这位大女士打开了豪华轿车的大门</td>
+      <td></td>
+      <td></td>
+      <td>[woman, adult female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lady</th>
+      <td>ad</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>'leɪdi</td>
+      <td>['noblewoman', 'peeress']</td>
+      <td>[lord]</td>
+      <td>a woman of the peerage in Britain英国贵妇人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[female aristocrat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lady</th>
+      <td>ad</td>
+      <td>5.23</td>
+      <td>nou</td>
+      <td>'leɪdi</td>
+      <td></td>
+      <td></td>
+      <td>a polite name for any woman任何女人都有礼貌的名字</td>
+      <td>a nice lady at the library helped me图书馆的一位好女士帮助了我</td>
+      <td></td>
+      <td></td>
+      <td>[woman, adult female]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glad</th>
+      <td>ad</td>
+      <td>5.03</td>
+      <td>nou</td>
+      <td>glæd</td>
+      <td>['gladiola', 'gladiolus', 'sword lily']</td>
+      <td></td>
+      <td>any of numerous plants of the genus Gladiolus native chiefly to tropical and South Africa having sword-shaped leaves and one-sided spikes of brightly colored funnel-shaped flowers; widely cultivated唐菖蒲属植物中的任何一种，主要生长在热带和南非，有剑形叶片和明亮颜色的漏斗状花朵的单面穗状花序;广泛栽培</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[iridaceous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glad</th>
+      <td>ad</td>
+      <td>5.03</td>
+      <td>adj</td>
+      <td>glæd</td>
+      <td>['happy'], similarTo:['willing']</td>
+      <td></td>
+      <td>eagerly disposed to act or to be of service急切地想要采取行动或服务</td>
+      <td>glad to help乐意效劳</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glad</th>
+      <td>ad</td>
+      <td>5.03</td>
+      <td>adj</td>
+      <td>glæd</td>
+      <td>['beaming'], similarTo:['cheerful']</td>
+      <td></td>
+      <td>cheerful and bright开朗而明亮</td>
+      <td>a glad May morning五月的一个愉快的早晨</td>
+      <td>[gladness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glad</th>
+      <td>ad</td>
+      <td>5.03</td>
+      <td>adj</td>
+      <td>glæd</td>
+      <td>, similarTo:['grateful', 'thankful']</td>
+      <td></td>
+      <td>feeling happy appreciation感到高兴的欣赏</td>
+      <td>glad of the fire's warmth对火的温暖感到高兴</td>
+      <td>[gladness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>glad</th>
+      <td>ad</td>
+      <td>5.03</td>
+      <td>adj</td>
+      <td>glæd</td>
+      <td>, similarTo:['gladsome'], alos:['cheerful']</td>
+      <td>[sad]</td>
+      <td>showing or causing joy and pleasure; especially made happy表现出或带来快乐和愉悦;特别开心</td>
+      <td>glad you are here很高兴你在这里glad that they succeeded很高兴他们成功了gave a glad shout高兴的喊了一声a glad smile一个愉快的笑容heard the glad news听到这个喜讯a glad occasion一个愉快的时刻</td>
+      <td>[gladness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brad</th>
+      <td>ad</td>
+      <td>4.34</td>
+      <td>ver</td>
+      <td>bræd</td>
+      <td></td>
+      <td></td>
+      <td>fasten with brads用布拉德固定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fasten, fix, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brad</th>
+      <td>ad</td>
+      <td>4.34</td>
+      <td>nou</td>
+      <td>bræd</td>
+      <td></td>
+      <td></td>
+      <td>a small nail一个小钉子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chad</th>
+      <td>ad</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>tʃæd</td>
+      <td>['chadic', 'chadic language']</td>
+      <td></td>
+      <td>a family of Afroasiatic tonal languages (mostly two tones) spoken in the regions west and south of Lake Chad in north central Africa在非洲中北部乍得湖西部和南部地区使用的一系列Afroasiatic音调语言（主要是两种音调）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[afro-asiatic, afrasian language, afrasian, hamito-semitic, afroasiatic language, afroasiatic]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chad</th>
+      <td>ad</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>tʃæd</td>
+      <td>['republic of chad', 'tchad']</td>
+      <td></td>
+      <td>a landlocked desert republic in north-central Africa; was under French control until 1960非洲中北部的内陆沙漠共和国;直到1960年才被法国控制</td>
+      <td></td>
+      <td>[chadian]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chad</th>
+      <td>ad</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>tʃæd</td>
+      <td>['lake chad']</td>
+      <td></td>
+      <td>a lake in north central Africa; fed by the Shari river非洲中北部的一个湖泊;由沙里河喂养</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chad</th>
+      <td>ad</td>
+      <td>3.80</td>
+      <td>nou</td>
+      <td>tʃæd</td>
+      <td></td>
+      <td></td>
+      <td>a small piece of paper that is supposed to be removed when a hole is punched in a card or paper tape当在卡片或纸带上打孔时应该移除的一小张纸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[paper]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grad</th>
+      <td>ad</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>græd</td>
+      <td>['alum', 'alumna', 'alumnus', 'graduate']</td>
+      <td></td>
+      <td>a person who has received a degree from a school (high school or college or university)从学校（高中，大学或大学）获得学位的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scholarly person, bookman, student, scholar]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grad</th>
+      <td>ad</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>græd</td>
+      <td>['grade']</td>
+      <td></td>
+      <td>one-hundredth of a right angle直角的百分之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[angular unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shad</th>
+      <td>ad</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>ʃæd</td>
+      <td></td>
+      <td></td>
+      <td>bony flesh of herring-like fish usually caught during their migration to fresh water for spawning; especially of Atlantic coast鲱鱼状鱼的骨肉通常在迁移到淡水中产卵时被捕获;特别是大西洋沿岸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shad</th>
+      <td>ad</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>ʃæd</td>
+      <td></td>
+      <td></td>
+      <td>herring-like food fishes that migrate from the sea to fresh water to spawn鲱鱼般的食物鱼类从海洋迁移到淡水中产卵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[food fish, clupeid, clupeid fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clad</th>
+      <td>ad</td>
+      <td>2.92</td>
+      <td>adj</td>
+      <td>klæd</td>
+      <td>['clothed'], similarTo:['attired', 'breeched', 'bundled-up', 'caparisoned', 'cassocked', 'coated', 'costumed', 'cowled', 'dighted', 'dolled up', 'dressed', 'dressed-up', 'dressed to kill', 'dressed to the nines', 'garbed', 'garmented', 'gowned', 'habilimented', 'habited', 'heavy-coated', 'lobster-backed', 'overdressed', 'panoplied', 'pantalooned', 'petticoated', 'red-coated', 'robed', 'spiffed up', 'spruced up', 'suited', 'surpliced', 'togged', 'togged up', 'trousered', 'turned out', 'tuxedoed', 'underdressed', 'uniformed', 'vestmented', 'appareled', 'arrayed'], alos:['decorated', 'adorned']</td>
+      <td></td>
+      <td>wearing or provided with clothing; sometimes used in combination穿着或提供衣物;有时结合使用</td>
+      <td>nurses clad in white穿着白色的护士white-clad nurses白衣护士</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>clad</th>
+      <td>ad</td>
+      <td>2.92</td>
+      <td>adj</td>
+      <td>klæd</td>
+      <td>, similarTo:['sheathed']</td>
+      <td></td>
+      <td>having an outer covering especially of thin metal具有特别是薄金属的外壳</td>
+      <td>steel-clad钢复合armor-clad装甲的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>adit</th>
+      <td>ad</td>
+      <td>2.38</td>
+      <td>nou</td>
+      <td>'ædɪt</td>
+      <td></td>
+      <td></td>
+      <td>a nearly horizontal passage from the surface into a mine从地面到矿井的近乎水平的通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[passage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wads</th>
+      <td>ad</td>
+      <td>2.30</td>
+      <td>nou</td>
+      <td>wɑdz</td>
+      <td>['dozens', 'gobs', 'heaps', 'lashings', 'loads', 'lots', 'oodles', 'piles', 'rafts', 'scads', 'scores', 'slews', 'stacks', 'tons']</td>
+      <td></td>
+      <td>a large number or amount大量或数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[large indefinite amount, large indefinite quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>trad</th>
+      <td>ad</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>træd</td>
+      <td></td>
+      <td></td>
+      <td>traditional jazz as revived in the 1950s传统爵士乐在20世纪50年代复兴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[jazz]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wadi</th>
+      <td>ad</td>
+      <td>2.20</td>
+      <td>nou</td>
+      <td>'wɑdi</td>
+      <td></td>
+      <td></td>
+      <td>gully or streambed in northern Africa and the Middle East that remains dry except during rainy season在非洲北部和中东的沟壑或河床，除雨季外，仍然干燥</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gully]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hadj</th>
+      <td>ad</td>
+      <td>2.03</td>
+      <td>nou</td>
+      <td>hædʒ</td>
+      <td>['haj', 'hajj']</td>
+      <td></td>
+      <td>the fifth pillar of Islam is a pilgrimage to Mecca during the month of Dhu al-Hijja; at least once in a lifetime a Muslim is expected to make a religious journey to Mecca and the Kaaba伊斯兰教的第五个支柱是在Dhu al-Hijja月份前往麦加朝圣;至少有一次，穆斯林有望前往麦加和天房进行宗教之旅</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pilgrim's journey, pilgrimage, pillar of islam]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

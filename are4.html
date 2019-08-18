@@ -1,0 +1,725 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['care', 'dare', 'rare', 'bare', 'fare', 'hare', 'mare']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɜr</td>
+      <td>['like', 'wish']</td>
+      <td></td>
+      <td>prefer or wish to do something喜欢或希望做某事</td>
+      <td>Do you care to try this dish?你喜欢尝试这道菜吗？</td>
+      <td></td>
+      <td></td>
+      <td>[want, desire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɜr</td>
+      <td>['worry']</td>
+      <td></td>
+      <td>be concerned with关心</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mind]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɜr</td>
+      <td>['give care']</td>
+      <td></td>
+      <td>provide care for提供照顾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[aid, assist, help]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɜr</td>
+      <td>['deal', 'handle', 'manage']</td>
+      <td></td>
+      <td>be in charge of, act on, or dispose of负责，行事或处置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[control, command]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>ver</td>
+      <td>kɜr</td>
+      <td>, alos:['care for']</td>
+      <td></td>
+      <td>feel concern or interest感到担忧或兴趣</td>
+      <td>I really care about my work我真的很在乎我的工作I don't care我不在乎</td>
+      <td>[caring]</td>
+      <td></td>
+      <td>[condole with, feel for, sympathize with, compassionate, pity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɜr</td>
+      <td>['aid', 'attention', 'tending']</td>
+      <td></td>
+      <td>the work of providing treatment for or attending to someone or something为某人或某事提供治疗或照顾的工作</td>
+      <td>no medical care was required不需要医疗护理</td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɜr</td>
+      <td>['caution', 'forethought', 'precaution']</td>
+      <td></td>
+      <td>judiciousness in avoiding harm or danger明智地避免伤害或危险</td>
+      <td>he handled the vase with care他小心翼翼地处理着花瓶</td>
+      <td></td>
+      <td></td>
+      <td>[judiciousness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɜr</td>
+      <td>['charge', 'guardianship', 'tutelage']</td>
+      <td></td>
+      <td>attention and management implying responsibility for safety注意和管理意味着安全责任</td>
+      <td>he is in the care of a bodyguard他在保镖的照顾下</td>
+      <td></td>
+      <td></td>
+      <td>[protection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɜr</td>
+      <td>['concern', 'fear']</td>
+      <td></td>
+      <td>an anxious feeling一种焦虑的感觉</td>
+      <td>care had aged him照顾他老了</td>
+      <td></td>
+      <td></td>
+      <td>[anxiety]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɜr</td>
+      <td>['maintenance', 'upkeep']</td>
+      <td></td>
+      <td>activity involved in maintaining something in good working order维持良好工作状态的活动</td>
+      <td>he wrote the manual on car care他写了关于汽车保养的手册</td>
+      <td></td>
+      <td></td>
+      <td>[mend, repair, mending, fix, reparation, fixing, fixture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>care</th>
+      <td>are</td>
+      <td>5.68</td>
+      <td>nou</td>
+      <td>kɜr</td>
+      <td></td>
+      <td></td>
+      <td>a cause for feeling concern感到担忧的原因</td>
+      <td>his major care was the illness of his wife他主要关心的是他妻子的病</td>
+      <td></td>
+      <td></td>
+      <td>[plight, quandary, predicament]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dare</th>
+      <td>are</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>dɜr</td>
+      <td>['make bold', 'presume']</td>
+      <td></td>
+      <td>take upon oneself; act presumptuously, without permission自己承担;擅自行事，未经许可</td>
+      <td>How dare you call my lawyer?你怎么敢打电话给我的律师？</td>
+      <td></td>
+      <td></td>
+      <td>[act, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dare</th>
+      <td>are</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>dɜr</td>
+      <td>['defy']</td>
+      <td></td>
+      <td>challenge挑战</td>
+      <td>I dare you!我赌你！</td>
+      <td>[daring]</td>
+      <td></td>
+      <td>[challenge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dare</th>
+      <td>are</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>dɜr</td>
+      <td></td>
+      <td></td>
+      <td>to be courageous enough to try or do something勇敢地尝试或做某事</td>
+      <td>I don't dare call him我不敢打电话给他she dares to dress differently from the others她敢于穿着与其他人不同的穿着</td>
+      <td>[daring]</td>
+      <td></td>
+      <td>[act, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dare</th>
+      <td>are</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>dɜr</td>
+      <td>['daring']</td>
+      <td></td>
+      <td>a challenge to do something dangerous or foolhardy做一些危险或蛮干事的挑战</td>
+      <td>he could never refuse a dare他永远不会拒绝一个人</td>
+      <td></td>
+      <td></td>
+      <td>[challenge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rare</th>
+      <td>are</td>
+      <td>4.36</td>
+      <td>adj</td>
+      <td>rɜr</td>
+      <td>['uncommon'], similarTo:['extraordinary']</td>
+      <td></td>
+      <td>marked by an uncommon quality; especially superlative or extreme of its kind以不凡的品质为标志;特别是最高级或极端的</td>
+      <td>what is so rare as a day in June什么是六月的一天如此罕见a rare skill一种罕见的技能</td>
+      <td>[rarity]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rare</th>
+      <td>are</td>
+      <td>4.36</td>
+      <td>adj</td>
+      <td>rɜr</td>
+      <td>['rarefied', 'rarified'], similarTo:['thin']</td>
+      <td></td>
+      <td>having low density密度低</td>
+      <td>rare gasses稀有气体lightheaded from the rarefied mountain air从稀薄的山间空气中掠过</td>
+      <td>[rarity]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rare</th>
+      <td>are</td>
+      <td>4.36</td>
+      <td>adj</td>
+      <td>rɜr</td>
+      <td>, similarTo:['scarce']</td>
+      <td></td>
+      <td>not widely distributed没有广泛分布</td>
+      <td>rare herbs稀有草药rare patches of green in the desert沙漠中罕见的绿色斑块</td>
+      <td>[rareness, rarity]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rare</th>
+      <td>are</td>
+      <td>4.36</td>
+      <td>adj</td>
+      <td>rɜr</td>
+      <td>, similarTo:['uncommon']</td>
+      <td></td>
+      <td>not widely known; especially valued for its uncommonness不广为人知;因其不常见而特别受到重视</td>
+      <td>a rare word一个难得的词rare books珍本书</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rare</th>
+      <td>are</td>
+      <td>4.36</td>
+      <td>adj</td>
+      <td>rɜr</td>
+      <td>, similarTo:['raw']</td>
+      <td></td>
+      <td>(of meat) cooked a short time; still red inside（肉）煮了很短的时间;里面还是红的</td>
+      <td>rare roast beef稀有的烤牛肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rare</th>
+      <td>are</td>
+      <td>4.36</td>
+      <td>adj</td>
+      <td>rɜr</td>
+      <td>, similarTo:['infrequent']</td>
+      <td></td>
+      <td>recurring only at long intervals仅在很长一段时间内重复出现</td>
+      <td>a rare appearance罕见的外表total eclipses are rare events总日食是罕见的事件</td>
+      <td>[rareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['denudate', 'denude', 'strip']</td>
+      <td></td>
+      <td>lay bare道破</td>
+      <td>bare your breasts露出你的乳房bare your feelings露出你的感情</td>
+      <td></td>
+      <td></td>
+      <td>[expose, clear, uncover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>ver</td>
+      <td>bɜr</td>
+      <td>['air', 'publicise', 'publicize']</td>
+      <td></td>
+      <td>make public公开</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['mere', 'simple'], similarTo:['plain']</td>
+      <td></td>
+      <td>apart from anything else; without additions or modifications除了别的什么;没有添加或修改</td>
+      <td>only the bare facts只有事实</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['marginal'], similarTo:['narrow']</td>
+      <td></td>
+      <td>just barely adequate or within a lower limit只是勉强足够或在下限之内</td>
+      <td>a bare majority绝大多数</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['barren', 'bleak', 'desolate', 'stark'], similarTo:['inhospitable']</td>
+      <td></td>
+      <td>providing no shelter or sustenance不提供住所或寄托</td>
+      <td>bare rocky hills光秃秃的山丘</td>
+      <td>[bareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['unfinished'], similarTo:['unpainted']</td>
+      <td></td>
+      <td>lacking a surface finish such as paint缺乏油漆等表面光洁度</td>
+      <td>bare wood裸木</td>
+      <td>[bareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['plain', 'spare', 'unembellished', 'unornamented'], similarTo:['unadorned', 'undecorated']</td>
+      <td></td>
+      <td>lacking embellishment or ornamentation缺乏装饰或装饰</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['stripped'], similarTo:['empty']</td>
+      <td></td>
+      <td>having everything extraneous removed including contents删除所有内容包括内容</td>
+      <td>the bare walls光秃秃的墙壁the cupboard was bare橱柜是裸露的</td>
+      <td>[bareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['unsheathed']</td>
+      <td></td>
+      <td>not having a protective covering没有保护罩</td>
+      <td>a bare blade裸刀片</td>
+      <td>[bareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['au naturel', 'naked', 'nude'], similarTo:['unclothed']</td>
+      <td></td>
+      <td>completely unclothed完全没穿衣服</td>
+      <td>bare bodies裸体</td>
+      <td>[bareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>['scanty', 'spare'], similarTo:['stingy', 'meager', 'meagerly', 'meagre', 'scrimpy']</td>
+      <td></td>
+      <td>lacking in magnitude or quantity缺乏数量或数量</td>
+      <td>a bare livelihood没有生计</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bare</th>
+      <td>are</td>
+      <td>3.98</td>
+      <td>adj</td>
+      <td>bɜr</td>
+      <td>, similarTo:['undraped', 'naked', 'denuded', 'unroofed', 'denudate', 'bald']</td>
+      <td>[covered]</td>
+      <td>lacking its natural or customary covering缺乏天然或习惯性的覆盖物</td>
+      <td>a bare hill一座荒山bare feet赤脚</td>
+      <td>[bareness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fare</th>
+      <td>are</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>fɜr</td>
+      <td>['come', 'do', 'get along', 'make out']</td>
+      <td></td>
+      <td>proceed or get along继续或相处</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[proceed, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fare</th>
+      <td>are</td>
+      <td>3.83</td>
+      <td>ver</td>
+      <td>fɜr</td>
+      <td></td>
+      <td></td>
+      <td>eat well吃好</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[eat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fare</th>
+      <td>are</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>fɜr</td>
+      <td>['menu']</td>
+      <td></td>
+      <td>an agenda of things to do要做的事情的议程</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[docket, agenda, schedule]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fare</th>
+      <td>are</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>fɜr</td>
+      <td>['transportation']</td>
+      <td></td>
+      <td>the sum charged for riding in a public conveyance乘坐公共交通工具的费用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[charge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fare</th>
+      <td>are</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>fɜr</td>
+      <td></td>
+      <td></td>
+      <td>a paying (taxi) passenger付费（出租车）乘客</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rider, passenger]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fare</th>
+      <td>are</td>
+      <td>3.83</td>
+      <td>nou</td>
+      <td>fɜr</td>
+      <td></td>
+      <td></td>
+      <td>the food and drink that are regularly served or consumed经常供应或消费的食物和饮料</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[nutrient, food]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hare</th>
+      <td>are</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>hɜr</td>
+      <td></td>
+      <td></td>
+      <td>run quickly, like a hare像兔子一样快跑</td>
+      <td>He hared down the hill他在山上徘徊</td>
+      <td></td>
+      <td></td>
+      <td>[run]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hare</th>
+      <td>are</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>hɜr</td>
+      <td>['rabbit']</td>
+      <td></td>
+      <td>flesh of any of various rabbits or hares (wild or domesticated) eaten as food任何各种兔子或野兔（野生或驯养）作为食物食用的肉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[game]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hare</th>
+      <td>are</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>hɜr</td>
+      <td></td>
+      <td></td>
+      <td>swift timid long-eared mammal larger than a rabbit having a divided upper lip and long hind legs; young born furred and with open eyes快速胆小的长耳哺乳动物比上唇分开，后腿长的兔子大;年轻的毛茸茸，睁着眼睛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[leporid, leporid mammal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mare</th>
+      <td>are</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>'mɑreɪ</td>
+      <td>['maria']</td>
+      <td></td>
+      <td>a dark region of considerable extent on the surface of the moon月球表面相当大的黑暗区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[region, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mare</th>
+      <td>are</td>
+      <td>3.51</td>
+      <td>nou</td>
+      <td>'mɑreɪ</td>
+      <td>['female horse']</td>
+      <td></td>
+      <td>female equine animal雌性马动物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[horse, equus caballus]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

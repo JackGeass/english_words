@@ -1,0 +1,980 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['rock', 'lock', 'cock', 'dock', 'sock', 'mock', 'jock', 'hock', 'bock', 'pock', 'nock']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>rɑk</td>
+      <td>['shake', 'sway']</td>
+      <td></td>
+      <td>move back and forth or sideways来回移动或侧身移动</td>
+      <td>the ship was rocking船正在摇摆She rocked back and forth on her feet她在她的脚上来回摇晃</td>
+      <td>[rocker]</td>
+      <td>[sway]</td>
+      <td>[move back and forth]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>ver</td>
+      <td>rɑk</td>
+      <td>['sway']</td>
+      <td></td>
+      <td>cause to move back and forth导致来回移动</td>
+      <td>rock the cradle摇篮摇篮rock the baby摇滚宝宝</td>
+      <td>[rocker]</td>
+      <td>[sway, shake]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>rɑk</td>
+      <td>['rock candy']</td>
+      <td></td>
+      <td>hard bright-colored stick candy (typically flavored with peppermint)坚硬的鲜艳棒糖（通常用薄荷调味）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[candy, confect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>rɑk</td>
+      <td>['careen', 'sway', 'tilt']</td>
+      <td></td>
+      <td>pitching dangerously to one side危险地投球到一边</td>
+      <td></td>
+      <td>[rocky]</td>
+      <td></td>
+      <td>[lurch, pitch, pitching]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>rɑk</td>
+      <td>['stone']</td>
+      <td></td>
+      <td>material consisting of the aggregate of minerals like those making up the Earth's crust由构成地壳的矿物组成的物质组成的物质</td>
+      <td>that mountain is solid rock那座山是坚固的岩石</td>
+      <td></td>
+      <td></td>
+      <td>[stuff, material]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>rɑk</td>
+      <td>['john rock']</td>
+      <td></td>
+      <td>United States gynecologist and devout Catholic who conducted the first clinical trials of the oral contraceptive pill (1890-1984)美国妇科医生和虔诚的天主教徒进行了第一次口服避孕药的临床试验（1890-1984）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>rɑk</td>
+      <td>["rock'n'roll", 'rock-and-roll', "rock 'n' roll", 'rock and roll', 'rock music']</td>
+      <td></td>
+      <td>a genre of popular music originating in the 1950s; a blend of black rhythm-and-blues with white country-and-western源自20世纪50年代的流行音乐类型;融合了黑色的节奏和蓝调与白色的乡村和西部</td>
+      <td>rock is a generic term for the range of styles that evolved out of rock'n'roll.摇滚是摇滚乐演变而来的一系列风格的通称。</td>
+      <td></td>
+      <td></td>
+      <td>[popular music, popular music genre]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>rɑk</td>
+      <td>['stone']</td>
+      <td></td>
+      <td>a lump or mass of hard consolidated mineral matter块状或块状的硬质固结矿物质</td>
+      <td>he threw a rock at me他向我扔了一块石头</td>
+      <td>[rocky]</td>
+      <td></td>
+      <td>[natural object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rock</th>
+      <td>ock</td>
+      <td>5.01</td>
+      <td>nou</td>
+      <td>rɑk</td>
+      <td></td>
+      <td></td>
+      <td>(figurative) someone who is strong and stable and dependable（比喻）坚强，稳定，可靠的人</td>
+      <td>he was her rock during the crisis在危机期间他是她的摇滚乐Thou art Peter, and upon this rock I will build my church你是彼得，在这块石头上，我将建造我的教堂</td>
+      <td></td>
+      <td></td>
+      <td>[good person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td>['lock away', 'lock in', 'lock up', 'put away', 'shut away', 'shut up']</td>
+      <td></td>
+      <td>place in a place where something cannot be removed or someone cannot escape放置在无法移除或无法逃脱的地方</td>
+      <td>The parents locked her daughter up for the weekend父母把她的女儿锁在了周末She locked her jewels in the safe她把珠宝锁在保险箱里</td>
+      <td></td>
+      <td></td>
+      <td>[confine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td>['interlace', 'interlock']</td>
+      <td></td>
+      <td>hold in a locking position保持在锁定位置</td>
+      <td>He locked his hands around her neck他把双手抱在脖子上</td>
+      <td></td>
+      <td></td>
+      <td>[take hold, hold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td>['engage', 'mesh', 'operate']</td>
+      <td></td>
+      <td>keep engaged保持参与</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td>['interlock']</td>
+      <td></td>
+      <td>become engaged or intermeshed with one another彼此订婚或互相交往</td>
+      <td>They were locked in embrace他们被拥抱了</td>
+      <td></td>
+      <td></td>
+      <td>[squeeze, hug, bosom, embrace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td></td>
+      <td>[unlock]</td>
+      <td>become rigid or immoveable变得僵硬或不可动摇</td>
+      <td>The therapist noticed that the patient's knees tended to lock in this exercise治疗师注意到患者的膝盖倾向于锁定这项运动</td>
+      <td></td>
+      <td></td>
+      <td>[engage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td></td>
+      <td></td>
+      <td>build locks in order to facilitate the navigation of vessels建造锁以便于船只航行</td>
+      <td></td>
+      <td>[lockage]</td>
+      <td></td>
+      <td>[make, build, construct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td>, alos:['lock up']</td>
+      <td>[unlock]</td>
+      <td>fasten with a lock系好锁</td>
+      <td>lock the bike to the fence将自行车锁在围栏上</td>
+      <td>[locker]</td>
+      <td></td>
+      <td>[fasten, fix, secure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td></td>
+      <td></td>
+      <td>hold fast (in a certain state)保持快速（在某种状态下）</td>
+      <td>He was locked in a laughing fit他笑得很开心</td>
+      <td></td>
+      <td></td>
+      <td>[overcome, overpower, overtake, overwhelm, whelm, sweep over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>ver</td>
+      <td>lɑk</td>
+      <td></td>
+      <td></td>
+      <td>pass by means through a lock in a waterway通过水路锁定</td>
+      <td></td>
+      <td>[lockage]</td>
+      <td></td>
+      <td>[pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>lɑk</td>
+      <td>['ignition lock']</td>
+      <td></td>
+      <td>a restraint incorporated into the ignition switch to prevent the use of a vehicle by persons who do not have the key限制装置包含在点火开关中以防止没有钥匙的人使用车辆</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[restraint, constraint]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>lɑk</td>
+      <td>['lock chamber']</td>
+      <td></td>
+      <td>enclosure consisting of a section of canal that can be closed to control the water level; used to raise or lower vessels that pass through it由一段可以关闭以控制水位的运河组成的围栏;用来升高或降低通过它的船只</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enclosure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>lɑk</td>
+      <td>['curl', 'ringlet', 'whorl']</td>
+      <td></td>
+      <td>a strand or cluster of hair一缕头发</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hair]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>lɑk</td>
+      <td></td>
+      <td></td>
+      <td>a fastener fitted to a door or drawer to keep it firmly closed安装在门或抽屉上的紧固件，以使其牢固关闭</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fixing, fastening, holdfast, fastener]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>lɑk</td>
+      <td></td>
+      <td></td>
+      <td>a mechanism that detonates the charge of a gun引爆枪支的机制</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanism]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>lock</th>
+      <td>ock</td>
+      <td>4.71</td>
+      <td>nou</td>
+      <td>lɑk</td>
+      <td></td>
+      <td></td>
+      <td>any wrestling hold in which some part of the opponent's body is twisted or pressured任何摔跤举动，其中一部分对手的身体扭曲或受压</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wrestling hold]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>ver</td>
+      <td>kɑk</td>
+      <td>['prance', 'ruffle', 'sashay', 'strut', 'swagger', 'tittup']</td>
+      <td></td>
+      <td>to walk with a lofty proud gait, often in an attempt to impress others以高傲的步态行走，往往是为了给别人留下深刻的印象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>ver</td>
+      <td>kɑk</td>
+      <td></td>
+      <td></td>
+      <td>set the trigger of a firearm back for firing将枪械的扳机设置回来进行射击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pose, put, set, lay, place, position]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>ver</td>
+      <td>kɑk</td>
+      <td></td>
+      <td></td>
+      <td>tilt or slant to one side向一侧倾斜或倾斜</td>
+      <td>cock one's head公鸡的头</td>
+      <td></td>
+      <td></td>
+      <td>[tilt, cant, cant over, pitch, slant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>kɑk</td>
+      <td>['stopcock', 'turncock']</td>
+      <td></td>
+      <td>faucet consisting of a rotating device for regulating flow of a liquid龙头由用于调节液体流动的旋转装置组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spigot, faucet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>kɑk</td>
+      <td>['hammer']</td>
+      <td></td>
+      <td>the part of a gunlock that strikes the percussion cap when the trigger is pulled当扳机被拉动时，枪锁的一部分撞击撞击帽</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[striker]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>kɑk</td>
+      <td>['rooster']</td>
+      <td></td>
+      <td>adult male chicken成年雄性鸡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gallus gallus, chicken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>kɑk</td>
+      <td>['dick', 'pecker', 'prick', 'putz', 'shaft', 'tool']</td>
+      <td></td>
+      <td>obscene terms for penis阴茎的淫秽条款</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[phallus, member, penis]</td>
+      <td>[smut, dirty word, filth, obscenity, vulgarism]</td>
+    </tr>
+    <tr>
+      <th>cock</th>
+      <td>ock</td>
+      <td>4.37</td>
+      <td>nou</td>
+      <td>kɑk</td>
+      <td></td>
+      <td></td>
+      <td>adult male bird成年雄鸟</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bird]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>dɑk</td>
+      <td>['bob', 'tail']</td>
+      <td></td>
+      <td>remove or shorten the tail of an animal去除或缩短动物的尾巴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>dɑk</td>
+      <td></td>
+      <td>[undock]</td>
+      <td>come into dock进入码头</td>
+      <td>the ship docked船停靠了</td>
+      <td>[dockage, docker, docking]</td>
+      <td></td>
+      <td>[get in, enter, move into, go into, go in, get into, come in]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>dɑk</td>
+      <td></td>
+      <td></td>
+      <td>deduct from someone's wages从某人的工资中扣除</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[recoup, withhold, deduct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>dɑk</td>
+      <td></td>
+      <td></td>
+      <td>deprive someone of benefits, as a penalty剥夺某人的利益，作为惩罚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[deprive]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>ver</td>
+      <td>dɑk</td>
+      <td></td>
+      <td>[undock]</td>
+      <td>maneuver into a dock机动到码头</td>
+      <td>dock the ships停靠船只</td>
+      <td>[docking, docker]</td>
+      <td></td>
+      <td>[guide, head, manoeuver, manoeuvre, maneuver, direct, channelize, channelise, point, steer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>dɑk</td>
+      <td>['pier', 'wharf', 'wharfage']</td>
+      <td></td>
+      <td>a platform built out from the shore into the water and supported by piles; provides access to ships and boats一个从岸边建成水面并由桩支撑的平台;提供进入船只和船只的通道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>dɑk</td>
+      <td>['loading dock']</td>
+      <td></td>
+      <td>a platform where trucks or trains can be loaded or unloaded可以装载或卸载卡车或火车的平台</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[platform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>dɑk</td>
+      <td>['dockage', 'docking facility']</td>
+      <td></td>
+      <td>landing in a harbor next to a pier where ships are loaded and unloaded or repaired; may have gates to let water in or out在码头旁的港口降落，船舶装卸，修理;可能有大门让水进出</td>
+      <td>the ship arrived at the dock more than a day late这艘船迟到了一天多了</td>
+      <td></td>
+      <td></td>
+      <td>[landing place, landing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>dɑk</td>
+      <td>['bob', 'bobtail']</td>
+      <td></td>
+      <td>a short or shortened tail of certain animals某些动物的短尾或短尾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>dɑk</td>
+      <td>['sorrel', 'sour grass']</td>
+      <td></td>
+      <td>any of certain coarse weedy plants with long taproots, sometimes used as table greens or in folk medicine任何一种具有长根茎的粗杂草，有时用作餐桌绿色或民间医药</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[herbaceous plant, herb]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>dɑk</td>
+      <td></td>
+      <td></td>
+      <td>an enclosure in a court of law where the defendant sits during the trial被告在审判期间坐在法庭上的一个围栏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[enclosure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dock</th>
+      <td>ock</td>
+      <td>3.75</td>
+      <td>nou</td>
+      <td>dɑk</td>
+      <td></td>
+      <td></td>
+      <td>the solid bony part of the tail of an animal as distinguished from the hair动物尾巴的坚实骨骼部分，与头发不同</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[body part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sock</th>
+      <td>ock</td>
+      <td>3.73</td>
+      <td>ver</td>
+      <td>sɑk</td>
+      <td>['bash', 'bonk', 'bop', 'whap', 'whop']</td>
+      <td></td>
+      <td>hit hard用力打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sock</th>
+      <td>ock</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>sɑk</td>
+      <td>['air-sleeve', 'air sock', 'drogue', 'wind cone', 'wind sleeve', 'wind sock', 'windsock']</td>
+      <td></td>
+      <td>a truncated cloth cone mounted on a mast; used (e.g., at airports) to show the direction of the wind安装在桅杆上的截头布锥;用于（例如，在机场）以显示风的方向</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visual signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sock</th>
+      <td>ock</td>
+      <td>3.73</td>
+      <td>nou</td>
+      <td>sɑk</td>
+      <td></td>
+      <td></td>
+      <td>hosiery consisting of a cloth covering for the foot; worn inside the shoe; reaches to between the ankle and the knee袜子包括脚的布料;穿在鞋子里面;到达脚踝和膝盖之间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hosiery, hose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mock</th>
+      <td>ock</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>mɑk</td>
+      <td>['bemock']</td>
+      <td></td>
+      <td>treat with contempt鄙视地对待</td>
+      <td>The new constitution mocks all democratic principles新宪法嘲笑所有民主原则</td>
+      <td>[mocker, mockery]</td>
+      <td></td>
+      <td>[treat, handle, do by]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mock</th>
+      <td>ock</td>
+      <td>3.69</td>
+      <td>ver</td>
+      <td>mɑk</td>
+      <td></td>
+      <td></td>
+      <td>imitate with mockery and derision用嘲弄和嘲笑来模仿</td>
+      <td>The children mocked their handicapped classmate孩子们嘲笑他们残疾的同学</td>
+      <td>[mocker]</td>
+      <td></td>
+      <td>[imitate, copy, simulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mock</th>
+      <td>ock</td>
+      <td>3.69</td>
+      <td>nou</td>
+      <td>mɑk</td>
+      <td></td>
+      <td></td>
+      <td>the act of mocking or ridiculing嘲笑或嘲笑的行为</td>
+      <td>they made a mock of him他们嘲笑他</td>
+      <td></td>
+      <td></td>
+      <td>[derision, ridicule]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mock</th>
+      <td>ock</td>
+      <td>3.69</td>
+      <td>adj</td>
+      <td>mɑk</td>
+      <td>, similarTo:['imitative', 'counterfeit']</td>
+      <td></td>
+      <td>constituting a copy or imitation of something构成某事的副本或模仿</td>
+      <td>boys in mock battle男孩们在模拟战斗中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jock</th>
+      <td>ock</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>dʒɑk</td>
+      <td>['athlete']</td>
+      <td></td>
+      <td>a person trained to compete in sports受过训练以参加体育比赛的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[contestant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>jock</th>
+      <td>ock</td>
+      <td>3.55</td>
+      <td>nou</td>
+      <td>dʒɑk</td>
+      <td>['athletic supporter', 'jockstrap', 'supporter', 'suspensor']</td>
+      <td></td>
+      <td>a support for the genitals worn by men engaging in strenuous exercise支持男性从事剧烈运动所穿的生殖器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protective garment, man's clothing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hock</th>
+      <td>ock</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>hɑk</td>
+      <td>['pawn', 'soak']</td>
+      <td></td>
+      <td>leave as a guarantee in return for money留下作为保证以换取金钱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[charge, consign]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hock</th>
+      <td>ock</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td>hɑk</td>
+      <td></td>
+      <td></td>
+      <td>disable by cutting the hock通过切割飞节来禁用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[invalid, disable, handicap, incapacitate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hock</th>
+      <td>ock</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>hɑk</td>
+      <td>['rhenish', 'rhine wine']</td>
+      <td></td>
+      <td>any of several white wines from the Rhine River valley in Germany (`hock' is British usage)来自德国莱茵河流域的几种白葡萄酒中的任何一种（'hock'是英国用的）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[white wine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hock</th>
+      <td>ock</td>
+      <td>3.12</td>
+      <td>nou</td>
+      <td>hɑk</td>
+      <td>['hock-joint']</td>
+      <td></td>
+      <td>tarsal joint of the hind leg of hoofed mammals; corresponds to the human ankle有蹄哺乳动物后腿的t骨关节;对应于人的脚踝</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[articulatio, joint, articulation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bock</th>
+      <td>ock</td>
+      <td>2.75</td>
+      <td>nou</td>
+      <td>bɑk</td>
+      <td>['bock beer']</td>
+      <td></td>
+      <td>a very strong lager traditionally brewed in the fall and aged through the winter for consumption in the spring一种非常浓郁的啤酒，传统上在秋季酿造，并在冬季老化，供春季食用</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lager, lager beer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pock</th>
+      <td>ock</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>pɑk</td>
+      <td>['mark', 'pit', 'scar']</td>
+      <td></td>
+      <td>mark with a scar留下疤痕</td>
+      <td></td>
+      <td></td>
+      <td>[score, mark, nock]</td>
+      <td>[deface, blemish, disfigure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pock</th>
+      <td>ock</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>pɑk</td>
+      <td></td>
+      <td></td>
+      <td>a pustule in an eruptive disease爆发性疾病的脓包</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[pustule]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nock</th>
+      <td>ock</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>nɑk</td>
+      <td>['mark', 'score']</td>
+      <td></td>
+      <td>make small marks into the surface of在表面上留下小痕迹</td>
+      <td></td>
+      <td></td>
+      <td>[scar, mark, pit, pock]</td>
+      <td>[notch]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

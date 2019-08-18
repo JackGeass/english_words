@@ -1,0 +1,575 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['six', 'fix', 'mix', 'dix', 'nix', 'pix']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>six</th>
+      <td>ix</td>
+      <td>5.24</td>
+      <td>nou</td>
+      <td>sɪks</td>
+      <td>['6', 'captain hicks', 'half a dozen', 'hexad', 'sestet', 'sextet', 'sextuplet', 'sise', 'sixer', 'vi']</td>
+      <td></td>
+      <td>the cardinal number that is the sum of five and one基数是五和一的总和</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[figure, digit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>six</th>
+      <td>ix</td>
+      <td>5.24</td>
+      <td>nou</td>
+      <td>sɪks</td>
+      <td>['six-spot']</td>
+      <td></td>
+      <td>a playing card or domino or die whose upward face shows six pips一张扑克牌或多米诺骨牌或骰子，其上面显示六点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[domino, die, dice, spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>six</th>
+      <td>ix</td>
+      <td>5.24</td>
+      <td>adj</td>
+      <td>sɪks</td>
+      <td>['6', 'half-dozen', 'half dozen', 'vi'], similarTo:['cardinal']</td>
+      <td></td>
+      <td>denoting a quantity consisting of six items or units表示由六个项目或单元组成的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['bushel', 'doctor', 'furbish up', 'mend', 'repair', 'restore', 'touch on']</td>
+      <td></td>
+      <td>restore by replacing a part or putting together what is torn or broken通过更换零件或将撕裂或破损的东西放在一起来恢复</td>
+      <td></td>
+      <td>[fixing, fixture, fixer]</td>
+      <td></td>
+      <td>[ameliorate, amend, improve, meliorate, better]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['deposit', 'posit', 'situate']</td>
+      <td></td>
+      <td>put (something somewhere) firmly把（某事）放在一边</td>
+      <td>fix your eyes on this spot把目光锁定在这个位置</td>
+      <td></td>
+      <td></td>
+      <td>[set, position, place, put, lay, pose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['desex', 'desexualise', 'desexualize', 'sterilise', 'sterilize', 'unsex']</td>
+      <td></td>
+      <td>make infertile使不孕</td>
+      <td></td>
+      <td>[fixing]</td>
+      <td></td>
+      <td>[operate, operate on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['define', 'determine', 'limit', 'set', 'specify']</td>
+      <td></td>
+      <td>decide upon or fix definitely明确决定或解决</td>
+      <td>fix the variables修复变量</td>
+      <td></td>
+      <td></td>
+      <td>[take, pick out, choose, select]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['gear up', 'prepare', 'ready', 'set', 'set up']</td>
+      <td></td>
+      <td>make ready or suitable or equip in advance for a particular purpose or for some use, event, etc为特定目的或某些用途，事件等提前准备或适合或装备</td>
+      <td>I was fixing to leave town after I paid the hotel bill在我支付酒店账单后，我正准备离开城镇</td>
+      <td></td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['get', 'pay back', 'pay off']</td>
+      <td></td>
+      <td>take vengeance on or get even复仇或平息</td>
+      <td>That'll fix him good!这对他有好处！</td>
+      <td></td>
+      <td>[pay]</td>
+      <td>[get even, get back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['cook', 'make', 'prepare', 'ready']</td>
+      <td></td>
+      <td>prepare for eating by applying heat通过加热准备进食</td>
+      <td>fix breakfast for the guests, please请为客人准备早餐</td>
+      <td></td>
+      <td>[make]</td>
+      <td>[create from raw material, create from raw stuff]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['fasten', 'secure']</td>
+      <td></td>
+      <td>cause to be firmly attached因为坚定地依附</td>
+      <td>she fixed her gaze on the man她把目光锁定在那个男人身上</td>
+      <td>[fixture]</td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td>['fixate']</td>
+      <td></td>
+      <td>make fixed, stable or stationary使固定，稳定或静止</td>
+      <td>let's fix the picture to the frame让我们将图片固定到框架上</td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td></td>
+      <td></td>
+      <td>influence an event or its outcome by illegal means通过非法手段影响事件或其结果</td>
+      <td>fix a race修一场比赛</td>
+      <td></td>
+      <td></td>
+      <td>[act upon, influence, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td></td>
+      <td></td>
+      <td>kill, preserve, and harden (tissue) in order to prepare for microscopic study杀死，保存和硬化（组织），以准备进行显微镜研究</td>
+      <td></td>
+      <td>[fixing]</td>
+      <td></td>
+      <td>[set, set up, gear up, ready, prepare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>ver</td>
+      <td>fɪks</td>
+      <td></td>
+      <td></td>
+      <td>set or place definitely明确地设置或放置</td>
+      <td>Let's fix the date for the party!我们来确定派对的日期吧！</td>
+      <td></td>
+      <td></td>
+      <td>[institute, constitute, plant, found, establish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>fɪks</td>
+      <td>['localisation', 'localization', 'locating', 'location']</td>
+      <td></td>
+      <td>a determination of the place where something is确定某物的位置</td>
+      <td>he got a good fix on the target他对目标有了很好的解决方案</td>
+      <td></td>
+      <td></td>
+      <td>[determination, finding]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>fɪks</td>
+      <td>['hole', 'jam', 'kettle of fish', 'mess', 'muddle', 'pickle']</td>
+      <td></td>
+      <td>informal terms for a difficult situation困难局面的非正式用语</td>
+      <td>he got into a terrible fix他陷入了可怕的困境</td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>fɪks</td>
+      <td>['fixing', 'fixture', 'mend', 'mending', 'repair', 'reparation']</td>
+      <td></td>
+      <td>the act of putting something in working order again将某物再次运转起来的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[improvement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>fɪks</td>
+      <td></td>
+      <td></td>
+      <td>an exemption granted after influence (e.g., money) is brought to bear在影响（例如金钱）之后授予的豁免</td>
+      <td>collusion resulted in tax fixes for gamblers共谋导致赌徒的税务修复</td>
+      <td></td>
+      <td></td>
+      <td>[granting immunity, exemption, immunity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fix</th>
+      <td>ix</td>
+      <td>4.89</td>
+      <td>nou</td>
+      <td>fɪks</td>
+      <td></td>
+      <td></td>
+      <td>something craved, especially an intravenous injection of a narcotic drug渴望的东西，特别是静脉注射麻醉药</td>
+      <td>she needed a fix of chocolate她需要一块巧克力</td>
+      <td></td>
+      <td></td>
+      <td>[intravenous injection]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mɪks</td>
+      <td>['desegregate', 'integrate']</td>
+      <td></td>
+      <td>open (a place) to members of all races and ethnic groups向所有种族和民族的成员开放（一个地方）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mɪks</td>
+      <td>['ruffle', 'shuffle']</td>
+      <td></td>
+      <td>mix so as to make a random order or arrangement混合以便做出随机的顺序或安排</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[manipulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mɪks</td>
+      <td>['amalgamate', 'commix', 'mingle', 'unify']</td>
+      <td></td>
+      <td>to bring or combine together or with something else携带或组合在一起或与其他东西结合在一起</td>
+      <td></td>
+      <td>[mixture, mixing]</td>
+      <td></td>
+      <td>[change, alter, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mɪks</td>
+      <td>['blend', 'coalesce', 'combine', 'commingle', 'conflate', 'flux', 'fuse', 'immix', 'meld', 'merge'], alos:['mix up']</td>
+      <td></td>
+      <td>mix together different elements混合不同的元素</td>
+      <td></td>
+      <td>[mixable, mixer, mixture]</td>
+      <td></td>
+      <td>[change integrity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mɪks</td>
+      <td>['mix in']</td>
+      <td></td>
+      <td>add as an additional element or part添加为附加元素或部分</td>
+      <td>mix water into the drink将水混入饮料中</td>
+      <td>[mixture, mixing, mixable]</td>
+      <td></td>
+      <td>[add]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mɪks</td>
+      <td></td>
+      <td></td>
+      <td>combine (electronic signals)组合（电子信号）</td>
+      <td>mixing sounds混音</td>
+      <td>[mixable, mixer, mixing]</td>
+      <td></td>
+      <td>[compound, combine]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mɪks</td>
+      <td>['premix']</td>
+      <td></td>
+      <td>a commercially prepared mixture of dry ingredients商业上制备的干成分混合物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[intermixture, concoction, mixture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mɪks</td>
+      <td>['admixture', 'commixture', 'intermixture', 'mixing', 'mixture']</td>
+      <td></td>
+      <td>the act of mixing together混合在一起的行为</td>
+      <td>paste made by a mix of flour and water由面粉和水混合制成的糊状物the mixing of sound channels in the recording studio录音室中混合声道</td>
+      <td></td>
+      <td></td>
+      <td>[combination, compounding, combining]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mix</th>
+      <td>ix</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mɪks</td>
+      <td>['mixture']</td>
+      <td></td>
+      <td>an event that combines things in a mixture将事物混合在一起的事件</td>
+      <td>a gradual mixture of cultures逐渐混合的文化</td>
+      <td></td>
+      <td></td>
+      <td>[combine, combining]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dix</th>
+      <td>ix</td>
+      <td>3.03</td>
+      <td>nou</td>
+      <td>dɪks</td>
+      <td>['dorothea dix', 'dorothea lynde dix']</td>
+      <td></td>
+      <td>United States social reformer who pioneered in the reform of prisons and in the treatment of the mentally ill; superintended women army nurses during the American Civil War (1802-1887)美国社会改革者，在改革监狱和治疗精神病患者方面开创先河;美国内战期间监督妇女的军队护士（1802-1887）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nix</th>
+      <td>ix</td>
+      <td>2.72</td>
+      <td>ver</td>
+      <td>nɪks</td>
+      <td>['disallow', 'forbid', 'interdict', 'prohibit', 'proscribe', 'veto']</td>
+      <td></td>
+      <td>command against命令反对</td>
+      <td>Dad nixed our plans爸爸捏了我们的计划</td>
+      <td></td>
+      <td></td>
+      <td>[require, command]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>nix</th>
+      <td>ix</td>
+      <td>2.72</td>
+      <td>nou</td>
+      <td>nɪks</td>
+      <td>['aught', 'cipher', 'cypher', 'goose egg', 'nada', 'naught', 'nil', 'nothing', 'null', 'zero', 'zilch', 'zip', 'zippo']</td>
+      <td></td>
+      <td>a quantity of no importance一点不重要</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[relative quantity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pix</th>
+      <td>ix</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>pɪks</td>
+      <td>['pix chest', 'pyx', 'pyx chest']</td>
+      <td></td>
+      <td>a chest in which coins from the mint are held to await assay一个胸部，薄荷中的硬币被等待测试</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[chest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pix</th>
+      <td>ix</td>
+      <td>2.56</td>
+      <td>nou</td>
+      <td>pɪks</td>
+      <td>['pyx']</td>
+      <td></td>
+      <td>any receptacle in which wafers for the Eucharist are kept保存圣餐的晶圆的任何容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[receptacle]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

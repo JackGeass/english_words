@@ -1,0 +1,320 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['mask', 'task', 'bask', 'cask']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td>['block out']</td>
+      <td></td>
+      <td>shield from light避光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td>['cloak', 'dissemble']</td>
+      <td></td>
+      <td>hide under a false appearance躲在虚假的外表下</td>
+      <td>He masked his disappointment他掩饰了他的失望</td>
+      <td>[masking]</td>
+      <td></td>
+      <td>[disguise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td>['disguise']</td>
+      <td></td>
+      <td>make unrecognizable变得无法辨认</td>
+      <td>The herb masks the garlic taste这种草药掩盖了大蒜的味道</td>
+      <td></td>
+      <td></td>
+      <td>[hide, conceal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>cover with a sauce盖上酱汁</td>
+      <td>mask the meat掩盖肉</td>
+      <td></td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæsk</td>
+      <td></td>
+      <td>[unmask]</td>
+      <td>put a mask on or cover with a mask戴上面具或用面具盖上面具</td>
+      <td></td>
+      <td>[masker]</td>
+      <td></td>
+      <td>[cover]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td>['masque', 'masquerade', 'masquerade party']</td>
+      <td></td>
+      <td>a party of guests wearing costumes and masks一队穿着戏服和面具的客人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[party]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>a covering to disguise or conceal the face用于掩饰或隐藏脸部的遮盖物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[covering, disguise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>activity that tries to conceal something试图隐瞒某事的活动</td>
+      <td>no mask could conceal his ignorance没有面具可以掩饰他的无知they moved in under a mask of friendship他们在友谊的面具下搬进来</td>
+      <td></td>
+      <td></td>
+      <td>[hiding, concealment, concealing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mask</th>
+      <td>ask</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæsk</td>
+      <td></td>
+      <td></td>
+      <td>a protective covering worn over the face一个戴在脸上的防护罩</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protection, protective cover, protective covering]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>ask</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>tæsk</td>
+      <td>['tax']</td>
+      <td></td>
+      <td>use to the limit使用到极限</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[extend, strain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>ask</td>
+      <td>4.27</td>
+      <td>ver</td>
+      <td>tæsk</td>
+      <td></td>
+      <td></td>
+      <td>assign a task to将任务分配给</td>
+      <td>I tasked him with looking after the children我责成他照顾孩子们</td>
+      <td></td>
+      <td></td>
+      <td>[delegate, assign, designate, depute]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>ask</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>tæsk</td>
+      <td>['chore', 'job']</td>
+      <td></td>
+      <td>a specific piece of work required to be done as a duty or for a specific fee作为职责或特定费用需要完成的特定工作</td>
+      <td>the endless task of classifying the samples分类样品的无穷无尽的任务</td>
+      <td></td>
+      <td></td>
+      <td>[duty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>task</th>
+      <td>ask</td>
+      <td>4.27</td>
+      <td>nou</td>
+      <td>tæsk</td>
+      <td>['labor', 'project', 'undertaking']</td>
+      <td></td>
+      <td>any piece of work that is undertaken or attempted任何进行或尝试的工作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bask</th>
+      <td>ask</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>bæsk</td>
+      <td>['enjoy', 'relish', 'savor', 'savour']</td>
+      <td></td>
+      <td>derive or receive pleasure from; get enjoyment from; take pleasure in从中得到或得到快乐;得到享受;很高兴</td>
+      <td>She relished her fame and basked in her glory她很享受自己的名声并沉浸在她的荣耀之中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bask</th>
+      <td>ask</td>
+      <td>2.73</td>
+      <td>ver</td>
+      <td>bæsk</td>
+      <td></td>
+      <td></td>
+      <td>be exposed暴露</td>
+      <td>The seals were basking in the sun海豹在阳光下晒太阳</td>
+      <td></td>
+      <td></td>
+      <td>[lie]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cask</th>
+      <td>ask</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>kæsk</td>
+      <td>['barrel']</td>
+      <td></td>
+      <td>a cylindrical container that holds liquids一个容纳液体的圆柱形容器</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[vessel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>cask</th>
+      <td>ask</td>
+      <td>1.82</td>
+      <td>nou</td>
+      <td>kæsk</td>
+      <td>['caskful']</td>
+      <td></td>
+      <td>the quantity a cask will hold一个木桶的数量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[containerful]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

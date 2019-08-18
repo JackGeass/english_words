@@ -1,0 +1,695 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['house', 'mouse', 'louse', 'douse', 'rouse', 'souse']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>ver</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td>['domiciliate', 'put up']</td>
+      <td></td>
+      <td>provide housing for提供住房</td>
+      <td>The immigrants were housed in a new development outside the town移民被安置在镇外的一个新发展中</td>
+      <td>[housing]</td>
+      <td></td>
+      <td>[shelter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>ver</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>contain or cover包含或覆盖</td>
+      <td>This box houses the gears这个盒子装有齿轮</td>
+      <td>[housing]</td>
+      <td></td>
+      <td>[admit, hold, accommodate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td>['family', 'home', 'household', 'menage']</td>
+      <td></td>
+      <td>a social unit living together一个共同生活的社会单位</td>
+      <td>It was a good Christian household这是一个很好的基督徒家庭I waited until the whole house was asleep我一直等到整个房子都睡着了</td>
+      <td></td>
+      <td></td>
+      <td>[unit, social unit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td>['business firm', 'firm']</td>
+      <td></td>
+      <td>the members of a business organization that owns or operates one or more establishments拥有或经营一个或多个企业的商业组织的成员</td>
+      <td>he worked for a brokerage house他在一家经纪公司工作</td>
+      <td></td>
+      <td></td>
+      <td>[business organisation, business, business concern, concern, business organization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td>['mansion', 'planetary house', 'sign', 'sign of the zodiac', 'star sign']</td>
+      <td></td>
+      <td>(astrology) one of 12 equal areas into which the zodiac is divided（占星术）十二生肖被划分的12个相等区域之一</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[region, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td>['theater', 'theatre']</td>
+      <td></td>
+      <td>a building where theatrical performances or motion-picture shows can be presented可以呈现戏剧表演或电影放映的建筑物</td>
+      <td>the house was full房子满了</td>
+      <td></td>
+      <td></td>
+      <td>[edifice, building]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>a building in which something is sheltered or located建筑物，其中的东西被庇护或定位</td>
+      <td>they had a large carriage house他们有一个大马车房</td>
+      <td></td>
+      <td></td>
+      <td>[building, edifice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>a dwelling that serves as living quarters for one or more families住宅，作为一个或多个家庭的生活区</td>
+      <td>he has a house on Cape Cod他在科德角有一所房子she felt she had to get out of the house她觉得她不得不离开家</td>
+      <td></td>
+      <td></td>
+      <td>[building, abode, habitation, home, domicile, edifice, dwelling house, dwelling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>an official assembly having legislative powers具有立法权的官方集会</td>
+      <td>a bicameral legislature has two houses两院制立法机构有两所房子</td>
+      <td></td>
+      <td></td>
+      <td>[legislative assembly, general assembly, legislative body, law-makers, legislature]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>aristocratic family line贵族家族</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[phratry, kinsfolk, kinfolk, sept, family, family line, folk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>play in which children take the roles of father or mother or children and pretend to interact like adults孩子扮演父亲或母亲或孩子的角色并假装像成年人一样互动的游戏</td>
+      <td>the children were playing house孩子们在玩房子</td>
+      <td></td>
+      <td></td>
+      <td>[play, child's play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>the audience gathered together in a theatre or cinema观众聚集在剧院或电影院</td>
+      <td>the house applauded房子鼓掌he counted the house他数着房子</td>
+      <td></td>
+      <td></td>
+      <td>[audience]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>the management of a gambling house or casino赌场或赌场的管理</td>
+      <td>the house gets a percentage of every bet房子获得每次下注的百分比</td>
+      <td></td>
+      <td></td>
+      <td>[management]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>house</th>
+      <td>ouse</td>
+      <td>5.73</td>
+      <td>nou</td>
+      <td>haʊs, noun:haʊs, verb:haʊz</td>
+      <td></td>
+      <td></td>
+      <td>the members of a religious community living together共同生活的宗教团体的成员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[community]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mouse</th>
+      <td>ouse</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæʊs</td>
+      <td>['creep', 'pussyfoot', 'sneak']</td>
+      <td></td>
+      <td>to go stealthily or furtively悄悄或偷偷摸摸地走</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mouse</th>
+      <td>ouse</td>
+      <td>4.29</td>
+      <td>ver</td>
+      <td>mæʊs</td>
+      <td></td>
+      <td></td>
+      <td>manipulate the mouse of a computer操纵计算机的鼠标</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[manipulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mouse</th>
+      <td>ouse</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæʊs</td>
+      <td>['black eye', 'shiner']</td>
+      <td></td>
+      <td>a swollen bruise caused by a blow to the eye眼睛受到打击引起的肿胀瘀伤</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bruise, contusion]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mouse</th>
+      <td>ouse</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæʊs</td>
+      <td>['computer mouse']</td>
+      <td></td>
+      <td>a hand-operated electronic device that controls the coordinates of a cursor on your computer screen as you move it around on a pad; on the bottom of the device is a ball that rolls on the surface of the pad手动操作的电子设备，当您在打击垫上移动时控制计算机屏幕上光标的坐标;在装置的底部是一个在垫子表面上滚动的球</td>
+      <td>a mouse takes much more room than a trackball鼠标比轨迹球占用更多的空间</td>
+      <td></td>
+      <td></td>
+      <td>[electronic device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mouse</th>
+      <td>ouse</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæʊs</td>
+      <td></td>
+      <td></td>
+      <td>any of numerous small rodents typically resembling diminutive rats having pointed snouts and small ears on elongated bodies with slender usually hairless tails许多小型啮齿动物中的任何一种，通常类似于小型老鼠，尖细的鼻子和细长的身体上的小耳朵，通常有无毛的细长尾巴</td>
+      <td></td>
+      <td>[mousey, mousy]</td>
+      <td></td>
+      <td>[gnawer, rodent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mouse</th>
+      <td>ouse</td>
+      <td>4.29</td>
+      <td>nou</td>
+      <td>mæʊs</td>
+      <td></td>
+      <td></td>
+      <td>person who is quiet or timid安静或胆小的人</td>
+      <td></td>
+      <td>[mousey, mousy]</td>
+      <td></td>
+      <td>[mortal, somebody, someone, soul, individual, person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>louse</th>
+      <td>ouse</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>laʊs</td>
+      <td>['sucking louse']</td>
+      <td></td>
+      <td>wingless usually flattened bloodsucking insect parasitic on warm-blooded animals无翅通常被压扁的吸血昆虫寄生在温血动物身上</td>
+      <td></td>
+      <td>[lousy]</td>
+      <td></td>
+      <td>[insect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>louse</th>
+      <td>ouse</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>laʊs</td>
+      <td>['bird louse', 'biting louse']</td>
+      <td></td>
+      <td>wingless insect with mouth parts adapted for biting; mostly parasitic on birds无翅昆虫，嘴部适合咬人;主要寄生于鸟类</td>
+      <td></td>
+      <td>[lousy]</td>
+      <td></td>
+      <td>[insect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>louse</th>
+      <td>ouse</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>laʊs</td>
+      <td>['plant louse']</td>
+      <td></td>
+      <td>any of several small insects especially aphids that feed by sucking the juices from plants任何一种小型昆虫，特别是蚜虫，通过从植物中吸取汁液来喂养</td>
+      <td></td>
+      <td>[lousy]</td>
+      <td></td>
+      <td>[homopterous insect, homopteran]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>louse</th>
+      <td>ouse</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>laʊs</td>
+      <td>['dirt ball', 'insect', 'worm']</td>
+      <td></td>
+      <td>a person who has a nasty or unethical character undeserving of respect具有讨厌或不道德品质的人，不值得尊重</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[disagreeable person, unpleasant person]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>douse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['dowse']</td>
+      <td></td>
+      <td>slacken放松</td>
+      <td>douse a rope掏出一根绳子</td>
+      <td></td>
+      <td></td>
+      <td>[remit, slacken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>douse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['put out']</td>
+      <td></td>
+      <td>put out, as of a candle or a light熄灭，如蜡烛或灯光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[quench, blow out, snuff out, extinguish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>douse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['dowse', 'drench', 'soak', 'sop', 'souse']</td>
+      <td></td>
+      <td>cover with liquid; pour liquid onto盖上液体;倒入液体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>douse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['dip', 'dunk', 'plunge', 'souse']</td>
+      <td></td>
+      <td>immerse briefly into a liquid so as to wet, coat, or saturate将液体短暂浸入液体中，以便润湿，涂抹或饱和</td>
+      <td></td>
+      <td>[dousing]</td>
+      <td></td>
+      <td>[plunge, immerse]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>douse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['dip', 'duck']</td>
+      <td></td>
+      <td>dip into a liquid浸入液体中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dunk, souse, dip, plunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>douse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td>['dowse']</td>
+      <td></td>
+      <td>wet thoroughly彻底弄湿了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>douse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>daʊs</td>
+      <td></td>
+      <td></td>
+      <td>lower quickly快点降低</td>
+      <td>douse a sail扑救风帆</td>
+      <td></td>
+      <td></td>
+      <td>[furl, roll up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>rɔss</td>
+      <td>['agitate', 'charge', 'charge up', 'commove', 'excite', 'turn on']</td>
+      <td></td>
+      <td>cause to be agitated, excited, or roused引起激动，兴奋或激动</td>
+      <td></td>
+      <td>[rousing]</td>
+      <td></td>
+      <td>[disturb, upset, trouble]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>rɔss</td>
+      <td>['bestir']</td>
+      <td></td>
+      <td>become active变得活跃</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, be active]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>rɔss</td>
+      <td>['arouse', 'awaken', 'wake', 'wake up', 'waken']</td>
+      <td></td>
+      <td>cause to become awake or conscious导致变得清醒或有意识</td>
+      <td>He was roused by the drunken men in the street他被街上醉酒的男人叫醒了</td>
+      <td>[rouser]</td>
+      <td></td>
+      <td>[alter, change, modify]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rouse</th>
+      <td>ouse</td>
+      <td>2.83</td>
+      <td>ver</td>
+      <td>rɔss</td>
+      <td>['drive out', 'force out', 'rout out']</td>
+      <td></td>
+      <td>force or drive out强迫或赶走</td>
+      <td></td>
+      <td></td>
+      <td>[drive out, run off, drive off, turn back, chase away, drive away, dispel]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>souse</th>
+      <td>ouse</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>saʊs</td>
+      <td>['hit it up', 'inebriate', 'soak']</td>
+      <td></td>
+      <td>become drunk or drink excessively变得醉酒或过度饮酒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[booze, hit the bottle, fuddle, drink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>souse</th>
+      <td>ouse</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>saʊs</td>
+      <td>['douse', 'dowse', 'drench', 'soak', 'sop']</td>
+      <td></td>
+      <td>cover with liquid; pour liquid onto盖上液体;倒入液体</td>
+      <td>souse water on his hot face在他热辣的脸上喝水</td>
+      <td>[sousing]</td>
+      <td></td>
+      <td>[wet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>souse</th>
+      <td>ouse</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>saʊs</td>
+      <td>['dip', 'douse', 'dunk', 'plunge']</td>
+      <td></td>
+      <td>immerse briefly into a liquid so as to wet, coat, or saturate将液体短暂浸入液体中，以便润湿，涂抹或饱和</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[immerse, plunge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>souse</th>
+      <td>ouse</td>
+      <td>2.27</td>
+      <td>ver</td>
+      <td>saʊs</td>
+      <td></td>
+      <td></td>
+      <td>cook in a marinade在腌料中煮</td>
+      <td>souse herrings鲱鱼</td>
+      <td></td>
+      <td></td>
+      <td>[cook]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>souse</th>
+      <td>ouse</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>saʊs</td>
+      <td>['alcoholic', 'alky', 'boozer', 'dipsomaniac', 'lush', 'soaker']</td>
+      <td></td>
+      <td>a person who drinks alcohol to excess habitually一个习惯性饮酒过量的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rummy, wino, drunk, drunkard, inebriate, sot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>souse</th>
+      <td>ouse</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>saʊs</td>
+      <td>['drenching', 'soaking', 'sousing']</td>
+      <td></td>
+      <td>the act of making something completely wet使某物完全变湿的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wetting]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>souse</th>
+      <td>ouse</td>
+      <td>2.27</td>
+      <td>nou</td>
+      <td>saʊs</td>
+      <td></td>
+      <td></td>
+      <td>pork trimmings chopped and pickled and jelled猪肉切碎切碎，腌制和剁碎</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sausage]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,935 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['pink', 'sink', 'link', 'wink', 'rink', 'mink', 'tink', 'dink', 'fink', 'kink', 'inky']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>pink</th>
+      <td>ink</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>pɪŋk</td>
+      <td>['knock', 'rap', 'tap']</td>
+      <td></td>
+      <td>make light, repeated taps on a surface在表面上轻轻重复点击</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>ink</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>pɪŋk</td>
+      <td>['knock', 'ping']</td>
+      <td></td>
+      <td>sound like a car engine that is firing too early听起来像汽车引擎过早发射</td>
+      <td>The car pinked when the ignition was too far retarded当点火速度太迟时，汽车会变粉红</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>ink</td>
+      <td>4.35</td>
+      <td>ver</td>
+      <td>pɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>cut in a zigzag pattern with pinking shears, in sewing用缝制的粉红色剪刀切割成锯齿形图案</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cut]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>ink</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>pɪŋk</td>
+      <td>['pinko']</td>
+      <td></td>
+      <td>a person with mildly leftist political views一个有轻微左翼政治观点的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[left-winger, collectivist, leftist]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>ink</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>pɪŋk</td>
+      <td>['garden pink']</td>
+      <td></td>
+      <td>any of various flowers of plants of the genus Dianthus cultivated for their fragrant flowers石竹属植物的各种花卉，为其芬芳的花朵栽培</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flower]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>ink</td>
+      <td>4.35</td>
+      <td>nou</td>
+      <td>pɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a light shade of red浅红色</td>
+      <td></td>
+      <td>[pinkify]</td>
+      <td></td>
+      <td>[spectral color, chromatic colour, chromatic color, spectral colour]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>pink</th>
+      <td>ink</td>
+      <td>4.35</td>
+      <td>adj</td>
+      <td>pɪŋk</td>
+      <td>['pinkish'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of a light shade of red浅红色的</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['fall off', 'slump']</td>
+      <td></td>
+      <td>fall heavily or suddenly; decline markedly严重或突然跌倒;显着下降</td>
+      <td></td>
+      <td></td>
+      <td>[drop, drop down]</td>
+      <td>[drop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['dip']</td>
+      <td></td>
+      <td>appear to move downward似乎向下移动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[decline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['drop', 'drop down']</td>
+      <td></td>
+      <td>fall or descend to a lower place or level跌倒或下降到较低的地方或水平</td>
+      <td></td>
+      <td></td>
+      <td>[drop, fall off, slump]</td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['go down', 'go under', 'settle'], alos:['sink in']</td>
+      <td>[float]</td>
+      <td>go under走了</td>
+      <td></td>
+      <td>[sinker, sinking]</td>
+      <td></td>
+      <td>[fall, come down, go down, descend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['lapse', 'pass']</td>
+      <td></td>
+      <td>pass into a specified state or condition进入指定的状态或条件</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['slide down', 'slump']</td>
+      <td></td>
+      <td>fall or sink heavily摔倒或下沉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[give way, break, cave in, collapse, fall in, founder, give]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['bury']</td>
+      <td></td>
+      <td>embed deeply深深嵌入</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[imbed, plant, embed, implant, engraft]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td>['subside']</td>
+      <td></td>
+      <td>descend into or as if into some soft substance or place进入或仿佛进入一些柔软的物质或地方</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fall, come down, descend, go down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>ver</td>
+      <td>sɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>cause to sink导致下沉</td>
+      <td></td>
+      <td></td>
+      <td>[settle, go under, go down]</td>
+      <td>[displace, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td>['sinkhole', 'swallow hole']</td>
+      <td></td>
+      <td>a depression in the ground communicating with a subterranean passage (especially in limestone) and formed by solution or by collapse of a cavern roof地下凹陷与地下通道（特别是石灰岩）连通并通过溶液或洞室顶板坍塌形成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[natural depression, depression]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td>['cesspit', 'cesspool', 'sump']</td>
+      <td></td>
+      <td>a covered cistern; waste water and sewage flow into it一个有盖的蓄水池;废水和污水流入其中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cistern]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>plumbing fixture consisting of a water basin fixed to a wall or floor and having a drainpipe卫生设备包括固定在墙壁或地板上的水盆，并配有排水管</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plumbing fixture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>sink</th>
+      <td>ink</td>
+      <td>4.17</td>
+      <td>nou</td>
+      <td>sɪŋk</td>
+      <td></td>
+      <td>[source]</td>
+      <td>(technology) a process that acts to absorb or remove energy or a substance from a system（技术）一种用于吸收或去除系统中的能量或物质的过程</td>
+      <td>the ocean is a sink for carbon dioxide海洋是二氧化碳的汇</td>
+      <td></td>
+      <td></td>
+      <td>[natural action, activity, natural process, action]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['associate', 'colligate', 'connect', 'link up', 'relate', 'tie in']</td>
+      <td></td>
+      <td>make a logical or causal connection建立逻辑或因果联系</td>
+      <td></td>
+      <td>[linkage]</td>
+      <td></td>
+      <td>[cerebrate, cogitate, think]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['connect', 'join', 'link up', 'unite']</td>
+      <td></td>
+      <td>be or become joined or united or linked成为或联合或联合或联系</td>
+      <td>The travelers linked up again at the airport旅客们在机场再次联系起来</td>
+      <td>[linkage]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['yoke']</td>
+      <td></td>
+      <td>link with or as with a yoke与轭连接或与轭连接</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[attach]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>ver</td>
+      <td>lɪŋk</td>
+      <td>['connect', 'link up', 'tie']</td>
+      <td></td>
+      <td>connect, fasten, or put together two or more pieces连接，紧固或组合两件或更多件</td>
+      <td></td>
+      <td>[linkage]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['radio link']</td>
+      <td></td>
+      <td>a two-way radio communication system (usually microwave); part of a more extensive telecommunication network双向无线电通信系统（通常是微波炉）;更广泛的电信网络的一部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[communication system]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['linkup', 'tie', 'tie-in']</td>
+      <td></td>
+      <td>a fastener that serves to join or connect用于连接或连接的紧固件</td>
+      <td>the walls are held together with metal links placed in the wet mortar during construction在施工期间，墙壁与放置在湿砂浆中的金属链节保持在一起</td>
+      <td></td>
+      <td></td>
+      <td>[fastening, fastener, holdfast, fixing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['data link']</td>
+      <td></td>
+      <td>an interconnecting circuit between two or more locations for the purpose of transmitting and receiving data两个或多个位置之间的互连电路，用于发送和接收数据</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[electric circuit, circuit, electrical circuit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['nexus']</td>
+      <td></td>
+      <td>the means of connection between things linked in series串联链接的事物之间的联系方式</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linkage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['connectedness', 'connection']</td>
+      <td></td>
+      <td>the state of being connected被连接的状态</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[union, unification]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['connection', 'connexion']</td>
+      <td></td>
+      <td>a connecting shape连接形状</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form, shape]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td>['contact', 'inter-group communication', 'liaison']</td>
+      <td></td>
+      <td>a channel for communication between groups组之间进行通信的渠道</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[line, channel, communication channel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a unit of length equal to 1/100 of a chain长度单位等于链的1/100</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[linear unit, linear measure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>link</th>
+      <td>ink</td>
+      <td>4.15</td>
+      <td>nou</td>
+      <td>lɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>(computing) an instruction that connects one part of a program or an element on a list to another program or list（计算）将程序的一个部分或列表上的元素连接到另一个程序或列表的指令</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[command, instruction, program line, statement]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'blink away']</td>
+      <td></td>
+      <td>keep back by blinking通过眨眼来保持</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[restrain, hold back, keep, keep back]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'flash', 'twinkle', 'winkle']</td>
+      <td></td>
+      <td>gleam or glow intermittently间歇地闪烁或发光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[radiate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'nictate', 'nictitate']</td>
+      <td></td>
+      <td>briefly shut the eyes短暂闭上眼睛</td>
+      <td></td>
+      <td>[winker, winking]</td>
+      <td></td>
+      <td>[act involuntarily, act reflexively]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>ver</td>
+      <td>wɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>signal by winking通过眨眼发出信号</td>
+      <td>She winked at him她对他眨了眨眼</td>
+      <td>[winker]</td>
+      <td></td>
+      <td>[motion, gesture, gesticulate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>wɪŋk</td>
+      <td>['blink of an eye', 'flash', 'heartbeat', 'instant', 'jiffy', 'new york minute', 'split second', 'trice', 'twinkling']</td>
+      <td></td>
+      <td>a very short time (as the time it takes the eye to blink or the heart to beat)很短的时间（因为眼睛眨眼或心脏跳动的时间）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bit, minute, mo, moment, second]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>wɪŋk</td>
+      <td>['blink', 'blinking', 'eye blink', 'nictation', 'nictitation', 'winking']</td>
+      <td></td>
+      <td>a reflex that closes and opens the eyes rapidly一种快速关闭并睁开眼睛的反射</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inborn reflex, physiological reaction, reflex, reflex action, innate reflex, instinctive reflex, unconditioned reflex, reflex response]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wink</th>
+      <td>ink</td>
+      <td>3.40</td>
+      <td>nou</td>
+      <td>wɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>closing one eye quickly as a signal快速闭上一只眼睛作为信号</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[facial expression, facial gesture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>rink</th>
+      <td>ink</td>
+      <td>3.27</td>
+      <td>nou</td>
+      <td>rɪŋk</td>
+      <td>['skating rink']</td>
+      <td></td>
+      <td>building that contains a surface for ice skating or roller skating包含用于滑冰或轮滑的表面的建筑物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[building, edifice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mink</th>
+      <td>ink</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>mɪŋk</td>
+      <td>['mink coat']</td>
+      <td></td>
+      <td>fur coat made from the soft lustrous fur of minks皮草外套采用柔软光泽的水貂皮制成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fur coat]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mink</th>
+      <td>ink</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>mɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>slender-bodied semiaquatic mammal having partially webbed feet; valued for its fur具有部分蹼足的细长体半水生哺乳动物;因其毛皮而受到重视</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mustelid, musteline mammal, musteline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mink</th>
+      <td>ink</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>mɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>the expensive fur of a mink貂皮的昂贵皮毛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fur, pelt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tink</th>
+      <td>ink</td>
+      <td>3.12</td>
+      <td>ver</td>
+      <td></td>
+      <td>['chink', 'clink', 'tinkle']</td>
+      <td></td>
+      <td>make or emit a high sound发出或发出高声</td>
+      <td>tinkling bells叮叮当当的钟声</td>
+      <td></td>
+      <td></td>
+      <td>[go, sound]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dink</th>
+      <td>ink</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>dɪŋk</td>
+      <td>['drop shot']</td>
+      <td></td>
+      <td>a soft return so that the tennis ball drops abruptly after crossing the net柔软的回归，使网球在穿过网后突然下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[return]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>dink</th>
+      <td>ink</td>
+      <td>2.98</td>
+      <td>nou</td>
+      <td>dɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a couple who both have careers and no children (an acronym for dual income no kids)一对夫妻双方都有职业而且没有孩子（双收入的首字母缩写，没有孩子）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[couple, match, mates]</td>
+      <td>[acronym, initialism]</td>
+    </tr>
+    <tr>
+      <th>fink</th>
+      <td>ink</td>
+      <td>2.94</td>
+      <td>ver</td>
+      <td>fɪŋk</td>
+      <td>['confess', 'squeal']</td>
+      <td></td>
+      <td>confess to a punishable or reprehensible deed, usually under pressure通常在压力下承认应受惩罚或应受谴责的行为</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[acknowledge, admit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fink</th>
+      <td>ink</td>
+      <td>2.94</td>
+      <td>ver</td>
+      <td>fɪŋk</td>
+      <td>['blackleg', 'rat', 'scab']</td>
+      <td></td>
+      <td>take the place of work of someone on strike取代某人的工作地点</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[do work, work]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fink</th>
+      <td>ink</td>
+      <td>2.94</td>
+      <td>nou</td>
+      <td>fɪŋk</td>
+      <td>['canary', 'sneak', 'sneaker', 'snitch', 'snitcher', 'stool pigeon', 'stoolie', 'stoolpigeon']</td>
+      <td></td>
+      <td>someone acting as an informer or decoy for the police某人扮演警察的告密者或诱饵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[informer, rat, squealer, betrayer, blabber]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>ink</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>kɪŋk</td>
+      <td>['crape', 'crimp', 'frizz', 'frizzle', 'kink up']</td>
+      <td></td>
+      <td>curl tightly紧紧地卷曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[wave, curl]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>ink</td>
+      <td>2.62</td>
+      <td>ver</td>
+      <td>kɪŋk</td>
+      <td>['curl', 'curve']</td>
+      <td></td>
+      <td>form a curl, curve, or kink形成卷曲，曲线或扭结</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change surface]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>ink</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td>['crick', 'rick', 'wrick']</td>
+      <td></td>
+      <td>a painful muscle spasm especially in the neck or back (`rick' and `wrick' are British)疼痛的肌肉痉挛，尤其是颈部或背部（“瑞克”和“瑞克”是英国人）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[spasm, cramp, muscle spasm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>ink</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td>['twirl', 'twist']</td>
+      <td></td>
+      <td>a sharp bend in a line produced when a line having a loop is pulled tight当具有环的线被拉紧时产生的线弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[bend, crease, crimp, flexure, fold, plication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>ink</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a difficulty or flaw in a plan or operation计划或操作中的困难或缺陷</td>
+      <td>there are still a few kinks to iron out还有一些问题需要解决</td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>ink</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>an eccentric idea一个古怪的想法</td>
+      <td></td>
+      <td>[kinky]</td>
+      <td></td>
+      <td>[thought, idea]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>kink</th>
+      <td>ink</td>
+      <td>2.62</td>
+      <td>nou</td>
+      <td>kɪŋk</td>
+      <td></td>
+      <td></td>
+      <td>a person with unusual sexual tastes性欲异常的人</td>
+      <td></td>
+      <td>[kinky]</td>
+      <td></td>
+      <td>[soul, person, individual, somebody, someone, mortal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>inky</th>
+      <td>ink</td>
+      <td>2.33</td>
+      <td>adj</td>
+      <td>'ɪŋki</td>
+      <td>['ink-black', 'inky-black'], similarTo:['achromatic', 'neutral']</td>
+      <td></td>
+      <td>of the color of black ink黑色墨水的颜色</td>
+      <td></td>
+      <td>[ink, inkiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

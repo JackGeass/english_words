@@ -1,0 +1,1025 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['drag', 'flag', 'shag', 'brag', 'stag', 'slag', 'snag', 'agra', 'swag', 'agha', 'magi', 'yagi', 'scag', 'crag', 'skag']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>['drag on', 'drag out']</td>
+      <td></td>
+      <td>proceed for an extended period of time进行一段时间</td>
+      <td>The speech dragged on for two hours演讲拖了两个小时</td>
+      <td></td>
+      <td></td>
+      <td>[proceed, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>['drop back', 'drop behind', 'get behind', 'hang back', 'trail']</td>
+      <td></td>
+      <td>to lag or linger behind落后或徘徊</td>
+      <td>But in so many other areas we still are dragging但在许多其他领域，我们仍在拖延</td>
+      <td></td>
+      <td></td>
+      <td>[fall back, fall behind, dawdle, lag]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>['draw', 'puff']</td>
+      <td></td>
+      <td>suck in or take (air)吸入或吸入（空气）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[breathe in, inhale, inspire]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>['drag in', 'embroil', 'sweep', 'sweep up', 'tangle']</td>
+      <td></td>
+      <td>force into some kind of situation, condition, or course of action强迫某种情况，条件或行动方式</td>
+      <td>don't drag me into this business不要把我拖进这个行业</td>
+      <td></td>
+      <td></td>
+      <td>[involve]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>['cart', 'hale', 'haul']</td>
+      <td></td>
+      <td>draw slowly or heavily缓慢或沉重地画</td>
+      <td></td>
+      <td>[dragger]</td>
+      <td></td>
+      <td>[draw, pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>['scuff']</td>
+      <td></td>
+      <td>walk without lifting the feet走路时不抬脚</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shuffle, shamble, scuffle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>['dredge']</td>
+      <td></td>
+      <td>search (as the bottom of a body of water) for something valuable or lost寻找（作为水体的底部）有价值或丢失的东西</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[seek, search, look for]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td></td>
+      <td></td>
+      <td>move slowly and as if with great effort慢慢地移动，好像付出了很大的努力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[move, travel, go, locomote]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td></td>
+      <td></td>
+      <td>persuade to come away from something attractive or interesting说服一些有吸引力或有趣的东西</td>
+      <td>He dragged me away from the television set他把我拖离了电视机</td>
+      <td></td>
+      <td></td>
+      <td>[persuade]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td>, alos:['drag in']</td>
+      <td></td>
+      <td>pull, as against a resistance拉，抵抗抵抗</td>
+      <td>He dragged the big suitcase behind him他把大箱子拖到身后These worries were dragging at him这些担忧拖着他</td>
+      <td>[dragger]</td>
+      <td></td>
+      <td>[draw, pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>ver</td>
+      <td>dræɡ</td>
+      <td></td>
+      <td></td>
+      <td>use a computer mouse to move icons on the screen and select commands from a menu使用计算机鼠标在屏幕上移动图标并从菜单中选择命令</td>
+      <td>drag this icon to the lower right hand corner of the screen将此图标拖动到屏幕的右下角</td>
+      <td></td>
+      <td></td>
+      <td>[move, displace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>dræɡ</td>
+      <td>['puff', 'pull']</td>
+      <td></td>
+      <td>a slow inhalation (as of tobacco smoke)缓慢吸入（如烟草烟雾）</td>
+      <td>he took a drag on his cigarette and expelled the smoke slowly他拖着他的烟，慢慢地驱逐了烟</td>
+      <td></td>
+      <td></td>
+      <td>[intake, inhalation, breathing in, aspiration, inspiration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>dræɡ</td>
+      <td>['retarding force']</td>
+      <td></td>
+      <td>the phenomenon of resistance to motion through a fluid通过流体阻止运动的现象</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[resistance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>dræɡ</td>
+      <td></td>
+      <td></td>
+      <td>clothing that is conventionally worn by the opposite sex (especially women's clothing when worn by a man)通常由异性穿着的衣服（特别是男人穿的女式服装）</td>
+      <td>he went to the party dressed in drag他穿着拖着去参加聚会the waitresses looked like missionaries in drag女服务员看起来像拖拉的传教士</td>
+      <td></td>
+      <td></td>
+      <td>[vesture, clothing, article of clothing, habiliment, wearable, wear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>dræɡ</td>
+      <td></td>
+      <td></td>
+      <td>something tedious and boring一些单调乏味的东西</td>
+      <td>peeling potatoes is a drag削土豆是一种拖累</td>
+      <td></td>
+      <td></td>
+      <td>[tedium, tediousness, tiresomeness]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>dræɡ</td>
+      <td></td>
+      <td></td>
+      <td>something that slows or delays progress减慢或延迟进展的东西</td>
+      <td>taxation is a drag on the economy税收是对经济的拖累too many laws are a drag on the use of new land太多的法律拖累了新土地的使用</td>
+      <td></td>
+      <td></td>
+      <td>[handicap, deterrent, impediment, baulk, check, hindrance, balk, hinderance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>drag</th>
+      <td>ag</td>
+      <td>4.38</td>
+      <td>nou</td>
+      <td>dræɡ</td>
+      <td></td>
+      <td></td>
+      <td>the act of dragging (pulling with force)拖动行为（用力拉动）</td>
+      <td>the drag up the hill exhausted him上山的拖累使他疲惫不堪</td>
+      <td></td>
+      <td></td>
+      <td>[pulling, pull]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>flæɡ</td>
+      <td>['ease off', 'ease up', 'slacken off']</td>
+      <td></td>
+      <td>become less intense变得不那么激烈了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[diminish, lessen, fall, decrease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>flæɡ</td>
+      <td>['droop', 'sag', 'swag']</td>
+      <td></td>
+      <td>droop, sink, or settle from or as if from pressure or loss of tautness下垂，下沉，或从压力或失去紧张感中解脱出来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drop down, drop, sink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>flæɡ</td>
+      <td>, alos:['flag down']</td>
+      <td></td>
+      <td>communicate or signal with a flag与旗帜沟通或发信号</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sign, signalize, signalise, signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>flæɡ</td>
+      <td></td>
+      <td></td>
+      <td>decorate with flags用旗帜装饰</td>
+      <td>the building was flagged for the holiday这座建筑被标记为假期</td>
+      <td></td>
+      <td></td>
+      <td>[adorn, beautify, decorate, ornament, grace, embellish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>ver</td>
+      <td>flæɡ</td>
+      <td></td>
+      <td></td>
+      <td>provide with a flag提供一面旗帜</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mark]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>flæɡ</td>
+      <td>['signal flag']</td>
+      <td></td>
+      <td>a rectangular piece of fabric used as a signalling device用作信号装置的矩形织物片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[visual signal]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>flæɡ</td>
+      <td>['flagstone']</td>
+      <td></td>
+      <td>stratified stone that splits into pieces suitable as paving stones分层的石头，分成适合作为铺路石的碎片</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[paving stone]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>flæɡ</td>
+      <td>['pin']</td>
+      <td></td>
+      <td>flagpole used to mark the position of the hole on a golf green旗杆用于标记高尔夫果岭上洞的位置</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[golf equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>flæɡ</td>
+      <td>['masthead']</td>
+      <td></td>
+      <td>a listing printed in all issues of a newspaper or magazine (usually on the editorial page) that gives the name of the publication and the names of the editorial staff, etc.在报纸或杂志（通常在编辑页面）的所有问题上印刷的列表，其中给出了出版物的名称和编辑人员的姓名等。</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[list, listing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>flæɡ</td>
+      <td>['fleur-de-lis', 'iris', 'sword lily']</td>
+      <td></td>
+      <td>plants with sword-shaped leaves and erect stalks bearing bright-colored flowers composed of three petals and three drooping sepals具有剑形叶子和直立茎的植物，带有由三个花瓣和三个下垂的萼片组成的鲜艳的花朵</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[iridaceous plant]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>flæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a conspicuously marked or shaped tail一个明显标记或形状的尾巴</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tail]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flag</th>
+      <td>ag</td>
+      <td>4.22</td>
+      <td>nou</td>
+      <td>flæɡ</td>
+      <td></td>
+      <td></td>
+      <td>emblem usually consisting of a rectangular piece of cloth of distinctive design徽章通常由一块独特设计的矩形布组成</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[emblem]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shag</th>
+      <td>ag</td>
+      <td>3.60</td>
+      <td>ver</td>
+      <td>ʃæɡ</td>
+      <td></td>
+      <td></td>
+      <td>dance the shag跳舞粗毛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[trip the light fantastic, trip the light fantastic toe, dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shag</th>
+      <td>ag</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>ʃæɡ</td>
+      <td>['ass', 'fuck', 'fucking', 'nookie', 'nooky', 'piece of ass', 'piece of tail', 'roll in the hay', 'screw', 'screwing', 'shtup']</td>
+      <td></td>
+      <td>slang for sexual intercourse俚语用于性交</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coitus, sex act, relation, intercourse, copulation, coition, sexual intercourse, sexual relation, sexual congress, carnal knowledge]</td>
+      <td>[argot, cant, dirty word, filth, jargon, lingo, obscenity, patois, slang, smut, vernacular, vulgarism]</td>
+    </tr>
+    <tr>
+      <th>shag</th>
+      <td>ag</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>ʃæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a fabric with long coarse nap一种长绒毛的面料</td>
+      <td>he bought a shag rug他买了一块粗毛地毯</td>
+      <td>[shaggy]</td>
+      <td></td>
+      <td>[cloth, material, fabric, textile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shag</th>
+      <td>ag</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>ʃæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a lively dance step consisting of hopping on each foot in turn一个活泼的舞步，包括依次跳跃在每只脚上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[social dancing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shag</th>
+      <td>ag</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>ʃæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a matted tangle of hair or fiber乱蓬蓬的头发或纤维</td>
+      <td>the dog's woolly shag狗的毛茸茸的粗毛</td>
+      <td>[shaggy]</td>
+      <td></td>
+      <td>[tangle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shag</th>
+      <td>ag</td>
+      <td>3.60</td>
+      <td>nou</td>
+      <td>ʃæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a strong coarse tobacco that has been shredded已被切碎的强烈粗烟草</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tobacco, baccy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brag</th>
+      <td>ag</td>
+      <td>3.48</td>
+      <td>ver</td>
+      <td>bræɡ</td>
+      <td>['blow', 'bluster', 'boast', 'gas', 'gasconade', 'shoot a line', 'swash', 'tout', 'vaunt']</td>
+      <td></td>
+      <td>show off炫耀</td>
+      <td></td>
+      <td>[braggart, bragger]</td>
+      <td></td>
+      <td>[amplify, exaggerate, hyperbolize, magnify, overdraw, overstate, hyperbolise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brag</th>
+      <td>ag</td>
+      <td>3.48</td>
+      <td>nou</td>
+      <td>bræɡ</td>
+      <td>['bragging', 'crow', 'crowing', 'gasconade', 'line-shooting', 'vaporing']</td>
+      <td></td>
+      <td>an instance of boastful talk夸夸其谈的一个例子</td>
+      <td>his brag is worse than his fight他的吹嘘比他的斗争更糟糕</td>
+      <td>[braggy]</td>
+      <td></td>
+      <td>[boast, boasting, jactitation, self-praise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brag</th>
+      <td>ag</td>
+      <td>3.48</td>
+      <td>adj</td>
+      <td>bræɡ</td>
+      <td>['boss'], similarTo:['superior']</td>
+      <td></td>
+      <td>exceptionally good特别好</td>
+      <td>his brag cornfield他吹嘘玉米田</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>stag</th>
+      <td>ag</td>
+      <td>3.28</td>
+      <td>ver</td>
+      <td>stæɡ</td>
+      <td>['betray', 'denounce', 'give away', 'grass', 'rat', 'shit', 'shop', 'snitch', 'tell on']</td>
+      <td></td>
+      <td>give away information about somebody泄露有关某人的信息</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inform]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stag</th>
+      <td>ag</td>
+      <td>3.28</td>
+      <td>ver</td>
+      <td>stæɡ</td>
+      <td>['sleuth', 'snoop', 'spy']</td>
+      <td></td>
+      <td>watch, observe, or inquire secretly偷偷地观察，观察或询问</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[monitor, supervise]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stag</th>
+      <td>ag</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>stæɡ</td>
+      <td>['hart']</td>
+      <td></td>
+      <td>a male deer, especially an adult male red deer雄鹿，特别是成年雄性马鹿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[red deer, wapiti, american elk, cervus elaphus, elk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stag</th>
+      <td>ag</td>
+      <td>3.28</td>
+      <td>nou</td>
+      <td>stæɡ</td>
+      <td></td>
+      <td></td>
+      <td>adult male deer成年雄鹿</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[buck]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slag</th>
+      <td>ag</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>slæɡ</td>
+      <td></td>
+      <td></td>
+      <td>convert into slag转化为渣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[convert]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>slag</th>
+      <td>ag</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>slæɡ</td>
+      <td>['dross', 'scoria']</td>
+      <td></td>
+      <td>the scum formed by oxidation at the surface of molten metals由熔融金属表面的氧化形成的浮渣</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[scum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snag</th>
+      <td>ag</td>
+      <td>3.09</td>
+      <td>ver</td>
+      <td>snæɡ</td>
+      <td></td>
+      <td></td>
+      <td>catch on a snag抓住障碍</td>
+      <td>I snagged my stocking我抓住了袜子</td>
+      <td></td>
+      <td></td>
+      <td>[catch, hitch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snag</th>
+      <td>ag</td>
+      <td>3.09</td>
+      <td>ver</td>
+      <td>snæɡ</td>
+      <td></td>
+      <td></td>
+      <td>get by acting quickly and smartly快速而聪明地行事</td>
+      <td>snag a bargain讨价还价</td>
+      <td></td>
+      <td></td>
+      <td>[obtain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snag</th>
+      <td>ag</td>
+      <td>3.09</td>
+      <td>ver</td>
+      <td>snæɡ</td>
+      <td></td>
+      <td></td>
+      <td>hew jaggedly锯齿状地说</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hew]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snag</th>
+      <td>ag</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>snæɡ</td>
+      <td>['hang-up', 'hitch', 'rub']</td>
+      <td></td>
+      <td>an unforeseen obstacle一个无法预料的障碍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obstacle, obstruction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snag</th>
+      <td>ag</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>snæɡ</td>
+      <td>['rent', 'rip', 'split', 'tear']</td>
+      <td></td>
+      <td>an opening made forcibly as by pulling apart通过拉开而强行打开的开口</td>
+      <td>she had snags in her stockings她的丝袜里有陷阱</td>
+      <td></td>
+      <td></td>
+      <td>[gap, opening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snag</th>
+      <td>ag</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>snæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a dead tree that is still standing, usually in an undisturbed forest一棵仍然站立的死树，通常在未受干扰的森林中</td>
+      <td>a snag can provide food and a habitat for insects and birds障碍可以为昆虫和鸟类提供食物和栖息地</td>
+      <td></td>
+      <td></td>
+      <td>[tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snag</th>
+      <td>ag</td>
+      <td>3.09</td>
+      <td>nou</td>
+      <td>snæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a sharp protuberance一个尖锐的突起</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gibbousness, hump, jut, prominence, protrusion, protuberance, swelling, bulge, bump, excrescence, extrusion, gibbosity]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>agra</th>
+      <td>ag</td>
+      <td>2.87</td>
+      <td>nou</td>
+      <td>'ɑgrə</td>
+      <td></td>
+      <td></td>
+      <td>a city in northern India; former capital of the Mogul empire; site of the Taj Mahal印度北部的一个城市;前莫卧儿帝国的首都;泰姬陵的遗址</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swag</th>
+      <td>ag</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>swæɡ</td>
+      <td>['droop', 'flag', 'sag']</td>
+      <td></td>
+      <td>droop, sink, or settle from or as if from pressure or loss of tautness下垂，下沉，或从压力或失去紧张感中解脱出来</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[drop, drop down, sink]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swag</th>
+      <td>ag</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>swæɡ</td>
+      <td>['careen', 'keel', 'lurch', 'reel', 'stagger']</td>
+      <td></td>
+      <td>walk as if unable to control one's movements走路好像无法控制一个人的动作</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swag</th>
+      <td>ag</td>
+      <td>2.69</td>
+      <td>ver</td>
+      <td>swæɡ</td>
+      <td></td>
+      <td></td>
+      <td>sway heavily or unsteadily摇摆不定或不稳定</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[shake, sway, rock]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swag</th>
+      <td>ag</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>swæɡ</td>
+      <td>['booty', 'dirty money', 'loot', 'pillage', 'plunder', 'prize']</td>
+      <td></td>
+      <td>goods or money obtained illegally非法获得的货物或金钱</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[stolen property]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swag</th>
+      <td>ag</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>swæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a bundle containing the personal belongings of a swagman包含旅行者个人物品的捆绑包</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sheaf, bundle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>swag</th>
+      <td>ag</td>
+      <td>2.69</td>
+      <td>nou</td>
+      <td>swæɡ</td>
+      <td></td>
+      <td></td>
+      <td>valuable goods贵重物品</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[valuable]</td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>agha</th>
+      <td>ag</td>
+      <td>2.52</td>
+      <td>nou</td>
+      <td>'ɑɡə</td>
+      <td>['aga']</td>
+      <td></td>
+      <td>title for a civil or military leader (especially in Turkey)民事或军事领导人的头衔（特别是在土耳其）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[form of address, title, title of respect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>magi</th>
+      <td>ag</td>
+      <td>2.49</td>
+      <td>nou</td>
+      <td>'meɪdʒaɪ</td>
+      <td>['wise men']</td>
+      <td></td>
+      <td>(New Testament) the sages who visited Jesus and Mary and Joseph shortly after Jesus was born; the Gospel According to Matthew says they were guided by a star and brought gifts of gold and frankincense and myrrh; because there were three gifts it is usually assumed that there were three of them（新约圣经）在耶稣出生后不久访问耶稣，玛利亚和约瑟的圣人;根据马太福音说，他们是由一个明星引导并带来金，乳香和没药的礼物;因为有三件礼物​​，通常认为有三件礼物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>yagi</th>
+      <td>ag</td>
+      <td>2.17</td>
+      <td>nou</td>
+      <td>'jɑɡi</td>
+      <td>['yagi aerial']</td>
+      <td></td>
+      <td>a sharply directional antenna一个尖锐的定向天线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[directional antenna]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>scag</th>
+      <td>ag</td>
+      <td>1.97</td>
+      <td>nou</td>
+      <td></td>
+      <td>['big h', 'hell dust', 'nose drops', 'skag', 'smack', 'thunder']</td>
+      <td></td>
+      <td>street names for heroin海洛因的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[diacetylmorphine, heroin]</td>
+      <td>[street name]</td>
+    </tr>
+    <tr>
+      <th>crag</th>
+      <td>ag</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>kRæɡ</td>
+      <td></td>
+      <td></td>
+      <td>a steep rugged rock or cliff陡峭的崎岖岩石或悬崖</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cliff, drop, drop-off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>skag</th>
+      <td>ag</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td></td>
+      <td>['big h', 'hell dust', 'nose drops', 'scag', 'smack', 'thunder']</td>
+      <td></td>
+      <td>street names for heroin海洛因的街道名称</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[diacetylmorphine, heroin]</td>
+      <td>[street name]</td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

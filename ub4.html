@@ -1,0 +1,620 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['club', 'ruby', 'grub', 'snub', 'stub', 'chub', 'blub', 'flub']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>kləb</td>
+      <td>['bludgeon']</td>
+      <td></td>
+      <td>strike with a club or a bludgeon用棍棒或棒球击打</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>kləb</td>
+      <td></td>
+      <td></td>
+      <td>gather and spend time together聚集在一起，共度时光</td>
+      <td>They always club together他们总是一起打球</td>
+      <td></td>
+      <td></td>
+      <td>[forgather, assemble, foregather, gather, meet]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>kləb</td>
+      <td></td>
+      <td></td>
+      <td>gather into a club-like mass聚集成一个俱乐部般的群众</td>
+      <td>club hair俱乐部头发</td>
+      <td></td>
+      <td></td>
+      <td>[gather, garner, pull together, collect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>kləb</td>
+      <td></td>
+      <td></td>
+      <td>unite with a common purpose团结一致的目的</td>
+      <td>The two men clubbed together这两个人聚在一起</td>
+      <td></td>
+      <td></td>
+      <td>[unify, unite]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>kləb</td>
+      <td>['golf-club', 'golf club', 'golfclub']</td>
+      <td></td>
+      <td>golf equipment used by a golfer to hit a golf ball高尔夫球手用来击打高尔夫球的高尔夫装备</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[golf equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>kləb</td>
+      <td>['ball club', 'baseball club', 'nine']</td>
+      <td></td>
+      <td>a team of professional baseball players who play and travel together一队职业棒球运动员，他们一起玩耍和旅行</td>
+      <td>each club played six home games with teams in its own division每个俱乐部都在自己的分区中与团队进行了六场主场比赛</td>
+      <td></td>
+      <td></td>
+      <td>[baseball team]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>kləb</td>
+      <td>['cabaret', 'night club', 'nightclub', 'nightspot']</td>
+      <td></td>
+      <td>a spot that is open late at night and that provides entertainment (as singers or dancers) as well as dancing and food and drink一个深夜开放的地方，提供娱乐（如歌手或舞者）以及舞蹈，食物和饮料</td>
+      <td>the gossip columnist got his information by visiting nightclubs every night八卦专栏作家通过每晚访问夜总会获得了他的信息he played the drums at a jazz club他在一家爵士俱乐部演奏鼓</td>
+      <td></td>
+      <td></td>
+      <td>[spot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>kləb</td>
+      <td>['gild', 'guild', 'lodge', 'order', 'social club', 'society']</td>
+      <td></td>
+      <td>a formal association of people with similar interests具有相似兴趣的人的正式协会</td>
+      <td>he joined a golf club他加入了一家高尔夫俱乐部</td>
+      <td>[clubby]</td>
+      <td></td>
+      <td>[association]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>kləb</td>
+      <td>['clubhouse']</td>
+      <td></td>
+      <td>a building that is occupied by a social club被社交俱乐部占据的建筑物</td>
+      <td>the clubhouse needed a new roof会所需要一个新的屋顶</td>
+      <td></td>
+      <td></td>
+      <td>[building, edifice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>kləb</td>
+      <td></td>
+      <td></td>
+      <td>a playing card in the minor suit that has one or more black trefoils on it小西装上的扑克牌，上面有一个或多个黑色三叶草</td>
+      <td>he led a small club他领导了一个小俱乐部clubs were trumps俱乐部胜过王牌</td>
+      <td></td>
+      <td></td>
+      <td>[playing card]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>club</th>
+      <td>ub</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>kləb</td>
+      <td></td>
+      <td></td>
+      <td>stout stick that is larger at one end粗壮的棍子，一端较大</td>
+      <td>he carried a club in self defense他带着一个自卫俱乐部he felt as if he had been hit with a club他觉得自己好像被一个俱乐部击中了</td>
+      <td></td>
+      <td></td>
+      <td>[stick]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruby</th>
+      <td>ub</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>'rubi</td>
+      <td>['crimson', 'deep red']</td>
+      <td></td>
+      <td>a deep and vivid red color深沉而生动的红色</td>
+      <td></td>
+      <td>[rubify]</td>
+      <td></td>
+      <td>[red, redness]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruby</th>
+      <td>ub</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>'rubi</td>
+      <td></td>
+      <td></td>
+      <td>a transparent deep red variety of corundum; used as a gemstone and in lasers透明的深红色刚玉;用作宝石和激光</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transparent gem, corundum, corundom]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruby</th>
+      <td>ub</td>
+      <td>4.03</td>
+      <td>nou</td>
+      <td>'rubi</td>
+      <td></td>
+      <td></td>
+      <td>a transparent piece of ruby that has been cut and polished and is valued as a precious gem一块透明的红宝石，经过切割和抛光，被珍视为珍贵的宝石</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[precious stone, gem, jewel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ruby</th>
+      <td>ub</td>
+      <td>4.03</td>
+      <td>adj</td>
+      <td>'rubi</td>
+      <td>['blood-red', 'carmine', 'cerise', 'cherry', 'cherry-red', 'crimson', 'red', 'reddish', 'ruby-red', 'ruddy', 'scarlet'], similarTo:['chromatic']</td>
+      <td></td>
+      <td>of a color at the end of the color spectrum (next to orange); resembling the color of blood or cherries or tomatoes or rubies色谱结束时的颜色（橙色旁边）;类似于血液或樱桃，西红柿或红宝石的颜色</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grub</th>
+      <td>ub</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>grəb</td>
+      <td>['bum', 'cadge', 'mooch', 'sponge']</td>
+      <td></td>
+      <td>ask for and get free; be a parasite要求并获得自由;是一种寄生虫</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[obtain]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grub</th>
+      <td>ub</td>
+      <td>3.38</td>
+      <td>ver</td>
+      <td>grəb</td>
+      <td></td>
+      <td></td>
+      <td>search about busily忙着搜索</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[look for, search, seek]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grub</th>
+      <td>ub</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>grəb</td>
+      <td>['chow', 'chuck', 'eats']</td>
+      <td></td>
+      <td>informal terms for a meal用餐的非正式用语</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>grub</th>
+      <td>ub</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>grəb</td>
+      <td></td>
+      <td></td>
+      <td>a soft thick wormlike larva of certain beetles and other insects一种柔软粗壮的蠕虫状幼虫，由某些甲虫和其他昆虫组成</td>
+      <td></td>
+      <td>[grubby]</td>
+      <td></td>
+      <td>[larva]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snub</th>
+      <td>ub</td>
+      <td>2.76</td>
+      <td>ver</td>
+      <td>snəb</td>
+      <td>['cut', 'disregard', 'ignore']</td>
+      <td></td>
+      <td>refuse to acknowledge拒绝承认</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[do by, treat, handle]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snub</th>
+      <td>ub</td>
+      <td>2.76</td>
+      <td>ver</td>
+      <td>snəb</td>
+      <td>['rebuff', 'repel']</td>
+      <td></td>
+      <td>reject outright and bluntly完全拒绝直截了当</td>
+      <td>She snubbed his proposal她冷落了他的提议</td>
+      <td></td>
+      <td></td>
+      <td>[turn down, pooh-pooh, disdain, freeze off, reject, scorn, spurn]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snub</th>
+      <td>ub</td>
+      <td>2.76</td>
+      <td>nou</td>
+      <td>snəb</td>
+      <td>['rebuff', 'repulse']</td>
+      <td></td>
+      <td>an instance of driving away or warding off逃跑或躲避的一个例子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rejection]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snub</th>
+      <td>ub</td>
+      <td>2.76</td>
+      <td>nou</td>
+      <td>snəb</td>
+      <td>['cold shoulder', 'cut']</td>
+      <td></td>
+      <td>a refusal to recognize someone you know拒绝承认你认识的人</td>
+      <td>the snub was clearly intentional冷落显然是故意的</td>
+      <td></td>
+      <td></td>
+      <td>[rebuff, slight]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snub</th>
+      <td>ub</td>
+      <td>2.76</td>
+      <td>adj</td>
+      <td>snəb</td>
+      <td>, similarTo:['short']</td>
+      <td></td>
+      <td>unusually short异常短暂</td>
+      <td>a snub nose嗤之以鼻</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>ver</td>
+      <td>stəb</td>
+      <td></td>
+      <td></td>
+      <td>clear of weeds by uprooting them通过拔除它们来清除杂草</td>
+      <td>stub a field存根一个字段</td>
+      <td></td>
+      <td></td>
+      <td>[weed]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>ver</td>
+      <td>stəb</td>
+      <td></td>
+      <td></td>
+      <td>extinguish by crushing通过压碎熄灭</td>
+      <td>stub out your cigarette now现在把你的香烟弄干净了</td>
+      <td></td>
+      <td></td>
+      <td>[blow out, extinguish, quench, snuff out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>ver</td>
+      <td>stəb</td>
+      <td></td>
+      <td></td>
+      <td>pull up (weeds) by their roots从根部拉起（杂草）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[root out, deracinate, extirpate, uproot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>ver</td>
+      <td>stəb</td>
+      <td></td>
+      <td></td>
+      <td>strike (one's toe) accidentally against an object罢工（一个人的脚趾）意外地撞击一个物体</td>
+      <td>She stubbed her toe in the dark and now it's broken她在黑暗中踩了她的脚趾，现在它已经坏了</td>
+      <td></td>
+      <td></td>
+      <td>[strike, impinge on, run into, collide with, hit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>stəb</td>
+      <td>['ticket stub']</td>
+      <td></td>
+      <td>a torn part of a ticket returned to the holder as a receipt票据的撕裂部分作为收据返还给持票人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[receipt]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>stəb</td>
+      <td>['nub']</td>
+      <td></td>
+      <td>a small piece一小块</td>
+      <td>a stub of a pencil一根铅笔</td>
+      <td></td>
+      <td></td>
+      <td>[part, piece]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>stəb</td>
+      <td>['check stub', 'counterfoil']</td>
+      <td></td>
+      <td>the part of a check that is retained as a record支票的一部分作为记录保留</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[record]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>stəb</td>
+      <td>['butt']</td>
+      <td></td>
+      <td>the small unused part of something (especially the end of a cigarette that is left after smoking)某些未使用过的小部分（尤其是吸烟后留下的香烟末端）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[portion, part]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>stub</th>
+      <td>ub</td>
+      <td>2.68</td>
+      <td>nou</td>
+      <td>stəb</td>
+      <td></td>
+      <td></td>
+      <td>a short piece remaining on a trunk or stem where a branch is lost留在树干或树干上的短片，树枝在那里丢失</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant part, plant structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>chub</th>
+      <td>ub</td>
+      <td>2.24</td>
+      <td>nou</td>
+      <td>tʃəb</td>
+      <td>['leuciscus cephalus']</td>
+      <td></td>
+      <td>European freshwater game fish with a thick spindle-shaped body欧洲淡水游戏鱼具有厚纺锤形体</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cyprinid, cyprinid fish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blub</th>
+      <td>ub</td>
+      <td>2.08</td>
+      <td>ver</td>
+      <td>bləb</td>
+      <td>['blubber', 'snuffle', 'sniffle', 'snivel']</td>
+      <td></td>
+      <td>cry or whine with snuffling哭泣或发出呜咽声</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[cry, weep]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flub</th>
+      <td>ub</td>
+      <td>1.60</td>
+      <td>ver</td>
+      <td>fləb</td>
+      <td>['ball up', 'blow', 'bobble', 'bodge', 'bollix', 'bollix up', 'bollocks', 'bollocks up', 'botch', 'botch up', 'bumble', 'bungle', 'fluff', 'foul up', 'fuck up', 'fumble', 'louse up', 'mess up', 'mishandle', 'muck up', 'muff', 'screw up', 'spoil']</td>
+      <td></td>
+      <td>make a mess of, destroy or ruin搞乱，破坏或破坏</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[fail, go wrong, miscarry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flub</th>
+      <td>ub</td>
+      <td>1.60</td>
+      <td>nou</td>
+      <td>fləb</td>
+      <td>['bloomer', 'blooper', 'blunder', 'boner', 'boo-boo', 'botch', 'bungle', 'foul-up', 'fuckup', 'pratfall']</td>
+      <td></td>
+      <td>an embarrassing mistake一个令人尴尬的错误</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mistake, fault, error]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

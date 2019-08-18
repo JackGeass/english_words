@@ -1,0 +1,485 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['talk', 'walk']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>ver</td>
+      <td>tɔk</td>
+      <td>['speak']</td>
+      <td></td>
+      <td>exchange thoughts; talk with交换思想;与...交谈</td>
+      <td>We often talk business我们经常谈生意Actions talk louder than words行动胜于雄辩</td>
+      <td>[talking, talkative]</td>
+      <td></td>
+      <td>[intercommunicate, communicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>ver</td>
+      <td>tɔk</td>
+      <td>['speak']</td>
+      <td></td>
+      <td>use language用语言</td>
+      <td>the baby talks already宝宝说话了</td>
+      <td>[talker]</td>
+      <td></td>
+      <td>[intercommunicate, communicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>ver</td>
+      <td>tɔk</td>
+      <td>['mouth', 'speak', 'utter', 'verbalise', 'verbalize']</td>
+      <td></td>
+      <td>express in speech在演讲中表达</td>
+      <td>She talks a lot of nonsense她说了很多废话</td>
+      <td>[talker]</td>
+      <td>[verbalise, verbalize]</td>
+      <td>[intercommunicate, communicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>ver</td>
+      <td>tɔk</td>
+      <td>['lecture']</td>
+      <td></td>
+      <td>deliver a lecture or talk发表演讲或演讲</td>
+      <td>She will talk at Rutgers next week她下周将在罗格斯大学讲话</td>
+      <td>[talker]</td>
+      <td></td>
+      <td>[learn, teach, instruct]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>ver</td>
+      <td>tɔk</td>
+      <td>['spill']</td>
+      <td></td>
+      <td>reveal information透露信息</td>
+      <td>If you don't oblige me, I'll talk!如果你不要求我，我会说话！</td>
+      <td></td>
+      <td>[blab, babble, babble out, spill the beans, peach, tattle, sing, blab out, let the cat out of the bag]</td>
+      <td>[tell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>ver</td>
+      <td>tɔk</td>
+      <td>['babble', 'babble out', 'blab', 'blab out', 'let the cat out of the bag', 'peach', 'sing', 'spill the beans', 'tattle']</td>
+      <td>[keep quiet]</td>
+      <td>divulge confidential information or secrets泄露机密信息或秘密</td>
+      <td>Be careful--his secretary talks小心 - 他的秘书会谈</td>
+      <td>[talkative]</td>
+      <td>[spill]</td>
+      <td>[give away, bring out, expose, let out, break, let on, uncover, disclose, reveal, discover, unwrap, divulge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>nou</td>
+      <td>tɔk</td>
+      <td>['talking']</td>
+      <td></td>
+      <td>an exchange of ideas via conversation通过对话交换意见</td>
+      <td>let's have more work and less talk around here让我们有更多的工作，而不是在这里谈论</td>
+      <td></td>
+      <td></td>
+      <td>[conversation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>nou</td>
+      <td>tɔk</td>
+      <td>['lecture', 'public lecture']</td>
+      <td></td>
+      <td>a speech that is open to the public一个向公众开放的演讲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[speech, address]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>nou</td>
+      <td>tɔk</td>
+      <td>['talk of the town']</td>
+      <td></td>
+      <td>idle gossip or rumor闲话八卦或谣言</td>
+      <td>there has been talk about you lately最近一直在谈论你</td>
+      <td>[talky]</td>
+      <td></td>
+      <td>[scuttlebutt, comment, gossip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>nou</td>
+      <td>tɔk</td>
+      <td></td>
+      <td></td>
+      <td>discussion; (`talk about' is a less formal alternative for `discussion of')讨论; （'谈论'是'讨论'的一种不太正式的选择）</td>
+      <td>his poetry contains much talk about love and anger他的诗歌中充满了关于爱情和愤怒的讨论</td>
+      <td></td>
+      <td></td>
+      <td>[discussion, discourse, treatment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>talk</th>
+      <td>alk</td>
+      <td>5.88</td>
+      <td>nou</td>
+      <td>tɔk</td>
+      <td></td>
+      <td></td>
+      <td>the act of giving a talk to an audience向观众讲话的行为</td>
+      <td>I attended an interesting talk on local history我参加了有关当地历史的有趣谈话</td>
+      <td></td>
+      <td></td>
+      <td>[lecturing, lecture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td>['take the air']</td>
+      <td></td>
+      <td>take a walk; go for a walk; walk for pleasure散步;出去走走;走路为快乐</td>
+      <td>The lovers held hands while walking恋人们在走路时牵手We like to walk every Sunday我们喜欢每个星期天走路</td>
+      <td></td>
+      <td></td>
+      <td>[move, locomote, go, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>accompany or escort陪伴或陪同</td>
+      <td>I'll walk you to your car我会带你去你的车</td>
+      <td></td>
+      <td></td>
+      <td>[accompany]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>be or act in association with是或与...有关</td>
+      <td>We must walk with our dispossessed brothers and sisters我们必须与我们无依无靠的兄弟姐妹同行</td>
+      <td></td>
+      <td></td>
+      <td>[consociate, associate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>give a base on balls to给球打基础</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>live or behave in a specified manner以特定方式生活或行为</td>
+      <td>walk in sadness走进悲伤</td>
+      <td></td>
+      <td></td>
+      <td>[comport, behave]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>make walk走路</td>
+      <td>He walks the horse up the mountain他把马踩到了山上</td>
+      <td></td>
+      <td></td>
+      <td>[oblige, obligate, compel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>obtain a base on balls获得球的基础</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tally, score, hit, rack up]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>traverse or cover by walking走路或走路</td>
+      <td>Paul walked the streets of Damascus保罗走在大马士革的街道上She walks 3 miles every day她每天走3英里</td>
+      <td>[walker]</td>
+      <td></td>
+      <td>[traverse, cut across, cut through, cover, track, get across, get over, pass over, cross]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td>, alos:['walk about', 'walk around']</td>
+      <td>[ride]</td>
+      <td>use one's feet to advance; advance by steps用一只脚前进;逐步前进</td>
+      <td>We walked instead of driving我们走路而不是开车She walks with a slight limp她走路时略显跛行The patient cannot walk yet病人还不能走路</td>
+      <td>[walking, walker]</td>
+      <td>[take the air]</td>
+      <td>[go, locomote, travel, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>ver</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>walk at a pace走一步</td>
+      <td>The horses walked across the meadow马走过草地</td>
+      <td></td>
+      <td></td>
+      <td>[pace]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>nou</td>
+      <td>wɔk</td>
+      <td>['walking']</td>
+      <td></td>
+      <td>the act of traveling by foot徒步旅行的行为</td>
+      <td>walking is a healthy form of exercise步行是一种健康的锻炼方式</td>
+      <td></td>
+      <td></td>
+      <td>[locomotion, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>nou</td>
+      <td>wɔk</td>
+      <td>['walk of life']</td>
+      <td></td>
+      <td>careers in general一般的职业</td>
+      <td>it happens in all walks of life它发生在各行各业</td>
+      <td></td>
+      <td></td>
+      <td>[calling, career, vocation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>nou</td>
+      <td>wɔk</td>
+      <td>['manner of walking']</td>
+      <td></td>
+      <td>manner of walking走路的方式</td>
+      <td>he had a funny walk他有一个有趣的散步</td>
+      <td></td>
+      <td></td>
+      <td>[posture, bearing, carriage]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>nou</td>
+      <td>wɔk</td>
+      <td>['base on balls', 'pass']</td>
+      <td></td>
+      <td>(baseball) an advance to first base by a batter who receives four balls（棒球）由接受四个球的击球手前进到一垒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[achievement, accomplishment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>nou</td>
+      <td>wɔk</td>
+      <td>['paseo', 'walkway']</td>
+      <td></td>
+      <td>a path set aside for walking为行走留出的道路</td>
+      <td>after the blizzard he shoveled the front walk在暴风雪之后，他把前面的步行铲了起来</td>
+      <td></td>
+      <td></td>
+      <td>[path]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>nou</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>a slow gait of a horse in which two feet are always on the ground一匹马的缓慢步态，其中两只脚总是在地上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gait]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>walk</th>
+      <td>alk</td>
+      <td>5.30</td>
+      <td>nou</td>
+      <td>wɔk</td>
+      <td></td>
+      <td></td>
+      <td>the act of walking somewhere在某个地方行走的行为</td>
+      <td>he took a walk after lunch午饭后他散步了</td>
+      <td></td>
+      <td></td>
+      <td>[travelling, traveling, travel]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

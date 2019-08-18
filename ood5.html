@@ -1,0 +1,545 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['blood', 'woods', 'flood', 'woody', 'goody', 'moody', 'brood', 'snood']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>blood</th>
+      <td>ood</td>
+      <td>5.29</td>
+      <td>ver</td>
+      <td>bləd</td>
+      <td></td>
+      <td></td>
+      <td>smear with blood, as in a hunting initiation rite, where the face of a person is smeared with the blood of the kill涂抹血液，如在狩猎开始仪式中，一个人的脸上涂满了杀人的鲜血</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[daub, smear]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blood</th>
+      <td>ood</td>
+      <td>5.29</td>
+      <td>nou</td>
+      <td>bləd</td>
+      <td>['profligate', 'rake', 'rakehell', 'rip', 'roue']</td>
+      <td></td>
+      <td>a dissolute man in fashionable society时尚社会中一个放荡的人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rounder, libertine, debauchee]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blood</th>
+      <td>ood</td>
+      <td>5.29</td>
+      <td>nou</td>
+      <td>bləd</td>
+      <td>['ancestry', 'blood line', 'bloodline', 'descent', 'line', 'line of descent', 'lineage', 'origin', 'parentage', 'pedigree', 'stemma', 'stock']</td>
+      <td></td>
+      <td>the descendants of one individual一个人的后代</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[genealogy, family tree]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blood</th>
+      <td>ood</td>
+      <td>5.29</td>
+      <td>nou</td>
+      <td>bləd</td>
+      <td></td>
+      <td></td>
+      <td>people viewed as members of a group人们被视为一个团体的成员</td>
+      <td>we need more young blood in this organization我们在这个组织中需要更多的年轻血统</td>
+      <td></td>
+      <td></td>
+      <td>[people]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blood</th>
+      <td>ood</td>
+      <td>5.29</td>
+      <td>nou</td>
+      <td>bləd</td>
+      <td></td>
+      <td></td>
+      <td>temperament or disposition气质或性情</td>
+      <td>a person of hot blood一个热血的人</td>
+      <td></td>
+      <td></td>
+      <td>[temperament, disposition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>blood</th>
+      <td>ood</td>
+      <td>5.29</td>
+      <td>nou</td>
+      <td>bləd</td>
+      <td></td>
+      <td></td>
+      <td>the fluid (red in vertebrates) that is pumped through the body by the heart and contains plasma, blood cells, and platelets由心脏泵入体内并含有血浆，血细胞和血小板的液体（脊椎动物中的红色）</td>
+      <td>blood carries oxygen and nutrients to the tissues and carries away waste products血液将氧气和营养物质输送到组织并带走废物the ancients believed that blood was the seat of the emotions古人认为血是情感的座位</td>
+      <td>[bloody]</td>
+      <td></td>
+      <td>[humour, humor, bodily fluid, liquid body substance, body fluid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woods</th>
+      <td>ood</td>
+      <td>4.44</td>
+      <td>nou</td>
+      <td>wʊdz</td>
+      <td>['forest', 'wood']</td>
+      <td></td>
+      <td>the trees and other plants in a large densely wooded area树木和其他植物在一个茂密的树木繁茂的地区</td>
+      <td></td>
+      <td>[woodsy]</td>
+      <td></td>
+      <td>[botany, flora, vegetation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>fləd</td>
+      <td>['deluge', 'inundate', 'swamp'], alos:['flood in']</td>
+      <td></td>
+      <td>fill quickly beyond capacity; as with a liquid快速填补能力;和液体一样</td>
+      <td>The images flooded his mind图像充斥着他的脑海</td>
+      <td>[flooding]</td>
+      <td></td>
+      <td>[fill, fill up, make full]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>fləd</td>
+      <td>['glut', 'oversupply']</td>
+      <td></td>
+      <td>supply with an excess of供应超过</td>
+      <td>flood the market with tennis shoes用网球鞋淹没市场</td>
+      <td></td>
+      <td></td>
+      <td>[furnish, render, supply, provide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>fləd</td>
+      <td></td>
+      <td></td>
+      <td>become filled to overflowing充满了满溢</td>
+      <td>Our basement flooded during the heavy rains在暴雨期间，我们的地下室被淹没了</td>
+      <td></td>
+      <td></td>
+      <td>[fill up, fill]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>ver</td>
+      <td>fləd</td>
+      <td>, alos:['flood out']</td>
+      <td></td>
+      <td>cover with liquid, usually water用液体覆盖，通常是水</td>
+      <td>The swollen river flooded the village肿胀的河水淹没了村庄The broken vein had flooded blood in her eyes破碎的静脉淹没了她眼中的鲜血</td>
+      <td></td>
+      <td></td>
+      <td>[cover, spread over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>fləd</td>
+      <td>['deluge', 'inundation', 'torrent']</td>
+      <td></td>
+      <td>an overwhelming number or amount绝大多数或数量</td>
+      <td>a flood of requests大量的请求</td>
+      <td></td>
+      <td></td>
+      <td>[batch, deal, flock, good deal, great deal, hatful, heap, lot, mass, mess, mickle, mint, mountain, muckle, passel, peck, pile, plenty, pot, quite a little, raft, sight, slew, spate, stack, tidy sum, wad]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>fləd</td>
+      <td>['outpouring', 'overflow']</td>
+      <td></td>
+      <td>a large flow大流量</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[flow, stream]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>fləd</td>
+      <td>['flood lamp', 'floodlight', 'photoflood']</td>
+      <td></td>
+      <td>light that is a source of artificial illumination having a broad beam; used in photography作为具有宽光束的人工照明源的光;用于摄影</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[light, light source]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>fləd</td>
+      <td>['alluvion', 'deluge', 'inundation']</td>
+      <td></td>
+      <td>the rising of a body of water and its overflowing onto normally dry land一个水体的上升，它溢出到通常干燥的土地上</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[geological phenomenon]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>fləd</td>
+      <td>['flowage']</td>
+      <td></td>
+      <td>the act of flooding; filling to overflowing洪水的行为;填满溢出</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[filling]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>flood</th>
+      <td>ood</td>
+      <td>3.92</td>
+      <td>nou</td>
+      <td>fləd</td>
+      <td>['flood tide', 'rising tide']</td>
+      <td></td>
+      <td>the occurrence of incoming water (between a low tide and the following high tide)进水的发生（在低潮和下一个涨潮之间）</td>
+      <td>a tide in the affairs of men which, taken at the flood, leads on to fortune在洪水中采取的人类事务的潮流导致了财富</td>
+      <td></td>
+      <td></td>
+      <td>[tide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woody</th>
+      <td>ood</td>
+      <td>3.73</td>
+      <td>adj</td>
+      <td>'wʊdi</td>
+      <td>['arboraceous', 'arboreous', 'woodsy'], similarTo:['wooded']</td>
+      <td></td>
+      <td>abounding in trees树木丰富</td>
+      <td>a woody area near the highway高速公路附近的木质区域</td>
+      <td>[woodiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woody</th>
+      <td>ood</td>
+      <td>3.73</td>
+      <td>adj</td>
+      <td>'wʊdi</td>
+      <td>, similarTo:['hard']</td>
+      <td></td>
+      <td>made hard like wood as the result of the deposition of lignin in the cell walls由于木质素在细胞壁中的沉积，使得像木头一样坚硬</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>woody</th>
+      <td>ood</td>
+      <td>3.73</td>
+      <td>adj</td>
+      <td>'wʊdi</td>
+      <td>, similarTo:['birch', 'birchen', 'birken', 'cedarn', 'ligneous', 'oaken', 'suffrutescent', 'ashen', 'wooden', 'beechen']</td>
+      <td>[nonwoody]</td>
+      <td>made of or containing or resembling wood由木材制成，包含或类似木材的</td>
+      <td>woody plants木本植物perennial herbs with woody stems多年生草本植物，木质茎a woody taste木质味道</td>
+      <td>[wood]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>goody</th>
+      <td>ood</td>
+      <td>3.39</td>
+      <td>nou</td>
+      <td>'ɡʊdi</td>
+      <td>['dainty', 'delicacy', 'kickshaw', 'treat']</td>
+      <td></td>
+      <td>something considered choice to eat一些被认为是吃的选择</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[victuals, alimentation, nourishment, nutriment, nutrition, sustenance, aliment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moody</th>
+      <td>ood</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>'mudi</td>
+      <td>['helen newington wills', 'helen wills', 'helen wills moody']</td>
+      <td></td>
+      <td>United States tennis player who dominated women's tennis in the 1920s and 1930s (1905-1998)在20世纪20年代和30年代（1905-1998）主宰女子网球的美国网球运动员</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moody</th>
+      <td>ood</td>
+      <td>3.38</td>
+      <td>nou</td>
+      <td>'mudi</td>
+      <td>['dwight lyman moody']</td>
+      <td></td>
+      <td>United States evangelist (1837-1899)美国传道者（1837-1899）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moody</th>
+      <td>ood</td>
+      <td>3.38</td>
+      <td>adj</td>
+      <td>'mudi</td>
+      <td>['temperamental'], similarTo:['emotional']</td>
+      <td></td>
+      <td>subject to sharply varying moods受到剧烈变化的情绪影响</td>
+      <td></td>
+      <td>[mood, moodiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>moody</th>
+      <td>ood</td>
+      <td>3.38</td>
+      <td>adj</td>
+      <td>'mudi</td>
+      <td>['dark', 'dour', 'glowering', 'glum', 'morose', 'saturnine', 'sour', 'sullen'], similarTo:['ill-natured']</td>
+      <td></td>
+      <td>showing a brooding ill humor显示沉思的幽默</td>
+      <td>he sat in moody silence他坐在忧郁的沉默中</td>
+      <td>[moodiness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brood</th>
+      <td>ood</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>brud</td>
+      <td>['grizzle', 'stew']</td>
+      <td></td>
+      <td>be in a huff; be silent or sullen生气;沉默或闷闷不乐</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sulk, pout]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brood</th>
+      <td>ood</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>brud</td>
+      <td>['bulk large', 'hover', 'loom']</td>
+      <td></td>
+      <td>hang over, as of something threatening, dark, or menacing悬在一起，如威胁，黑暗或威胁的东西</td>
+      <td>The terrible vision brooded over her all day long这一天可怕的异象笼罩着她</td>
+      <td></td>
+      <td></td>
+      <td>[hang]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brood</th>
+      <td>ood</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>brud</td>
+      <td>['dwell']</td>
+      <td></td>
+      <td>think moodily or anxiously about something心情愉快或焦虑地思考某事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[care, worry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brood</th>
+      <td>ood</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>brud</td>
+      <td>['cover', 'hatch', 'incubate']</td>
+      <td></td>
+      <td>sit on (eggs)坐在（鸡蛋）</td>
+      <td>Birds brood鸟儿育雏</td>
+      <td>[brooder]</td>
+      <td>[hatch, cover, breed]</td>
+      <td>[procreate, reproduce, multiply]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brood</th>
+      <td>ood</td>
+      <td>3.08</td>
+      <td>ver</td>
+      <td>brud</td>
+      <td>['pout', 'sulk']</td>
+      <td></td>
+      <td>be in a huff and display one's displeasure生气，表达一个人的不满</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>brood</th>
+      <td>ood</td>
+      <td>3.08</td>
+      <td>nou</td>
+      <td>brud</td>
+      <td></td>
+      <td></td>
+      <td>the young of an animal cared for at one time年轻的动物一次照顾</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal group]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>snood</th>
+      <td>ood</td>
+      <td>2.19</td>
+      <td>nou</td>
+      <td>snud</td>
+      <td></td>
+      <td></td>
+      <td>an ornamental net in the shape of a bag that confines a woman's hair; pins or ties at the back of the head一种限制女人头发的袋子形状的装饰网;头后部的别针或领带</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mesh, meshing, meshwork, net, network]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

@@ -1,0 +1,455 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['key', 'bey', 'ley', 'fey']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>ki</td>
+      <td>['describe', 'discover', 'distinguish', 'identify', 'key out', 'name']</td>
+      <td></td>
+      <td>identify as in botany or biology, for example例如，在植物学或生物学中识别</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>harmonize with or adjust to与...协调或调整</td>
+      <td>key one's actions to the voters' prevailing attitude关键人物对选民普遍态度的行动</td>
+      <td></td>
+      <td></td>
+      <td>[harmonize, harmonise, reconcile]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>provide with a key提供钥匙</td>
+      <td>We were keyed after the locks were changed in the building在建筑物中更换了锁之后，我们被锁定了</td>
+      <td></td>
+      <td></td>
+      <td>[render, supply, furnish, provide]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>regulate the musical pitch of调节音乐的音调</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[harmonize, harmonise, chord]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>ver</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>vandalize a car by scratching the sides with a key用钥匙划伤两侧，破坏汽车</td>
+      <td>His new Mercedes was keyed last night in the parking lot他的新梅赛德斯昨晚在停车场得到了关键</td>
+      <td></td>
+      <td></td>
+      <td>[vandalise, vandalize]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td>['cay', 'florida key']</td>
+      <td></td>
+      <td>a coral reef off the southern coast of Florida佛罗里达州南部海岸的珊瑚礁</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[coral reef]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td>['paint']</td>
+      <td></td>
+      <td>(basketball) a space (including the foul line) in front of the basket at each end of a basketball court; usually painted a different color from the rest of the court（篮球）篮球场两端篮筐前面的空间（包括罚球线）;通常与球场的其他部分涂上不同的颜色</td>
+      <td>he hit a jump shot from the top of the key他从钥匙顶部跳了一下跳投</td>
+      <td></td>
+      <td></td>
+      <td>[space]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td>['tonality']</td>
+      <td></td>
+      <td>any of 24 major or minor diatonic scales that provide the tonal framework for a piece of music任何24种主要或次要的全音阶音阶，为一段音乐提供音调框架</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[musical notation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td>['francis scott key']</td>
+      <td></td>
+      <td>United States lawyer and poet who wrote a poem after witnessing the British attack on Baltimore during the War of 1812; the poem was later set to music and entitled `The Star-Spangled Banner' (1779-1843)美国律师和诗人在见证英国在1812年战争期间袭击巴尔的摩后写了一首诗;这首诗后来被定为音乐，名为“星条旗”（1779-1843）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td>['winder']</td>
+      <td></td>
+      <td>mechanical device used to wind another device that is driven by a spring (as a clock)用于缠绕由弹簧驱动的另一个设备的机械装置（作为时钟）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[mechanical device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td>['headstone', 'keystone']</td>
+      <td></td>
+      <td>the central building block at the top of an arch or vault拱门或拱顶顶部的中央建筑物</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[building block]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td>['key fruit', 'samara']</td>
+      <td></td>
+      <td>a winged often one-seed indehiscent fruit as of the ash or elm or maple有翅膀的，通常是一粒不开裂的果实，如灰烬或榆树或枫树</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[achene]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>a generic term for any device whose possession entitles the holder to a means of access任何设备的通用术语，其拥有权使持有人有权获得访问权</td>
+      <td>a safe-deposit box usually requires two keys to open it保险箱通常需要两把钥匙才能打开</td>
+      <td></td>
+      <td></td>
+      <td>[positive identification]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>a kilogram of a narcotic drug一公斤麻醉药</td>
+      <td>they were carrying two keys of heroin他们带着两把海洛因钥匙</td>
+      <td></td>
+      <td></td>
+      <td>[kilogram, kg, kilo]</td>
+      <td>[patois, argot, vernacular, lingo, cant, slang, jargon]</td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>a lever (as in a keyboard) that actuates a mechanism when depressed一个杠杆（如在键盘中），在按下时启动一个机构</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[lever]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>a list of answers to a test测试答案列表</td>
+      <td>some students had stolen the key to the final exam有些学生偷了期末考试的关键</td>
+      <td></td>
+      <td></td>
+      <td>[list, listing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>a list of words or phrases that explain symbols or abbreviations解释符号或缩写的单词或短语列表</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[listing, list]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>metal device shaped in such a way that when it is inserted into the appropriate lock the lock's mechanism can be rotated金属装置的形状使得当它插入适当的锁中时，锁的机构可以旋转</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[device]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>pitch of the voice声音的音调</td>
+      <td>he spoke in a low key他说话很低调</td>
+      <td></td>
+      <td></td>
+      <td>[pitch]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>nou</td>
+      <td>ki</td>
+      <td></td>
+      <td></td>
+      <td>something crucial for explaining解释的关键</td>
+      <td>the key to development is economic integration发展的关键是经济一体化</td>
+      <td></td>
+      <td></td>
+      <td>[explanation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>key</th>
+      <td>ey</td>
+      <td>4.92</td>
+      <td>adj</td>
+      <td>ki</td>
+      <td>['cardinal', 'central', 'fundamental', 'primal'], similarTo:['of import', 'important']</td>
+      <td></td>
+      <td>serving as an essential component作为必不可少的组成部分</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bey</th>
+      <td>ey</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td></td>
+      <td></td>
+      <td>(formerly) a title of respect for a man in Turkey or Egypt（以前）尊重土耳其或埃及男子的称号</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[adult male, man]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>bey</th>
+      <td>ey</td>
+      <td>3.35</td>
+      <td>nou</td>
+      <td>beɪ</td>
+      <td></td>
+      <td></td>
+      <td>the governor of a district or province in the Ottoman Empire奥斯曼帝国的一个地区或省的州长</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[governor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ley</th>
+      <td>ey</td>
+      <td>2.74</td>
+      <td>nou</td>
+      <td>leɪ</td>
+      <td>['grazing land', 'lea', 'pasture', 'pastureland']</td>
+      <td></td>
+      <td>a field covered with grass or herbage and suitable for grazing by livestock草地或牧草覆盖的田地，适合牲畜放牧</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[grassland]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fey</th>
+      <td>ey</td>
+      <td>2.56</td>
+      <td>adj</td>
+      <td>feɪ</td>
+      <td>['elfin'], similarTo:['supernatural']</td>
+      <td></td>
+      <td>suggestive of an elf in strangeness and otherworldliness提示一个陌生和其他世界的精灵</td>
+      <td>the fey quality was there, the ability to see the moon at midday那里的质量很好，能够在中午看到月亮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fey</th>
+      <td>ey</td>
+      <td>2.56</td>
+      <td>adj</td>
+      <td>feɪ</td>
+      <td>['touched'], similarTo:['insane']</td>
+      <td></td>
+      <td>slightly insane有点疯狂</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    

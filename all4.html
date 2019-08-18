@@ -1,0 +1,2135 @@
+
+    <html>
+      <head><title>HTML Pandas Dataframe with CSS</title></head>
+      <style>
+        .jupyter {
+            font-size: 11pt; 
+            font-family: Arial;
+            border-collapse: collapse; 
+            border: 1px solid silver;
+
+        }
+
+        .jupyter td, th {
+            padding: 5px;
+        }
+
+        .jupyter tr:nth-child(even) {
+            background: #E0E0E0;
+        }
+
+        .jupyter tr:hover {
+            background: silver;
+            cursor: pointer;
+        }
+      </style>
+      <body>
+        ['call', 'fall', 'ball', 'wall', 'hall', 'tall', 'mall', 'ally', 'gall']<table border="1" class="dataframe jupyter">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>key</th>
+      <th>freq</th>
+      <th>type</th>
+      <th>pronun</th>
+      <th>synonyms</th>
+      <th>antonyms</th>
+      <th>definition</th>
+      <th>examples</th>
+      <th>derivation</th>
+      <th>verbGroup</th>
+      <th>typeOf</th>
+      <th>usageOf</th>
+    </tr>
+    <tr>
+      <th>word</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['be known as', 'know as', 'name']</td>
+      <td></td>
+      <td>assign a specified (usually proper) proper name to指定一个指定的（通常是正确的）专有名称</td>
+      <td></td>
+      <td></td>
+      <td>[address]</td>
+      <td>[label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['anticipate', 'forebode', 'foretell', 'predict', 'prognosticate', 'promise']</td>
+      <td></td>
+      <td>make a prediction about; tell in advance做出预测;提前告诉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[hazard, venture, guess, pretend]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['send for'], alos:['call forth', 'call up']</td>
+      <td></td>
+      <td>order, request, or command to come命令，请求或命令来</td>
+      <td>She was called into the director's office她被召入导演办公室</td>
+      <td>[caller]</td>
+      <td></td>
+      <td>[enjoin, say, order, tell]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['cry', 'holler', 'hollo', 'scream', 'shout', 'shout out', 'squall', 'yell'], alos:['call out']</td>
+      <td></td>
+      <td>utter a sudden loud cry突然大声喊叫</td>
+      <td></td>
+      <td></td>
+      <td>[call out, outcry, exclaim, cry, shout, cry out]</td>
+      <td>[let loose, let out, emit, utter]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['call in', 'visit']</td>
+      <td></td>
+      <td>pay a brief visit进行简短的访问</td>
+      <td>The mayor likes to call on some of the prominent citizens市长喜欢拜访一些知名公民</td>
+      <td>[caller]</td>
+      <td></td>
+      <td>[meet, get together]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['address']</td>
+      <td></td>
+      <td>greet, as with a prescribed form, title, or name与规定的表格，标题或名称一样问候</td>
+      <td>She calls him by first name她以名字叫他</td>
+      <td></td>
+      <td>[know as, be known as, name]</td>
+      <td>[address, turn to]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['call in']</td>
+      <td></td>
+      <td>demand payment of (a loan)要求支付（贷款）</td>
+      <td></td>
+      <td>[callable]</td>
+      <td></td>
+      <td>[exact, demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['call off']</td>
+      <td></td>
+      <td>give the calls (to the dancers) for a square dance给舞者打电话（舞者）</td>
+      <td></td>
+      <td>[caller]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['call up', 'phone', 'ring', 'telephone']</td>
+      <td></td>
+      <td>get or try to get into communication (with someone) by telephone通过电话获得或尝试与某人进行交流</td>
+      <td>I tried to call you all night我试着整夜打电话给你Take two aspirin and call me in the morning服用两片阿司匹林，早上打电话给我</td>
+      <td>[caller]</td>
+      <td></td>
+      <td>[telecommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td>['bid']</td>
+      <td></td>
+      <td>make a demand, as for a card or a suit or a show of hands提出要求，如卡片或西装或举手</td>
+      <td>He called his trump他称他的王牌</td>
+      <td>[caller]</td>
+      <td></td>
+      <td>[play]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>ascribe a quality to or give a name of a common noun that reflects a quality归因于质量或给出反映质量的普通名词的名称</td>
+      <td>He called me a bastard他叫我一个混蛋She called her children lazy and ungrateful她称她的孩子懒惰而忘恩负义</td>
+      <td></td>
+      <td>[be known as, know as, name]</td>
+      <td>[label]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>call a meeting; invite or command to meet召集会议;邀请或命令见面</td>
+      <td>The Wannsee Conference was called to discuss the `Final Solution'召开Wannsee会议讨论“最终解决方案”The new dean calls meetings every week新院长每周都会召开会议</td>
+      <td>[caller]</td>
+      <td>[send for]</td>
+      <td>[call for, ask for, bespeak, request, quest]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>challenge (somebody) to make good on a statement; charge with or censure for an offense挑战（某人）在声明中做出贡献;指控或指责犯罪</td>
+      <td>He deserves to be called on that他应该被称呼</td>
+      <td></td>
+      <td></td>
+      <td>[dispute, gainsay, challenge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>challenge the sincerity or truthfulness of挑战真诚或真实</td>
+      <td>call the speaker on a question of fact在事实问题上给发言者打电话</td>
+      <td></td>
+      <td></td>
+      <td>[gainsay, dispute, challenge]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>consider or regard as being考虑或视为存在</td>
+      <td>I would not call her beautiful我不会称她为美丽</td>
+      <td></td>
+      <td></td>
+      <td>[see, reckon, regard, consider, view]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>declare in the capacity of an umpire or referee以裁判员或裁判员的身份宣布</td>
+      <td>call a runner out打电话给跑垒员</td>
+      <td></td>
+      <td></td>
+      <td>[hold, adjudge, declare]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>indicate a decision in regard to表明有关的决定</td>
+      <td>call balls and strikes behind the plate在盘子后面打球和击球</td>
+      <td></td>
+      <td></td>
+      <td>[indicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>lure by imitating the characteristic call of an animal通过模仿动物的特征召唤来诱惑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[tempt, lure, entice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>make a stop in a harbour在港口停下来</td>
+      <td>The ship will call in Honolulu tomorrow这艘船明天将在檀香山召唤</td>
+      <td></td>
+      <td>[call in, visit]</td>
+      <td>[stop over, stop]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>order or request or give a command for订购或请求或给出命令</td>
+      <td>The unions called a general strike for Sunday工会称周日为总罢工</td>
+      <td></td>
+      <td></td>
+      <td>[order]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>order, summon, or request for a specific duty or activity, work, role命令，召唤或要求特定的职责或活动，工作，角色</td>
+      <td>He was already called 4 times for jury duty他已被召集4次担任陪审团职务They called him to active military duty他们称他为现役军人</td>
+      <td>[calling]</td>
+      <td>[send for]</td>
+      <td>[request]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>read aloud to check for omissions or absentees大声朗读以检查遗漏或缺席</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[read]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>require the presentation of for redemption before maturation要求在成熟前提出赎回</td>
+      <td></td>
+      <td></td>
+      <td>[call in]</td>
+      <td>[expect, require, ask]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>rouse somebody from sleep with a call通过电话从睡梦中唤醒某人</td>
+      <td>I was called at 5 A.M. this morning我在上午5点被召唤。今天早上</td>
+      <td></td>
+      <td></td>
+      <td>[arouse, wake, wake up, awaken, rouse, waken]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>send a message or attempt to reach someone by radio, phone, etc.; make a signal to in order to transmit a message通过电台，电话等发送消息或尝试联系某人;发出信号以传输信息</td>
+      <td>Hawaii is calling!夏威夷在呼唤！A transmitter in Samoa was heard calling听到萨摩亚的一名发射机正在打电话</td>
+      <td></td>
+      <td>[phone, telephone, ring, call up]</td>
+      <td>[telecommunicate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>stop or postpone because of adverse conditions, such as bad weather因恶劣天气等不利条件而停止或推迟</td>
+      <td>call a football game叫一场足球比赛</td>
+      <td></td>
+      <td></td>
+      <td>[set back, put off, prorogue, postpone, remit, put over, table, defer, shelve, hold over]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>utter a characteristic note or cry说出特别的音符或哭泣</td>
+      <td>bluejays called to one another蓝鸟互相呼唤</td>
+      <td></td>
+      <td></td>
+      <td>[let out, emit, utter, let loose]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>ver</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>utter in a loud voice or announce大声说话或宣布</td>
+      <td>He called my name他叫我的名字The auctioneer called the bids拍卖师称出价</td>
+      <td>[caller]</td>
+      <td>[scream, yell, hollo, shout, cry, shout out, squall, holler]</td>
+      <td>[let loose, emit, utter, let out]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td>['call option']</td>
+      <td></td>
+      <td>the option to buy a given stock (or stock index or commodity future) at a given price before a given date在给定日期之前以给定价格购买给定股票（或股票指数或商品期货）的选择权</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[option]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td>['margin call']</td>
+      <td></td>
+      <td>a demand by a broker that a customer deposit enough to bring his margin up to the minimum requirement经纪人要求客户存款足以使其保证金达到最低要求</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td>['claim']</td>
+      <td></td>
+      <td>a demand especially in the phrase特别是在短语中的需求</td>
+      <td>the call of duty使命召唤</td>
+      <td></td>
+      <td></td>
+      <td>[demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td>['phone call', 'telephone call']</td>
+      <td></td>
+      <td>a telephone connection电话连接</td>
+      <td>she reported several anonymous calls她报了几个匿名电话he placed a phone call to London他打电话给伦敦he heard the phone ringing but didn't want to take the call他听到电话响了，但不想接电话</td>
+      <td></td>
+      <td></td>
+      <td>[telephone, telephony]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td>['cry', 'outcry', 'shout', 'vociferation', 'yell']</td>
+      <td></td>
+      <td>a loud utterance; often in protest or opposition一个响亮的话语;经常是抗议或反对</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[utterance, vocalization]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td>['birdcall', 'birdsong', 'song']</td>
+      <td></td>
+      <td>the characteristic sound produced by a bird鸟类产生的特有声音</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal communication]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>a brief social visit短暂的社交访问</td>
+      <td>senior professors' wives no longer make afternoon calls on newcomers资深教授的妻子不再下午打电话给新人the characters in Henry James' novels are forever paying calls on each other, usually in the parlor of some residence亨利詹姆斯小说中的人物永远在彼此打电话，通常是在一些住所的客厅里</td>
+      <td></td>
+      <td></td>
+      <td>[visit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>a demand for a show of hands in a card game在纸牌游戏中要求举手表演</td>
+      <td>after two raises there was a call两次加注之后有一个电话</td>
+      <td></td>
+      <td></td>
+      <td>[demand]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>an instruction that interrupts the program being executed中断正在执行的程序的指令</td>
+      <td>Pascal performs calls by simply giving the name of the routine to be executedPascal通过简单地给出要执行的例程的名称来执行调用</td>
+      <td></td>
+      <td></td>
+      <td>[program line, statement, command, instruction]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>a request一个要求</td>
+      <td>many calls for Christmas stories许多人要求圣诞节故事not many calls for buggywhips没有多少人要求越野车</td>
+      <td></td>
+      <td></td>
+      <td>[asking, request]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>a special disposition (as if from a divine source) to pursue a particular course一种特殊的倾向（好像来自神圣的来源）追求特定的路线</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[inclination, tendency, disposition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>a visit in an official or professional capacity以官方或专业身份访问</td>
+      <td>the pastor's calls on his parishioners牧师打电话给他的教区居民the salesman's call on a customer推销员对客户的呼吁</td>
+      <td></td>
+      <td></td>
+      <td>[visit]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>call</th>
+      <td>all</td>
+      <td>5.93</td>
+      <td>nou</td>
+      <td>kɔl</td>
+      <td></td>
+      <td></td>
+      <td>(sports) the decision made by an umpire or referee（体育）裁判或裁判做出的决定</td>
+      <td>he was ejected for protesting the call他因抗议这个电话而被驱逐出境</td>
+      <td></td>
+      <td></td>
+      <td>[determination, conclusion, decision]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['come down', 'descend', 'go down'], alos:['fall in']</td>
+      <td>[rise]</td>
+      <td>move downward and lower, but not necessarily all the way向下和向下移动，但不一定一直向下移动</td>
+      <td>The barometer is falling晴雨表正在下降</td>
+      <td></td>
+      <td></td>
+      <td>[locomote, go, move, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['accrue']</td>
+      <td></td>
+      <td>come into the possession of进入拥有</td>
+      <td></td>
+      <td></td>
+      <td>[return, devolve, pass, light]</td>
+      <td>[change hands, change owners]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['come down', 'precipitate']</td>
+      <td></td>
+      <td>fall from clouds从云层落下</td>
+      <td>rain, snow and sleet were falling雨，雪和雨夹雪都在下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['fall down']</td>
+      <td></td>
+      <td>lose an upright position suddenly突然失去直立姿势</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['flow', 'hang']</td>
+      <td></td>
+      <td>fall or flow in a certain way以某种方式跌倒或流动</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['light']</td>
+      <td></td>
+      <td>fall to somebody by assignment or lot通过任务或批次落到某人身上</td>
+      <td></td>
+      <td></td>
+      <td>[accrue]</td>
+      <td>[return, devolve, pass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['shine', 'strike']</td>
+      <td></td>
+      <td>touch or seem as if touching visually or audibly触摸或看起来好像在视觉或听觉上触摸</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[go on, pass off, pass, occur, take place, happen, hap, fall out, come about]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['decrease', 'diminish', 'lessen']</td>
+      <td></td>
+      <td>decrease in size, extent, or range减小尺寸，范围或范围</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change magnitude]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['descend', 'settle']</td>
+      <td></td>
+      <td>come as if by falling仿佛跌倒了</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[come]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['come']</td>
+      <td></td>
+      <td>come under, be classified or included进入，被分类或包括在内</td>
+      <td>fall into a category属于一个类别</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>['devolve', 'pass', 'return']</td>
+      <td></td>
+      <td>be inherited by被继承</td>
+      <td></td>
+      <td></td>
+      <td>[accrue]</td>
+      <td>[change hands, change owners]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>assume a disappointed or sad expression假设一种失望或悲伤的表情</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>be born, used chiefly of lambs出生，主要用于羔羊</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[be born]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>be captured被捕获</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[yield]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>be cast down被击倒</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[change]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>be due到期</td>
+      <td>payments fall on the 1st of the month付款是在这个月的第一天</td>
+      <td></td>
+      <td></td>
+      <td>[be]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>begin vigorously积极地开始</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[set about, set out, start out, commence, start, get down, get, begin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>come out; issue出来;问题</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[come forth, emerge, come out, go forth, issue, egress]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>descend in free fall under the influence of gravity在重力的影响下自由落体下降</td>
+      <td></td>
+      <td>[faller]</td>
+      <td>[come down, precipitate]</td>
+      <td>[move, locomote, travel, go]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>die, as in battle or in a hunt在战斗中或在狩猎中死去</td>
+      <td>Several deer have fallen to the same gun几只鹿落到了同一把枪上</td>
+      <td></td>
+      <td></td>
+      <td>[snuff it, decease, choke, perish, go, buy the farm, give-up the ghost, pass away, cash in one's chips, exit, die, pass, expire, conk, kick the bucket, drop dead, croak, pop off]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>drop oneself to a lower or less erect position将自己降低到较低或较低的位置</td>
+      <td></td>
+      <td></td>
+      <td>[fall down]</td>
+      <td>[change posture]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>go as if by falling仿佛跌倒了</td>
+      <td></td>
+      <td></td>
+      <td>[descend, settle]</td>
+      <td>[disappear, go away, vanish]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>lose office or power失去办公室或权力</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[quit, resign, leave office, step down]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>lose one's chastity失去一个人的贞洁</td>
+      <td>a fallen woman一个堕落的女人</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>move in a specified direction向指定方向移动</td>
+      <td>The line of men fall forward男人的阵容向前倾斜</td>
+      <td></td>
+      <td></td>
+      <td>[travel, locomote, go, move]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>occur at a specified time or place发生在指定的时间或地点</td>
+      <td>Christmas falls on a Monday this year圣诞节今年是星期一The accent falls on the first syllable重音落在第一个音节上</td>
+      <td></td>
+      <td></td>
+      <td>[fall out, come about, happen, pass off, occur, take place, pass, hap, go on]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td>, alos:['separate', 'fall apart', 'fall away', 'fall back', 'fall behind', 'fall flat', 'fall for', 'fall through', 'flop', 'founder', 'drop off', 'drop away', 'lag', 'dawdle', 'crumble', 'recede', 'come apart', 'break', 'slip', 'split up']</td>
+      <td></td>
+      <td>pass suddenly and passively into a state of body or mind突然和被动地进入身体或精神状态</td>
+      <td>fall into a trap落入陷阱fall asleep睡着fall prey to an imposter成为冒名顶替者的牺牲品fall into a strange way of thinking陷入一种奇怪的思维方式</td>
+      <td></td>
+      <td></td>
+      <td>[turn, change state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>slope downward向下倾斜</td>
+      <td>The hills around here fall towards the ocean这里的山丘落向大海</td>
+      <td></td>
+      <td></td>
+      <td>[pitch, slope, incline]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>suffer defeat, failure, or ruin遭受失败，失败或毁灭</td>
+      <td>We must stand or fall我们必须站立或堕落fall by the wayside落在路边</td>
+      <td></td>
+      <td></td>
+      <td>[fail, go wrong, miscarry]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>to be given by assignment or distribution通过转让或分配给予</td>
+      <td></td>
+      <td></td>
+      <td>[light]</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>to be given by right or inheritance通过权利或继承给予</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>ver</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>yield to temptation or sin屈服于诱惑或罪恶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[transgress, sin, trespass]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['capitulation', 'surrender']</td>
+      <td></td>
+      <td>the act of surrendering (usually under agreed conditions)放弃的行为（通常在商定的条件下）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[loss]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['pin']</td>
+      <td></td>
+      <td>when a wrestler's shoulders are forced to the mat当摔跤手的肩膀被迫到垫子上时</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[triumph, victory]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['downfall']</td>
+      <td>[rise]</td>
+      <td>a sudden decline in strength or number or importance力量，数量或重要性突然下降</td>
+      <td>the fall of the House of Hapsburg哈布斯堡宫的沦陷</td>
+      <td></td>
+      <td></td>
+      <td>[weakening]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['dip', 'drop', 'free fall']</td>
+      <td></td>
+      <td>a sudden sharp decrease in some quantity一些数量突然急剧下降</td>
+      <td>when that became known the price of their stock went into free fall当知道他们的股票价格自由下跌时</td>
+      <td></td>
+      <td></td>
+      <td>[decrement, decrease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['drop']</td>
+      <td></td>
+      <td>a free and rapid descent by the force of gravity由重力自由快速下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[gravitation, descent]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['declension', 'declination', 'decline', 'declivity', 'descent', 'downslope']</td>
+      <td></td>
+      <td>a downward slope or bend向下倾斜或弯曲</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[side, incline, slope]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['autumn']</td>
+      <td></td>
+      <td>the season when the leaves fall from the trees叶子从树上掉下来的季节</td>
+      <td>in the fall of 1973在1973年秋天</td>
+      <td></td>
+      <td></td>
+      <td>[season, time of year]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['crepuscle', 'crepuscule', 'dusk', 'evenfall', 'gloam', 'gloaming', 'nightfall', 'twilight']</td>
+      <td></td>
+      <td>the time of day immediately following sunset日落后的一天中的时间</td>
+      <td>they finished before the fall of night他们在夜幕降临前完成了</td>
+      <td></td>
+      <td></td>
+      <td>[hour, time of day]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td>['spill', 'tumble']</td>
+      <td></td>
+      <td>a sudden drop from an upright position从直立位置突然下降</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[slip, trip]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>a lapse into sin; a loss of innocence or of chastity堕入罪恶;丧失无罪或贞操</td>
+      <td>a fall from virtue美德堕落</td>
+      <td></td>
+      <td></td>
+      <td>[sinning, sin]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td></td>
+      <td>[rise]</td>
+      <td>a movement downward向下运动</td>
+      <td>the rise and fall of the tides潮汐的兴衰</td>
+      <td></td>
+      <td></td>
+      <td>[change of location, travel]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>fall</th>
+      <td>all</td>
+      <td>5.11</td>
+      <td>nou</td>
+      <td>fɔl</td>
+      <td></td>
+      <td></td>
+      <td>the lapse of mankind into sinfulness because of the sin of Adam and Eve由于亚当和夏娃的罪，人类陷入了罪恶之中</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>ver</td>
+      <td>bɔl</td>
+      <td></td>
+      <td></td>
+      <td>form into a ball by winding or rolling通过缠绕或滚动形成球</td>
+      <td>ball wool球毛</td>
+      <td></td>
+      <td></td>
+      <td>[twine, roll, wind, wrap]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td>['formal']</td>
+      <td></td>
+      <td>a lavish dance requiring formal attire一场需要正式着装的奢华舞蹈</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td>['lucille ball']</td>
+      <td></td>
+      <td>United States comedienne best known as the star of a popular television program (1911-1989)美国喜剧演员最着名的流行电视节目明星（1911-1989）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td>['musket ball']</td>
+      <td></td>
+      <td>a solid projectile that is shot by a musket由步枪射击的坚固弹丸</td>
+      <td>they had to carry a ramrod as well as powder and ball他们不得不携带推杆以及粉末和球</td>
+      <td></td>
+      <td></td>
+      <td>[pellet, shot]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td>['baseball', 'baseball game']</td>
+      <td></td>
+      <td>a ball game played with a bat and ball between two teams of nine players; teams take turns at bat trying to score runs两队九名球员之间用球棒和球进行的球赛;球队轮流击球试图得分</td>
+      <td>he played baseball in high school他在高中打棒球there was a baseball game on every empty lot每个空地上都有棒球比赛there was a desire for National League ball in the area在该地区有一个国家联盟球的愿望play ball!打球！</td>
+      <td></td>
+      <td></td>
+      <td>[ball game, ballgame]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td>['chunk', 'clod', 'clump', 'glob', 'lump']</td>
+      <td></td>
+      <td>a compact mass紧凑的质量</td>
+      <td>a ball of mud caught him on the shoulder一团泥巴抓住了他的肩膀</td>
+      <td></td>
+      <td></td>
+      <td>[agglomeration]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td>['ballock', 'bollock', 'egg', 'nut', 'orchis', 'testicle', 'testis']</td>
+      <td></td>
+      <td>one of the two male reproductive glands that produce spermatozoa and secrete androgens两个产生精子和分泌雄激素的雄性生殖腺体之一</td>
+      <td>she kicked him in the balls and got away她踢了他的球然后离开了</td>
+      <td></td>
+      <td></td>
+      <td>[male reproductive gland, gonad, sex gland]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td>['globe', 'orb']</td>
+      <td></td>
+      <td>an object with a spherical shape一个球形的物体</td>
+      <td>a ball of fire一团火球</td>
+      <td></td>
+      <td></td>
+      <td>[sphere]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td></td>
+      <td></td>
+      <td>a more or less rounded anatomical body or mass或多或少圆形的解剖体或肿块</td>
+      <td>the ball at the base of the thumb拇指根部的球he stood on the balls of his feet他站在他的脚上</td>
+      <td></td>
+      <td></td>
+      <td>[bodily structure, body structure, complex body part, anatomical structure, structure]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td></td>
+      <td></td>
+      <td>a pitch that is not in the strike zone一个不在击球区的球场</td>
+      <td>he threw nine straight balls before the manager yanked him在经理猛拉他之前，他扔了九个直球</td>
+      <td></td>
+      <td></td>
+      <td>[pitch, delivery]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td></td>
+      <td></td>
+      <td>a spherical object used as a plaything用作玩物的球形物体</td>
+      <td>he played with his rubber ball in the bathtub他在浴缸里玩他的橡皮球</td>
+      <td></td>
+      <td></td>
+      <td>[toy, plaything]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td></td>
+      <td></td>
+      <td>round object that is hit or thrown or kicked in games在游戏中被击中或抛出或踢出的圆形物体</td>
+      <td>the ball travelled 90 mph on his serve球在他的发球上以90英里/小时的速度行驶the mayor threw out the first ball市长扔掉了第一个球the ball rolled into the corner pocket球滚进角落的口袋里</td>
+      <td></td>
+      <td></td>
+      <td>[game equipment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ball</th>
+      <td>all</td>
+      <td>5.00</td>
+      <td>nou</td>
+      <td>bɔl</td>
+      <td></td>
+      <td></td>
+      <td>the people assembled at a lavish formal dance人们聚集在豪华的正式舞会上</td>
+      <td>the ball was already emptying out before the fire alarm sounded在火警响起之前，球已经排空了</td>
+      <td></td>
+      <td></td>
+      <td>[dance]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>ver</td>
+      <td>wɔl</td>
+      <td>['fence', 'fence in', 'palisade', 'surround'], alos:['wall in', 'wall up']</td>
+      <td></td>
+      <td>surround with a wall in order to fortify用墙围住以加固</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[protect]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td>['bulwark', 'rampart']</td>
+      <td></td>
+      <td>an embankment built around a space for defensive purposes围绕空间建造的堤防用于防御目的</td>
+      <td>they blew the trumpet and the walls came tumbling down他们吹响了小号，墙壁倒塌了</td>
+      <td></td>
+      <td></td>
+      <td>[embankment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td>['paries']</td>
+      <td></td>
+      <td>(anatomy) a layer (a lining or membrane) that encloses a structure（解剖学）包围结构的层（衬里或膜）</td>
+      <td>stomach walls胃壁</td>
+      <td></td>
+      <td></td>
+      <td>[stratum]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td></td>
+      <td></td>
+      <td>a difficult or awkward situation困难或尴尬的局面</td>
+      <td>his back was to the wall他的背对着墙competition was pushing them to the wall竞争正在推动他们走向困境</td>
+      <td></td>
+      <td></td>
+      <td>[difficulty]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td></td>
+      <td></td>
+      <td>a layer of material that encloses space一层封闭空间的材料</td>
+      <td>the walls of the cylinder were perforated圆筒的壁是穿孔的the container's walls were blue容器的墙壁是蓝色的</td>
+      <td></td>
+      <td></td>
+      <td>[bed, layer]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td></td>
+      <td></td>
+      <td>a masonry fence (as around an estate or garden)砖石围栏（围绕庄园或花园）</td>
+      <td>the wall followed the road墙跟在路上he ducked behind the garden wall and waited他躲在花园墙后面等着</td>
+      <td></td>
+      <td></td>
+      <td>[fence, fencing]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td></td>
+      <td></td>
+      <td>an architectural partition with a height and length greater than its thickness; used to divide or enclose an area or to support another structure高度和长度大于其厚度的建筑隔断;用来划分或包围一个区域或支持另一个结构</td>
+      <td>the south wall had a small window南墙有一个小窗口the walls were covered with pictures墙上挂满了照片</td>
+      <td></td>
+      <td></td>
+      <td>[divider, partition]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td></td>
+      <td></td>
+      <td>anything that suggests a wall in structure or function or effect任何暗示结构，功能或效果的墙壁的东西</td>
+      <td>a wall of water一堵水墙a wall of smoke一堵烟墙a wall of prejudice一堵偏见之墙negotiations ran into a brick wall谈判陷入了困境</td>
+      <td></td>
+      <td></td>
+      <td>[object, physical object]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>wall</th>
+      <td>all</td>
+      <td>4.86</td>
+      <td>nou</td>
+      <td>wɔl</td>
+      <td></td>
+      <td></td>
+      <td>a vertical (or almost vertical) smooth rock face (as of a cave or mountain)垂直（或几乎垂直）光滑的岩石面（如洞穴或山脉）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[geological formation, formation]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['charles martin hall']</td>
+      <td></td>
+      <td>United States chemist who developed an economical method of producing aluminum from bauxite (1863-1914)美国化学家开发了一种从铝土矿中生产铝的经济方法（1863-1914）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['antechamber', 'anteroom', 'entrance hall', 'foyer', 'lobby', 'vestibule']</td>
+      <td></td>
+      <td>a large entrance or reception room or area大型入口或接待室或区域</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['dorm', 'dormitory', 'residence hall', 'student residence']</td>
+      <td></td>
+      <td>a college or university building containing living quarters for students学院或大学建筑，包含学生宿舍</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[building, edifice, quarters, living quarters]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['g. stanley hall', 'granville stanley hall']</td>
+      <td></td>
+      <td>United States child psychologist whose theories of child psychology strongly influenced educational psychology (1844-1924)美国儿童心理学家的儿童心理学理论强烈影响教育心理学（1844-1924）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['manse', 'mansion', 'mansion house', 'residence']</td>
+      <td></td>
+      <td>a large and imposing house一座宏伟壮观的房子</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[house]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['hallway']</td>
+      <td></td>
+      <td>an interior passage or corridor onto which rooms open室内通道或走廊，房间打开</td>
+      <td>the elevators were at the end of the hall电梯在大厅的尽头</td>
+      <td></td>
+      <td></td>
+      <td>[corridor]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['marguerite radclyffe hall', 'radclyffe hall']</td>
+      <td></td>
+      <td>English writer whose novel about a lesbian relationship was banned in Britain for many years (1883-1943)关于女同性恋关系的小说的英国作家在英国被禁止多年（1883-1943）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['manor hall']</td>
+      <td></td>
+      <td>the large room of a manor or castle庄园或城堡的大房间</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['asaph hall']</td>
+      <td></td>
+      <td>United States astronomer who discovered Phobos and Deimos (the two satellites of Mars) (1829-1907)发现火卫一和Deimos（火星的两颗卫星）的美国天文学家（1829-1907）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td>['charles francis hall']</td>
+      <td></td>
+      <td>United States explorer who led three expeditions to the Arctic (1821-1871)领导三次北极考察的美国探险家（1821-1871）</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td></td>
+      <td></td>
+      <td>a large building for meetings or entertainment一个大型会议或娱乐建筑</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[edifice, building]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td></td>
+      <td></td>
+      <td>a large building used by a college or university for teaching or research大学或大学用于教学或研究的大型建筑</td>
+      <td>halls of learning学习的大厅</td>
+      <td></td>
+      <td></td>
+      <td>[building, edifice]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>hall</th>
+      <td>all</td>
+      <td>4.63</td>
+      <td>nou</td>
+      <td>hɔl</td>
+      <td></td>
+      <td></td>
+      <td>a large room for gatherings or entertainment一个大型的聚会或娱乐室</td>
+      <td>lecture hall报告厅pool hall台球厅</td>
+      <td></td>
+      <td></td>
+      <td>[room]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tall</th>
+      <td>all</td>
+      <td>4.45</td>
+      <td>nou</td>
+      <td>tɔl</td>
+      <td></td>
+      <td></td>
+      <td>a garment size for a tall person适合身材高大的人的服装尺码</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[size]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tall</th>
+      <td>all</td>
+      <td>4.45</td>
+      <td>adj</td>
+      <td>tɔl</td>
+      <td>['improbable', 'marvellous', 'marvelous'], similarTo:['incredible', 'unbelievable']</td>
+      <td></td>
+      <td>too improbable to admit of belief太不可能承认信仰</td>
+      <td>a tall story一个高大的故事</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tall</th>
+      <td>all</td>
+      <td>4.45</td>
+      <td>adj</td>
+      <td>tɔl</td>
+      <td>['grandiloquent', 'magniloquent'], similarTo:['rhetorical']</td>
+      <td></td>
+      <td>lofty in style高雅的风格</td>
+      <td>he engages in so much tall talk, one never really realizes what he is saying他从事这么多高谈，从来没有真正意识到他在说什么</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tall</th>
+      <td>all</td>
+      <td>4.45</td>
+      <td>adj</td>
+      <td>tɔl</td>
+      <td>, similarTo:['tall-growing', 'lanky', 'leggy', 'long', 'long-legged', 'long-shanked', 'long-stalked', 'rangy', 'stately', 'statuesque', 'tallish', 'gangling', 'gangly', 'tall-stalked', 'in height'], alos:['large', 'big', 'high']</td>
+      <td>[short]</td>
+      <td>great in vertical dimension; high in stature垂直方向很好;身材高大</td>
+      <td>tall people高个子tall buildings高的建筑tall trees高大的树木tall ships高大的船只</td>
+      <td>[tallness]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>tall</th>
+      <td>all</td>
+      <td>4.45</td>
+      <td>adj</td>
+      <td>tɔl</td>
+      <td>, similarTo:['hard', 'difficult']</td>
+      <td></td>
+      <td>impressively difficult非常困难</td>
+      <td>a tall order一个很高的要求</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[colloquialism]</td>
+    </tr>
+    <tr>
+      <th>mall</th>
+      <td>all</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>mɔl</td>
+      <td>['center', 'plaza', 'shopping center', 'shopping centre', 'shopping mall']</td>
+      <td></td>
+      <td>mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketplace商业建筑，由代表主要商人的精心装饰的商店组成;通常包括餐厅和便利的停车区;传统市场的现代版本</td>
+      <td>they spent their weekends at the local malls他们周末在当地的购物中心度过</td>
+      <td></td>
+      <td></td>
+      <td>[outlet, retail store, sales outlet, mercantile establishment]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>mall</th>
+      <td>all</td>
+      <td>4.14</td>
+      <td>nou</td>
+      <td>mɔl</td>
+      <td>['promenade']</td>
+      <td></td>
+      <td>a public area set aside as a pedestrian walk一个公共区域作为步行街</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[walkway, paseo, walk]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ally</th>
+      <td>all</td>
+      <td>3.64</td>
+      <td>ver</td>
+      <td>'æli, noun:'ælaɪ, verb:ə'laɪ</td>
+      <td></td>
+      <td></td>
+      <td>become an ally or associate, as by a treaty or marriage通过条约或婚姻成为盟友或同伙</td>
+      <td></td>
+      <td>[alliance]</td>
+      <td></td>
+      <td>[assort, consort, associate, affiliate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ally</th>
+      <td>all</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>'æli, noun:'ælaɪ, verb:ə'laɪ</td>
+      <td>['friend']</td>
+      <td></td>
+      <td>an associate who provides cooperation or assistance提供合作或协助的员工</td>
+      <td>he's a good ally in fight他是战斗中的好伙伴</td>
+      <td></td>
+      <td></td>
+      <td>[associate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>ally</th>
+      <td>all</td>
+      <td>3.64</td>
+      <td>nou</td>
+      <td>'æli, noun:'ælaɪ, verb:ə'laɪ</td>
+      <td></td>
+      <td></td>
+      <td>a friendly nation一个友好的国家</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[commonwealth, country, land, nation, res publica, body politic, state]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>ɡɔl</td>
+      <td>['irk']</td>
+      <td></td>
+      <td>irritate or vex烦恼或烦恼</td>
+      <td>It galls me that we lost the suit我觉得我们失去了西装</td>
+      <td></td>
+      <td></td>
+      <td>[anger]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>ver</td>
+      <td>ɡɔl</td>
+      <td>['chafe', 'fret']</td>
+      <td></td>
+      <td>become or make sore by or as if by rubbing通过摩擦或似乎通过摩擦而变得或疼痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[irritate]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɡɔl</td>
+      <td>['bile']</td>
+      <td></td>
+      <td>a digestive juice secreted by the liver and stored in the gallbladder; aids in the digestion of fats由肝脏分泌并储存在胆囊中的消化液;有助于脂肪的消化</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[digestive juice, digestive fluid]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɡɔl</td>
+      <td>['saddle sore']</td>
+      <td></td>
+      <td>an open sore on the back of a horse caused by ill-fitting or badly adjusted saddle由马匹不合适或调整不当导致马背上的开放性疮</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[animal disease]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɡɔl</td>
+      <td>['cheekiness', 'crust', 'freshness', 'impertinence', 'impudence', 'insolence']</td>
+      <td></td>
+      <td>the trait of being rude and impertinent; inclined to take liberties粗鲁无礼的特质;倾向于采取自由</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[rudeness, discourtesy]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɡɔl</td>
+      <td>['bitterness', 'rancor', 'rancour', 'resentment']</td>
+      <td></td>
+      <td>a feeling of deep and bitter anger and ill-will一种深沉而痛苦的愤怒和恶意的感觉</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[ill will, enmity, hostility]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɡɔl</td>
+      <td></td>
+      <td></td>
+      <td>abnormal swelling of plant tissue caused by insects or microorganisms or injury由昆虫或微生物或损伤引起的植物组织异常肿胀</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[plant tissue]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>gall</th>
+      <td>all</td>
+      <td>3.24</td>
+      <td>nou</td>
+      <td>ɡɔl</td>
+      <td></td>
+      <td></td>
+      <td>a skin sore caused by chafing由擦伤引起的皮肤酸痛</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[sore]</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+      </body>
+    </html>.
+    
